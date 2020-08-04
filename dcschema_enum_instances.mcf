@@ -1,12 +1,8 @@
-Node: dcid:CensusACS5yrSurvey
+Node: ACS5Enum
+dcid: dcs:CensusACS5yrSurvey
 typeOf: dcs:CensusSurveyEnum
 name: "CensusACS5yrSurvey"
 description: "American Community Survey 5 year estimates"
-
-Node: dcid:CensusACS1yrSurvey
-typeOf: dcs:CensusSurveyEnum
-name: "CensusACS1yrSurvey"
-description: "American Community Survey 1 year estimates"
 
 Node: dcid:Difference
 typeOf: dcs:BinaryOperatorEnum
@@ -127,34 +123,28 @@ description: "Category of race or ethnicity group used by Opportunity Insights t
 typeOf: dcs:OI_RaceCodeEnum
 
 ###---- begin BEA enum instances ----###
-Node: dcid:ConsumerGoodsAndServices
-name: "ConsumerGoodsAndServices"
-typeOf: dcs:EconomicProductEnum
-description: "Consumer goods are usually tangible final commodities purchased by the average consumer. Consumer services are intangible activities that are typically produced by other people and consumed by the consumer simultaneously."
-descriptionUrl: "https://en.wikipedia.org/wiki/Goods_and_services"
-
 Node: dcid:BEAServicesRents
 name: "BEAServicesRents"
 description: "Indicates Housing Rental Prices to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
-typeOf: dcs:EconomicProductEnum
+typeOf: dcs:BEAProductEnum
 dcid: "BEAServicesRents"
 
 Node: dcid:BEAServicesOthers
 name: "BEAServicesOthers"
 description: "Indicates Services Others than Rentals to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
-typeOf: dcs:EconomicProductEnum
+typeOf: dcs:BEAProductEnum
 dcid: "BEAServicesOthers"
 
 Node: dcid:BEAAllItems
 name: "BEAAllItems"
 description: "Indicates the entire bucket of goods and services used to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
-typeOf: dcs:EconomicProductEnum
+typeOf: dcs:BEAProductEnum
 dcid: "BEAAllItems"
 
 Node: dcid:BEAGoods
 name: "BEAGoods"
 description: "Indicates the list of Goods to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
-typeOf: dcs:EconomicProductEnum
+typeOf: dcs:BEAProductEnum
 dcid: "BEAGoods"
 
 Node: dcid:InflationAdjustmentEnum

@@ -54,11 +54,12 @@ domainIncludes: schema:StatisticalPopulation
 rangeIncludes: schema:Number, dcs:Percent
 supersededBy: dcs:countRelative
 
-Node: dcid:unit
+Node: unit
+dcid: "unit"
 name: "unit"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: schema:Observation, dcs:StatVarObservation
+domainIncludes: schema:Observation, dcs:StatisticalVariable
 
 Node: subPopulation
 dcid: "subPopulation"
@@ -160,69 +161,34 @@ description: "Third level statistical subdivision within an EU member country"
 subClassOf: schema:StatisticalArea
 
 Node: dcid:AdministrativeArea1
-name: "AdministrativeArea1"
+name: "Administrative Area Level 1"
 typeOf: schema:Class
 description: "A level-1 administrative subdivision of a country, e.g. departments in Bolivia."
 subClassOf: schema:AdministrativeArea
 
 Node: dcid:AdministrativeArea2
-name: "AdministrativeArea2"
+name: "Administrative Area Level 2"
 typeOf: schema:Class
 description: "A level-2 administrative subdivision of a country, e.g. municipalities in Bulgaria."
 subClassOf: schema:AdministrativeArea
 
 Node: dcid:AdministrativeArea3
-name: "AdministrativeArea3"
+name: "Administrative Area Level 3"
 typeOf: schema:Class
 description: "A level-3 administrative subdivision of a country, e.g. municipalities in Bosnia and Herzegovina."
 subClassOf: schema:AdministrativeArea
 
 Node: dcid:AdministrativeArea4
-name: "AdministrativeArea4"
+name: "Administrative Area Level 4"
 typeOf: schema:Class
 description: "A level-4 administrative subdivision of a country, e.g. wards in South Africa."
 subClassOf: schema:AdministrativeArea
 
 Node: dcid:AdministrativeArea5
-name: "AdministrativeArea5"
+name: "Administrative Area Level 5"
 typeOf: schema:Class
-description: "A level-5 administrative subdivision of a country."
+description: "A level-5 administrative subdivision of a country"
 subClassOf: schema:AdministrativeArea
-
-Node: dcid:Town
-name: "Town"
-typeOf: schema:Class
-description: "A settlement that is bigger than a village but smaller than a city."
-descriptionUrl: "https://www.wikidata.org/wiki/Q3957"
-subClassOf: schema:Place
-
-Node: dcid:Village
-name: "Village"
-typeOf: schema:Class
-description: "A small clustered human settlement smaller than a town."
-descriptionUrl: "https://www.wikidata.org/wiki/Q532"
-subClassOf: schema:Place
-
-Node: dcid:Neighborhood
-name: "Neighborhood"
-typeOf: schema:Class
-description: "A geographically localized community within a larger city, town or suburb."
-descriptionUrl: "https://wikidata.org/wiki/Q123705"
-subClassOf: schema:Place
-
-Node: dcid:USMetropolitanDivision
-name: "USMetropolitanDivision"
-typeOf: schema:Class
-description: "Subdivisions of US Metropolitan Statistical Areas (MSAs) and New England City and Town Areas (NECTAs)."
-subClassOf: schema:Place
-
-Node: dcid:administrativeCapital
-name: "administrativeCapital"
-typeOf: schema:Property
-description: "The municipality exercising primary status in a country, state, province, or other administrative region, usually as its seat of government."
-descruptionUrl: "https://en.wikipedia.org/wiki/Capital_city"
-rangeIncludes: schema:City, schema:Town
-domainIncludes: schema:AdministrativeArea
 
 Node: rentAsked
 dcid: "rentAsked"
@@ -330,27 +296,6 @@ Node: dcid:geoJsonCoordinates
 typeOf: schema:Property
 name: "geoJsonCoordinates"
 description: "Geographical boundary of a place in GeoJSON format."
-domainIncludes: schema:Place
-rangeIncludes: schema:Text
-
-Node: dcid:geoJsonCoordinatesDP1
-typeOf: schema:Property
-name: "geoJsonCoordinatesDP1"
-description: "Simplified geographical boundary of a place in GeoJSON format. Created by running the Ramer-Douglas-Peucker algorithm on geoJsonCoordinates with epsilon of 0.01."
-domainIncludes: schema:Place
-rangeIncludes: schema:Text
-
-Node: dcid:geoJsonCoordinatesDP2
-typeOf: schema:Property
-name: "geoJsonCoordinatesDP2"
-description: "Simplified geographical boundary of a place in GeoJSON format. Created by running the Ramer-Douglas-Peucker algorithm on geoJsonCoordinates with epsilon of 0.03."
-domainIncludes: schema:Place
-rangeIncludes: schema:Text
-
-Node: dcid:geoJsonCoordinatesDP3
-typeOf: schema:Property
-name: "geoJsonCoordinatesDP3"
-description: "Simplified geographical boundary of a place in GeoJSON format. Created by running the Ramer-Douglas-Peucker algorithm on geoJsonCoordinates with epsilon of 0.05."
 domainIncludes: schema:Place
 rangeIncludes: schema:Text
 
@@ -492,7 +437,7 @@ Node: dcid:beaProduct
 description: "Products and Services designated by US Bureau of Economic Analysis, of consumer spending (such as food, clothing, shelter, and services) that people buy for day-to-day living"
 dcid: "beaProduct"
 name: "beaProduct"
-rangeIncludes: dcid:EconomicProductEnum
+rangeIncludes: dcid:BEAProductEnum
 typeOf: dcid:Property
 domainIncludes: dcid:Product
 
@@ -1152,35 +1097,28 @@ description: "A unit used to denote a quantitative measurement."
 
 Node: LengthUnitOfMeasure
 typeOf: schema:Class
-subClassOf: dcs:UnitOfMeasure
+subClassOf: dcid:UnitOfMeasure
 name: "LengthUnitOfMeasure"
 dcid: "LengthUnitOfMeasure"
 description: "A unit used to denote a measurement of length."
 
 Node: AreaUnitOfMeasure
 typeOf: schema:Class
-subClassOf: dcs:UnitOfMeasure
+subClassOf: dcid:UnitOfMeasure
 name: "AreaUnitOfMeasure"
 dcid: "AreaUnitOfMeasure"
 description: "A unit used to denote a measurement of area."
 
-Node: CurrencyUnitOfMeasure
-typeOf: schema:Class
-subClassOf: dcs:UnitOfMeasure
-name: "CurrencyUnitOfMeasure"
-dcid: "CurrencyUnitOfMeasure"
-description: "A unit used to denote a measurement of currency."
-
 Node: VolumeUnitOfMeasure
 typeOf: schema:Class
-subClassOf: dcs:UnitOfMeasure
+subClassOf: dcid:UnitOfMeasure
 name: "VolumeUnitOfMeasure"
 dcid: "VolumeUnitOfMeasure"
 description: "A unit used to denote a measurement of volume."
 
 Node: TimeUnitOfMeasure
 typeOf: schema:Class
-subClassOf: dcs:UnitOfMeasure
+subClassOf: dcid:UnitOfMeasure
 name: "TimeUnitOfMeasure"
 dcid: "TimeUnitOfMeasure"
 description: "A unit used to denote a measurement of time."
@@ -1242,7 +1180,7 @@ name: "MilesPerHour (MPH)"
 description: "A speed unit of measure representing one mile per hour."
 
 Node: Percent
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "Percent"
 dcid: "Percent"
 description: "A number expressed as a fraction of 100. E.g. 98 denotes 98 percent, while 0.98 denotes 0.98 percent."
@@ -1330,68 +1268,60 @@ dcid: "Liter"
 description: "A volume unit accepted by the International System of Units equivalent to one cubic decimeter."
 
 Node: PersonPerSquareMile
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "PersonPerSquareMile"
 dcid: "PersonPerSquareMile"
 description: "A unit person per square mile area."
 
 Node: MilePerSquareMile
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "MilePerSquareMile"
 dcid: "MilePerSquareMile"
 description: "A unit ratio between mile length and square mile area."
 
 Node: DeathPer1000Births
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "DeathPer1000Births"
 dcid: "DeathPer1000Births"
 description: "A unit death per one thousand births."
 
-Node: dcid:USDollar
-typeOf: dcs:CurrencyUnitOfMeasure
+Node: USDollar
+typeOf: dcid:UnitOfMeasure
 name: "USDollar"
+dcid: "USDollar"
 description: "The official currency of the United States of America."
 
-Node: dcid:Euro
-typeOf: dcs:CurrencyUnitOfMeasure
+Node: Euro
+typeOf: dcid:UnitOfMeasure
 name: "Euro"
+dcid: "Euro"
 description: "The official currency of the European Union."
 
-Node: dcid:CanadianDollar
-typeOf: dcs:CurrencyUnitOfMeasure
-name: "CanadianDollar"
-description: "The official currency of Canada."
-
-Node: dcid:IndianRupee
-typeOf: dcs:CurrencyUnitOfMeasure
-name: "IndianRupee"
-description: "The official currency of India."
-
 Node: dcid:NationalCurrency
-typeOf: dcs:CurrencyUnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "NationalCurrency"
 description: "Unit for measurements made in the official currency of the relevant country."
 
 Node: dcid:PurchasingPowerStandard
 name: "PurchasingPowerStandard"
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 description: "The purchasing power standard, abbreviated as PPS, is an artificial currency unit. PPS is the technical term used by Eurostat for the common currency in which national accounts aggregates are expressed when adjusted for price level differences using PPPs. Thus, PPPs can be interpreted as the exchange rate of the PPS against the euro."
 descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Purchasing_power_standard_(PPS)"
 
 Node: PhonesPer1000Persons
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "PhonesPer1000Persons"
 dcid: "PhonesPer1000Persons"
 description: "A unit phone per one thousand persons."
 
 Node: BirthsPer1000Persons
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "BirthsPer1000Persons"
 dcid: "BirthsPer1000Persons"
 description: "A unit birth per one thousand persons."
 
 Node: DeathsPer1000Persons
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "DeathsPer1000Persons"
 dcid: "DeathsPer1000Persons"
 description: "A unit death per one thousand persons."
@@ -1433,7 +1363,7 @@ dcid: "Year"
 description: "A unit of time equivalent to one year on the Gregorian calendar."
 
 Node: dcid:RatioToPovertyLine
-typeOf: dcs:UnitOfMeasure
+typeOf: dcid:UnitOfMeasure
 name: "RatioToPovertyLine"
 description: "A unit indicating a ratio to poverty line. If one is at poverty line, then one has a RatioToPovertyLine of 1. If one's income is twice that of the poverty line threshold, then one has a RatioToPovertyLine of 2."
 
@@ -2129,7 +2059,7 @@ description: "Identifies the denominator variable when an observation represents
 Node: dcid:scalingFactor
 typeOf: schema:Property
 name: "scalingFactor"
-domainIncludes: schema:Observation, dcs:StatVarObservation
+domainIncludes: schema:Observation, dcs:StatisticalVariable
 rangeIncludes: schema:Number
 description: "Used in conjunction with measurementDenominator, this indicates the factor the denominator is to be scaled by."
 
@@ -2378,20 +2308,3 @@ subClassOf: schema:Place
 description: "The place where passengers and cargo are exchanged between vehicles or/and between transport modes."
 descriptionUrl: "https://en.wikipedia.org/wiki/Transport_hub"
 
-Node: dcid:HumanSettlementClassificationEnum
-name: "HumanSettlementClassificationEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Enumeration of different types of human settlements, such as Urban, Rural, etc."
-
-Node: dcid:Urban
-name: "Urban"
-typeOf: dcs:HumanSettlementClassificationEnum
-description: "An urban area, or built-up area, is a human settlement with a high population density and infrastructure of built environment."
-descriptionUrl: "https://en.wikipedia.org/wiki/Urban_area"
-
-Node: dcid:Rural
-name: "Rural"
-typeOf: dcs:HumanSettlementClassificationEnum
-description: "A geographic area that is located outside towns and cities, typically with low population density and small settlements."
-descriptionUrl: "https://en.wikipedia.org/wiki/Rural_area"
