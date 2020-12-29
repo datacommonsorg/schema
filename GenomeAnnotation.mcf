@@ -178,7 +178,7 @@ descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
 
 Node: dcid:isGenomeRepresentationFull
 name: "isGenomeRepresentationFull"
-typeOf: schemaProperty
+typeOf: schema:Property
 rangeIncludes: schema:Boolean
 domainIncludes: dcs:GenomeAssembly
 description: "Whether the goal for the assembly was to represent the whole genome or only part of it."
@@ -186,14 +186,14 @@ descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#representation"
 
 Node: dcid:isRefSeqGenBankAssembliesIdentical
 name: "isRefSeqGenBankAssembliesIdentical"
-typeOf: schemaProperty
+typeOf: schema:Property
 rangeIncludes: schema:Boolean
 domainIncludes: dcs:GenomeAssembly
 description: "Indicate whether the RefSeq and GenBank assemblies are identical."
 
 Node: dcid:refSeqCategory
 name: "refSeqCategory"
-typeOf: schemaProperty
+typeOf: schema:Property
 rangeIncludes: dcs:RefSeqCategoryEnum
 domainIncludes: dcs:GenomeAssembly
 description: "Denotes that the assembly is a reference or representative genome in the NCBI Reference Sequence ( RefSeq ) project classification."
