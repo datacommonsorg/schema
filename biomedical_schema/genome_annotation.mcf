@@ -141,6 +141,51 @@ domainIncludes: dcs:GenomeAssembly
 description: "A BioProject is a collection of biological data related to a single initiative originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data generated for that project and deposited into the archival databases maintained by members of the International Nucleotide Sequence Database Collaboration (INSDC). Typical examples of a BioProject include a multiisolate project for sequencing multiple strains of a bacterial species, or a monoisolate project for the genome and transcriptome of a particular organism."
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/bioproject/docs/faq/"
 
+Node: dcid:ncbiBioSample
+name: "ncbiBioSample"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:GenomeAssembly
+description: "A BioSample contains descriptive information about the physical biological specimen from which your experimental data are derived. Typical examples of a BioSample include a cell line, a tissue biopsy or an environmental isolate. The information you supply about the biological materials are critical for providing context to your experimental data."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/biosample/docs/submission/faq/"
+
+Node: dcid:assemblyMethod
+dcid: "assemblyMethod"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:GenomeAssembly
+description: "The alogrithm used to assemble the genome from sequencing reads."
+
+Node: dcid:genomeCoverage
+name: "genomeCoverage"
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: dcs:GenomeAssembly
+description: "Genome coverage is the coverage depth of a sequencing run. This is calculated as the number of bases of all short reads that match a genome divided by the length of this genome, which represents the average number of times a base of a genome is sequenced.
+
+Node: dcid:wgsProject
+name: "wgsProject"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:GenomeAssembly
+description: "Whole Genome Shotgun (WGS) projects are genome assemblies of incomplete genomes or incomplete chromosomes of prokaryotes or eukaryotes that are generally being sequenced by a whole genome shotgun strategy. WGS projects may be annotated, but annotation is not required."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/genbank/wgs/"
+
+Node: dcid:sequencingTechnology
+name: "sequencingTechnology"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:GenomeAssembly
+description: "The manufacturer and model of the sequencing machine used to generate the GenomeAssembly.
+
+Node: dcid:infraspecificName
+name: "infraspecificName
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:GenomeAssembly
+description: "The strain, breed, cultivar or ecotype of the organism from which the sequences in the assembly were derived. (Field is not shown if the source material for the assembly is only described at the species level.)"
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+
 Node: dcid:genomeAssemblyType
 name: "genomeAssemblyType"
 typeOf: schema:Property
@@ -184,6 +229,14 @@ typeOf: schema:Property
 rangeIncludes: dcs:RefSeqCategoryEnum
 domainIncludes: dcs:GenomeAssembly
 description: "Denotes that the assembly is a reference or representative genome in the NCBI Reference Sequence ( RefSeq ) project classification."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+
+Node: dcid:ncbiAssemblyName
+name: "ncbiAssemblyName"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:GenomeAssembly
+description: "The submitter's name for the assembly when one was provided, otherwise a default name is provided by NCBI; this is linked to a view of the Assembly details page."
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
 
 Node: dcid:nucleicAcid
