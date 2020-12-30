@@ -16,12 +16,6 @@ typeOf: schema:Class
 subClassOf: dcs:BiologicalElement
 description: "Genetic associations with phenotypes."
 
-Node: dcid:Species
-name: "Species"
-typeOf: schema:Class
-subClassOf: dcs:BiologicalElement
-description: "The scientific name (Genus species) of a group of living organisms consisting of similar individuals capable of exchanging genes or interbreeding in the wild."
-
 Node: dcid:GenomeAssembly
 name: "GenomeAssembly"
 typeOf: schema:Class
@@ -86,16 +80,16 @@ name: "BasePairs"
 subClassOf: schema:Thing
 description: "The number of pairs of complementary bases in a double-stranded nucleic acid molecule (DNA), consisting of a purine in one strand linked by hydrogen bonds to a pyrimidine in the other."
 
+Node: dcid:Allele
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+name: "Allele"
+
 Node: dcid:frequency
 typeOf: schema:Property
 domainIncludes: schema:Observation
 rangeIncludes: schema:Number
 name: "frequency"
-
-Node: dcid:Allele
-typeOf: schema:Class
-subClassOf: dcs:GenomeAnnotation
-name: "Allele"
 
 Node: dcid:commonName
 name: "commonName"
@@ -103,13 +97,6 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: schema:Thing
 description: "The vernacular name of a thing."
-
-Node: dcid:scientificName
-name: "scientificName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Species
-description: "The scientific name of a species."
 
 Node: dcid:ofSpecies
 name: "ofSpecies"
