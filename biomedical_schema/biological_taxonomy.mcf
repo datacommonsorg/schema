@@ -1,18 +1,8 @@
-Node: dcid:uniProtOrganismCode
-typeOf: schema:Property
-name: "uniProtOrganismCode"
-description: "A mnemonic organism identification code of at most 5 alphanumeric characters is used in the entry name of UniProtKB entries, e.g. SP0A_BACSU. This code is generally made of the first three letters of the genus name and the first two letters of the species name."
-descriptionUrl: "https://www.uniprot.org/help/taxonomy#organism-code"
-rangeIncludes: schema:Text
-domainIncludes: schema:Species
-
-Node: dcid:organismTaxonomicKingdom
-typeOf: schema:Property
-name: "organismTaxonomicKingdom"
-description: "The taxonomic 'kingdom' an organism belongs to."
-descriptionUrl:"https://www.uniprot.org/docs/speclist"
-rangeIncludes: schema:OrganismTaxonomicKingdomEnum
-domainIncludes: schema:Species
+Node: dcid:Species
+name: "Species"
+typeOf: schema:Class
+subClassOf: dcs:BiologicalElement
+description: "The scientific name (Genus species) of a group of living organisms consisting of similar individuals capable of exchanging genes or interbreeding in the wild."
 
 Node: dcid:OrganismTaxonomicKingdomEnum
 typeOf: schema:Class
@@ -50,3 +40,26 @@ typeOf: dcs:OrganismTaxonomicKingdomEnum
 name: "OtherOrganismKingdom"
 description: "When the organism doesn’t belong to any taxonomic kingdoms including archaea, bacteria, eukaryota, viruses and phages. Such as artificial sequences."
 descriptionUrl:"https://www.uniprot.org/docs/speclist"
+
+Node: dcid:scientificName
+name: "scientificName"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Species
+description: "The scientific name of a species."
+
+Node: dcid:uniProtOrganismCode
+typeOf: schema:Property
+name: "uniProtOrganismCode"
+description: "A mnemonic organism identification code of at most 5 alphanumeric characters is used in the entry name of UniProtKB entries, e.g. SP0A_BACSU. This code is generally made of the first three letters of the genus name and the first two letters of the species name."
+descriptionUrl: "https://www.uniprot.org/help/taxonomy#organism-code"
+rangeIncludes: schema:Text
+domainIncludes: schema:Species
+
+Node: dcid:organismTaxonomicKingdom
+typeOf: schema:Property
+name: "organismTaxonomicKingdom"
+description: "The taxonomic 'kingdom' an organism belongs to."
+descriptionUrl:"https://www.uniprot.org/docs/speclist"
+rangeIncludes: schema:OrganismTaxonomicKingdomEnum
+domainIncludes: schema:Species

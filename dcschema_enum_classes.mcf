@@ -5,139 +5,112 @@ description: "Enumerations of Products and Services used to determine Consumer P
 subClassOf: dcid:Enumeration
 dcid: "EconomicProductEnum"
 
-Node: PercentileEnum
-dcid: "PercentileEnum"
+Node: dcid:PercentileEnum
 name: "PercentileEnum"
 subClassOf: schema:Enumeration
 description: "An enumeration of Percentiles"
 typeOf: schema:Class
 
-Node: RaceCodeEnum
-dcid: "RaceCodeEnum"
+Node: dcid:RaceCodeEnum
 name: "RaceCodeEnum"
 description: "Categories of races or ethnicity groups"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 
-Node: InstitutionTypeEnum
-dcid: "InstitutionTypeEnum"
+Node: dcid:InstitutionTypeEnum
 typeOf: schema:Class
 name: "InstitutionTypeEnum"
 description: "Educational Institution type."
 subClassOf: schema:Enumeration
 
-Node: CarnegieInstitutionTypeEnum
-dcid: "CarnegieInstitutionTypeEnum"
+Node: dcid:CarnegieInstitutionTypeEnum
 description: "Carnegie classification of colleges and universities in the US"
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "CarnegieInstitutionTypeEnum"
 
-Node: US_PartyAffiliationEnum
-dcid: "US_PartyAffiliationEnum"
+Node: dcid:US_PartyAffiliationEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "US_PartyAffiliationEnum"
 
-Node: StudentTypeEnum
-dcid: "StudentTypeEnum"
+Node: dcid:StudentTypeEnum
 subClassOf: schema:Enumeration
 description: "Type of student in a College or University."
 typeOf: schema:Class
 name: "StudentTypeEnum"
 
-Node: EnrollmentLevelEnum
-dcid: "EnrollmentLevelEnum"
+Node: dcid:EnrollmentLevelEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 description: "Educational enrollment level."
 name: "EnrollmentLevelEnum"
 
-Node: InstitutionSizeEnum
-dcid: "InstitutionSizeEnum"
+Node: dcid:InstitutionSizeEnum
 description: "Educational Institution size, taken from Carnegie Classification."
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "InstitutionSizeEnum"
 
-Node: VoterStatusEnum
-dcid: "VoterStatusEnum"
+Node: dcid:VoterStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "VoterStatusEnum"
 
-Node: FamilyIncomeEnum
-dcid: "FamilyIncomeEnum"
+Node: dcid:FamilyIncomeEnum
 subClassOf: schema:Enumeration
 name: "FamilyIncomeEnum"
 description: "Family income brackets"
 typeOf: schema:Class
 
-Node: CrimeTypeEnum
-dcid: "CrimeTypeEnum"
+Node: dcid:CrimeTypeEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "CrimeTypeEnum"
 description: "Enumeration class of crime types like arson, property crime, violent crime, etc."
 
-Node: PropertyCrimeTypeEnum
-dcid: "PropertyCrimeTypeEnum"
+Node: dcid:PropertyCrimeTypeEnum
 name: "PropertyCrimeTypeEnum"
 typeOf: schema:Class
 subClassOf: dcs:CrimeTypeEnum
 description: "Enumeration class of specific property crime types like larceny, theft, etc."
 
-Node: ViolentCrimeTypeEnum
-dcid: "ViolentCrimeTypeEnum"
+Node: dcid:ViolentCrimeTypeEnum
 name: "ViolentCrimeTypeEnum"
 typeOf: schema:Class
 subClassOf: dcs:CrimeTypeEnum
 description: "Enumeration class of specific violent crime types."
 
-Node: EmploymentStatusEnum
-dcid: "EmploymentStatusEnum"
+Node: dcid:EmploymentStatusEnum
 name: "EmploymentStatusEnum"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 
-Node: NOAA_WeatherConditionEnum
-dcid: "NOAA_WeatherConditionEnum"
+Node: dcid:NOAA_WeatherConditionEnum
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 name: "NOAA_WeatherConditionEnum"
 
-Node: ResidenceTypeEnum
-dcid: "ResidenceTypeEnum"
+Node: dcid:ResidenceTypeEnum
 subClassOf: schema:Enumeration
 name: "ResidenceTypeEnum"
 typeOf: schema:Class
 
-Node: InstitutionControlEnum
-dcid: "InstitutionControlEnum"
-subClassOf: schema:Enumeration
-name: "InstitutionControlEnum"
-typeOf: schema:Class
-
-Node: CarnegieInstitutionSizeEnum
-dcid: "CarnegieInstitutionSizeEnum"
+Node: dcid:CarnegieInstitutionSizeEnum
 typeOf: schema:Class
 description: "Educational Institution size, taken from Carnegie Classification."
 name: "CarnegieInstitutionSizeEnum"
 subClassOf: schema:Enumeration
 
-#create MedicalEnumeration Class
-Node: MedicalEnumeration
+Node: dcid:MedicalEnumeration
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "MedicalEnumeration"
 name: "MedicalEnumeration"
 description: "Enumerations related to health and the practice of medicine: A concept that is used to attribute a quality to another concept, as a qualifier, a collection of items or a listing of all of the elements of a set in medicine practice."
 
-#create a MedicalSpecialty (enumeration) class
-Node: MedicalSpecialty
+Node: dcid:MedicalSpecialty
 typeOf: dcs:Class
 subClassOf: schema:MedicalEnumeration
-dcid: "MedicalSpecialty"
 name: "MedicalSpecialty"
 description: "Any specific branch of medical science or practice. Medical specialities include clinical specialties that pertain to particular organ systems and their respective disease states, as well as allied health specialties. Enumerated type."
 
@@ -158,8 +131,7 @@ subClassOf: schema:Enumeration
 name: "BinaryOperatorEnum"
 description: "Enumeration of the operators that takes in two inputs and produce one output"
 
-Node: IncomeStatusEnumType
-dcid: "IncomeStatusEnum"
+Node: dcid:IncomeStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "IncomeStatusEnum"
@@ -388,4 +360,3 @@ Node: dcid:MedicalTestResultEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "MedicalTestResultEnum"
-
