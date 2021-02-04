@@ -4,12 +4,13 @@ This directory contains the MCF nodes for all defined schemas in Data Commons.
 
 These files are kept in-sync with the Google repository via Copybara:
 
-- Changes
-  inside Google are immediately copied here.
-- Approved GitHub pull requests are
-  sent to the Google respository, where it is tested; if approved, the PR will
-  merge into both the Google and GitHub repository.
-  - IMPORTANT: DO NOT MERGE schema changes (any files ending with .mcf). Copybara will directly commit to the main branch then mark your PR as merged.
+-   Changes inside Google are immediately copied here.
+-   Approved GitHub pull requests are sent to the Google respository, where it
+    is tested; if approved, the PR will merge into both the Google and GitHub
+    repository.
+    -   IMPORTANT: DO NOT MERGE schema changes (any files ending with .mcf).
+        Copybara will directly commit to the main branch then mark your PR as
+        merged.
 
 ## Overview
 
