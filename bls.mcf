@@ -14,17 +14,22 @@ description: "Wages include bonuses, stock options, severance pay, profit distri
 rangeIncludes: schema:Number
 domainIncludes: schema:Person
 
-Node: wagesWeeklyProperty
+Node: dcid:wagesWeekly
 typeOf: schema:Property
-dcid: "wagesWeekly"
 name: "wagesWeekly"
 description: "Wages include bonuses, stock options, severance pay, profit distributions, cash value of meals and lodging, tips and other gratuities"
 rangeIncludes: schema:Number
 domainIncludes: schema:Person
 
-Node: wagesAnnualProperty
+Node: dcid:wagesMonthly
 typeOf: schema:Property
-dcid: "wagesAnnual"
+name: "wagesMonthly"
+description: "Wages include bonuses, stock options, severance pay, profit distributions, cash value of meals and lodging, tips and other gratuities"
+rangeIncludes: schema:Number
+domainIncludes: schema:Person
+
+Node: dcid:wagesAnnual
+typeOf: schema:Property
 name: "wagesAnnual"
 description: "Wages include bonuses, stock options, severance pay, profit distributions, cash value of meals and lodging, tips and other gratuities"
 rangeIncludes: schema:Number
