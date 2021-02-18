@@ -284,7 +284,7 @@ Node: age
 dcid: "age"
 name: "age"
 typeOf: schema:Property
-rangeIncludes: dcs:QuantityRange, schema:Number
+rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum
 domainIncludes: schema:Person, schema:Organization
 
 Node: employmentStatus
@@ -2421,3 +2421,64 @@ name: "nutsCode"
 rangeIncludes: schema:Text
 description: "Nomenclature of Territorial Units for Statistics or NUTS is a geocode standard for referencing the subdivisions of countries for statistical purposes."
 descriptionUrl: "https://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics"
+
+Node: dcid:Rooms
+typeOf: dcs:UnitOfMeasure
+name: "Rooms"
+description: "A count of the number of rooms. For example, in a house."
+
+Node: dcid:socialCategory
+typeOf: schema:Property
+name: "socialCategory"
+description: "Identifies a designated group of people. For example, Scheduled Tribes (ST) in India."
+rangeIncludes: dcs:SocialCategoryEnum
+domainIncludes: schema:Person
+
+Node: dcid:internetSubscriptionType
+typeOf: schema:Property
+name: "internetSubscriptionType"
+description: "Identifies the type of Internet subscription."
+rangeIncludes: dcs:USC_InternetSubscriptionTypeEnum
+domainIncludes: schema:Person, dcs:Household
+
+Node: dcid:legislationPassedBy
+typeOf: schema:Property
+name: "legislationPassedBy"
+description: "Identifies the organization that passed a legislation."
+rangeIncludes: schema:Organization
+domainIncludes: dcs:Legislation
+
+Node: dcid:literacyStatus
+typeOf: schema:Property
+name: "literacyStatus"
+description: "Identifies the literacy level of a person or household."
+rangeIncludes: dcs:LiteracyStatusEnum
+domainIncludes: schema:Person, dcs:Household
+
+Node: dcid:lunchEligiblity
+typeOf: schema:Property
+name: "lunchEligiblity"
+description: "Indicates the type of lunch elibility for students."
+rangeIncludes: dcs:LunchTypeEnum
+domainIncludes: dcs:Student
+
+Node: dcid:numberOfVehicles
+typeOf: schema:Property
+name: "numberOfVehicles"
+rangeIncludes: dcs:Quantity
+domainIncludes: dcs:Household
+
+Node: dcid:productType
+typeOf: schema:Property
+name: "productType"
+description: "Identifies the type or category of a product."
+rangeIncludes: dcs:EconomicProductEnum
+domainIncludes: schema:Product
+
+Node: dcid:residenceType
+typeOf: schema:Property
+name: "residenceType"
+description: "Identifies the type of residence a person resides in."
+rangeIncludes: dcs:USC_ResidenceTypeEnum
+domainIncludes: schema:Person
+

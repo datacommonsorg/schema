@@ -391,6 +391,10 @@ typeOf: dcs:USC_EducationalAttainmentEnum
 dcid: "NurseryTo4ThGrade"
 name: "NurseryTo4ThGrade"
 
+Node: dcid:USC_BachelorDegreeOrHigher
+typeOf: dcs:USC_EducationalAttainmentEnum
+name: "USC_BachelorDegreeOrHigher"
+
 Node: USC_HealthInsuranceEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -742,6 +746,18 @@ typeOf: dcs:USC_LanguageSpokenAtHomeEnum
 dcid: "Spanish"
 name: "Spanish"
 
+Node: dcid:ScandinavianLanguages
+typeOf: dcs:USC_LanguageSpokenAtHomeEnum
+name: "ScandinavianLanguages"
+
+Node: dcid:SpanishOrSpanishCreole
+typeOf: dcs:USC_LanguageSpokenAtHomeEnum
+name: "SpanishOrSpanishCreole"
+
+Node: dcid:FrenchCreole
+typeOf: dcs:USC_LanguageSpokenAtHomeEnum
+name: "FrenchCreole"
+
 Node: USC_LevelOfSchoolEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -926,6 +942,9 @@ specializationOf: dcs:AbovePovertyLevelInThePast12Months
 dcid: "AboveTwicePovertyLevel"
 name: "AboveTwicePovertyLevel"
 
+Node: dcid:USC_IncomeInThePast12MonthsBelowPovertyLevel
+typeOf: dcs:USC_PovertyStatusEnum
+name: "USC_IncomeInThePast12MonthsBelowPovertyLevel"
 
 Node: RaceCodeEnum
 typeOf: schema:Class
@@ -1062,6 +1081,27 @@ Node: SomeOtherRaceAloneOrInCombinationWithOneOrMoreOtherRaces
 typeOf: dcs:RaceCodeEnum
 dcid: "SomeOtherRaceAloneOrInCombinationWithOneOrMoreOtherRaces"
 name: "SomeOtherRaceAloneOrInCombinationWithOneOrMoreOtherRaces"
+
+# NOTE: The USC_ prefixed RaceCodeEnums below are from SEDA Scores import.
+Node: dcid:USC_WhiteAloneNotHispanicOrLatino
+typeOf: dcs:RaceCodeEnum
+name: "USC_WhiteAloneNotHispanicOrLatino"
+
+Node: dcid:USC_AmericanIndianAndAlaskaNativeAlone
+typeOf: dcs:RaceCodeEnum
+name: "USC_AmericanIndianAndAlaskaNativeAlone"
+
+Node: dcid:USC_AsianAlone
+typeOf: dcs:RaceCodeEnum
+name: "USC_AsianAlone"
+
+Node: dcid:USC_BlackOrAfricanAmericanAlone
+typeOf: dcs:RaceCodeEnum
+name: "USC_BlackOrAfricanAmericanAlone"
+
+Node: dcid:USC_HispanicOrLatinoRace
+typeOf: dcs:RaceCodeEnum
+name: "USC_HispanicOrLatinoRace"
 
 Node: USC_SchoolEnrollmentEnum
 typeOf: schema:Class
@@ -1208,6 +1248,10 @@ typeOf: dcs:BusinessOperationTypeEnum
 name: "ECON_MerchantWholesaler"
 description: "Establishments related to merchant wholesale, excluding manufacturer sales branches and offices."
 
+Node: dcid:USC_MerchantWholesalers
+typeOf: dcs:BusinessOperationTypeEnum
+name: "USC_MerchantWholesalers"
+
 Node: dcid:USC_OwnerGenderEnum
 typeOf: schema:Class
 subClassOf: schema:GenderType
@@ -1221,6 +1265,10 @@ Node: dcid:USC_WorkStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "USC_WorkStatusEnum"
+
+Node: dcid:USC_FullTimeYearRoundWorker
+typeOf: dcs:USC_WorkStatusEnum
+name: "USC_FullTimeYearRoundWorker"
 
 Node: dcid:USC_ResidenceTypeEnum
 typeOf: schema:Class
@@ -1486,6 +1534,10 @@ Node: dcid:USC_PublicTransportationExcludingTaxicab
 typeOf: dcs:USC_CommuteModeEnum
 name: "USC_PublicTransportationExcludingTaxicab"
 
+Node: dcid:PublicTransportationExcludingTaxicab
+typeOf: dcs:USC_CommuteModeEnum
+name: "PublicTransportationExcludingTaxicab"
+
 Node: dcid:USC_TaxicabMotorcycleBicycleOrOtherMeans
 typeOf: dcs:USC_CommuteModeEnum
 name: "USC_TaxicabMotorcycleBicycleOrOtherMeans"
@@ -1515,3 +1567,11 @@ Node: dcid:MobileHomesAndAllOtherTypesOfUnits
 typeOf: dcs:USC_HousingStructureTypeEnum
 name: "MobileHomesAndAllOtherTypesOfUnits"
 
+Node: dcid:AgeStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "AgeStatusEnum"
+
+Node: dcid:USC_AgeNotStated
+typeOf: dcs:AgeStatusEnum
+name: "USC_AgeNotStated"
