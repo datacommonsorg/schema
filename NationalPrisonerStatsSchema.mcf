@@ -38,13 +38,13 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 description: "Enumeration for the basis of measurement of the prisoner statistic."
 
-Node: dcid:NPS_MeasuredBasedOnCustody
-name: "NPS_MeasuredBasedOnCustody"
+Node: dcid:MeasuredBasedOnCustody
+name: "MeasuredBasedOnCustody"
 typeOf: dcs:PrisonerMeasurementBasisEnum
 description: "Measurement based on those in custody of state or federal correctional officials."
 
-Node: dcid:NPS_MeasuredBasedOnJurisdiction
-name: "NPS_MeasuredBasedOnJurisdiction"
+Node: dcid:MeasuredBasedOnJurisdiction
+name: "MeasuredBasedOnJurisdiction"
 typeOf: dcs:PrisonerMeasurementBasisEnum
 description: "Measurement based on those under the jurisdiction of the state meaning all state and federal inmates held in a public or private prison and those held in jail facilities either physically located inside or outside of the state of legal responsibility, and other inmates who may be temporarily out to court or in transit from the jurisdiction of legal authority to the custody of a confinement facility outside that jurisdiction."
 descriptionUrl: "https://www.bjs.gov/index.cfm?ty=tdtp&tid=1"
@@ -73,8 +73,8 @@ Node: dcid:DeathDueToAnotherPerson
 name: "DeathDueToAnotherPerson"
 typeOf: dcs:CauseOfDeathEnum
 
-Node: dcid:NPS_OtherCauseOfDeath
-name: "NPS_OtherCauseOfDeath"
+Node: dcid:NPSOtherCauseOfDeath
+name: "NPSOtherCauseOfDeath"
 typeOf: dcs:CauseOfDeathEnum
 description: "Other cause of death not already listed."
 
@@ -91,20 +91,20 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 description: "Enumeration of the different levels correctional facilities are operated at."
 
-Node: dcid:PrivatelyOperatedCorrectionalFacility
-name: "PrivatelyOperatedCorrectionalFacility"
+Node: dcid:PrivatelyOperated
+name: "PrivatelyOperated"
 typeOf: dcs:CorrectionalFacilityOperatorEnum
 
-Node: dcid:LocallyOperatedCorrectionalFacility
-name: "LocallyOperatedCorrectionalFacility"
+Node: dcid:LocallyOperated
+name: "LocallyOperated"
 typeOf: dcs:CorrectionalFacilityOperatorEnum
 
-Node: dcid:StateOperatedCorrectionalFacility
-name: "StateOperatedCorrectionalFacility"
+Node: dcid:StateOperated
+name: "StateOperated"
 typeOf: dcs:CorrectionalFacilityOperatorEnum
 
-Node: dcid:FederallyOperatedCorrectionalFacility
-name: "FederallyOperatedCorrectionalFacility"
+Node: dcid:FederallyOperated
+name: "FederallyOperated"
 typeOf: dcs:CorrectionalFacilityOperatorEnum
 
 Node: dcid:correctionalFacilityLocation
@@ -120,17 +120,18 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 description: "Enumeration of relative locations of correctional facilities."
 
-Node: dcid:InStateCorrectionalFacility
-name: "InStateCorrectionalFacility"
+# TODO (chejennifer): Local/InState/OutOfState is too general, so suffix with CorrectionalFacility
+Node: dcid:InState
+name: "InState"
 typeOf: dcs:CorrectionalFacilityLocationEnum
 description: "Correctional facility located within the state."
 
-Node: dcid:OutOfStateCorrectionalFacility
-name: "OutOfStateCorrectionalFacility"
+Node: dcid:OutOfState
+name: "OutOfState"
 typeOf: dcs:CorrectionalFacilityLocationEnum
 description: "Correctional facility located outside of the state."
 
-Node: dcid:LocalCorrectionalFacility
+Node: dcid:Local
 name: "Local"
 typeOf: dcs:CorrectionalFacilityLocationEnum
 description: "Correctional facility locally located."

@@ -2482,3 +2482,65 @@ description: "Identifies the type of residence a person resides in."
 rangeIncludes: dcs:USC_ResidenceTypeEnum
 domainIncludes: schema:Person
 
+Node: dcid:enrollmentLevel
+typeOf: schema:Property
+name: "enrollmentLevel"
+description: "Identifies a person's enrollment level."
+rangeIncludes: dcs:EnrollmentLevelEnum
+domainIncludes: schema:Person
+
+Node: dcid:workCategory
+typeOf: schema:Property
+name: "workCategory"
+description: "Identifies a person's category of work."
+rangeIncludes: dcs:WorkCategoryEnum
+domainIncludes: schema:Person
+
+Node: dcid:workerClassification
+typeOf: schema:Property
+name: "workerClassification"
+description: "Identifies a person's worker classification."
+rangeIncludes: dcs:WorkerClassificationEnum
+domainIncludes: schema:Person
+
+Node: dcid:enrollmentStatus
+typeOf: schema:Property
+name: "enrollmentStatus"
+description: "Identifies a person's enrollment status."
+rangeIncludes: dcs:EnrollmentStatusEnum
+domainIncludes: schema:Person
+
+Node: dcid:expensor
+typeOf: schema:Property
+name: "expensor"
+description: "Identifies the expensor of an economic activity. For example, Government."
+rangeIncludes: schema:Organization
+domainIncludes: dcs:EconomicActivity
+
+Node: dcid:familyIncome
+typeOf: schema:Property
+name: "familyIncome"
+description: "Identifies the family income of a person."
+rangeIncludes: schema:Number, dcs:QuantityRange
+domainIncludes: dcs:Person
+
+Node: dcid:householderGender
+typeOf: schema:Property
+name: "householderGender"
+description: "Identifies the gender of the householder of a household."
+rangeIncludes: schema:GenderType
+domainIncludes: dcs:Household
+
+Node: dcid:medicalCode
+typeOf: schema:Property
+name: "medicalCode"
+description: "Identifies the medical code for a medical procedure."
+rangeIncludes: dcs:ICD10Code
+domainIncludes: dcs:MedicalProcedure
+
+Node: dcid:medicalEventEnum
+typeOf: schema:Property
+name: "medicalEventEnum"
+description: "Identifies the medical event type."
+rangeIncludes: dcs:MedicalEventEnum
+domainIncludes: dcs:MedicalProcedure
