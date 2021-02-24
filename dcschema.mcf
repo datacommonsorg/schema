@@ -2544,3 +2544,10 @@ name: "medicalEventEnum"
 description: "Identifies the medical event type."
 rangeIncludes: dcs:MedicalEventEnum
 domainIncludes: dcs:MedicalProcedure
+
+Node: dcid:dissolutionDate
+typeOf: schema:Property
+name: "dissolutionDate"
+description: "Identifies the date when a place ceased to exist (in ISO 8601 format)."
+rangeIncludes: schema:Date
+domainIncludes: schema:Place
