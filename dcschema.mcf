@@ -2104,6 +2104,19 @@ subClassOf: schema:Intangible
 name: "StatVarObservation"
 description: "Represents an observation on a StatisticalVariable associated with a particular place and time."
 
+Node: dcid:StatVarGroup
+typeOf: schema:Class
+subClassOf: schema:Intangible
+name: "StatVarGroup"
+description: "Represents a grouping of StatisticalVariable nodes."
+
+Node: dcid:specializationOf
+name: "specializationOf"
+rangeIncludes: schema:Enumeration, dcs:StatVarGroup
+domainIncludes: schema:Enumeration, dcs:StatVarGroup
+source: "https://datacommons.org"
+typeOf: schema:Property
+
 Node: dcid:observationAbout
 typeOf: schema:Property
 name: "observationAbout"
