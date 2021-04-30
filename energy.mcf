@@ -1,0 +1,278 @@
+
+Node: dcid:Fuel
+typeOf: schema:Class
+subClassOf: dcs:Product
+name: "Fuel"
+
+Node: dcid:ElectricityConsumer
+typeOf: schema:Class
+subClassOf: schema:Person, schema:Organization
+name: "ElectricityConsumer"
+
+Node: dcid:ashContent
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: schema:Fuel
+name: "ashContent"
+
+Node: dcid:sulfurContent
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: schema:Fuel
+name: "sulfurContent"
+
+Node: dcid:generation
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Electricity
+name: "generation"
+
+Node: dcid:producingSector
+typeOf: schema:Property
+rangeIncludes: dcs:ElectricityProductionSectorEnum
+domainIncludes: schema:Electricity
+name: "producingSector"
+
+Node: dcid:consumingSector
+typeOf: schema:Property
+rangeIncludes: dcs:ElectricityConsumptionSectorEnum
+domainIncludes: schema:Electricity
+name: "consumingSector"
+
+Node: dcid:electricityProducingSector
+typeOf: schema:Property
+rangeIncludes: dcs:ElectricityProductionSectorEnum
+domainIncludes: schema:Fuel
+name: "electricityProducingSector"
+
+Node: dcid:retailSales
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product
+name: "retailSales"
+
+Node: dcid:consumption
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Fuel
+name: "consumption"
+
+Node: dcid:retailPrice
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product
+name: "retailPrice"
+
+Node: dcid:stock
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product
+name: "stock"
+
+Node: dcid:receipt
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product
+name: "receipt"
+
+Node: dcid:usedFor
+typeOf: schema:Property
+rangeIncludes: dcs:FuelUsageSourceEnum
+domainIncludes: dcs:Fuel
+name: "usedFor"
+
+Node: dcid:salesRevenue
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product
+name: "salesRevenue"
+
+
+Node: dcid:EnergySourceEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EnergySourceEnum"
+
+Node: dcid:LigniteCoal
+typeOf: dcs:EnergySourceEnum
+name: "LigniteCoal"
+
+Node: dcid:WoodAndWoodDerivedFuels
+typeOf: dcs:EnergySourceEnum
+name: "WoodAndWoodDerivedFuels"
+
+Node: dcid:UtilityScalePhotovoltaic
+typeOf: dcs:EnergySourceEnum
+name: "UtilityScalePhotovoltaic"
+
+Node: dcid:Solar
+typeOf: dcs:EnergySourceEnum
+name: "Solar"
+
+Node: dcid:SmallScaleSolarPhotovoltaic
+typeOf: dcs:EnergySourceEnum
+name: "SmallScaleSolarPhotovoltaic"
+
+Node: dcid:SubbituminousCoal
+typeOf: dcs:EnergySourceEnum
+name: "SubbituminousCoal"
+
+Node: dcid:ConventionalHydroelectric
+typeOf: dcs:EnergySourceEnum
+name: "ConventionalHydroelectric"
+
+Node: dcid:Geothermal
+typeOf: dcs:EnergySourceEnum
+name: "Geothermal"
+
+Node: dcid:NaturalGas
+typeOf: dcs:EnergySourceEnum
+name: "NaturalGas"
+
+Node: dcid:BituminousCoal
+typeOf: dcs:EnergySourceEnum
+name: "BituminousCoal"
+
+Node: dcid:OtherBiomass
+typeOf: dcs:EnergySourceEnum
+name: "OtherBiomass"
+
+Node: dcid:PetroleumLiquids
+typeOf: dcs:EnergySourceEnum
+name: "PetroleumLiquids"
+
+Node: dcid:Coal
+typeOf: dcs:EnergySourceEnum
+name: "Coal"
+
+Node: dcid:PetroleumCoke
+typeOf: dcs:EnergySourceEnum
+name: "PetroleumCoke"
+
+Node: dcid:UtilityScaleThermal
+typeOf: dcs:EnergySourceEnum
+name: "UtilityScaleThermal"
+
+Node: dcid:Wind
+typeOf: dcs:EnergySourceEnum
+name: "Wind"
+
+Node: dcid:Nuclear
+typeOf: dcs:EnergySourceEnum
+name: "Nuclear"
+
+Node: dcid:UtilityScaleSolar
+typeOf: dcs:EnergySourceEnum
+name: "UtilityScaleSolar"
+
+Node: dcid:OtherGases
+typeOf: dcs:EnergySourceEnum
+name: "OtherGases"
+
+Node: dcid:RenewableEnergy
+typeOf: dcs:RenewableEnergy
+name: "RenewableEnergy"
+
+
+Node: dcid:ElectricityProductionSectorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ElectricityProductionSectorEnum"
+
+Node: dcid:ElectricityConsumptionSectorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ElectricityConsumptionSectorEnum"
+
+Node: dcid:Industrial
+typeOf: dcs:ElectricityProductionSectorEnum, dcs:ElectricityConsumptionSectorEnum
+name: "Industrial"
+
+Node: dcid:Residential
+typeOf: dcs:ElectricityProductionSectorEnum, dcs:ElectricityConsumptionSectorEnum
+name: "Residential"
+
+Node: dcid:Commercial
+typeOf: dcs:ElectricityProductionSectorEnum, dcs:ElectricityConsumptionSectorEnum
+name: "Commercial"
+
+Node: dcid:Transportation
+typeOf: dcs:ElectricityConsumptionSectorEnum
+name: "Transportation"
+
+Node: dcid:ElectricPower
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "ElectricPower"
+
+Node: dcid:CommercialCogen
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "CommercialCogen"
+
+Node: dcid:CommercialNonCogen
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "CommercialNonCogen"
+
+Node: dcid:IndustrialCogen
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "IndustrialCogen"
+
+Node: dcid:IndustrialNonCogen
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "IndustrialNonCogen"
+
+Node: dcid:ElectricUtilityCogen
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "ElectricUtilityCogen"
+
+Node: dcid:ElectricUtilityNonCogen
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "ElectricUtilityNonCogen"
+
+Node: dcid:HydroelectricPumpedStorage
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "HydroelectricPumpedStorage"
+
+Node: dcid:IndependentPowerProducers
+typeOf: dcs:ElectricityProductionSectorEnum
+name: "IndependentPowerProducers"
+
+Node: dcid:OtherSector
+typeOf: dcs:ElectricityProductionSectorEnum, dcs:ElectricityConsumptionSectorEnum
+name: "OtherSector"
+
+
+Node: dcid:FuelUsageSourceEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "FuelUsageSourceEnum"
+
+Node: dcid:ElectricityGeneration
+typeOf: schema:FuelUsageSourceEnum
+name: "ElectricityGeneration"
+
+Node: dcid:UsefulThermalOutputInCHPSystem
+typeOf: schema:FuelUsageSourceEnum
+name: "UsefulThermalOutputInCHPSystem"
+
+Node: dcid:ElectricityGenerationAndThermalOutput
+typeOf: schema:FuelUsageSourceEnum
+name: "ElectricityGenerationAndThermalOutput"
+
+
+Node: dcid:StatAccumulationPeriodEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "StatAccumulationPeriodEnum"
+
+Node: dcid:Annual
+typeOf: dcs:StatAccumulationPeriodEnum
+name: "Annual"
+
+Node: dcid:Monthly
+typeOf: dcs:StatAccumulationPeriodEnum
+name: "Monthly"
+
+Node: dcid:Quarterly
+typeOf: dcs:StatAccumulationPeriodEnum
+name: "Quarterly"
+
