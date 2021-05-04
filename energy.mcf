@@ -276,3 +276,317 @@ Node: dcid:Quarterly
 typeOf: dcs:StatAccumulationPeriodEnum
 name: "Quarterly"
 
+
+# Schema for Form 860 - Utilities
+
+## Utility ID
+
+Node: dcid:eiaUtilityId
+name: "eiaUtilityId"
+rangeIncludes: dcs:Text
+typeOf: dcs:Property
+domainIncludes: dcid:PublicUtility
+
+
+## Association with power plants
+
+Node: dcid:powerPlantAssociationStatus
+description: "Denotes the relationship of a public utility with associated power plants."
+rangeIncludes: dcid:PowerPlantAssociationStatusEnum
+typeOf: dcs:Property
+domainIncludes: dcs:PublicUtility
+
+Node: dcid:PowerPlantAssociationStatusEnum
+description: "Types of associations a utility has with a power plant."
+typeOf: schema:Class
+subClassOf: Enumeration
+
+Node: dcid:EIA_OwnerOfPowerPlants
+name: "Owner of Power Plants"
+description: "The reporting entity is an owner of power plants reported on Schedule 2 of form EIA-860"
+typeOf: dcid:PowerPlantAssociationStatusEnum
+
+Node: dcid:EIA_OperatorOfPowerPlants
+name: "Operator of Power Plants"
+description: "The reporting entity is an operator of power plants reported on Schedule 2 of form EIA-860"
+typeOf: dcid:PowerPlantAssociationStatusEnum
+
+Node: dcid:EIA_AssetManagerOfPowerPlants
+name: "Asset Manager of Power Plants"
+description: "The reporting entity is an asset manager of power plants reported on Schedule 2 of EIA-860"
+typeOf: dcid:PowerPlantAssociationStatusEnum
+
+Node: dcid:EIA_OtherRelationshipWithPowerPlants
+name: "Other Relationship with Power Plants"
+description: "The reporting entity has another relationship to the power plants reported on Schedule 2 of form EIA-860"
+typeOf: dcid:PowerPlantAssociationStatusEnum
+
+
+## Utility types
+
+Node: dcid:publicUtilityType
+name: "publicUtilityType"
+description: "Entity type of principle owner"
+rangeIncludes: dcid:PublicUtilityTypeEnum
+typeOf: dcid:Property
+domainIncludes: dcid:PublicUtility
+
+Node: dcid:PublicUtilityTypeEnum
+name: "PublicUtilityTypeEnum"
+description: "Types of ownership types for a public utility"
+typeOf: Class
+subClassOf: Enumeration
+
+Node: dcid:EIA_Cooperative
+name: "Cooperative"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_InvestorOwned
+name: "Investor-Owned Utility"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_Independent
+name: "Independent Power Producer"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_MunicipalityOwned
+name: "Municipally-Owned Utility"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_PoliticalSubdivision
+name: "Political Subdivision"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_FederallyOwned
+name: "Federally-Owned Utility"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_StateOwned
+name: "State-Owned Utility"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_Industrial
+name: "Industrial"
+typeOf: dcid:PublicUtilityTypeEnum
+
+Node: dcid:EIA_Commercial
+name: "Commercial"
+typeOf: dcid:PublicUtilityTypeEnum
+
+
+# Schema for Form 860 - Power Plants
+
+## Plant ID
+
+Node: dcid:eiaPlantCode
+name: "eiaPlantCode"
+rangeIncludes: dcid:Text
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+
+## Power Plant
+
+Node: dcid:PowerPlant
+name: "PowerPlant"
+description: "An industrial facility for the generation of electric power. Power stations are generally connected to an electrical grid."
+typeOf: schema:Class
+subClassOf: schema:Organization
+
+
+## New properties of power plants
+
+Node: dcid:regulatoryStatus
+rangeIncludes: dcid:RegulatoryStatusEnum
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:powerPlantSector
+rangeIncludes: dcid:PowerPlantSectorEnum
+typeOf: dcs:Property
+domainIncludes: dcs:PowerPlant
+
+Node: dcid:fercStatus
+description: "Indicates the United States Federal Energy Regulatory Commission qualifying facility status of the plant."
+rangeIncludes: dcid:FercStatusEnum
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:fercCogenerationDocketNumber
+description: "The docket number relating to the United States Federal Energy Regulatory Commission qualifying facility cogenerator status."
+rangeIncludes: dcid:Text
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:fercSmallPowerProducerDocketNumber
+description: "The docket number relating to the United States Federal Energy Regulatory Commission qualifying facility small power producer status."
+rangeIncludes: dcid:Text
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:fercExemptWholesaleGeneratorDocketNumber
+description: "The docket number relating to the United States Federal Energy Regulatory Commission qualifying facility exempt wholesale generator status."
+rangeIncludes: dcid:Text
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:ashImpoundmentStatus
+description: "Ash impoundment (e.g. pond, reservoir) at the plant as of Dec 31 of the reporting year."
+rangeIncludes: dcid:AshImpoundmentStatusEnum
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:gridVoltage
+description: "Plant's grid voltage at point of interconnection to transmission or distibution facilities."
+rangeIncludes: dcid:Quantity
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:isEnergyStored
+description: "Indicates if the facility have energy storage capabilities."
+rangeIncludes: schema:Boolean
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:isNaturalGasStored
+description: "Indicates if the facility have on-site storage of natural gas."
+rangeIncludes: schema:Boolean
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+Node: dcid:isLiquefiedNaturalGasStored
+description: "Indicates if the facility have the capability to store the natural gas in the form of liquefied natural gas."
+rangeIncludes: schema:Boolean
+typeOf: dcid:Property
+domainIncludes: dcid:PowerPlant
+
+
+## Regulatory Status Enum
+
+Node: dcid:RegulatoryStatusEnum
+name: "RegulatoryStatusEnum"
+typeOf: schema:Class
+subClassOf: Enumeration
+
+
+Node: dcid:Regulated
+name: "Regulated"
+typeOf: dcid:RegulatoryStatusEnum
+
+
+Node: dcid:NonRegulated
+name: "Non-regulated"
+typeOf: dcid:RegulatoryStatusEnum
+
+
+
+## Power Plant Sector Enum
+
+Node: dcid:PowerPlantSectorEnum
+name: "PowerPlantSectorEnum"
+typeOf: schema:Class
+subClassOf: Enumeration
+
+Node: dcid:EIA_ElectricUtility
+name: "Electric Utility"
+typeOf: dcid:PowerPlantSectorEnum
+
+Node: dcid:EIA_IndependentPowerProducer_NonCombinedHeatPower
+name: "Independent Power Producer, Non-Combined Heat and Power"
+typeOf: dcid:PowerPlantSectorEnum
+
+Node: dcid:EIA_IndependentPowerProducer_CombinedHeatPower
+name: "Independent Power Producer, Combined Heat and Power"
+typeOf: dcid:PowerPlantSectorEnum
+
+Node: dcid:EIA_Commercial_NonCombinedHeatPower
+name: "Commercial, Non-Combined Heat and Power"
+typeOf: dcid:PowerPlantSectorEnum
+
+Node: dcid:EIA_Commercial_CombinedHeatPower
+name: "Commercial, Combined Heat and Power"
+typeOf: dcid:PowerPlantSectorEnum
+
+Node: dcid:EIA_Industrial_NonCombinedHeatPower
+name: "Industrial, Non-Combined Heat and Power"
+typeOf: dcid:PowerPlantSectorEnum
+
+Node: dcid:EIA_Industrial_CombinedHeatPower
+name: "Industrial, Combined Heat and Power"
+typeOf: dcid:PowerPlantSectorEnum
+
+
+## FERC Status Enum
+
+Node: dcid:FercStatusEnum
+name: "FercStatusEnum"
+typeOf: schema:Class
+subClassOf: Enumeration
+
+Node: dcid:FERC_QualifiedCogenerator
+name: "FERC_QualifiedCogenerator"
+typeOf: dcid:FercStatusEnum
+
+Node: dcid:FERC_NonQualifiedCogenerator
+name: "FERC_NonQualifiedCogenerator"
+typeOf: dcid:FercStatusEnum
+
+Node: dcid:FERC_QualifiedSmallPowerProducer
+name: "FERC_QualifiedSmallPowerProducer"
+typeOf: dcid:FercStatusEnum
+
+Node: dcid:FERC_NonQualifiedSmallPowerProducer
+name: "FERC_NonQualifiedSmallPowerProducer"
+typeOf: dcid:FercStatusEnum
+
+Node: dcid:FERC_QualifiedExemptWholesaleGenerator
+name: "FERC_QualifiedExemptWholesaleGenerator"
+typeOf: dcid:FercStatusEnum
+
+Node: dcid:FERC_NonQualifiedExemptWholesaleGenerator
+name: "FERC_NonQualifiedExemptWholesaleGenerator"
+typeOf: dcid:FercStatusEnum
+
+
+
+## Ash Impoundment Status Enum
+
+Node: dcid:AshImpoundmentStatusEnum
+name: "AshImpoundmentStatusEnum"
+typeOf: schema:Class
+subClassOf: Enumeration
+
+Node: dcid:EIA_Operating
+name: "EIA_Operating"
+description: "Operating - in service (commercial operation)"
+typeOf: dcid:AshImpoundmentStatusEnum
+
+Node: dcid:EIA_StandbyBackup
+name: "EIA_StandbyBackup"
+description: "Standby/Backup - available for service but not normally used for this reporting period"
+typeOf: dcid:AshImpoundmentStatusEnum
+
+Node: dcid:EIA_OutOfService_Temporary
+name: "EIA_OutOfService_Temporary"
+description: "Out of service – was not used for some or all of the reporting period but is expected to be returned to service in the next calendar year"
+typeOf: dcid:AshImpoundmentStatusEnum
+
+Node: dcid:EIA_OutOfService_Permanent
+name: "EIA_OutOfService_Permanent"
+description: "Out of service – was not used for some or all of the reporting period and is NOT expected to be returned to service in the next calendar year"
+typeOf: dcid:AshImpoundmentStatusEnum
+
+Node: dcid:EIA_NotImpounded
+name: "EIA_NotImpounded"
+description: "There is no ash impoundment at the plant."
+typeOf: dcid:AshImpoundmentStatusEnum
+
+Node: dcid:EIA_Impoundment_Lined
+name: "EIA_Impoundment_Lined"
+description: "If there is an ash impoundment at the plant, it is lined."
+typeOf: dcid:AshImpoundmentStatusEnum
+
+Node: dcid:EIA_Impoundment_NotLined
+name: "EIA_Impoundment_NotLined"
+description: "If there is an ash impoundment at the plant, it is not lined."
+typeOf: dcid:AshImpoundmentStatusEnum

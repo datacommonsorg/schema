@@ -1214,22 +1214,35 @@ subClassOf: dcs:UnitOfMeasure
 name: "WeightUnitOfMeasure"
 description: "A unit used to denote a measurement of weight."
 
+Node: dcid:MetricTon
+typeOf: dcs:WeightUnitOfMeasure
+name: "MetricTon"
+description: "A unit of weight equal to 1000 kilograms."
+
 Node: dcid:EnergyUnitOfMeasure
 typeOf: schema:Class
 subClassOf: dcs:UnitOfMeasure
 name: "EnergyUnitOfMeasure"
 description: "A unit used to denote a measurement of energy."
 
-Node: dcid:MetricTon
-typeOf: dcs:WeightUnitOfMeasure
-name: "MetricTon"
-description: "A unit of weight equal to 1000 kilograms."
-
 Node: dcid:KilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "KilowattHour"
 description: "An energy unit of measure representing the power in kilowatts multiplied by the time in hours."
 descriptionUrl: "https://en.wikipedia.org/wiki/Kilowatt_hour"
+
+Node: dcid:Volt
+name: "Volt"
+description: "The derived unit for electric potential, electric potential difference (voltage), and electromotive force."
+descriptionUrl: "https://en.wikipedia.org/wiki/Volt"
+typeOf: schema:Class
+subClassOf: dcid:EnergyUnitOfMeasure
+
+Node: dcid:KiloVolt
+name: "KiloVolt"
+description: "An energy unit of measure equivalent to one thousand volts"
+typeOf: schema:Class
+subClassOf: dcid:EnergyUnitOfMeasure
 
 Node: dcid:KilogramOfOilEquivalent
 typeOf: dcs:KilogramOfOilEquivalent
@@ -1448,12 +1461,11 @@ typeOf: dcs:UnitOfMeasure
 name: "RatioToPovertyLine"
 description: "A unit indicating a ratio to poverty line. If one is at poverty line, then one has a RatioToPovertyLine of 1. If one's income is twice that of the poverty line threshold, then one has a RatioToPovertyLine of 2."
 
-Node: PowerPlant
-typeOf:schema:Class
+Node: dcid:PublicUtility
+name: "PublicUtility"
+typeOf: schema:Class
 subClassOf: schema:Organization
-dcid: "PowerPlant"
-name: "PowerPlant"
-description: "Power plant"
+description: "An organization that maintains the infrastructure for a public service (often also providing a service using that infrastructure). Public utilities are subject to forms of public control and regulation ranging from local community-based groups to statewide government monopolies."
 
 Node: ORISPLCode
 dcid: "orispl"
