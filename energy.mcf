@@ -1,3 +1,8 @@
+#
+# EIA: Electricity
+#
+
+## Population Types
 
 Node: dcid:Fuel
 typeOf: schema:Class
@@ -8,6 +13,8 @@ Node: dcid:ElectricityConsumer
 typeOf: schema:Class
 subClassOf: schema:Person, schema:Organization
 name: "ElectricityConsumer"
+
+## Properties
 
 Node: dcid:ashContent
 typeOf: schema:Property
@@ -87,6 +94,7 @@ rangeIncludes: schema:Quantity
 domainIncludes: schema:Product
 name: "salesRevenue"
 
+## EnergySourceEnum
 
 Node: dcid:EnergySourceEnum
 typeOf: schema:Class
@@ -173,6 +181,7 @@ Node: dcid:RenewableEnergy
 typeOf: dcs:RenewableEnergy
 name: "RenewableEnergy"
 
+## Electricity production/consumption sector enums
 
 Node: dcid:ElectricityProductionSectorEnum
 typeOf: schema:Class
@@ -240,6 +249,7 @@ Node: dcid:OtherSector
 typeOf: dcs:ElectricityProductionSectorEnum, dcs:ElectricityConsumptionSectorEnum
 name: "OtherSector"
 
+## FuelUsageSourceEnum
 
 Node: dcid:FuelUsageSourceEnum
 typeOf: schema:Class
@@ -258,6 +268,7 @@ Node: dcid:ElectricityGenerationAndThermalOutput
 typeOf: schema:FuelUsageSourceEnum
 name: "ElectricityGenerationAndThermalOutput"
 
+## StatAccumulationPeriodEnum
 
 Node: dcid:StatAccumulationPeriodEnum
 typeOf: schema:Class
@@ -275,6 +286,71 @@ name: "Monthly"
 Node: dcid:Quarterly
 typeOf: dcs:StatAccumulationPeriodEnum
 name: "Quarterly"
+
+# Energy Units
+
+Node: dcid:Volt
+name: "Volt"
+description: "The derived unit for electric potential, electric potential difference (voltage), and electromotive force."
+descriptionUrl: "https://en.wikipedia.org/wiki/Volt"
+typeOf: schema:Class
+subClassOf: dcid:EnergyUnitOfMeasure
+
+Node: dcid:KiloVolt
+name: "KiloVolt"
+description: "An energy unit of measure equivalent to one thousand volts"
+typeOf: schema:Class
+subClassOf: dcid:EnergyUnitOfMeasure
+
+Node: dcid:Btu
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Btu"
+description: "British thermal unit (Btu) is the quantity of heat required to raise the temperature of 1 pound of liquid water by 1 degree Fahrenheit at the temperature at which water has its greatest density (approximately 39 degrees Fahrenheit)."
+descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=B"
+
+Node: dcid:MMBtu
+typeOf: dcs:EnergyUnitOfMeasure
+name: "MMBtu"
+description: "Unit of energy that equals a million British thermal units (Btu)."
+
+Node: dcid:KilowattHour
+typeOf: dcs:EnergyUnitOfMeasure
+name: "KilowattHour"
+description: "Unit of energy that equals 3600 kilojoules (3.6 megajoules)."
+descriptionUrl: "https://en.wikipedia.org/wiki/Kilowatt-hour"
+
+Node: dcid:MegawattHour
+typeOf: dcs:EnergyUnitOfMeasure
+name: "MegawattHour"
+description: "Unit of energy that equals 1000 Kilowatthours."
+
+Node: dcid:Barrel
+typeOf: dcs:VolumeUnitOfMeasure
+name: "Barrel"
+description: "A barrel is one of several units of volume applied in various contexts. In the worldwide oil industry, an oil barrel is defined as 42 US gallons, which is about 159 litres,[10] or 35 imperial gallons."
+descriptionUrl: "https://en.wikipedia.org/wiki/Barrel_(unit)"
+
+Node: dcid:Mcf
+typeOf: dcs:VolumeUnitOfMeasure
+name: "Mcf"
+description: "Volume of 1000 cubic feet."
+descriptionUrl: "https://www.eia.gov/tools/faqs/faq.php?id=45"
+
+Node: dcid:USCentPerKilowattHour
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USCentPerKilowattHour"
+
+Node: dcid:USDollarPerBarrel
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerBarrel"
+
+Node: dcid:USDollarPerMcf
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerMcf"
+
+Node: dcid:USDollarPerMetricTon
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerMetricTon"
 
 
 # Schema for Form 860 - Utilities
