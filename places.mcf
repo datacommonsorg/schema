@@ -82,3 +82,14 @@ subClassOf: schema:AdministrativeArea
 name: "HighSchoolDistrict"
 description: "Administrive area that covers multiple high schools."
 
+Node: dcid:UDISEDistrict
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+name: "UDISEDistrict"
+description: "Educational district in India as per the Unified District Information System for Education (UDISE). A UDISEDistrict covers multiple educational (UDISEBlock) blocks."
+
+Node: dcid:UDISEBlock
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+name: "UDISEBlock"
+description: "Educational block in India as per the Unified District Information System for Education (UDISE). A UDISEBlock covers multiple schools."
