@@ -209,9 +209,7 @@ Node: dcid:Transportation
 typeOf: dcs:ElectricityConsumptionSectorEnum
 name: "Transportation"
 
-Node: dcid:ElectricPower
-typeOf: dcs:ElectricityProductionSectorEnum
-name: "ElectricPower"
+# other enum value: dcid:ElectricPower
 
 Node: dcid:CommercialCogen
 typeOf: dcs:ElectricityProductionSectorEnum
@@ -229,21 +227,14 @@ Node: dcid:IndustrialNonCogen
 typeOf: dcs:ElectricityProductionSectorEnum
 name: "IndustrialNonCogen"
 
-Node: dcid:ElectricUtilityCogen
-typeOf: dcs:ElectricityProductionSectorEnum
-name: "ElectricUtilityCogen"
-
-Node: dcid:ElectricUtilityNonCogen
-typeOf: dcs:ElectricityProductionSectorEnum
-name: "ElectricUtilityNonCogen"
+# other enum value: dcid:ElectricUtilityCogen
+# other enum value: dcid:ElectricUtilityNonCogen
 
 Node: dcid:HydroelectricPumpedStorage
 typeOf: dcs:ElectricityProductionSectorEnum
 name: "HydroelectricPumpedStorage"
 
-Node: dcid:IndependentPowerProducers
-typeOf: dcs:ElectricityProductionSectorEnum
-name: "IndependentPowerProducers"
+# other enum value: dcid:IndependentPowerProducers
 
 Node: dcid:OtherSector
 typeOf: dcs:ElectricityProductionSectorEnum, dcs:ElectricityConsumptionSectorEnum
@@ -313,6 +304,11 @@ typeOf: dcs:EnergyUnitOfMeasure
 name: "MMBtu"
 description: "Unit of energy that equals a million British thermal units (Btu)."
 
+Node: dcid:BtuPerPound
+typeOf: dcs:EnergyUnitOfMeasure
+description: "Energy, in BTU's, per pound of fuel."
+name: "BtuPerPound"
+
 Node: dcid:KilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "KilowattHour"
@@ -329,6 +325,12 @@ typeOf: dcs:VolumeUnitOfMeasure
 name: "Barrel"
 description: "A barrel is one of several units of volume applied in various contexts. In the worldwide oil industry, an oil barrel is defined as 42 US gallons, which is about 159 litres,[10] or 35 imperial gallons."
 descriptionUrl: "https://en.wikipedia.org/wiki/Barrel_(unit)"
+
+Node: dcid:ShortTon
+typeOf: dcs:EnergyUnitOfMeasure
+description: "A mass measurement unit equal to 2,000 pounds-mass (907.18474 kg). It is commonly used in the United States, where it is known as simply a common ton."
+descriptionUrl: "https://en.wikipedia.org/wiki/Short_ton"
+name: "ShortTon"
 
 Node: dcid:Mcf
 typeOf: dcs:VolumeUnitOfMeasure
@@ -352,8 +354,64 @@ Node: dcid:USDollarPerMetricTon
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerMetricTon"
 
+Node: dcid:USDollarPerShortTon
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USDollarPerShortTon"
 
+#
+# EIA: Coal
+#
+
+# Coal Consuming Sectors
+
+Node: dcid:CoalConsumingSectorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CoalConsumingSectorEnum"
+
+Node: dcid:ElectricUtility
+typeOf: dcs:CoalConsumingSectorEnum
+name: "ElectricUtility"
+description: "Power plants owned by regulated electric utilties"
+
+Node: dcid:ElectricUtilityNonCogen
+typeOf: dcs:CoalConsumingSectorEnum, dcs:ElectricityProductionSectorEnum
+name: "ElectricUtilityNonCogen"
+description: "Power plants owned by regulated electric utilties that produce electricity only"
+
+Node: dcid:ElectricUtilityCogen
+typeOf: dcs:CoalConsumingSectorEnum, dcs:ElectricityProductionSectorEnum
+name: "ElectricUtilityCogen"
+description: "Power plants owned by regualted electric utilities that produce both electricity and useful heat"
+
+Node: dcid:CommercialAndInstitutional
+typeOf: dcs:CoalConsumingSectorEnum
+name: "CommercialAndInstitutional"
+description: "An energy-consuming sector that consists of service-providing facilities and equipment of businesses; Federal, State, and local governments; and other private and public organizations, such as religious, social, or fraternal groups. The commercial sector includes institutional living quarters. It also includes sewage treatment facilities. Common uses of energy associated with this sector include space heating, water heating, air conditioning, lightning, refrigeration, cooking, and running a wide variety of other equipment."
+
+Node: dcid:CokePlants
+typeOf: dcs:CoalConsumingSectorEnum
+name: "CokePlants"
+description: "Plants where coal is carbonized for the manufacture of coke in slot or beehive ovens."
+
+Node: dcid:OtherIndustrial
+typeOf: dcs:CoalConsumingSectorEnum
+name: "OtherIndustrial"
+description: "All industrial sector fuel use other than in ‘Coke Plants.’ An energy-consuming sector that consists of all facilities and equipment used for producing, processing, or assembling goods. The industrial sector encompasses the following types of activity manufacturing; agriculture, forestry, fishing and hunting; mining; and construction. Overall energy use in this sector is largely for process heat and cooling and powering machinery, with lesser amounts used for facility heating, air conditioning, and lighting."
+
+Node: dcid:IndependentPowerProducers
+typeOf: dcs:CoalConsumingSectorEnum, dcs:ElectricityProductionSectorEnum
+name: "IndependentPowerProducers"
+description: "Power plants owned by unregulated power companies (also called merchant generators)"
+
+Node: dcid:ElectricPower
+typeOf: dcs:CoalConsumingSectorEnum, dcs:ElectricityProductionSectorEnum
+name: "ElectricPower"
+description: "The electric power sector (electric utilities and independent power producers) comprises electric-only and combined-heat-and-power (CHP) plants whose primary business is to sell electricity or electricity and heat to the public (i.e. NAICS 22 plants)."
+
+#
 # Schema for Form 860 - Utilities
+#
 
 ## Utility ID
 
@@ -563,6 +621,7 @@ name: "PowerPlantSectorEnum"
 typeOf: schema:Class
 subClassOf: Enumeration
 
+# TODO: Merge this with dcid:ElectricUtility
 Node: dcid:EIA_ElectricUtility
 name: "Electric Utility"
 typeOf: dcid:PowerPlantSectorEnum
