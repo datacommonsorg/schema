@@ -14,6 +14,11 @@ typeOf: schema:Class
 subClassOf: schema:Person, schema:Organization
 name: "ElectricityConsumer"
 
+Node: dcid:EnergyGeneration
+typeOf: schema:Class
+subClassOf: dcs:Product, dcs:Production
+name: "EnergyGeneration"
+
 ## Properties
 
 Node: dcid:ashContent
@@ -101,6 +106,18 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Product
 name: "salesRevenue"
+
+Node: dcid:capacity
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:EnergyGeneration
+name: "capacity"
+
+Node: dcid:outage
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:EnergyGeneration
+name: "outage"
 
 ## EnergySourceEnum
 
@@ -256,7 +273,7 @@ subClassOf: schema:Enumeration
 name: "FuelUsageSourceEnum"
 
 Node: dcid:ElectricityGeneration
-typeOf: schema:FuelUsageSourceEnum
+typeOf: schema:FuelUsageSourceEnum, dcs:Production
 name: "ElectricityGeneration"
 
 Node: dcid:UsefulThermalOutputInCHPSystem
@@ -285,6 +302,14 @@ name: "Monthly"
 Node: dcid:Quarterly
 typeOf: dcs:StatAccumulationPeriodEnum
 name: "Quarterly"
+
+Node: dcid:Weekly
+typeOf: dcs:StatAccumulationPeriodEnum
+name: "Weekly"
+
+Node: dcid:Daily
+typeOf: dcs:StatAccumulationPeriodEnum
+name: "Daily"
 
 # Energy Units
 
@@ -316,6 +341,12 @@ Node: dcid:BtuPerPound
 typeOf: dcs:EnergyUnitOfMeasure
 description: "Energy, in BTU's, per pound of fuel."
 name: "BtuPerPound"
+
+Node: dcid:Megawatt
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Megawatt"
+description: "Unit of energy that equals one million watts."
+descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Megawatt"
 
 Node: dcid:KilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
