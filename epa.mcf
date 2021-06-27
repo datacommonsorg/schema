@@ -1,0 +1,63 @@
+## Population Types
+
+Node: dcid:AirQualitySite
+typeOf: schema:Class
+description: "Site for air quality measurements."
+subClassOf: schema:Organization
+name: "AirQualitySite"
+
+Node: dcid:Atmosphere
+typeOf: schema:Class
+description: "Layer of gases surrounding a planet."
+subClassOf: schema:Thing
+name: "Atmosphere"
+
+## Properties
+
+Node: dcid:airQualitySiteMonitor
+typeOf: schema:Property
+description: "Parameter occurrence code for monitor in a AirQualitySite."
+rangeIncludes: schema:Number
+domainIncludes: dcs:AirQualitySite
+name: "airQualitySiteMonitor"
+
+Node: dcid:pollutant
+typeOf: schema:Property
+domainIncludes: dcs:Atmosphere
+rangeIncludes: dcs:AirPollutantEnum
+name: "pollutant"
+
+Node: dcid:concentration
+typeOf: schema:Property
+domainIncludes: dcs:Atmosphere
+rangeInclude: schema:Number
+name: "concentration"
+
+Node: dcid:airQualityIndex
+typeOf: schema:Property
+domainIncludes: dcs:Atmosphere
+rangeInclude: schema:Number
+name: "airQualityIndex"
+
+## Enums
+
+Node: dcid:AirPollutantEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "AirPollutantEnum"
+
+Node: dcs:Ozone
+typeOf: dcs:AirPollutantEnum
+name: "Ozone"
+
+Node: dcs:SulfurDioxide
+typeOf: dcs:AirPollutantEnum
+name: "SulfurDioxide"
+
+Node: dcs:CarbonMonoxide
+typeOf: dcs:AirPollutantEnum
+name: "CarbonMonoxide"
+
+Node: dcs:NitrogenDioxide
+typeOf: dcs:AirPollutantEnum
+name: "NitrogenDioxide"
