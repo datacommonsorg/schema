@@ -17,8 +17,8 @@ name: "Atmosphere"
 Node: dcid:airQualitySiteMonitor
 typeOf: schema:Property
 description: "Parameter occurrence code for monitor in a AirQualitySite."
-rangeIncludes: schema:Number
 domainIncludes: dcs:AirQualitySite
+rangeIncludes: schema:Number
 name: "airQualitySiteMonitor"
 
 Node: dcid:pollutant
@@ -38,6 +38,20 @@ typeOf: schema:Property
 domainIncludes: dcs:Atmosphere
 rangeInclude: schema:Number
 name: "airQualityIndex"
+
+Node: dcid:definingPollutant
+typeOf: schema:Property
+description: "Pollutant used for aggregate AQI measurement."
+domainIncludes: dcs:Atmosphere
+rangeInclude: dcs:AirPollutantEnum
+name: "definingPollutant"
+
+Node: dcid:definingAirQualitySite
+typeOf: schema:Property
+description: "AirQualitySite of aggregate AQI measurement."
+domainIncludes: dcs:Atmosphere
+rangeInclude: dcs:AirQualitySite
+name: "definingAirQualitySite"
 
 ## Enums
 
