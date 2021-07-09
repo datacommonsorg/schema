@@ -53,6 +53,29 @@ domainIncludes: dcs:Atmosphere
 rangeInclude: dcs:AirQualitySite
 name: "definingAirQualitySite"
 
+Node: dcid:pollutantHealthRisk
+typeOf: schema:Property
+description: "Health risks posed by pollutants"
+domainIncludes: dcs:Atmosphere
+rangeIncludes: dcs:PollutantHealthRiskEnum
+name: "pollutantHealthRisk"
+
+Node: dcid:lifetimeContractionProbability
+typeOf: schema:Property
+description: "The probability of contracting a disease (like cancer) over a 70 year lifetime from constant, continuous exposure"
+descriptionUrl: "https://www.epa.gov/national-air-toxics-assessment/nata-glossary-terms#lifetime-risk"
+domainIncludes: dcs:Atmosphere
+rangeIncludes: schema:Number
+name: "lifetimeContractionProbability"
+
+Node: dcid:hazardIndex
+typeOf: schema:Property
+description: "EPA index where 1 or lower means exposure is unlikely to cause noncancer health effects over lifetime of exposure"
+descriptionUrl: "https://www.epa.gov/national-air-toxics-assessment/nata-glossary-terms#hi"
+domainIncludes: dcs:Atmosphere
+rangeIncludes: schema:Number
+name: "hazardIndex"
+
 ## Enums
 
 Node: dcid:AirPollutantEnum
@@ -87,3 +110,23 @@ name: "PM2.5"
 Node: dcs:PM10
 typeOf: dcs:AirPollutantEnum
 name: "PM10"
+
+Node: dcid:PollutantHealthRiskEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PollutantHealthRiskEnum"
+
+Node: dcs:NonCarcinogenicRespiratoryHazard
+typeOf: dcs:PollutantHealthRiskEnum
+name: "NonCarcinogenicRespiratoryHazard"
+
+## Units
+
+Node: dcid:MicrogramsPerCubicMeter
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "MicrogramsPerCubicMeter"
+
+Node: dcid:PartsPerBillion
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "PartsPerBillion"
+description: "Number of units of mass of something (like pollutant) per billion units of total mass"
