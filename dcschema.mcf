@@ -2117,6 +2117,13 @@ domainIncludes: schema:Enumeration, dcs:StatVarGroup
 source: "https://datacommons.org"
 typeOf: schema:Property
 
+Node: dcid:displayRank
+typeOf: schema:Property
+name: "displayRank"
+rangeIncludes: schema:Integer
+domainIncludes: dcs:StatVarGroup
+description: "Represents a rank used to order entities in a UI display.  Comparable entities with a smaller rank value are given higher preference.  Entities without a specified rank value come after those with one."
+
 Node: dcid:observationAbout
 typeOf: schema:Property
 name: "observationAbout"
