@@ -134,7 +134,7 @@ Node: dcid:TransmissionElectronMicroscopy
 typeOf: dcs:InteractionTypeEnum
 name: "TransmissionElectronMicroscopy"
 psimiID: "MI:0020"
-description: "During the treatment for microscope analysis a tissue section is incubated with high-specificity antibodies coupled to heavy metals (gold). Any tissue section can then be analysed by electron microscopy to localise the target proteins within the cell. This method supports very high resolution colocalisation of different molecules in a cell"
+description: "Microscopy technique in which a beam of electrons is transmitted through a sample to form an image. Samples can be purified molecules, for which no staining is required in order to detect interaction, or tissue/cells. In the latter case, during the treatment for microscope analysis a tissue section is incubated with high-specificity antibodies coupled to heavy metals (e.g. gold). Any tissue section can then be analysed by electron microscopy to localise the target proteins within the cell. This method supports very high resolution colocalisation of different molecules in a cell"
 pubMedID: "14755292"
 specializationOf: dcs:ElectronMicroscopy
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
@@ -888,12 +888,13 @@ residID: "AA0211"
 specializationOf: dcs:EnzymaticReaction
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:GeneticInteraction
+Node: dcid:GeneticInteractionSensuUnexpected
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "GeneticInteraction"
+name: "GeneticInteractionSensuUnexpected"
 psimiID: "MI:0208"
 description: "An effect in which two genetic perturbations, when combined, result in a phenotype that does not appear to be merely explained by the superimposition or addition of effects of the original perturbations.\nab (not=) "
 pubMedID: "16527956"
+specializationOf: dcs:GeneticInteraction
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
 Node: dcid:GeranylgeranylationReaction
@@ -1256,7 +1257,7 @@ Node: dcid:ComigrationInNonDenaturingGelElectrophoresis
 typeOf: dcs:InteractionTypeEnum
 name: "ComigrationInNonDenaturingGelElectrophoresis"
 psimiID: "MI:0404"
-description: "Comigration by non denaturing gel electrophoresis"
+description: "A method allowing the detection of strong interactions between two or more molecules as running, all of them, within a single band in a non-denaturing gel"
 pubMedID: "14755292"
 specializationOf: dcs:ComigrationInGelElectrophoresis
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
@@ -2468,40 +2469,40 @@ pubMedID: "15595733"
 specializationOf: dcs:PeptideSequenceDatabase
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:Synthetic
+Node: dcid:SyntheticGeneticInteraction
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "Synthetic"
+name: "SyntheticGeneticInteraction"
 psimiID: "MI:0794"
-description: "An effect in which two genetic perturbations, when combined, result in a mutant phenotype that is not observed (to any degree) as a result of any of the individual perturbations.\nwt = a = b = E (not=) a"
+description: "An effect in which two genetic perturbations, when combined, result in a mutant phenotype that is not observed (or minimally observed) as a result of any of the individual perturbations.\nwt = a = b = E (not=) a"
 pubMedID: "15833125"
-specializationOf: dcs:NegativeGeneticInteraction
+specializationOf: dcs:DivergingGeneticInteraction,dcs:AphenotypicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:Asynthetic
+Node: dcid:AsyntheticGeneticInteraction
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "Asynthetic"
+name: "AsyntheticGeneticInteraction"
 psimiID: "MI:0795"
 description: "An effect in which individual perturbations of different genes and their combination result in the same mutant phenotype, to the same degree of severity/penetrance. With respect to any single quantifiable phenotype, this may be expressed as an inequality as: \na = b = ab != wt\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:PositiveGeneticInteraction
+specializationOf: dcs:ConvergingGeneticInteraction,dcs:IsophenotypicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:Suppression
+Node: dcid:GeneticSuppressionSensuUnexpected
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "Suppression"
+name: "GeneticSuppressionSensuUnexpected"
 psimiID: "MI:0796"
 description: "An effect in which two genetic perturbations, when combined, result in a phenotype that is less severe/penetrant than the most severe phenotype of the original perturbations, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab <= wt [E = a*]\nOR\nwt <= ab < a* [E = a*]\nwhere 'a*' is the most severe observed phenotype value of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:PositiveGeneticInteraction
+specializationOf: dcs:ConvergingGeneticInteraction,dcs:GeneticSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:Epistasis
+Node: dcid:GeneticEpistasisSensuBateson
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "Epistasis"
+name: "GeneticEpistasisSensuBateson"
 psimiID: "MI:0797"
 description: "An effect in which individual perturbations of two different genes result in different mutant phenotypes, and the resulting phenotype of their combination (the double mutant) is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a != wt AND b != wt AND a != b) AND (ab = a OR ab = b)\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'wt' is the wild type phenotype value and 'a != b' indicates qualitatively or quantitatively different phenotypes"
 pubMedID: "15833125"
-specializationOf: dcs:GeneticInteraction
+specializationOf: dcs:GeneticInteractionSensuUnexpected
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
 Node: dcid:Wwpdb
@@ -2526,7 +2527,7 @@ Node: dcid:ComigrationInGelElectrophoresis
 typeOf: dcs:InteractionTypeEnum
 name: "ComigrationInGelElectrophoresis"
 psimiID: "MI:0807"
-description: "The interaction of two molecules is determine by their very close proximity or the overlap of their relative bands in a gel"
+description: "The interaction of two or more molecules is determined by their very close proximity or the overlap of their respective bands in a gel"
 pubMedID: "14755292"
 specializationOf: dcs:ElectrophoreticMobilityBasedMethod
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
@@ -3029,45 +3030,36 @@ Node: dcid:FilterTrapAssay
 typeOf: dcs:InteractionTypeEnum
 name: "FilterTrapAssay"
 psimiID: "MI:0928"
-description: "Biomolecules are mixed in a buffer and the resulting mixture is\npassed through a filter. Large\naggregates are retained on the filter and the pariticipants may then be identified"
+description: "Biomolecules are mixed in a buffer and the resulting mixture is passed through a filter. Large aggregates are retained on the filter and the pariticipants may then be identified"
 pubMedID: "10859365"
 specializationOf: dcs:Biophysical,dcs:ChromatographyTechnology
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:Noninteractive
+Node: dcid:NeutralMultigenicPhenotypeResult
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "Noninteractive"
+name: "NeutralMultigenicPhenotypeResult"
 psimiID: "MI:0932"
 description: "The observation that, when tested, no interaction was observed between two or more genes, for a given phenotype. In other words, the phenotype of the combined perturbations a and b result in the expected phenotype"
 pubMedID: "15833125"
-specializationOf: dcs:NeutralGeneticInteraction
+specializationOf: dcs:MultigenicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:NegativeGeneticInteraction
+Node: dcid:DivergingGeneticInteraction
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "NegativeGeneticInteraction"
+name: "DivergingGeneticInteraction"
 psimiID: "MI:0933"
 description: "An effect in which two genetic perturbations, when combined, result in a phenotype that is more severe/penetrant than expected given the phenotypes of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < E <= wt\nOR\nwt <= E < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "14755292"
-specializationOf: dcs:GeneticInteraction
+specializationOf: dcs:GeneticInteractionSensuUnexpected
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:NeutralGeneticInteraction
+Node: dcid:ConvergingGeneticInteraction
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "NeutralGeneticInteraction"
-psimiID: "MI:0934"
-description: "An effect in which the observed phenotype of individual perturbations and/or the double perturbation collectively exhibit values both greater than AND less than wild type (on the same scale). Alternatively, this could describe a scenario in which individual perturbations result in qualitatively different phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < wt < b [ab != E]\nOR\nWith respect to two qualitatively different phenotypes, this may be expressed as an inequality as: \n(a != wt AND b != wt AND a != b)\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, 'wt' is the wild type phenotype value and 'a != b' indicates qualitatively different phenotypes"
-pubMedID: "14755292"
-specializationOf: dcs:GeneticInteraction
-descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
-
-Node: dcid:PositiveGeneticInteraction
-typeOf: dcs:InteractionDetectionMethodEnum
-name: "PositiveGeneticInteraction"
+name: "ConvergingGeneticInteraction"
 psimiID: "MI:0935"
 description: "An effect in which two genetic perturbations, when combined, result in a phenotype that is less severe/penetrant than would be expected from the original phenotypes, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as: \nE < ab <= wt\nOR\nwt <= ab < E\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "14755292"
-specializationOf: dcs:GeneticInteraction
+specializationOf: dcs:GeneticInteractionSensuUnexpected
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
 Node: dcid:Emdb
@@ -3850,7 +3842,7 @@ Node: dcid:EquilibriumDialysis
 typeOf: dcs:InteractionTypeEnum
 name: "EquilibriumDialysis"
 psimiID: "MI:1086"
-description: "Two chambers are separated by a dialysis membrane.  The molecular weight cut off\n(MWCO) of this membrane is\nchosen such that it will retain the\nreceptor component of the sample\n(the element which will bind\nthe ligand).\nA known concentration and volume\nof ligand is placed into one of\nthe chambers. The ligand is small\nenough to pass freely through the\nmembrane.\nA known concentration of receptor\nis then placed in the remaining\nchamber in an equivalent volume\nto that placed in the first chamber.\nAs the ligand diffuses across the\nmembrane some of it will bind to\nthe receptor and some will remain\nfree in solution. The higher the\naffinity of the interaction, the higher\nthe concentration of ligand that\nwill be bound at any time"
+description: "Two chambers are separated by a dialysis membrane. The molecular weight cut off (MWCO) of this membrane is chosen such that it will retain the receptor component of the sample (the element which will bind the ligand). A known concentration and volume of ligand is placed into one of the chambers. The ligand is small enough to pass freely through the membrane. A known concentration of receptor is then placed in the remaining chamber in an equivalent volume to that placed in the first chamber. As the ligand diffuses across the membrane some of it will bind to the receptor and some will remain free in solution. The higher the affinity of the interaction, the higher the concentration of ligand that will be bound at any time"
 pubMedID: "21609686"
 specializationOf: dcs:Biophysical
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
@@ -4492,220 +4484,202 @@ pubMedID: "14755292"
 specializationOf: dcs:SourceDatabase
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:Enhancement
+Node: dcid:GeneticEnhancementSensuUnexpected
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "Enhancement"
+name: "GeneticEnhancementSensuUnexpected"
 psimiID: "MI:1271"
 description: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation to a severity/penetrance beyond (further from wild type) that expected by the superimposition or addition of effects of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < E < wt\nOR\nwt < E < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:NegativeGeneticInteraction
+specializationOf: dcs:DivergingGeneticInteraction,dcs:GeneticEnhancement
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:PositiveEpistasis
+Node: dcid:ConvergingGeneticEpistasis
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "PositiveEpistasis"
+name: "ConvergingGeneticEpistasis"
 psimiID: "MI:1272"
 description: "An effect in which individual perturbations of two different genes result in different mutant phenotypes (which are traits measured on the same quantitative scale but each significantly deviating, in the same direction, from wild type), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n((a* < b < wt) OR (wt < b < a*)) AND (ab = a OR ab = b)\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:Epistasis,dcs:PositiveGeneticInteraction
+specializationOf: dcs:ConvergingGeneticInteraction,dcs:QuantitativeGeneticEpistasis,dcs:CisphenotypicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:MaximalEpistasis
+Node: dcid:MaximalGeneticEpistasis
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "MaximalEpistasis"
+name: "MaximalGeneticEpistasis"
 psimiID: "MI:1273"
 description: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a* < b < wt\nOR\nwt < b < a* = ab\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:PositiveEpistasis,dcs:QuantitativeEpistasis
+specializationOf: dcs:ConvergingGeneticEpistasis
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:MinimalEpistasis
+Node: dcid:MinimalGeneticEpistasis
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "MinimalEpistasis"
+name: "MinimalGeneticEpistasis"
 psimiID: "MI:1274"
 description: "An effect in which individual perturbations of two different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination is equal in severity/penetrance to the least severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab = b < wt\nOR\nwt < b = ab < a*\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:PositiveEpistasis,dcs:MutualSuppressionPartial,dcs:QuantitativeEpistasis
+specializationOf: dcs:ConvergingGeneticEpistasis,dcs:CisphenotypicGeneticSuppressionPartial
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:NeutralEpistasis
+Node: dcid:OpposingGeneticEpistasis
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "NeutralEpistasis"
-psimiID: "MI:1275"
-description: "An effect in which individual perturbations of two different genes result in different mutant phenotypes (which are EITHER traits measured on the same quantitative scale but each significantly deviating, in opposite directions, from wild type, OR completely (qualitatively) different phenotypes), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b)\nOR\n(a != wt AND b != wt AND a != b) AND (ab = a OR ab = b)\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'wt' is the wild type phenotype value, and 'a != b' indicates qualitatively different phenotypes"
-pubMedID: "15833125"
-specializationOf: dcs:Epistasis,dcs:NeutralGeneticInteraction
-descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
-
-Node: dcid:OpposingEpistasis
-typeOf: dcs:InteractionDetectionMethodEnum
-name: "OpposingEpistasis"
+name: "OpposingGeneticEpistasis"
 psimiID: "MI:1276"
 description: "An effect in which individual perturbations of two different genes result in opposite mutant phenotypes (traits measured on the same scale but each on opposing sides relative to the wild type phenotype), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (ab = a OR ab = b) \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:NeutralEpistasis,dcs:QuantitativeEpistasis
+specializationOf: dcs:QuantitativeGeneticEpistasis,dcs:TransphenotypicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:QualitativeEpistasis
+Node: dcid:QualitativeGeneticEpistasis
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "QualitativeEpistasis"
+name: "QualitativeGeneticEpistasis"
 psimiID: "MI:1277"
 description: "An effect in which individual perturbations of two different genes result in different mutant phenotypes (which are traits that cannot be measured on the same scale and, hence, qualitatively different), and the resulting phenotype of their combination is equal to that of only one of the perturbations. This may be expressed as an inequality as:\n(a != wt AND b != wt AND a != b) AND (ab = a OR ab = b)    \nwhere 'a' and 'b' are the observed phenotypes of the individual perturbations, 'ab' is the observed phenotype of the double perturbation, 'wt' is the wild type phenotype and 'a != b' indicates qualitatively different phenotypes"
 pubMedID: "15833125"
-specializationOf: dcs:NeutralEpistasis
+specializationOf: dcs:GeneticEpistasisSensuBateson
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:MutualEnhancement
+Node: dcid:MutualGeneticEnhancementSensuUnexpected
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "MutualEnhancement"
+name: "MutualGeneticEnhancementSensuUnexpected"
 psimiID: "MI:1278"
 description: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is more severe/penetrant (further from wild type) than expected by the superimposition or addition of effects of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a* <= b < wt [E = a*]\nOR\nwt < b <= a* < ab [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:Enhancement
+specializationOf: dcs:GeneticEnhancementSensuUnexpected,dcs:MutualGeneticEnhancement
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:UnilateralEnhancement
+Node: dcid:MonophenotypicGeneticEnhancement
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "UnilateralEnhancement"
+name: "MonophenotypicGeneticEnhancement"
 psimiID: "MI:1279"
 description: "An effect in which the phenotype of one genetic perturbation is enhanced by a second perturbation (which, on its own, has no effect on the phenotype in question) to a severity/penetrance beyond (further from wild type) that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < a < b = wt [E = a]\nOR\nwt = b < a < ab [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:Enhancement
+specializationOf: dcs:GeneticEnhancementSensuUnexpected,dcs:MonophenotypicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:MutualSuppression
+Node: dcid:CisphenotypicGeneticSuppression
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "MutualSuppression"
+name: "CisphenotypicGeneticSuppression"
 psimiID: "MI:1280"
 description: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab <= wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt <= ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:Suppression
+specializationOf: dcs:GeneticSuppressionSensuUnexpected,dcs:CisphenotypicPhenotypeResult,dcs:MutualGeneticSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:MutualSuppressionComplete
+Node: dcid:MutualGeneticSuppressionComplete
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "MutualSuppressionComplete"
+name: "MutualGeneticSuppressionComplete"
 psimiID: "MI:1281"
 description: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting combination is wild type. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* <= b < ab = wt\nOR\nwt = ab < b <= a*\nOR\na < wt = ab < b\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:MutualSuppression
+specializationOf: dcs:GeneticSuppressionComplete,dcs:MutualGeneticSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:MutualSuppressionPartial
+Node: dcid:CisphenotypicGeneticSuppressionPartial
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "MutualSuppressionPartial"
+name: "CisphenotypicGeneticSuppressionPartial"
 psimiID: "MI:1282"
 description: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is less severe/penetrant than expected, but not wild type. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (a* < ab < wt) [E = a*]\nOR\n(wt < b <= a*) AND (wt < ab < a*) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:MutualSuppression
+specializationOf: dcs:CisphenotypicGeneticSuppression,dcs:GeneticSuppressionPartial
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:SuppressionEnhancement
+Node: dcid:CisphenotypicInterSuppressingGeneticInteraction
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "SuppressionEnhancement"
+name: "CisphenotypicInterSuppressingGeneticInteraction"
 psimiID: "MI:1283"
 description: "An effect in which individual perturbations of different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination has a phenotype more severe/penetrant than the least severe/penetrant and less severe/penetrant than the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab < b < wt [E = a*]\nOR\nwt < b < ab < a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:MutualSuppressionPartial
+specializationOf: dcs:CisphenotypicGeneticSuppressionPartial
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:QuantitativeEpistasis
+Node: dcid:QuantitativeGeneticEpistasis
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "QuantitativeEpistasis"
+name: "QuantitativeGeneticEpistasis"
 psimiID: "MI:1284"
 description: "An effect in which individual perturbations of two different genes result in different mutant phenotypes (which are traits measured on the same quantitative scale but each significantly deviating, in any direction, from wild type), and the resulting phenotype of their combination is equal to that of only one of the perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a != wt AND b != wt AND a != b) AND (ab = a OR ab = b)   \nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'wt' is the wild type phenotype value and 'a != b' indicates quantitatively different phenotypes"
 pubMedID: "15833125"
-specializationOf: dcs:Epistasis
+specializationOf: dcs:GeneticEpistasisSensuBateson
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:OverSuppression
+Node: dcid:SurpassingGeneticInteraction
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "OverSuppression"
+name: "SurpassingGeneticInteraction"
 psimiID: "MI:1286"
 description: "An effect in which the observed phenotype of a double perturbation is opposite (relative to the wild type phenotype) to that which is expected upon the double perturbation. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab < wt < E\nOR\nE < wt < ab\nwhere 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:NeutralGeneticInteraction
+specializationOf: dcs:GeneticInteractionSensuUnexpected
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:MutualOverSuppression
+Node: dcid:MutualGeneticOverSuppression
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "MutualOverSuppression"
+name: "MutualGeneticOverSuppression"
 psimiID: "MI:1287"
 description: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is opposite (relative to wild type) to that expected from the original phenotypes. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* <= b < wt < ab [E = a*]\nOR\nab < wt < b <= a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:OverSuppression
+specializationOf: dcs:SurpassingGeneticInteraction,dcs:CisphenotypicPhenotypeResult,dcs:GeneticOverSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:OverSuppressionEnhancement
+Node: dcid:TransphenotypicEnhancingGeneticInteraction
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "OverSuppressionEnhancement"
+name: "TransphenotypicEnhancingGeneticInteraction"
 psimiID: "MI:1288"
 description: "An effect in which two individual perturbations result in opposite mutant phenotypes (relative to wild type) and their combination results in a phenotype that is more severe than the phenotype observed with the same directionality. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < wt < b < ab\nOR\nab < a < wt < b\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:NeutralGeneticInteraction
+specializationOf: dcs:GeneticInteractionSensuUnexpected,dcs:TransphenotypicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:PhenotypeBias
+Node: dcid:GeneticSuppressionComplete
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "PhenotypeBias"
-psimiID: "MI:1289"
-description: "An effect when two individual perturbations result in opposite mutant phenotypes (relative to wild type) and their combination results in a phenotype that is intermediate to the individual mutant phenotypes, but greater or less than wild type. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a < wt < b) AND (a < ab < b) AND (ab != wt)\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
-pubMedID: "15833125"
-specializationOf: dcs:NeutralGeneticInteraction
-descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
-
-Node: dcid:SuppressionComplete
-typeOf: dcs:InteractionDetectionMethodEnum
-name: "SuppressionComplete"
+name: "GeneticSuppressionComplete"
 psimiID: "MI:1290"
 description: "An effect in which the perturbation of one gene results in complete suppression (to wild type) of the mutant phenotype caused by perturbation of another gene. The phenotype of the suppressing perturbation may or may not be known. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nwt = ab != a = E\nwhere 'a' is the observed phenotype values of an individual perturbation, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:Suppression
+specializationOf: dcs:GeneticSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:SuppressionPartial
+Node: dcid:GeneticSuppressionPartial
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "SuppressionPartial"
+name: "GeneticSuppressionPartial"
 psimiID: "MI:1291"
 description: "An effect in which the perturbation of one gene results in the amelioration or lessening of the severity/penetrance of a mutant phenotype caused by perturbation of another gene, in effect making the organism more, but not completely, \"wild type\" in character with regards to the phenotype in question. The phenotype of the suppressing perturbation may or may not be known. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab < wt [E = a*]\nOR\nwt < ab < a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:Suppression
+specializationOf: dcs:GeneticSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:UnilateralSuppression
+Node: dcid:MonophenotypicGeneticSuppression
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "UnilateralSuppression"
+name: "MonophenotypicGeneticSuppression"
 psimiID: "MI:1292"
 description: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the amelioration or lessening of the severity/penetrance of the mutant phenotype, in effect making the organism more \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab <= b = wt [E = a]\nOR\nwt = b <= ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:Suppression
+specializationOf: dcs:GeneticSuppressionSensuUnexpected,dcs:MonophenotypicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:UnilateralSuppressionComplete
+Node: dcid:MonophenotypicGeneticSuppressionComplete
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "UnilateralSuppressionComplete"
+name: "MonophenotypicGeneticSuppressionComplete"
 psimiID: "MI:1293"
 description: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the complete suppression (to wild type) of the mutant phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab = b = wt [E = a]\nOR\nwt = b = ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:UnilateralSuppression
+specializationOf: dcs:GeneticSuppressionComplete,dcs:MonophenotypicGeneticSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:UnilateralSuppressionPartial
+Node: dcid:MonophenotypicGeneticSuppressionPartial
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "UnilateralSuppressionPartial"
+name: "MonophenotypicGeneticSuppressionPartial"
 psimiID: "MI:1294"
 description: "An effect in which the perturbation of one gene, which has no effect on the phenotype in question, is combined with the perturbation of another gene, which causes the mutant phenotype in question, and results in the amelioration or lessening of the severity/penetrance of the mutant phenotype, in effect making the organism more, but not completely, \"wild type\" in character with regards to the phenotype in question. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na < ab < b = wt [E = a]\nOR\nwt = b < ab < a [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:UnilateralSuppression
+specializationOf: dcs:MonophenotypicGeneticSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
-Node: dcid:UnilateralOverSuppression
+Node: dcid:MonophenotypicGeneticOverSuppression
 typeOf: dcs:InteractionDetectionMethodEnum
-name: "UnilateralOverSuppression"
+name: "MonophenotypicGeneticOverSuppression"
 psimiID: "MI:1295"
 description: "An effect in which the perturbation of one gene (which has no individual effect on the phenotype in question), when combined with a perturbation of another gene (which causes the phenotype in question), results in a mutant phenotype opposite (relative to wild type) to that of the original phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nE = a < b = wt < ab\nOR\nab < wt = b < a = E\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
 pubMedID: "15833125"
-specializationOf: dcs:OverSuppression
+specializationOf: dcs:SurpassingGeneticInteraction,dcs:MonophenotypicPhenotypeResult,dcs:GeneticOverSuppression
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
 
 Node: dcid:DeAdpRibosylationAssay
@@ -4741,7 +4715,7 @@ Node: dcid:AutPage
 typeOf: dcs:InteractionTypeEnum
 name: "AutPage"
 psimiID: "MI:1312"
-description: "Method allowing the detection of interactions between two molecules by their very close proximity or the overlap of their relative bands in a SDS gel containing urea as an additional denaturing agent"
+description: "Method allowing the detection of interactions between two or more molecules by their very close proximity or the overlap of their respective bands in a SDS gel containing urea as an additional denaturing agent"
 pubMedID: "12875839"
 specializationOf: dcs:ComigrationInGelElectrophoresis
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
@@ -5075,7 +5049,7 @@ Node: dcid:Bar
 typeOf: dcs:InteractionSourceEnum
 name: "Bar"
 psimiID: "MI:2165"
-description: "The Arabidopsis Interactions Viewer of BAR (the Bio-Array Resource for plant biology) queries a database of 70944 predicted and 28556 confirmed Arabidopsis interacting proteins. The predicted interactions (interologs) were generated by Drs Matt Geisler and Jane Geisler-Lee at the Southern Illinois University. Their current version is Interactome 2.0. The confirmed Arabidopsis interacting proteins come from BIND, the Biomolecular Interaction Network Database, from high-density Arabidopsis protein microarrays, from Braun et al.'s Arabidopsis Interactome 2011 , from Wolf Frommer's Membrane protein INteractome Database MIND, from Etsuko Moryiama's Arabidopsis G-signaling Interactome Database, and over 1190 other literature sources. The interactions in BIND were identified using several different methods, such as yeast two hybrid screens, but also via traditional biochemical methods. http://bar.utoronto.ca/interactions/cgi-bin/arabidopsis_interactions_viewer.cgi [PMID:15960624]"
+description: "The Arabidopsis Interactions Viewer of BAR (the Bio-Array Resource for plant biology) queries a database of 70944 predicted and 28556 confirmed Arabidopsis interacting proteins. The predicted interactions (interologs) were generated by Drs Matt Geisler and Jane Geisler-Lee at the Southern Illinois University. Their current version is Interactome 2.0. The confirmed Arabidopsis interacting proteins come from BIND, the Biomolecular Interaction Network Database, from high-density Arabidopsis protein microarrays, from Braun et al.'s Arabidopsis Interactome 2011 , from Wolf Frommer's Membrane protein INteractome Database MIND, from Etsuko Moryiama's Arabidopsis G-signaling Interactome Database, and over 1190 other literature sources. The interactions in BIND were identified using several different methods, such as yeast two hybrid screens, but also via traditional biochemical methods. http://bar.utoronto.ca/interactions/cgi-bin/arabidopsis_interactions_viewer.cgi\" [PMID:15960624"
 pubMedID: "15960624"
 specializationOf: dcs:InteractionDatabase
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
@@ -5769,4 +5743,358 @@ psimiID: "MI:2350"
 description: "EMPIAR, the Electron Microscopy Public Image Archive, is a public resource for raw, 2D electron microscopy images. The purpose of EMPIAR is to provide easy access to state-of-the-art raw data to facilitate methods development and validation, which will lead to better 3D structures. It complements the Electron Microscopy Data Bank (EMDB), where 3D volumes are stored, and uses the fault-tolerant Aspera platform for data transfers.\n\nhttps://www.ebi.ac.uk/pdbe/emdb/empiar"
 pubMedID: "27067018"
 specializationOf: dcs:Emdb
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:AdpDeribosylaseAssay
+typeOf: dcs:InteractionTypeEnum
+name: "AdpDeribosylaseAssay"
+psimiID: "MI:2355"
+description: "Measurement of the substraction of one or more ADP-ribose moieties to molecules"
+pubMedID: "14760721"
+specializationOf: dcs:EnzymaticStudy
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:AdpDeribosylationReaction
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "AdpDeribosylationReaction"
+psimiID: "MI:2356"
+description: "Involves the substraction of one or more ADP-ribose moieties to proteins. Reaction that can affect Arg, Cys, Glu, Arg and Asn residues"
+goID: "0051725"
+pubMedID: "14755292"
+residID: "AA0168"
+residID: "AA0169"
+residID: "AA0231"
+residID: "AA0237"
+residID: "AA0295"
+specializationOf: dcs:EnzymaticReaction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:Mirbase
+typeOf: dcs:InteractionSourceEnum
+name: "Mirbase"
+psimiID: "MI:2358"
+description: "A searchable database of published miRNA sequences and annotation. Each entry in the miRBase Sequence database represents a predicted hairpin portion of a miRNA transcript (termed mir in the database), with information on the location and sequence of the mature miRNA sequence (termed miR). Both hairpin and mature sequences are available for searching and browsing, and entries can also be retrieved by name, keyword, references and annotation. All sequence and annotation data are also available for download.\n\nHomepage: http://www.mirbase.org"
+pubMedID: "30423142"
+specializationOf: dcs:InteractionDatabase
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:SplitInteinMediatedProteinLigation
+typeOf: dcs:InteractionTypeEnum
+name: "SplitInteinMediatedProteinLigation"
+psimiID: "MI:2361"
+description: "Bait protein is fused to a standard protein fusion tag and an intein fragment, prey a with a different protein fusion tag and the complementary intein fragment. The bait and prey are co-expressed in a cell line where the association of bait and prey brings the intein fragments into close proximity, allowing them to reconstitute a fully functional intein, which then catalyzes its own excision and the concurrent ligation of the bait and the prey peptides (as well as the standard protein fusion tags). The resulting spliced protein can be resolved by regular western blot analysis due to its altered mobility, while the presence of the standard protein fusion tags allows visualization or purification of protein using regular biochemical techniques"
+pubMedID: "32415080"
+specializationOf: dcs:ProteinComplementationAssay
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:Proximity
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "Proximity"
+psimiID: "MI:2364"
+description: "Coincident occurrence of molecules within very close proximity (in the nanometer range), detected through molecule-level resolution methodology, but from which a physical interaction among those molecules cannot be inferred"
+specializationOf: dcs:Colocalization
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:FluorescentProteinProteinInteractionVisualization
+typeOf: dcs:InteractionTypeEnum
+name: "FluorescentProteinProteinInteractionVisualization"
+psimiID: "MI:2365"
+description: "FluoPPI system (Fluorescent Protein-Protein Interaction-visualization):-FLUOPPI utilises the formation of fluorescence foci whereby the interacting proteins of interest are genetically fused with either a tetramerizing fluorescent protein (FP-tag) or an assembly helper tag (Ash-tag). The incorporation of these tags onto a pair of interacting proteins  enables the formation of intensely bright foci when co-expressed in mammalian cells. In these foci the FP-tag induces the fused protein to form a tetramer that can now interact with up to 4 copies of the Ash-tagged partner protein. The cognate interacting protein also forms an oligomer through the Ash tag, which in turn can interact with multiple copies of the FP-fused partner protein. The potential of both constructs to interact with multiple copies of each other enable large foci incorporating the fluorescent protein to form, which can be clearly observed when imaging the cell"
+pubMedID: "31784573"
+specializationOf: dcs:ImagingTechnique
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:MultigenicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "MultigenicPhenotypeResult"
+psimiID: "MI:2366"
+description: "The phenotype outcome resulting from two or more genetic perturbations to an organism, individually and in combination"
+specializationOf: dcs:MultiplePerturbationPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:GeneticInteractionSensuPhenotypeModification
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "GeneticInteractionSensuPhenotypeModification"
+psimiID: "MI:2367"
+description: "A multigenic phenotype result in which the phenotype of a single genetic perturbation has been modified by the introduction of one or more additional genetic perturbations"
+specializationOf: dcs:GeneticInteraction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:PhenotypicEnhancementSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "PhenotypicEnhancementSensuBiogrid"
+psimiID: "MI:2368"
+description: "Genetic perturbation of multiple genes in combination that results in a more severe phenotype (except lethality or growth defect) than individual genetic perturbations"
+specializationOf: dcs:GeneticEnhancement
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:SyntheticGrowthDefectSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "SyntheticGrowthDefectSensuBiogrid"
+psimiID: "MI:2369"
+description: "Mutation of multiple genes in combination that results in a more severe growth defect than from individual mutation"
+specializationOf: dcs:DeleteriousMultigenicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:SyntheticLethalitySensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "SyntheticLethalitySensuBiogrid"
+psimiID: "MI:2370"
+description: "Mutation of multiple genes in combination that results in lethality when individual single mutations are viable"
+specializationOf: dcs:SyntheticGeneticInteraction,dcs:NegativeGeneticInteraction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:PositiveGeneticInteractionSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "PositiveGeneticInteractionSensuBiogrid"
+psimiID: "MI:2371"
+description: "Genetic perturbation of multiple genes in combination that results in a less severe phenotype than from individual perturbations. This term is reserved for high throughput studies with scores"
+specializationOf: dcs:GeneticSuppression
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:SyntheticHaploinsufficiencySensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "SyntheticHaploinsufficiencySensuBiogrid"
+psimiID: "MI:2372"
+description: "Genetic perturbations of multiple genes in combination that results in a more severe growth defect than each individual perturbation, when one mutation is hemizygous"
+specializationOf: dcs:DeleteriousMultigenicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:NegativeGeneticInteractionSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "NegativeGeneticInteractionSensuBiogrid"
+psimiID: "MI:2373"
+description: "Genetic perturbation of multiple genes in combination that results in a more severe phenotypic defect (or lethality) than from individual viable perturbations. This term is reserved for high throughput studies with scores"
+specializationOf: dcs:DeleteriousMultigenicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:PhenotypicSuppressionSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "PhenotypicSuppressionSensuBiogrid"
+psimiID: "MI:2374"
+description: "Genetic perturbation of one gene suppresses a phenotype (other than lethality or growth defect) associated with perturbation of another gene"
+specializationOf: dcs:GeneticSuppression
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:SyntheticRescueSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "SyntheticRescueSensuBiogrid"
+psimiID: "MI:2375"
+description: "Mutation of one gene rescues lethality or a growth defect associated with perturbation of another gene"
+specializationOf: dcs:GeneticSuppression,dcs:PositiveGeneticInteraction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:DosageRescueSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "DosageRescueSensuBiogrid"
+psimiID: "MI:2376"
+description: "Increased dosage of one gene rescues lethality or a growth defect associated with perturbation of another gene"
+specializationOf: dcs:GeneticSuppression,dcs:PositiveGeneticInteraction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:DosageLethalitySensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "DosageLethalitySensuBiogrid"
+psimiID: "MI:2377"
+description: "Increased dosage of one gene causes lethality in combination with another viable genetic perturbation"
+specializationOf: dcs:SyntheticGeneticInteraction,dcs:NegativeGeneticInteraction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:DosageGrowthDefectSensuBiogrid
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "DosageGrowthDefectSensuBiogrid"
+psimiID: "MI:2378"
+description: "Increased dosage of one gene causes a growth defect in (or enhances an existing growth defect of) a strain with perturbation of another gene"
+specializationOf: dcs:DeleteriousMultigenicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:GeneticSuppression
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "GeneticSuppression"
+psimiID: "MI:2379"
+description: "A genetic phenotype modification whereby one genetic perturbation suppresses, or alleviates, the phenotype of another genetic perturbation. Note that if the individual genetic perturbations have opposite phenotypes, this may be an expected result"
+specializationOf: dcs:GeneticInteractionSensuPhenotypeModification
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:GeneticEnhancement
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "GeneticEnhancement"
+psimiID: "MI:2380"
+description: "A genetic phenotype modification whereby one genetic perturbation enhances, or exacerbates, the phenotype of another genetic perturbation. Note that this may be an expected result"
+specializationOf: dcs:GeneticInteractionSensuPhenotypeModification
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:AphenotypicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "AphenotypicPhenotypeResult"
+psimiID: "MI:2381"
+description: "A phenotype result in which each of multiple perturbations results in no (or only a minimal) phenotype for the phenotype in question"
+specializationOf: dcs:MultiplePerturbationPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:MonophenotypicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "MonophenotypicPhenotypeResult"
+psimiID: "MI:2382"
+description: "A phenotype result in which only one of multiple perturbations results in the phenotype in question"
+specializationOf: dcs:MultiplePerturbationPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:PhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "PhenotypeResult"
+psimiID: "MI:2383"
+description: "The expression of a phenotype in an organism or a population of organisms resulting from one or more organismal perturbations, including genetic perturbations and environmental (including chemical/drug exposure) perturbations"
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:MultiplePerturbationPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "MultiplePerturbationPhenotypeResult"
+psimiID: "MI:2384"
+description: "A phenotype result in which multiple perturbations affect an organism individually and in combination"
+specializationOf: dcs:PhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:CisphenotypicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "CisphenotypicPhenotypeResult"
+psimiID: "MI:2385"
+description: "A phenotype result in which both of two perturbations result in the phenotype in question and do so in the same manner compared to wild type. For example, both perturbations result in an increased quality phenotype, or both perturbations result in a decreased quality phenotype"
+specializationOf: dcs:MultiplePerturbationPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:IsophenotypicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "IsophenotypicPhenotypeResult"
+psimiID: "MI:2386"
+description: "A cisphenotypic phenotype result in which both of two perturbations result in the same phenotype, both in manner and degree, compared to wild type"
+specializationOf: dcs:CisphenotypicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:TransphenotypicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "TransphenotypicPhenotypeResult"
+psimiID: "MI:2387"
+description: "A phenotype result in which two perturbations result in the opposite phenotype compared to wild type. For example, one perturbation results in an increased quality phenotype and the second perturbation results in a decreased quality phenotype"
+specializationOf: dcs:MultiplePerturbationPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:GeneticOverSuppression
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "GeneticOverSuppression"
+psimiID: "MI:2388"
+description: "A genetic phenotype modification whereby introduction of one genetic perturbation to another genetic perturbation results in the opposite phenotype compared to the phenotype of the starting individual genetic perturbation. For example, one perturbation results in an increased quality phenotype and introduction of the second perturbation results in a decreased quality phenotype. Note that if the individual genetic perturbations have opposite phenotypes, this may be an expected result"
+specializationOf: dcs:GeneticSuppression
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:MutualGeneticSuppression
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "MutualGeneticSuppression"
+psimiID: "MI:2389"
+description: "A genetic phenotype modification whereby each of two genetic perturbations suppress, or alleviate, the phenotype of the other genetic perturbation. Note that if the individual genetic perturbations have opposite phenotypes, this may be an expected result"
+specializationOf: dcs:GeneticSuppression
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:TransphenotypicGeneticSuppression
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "TransphenotypicGeneticSuppression"
+psimiID: "MI:2390"
+description: "A genetic mutual suppression in which each genetic perturbation results in opposite phenotypes (for example, one genetic perturbation results in an increased quality phenotype and the second genetic perturbation results in a decreased quality phenotype), and their combination (the double genetic perturbation) results in an intermediate phenotype that is at least closer to wild type than the most severe phenotype of the individual genetic perturbations. Note that the double genetic perturbation phenotype may be expected according to some chosen neutrality function"
+specializationOf: dcs:TransphenotypicPhenotypeResult,dcs:MutualGeneticSuppression
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:TransphenotypicGeneticSuppressionComplete
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "TransphenotypicGeneticSuppressionComplete"
+psimiID: "MI:2391"
+description: "A transphenotypic suppression in which the double genetic perturbation phenotype is equivalent to the wild type (or control) phenotype"
+specializationOf: dcs:MutualGeneticSuppressionComplete,dcs:TransphenotypicGeneticSuppression
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:MutualGeneticEnhancementExpected
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "MutualGeneticEnhancementExpected"
+psimiID: "MI:2392"
+description: "A genetic enhancement in which the double genetic perturbation phenotype is equivalent to the expected phenotype, according to some chosen neutrality function"
+specializationOf: dcs:NeutralMultigenicPhenotypeResult,dcs:MutualGeneticEnhancement
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:TransphenotypicGeneticSuppressionExpected
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "TransphenotypicGeneticSuppressionExpected"
+psimiID: "MI:2393"
+description: "A transphenotypic suppression in which the double genetic perturbation phenotype is expected, according to some chosen neutrality function"
+specializationOf: dcs:NeutralMultigenicPhenotypeResult,dcs:TransphenotypicGeneticSuppression
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:NegativeGeneticInteraction
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "NegativeGeneticInteraction"
+psimiID: "MI:2394"
+description: "An effect in which two genetic perturbations, when combined, result in a fitness that is less than expected given the fitness resulting from the individual perturbations"
+specializationOf: dcs:DivergingGeneticInteraction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:PositiveGeneticInteraction
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "PositiveGeneticInteraction"
+psimiID: "MI:2395"
+description: "An effect in which two genetic perturbations, when combined, result in a fitness that is greater than expected given the fitness resulting from the individual perturbations"
+specializationOf: dcs:ConvergingGeneticInteraction
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:CisphenotypicGeneticSuppressionComplete
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "CisphenotypicGeneticSuppressionComplete"
+psimiID: "MI:2396"
+description: "An effect in which individual perturbations of different genes result in the same mutant phenotype (but, perhaps, to varying degrees of severity/penetrance) and the resulting phenotype of their combination is equivalent to the wild type phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\n(a* <= b < wt) AND (ab = wt) [E = a*]\nOR\n(wt < b <= a*) AND (ab = wt) [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
+specializationOf: dcs:CisphenotypicGeneticSuppression,dcs:MutualGeneticSuppressionComplete
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:CisphenotypicCoSuppressingGeneticInteraction
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "CisphenotypicCoSuppressingGeneticInteraction"
+psimiID: "MI:2397"
+description: "An effect in which individual perturbations of different genes result in the same mutant phenotype but to varying degrees of severity/penetrance and the resulting phenotype of their combination is less severe/penetrant than both of the phenotypes resulting from the individual perturabtions. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < b < ab < wt [E = a*]\nOR\nwt < ab < b < a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
+specializationOf: dcs:CisphenotypicGeneticSuppressionPartial
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:AphenotypicNeutralMultigenicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "AphenotypicNeutralMultigenicPhenotypeResult"
+psimiID: "MI:2398"
+description: "A genetic aphenotypic phenotype result (both genetic perturbations result in a wild type (or control) phenotype) in which case the double genetic perturbation also results in the wild type (or control) phenotype, thus resulting in the expected phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nwt = a = b = ab [E = wt]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
+specializationOf: dcs:NeutralMultigenicPhenotypeResult,dcs:AphenotypicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:DeleteriousMultigenicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "DeleteriousMultigenicPhenotypeResult"
+psimiID: "MI:2399"
+description: "A phenotype modification whereby introduction of a genetic perturbation in an organism with another genetic perturbation results in, or enhances, a phenotype in that organism"
+specializationOf: dcs:MultigenicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:MonophenotypicNeutralMultigenicPhenotypeResult
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "MonophenotypicNeutralMultigenicPhenotypeResult"
+psimiID: "MI:2400"
+description: "A phenotype result in which only one of two perturbations results in the phenotype in question and the phenotype of the combined perturbations a and b result in the expected phenotype, namely the same phenotype as the single perturbation that exhibits that phenotype. The interpretation is that no interaction was observed between the two genes, for the indicated phenotype. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\nab = a ≠ wt = b [E = a]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value"
+specializationOf: dcs:NeutralMultigenicPhenotypeResult,dcs:MonophenotypicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:MutualGeneticEnhancement
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "MutualGeneticEnhancement"
+psimiID: "MI:2401"
+description: "A phenotype result in which both of two genetic perturbations result in the phenotype in question and do so in the same manner compared to wild type (for example, both genetic perturbations result in an increased quality phenotype, or both genetic perturbations result in a decreased quality phenotype) and the resulting double genetic perturbation results in a phenotype that is more severe than the most severe single genetic perturbation phenotype. Note that this may be an expected result"
+specializationOf: dcs:GeneticEnhancement,dcs:CisphenotypicPhenotypeResult
+descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
+
+Node: dcid:GeneticInteraction
+typeOf: dcs:InteractionDetectionMethodEnum
+name: "GeneticInteraction"
+psimiID: "MI:2402"
+description: "A multigenic phenotype result in which (1) the phenotype of a single genetic perturbation has been modified by the introduction of one or more additional genetic perturbations AND/OR (2) an effect in which two genetic perturbations, when combined, result in a phenotype that does not appear to be merely explained by the superimposition or addition of effects of the original perturbations.\nab (not=) "
+specializationOf: dcs:MultigenicPhenotypeResult
 descriptionUrl: "http://psidev.info/groups/controlled-vocabularies"
