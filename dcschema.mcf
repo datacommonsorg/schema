@@ -1189,6 +1189,13 @@ name: "VolumeUnitOfMeasure"
 dcid: "VolumeUnitOfMeasure"
 description: "A unit used to denote a measurement of volume."
 
+Node: ConcentrationUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "ConcentrationUnitOfMeasure"
+dcid: "ConcentrationUnitOfMeasure"
+description: "A unit used to denote a measurement of concentration."
+
 Node: TimeUnitOfMeasure
 typeOf: schema:Class
 subClassOf: dcs:UnitOfMeasure
@@ -2109,6 +2116,13 @@ rangeIncludes: schema:Enumeration, dcs:StatVarGroup
 domainIncludes: schema:Enumeration, dcs:StatVarGroup
 source: "https://datacommons.org"
 typeOf: schema:Property
+
+Node: dcid:displayRank
+typeOf: schema:Property
+name: "displayRank"
+rangeIncludes: schema:Integer
+domainIncludes: dcs:StatVarGroup
+description: "Represents a rank used to order entities in a UI display.  Comparable entities with a smaller rank value are given higher preference.  Entities without a specified rank value come after those with one."
 
 Node: dcid:observationAbout
 typeOf: schema:Property
