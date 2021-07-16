@@ -1,902 +1,1187 @@
-Node: encode_class_BedLine
+Node: BedLine
 dcid: "BedLine"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeBedFile
 name: "BedLine"
 description: "A line in a bed file."
 
-Node: encode_class_EncodeAward
+Node: EncodeAward
 dcid: "EncodeAward"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeObject
 name: "EncodeAward"
 description: "Research grant information uploaded to the Encode Project."
 
-Node: encode_class_EncodeBedFile
+Node: EncodeBedFile
 dcid: "EncodeBedFile"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeObject
 name: "EncodeBedFile"
 description: "A bed file uploaded to the Encode Project."
 
-Node: encode_class_EncodeBiosample
+Node: EncodeBiosample
 dcid: "EncodeBiosample"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeObject
 name: "EncodeBiosample"
 description: "An Encode Project biosample."
 
-Node: encode_class_EncodeBiosampleType
+Node: EncodeBiosampleType
 dcid: "EncodeBiosampleType"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeObject
 name: "EncodeBiosampleType"
 description: "The type of a specific Encode Project biosample."
 
-Node: encode_class_EncodeExperiment
+Node: EncodeExperiment
 dcid: "EncodeExperiment"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeObject
 name: "EncodeExperiment"
 description: "An experiment uploaded to the Encode Project."
 
-Node: encode_class_EncodeLibrary
+Node: EncodeLibrary
 dcid: "EncodeLibrary"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeObject
 name: "EncodeLibrary"
 description: "An encode molecular library."
 
-Node: encode_class_Lab
+Node: Lab
 dcid: "Lab"
 typeOf: schema:Class
 subClassOf: schema:Thing
 name: "Lab"
 description: "A group or organization that performs scientific research."
 
-Node: encode_property_address1
+Node: address1
 dcid: "address1"
 typeOf: schema:Property
 name: "address1"
 description: "Address line 1."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Lab
 
-Node: encode_property_address2
+Node: address2
 dcid: "address2"
 typeOf: schema:Property
 name: "address2"
 description: "Address line 2."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Lab
 
-Node: encode_property_ageDisplay
+Node: age
+dcid: "age"
+typeOf: schema:Property
+name: "ageDisplay"
+description: "Age."
+rangeIncludes: schema:Number,dcs:QuantityRange
+domainIncludes: dcs:EncodeBiosample
+
+Node: ageDisplay
 dcid: "ageDisplay"
 typeOf: schema:Property
 name: "ageDisplay"
 description: "The displayed age."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_ageUnits
+Node: ageUnits
 dcid: "ageUnits"
 typeOf: schema:Property
 name: "ageUnits"
 description: "Unit of time associated with age."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_alternateAccessions
+Node: alternateAccessions
 dcid: "alternateAccessions"
 typeOf: schema:Property
 name: "alternateAccessions"
 description: "An accession previously assigned to an object that has been merged with this object."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_antibodies
+Node: antibodies
 dcid: "antibodies"
 typeOf: schema:Property
 name: "antibodies"
 description: "Antibodies associated with entity."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_appliedModifications
+Node: appliedModifications
 dcid: "appliedModifications"
 typeOf: schema:Property
 name: "appliedModifications"
 description: "Genetic modification made in either the donor and/or biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_assaySlims
+Node: assaySlims
 dcid: "assaySlims"
 typeOf: schema:Property
 name: "assaySlims"
 description: "The assay slim."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_assayTermId
+Node: assayTermId
 dcid: "assayTermId"
 typeOf: schema:Property
 name: "assayTermId"
 description: "The assay ID."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_assayTermName
+Node: assayTermName
 dcid: "assayTermName"
 typeOf: schema:Property
 name: "assayTermName"
 description: "The assay name."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_assayTitle
+Node: assayTitle
 dcid: "assayTitle"
 typeOf: schema:Property
 name: "assayTitle"
 description: "The title of the assay performed."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExpeirment
 
-Node: encode_property_assembly
+Node: assembly
 dcid: "assembly"
 typeOf: schema:Property
 name: "assembly"
 description: "Genome assembly that files were mapped to."
+rangeIncludes: schema:Text,dcs:GenomeAssembly
+domainIncludes: dcs:EncodeBedFile
 
-Node: encode_property_award
+Node: award
 dcid: "award"
 typeOf: schema:Property
 name: "award"
 description: "Grant associated with the submission."
+rangeIncludes: dcs:EncodeAward
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_awards
+Node: awards
 dcid: "awards"
 typeOf: schema:Property
 name: "awards"
 description: "A grant associated with the lab."
+rangeIncludes: schema:Text,dcs:EncodeAward
+domainIncludes: dcs:Lab
 
-Node: encode_property_barcodeDetails
+Node: barcodeDetails
 dcid: "barcodeDetails"
 typeOf: schema:Property
 name: "barcodeDetails"
 description: "Biosample barcode."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_bedFile
+Node: bedFile
 dcid: "bedFile"
 typeOf: schema:Property
 name: "bedFile"
-description: "The bed file associated with bed line."
+description: "The bed file associated with bed lines."
+rangeIncludes: dcs:EncodeBedFile
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_bedName
+Node: bedName
 dcid: "bedName"
 typeOf: schema:Property
 name: "bedName"
 description: "The name of the bed line."
+rangeIncludes: schema:Text
+domainIncludes: dcs:BedLine
 
-Node: encode_property_bedScore
+Node: bedScore
 dcid: "bedScore"
 typeOf: schema:Property
 name: "bedScore"
 description: "A score associated to the bed line."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_biologicalReplicates
+Node: biologicalReplicates
 dcid: "biologicalReplicates"
 typeOf: schema:Property
 name: "biologicalReplicates"
 description: "The identifying number of each relevant biological replicate."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_biosample
+Node: biosample
 dcid: "biosample"
 typeOf: schema:Property
 name: "biosample"
 description: "The biosample that nucleic acid was isolated from to generate the library."
+rangeIncludes: dcs:EncodeBiosample
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_biosampleOntology
+Node: biosampleOntology
 dcid: "biosampleOntology"
 typeOf: schema:Property
 name: "biosampleOntology"
 description: "An embeded property for linking to biosample type which describes the ontology of the biosample."
+rangeIncludes: dcs:EncodeBiosampleType
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_biosampleSummary
+Node: biosampleSummary
 dcid: "biosampleSummary"
 typeOf: schema:Property
 name: "biosampleSummary"
 description: "The biosample summary."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_blockCount
+Node: blockCount
 dcid: "blockCount"
 typeOf: schema:Property
 name: "blockCount"
 description: "The number of blocks (exons) in the BED line."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_blockSizes
+Node: blockSizes
 dcid: "blockSizes"
 typeOf: schema:Property
 name: "blockSizes"
 description: "A comma-separated list of the block sizes. The number of items in this list should correspond to blockCount."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_blockStarts
+Node: blockStarts
 dcid: "blockStarts"
 typeOf: schema:Property
 name: "blockStarts"
 description: "A comma-separated list of block starts. The first value must be 0 and all of the blockStart positions should be calculated relative to chromStart. The number of items in this list should correspond to blockCount."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_categorySlims
+Node: categorySlims
 dcid: "categorySlims"
 typeOf: schema:Property
 name: "categorySlims"
 description: "The category slims."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_cellSlims
+Node: cellSlims
 dcid: "cellSlims"
 typeOf: schema:Property
 name: "cellSlims"
 description: "The cell slims."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosampleType
 
-Node: encode_property_characterizations
+Node: characterizations
 dcid: "characterizations"
 typeOf: schema:Property
 name: "characterizations"
 description: "Characterization of biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_chromosome
+Node: chromosome
 dcid: "chromosome"
 typeOf: schema:Property
 name: "chromosome"
 description: "The name of the chromosome described by the bed line."
+rangeIncludes: schema:Text,dcs:Chromosome
+domainIncludes: dcs:BedLine
 
-Node: encode_property_chromosomeEnd
+Node: chromosomeEnd
 dcid: "chromosomeEnd"
 typeOf: schema:Property
 name: "chromosomeEnd"
 description: "The ending position of the feature in the chromosome or scaffold."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_chromosomeStart
+Node: chromosomeStart
 dcid: "chromosomeStart"
 typeOf: schema:Property
 name: "chromosomeStart"
 description: "The starting position of the feature in the chromosome or scaffold."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_chromosomeStrand
+Node: chromosomeStrand
 dcid: "chromosomeStrand"
 typeOf: schema:Property
 name: "chromosomeStrand"
 description: "The chromosome strand."
+rangeIncludes: schema:Text
+domainIncludes: dcs:BedLine
 
-Node: encode_property_city
+Node: city
 dcid: "city"
 typeOf: schema:Property
 name: "city"
 description: "The city that an entity belongs in."
+rangeIncludes: schema:Text,dcs:City
+domainIncludes: dcs:Lab
 
-Node: encode_property_classification
+Node: classification
 dcid: "classification"
 typeOf: schema:Property
 name: "classification"
 description: "The general category of this type of biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_country
+Node: country
 dcid: "country"
 typeOf: schema:Property
 name: "country"
 description: "The country that an entity belongs in."
+rangeIncludes: schema:Text,dcs:Country
+domainIncludes: dcs:Lab
 
-Node: encode_property_crosslinkingMethod
+Node: crosslinkingMethod
 dcid: "crosslinkingMethod"
 typeOf: schema:Property
 name: "crosslinkingMethod"
 description: "A short description or reference of the crosslinking protocol used in library preparation."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_cultureHarvestDate
+Node: cultureHarvestDate
 dcid: "cultureHarvestDate"
 typeOf: schema:Property
 name: "cultureHarvestDate"
 description: "For cultured samples, the date the biosample was taken."
+rangeIncludes: schema:Text,dcs:Date
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_cultureStartDate
+Node: cultureStartDate
 dcid: "cultureStartDate"
 typeOf: schema:Property
 name: "cultureStartDate"
 description: "For cultured samples, the date the culture was started. For cell lines, the date this particular growth was started, not the date the line was established."
+rangeIncludes: schema:Text,dcs:Date
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_dateCreated
+Node: dateCreated
 dcid: "dateCreated"
 typeOf: schema:Property
 name: "dateCreated"
 description: "The date the object was created."
+rangeIncludes: schema:Text,dcs:Date
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_dateObtained
+Node: dateObtained
 dcid: "dateObtained"
 typeOf: schema:Property
 name: "dateObtained"
 description: "For tissue samples, the date the biosample was taken."
 
-Node: encode_property_dateReleased
+Node: dateReleased
 dcid: "dateReleased"
 typeOf: schema:Property
 name: "dateReleased"
 description: "The date the object was released."
+rangeIncludes: schema:Text,dcs:Date
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_dateSubmitted
+Node: dateSubmitted
 dcid: "dateSubmitted"
 typeOf: schema:Property
 name: "dateSubmitted"
 description: "The date that the experiment received all required replicates and files."
+rangeIncludes: schema:Text,dcs:Date
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_dbxrefs
+Node: dbxrefs
 dcid: "dbxrefs"
 typeOf: schema:Property
 name: "dbxrefs"
 description: "A unique identifier from external resource (e.g. HGNC, MGI, FlyBase, WormBase, ENSEMBL, MIM, UniProtKB, Vega, miRBase)."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_depletedInTermId
+Node: depletedInTermId
 dcid: "depletedInTermId"
 typeOf: schema:Property
 name: "depletedInTermId"
-description: "See https://www.encodeproject.org/terms/depleted_in_term_id"
+description: "ID for any nucleic acid, such as ribosomal RNA, that is removed before the library is made."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_depletedInTermName
+Node: depletedInTermName
 dcid: "depletedInTermName"
 typeOf: schema:Property
 name: "depletedInTermName"
-description: "See https://www.encodeproject.org/terms/depleted_in_term_name"
+description: "ID for any nucleic acid, such as ribosomal RNA, that is removed before the library is made."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_developmentalSlims
+Node: developmentalSlims
 dcid: "developmentalSlims"
 typeOf: schema:Property
 name: "developmentalSlims"
 description: "The developmental slims."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_donor
+Node: donor
 dcid: "donor"
 typeOf: schema:Property
 name: "donor"
 description: "The donor or strain the biosample was originated from."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_encodeUUID
+Node: encodeUUID
 dcid: "encodeUUID"
 typeOf: schema:Property
 name: "encodeUUID"
 description: "The Encode Project uuid used to describe this entity."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_experiment
+Node: experiment
 dcid: "experiment"
 typeOf: schema:Property
 name: "experiment"
 description: "The experiment that this Bed file belongs to."
+rangeIncludes: dcs:EncodeExperiment
+domainIncludes: dcs:EncodeBedFile
 
-Node: encode_property_experimentClassification
+Node: experimentClassification
 dcid: "experimentClassification"
 typeOf: schema:Property
 name: "experimentClassification"
 description: "The classification of the experiment."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_extractionMethod
+Node: extractionMethod
 dcid: "extractionMethod"
 typeOf: schema:Property
 name: "extractionMethod"
 description: "A short description or reference of the nucleic acid extraction protocol used in library preparation."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_fax
+Node: fax
 dcid: "fax"
 typeOf: schema:Property
 name: "fax"
 description: "The fax number associated with the entity."
+rangeIncludes: schema:Text,schema:Number
+domainIncludes: dcs:Lab
 
-Node: encode_property_fileType
+Node: fileType
 dcid: "fileType"
 typeOf: schema:Property
 name: "fileType"
 description: "The type of the file."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBedFile
 
-Node: encode_property_flyLifeStage
+Node: flyLifeStage
 dcid: "flyLifeStage"
 typeOf: schema:Property
 name: "flyLifeStage"
 description: "Fly development stage of the animals used to prepare the biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_flySynchronizationStage
+Node: flySynchronizationStage
 dcid: "flySynchronizationStage"
 typeOf: schema:Property
 name: "flySynchronizationStage"
 description: "Fly development stage at which flies were synchronized."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_fragmentationDate
+Node: fragmentationDate
 dcid: "fragmentationDate"
 typeOf: schema:Property
 name: "fragmentationDate"
 description: "The date that the nucleic acid was fragmented."
+rangeIncludes: schema:Text,dcs:Date
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_fragmentationMethod
+Node: fragmentationMethod
 dcid: "fragmentationMethod"
 typeOf: schema:Property
 name: "fragmentationMethod"
 description: "A short description or reference of the nucleic acid fragmentation protocol used in library preparation."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_geneticModifications
+Node: geneticModifications
 dcid: "geneticModifications"
 typeOf: schema:Property
 name: "geneticModifications"
 description: "Genetic modification(s)."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_genomeAnnotation
+Node: genomeAnnotation
 dcid: "genomeAnnotation"
 typeOf: schema:Property
 name: "genomeAnnotation"
 description: "Genome annotation that file was generated with."
+rangeIncludes: schema:Text,dcs:GenomeAssembly
+domainIncludes: dcs:EncodeBedFile
 
-Node: encode_property_healthStatus
+Node: healthStatus
 dcid: "healthStatus"
 typeOf: schema:Property
 name: "healthStatus"
 description: "Donor health status."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_host
+Node: host
 dcid: "host"
 typeOf: schema:Property
 name: "host"
 description: "A biosample that was hosting this biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_instituteLabel
+Node: instituteLabel
 dcid: "instituteLabel"
 typeOf: schema:Property
 name: "instituteLabel"
 description: "An abbreviation for the institute the lab is associated with."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Lab
 
-Node: encode_property_instituteName
+Node: instituteName
 dcid: "instituteName"
 typeOf: schema:Property
 name: "instituteName"
 description: "The name for the institute the lab is associated with."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Lab
 
-Node: encode_property_itemRGB
+Node: itemRGB
 dcid: "itemRGB"
 typeOf: schema:Property
 name: "itemRGB"
 description: "An RGB value of the form R,G,B (e.g. 255,0,0). If the track line itemRgb attribute is set to "On", this RBG value will determine the display color of the data contained in this BED line. NOTE: It is recommended that a simple color scheme (eight colors or less) be used with this attribute to avoid overwhelming the color resources of the Genome Browser and your Internet browser."
+rangeIncludes: schema:Number,schema:Text
+domainIncludes: dcs:BedLine
 
-Node: encode_property_lab
+Node: lab
 dcid: "lab"
 typeOf: schema:Property
 name: "lab"
 description: "Lab associated with the submission or user."
+rangeIncludes: schema:Number,schema:Text
+domainIncludes: dcs:BedLine
 
 Node: encode_property_library
 dcid: "library"
 typeOf: schema:Property
 name: "library"
 description: "The nucleic acid library sequenced to produce this file."
+rangeIncludes: dcs:Lab,schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_librarySizeSelectionMethod
+Node: librarySizeSelectionMethod
 dcid: "librarySizeSelectionMethod"
 typeOf: schema:Property
 name: "librarySizeSelectionMethod"
 description: "A short description or reference of the size selection protocol used in library preparation."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_lifeStage
+Node: lifeStage
 dcid: "lifeStage"
 typeOf: schema:Property
 name: "lifeStage"
 description: "Life stage."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_lotId
+Node: lotId
 dcid: "lotId"
 typeOf: schema:Property
 name: "lotId"
 description: "The lot identifier provided by the lab or vendor, for nucleic acids or proteins purchased directly from a lab or vendor (e.g. total RNA)."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
 Node: encode_property_lysisMethod
 dcid: "lysisMethod"
 typeOf: schema:Property
 name: "lysisMethod"
 description: "A short description or reference of the cell lysis protocol used in library preparation."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_modelOrganismAge
+Node: modelOrganismAge
 dcid: "modelOrganismAge"
 typeOf: schema:Property
 name: "modelOrganismAge"
 description: "The age or age range of the model donor organism when biological material was sampled."
+rangeIncludes: schema:Number
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_modelOrganismAgeUnits
+Node: modelOrganismAgeUnits
 dcid: "modelOrganismAgeUnits"
 typeOf: schema:Property
 name: "modelOrganismAgeUnits"
 description: "Age units of the model organism."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_modelOrganismDonorModifications
+Node: _modelOrganismDonorModifications
 dcid: "modelOrganismDonorModifications"
 typeOf: schema:Property
 name: "modelOrganismDonorModifications"
 description: "Genetic modification made in the donor organism of the biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_modelOrganismHealthStatus
+Node: modelOrganismHealthStatus
 dcid: "modelOrganismHealthStatus"
 typeOf: schema:Property
 name: "modelOrganismHealthStatus"
 description: "Health status of the model organism."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_modelOrganismMatingStatus
+Node: modelOrganismMatingStatus
 dcid: "modelOrganismMatingStatus"
 typeOf: schema:Property
 name: "modelOrganismMatingStatus"
 description: "The mating status of the animal."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_modelOrganismSex
+Node: modelOrganismSex
 dcid: "modelOrganismSex"
 typeOf: schema:Property
 name: "modelOrganismSex"
 description: "The sex of the organism the biosample comes from."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_mouseLifeStage
+Node: mouseLifeStage
 dcid: "mouseLifeStage"
 typeOf: schema:Property
 name: "mouseLifeStage"
 description: "The life stage of the mouse biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_nihInstitutionalCertification
+Node: nihInstitutionalCertification
 dcid: "nihInstitutionalCertification"
 typeOf: schema:Property
 name: "nihInstitutionalCertification"
 description: "Institutional certification given by the NIH for human biosamples."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_notes
+Node: notes
 dcid: "notes"
 typeOf: schema:Property
 name: "notes"
 description: "DCC internal notes."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_nucleicAcidStartingQuantity
+Node: nucleicAcidStartingQuantity
 dcid: "nucleicAcidStartingQuantity"
 typeOf: schema:Property
 name: "nucleicAcidStartingQuantity"
 description: "The starting amount of nucleic acid before selection and purification."
+rangeIncludes: schema:Number,dcs:Quantity
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_nucleicAcidStartingQuantityUnits
+Node: nucleicAcidStartingQuantityUnits
 dcid: "nucleicAcidStartingQuantityUnits"
 typeOf: schema:Property
 name: "nucleicAcidStartingQuantityUnits"
 description: "The units used for starting amount of nucleic acid."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_nucleicAcidTermId
+Node: nucleicAcidTermId
 dcid: "nucleicAcidTermId"
 typeOf: schema:Property
 name: "nucleicAcidTermId"
 description: "The nucleic acid term id."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_nucleicAcidTermName
+Node: nucleicAcidTermName
 dcid: "nucleicAcidTermName"
 typeOf: schema:Property
 name: "nucleicAcidTermName"
 description: "The nucleic acid term name."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_objectiveSlims
+Node: objectiveSlims
 dcid: "objectiveSlims"
 typeOf: schema:Property
 name: "objectiveSlims"
 description: "The objective slims."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExpeirment
 
-Node: encode_property_organism
+Node: organism
 dcid: "organism"
 typeOf: schema:Property
 name: "organism"
 description: "The organism bearing the target, the organism of the donor, the organism of the gene, the organism the biosample originated from."
+rangeIncludes: schema:Text,dcs:Species
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_organSlims
+Node: organSlims
 dcid: "organSlims"
 typeOf: schema:Property
 name: "organSlims"
 description: "The organ slims."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosampleType
 
-Node: encode_property_originatedFrom
+Node: originatedFrom
 dcid: "originatedFrom"
 typeOf: schema:Property
 name: "originatedFrom"
 description: "A biosample that the sample was orginated from."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_outputCategory
+Node: outputCategory
 dcid: "outputCategory"
 typeOf: schema:Property
 name: "outputCategory"
 description: "The overall catagory of the file content."
 
-Node: encode_property_outputType
+Node: outputType
 dcid: "outputType"
 typeOf: schema:Property
 name: "outputType"
 description: "A description of the file's purpose or contents."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBedFile
 
-Node: encode_property_parentOf
+Node: parentOf
 dcid: "parentOf"
 typeOf: schema:Property
 name: "parentOf"
 description: "See https://www.encodeproject.org/terms/parent_of"
+rangeIncludes: schema:Text,dcs:EncodeBiosample
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_partOf
+Node: partOf
 dcid: "partOf"
 typeOf: schema:Property
 name: "partOf"
 description: "A biosample from which a discrete component was taken. That component is this biosample."
+rangeIncludes: schema:Text,dcs:EncodeBiosample
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_passageNumber
+Node: passageNumber
 dcid: "passageNumber"
 typeOf: schema:Property
 name: "passageNumber"
 description: "Number of passages including the passages from the source."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
 Node: encode_property_peak
 dcid: "peak"
 typeOf: schema:Property
 name: "peak"
 description: "Point-source called for this peak; 0-based offset from chromStart. Use -1 if no point-source called."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_phase
+Node: phase
 dcid: "phase"
 typeOf: schema:Property
 name: "phase"
 description: "Specification of cell cycle phase of the biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_phone1
+Node: phone1
 dcid: "phone1"
 typeOf: schema:Property
 name: "phone1"
 description: "The lab's primary phone number (with country code)."
+rangeIncludes: schema:Text,schema:Number
+domainIncludes: dcs:Lab
 
-Node: encode_property_phone2
+Node: phone2
 dcid: "phone2"
 typeOf: schema:Property
 name: "phone2"
 description: "The lab's secondary phone number (with country code)."
+rangeIncludes: schema:Text,schema:Number
+domainIncludes: dcs:Lab
 
-Node: encode_property_pi
+Node: pi
 dcid: "pi"
 typeOf: schema:Property
 name: "pi"
 description: "Principle Investigator of the grant or lab."
+rangeIncludes: schema:Text,schema:Person
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_pipelineErrorDetail
+Node: pipelineErrorDetail
 dcid: "pipelineErrorDetail"
 typeOf: schema:Property
 name: "pipelineErrorDetail"
 description: "Explanation of why the experiment failed pipeline analysis."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncdoeExperiment
 
-Node: encode_property_pooledFrom
+Node: pooledFrom
 dcid: "pooledFrom"
 typeOf: schema:Property
 name: "pooledFrom"
 description: "A biosample from which an aliquot was taken to form the biosample."
+rangeIncludes: schema:Text,dcs:EncodeBiosample
+domainIncludes: dcs:EncdoeBiosample
 
-Node: encode_property_possibleControls
+Node: possibleControls
 dcid: "possibleControls"
 typeOf: schema:Property
 name: "possibleControls"
 description: "A dataset that contains files that can serve as a scientific control for this experiment."
+rangeIncludes: schema:Text,dcs:EncodeExpeirment
+domainIncludes: dcs:EncdoeExperiment
 
-Node: encode_property_postalCode
+Node: postalCode
 dcid: "postalCode"
 typeOf: schema:Property
 name: "postalCode"
 description: "ZIP/Postal code."
+rangeIncludes: schema:Number
+domainIncludes: dcs:Lab
 
-Node: encode_property_postSynchronizationTime
+Node: postSynchronizationTime
 dcid: "postSynchronizationTime"
 typeOf: schema:Property
 name: "postSynchronizationTime"
 description: "The time that elapsed past the point when animals were synchronized."
+rangeIncludes: schema:Number
+domainIncludes: dcs:EncdoeBiosample
 
-Node: encode_property_postSynchronizationTimeUnits
+Node: postSynchronizationTimeUnits
 dcid: "postSynchronizationTimeUnits"
 typeOf: schema:Property
 name: "postSynchronizationTimeUnits"
 description: "The units of time that elapsed past the point when animals were synchronized."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncdoeBiosample
 
-Node: encode_property_postTreatmentTime
+Node: postTreatmentTime
 dcid: "postTreatmentTime"
 typeOf: schema:Property
 name: "postTreatmentTime"
 description: "The time that elapsed past the point when biosamples were treated."
+rangeIncludes: schema:Number
+domainIncludes: dcs:EncdoeBiosample
 
-Node: encode_property_postTreatmentTimeUnits
+Node: postTreatmentTimeUnits
 dcid: "postTreatmentTimeUnits"
 typeOf: schema:Property
 name: "postTreatmentTimeUnits"
 description: "The units of time that elapsed past the point when biosamples were treated."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncdoeBiosample
 
-Node: encode_property_productId
+Node: productId
 dcid: "productId"
 typeOf: schema:Property
 name: "productId"
 description: "The product identifier provided by the vendor, for nucleic acids or proteins purchased directly from a vendor (e.g. total RNA)."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncdoeBiosample
 
-Node: encode_property_pValue
+Node: pValue
 dcid: "pValue"
 typeOf: schema:Property
 name: "pValue"
 description: "Measurement of statistical significance (-log10). Use -1 if no pValue is assigned."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_qualityMetrics
+Node: qualityMetrics
 dcid: "qualityMetrics"
 typeOf: schema:Property
 name: "qualityMetrics"
-description: "See https://www.encodeproject.org/terms/quality_metrics"
+description: "The quality of the generated Libary."
+rangeIncludes: schema:Number,schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_qValue
+Node: qValue
 dcid: "qValue"
 typeOf: schema:Property
 name: "qValue"
 description: "Measurement of statistical significance using false discovery rate (-log10). Use -1 if no qValue is assigned."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_references
+Node: references
 dcid: "references"
 typeOf: schema:Property
 name: "references"
 description: "A publication that provide smore information about the object."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_relatedSeries
+Node: relatedSeries
 dcid: "relatedSeries"
 typeOf: schema:Property
 name: "relatedSeries"
 description: "The related series."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_rnaIntegrityNumber
+Node: rnaIntegrityNumber
 dcid: "rnaIntegrityNumber"
 typeOf: schema:Property
 name: "rnaIntegrityNumber"
 description: "The RNA integrity number (RIN) value."
+rangeIncludes: schema:Number
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_sex
+Node: sex
 dcid: "sex"
 typeOf: schema:Property
 name: "sex"
 description: "Sex of a biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBioSample
 
-Node: encode_property_signalValue
+Node: signalValue
 dcid: "signalValue"
 typeOf: schema:Property
 name: "signalValue"
 description: "Measurement of overall (usually, average) enrichment for the region."
+rangeIncludes: schema:Number
+domainIncludes: dcs:BedLine
 
-Node: encode_property_sizeRange
+Node: sizeRange
 dcid: "sizeRange"
 typeOf: schema:Property
 name: "sizeRange"
 description: "The measured size range of the purified nucleic acid, in bp."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_source
+Node: source
 dcid: "source"
 typeOf: schema:Property
 name: "source"
 description: "The vendor, for nucleic acids or proteins purchased directly from a vendor (e.g. total RNA)."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_spikeinsUsed
+Node: spikeinsUsed
 dcid: "spikeinsUsed"
 typeOf: schema:Property
 name: "spikeinsUsed"
 description: "A specific spike-ins type dataset"
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_startingAmount
+Node: startingAmount
 dcid: "startingAmount"
 typeOf: schema:Property
 name: "startingAmount"
 description: "The initial quantity of cells, tissue or animals obtained."
+rangeIncludes: schema:Number
+domainIncludes: dcs:EncodeBiosample
 
 Node: encode_property_startingAmountUnits
 dcid: "startingAmountUnits"
 typeOf: schema:Property
 name: "startingAmountUnits"
 description: "The units used to quantify the amount of cells or tissue obtained."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_state
+Node: state
 dcid: "state"
 typeOf: schema:Property
 name: "state"
 description: "State/Province/Region."
+rangeIncludes: schema:Text,schema:State
+domainIncludes: dcs:Lab
 
-Node: encode_property_status
+Node: status
 dcid: "status"
 typeOf: schema:Property
 name: "status"
 description: "The current status of an encode entity."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_strandSpecificity
+Node: strandSpecificity
 dcid: "strandSpecificity"
 typeOf: schema:Property
 name: "strandSpecificity"
 description: "The preparation of the library uses a strand-specific protocol."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeLibrary
 
-Node: encode_property_subcellularFractionTermId
+Node: subcellularFractionTermId
 dcid: "subcellularFractionTermId"
 typeOf: schema:Property
 name: "subcellularFractionTermId"
 description: "See https://www.encodeproject.org/terms/subcellular_fraction_term_id"
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_subcellularFractionTermName
+Node: subcellularFractionTermName
 dcid: "subcellularFractionTermName"
 typeOf: schema:Property
 name: "subcellularFractionTermName"
 description: "See https://www.encodeproject.org/terms/subcellular_fraction_term_name"
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_submittedBy
+Node: submittedBy
 dcid: "submittedBy"
 typeOf: schema:Property
 name: "submittedBy"
 description: "The individual submitting the entity."
+rangeIncludes: schema:Text,schema:Person
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_submitterComment
+Node: submitterComment
 dcid: "submitterComment"
 typeOf: schema:Property
 name: "submitterComment"
 description: "Comment made by the submitter."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
 Node: encode_property_summary
 dcid: "summary"
 typeOf: schema:Property
 name: "summary"
-description: "The summary"
+description: "The summary."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_synchronization
+Node: synchronization
 dcid: "synchronization"
 typeOf: schema:Property
 name: "synchronization"
 description: "See https://www.encodeproject.org/terms/synchronization"
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_synonyms
+Node: synonyms
 dcid: "synonyms"
 typeOf: schema:Property
 name: "synonyms"
 description: "Alternative names for the given entity."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeObject
 
-Node: encode_property_systemSlims
+Node: systemSlims
 dcid: "systemSlims"
 typeOf: schema:Property
 name: "systemSlims"
 description: "The system slims."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosampleType
 
-Node: encode_property_target
+Node: target
 dcid: "target"
 typeOf: schema:Property
 name: "target"
 description: "The name of the gene whose expression or product is the intended goal of the antibody. For assays, such as ChIP-seq or RIP-seq, the name of the gene whose expression or product is under investigation for the experiment."
+rangeIncludes: schema:Text,dcs:Gene,dcs:Protein
+domainIncludes: dcs:EncodeExperiment
 
-Node: encode_property_termId
+Node: termId
 dcid: "termId"
 typeOf: schema:Property
 name: "termId"
 description: "An ontology identifier describing BiosampleType or OBI (Ontology for Biomedical Investigations) ontology identifier for the measurement device."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosampleType
 
-Node: encode_property_termName
+Node: termName
 dcid: "termName"
 typeOf: schema:Property
 name: "termName"
 description: "An ontology name describing BiosampleType or OBI (Ontology for Biomedical Investigations) ontology identifier for the measurement device."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosampleType
 
-Node: encode_property_thickEnd
+Node: thickEnd
 dcid: "thickEnd"
 typeOf: schema:Property
 name: "thickEnd"
 description: "The ending position at which the feature is drawn thickly. Not used in gappedPeak type, set to 0."
+rangeIncludes: schema:Number
+domainIncludes: dcs:Bedline
 
-Node: encode_property_thickStart
+Node: thickStart
 dcid: "thickStart"
 typeOf: schema:Property
 name: "thickStart"
 description: "The starting position at which the feature is drawn thickly. Not used in gappedPeak type, set to 0."
+rangeIncludes: schema:Number
+domainIncludes: dcs:Bedline
 
 Node: encode_property_treatments
 dcid: "treatments"
 typeOf: schema:Property
 name: "treatments"
 description: "Relevant mutagenesis treatment applied to result in the modification."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_typeSlims
+Node: typeSlims
 dcid: "typeSlims"
 typeOf: schema:Property
 name: "typeSlims"
 description: "The type slims."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosampleType
 
-Node: encode_property_wormLifeStage
+Node: wormLifeStage
 dcid: "wormLifeStage"
 typeOf: schema:Property
 name: "wormLifeStage"
 description: "Worm development stage of the animals used to prepare the biosample."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_wormSynchronizationStage
+Node: wormSynchronizationStage
 dcid: "wormSynchronizationStage"
 typeOf: schema:Property
 name: "wormSynchronizationStage"
 description: "Worm development stage at which the animals were synchronized."
+rangeIncludes: schema:Text
+domainIncludes: dcs:EncodeBiosample
 
-Node: encode_property_fromBedFile
+Node: fromBedFile
 dcid: "fromBedFile"
 typeOf: schema:Property
 name: "fromBedFile"
 description: "The BedFile containing the associated BedLine"
+rangeIncludes: dcs:EncodeBedFile
+domainIncludes: dcs:BedLine
 
-Node: encode_property_fromExperiment
+Node: fromExperiment
 dcid: "fromExperiment"
 typeOf: schema:Property
 name: "fromExperiment"
 description: "The EncodeExperiment associated with the given BedFile."
-
+rangeIncludes: dcs:EncodeExpeirment
+domainIncludes: dcs:EncodeBedFile
