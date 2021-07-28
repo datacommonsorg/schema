@@ -206,3 +206,29 @@ name: "CervicalCancerScreening"
 typeOf: dcs:HealthPreventionEnum
 description: "The process of detecting and removing abnormal tissue or cells in the cervix before cervical cancer develops."
 descriptionUrl: "https://en.wikipedia.org/wiki/Cervical_screening"
+
+Node: dcid:CDCPopulationWeighted
+name: "CDCPopulationWeighted"
+description: "Measurement is calculated for each county based on census tract estimates and 2010 U.S. Census census tract-level population data."
+typeOf: dcs:MeasurementQualifierEnum
+
+Node: dcid:palmerDroughtSeverityIndex
+name: "palmerDroughtSeverityIndex"
+typeOf: schema:Property
+domainIncludes: dcs:Atmosphere
+rangeIncludes: schema:Float
+description: "The Palmer Drought Severity Index (PDSI) uses readily available temperature and precipitation data to estimate relative dryness."
+
+Node: dcid:standardizedPrecipitationEvapotranspirationIndex
+name: "standardizedPrecipitationEvapotranspirationIndex"
+typeOf: schema:Property
+domainIncludes: dcs:Atmosphere
+rangeIncludes: schema:Float
+description: "The Standardized Precipitation Evapotranspiration Index (SPEI) is an extension of the widely used Standardized Precipitation Index (SPI). The SPEI is designed to take into account both precipitation and potential evapotranspiration (PET) in determining drought."
+
+Node: dcid:standardizedPrecipitationIndex
+name: "standardizedPrecipitationIndex"
+typeOf: schema:Property
+domainIncludes: dcs:Atmosphere
+rangeIncludes: schema:Float
+description: "The Standardized Precipitation Index (SPI) is a widely used index to characterize meteorological drought on a range of timescales."
