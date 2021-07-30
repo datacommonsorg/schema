@@ -76,7 +76,62 @@ domainIncludes: dcs:Atmosphere
 rangeIncludes: schema:Number
 name: "hazardIndex"
 
+Node: dcid:temperature
+typeOf: schema:Property
+description: "A physical quantity that expresses hot and cold."
+descriptionUrl: "https://en.wikipedia.org/wiki/Temperature"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "temperature"
+
+Node: dcid:precipitationRate
+typeOf: schema:Property
+description: "Amount of precipitation which includes drizzling, rain, sleet, snow, ice pellets, graupel and hail, over time."
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "precipitationRate"
+
+Node: dcid:emissionsScenario
+typeOf: schema:Property
+description: "Projections of future greenhouse gas (GHG) emissions used by analysts to assess future vulnerability to climate change."
+descriptionUrl: "https://en.wikipedia.org/wiki/Climate_change_scenario"
+domainIncludes: schema:Place
+rangeIncludes: schema:RepresentativeConcentrationPathwayEnum
+name: "emissionsScenario"
+
 ## Enums
+
+Node: dcid:RepresentativeConcentrationPathwayEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "RepresentativeConcentrationPathwayEnum"
+description: "A Representative Concentration Pathway (RCP) is a greenhouse gas concentration (not emissions) trajectory adopted by the IPCC. The pathways describe different climate futures, all of which are considered possible depending on the volume of greenhouse gases (GHG) emitted in the years to come."
+descriptionUrl: "https://en.wikipedia.org/wiki/Representative_Concentration_Pathway"
+
+Node: dcid:RCP2.6
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP2.6"
+description: "Peak in radiative forcing at ~ 3 W/m2 before 2100 and decline."
+descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
+
+Node: dcid:RCP4.5
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP4.5"
+description: "Stabilization without overshoot pathway to 4.5 W/m2 at stabilization after 2100."
+descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
+
+Node: dcid:RCP6
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP6"
+description: "Stabilization without overshoot pathway to 6 W/m2 at stabilization after 2100."
+descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
+
+
+Node: dcid:RCP8.5
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP8.5"
+description: "Rising radiative forcing pathway leading to 8.5 W/m2 in 2100."
+descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
 Node: dcid:AirPollutantEnum
 typeOf: schema:Class
