@@ -1,0 +1,25 @@
+#
+# DeepSolar model results
+#
+
+## Population Types
+
+Node: dcid:SolarInstallation
+typeOf: schema:Class
+description: "Electricity producing photovoltaic installation"
+subClassOf: schema:Thing
+name: "SolarInstallation"
+
+Node: dcid:SolarThermalInstallation
+typeOf: schema:Class
+description: "Solar thermal panels where solar energy produces high temperature heat used either directly for heating or to produce electricity"
+subClassOf: dcs:SolarInstallation
+name: "SolarThermalInstallation"
+
+## Properties
+
+Node: dcid:coverageArea
+typeOf: schema:Property
+domainIncludes: dcs:SolarInstallation
+rangeInclude: schema:Number
+name: "coverageArea"
