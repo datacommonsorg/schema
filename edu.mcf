@@ -819,6 +819,22 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 description: "An enumeration of housing member statuses."
 
+Node: dcid:WithChildrenUnder18
+name: "WithChildrenUnder18"
+typeOf: dcs:HousingMemberStatusEnum
+
+Node: dcid:WithoutChildrenUnder18
+name: "WithoutChildrenUnder18"
+typeOf: dcs:HousingMemberStatusEnum
+
+Node: dcid:WithPeopleOver60
+name: "WithPeopleOver60"
+typeOf: dcs:HousingMemberStatusEnum
+
+Node: dcid:WithoutPeopleOver60
+name: "WithoutPeopleOver60"
+typeOf: dcs:HousingMemberStatusEnum
+
 Node: dcid:WithACSEDChild
 name: "WithACSEDChild"
 typeOf: dcs:HousingMemberStatusEnum
@@ -882,6 +898,11 @@ Node: dcid:WithFoodStampsInThePast12Months
 name: "WithFoodStampsInThePast12Months"
 typeOf: dcs:BenefitsStatusEnum
 description: "Having collected food stamps benefits in the past 12 months."
+
+Node: dcid:WithoutFoodStampsInThePast12Months
+name: "WithoutFoodStampsInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Having not collected food stamps benefits in the past 12 months."
 
 Node: dcid:ACSEDChild
 name: "ACSEDChild"
