@@ -87,9 +87,15 @@ dcid: "NAICS/1029"
 name: "Unclassified"
 specializationOf: dcs:NAICS/102
 
+Node: NAICS11_21
+typeOf: dcs:NAICSEnum
+dcid: "NAICS/11_21"
+specializationOf: dcs:NAICS/10
+name: "Agriculture, forestry, fishing and hunting, and mining"
+
 Node: NAICS11
 name: "Agriculture, forestry, fishing and hunting"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/11_21
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/11"
 
@@ -865,7 +871,7 @@ Node: NAICS21
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/21"
 name: "Mining, quarrying, and oil and gas extraction"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/11_21
 
 Node: NAICS211
 typeOf: dcs:NAICSEnum
@@ -1183,7 +1189,7 @@ Node: NAICS22
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/22"
 name: "Utilities"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/48-49_22
 
 Node: NAICS221
 name: "Utilities"
@@ -9051,22 +9057,28 @@ name: "Other direct selling establishments"
 specializationOf: dcs:NAICS/45439
 typeOf: dcs:NAICSEnum
 
+Node: NAICS48-49_22
+dcid: "NAICS/48-49_22"
+name: "Transportation and warehousing, and utilities"
+specializationOf: dcs:NAICS/10
+typeOf: NAICSEnum
+
 Node: NAICS48-49
 dcid: "NAICS/48-49"
 name: "Transportation and warehousing"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/48-49_22
 typeOf: dcs:NAICSEnum
 
 Node: NAICS48
 dcid: "NAICS/48"
 name: "Transportation and warehousing"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/48-49
 typeOf: dcs:NAICSEnum
 
 Node: NAICS49
 dcid: "NAICS/49"
 name: "Transportation and warehousing"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/48-49
 typeOf: dcs:NAICSEnum
 
 Node: NAICS481
@@ -10497,10 +10509,16 @@ dcid: "NAICS/519190"
 name: "All other information services"
 specializationOf: dcs:NAICS/51919
 
+Node:NAICS52-53
+dcid: "NAICS/52-53"
+name: "Finance and insurance, and real estate and rental and leasing"
+specializationOf: dcs:NAICS/10
+typeOf: dcs:NAICSEnum
+
 Node: NAICS52
 dcid: "NAICS/52"
 name: "Finance and insurance"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/52-53
 typeOf: dcs:NAICSEnum
 
 Node: NAICS521
@@ -11044,7 +11062,7 @@ name: "Other financial vehicles"
 specializationOf: dcs:NAICS/52599
 
 Node: NAICS53
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/52-53
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/53"
 name: "Real estate and rental and leasing"
@@ -11409,9 +11427,15 @@ dcid: "NAICS/533110"
 name: "Lessors of nonfinancial intangible assets"
 specializationOf: dcs:NAICS/53311
 
+Node: NAICS54-56
+name: "Professional, scientific, and management, and administrative and waste management services"
+specializationOf: dcs:NAICS/10
+typeOf: dcs:NAICSEnum
+dcid: "NAICS/54-56"
+
 Node: NAICS54
 name: "Professional, Scientific, and Technical Services"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/54-56
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/54"
 
@@ -11989,7 +12013,7 @@ Node: NAICS55
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/55"
 name: "Management of companies and enterprises"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/54-56
 
 Node: NAICS551
 typeOf: dcs:NAICSEnum
@@ -12029,7 +12053,7 @@ specializationOf: dcs:NAICS/55111
 
 Node: NAICS56
 name: "Administrative and Support and Waste Management Services"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/54-56
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/56"
 
@@ -12555,9 +12579,15 @@ dcid: "NAICS/562998"
 name: "Miscellaneous waste management services"
 specializationOf: dcs:NAICS/56299
 
+Node: NAICS61-62
+name: "Educational services, and health care and social assistance"
+specializationOf: dcs:NAICS/10
+typeOf: dcs:NAICSEnum
+dcid: "NAICS/61-62"
+
 Node: NAICS61
 name: "Educational services"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/61-62
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/61"
 
@@ -12785,7 +12815,7 @@ name: "Educational support services"
 
 Node: NAICS62
 name: "Health care and social assistance"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/61-62
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/62"
 
@@ -13335,11 +13365,17 @@ dcid: "NAICS/624410"
 name: "Child day care services"
 specializationOf: dcs:NAICS/62441
 
+Node: NAICS71-72
+typeOf: NAICSEnum
+dcid: "NAICS/71-72"
+specializationOf: dcs:NAICS/10
+name: "Arts, entertainment, and recreation, and accommodation and food services"
+
 Node: NAICS71
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/71"
 name: "Arts, entertainment, and recreation"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/71-72
 
 Node: NAICS711
 name: "Performing arts and spectator sports"
@@ -13705,7 +13741,7 @@ Node: NAICS72
 typeOf: dcs:NAICSEnum
 dcid: "NAICS/72"
 name: "Accommodation and food services"
-specializationOf: dcs:NAICS/10
+specializationOf: dcs:NAICS/71-72
 
 Node: NAICS721
 typeOf: dcs:NAICSEnum
