@@ -1,0 +1,90 @@
+# These StatVars are used as measurementDenominators but do not actually have
+# any attached data.
+# If data for any of the following StatVars come, please move the node to an
+# appropriate file.
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_Government
+typeOf: schema:StatisticalVariable
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+remunerator: dcs:Government
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_7To14Years
+typeOf: schema:StatisticalVariable
+measuredProperty: dcs:count
+populationType: schema:Person
+age: dcs:Years7To14
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_7To14Years_Male
+typeOf: schema:StatisticalVariable
+measuredProperty: dcs:count
+populationType: schema:Person
+age: dcs:Years7To14
+gender: schema:Male
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_7To14Years_Female
+typeOf: schema:StatisticalVariable
+measuredProperty: dcs:count
+populationType: schema:Person
+age: dcs:Years7To14
+gender: schema:Female
+statType: dcs:measuredValue
+
+Node: dcid:Count_BirthEvent_LiveBirth
+typeOf: schema:StatisticalVariable
+measuredProperty: dcs:count
+populationType: dcs:BirthEvent
+medicalStatus: dcs:LiveBirth
+statType: dcs:measuredValue
+
+Node: dcid:Count_BirthEvent_LiveBirth_Male
+typeOf: schema:StatisticalVariable
+measuredProperty: dcs:count
+populationType: dcs:BirthEvent
+medicalStatus: dcs:LiveBirth
+gender: schema:Male
+statType: dcs:measuredValue
+
+Node: dcid:Count_BirthEvent_LiveBirth_Female
+typeOf: schema:StatisticalVariable
+measuredProperty: dcs:count
+populationType: dcs:BirthEvent
+medicalStatus: dcs:LiveBirth
+gender: schema:Female
+statType: dcs:measuredValue
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government
+description: "The amount of government expenditure on education."
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:EducationExpenditure
+remunerator: dcs:Government
+
+Node: dcid:Count_Person_20To79Years
+description: "Number of people ages 20-79."
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+age: [20 79 Years]
+
+Node: dcid:Amount_Production_Energy
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:Production
+producedThing: dcs:Energy
+
+Node: dcid:Amount_Consumption_Energy
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:Consumption
+producedThing: dcs:Energy
