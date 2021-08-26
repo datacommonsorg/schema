@@ -1307,6 +1307,14 @@ Node: dcid:TwoOrMoreWorkersInThePast12Months
 typeOf: dcs:USC_WorkStatusEnum
 name: "TwoOrMoreWorkersInThePast12Months"
 
+Node: dcid:LessThanFullTimeYearRoundWorker
+typeOf: dcs:USC_WorkStatusEnum
+name: "LessThanFullTimeYearRoundWorker"
+
+Node: dcid:DidNotWork
+typeOf: dcs:USC_WorkStatusEnum
+name: "DidNotWork"
+
 Node: dcid:USC_ResidenceTypeEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -1467,6 +1475,36 @@ name: "DifferentHouse1YearAgo"
 Node: dcid:SameHouse1YearAgo
 typeOf: dcs:USC_ResidentStatusEnum
 name: "SameHouse1YearAgo"
+
+Node: dcid:DifferentHouseInTheUS
+typeOf: dcs:USC_ResidentStatusEnum
+specializtionOf: dcs:DifferentHouse1YearAgo
+name: "DifferentHouseInTheUS"
+
+Node: dcid:DifferentHouseInSameCounty
+typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:DifferentHouseInTheUS
+name: "DifferentHouseInSameCounty"
+
+Node: dcid:DifferentHouseInDifferentCounty
+typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:DifferentHouseInTheUS
+name: "DifferentHouseInDifferentCounty"
+
+Node: dcid:DifferentHouseInDifferentCountySameState
+typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:DifferentHouseInDifferentCounty
+name: "DifferentHouseInDifferentCountySameState"
+
+Node: dcid:DifferentHouseInDifferentCountyDifferentState
+typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:DifferentHouseInDifferentCounty
+name: "DifferentHouseInDifferentCountyDifferentState"
+
+Node: dcid:DifferentHouseAbroad
+typeOf: dcs:USC_ResidentStatusEnum
+specializtionOf: dcs:DifferentHouse1YearAgo
+name: "DifferentHouseAbroad"
 
 Node: dcid:USC_FacilitiesEnum
 typeOf: schema:Class
