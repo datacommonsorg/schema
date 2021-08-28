@@ -204,7 +204,7 @@ dcid: dcs:BLSSeasonallyAdjusted
 typeOf: dcs:SeasonalAdjustmentEnum
 name: "BLSSeasonallyAdjusted"
 description: "Indicates the adjustment of time series data to eliminate the effect of intrayear variations which tend to occur during the same period on an annual basis"
-desriptionUrl: "https://www.bls.gov/help/def/ce.htm"
+descriptionUrl: "https://www.bls.gov/help/def/ce.htm"
 
 Node: BLSSeasonallyUnadjustedEnum
 dcid: dcs:BLSSeasonallyUnadjusted
@@ -215,8 +215,8 @@ description: "Indicates raw time series data without adjustments to eliminate th
 Node: dcid:jobChangeEvent
 name: "jobChangeEvent"
 typeOf: schema:Property
-domain: schema:Person
-range: dcs:JobChangeEventEnum
+domainIncludes: schema:Person
+rangeIncludes: dcs:JobChangeEventEnum
 
 Node: dcid:JobChangeEventEnum
 name: "JobChangeEventEnum"

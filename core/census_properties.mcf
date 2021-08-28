@@ -29,6 +29,19 @@ rangeIncludes: dcs:USC_CitizenshipEnum
 name: "citizenship"
 typeOf: schema:Property
 domainIncludes: schema:Person
+supersededBy: dcs:citizenshipStatus
+
+Node: dcid:citizenshipStatus
+rangeIncludes: dcs:USC_CitizenshipEnum
+name: "citizenshipStatus"
+typeOf: schema:Property
+domainIncludes: schema:Person
+
+Node: dcid:disabilityStatus
+rangeIncludes: dcs:USC_DisabilityStatusEnum
+name: "disabilityStatus"
+typeOf: schema:Property
+domainIncludes: schema:Person
 
 Node: collegeOrGraduateSchoolEnrollment
 dcid: "collegeOrGraduateSchoolEnrollment"
@@ -95,6 +108,13 @@ dcid: "income"
 typeOf: schema:Property
 rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile
 name: "income"
+domainIncludes: schema:Person
+
+Node: householdIncome
+dcid: "householdIncome"
+typeOf: schema:Property
+rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile
+name: "householdIncome"
 domainIncludes: schema:Person
 
 Node: incomeStatus

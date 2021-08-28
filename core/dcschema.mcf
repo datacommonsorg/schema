@@ -12,6 +12,25 @@ domainIncludes: schema:Class
 rangeIncludes: schema:Class
 description: "Indicates Class hierarchy. For example, City is a subClassOf AdministrativeArea. Thus, instances of City are also instances of AdministrativeArea."
 
+Node: dcid:subPropertyOf
+name: "subPropertyOf"
+typeOf: schema:Property
+domainIncludes: schema:Property
+rangeIncludes: schema:Property
+description: "Indicates Property hierarchy."
+
+Node: dcid:equivalentClass
+name: "equivalentClass"
+typeOf: schema:Property
+domainIncludes: schema:Class
+rangeIncludes: schema:Class
+
+Node: dcid:equivalentProperty
+name: "equivalentProperty"
+typeOf: schema:Property
+domainIncludes: schema:Property
+rangeIncludes: schema:Property
+
 Node: dcid:descriptionUrl
 name: "descriptionUrl"
 typeOf: schema:Property
@@ -231,7 +250,7 @@ Node: dcid:administrativeCapital
 name: "administrativeCapital"
 typeOf: schema:Property
 description: "The municipality exercising primary status in a country, state, province, or other administrative region, usually as its seat of government."
-descruptionUrl: "https://en.wikipedia.org/wiki/Capital_city"
+descriptionUrl: "https://en.wikipedia.org/wiki/Capital_city"
 rangeIncludes: schema:City, schema:Town
 domainIncludes: schema:AdministrativeArea
 
@@ -2589,3 +2608,59 @@ Node: dcid:Years
 typeOf: dcs:TimeUnitOfMeasure
 name: "Years"
 sameAs: dcs:Year
+
+Node: dcid:causeOfDeath
+typeOf: schema:Property
+name: "causeOfDeath"
+domainIncludes: schema:Person, schema:MortalityEvent
+rangeIncludes: dcs:CauseOfDeathAndDisabilityEnum, dcs:ICD10_113CausesOfDeath, dcs:HealthOutcomeEnum
+
+Node: dcid:testResult
+typeOf: schema:Property
+name: "testResult"
+domainIncludes: dcs:MedicalTest
+rangeIncludes: dcs:MedicalTestResultEnum
+
+Node: dcid:economicSector
+name: "economicSector"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:NACEEnum
+
+Node: dcid:workPeriod
+name: "workPeriod"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:QuantityRange
+
+Node: dcid:workerStatus
+name: "workerStatus"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:WorkerClassificationEnum
+supersededBy: dcs:workerClassification
+
+Node: dcid:workStatus
+name: "workStatus"
+typeOf: schema:Property
+domainIncludes: schema:Household
+rangeIncludes: dcs:USC_WorkStatusEnum
+
+Node: dcid:Vaccine
+name: "Vaccine"
+typeOf: schema:Class
+subClassOf: schema:Thing
+description: "A biological preparation that provides active acquired immunity to a particular infectious disease"
+descriptionUrl: "https://en.wikipedia.org/wiki/Vaccine"
+
+Node: dcid:vaccineStatus
+name: "vaccineStatus"
+typeOf: schema:Property
+domainIncludes: dcs:Vaccine
+rangeIncludes: dcs:VaccineStatusEnum
+
+Node: dcid:closeMatch
+name: "closeMatch"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Thing, schema:Text
