@@ -44,18 +44,18 @@ descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=H"
 Node: dcid:generation
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
 name: "generation"
 
 Node: dcid:producingSector
 typeOf: schema:Property
-rangeIncludes: dcs:ElectricityProductionSectorEnum
+rangeIncludes: dcs:ElectricityProductionSectorEnum, dcs:PowerPlantSectorEnum
 domainIncludes: schema:Electricity
 name: "producingSector"
 
 Node: dcid:consumingSector
 typeOf: schema:Property
-rangeIncludes: dcs:ElectricityConsumptionSectorEnum
+rangeIncludes: dcs:ElectricityConsumptionSectorEnum, dcs:EnergyConsumptionSectorEnum, dcs:PowerPlantSectorEnum
 domainIncludes: schema:Electricity
 name: "consumingSector"
 
@@ -74,7 +74,7 @@ name: "retailSales"
 Node: dcid:consumption
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
 name: "consumption"
 
 Node: dcid:retailPrice
@@ -86,19 +86,33 @@ name: "retailPrice"
 Node: dcid:stock
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Product
+domainIncludes: schema:Energy, schema:Fuel, schema:Product
 name: "stock"
+supercededBy: dcid:stocks
+
+Node: dcid:stocks
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Energy, schema:Fuel, schema:Product
+name: "stocks"
 
 Node: dcid:receipt
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Product
+domainIncludes: schema:Energy, schema:Fuel, schema:Product
 name: "receipt"
+supercededBy: dcid:receipts
+
+Node: dcid:receipts
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Energy, schema:Fuel, schema:Product
+name: "receipts"
 
 Node: dcid:usedFor
 typeOf: schema:Property
-rangeIncludes: dcs:FuelUsageSourceEnum
-domainIncludes: dcs:Fuel
+rangeIncludes: dcs:EnergyConsumptionSectorEnum, dcs:FuelUsageSourceEnum
+domainIncludes: dcs:Energy, dcs:Fuel
 name: "usedFor"
 
 Node: dcid:salesRevenue
@@ -110,7 +124,7 @@ name: "salesRevenue"
 Node: dcid:capacity
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:EnergyGeneration
+domainIncludes: schema:Electricity, schema:Energy, schema:EnergyGeneration, schema:Fuel
 name: "capacity"
 
 Node: dcid:outage
@@ -118,6 +132,36 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:EnergyGeneration
 name: "outage"
+
+Node: dcid:imports
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+name: "imports"
+
+Node: dcid:exports
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+name: "exports"
+
+Node: dcid:reserves
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Energy, schema:Fuel
+name: "reserves"
+
+Node: dcid:loss
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+name: "loss"
+
+Node: dcid:productReclassification
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Fuel
+name: "productReclassification"
 
 ## EnergySourceEnum
 
@@ -161,6 +205,7 @@ name: "Geothermal"
 Node: dcid:NaturalGas
 typeOf: dcs:EnergySourceEnum
 name: "NaturalGas"
+specializationOf: dcid:HeatCombustibleFuels
 
 Node: dcid:BituminousCoal
 typeOf: dcs:EnergySourceEnum
@@ -205,6 +250,306 @@ name: "OtherGases"
 Node: dcid:RenewableEnergy
 typeOf: dcs:RenewableEnergy
 name: "RenewableEnergy"
+
+Node: dcid:AdditivesOxygenates
+typeOf: dcs:EnergySourceEnum
+name: "AdditivesOxygenates"
+
+Node: dcid:AnimalWaste
+typeOf: dcs:EnergySourceEnum
+name: "AnimalWaste"
+
+Node: dcid:AviationGasoline
+typeOf: dcs:EnergySourceEnum
+name: "AviationGasoline"
+
+Node: dcid:Bagasse
+typeOf: dcs:EnergySourceEnum
+name: "Bagasse"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:BioDiesel
+typeOf: dcs:EnergySourceEnum
+name: "Bio-diesel"
+
+Node: dcid:BioGas
+typeOf: dcs:EnergySourceEnum
+name: "Bio-gas"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:BioGasoline
+typeOf: dcs:EnergySourceEnum
+name: "Bio-gasoline"
+
+Node: dcid:BioJetKerosene
+typeOf: dcs:EnergySourceEnum
+name: "Bio jet kerosene"
+
+Node: dcid:BlackLiquor
+typeOf: dcs:EnergySourceEnum
+name: "Black liquor"
+
+Node: dcid:BlastFurnaceGas
+typeOf: dcs:EnergySourceEnum
+name: "Blast furnacae gas"
+
+Node: dcid:BrownCoal
+typeOf: dcs:EnergySourceEnum
+name: "Brown coal"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:BrownCoalBriquettes
+typeOf: dcs:EnergySourceEnum
+name: "Brown coal briquettes"
+
+Node: dcid:Charcoal
+typeOf: dcs:EnergySourceEnum
+name: "Charcoal"
+
+Node: dcid:ChemicalHeat
+typeOf: dcs:EnergySourceEnum
+name: "Chemical heat"
+
+Node: dcid:CoalProducts
+typeOf: dcs:EnergySourceEnum
+name: "Coal products"
+
+Node: dcid:CoalTar
+typeOf: dcs:EnergySourceEnum
+name: "Coal tar"
+
+Node: dcid:CokeOvenCoke
+typeOf: dcs:EnergySourceEnum
+name: "Coke oven coke"
+
+Node: dcid:CokeOvenGas
+typeOf: dcs:EnergySourceEnum
+name: "Coke oven gas"
+
+Node: dcid:CokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Coking coal"
+
+Node: dcid:CombustibleFuel
+typeOf: dcs:EnergySourceEnum
+name: "Combustible fuel"
+
+Node: dcid:CrudeOil
+typeOf: dcs:EnergySourceEnum
+name: "Crude oil"
+
+Node: dcid:DieselOil
+typeOf: dcs:EnergySourceEnum
+name: "Diesel oil"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:ElectricBoiler
+typeOf: dcs:EnergySourceEnum
+name: "Electric boiler"
+
+Node: dcid:Ethane
+typeOf: dcs:EnergySourceEnum
+name: "Ethane"
+
+Node: dcid:FallingWater
+typeOf: dcs:EnergySourceEnum
+name: "Falling water"
+
+Node: dcid:FuelOil
+typeOf: dcs:EnergySourceEnum
+name: "Fuel oil"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:Fuelwood
+typeOf: dcs:EnergySourceEnum
+name: "Fuel wood"
+
+Node: dcid:GasCoke
+typeOf: dcs:EnergySourceEnum
+name: "Gas coke"
+
+Node: dcid:GasolineJetFuel
+typeOf: dcs:EnergySourceEnum
+name: "Gasoline jet fuel"
+
+Node: dcid:GasworksGas
+typeOf: dcs:EnergySourceEnum
+name: "Gasworks gas"
+
+Node: dcid:HardCoal
+typeOf: dcs:EnergySourceEnum
+name: "Hard coal"
+
+Node: dcid:Heat
+typeOf: dcs:EnergySourceEnum
+name: "Heat"
+
+Node: dcid:HeatCombustibleFuels
+typeOf: dcs:EnergySourceEnum
+name: "Heat combustible fuels"
+
+Node: dcid:HeatPump
+typeOf: dcs:EnergySourceEnum
+name: "Heat pump"
+
+Node: dcid:Hydrogen
+typeOf: dcs:EnergySourceEnum
+name: "Hydrogen"
+
+Node: dcid:IndustrialWaste
+typeOf: dcs:EnergySourceEnum
+name: "Industrial waste"
+
+Node: dcid:KeroseneJetFuel
+typeOf: dcs:EnergySourceEnum
+name: "Kerosene jet fuel"
+
+Node: dcid:LiquidBioFuel
+typeOf: dcs:EnergySourceEnum
+name: "Liquid bio fuel"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:LiquifiedPetroleumGas
+typeOf: dcs:EnergySourceEnum
+name: "Liquified petroleum gas (LPG)"
+
+Node: dcid:Lubricants
+typeOf: dcs:EnergySourceEnum
+name: "Lubricants"
+
+Node: dcid:ManufacturedGas
+typeOf: dcs:EnergySourceEnum
+name: "Manufactured gas"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:MotorGasoline
+typeOf: dcs:EnergySourceEnum
+name: "Motor gasoline"
+
+Node: dcid:MunicipalWaste
+typeOf: dcs:EnergySourceEnum
+name: "Municipal waste"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:Naphtha
+typeOf: dcs:EnergySourceEnum
+name: "Naphtha"
+
+Node: dcid:NaturalGasLiquids
+typeOf: dcs:EnergySourceEnum
+name: "Natural gas liquids"
+
+Node: dcid:NonRenewableWaste
+typeOf: dcs:EnergySourceEnum
+name: "Non-renewable waste"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:OceanElectricity
+typeOf: dcs:EnergySourceEnum
+name: "Ocean electricity"
+
+Node: dcid:OilProducts
+typeOf: dcs:EnergySourceEnum
+name: "Oil products"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:OilShale
+typeOf: dcs:EnergySourceEnum
+name: "Oil shale"
+
+Node: dcid:TarSands
+typeOf: dcs:EnergySourceEnum
+name: "Tar sands"
+
+Node: dcid:OilShaleAndTarSands
+typeOf: dcs:EnergySourceEnum
+name: "Oil shale and tar sands"
+
+Node: dcid:UN_OtherBituminousCoal
+typeOf: dcs:EnergySourceEnum
+name: "UN Other bituminous coal"
+
+Node: dcid:UN_OtherHydrocarbons
+typeOf: dcs:EnergySourceEnum
+name: "UN Other hydrocarbons"
+
+Node: dcid:UN_OtherLiquidBiofuels
+typeOf: dcs:EnergySourceEnum
+name: "UN Other liquid biofuels"
+
+Node: dcid:UN_OtherOilProducts
+typeOf: dcs:EnergySourceEnum
+name: "UN other oil products"
+
+Node: dcid:UN_OtherRecoveredGases
+typeOf: dcs:EnergySourceEnum
+name: "UN other recovered gases"
+
+Node: dcid:ParaffinWaxes
+typeOf: dcs:EnergySourceEnum
+name: "Paraffin waxes"
+
+Node: dcid:PatentFuel
+typeOf: dcs:EnergySourceEnum
+name: "Patent fuel"
+
+Node: dcid:Peat
+typeOf: dcs:EnergySourceEnum
+name: "Peat"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:PeatProducts
+typeOf: dcs:EnergySourceEnum
+name: "Peat products"
+
+Node: dcid:PumpedHydro
+typeOf: dcs:EnergySourceEnum
+name: "Pumped hydro"
+
+Node: dcid:RefineryFeedstocks
+typeOf: dcs:EnergySourceEnum
+name: "Refinery feedstocks"
+
+Node: dcid:RefineryGas
+typeOf: dcs:EnergySourceEnum
+name: "Refinery gas"
+
+Node: dcid:SolarPhotovoltaic
+typeOf: dcs:EnergySourceEnum
+name: "Solar photovoltaic"
+
+Node: dcid:SolarThermal
+typeOf: dcs:EnergySourceEnum
+name: "Solar thermal"
+
+Node: dcid:SolidBioFuel
+typeOf: dcs:EnergySourceEnum
+name: "Solid bio fuel"
+specializationOf: dcid:HeatCombustibleFuels
+
+Node: dcid:ThermalElectricity
+typeOf: dcs:EnergySourceEnum
+name: "Thermal electricity"
+
+Node: dcid:Tidal
+typeOf: dcs:EnergySourceEnum
+name: "Tidal"
+
+Node: dcid:UN_OtherFuel
+typeOf: dcs:EnergySourceEnum
+name: "UN other fuel"
+
+Node: dcid:Uranium
+typeOf: dcs:EnergySourceEnum
+name: "Uranium"
+
+Node: dcid:VegetalWaste
+typeOf: dcs:EnergySourceEnum
+name: "Vegetal waste"
+
+Node: dcid:WhiteSpirit
+typeOf: dcs:EnergySourceEnum
+name: "White spirit"
 
 ## Electricity production/consumption sector enums
 
@@ -281,7 +626,7 @@ subClassOf: schema:Enumeration
 name: "FuelUsageSourceEnum"
 
 Node: dcid:ElectricityGeneration
-typeOf: schema:FuelUsageSourceEnum, dcs:Production
+typeOf: dcs:EnergyConsumptionSectorEnum, schema:FuelUsageSourceEnum, dcs:Production
 name: "ElectricityGeneration"
 
 Node: dcid:UsefulThermalOutputInCHPSystem
@@ -291,6 +636,276 @@ name: "UsefulThermalOutputInCHPSystem"
 Node: dcid:ElectricityGenerationAndThermalOutput
 typeOf: schema:FuelUsageSourceEnum
 name: "ElectricityGenerationAndThermalOutput"
+
+Node: dcid:NonEnergyUse
+typeOf: schema:FuelUsageSourceEnum
+name: "Non-energy use"
+
+## EnergyConsumptionSectorEnum
+
+Node: dcid:EnergyConsumptionSectorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EnergyConsumptionSectorEnum"
+
+Node: dcid:EnergyIndustryOwnUse
+typeOf: schema:EnergyConsumptionSectorEnum
+name: "EnergyIndustryOwnUse"
+
+Node: dcid:ManufacturingConstructionNonFuelMiningIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Manufacturing, construction, non-fuel mining industry"
+
+Node: dcid:Manufacturing
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Manufacturing"
+
+Node: dcid:Construction
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Manufacturing"
+
+Node: dcid:IronSteel
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Iron and steel"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:ChemicalPetrochemicalIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Chemical petrochemical industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:NonFerrousMetalsIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Non-ferrous metals industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:NonMetallicMineralsIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Non-metallic minerals industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:TransportEquipmentIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Transport equipment industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:MachineryIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Machinery industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:MiningAndQuarryingIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Mining and quarrying"
+specializationOf: dcid:ManufacturingConstructionNonFuelMiningIndustry
+
+Node: dcid:FoodAndTobaccoIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Food and tobacco industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:PaperPulpPrintIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Paper pulp and print industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:WoodAndWoodProductsIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Wood industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:ConstructionIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Construction industry"
+specializationOf: dcid:ManufacturingConstructionNonFuelMiningIndustry
+
+Node: dcid:TextileAndLeatherIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Textile and leather industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:UN_OtherManufacturingIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "UN Other manufacturing industry"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:TransportIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Transport industry"
+
+Node: dcid:RoadTransport
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Road transport"
+specializationOf: dcid:TransportIndustry
+
+Node: dcid:RailTransport
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Rail transport"
+specializationOf: dcid:TransportIndustry
+
+Node: dcid:DomesticAviationTransport
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Domestic aviation"
+specializationOf: dcid:TransportIndustry
+
+Node: dcid:DomesticNavigationTransport
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Domestic navigation"
+specializationOf: dcid:TransportIndustry
+
+Node: dcid:PipelineTransport
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Pipeline transport"
+specializationOf: dcid:TransportIndustry
+
+Node: dcid:UN_OtherTransport
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "UN Other transport"
+specializationOf: dcid:TransportIndustry
+
+Node: dcid:Households
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Households"
+
+Node: dcid:Agriculture
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Agriculture"
+
+Node: dcid:CommerceAndPublicServices
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Commerce and public services"
+
+Node: dcid:UN_OtherIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "UN other industry"
+
+Node: dcid:UN_OtherSector
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "UN other sector"
+
+Node: dcid:UN_UnspecifiedSector
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "UN unspecified sector"
+
+Node: dcid:InternationalMarineBunkers
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "InternationalMarineBunkers"
+
+Node: dcid:InternationalAviationBunkers
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "InternationalAviationBunkers"
+
+Node: dcid:FuelTransformationIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Fuel transformation industry"
+
+Node: dcid:FuelTransformation
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Fuel transformation"
+
+Node: dcid:Industry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Industry"
+
+Node: dcid:EnergyIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Energy industry"
+specializationOf: Industry
+
+Node: dcid:CokeOvens
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Coke ovens"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:GasWorks
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Gas works"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:BriquettingPlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Briquetting plants"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:BlastFurnaces
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Blast furnaces"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:CharcoalPlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Charcoal plants"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:GasToLiquidPlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Gas to liquid plants"
+specializationOf: dcid:FuelTransformationIndustry
+
+Node: dcid:CoalLiquefactionPlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Coal liquefaction plants"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:PetrochemicalPlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Petrochemical plants"
+specializationOf: dcid:FuelTransformationIndustry
+
+Node: dcid:OilRefineries
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Oil refineries"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:NaturalGasPlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Natural gas plants"
+specializationOf: dcid:EnergyIndustry, dcid:FuelTransformationIndustry
+
+Node: dcid:ElectricBoilers
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Electric boilers"
+specializationOf: dcid:FuelTransformationIndustry
+
+Node: dcid:HeatPumps
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Heat pumps"
+specializationOf: dcid:FuelTransformationIndustry
+
+Node: dcid:CoalMines
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Coal mines"
+specializationOf: dcid:EnergyIndustry
+
+Node: dcid:OilGasExtraction
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Oil and gas extraction"
+specializationOf: dcid:EnergyIndustry
+
+Node: dcid:BiogasProduction
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Biogas production"
+specializationOf: dcid:EnergyIndustry
+
+Node: dcid:NuclearFuelProcessing
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Nuclear fuel processing"
+specializationOf: dcid:EnergyIndustry
+
+Node: dcid:PumpStoragePlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Pump storage plants"
+specializationOf: dcid:EnergyIndustry
+
+Node: dcid:LiquifiedNaturalGasPlants
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Liquified natural gas plants"
+specializationOf: dcid:EnergyIndustry
+
+Node: dcid:NonEnergyIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Non-energy industry"
+specializationOf: dcid:Industry
 
 ## StatAccumulationPeriodEnum
 
@@ -350,11 +965,35 @@ typeOf: dcs:EnergyUnitOfMeasure
 description: "Energy, in BTU's, per pound of fuel."
 name: "BtuPerPound"
 
+Node: dcid:Kilowatt
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Kilowatt"
+description: "Unit of energy that equals one thousand watts."
+descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Kilowatt"
+
 Node: dcid:Megawatt
 typeOf: dcs:EnergyUnitOfMeasure
 name: "Megawatt"
 description: "Unit of energy that equals one million watts."
 descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Megawatt"
+
+Node: dcid:Gigawatt
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Gigawatt"
+description: "Unit of energy that equals one billion watts."
+descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Gigawatt"
+
+Node: dcid:Terawatt
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Terawatt"
+description: "Unit of energy that equals one trillion watts."
+descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Terawatt"
+
+Node: dcid:Petawatt
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Petawatt"
+description: "Unit of energy that equals one quadrillion watts."
+descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Petawatt"
 
 Node: dcid:KilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
@@ -367,11 +1006,21 @@ typeOf: dcs:EnergyUnitOfMeasure
 name: "MegawattHour"
 description: "Unit of energy that equals 1000 Kilowatthours."
 
+Node: dcid:Terajoule
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Terajoule"
+description: "Unit of energy that equals one trillion joules or about 0.278 GWh."
+
 Node: dcid:Barrel
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Barrel"
 description: "A barrel is one of several units of volume applied in various contexts. In the worldwide oil industry, an oil barrel is defined as 42 US gallons, which is about 159 litres,[10] or 35 imperial gallons."
 descriptionUrl: "https://en.wikipedia.org/wiki/Barrel_(unit)"
+
+Node: dcid:CubicMeter
+typeOf: dcs:VolumeUnitOfMeasure
+name: "Cubic meter"
+description: "It is the volume of a cube with edges one metre in length, also equal to 1000 liters."
 
 Node: dcid:ShortTon
 typeOf: dcs:EnergyUnitOfMeasure
@@ -660,7 +1309,6 @@ name: "Non-regulated"
 typeOf: dcid:RegulatoryStatusEnum
 
 
-
 ## Power Plant Sector Enum
 
 Node: dcid:PowerPlantSectorEnum
@@ -696,6 +1344,73 @@ typeOf: dcid:PowerPlantSectorEnum
 Node: dcid:EIA_Industrial_CombinedHeatPower
 name: "Industrial, Combined Heat and Power"
 typeOf: dcid:PowerPlantSectorEnum
+
+Node: dcid:OffshorePlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Offshore Plants"
+
+Node: dcid:Refinery
+typeOf: dcs:PowerPlantSectorEnum
+name: "Refinery"
+
+Node: dcid:PetroleumPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Petroleum plants"
+
+Node: dcid:MainActivityProducer
+typeOf: dcs:PowerPlantSectorEnum
+name: "Main activity producer"
+description: "Enterprises which produce electricity or heat as their principal activity."
+
+Node: dcid:AutoProducer
+typeOf: dcs:PowerPlantSectorEnum
+name: "Auto producer"
+description: "Enterprises which produce energy but for whom the production is not their principal activity."
+
+Node: dcid:CombinedHeatPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Combined heat and power plants (CHP)"
+description: "Combined Heat and Power (CHP) plants, also called co-gen plants, produce both heat and electricity from at least one generating unit in the plant."
+
+Node: dcid:HeatPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Heat plants"
+description: "Plants (including heat pumps and electric boilers) designed to produce heat for deliveries to third parties."
+
+Node: dcid:ElectricityPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Electricity plants"
+description: "Power plants producing only electricity."
+
+Node: dcid:MainActivityProducerCombinedHeatPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Main activity producer - Combined Heat Power (CHP) plants"
+specializationOf: dcs:MainActivityProducer, dcs:CombinedHeatPowerPlants
+
+Node: dcid:MainActivityProducerHeatPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Main activity producer - Heat power plants"
+specializationOf: dcs:MainActivityProducer, dcs:HeatPlants
+
+Node: dcid:MainActivityProducerElectricityPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Main activity producer - Electricity power plants"
+specializationOf: dcs:MainActivityProducer, dcs:ElectricityPowerPlants
+
+Node: dcid:AutoProducerCombinedHeatPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Auto producer - Combined Heat Power (CHP) plants"
+specializationOf: dcs:AutoProducer, dcs:CombinedHeatPowerPlants
+
+Node: dcid:AutoProducerHeatPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Auto producer - Heat power plants"
+specializationOf: dcs:AutoProducer, dcs:HeatPlants
+
+Node: dcid:AutoProducerElectricityPowerPlants
+typeOf: dcs:PowerPlantSectorEnum
+name: "Auto producer - Electricity power plants"
+specializationOf: dcs:AutoProducer, dcs:ElectricityPowerPlants
 
 
 ## FERC Status Enum
@@ -772,3 +1487,96 @@ Node: dcid:EIA_Impoundment_NotLined
 name: "EIA_Impoundment_NotLined"
 description: "If there is an ash impoundment at the plant, it is not lined."
 typeOf: dcid:AshImpoundmentStatusEnum
+
+## Energy Loss
+
+Node: dcid:lossReason
+typeOf: schema:Property
+rangeIncludes: schema:EnergyLossEnum
+domainIncludes: schema:Fuel, schema:Energy
+name: "lossReason"
+
+## Energy Loss Enum
+
+Node: dcid:EnergyLossEnum
+typeOf: schema:Class
+subClassOf: Enumeration
+name: "EnergyLossEnum"
+
+Node: dcid:EnergyReInjected
+typeOf: dcid:EnergyLossEnum
+name: "Energy re-injected"
+
+Node: dcid:GasLostFlaredAndVented
+typeOf: dcid:EnergyLossEnum
+name: "Gas flared and vented"
+
+Node: dcid:GasLostFlared
+typeOf: dcid:EnergyLossEnum
+name: "Gas flared"
+
+Node: dcid:GasLostVented
+typeOf: dcid:EnergyLossEnum
+name: "Gas vented"
+
+Node: dcid:FuelLossDuringExtraction
+typeOf: dcid:EnergyLossEnum
+name: "Fuel loss during extraction"
+
+## Energy reserves
+
+Node: dcid:reserveType
+typeOf: schema:Property
+rangeIncludes: schema:EnergyReservesEnum
+domainIncludes: schema:Fuel, schema:Energy
+name: "reserveType"
+
+## Energy Reserves Enum
+
+Node: dcid:EnergyReservesEnum
+typeOf: schema:Class
+subClassOf: Enumeration
+name: "EnergyReservesEnum"
+
+Node: dcid:EnergyKnownReserves
+typeOf: dcid:EnergyReservesEnum
+name: "Energy known reserves"
+
+Node: dcid:EnergyRecoverableReserves
+typeOf: dcid:EnergyReservesEnum
+name: "Energy recoverable reserves"
+
+Node: dcid:EnergyAdditionalResources
+typeOf: dcid:EnergyReservesEnum
+name: "Energy additional resources"
+
+Node: dcid:EnergyReservesAssured
+typeOf: dcid:EnergyReservesEnum
+name: "Energy reserves assured"
+
+Node: dcid:HydraulicResources
+typeOf: dcid:EnergyReservesEnum
+name: "Hydraulic resources"
+
+Node: dcid:UN_OtherEnergyReserves
+typeOf: dcid:EnergyReservesEnum
+name: "UN other energy reserves"
+
+## Energy Stocks Enum
+
+Node: dcid:EnergyStocksEnum
+typeOf: dcid:Class
+subClassOf: Enumeration
+name: "EnergyStocksEnum"
+
+Node: dcid:OpeningStocks
+typeOf: dcid:EnergyStocksEnum
+name: "Opening stocks"
+
+Node: dcid:ClosingStocks
+typeOf: dcid:EnergyStocksEnum
+name: "Closing stocks"
+
+Node: dcid:AnnualChange
+typeOf: dcid:EnergyStocksEnum
+name: "Annual change"
