@@ -91,7 +91,7 @@ Node: householderAge
 typeOf: schema:Property
 dcid: "householderAge"
 name: "householderAge"
-description: "Age of the Householder. The householder refers to the person (or one of the people) in whose name the housing unit is owned or rented (maintained). The person designated as the householder is the "reference person" to whom the relationship of all other household members, if any, is recorded"
+description: "Age of the householder"
 rangeIncludes: dcs:Quantity, schema:Number
 domainIncludes: dcs:Household
 
@@ -99,8 +99,48 @@ Node: householderRace
 typeOf: schema:Property
 dcid: "householderRace"
 name: "householderRace"
-description: "Race of the Householder. The householder refers to the person (or one of the people) in whose name the housing unit is owned or rented (maintained). The person designated as the householder is the "reference person" to whom the relationship of all other household members, if any, is recorded"
+description: "Race of the householder"
 rangeIncludes: dcs:RaceCodeEnum
+domainIncludes: dcs:Household
+
+Node: householderWorkStatus
+typeOf: schema:Property
+dcid: "householderWorkStatus"
+name: "householderWorkStatus"
+description: "Work status of the householder"
+rangeIncludes: dcs:USC_WorkStatusEnum
+domainIncludes: dcs:Household
+
+Node: householderEducationalAttainment
+typeOf: schema:Property
+dcid: "householderEducationalAttainment"
+name: "householderEducationalAttainment"
+description: "Educational attainment of the householder"
+rangeIncludes: dcs:USC_EducationalAttainmentEnum
+domainIncludes: dcs:Household
+
+Node: householderRelatedChildrenUnder18Years
+typeOf: schema:Property
+dcid: "householderRelatedChildrenUnder18Years"
+name: "householderRelatedChildrenUnder18Years"
+description: "Number of related children of the householder under 18 years"
+rangeIncludes: dcs:Quantity, dcs:QuantityRange
+domainIncludes: dcs:Household
+
+Node: householderOwnChildrenUnder18Years
+typeOf: schema:Property
+dcid: "householderOwnChildrenUnder18Years"
+name: "householderOwnChildrenUnder18Years"
+description: "Number of own children of the householder under 18 years"
+rangeIncludes: dcs:Quantity, dcs:QuantityRange
+domainIncludes: dcs:Household
+
+Node: householdWorkerSize
+typeOf: schema:Property
+dcid: "householdWorkerSize"
+name: "householdWorkerSize"
+description: "Number of workers in the household"
+rangeIncludes: dcs:Quantity, dcs:QuantityRange
 domainIncludes: dcs:Household
 
 Node: income
@@ -124,6 +164,15 @@ name: "incomeStatus"
 description: "Describes whether a person has income or not, over a given period, usually in the previous 12 months."
 rangeIncludes: dcs:IncomeStatusEnum
 domainIncludes: schema:Person
+
+Node: incomeDeficit
+dcid: "incomeDeficit"
+typeOf: schema:Property
+name: "incomeDeficit"
+description: "The difference between family income and the family's poverty threshold is the income deficit (for families in poverty)"
+descriptionUrl: "https://www.census.gov/topics/income-poverty/poverty/guidance/poverty-measures.html"
+rangeIncludes: schema:Number
+domainIncludes: dcs:Household
 
 Node: institutionalization
 typeOf: schema:Property
@@ -170,7 +219,7 @@ dcid: "occupancyTenure"
 name: "occupancyTenure"
 description: "Describes whether Housing units are owner occupied or renter occupied"
 rangeIncludes: dcs:OccupancyTenureEnum
-domainIncludes: dcs:HousingUnit
+domainIncludes: dcs:HousingUnit, dcs:Household
 
 Node: placeOfBirth
 dcid: "placeOfBirth"
