@@ -1566,360 +1566,6 @@ rangeIncludes: dcs:Number
 source: "http://datacommons.org"
 domainIncludes: dcs:PowerPlant
 
-# EIA Form 860 Schema
-Node: dcid:ElectricUtility
-subClassOf: schema:Organization
-description: "Electric utilities are companies that provide electricity and/or heat. They can be publicly or privately owned."
-name: "Electric Utility"
-typeOf: schema:Class
-
-Node: dcid:electricUtilityName
-domainIncludes: dcs:ElectricUtility
-name: "electricUtilityName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:powerPlantCode
-domainIncludes: dcs:PowerPlant
-name: "plantCode"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:electricUtilityId
-domainIncludes: dcs:ElectricUtility
-name: "electricUtilityId"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:powerPlantGeneratorCode
-domainIncludes: dcs:PowerPlantUnit
-name: "generatorId"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:powerPlantUnitCode
-domainIncludes: dcs:PowerPlantUnit
-name: "unitCode"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:nodeDesignationForLMP
-domainIncludes: dcs:PowerPlantUnit
-description: "The designation used to identify the price node in RTO/ISO Locational Marginal Price (LMP) reports"
-name: "nodeDesignationForLMP"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:locationDesignationFERCReporting
-domainIncludes: dcs:PowerPlantUnit
-description: "The designation used to report ths specific location of the wholesale sales transactions to Federal Electricity Regulatory Commission (FERC) for the Electric Quarterly Report"
-name: "locationDesignationFERCReporting"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:nameplateCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "nameplateCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:nameplatePowerFactor
-domainIncludes: dcs:PowerPlantUnit
-name: "nameplatePowerFactor"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:netSummerCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "netSummerCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:netWinterCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "netWinterCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:minimumPowerOutput
-domainIncludes: dcs:PowerPlantUnit
-name: "minimumPowerOutput"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:synchronizedToTransmissionGrid
-domainIncludes: dcs:PowerPlantUnit
-name: "synchronizedToTransmissionGrid"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-
-Node: dcid:turbinesorHydroneticBuoys
-domainIncludes: dcs:PowerPlantUnit
-name: "turbinesorHydroneticBuoys"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-
-Node: dcid:plannedNetSummerCapacityUprate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetSummerCapacityUprate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNetWinterCapacityUprate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetWinterCapacityUprate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNetSummerCapacityDerate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetSummerCapacityDerate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNetWinterCapacityDerate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetWinterCapacityDerate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNewPrimeMover
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNewPrimeMover"
-typeOf: schema:Property
-rangeIncludes: dcs:PrimeMoverEnum
-
-Node: dcid:plannedEnergySource
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedEnergySource"
-typeOf: schema:Property
-rangeIncludes: dcs:EnergySourceEnum
-
-Node: dcid:plannedNewNameplateCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNewNameplateCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:timefromColdShutdowntoFullLoad
-domainIncludes: dcs:PowerPlantUnit
-name: "timefromColdShutdowntoFullLoad"
-typeOf: schema:Property
-rangeIncludes: schema:Duration
-
-Node: dcid:synchronousGenerator
-name: "synchronousGenerator"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: dcs:PowerPlantUnit
-description: "Indicates whether a generator is synchronous (converts the mechanical power from a prime mover into an AC electrical power at a given voltage and frequency."
-
-Node: dcid:transmissionGrid
-name: "transmissionGrid"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:Thing
-description: "High voltage electricity system responsible for transmitting electricity long distances. Voltage above 10,000 V."
-
-Node: dcid:fuelType
-name: "fuelType"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:Product
-description: "Type of chemical combusted for heat, force, or electricity."
-
-Node: dcid:uprateCompletionDate
-name: "uprateCompletionDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:operatingSince
-name: "operatingSince"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedDerateDate
-name: "plannedDerateDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedUprateDate
-name: "plannedUprateDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedRepowerDate
-name: "plannedRepowerDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedRetirementDate
-name: "plannedRetirementDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedModificationsDate
-name: "plannedModificationsDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:generatorTechnology
-typeOf: schema:Property
-name: "generatorTechnology"
-rangeIncludes: dcid:GeneratorTechnologyEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerPlantStatus
-typeOf: schema:Property
-name: "powerPlantStatus"
-rangeIncludes: dcid:PowerPlantStatusEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:energySource
-typeOf: schema:Property
-name: "energySource"
-rangeIncludes: dcid:EnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:primeMover
-typeOf: schema:Property
-name: "primeMover"
-rangeIncludes: dcid:PrimeMoverEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:typeOfPowerPlantUnitOwnership
-typeOf: schema:Property
-name: "typeOfPowerPlantUnitOwnership"
-rangeIncludes: dcid:TypeOfPowerPlantUnitOwnershipEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:toppingOrBottoming
-typeOf: schema:Property
-name: "toppingOrBottoming"
-rangeIncludes: dcid:ToppingOrBottomingEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:combustionPowerPlantProperties
-typeOf: schema:Property
-name: "combustionPowerPlantProperties"
-rangeIncludes: dcid:CombustionPowerPlantPropertiesEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerProviderCategory
-typeOf: schema:Property
-name: "powerProviderCategory"
-rangeIncludes: dcid:PowerProviderCategoryEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:startupEnergySource
-typeOf: schema:Property
-name: "startupEnergySource"
-rangeIncludes: dcid:StartupEnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:generatorTechnology
-name: "generatorTechnology"
-typeOf: schema:Property
-rangeIncludes: dcs:GeneratorTechnologyEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerPlantStatus
-name: "powerPlantStatus"
-typeOf: schema:Property
-rangeIncludes: dcs:PowerPlantStatusEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:energySource
-name: "energySource"
-typeOf: schema:Property
-rangeIncludes: dcs:EnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:primeMover
-name: "primeMover"
-typeOf: schema:Property
-rangeIncludes: dcs:PrimeMoverEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:typeOfPowerPlantUnitOwnership
-name: "typeOfPowerPlantUnitOwnership"
-typeOf: schema:Property
-rangeIncludes: dcs:TypeOfPowerPlantUnitOwnershipEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:toppingOrBottoming
-name: "toppingOrBottoming"
-typeOf: schema:Property
-rangeIncludes: dcs:ToppingOrBottomingEnum
-domainIncludes: dcs:PowerPlantUnit
-description: "Denotes where the unit acts as a topping cycle or a bottoming thermodynamic cycle. Topping cycles are typically Brayton Cycles with gaseous working fluid, and bottoming are typically Rankine Cycles, with liquid working fluid."
-
-Node: dcid:combustionPowerPlantProperties
-name: "combustionPowerPlantProperties"
-typeOf: schema:Property
-rangeIncludes: dcs:CombustionPowerPlantPropertiesEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerProviderCategory
-name: "powerProviderCategory"
-typeOf: schema:Property
-rangeIncludes: dcs:PowerProviderCategoryEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:startupEnergySource
-name: "startupEnergySource"
-typeOf: schema:Property
-rangeIncludes: dcs:StartupEnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-# End EIA 860 Schema
-
-# Begin Deep Solar Schema
-Node: dcid:SatelliteImage
-subClassOf: schema:ImageObject
-name: "SatelliteImage"
-typeOf: schema:Class
-description: "An image taken by a satellite"
-
-Node: dcid:SolarPanel
-subClassOf: dcs:SolarArray
-name: "SolarPanel"
-typeOf: schema:Class
-description: "A photovoltaic panel used to generate renewable electricity from solar irradiation"
-
-Node: dcid:SolarArray
-subClassOf: schema:Thing
-name: "SolarArray"
-typeOf: schema:Class
-description: "A collection of solar photovoltaic panels"
-
-Node: dcid:imageCount
-name: "imageCount"
-typeOf: schema:Property
-domainIncludes: dcs:SatelliteImage
-rangeIncludes: schema:Number
-description: "Number of images examined to find solar panels in this region"
-
-Node: dcid:area
-name: "area"
-typeOf: schema:Property
-domainIncludes: dcs:SolarArray
-rangeIncludes: schema:Quantity
-
-Node: dcid:residential
-name: "residential"
-typeOf: schema:Property
-domainIncludes: dcs:SolarArray
-rangeIncludes: schema:Boolean
-description: "Describes whether a solar panel is in a residential location or not."
-# End Deep Solar Schema
-
 # Add missing QuantityRange
 Node: dcid:QuantityRange
 name: "QuantityRange"
@@ -2664,3 +2310,32 @@ name: "closeMatch"
 typeOf: schema:Property
 domainIncludes: schema:Thing
 rangeIncludes: schema:Thing, schema:Text
+
+Node: dcid:indianCensusAreaCode2011
+typeOf: schema:Property
+name: "indianCensusAreaCode2011"
+description: "An identifier for a place for Census of India, 2011, assigned by Office of the Registrar General & Census Commissioner, India."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:indianCensusAreaCode2001
+typeOf: schema:Property
+name: "indianCensusAreaCode2001"
+description: "An identifier for a place for Census of India, 2001, assigned by Office of the Registrar General & Census Commissioner, India."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:lgdCode
+typeOf: schema:Property
+name: "lgdCode"
+description: "A unique code for a place, used by Local Government Directory, India, issued in compliance with eGovernance Standards under NeGP."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:udiseCode
+typeOf: schema:Property
+name: "udiseCode"
+description: "A unique code for a place in India as per the Unified District Information System for Education (UDISE)."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
