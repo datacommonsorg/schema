@@ -1004,7 +1004,12 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Kilowatt-hour"
 Node: dcid:MegawattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "MegawattHour"
-description: "Unit of energy that equals 1000 Kilowatthours."
+description: "Unit of energy that equals 1000 KilowattHours."
+
+Node: dcid:GigawattHour
+typeOf: dcs:EnergyUnitOfMeasure
+name: "GigawattHour"
+description: "Unit of energy that equals 1000 MegawattHours."
 
 Node: dcid:Terajoule
 typeOf: dcs:EnergyUnitOfMeasure
@@ -1210,9 +1215,9 @@ typeOf: dcid:PublicUtilityTypeEnum
 
 Node: dcid:eiaPlantCode
 name: "eiaPlantCode"
-rangeIncludes: dcid:Text
-typeOf: dcid:Property
-domainIncludes: dcid:PowerPlant
+rangeIncludes: schema:Text
+typeOf: schema:Property
+domainIncludes: dcs:PowerPlant, dcs:EpaReportingFacility
 
 
 ## Power Plant
@@ -1580,3 +1585,647 @@ name: "Closing stocks"
 Node: dcid:AnnualChange
 typeOf: dcid:EnergyStocksEnum
 name: "Annual change"
+
+# Begin EIA Form 860 Schema
+
+Node: dcid:ElectricUtility
+subClassOf: schema:Organization
+description: "Electric utilities are companies that provide electricity and/or heat. They can be publicly or privately owned."
+name: "Electric Utility"
+typeOf: schema:Class
+
+Node: dcid:electricUtilityName
+domainIncludes: dcs:ElectricUtility
+name: "electricUtilityName"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+
+Node: dcid:powerPlantCode
+domainIncludes: dcs:PowerPlant
+name: "plantCode"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+
+Node: dcid:electricUtilityId
+domainIncludes: dcs:ElectricUtility
+name: "electricUtilityId"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+
+Node: dcid:powerPlantGeneratorCode
+domainIncludes: dcs:PowerPlantUnit
+name: "generatorId"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+
+Node: dcid:powerPlantUnitCode
+domainIncludes: dcs:PowerPlantUnit
+name: "unitCode"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+
+Node: dcid:nodeDesignationForLMP
+domainIncludes: dcs:PowerPlantUnit
+description: "The designation used to identify the price node in RTO/ISO Locational Marginal Price (LMP) reports"
+name: "nodeDesignationForLMP"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+
+Node: dcid:locationDesignationFERCReporting
+domainIncludes: dcs:PowerPlantUnit
+description: "The designation used to report ths specific location of the wholesale sales transactions to Federal Electricity Regulatory Commission (FERC) for the Electric Quarterly Report"
+name: "locationDesignationFERCReporting"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+
+Node: dcid:nameplateCapacity
+domainIncludes: dcs:PowerPlantUnit
+name: "nameplateCapacity"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:nameplatePowerFactor
+domainIncludes: dcs:PowerPlantUnit
+name: "nameplatePowerFactor"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:netSummerCapacity
+domainIncludes: dcs:PowerPlantUnit
+name: "netSummerCapacity"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:netWinterCapacity
+domainIncludes: dcs:PowerPlantUnit
+name: "netWinterCapacity"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:minimumPowerOutput
+domainIncludes: dcs:PowerPlantUnit
+name: "minimumPowerOutput"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:synchronizedToTransmissionGrid
+domainIncludes: dcs:PowerPlantUnit
+name: "synchronizedToTransmissionGrid"
+typeOf: schema:Property
+rangeIncludes: schema:Boolean
+
+Node: dcid:turbinesorHydroneticBuoys
+domainIncludes: dcs:PowerPlantUnit
+name: "turbinesorHydroneticBuoys"
+typeOf: schema:Property
+rangeIncludes: schema:Number
+
+Node: dcid:plannedNetSummerCapacityUprate
+domainIncludes: dcs:PowerPlantUnit
+name: "plannedNetSummerCapacityUprate"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:plannedNetWinterCapacityUprate
+domainIncludes: dcs:PowerPlantUnit
+name: "plannedNetWinterCapacityUprate"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:plannedNetSummerCapacityDerate
+domainIncludes: dcs:PowerPlantUnit
+name: "plannedNetSummerCapacityDerate"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:plannedNetWinterCapacityDerate
+domainIncludes: dcs:PowerPlantUnit
+name: "plannedNetWinterCapacityDerate"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:plannedNewPrimeMover
+domainIncludes: dcs:PowerPlantUnit
+name: "plannedNewPrimeMover"
+typeOf: schema:Property
+rangeIncludes: dcs:PrimeMoverEnum
+
+Node: dcid:plannedEnergySource
+domainIncludes: dcs:PowerPlantUnit
+name: "plannedEnergySource"
+typeOf: schema:Property
+rangeIncludes: dcs:EnergySourceEnum
+
+Node: dcid:plannedNewNameplateCapacity
+domainIncludes: dcs:PowerPlantUnit
+name: "plannedNewNameplateCapacity"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+
+Node: dcid:timefromColdShutdowntoFullLoad
+domainIncludes: dcs:PowerPlantUnit
+name: "timefromColdShutdowntoFullLoad"
+typeOf: schema:Property
+rangeIncludes: schema:Duration
+
+Node: dcid:synchronousGenerator
+name: "synchronousGenerator"
+typeOf: schema:Property
+rangeIncludes: schema:Boolean
+domainIncludes: dcs:PowerPlantUnit
+description: "Indicates whether a generator is synchronous (converts the mechanical power from a prime mover into an AC electrical power at a given voltage and frequency."
+
+Node: dcid:transmissionGrid
+name: "transmissionGrid"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: schema:Thing
+description: "High voltage electricity system responsible for transmitting electricity long distances. Voltage above 10,000 V."
+
+Node: dcid:fuelType
+name: "fuelType"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: schema:Product
+description: "Type of chemical combusted for heat, force, or electricity."
+
+Node: dcid:uprateCompletionDate
+name: "uprateCompletionDate"
+typeOf: schema:Property
+rangeIncludes: schema:DateTime
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:operatingSince
+name: "operatingSince"
+typeOf: schema:Property
+rangeIncludes: schema:DateTime
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:plannedDerateDate
+name: "plannedDerateDate"
+typeOf: schema:Property
+rangeIncludes: schema:DateTime
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:plannedUprateDate
+name: "plannedUprateDate"
+typeOf: schema:Property
+rangeIncludes: schema:DateTime
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:plannedRepowerDate
+name: "plannedRepowerDate"
+typeOf: schema:Property
+rangeIncludes: schema:DateTime
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:plannedRetirementDate
+name: "plannedRetirementDate"
+typeOf: schema:Property
+rangeIncludes: schema:DateTime
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:plannedModificationsDate
+name: "plannedModificationsDate"
+typeOf: schema:Property
+rangeIncludes: schema:DateTime
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:generatorTechnology
+typeOf: schema:Property
+name: "generatorTechnology"
+rangeIncludes: dcid:GeneratorTechnologyEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:powerPlantStatus
+typeOf: schema:Property
+name: "powerPlantStatus"
+rangeIncludes: dcid:PowerPlantStatusEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:energySource
+typeOf: schema:Property
+name: "energySource"
+rangeIncludes: dcid:EnergySourceEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:primeMover
+typeOf: schema:Property
+name: "primeMover"
+rangeIncludes: dcid:PrimeMoverEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:typeOfPowerPlantUnitOwnership
+typeOf: schema:Property
+name: "typeOfPowerPlantUnitOwnership"
+rangeIncludes: dcid:TypeOfPowerPlantUnitOwnershipEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:toppingOrBottoming
+typeOf: schema:Property
+name: "toppingOrBottoming"
+rangeIncludes: dcid:ToppingOrBottomingEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:combustionPowerPlantProperties
+typeOf: schema:Property
+name: "combustionPowerPlantProperties"
+rangeIncludes: dcid:CombustionPowerPlantPropertiesEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:powerProviderCategory
+typeOf: schema:Property
+name: "powerProviderCategory"
+rangeIncludes: dcid:PowerProviderCategoryEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:startupEnergySource
+typeOf: schema:Property
+name: "startupEnergySource"
+rangeIncludes: dcid:StartupEnergySourceEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:generatorTechnology
+name: "generatorTechnology"
+typeOf: schema:Property
+rangeIncludes: dcs:GeneratorTechnologyEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:powerPlantStatus
+name: "powerPlantStatus"
+typeOf: schema:Property
+rangeIncludes: dcs:PowerPlantStatusEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:energySource
+name: "energySource"
+typeOf: schema:Property
+rangeIncludes: dcs:EnergySourceEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:primeMover
+name: "primeMover"
+typeOf: schema:Property
+rangeIncludes: dcs:PrimeMoverEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:typeOfPowerPlantUnitOwnership
+name: "typeOfPowerPlantUnitOwnership"
+typeOf: schema:Property
+rangeIncludes: dcs:TypeOfPowerPlantUnitOwnershipEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:toppingOrBottoming
+name: "toppingOrBottoming"
+typeOf: schema:Property
+rangeIncludes: dcs:ToppingOrBottomingEnum
+domainIncludes: dcs:PowerPlantUnit
+description: "Denotes where the unit acts as a topping cycle or a bottoming thermodynamic cycle. Topping cycles are typically Brayton Cycles with gaseous working fluid, and bottoming are typically Rankine Cycles, with liquid working fluid."
+
+Node: dcid:combustionPowerPlantProperties
+name: "combustionPowerPlantProperties"
+typeOf: schema:Property
+rangeIncludes: dcs:CombustionPowerPlantPropertiesEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:powerProviderCategory
+name: "powerProviderCategory"
+typeOf: schema:Property
+rangeIncludes: dcs:PowerProviderCategoryEnum
+domainIncludes: dcs:PowerPlantUnit
+
+Node: dcid:startupEnergySource
+name: "startupEnergySource"
+typeOf: schema:Property
+rangeIncludes: dcs:StartupEnergySourceEnum
+domainIncludes: dcs:PowerPlantUnit
+
+# End EIA 860 Schema
+
+# Begin Deep Solar Schema
+
+Node: dcid:SatelliteImage
+subClassOf: schema:ImageObject
+name: "SatelliteImage"
+typeOf: schema:Class
+description: "An image taken by a satellite"
+
+Node: dcid:SolarPanel
+subClassOf: dcs:SolarArray
+name: "SolarPanel"
+typeOf: schema:Class
+description: "A photovoltaic panel used to generate renewable electricity from solar irradiation"
+
+Node: dcid:SolarArray
+subClassOf: schema:Thing
+name: "SolarArray"
+typeOf: schema:Class
+description: "A collection of solar photovoltaic panels"
+
+Node: dcid:imageCount
+name: "imageCount"
+typeOf: schema:Property
+domainIncludes: dcs:SatelliteImage
+rangeIncludes: schema:Number
+description: "Number of images examined to find solar panels in this region"
+
+Node: dcid:area
+name: "area"
+typeOf: schema:Property
+domainIncludes: dcs:SolarArray
+rangeIncludes: schema:Quantity
+
+Node: dcid:residential
+name: "residential"
+typeOf: schema:Property
+domainIncludes: dcs:SolarArray
+rangeIncludes: schema:Boolean
+description: "Describes whether a solar panel is in a residential location or not."
+
+# End Deep Solar Schema
+
+#
+# EPA GHGRP
+#
+
+# Facilities
+
+Node: dcid:EpaReportingFacility
+typeOf: schema:Class
+subClassOf: schema:Organization
+name: "EpaReportingFacility"
+description: "A facility (organization, power plant, etc.) reporting data to US EPA."
+
+Node: dcid:epaGhgrpFacilityId
+typeOf: schema:Property
+name: "epaGhgrpFacilityId"
+domainIncludes: dcs:EpaReportingFacility
+rangeIncludes: schema:Text
+description: "US EPA facility identifier from the Greenhouse Gas Reporting Program (GHGRP)."
+
+Node: dcid:epaFrsId
+typeOf: schema:Property
+name: "epaFrsId"
+domainIncludes: dcs:EpaReportingFacility
+rangeIncludes: schema:Text
+description: "US EPA facility identifier from the Facility Registry Service."
+
+# Properties
+
+Node: dcs:emissionSource
+name: "emissionSource"
+typeOf: schema:Property
+description: "Source of emission."
+domainIncludes: dcs:Emissions
+rangeIncludes: dcs:EmissionSourceEnum
+
+Node: dcs:emissionSourceType
+name: "emissionSourceType"
+typeOf: schema:Property
+description: "Type of emission source."
+domainIncludes: dcs:Emissions
+rangeIncludes: dcs:EmissionSourceTypeEnum
+
+Node: dcs:emittedThing
+name: "emittedThing"
+typeOf: schema:Property
+rangeIncludes: dcs:GreenhouseGas
+
+# Units
+
+Node: dcs:EmissionUnitOfMeasure
+name: "EmissionUnitOfMeasure"
+typeOf: dcs:UnitOfMeasure
+description: "A unit used to denote a measurement of emissions."
+
+Node: dcs:MetricTonCO2e
+name: "MetricTonCO2e"
+typeOf: dcs:EmissionUnitOfMeasure
+description: "Represents an amount of a Greenhouse Gas whose atmospheric impact has been standardized to that of one unit mass of carbon dioxide (CO2), based on the global warming potential (GWP) of the gas."
+
+# Gas Types
+
+Node: dcs:GreenhouseGas
+name: "GreenhouseGas"
+typeOf: schema:Class
+subClassOf: dcs:GasType
+description: "Gases that trap heat in the atmosphere."
+descriptionUrl: "https://www.epa.gov/ghgemissions/overview-greenhouse-gases"
+
+Node: dcid:Methane
+typeOf: dcs:GreenhouseGas
+name: "Methane"
+
+Node: dcid:NitrousOxide
+typeOf: dcs:GreenhouseGas
+name: "Nitrous Oxide"
+
+Node: dcid:Hydrofluorocarbon
+typeOf: dcs:GreenhouseGas
+name: "Hydrofluorocarbon"
+
+Node: dcid:Perfluorocarbon
+typeOf: dcs:GreenhouseGas
+name: "Perfluorocarbon"
+
+Node: dcid:SulfurHexafluoride
+typeOf: dcs:GreenhouseGas
+name: "Sulfur Hexafluoride"
+
+Node: dcid:NitrogenTrifluoride
+typeOf: dcs:GreenhouseGas
+name: "Nitrogen Trifluoride"
+
+Node: dcid:Hydrofluoroether
+typeOf: dcs:GreenhouseGas
+name: "Hydrofluoroether"
+
+Node: dcid:CarbonDioxide
+typeOf: dcs:GreenhouseGas
+name: "Carbon Dioxide"
+
+Node: dcid:EPA_OtherFullyFluorinatedCompound
+typeOf: dcs:GreenhouseGas
+name: "Other Fully Fluorinated Compound"
+
+Node: dcid:VeryShortLivedCompounds
+typeOf: dcs:GreenhouseGas
+name: "Very Short-lived Compounds"
+
+Node: dcid:EPA_OtherGreenhouseGas
+typeOf: dcs:GreenhouseGas
+name: "Other Greenhouse Gas"
+
+
+# Sources
+
+Node: dcs:EmissionSourceTypeEnum
+name: "EmissionSourceTypeEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+
+Node: dcs:BiogenicEmissionSource
+name: "BiogenicEmissionSource"
+typeOf: dcs:EmissionSourceTypeEnum
+description: "Biogenic emission sources are emissions that come from natural sources. Most types are widespread and ubiquitous contributors to background air chemistry. Often only the emissions from vegetation and soils are included, but other relevant sources include volcanic emissions, lightning, and sea salt."
+descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-sources"
+
+Node: dcs:NonBiogenicEmissionSource
+name: "NonBiogenicEmissionSource"
+typeOf: dcs:EmissionSourceTypeEnum
+description: "Biogenic emission sources are emissions that come from non-natural sources."
+descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-sources"
+
+Node: dcs:EmissionSourceEnum
+name: "EmissionSourceEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+
+Node: dcid:StationaryCombustion
+typeOf: dcs:EmissionSourceEnum
+name: "Stationary Combustion"
+
+Node: dcid:ElectricityGeneration
+typeOf: dcs:EmissionSourceEnum
+name: "Electricity Generation"
+
+Node: dcid:AdipicAcidProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Adipic Acid Production"
+
+Node: dcid:AluminumProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Aluminum Production"
+
+Node: dcid:AmmoniaManufacturing
+typeOf: dcs:EmissionSourceEnum
+name: "Ammonia Manufacturing"
+
+Node: dcid:CementProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Cement Production"
+
+Node: dcid:ElectronicsManufacture
+typeOf: dcs:EmissionSourceEnum
+name: "Electronics Manufacture"
+
+Node: dcid:FerroalloyProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Ferroalloy Production"
+
+Node: dcid:FluorinatedGHGProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Fluorinated GHG Production"
+
+Node: dcid:GlassProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Glass Production"
+
+Node: dcid:HCFC22ProductionFromHFC23Destruction
+typeOf: dcs:EmissionSourceEnum
+name: "HCFC–22 Production from HFC–23 Destruction"
+
+Node: dcid:HydrogenProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Hydrogen Production"
+
+Node: dcid:IronAndSteelProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Iron and Steel Production"
+
+Node: dcid:LeadProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Lead Production"
+
+Node: dcid:LimeProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Lime Production"
+
+Node: dcid:MagnesiumProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Magnesium Production"
+
+Node: dcid:MiscellaneousUseOfCarbonates
+typeOf: dcs:EmissionSourceEnum
+name: "Miscellaneous Use of Carbonates"
+
+Node: dcid:NitricAcidProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Nitric Acid Production"
+
+Node: dcid:PetroleumAndNaturalGasSystems_OffshoreProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Petroleum and Natural Gas Systems – Offshore Production"
+
+Node: dcid:PetroleumAndNaturalGasSystems_Processing
+typeOf: dcs:EmissionSourceEnum
+name: "Petroleum and Natural Gas Systems – Processing"
+
+Node: dcid:PetroleumAndNaturalGasSystems_TransmissionOrCompression
+typeOf: dcs:EmissionSourceEnum
+name: "Petroleum and Natural Gas Systems – Transmission/Compression"
+
+Node: dcid:PetroleumAndNaturalGasSystems_UndergroundStorage
+typeOf: dcs:EmissionSourceEnum
+name: "Petroleum and Natural Gas Systems – Underground Storage"
+
+Node: dcid:PetroleumAndNaturalGasSystems_LNGStorage
+typeOf: dcs:EmissionSourceEnum
+name: "Petroleum and Natural Gas Systems – LNG Storage"
+
+Node: dcid:PetroleumAndNaturalGasSystems_LNGImportOrExport
+typeOf: dcs:EmissionSourceEnum
+name: "Petroleum and Natural Gas Systems – LNG Import/Export"
+
+Node: dcid:PetrochemicalProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Petrochemical Production"
+
+Node: dcid:PetroleumRefining
+typeOf: dcs:EmissionSourceEnum
+name: "Petroleum Refining"
+
+Node: dcid:PhosphoricAcidProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Phosphoric Acid Production"
+
+Node: dcid:PulpAndPaperManufacturing
+typeOf: dcs:EmissionSourceEnum
+name: "Pulp and Paper Manufacturing"
+
+Node: dcid:SiliconCarbideProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Silicon Carbide Production"
+
+Node: dcid:SodaAshManufacturing
+typeOf: dcs:EmissionSourceEnum
+name: "Soda Ash Manufacturing"
+
+Node: dcid:TitaniumDioxideProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Titanium Dioxide Production"
+
+Node: dcid:UndergroundCoalMines
+typeOf: dcs:EmissionSourceEnum
+name: "Underground Coal Mines"
+
+Node: dcid:ZincProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Zinc Production"
+
+Node: dcid:MunicipalLandfills
+typeOf: dcs:EmissionSourceEnum
+name: "Municipal Landfills"
+
+Node: dcid:IndustrialWastewaterTreatment
+typeOf: dcs:EmissionSourceEnum
+name: "Industrial Wastewater Treatment"
+
+Node: dcid:ManufactureOfElectricTransmissionAndDistributionEquipment
+typeOf: dcs:EmissionSourceEnum
+name: "Manufacture of Electric Transmission and Distribution Equipment"
+
+Node: dcid:IndustrialWasteLandfills
+typeOf: dcs:EmissionSourceEnum
+name: "Industrial Waste Landfills"
+
