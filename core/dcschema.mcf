@@ -2346,3 +2346,17 @@ domainIncludes: dcs:Fuel
 rangeIncludes: schema:Quantity
 description: "The value of money that has been used up to produce something or deliver a service."
 descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
+
+Node: dcid:confidenceIntervalLowerLimit
+typeOf: schema:Property
+domainIncludes: dcs:Observation
+name: "confidenceIntervalLowerLimit"
+description: "The lower limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
+
+Node: dcid:confidenceIntervalUpperLimit
+typeOf: schema:Property
+domainIncludes: schema:Observation
+name: "confidenceIntervalUpperLimit"
+description: "The upper limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
