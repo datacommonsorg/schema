@@ -608,7 +608,7 @@ description: "Any specific branch of medical science or practice. Medical specia
 Node: dcid:PlannedParenthoodClinic
 typeOf: Class
 subClassOf: schema:MedicalClinic
-name: "Planned Parenthood Clinic"
+name: "PlannedParenthoodClinic"
 description: "A Planned Parenthood Health Center"
 # End Planned Parenthood additions
 
@@ -1893,7 +1893,7 @@ description: "Bottom 1000 locations with the same PlaceStatisticalVariable attri
 
 Node: dcid:allLocations
 typeOf: schema:Property
-name: "allLocaitons"
+name: "allLocations"
 domainIncludes: dcs:PlaceStatisticalVariable
 rangeIncludes: schema:Place
 description: "All locations with the same PlaceStatisticalVariable attributes, for a given ranking algorithm."
@@ -2338,6 +2338,14 @@ name: "udiseCode"
 description: "A unique code for a place in India as per the Unified District Information System for Education (UDISE)."
 domainIncludes: schema:Place
 rangeIncludes: schema:Text
+
+Node: dcid:pinCode
+typeOf: schema:Property
+name: "pinCode"
+description: "PIN code is a six digit code in Indian postal code system used by India Post."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
 Node: dcid:cost
 typeOf: schema:Property
 name: "cost"
