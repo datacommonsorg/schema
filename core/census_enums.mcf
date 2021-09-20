@@ -1506,41 +1506,61 @@ name: "USC_ResidentStatusEnum"
 
 Node: dcid:DifferentHouse1YearAgo
 typeOf: dcs:USC_ResidentStatusEnum
-name: "DifferentHouse1YearAgo"
+name: "Different House 1 Year Ago"
 
 Node: dcid:SameHouse1YearAgo
 typeOf: dcs:USC_ResidentStatusEnum
-name: "SameHouse1YearAgo"
+name: "Same House 1 Year Ago"
+
+Node: dcid:DifferentHouseInPuertoRicoOrTheUS
+typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:DifferentHouse1YearAgo
+name: "Different House in Puerto Rico or the United States"
 
 Node: dcid:DifferentHouseInTheUS
 typeOf: dcs:USC_ResidentStatusEnum
-specializationOf: dcs:DifferentHouse1YearAgo
-name: "DifferentHouseInTheUS"
+specializationOf: dcs:DifferentHouseInPuertoRicoOrTheUS
+name: "Different House in The US"
 
 Node: dcid:DifferentHouseInSameCounty
 typeOf: dcs:USC_ResidentStatusEnum
 specializationOf: dcs:DifferentHouseInTheUS
-name: "DifferentHouseInSameCounty"
+name: "Different House in Same County"
 
 Node: dcid:DifferentHouseInDifferentCounty
 typeOf: dcs:USC_ResidentStatusEnum
 specializationOf: dcs:DifferentHouseInTheUS
-name: "DifferentHouseInDifferentCounty"
+name: "Different House in Different County"
 
 Node: dcid:DifferentHouseInDifferentCountySameState
 typeOf: dcs:USC_ResidentStatusEnum
 specializationOf: dcs:DifferentHouseInDifferentCounty
-name: "DifferentHouseInDifferentCountySameState"
+name: "Different House in Different County in Same State"
 
 Node: dcid:DifferentHouseInDifferentCountyDifferentState
 typeOf: dcs:USC_ResidentStatusEnum
 specializationOf: dcs:DifferentHouseInDifferentCounty
-name: "DifferentHouseInDifferentCountyDifferentState"
+name: "Different House in Different County in Different State"
+
+Node: dcid:DifferentHouseInPuertoRico
+specializationOf: dcs:DifferentHouseInPuertoRicoOrTheUS
+typeOf: dcs:USC_ResidentStatusEnum
+name: "Different House in Puerto Rico"
+
+Node: dcid:DifferentHouseInSameMunicipio
+specializationOf: dcid:DifferentHouseInPuertoRico
+typeOf: dcs:USC_ResidentStatusEnum
+name: "Different House in Puerto Rico In Same Municipio"
+
+Node: dcid:DifferentHouseInDifferentMunicipio
+specializationOf: dcid:DifferentHouseInPuertoRico
+typeOf: dcs:USC_ResidentStatusEnum
+name: "Different House in Puerto Rico In Different Municipio"
 
 Node: dcid:DifferentHouseAbroad
 typeOf: dcs:USC_ResidentStatusEnum
 specializationOf: dcs:DifferentHouse1YearAgo
-name: "DifferentHouseAbroad"
+name: "Different House Abroad"
 
 Node: dcid:USC_FacilitiesEnum
 typeOf: schema:Class
