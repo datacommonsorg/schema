@@ -32,6 +32,13 @@ subClassOf: dcs:MeSHDescriptor
 description: "The bearer of linguistic meaning in MeSH as defined by the ScopeNote, comprising a DescriptorRecord or SupplementalRecord or QualifierRecord, and consisting of Term elements. One of the three main objects in the MeSH XML (the others being the record, and term). A single record will have one or more concepts, one of which is the preferred concept of the record. A Concept will have one or more terms, one of which is the preferred term for the concept. Referred to uniquely by both a ConceptUI and a ConceptName."
 sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#Concept"
 
+Node: dcid:MeSHQualifier
+name: "MeSHQualifier"
+typeOf: schema:Class
+subClassOf: dcs:Thing
+description: "Seven-character alpha-numeric string uniquely identifying a QualifierRecord and, along with the QualifierName, used to represent the Qualifier record in other elements."
+sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#QualifierUI"
+
 Node: dcid:DiseaseSymptomAssociation
 name: "DiseaseSymptomAssociation"
 typeOf: schema:Class
@@ -248,6 +255,27 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:MeSHTerm
 description: "Custom short form of a MeSHTerm used for NLM indexing and searching."
+
+Node: dcid:qualifierID
+name: "qualifierID"
+typeOf: schema:Property
+domainIncludes: dcs:MeSHQualifier
+rangeIncludes: schema:Text
+description: "Qualifier Unique Identifier."
+
+Node: dcid:qualifierName
+name: "qualifierName"
+typeOf: schema:Property
+domainIncludes: dcs:MeSHQualifier
+rangeIncludes: schema:Text
+description: "Qualifier Name."
+
+Node: dcid:qualifierAbbreviation
+name: "qualifierAbbreviation"
+typeOf: schema:Property
+domainIncludes: dcs:MeSHQualifier
+rangeIncludes: schema:Text
+description: "Qualifier Abbreviation."
 
 Node: dcid:associationCooccurrence
 name: "associationCooccurrence"
