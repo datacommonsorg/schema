@@ -614,7 +614,7 @@ name: "count"
 
 Node: dcid:cumulativeCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation
+domainIncludes: schema:StatisticalPopulation,dcs:StatisticalVariable
 typeOf: schema:Property
 name: "cumulativeCount"
 description: "A running count of all instances that have satisfied the constraints of the Statistical Population."
@@ -2558,14 +2558,14 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
 
 Node: dcid:confidenceIntervalLowerLimit
 typeOf: schema:Property
-domainIncludes: dcs:Observation
+domainIncludes: dcs:StatisticalPopulation,dcs:StatisticalVariable
 name: "confidenceIntervalLowerLimit"
 description: "The lower limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
 
 Node: dcid:confidenceIntervalUpperLimit
 typeOf: schema:Property
-domainIncludes: schema:Observation
+domainIncludes: schema:StatisticalPopulation,dcs:StatisticalVariable
 name: "confidenceIntervalUpperLimit"
 description: "The upper limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
@@ -2613,3 +2613,9 @@ rangeIncludes: schema:Substance
 domainIncludes: schema:Thing
 description: "A solvent is a substance that dissolves another substance"
 
+Node: dcid:Years18To49
+name: "Years 18 To 49"
+typeOf: dcs:QuantityRange
+startValue: 18
+endValue: 49
+unitOfMeasure: dcs:Years
