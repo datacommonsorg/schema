@@ -932,6 +932,12 @@ subClassOf: schema:Enumeration
 dcid: "USC_PovertyStatusEnum"
 name: "USC_PovertyStatusEnum"
 
+Node: PovertyStatusDetermined
+typeOf: dcs:USC_PovertyStatusEnum
+dcid: "PovertyStatusDetermined"
+name: "Poverty Status Determined"
+description: "Poverty Status is determined for families based on their the total income. If the family's total income is less than the threshold for poverty, then that family and every individual in it is considered in poverty."
+
 Node: AbovePovertyLevelInThePast12Months
 typeOf: dcs:USC_PovertyStatusEnum
 dcid: "AbovePovertyLevelInThePast12Months"
@@ -1290,6 +1296,12 @@ Node: dcid:USC_WorkStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "USC_WorkStatusEnum"
+
+Node: dcid:WorkedInThePast12Months
+typeOf: dcs:USC_WorkStatusEnum
+name: "WorkedInThePast12Months"
+description: "Any work during the past 12 months a person did for pay or profit (including paid vacation and paid sick leave) or worked without pay on a family farm or in a family business. Weeks of active service in the Armed Forces are also included."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 
 Node: dcid:USC_FullTimeYearRoundWorker
 typeOf: dcs:USC_WorkStatusEnum

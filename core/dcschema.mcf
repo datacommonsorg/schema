@@ -558,6 +558,11 @@ subClassOf: schema:Person
 name: "USCWorker"
 description: "An employee or worker as defined by US Census Bureau that excludes self-employed individuals, employees of private households, railroad employees, agricultural production employees and most government employees"
 
+Node: dcid:Child
+typeOf: schema:Class
+subClassOf: schema:Person
+name: "Child"
+
 Node: DarwinCoreBiologicalSpecimen
 dcid: "BiologicalSpecimen"
 name: "BiologicalSpecimen"
@@ -608,7 +613,7 @@ description: "Any specific branch of medical science or practice. Medical specia
 Node: dcid:PlannedParenthoodClinic
 typeOf: Class
 subClassOf: schema:MedicalClinic
-name: "Planned Parenthood Clinic"
+name: "PlannedParenthoodClinic"
 description: "A Planned Parenthood Health Center"
 # End Planned Parenthood additions
 
@@ -1019,13 +1024,15 @@ subClassOf: schema:Organization
 dcid: "Household"
 name: "Household"
 description: "A household is composed of one or more people who occupy a housing unit. Not all households contain families"
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#household"
 
 Node: HousingUnitClass
 typeOf:schema:Class
 subClassOf: schema:Accommodation
 dcid: "HousingUnit"
 name: "HousingUnit"
-description: "A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room that is occupied, or, if vacant, is intended for occupancy "
+description: "A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room that is occupied, or, if vacant, is intended for occupancy"
+descriptionUrl: "https://www.census.gov/programs-surveys/popest/about/glossary/housing.html"
 
 Node: dcid:grossRent
 typeOf: schema:Property
@@ -1456,6 +1463,12 @@ typeOf: dcid:TimeUnitOfMeasure
 name: "Day"
 dcid: "Day"
 description: "A unit of time equivalent to 24 hours."
+
+Node: Week
+typeOf: dcid:TimeUnitOfMeasure
+name: "Week"
+dcid: "Week"
+description: "A unit of time equivalent to one week on the Gregorian calendar."
 
 Node: Month
 typeOf: dcid:TimeUnitOfMeasure
@@ -1893,7 +1906,7 @@ description: "Bottom 1000 locations with the same PlaceStatisticalVariable attri
 
 Node: dcid:allLocations
 typeOf: schema:Property
-name: "allLocaitons"
+name: "allLocations"
 domainIncludes: dcs:PlaceStatisticalVariable
 rangeIncludes: schema:Place
 description: "All locations with the same PlaceStatisticalVariable attributes, for a given ranking algorithm."
@@ -2279,6 +2292,14 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:QuantityRange
 
+Node: dcid:usualHoursWorked
+name: "usualHoursWorked"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:QuantityRange
+description: "The number of hours a person usually worked in a work week. If the number of hours worked vary considerably across work weeks, this can also be looked as the approximate average of the hours worked per week."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: dcid:workerStatus
 name: "workerStatus"
 typeOf: schema:Property
@@ -2339,6 +2360,13 @@ description: "A unique code for a place in India as per the Unified District Inf
 domainIncludes: schema:Place
 rangeIncludes: schema:Text
 
+Node: dcid:pinCode
+typeOf: schema:Property
+name: "pinCode"
+description: "PIN code is a six digit code in Indian postal code system used by India Post."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
 Node: dcid:cost
 typeOf: schema:Property
 name: "cost"
@@ -2346,3 +2374,17 @@ domainIncludes: dcs:Fuel
 rangeIncludes: schema:Quantity
 description: "The value of money that has been used up to produce something or deliver a service."
 descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
+
+Node: dcid:confidenceIntervalLowerLimit
+typeOf: schema:Property
+domainIncludes: dcs:Observation
+name: "confidenceIntervalLowerLimit"
+description: "The lower limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
+
+Node: dcid:confidenceIntervalUpperLimit
+typeOf: schema:Property
+domainIncludes: schema:Observation
+name: "confidenceIntervalUpperLimit"
+description: "The upper limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
