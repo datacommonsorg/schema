@@ -207,21 +207,26 @@ Node: nativity
 dcid: "nativity"
 name: "nativity"
 typeOf: schema:Property
+rangeIncludes: dcs:USC_NativityEnum
+domainIncludes: schema:Person
 
 ## numberOfRooms in schema.org
 
 Node: occupancyStatus
 dcid: "occupancyStatus"
+rangeIncludes: dcs:OccupancyStatusEnum
 name: "occupancyStatus"
+description: "An enumeration of occupancy status of housing units"
 typeOf: schema:Property
+domainIncludes: dcs:HousingUnit
 
 Node: occupancyTenure
 typeOf: schema:Property
 dcid: "occupancyTenure"
 name: "occupancyTenure"
-description: "Describes whether Housing units are owner occupied or renter occupied"
+description: "An enumeration of occupancy tenure of housing units"
 rangeIncludes: dcs:OccupancyTenureEnum
-domainIncludes: dcs:HousingUnit, dcs:Household
+domainIncludes: dcs:HousingUnit, dcs:Household, dcs:Person
 
 Node: placeOfBirth
 dcid: "placeOfBirth"
