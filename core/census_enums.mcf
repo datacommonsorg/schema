@@ -824,6 +824,7 @@ name: "USC_MaritalStatusEnum"
 
 Node: Separated
 typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:DivorcedOrSeparated
 dcid: "Separated"
 name: "Separated"
 
@@ -839,6 +840,7 @@ name: "Widowed"
 
 Node: Divorced
 typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:DivorcedOrSeparated
 dcid: "Divorced"
 name: "Divorced"
 
@@ -849,8 +851,14 @@ name: "NowMarried"
 
 Node: MarriedAndNotSeparated
 typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:NowMarried
 dcid: "MarriedAndNotSeparated"
 name: "MarriedAndNotSeparated"
+
+Node: DivorcedOrSeparated
+typeOf: dcs:USC_MaritalStatusEnum
+dcid: "DivorcedOrSeparated"
+name: "DivorcedOrSeparated"
 
 Node: USC_NativityEnum
 typeOf: schema:Class
@@ -868,35 +876,37 @@ typeOf: dcs:USC_NativityEnum
 dcid: "USC_Native"
 name: "USC_Native"
 
-Node: USC_OccupancyStatusEnum
+Node: OccupancyStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_OccupancyStatusEnum"
-name: "USC_OccupancyStatusEnum"
+dcid: "OccupancyStatusEnum"
+name: "OccupancyStatusEnum"
+description: "An enumeration of occupancy status of housing units."
 
 Node: OccupiedHousingUnit
-typeOf: dcs:USC_OccupancyStatusEnum
+typeOf: dcs:OccupancyStatusEnum
 dcid: "OccupiedHousingUnit"
 name: "OccupiedHousingUnit"
 
 Node: VacantHousingUnit
-typeOf: dcs:USC_OccupancyStatusEnum
+typeOf: dcs:OccupancyStatusEnum
 dcid: "VacantHousingUnit"
 name: "VacantHousingUnit"
 
-Node: USC_OccupancyTenureEnum
+Node: OccupancyTenureEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_OccupancyTenureEnum"
-name: "USC_OccupancyTenureEnum"
+dcid: "OccupancyTenureEnum"
+name: "OccupancyTenureEnum"
+description: "An enumeration of occupancy tenure of housing units"
 
 Node: RenterOccupied
-typeOf: dcs:USC_OccupancyTenureEnum
+typeOf: dcs:OccupancyTenureEnum
 dcid: "RenterOccupied"
 name: "RenterOccupied"
 
 Node: OwnerOccupied
-typeOf: dcs:USC_OccupancyTenureEnum
+typeOf: dcs:OccupancyTenureEnum
 dcid: "OwnerOccupied"
 name: "OwnerOccupied"
 
@@ -931,6 +941,12 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 dcid: "USC_PovertyStatusEnum"
 name: "USC_PovertyStatusEnum"
+
+Node: PovertyStatusDetermined
+typeOf: dcs:USC_PovertyStatusEnum
+dcid: "PovertyStatusDetermined"
+name: "Poverty Status Determined"
+description: "Poverty Status is determined for families based on their the total income. If the family's total income is less than the threshold for poverty, then that family and every individual in it is considered in poverty."
 
 Node: AbovePovertyLevelInThePast12Months
 typeOf: dcs:USC_PovertyStatusEnum
@@ -1291,6 +1307,12 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "USC_WorkStatusEnum"
 
+Node: dcid:WorkedInThePast12Months
+typeOf: dcs:USC_WorkStatusEnum
+name: "WorkedInThePast12Months"
+description: "Any work during the past 12 months a person did for pay or profit (including paid vacation and paid sick leave) or worked without pay on a family farm or in a family business. Weeks of active service in the Armed Forces are also included."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: dcid:USC_FullTimeYearRoundWorker
 typeOf: dcs:USC_WorkStatusEnum
 name: "USC_FullTimeYearRoundWorker"
@@ -1339,6 +1361,10 @@ name: "AdultCorrectionalFacilities"
 Node: dcid:Household
 typeOf: dcs:USC_ResidenceTypeEnum
 name: "Household"
+
+Node: dcid:HousingUnit
+typeOf: dcs:USC_ResidenceTypeEnum
+name: "HousingUnit"
 
 Node: dcid:NoninstitutionalizedGroupQuarters
 typeOf: dcs:USC_ResidenceTypeEnum
