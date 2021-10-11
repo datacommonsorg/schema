@@ -372,6 +372,13 @@ typeOf: schema:Class
 subClassOf: schema:Landform
 name: "Continent"
 
+Node: dcid:GeographicRegion
+typeOf: schema:Class
+subClassOf: dcs:Continent
+name: "GeographicRegion"
+description: "The United Nations Geoschema for sub-regions"
+descriptionUrl: "https://en.wikipedia.org/wiki/United_Nations_geoscheme"
+
 Node: hasMenuItem
 dcid: "hasMenuItem"
 domainIncludes: schema:MenuSection
@@ -5175,7 +5182,7 @@ dcid: "area"
 typeOf: schema:Property
 supersededBy: "serviceArea"
 rangeIncludes: schema:Place
-domainIncludes: schema:BroadcastService
+domainIncludes: schema:BroadcastService, dcs:Farm
 name: "area"
 
 Node: defaultValue
@@ -5904,7 +5911,7 @@ source: "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -11019,3 +11026,17 @@ typeOf: schema:Class
 subClassOf: schema:Substance
 name: "Drug"
 description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
+
+Node: dcid:dateEstablished
+typeOf: schema:Property
+name: "dateRevised"
+rangeIncludes: schema:Date,schema:DateTime
+domainIncludes: schema:Thing
+description: "The date on which the CreativeWork first became available for searching on an online database."
+
+Node: dcid:dateRevised
+typeOf: schema:Property
+name: "dateRevised"
+rangeIncludes: schema:Date,schema:DateTime
+domainIncludes: schema:Thing
+description: "The date on which the CreativeWork was last edited or revised or the item was last revised on a DataFeed."

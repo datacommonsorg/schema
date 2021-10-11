@@ -23,25 +23,25 @@ description: "Administrive area that covers multiple specified educational insti
 Node: dcid:USLocalitiesEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "US Localities"
+name: "USLocalitiesEnum"
 description: "Enumerations of US Localities"
 
 Node: dcid:CharterSchoolEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Charter School Status"
+name: "CharterSchoolEnum"
 description: "Enumerations of different charter types for schools"
 
 Node: dcid:MagnetSchoolEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Magnet School Status"
+name: "MagnetSchoolEnum"
 description: "Enumerations of different magnet types for schools"
 
 Node: dcid:SchoolGradeLevelEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "School Grade Level"
+name: "SchoolGradeLevelEnum"
 description: "Enumerations of different grade levels in school"
 
 Node: dcid:Kindergarten
@@ -131,7 +131,7 @@ description: "No Grade Level"
 Node: dcid:LunchTypeEnum
 typeOf: dcs:Class
 subClassOf: schema:Enumeration
-name: "Lunch Type"
+name: "LunchTypeEnum"
 description: "Enumerations of different types of lunch eligiblity for students based on income as determined by National School Lunch Act"
 
 Node: dcid:FreeLunch
@@ -264,7 +264,7 @@ description: "Describes a school subject."
 
 # School Subject Enum
 Node: dcid:SchoolSubjectEnum
-name: "School Subject"
+name: "SchoolSubjectEnum"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 description: "Describes the different subjects taught in school"
@@ -308,7 +308,7 @@ description: "Scores are standardized according to the National Assessment of Ed
 
 # Enum for the different kinds of faculty at a school
 Node: dcid:FacultyTypeEnum
-name: "Faculty Type"
+name: "FacultyTypeEnum"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 
@@ -342,7 +342,7 @@ domainIncludes: dcs:Faculty
 # Household properties
 Node: dcid:HasChildrenStatusEnum
 description: "Describes whether or not there are children"
-name: "Has Children Status"
+name: "HasChildrenStatusEnum"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 
@@ -415,6 +415,19 @@ name: schoolLevelCode
 rangeIncludes: dcid:SchoolLevelEnum
 domainIncludes: schema:School
 description: "School Level code is calculated from the school's corresponding low and high grade span values. The codes are: 1- Primary (low grade = PK-03; high grade = PK-08) 2- Middle (low grade = 04-07; high grade = 04-09) 3- High (low grade = 07-12; high grade = 12 only) 4- Other (any other configuration not falling within the above three categories, including Ungraded)"
+
+Node: dcid:schoolManagement
+typeOf: schema:Property
+name: "schoolManagement"
+rangeIncludes: dcid:SchoolManagementEnum
+domainIncludes: schema:School
+description: "This identifies the type of institution that manages and runs a school."
+
+Node: dcid:hasFunctionalToilet
+name: "hasFunctionalToilet"
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: schema:Boolean
 
 Node: dcid:publicSchoolType
 typeOf: schema:Property
@@ -548,6 +561,10 @@ name: MiddleSchool
 Node: dcid:HighSchool
 typeOf: dcs:SchoolLevelEnum
 name: HighSchool
+
+Node: dcid:SecondarySchool
+typeOf: dcs:SchoolLevelEnum
+name: SecondarySchool
 
 Node: dcid:NCES_SchoolLevelOther
 typeOf: dcs:SchoolLevelEnum
@@ -848,7 +865,7 @@ rangeIncludes: dcs:USC_SchoolEnrollmentEnum
 Node: dcid:householdType
 name: "householdType"
 typeOf: schema:Property
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:Person
 rangeIncludes: dcs:HouseholdTypeEnum
 
 Node: dcid:HouseholdTypeEnum
@@ -860,22 +877,26 @@ description: "An enumeration of household types."
 Node: dcid:FamilyHousehold
 name: "FamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household."
+description: "A family household is a household maintained by a householder who is in a family, and includes any unrelated people (unrelated subfamily members and/or secondary individuals) who may be residing there. The number of family households is equal to the number of families."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#familyhousehold"
 
 Node: dcid:MarriedCoupleFamilyHousehold
 name: "MarriedCoupleFamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household with a married couple."
+description: "A married couple is a husband and wife enumerated as members of the same household. The married couple may or may not have children living with them. A married couple household is one where the household is maintained by a husband and wife."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#marriedcouple"
 
 Node: dcid:SingleFatherFamilyHousehold
 name: "SingleFatherFamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household with a single father and no wife present."
+description: "Only the father is present in the household. The father may be never-married, widowed, divorced, or married, spouse absent."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#maritalstatus"
 
 Node: dcid:SingleMotherFamilyHousehold
 name: "SingleMotherFamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household with a single mother and no husband present."
+description: "Only the mother is present in the household. The mother may be never-married, widowed, divorced, or married, spouse absent."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#maritalstatus"
 
 Node: dcid:Houseless
 name: "Houseless"
@@ -908,6 +929,23 @@ Node: dcid:WithSSIAndOrCashAssistanceInThePast12Months
 name: "WithSSIAndOrCashAssistanceInThePast12Months"
 typeOf: dcs:BenefitsStatusEnum
 description: "Received Supplemental Security Income (SSI) and/or cash public assistance income in the past 12 months"
+
+Node: dcid:WithRetirementIncomeInThePast12Months
+name: "WithRetirementIncomeInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Received retirement income in the past 12 months"
+
+Node: dcid:WithCashAssistanceInThePast12Months
+specializationOf: dcs:WithSSIAndOrCashAssistanceInThePast12Months
+name: "WithCashAssistanceInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Received cash public assistance income in the past 12 months"
+
+Node: dcid:WithSupplementalSecurityIncomeInThePast12Months
+specializationOf: dcs:WithSSIAndOrCashAssistanceInThePast12Months
+name: "WithSupplementalSecurityIncomeInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Received Supplemental Security Income (SSI) in the past 12 months"
 
 Node: dcid:WithSocialSecurityIncomeInThePast12Months
 name: "WithSocialSecurityIncomeInThePast12Months"
@@ -999,3 +1037,136 @@ alternateName: "ISCED Level 8 (Doctorate Degree)"
 description: "Doctorate degree or equivalent level."
 typeOf: dcid:SchoolGradeLevelEnum
 iscedLevel: "ISCEDLevel8"
+
+## UDISE School Enum
+
+Node: dcid:UDISE_PrimarySchool_Grade1To5
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE PrimarySchool Grade 1 To 5"
+
+Node: dcid:UDISE_UpperPrimarySchool_Grade1To8
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE UpperPrimarySchool Grade 1 To 8"
+
+Node: dcid:UDISE_HigherSecondarySchool_Grade1To12
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE Higher Secondary School Grade 1 To 12"
+
+Node: dcid:UDISE_UpperPrimarySchool_Grade6To8
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE UpperPrimarySchool Grade 6 To 8"
+
+Node: dcid:UDISE_UpperPrimarySchool_Grade6To12
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE UpperPrimarySchool Grade 6 To 12"
+
+Node: dcid:UDISE_SeniorSecondarySchool_Grade1To10
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE Senior Secondary School Grade 1 To 10"
+
+Node: dcid:UDISE_SeniorSecondarySchool_Grade6To10
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE Senior Secondary School Grade 6 To 10"
+
+Node: dcid:UDISE_SeniorSecondarySchool_Grade9To10
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE Senior Secondary School Grade 9 To 10"
+
+Node: dcid:UDISE_HigherSecondarySchool_Grade9To12
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE Higher Secondary School Grade 9 To 12"
+
+Node: dcid:UDISE_HigherSecondarySchool_Grade11To12
+typeOf: dcs:SchoolLevelEnum
+name: "UDISE Higher Secondary School Grade 11 To 12"
+
+## School Management Enum
+
+Node: dcid:SchoolManagementEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SchoolManagementEnum"
+description: "School Management - Is the institution type that manages and runs the school."
+
+Node: dcid:UDISE_DepartmentOfEducation
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Department Of Education"
+
+Node: dcid:UDISE_TribalWelfareDepartment
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Tribal Welfare Department"
+
+Node: dcid:UDISE_LocalBody
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Local Body"
+
+Node: dcid:UDISE_GovernmentAided
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Government Aided"
+
+Node: dcid:UDISE_PrivateUnaidedButRecognized
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Private Unaided But Recognized"
+
+Node: dcid:UDISE_OtherGovernmentManaged
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Other Government Managed"
+
+Node: dcid:UDISE_Unrecognized
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Unrecognized"
+
+Node: dcid:UDISE_SocialWelfareDepartment
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Social Welfare Department"
+
+Node: dcid:UDISE_MinistryOfLabor
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Ministry Of Labor"
+
+Node: dcid:UDISE_KendriyaVidyalaya
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Kendriya Vidyalaya"
+
+Node: dcid:UDISE_JawaharNavodayaVidyalaya
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Jawahar Navodaya Vidyalaya"
+
+Node: dcid:UDISE_SainikSchool
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Sainik School"
+
+Node: dcid:UDISE_RailwaySchool
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Railway School"
+
+Node: dcid:UDISE_CentralTibetanSchool
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Central Tibetan School"
+
+Node: dcid:UDISE_MadrasaRecognized
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Madrasa Recognized"
+
+Node: dcid:UDISE_MadrasaUnrecognized
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Madrasa Unrecognized"
+
+Node: dcid:UDISE_CentralGovernment
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Central Government"
+
+Node: dcid:UDISE_OtherCentralGovernmentSchools
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Other Central Government Schools"
+
+Node: dcid:UDISE_UnknownSchoolManagement
+typeOf: dcs:SchoolManagementEnum
+name: "UDISE Unknown School Management"
+
+Node: dcid:dropoutRate
+name: "dropoutRate"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Student
+rangeIncludes: schema:Number
+description: "Percentage of students who are no longer enrolled."
