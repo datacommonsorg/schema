@@ -1,0 +1,87 @@
+## Top-level Properties
+
+Node: dcid:waterQualityIndex
+typeOf: schema:Property
+domainIncludes: dcs:BodyOfWater
+rangeIncludes: schema:Number
+name: "Water Quality Index"
+
+Node: dcid:waterLocation
+typeOf: schema:Place
+domainIncludes: dcs:BodyOfWater
+rangeIncludes: dcs:WaterLocationEnum
+name: "Water Location"
+
+Node: dcid:waterProperty
+typeOf: schema:Property
+domainIncludes: dcs:waterQualityIndex
+rangeIncludes: dcs:WaterPropertyEnum
+name: "Water Property"
+
+
+## Enum classes
+
+Node: dcid:WaterLocationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "Water Body Location"
+
+Node: dcid:WaterPropertyEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "Water Quality Index Property"
+
+Node: dcid:WaterPollutantEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "Pollutants in Water Body"
+
+Node: dcid:WaterChemicalPropertyEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "Chemical Properties of Water Bodies"
+
+
+## Units of Measures
+
+Node: dcid:MilligramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "Milligrams Per Litre"
+
+Node: dcid:MicrogramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "Micrograms Per Litre"
+
+Node: dcid:MilligramsCaCO3PerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "Milligrams CaCO3 Per Litre"
+description: "Carbonate hardness is a measure of the water hardness caused by the presence of carbonate and are usually expressed as mg/l CaCO
+3 – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions."
+descriptionUrl: "https://en.wikipedia.org/wiki/Carbonate_hardness"
+
+
+## Water Location Enums
+
+Node: dcid:GroundWater
+typeOf: dcs:WaterLocationEnum
+domainIncludes: dcs:BodyOfWater
+name: "Ground Water"
+
+Node: dcid:SurfaceWater
+typeOf: dcs:WaterLocationEnum
+domainIncludes: dcs:BodyOfWater
+name: "Surface Water"
+
+
+## Water Property Enums
+
+Node: dcid:Pollutant
+typeOf: dcs:WaterLocationEnum
+rangeIncludes: dcs:WaterPollutantEnum
+name: "Ground Water"
+
+Node: dcid:ChemicalProperty
+typeOf: dcs:WaterLocationEnum
+rangeIncludes: dcs:WaterChemicalPropertyEnum
+name: "Surface Water"
+
