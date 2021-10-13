@@ -15,7 +15,7 @@ name: "Water Location"
 Node: dcid:waterProperty
 typeOf: schema:Property
 domainIncludes: dcs:waterQualityIndex
-rangeIncludes: dcs:WaterPropertyEnum
+rangeIncludes: dcs:WaterChemicalPropertyEnum, dcs:WaterPollutantEnum
 name: "Water Property"
 
 
@@ -26,12 +26,6 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "Water Body Location"
 description: "Enumeration of water bodies" 
-
-Node: dcid:WaterPropertyEnum
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "Water Quality Index Property"
-description: "Enumeration for different properties of water"
 
 Node: dcid:WaterPollutantEnum
 typeOf: schema:Class
@@ -44,23 +38,6 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "Chemical Properties of Water Bodies"
 description: "Enumeration of chemical properties of water"
-
-
-## Units of Measures
-
-Node: dcid:MilligramsPerLitre
-typeOf: dcs:ConcentrationUnitOfMeasure
-name: "Milligrams Per Litre"
-
-Node: dcid:MicrogramsPerLitre
-typeOf: dcs:ConcentrationUnitOfMeasure
-name: "Micrograms Per Litre"
-
-Node: dcid:MilligramsCaCO3PerLitre
-typeOf: dcs:ConcentrationUnitOfMeasure
-name: "Milligrams CaCO3 Per Litre"
-description: "Carbonate hardness is a measure of the water hardness caused by the presence of carbonate and is usually expressed as mgCaCO3/L (Milligrams CaCO3 Per Litre) – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions."
-descriptionUrl: "https://en.wikipedia.org/wiki/Carbonate_hardness"
 
 
 ## Water Location Enum Instances
@@ -76,7 +53,7 @@ domainIncludes: dcs:BodyOfWater
 name: "Surface Water"
 
 
-## Water Property Enum Instances
+## Water Properties Classification (Pollutant or Chemical Property)
 
 Node: dcid:waterPollutant
 typeOf: schema:Property
@@ -84,7 +61,7 @@ rangeIncludes: dcs:WaterPollutantEnum
 name: "Water-specific pollutants"
 
 Node: dcid:waterChemicalProperty
-typeOf: dcs:WaterPropertyEnum
+typeOf: schema:Property
 rangeIncludes: dcs:WaterChemicalPropertyEnum
 name: "Chemical properties of water"
 
@@ -225,3 +202,20 @@ typeOf: dcs:WaterChemicalPropertyEnum
 name: "Total Dissolved Solids"
 description: "Total dissolved solids is a measure of the dissolved combined content of all inorganic and organic substances present in water in molecular, ionized, or micro-granular suspended form."
 descriptionUrl: "https://en.wikipedia.org/wiki/Total_dissolved_solids"
+
+
+## Units of Measures
+
+Node: dcid:MilligramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "Milligrams Per Litre"
+
+Node: dcid:MicrogramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "Micrograms Per Litre"
+
+Node: dcid:MilligramsCaCO3PerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "Milligrams CaCO3 Per Litre"
+description: "Carbonate hardness is a measure of the water hardness caused by the presence of carbonate and is usually expressed as mgCaCO3/L (Milligrams CaCO3 Per Litre) – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions."
+descriptionUrl: "https://en.wikipedia.org/wiki/Carbonate_hardness"
