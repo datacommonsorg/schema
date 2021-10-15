@@ -23,25 +23,25 @@ description: "Administrive area that covers multiple specified educational insti
 Node: dcid:USLocalitiesEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "US Localities"
+name: "USLocalitiesEnum"
 description: "Enumerations of US Localities"
 
 Node: dcid:CharterSchoolEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Charter School Status"
+name: "CharterSchoolEnum"
 description: "Enumerations of different charter types for schools"
 
 Node: dcid:MagnetSchoolEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Magnet School Status"
+name: "MagnetSchoolEnum"
 description: "Enumerations of different magnet types for schools"
 
 Node: dcid:SchoolGradeLevelEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "School Grade Level"
+name: "SchoolGradeLevelEnum"
 description: "Enumerations of different grade levels in school"
 
 Node: dcid:Kindergarten
@@ -131,7 +131,7 @@ description: "No Grade Level"
 Node: dcid:LunchTypeEnum
 typeOf: dcs:Class
 subClassOf: schema:Enumeration
-name: "Lunch Type"
+name: "LunchTypeEnum"
 description: "Enumerations of different types of lunch eligiblity for students based on income as determined by National School Lunch Act"
 
 Node: dcid:FreeLunch
@@ -264,7 +264,7 @@ description: "Describes a school subject."
 
 # School Subject Enum
 Node: dcid:SchoolSubjectEnum
-name: "School Subject"
+name: "SchoolSubjectEnum"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 description: "Describes the different subjects taught in school"
@@ -308,7 +308,7 @@ description: "Scores are standardized according to the National Assessment of Ed
 
 # Enum for the different kinds of faculty at a school
 Node: dcid:FacultyTypeEnum
-name: "Faculty Type"
+name: "FacultyTypeEnum"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 
@@ -342,7 +342,7 @@ domainIncludes: dcs:Faculty
 # Household properties
 Node: dcid:HasChildrenStatusEnum
 description: "Describes whether or not there are children"
-name: "Has Children Status"
+name: "HasChildrenStatusEnum"
 subClassOf: schema:Enumeration
 typeOf: schema:Class
 
@@ -848,7 +848,7 @@ rangeIncludes: dcs:USC_SchoolEnrollmentEnum
 Node: dcid:householdType
 name: "householdType"
 typeOf: schema:Property
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:Person
 rangeIncludes: dcs:HouseholdTypeEnum
 
 Node: dcid:HouseholdTypeEnum
@@ -860,22 +860,26 @@ description: "An enumeration of household types."
 Node: dcid:FamilyHousehold
 name: "FamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household."
+description: "A family household is a household maintained by a householder who is in a family, and includes any unrelated people (unrelated subfamily members and/or secondary individuals) who may be residing there. The number of family households is equal to the number of families."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#familyhousehold"
 
 Node: dcid:MarriedCoupleFamilyHousehold
 name: "MarriedCoupleFamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household with a married couple."
+description: "A married couple is a husband and wife enumerated as members of the same household. The married couple may or may not have children living with them. A married couple household is one where the household is maintained by a husband and wife."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#marriedcouple"
 
 Node: dcid:SingleFatherFamilyHousehold
 name: "SingleFatherFamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household with a single father and no wife present."
+description: "Only the father is present in the household. The father may be never-married, widowed, divorced, or married, spouse absent."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#maritalstatus"
 
 Node: dcid:SingleMotherFamilyHousehold
 name: "SingleMotherFamilyHousehold"
 typeOf: dcs:HouseholdTypeEnum
-description: "A family household with a single mother and no husband present."
+description: "Only the mother is present in the household. The mother may be never-married, widowed, divorced, or married, spouse absent."
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#maritalstatus"
 
 Node: dcid:Houseless
 name: "Houseless"
