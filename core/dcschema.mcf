@@ -1475,6 +1475,33 @@ name: "Year"
 dcid: "Year"
 description: "A unit of time equivalent to one year on the Gregorian calendar."
 
+Node: dcid:TemperatureUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "TemperatureUnitOfMeasure"
+description: "A unit used to denote a measurement of temperature."
+
+Node: dcid:Celsius
+typeOf: schema:Class
+subClassOf: dcs:TemperatureUnitOfMeasure
+name: "Celsius"
+
+Node: dcid:Kelvin
+typeOf: schema:Class
+subClassOf: dcs:TemperatureUnitOfMeasure
+name: "Kelvin"
+
+Node: dcid:PrecipiationUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "PrecipiationUnitOfMeasure"
+description: "A unit used to denote a measurement of precipitation."
+
+Node: dcid:KilogramsPerMeterSquaredSecond
+typeOf: schema:Class
+subClassOf: dcs:PrecipiationUnitOfMeasure
+name: "KilogramsPerMeterSquaredSecond"
+
 Node: dcid:RatioToPovertyLine
 typeOf: dcs:UnitOfMeasure
 name: "RatioToPovertyLine"
