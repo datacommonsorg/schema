@@ -1475,17 +1475,22 @@ typeOf: dcs:WorkerClassificationEnum
 specializationOf: dcs:PaidWorker
 description: "A salaried employee in the for-profit sector. Example: Salaried employee at a private company"
 
+Node: dcid:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
+name: "Unincorporated Buisness Owner Or Unpaid Family Worker"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:Worker
+
 Node: dcid:UnincorporatedBusinessOwner
 name: "Unincorporated Business Owner"
 typeOf: dcs:WorkerClassificationEnum
-specializationOf: dcs:Worker
+specializationOf: dcs:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
 description: "People who worked for profit or fees in their own unincorporated business, profession, or trade, or who operated a farm. This class is often tabulated together with the following group, unpaid family workers."
 
 Node: dcid:UnpaidFamilyWorker
 name: "Unpaid Family Worker"
 typeOf: dcs:WorkerClassificationEnum
 description: "This includes people who worked without pay in a business or on a farm operated by a relative. Note that, on tabulations with earnings data, unpaid family workers may have earnings."
-specializationOf: dcs:Worker
+specializationOf: dcs:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
 
 Node: dcid:EnrolledInEducationOrTraining
 typeOf: dcs:EnrollmentStatusEnum
