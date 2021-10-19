@@ -416,6 +416,19 @@ rangeIncludes: dcid:SchoolLevelEnum
 domainIncludes: schema:School
 description: "School Level code is calculated from the school's corresponding low and high grade span values. The codes are: 1- Primary (low grade = PK-03; high grade = PK-08) 2- Middle (low grade = 04-07; high grade = 04-09) 3- High (low grade = 07-12; high grade = 12 only) 4- Other (any other configuration not falling within the above three categories, including Ungraded)"
 
+Node: dcid:schoolManagement
+typeOf: schema:Property
+name: schoolManagement
+rangeIncludes: dcid:SchoolManagementEnum
+domainIncludes: schema:School
+description: "School Management - Is the institution type that manages and runs the school."
+
+Node: dcid:hasFunctionalToilet
+name: "hasFunctionalToilet"
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: schema:Boolean
+
 Node: dcid:publicSchoolType
 typeOf: schema:Property
 name: publicSchoolType
@@ -564,6 +577,126 @@ name: NCES_SchoolLevelDataNotApplicable
 Node: dcid:NCES_SchoolLevelDataQualityIssue
 typeOf: dcs:SchoolLevelEnum
 name: NCES_SchoolLevelDataQualityIssue
+
+Node: dcid:UDISE_PrimarySchool_Grade1To5
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_PrimarySchool_Grade1To5
+
+Node: dcid:UDISE_UpperPrimarySchool_Grade1To8
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_UpperPrimarySchool_Grade1To8
+
+Node: dcid:UDISE_HigherSecondarySchool_Grade1To12
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_HigherSecondarySchool_Grade1To12
+
+Node: dcid:UDISE_UpperPrimarySchool_Grade6To8
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_UpperPrimarySchool_Grade6To8
+
+Node: dcid:UDISE_UpperPrimarySchool_Grade6To12
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_UpperPrimarySchool_Grade6To12
+
+Node: dcid:UDISE_SeniorSecondarySchool_Grade1To10
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_SeniorSecondarySchool_Grade1To10
+
+Node: dcid:UDISE_SeniorSecondarySchool_Grade6To10
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_SeniorSecondarySchool_Grade6To10
+
+Node: dcid:UDISE_SeniorSecondarySchool_Grade9To10
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_SeniorSecondarySchool_Grade9To10
+
+Node: dcid:UDISE_HigherSecondarySchool_Grade9To12
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_HigherSecondarySchool_Grade9To12
+
+Node: dcid:UDISE_HigherSecondarySchool_Grade11To12
+typeOf: dcs:SchoolLevelEnum
+name: UDISE_HigherSecondarySchool_Grade11To12
+
+## School Management Enum
+
+Node: dcid:SchoolManagementEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: SchoolManagementEnum
+description: "School Management - Is the institution type that manages and runs the school."
+
+Node: dcid:UDISE_DepartmentOfEducation
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_DepartmentOfEducation
+
+Node: dcid:UDISE_TribalWelfareDeaprtment
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_TribalWelfareDeaprtment
+
+Node: dcid:UDISE_LocalBody
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_LocalBody
+
+Node: dcid:UDISE_GovermentAided
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_GovermentAided
+
+Node: dcid:UDISE_PrivateUnaidedRecognized
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_PrivateUnaidedRecognized
+
+Node: dcid:UDISE_OtherGovermentManaged
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_OtherGovermentManaged
+
+Node: dcid:UDISE_Unrecognized
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_Unrecognized
+
+Node: dcid:UDISE_SocialWelfareDepartment
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_SocialWelfareDepartment
+
+Node: dcid:UDISE_MinistryOfLabor
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_MinistryOfLabor
+
+Node: dcid:UDISE_KendriyaVidyalaya
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_KendriyaVidyalaya
+
+Node: dcid:UDISE_JawaharNavodayaVidyalaya
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_JawaharNavodayaVidyalaya
+
+Node: dcid:UDISE_SainikSchool
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_SainikSchool
+
+Node: dcid:UDISE_RailwaySchool
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_RailwaySchool
+
+Node: dcid:UDISE_CentralTibetanSchool
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_CentralTibetanSchool
+
+Node: dcid:UDISE_MadrasaRecognized
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_MadrasaRecognized
+
+Node: dcid:UDISE_MadrasaUnrecognized
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_MadrasaUnrecognized
+
+Node: dcid:UDISE_CentralGovernment
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_CentralGovernment
+
+Node: dcid:UDISE_UnknownSchoolManagement
+typeOf: dcs:SchoolManagementEnum
+name: UDISE_UnknownSchoolManagement
 
 ## Public School Type Enum
 
