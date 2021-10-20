@@ -562,6 +562,10 @@ Node: dcid:HighSchool
 typeOf: dcs:SchoolLevelEnum
 name: HighSchool
 
+Node: dcid:SecondarySchool
+typeOf: dcs:SchoolLevelEnum
+name: SecondarySchool
+
 Node: dcid:NCES_SchoolLevelOther
 typeOf: dcs:SchoolLevelEnum
 name: "School Level Other"
@@ -1142,3 +1146,10 @@ name: "UDISE Other Central Government Schools"
 Node: dcid:UDISE_UnknownSchoolManagement
 typeOf: dcs:SchoolManagementEnum
 name: "UDISE Unknown School Management"
+
+Node: dcid:dropoutRate
+name: "dropoutRate"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Student
+rangeIncludes: schema:Number
+description: "Percentage of students who are no longer enrolled."
