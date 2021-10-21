@@ -111,8 +111,8 @@ name: "receipts"
 
 Node: dcid:usedFor
 typeOf: schema:Property
-rangeIncludes: dcs:EnergyConsumptionSectorEnum, dcs:FuelUsageSourceEnum
-domainIncludes: dcs:Energy, dcs:Fuel
+rangeIncludes: dcs:EnergyConsumptionSectorEnum, dcs:FuelUsageSourceEnum, dcs:WaterUseCategoryEnum
+domainIncludes: dcs:Energy, dcs:Fuel, dcs:Water
 name: "usedFor"
 
 Node: dcid:salesRevenue
@@ -2073,8 +2073,8 @@ descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-so
 Node: dcs:NonBiogenicEmissionSource
 name: "NonBiogenicEmissionSource"
 typeOf: dcs:EmissionSourceTypeEnum
-description: "Biogenic emission sources are emissions that come from non-natural sources."
-descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-sources"
+description: "Non-biogenic emission sources are emissions that come from the combustion of fossil fuels, from the use of sorbent, from some other non-combustion processes, and the portion of CO2 from the fossil fuel component of fuels with both fossil and biomass components (i.e., MSW and tires)."
+descriptionUrl: "https://ccdsupport.com/confluence/pages/viewpage.action?pageId=191398007"
 
 Node: dcs:EmissionSourceEnum
 name: "EmissionSourceEnum"
