@@ -2229,3 +2229,21 @@ Node: dcid:IndustrialWasteLandfills
 typeOf: dcs:EmissionSourceEnum
 name: "Industrial Waste Landfills"
 
+## Stuff from NREL
+
+Node: dcid:solarInsolation
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: dcs:Quantity
+name: "solarInsolation"
+description: "Amount of solar radiation reaching a given area"
+
+Node: dcid:SUNYSatelliteSolarRadiationModel
+typeOf: dcs:MeasurementMethodEnum
+name: "SUNYSatelliteSolarRadiationModel"
+description: "Model used in the Solar Insolation data sourced from NREL."
+
+Node: dcid:WattHourPerSquareMeterPerDay
+typeOf: dcs:EnergyUnitOfMeasure
+name: "WattHourPerSquareMeterPerDay"
+
