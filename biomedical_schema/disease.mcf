@@ -326,3 +326,69 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:DiseaseSymptomAssociation
 description: "A PubMed identifier for a publication containing reference to a disease and symptom."
 
+Node: dcid:alternateDiseaseOntologyID
+typeOf: schema:Property
+name: "alternateDiseaseOntologyID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "An alternative disease ontology ID (DOID) associated with a disease."
+
+Node: dcid:diseaseSynonym
+typeOf: schema:Property
+name: "diseaseSynonym"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "A synonym for a disease name."
+
+Node: dcid:unifiedMedicalLanguageSystemConceptUniqueIdentifier
+typeOf: schema:Property
+name: "unifiedMedicalLanguageSystemConceptUniqueIdentifier"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "A concept is a meaning. A meaning can have many different names. A key goal of Metathesaurus construction is to understand the intended meaning of each name in each source vocabulary and to link all the names from all of the source vocabularies that mean the same thing (the synonyms). Concept Unique Identifier (CUI) contain the letter C followed by seven numbers. In the example on the right the CUI is C0018681."
+descriptorUrl: "https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_005.html"
+
+Node: dcid:geneticAndRareDiseasesID
+typeOf: schema:Property
+name: "geneticAndRareDiseasesID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The identifier for the disease in the Genetic and Rare Diseases (GARD) database."
+sameAs: "https://rarediseases.info.nih.gov/"
+
+Node: dcid:nationalCancerInstituteID
+typeOf: schema:Property
+name: "nationalCancerInstituteID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The identifier for the disease in the National Cancer Institute (NCI) thesaurus."
+sameAs: "https://www.cancer.gov/"
+
+Node: dcid:internationalClassificationOfDiseasesOntologyID
+typeOf: schema:Property
+name: "internationalClassificationOfDiseasesOntologyID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "International Classification of Diseases Ontology (ICDO) is an ontology representation of the ICD system, which includes ICD-10, ICD-9, and the future ICD-11."
+
+Node: dcid:icd10CMCode
+typeOf: schema:Property
+name: "icd10CMCode"
+domainIncludes: dcs:Disease
+rangeIncludes: dcs:ICD10Code
+description: "The disease diagnosis code for version 10 of the International Classification of Disease Ontology."
+
+Node: dcid:icd9CMID
+typeOf: schema:Property
+name: "icd9CMID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The disease diagnosis code for version 9 of the International Classification of Disease Ontology."
+
+Node: dcid:medDraID
+typeOf: schema:Property
+name: "medDraID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The disease identifiers extracted from the medDRA medical terminology."
+sameAs: "https://www.meddra.org/"
