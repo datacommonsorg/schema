@@ -4,6 +4,7 @@ Node: abilityToSpeakEnglish
 dcid: "abilityToSpeakEnglish"
 typeOf: schema:Property
 name: "abilityToSpeakEnglish"
+domainIncludes: schema:Person, dcs:Household
 
 ## age in schema.org
 
@@ -123,7 +124,8 @@ Node: householderRelatedChildrenUnder18Years
 typeOf: schema:Property
 dcid: "householderRelatedChildrenUnder18Years"
 name: "householderRelatedChildrenUnder18Years"
-description: "Number of related children of the householder under 18 years"
+description: "Number of related children of the householder under 18 years. A related child is any child under 18 years old who is related to the householder by birth, marriage, or adoption. Related children of the householder include evermarried as well as never-married children."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 rangeIncludes: dcs:Quantity, dcs:QuantityRange
 domainIncludes: dcs:Household
 
@@ -131,7 +133,8 @@ Node: householderOwnChildrenUnder18Years
 typeOf: schema:Property
 dcid: "householderOwnChildrenUnder18Years"
 name: "householderOwnChildrenUnder18Years"
-description: "Number of own children of the householder under 18 years"
+description: "Number of own children of the householder under 18 years. An own child is a never-married child under 18 years who is a son or daughter by birth, a stepchild, or an adopted child of the householder. In certain tabulations, own children are further classified as living with two parents or with one parent only."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 rangeIncludes: dcs:Quantity, dcs:QuantityRange
 domainIncludes: dcs:Household
 
@@ -146,9 +149,9 @@ domainIncludes: dcs:Household
 Node: income
 dcid: "income"
 typeOf: schema:Property
-rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile
+rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile, dcs:Farm
 name: "income"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcs:Household
 
 Node: householdIncome
 dcid: "householdIncome"
@@ -186,7 +189,7 @@ Node: languageSpokenAtHome
 dcid: "languageSpokenAtHome"
 typeOf: schema:Property
 name: "languageSpokenAtHome"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcs:Household
 rangeIncludes: dcs:USC_LanguageSpokenAtHomeEnum
 
 Node: levelOfSchool
@@ -205,21 +208,26 @@ Node: nativity
 dcid: "nativity"
 name: "nativity"
 typeOf: schema:Property
+rangeIncludes: dcs:USC_NativityEnum
+domainIncludes: schema:Person
 
 ## numberOfRooms in schema.org
 
 Node: occupancyStatus
 dcid: "occupancyStatus"
+rangeIncludes: dcs:OccupancyStatusEnum
 name: "occupancyStatus"
+description: "An enumeration of occupancy status of housing units"
 typeOf: schema:Property
+domainIncludes: dcs:HousingUnit
 
 Node: occupancyTenure
 typeOf: schema:Property
 dcid: "occupancyTenure"
 name: "occupancyTenure"
-description: "Describes whether Housing units are owner occupied or renter occupied"
+description: "An enumeration of occupancy tenure of housing units"
 rangeIncludes: dcs:OccupancyTenureEnum
-domainIncludes: dcs:HousingUnit, dcs:Household
+domainIncludes: dcs:HousingUnit, dcs:Household, dcs:Person
 
 Node: placeOfBirth
 dcid: "placeOfBirth"
@@ -342,7 +350,7 @@ domainIncludes: dcs:USCFirm
 
 Node: dcid:ownerGender
 typeOf: schema:Property
-name: "majorityOwnerGender"
+name: "ownerGender"
 description: "Identifies the gender of majority owner for a firm or business. In case of single owner, this identifies gender of the owner."
 rangeIncludes: dcs:USC_OwnerGenderEnum
 domainIncludes: dcs:USCFirm
@@ -431,3 +439,15 @@ description: "Number of vehicles available at a place."
 domainIncludes: dcs:Household
 rangeIncludes: schema:Quantity, dcs:QuantityRange
 
+Node: dcid:birthEventStatus
+rangeIncludes: dcs:BirthEventStatusEnum
+name: "birthEventStatus"
+typeOf: schema:Property
+domainIncludes: schema:Person
+
+Node: dcid:householderNativity
+typeOf: schema:Property
+name: "householderNativity"
+description: "The nativity of householders"
+domainIncludes: dcs:Household, dcs:HousingUnit
+rangeIncludes: dcs:USC_NativityEnum
