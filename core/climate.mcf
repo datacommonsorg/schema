@@ -114,6 +114,13 @@ domainIncludes: schema:Place
 rangeIncludes: schema:RepresentativeConcentrationPathwayEnum
 name: "emissionsScenario"
 
+Node: dcid:humidityParameter
+typeOf: schema:Property
+description: "The kind of relative humidity parameter used for computing derived climate parameters."
+domainIncludes: schema:Place
+rangeIncludes: dcs:HumidityParameterCategoryEnum
+name: "humidityParameter"
+
 Node: dcid:landCoverType
 typeOf: schema:Property
 description: "Identifies the type of physical material that is at the surface of the earth."
@@ -123,6 +130,19 @@ rangeIncludes: dcs:LandCoverClassEnum
 name: "landCoverType"
 
 ## Enums
+
+Node: dcid:HumidityParameterCategoryEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HumidityParameterCategoryEnum"
+
+Node: dcid:MaxRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MaxRelativeHumidity"
+
+Node: dcid:MeanRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MeanRelativeHumidity"
 
 Node: dcid:RepresentativeConcentrationPathwayEnum
 typeOf: schema:Class
