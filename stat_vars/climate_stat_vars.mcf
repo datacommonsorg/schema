@@ -123,65 +123,6 @@ measuredProperty: dcs:temperature
 statType: dcs:minValue
 emissionsScenario: dcs:RCP8.5
 
-## Wet Bulb Temperature
-
-### TODO: Delete this once not used by wet bulb temperature calculation.
-Node: dcid:Temperature_WetBulb_RCP85
-typeOf: dcs:StatisticalVariable
-populationType: dcs:Place
-measuredProperty: dcs:wetBulbTemperature
-statType: dcs:measuredValue
-emissionsScenario: dcs:RCP8.5
-description: "Wet bulb temperature computed from max temperature under RCP8.5 emissions scenario and estimated humidity based on past weather"
-
-### TODO: Delete this once not used by wet bulb temperature calculation.
-Node: dcid:Temperature_WetBulb_RCP60
-typeOf: dcs:StatisticalVariable
-populationType: dcs:Place
-measuredProperty: dcs:wetBulbTemperature
-statType: dcs:measuredValue
-emissionsScenario: dcs:RCP6.0
-description: "Wet bulb temperature computed from max temperature under RCP6.0 emissions scenario and estimated humidity based on past weather"
-
-### TODO: Delete this once not used by wet bulb temperature calculation.
-Node: dcid:Temperature_WetBulb_RCP45
-typeOf: dcs:StatisticalVariable
-populationType: dcs:Place
-measuredProperty: dcs:wetBulbTemperature
-statType: dcs:measuredValue
-emissionsScenario: dcs:RCP4.5
-description: "Wet bulb temperature computed from max temperature under RCP4.5 emissions scenario and estimated humidity based on past weather"
-
-### TODO: Delete this once not used by wet bulb temperature calculation.
-Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP85
-typeOf: dcs:StatisticalVariable
-populationType: dcs:Place
-measuredProperty: dcs:numberOfMonths
-statType: dcs:measuredValue
-wetBulbTemperature: [35 - Celsius]
-emissionsScenario: dcs:RCP8.5
-description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP8.5 emissions scenario and estimated humidity based on past weather"
-
-### TODO: Delete this once not used by wet bulb temperature calculation.
-Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60
-typeOf: dcs:StatisticalVariable
-populationType: dcs:Place
-measuredProperty: dcs:numberOfMonths
-statType: dcs:measuredValue
-wetBulbTemperature: [35 - Celsius]
-emissionsScenario: dcs:RCP6.0
-description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP6.0 emissions scenario and estimated humidity based on past weather"
-
-### TODO: Delete this once not used by wet bulb temperature calculation.
-Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45
-typeOf: dcs:StatisticalVariable
-populationType: dcs:Place
-measuredProperty: dcs:numberOfMonths
-statType: dcs:measuredValue
-wetBulbTemperature: [35 - Celsius]
-emissionsScenario: dcs:RCP4.5
-description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP4.5 emissions scenario and estimated humidity based on past weather"
-
 ## Wet Bulb Temperature (based on Max Relative Humidity)
 
 Node: dcid:WetBulbTemperature_RCP85_MaxRelativeHumidity
