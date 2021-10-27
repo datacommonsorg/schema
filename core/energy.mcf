@@ -111,8 +111,8 @@ name: "receipts"
 
 Node: dcid:usedFor
 typeOf: schema:Property
-rangeIncludes: dcs:EnergyConsumptionSectorEnum, dcs:FuelUsageSourceEnum
-domainIncludes: dcs:Energy, dcs:Fuel
+rangeIncludes: dcs:EnergyConsumptionSectorEnum, dcs:FuelUsageSourceEnum, dcs:WaterUseCategoryEnum
+domainIncludes: dcs:Energy, dcs:Fuel, dcs:Water
 name: "usedFor"
 
 Node: dcid:salesRevenue
@@ -2073,8 +2073,8 @@ descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-so
 Node: dcs:NonBiogenicEmissionSource
 name: "NonBiogenicEmissionSource"
 typeOf: dcs:EmissionSourceTypeEnum
-description: "Biogenic emission sources are emissions that come from non-natural sources."
-descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-sources"
+description: "Non-biogenic emission sources are emissions that come from the combustion of fossil fuels, from the use of sorbent, from some other non-combustion processes, and the portion of CO2 from the fossil fuel component of fuels with both fossil and biomass components (i.e., MSW and tires)."
+descriptionUrl: "https://ccdsupport.com/confluence/pages/viewpage.action?pageId=191398007"
 
 Node: dcs:EmissionSourceEnum
 name: "EmissionSourceEnum"
@@ -2228,4 +2228,22 @@ name: "Manufacture of Electric Transmission and Distribution Equipment"
 Node: dcid:IndustrialWasteLandfills
 typeOf: dcs:EmissionSourceEnum
 name: "Industrial Waste Landfills"
+
+## Stuff from NREL
+
+Node: dcid:solarInsolation
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: dcs:Quantity
+name: "solarInsolation"
+description: "Amount of solar radiation reaching a given area"
+
+Node: dcid:SUNYSatelliteSolarRadiationModel
+typeOf: dcs:MeasurementMethodEnum
+name: "SUNYSatelliteSolarRadiationModel"
+description: "Model used in the Solar Insolation data sourced from NREL."
+
+Node: dcid:WattHourPerSquareMeterPerDay
+typeOf: dcs:EnergyUnitOfMeasure
+name: "WattHourPerSquareMeterPerDay"
 
