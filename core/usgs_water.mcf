@@ -1,0 +1,121 @@
+## Population Types
+
+Node: dcid:Water
+typeOf: schema:Class
+name: "Water"
+subClassOf: schema:Thing
+
+## Properties
+
+Node: dcid:withdrawalRate
+typeOf: schema:Property
+name: "withdrawalRate"
+domainIncludes: dcs:Water
+rangeIncludes: schema:Quantity
+description: "The rate of withdrawing something from another thing."
+
+Node: dcid:usageRate
+typeOf: schema:Property
+name: "usageRate"
+domainIncludes: dcs:Water
+rangeIncludes: schema:Quantity
+description: "The rate of using something."
+
+Node: dcid:waterType
+typeOf: schema:Property
+name: "waterType"
+domainIncludes: dcs:Water
+rangeIncludes: dcs:WaterTypeEnum
+description: "The type of water, such as fresh water, saline water."
+
+Node: dcid:waterSource
+typeOf: schema:Property
+name: "waterSource"
+domainIncludes: dcs:Water
+rangeIncludes: dcs:WaterSourceTypeEnum
+description: "The source of water, such as ground water, surface water."
+
+## Enums
+
+### WaterUseCategoryEnum
+
+Node: dcid:WaterUseCategoryEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "WaterUseCategoryEnum"
+
+Node: dcid:Domestic
+typeOf: dcs:WaterUseCategoryEnum
+name: "Domestic"
+
+Node: dcid:PublicSupply
+typeOf: dcs:WaterUseCategoryEnum
+name: "PublicSupply"
+
+Node: dcid:Industrial
+typeOf: dcs:WaterUseCategoryEnum
+name: "Industrial"
+
+Node: dcid:Irrigation
+typeOf: dcs:WaterUseCategoryEnum
+name: "Irrigation"
+
+Node: dcid:Thermoelectric
+typeOf: dcs:WaterUseCategoryEnum
+name: "Thermoelectric"
+
+Node: dcid:Mining
+typeOf: dcs:WaterUseCategoryEnum
+name: "Mining"
+
+Node: dcid:Livestock
+typeOf: dcs:WaterUseCategoryEnum
+name: "Livestock"
+
+Node: dcid:Aquaculture
+typeOf: dcs:WaterUseCategoryEnum
+name: "Aquaculture"
+
+### WaterTypeEnum
+
+Node: dcid:WaterTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "WaterTypeEnum"
+
+Node: dcid:FreshWater
+typeOf: dcs:WaterTypeEnum
+name: "FreshWater"
+description: "Water that contains less than 1,000 milligrams per liter (mg/L) of dissolved solids."
+descriptionUrl: "https://www.usgs.gov/mission-areas/water-resources/science/water-use-terminology"
+
+Node: dcid:SalineWater
+typeOf: dcs:WaterTypeEnum
+name: "SalineWater"
+description: "Water that contains 1,000 mg/L or more of dissolved solids."
+descriptionUrl: "https://www.usgs.gov/mission-areas/water-resources/science/water-use-terminology"
+
+### WaterSourceTypeEnum
+
+Node: dcid:WaterSourceTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "WaterSourceTypeEnum"
+
+Node: dcid:GroundWater
+typeOf: dcs:WaterSourceTypeEnum
+name: "GroundWater"
+description: "Water in the ground that fully saturates pores or cracks in soils and rocks."
+descriptionUrl: "https://www.usgs.gov/mission-areas/water-resources/science/groundwater-basics"
+
+Node: dcid:SurfaceWater
+typeOf: dcs:WaterSourceTypeEnum
+name: "SurfaceWater"
+description: "Water flowing on the Earth's surface."
+descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science/rivers-streams-and-creeks"
+
+## Units
+
+Node: dcid:MillionGallonsPerDay
+typeOf: dcs:VolumeUnitOfMeasure
+name: "MillionGallonsPerDay"
