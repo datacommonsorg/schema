@@ -240,3 +240,62 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP4.5
 humidityParameter: dcs:MeanRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP4.5 emissions scenario and estimated mean relative humidity based on past weather"
+
+## Wet Bulb Temperature (based on Min Relative Humidity)
+
+Node: dcid:WetBulbTemperature_RCP85_MinRelativeHumidity
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:wetBulbTemperature
+statType: dcs:measuredValue
+emissionsScenario: dcs:RCP8.5
+humidityParameter: dcs:MinRelativeHumidity
+description: "Wet bulb temperature computed from min temperature under RCP8.5 emissions scenario and estimated min relative humidity based on past weather"
+
+Node: dcid:WetBulbTemperature_RCP60_MinRelativeHumidity
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:wetBulbTemperature
+statType: dcs:measuredValue
+emissionsScenario: dcs:RCP6.0
+humidityParameter: dcs:MinRelativeHumidity
+description: "Wet bulb temperature computed from min temperature under RCP6.0 emissions scenario and estimated min relative humidity based on past weather"
+
+Node: dcid:WetBulbTemperature_RCP45_MinRelativeHumidity
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:wetBulbTemperature
+statType: dcs:measuredValue
+emissionsScenario: dcs:RCP4.5
+humidityParameter: dcs:MinRelativeHumidity
+description: "Wet bulb temperature computed from min temperature under RCP4.5 emissions scenario and estimated min relative humidity based on past weather"
+
+Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP85_MinRelativeHumidity
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:numberOfMonths
+statType: dcs:measuredValue
+wetBulbTemperature: [35 - Celsius]
+emissionsScenario: dcs:RCP8.5
+humidityParameter: dcs:MinRelativeHumidity
+description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP8.5 emissions scenario and estimated min relative humidity based on past weather"
+
+Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60_MinRelativeHumidity
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:numberOfMonths
+statType: dcs:measuredValue
+wetBulbTemperature: [35 - Celsius]
+emissionsScenario: dcs:RCP6.0
+humidityParameter: dcs:MinRelativeHumidity
+description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP6.0 emissions scenario and estimated min relative humidity based on past weather"
+
+Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45_MinRelativeHumidity
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:numberOfMonths
+statType: dcs:measuredValue
+wetBulbTemperature: [35 - Celsius]
+emissionsScenario: dcs:RCP4.5
+humidityParameter: dcs:MinRelativeHumidity
+description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP4.5 emissions scenario and estimated min relative humidity based on past weather"
