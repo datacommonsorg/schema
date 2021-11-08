@@ -1,5 +1,17 @@
 ## Population Types
 
+Node: dcid:IPCCPlace_50
+typeOf: schema:Class
+description: "A grid on the earth corresponding to 0.50 degree resolution for attaching climate related observations."
+subClassOf: schema:Place
+name: "IPCCPlace_50"
+
+Node: dcid:IPCCPlace_25
+typeOf: schema:Class
+description: "A grid on the earth corresponding to 0.25 degree resolution for attaching climate related observations."
+subClassOf: schema:Place
+name: "IPCCPlace_25"
+
 Node: dcid:AirQualitySite
 typeOf: schema:Class
 description: "Site for air quality measurements."
@@ -11,6 +23,13 @@ typeOf: schema:Class
 description: "Layer of gases surrounding a planet."
 subClassOf: schema:Thing
 name: "Atmosphere"
+
+Node: dcid:LandCover
+typeOf: schema:Class
+description: "The physical material that is at the surface of the earth."
+descriptionUrl: "https://en.wikipedia.org/wiki/Land_cover"
+subClassOf: schema:Thing
+name: "LandCover"
 
 ## Properties
 
@@ -84,6 +103,14 @@ domainIncludes: schema:Place
 rangeIncludes: schema:Number
 name: "temperature"
 
+Node: dcid:wetBulbTemperature
+typeOf: schema:Property
+description: "The temperature read by a thermometer covered in water-soaked cloth (a wet-bulb thermometer) over which air is passed."
+descriptionUrl: "https://en.wikipedia.org/wiki/Wet-bulb_temperature"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "wetBulbTemperature"
+
 Node: dcid:precipitationRate
 typeOf: schema:Property
 description: "Amount of precipitation which includes drizzling, rain, sleet, snow, ice pellets, graupel and hail, over time."
@@ -99,7 +126,39 @@ domainIncludes: schema:Place
 rangeIncludes: schema:RepresentativeConcentrationPathwayEnum
 name: "emissionsScenario"
 
+Node: dcid:humidityParameter
+typeOf: schema:Property
+description: "The kind of relative humidity parameter used for computing derived climate parameters."
+domainIncludes: schema:Place
+rangeIncludes: dcs:HumidityParameterCategoryEnum
+name: "humidityParameter"
+
+Node: dcid:landCoverType
+typeOf: schema:Property
+description: "Identifies the type of physical material that is at the surface of the earth."
+descriptionUrl: "https://en.wikipedia.org/wiki/Land_cover"
+domainIncludes: dcs:LandCover
+rangeIncludes: dcs:LandCoverClassEnum
+name: "landCoverType"
+
 ## Enums
+
+Node: dcid:HumidityParameterCategoryEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HumidityParameterCategoryEnum"
+
+Node: dcid:MaxRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MaxRelativeHumidity"
+
+Node: dcid:MeanRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MeanRelativeHumidity"
+
+Node: dcid:MinRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MinRelativeHumidity"
 
 Node: dcid:RepresentativeConcentrationPathwayEnum
 typeOf: schema:Class
@@ -120,9 +179,9 @@ name: "RCP4.5"
 description: "Stabilization without overshoot pathway to 4.5 W/m2 at stabilization after 2100."
 descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
-Node: dcid:RCP6
+Node: dcid:RCP6.0
 typeOf: dcs:RepresentativeConcentrationPathwayEnum
-name: "RCP6"
+name: "RCP6.0"
 description: "Stabilization without overshoot pathway to 6 W/m2 at stabilization after 2100."
 descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
@@ -174,6 +233,51 @@ name: "PollutantHealthRiskEnum"
 Node: dcs:NonCarcinogenicRespiratoryHazard
 typeOf: dcs:PollutantHealthRiskEnum
 name: "NonCarcinogenicRespiratoryHazard"
+
+Node: dcs:LandCoverClassEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LandCoverClassEnum"
+
+Node: dcid:BareSparseVegetation
+typeOf: dcs:LandCoverClassEnum
+name: "BareSparseVegetation"
+
+Node: dcid:Cropland
+typeOf: dcs:LandCoverClassEnum
+name: "Cropland"
+
+Node: dcid:HerbaceousVegetation
+typeOf: dcs:LandCoverClassEnum
+  name: "HerbaceousVegetation"
+
+Node: dcid:MossAndLichen
+typeOf: dcs:LandCoverClassEnum
+name: "MossAndLichen"
+
+Node: dcid:Shrubland
+typeOf: dcs:LandCoverClassEnum
+name: "Shrubland"
+
+Node: dcid:Forest
+typeOf: dcs:LandCoverClassEnum
+name: "Forest"
+
+Node: dcid:SnowIce
+typeOf: dcs:LandCoverClassEnum
+name: "SnowIce"
+
+Node: dcid:BuiltUp
+typeOf: dcs:LandCoverClassEnum
+name: "BuiltUp"
+
+Node: dcid:PermanentWater
+typeOf: dcs:LandCoverClassEnum
+name: "PermanentWater"
+
+Node: dcid:SeasonalWater
+typeOf: dcs:LandCoverClassEnum
+name: "SeasonalWater"
 
 ## Units
 
