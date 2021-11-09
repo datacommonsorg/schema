@@ -1,3 +1,8 @@
+Node: dcid:CensusACS5yrSurveySubjectTable
+typeOf: dcs:CensusSurveyEnum
+name: "CensusACS5yrSurveySubjectTable"
+description: "American Community Survey 5 year estimates from Subject Tables"
+
 Node: dcid:CensusACS5yrSurvey
 typeOf: dcs:CensusSurveyEnum
 name: "CensusACS5yrSurvey"
@@ -1399,12 +1404,22 @@ typeOf: dcs:HealthBehaviorEnum
 Node: dcid:ScheduledCaste
 typeOf: dcs:SocialCategoryEnum
 name: "ScheduledCaste"
-description: "Scheduled Caste is an officially designated group of people in India."
+description: "Scheduled Caste (SC) is an officially designated group of people in India."
 
 Node: dcid:ScheduledTribe
 typeOf: dcs:SocialCategoryEnum
 name: "ScheduledTribe"
-description: "Scheduled Tribe is an officially designated group of people in India."
+description: "Scheduled Tribe (ST) is an officially designated group of people in India."
+
+Node: dcid:OtherBackwardClass
+typeOf: dcs:SocialCategoryEnum
+name: "OtherBackwardClass"
+description: "Group of people in India who are not part of Scheduled Cast or Scheduled Tribe, but fall into backward classes."
+
+Node: dcid:GeneralCategory
+typeOf: dcs:SocialCategoryEnum
+name: "GeneralCategory"
+description: "Group of people in India who don't belong to any other categories."
 
 Node: dcid:Illiterate
 typeOf: dcs:LiteracyStatusEnum
@@ -1433,12 +1448,14 @@ name: "OtherWorkers"
 Node: dcid:MainWorker
 typeOf: dcs:WorkerClassificationEnum
 name: "MainWorker"
+specializationOf: dcs:Worker
 description: "Main workers are those who had worked for 6 months or more in the one year preceding the date of enumeration."
 descriptionUrl: "http://www.arthapedia.in/index.php?title=Worker_(Census_Definition)"
 
 Node: dcid:MarginalWorker
 typeOf: dcs:WorkerClassificationEnum
 name: "MarginalWorker"
+specializationOf: dcs:Worker
 description: "Marginal workers are those who had worked for less than 6 months in the one year preceding the date of enumeration."
 descriptionUrl: "http://www.arthapedia.in/index.php?title=Worker_(Census_Definition)"
 
@@ -1449,6 +1466,41 @@ name: "Worker"
 Node: dcid:NonWorker
 typeOf: dcs:WorkerClassificationEnum
 name: "NonWorker"
+
+Node: dcid:PaidWorker
+name: "Paid Worker"
+typeOf: dcs:WorkerClassificationEnum
+description: "Includes people who worked for wages, salary, commission, tips, pay-in-kind, or piece rates for a private, for-profit employer or a private not-for-profit, tax-exempt or charitable organization"
+specializationOf: dcs:Worker
+
+Node: dcid:IncorporatedBusinessOwner
+name: "Incorporated Business Owner"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:PaidWorker
+description: "A self-employed person who is an owner of an incorporated business, professional practice, or farm"
+
+Node: dcid:PaidEmployee
+name: "Paid Employee"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:PaidWorker
+description: "A salaried employee in the for-profit sector. Example: Salaried employee at a private company"
+
+Node: dcid:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
+name: "Unincorporated Buisness Owner Or Unpaid Family Worker"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:Worker
+
+Node: dcid:UnincorporatedBusinessOwner
+name: "Unincorporated Business Owner"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
+description: "People who worked for profit or fees in their own unincorporated business, profession, or trade, or who operated a farm. This class is often tabulated together with the following group, unpaid family workers."
+
+Node: dcid:UnpaidFamilyWorker
+name: "Unpaid Family Worker"
+typeOf: dcs:WorkerClassificationEnum
+description: "This includes people who worked without pay in a business or on a farm operated by a relative. Note that, on tabulations with earnings data, unpaid family workers may have earnings."
+specializationOf: dcs:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
 
 Node: dcid:EnrolledInEducationOrTraining
 typeOf: dcs:EnrollmentStatusEnum
