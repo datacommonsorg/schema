@@ -858,12 +858,22 @@ name: "Divorced"
 descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 description: "Includes people who are legally divorced and who have not remarried. Those without a final divorce decree are classified as \'separated\'."
 
+Node: dcid:DivorcedInThePast12Months
+typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:Divorced
+name: "DivorcedInThePast12Months"
+
 Node: NowMarried
 typeOf: dcs:USC_MaritalStatusEnum
 dcid: "NowMarried"
 name: "NowMarried"
 descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 description: "All people whose current marriage has not ended by widowhood or divorce."
+
+Node: dcid:MarriedInThePast12Months
+typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:NowMarried
+name: "MarriedInThePast12Months"
 
 Node: MarriedAndNotSeparated
 typeOf: dcs:USC_MaritalStatusEnum
