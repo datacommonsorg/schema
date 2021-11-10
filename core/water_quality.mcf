@@ -4,19 +4,19 @@ Node: dcid:waterQualityIndex
 typeOf: schema:Property
 domainIncludes: dcs:BodyOfWater
 rangeIncludes: schema:Number
-name: "Water Quality Index"
+name: "waterQualityIndex"
 
 Node: dcid:waterLocation
 typeOf: schema:Property
 domainIncludes: dcs:BodyOfWater
 rangeIncludes: dcs:WaterLocationEnum
-name: "Water Location"
+name: "waterLocation"
 
 Node: dcid:waterProperty
 typeOf: schema:Property
-domainIncludes: dcs:waterQualityIndex
+domainIncludes: dcs:BodyOfWater
 rangeIncludes: dcs:WaterChemicalPropertyEnum, dcs:WaterPollutantEnum
-name: "Water Property"
+name: "waterProperty"
 
 
 ## Enum classes
@@ -24,19 +24,19 @@ name: "Water Property"
 Node: dcid:WaterLocationEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Water Body Location"
+name: "WaterLocationEnum"
 description: "Enumeration of water bodies" 
 
 Node: dcid:WaterPollutantEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Pollutants in Water Body"
+name: "WaterPollutantEnum"
 description: "Enumeration of water-specific pollutants and chemical agents"
 
 Node: dcid:WaterChemicalPropertyEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Chemical Properties of Water Bodies"
+name: "WaterChemicalPropertyEnum"
 description: "Enumeration of chemical properties of water"
 
 
@@ -56,12 +56,14 @@ name: "Surface Water"
 Node: dcid:waterPollutant
 typeOf: schema:Property
 rangeIncludes: dcs:WaterPollutantEnum
-name: "Water-specific pollutants"
+name: "waterPollutant"
+description: "Water-specific Pollutants"
 
 Node: dcid:waterChemicalProperty
 typeOf: schema:Property
 rangeIncludes: dcs:WaterChemicalPropertyEnum
-name: "Chemical properties of water"
+name: "waterChemicalProperty"
+description: "Chemical Properties of Water"
 
 
 ## Water Pollutants
@@ -102,9 +104,9 @@ Node: dcs:Iron
 typeOf: dcs:WaterPollutantEnum
 name: "Iron"
 
-Node: dcs:Hydrogencarbonate
+Node: dcs:HydrogenCarbonate
 typeOf: dcs:WaterPollutantEnum
-name: "Hydrogencarbonate"
+name: "HydrogenCarbonate"
 
 Node: dcs:Lead
 typeOf: dcs:WaterPollutantEnum
@@ -153,7 +155,7 @@ name: "Zinc"
 
 ## Water Chemical Properties
 
-Node: dcs:AlkalinityTotal
+Node: dcs:TotalAlkalinity
 typeOf: dcs:WaterChemicalPropertyEnum
 name: "Total Alkalinity"
 description: "Alkalinity is the capacity of water to resist acidification. Measuring alkalinity is important in determining a stream's ability to neutralize acidic pollution from rainfall or wastewater"
@@ -171,7 +173,7 @@ name: "Electrical Conductivity"
 description: "Electrical Conductivity of water is its ability to conduct an electric current. The purer the water the lower the conductivity."
 descriptionUrl: "https://www.aquaread.com/parameters/ec"
 
-Node: dcs:HardnessTotal
+Node: dcs:TotalHardness
 typeOf: dcs:WaterChemicalPropertyEnum
 name: "Total Hardness"
 description: "Water hardness is generally the amount of dissolved calcium and magnesium in water."
@@ -180,8 +182,8 @@ descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science
 Node: dcs:PH
 typeOf: dcs:WaterChemicalPropertyEnum
 name: "Potential of Hydrogens (pH)"
-description: "pH is a measure of how acidic/basic water is. The pH of water determines the solubility and biological availability (amount that can be utilized by aquatic life) of nutrients and heavy metals in water."
-descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science/ph-and-water?qt-science_center_objects=0#qt-science_center_objects"
+description: "pH is a quantitative measure of the acidity or basicity of aqueous or other liquid solutions. Solutions with less than 7 are considered acidic whereas the solutions with pH greater than 7 are known as basic."
+descriptionUrl: "https://www.britannica.com/science/pH"
 
 Node: dcs:ResidualSodiumCarbonate
 typeOf: dcs:WaterChemicalPropertyEnum
