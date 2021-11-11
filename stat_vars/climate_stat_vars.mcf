@@ -299,3 +299,30 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP4.5
 humidityParameter: dcs:MinRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP4.5 emissions scenario and estimated min relative humidity based on past weather"
+
+# Manually curated StatVars related to natural phenomena.
+
+Node: dcid:Count_HeavyWindEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:HeavyWindEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+
+Node: dcid:Count_HighSnowEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:HighSnowEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+
+Node: dcid:Count_VolcanicAshEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:VolcanicAshEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+
+Node: dcid:Count_NorthenLightEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:NorthenLightEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+
