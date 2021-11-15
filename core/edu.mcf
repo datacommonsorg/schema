@@ -934,6 +934,28 @@ name: "WithSSIAndOrCashAssistanceInThePast12Months"
 typeOf: dcs:BenefitsStatusEnum
 description: "Received Supplemental Security Income (SSI) and/or cash public assistance income in the past 12 months"
 
+Node: dcid:WithRetirementIncomeInThePast12Months
+name: "WithRetirementIncomeInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Received retirement income in the past 12 months"
+
+Node: dcid:WithCashAssistanceInThePast12Months
+specializationOf: dcs:WithSSIAndOrCashAssistanceInThePast12Months
+name: "WithCashAssistanceInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Received cash public assistance income in the past 12 months"
+
+Node: dcid:WithoutCashAssistanceInThePast12Months
+name: "WithoutCashAssistanceInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Did not receive cash public assistance income in the past 12 months"
+
+Node: dcid:WithSSIInThePast12Months
+specializationOf: dcs:WithSSIAndOrCashAssistanceInThePast12Months
+name: "WithSSIInThePast12Months"
+typeOf: dcs:BenefitsStatusEnum
+description: "Received Supplemental Security Income (SSI) in the past 12 months"
+
 Node: dcid:WithSocialSecurityIncomeInThePast12Months
 name: "WithSocialSecurityIncomeInThePast12Months"
 typeOf: dcs:BenefitsStatusEnum
