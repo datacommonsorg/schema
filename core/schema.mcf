@@ -2837,9 +2837,9 @@ rangeIncludes: schema:Text
 Node: numberOfRooms
 dcid: "numberOfRooms"
 typeOf: schema:Property
-domainIncludes: schema:SingleFamilyResidence
+domainIncludes: schema:Accommodation, schema:Apartment, schema:House, schema:LodgingBusiness, schema:SingleFamilyResidence, schema:Suite, dcs:HousingUnit
 name: "numberOfRooms"
-rangeIncludes: schema:Number
+rangeIncludes: schema:Number, schema:Quantity
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 
 Node: MovingCompany
