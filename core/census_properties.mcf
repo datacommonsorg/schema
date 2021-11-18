@@ -100,7 +100,7 @@ dcid: "householderAge"
 name: "householderAge"
 description: "Age of the householder"
 rangeIncludes: dcs:Quantity, schema:Number
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:HousingUnit
 
 Node: householderRace
 typeOf: schema:Property
@@ -108,7 +108,7 @@ dcid: "householderRace"
 name: "householderRace"
 description: "Race of the householder"
 rangeIncludes: dcs:RaceCodeEnum
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:HousingUnit
 
 Node: householderWorkStatus
 typeOf: schema:Property
@@ -124,7 +124,7 @@ dcid: "householderEducationalAttainment"
 name: "householderEducationalAttainment"
 description: "Educational attainment of the householder"
 rangeIncludes: dcs:USC_EducationalAttainmentEnum
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:HousingUnit
 
 Node: householderRelatedChildrenUnder18Years
 typeOf: schema:Property
@@ -457,6 +457,7 @@ name: "childrenStatus"
 typeOf: schema:Property
 domainIncludes: schema:Person
 
+
 Node: dcid:retirementIncome
 typeOf: schema:Property
 rangeIncludes: schema:Number, dcs:Quantity
@@ -523,3 +524,10 @@ name: "numberOfOccupants"
 description: "Used to describe the number of people living or sharing a household, housing unit or a room in a housing unit"
 domainIncludes: dcs:HousingUnit, dcs:Household
 rangeIncludes: schema:Quantity
+
+Node: dcid:dateMovedIn
+typeOf: schema:Property
+name: "dateMovedIn"
+description: "The date when the householder moved into the housing unit"
+domainIncludes: dcs:HousingUnit
+rangeIncludes: schema:DateTime, schema:Quantity
