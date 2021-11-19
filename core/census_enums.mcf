@@ -104,8 +104,14 @@ subClassOf: schema:Enumeration
 dcid: "USC_CollegeOrGraduateSchoolEnrollmentEnum"
 name: "USC_CollegeOrGraduateSchoolEnrollmentEnum"
 
+Node: EnrolledInCollegeOrGraduateSchool
+typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+dcid: "EnrolledInCollegeOrGraduateSchool"
+name: "EnrolledInCollegeOrGraduateSchool"
+
 Node: EnrolledInPublicCollegeOrGraduateSchool
 typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+specializationOf: dcs:EnrolledInCollegeOrGraduateSchool
 dcid: "EnrolledInPublicCollegeOrGraduateSchool"
 name: "EnrolledInPublicCollegeOrGraduateSchool"
 
@@ -116,6 +122,7 @@ name: "NotEnrolledInCollegeOrGraduateSchool"
 
 Node: EnrolledInPrivateCollegeOrGraduateSchool
 typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+specializationOf: dcs:EnrolledInCollegeOrGraduateSchool
 dcid: "EnrolledInPrivateCollegeOrGraduateSchool"
 name: "EnrolledInPrivateCollegeOrGraduateSchool"
 
@@ -513,24 +520,24 @@ Node: dcid:WithOneTypeOfHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithOneTypeOfHealthInsurance"
 
-Node: USC_IncomeStatusEnum
+Node: IncomeStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_IncomeStatusEnum"
-name: "USC_IncomeStatusEnum"
+dcid: "IncomeStatusEnum"
+name: "IncomeStatusEnum"
 
 Node: WithIncome
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "WithIncome"
 name: "WithIncome"
 
 Node: WithEarnings
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "WithEarnings"
 name: "WithEarnings"
 
 Node: NoIncome
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "NoIncome"
 name: "NoIncome"
 
@@ -807,6 +814,11 @@ subClassOf: schema:Enumeration
 dcid: "USC_LevelOfSchoolEnum"
 name: "USC_LevelOfSchoolEnum"
 
+Node: EnrolledInNurseryThroughGrade12
+typeOf: dcs:USC_LevelOfSchoolEnum
+dcid: "EnrolledInNurseryThroughGrade12"
+name: "EnrolledInNurseryThroughGrade12"
+
 Node: EnrolledInGraduateOrProfessionalSchool
 typeOf: dcs:USC_LevelOfSchoolEnum
 dcid: "EnrolledInGraduateOrProfessionalSchool"
@@ -1005,6 +1017,12 @@ Node: ForeignBorn
 typeOf: dcs:USC_PlaceOfBirthEnum
 dcid: "ForeignBorn"
 name: "ForeignBorn"
+
+Node: ForeignBornNotBornAtSea
+typeOf: dcs:USC_PlaceOfBirthEnum
+dcid: "ForeignBornNotBornAtSea"
+specializationOf: dcs:ForeignBorn
+name: "ForeignBornNotBornAtSea"
 
 Node: USC_PovertyStatusEnum
 typeOf: schema:Class
@@ -1280,19 +1298,20 @@ typeOf: dcs:USC_TypeOfSchoolEnum
 dcid: "PrivateSchool"
 name: "PrivateSchool"
 
-Node: USC_VeteranStatusEnum
+Node: VeteranStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_VeteranStatusEnum"
-name: "USC_VeteranStatusEnum"
+dcid: "VeteranStatusEnum"
+name: "VeteranStatusEnum"
+description: "An enumeration of categories of people who are veterans and those who are not"
 
 Node: Veteran
-typeOf: dcs:USC_VeteranStatusEnum
+typeOf: dcs:VeteranStatusEnum
 dcid: "Veteran"
 name: "Veteran"
 
 Node: Nonveteran
-typeOf: dcs:USC_VeteranStatusEnum
+typeOf: dcs:VeteranStatusEnum
 dcid: "Nonveteran"
 name: "Nonveteran"
 
