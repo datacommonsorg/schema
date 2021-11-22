@@ -1,207 +1,58 @@
-## Top-level Properties
+# Generic Property
 
-Node: dcid:waterQualityIndex
+Node: dcid:solute
 typeOf: schema:Property
-domainIncludes: dcs:BodyOfWater
-rangeIncludes: schema:Number
-name: "waterQualityIndex"
+description: Type of solute present in water
+name: Solute
+rangeIncludes: dcs:PhysicalSubstance
 
-Node: dcid:waterLocation
+# Water Quality specific properties
+
+Node: dcs:totalAlkalinity
 typeOf: schema:Property
-domainIncludes: dcs:BodyOfWater
-rangeIncludes: dcs:WaterLocationEnum
-name: "waterLocation"
-
-Node: dcid:waterProperty
-typeOf: schema:Property
-domainIncludes: dcs:BodyOfWater
-rangeIncludes: dcs:WaterChemicalPropertyEnum, dcs:WaterPollutantEnum
-name: "waterProperty"
-
-
-## Enum classes
-
-Node: dcid:WaterLocationEnum
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "WaterLocationEnum"
-description: "Enumeration of water bodies" 
-
-Node: dcid:WaterPollutantEnum
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "WaterPollutantEnum"
-description: "Enumeration of water-specific pollutants and chemical agents"
-
-Node: dcid:WaterChemicalPropertyEnum
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "WaterChemicalPropertyEnum"
-description: "Enumeration of chemical properties of water"
-
-
-## Water Location Enum Instances
-
-Node: dcid:GroundWater
-typeOf: dcs:WaterLocationEnum
-domainIncludes: dcs:BodyOfWater
-name: "Ground Water"
-
-Node: dcid:SurfaceWater
-typeOf: dcs:WaterLocationEnum
-domainIncludes: dcs:BodyOfWater
-name: "Surface Water"
-
-
-## Water Properties Classification (Pollutant or Chemical Property)
-
-Node: dcid:waterPollutant
-typeOf: schema:Property
-rangeIncludes: dcs:WaterPollutantEnum
-name: "waterPollutant"
-description: "Water-specific Pollutants"
-
-Node: dcid:waterChemicalProperty
-typeOf: schema:Property
-rangeIncludes: dcs:WaterChemicalPropertyEnum
-name: "waterChemicalProperty"
-description: "Chemical Properties of Water"
-
-
-## Water Pollutants
-
-Node: dcs:Aluminium
-typeOf: dcs:WaterPollutantEnum
-name: "Aluminium"
-
-Node: dcs:Ammonia
-typeOf: dcs:WaterPollutantEnum
-name: "Ammonia"
-
-Node: dcs:Arsenic
-typeOf: dcs:WaterPollutantEnum
-name: "Arsenic"
-
-Node: dcs:Carbonate
-typeOf: dcs:WaterPollutantEnum
-name: "Carbonate"
-
-Node: dcs:Calcium
-typeOf: dcs:WaterPollutantEnum
-name: "Calcium"
-
-Node: dcs:Chloride
-typeOf: dcs:WaterPollutantEnum
-name: "Chloride"
-
-Node: dcs:Cyanides
-typeOf: dcs:WaterPollutantEnum
-name: "Cyanides"
-
-Node: dcs:Fluorine
-typeOf: dcs:WaterPollutantEnum
-name: "Fluorine"
-
-Node: dcs:Iron
-typeOf: dcs:WaterPollutantEnum
-name: "Iron"
-
-Node: dcs:HydrogenCarbonate
-typeOf: dcs:WaterPollutantEnum
-name: "HydrogenCarbonate"
-
-Node: dcs:Lead
-typeOf: dcs:WaterPollutantEnum
-name: "Lead"
-
-Node: dcs:Potassium
-typeOf: dcs:WaterPollutantEnum
-name: "Potassium"
-
-Node: dcs:Magnesium
-typeOf: dcs:WaterPollutantEnum
-name: "Magnesium"
-
-Node: dcs:Mercury
-typeOf: dcs:WaterPollutantEnum
-name: "Mercury"
-
-Node: dcs:Nitrate
-typeOf: dcs:WaterPollutantEnum
-name: "Nitrate"
-
-Node: dcs:PhosphateIon
-typeOf: dcs:WaterPollutantEnum
-name: "Phosphate Ion"
-
-Node: dcs:Sodium
-typeOf: dcs:WaterPollutantEnum
-name: "Sodium"
-
-Node: dcs:Sulfate
-typeOf: dcs:WaterPollutantEnum
-name: "Sulfate"
-
-Node: dcs:SiliconDiOxide
-typeOf: dcs:WaterPollutantEnum
-name: "Silicon dioxide"
-
-Node: dcs:Silver
-typeOf: dcs:WaterPollutantEnum
-name: "Silver"
-
-Node: dcs:Zinc
-typeOf: dcs:WaterPollutantEnum
-name: "Zinc"
-
-
-## Water Chemical Properties
-
-Node: dcs:TotalAlkalinity
-typeOf: dcs:WaterChemicalPropertyEnum
 name: "Total Alkalinity"
 description: "Alkalinity is the capacity of water to resist acidification. Measuring alkalinity is important in determining a stream's ability to neutralize acidic pollution from rainfall or wastewater"
 descriptionUrl: "https://en.wikipedia.org/wiki/Alkalinity"
 
-Node: dcs:DissolvedOxygen
-typeOf: dcs:WaterChemicalPropertyEnum
+Node: dcs:dissolvedOxygen
+typeOf: schema:Property
 name: "Dissolved Oxygen"
 description: "Dissolved oxygen (DO) is the amount of oxygen that is present in water."
 descriptionUrl: "https://www.epa.gov/national-aquatic-resource-surveys/indicators-dissolved-oxygen"
 
-Node: dcs:ElectricalConductivity
-typeOf: dcs:WaterChemicalPropertyEnum
-name: "Electrical Conductivity"
-description: "Electrical Conductivity of water is its ability to conduct an electric current. The purer the water the lower the conductivity."
+Node: dcid:electricalConductivity
+typeOf: schema:Property
+name: Electrical Conductivity
+description: Electrical Conductivity of water is its ability to conduct an electric current. The purer the water the lower the conductivity.
 descriptionUrl: "https://www.aquaread.com/parameters/ec"
 
-Node: dcs:TotalHardness
-typeOf: dcs:WaterChemicalPropertyEnum
-name: "Total Hardness"
+Node: dcid:totalHardness
+typeOf: schema:Property
+name: Total hardness
 description: "Water hardness is generally the amount of dissolved calcium and magnesium in water."
 descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science/hardness-water?qt-science_center_objects=0#qt-science_center_objects"
 
 Node: dcs:PH
-typeOf: dcs:WaterChemicalPropertyEnum
-name: "Potential of Hydrogens (pH)"
+typeOf: schema:Property
+name: Potential of Hydrogens (pH)
 description: "pH is a quantitative measure of the acidity or basicity of aqueous or other liquid solutions. Solutions with less than 7 are considered acidic whereas the solutions with pH greater than 7 are known as basic."
 descriptionUrl: "https://www.britannica.com/science/pH"
 
-Node: dcs:ResidualSodiumCarbonate
-typeOf: dcs:WaterChemicalPropertyEnum
-name: "Residual Sodium Carbonate"
+Node: dcs:residualSodiumCarbonate
+typeOf: schema:Property
+name: Residual Sodium Carbonate
 description: "The residual sodium carbonate (RSC) of water is used to indicate the alkalinity hazard for water. The RSC index is used to find the suitability of the water for irrigation in clay soils."
 descriptionUrl: "https://en.wikipedia.org/wiki/Residual_sodium_carbonate_index"
 
-Node: dcs:SodiumAbsorptionRatio
-typeOf: dcs:WaterChemicalPropertyEnum
-name: "Sodium Absorption Ratio"
+Node: dcs:sodiumAbsorptionRatio
+typeOf: schema:Property
+name: Sodium Absorption Ratio
 description: "The Sodium adsorption ratio (SAR) is an irrigation water quality parameter used in the management of sodium-affected soils."
 descriptionUrl: "https://en.wikipedia.org/wiki/Sodium_adsorption_ratio"
 
-Node: dcs:TotalDissolvedSolids
-typeOf: dcs:WaterChemicalPropertyEnum
-name: "Total Dissolved Solids"
+Node: dcs:totalDissolvedSolids
+typeOf: schema:Property
+name: Total Dissolved Solids
 description: "Total dissolved solids is a measure of the dissolved combined content of all inorganic and organic substances present in water in molecular, ionized, or micro-granular suspended form."
 descriptionUrl: "https://en.wikipedia.org/wiki/Total_dissolved_solids"
 
