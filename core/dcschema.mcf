@@ -310,6 +310,8 @@ Node: employmentStatus
 dcid: "employmentStatus"
 typeOf: schema:Property
 name: "employmentStatus"
+domainIncludes: schema:Person
+rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum
 
 Node: geoNamesId
 dcid: "geoNamesId"
@@ -1041,12 +1043,27 @@ description: "Gross rent is the contract rent plus estimated average monthly cos
 rangeIncludes: schema:Number
 domainIncludes: dcs:HousingUnit
 
+Node: dcid:ownerCost
+typeOf: schema:Property
+name: "ownerCost"
+description: "Owner cost is the total housing cost which includes but not limited to costs towards taxes, utilities, insurance, mortgages and fuels"
+domainIncludes: dcs:HousingUnit
+rangeIncludes: schema:Quantity, dcs:QuantityRange
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: dcid:householdSize
 typeOf: schema:Property
 name: "householdSize"
 description: "Size of the household in terms of numbers persons residing in the housing unit"
 rangeIncludes: schema:Quantity, dcs:QuantityRange
-domainIncludes: dcs:HousingUnit
+domainIncludes: dcs:HousingUnit, dcs:Household
+
+Node: dcid:familySize
+typeOf: schema:Property
+name: "familySize"
+description: "Size of the family in terms of numbers of persons in a single-family"
+rangeIncludes: schema:Quantity, dcs:QuantityRange
+domainIncludes: dcs:HousingUnit, dcs:Household
 
 Node: subClassificationOf
 typeOf: schema:Property
@@ -1389,6 +1406,12 @@ typeOf: dcs:CurrencyUnitOfMeasure
 name: "USDollar"
 description: "The official currency of the United States of America."
 
+Node: dcid:InflationAdjustedUSD_CurrentYear
+typeOf: dcs:CurrencyUnitOfMeasure
+name: "InflationAdjustedUSD_CurrentYear"
+description: "The US Dollar adjusted for inflation using Consumer Price Index (CPI) averages"
+descriptionUrl: "https://www.census.gov/content/dam/Census/library/publications/2018/acs/acs_general_handbook_2018_ch10.pdf"
+
 Node: dcid:Euro
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "Euro"
@@ -1506,6 +1529,16 @@ Node: dcid:RatioToPovertyLine
 typeOf: dcs:UnitOfMeasure
 name: "RatioToPovertyLine"
 description: "A unit indicating a ratio to poverty line. If one is at poverty line, then one has a RatioToPovertyLine of 1. If one's income is twice that of the poverty line threshold, then one has a RatioToPovertyLine of 2."
+
+Node: dcid:RatioToHouseholdIncome
+typeOf: dcs:UnitOfMeasure
+name: "RatioToHouseholdIncome"
+description: "A unit indicating a ratio to household income. If a household does not spend their income, then the household has a RatioToHouseholdIncome of 1. If 30% of a households's income is spent as gross rent for a housing unit, then the household's gross rent has a RatioToHouseholdIncome of 0.3"
+
+Node: dcid:OccupantsPerRoom
+typeOf: dcs:UnitOfMeasure
+name: "OccupantsPerRoom"
+description: "A unit indicating the number of people who occupy a room in a housing unit or a household."
 
 Node: dcid:PublicUtility
 name: "PublicUtility"
@@ -2422,3 +2455,10 @@ rangeIncludes: schema:Integer
 domainIncludes: schema:Place
 typeOf: schema:Property
 name: "numberOfMonths"
+
+Node: dcid:AvailableVehicles
+typeOf: dcs:UnitOfMeasure
+name: "AvailableVehicles"
+description: "Describes the number of passenger cars, vans, and pickup or panel trucks of one-ton(2,000 pounds) capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Motorcycles or other recreational vehicles are excluded."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+

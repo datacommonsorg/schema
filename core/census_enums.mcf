@@ -10,6 +10,12 @@ typeOf: dcs:USC_AbilityToSpeakEnglishEnum
 dcid: "SpeakEnglishNotWell"
 name: "SpeakEnglishNotWell"
 
+Node: dcid:LimitedEnglishSpeakingHousehold
+typeOf: dcs:USC_AbilityToSpeakEnglishEnum
+name: "LimitedEnglishSpeakingHousehold"
+description: "A 'Limited English speaking household' is one in which no member 14 years old and over (1) speaks only English at home or (2) speaks a language other than English at home and speaks English 'Very well.'"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: SpeakEnglishWell
 typeOf: dcs:USC_AbilityToSpeakEnglishEnum
 dcid: "SpeakEnglishWell"
@@ -98,8 +104,14 @@ subClassOf: schema:Enumeration
 dcid: "USC_CollegeOrGraduateSchoolEnrollmentEnum"
 name: "USC_CollegeOrGraduateSchoolEnrollmentEnum"
 
+Node: EnrolledInCollegeOrGraduateSchool
+typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+dcid: "EnrolledInCollegeOrGraduateSchool"
+name: "EnrolledInCollegeOrGraduateSchool"
+
 Node: EnrolledInPublicCollegeOrGraduateSchool
 typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+specializationOf: dcs:EnrolledInCollegeOrGraduateSchool
 dcid: "EnrolledInPublicCollegeOrGraduateSchool"
 name: "EnrolledInPublicCollegeOrGraduateSchool"
 
@@ -110,6 +122,7 @@ name: "NotEnrolledInCollegeOrGraduateSchool"
 
 Node: EnrolledInPrivateCollegeOrGraduateSchool
 typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+specializationOf: dcs:EnrolledInCollegeOrGraduateSchool
 dcid: "EnrolledInPrivateCollegeOrGraduateSchool"
 name: "EnrolledInPrivateCollegeOrGraduateSchool"
 
@@ -399,6 +412,31 @@ Node: dcid:HighSchoolGraduateGedOrAlternative
 typeOf: dcs:USC_EducationalAttainmentEnum
 name: "HighSchoolGraduateGedOrAlternative"
 
+Node: dcid:EducationalMajorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationalMajorEnum"
+
+Node: dcid:ScienceAndEngineeringMajor
+typeOf: dcs:EducationalMajorEnum
+name: "ScienceAndEngineeringMajor"
+
+Node: dcid:ScienceAndEngineeringRelatedMajor
+typeOf: dcs:EducationalMajorEnum
+name: "ScienceAndEngineeringRelatedMajor"
+
+Node: dcid:BusinessMajor
+typeOf: dcs:EducationalMajorEnum
+name: "BusinessMajor"
+
+Node: dcid:EducationMajor
+typeOf: dcs:EducationalMajorEnum
+name: "EducationMajor"
+
+Node: dcid:ArtsHumanitiesAndOtherMajor
+typeOf: dcs:EducationalMajorEnum
+name: "ArtsHumanitiesAndOtherMajor"
+
 Node: USC_HealthInsuranceEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -482,24 +520,24 @@ Node: dcid:WithOneTypeOfHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithOneTypeOfHealthInsurance"
 
-Node: USC_IncomeStatusEnum
+Node: IncomeStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_IncomeStatusEnum"
-name: "USC_IncomeStatusEnum"
+dcid: "IncomeStatusEnum"
+name: "IncomeStatusEnum"
 
 Node: WithIncome
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "WithIncome"
 name: "WithIncome"
 
 Node: WithEarnings
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "WithEarnings"
 name: "WithEarnings"
 
 Node: NoIncome
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "NoIncome"
 name: "NoIncome"
 
@@ -776,6 +814,11 @@ subClassOf: schema:Enumeration
 dcid: "USC_LevelOfSchoolEnum"
 name: "USC_LevelOfSchoolEnum"
 
+Node: EnrolledInNurseryThroughGrade12
+typeOf: dcs:USC_LevelOfSchoolEnum
+dcid: "EnrolledInNurseryThroughGrade12"
+name: "EnrolledInNurseryThroughGrade12"
+
 Node: EnrolledInGraduateOrProfessionalSchool
 typeOf: dcs:USC_LevelOfSchoolEnum
 dcid: "EnrolledInGraduateOrProfessionalSchool"
@@ -800,6 +843,11 @@ Node: EnrolledInGrade5ToGrade8
 typeOf: dcs:USC_LevelOfSchoolEnum
 dcid: "EnrolledInGrade5ToGrade8"
 name: "EnrolledInGrade5ToGrade8"
+
+Node: EnrolledInCollegeOrGraduateSchool
+typeOf: dcs:USC_LevelOfSchoolEnum
+dcid: "EnrolledInCollegeOrGraduateSchool"
+name: "EnrolledInCollegeOrGraduateSchool"
 
 Node: GraduateOrProfessionalSchool
 typeOf: dcs:USC_LevelOfSchoolEnum
@@ -830,10 +878,16 @@ name: "Separated"
 descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 description: "Includes people legally separated or otherwise absent from their spouse because of marital discord. Those without a final divorce decree are classified as \'separated\'."
 
+Node: dcid:Unmarried
+typeOf: dcs:USC_MaritalStatusEnum
+name: "Unmarried"
+description: "Includes all people who are not married at the time of interview (including those who are now divoriced, widowed and did not re-marry)."
+
 Node: NeverMarried
 typeOf: dcs:USC_MaritalStatusEnum
 dcid: "NeverMarried"
 name: "NeverMarried"
+specializationOf: dcs:Unmarried
 descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 description: "Includes all people who have never been married, including people whose only marriage(s) was annulled."
 
@@ -963,6 +1017,12 @@ Node: ForeignBorn
 typeOf: dcs:USC_PlaceOfBirthEnum
 dcid: "ForeignBorn"
 name: "ForeignBorn"
+
+Node: ForeignBornNotBornAtSea
+typeOf: dcs:USC_PlaceOfBirthEnum
+dcid: "ForeignBornNotBornAtSea"
+specializationOf: dcs:ForeignBorn
+name: "ForeignBornNotBornAtSea"
 
 Node: USC_PovertyStatusEnum
 typeOf: schema:Class
@@ -1238,19 +1298,20 @@ typeOf: dcs:USC_TypeOfSchoolEnum
 dcid: "PrivateSchool"
 name: "PrivateSchool"
 
-Node: USC_VeteranStatusEnum
+Node: VeteranStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_VeteranStatusEnum"
-name: "USC_VeteranStatusEnum"
+dcid: "VeteranStatusEnum"
+name: "VeteranStatusEnum"
+description: "An enumeration of categories of people who are veterans and those who are not"
 
 Node: Veteran
-typeOf: dcs:USC_VeteranStatusEnum
+typeOf: dcs:VeteranStatusEnum
 dcid: "Veteran"
 name: "Veteran"
 
 Node: Nonveteran
-typeOf: dcs:USC_VeteranStatusEnum
+typeOf: dcs:VeteranStatusEnum
 dcid: "Nonveteran"
 name: "Nonveteran"
 
@@ -1749,3 +1810,17 @@ name: "BirthEventStatusEnum"
 Node: dcid:BirthInThePast12Months
 typeOf: dcs:BirthEventStatusEnum
 name: "Birth in the past 12 months"
+
+
+Node: dcid:CommunicationAmentiesEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CommunicationAmentiesEnum"
+
+Node: dcid:TelephoneServicesAvailable
+typeOf: dcs:CommunicationAmentiesEnum
+name: "TelephoneServicesAvailable"
+
+Node: dcid:NoTelephoneService
+typeOf: dcs:CommunicationAmentiesEnum
+name: "NoTelephoneService"
