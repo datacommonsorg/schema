@@ -118,6 +118,18 @@ domainIncludes: schema:Place
 rangeIncludes: schema:Number
 name: "precipitationRate"
 
+Node: dcid:maxTemperature
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: schema:Quantity
+name: "maxTemperature"
+
+Node: dcid:minTemperature
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: schema:Quantity
+name: "minTemperature"
+
 Node: dcid:emissionsScenario
 typeOf: schema:Property
 description: "Projections of future greenhouse gas (GHG) emissions used by analysts to assess future vulnerability to climate change."
@@ -308,4 +320,12 @@ name: "Percentile90AcrossModels"
 Node: dcid:Percentile90AcrossModels
 typeOf: dcs:IPCC_MeasurementQualifierEnum
 name: "Percentile90AcrossModels"
+
+Node: dcid:AggregateMax
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "AggregateMax"
+
+Node: dcid:AggregateMin
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "AggregateMin"
 

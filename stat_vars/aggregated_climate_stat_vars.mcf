@@ -338,7 +338,7 @@ dcid: "DifferenceAcrossModels_Max_Temperature_RCP60"
 
 
 # Copy paste from output of running "stats_across_models" aggregation
-# function on "NASA_NEXGDDP_Subnational_StatVarSeriesAggr1" import.
+# function on "NASA_NEXGDDP_Subnational_StatVarSeriesAggr_AggrDiffStats" import.
 Node: Percentile90AcrossModels_DifferenceRelativeToBaseDate1990_Max_Temperature
 statType: dcid:maxValue
 populationType: dcid:Place
@@ -886,5 +886,284 @@ populationType: dcid:Place
 baseDate: "1990"
 typeOf: dcid:StatisticalVariable
 statType: dcid:measuredValue
+
+
+# Copy paste from output of running "aggr_across_time" and
+# "count_threshold_exception_over_time" function on
+# "NASA_NEXGDDP_Subnational_StatVarSeriesAggr_AggrStatsAcrossModels" import.
+Node: AggregateMin_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45
+statType: dcid:minValue
+baseDate: "2006"
+populationType: dcid:Place
+measuredProperty: dcid:temperature
+emissionsScenario: dcid:RCP4.5
+measurementQualifier: dcid:AggregateMin&Percentile10AcrossModels&DifferenceRelativeToBaseDate
+typeOf: dcid:StatisticalVariable
+dcid: "AggregateMin_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45"
+
+
+Node: NumberOfMonths_5CelsiusOrMore_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45
+maxTemperature: [5 - Celsius]
+dcid: "NumberOfMonths_5CelsiusOrMore_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45"
+populationType: dcid:Place
+emissionsScenario: dcid:RCP4.5
+typeOf: dcid:StatisticalVariable
+measurementQualifier: dcid:Percentile10AcrossModels&DifferenceRelativeToBaseDate
+baseDate: "2006"
+statType: dcid:measuredValue
+measuredProperty: dcid:numberOfMonths
+
+
+Node: AggregateMin_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85
+typeOf: dcid:StatisticalVariable
+statType: dcid:minValue
+dcid: "AggregateMin_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85"
+measuredProperty: dcid:temperature
+baseDate: "2006"
+populationType: dcid:Place
+measurementQualifier: dcid:AggregateMin&Percentile90AcrossModels&DifferenceRelativeToBaseDate
+emissionsScenario: dcid:RCP8.5
+
+
+Node: AggregateMin_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85
+measuredProperty: dcid:temperature
+measurementQualifier: dcid:AggregateMin&Percentile10AcrossModels&DifferenceRelativeToBaseDate
+emissionsScenario: dcid:RCP8.5
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+dcid: "AggregateMin_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85"
+statType: dcid:minValue
+baseDate: "2006"
+
+
+Node: AggregateMax_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45
+emissionsScenario: dcid:RCP4.5
+populationType: dcid:Place
+baseDate: "2006"
+measurementQualifier: dcid:AggregateMax&Percentile10AcrossModels&DifferenceRelativeToBaseDate
+typeOf: dcid:StatisticalVariable
+measuredProperty: dcid:temperature
+statType: dcid:maxValue
+dcid: "AggregateMax_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45"
+
+
+Node: AggregateMax_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85
+populationType: dcid:Place
+statType: dcid:maxValue
+dcid: "AggregateMax_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85"
+measuredProperty: dcid:temperature
+emissionsScenario: dcid:RCP8.5
+measurementQualifier: dcid:AggregateMax&Percentile10AcrossModels&DifferenceRelativeToBaseDate
+typeOf: dcid:StatisticalVariable
+baseDate: "2006"
+
+
+Node: AggregateMax_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+baseDate: "2006"
+dcid: "AggregateMax_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45"
+statType: dcid:maxValue
+measuredProperty: dcid:temperature
+measurementQualifier: dcid:AggregateMax&Percentile90AcrossModels&DifferenceRelativeToBaseDate
+emissionsScenario: dcid:RCP4.5
+
+
+Node: NumberOfMonths_-5CelsiusOrLess_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45
+populationType: dcid:Place
+measurementQualifier: dcid:Percentile90AcrossModels&DifferenceRelativeToBaseDate
+minTemperature: [- -5 Celsius]
+baseDate: "2006"
+dcid: "NumberOfMonths_-5CelsiusOrLess_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45"
+measuredProperty: dcid:numberOfMonths
+statType: dcid:measuredValue
+typeOf: dcid:StatisticalVariable
+emissionsScenario: dcid:RCP4.5
+
+
+Node: NumberOfMonths_-5CelsiusOrLess_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45
+baseDate: "2006"
+populationType: dcid:Place
+measurementQualifier: dcid:Percentile10AcrossModels&DifferenceRelativeToBaseDate
+dcid: "NumberOfMonths_-5CelsiusOrLess_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45"
+emissionsScenario: dcid:RCP4.5
+statType: dcid:measuredValue
+minTemperature: [- -5 Celsius]
+typeOf: dcid:StatisticalVariable
+measuredProperty: dcid:numberOfMonths
+
+
+Node: NumberOfMonths_-5CelsiusOrLess_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85
+measuredProperty: dcid:numberOfMonths
+measurementQualifier: dcid:MedianAcrossModels&DifferenceRelativeToBaseDate
+baseDate: "2006"
+typeOf: dcid:StatisticalVariable
+emissionsScenario: dcid:RCP8.5
+statType: dcid:measuredValue
+populationType: dcid:Place
+dcid: "NumberOfMonths_-5CelsiusOrLess_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85"
+minTemperature: [- -5 Celsius]
+
+
+Node: NumberOfMonths_5CelsiusOrMore_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45
+baseDate: "2006"
+measuredProperty: dcid:numberOfMonths
+measurementQualifier: dcid:MedianAcrossModels&DifferenceRelativeToBaseDate
+typeOf: dcid:StatisticalVariable
+emissionsScenario: dcid:RCP4.5
+statType: dcid:measuredValue
+populationType: dcid:Place
+maxTemperature: [5 - Celsius]
+dcid: "NumberOfMonths_5CelsiusOrMore_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45"
+
+
+Node: NumberOfMonths_5CelsiusOrMore_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85
+populationType: dcid:Place
+dcid: "NumberOfMonths_5CelsiusOrMore_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85"
+typeOf: dcid:StatisticalVariable
+baseDate: "2006"
+measurementQualifier: dcid:MedianAcrossModels&DifferenceRelativeToBaseDate
+emissionsScenario: dcid:RCP8.5
+statType: dcid:measuredValue
+maxTemperature: [5 - Celsius]
+measuredProperty: dcid:numberOfMonths
+
+
+Node: NumberOfMonths_5CelsiusOrMore_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85
+populationType: dcid:Place
+measurementQualifier: dcid:Percentile90AcrossModels&DifferenceRelativeToBaseDate
+measuredProperty: dcid:numberOfMonths
+baseDate: "2006"
+maxTemperature: [5 - Celsius]
+statType: dcid:measuredValue
+emissionsScenario: dcid:RCP8.5
+typeOf: dcid:StatisticalVariable
+dcid: "NumberOfMonths_5CelsiusOrMore_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85"
+
+
+Node: NumberOfMonths_-5CelsiusOrLess_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85
+statType: dcid:measuredValue
+typeOf: dcid:StatisticalVariable
+baseDate: "2006"
+dcid: "NumberOfMonths_-5CelsiusOrLess_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85"
+measurementQualifier: dcid:Percentile90AcrossModels&DifferenceRelativeToBaseDate
+measuredProperty: dcid:numberOfMonths
+emissionsScenario: dcid:RCP8.5
+populationType: dcid:Place
+minTemperature: [- -5 Celsius]
+
+
+Node: AggregateMax_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45
+statType: dcid:maxValue
+emissionsScenario: dcid:RCP4.5
+populationType: dcid:Place
+typeOf: dcid:StatisticalVariable
+measuredProperty: dcid:temperature
+dcid: "AggregateMax_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45"
+measurementQualifier: dcid:AggregateMax&MedianAcrossModels&DifferenceRelativeToBaseDate
+baseDate: "2006"
+
+
+Node: AggregateMax_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85
+measuredProperty: dcid:temperature
+dcid: "AggregateMax_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85"
+typeOf: dcid:StatisticalVariable
+measurementQualifier: dcid:AggregateMax&MedianAcrossModels&DifferenceRelativeToBaseDate
+emissionsScenario: dcid:RCP8.5
+populationType: dcid:Place
+baseDate: "2006"
+statType: dcid:maxValue
+
+
+Node: AggregateMax_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85
+measuredProperty: dcid:temperature
+typeOf: dcid:StatisticalVariable
+baseDate: "2006"
+dcid: "AggregateMax_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85"
+measurementQualifier: dcid:AggregateMax&Percentile90AcrossModels&DifferenceRelativeToBaseDate
+statType: dcid:maxValue
+populationType: dcid:Place
+emissionsScenario: dcid:RCP8.5
+
+
+Node: AggregateMin_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45
+statType: dcid:minValue
+baseDate: "2006"
+emissionsScenario: dcid:RCP4.5
+populationType: dcid:Place
+typeOf: dcid:StatisticalVariable
+measuredProperty: dcid:temperature
+measurementQualifier: dcid:AggregateMin&MedianAcrossModels&DifferenceRelativeToBaseDate
+dcid: "AggregateMin_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45"
+
+
+Node: AggregateMin_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45
+statType: dcid:minValue
+populationType: dcid:Place
+dcid: "AggregateMin_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45"
+measuredProperty: dcid:temperature
+baseDate: "2006"
+typeOf: dcid:StatisticalVariable
+emissionsScenario: dcid:RCP4.5
+measurementQualifier: dcid:AggregateMin&Percentile90AcrossModels&DifferenceRelativeToBaseDate
+
+
+Node: NumberOfMonths_-5CelsiusOrLess_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45
+statType: dcid:measuredValue
+measuredProperty: dcid:numberOfMonths
+typeOf: dcid:StatisticalVariable
+minTemperature: [- -5 Celsius]
+dcid: "NumberOfMonths_-5CelsiusOrLess_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP45"
+emissionsScenario: dcid:RCP4.5
+populationType: dcid:Place
+baseDate: "2006"
+measurementQualifier: dcid:MedianAcrossModels&DifferenceRelativeToBaseDate
+
+
+Node: AggregateMin_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85
+typeOf: dcid:StatisticalVariable
+emissionsScenario: dcid:RCP8.5
+measuredProperty: dcid:temperature
+baseDate: "2006"
+dcid: "AggregateMin_MedianAcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85"
+statType: dcid:minValue
+populationType: dcid:Place
+measurementQualifier: dcid:AggregateMin&MedianAcrossModels&DifferenceRelativeToBaseDate
+
+
+Node: NumberOfMonths_-5CelsiusOrLess_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85
+populationType: dcid:Place
+baseDate: "2006"
+emissionsScenario: dcid:RCP8.5
+minTemperature: [- -5 Celsius]
+measurementQualifier: dcid:Percentile10AcrossModels&DifferenceRelativeToBaseDate
+typeOf: dcid:StatisticalVariable
+statType: dcid:measuredValue
+dcid: "NumberOfMonths_-5CelsiusOrLess_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Min_Temperature_RCP85"
+measuredProperty: dcid:numberOfMonths
+
+
+Node: NumberOfMonths_5CelsiusOrMore_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85
+typeOf: dcid:StatisticalVariable
+dcid: "NumberOfMonths_5CelsiusOrMore_Percentile10AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP85"
+statType: dcid:measuredValue
+populationType: dcid:Place
+maxTemperature: [5 - Celsius]
+measuredProperty: dcid:numberOfMonths
+measurementQualifier: dcid:Percentile10AcrossModels&DifferenceRelativeToBaseDate
+emissionsScenario: dcid:RCP8.5
+baseDate: "2006"
+
+
+Node: NumberOfMonths_5CelsiusOrMore_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45
+emissionsScenario: dcid:RCP4.5
+maxTemperature: [5 - Celsius]
+baseDate: "2006"
+measuredProperty: dcid:numberOfMonths
+statType: dcid:measuredValue
+measurementQualifier: dcid:Percentile90AcrossModels&DifferenceRelativeToBaseDate
+dcid: "NumberOfMonths_5CelsiusOrMore_Percentile90AcrossModels_DifferenceRelativeToBaseDate2006_Max_Temperature_RCP45"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
 
 
