@@ -466,7 +466,7 @@ Node: area
 dcid: "area"
 name: "area"
 typeOf: schema:Property
-domainIncludes: schema:AdministrativeArea
+domainIncludes: schema:AdministrativeArea, schema:LandCover
 rangeIncludes: schema:Number
 
 Node: countValue
@@ -571,6 +571,11 @@ subClassOf: schema:Person
 name: "USCWorker"
 description: "An employee or worker as defined by US Census Bureau that excludes self-employed individuals, employees of private households, railroad employees, agricultural production employees and most government employees"
 
+Node: dcid:Child
+typeOf: schema:Class
+subClassOf: schema:Person
+name: "Child"
+
 Node: DarwinCoreBiologicalSpecimen
 dcid: "BiologicalSpecimen"
 name: "BiologicalSpecimen"
@@ -621,7 +626,7 @@ description: "Any specific branch of medical science or practice. Medical specia
 Node: dcid:PlannedParenthoodClinic
 typeOf: Class
 subClassOf: schema:MedicalClinic
-name: "Planned Parenthood Clinic"
+name: "PlannedParenthoodClinic"
 description: "A Planned Parenthood Health Center"
 # End Planned Parenthood additions
 
@@ -1032,13 +1037,15 @@ subClassOf: schema:Organization
 dcid: "Household"
 name: "Household"
 description: "A household is composed of one or more people who occupy a housing unit. Not all households contain families"
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#household"
 
 Node: HousingUnitClass
 typeOf:schema:Class
 subClassOf: schema:Accommodation
 dcid: "HousingUnit"
 name: "HousingUnit"
-description: "A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room that is occupied, or, if vacant, is intended for occupancy "
+description: "A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room that is occupied, or, if vacant, is intended for occupancy"
+descriptionUrl: "https://www.census.gov/programs-surveys/popest/about/glossary/housing.html"
 
 Node: dcid:grossRent
 typeOf: schema:Property
@@ -1052,13 +1059,6 @@ typeOf: schema:Property
 name: "householdSize"
 description: "Size of the household in terms of numbers persons residing in the housing unit"
 rangeIncludes: schema:Quantity, dcs:QuantityRange
-domainIncludes: dcs:HousingUnit
-
-Node: dcid:occupancyStatus
-typeOf: schema:Property
-name: "occupancyStatus"
-description: "Describes whether Housing units are occupied or not"
-rangeIncludes: dcs:OccupancyStatusEnum
 domainIncludes: dcs:HousingUnit
 
 Node: subClassificationOf
@@ -1470,6 +1470,12 @@ name: "Day"
 dcid: "Day"
 description: "A unit of time equivalent to 24 hours."
 
+Node: Week
+typeOf: dcid:TimeUnitOfMeasure
+name: "Week"
+dcid: "Week"
+description: "A unit of time equivalent to one week on the Gregorian calendar."
+
 Node: Month
 typeOf: dcid:TimeUnitOfMeasure
 name: "Month"
@@ -1481,6 +1487,33 @@ typeOf: dcid:TimeUnitOfMeasure
 name: "Year"
 dcid: "Year"
 description: "A unit of time equivalent to one year on the Gregorian calendar."
+
+Node: dcid:TemperatureUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "TemperatureUnitOfMeasure"
+description: "A unit used to denote a measurement of temperature."
+
+Node: dcid:Celsius
+typeOf: schema:Class
+subClassOf: dcs:TemperatureUnitOfMeasure
+name: "Celsius"
+
+Node: dcid:Kelvin
+typeOf: schema:Class
+subClassOf: dcs:TemperatureUnitOfMeasure
+name: "Kelvin"
+
+Node: dcid:PrecipiationUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "PrecipiationUnitOfMeasure"
+description: "A unit used to denote a measurement of precipitation."
+
+Node: dcid:KilogramsPerMeterSquaredSecond
+typeOf: schema:Class
+subClassOf: dcs:PrecipiationUnitOfMeasure
+name: "KilogramsPerMeterSquaredSecond"
 
 Node: dcid:RatioToPovertyLine
 typeOf: dcs:UnitOfMeasure
@@ -1578,360 +1611,6 @@ typeOf: schema:Property
 rangeIncludes: dcs:Number
 source: "http://datacommons.org"
 domainIncludes: dcs:PowerPlant
-
-# EIA Form 860 Schema
-Node: dcid:ElectricUtility
-subClassOf: schema:Organization
-description: "Electric utilities are companies that provide electricity and/or heat. They can be publicly or privately owned."
-name: "Electric Utility"
-typeOf: schema:Class
-
-Node: dcid:electricUtilityName
-domainIncludes: dcs:ElectricUtility
-name: "electricUtilityName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:powerPlantCode
-domainIncludes: dcs:PowerPlant
-name: "plantCode"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:electricUtilityId
-domainIncludes: dcs:ElectricUtility
-name: "electricUtilityId"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:powerPlantGeneratorCode
-domainIncludes: dcs:PowerPlantUnit
-name: "generatorId"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:powerPlantUnitCode
-domainIncludes: dcs:PowerPlantUnit
-name: "unitCode"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:nodeDesignationForLMP
-domainIncludes: dcs:PowerPlantUnit
-description: "The designation used to identify the price node in RTO/ISO Locational Marginal Price (LMP) reports"
-name: "nodeDesignationForLMP"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:locationDesignationFERCReporting
-domainIncludes: dcs:PowerPlantUnit
-description: "The designation used to report ths specific location of the wholesale sales transactions to Federal Electricity Regulatory Commission (FERC) for the Electric Quarterly Report"
-name: "locationDesignationFERCReporting"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-
-Node: dcid:nameplateCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "nameplateCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:nameplatePowerFactor
-domainIncludes: dcs:PowerPlantUnit
-name: "nameplatePowerFactor"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:netSummerCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "netSummerCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:netWinterCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "netWinterCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:minimumPowerOutput
-domainIncludes: dcs:PowerPlantUnit
-name: "minimumPowerOutput"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:synchronizedToTransmissionGrid
-domainIncludes: dcs:PowerPlantUnit
-name: "synchronizedToTransmissionGrid"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-
-Node: dcid:turbinesorHydroneticBuoys
-domainIncludes: dcs:PowerPlantUnit
-name: "turbinesorHydroneticBuoys"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-
-Node: dcid:plannedNetSummerCapacityUprate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetSummerCapacityUprate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNetWinterCapacityUprate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetWinterCapacityUprate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNetSummerCapacityDerate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetSummerCapacityDerate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNetWinterCapacityDerate
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNetWinterCapacityDerate"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:plannedNewPrimeMover
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNewPrimeMover"
-typeOf: schema:Property
-rangeIncludes: dcs:PrimeMoverEnum
-
-Node: dcid:plannedEnergySource
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedEnergySource"
-typeOf: schema:Property
-rangeIncludes: dcs:EnergySourceEnum
-
-Node: dcid:plannedNewNameplateCapacity
-domainIncludes: dcs:PowerPlantUnit
-name: "plannedNewNameplateCapacity"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-
-Node: dcid:timefromColdShutdowntoFullLoad
-domainIncludes: dcs:PowerPlantUnit
-name: "timefromColdShutdowntoFullLoad"
-typeOf: schema:Property
-rangeIncludes: schema:Duration
-
-Node: dcid:synchronousGenerator
-name: "synchronousGenerator"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: dcs:PowerPlantUnit
-description: "Indicates whether a generator is synchronous (converts the mechanical power from a prime mover into an AC electrical power at a given voltage and frequency."
-
-Node: dcid:transmissionGrid
-name: "transmissionGrid"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:Thing
-description: "High voltage electricity system responsible for transmitting electricity long distances. Voltage above 10,000 V."
-
-Node: dcid:fuelType
-name: "fuelType"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:Product
-description: "Type of chemical combusted for heat, force, or electricity."
-
-Node: dcid:uprateCompletionDate
-name: "uprateCompletionDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:operatingSince
-name: "operatingSince"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedDerateDate
-name: "plannedDerateDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedUprateDate
-name: "plannedUprateDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedRepowerDate
-name: "plannedRepowerDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedRetirementDate
-name: "plannedRetirementDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:plannedModificationsDate
-name: "plannedModificationsDate"
-typeOf: schema:Property
-rangeIncludes: schema:DateTime
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:generatorTechnology
-typeOf: schema:Property
-name: "generatorTechnology"
-rangeIncludes: dcid:GeneratorTechnologyEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerPlantStatus
-typeOf: schema:Property
-name: "powerPlantStatus"
-rangeIncludes: dcid:PowerPlantStatusEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:energySource
-typeOf: schema:Property
-name: "energySource"
-rangeIncludes: dcid:EnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:primeMover
-typeOf: schema:Property
-name: "primeMover"
-rangeIncludes: dcid:PrimeMoverEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:typeOfPowerPlantUnitOwnership
-typeOf: schema:Property
-name: "typeOfPowerPlantUnitOwnership"
-rangeIncludes: dcid:TypeOfPowerPlantUnitOwnershipEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:toppingOrBottoming
-typeOf: schema:Property
-name: "toppingOrBottoming"
-rangeIncludes: dcid:ToppingOrBottomingEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:combustionPowerPlantProperties
-typeOf: schema:Property
-name: "combustionPowerPlantProperties"
-rangeIncludes: dcid:CombustionPowerPlantPropertiesEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerProviderCategory
-typeOf: schema:Property
-name: "powerProviderCategory"
-rangeIncludes: dcid:PowerProviderCategoryEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:startupEnergySource
-typeOf: schema:Property
-name: "startupEnergySource"
-rangeIncludes: dcid:StartupEnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:generatorTechnology
-name: "generatorTechnology"
-typeOf: schema:Property
-rangeIncludes: dcs:GeneratorTechnologyEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerPlantStatus
-name: "powerPlantStatus"
-typeOf: schema:Property
-rangeIncludes: dcs:PowerPlantStatusEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:energySource
-name: "energySource"
-typeOf: schema:Property
-rangeIncludes: dcs:EnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:primeMover
-name: "primeMover"
-typeOf: schema:Property
-rangeIncludes: dcs:PrimeMoverEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:typeOfPowerPlantUnitOwnership
-name: "typeOfPowerPlantUnitOwnership"
-typeOf: schema:Property
-rangeIncludes: dcs:TypeOfPowerPlantUnitOwnershipEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:toppingOrBottoming
-name: "toppingOrBottoming"
-typeOf: schema:Property
-rangeIncludes: dcs:ToppingOrBottomingEnum
-domainIncludes: dcs:PowerPlantUnit
-description: "Denotes where the unit acts as a topping cycle or a bottoming thermodynamic cycle. Topping cycles are typically Brayton Cycles with gaseous working fluid, and bottoming are typically Rankine Cycles, with liquid working fluid."
-
-Node: dcid:combustionPowerPlantProperties
-name: "combustionPowerPlantProperties"
-typeOf: schema:Property
-rangeIncludes: dcs:CombustionPowerPlantPropertiesEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:powerProviderCategory
-name: "powerProviderCategory"
-typeOf: schema:Property
-rangeIncludes: dcs:PowerProviderCategoryEnum
-domainIncludes: dcs:PowerPlantUnit
-
-Node: dcid:startupEnergySource
-name: "startupEnergySource"
-typeOf: schema:Property
-rangeIncludes: dcs:StartupEnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
-# End EIA 860 Schema
-
-# Begin Deep Solar Schema
-Node: dcid:SatelliteImage
-subClassOf: schema:ImageObject
-name: "SatelliteImage"
-typeOf: schema:Class
-description: "An image taken by a satellite"
-
-Node: dcid:SolarPanel
-subClassOf: dcs:SolarArray
-name: "SolarPanel"
-typeOf: schema:Class
-description: "A photovoltaic panel used to generate renewable electricity from solar irradiation"
-
-Node: dcid:SolarArray
-subClassOf: schema:Thing
-name: "SolarArray"
-typeOf: schema:Class
-description: "A collection of solar photovoltaic panels"
-
-Node: dcid:imageCount
-name: "imageCount"
-typeOf: schema:Property
-domainIncludes: dcs:SatelliteImage
-rangeIncludes: schema:Number
-description: "Number of images examined to find solar panels in this region"
-
-Node: dcid:area
-name: "area"
-typeOf: schema:Property
-domainIncludes: dcs:SolarArray
-rangeIncludes: schema:Quantity
-
-Node: dcid:residential
-name: "residential"
-typeOf: schema:Property
-domainIncludes: dcs:SolarArray
-rangeIncludes: schema:Boolean
-description: "Describes whether a solar panel is in a residential location or not."
-# End Deep Solar Schema
 
 # Add missing QuantityRange
 Node: dcid:QuantityRange
@@ -2260,7 +1939,7 @@ description: "Bottom 1000 locations with the same PlaceStatisticalVariable attri
 
 Node: dcid:allLocations
 typeOf: schema:Property
-name: "allLocaitons"
+name: "allLocations"
 domainIncludes: dcs:PlaceStatisticalVariable
 rangeIncludes: schema:Place
 description: "All locations with the same PlaceStatisticalVariable attributes, for a given ranking algorithm."
@@ -2646,6 +2325,14 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:QuantityRange
 
+Node: dcid:usualHoursWorked
+name: "usualHoursWorked"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:QuantityRange
+description: "The number of hours a person usually worked in a work week. If the number of hours worked vary considerably across work weeks, this can also be looked as the approximate average of the hours worked per week."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: dcid:workerStatus
 name: "workerStatus"
 typeOf: schema:Property
@@ -2656,7 +2343,7 @@ supersededBy: dcs:workerClassification
 Node: dcid:workStatus
 name: "workStatus"
 typeOf: schema:Property
-domainIncludes: schema:Household
+domainIncludes: schema:Household, schema:Person
 rangeIncludes: dcs:USC_WorkStatusEnum
 
 Node: dcid:Vaccine
@@ -2677,3 +2364,74 @@ name: "closeMatch"
 typeOf: schema:Property
 domainIncludes: schema:Thing
 rangeIncludes: schema:Thing, schema:Text
+
+Node: dcid:ochaPCode
+name: "ochaPCode"
+typeOf: schema:Property
+description: "A P-code, short for place code, is a kind of geocode from UN OCHA used mostly by emergency response teams."
+descriptionUrl: "https://en.wikipedia.org/wiki/Place_code"
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:indianCensusAreaCode2011
+typeOf: schema:Property
+name: "indianCensusAreaCode2011"
+description: "An identifier for a place for Census of India, 2011, assigned by Office of the Registrar General & Census Commissioner, India."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:indianCensusAreaCode2001
+typeOf: schema:Property
+name: "indianCensusAreaCode2001"
+description: "An identifier for a place for Census of India, 2001, assigned by Office of the Registrar General & Census Commissioner, India."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:lgdCode
+typeOf: schema:Property
+name: "lgdCode"
+description: "A unique code for a place, used by Local Government Directory, India, issued in compliance with eGovernance Standards under NeGP."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:udiseCode
+typeOf: schema:Property
+name: "udiseCode"
+description: "A unique code for a place in India as per the Unified District Information System for Education (UDISE)."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:pinCode
+typeOf: schema:Property
+name: "pinCode"
+description: "PIN code is a six digit code in Indian postal code system used by India Post."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:cost
+typeOf: schema:Property
+name: "cost"
+domainIncludes: dcs:Fuel
+rangeIncludes: schema:Quantity
+description: "The value of money that has been used up to produce something or deliver a service."
+descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
+
+Node: dcid:confidenceIntervalLowerLimit
+typeOf: schema:Property
+domainIncludes: dcs:Observation
+name: "confidenceIntervalLowerLimit"
+description: "The lower limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
+
+Node: dcid:confidenceIntervalUpperLimit
+typeOf: schema:Property
+domainIncludes: schema:Observation
+name: "confidenceIntervalUpperLimit"
+description: "The upper limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
+
+Node: dcid:numberOfMonths
+rangeIncludes: schema:Integer
+domainIncludes: schema:Place
+typeOf: schema:Property
+name: "numberOfMonths"
