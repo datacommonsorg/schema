@@ -459,7 +459,6 @@ name: "childrenStatus"
 typeOf: schema:Property
 domainIncludes: schema:Person
 
-
 Node: dcid:retirementIncome
 typeOf: schema:Property
 rangeIncludes: schema:Number, dcs:Quantity
@@ -533,3 +532,9 @@ name: "dateMovedIn"
 description: "The date when the householder moved into the housing unit"
 domainIncludes: dcs:HousingUnit
 rangeIncludes: schema:DateTime, schema:Quantity
+
+Node: dcid:religion
+rangeIncludes: dcs:ReligionEnum
+name: "religion"
+typeOf: schema:Property
+domainIncludes: schema:Person

@@ -246,6 +246,19 @@ typeOf: schema:Class
 description: "Subdivisions of US Metropolitan Statistical Areas (MSAs) and New England City and Town Areas (NECTAs)."
 subClassOf: schema:Place
 
+Node: dcid:PinCodeArea
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+name: "PinCodeArea"
+description: "Postal delivery area representations of India Post."
+
+Node: dcid:pinCode
+typeOf: schema:Property
+name: "pinCode"
+description: "PIN code is a six digit code in Indian postal code system used by India Post."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
 Node: dcid:administrativeCapital
 name: "administrativeCapital"
 typeOf: schema:Property
