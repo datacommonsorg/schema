@@ -1195,6 +1195,26 @@ typeOf: dcs:CrimeTypeEnum
 name: "Combined Crime"
 description: "Sum of Property, Violent, and Arson crimes included in the UCR datasets."
 
+Node: dcid:SingleBias
+typeOf: dcs:BiasMotivationEnum
+name: "SingleBias"
+
+Node: dcid:MultipleBias
+typeOf: dcs:BiasMotivationEnum
+name: "MultipleBias"
+
+Node: dcid:RaceOrEthnicity
+typeOf: dcs:BiasMotivationEnum
+name: "RaceOrEthnicity"
+
+Node: dcid:UCR_OtherRaceOrEthnicity
+typeOf: dcs:BiasMotivationEnum
+name: "UCR_OtherRaceOrEthnicity"
+
+Node: dcid:UnknownBias
+typeOf: dcs:BiasMotivationEnum
+name: "UnknownBias"
+
 Node: dcid:DataCommonsAggregate
 typeOf: dcs:AggregateTypeEnum
 name: "DataCommonsAggregate"
@@ -1505,3 +1525,75 @@ specializationOf: dcs:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
 Node: dcid:EnrolledInEducationOrTraining
 typeOf: dcs:EnrollmentStatusEnum
 name: "EnrolledInEducationOrTraining"
+
+Node: dcid:Transgender
+typeOf: schema:GenderType
+name: "Transgender"
+description: "Of or relating to a person who identifies as a different gender from their gender as determined at birth."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:GenderNonConforming
+typeOf: schema:GenderType
+name: "GenderNonConforming"
+description: "Describes a person who does not conform to the gender-based expectations of society."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:TransgenderOrGenderNonConforming
+typeOf: schema:GenderType
+name: "TransgenderOrGenderNonConforming"
+
+Node: dcid:Homosexual
+name: "Homosexual"
+typeOf: dcs:SexualOrientationEnum
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to people of the same sex."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Heterosexual
+name: "Heterosexual"
+typeOf: dcs:SexualOrientationEnum
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to people of the opposite sex."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Lesbian
+name: "Lesbian"
+typeOf: dcs:SexualOrientationEnum
+specializationOf: dcs:Homosexual
+description: "Of or relating to women who are physically, romantically, and/or emotionally attracted to other women."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Gay
+name: "Gay"
+typeOf: dcs:SexualOrientationEnum
+specializationOf: dcs:Homosexual
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to people of the same sex (used especially for males)."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Bisexual
+name: "Bisexual"
+typeOf: dcs:SexualOrientationEnum
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to both men and women."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:LGBT
+name: "LGBT"
+typeOf: dcs:SexualOrientationEnum
+description: "Common initialism for 'lesbian, gay, bisexual, and transgender,'to refer to community organizations or events that serve lesbian, gay, bisexual, transgender, and allied people."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:KnownOffender
+name: "KnownOffender"
+typeOf: dcs:OffenderTypeEnum
+description: "The term known offender does not imply the suspect’s identity is known; rather, the term indicates some aspect of the suspect was identified, thus distinguishing the suspect from an unknown offender."
+descriptionUrl: "https://ucr.fbi.gov/hate-crime/2019/resource-pages/methodology"
+
+Node: dcid:UnknownOffender
+name: "UnknownOffender"
+typeOf: dcs:OffenderTypeEnum
+
+Node: dcid:UCR_UnknownEthnicity
+name: "UCR_UnknownEthnicity"
+typeOf: dcs:EthnicityEnum
+
+Node: dcid:UCR_MultipleEthnicity
+name: "UCR_MultipleEthnicity"
+typeOf: dcs:EthnicityEnum

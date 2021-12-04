@@ -404,6 +404,14 @@ dcid: "CriminalActivities"
 typeOf: schema:Class
 name: "CriminalActivities"
 subClassOf: schema:Intangible
+description: "Refers to an offense which is a breach of the criminal laws."
+
+Node: dcid:CriminalIncidents
+typeOf: schema:Class
+name: "CriminalIncidents"
+subClassOf: schema:Intangible
+description: "A criminal incident is defined as one or more offenses committed by the same offender, or group of offenders acting in concert, at the same time and place."
+descriptionUrl: "https://ucr.fbi.gov/nibrs/2015/resource-pages/incidents-and-offenses-2015_final.pdf"
 
 Node: location
 dcid: "location"
@@ -431,10 +439,90 @@ rangeIncludes: schema:Text
 
 Node: crimeType
 dcid: "crimeType"
-domainIncludes: schema:CriminalActivities
+domainIncludes: schema:CriminalActivities, dcs:CriminalIncidents
 rangeIncludes: schema:CrimeTypeEnum
 typeOf: schema:Property
 name: "crimeType"
+
+Node: dcid:isHateCrime
+name: "isHateCrime"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: schema:Boolean
+
+Node: dcid:biasMotivation
+name: "biasMotivation"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: schema:Property, dcs:BiasMotivationEnum
+
+Node: dcid:sexualOrientation
+name: "sexualOrientation"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:SexualOrientationEnum
+description: "The term for a person's physical, romantic, and/or emotional attraction to members of the same and/or opposite sex, including lesbian, gay, bisexual, and heterosexual (straight) individuals."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:offenderType
+name: "offenderType"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:OffenderTypeEnum
+
+Node: dcid:ethnicity
+name: "ethnicity"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:EthnicityEnum
+
+Node: dcid:offenderRace
+name: "offenderRace"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:RaceCodeEnum
+
+Node: dcid:offenderEthnicity
+name: "offenderEthnicity"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:EthnicityEnum
+
+Node: dcid:targetedRace
+name: "targetedRace"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:RaceCodeEnum
+
+Node: dcid:targetedGender
+name: "targetedGender"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: schema:GenderType
+
+Node: dcid:targetedEthnicity
+name: "targetedEthnicity"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:EthnicityEnum
+
+Node: dcid:targetedReligion
+name: "targetedReligion"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:ReligionEnum
+
+Node: dcid:targetedDisabilityStatus
+name: "targetedDisabilityStatus"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:USC_DisabilityStatusEnum
+
+Node: dcid:targetedSexualOrientation
+name: "targetedSexualOrientation"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:SexualOrientationEnum
 
 Node: voterStatus
 dcid: "voterStatus"
