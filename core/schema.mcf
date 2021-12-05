@@ -7560,9 +7560,9 @@ subClassOf: schema:CivicStructure
 
 Node: amenityFeature
 dcid: "amenityFeature"
-rangeIncludes: schema:LocationFeatureSpecification
+rangeIncludes: schema:LocationFeatureSpecification, dcs:AmenityFeatureEnum
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
-domainIncludes: schema:LodgingBusiness
+domainIncludes: schema:LodgingBusiness, schema:Place
 typeOf: schema:Property
 name: "amenityFeature"
 
@@ -11040,3 +11040,20 @@ name: "dateRevised"
 rangeIncludes: schema:Date,schema:DateTime
 domainIncludes: schema:Thing
 description: "The date on which the CreativeWork was last edited or revised or the item was last revised on a DataFeed."
+
+Node: dcid:AmenityFeatureEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "AmenityFeatureEnum"
+
+Node: dcid:Library
+typeOf: dcs:AmenityFeatureEnum
+name: "Library"
+
+Node: dcid:ComputerFacility
+typeOf: dcs:AmenityFeatureEnum
+name: "ComputerFacility"
+
+Node: dcid:Internet
+typeOf: dcs:AmenityFeatureEnum
+name: "Internet"
