@@ -1152,12 +1152,14 @@ name: "Larceny-Theft"
 Node: Burglary
 dcid: "Burglary"
 typeOf: dcs:PropertyCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
 name: "Property Burglary"
 
 Node: MotorVehicleTheft
 dcid: "MotorVehicleTheft"
 name: "Motor Vehicle Theft"
 typeOf: dcs:PropertyCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
 
 Node: ViolentCrime
 dcid: "ViolentCrime"
@@ -1167,26 +1169,31 @@ typeOf: dcs:CrimeTypeEnum
 Node: AggravatedAssault
 dcid: "AggravatedAssault"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
 name: "Aggravated Assault"
 
 Node: ForcibleRape
 dcid: "ForcibleRape"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
 name: "Forcible Rape"
 
 Node: MurderAndNonNegligentManslaughter
 dcid: "MurderAndNonNegligentManslaughter"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
 name: "Murder And Non Negligent Manslaughter"
 
 Node: Robbery
 dcid: "Robbery"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
 name: "Robbery"
 
 Node: Arson
 dcid: "Arson"
 typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
 name: "Arson"
 
 Node: UCR_CombinedCrime
@@ -1194,6 +1201,272 @@ dcid: "UCR_CombinedCrime"
 typeOf: dcs:CrimeTypeEnum
 name: "Combined Crime"
 description: "Sum of Property, Violent, and Arson crimes included in the UCR datasets."
+
+Node: CrimeAgainstSociety
+dcid: "CrimeAgainstSociety"
+typeOf: dcs:CrimeTypeEnum
+name: "CrimeAgainstSociety"
+description: "Crimes that represents society's prohibition against engaging in certain type of activities"
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-2019-1-nibrs-user-manua-093020.pdf/view"
+
+Node: CrimeAgainstProperty
+dcid: "CrimeAgainstProperty"
+typeOf: dcs:CrimeTypeEnum
+name: "CrimeAgainstProperty"
+description: "Crimes intended to obtain money, property or some other benefit"
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-2019-1-nibrs-user-manua-093020.pdf/view"
+
+Node: CrimeAgainstPerson
+dcid: "CrimeAgainstPerson"
+typeOf: dcs:CrimeTypeEnum
+name: "CrimeAgainstPerson"
+description: "Crimes where the victims are always individuals"
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-2019-1-nibrs-user-manua-093020.pdf/view"
+
+Node: Intimidation
+dcid: "Intimidation"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Intimidation"
+
+Node: SimpleAssault
+dcid: "SimpleAssault"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "SimpleAssault"
+
+Node: DestructionOrDamageOrVandalismOfProperty
+dcid: "DestructionOrDamageOrVandalismOfProperty"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "DestructionOrDamageOrVandalismOfProperty"
+
+Node: UCR_NotSpecified
+dcid: "UCR_NotSpecified"
+typeOf: dcs:CrimeTypeEnum
+name: "UCR_NotSpecified"
+
+Node: DrugOrNarcoticViolations
+dcid: "DrugOrNarcoticViolations"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "DrugOrNarcoticViolations"
+
+Node: WeaponLawViolations
+dcid: "WeaponLawViolations"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "WeaponLawViolations"
+
+Node: TheftFromMotorVehicle
+dcid: "TheftFromMotorVehicle"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftFromMotorVehicle"
+
+Node: Shoplifting
+dcid: "Shoplifting"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Shoplifting"
+
+Node: UCR_AllOtherLarceny
+dcid: "UCR_AllOtherLarceny"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "All Other Larceny"
+
+Node: TheftOfMotorVehiclePartsOrAccessories
+dcid: "TheftOfMotorVehiclePartsOrAccessories"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftOfMotorVehiclePartsOrAccessories"
+
+Node: Fondling
+dcid: "Fondling"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Fondling"
+
+Node: CounterfeitingOrForgery
+dcid: "CounterfeitingOrForgery"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "CounterfeitingOrForgery"
+
+Node: KidnappingOrAbduction
+dcid: "KidnappingOrAbduction"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "KidnappingOrAbduction"
+
+Node: TheftFromBuilding
+dcid: "TheftFromBuilding"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftFromBuilding"
+
+Node: PornographyOrObsceneMaterial
+dcid: "PornographyOrObsceneMaterial"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "PornographyOrObsceneMaterial"
+
+Node: Embezzlement
+dcid: "Embezzlement"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Embezzlement"
+
+Node: PurseSnatching
+dcid: "PurseSnatching"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "PurseSnatching"
+
+Node: DrugEquipmentViolations
+dcid: "DrugEquipmentViolations"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "DrugEquipmentViolations"
+
+Node: CreditCardOrAutomatedTellerMachineFraud
+dcid: "CreditCardOrAutomatedTellerMachineFraud"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "CreditCardOrAutomatedTellerMachineFraud"
+
+Node: SexualAssaultWithAnObject
+dcid: "SexualAssaultWithAnObject"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "SexualAssaultWithAnObject"
+
+Node: FalsePretenseOrSwindleOrConfidenceGame
+dcid: "FalsePretenseOrSwindleOrConfidenceGame"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "FalsePretenseOrSwindleOrConfidenceGame"
+
+Node: PocketPicking
+dcid: "PocketPicking"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "PocketPicking"
+
+Node: WelfareFraud
+dcid: "WelfareFraud"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "WelfareFraud"
+
+Node: ExtortionOrBlackmail
+dcid: "ExtortionOrBlackmail"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "ExtortionOrBlackmail"
+
+Node: StolenPropertyOffenses
+dcid: "StolenPropertyOffenses"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "StolenPropertyOffenses"
+
+Node: Incest
+dcid: "Incest"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Incest"
+
+Node: Sodomy
+dcid: "Sodomy"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Sodomy"
+
+Node: NegligentManslaughter
+dcid: "NegligentManslaughter"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "NegligentManslaughter"
+
+Node: StatutoryRape
+dcid: "StatutoryRape"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "StatutoryRape"
+
+Node: TheftFromCoinOperatedMachineOrDevice
+dcid: "TheftFromCoinOperatedMachineOrDevice"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftFromCoinOperatedMachineOrDevice"
+
+Node: Impersonation
+dcid: "Impersonation"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Impersonation"
+
+Node: Prostitution
+dcid: "Prostitution"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "Prostitution"
+
+Node: WireFraud
+dcid: "WireFraud"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "WireFraud"
+
+Node: AssistingOrPromotingProstitution
+dcid: "AssistingOrPromotingProstitution"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "AssistingOrPromotingProstitution"
+
+Node: PurchasingProstitution
+dcid: "PurchasingProstitution"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "PurchasingProstitution"
+
+Node: Bribery
+dcid: "Bribery"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Bribery"
+
+Node: IdentityTheft
+dcid: "IdentityTheft"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "IdentityTheft"
+
+Node: HumanTrafficking_CommercialSexActs
+dcid: "HumanTrafficking_CommercialSexActs"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "HumanTrafficking_CommercialSexActs"
+
+Node: HackingOrComputerInvasion
+dcid: "HackingOrComputerInvasion"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "HackingOrComputerInvasion"
+
+Node: BettingOrWagering
+dcid: "BettingOrWagering"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "BettingOrWagering"
+
+Node: AnimalCruelty
+dcid: "AnimalCruelty"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "AnimalCruelty"
 
 Node: dcid:SingleBias
 typeOf: dcs:BiasMotivationEnum
