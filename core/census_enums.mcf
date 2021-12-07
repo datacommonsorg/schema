@@ -1124,12 +1124,12 @@ dcid: "AmericanIndianOrAlaskaNativeAlone"
 name: "AmericanIndianOrAlaskaNativeAlone"
 
 Node: HispanicOrLatino
-typeOf: dcs:RaceCodeEnum
+typeOf: dcs:RaceCodeEnum, dcs:EthnicityEnum
 dcid: "HispanicOrLatino"
 name: "HispanicOrLatino"
 
 Node: NotHispanicOrLatino
-typeOf: dcs:RaceCodeEnum
+typeOf: dcs:RaceCodeEnum, dcs:EthnicityEnum
 dcid: "NotHispanicOrLatino"
 name: "NotHispanicOrLatino"
 
@@ -1189,6 +1189,22 @@ name: "OtherAsian"
 Node: dcid:OtherPacificIslander
 typeOf: dcs:RaceCodeEnum
 name: "OtherPacificIslander"
+
+Node: dcid:AsianOrPacificIslander
+typeOf: dcs:RaceCodeEnum
+name: "AsianOrPacificIslander"
+
+Node: dcid:Arab
+typeOf: dcs:RaceCodeEnum
+name: "Arab"
+
+Node: dcid:UCR_OtherRace
+typeOf: dcs:RaceCodeEnum
+name: "UCR_OtherRace"
+
+Node: dcid:UnknownRace
+typeOf: dcs:RaceCodeEnum
+name: "UnknownRace"
 
 Node: dcid:USC_RacialMinority
 typeOf: dcs:RaceCodeEnum
@@ -1590,6 +1606,18 @@ specializationOf: dcs:WithDisability
 dcid: "IndependentLivingDifficulty"
 name: "IndependentLivingDifficulty"
 
+Node: dcid:PhysicalDisability
+name: "PhysicalDisability"
+typeOf: dcs:USC_DisabilityStatusEnum
+description: "Any physical impairment; any physiological disorder or condition, cosmetic disfigurement, or anatomical loss affecting one or more of the following body systems: neurological, musculoskeletal, special sense organs, respiratory (including speech organs), cardiovascular, reproductive, digestive, genitourinary, hemic and lymphatic, skin, and endocrine."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:MentalDisability
+name: "MentalDisability"
+typeOf: dcs:USC_DisabilityStatusEnum
+description: "Any mental impairment or psychological disorder such as: organic brain syndrome, emotional or mental illness, and specific learning disabilities."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
 Node: dcid:USC_MortgageStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -1860,3 +1888,43 @@ name: "Other Religion and Persuasions as per Indian Census"
 Node: dcid:ReligionNotStated
 typeOf: dcs:ReligionEnum
 name: "ReligionNotStated"
+
+Node: dcid:Judaism
+typeOf: dcs:ReligionEnum
+name: "Judaism"
+
+Node: dcid:Protestantism
+typeOf: dcs:ReligionEnum
+name: "Protestantism"
+
+Node: dcid:Catholicism
+typeOf: dcs:ReligionEnum
+name: "Catholicism"
+
+Node: dcid:JehovahsWitnesses
+typeOf: dcs:ReligionEnum
+name: "JehovahsWitnesses"
+
+Node: dcid:Mormonism
+typeOf: dcs:ReligionEnum
+name: "Mormonism"
+
+Node: dcid:EasternChristianity
+typeOf: dcs:ReligionEnum
+name: "EasternChristianity"
+
+Node: dcid:AtheismOrAgnosticism
+typeOf: dcs:ReligionEnum
+name: "AtheismOrAgnosticism"
+
+Node: dcid:UCR_MultipleReligion
+typeOf: dcs:ReligionEnum
+name: "UCR_MultipleReligion"
+
+Node: dcid:UCR_OtherChristian
+typeOf: dcs:ReligionEnum
+name: "UCR_OtherChristian"
+
+Node: dcid:UCR_OtherReligion
+typeOf: dcs:ReligionEnum
+name: "UCR_OtherReligion"
