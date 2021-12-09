@@ -38,6 +38,13 @@ domainIncludes: schema:Class, schema:Property, schema:Enumeration
 rangeIncludes: schema:URL
 description: "Provenance URL of the description value."
 
+Node: dcid:utteranceTemplate
+name: "utteranceTemplate"
+typeOf: schema:Property
+domainIncludes: schema:Thing, schema:StatisticalVariable
+rangeIncludes: schema:Text
+description: "A text string that captures how a node may be referred to by a user. It can have placeholders prefixed with a '$' to indicate parts that can be substituted with a set of strings, for instance, '$Location' or '$Year'."
+
 Node: dcid:geoId
 name: "geoId"
 typeOf: schema:Property
@@ -459,7 +466,7 @@ rangeIncludes: schema:Property, dcs:BiasMotivationEnum
 Node: dcid:sexualOrientation
 name: "sexualOrientation"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents
 rangeIncludes: dcs:SexualOrientationEnum
 description: "The term for a person's physical, romantic, and/or emotional attraction to members of the same and/or opposite sex, including lesbian, gay, bisexual, and heterosexual (straight) individuals."
 descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
@@ -473,7 +480,7 @@ rangeIncludes: dcs:OffenderTypeEnum
 Node: dcid:ethnicity
 name: "ethnicity"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents
 rangeIncludes: dcs:EthnicityEnum
 
 Node: dcid:offenderRace
