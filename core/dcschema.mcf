@@ -38,6 +38,13 @@ domainIncludes: schema:Class, schema:Property, schema:Enumeration
 rangeIncludes: schema:URL
 description: "Provenance URL of the description value."
 
+Node: dcid:utteranceTemplate
+name: "utteranceTemplate"
+typeOf: schema:Property
+domainIncludes: schema:Thing, schema:StatisticalVariable
+rangeIncludes: schema:Text
+description: "A text string that captures how a node may be referred to by a user. It can have placeholders prefixed with a '$' to indicate parts that can be substituted with a set of strings, for instance, '$Location' or '$Year'."
+
 Node: dcid:geoId
 name: "geoId"
 typeOf: schema:Property
