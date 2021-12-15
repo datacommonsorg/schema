@@ -123,6 +123,64 @@ measuredProperty: dcs:temperature
 statType: dcs:minValue
 emissionsScenario: dcs:RCP8.5
 
+# SSP245
+
+Node: dcid:PrecipitationRate_SSP245
+description: "Precipitation rate at surface projected under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:precipitationRate
+statType: dcs:measuredValue
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+Node: dcid:Max_Temperature_SSP245
+description: "Maximum near-surface air temperature under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:maxValue
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+Node: dcid:Min_Temperature_SSP245
+description: "Minimum near-surface air temperature under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:minValue
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+# SSP585
+
+Node: dcid:PrecipitationRate_SSP585
+description: "Precipitation rate at surface projected under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:precipitationRate
+statType: dcs:measuredValue
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Max_Temperature_SSP585
+description: "Maximum near-surface air temperature under SS585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:maxValue
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Min_Temperature_SSP585
+description: "Minimum near-surface air temperature under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:minValue
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
 ## Wet Bulb Temperature (based on Max Relative Humidity)
 
 Node: dcid:WetBulbTemperature_RCP85_MaxRelativeHumidity
