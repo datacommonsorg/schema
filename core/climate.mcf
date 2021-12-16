@@ -357,3 +357,28 @@ Node: dcid:AggregateMin
 typeOf: dcs:IPCC_MeasurementQualifierEnum
 name: "AggregateMin"
 
+Node: dcid:LowestValue
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "LowestValue"
+
+Node: dcid:HighestValue
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "HighestValue"
+
+Node: dcid:FrequencyOfOutliers
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "FrequencyOfOutliers"
+
+# Temporary properties for better viz of SV Hierarchy
+Node: dcid:multiModelEnsemble
+typeOf: schema:Property
+name: "multiModelEnsemble"
+rangeIncludes: dcs:IPCC_MeasurementQualifierEnum
+domainIncludes: dcs:Thing
+
+Node: dcid:extremesOverTime
+typeOf: schema:Property
+name: "extremesOverTime"
+rangeIncludes: dcs:IPCC_MeasurementQualifierEnum
+domainIncludes: dcs:Thing
+
