@@ -48,7 +48,7 @@ name: "pollutant"
 
 Node: dcid:concentration
 typeOf: schema:Property
-domainIncludes: dcs:Atmosphere
+domainIncludes: dcs:Atmosphere, dcs:SeaBodyOfWater
 rangeIncludes: schema:Number
 name: "concentration"
 
@@ -99,7 +99,7 @@ Node: dcid:temperature
 typeOf: schema:Property
 description: "A physical quantity that expresses hot and cold."
 descriptionUrl: "https://en.wikipedia.org/wiki/Temperature"
-domainIncludes: schema:Place
+domainIncludes: schema:Place, dcs:SeaBodyOfWater
 rangeIncludes: schema:Number
 name: "temperature"
 
@@ -265,6 +265,10 @@ Node: dcs:PM10
 typeOf: dcs:AirPollutantEnum
 name: "PM10"
 
+Node: dcs:Oxygen
+typeOf: dcs:GasType
+name: "Oxygen"
+
 Node: dcid:PollutantHealthRiskEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -382,3 +386,31 @@ name: "extremesOverTime"
 rangeIncludes: dcs:IPCC_MeasurementQualifierEnum
 domainIncludes: dcs:Thing
 
+## Tidal
+
+Node: dcid:salinity
+typeOf: schema:Property
+name: "salinity"
+description: "Salinity is the saltiness or amount of salt dissolved in a body of water, called saline water."
+descriptionUrl: "https://en.wikipedia.org/wiki/Salinity"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:SeaBodyOfWater
+
+Node: dcid:DepthClassificationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DepthClassificationEnum"
+
+Node: dcid:SurfaceLevel
+typeOf: dcs:DepthClassificationEnum
+name: "SurfaceLevel"
+
+Node: dcid:PracticalSalinityUnit
+typeOf: dcs:UnitOfMeasure
+name: "PracticalSalinityUnit"
+
+Node: dcid:S2CellIdLevel11
+typeOf: dcs:Class
+name: "S2CellIdLevel11"
+description: "S2 cells at level 11 which corresponds to an average area of 20.27 sq km."
+subClassOf: schema:Place

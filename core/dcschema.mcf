@@ -2598,3 +2598,18 @@ name: "ComputerFacility"
 Node: dcid:Internet
 typeOf: dcs:AmenityFeatureEnum
 name: "Internet"
+
+Node: dcid:solute
+typeOf: schema:Property
+name: "solute"
+rangeIncludes: schema:Substance
+domainIncludes: schema:Thing
+description: "A solute is a substance dissolved in another substance"
+
+Node: dcid:solvent
+typeOf: schema:Property
+name: "solvent"
+rangeIncludes: schema:Substance
+domainIncludes: schema:Thing
+description: "A solvent is a substance that dissolves another substance"
+

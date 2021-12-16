@@ -384,3 +384,29 @@ populationType: dcs:NorthenLightEvent
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 
+
+### Tidal SVs
+
+Node: dcid:Mean_Temperature_SeaSurface
+typeOf: schema:StatisticalVariable
+populationType: dcs:SeaBodyOfWater
+depth: dcs:SurfaceLevel
+measuredProperty: dcs:temperature
+statType: dcs:meanValue
+
+Node: dcid:Mean_Salinity_SeaSurface
+typeOf: schema:StatisticalVariable
+populationType: dcs:SeaBodyOfWater
+depth: dcs:SurfaceLevel
+measuredProperty: dcs:salinity
+statType: dcs:meanValue
+
+Node: dcid:Mean_Concentation_DissolvedOxygen_SeaSurface
+typeOf: schema:StatisticalVariable
+populationType: dcs:SeaBodyOfWater
+depth: dcs:SurfaceLevel
+measuredProperty: dcs:concentration
+statType: dcs:meanValue
+solute: dcs:Oxygen
+solvent: dcs:Water
+
