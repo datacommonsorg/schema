@@ -945,3 +945,384 @@ age: dcs:Years21To65
 gender: dcs:Female
 healthPrevention: dcs:CervicalCancerScreening
 statType: dcs:measuredValue
+
+Node: dcid:COVID19_Seroprevalence
+name: "COVID19_Seroprevalence"
+typeOf: dcs:HealthOutcomeEnum
+description: "Measure of people who have antibodies against COVID-19."
+
+Node: dcid:Count_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:count
+name: "Count of 0 - 17 Years, COVID-19 Seroprevalence"
+age: dcs:Years0To17
+
+Node: dcid:Count_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:count
+name: "Count of 18 - 49 Years, COVID-19 Seroprevalence"
+age: dcs:Years18To49
+
+Node: dcid:Count_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:count
+name: "Count of 50 - 64 Years, COVID-19 Seroprevalence"
+age: dcs:Years50To64
+
+Node: dcid:Count_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:count
+name: "Count of 65 Years or More, COVID-19 Seroprevalence"
+age: dcs:Years65Onwards
+
+Node: dcid:Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Percent of 0 - 17 Years, COVID-19 Seroprevalence"
+age: dcs:Years0To17
+
+Node: dcid:Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Percent of 18 - 49 Years, COVID-19 Seroprevalence"
+age: dcs:Years18To49
+
+Node: dcid:Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Percent of 50 - 64 Years, COVID-19 Seroprevalence"
+age: dcs:Years50To64
+
+Node: dcid:Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Percent of 65 Years or More, COVID-19 Seroprevalence"
+age: dcs:Years65Onwards
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Lower Confidence Interval Limit, Percent of 0 - 17 Years, COVID-19 Seroprevalence"
+age: dcs:Years0To17
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Lower Confidence Interval Limit, Percent of 18 - 49 Years, COVID-19 Seroprevalence"
+age: dcs:Years18To49
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Lower Confidence Interval Limit, Percent of 50 - 64 Years, COVID-19 Seroprevalence"
+age: dcs:Years50To64
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Lower Confidence Interval Limit, Percent of 65 Years or More, COVID-19 Seroprevalence"
+age: dcs:Years65Onwards
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Upper Confidence Interval Limit, Percent of 0 - 17 Years, COVID-19 Seroprevalence"
+age: dcs:Years0To17
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Upper Confidence Interval Limit, Percent of 18 - 49 Years, COVID-19 Seroprevalence"
+age: dcs:Years18To49
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Upper Confidence Interval Limit, Percent of 50 - 64 Years, COVID-19 Seroprevalence"
+age: dcs:Years50To64
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Upper Confidence Interval Limit, Percent of 65 Years or More, COVID-19 Seroprevalence"
+age: dcs:Years65Onwards
+
+Node: dcid:Count_Female_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:count
+name: "Count of Female, COVID-19 Seroprevalence"
+gender: dcs:Female
+
+Node: dcid:Count_Male_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:count
+name: "Count of Male, COVID-19 Seroprevalence"
+gender: dcs:Male
+
+Node: dcid:Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Percent of Female, COVID-19 Seroprevalence"
+gender: dcs:Female
+
+Node: dcid:Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Percent of Male, COVID-19 Seroprevalence"
+gender: dcs:Male
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Lower Confidence Interval Limit, Percent of Female, COVID-19 Seroprevalence"
+gender: dcs:Female
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Lower Confidence Interval Limit, Percent of Male, COVID-19 Seroprevalence"
+gender: dcs:Male
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Upper Confidence Interval Limit, Percent of Female, COVID-19 Seroprevalence"
+gender: dcs:Female
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Upper Confidence Interval Limit, Percent of Male, COVID-19 Seroprevalence"
+gender: dcs:Male
+
+Node: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+name: "Cumulative Count, COVID-19 Seroprevalence"
+
+Node: dcid:CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Cumulative Percent, COVID-19 Seroprevalence"
+
+Node: dcid:LowerConfidenceIntervalLimit_CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Lower Confidence Interval Limit, Cumulative Percent, COVID-19 Seroprevalence"
+
+Node: dcid:UpperConfidenceIntervalLimit_CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativeCount
+measurementDenominator: dcs:Count_Person
+scalingFactor: 100
+name: "Upper Confidence Interval Limit, Cumulative Percent, COVID-19 Seroprevalence"
+
+Node: dcid:EstimatedCumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence_Estimate
+measuredProperty: dcs:cumulativeCount
+name: "Estimated Cumulative Count, COVID-19 Seroprevalence"
+
+Node: dcid:LowerConfidenceIntervalLimit_EstimatedCumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalLowerLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence_Estimate
+measuredProperty: dcs:cumulativeCount
+name: "Lower Confidence Interval Limit, Estimated Cumulative Count, COVID-19 Seroprevalence"
+
+Node: dcid:UpperConfidenceIntervalLimit_EstimatedCumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:confidenceIntervalUpperLimit
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence_Estimate
+measuredProperty: dcs:cumulativeCount
+name: "Upper Confidence Interval Limit, Estimated Cumulative Count, COVID-19 Seroprevalence"
