@@ -1,0 +1,132 @@
+## Elements and compounds
+
+Node: dcid:ChemicalSubstance
+typeOf: schema:Class
+name: "ChemicalSubstance"
+subClassOf: dcs:BiomedicalElement
+description: "A chemical substance is a form of matter having constant chemical composition and characteristic properties."
+descriptionUrl: "https://en.wikipedia.org/wiki/Chemical_substance"
+
+Node: dcid:ChemicalElement
+typeOf: schema:Class
+name: "ChemicalElement"
+subClassOf: dcid:ChemicalSubstance
+description: "A chemical element is a pure substance consisting only of atoms that all have the same numbers of protons in their nuclei and cannot be broken down into simpler substances by any chemical reaction."
+descriptionUrl: "https://en.wikipedia.org/wiki/Chemical_element"
+
+Node: dcid:ChemicalCompound
+typeOf: schema:Class
+subClassOf: dcid:ChemicalSubstance
+
+## Enums
+
+Node: dcid:ChemicalSubstanceTypeEnum
+typeOf: schema:Class
+name: "ChemicalSubstanceTypeEnum"
+subClassOf: schema:Enumeration
+description: "Different types of chemical elements."
+
+Node: dcid:Metal
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Metal"
+description: "A material that, when freshly prepared, polished, or fractured, shows a lustrous appearance, and conducts electricity and heat relatively well."
+descriptionUrl: "https://en.wikipedia.org/wiki/Metal"
+
+Node: dcid:Nonmetal
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Nonmetal"
+description: "Substance that does not display properties of a metal."
+descriptionUrl: "https://en.wikipedia.org/wiki/Nonmetal"
+
+Node: dcid:Metalloid
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Metalloid"
+description: "Substance that displays a mix of properties of metals and nonmetals."
+descriptionUrl: "https://en.wikipedia.org/wiki/Metalloid"
+
+Node: dcid:AlkaliMetal
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Alkali Metal"
+description: "The alkali metals are all shiny, soft, highly reactive metals at standard temperature and pressure and readily lose their outermost electron to form cations with charge +1."
+descriptionUrl: "https://en.wikipedia.org/wiki/Alkali_metal"
+
+Node: dcid:AlkalineEarthMetal
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Alkaline Earth Metal"
+description: "The alkaline earth metals are six chemical elements in group 2 of the periodic table that readily lose electrons to form cations with charge +2."
+descriptionUrl: "https://en.wikipedia.org/wiki/Alkaline_earth_metal"
+
+Node: dcid:Halogen
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Halogen"
+description: "A group of chemical elements that react with metals to produce a wide range of salts."
+descriptionUrl: "https://en.wikipedia.org/wiki/Halogen"
+
+Node: dcid:NobleGas
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Noble Gas"
+description: "Class of chemical elements that are odorless, colorless, monatomic gases with very low chemical reactivity."
+descriptionUrl: "https://en.wikipedia.org/wiki/Noble_gas"
+
+Node: dcid:TransitionMetal
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Transition Metal"
+description: "An element whose atom has a partially filled d sub-shell, or which can give rise to cations with an incomplete d sub-shell."
+descriptionUrl: "https://en.wikipedia.org/wiki/Transition_metal"
+
+Node: dcid:PostTransitionMetal
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Post Transition Metal"
+description: "The metallic elements in the periodic table located between the transition metals and the chemically weak nonmetallic metalloids."
+descriptionUrl: "https://en.wikipedia.org/wiki/Metals_close_to_the_border_between_metals_and_nonmetals"
+
+Node: dcid:Lanthanide
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Lanthanide"
+description: "One of the 15 metallic chemical elements with atomic numbers 57–71, from lanthanum through lutetium."
+descriptionUrl: "https://en.wikipedia.org/wiki/Lanthanide"
+
+Node: dcid:Actinide
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Actinide"
+description: "One of the 15 metallic chemical elements with atomic numbers from 89 to 103, actinium through lawrencium."
+descriptionUrl: "https://en.wikipedia.org/wiki/Actinide"
+
+Node: dcid:Transactinide
+typeOf: dcid:ChemicalSubstanceTypeEnum
+name: "Transactinide"
+description: "Transactinide  or super-heavy elements, are the chemical elements with atomic numbers greater than 103 which is the heaviest actinide, Lawrencium."
+descriptionUrl: "https://en.wikipedia.org/wiki/Transactinide"
+
+
+## Properties of chemical substances
+
+Node: dcid:iupacName
+typeOf: dcs:Property
+name: "iupacName"
+description: "Chemical name as per the International Union of Pure and Applied Chemistry(IUPAC) nomenclature."
+domainIncludes: dcid:ChemicalSubstance
+rangeIncludes: dcs:Text
+
+Node: dcid:molecularFormula
+typeOf: dcs:Property
+name: "molecularFormula"
+description: "A molecular formula or chemical formula is a way of presenting information about the chemical proportions of atoms that constitute a particular chemical compound or molecule, using chemical element symbols, numbers, and sometimes also other symbols."
+descriptionUrl: "https://en.wikipedia.org/wiki/Chemical_formula"
+domainIncludes: dcid:ChemicalSubstance
+rangeIncludes: dcs:Text
+
+Node: dcid:atomicNumber
+typeOf: dcs:Property
+name: "atomicNumber"
+description: "The atomic number or proton number (symbol Z) of a chemical element is the number of protons found in the nucleus of every atom of that element."
+descriptionUrl: "https://en.wikipedia.org/wiki/Atomic_number"
+domainIncludes: dcs:ChemicalElement
+rangeIncludes: dcs:Number
+
+Node: dcid:chemicalSubstanceType
+typeOf: dcs:Property
+name: "chemicalSubstanceType"
+domainIncludes: dcid:ChemicalSubstance
+rangeIncludes: dcid:ChemicalSubstanceTypeEnum
+
