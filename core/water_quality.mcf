@@ -2,57 +2,59 @@
 
 Node: dcid:solute
 typeOf: schema:Property
-description: Type of solute present in water
-name: Solute
-rangeIncludes: dcs:PhysicalSubstance
+description: "Chemical substance that is dissolved in a liquid-based solvent."
+name: "solute"
+domainIncludes: dcs:Water, dcs:BodyOfWater, dcs:WaterSourceTypeEnum, dcs:ContaminatedThingEnum
+rangeIncludes: dcs:ChemicalSubstance
+
 
 # Water Quality specific properties
 
-Node: dcs:totalAlkalinity
+Node: dcs:waterAlkalinity
 typeOf: schema:Property
-name: "Total Alkalinity"
+name: "waterAlkalinity"
 description: "Alkalinity is the capacity of water to resist acidification. Measuring alkalinity is important in determining a stream's ability to neutralize acidic pollution from rainfall or wastewater"
 descriptionUrl: "https://en.wikipedia.org/wiki/Alkalinity"
 
-Node: dcs:dissolvedOxygen
+Node: dcid:dissolvedOxygen
 typeOf: schema:Property
-name: "Dissolved Oxygen"
+name: "dissolvedOxygen"
 description: "Dissolved oxygen (DO) is the amount of oxygen that is present in water."
 descriptionUrl: "https://www.epa.gov/national-aquatic-resource-surveys/indicators-dissolved-oxygen"
 
 Node: dcid:electricalConductivity
 typeOf: schema:Property
-name: Electrical Conductivity
+name: "electricalConductivity"
 description: Electrical Conductivity of water is its ability to conduct an electric current. The purer the water the lower the conductivity.
 descriptionUrl: "https://www.aquaread.com/parameters/ec"
 
-Node: dcid:totalHardness
+Node: dcid:waterHardness
 typeOf: schema:Property
-name: Total hardness
+name: "waterHardness"
 description: "Water hardness is generally the amount of dissolved calcium and magnesium in water."
 descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science/hardness-water?qt-science_center_objects=0#qt-science_center_objects"
 
-Node: dcs:PH
+Node: dcid:potentialOfHydrogen
 typeOf: schema:Property
-name: Potential of Hydrogens (pH)
-description: "pH is a quantitative measure of the acidity or basicity of aqueous or other liquid solutions. Solutions with less than 7 are considered acidic whereas the solutions with pH greater than 7 are known as basic."
+name: "potentialOfHydrogen"
+description: "Potential of Hydrogens (pH) is a quantitative measure of the acidity or basicity of aqueous or other liquid solutions. Solutions with less than 7 are considered acidic whereas the solutions with pH greater than 7 are known as basic."
 descriptionUrl: "https://www.britannica.com/science/pH"
 
-Node: dcs:residualSodiumCarbonate
+Node: dcid:residualSodiumCarbonate
 typeOf: schema:Property
-name: Residual Sodium Carbonate
+name: "residualSodiumCarbonate"
 description: "The residual sodium carbonate (RSC) of water is used to indicate the alkalinity hazard for water. The RSC index is used to find the suitability of the water for irrigation in clay soils."
 descriptionUrl: "https://en.wikipedia.org/wiki/Residual_sodium_carbonate_index"
 
-Node: dcs:sodiumAbsorptionRatio
+Node: dcid:sodiumAbsorptionRatio
 typeOf: schema:Property
-name: Sodium Absorption Ratio
+name: "sodiumAbsorptionRatio"
 description: "The Sodium adsorption ratio (SAR) is an irrigation water quality parameter used in the management of sodium-affected soils."
 descriptionUrl: "https://en.wikipedia.org/wiki/Sodium_adsorption_ratio"
 
-Node: dcs:totalDissolvedSolids
+Node: dcid:totalDissolvedSolids
 typeOf: schema:Property
-name: Total Dissolved Solids
+name: "totalDissolvedSolids"
 description: "Total dissolved solids is a measure of the dissolved combined content of all inorganic and organic substances present in water in molecular, ionized, or micro-granular suspended form."
 descriptionUrl: "https://en.wikipedia.org/wiki/Total_dissolved_solids"
 
