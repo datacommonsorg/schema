@@ -1223,6 +1223,18 @@ name: "CrimeAgainstPerson"
 description: "Crimes where the victims are always individuals"
 descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-2019-1-nibrs-user-manua-093020.pdf/view"
 
+Node: UCR_OtherCrimesAgainstPerson
+dcid: "UCR_OtherCrimesAgainstPerson"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "UCR_OtherCrimesAgainstPerson"
+
+Node: UCR_OtherCrimesAgainstProperty
+dcid: "UCR_OtherCrimesAgainstProperty"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "UCR_OtherCrimesAgainstProperty"
+
 Node: Intimidation
 dcid: "Intimidation"
 typeOf: dcs:CrimeTypeEnum
@@ -1493,6 +1505,136 @@ name: "UCR_OtherRaceOrEthnicity"
 Node: dcid:UnknownBias
 typeOf: dcs:BiasMotivationEnum
 name: "UnknownBias"
+
+Node: ReligiousOrganization
+dcid: "ReligiousOrganization"
+typeOf: dcs:VictimTypeEnum
+name: "Religious Organization"
+
+Node: Business
+dcid: "Business"
+typeOf: dcs:VictimTypeEnum
+name: "Business"
+
+Node: Society
+dcid: "Society"
+typeOf: dcs:VictimTypeEnum
+name: "Society"
+
+Node: UCR_OtherVictimType
+dcid: "UCR_OtherVictimType"
+typeOf: dcs:VictimTypeEnum
+name: "Other Victim Type"
+
+Node: UCR_UnknownVictimType
+dcid: "UCR_UnknownVictimType"
+typeOf: dcs:VictimTypeEnum
+name: "Unknown Victim Type"
+
+Node: FinancialInstitution
+dcid: "FinancialInstitution"
+typeOf: dcs:VictimTypeEnum
+name: "Financial Institution"
+
+Node: LawEnforcementOfficer
+dcid: "LawEnforcementOfficer"
+typeOf: dcs:VictimTypeEnum
+name: "Law Enforcement Officer"
+
+Node: MultipleVictimType
+dcid: "MultipleVictimType"
+typeOf: dcs:VictimTypeEnum
+name: "Multiple Victim Type"
+
+Node: dcid:HighwayOrRoadOrAlleyOrStreetOrSidewalk
+typeOf: dcs:LocationOfCrimeEnum
+name: "HighwayOrRoadOrAlleyOrStreetOrSidewalk"
+
+Node: Supermarket
+dcid: "Supermarket"
+subClassOf: schema:Store
+name: "Supermarket"
+typeOf: schema:Class
+
+Node: dcid:UCR_UnclassifiedLocation
+typeOf: dcs:LocationOfCrimeEnum
+name: "UCR_UnclassifiedLocation"
+
+Node: dcid:CommercialOrOfficeBuilding
+typeOf: dcs:LocationOfCrimeEnum
+name: "CommercialOrOfficeBuilding"
+
+Node: dcid:SpecialtyStore
+typeOf: dcs:LocationOfCrimeEnum
+name: "SpecialtyStore"
+
+Node: dcid:GovernmentOrPublicBuilding
+typeOf: dcs:LocationOfCrimeEnum
+name: "GovernmentOrPublicBuilding"
+
+Node: dcid:JailOrPrisonOrPenitentiaryOrCorrectionsFacility
+typeOf: dcs:LocationOfCrimeEnum
+name: "JailOrPrisonOrPenitentiaryOrCorrectionsFacility"
+
+Node: dcid:FieldOrWoods
+typeOf: dcs:LocationOfCrimeEnum
+name: "FieldOrWoods"
+
+Node: dcid:BankOrSavingsAndLoan
+typeOf: dcs:LocationOfCrimeEnum
+name: "BankOrSavingsAndLoan"
+
+Node: dcid:ConstructionSite
+typeOf: dcs:LocationOfCrimeEnum
+name: "ConstructionSite"
+
+Node: dcid:IndustrialSite
+typeOf: dcs:LocationOfCrimeEnum
+name: "IndustrialSite"
+
+Node: dcid:GamblingFacilityOrCasinoOrRaceTrack
+typeOf: dcs:LocationOfCrimeEnum
+name: "GamblingFacilityOrCasinoOrRaceTrack"
+
+Node: dcid:TribalLands
+typeOf: dcs:LocationOfCrimeEnum
+name: "TribalLands"
+
+Node: dcid:ATMSeparateFromBank
+typeOf: dcs:LocationOfCrimeEnum
+name: "ATMSeparateFromBank"
+
+Node: dcid:FarmFacility
+typeOf: dcs:LocationOfCrimeEnum
+name: "FarmFacility"
+
+Node: dcid:RestArea
+typeOf: dcs:LocationOfCrimeEnum
+name: "RestArea"
+
+Node: dcid:AbandonedOrCondemnedStructure
+typeOf: dcs:LocationOfCrimeEnum
+name: "AbandonedOrCondemnedStructure"
+
+Node: dcid:MissionOrHomelessShelter
+typeOf: dcs:LocationOfCrimeEnum
+name: "MissionOrHomelessShelter"
+
+Node: dcid:DockOrWharfOrFreightOrModalTerminal
+typeOf: dcs:LocationOfCrimeEnum
+name: "DockOrWharfOrFreightOrModalTerminal"
+
+Node: dcid:CommunityCenter
+typeOf: dcs:LocationOfCrimeEnum
+name: "CommunityCenter"
+
+Node: dcid:MilitaryInstallation
+typeOf: dcs:LocationOfCrimeEnum
+name: "MilitaryInstallation"
+
+Node: dcid:Cyberspace
+typeOf: dcs:LocationOfCrimeEnum
+name: "Cyberspace"
 
 Node: dcid:DataCommonsAggregate
 typeOf: dcs:AggregateTypeEnum

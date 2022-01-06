@@ -551,6 +551,20 @@ typeOf: schema:Property
 domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: dcs:SexualOrientationEnum
 
+Node: victimType
+dcid: "victimType"
+name: "victimType"
+typeOf: schema:Property
+rangeIncludes: dcs:VictimTypeEnum, schema:Class
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+
+Node: locationOfCrime
+dcid: "locationOfCrime"
+name: "locationOfCrime"
+typeOf: schema:Property
+rangeIncludes: dcs:LocationOfCrimeEnum, schema:Class
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+
 Node: voterStatus
 dcid: "voterStatus"
 name: "voterStatus"
