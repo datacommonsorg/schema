@@ -420,6 +420,13 @@ subClassOf: schema:Intangible
 description: "A criminal incident is defined as one or more offenses committed by the same offender, or group of offenders acting in concert, at the same time and place."
 descriptionUrl: "https://ucr.fbi.gov/nibrs/2015/resource-pages/incidents-and-offenses-2015_final.pdf"
 
+Node: dcid:HateCrimeIncidents
+typeOf: schema:Class
+name: "HateCrimeIncidents"
+subClassOf: dcs:CriminalIncidents
+description: "A hate crime is a criminal offense against a person or property motivated in whole or in part by an offender's bias against a race, religion, disability, sexual orientation, ethnicity, gender, or gender identity."
+descriptionUrl: "https://www.fbi.gov/investigate/civil-rights/hate-crimes"
+
 Node: location
 dcid: "location"
 typeOf: schema:Property
@@ -451,6 +458,7 @@ rangeIncludes: schema:CrimeTypeEnum
 typeOf: schema:Property
 name: "crimeType"
 
+# TODO: Remove this once related statvars are updated to use HateCrimeIncidents
 Node: dcid:isHateCrime
 name: "isHateCrime"
 typeOf: schema:Property
@@ -460,7 +468,7 @@ rangeIncludes: schema:Boolean
 Node: dcid:biasMotivation
 name: "biasMotivation"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: schema:Property, dcs:BiasMotivationEnum
 
 Node: dcid:sexualOrientation
@@ -510,37 +518,37 @@ rangeIncludes: dcs:QuantityRange
 Node: dcid:targetedRace
 name: "targetedRace"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: dcs:RaceCodeEnum
 
 Node: dcid:targetedGender
 name: "targetedGender"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: schema:GenderType
 
 Node: dcid:targetedEthnicity
 name: "targetedEthnicity"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: dcs:EthnicityEnum
 
 Node: dcid:targetedReligion
 name: "targetedReligion"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: dcs:ReligionEnum
 
 Node: dcid:targetedDisabilityStatus
 name: "targetedDisabilityStatus"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: dcs:USC_DisabilityStatusEnum
 
 Node: dcid:targetedSexualOrientation
 name: "targetedSexualOrientation"
 typeOf: schema:Property
-domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
 rangeIncludes: dcs:SexualOrientationEnum
 
 Node: voterStatus
