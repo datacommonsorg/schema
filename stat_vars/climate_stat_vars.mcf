@@ -19,6 +19,54 @@ populationType: dcs:Place
 measuredProperty: dcs:temperature
 statType: dcs:minValue
 
+Node: dcid:Temperature
+description: "Near-surface air temperature"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:measuredValue
+
+Node: dcid:Mean_WindSpeed
+description: "Mean near-surface wind speed"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:windSpeed
+statType: dcs:meanValue
+
+Node: dcid:Radiation_Downwelling_ShortwaveRadiation
+description: "Surface downwelling shortwave radiation"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:radiation
+statType: dcs:measuredValue
+radiationDirection: dcs:Downwelling
+wavelength: dcs:ShortwaveRadiation
+
+Node: dcid:Radiation_Downwelling_LongwaveRadiation
+description: "Surface downwelling longwave radiation"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:radiation
+statType: dcs:measuredValue
+radiationDirection: dcs:Downwelling
+wavelength: dcs:LongwaveRadiation
+
+Node: dcid:Humidity_SpecificHumidity
+description: "Near-surface specific humidity"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:humidity
+statType: dcs:measuredValue
+humidityParameter: dcs:SpecificHumidity
+
+Node: dcid:Percent_Humidity_RelativeHumidity
+description: "Near-surface relative humidity"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:percent
+statType: dcs:measuredValue
+humidityParameter: dcs:RelativeHumidity
+
 ## RCP26
 
 Node: dcid:PrecipitationRate_RCP26
@@ -152,6 +200,66 @@ statType: dcs:minValue
 emissionsScenario: dcs:RCP4.5
 socioeconomicScenario: dcs:SSP2
 
+Node: dcid:Temperature_SSP245
+description: "Near-surface air temperature under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:measuredValue
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+Node: dcid:Mean_WindSpeed_SSP245
+description: "Mean near-surface wind speed under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:windSpeed
+statType: dcs:meanValue
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+Node: dcid:Radiation_Downwelling_ShortwaveRadiation_SSP245
+description: "Surface downwelling shortwave radiation under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:radiation
+statType: dcs:measuredValue
+radiationDirection: dcs:Downwelling
+wavelength: dcs:ShortwaveRadiation
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+Node: dcid:Radiation_Downwelling_LongwaveRadiation_SSP245
+description: "Surface downwelling longwave radiation under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:radiation
+statType: dcs:measuredValue
+radiationDirection: dcs:Downwelling
+wavelength: dcs:LongwaveRadiation
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+Node: dcid:Humidity_SpecificHumidity_SSP245
+description: "Near-surface specific humidity under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:humidity
+statType: dcs:measuredValue
+humidityParameter: dcs:SpecificHumidity
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
+Node: dcid:Percent_Humidity_RelativeHumidity_SSP245
+description: "Near-surface relative humidity under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:percent
+statType: dcs:measuredValue
+humidityParameter: dcs:RelativeHumidity
+emissionsScenario: dcs:RCP4.5
+socioeconomicScenario: dcs:SSP2
+
 # SSP585
 
 Node: dcid:PrecipitationRate_SSP585
@@ -178,6 +286,66 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:Place
 measuredProperty: dcs:temperature
 statType: dcs:minValue
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Temperature_SSP585
+description: "Near-surface air temperature under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:measuredValue
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Mean_WindSpeed_SSP585
+description: "Mean near-surface wind speed under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:windSpeed
+statType: dcs:meanValue
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Radiation_Downwelling_ShortwaveRadiation_SSP585
+description: "Surface downwelling shortwave radiation under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:radiation
+statType: dcs:measuredValue
+radiationDirection: dcs:Downwelling
+wavelength: dcs:ShortwaveRadiation
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Radiation_Downwelling_LongwaveRadiation_SSP585
+description: "Surface downwelling longwave radiation under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:radiation
+statType: dcs:measuredValue
+radiationDirection: dcs:Downwelling
+wavelength: dcs:LongwaveRadiation
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Humidity_SpecificHumidity_SSP585
+description: "Near-surface specific humidity under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:humidity
+statType: dcs:measuredValue
+humidityParameter: dcs:SpecificHumidity
+emissionsScenario: dcs:RCP8.5
+socioeconomicScenario: dcs:SSP5
+
+Node: dcid:Percent_Humidity_RelativeHumidity_SSP585
+description: "Near-surface relative humidity under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:percent
+statType: dcs:measuredValue
+humidityParameter: dcs:RelativeHumidity
 emissionsScenario: dcs:RCP8.5
 socioeconomicScenario: dcs:SSP5
 
