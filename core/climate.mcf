@@ -15,8 +15,21 @@ name: "IPCCPlace_25"
 Node: dcid:AirQualitySite
 typeOf: schema:Class
 description: "Site for air quality measurements."
-subClassOf: schema:Organization
+subClassOf: schema:Organization, schema:Place
 name: "AirQualitySite"
+
+Node: dcid:WaterQualitySite
+typeOf: schema:Class
+description: "Site for water quality measurements."
+subClassOf: schema:Organization, schema:Place
+name: "WaterQualitySite"
+
+Node: dcid:SuperfundSite
+name: "SuperfundSite"
+typeOf: schema:Class
+subClassOf: schema:Organization, schema:Place
+description: "Superfund sites are polluted locations in the United States requiring a long-term response to clean up hazardous material contaminations."
+descriptionUrl: "https://en.wikipedia.org/wiki/List_of_Superfund_sites"
 
 Node: dcid:Atmosphere
 typeOf: schema:Class
@@ -48,7 +61,7 @@ name: "pollutant"
 
 Node: dcid:concentration
 typeOf: schema:Property
-domainIncludes: dcs:Atmosphere, dcs:SeaBodyOfWater
+domainIncludes: dcs:Atmosphere, dcs:SeaBodyOfWater, dcs:WaterSourceTypeEnum, dcs:ContaminatedThingEnum
 rangeIncludes: schema:Number
 name: "concentration"
 
@@ -199,6 +212,62 @@ description: "The direction radiation is measured."
 domainIncludes: schema:Place
 rangeIncludes: schema:RadiationDirectionEnum
 name: "radiationDirection"
+
+Node: dcs:waterAlkalinity
+typeOf: schema:Property
+name: "waterAlkalinity"
+description: "Alkalinity is the capacity of water to resist acidification. Measuring alkalinity is important in determining a stream's ability to neutralize acidic pollution from rainfall or wastewater"
+descriptionUrl: "https://en.wikipedia.org/wiki/Alkalinity"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:electricalConductivity
+typeOf: schema:Property
+name: "electricalConductivity"
+description: Electrical Conductivity of water is its ability to conduct an electric current. The purer the water the lower the conductivity.
+descriptionUrl: "https://www.aquaread.com/parameters/ec"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:waterHardness
+typeOf: schema:Property
+name: "waterHardness"
+description: "Water hardness is generally the amount of dissolved calcium and magnesium in water."
+descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science/hardness-water?qt-science_center_objects=0#qt-science_center_objects"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:potentialOfHydrogen
+typeOf: schema:Property
+name: "potentialOfHydrogen"
+description: "Potential of Hydrogens (pH) is a quantitative measure of the acidity or basicity of aqueous or other liquid solutions. Solutions with less than 7 are considered acidic whereas the solutions with pH greater than 7 are known as basic."
+descriptionUrl: "https://www.britannica.com/science/pH"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:residualSodiumCarbonate
+typeOf: schema:Property
+name: "residualSodiumCarbonate"
+description: "The residual sodium carbonate (RSC) of water is used to indicate the alkalinity hazard for water. The RSC index is used to find the suitability of the water for irrigation in clay soils."
+descriptionUrl: "https://en.wikipedia.org/wiki/Residual_sodium_carbonate_index"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:sodiumAdsorptionRatio
+typeOf: schema:Property
+name: "sodiumAdsorptionRatio"
+description: "The Sodium adsorption ratio (SAR) is an irrigation water quality parameter used in the management of sodium-affected soils."
+descriptionUrl: "https://en.wikipedia.org/wiki/Sodium_adsorption_ratio"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:totalDissolvedSolids
+typeOf: schema:Property
+name: "totalDissolvedSolids"
+description: "Total dissolved solids is a measure of the dissolved combined content of all inorganic and organic substances present in water in molecular, ionized, or micro-granular suspended form."
+descriptionUrl: "https://en.wikipedia.org/wiki/Total_dissolved_solids"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
 
 ## Enums
 
@@ -423,6 +492,25 @@ Node: dcid:WattsPerSquareMeter
 typeOf: dcs:RadiationUnitOfMeasure
 name: "WattsPerSquareMeter"
 description: "A radiation unit of measure representing one watt per square meter."
+
+Node: dcid:MilligramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "MilligramsPerLitre"
+
+Node: dcid:MicrogramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "MicrogramsPerLitre"
+
+Node: dcid:MilligramsCaCO3PerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "MilligramsCaCO3PerLitre"
+description: "Carbonate hardness is a measure of the water hardness caused by the presence of carbonate and is usually expressed as mgCaCO3/L (Milligrams CaCO3 Per Litre) – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions."
+descriptionUrl: "https://en.wikipedia.org/wiki/Carbonate_hardness"
+
+Node: dcid:MicroseimensPerCentimeter
+typeOf: dcs:UnitOfMeasure
+name: "MicroseimensPerCentimeter"
+description: "Microseimens per Centimeter (μS/cm) is a traditional unit of mesaure to determine specific conductance, in other words the amount of electricity that an electrolyte solution can conduct."
 
 ## Measurement Qualifiers
 

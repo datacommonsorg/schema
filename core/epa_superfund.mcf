@@ -1,0 +1,162 @@
+Node: dcid:epaSuperfundSiteId
+name: "epaSuperfundSiteId"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcs:Text
+
+Node: dcid:epaRegionCode
+name: "epaRegionCode"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcs:Text
+
+Node: dcid:naturalHazardType
+name: "naturalHazardType"
+typeOf: dcs:Property
+domainIncludes: schema:Organization
+rangeIncludes: dcs:MeteorologicalEvent, dcs:GeologicalEvent
+
+Node: dcid:contaminant
+name: "contaminant"
+typeOf: dcs:Property
+description: "Contaminants are defined as substances (i.e. chemical elements and compounds) or groups of substances that are toxic, persistent and liable to bioaccumulate, and other substances or groups of substances which give rise to an equivalent level of concern."
+descriptionUrl: "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/contaminant"
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcid:ChemicalSubstance
+
+Node: dcid:superfundFundingStatus
+name: "superfundFundingStatus"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcs:SuperfundFundingStatusEnum
+
+Node: dcid:naturalHazardRiskScore
+name: "naturalHazardRiskScore"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcs:Number
+description: "Risk score for a natural hazard or meterological event like inland floods, earthquakes, droughts, etc."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7007161/"
+
+Node: dcid:naturalHazardExposureScore
+name: "naturalHazardExposureScore"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcs:Number
+description: "Exposure score for a natural hazard or meterological event like inland floods, earthquakes, droughts, etc."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7007161/"
+
+Node: dcid:crsiScore
+name: "crsiScore"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcs:Number
+description: "The Natural Hazard Resilience Screening Index (NaHRSI; previously entitled Climate Resilience Screening Index [CRSI]) was developed as an endpoint for characterizing county resilience outcomes that are based on risk profiles and responsive to changes in governance, societal, built, and natural system characteristics."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7007161/"
+
+Node: dcid:SuperfundFundingStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "SuperfundFundingStatusEnum"
+description: "Superfund sites can be categorized into two classes (i) In the National Priority List (NPL) site and (ii) Non-NPL site. The other means through which clean-up operations at sites are financed include (i)individuals or companies responsible for the problems can clean up voluntarily with EPA or State Supervision. (ii) The responsible party or parties can be ordered to clean up by Federal or State legal action. (iii)A State or local government can choose to assume the responsibility to clean up without Federal dollars. (iv)The Superfund Trust Fund can pay for the cleanup, then seek to recover the costs later from the responsible party or parties. A site needs to be on the NPL in order for it to be eligible to financed through the Superfund Trust Fund."
+descriptionUrl: "https://semspub.epa.gov/work/HQ/174009.pdf"
+
+Node: dcid:NPLSite
+typeOf: dcs:SuperfundFundingStatusEnum
+name: "NPLSite"
+description: "NPL or National Priority List contains superfund sites that need further investigations to determine whether the sites represent a long-term threat to public health or the environment and, therefore, need remedial action (clean-up). NPL sites are further classified based on the site's status on the NPL list. Thus, an NPL Site can be (i)Proposed NPL Site, (ii) Final NPL Site [site is in the NPL list] and (iii) Deleted NPL site [site is removed from the NPL list]."
+descriptionUrl: "https://semspub.epa.gov/work/HQ/174009.pdf"
+
+Node: dcid:NotNPLSite
+typeOf: dcs:SuperfundFundingStatusEnum
+name: "NotNPLSite"
+description: "Non-NPL sites include sites removed from the proposed NPL, sites withdrawn from the final NPL, sites being addressed as part of another NPL site, and all other non-NPL sites. Where available, the report includes funding information for each action, as well as site characterization data."
+descriptionUrl: "https://lisbdnet.com/when-is-an-npl-site-deleted-from-the-list/"
+
+Node: dcid:ProposedNPLSite
+typeOf: dcs:SuperfundFundingStatusEnum
+name: "ProposedNPLSite"
+specializationOf: dcs:NPLSite
+description: "A site is proposed to be part of the National Priority List"
+
+Node: dcid:FinalNPLSite
+typeOf: dcs:SuperfundFundingStatusEnum
+name: "FinalNPLSite"
+specializationOf: dcs:NPLSite
+description: "A site that has been proposed to the National Priorities List is \"final\" when it has been formally added to the National Priorities List (NPL)."
+descriptionUrl: "https://lisbdnet.com/when-is-an-npl-site-deleted-from-the-list/"
+
+Node: dcid:DeletedNPLSite
+typeOf: dcs:SuperfundFundingStatusEnum
+name: "DeletedNPLSite"
+specializationOf: dcs:NPLSite, dcs:NotNPLSite
+description: "EPA may delete a final NPL site if it determines that no further response is required to protect human health or the environment."
+descriptionUrl: "https://lisbdnet.com/when-is-an-npl-site-deleted-from-the-list/"
+
+Node: dcid:contaminatedThing
+name: "contaminatedThing"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite
+description: "This property describes the contaminated \"thing\" which can be things like drinking water, ground water, soil, air, land, oceans and so on."
+rangeIncludes: dcs:ContaminatedThingEnum, dcs:WaterSourceTypeEnum, dcs:Atmosphere
+
+Node: dcid:ContaminatedThingEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ContaminatedThingEnum"
+
+Node: dcid:Soil
+typeOf: dcs:ContaminatedThingEnum
+name: "Soil"
+
+Node: dcid:Sediment
+typeOf: dcs:ContaminatedThingEnum
+name: "Sediment"
+
+Node: dcid:SolidWaste
+typeOf: dcs:ContaminatedThingEnum
+name: "SolidWaste"
+
+Node: dcid:BuildingOrStructures
+typeOf: dcs:ContaminatedThingEnum
+name: "BuildingOrStructures"
+
+Node: dcid:Debris
+typeOf: dcs:ContaminatedThingEnum
+name: "Debris"
+
+Node: dcid:Leachate
+typeOf: dcs:ContaminatedThingEnum
+name: "Leachate"
+
+Node: dcid:Sludge
+typeOf: dcs:ContaminatedThingEnum
+name: "Sludge"
+
+Node: dcid:LiquidWaste
+typeOf: dcs:ContaminatedThingEnum
+name: "LiquidWaste"
+
+Node: dcid:SoilGas
+typeOf: dcs:ContaminatedThingEnum
+name: "SoilGas"
+
+Node: dcid:LandfillGas
+typeOf: dcs:ContaminatedThingEnum
+name: "LandfillGas"
+
+Node: dcid:Residuals
+typeOf: dcs:ContaminatedThingEnum
+name: "Residuals"
+
+Node: dcid:FishTissue
+typeOf: dcs:ContaminatedThingEnum
+name: "FishTissue"
+
+Node: dcid:EPA_OtherContaminatedThing
+typeOf: dcs:ContaminatedThingEnum
+name: "EPA_OtherContaminatedThing"
+
+Node: dcid:FreePhaseNAPL
+typeOf: dcs:ContaminatedThingEnum
+name: "FreePhaseNAPL"
