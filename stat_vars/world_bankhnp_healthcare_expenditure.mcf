@@ -1,0 +1,243 @@
+Node: dcid:InvestorTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:CapitalExpenditure
+name: "CapitalExpenditure"
+typeOf: dcs:ExpenditureTypeEnum
+
+Node: dcid:expenditureChanneledThrough
+typeOf: dcs:Property
+name: "expenditureChanneledThrough"
+domainIncludes: dcs:ExpenditureActivity
+rangeIncludes: dcs:InvestorTypeEnum, dcs:Organization
+
+Node: dcid:DomesticPrivateInvestors
+name: "DomesticPrivateInvestors"
+typeOf: dcs:InvestorTypeEnum
+
+Node: dcid:DomesticGeneralInvestors
+name: "DomesticGeneralInvestors"
+typeOf: dcs:InvestorTypeEnum
+
+Node: dcid:ExternalInvestor
+name: "ExternalInvestor"
+typeOf: dcs:InvestorTypeEnum
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+description: 'Amount of healthcare expenditure per person'
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+statType: dcs:measuredValue
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_AsAFractionOf_Count_Person
+typeOf: dcs:StatisticalVariable
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measuredProperty: dcs:amount
+measurementDenominator: dcs:Count_Person
+memberOf: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+description: 'Amount of Expenditure Activity, Healthcare Expenditure Per Capita'
+populationType: dcs:EconomicActivity
+statType: dcs:measuredValue
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_CapitalExpenditure_Government_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
+description: 'Capital health expenditure (% of GDP)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+healthcareExpenditureType: dcs:CapitalExpenditure
+remunerator: dcs:Government
+measurementDenominator: dcs:Amount_EconomicActivity_GrossDomesticProduction_Nominal
+
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_Government_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
+description: 'Current health expenditure (% of GDP)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+remunerator: dcs:Government
+measurementDenominator: dcs:Amount_EconomicActivity_GrossDomesticProduction_Nominal
+
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_CapitalExpenditure_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+healthcareExpenditureType: dcs:CapitalExpenditure
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Amount_EconomicActivity_GrossDomesticProduction_Nominal
+
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_USDollar_AsAFractionOf_Count_Person
+description: 'Current health expenditure per capita (current US$)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Count_Person
+description: Current health expenditure per capita (current US$)
+unitOfMeasure: dcs:USDollar
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_PurchasingPowerStandard_AsAFractionOf_Count_Person
+typeOf: dcs:StatisticalVariable
+description: 'Current health expenditure per capita, PPP (current international $)'
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Count_Person
+unitOfMeasure: PurchasingPowerStandard
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_DomesticPrivateInvestors_USDollar
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+remunerator: dcs:DomesticPrivateInvestors
+unitOfMeasure: dcs:USDollar
+description: 'Domestic general government health expenditure per capita (current US$)'
+
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_Government_AsAFractionOf_Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+description: 'Domestic general government health expenditure (% of current health expenditure)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+remunerator: dcs:Government
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_DomesticGeneralInvestors_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
+description: 'Domestic general government health expenditure (% of GDP)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Amount_EconomicActivity_GrossDomesticProduction_Nominal
+remunerator: dcs:DomesticGeneralInvestors
+
+
+Node: dcid:GovernmentExpenditure
+typeOf: dcs:StatisticalVariable
+name: "GovernmentExpenditure"
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+remunerator: dcs:Government
+
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_Government_AsAFractionOf_GovernmentExpenditure
+description: 'Domestic general government health expenditure (% of general government expenditure)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:GovernmentExpenditure
+remunerator: dcs:Government
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_Government_USDollar_AsAFractionOf_Count_Person
+description: 'Current health expenditure per capita (current US$)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+unitOfMeasure: dcs:USDollar
+measurementDenominator: dcs:Count_Person
+remunerator: dcs:Government
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_ExternalInvestor_AsAFractionOf_Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+description: 'External health expenditure (% of current health expenditure)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+remunerator: dcs:ExternalInvestor
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_Government_HealthcareExpenditure_ExternalInvestor_AsAFractionOf_Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+description: 'External health expenditure channeled through government (% of external health expenditure)'
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+remunerator: dcs:ExternalInvestor
+expenditureChanneledThrough: dcs:Government
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_DomesticPrivateInvestors_PurchasingPowerStandard
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+remunerator: dcs:DomesticPrivateInvestors
+unitOfMeasure: dcs:PurchasingPowerStandard
+description: 'Domestic private health expenditure per capita, PPP (current international $)'
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_DomesticPrivateInvestors_AsAFractionOf_Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure
+remunerator: dcs:DomesticPrivateInvestors
+description: 'Domestic private health expenditure (% of current health expenditure)'
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_DomesticPrivateInvestors_USDollar_AsAFractionOf_Count_Person
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Count_Person
+remunerator: dcs:DomesticPrivateInvestors
+unitOfMeasure: dcs:USDollar
+description: 'Domestic private health expenditure per capita (current US$)'
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_DomesticPrivateInvestors_PurchasingPowerStandard_AsAFractionOf_Count_Person
+typeOf: dcs:StatisticalVariable
+statType: dcs:measuredValue
+measuredProperty: dcs:amount
+populationType: dcs:EconomicActivity
+activitySource: dcs:ExpenditureActivity
+expenditureType: dcs:HealthcareExpenditure
+measurementDenominator: dcs:Count_Person
+remunerator: dcs:DomesticPrivateInvestors
+unitOfMeasure: dcs:PurchasingPowerStandard
+description: 'Domestic general government health expenditure per capita, PPP (current international $)'

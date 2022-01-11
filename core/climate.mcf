@@ -161,45 +161,6 @@ domainIncludes: dcs:LandCover
 rangeIncludes: dcs:LandCoverClassEnum
 name: "landCoverType"
 
-Node: dcid:windSpeed
-typeOf: schema:Property
-description: "A fundamental atmospheric quantity caused by air moving from high to low pressure, usually due to changes in temperature."
-descriptionUrl: "https://en.wikipedia.org/wiki/Wind_speed"
-domainIncludes: schema:Place
-rangeIncludes: schema:Number
-name: "windSpeed"
-
-Node: dcid:radiation
-typeOf: schema:Property
-description: "The emission or transmission of energy in the form of waves or particles through space or through a material medium."
-descriptionUrl: "https://en.wikipedia.org/wiki/Radiation"
-domainIncludes: schema:Place
-rangeIncludes: schema:Number
-name: "radiation"
-
-Node: dcid:humidity
-typeOf: schema:Property
-description: "The concentration of water vapour present in the air."
-descriptionUrl: "https://en.wikipedia.org/wiki/Humidity"
-domainIncludes: schema:Place
-rangeIncludes: schema:Number
-name: "humidity"
-
-Node: dcid:wavelength
-typeOf: schema:Property
-description: "The spatial period of a periodic wave."
-descriptionUrl: "https://en.wikipedia.org/wiki/Wavelength"
-domainIncludes: schema:Place
-rangeIncludes: schema:RadiationWavelengthEnum
-name: "wavelength"
-
-Node: dcid:radiationDirection
-typeOf: schema:Property
-description: "The direction radiation is measured."
-domainIncludes: schema:Place
-rangeIncludes: schema:RadiationDirectionEnum
-name: "radiationDirection"
-
 ## Enums
 
 Node: dcid:HumidityParameterCategoryEnum
@@ -207,28 +168,17 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "HumidityParameterCategoryEnum"
 
-Node: dcid:SpecificHumidity
-typeOf: dcs:HumidityParameterCategoryEnum
-name: "SpecificHumidity"
-
-Node: dcid:RelativeHumidity
-typeOf: dcs:HumidityParameterCategoryEnum
-name: "RelativeHumidity"
-
 Node: dcid:MaxRelativeHumidity
 typeOf: dcs:HumidityParameterCategoryEnum
 name: "MaxRelativeHumidity"
-specializationOf: dcs:RelativeHumidity
 
 Node: dcid:MeanRelativeHumidity
 typeOf: dcs:HumidityParameterCategoryEnum
 name: "MeanRelativeHumidity"
-specializationOf: dcs:RelativeHumidity
 
 Node: dcid:MinRelativeHumidity
 typeOf: dcs:HumidityParameterCategoryEnum
 name: "MinRelativeHumidity"
-specializationOf: dcs:RelativeHumidity
 
 Node: dcid:RepresentativeConcentrationPathwayEnum
 typeOf: schema:Class
@@ -255,6 +205,7 @@ name: "RCP6.0"
 description: "Stabilization without overshoot pathway to 6 W/m2 at stabilization after 2100."
 descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
+
 Node: dcid:RCP8.5
 typeOf: dcs:RepresentativeConcentrationPathwayEnum
 name: "RCP8.5"
@@ -273,6 +224,7 @@ typeOf: dcs:SharedSocioeconomicPathwayEnum
 name: "SSP2: Middle of the Road"
 description: "The world follows a path in which social, economic, and technological trends do not shift markedly from historical patterns."
 descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
 
 Node: dcid:SSP5
 typeOf: dcs:SharedSocioeconomicPathwayEnum
@@ -341,7 +293,7 @@ name: "Cropland"
 
 Node: dcid:HerbaceousVegetation
 typeOf: dcs:LandCoverClassEnum
-name: "HerbaceousVegetation"
+  name: "HerbaceousVegetation"
 
 Node: dcid:MossAndLichen
 typeOf: dcs:LandCoverClassEnum
@@ -371,32 +323,6 @@ Node: dcid:SeasonalWater
 typeOf: dcs:LandCoverClassEnum
 name: "SeasonalWater"
 
-Node: dcid:RadiationWavelengthEnum
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "RadiationWavelengthEnum"
-
-Node: dcs:ShortwaveRadiation
-typeOf: dcs:RadiationWavelengthEnum
-description: "Radiant energy with wavelengths in the visible, near-ultraviolet, and near-infrared spectra."
-descriptionUrl: "https://en.wikipedia.org/wiki/Shortwave_radiation"
-name: "ShortwaveRadiation"
-
-Node: dcs:LongwaveRadiation
-typeOf: dcs:RadiationWavelengthEnum
-description: "Electromagnetic radiation emitted by the surface and atmosphere at wavelengths between 3 and 100 μm, i.e. within the range of infrared radiation"
-descriptionUrl: "https://www.oxfordreference.com/view/10.1093/oi/authority.20110803100114357"
-name: "LongwaveRadiation"
-
-Node: dcid:RadiationDirectionEnum
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "RadiationDirectionEnum"
-
-Node: dcs:Downwelling
-typeOf: dcs:RadiationDirectionEnum
-name: "Downwelling"
-
 ## Units
 
 Node: dcid:MicrogramsPerCubicMeter
@@ -407,22 +333,6 @@ Node: dcid:PartsPerBillion
 typeOf: dcs:ConcentrationUnitOfMeasure
 name: "PartsPerBillion"
 description: "Number of units of mass of something (like pollutant) per billion units of total mass"
-
-Node: dcid:MetersPerSecond
-typeOf: dcs:SpeedUnitOfMeasure
-name: "MetersPerSecond"
-description: "A speed unit of measure representing one meter per second."
-
-Node: dcid:RadiationUnitOfMeasure
-typeOf: schema:Class
-subClassOf: dcs:UnitOfMeasure
-name: "RadiationUniOfMeasure"
-description: "A unit used to denote a measurement of radiation."
-
-Node: dcid:WattsPerSquareMeter
-typeOf: dcs:RadiationUnitOfMeasure
-name: "WattsPerSquareMeter"
-description: "A radiation unit of measure representing one watt per square meter."
 
 ## Measurement Qualifiers
 
