@@ -88,7 +88,7 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Energy, schema:Fuel, schema:Product
 name: "stock"
-supercededBy: dcid:stocks
+supersededBy: dcid:stocks
 
 Node: dcid:stocks
 typeOf: schema:Property
@@ -101,7 +101,7 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Energy, schema:Fuel, schema:Product
 name: "receipt"
-supercededBy: dcid:receipts
+supersededBy: dcid:receipts
 
 Node: dcid:receipts
 typeOf: schema:Property
@@ -1591,7 +1591,7 @@ name: "Annual change"
 Node: dcid:ElectricUtility
 subClassOf: schema:Organization
 description: "Electric utilities are companies that provide electricity and/or heat. They can be publicly or privately owned."
-name: "Electric Utility"
+name: "ElectricUtility"
 typeOf: schema:Class
 
 Node: dcid:electricUtilityName
@@ -1602,7 +1602,7 @@ rangeIncludes: schema:Text
 
 Node: dcid:powerPlantCode
 domainIncludes: dcs:PowerPlant
-name: "plantCode"
+name: "powerPlantCode"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 
@@ -1614,13 +1614,13 @@ rangeIncludes: schema:Text
 
 Node: dcid:powerPlantGeneratorCode
 domainIncludes: dcs:PowerPlantUnit
-name: "generatorId"
+name: "powerPlantGeneratorCode"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 
 Node: dcid:powerPlantUnitCode
 domainIncludes: dcs:PowerPlantUnit
-name: "unitCode"
+name: "powerPlantUnitCode"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 
@@ -2246,4 +2246,25 @@ description: "Model used in the Solar Insolation data sourced from NREL."
 Node: dcid:WattHourPerSquareMeterPerDay
 typeOf: dcs:EnergyUnitOfMeasure
 name: "WattHourPerSquareMeterPerDay"
+
+## Properties for India Energy import from NitiAyog.
+
+Node: dcid:potentialCapacity
+typeOf: schema:Property
+name: "potentialCapacity"
+domainIncludes: schema:Electricity, schema:Energy, schema:EnergyGeneration, schema:Fuel
+rangeIncludes: schema:Quantity
+description: "Total capacity potential that can be used to generate electricity"
+
+Node: dcid:energyDemand
+typeOf: schema:Property
+name: "energyDemand"
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+rangeIncludes: schema:Quantity
+
+Node: dcid:electrifiedHouseholds
+typeOf: schema:Property
+name: "electrifiedHouseholds"
+domainIncludes: schema:Electricity, dcs:Households
+rangeIncludes: schema:Quantity
 
