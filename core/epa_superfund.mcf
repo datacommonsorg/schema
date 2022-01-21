@@ -160,3 +160,11 @@ name: "EPA_OtherContaminatedThing"
 Node: dcid:FreePhaseNAPL
 typeOf: dcs:ContaminatedThingEnum
 name: "FreePhaseNAPL"
+alternateName: "Free Phase Non-Aqueous Phase Liquid (NAPL)"
+
+Node: dcid:isContaminated
+name: "isContaminated"
+typeOf: dcs:Property
+description: "This property indicates whether a medium like Soil, GroundWater is contaminated by contaminants like heavy metals, organic compounds, and inorganic compounds."
+domainIncludes: dcs:SuperfundSite
+rangeIncludes: dcs:Boolean
