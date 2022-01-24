@@ -2635,3 +2635,26 @@ rangeIncludes: schema:Substance
 domainIncludes: schema:Thing
 description: "A solvent is a substance that dissolves another substance"
 
+## Glaciers
+
+Node: dcid:Glacier
+typeOf: schema:Class
+subClassOf: schema:Landform
+name: "Glacier"
+description: "A persistent body of dense ice that is constantly moving under its own weight."
+descriptionUrl: "https://en.wikipedia.org/wiki/Glacier"
+
+Node: dcid:glimsId
+typeOf: schema:Property
+name: "glimsId"
+description: "Identifier of a glacier in GLIMS (Global Land Ice Measurements from Space) databases."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Glacier
+
+Node: dcid:rgiId
+typeOf: schema:Property
+name: "rgiId"
+description: "Identifier of a glacier in Randolph Glacier Inventory."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Glacier
+
