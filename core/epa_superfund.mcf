@@ -168,3 +168,18 @@ typeOf: dcs:Property
 description: "This property indicates whether a medium like Soil, GroundWater is contaminated by contaminants like heavy metals, organic compounds, and inorganic compounds."
 domainIncludes: dcs:SuperfundSite
 rangeIncludes: dcs:Boolean
+
+Node: dcid:contaminantStatus
+name: "contaminantStatus"
+typeOf: dcs:Property
+domainIncludes: dcs:SuperfundSite, dcs:BodyOfWater
+rangeIncludes: dcs:ContaminantStatusEnum
+
+Node: dcid:ContaminantStatusEnum
+name: "ContaminantStatusEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+
+Node: dcid:DissolvedContaminant
+name: "DissolvedContaminant"
+typeOf: dcs:ContaminantStatusEnum

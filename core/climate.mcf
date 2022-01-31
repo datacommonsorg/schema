@@ -31,6 +31,12 @@ subClassOf: schema:Organization, schema:Place
 description: "Superfund sites are polluted locations in the United States requiring a long-term response to clean up hazardous material contaminations."
 descriptionUrl: "https://en.wikipedia.org/wiki/List_of_Superfund_sites"
 
+Node: dcid:SuperfundMeasurementSite
+name: "SuperfundMeasurementSite"
+typeOf: schema:Class
+subClassOf: schema:Place
+description: "Superfund sites have sampling sites from where the level of contamination is measured over time. Some examples of sampling sites are wells, monitoring stations."
+
 Node: dcid:Atmosphere
 typeOf: schema:Class
 description: "Layer of gases surrounding a planet."
@@ -112,7 +118,7 @@ Node: dcid:temperature
 typeOf: schema:Property
 description: "A physical quantity that expresses hot and cold."
 descriptionUrl: "https://en.wikipedia.org/wiki/Temperature"
-domainIncludes: schema:Place, dcs:SeaBodyOfWater
+domainIncludes: schema:Place, dcs:SeaBodyOfWater, dcs:SuperfundSite
 rangeIncludes: schema:Number
 name: "temperature"
 
