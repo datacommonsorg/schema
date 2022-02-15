@@ -168,6 +168,18 @@ typeOf: schema:Property
 description: "The percentage change of a specific variable within a specific time period and given a certain context."
 descriptionUrl: "https://www.investopedia.com/terms/g/growthrates.asp"
 
+Node: dcid:percentile10
+typeOf: schema:Property
+name: "percentile10"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Number
+
+Node: dcid:percentile90
+typeOf: schema:Property
+name: "percentile90"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Number
+
 Node: dcid:County
 name: "County"
 typeOf: schema:Class
@@ -1536,6 +1548,11 @@ typeOf: dcs:UnitOfMeasure
 name: "MilePerSquareMile"
 dcid: "MilePerSquareMile"
 description: "A unit ratio between mile length and square mile area."
+
+Node: dcid:MillimeterPerYear
+typeOf: dcs:UnitOfMeasure
+name: "MillimeterPerYear"
+description: "A rate unit that represents the millimeters of sea-level increase, rainfall, etc. per year."
 
 Node: DeathPer1000Births
 typeOf: dcs:UnitOfMeasure

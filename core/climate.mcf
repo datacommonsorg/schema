@@ -2,13 +2,13 @@
 
 Node: dcid:IPCCPlace_50
 typeOf: schema:Class
-description: "A grid on the earth corresponding to 0.50 degree resolution for attaching climate related observations."
+description: "A grid on the Earth's surface approximately corresponding to 0.50 degree resolution for attaching climate related observations. These are defined within the context of a specific country."
 subClassOf: schema:Place
 name: "IPCCPlace_50"
 
 Node: dcid:IPCCPlace_25
 typeOf: schema:Class
-description: "A grid on the earth corresponding to 0.25 degree resolution for attaching climate related observations."
+description: "A grid on the Earth's surface approximately corresponding to 0.25 degree resolution for attaching climate related observations. These are defined within the context of a specific country."
 subClassOf: schema:Place
 name: "IPCCPlace_25"
 
@@ -49,6 +49,19 @@ description: "The physical material that is at the surface of the earth."
 descriptionUrl: "https://en.wikipedia.org/wiki/Land_cover"
 subClassOf: schema:Thing
 name: "LandCover"
+
+Node: dcid:TideGaugeStation
+typeOf: schema:Class
+subClassOf: schema:Organization, schema:Place
+name: "TideGaugeStation"
+description: "A station with a tide guage to continuously record the height of the surrounding water level."
+descriptionUrl: "https://oceanservice.noaa.gov/facts/tide-gauge.html"
+
+Node: dcid:GeoGridPlace_1Deg
+typeOf: schema:Class
+subClassOf: schema:Place
+name: "GeoGridPlace_1Deg"
+description: "A place representing a uniform 1x1 degree grid on the surface of the Earth. Unlike IPCCPlace entities, these are not defined in the context of a country."
 
 ## Properties
 
@@ -275,6 +288,13 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Total_dissolved_solids"
 domainIncludes: dcs:Water, dcs:BodyOfWater
 rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
 
+Node: dcid:surfaceLevel
+typeOf: schema:Property
+name: "surfaceLevel"
+description: "Measure of the surface level of bodies of water, etc."
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:Quantity
+
 ## Enums
 
 Node: dcid:HumidityParameterCategoryEnum
@@ -312,6 +332,12 @@ name: "RepresentativeConcentrationPathwayEnum"
 description: "A Representative Concentration Pathway (RCP) is a greenhouse gas concentration (not emissions) trajectory adopted by the IPCC. The pathways describe different climate futures, all of which are considered possible depending on the volume of greenhouse gases (GHG) emitted in the years to come."
 descriptionUrl: "https://en.wikipedia.org/wiki/Representative_Concentration_Pathway"
 
+Node: dcid:RCP1.9
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP1.9"
+description: "A new pathway that focuses on limiting warming to below 1.5C."
+descriptionUrl: "https://en.wikipedia.org/wiki/Representative_Concentration_Pathway"
+
 Node: dcid:RCP2.6
 typeOf: dcs:RepresentativeConcentrationPathwayEnum
 name: "RCP2.6"
@@ -330,6 +356,12 @@ name: "RCP6.0"
 description: "Stabilization without overshoot pathway to 6 W/m2 at stabilization after 2100."
 descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
+Node: dcid:RCP7.0
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP7.0"
+description: "This is a baseline outcome rather than a mitigation target"
+descriptionUrl: "https://en.wikipedia.org/wiki/Representative_Concentration_Pathway"
+
 Node: dcid:RCP8.5
 typeOf: dcs:RepresentativeConcentrationPathwayEnum
 name: "RCP8.5"
@@ -343,10 +375,22 @@ name: "SharedSocioeconomicPathwayEnum"
 description: "Shared Socioeconomic Pathways (SSPs) are scenarios of projected socioeconomic global changes up to 2100. They are used to derive greenhouse gas emissions scenarios with different climate policies."
 descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
 
+Node: dcid:SSP1
+typeOf: dcs:SharedSocioeconomicPathwayEnum
+name: "SSP1: Sustainability (Taking the Green Road)"
+description: "The world shifts gradually, but pervasively, toward a more sustainable path, emphasizing more inclusive development that respects perceived environmental boundaries."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
 Node: dcid:SSP2
 typeOf: dcs:SharedSocioeconomicPathwayEnum
 name: "SSP2: Middle of the Road"
 description: "The world follows a path in which social, economic, and technological trends do not shift markedly from historical patterns."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
+Node: dcid:SSP3
+typeOf: dcs:SharedSocioeconomicPathwayEnum
+name: "SSP3: Regional rivalry (A Rocky Road)"
+description: "A resurgent nationalism, concerns about competitiveness and security, and regional conflicts push countries to increasingly focus on domestic or, at most, regional issues."
 descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
 
 Node: dcid:SSP5
@@ -518,6 +562,22 @@ typeOf: dcs:UnitOfMeasure
 name: "MicroseimensPerCentimeter"
 description: "Microseimens per Centimeter (μS/cm) is a traditional unit of mesaure to determine specific conductance, in other words the amount of electricity that an electrolyte solution can conduct."
 
+## IPCC Confidence levels
+
+Node: dcid:IPCC_ConfidenceLevelEnum
+name: "IPCC_ConfidenceLevelEnum"
+typeOf: dcs:Enumeration
+description: "Confidence level synthesizes the IPCC report author teams’ judgments about the validity of findings as determined through evaluation of evidence and agreement."
+descriptionUrl: "https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf"
+
+Node: dcid:IPCC_MediumConfidence
+name: "IPCC_MediumConfidence"
+typeOf: dcs:IPCC_ConfidenceLevelEnum
+
+Node: dcid:IPCC_LowConfidence
+name: "IPCC_LowConfidence"
+typeOf: dcs:IPCC_ConfidenceLevelEnum
+
 ## Measurement Qualifiers
 
 Node: dcid:IPCC_MeasurementQualifierEnum
@@ -556,6 +616,10 @@ name: "HighestValue"
 Node: dcid:FrequencyOfOutliers
 typeOf: dcs:IPCC_MeasurementQualifierEnum
 name: "FrequencyOfOutliers"
+
+Node: dcid:RateOfChange
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "RateOfChange"
 
 # Temporary properties for better viz of SV Hierarchy
 Node: dcid:multiModelEnsemble
@@ -616,3 +680,11 @@ typeOf: dcs:Class
 name: "S2CellLevel11"
 description: "S2 cell at level 11 which corresponds to an average area of 20.27 sq km."
 subClassOf: schema:Place
+
+## Misc
+
+Node: dcid:CMIP6ReferencePeriod
+typeOf: dcs:QuantityRange
+name: "CMIP6ReferencePeriod"
+description: "The reference period used for comparison in IPCC CMIP6 report, which is from 1995 to 2014."
+sameAs: [1995 2014 dcs:Date]
