@@ -2587,6 +2587,20 @@ description: "PIN code is a six digit code in Indian postal code system used by 
 domainIncludes: schema:Place
 rangeIncludes: schema:Text
 
+Node: dcid:censusDivisionId
+name: "censusDivisionId"
+typeOf: schema:Property
+domainIncludes: schema:CensusDivision
+rangeIncludes: schema:Text
+description: "An identifier for a census division which is a subdivision of a census region. The US has states grouped into 9 divisions."
+
+Node: dcid:censusRegionId
+name: "censusRegionId"
+typeOf: schema:Property
+domainIncludes: schema:CensusRegion
+rangeIncludes: schema:Text
+description: "An identifier for a census region. The US has states grouped into 4 regions which are sub-divided into 9 census regions."
+
 Node: dcid:cost
 typeOf: schema:Property
 name: "cost"
