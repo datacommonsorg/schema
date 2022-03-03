@@ -80,7 +80,7 @@ name: "pollutant"
 
 Node: dcid:concentration
 typeOf: schema:Property
-domainIncludes: dcs:Atmosphere, dcs:SeaBodyOfWater, dcs:WaterSourceTypeEnum, dcs:ContaminatedThingEnum
+domainIncludes: dcs:Atmosphere, dcs:SeaBodyOfWater, dcs:WaterSourceTypeEnum, dcs:ContaminatedThingEnum, dcs:BodyOfWater
 rangeIncludes: schema:Number
 name: "concentration"
 
@@ -131,7 +131,7 @@ Node: dcid:temperature
 typeOf: schema:Property
 description: "A physical quantity that expresses hot and cold."
 descriptionUrl: "https://en.wikipedia.org/wiki/Temperature"
-domainIncludes: schema:Place, dcs:SeaBodyOfWater, dcs:SuperfundSite
+domainIncludes: schema:Place, dcs:SeaBodyOfWater, dcs:BodyOfWater
 rangeIncludes: schema:Number
 name: "temperature"
 
