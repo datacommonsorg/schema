@@ -757,6 +757,75 @@ rangeIncludes: dcs:USC_EducationalAttainmentEnum, schema:Text
 domainIncludes: schema:BirthEvent
 description: "The highest level of education attained by the mother at the time of birth"
 
+Node: dcid:mothersEthnicity
+typeOf: schema:Property
+name: "mothersEthnicity"
+rangeIncludes: dcs:EthnicityEnum
+domainIncludes: schema:BirthEvent
+description: "The ethnicity of the mother"
+
+Node: dcid:mothersNativity
+typeOf: schema:Property
+name: "mothersNativity"
+rangeIncludes: dcs:USC_NativityEnum
+domainIncludes: schema:BirthEvent
+description: "The nativity of the mother"
+
+Node: dcid:mothersMaritalStatus
+typeOf: schema:Property
+name: "mothersMaritalStatus"
+rangeIncludes: dcs:USC_MaritalStatusEnum
+domainIncludes: schema:BirthEvent
+description: "The marital status of the mother"
+
+Node: dcid:oeGestationalAge
+typeOf: schema:Property
+name: "oeGestationalAge"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "Obstetric/clinical Estimate (OE) based gestational age is the best estimate of the infant's gestation in completed weeks based on the birth attendant's final estimate of gestation."
+descriptionUrl: "https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf"
+
+Node: dcid:lmpGestationalAge
+typeOf: schema:Property
+name: "lmpGestationalAge"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "Last Menstrual Period (LMP) based gestational age is measured as the difference between the date of the last normal menses and the date of infant's birth."
+descriptionUrl: "https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf"
+
+Node: dcid:birthWeight
+typeOf: schema:Property
+name: "birthWeight"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "The weight of the child at birth."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/Natality.html#Weight"
+
+Node: dcid:prePregnancyBMI
+typeOf: schema:Property
+name: "prePregnancyBMI"
+rangeIncludes: schema:Number
+domainIncludes: schema:BirthEvent
+description: "The pre-pregnancy Body Mass Index (BMI) of the mother."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/natality-expanded.html#Average-Pre-pregnancy-BMI"
+
+Node: dcid:intervalSinceLastBirth
+typeOf: schema:Property
+name: "intervalSinceLastBirth"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "The elapsed time since the mother's last live birth."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/natality-expanded.html#Interval-Last-Live-Birth"
+
+Node: dcid:intervalSinceLastPregnancyOutcomeNotLiveBirth
+typeOf: schema:Property
+name: "intervalSinceLastPregnancyOutcomeNotLiveBirth"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "The elapsed time since the mother's last pregnancy outcome for outcomes other than live birth."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/natality-expanded.html#Interval-Last-Other-Pregnancy-Outcome"
+
 # Begin Planned Parenthood additions
 Node: medicalSpecialty
 typeOf: schema:Property
@@ -1415,6 +1484,17 @@ Node: dcid:MetricTon
 typeOf: dcs:WeightUnitOfMeasure
 name: "MetricTon"
 description: "A unit of weight equal to 1000 kilograms."
+
+Node: dcid:Gram
+typeOf: dcs:WeightUnitOfMeasure
+name: "Gram"
+description: "A unit of weight equal to 0.001 kilograms."
+
+Node: dcid:Kilogram
+typeOf: dcs:WeightUnitOfMeasure
+name: "Kilogram"
+description: "The kilogram (kg) is defined by taking the fixed numerical value of the Planck constant h when expressed in the unit J s"
+descriptionUrl: "https://www.nist.gov/pml/weights-and-measures/si-units-mass"
 
 Node: dcid:EnergyUnitOfMeasure
 typeOf: schema:Class
