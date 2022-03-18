@@ -4,51 +4,21 @@ name: "Data Commons Variables"
 
 ## L1 verticals ##
 
+Node: dcid:dc/g/Agriculture
+typeOf: dcs:StatVarGroup
+name: "Agriculture"
+specializationOf: dcid:dc/g/Root
+displayRank: 1
+
 Node: dcid:dc/g/Demographics
 typeOf: dcs:StatVarGroup
 name: "Demographics"
 specializationOf: dcid:dc/g/Root
-displayRank: 1
-
-Node: dcid:dc/g/Household
-typeOf: dcs:StatVarGroup
-name: "Household"
-specializationOf: dcid:dc/g/Root
-displayRank: 1
-
-Node: dcid:dc/g/Housing
-typeOf: dcs:StatVarGroup
-name: "Housing"
-specializationOf: dcid:dc/g/Root
-displayRank: 1
-
-Node: dcid:dc/g/Health
-typeOf: dcs:StatVarGroup
-name: "Health"
-specializationOf: dcid:dc/g/Root
 displayRank: 2
 
-Node: dcid:dc/g/Employment
+Node: dcid:dc/g/Economy
 typeOf: dcs:StatVarGroup
-name: "Employment"
-specializationOf: dcid:dc/g/Root
-displayRank: 2
-
-Node: dcid:dc/g/Climate
-typeOf: dcs:StatVarGroup
-name: "Climate"
-specializationOf: dcid:dc/g/Root
-displayRank: 3
-
-Node: dcid:dc/g/Energy
-typeOf: dcs:StatVarGroup
-name: "Energy"
-specializationOf: dcid:dc/g/Root
-displayRank: 3
-
-Node: dcid:dc/g/Agriculture
-typeOf: dcs:StatVarGroup
-name: "Agriculture"
+name: "Economy"
 specializationOf: dcid:dc/g/Root
 displayRank: 3
 
@@ -58,28 +28,41 @@ name: "Education"
 specializationOf: dcid:dc/g/Root
 displayRank: 4
 
+Node: dcid:dc/g/Energy
+typeOf: dcs:StatVarGroup
+name: "Energy"
+specializationOf: dcid:dc/g/Root
+displayRank: 5
+
+Node: dcid:dc/g/Environment
+typeOf: dcs:StatVarGroup
+name: "Environment"
+specializationOf: dcid:dc/g/Root
+displayRank: 6
+
+Node: dcid:dc/g/Health
+typeOf: dcs:StatVarGroup
+name: "Health"
+specializationOf: dcid:dc/g/Root
+displayRank: 7
+
+Node: dcid:dc/g/Housing
+typeOf: dcs:StatVarGroup
+name: "Housing"
+specializationOf: dcid:dc/g/Root
+displayRank: 8
+
 Node: dcid:dc/g/Crime
 typeOf: dcs:StatVarGroup
 name: "Crime"
 specializationOf: dcid:dc/g/Root
-displayRank: 4
-
-Node: dcid:dc/g/Economics
-typeOf: dcs:StatVarGroup
-name: "Economics"
-specializationOf: dcid:dc/g/Root
-displayRank: 4
-
-Node: dcid:dc/g/MilitaryService
-typeOf: dcs:StatVarGroup
-name: "Military Service"
-specializationOf: dcid:dc/g/Root
-displayRank: 4
+displayRank: 9
 
 Node: dcid:dc/g/Uncategorized
 typeOf: dcs:StatVarGroup
 name: "Uncategorized"
 specializationOf: dcid:dc/g/Root
+displayRank: 10
 
 # A special vertical that is not displayed on the Tree Widget.
 Node: dcid:dc/g/Hidden
@@ -88,6 +71,23 @@ name: "Hidden"
 specializationOf: dcid:dc/g/Root
 
 ## L2 Verticals ##
+
+Node: dcid:dc/g/Household
+typeOf: dcs:StatVarGroup
+name: "Household"
+specializationOf: dcid:dc/g/Demographics
+
+Node: dcid:dc/g/MilitaryService
+typeOf: dcs:StatVarGroup
+name: "Military Service"
+specializationOf: dcid:dc/g/Demographics
+
+Node: dcid:dc/g/Employment
+typeOf: dcs:StatVarGroup
+name: "Employment and Business"
+specializationOf: dcid:dc/g/Economy
+# Make this appear at the top under Economy.
+displayRank: 1
 
 Node: dcid:dc/g/COVID-19
 typeOf: dcs:StatVarGroup
@@ -98,12 +98,12 @@ displayRank: 1
 Node: dcid:dc/g/Weather
 typeOf: dcs:StatVarGroup
 name: "Weather"
-specializationOf: dcid:dc/g/Climate
+specializationOf: dcid:dc/g/Environment
 
 Node: dcid:dc/g/Disasters
 typeOf: dcs:StatVarGroup
 name: "Disasters"
-specializationOf: dcid:dc/g/Climate
+specializationOf: dcid:dc/g/Environment
 
 Node: dcid:dc/g/Commute
 typeOf: dcs:StatVarGroup
