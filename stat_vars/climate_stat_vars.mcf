@@ -19,6 +19,13 @@ populationType: dcs:Place
 measuredProperty: dcs:temperature
 statType: dcs:minValue
 
+Node: dcid:Mean_Temperature
+description: "Mean near-surface air temperature"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:temperature
+statType: dcs:meanValue
+
 Node: dcid:Temperature
 description: "Near-surface air temperature"
 typeOf: dcs:StatisticalVariable
@@ -619,6 +626,116 @@ measuredProperty: dcs:concentration
 statType: dcs:meanValue
 solute: dcs:Oxygen
 solvent: dcs:Water
+
+## Weather
+
+Node: dcid:Max_Rainfall
+description: "Max near-surface rainfall"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:rainfall
+statType: dcs:maxValue
+
+Node: dcid:Min_Rainfall
+description: "Min near-surface rainfall"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:rainfall
+statType: dcs:minValue
+
+Node: dcid:Mean_Rainfall
+description: "Mean near-surface rainfall"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:rainfall
+statType: dcs:meanValue
+
+Node: dcid:Max_Snowfall
+description: "Max near-surface snowfall"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:snowfall
+statType: dcs:maxValue
+
+Node: dcid:Min_Snowfall
+description: "Min near-surface snowfall"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:snowfall
+statType: dcs:minValue
+
+Node: dcid:Mean_Snowfall
+description: "Mean near-surface snowfall"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:snowfall
+statType: dcs:meanValue
+
+Node: dcid:Max_BarometricPressure
+description: "Max near-surface barometric pressure"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:barometricPressure
+statType: dcs:maxValue
+
+Node: dcid:Min_BarometricPressure
+description: "Min near-surface barometric pressure"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:barometricPressure
+statType: dcs:minValue
+
+Node: dcid:Mean_BarometricPressure
+description: "Mean near-surface barometric pressure"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:barometricPressure
+statType: dcs:meanValue
+
+Node: dcid:Max_Humidity_RelativeHumidity
+description: "Max near-surface relative humidity"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:humidity
+humidityParameter: dcs:RelativeHumidity
+statType: dcs:maxValue
+
+Node: dcid:Min_Humidity_RelativeHumidity
+description: "Min near-surface relative humidity"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:humidity
+humidityParameter: dcs:RelativeHumidity
+statType: dcs:minValue
+
+Node: dcid:Mean_Humidity_RelativeHumidity
+description: "Mean near-surface relative humidity"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:humidity
+humidityParameter: dcs:RelativeHumidity
+statType: dcs:meanValue
+
+Node: dcid:Max_Visibility
+description: "Max near-surface visibility"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:visibility
+statType: dcs:maxValue
+
+Node: dcid:Min_Visibility
+description: "Min near-surface visibility"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:visibility
+statType: dcs:minValue
+
+Node: dcid:Mean_Visibility
+description: "Mean near-surface visibility"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:visibility
+statType: dcs:meanValue
 
 ### Misc
 
