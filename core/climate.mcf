@@ -311,6 +311,33 @@ description: "Measure of the surface level of bodies of water, etc."
 domainIncludes: dcs:Water, dcs:BodyOfWater
 rangeIncludes: dcs:Quantity
 
+Node: dcid:atmosphericPressure
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Quantity
+name: "atmosphericPressure"
+
+Node: dcid:dewPointTemperature
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Quantity
+name: "dewPointTemperature"
+description: "Temperature to which air must be cooled to become saturated with water vapor, assuming constant air pressure and water content."
+descriptionUrl: "https://en.wikipedia.org/wiki/Dew_point"
+
+Node: dcid:precipitation
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Quantity
+name: "precipitation"
+
+Node: dcid:windComponent
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:WindComponentEnum
+name: "windComponent"
+description: "The component of wind vector, which might be one of U, V or Z."
+
 ## Enums
 
 Node: dcid:HumidityParameterCategoryEnum
@@ -532,6 +559,24 @@ Node: dcs:Downwelling
 typeOf: dcs:RadiationDirectionEnum
 name: "Downwelling"
 
+Node: dcid:WindComponentEnum
+typeOf: schema:Enumeration
+subClassOf: schema:Class
+name: "WindComponentEnum"
+description: "Represents the components of the wind vector."
+
+Node: dcid:UComponent
+typeOf: dcs:WindComponentEnum
+name: "UComponent"
+
+Node: dcid:VComponent
+typeOf: dcs:WindComponentEnum
+name: "VComponent"
+
+Node: dcid:ZComponent
+typeOf: dcs:WindComponentEnum
+name: "ZComponent"
+
 ## Units
 
 Node: dcid:MicrogramsPerCubicMeter
@@ -577,6 +622,10 @@ Node: dcid:MicroseimensPerCentimeter
 typeOf: dcs:UnitOfMeasure
 name: "MicroseimensPerCentimeter"
 description: "Microseimens per Centimeter (μS/cm) is a traditional unit of mesaure to determine specific conductance, in other words the amount of electricity that an electrolyte solution can conduct."
+
+Node: dcid:Pascal
+typeOf: dcs:PressureUnitOfMeasure
+name: "Pascal"
 
 ## IPCC Confidence levels
 

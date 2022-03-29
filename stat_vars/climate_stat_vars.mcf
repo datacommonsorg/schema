@@ -745,3 +745,42 @@ name: "Surface area"
 populationType: schema:Thing
 measuredProperty: dcs:area
 statType: dcs:measuredValue
+
+### ERA5 Basic Variables
+
+Node: dcid:DewPointTemperature_SurfaceLevel
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:dewPointTemperature
+statType: dcs:measuredValue
+height: dcs:SurfaceLevel
+
+Node: dcid:Precipitation_SurfaceLevel
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:precipitation
+statType: dcs:measuredValue
+height: dcs:SurfaceLevel
+
+Node: dcid:AtmosphericPressure_SurfaceLevel
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:atmosphericPressure
+statType: dcs:measuredValue
+height: dcs:SurfaceLevel
+
+Node: dcid:WindSpeed_UComponent_Height10Meters
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:windSpeed
+statType: dcs:measuredValue
+windComponent: dcs:UComponent
+height: [10 Meter]
+
+Node: dcid:WindSpeed_VComponent_Height10Meters
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Place
+measuredProperty: dcs:windSpeed
+statType: dcs:measuredValue
+windComponent: dcs:VComponent
+height: [10 Meter]
