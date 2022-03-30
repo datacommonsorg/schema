@@ -1803,6 +1803,13 @@ name: COVID_19
 description: "Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)."
 descriptionUrl: "https://en.wikipedia.org/wiki/Coronavirus_disease_2019"
 
+Node: dcid:HeatStress
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "HeatStress"
+description: "Exposure to extreme heat can result in occupational illnesses and injuries. Heat stress can result in heat stroke, heat exhaustion, heat cramps, or heat rashes."
+descriptionUrl: "https://www.cdc.gov/niosh/topics/heatstress/default.html"
+isProvisional: schema:True
+
 Node: dcid:PatientDeceased
 typeOf: dcs:MedicalStatusEnum
 name: PatientDeceased
@@ -1829,6 +1836,10 @@ typeOf: dcs:MedicalStatusEnum
 
 Node: dcid:PatientOnVentilator
 name: "PatientOnVentilator"
+typeOf: dcs:MedicalStatusEnum
+
+Node: dcid:VisitedEmergencyDepartment
+name: "VisitedEmergencyDepartment"
 typeOf: dcs:MedicalStatusEnum
 
 Node: dcid:Positive
@@ -2062,3 +2073,7 @@ typeOf: dcs:FBI_MeasurementQualifierEnum
 Node: dcid:Victim
 name: "Victim"
 typeOf: dcs:FBI_MeasurementQualifierEnum
+
+Node: dcid:SummerSeason
+name: "SummerSeason"
+typeOf: dcs:ClimaticSeasonEnum
