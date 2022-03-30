@@ -1970,6 +1970,32 @@ domainIncludes: dcs:EpaReportingFacility
 rangeIncludes: schema:Text
 description: "US EPA facility identifier from the Facility Registry Service."
 
+# Parent Companies
+
+Node: dcid:EpaParentCompany
+dcid: "EpaParentCompany"
+name: "EpaParentCompany"
+subClassOf: dcid:Organization
+description: "EPA Parent Company associated to some  facility in the Greenhouse Gas Reporting Program (GHGRP)."
+typeOf: dcid:Class
+
+Node: dcid:locatedIn
+dcid: "locatedIn"
+name: "locatedIn"
+rangeIncludes: dcid:Place
+typeOf: dcid:Property
+description: "A property which denotes places that an Organization's official location, e.g. the headquarters, is located in."
+domainIncludes: dcs:Organization
+
+# Parent Company Ownership
+
+Node: dcid:ownershipPercentage
+typeOf: schema:Property
+domainIncludes: dcs:EpaParentCompany
+rangeIncludes: schema:Number
+name: ownershipPercentage
+
+
 # Properties
 
 Node: dcs:emissionSource
