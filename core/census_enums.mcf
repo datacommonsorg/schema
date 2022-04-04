@@ -1663,12 +1663,22 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "USC_ResidentStatusEnum"
 
+Node: dcid:USResident
+typeOf:dcs:USC_ResidentStatusEnum
+name: "US Resident"
+
+Node: dcid:NonUSResident
+typeOf:dcs:USC_ResidentStatusEnum
+name: "Non-US Resident"
+
 Node: dcid:DifferentHouse1YearAgo
 typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:USResident
 name: "DifferentHouse1YearAgo"
 
 Node: dcid:SameHouse1YearAgo
 typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:USResident
 name: "SameHouse1YearAgo"
 
 Node: dcid:DifferentHouseInTheUS
