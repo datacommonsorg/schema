@@ -6,6 +6,7 @@ populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 measurementDenominator: dcs:area
+name: "Population Density"
 
 # Employment Per Sector
 
@@ -338,6 +339,7 @@ dcid: "GrowthRate_Count_Person"
 populationType: dcid:Person
 typeOf: dcid:StatisticalVariable
 statType: dcid:growthRate
+name: "Population Growth Rate"
 
 
 Node: dcid:Count_BirthEvent_AsAFractionOfCount_Person
@@ -355,6 +357,7 @@ populationType: dcid:Person
 dcid: "IncrementalCount_Person"
 statType: dcid:measuredValue
 measuredProperty: dcid:incrementalCount
+name: "Population Change"
 
 
 Node: dcid:Count_Person
@@ -2869,6 +2872,7 @@ typeOf: dcid:StatisticalVariable
 dcid: "MeanMothersAge_BirthEvent"
 statType: dcid:meanValue
 populationType: dcid:BirthEvent
+name: "Mean Mother's Age at Birth"
 
 
 Node: dcid:FertilityRate_Person_Female
@@ -2886,6 +2890,7 @@ statType: dcid:medianValue
 typeOf: dcid:StatisticalVariable
 measuredProperty: dcid:mothersAge
 dcid: "MedianMothersAge_BirthEvent"
+name: "Median Mother's Age at Birth"
 
 # GDP
 # TODO(b/160617613): Dedup this and Amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita
