@@ -2025,26 +2025,26 @@ typeOf: dcs:SexualOrientationEnum
 description: "Common initialism for 'lesbian, gay, bisexual, and transgender,'to refer to community organizations or events that serve lesbian, gay, bisexual, transgender, and allied people."
 descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
 
-Node: dcid:KnownOffender
-name: "KnownOffender"
+Node: dcid:OffenderAttributesKnown
+name: "OffenderAttributesKnown"
 typeOf: dcs:OffenderTypeEnum
 description: "The term known offender does not imply the suspect’s identity is known; rather, the term indicates some aspect of the suspect was identified, thus distinguishing the suspect from an unknown offender."
 descriptionUrl: "https://ucr.fbi.gov/hate-crime/2019/resource-pages/methodology"
 
-Node: dcid:KnownOffenderRace
-name: "KnownOffenderRace"
+Node: dcid:OffenderRaceKnown
+name: "OffenderRaceKnown"
 typeOf: dcs:OffenderTypeEnum
-specializationOf: dcs:KnownOffender
+specializationOf: dcs:OffenderAttributesKnown
 
-Node: dcid:KnownOffenderAge
-name: "KnownOffenderAge"
+Node: dcid:OffenderAgeKnown
+name: "OffenderAgeKnown"
 typeOf: dcs:OffenderTypeEnum
-specializationOf: dcs:KnownOffender
+specializationOf: dcs:OffenderAttributesKnown
 
-Node: dcid:KnownOffenderEthnicity
-name: "KnownOffenderEthnicity"
+Node: dcid:OffenderEthnicityKnown
+name: "OffenderEthnicityKnown"
 typeOf: dcs:OffenderTypeEnum
-specializationOf: dcs:KnownOffender
+specializationOf: dcs:OffenderAttributesKnown
 
 Node: dcid:UnknownOffender
 name: "UnknownOffender"
