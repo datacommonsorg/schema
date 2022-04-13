@@ -483,18 +483,33 @@ typeOf: dcs:USC_HealthInsuranceEnum
 dcid: "WithPrivateHealthInsurance"
 name: "WithPrivateHealthInsurance"
 
+Node: dcid:WithPrivateHealthInsuranceOnly
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithPrivateHealthInsuranceOnly"
+specializationOf: dcid:WithPrivateHealthInsurance
+
 Node: NoHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 dcid: "NoHealthInsurance"
 name: "NoHealthInsurance"
 
+Node: dcid:WithEmployerBasedHealthInsurance
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithEmployerBasedHealthInsurance"
+
 Node: dcid:WithEmployerBasedHealthInsuranceOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithEmployerBasedHealthInsuranceOnly"
+specializationOf: dcid:WithEmployerBasedHealthInsurance
+
+Node: dcid:WithTricareMilitaryHealthCoverage
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithTricareMilitaryHealthCoverage"
 
 Node: dcid:WithTricareMilitaryHealthCoverageOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithTricareMilitaryHealthCoverageOnly"
+specializationOf: dcid:WithTricareMilitaryHealthCoverage
 
 Node: dcid:WithVAHealthCareOnly
 typeOf: dcs:USC_HealthInsuranceEnum
@@ -508,9 +523,14 @@ Node: dcid:WithTwoOrMoreTypesOfHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithTwoOrMoreTypesOfHealthInsurance"
 
+Node: dcid:WithDirectPurchaseHealthInsurance
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithDirectPurchaseHealthInsurance"
+
 Node: dcid:WithDirectPurchaseHealthInsuranceOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithDirectPurchaseHealthInsuranceOnly"
+specializationOf: dcid:WithDirectPurchaseHealthInsurance
 
 Node: dcid:WithMedicareCoverageOnly
 typeOf: dcs:USC_HealthInsuranceEnum
