@@ -1810,17 +1810,100 @@ description: "Exposure to extreme heat can result in occupational illnesses and 
 descriptionUrl: "https://www.cdc.gov/niosh/topics/heatstress/default.html"
 isProvisional: schema:True
 
+Node: dcid:AcuteCondition
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Acute Condition"
+description: "Acute illnesses generally develop suddenly and last a short time, often only a few days or weeks."
+descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease"
+
+Node: dcid:ChronicCondition
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Chronic Condition"
+description: "Chronic conditions develop slowly and may worsen over an extended period of time—months to years."
+descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease"
+
+Node: dcid:PerinatalInfection
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Perinatal Infection"
+description: "Perinatal Infection, also referred as vertically transmitted infection is an infection caused by pathogens (such as bacteria and viruses) that use mother-to-child transmission, that is, transmission directly from the mother to an embryo, fetus, or baby during pregnancy or childbirth."
+descriptionUrl: "https://en.wikipedia.org/wiki/Vertically_transmitted_infection"
+
+Node: dcid:InvasiveDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Invasive Disease"
+description: "Invasive disease means that germs invade parts of the body that are normally free from germs."
+descriptionUrl: "https://www.cdc.gov/pneumococcal/about/infection-types.html"
+
+Node: dcid:NeuroinvasiveDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+specializationOf: dcs:InvasiveDisease
+name: "Neuroinvasive Disease"
+
+Node: dcid:NonNeuroinvasiveDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+specializationOf: dcs:InvasiveDisease
+name: "Non-neuroinvasive Disease"
+
+Node: dcid:CongenitalDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Congenital Disease"
+
+Node: dcid:NonCongenitalDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Non-congenital Disease"
+
+Node: dcid:DrugResistantDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Drug-resistant Disease"
+
+Node: dcid:NonDrugResistantDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Non Drug-Resistant Disease"
+
+Node: dcid:PostDiarrheal
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Post Diarrheal"
+
+Node: dcid:ImportedCase
+typeOf: dcs:MedicalStatusEnum
+name: "Imported Case"
+description: "An imported case means that the patient was infected non-locally and imported the disease into the local area. This covers a wider range of importations, not only including cases imported from abroad."
+descriptionUrl: "https://www.ijidonline.com/article/S1201-9712(21)00170-3/fulltext"
+
+Node: dcid:IndigenousCase
+typeOf: dcs:MedicalStatusEnum
+name: "Indigenous Case"
+description: "An indigenous case means that the patient was infected locally and the disease is indigenous to the local area"
+
+Node: dcid:ClinicalCase
+typeOf: dcs:MedicalStatusEnum
+name: "Clinical Case"
+description: "In epidemiology, a clinical case definition, a clinical definition, or simply a case definition lists the clinical criteria by which public health professionals determine whether a person's illness is included as a case in an outbreak investigation—that is, whether a person is considered directly affected by an outbreak"
+descriptionUrl: "https://en.wikipedia.org/wiki/Clinical_case_definition"
+
 Node: dcid:PatientDeceased
 typeOf: dcs:MedicalStatusEnum
-name: PatientDeceased
+name: "Patient Deceased"
 
-Node: dcid:ConfirmedCase
+Node: dcid:PediatricMortality
 typeOf: dcs:MedicalStatusEnum
-name: ConfirmedCase
+specializationOf: dcs:PatientDeceased
+name: "Pediatric Mortality"
+description: "Mortality of patients admitted in Pediatric Intensive Care Unit (PICU)"
 
 Node: dcid:ConfirmedOrProbableCase
 typeOf: dcs:MedicalStatusEnum
-name: ConfirmedOrProbableCase
+name: "Confirmed or Probable Case"
+
+Node: dcid:ConfirmedCase
+typeOf: dcs:MedicalStatusEnum
+specializationOf: dcs:ConfirmedOrProbableCase
+name: "Confirmed Case"
+
+Node: dcid:ProbableCase
+typeOf: dcs:MedicalStatusEnum
+specializationOf: dcs:ConfirmedOrProbableCase
+name: "Probable Case"
 
 Node: dcid:PatientRecovered
 name: "PatientRecovered"
@@ -1986,6 +2069,10 @@ descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-col
 Node: dcid:TransgenderOrGenderNonConforming
 typeOf: schema:GenderType
 name: "TransgenderOrGenderNonConforming"
+
+Node: dcid:CDC_GenderUnknownOrNotStated
+typeOf: schema:GenderType
+name: "CDC_GenderUnknownOrNotStated"
 
 Node: dcid:Homosexual
 name: "Homosexual"

@@ -232,3 +232,72 @@ typeOf: schema:Property
 domainIncludes: dcs:Atmosphere
 rangeIncludes: schema:Float
 description: "The Standardized Precipitation Index (SPI) is a widely used index to characterize meteorological drought on a range of timescales."
+
+
+## CDC WONDER: NNDSS - Infectious Diseases
+Node: dcid:serotype
+name: "serotype"
+typeOf: dcs:Property
+domainIncludes: dcs:SerotypeEnum
+rangeIncludes: dcs:SerotypeEnum
+description: "Serotypes are groups within a single species of microorganisms, such as bacteria or viruses, which share distinctive surface structures."
+descriptionUrl: "https://www.cdc.gov/salmonella/reportspubs/salmonella-atlas/serotyping-importance.html"
+
+Node: dcid:SerotypeEnum
+name: "SerotypeEnum"
+typeOf: dcs:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:AllSerotypes
+typeOf: dcs:SerotypeEnum
+name: "All serotypes"
+
+Node: dcid:SerotypeB
+typeOf: dcs:SerotypeEnum
+name: "Serotype-B"
+
+Node: dcid:UnknownSerotype
+typeOf: dcs:SerotypeEnum
+name: "Unknown serotype"
+
+Node: dcid:NonSerotypeB
+typeOf: dcs:SerotypeEnum
+name: "Non-B Serotype"
+
+Node: dcid:serogroup
+name: "serogroup"
+typeOf: dcs:Property
+domainIncludes: dcs:SerogroupEnum
+rangeIncludes: dcs:SerogroupEnum
+description: "A group of serotypes that have one or more antigens in common"
+descriptionUrl: "https://www.merriam-webster.com/medical/serogroup"
+
+Node: dcid:SerogroupEnum
+name: "SerogroupEnum"
+typeOf: dcs:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:OtherSerogroups
+typeOf: dcs:SerogroupEnum
+name: "Other serogroups"
+
+Node: dcid:UnknownSerogroups
+typeOf: dcs:SerogroupEnum
+name: "Unknown serogroups"
+
+Node: dcid:AllSerogroups
+typeOf: dcs:SerogroupEnum
+name: "All serogroups"
+
+Node: dcid:ACWYSerogroup
+typeOf: dcs:SerogroupEnum
+name: "Serogroups ACWY"
+
+Node: dcid:SerogroupB
+typeOf: dcs:SerogroupEnum
+name: "Serogroup B"
+
+Node: dcid:SerogroupA
+typeOf: dcs:SerogroupEnum
+name: "Serogroup A"
+
