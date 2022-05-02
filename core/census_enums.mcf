@@ -514,10 +514,12 @@ specializationOf: dcid:WithTricareMilitaryHealthCoverage
 Node: dcid:WithVAHealthCareOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithVAHealthCareOnly"
+specializationOf: dcid:WithVAHealthCare
 
 Node: dcid:WithMedicaidOrMeansTestedPublicCoverageOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithMedicaidOrMeansTestedPublicCoverageOnly"
+specializationOf: dcid:WithMedicaidOrMeansTestedPublicCoverage
 
 Node: dcid:WithTwoOrMoreTypesOfHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
@@ -535,6 +537,7 @@ specializationOf: dcid:WithDirectPurchaseHealthInsurance
 Node: dcid:WithMedicareCoverageOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithMedicareCoverageOnly"
+specializationOf: dcid:WithMedicareCoverage
 
 Node: dcid:WithPublicCoverage
 typeOf: dcs:USC_HealthInsuranceEnum
@@ -543,6 +546,23 @@ name: "WithPublicCoverage"
 Node: dcid:WithOneTypeOfHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithOneTypeOfHealthInsurance"
+
+Node: dcid:WithMedicareCoverage
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithMedicareCoverage"
+
+Node: dcid:WithMedicaidOrMeansTestedPublicCoverage
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithMedicaidOrMeansTestedPublicCoverage"
+
+Node: dcid:WithVAHealthCare
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithVAHealthCare"
+
+Node: dcid:WithPublicHealthInsuranceOnly
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithPublicHealthInsuranceOnly"
+specializationOf: dcid:WithPublicHealthInsurance
 
 Node: IncomeStatusEnum
 typeOf: schema:Class
