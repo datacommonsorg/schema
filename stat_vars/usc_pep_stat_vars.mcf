@@ -13,6 +13,7 @@ populationType: dcs:Person
 residentStatus: dcs:USResident
 statType: dcs:measuredValue
 measuredProperty: dcs:count
+name: "Population: US Resident"
 
 Node: dcid:Count_Person_USResidentOrInUSArmedForcesOverseas
 typeOf: dcs:StatisticalVariable
@@ -20,6 +21,7 @@ populationType: dcs:Person
 residentStatus: dcs:USResident__InUSArmedForcesOverseas
 statType: dcs:measuredValue
 measuredProperty: dcs:count
+name: "Population: US Resident or US Armed Forces Overseas"
 
 Node: dcid:Count_Person_Civilian
 typeOf: dcs:StatisticalVariable
@@ -27,3 +29,10 @@ populationType: dcs:Person
 armedForcesStatus: dcs:Civilian
 statType: dcs:measuredValue
 measuredProperty: dcs:count
+
+Node: dcid:Count_Person_NonWhite
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+race: dcs:NonWhite
