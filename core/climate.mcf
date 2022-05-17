@@ -65,6 +65,20 @@ description: "A place representing a uniform 1x1 degree grid on the surface of t
 
 ## Properties
 
+Node: dcid:heavyPrecipitationIndex
+typeOf: schema:Property
+name: "heavyPrecipitationIndex"
+description: "Portion of total rainfall within a given time-period that occured on 'extreme' precipitation days (defined as 1st percentile of rainfall)"
+domainIncludes: dcs:Place
+rangeIncludes: schema:Float
+
+Node: dcid:consecutiveDryDays
+typeOf: schema:Property
+name: "consecutiveDryDays"
+description: "Maximum number of consecutive dry days in the given time period"
+domainIncludes: dcs:Place
+rangeIncludes: schema:Float
+
 Node: dcid:airQualitySiteMonitor
 typeOf: schema:Property
 description: "Parameter occurrence code for monitor in a AirQualitySite."
