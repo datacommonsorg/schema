@@ -1,27 +1,3 @@
-Node: dcid:standardDeviation
-typeOf: schema:Property
-name: "standardDeviation"
-domainIncludes: dcs:StatVarObservation
-rangeIncludes: dcs:Number
-description: "A measure of the amount of variation or dispersion of a set of values"
-descriptionUrl: "https://en.wikipedia.org/wiki/Standard_deviation"
-
-Node: dcid:skewness
-typeOf: schema:Property
-name: "skewness"
-domainIncludes: dcs:StatVarObservation
-rangeIncludes: dcs:Number
-description: "A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean"
-descriptionUrl: "https://en.wikipedia.org/wiki/Skewness"
-
-Node: dcid:kurtosis
-typeOf: schema:Property
-name: "kurtosis"
-domainIncludes: dcs:StatVarObservation
-rangeIncludes: dcs:Number
-description: "A measure of the 'tailedness' of the probability distribution of a real-valued random variable"
-descriptionUrl: "https://en.wikipedia.org/wiki/Kurtosis"
-
 Node: dcid:typeOf
 name: "typeOf"
 typeOf: schema:Property
@@ -656,6 +632,30 @@ rangeIncludes: schema:Number
 name: "medianValue"
 typeOf: schema:Property
 domainIncludes: schema:Observation
+
+Node: dcid:stdDeviationValue
+typeOf: schema:Property
+name: "stdDeviationValue"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: dcs:Number
+description: "A measure of the amount of variation or dispersion of a set of values"
+descriptionUrl: "https://en.wikipedia.org/wiki/Standard_deviation"
+
+Node: dcid:skewnessValue
+typeOf: schema:Property
+name: "skewnessValue"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: dcs:Number
+description: "A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean"
+descriptionUrl: "https://en.wikipedia.org/wiki/Skewness"
+
+Node: dcid:kurtosisValue
+typeOf: schema:Property
+name: "kurtosisValue"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: dcs:Number
+description: "A measure of the 'tailedness' of the probability distribution of a real-valued random variable"
+descriptionUrl: "https://en.wikipedia.org/wiki/Kurtosis"
 
 Node: employment
 dcid: "employment"
