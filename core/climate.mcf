@@ -772,6 +772,45 @@ name: "S2CellLevel11"
 description: "S2 cell at level 11 which corresponds to an average area of 20.27 sq km."
 subClassOf: schema:Place
 
+## FEMA NRI
+
+###  FEMA NRI-specific measuredProperties
+Node: dcid:femaSocialVulnerability
+typeOf: dcid:Property
+description: "The susceptibility of social groups to the adverse impacts of natural hazards, including disproportionate death, injury, loss, or disruption of livelihood. This is a measure defined and computed by the US Federal Emergency Management Agency (FEMA)."
+descriptionUrl: "https://hazards.fema.gov/nri/social-vulnerability"
+name: "femaSocialVulnerability"
+domainIncludes: dcid:NaturalHazardImpact
+
+Node: dcid:femaCommunityResilience
+typeOf: dcid:Property
+description: "The ability of a community to prepare for anticipated natural hazards, adapt to changing conditions, and withstand and recover rapidly from disruptions. This is a measure defined and computed by the US Federal Emergency Management Agency (FEMA)."
+descriptionUrl: "https://hazards.fema.gov/nri/community-resilience"
+name: "femaCommunityResilience"
+domainIncludes: dcid:NaturalHazardImpact
+
+# New unit: Fema Risk Index
+Node: dcid:femaNaturalHazardRiskIndex
+typeOf: dcid:Property
+description: "The potential for negative impacts as a result of a natural hazard. This is a measure defined and computed by the US Federal Emergency Management Agency (FEMA)."
+descriptionUrl: "https://hazards.fema.gov/nri/determining-risk"
+name: "femaNaturalHazardRiskIndex"
+domainIncludes: dcid:NaturalHazardImpact
+
+### FEMA NRI-specific units
+Node: dcid:FemaNationalRiskScore
+typeOf: dcid:UnitOfMeasure
+description: "A unit describing the relative risk from natural hazards that a place is estimated to be, according to the FEMA National Risk Index study. Ranging from 0 to 100, where 0 is the least at risk, and 100 is the most at risk. This is a relative scoring system defined and computed by the US Federal Emergency Management Agency (FEMA)."
+name: "FemaNationalRiskScore"
+descriptionUrl: "https://hazards.fema.gov/nri/understanding-scores-ratings"
+
+### FEMA NRI-specific population type
+Node: dcid:NaturalHazardImpact
+typeOf: dcid:Class
+description: "Negative impacts, such as destruction or death, imposed upon factors such as Buildings, People, and Agriculture through occurrences of natural hazards."
+name: "NaturalHazardImpact"
+subClassOf: dcid:Intangible
+
 ## Misc
 
 Node: dcid:CMIP6ReferencePeriod

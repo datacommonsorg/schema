@@ -338,6 +338,30 @@ typeOf: schema:Class
 name: "NorthernLightsEvent"
 subClassOf: dcs:MeteorologicalEvent
 
+Node: dcid:ColdWaveEvent
+typeOf: dcid:Class
+name: "ColdWaveEvent"
+description: "Occurrence of a cold wave event."
+subClassOf: dcid:MeteorologicalEvent
+
+Node: dcid:HeatWaveEvent
+typeOf: dcid:Class
+name: "HeatWaveEvent"
+description: "Occurrence of a heat wave event."
+subClassOf: dcid:MeteorologicalEvent
+
+Node: dcid:RiverineFloodingEvent
+typeOf: dcid:Class
+name: "RiverineFloodingEvent"
+description: "Occurrence of a riverine flooding event."
+subClassOf: dcid:Event
+
+Node: dcid:VolcanicActivityEvent
+typeOf: dcid:Class
+name: "VolcanicActivityEvent"
+description: "Occurrence of a volcanic activity event."
+subClassOf: dcid:Event
+
 ## CYCLONE CLASSIFICATION ENUMS
 Node: dcid:CycloneTypeEnum
 typeOf: schema:Class
@@ -789,3 +813,9 @@ typeOf: schema:Property
 domainIncludes: dcs:WildlandFireEvent
 rangeIncludes: schema:Quantity
 
+Node: dcid:expectedLoss
+typeOf: dcid:Property
+description: "The estimated economic loss resulting from natural hazards. It quantifies loss for relevant consequence types (buildings, people, and agriculture), and in aggregate."
+descriptionUrl: "https://hazards.fema.gov/nri/expected-annual-loss"
+name: "expectedLoss"
+domainIncludes: dcid:NaturalHazardImpact
