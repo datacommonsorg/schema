@@ -1,3 +1,4 @@
+
 Node: dcid:typeOf
 name: "typeOf"
 typeOf: schema:Property
@@ -791,7 +792,7 @@ description: "The ethnicity of the mother"
 Node: dcid:mothersNativity
 typeOf: schema:Property
 name: "mothersNativity"
-rangeIncludes: dcs:USC_NativityEnum
+rangeIncludes: dcs:NativityEnum
 domainIncludes: schema:BirthEvent
 description: "The nativity of the mother"
 
@@ -2440,6 +2441,11 @@ name: "Rural"
 typeOf: dcs:HumanSettlementClassificationEnum
 description: "A geographic area that is located outside towns and cities, typically with low population density and small settlements."
 descriptionUrl: "https://en.wikipedia.org/wiki/Rural_area"
+
+Node: dcid:SemiUrban
+name: "SemiUrban"
+typeOf: dcs:HumanSettlementClassificationEnum
+description: "A geographic area with population density lower than urban and more than rural."
 
 Node: dcid:isoCode
 domainIncludes: schema:Place

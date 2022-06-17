@@ -153,6 +153,10 @@ typeOf: dcid:SubstanceTypeEnum
 name: "MisusedBenzodiazepines"
 specializationOf: dcs:IllicitDrug
 
+Node: dcid:ECigarettes
+typeOf: dcid:SubstanceTypeEnum
+name: "ECigarettes"
+
 Node: dcid:UsageFrequencyEnum
 typeOf: schema:Class
 name: "UsageFrequencyEnum"
@@ -344,7 +348,7 @@ domainIncludes: dcs:Person
 Node: dcid:substanceUsageFrequency
 typeOf: schema:Property
 name: "substanceUsageFrequency"
-rangeIncludes: dcs:UsageFrequencyEnum
+rangeIncludes: dcs:UsageFrequencyEnum, dcs:QuantityRange
 domainIncludes: dcs:Person
 
 Node: dcid:alcoholUsage
@@ -376,4 +380,3 @@ typeOf: schema:Property
 name: "substanceUseDisorder"
 rangeIncludes: dcs:SubstanceUseDisorderEnum
 domainIncludes: dcs:Person
-

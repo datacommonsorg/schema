@@ -57,3 +57,303 @@ typeOf: schema:Property
 domainIncludes: dcs:Debt
 rangeIncludes: schema:AdministrativeArea, schema:Person
 
+# BMI Classification
+Node: dcid:BodyMassIndexClassificationEnum
+name: "BodyMassIndexClassificationEnum"
+typeOf: schema:Class
+subClassOf:  dcs:HealthBehaviorEnum
+description: "Body Mass Index(BMI) CLassification."
+descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Body_mass_index_(BMI)"
+
+Node: dcid:Underweight
+name: "Underweight"
+typeOf: dcs:BodyMassIndexClassificationEnum
+description: "A person having body mass index (BMI) smaller than 18.5."
+descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Underweight"
+
+Node: dcid:Normalweight
+name: "Normalweight"
+typeOf: dcs:BodyMassIndexClassificationEnum
+description: "A person having body mass index (BMI) greater than or equal to 18.5 and less than 25."
+descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Normal_weight"
+
+Node: dcid:PreObese
+name: "PreObese"
+typeOf: dcs:BodyMassIndexClassificationEnum
+description: "A person having body mass index (BMI) greater than or equal to 25 and less than 30."
+descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Pre-obese"
+
+# Nativity
+Node: dcid:Native
+typeOf: dcs:NativityEnum
+name: "Native"
+description: "Native to the reporting region/country."
+
+Node: dcid:ForeignBorn
+typeOf: dcs:NativityEnum
+name: "Foreign Born"
+description: "Native to a place other than the reporting region/country."
+
+Node: dcid:ForeignBornWithinEU28
+typeOf: dcs:NativityEnum
+name: "ForeignBornWithinEU28"
+description: "Native to a place within EU28 other than the reporting region/country."
+
+Node: dcid:ForeignBornOutsideEU28
+typeOf: dcs:NativityEnum
+name: "ForeignBornOutsideEU28"
+description: "Native to a place outside EU28."
+
+# Citizenship
+Node: dcid:Citizen
+typeOf: dcs:CitizenshipEnum
+name: "Citizen"
+description: "Citizen of reporting region/country."
+
+Node: dcid:NotACitizen
+typeOf: dcs:CitizenshipEnum
+name: "NotACitizen"
+description: "Citizen of a county other than the reporting region/country."
+
+Node: dcid:WithinEU28AndNotACitizen
+typeOf: dcs:CitizenshipEnum
+name: "WithinEU28AndNotACitizen"
+specializationOf: dcs:NotACitizen
+description: "Citizen of a country within EU28 other than the reporting region/country."
+
+Node: dcid:CitizenOutsideEU28
+typeOf: dcs:CitizenshipEnum
+name: "CitizenOutsideEU28"
+description: "Citizen of a country outside EU28."
+
+# GlobalActivityLimitationindicator
+Node: dcid:GlobalActivityLimitationindicatorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GlobalActivityLimitationindicatorEnum"
+description: "Activity limitation is a dimension of health/disability capturing long-standing limitation in performing usual activities (due to health problems)."
+descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Activity_limitation"
+
+
+Node: dcid:ModerateActivityLimitation
+typeOf: dcs:GlobalActivityLimitationindicatorEnum
+name: "Moderate Activity Limitation"
+
+Node: dcid:SevereActivityLimitation
+typeOf: dcs:GlobalActivityLimitationindicatorEnum
+name: "Severe Activity Limitation"
+
+Node: dcid:LimitedActivityLimitation
+typeOf: dcs:GlobalActivityLimitationindicatorEnum
+name: "Limited Activity Limitation"
+
+Node: dcid:NoActivityLimitation
+typeOf: dcs:GlobalActivityLimitationindicatorEnum
+name: "No Activity Limitation"
+
+Node: dcid:globalActivityLimitationindicator
+name: "globalActivityLimitationindicator"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:GlobalActivityLimitationindicatorEnum
+description: "The Global Activity Limitation Indicator (GALI) refers to a single-item measure of functional status where individuals are asked to rate their long-term limitations in usual activities due to a health problem"
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4426645"
+
+# Exercise Type
+Node: dcid:ExerciseTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ExerciseTypeEnum"
+
+Node: dcid:Aerobic
+typeOf: dcs:ExerciseTypeEnum
+name: "Aerobic"
+
+Node: dcid:AerobicSports
+typeOf: dcs:ExerciseTypeEnum
+name: "AerobicSports"
+specializationOf: dcs:Aerobic
+
+Node: dcid:MuscleStrengthening
+typeOf: dcs:ExerciseTypeEnum
+name: "MuscleStrengthening"
+
+Node: dcid:Walking
+typeOf: dcs:ExerciseTypeEnum
+name: "Walking"
+
+Node: dcid:Cycling
+typeOf: dcs:ExerciseTypeEnum
+name: "Cycling"
+
+Node: dcid:exerciseType
+name: "exerciseType"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:ExerciseTypeEnum
+description: "Type of exercise."
+
+# Physical Activity
+Node: dcid:PhysicalActivityEnum
+typeOf: schema:Class
+subClassOf: dcs:HealthBehaviorEnum
+name: "PhysicalActivityEnum"
+
+Node: dcid:PhysicalActivity
+typeOf:dcs:PhysicalActivityEnum
+name: "Physical Activity"
+
+Node: dcid:HealthEnhancingPhysicalActivity
+typeOf: dcs:PhysicalActivityEnum
+specializationOf: dcs:PhysicalActivity
+name: "Health Enhancing Physical Activity"
+
+Node: dcid:WorkRelatedPhysicalActivity
+typeOf: dcs:PhysicalActivityEnum
+specializationOf: dcs:PhysicalActivity
+name: "Work Related Physical Activity"
+
+Node: dcid:NonWorkRelatedPhysicalActivity
+typeOf: dcs:PhysicalActivityEnum
+specializationOf: dcs:PhysicalActivity
+name: "Non Work Related PhysicalActivity"
+
+# Physical Activity Effort Level
+Node: dcid:PhysicalActivityEffortLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PhysicalActivityEffortLevelEnum"
+
+Node: dcid:HeavyActivityLevel
+typeOf: dcs:PhysicalActivityEffortLevelEnum
+name: "Heavy Activity Level"
+description: "Mostly heavy labour or physically demanding work."
+descriptionUrl: "https://ec.europa.eu/eurostat/cache/metadata/en/hlth_det_esms.htm"
+
+Node: dcid:ModerateActivityLevel
+typeOf: dcs:PhysicalActivityEffortLevelEnum
+name: "Moderate Activity Level"
+description: "Mostly walking or tasks involving moderate physical effort."
+descriptionUrl: "https://ec.europa.eu/eurostat/cache/metadata/en/hlth_det_esms.htm"
+
+Node: dcid:NoActivityOrLightActivityLevel
+typeOf: dcs:PhysicalActivityEffortLevelEnum
+name: "No Activity Or Light Activity Level"
+description: "Either not performing any working tasks or mostly sitting or standing."
+descriptionUrl: "https://ec.europa.eu/eurostat/cache/metadata/en/hlth_det_esms.htm"
+
+
+Node: dcid:physicalActivityEffortLevel
+name: "physicalActivityEffortLevel"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:PhysicalActivityEffortLevelEnum
+description: "Effort involved in performing physical activity"
+descriptionUrl: "https://ec.europa.eu/eurostat/cache/metadata/en/hlth_det_esms.htm"
+
+# Usage Frequency
+Node: dcid:OnceAWeek
+typeOf: dcid:UsageFrequencyEnum
+name: "OnceAWeek"
+
+Node: dcid:LessThanOnceAMonth
+typeOf: dcid:UsageFrequencyEnum
+name: "LessThanOnceAMonth"
+
+Node: dcid:NotUsedInTheLast12Months
+typeOf: dcid:UsageFrequencyEnum
+name: "NotUsedInTheLast12Months"
+
+Node: dcid:NeverUsed
+typeOf: dcid:UsageFrequencyEnum
+name: "NeverUsed"
+
+Node: dcid:RarelyOrNever
+typeOf: dcid:UsageFrequencyEnum
+name: "RarelyOrNever"
+
+Node: dcid:AtLeastOneHourPerDay
+typeOf: dcid:UsageFrequencyEnum
+name: "AtLeastOneHourPerDay"
+
+Node: dcid:LessThanOneHourPerDay
+typeOf: dcid:UsageFrequencyEnum
+name: "LessThanOneHourPerDay"
+
+Node: dcid:LessThanOnceAWeek
+typeOf: dcid:UsageFrequencyEnum
+name: "LessThanOnceAWeek"
+
+Node: dcid:AtLeastOnceAWeek
+typeOf: dcid:UsageFrequencyEnum
+name: "AtLeastOnceAWeek"
+
+Node: dcid:OccasionalUsage
+typeOf: dcid:UsageFrequencyEnum
+name: "OccasionalUsage"
+
+Node: dcid:EveryWeek
+typeOf: dcid:UsageFrequencyEnum
+name: "EveryWeek"
+
+Node: dcid:EveryMonth
+typeOf: dcid:UsageFrequencyEnum
+name: "EveryMonth"
+
+# Alcohol Consumption
+Node: dcid:AlcoholConsumption
+name: "AlcoholConsumption"
+typeOf: dcs:HealthBehaviorEnum
+description: "Alcohol Consumption."
+
+Node: dcid:HazardousAlcoholConsumption
+name: "HazardousAlcoholConsumption"
+typeOf: dcs:HealthBehaviorEnum
+description: "As per Eurostat Alcohol Consumption is classified as Hazardous when average rate of consumption is more than 20 grams pure alcohol daily for women and more than 40 grams daily for men."
+specializationOf: dcs:AlcoholConsumption
+
+# Smoking
+Node: dcid:NonSmoker
+typeOf: dcs:HealthBehaviorEnum
+name: "NonSmoker"
+
+Node: dcid:ExposureToTobaccoSmoke
+typeOf: dcs:HealthBehaviorEnum
+name: "ExposureToTobaccoSmoke"
+description: "Exposure to secondhand tobacco smoke."
+
+Node: dcid:FormerSmoker
+typeOf: dcs:HealthBehaviorEnum
+name: "FormerSmoker"
+description: "Person who was smoking earlier and not currently smoking"
+
+Node: dcid:activityDuration
+typeOf: schema:Property
+name: "activityDuration"
+rangeIncludes: dcs:QuantityRange, dcs:Duration
+domainIncludes: dcs:Person
+isPartOf: "http://meta.schema.org"
+description: "The duration of performing an activity."
+
+Node: dcid:substanceExposureFrequency
+typeOf: schema:Property
+name: "substanceExposureFrequency"
+rangeIncludes: dcs:UsageFrequencyEnum, dcs:QuantityRange
+domainIncludes: dcs:Person
+
+Node: dcid:substanceUsageHistory
+typeOf: schema:Property
+name: "substanceUsageHistory"
+rangeIncludes: dcs:QuantityRange
+domainIncludes: dcs:Person
+
+Node: dcid:substanceUsageQuantity
+typeOf: schema:Property
+name: "substanceUsageQuantity"
+rangeIncludes: dcs:QuantityRange
+domainIncludes: dcs:Person
+
+Node: dcid:Cigarettes
+typeOf: dcs:UnitOfMeasure
+name: "Cigarettes"
+description: "A count of the number of Cigarettes."
