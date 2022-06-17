@@ -39,6 +39,12 @@ subClassOf: dcs:Thing
 description: "Seven-character alpha-numeric string uniquely identifying a QualifierRecord and, along with the QualifierName, used to represent the Qualifier record in other elements."
 sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#QualifierUI"
 
+Node: dcid:medicalSubjectHeadingDescriptorID
+typeOf: schema:Property
+name: "medicalSubjectHeadingDescriptorID"
+domainIncludes: dcs:Disease, dcs:GeneticVariant
+rangeIncludes: dcs:Number, dcs:MeSHDescriptor
+
 Node: dcid:DiseaseSymptomAssociation
 name: "DiseaseSymptomAssociation"
 typeOf: schema:Class
@@ -333,6 +339,12 @@ domainIncludes: dcs:Disease
 rangeIncludes: schema:Text
 description: "An alternative disease ontology ID (DOID) associated with a disease."
 
+Node: dcid:parentDiseaseOntologyID
+typeOf: schema:Property
+name: "parentDiseaseOntologyID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+
 Node: dcid:diseaseSynonym
 typeOf: schema:Property
 name: "diseaseSynonym"
@@ -377,6 +389,12 @@ name: "icd10CMCode"
 domainIncludes: dcs:Disease
 rangeIncludes: dcs:ICD10Code
 description: "The disease diagnosis code for version 10 of the International Classification of Disease Ontology."
+
+Node: dcid:icd10ApproximateSynonym
+typeOf: dcs:Property
+name: "icd10ApproximateSynonym"
+domainIncludes: dcs:Disease
+rangeIncludes: dcs:ICD10Code
 
 Node: dcid:icd9CMID
 typeOf: schema:Property
