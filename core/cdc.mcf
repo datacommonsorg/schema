@@ -301,3 +301,800 @@ Node: dcid:SerogroupA
 typeOf: dcs:SerogroupEnum
 name: "Serogroup A"
 
+## NORS - Non-infectious diseases
+Node: dcid:transmissionMode
+name: "transmissionMode"
+typeOf: dcs:Property
+domainIncludes: dcs:Disease
+rangeIncludes: dcs:TranmissionModeEnum
+description: "An infectious agent may be transmitted from its natural reservoir to a susceptible host"
+descriptionUrl: "https://www.cdc.gov/csels/dsepd/ss1978/lesson1/section10.html"
+
+Node: dcid:TranmissionModeEnum
+name: "TranmissionModeEnum"
+typeOf: dcs:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:PersonToPersonTransmission
+typeOf: dcs:TranmissionModeEnum
+name: "Person-to-Person Transmission"
+
+Node: dcid:FoodborneTransmission
+typeOf: dcs:TranmissionModeEnum
+name: "Foodborne Transmission"
+
+Node: dcid:IndeterminateOrOtherOrUnknownTramissionMode
+typeOf: dcs:TranmissionModeEnum
+name: "Indeterminate or Other or Unknown Tramission Mode"
+
+Node: dcid:WaterborneTransmission
+typeOf: dcs:TranmissionModeEnum
+name: "Waterborne Transmission"
+
+Node: dcid:AnimalContactTransmission
+typeOf: dcs:TranmissionModeEnum
+name: "Transmission by Animal Contact"
+
+Node: dcid:EnvironmentalContaminationTransmissionExceptFoodOrWater
+typeOf: dcs:TranmissionModeEnum
+name: "Transmission by Environmental Contamination except Food or Water"
+
+Node: dcid:etiology
+name: "etiology"
+typeOf: dcs:Property
+domainIncludes: dcs:ChemicalSubstance, dcs:Disease, dcs:EtiologyEnum, dcs:EnergySourceEnum
+rangeIncludes: dcs:EtiologyEnum, dcs:EnergySourceEnum
+
+Node: dcid:EtiologyEnum
+typeOf: dcs:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:AcanthamoebaUnknown
+typeOf: dcs:EtiologyEnum
+name: "Acanthamoeba unknown"
+
+Node: dcid:Adenovirus
+typeOf: dcs:EtiologyEnum
+name: "Adenovirus"
+
+Node: dcid:AdenovirusB
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:Adenovirus
+name: "Adenovirus B"
+
+Node: dcid:AdenovirusF
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:Adenovirus
+name: "Adenovirus F"
+
+Node: dcid:AdenovirusOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:Adenovirus
+name: "Adenovirus other"
+
+Node: dcid:AdenovirusUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:Adenovirus
+name: "Adenovirus unknown"
+
+Node: dcid:AeromonasHydrophiliaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Aeromonas hydrophilia Etiology"
+
+Node: dcid:AeromonasUnknown
+typeOf: dcs:EtiologyEnum
+name: "Aeromonas unknown"
+
+Node: dcid:AlkalineWater
+typeOf: dcs:EtiologyEnum
+name: "Alkaline Water"
+
+Node: dcid:AmnesicShellfishPoison
+typeOf: dcs:EtiologyEnum
+name: "Amnesic shellfish poison"
+
+Node: dcid:AnatoxinA
+typeOf: dcs:EtiologyEnum
+name: "Anatoxin-a"
+
+Node: dcid:Anisakis
+typeOf: dcs:EtiologyEnum
+name: "Anisakis"
+
+Node: dcid:Astrovirus
+typeOf: dcs:EtiologyEnum
+name: "Anisakis"
+
+Node: dcid:AvianSchistosomes
+typeOf: dcs:EtiologyEnum
+name: "Avian schistosomes"
+
+Node: dcid:BacillusEtiology
+typeOf: dcs:EtiologyEnum
+name: "Bacillus Etiology"
+
+Node: dcid:BacillusCereusEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:BacillusEtiology
+name: "Bacillus cereus Etiology"
+
+Node: dcid:BacillusOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:BacillusEtiology
+name: "Bacillus other"
+
+Node: dcid:BacillusStearothermophilusEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:BacillusEtiology
+name: "Bacillus stearothermophilu Etiology"
+
+Node: dcid:BacillusSubtilusEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:BacillusEtiology
+name: "Bacillus subtilus Etiology"
+
+Node: dcid:BacillusUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:BacillusEtiology
+name: "Bacillus unknown"
+
+Node: dcid:BlastocystisHominisEtiology
+typeOf: dcs:EtiologyEnum
+name: "Blastocystis hominis Etiology"
+
+Node: dcid:ChlorineGas
+typeOf: dcs:EtiologyEnum
+name: "Chlorine Gas"
+
+Node: dcid:Ciguatoxin
+typeOf: dcs:EtiologyEnum
+name: "Ciguatoxin"
+
+Node: dcid:Brucella
+typeOf: dcs:EtiologyEnum
+name: "Brucella"
+
+Node: dcid:BrucellaUnknown
+typeOf: dcs:EtiologyEnum
+name: "Brucella unknown"
+specializationOf: dcs:Brucella
+
+Node: dcid:CampylobacterEtiology
+typeOf: dcs:EtiologyEnum
+name: "Campylobacter Etiology"
+
+Node: dcid:CampylobacterColiEtiology
+typeOf: dcs:EtiologyEnum
+name: "Campylobacter coli Etiology"
+specializationOf: dcs:CampylobacterEtiology
+
+Node: dcid:CampylobacterFetusEtiology
+typeOf: dcs:EtiologyEnum
+name: "Campylobacter fetus Etiology"
+specializationOf: dcs:CampylobacterEtiology
+
+Node: dcid:CampylobacterJejuniEtiology
+typeOf: dcs:EtiologyEnum
+name: "Campylobacter jejuni Etiology"
+specializationOf: dcs:CampylobacterEtiology
+
+Node: dcid:CampylobacterLariEtiology
+typeOf: dcs:EtiologyEnum
+name: "Campylobacter lari Etiology"
+specializationOf: dcs:CampylobacterEtiology
+
+Node: dcid:CampylobacterOther
+typeOf: dcs:EtiologyEnum
+name: "Campylobacter other"
+specializationOf: dcs:CampylobacterEtiology
+
+Node: dcid:CampylobacterUnknown
+typeOf: dcs:EtiologyEnum
+name: "Campylobacter unknown"
+specializationOf: dcs:CampylobacterEtiology
+
+Node: dcid:CleaningAgents
+typeOf: dcs:EtiologyEnum
+name: "Cleaning agents"
+
+Node: dcid:ClostridiumEtiology
+typeOf: dcs:EtiologyEnum
+name: "Clostridium Etiology"
+
+Node: dcid:ClostridiumBotulinumEtiology
+typeOf: dcs:EtiologyEnum
+name: "Clostridium botulinum Etiology"
+specializationOf: dcs:ClostridiumEtiology
+
+Node: dcid:ClostridiumDifficileEtiology
+typeOf: dcs:EtiologyEnum
+name: "Clostridium difficile Etiology"
+specializationOf: dcs:ClostridiumEtiology
+
+Node: dcid:ClostridiumOther
+typeOf: dcs:EtiologyEnum
+name: "Clostridium other"
+specializationOf: dcs:ClostridiumEtiology
+
+Node: dcid:ClostridiumPerfringensEtiology
+typeOf: dcs:EtiologyEnum
+name: "Clostridium perfringens Etiology"
+specializationOf: dcs:ClostridiumEtiology
+
+Node: dcid:ClostridiumUnknown
+typeOf: dcs:EtiologyEnum
+name: "Clostridium unknown"
+specializationOf: dcs:ClostridiumEtiology
+
+Node: dcid:CryptosporidiumEtiology
+typeOf: dcs:EtiologyEnum
+name: "Cryptosporidium Etiology"
+
+Node: dcid:CryptosporidiumHominisEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:CryptosporidiumEtiology
+name: "Cryptosporidium hominis Etiology"
+
+Node: dcid:CryptosporidiumOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:CryptosporidiumEtiology
+name: "Cryptosporidium other"
+
+Node: dcid:CryptosporidiumParvumEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:CryptosporidiumEtiology
+name: "Cryptosporidium parvum Etiology"
+
+Node: dcid:CryptosporidiumUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:CryptosporidiumEtiology
+name: "Cryptosporidium unknown"
+
+Node: dcid:Cyanotoxin
+typeOf: dcs:EtiologyEnum
+name: "Cyanotoxin"
+
+Node: dcid:CyanotoxinOther
+typeOf: dcs:EtiologyEnum
+name: "Cyanotoxin other"
+specializationOf: dcs:Cyanotoxin
+
+Node: dcid:CyanotoxinUnknown
+typeOf: dcs:EtiologyEnum
+name: "Cyanotoxin unknown"
+specializationOf: dcs:Cyanotoxin
+
+Node: dcid:CyclosporaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Cyclospora Etiology"
+
+Node: dcid:CyclosporaCayetanensisEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:CyclosporaEtiology
+name: "Cyclospora cayetanensis Etiology"
+
+Node: dcid:DisinfectionByproducts
+typeOf: dcs:EtiologyEnum
+name: "Disinfection byproducts"
+
+Node: dcid:EndolimaxNanaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Endolimax nana Etiology"
+
+Node: dcid:EntamoebaColiEtiology
+typeOf: dcs:EtiologyEnum
+name: "Entamoeba coli Etiology"
+
+Node: dcid:EntamoebaHistolyticaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Entamoeba histolytica Etiology"
+
+Node: dcid:EntamoebaUnknown
+typeOf: dcs:EtiologyEnum
+name: "Entamoeba unknown"
+
+Node: dcid:EnterobacterEtiology
+typeOf: dcs:EtiologyEnum
+name: "Enterobacter Etiology"
+
+Node: dcid:EnterobacterCloacaeEtiology
+typeOf: dcs:EtiologyEnum
+name: "Enterobacter cloacae Etiology"
+specializationOf: dcs:EnterobacterEtiology
+
+Node: dcid:EnterobacterOther
+typeOf: dcs:EtiologyEnum
+name: "Enterobacter other"
+specializationOf: dcs:EnterobacterEtiology
+
+Node: dcid:EnterococcusFaecalisEtiology
+typeOf: dcs:EtiologyEnum
+name: "Enterococcus faecalis"
+
+Node: dcid:EnterovirusCoxsackievirusAEtiology
+typeOf: dcs:EtiologyEnum
+name: "Enterovirus Coxsackievirus A Etiology"
+
+Node: dcid:EscherichiaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Escherichia"
+
+Node: dcid:EColiEnteroaggregativeEtiology
+typeOf: dcs:EtiologyEnum
+name: "Escherichia coli (E. Coli), Enteroaggregative Etiology"
+
+Node: dcid:EColiEnteroinvasiveEtiology
+typeOf: dcs:EtiologyEnum
+name: "Escherichia coli (E. Coli), Enteroinvasive Etiology"
+
+Node: dcid:EColiEnteropathogenicEtiology
+typeOf: dcs:EtiologyEnum
+name: "Escherichia coli (E. Coli), Enteropathogenic Etiology"
+
+Node: dcid:EColiEnterotoxigenicEtiology
+typeOf: dcs:EtiologyEnum
+name: "Escherichia coli (E. Coli), Enterotoxigenic Etiology"
+
+Node: dcid:EColiOther
+typeOf: dcs:EtiologyEnum
+name: "Escherichia coli (E. Coli), Other"
+
+Node: dcid:Gasoline
+typeOf: dcs:EtiologyEnum
+sameAs: dcs:BLSItem/SETB01
+name: "Gasoline"
+
+Node: dcid:GiardiaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Giardia Etiology"
+
+Node: dcid:GiardiaDuodenalisEtiology
+typeOf: dcs:EtiologyEnum
+name: "Giardia duodenalis Etiology"
+specializationOf: dcs:GiardiaEtiology
+
+Node: dcid:GiardiaUnknown
+typeOf: dcs:EtiologyEnum
+name: "Giardia unknown"
+specializationOf: dcs:GiardiaEtiology
+
+Node: dcid:HelicobacterCanadensisEtiology
+typeOf: dcs:EtiologyEnum
+name: "Helicobacter canadensis Etiology"
+
+Node: dcid:Heptachlor
+typeOf: dcs:EtiologyEnum
+name: "Heptachlor"
+
+Node: dcid:Herbicide
+typeOf: dcs:EtiologyEnum
+name: "Herbicide"
+
+Node: dcid:LegionellaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella Etiology"
+
+Node: dcid:LegionellaAnisaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella anisa Etiology"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaBozemaniiEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella bozemanii Etiology"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaDumoffiiEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella dumoffii Etiology"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaFeeleiiEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella feeleii Etiology"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaLongbeachaeEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella longbeachae Etiology"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaOther
+typeOf: dcs:EtiologyEnum
+name: "Legionella other"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaMicdadeiEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella micdadei Etiology"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaPneumophilaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Legionella pneumophila Etiology"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LegionellaUnknown
+typeOf: dcs:EtiologyEnum
+name: "Legionella unknown"
+specializationOf: dcs:LegionellaEtiology
+
+Node: dcid:LeptospiraInterrogansEtiology
+typeOf: dcs:EtiologyEnum
+name: "Leptospira interrogans Etiology"
+
+Node: dcid:LeptospiraUnknown
+typeOf: dcs:EtiologyEnum
+name: "Leptospira unknown"
+
+Node: dcid:ListeriaMonocytogenesEtiology
+typeOf: dcs:EtiologyEnum
+name: "Listeria monocytogenes Etiology"
+
+Node: dcid:ListeriaUnknown
+typeOf: dcs:EtiologyEnum
+name: "Listeria unknown"
+
+Node: dcid:MicrocoleusLyngbyeiEtiology
+typeOf: dcs:EtiologyEnum
+name: "Microcoleus lyngbyei Etiology"
+
+Node: dcid:Microcystis
+typeOf: dcs:EtiologyEnum
+name: "Microcystis"
+
+Node: dcid:MicrocystisUnknown
+typeOf: dcs:EtiologyEnum
+name: "Microcystis unknown"
+specializationOf: dcs:Microcystis
+
+Node: dcid:MycobacteriumAbscessusEtiology
+typeOf: dcs:EtiologyEnum
+name: "Mycobacterium abscessus Etiology"
+
+Node: dcid:MycobacteriumAviumEtiology
+typeOf: dcs:EtiologyEnum
+name: "Mycobacterium avium Etiology"
+
+Node: dcid:MycobacteriumAviumComplexEtiology
+typeOf: dcs:EtiologyEnum
+name: "Mycobacterium avium complex Etiology"
+
+Node: dcid:MycobacteriumOther
+typeOf: dcs:EtiologyEnum
+name: "Mycobacterium other"
+
+Node: dcid:MycobacteriumMageritenseEtiology
+typeOf: dcs:EtiologyEnum
+name: "Mycobacterium mageritense Etiology"
+
+Node: dcid:Mycotoxins
+typeOf: dcs:EtiologyEnum
+name: "Mycotoxins"
+
+Node: dcid:NaegleriaFowleriEtiology
+typeOf: dcs:EtiologyEnum
+name: "Naegleria fowleri Etiology"
+
+Node: dcid:NeurotoxicShellfishPoison
+typeOf: dcs:EtiologyEnum
+name: "Neurotoxic shellfish poison"
+
+Node: dcid:Norovirus
+typeOf: dcs:EtiologyEnum
+name: "Norovirus"
+
+Node: dcid:NorovirusGenogroupEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration, dcs:EtiologyEnum
+name: "NorovirusGenogroupEnum"
+specializationOf: dcs:Norovirus
+
+Node: dcid:NorovirusGenogroupI
+typeOf: dcs:NorovirusGenogroupEnum
+name: "Norovirus Genogroup I"
+
+Node: dcid:NorovirusGenogroupII
+typeOf: dcs:NorovirusGenogroupEnum
+name: "Norovirus Genogroup II"
+
+Node: dcid:NorovirusGenogroupIV
+typeOf: dcs:NorovirusGenogroupEnum
+name: "Norovirus Genogroup IV"
+
+Node: dcid:NorovirusGenogroupIX
+typeOf: dcs:NorovirusGenogroupEnum
+name: "Norovirus Genogroup IX"
+
+Node: dcid:NorovirusOther
+typeOf: dcs:NorovirusGenogroupEnum
+name: "Norovirus other"
+
+Node: dcid:NorovirusUnknown
+typeOf: dcs:NorovirusGenogroupEnum
+name: "Norovirus unknown"
+
+Node: dcid:NORSOthers
+typeOf: dcs:EtiologyEnum
+name: "NORS Others"
+
+Node: dcid:NORSOtherBacterium
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:NORSOthers
+name: "NORS Other - Bacterium"
+
+Node: dcid:NORSOtherChemicalOrToxin
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:NORSOthers
+name: "NORS Other - Chemical/Toxin"
+
+Node: dcid:NORSOtherParasite
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:NORSOthers
+name: "NORS Other - Parasite"
+
+Node: dcid:NORSOtherVirus
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:NORSOthers
+name: "NORS Other - Virus"
+
+Node: dcid:NORSOtherMinerals
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:NORSOthers
+name: "NORS Other Minerals"
+
+Node: dcid:PantoeaAgglomeransEtiology
+typeOf: dcs:EtiologyEnum
+name: "Pantoea agglomerans Etiology"
+
+Node: dcid:ParalyticShellfishPoison
+typeOf: dcs:EtiologyEnum
+name: "Paralytic shellfish poison"
+
+Node: dcid:Pesticides
+typeOf: dcs:EtiologyEnum
+name: "Pesticides"
+
+Node: dcid:ToxinsPlantOrHerbal
+typeOf: dcs:EtiologyEnum
+name: "Plant/Herbal toxins"
+
+Node: dcid:PlesiomonasShigelloidesEtiology
+typeOf: dcs:EtiologyEnum
+name: "Plesiomonas shigelloides Etiology"
+
+Node: dcid:ProteusMirabilisEtiology
+typeOf: dcs:EtiologyEnum
+name: "Proteus mirabilis Etiology"
+
+Node: dcid:ProvidenciaUnknown
+typeOf: dcs:EtiologyEnum
+name: "Providencia unknown"
+
+Node: dcid:PseudomonasEtiology
+typeOf: dcs:EtiologyEnum
+name: "Pseudomonas Etiology"
+
+Node: dcid:PseudomonasAeruginosaEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:PseudomonasEtiology
+name: "Pseudomonas aeruginosa Etiology"
+
+Node: dcid:PseudomonasUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:PseudomonasEtiology
+name: "Pseudomonas unknown"
+
+Node: dcid:PufferFishTetrodotoxin
+typeOf: dcs:EtiologyEnum
+name: "Puffer fish tetrodotoxin"
+
+Node: dcid:Rotavirus
+typeOf: dcs:EtiologyEnum
+name: "Rotavirus"
+
+Node: dcid:SalmonellaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Salmonella Etiology"
+
+Node: dcid:SalmonellaEntericaEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:SalmonellaEtiology
+name: "Salmonella enterica Etiology"
+
+Node: dcid:SalmonellaOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:SalmonellaEtiology
+name: "Salmonella other"
+
+Node: dcid:SalmonellaUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:SalmonellaEtiology
+name: "Salmonella unknown"
+
+Node: dcid:Sapovirus
+typeOf: dcs:EtiologyEnum
+name: "Sapovirus"
+
+Node: dcid:SapovirusGenogroupEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration, dcs:EtiologyEnum
+name: "SapovirusGenogroupEnum"
+specializationOf: dcs:Sapovirus
+
+Node: dcid:SapovirusGenogroupI
+typeOf: dcs:SapovirusGenogroupEnum
+name: "Sapovirus Genogroup I"
+
+Node: dcid:SapovirusGenogroupII
+typeOf: dcs:SapovirusGenogroupEnum
+name: "Sapovirus Genogroup II"
+
+Node: dcid:SapovirusGenogroupIV
+typeOf: dcs:SapovirusGenogroupEnum
+name: "Sapovirus Genogroup IV"
+
+Node: dcid:SapovirusGenogroupV
+typeOf: dcs:SapovirusGenogroupEnum
+name: "Sapovirus Genogroup V"
+
+Node: dcid:SapovirusUnknown
+typeOf: dcs:SapovirusGenogroupEnum
+name: "Sapovirus unknown"
+
+Node: dcid:ShigellaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Shigella Etiology"
+
+Node: dcid:ShigellaBoydiiEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ShigellaEtiology
+name: "Shigella boydii Etiology"
+
+Node: dcid:ShigellaDysenteriaeEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ShigellaEtiology
+name: "Shigella dysenteriae Etiology"
+
+Node: dcid:ShigellaFlexneriEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ShigellaEtiology
+name: "Shigella flexneri Etiology"
+
+Node: dcid:ShigellaOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ShigellaEtiology
+name: "Shigella other"
+
+Node: dcid:ShigellaSonneiEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ShigellaEtiology
+name: "Shigella sonnei Etiology"
+
+Node: dcid:ShigellaUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ShigellaEtiology
+name: "Shigella unknown"
+
+Node: dcid:ScombroidToxin
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ShigellaEtiology
+name: "Scombroid toxin"
+
+Node: dcid:SoapOrDetergent
+typeOf: dcs:EtiologyEnum
+name: "Soap/Detergent"
+specializationOf: dcs:CleaningAgents
+
+Node: dcid:StaphylococcusEtiology
+typeOf: dcs:EtiologyEnum
+name: "Staphylococcus Etiology"
+
+Node: dcid:StaphylococcusAureusEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:StaphylococcusEtiology
+name: "Staphylococcus aureus Etiology"
+
+Node: dcid:StaphylococcusOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:StaphylococcusEtiology
+name: "Staphylococcus other"
+
+Node: dcid:StaphylococcusUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:StaphylococcusEtiology
+name: "Staphylococcus unknown"
+
+Node: dcid:StreptococcusGroupA
+typeOf: dcs:EtiologyEnum
+name: "Streptococcus Group A"
+
+Node: dcid:StreptococcusGroupBOrCOrG
+typeOf: dcs:EtiologyEnum
+name: "Streptococcus Group B, C or G"
+
+Node: dcid:StreptococcusUnknown
+typeOf: dcs:EtiologyEnum
+name: "Streptococcus unknown"
+
+Node: dcid:ToxoplasmaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Toxoplasma Etiology"
+
+Node: dcid:ToxoplasmaGondiiEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:ToxoplasmaEtiology
+name: "Toxoplasma gondii Etiology"
+
+Node: dcid:TrichinellaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Trichinella Etiology"
+
+Node: dcid:TrichinellaSpiralisEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:TrichinellaEtiology
+name: "Trichinella spiralis Etiology"
+
+Node: dcid:TrichinellaUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:TrichinellaEtiology
+name: "Trichinella unknown"
+
+Node: dcid:NORSUnknown
+typeOf: dcs:EtiologyEnum
+name: "NORS Unknown"
+
+Node: dcid:NORSUnknownBacterium
+typeOf: dcs:EtiologyEnum
+name: "NORS Unknown - Bacterium"
+
+Node: dcid:NORSUnknownChemicalOrToxin
+typeOf: dcs:EtiologyEnum
+name: "NORS Unknown - Chemical/Toxin"
+
+Node: dcid:NORSUnknownVirus
+typeOf: dcs:EtiologyEnum
+name: "NORS Unknown - Virus"
+
+Node: dcid:VibrioEtiology
+typeOf: dcs:EtiologyEnum
+name: "Vibrio Etiology"
+
+Node: dcid:VibrioOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:VibrioEtiology
+name: "Vibrio other"
+
+Node: dcid:VibrioParahaemolyticusEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:VibrioEtiology
+name: "Vibrio parahaemolyticus Etiology"
+
+Node: dcid:VibrioUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:VibrioEtiology
+name: "Vibrio unknown"
+
+Node: dcid:VibrioVulnificusEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:VibrioEtiology
+name: "Vibrio vulnificus Etiology"
+
+Node: dcid:YersiniaEtiology
+typeOf: dcs:EtiologyEnum
+name: "Yersinia Etiology"
+
+Node: dcid:YersiniaEnterocoliticaEtiology
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:YersiniaEtiology
+name: "Yersinia enterocolitica Etiology"
+
+Node: dcid:YersiniaOther
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:YersiniaEtiology
+name: "Yersinia other"
+
+Node: dcid:YersiniaUnknown
+typeOf: dcs:EtiologyEnum
+specializationOf: dcs:YersiniaEtiology
+name: "Yersinia unknown"
