@@ -74,8 +74,14 @@ name: "retailSales"
 Node: dcid:consumption
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding
 name: "consumption"
+
+Node: dcid:expenditure
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding
+name: "expenditure"
 
 Node: dcid:retailPrice
 typeOf: schema:Property
@@ -551,6 +557,14 @@ Node: dcid:WhiteSpirit
 typeOf: dcs:EnergySourceEnum
 name: "White spirit"
 
+Node: dcid:DistrictHeat
+typeOf: dcs:EnergySourceEnum
+name: "District Heat"
+
+Node: dcid:CBECS_AllMajorFuels
+typeOf: dcs:EnergySourceEnum
+name: "CBECS All Major Fuels"
+
 ## Electricity production/consumption sector enums
 
 Node: dcid:ElectricityProductionSectorEnum
@@ -640,6 +654,14 @@ name: "ElectricityGenerationAndThermalOutput"
 Node: dcid:NonEnergyUse
 typeOf: schema:FuelUsageSourceEnum
 name: "Non-energy use"
+
+Node: dcid:Cooling
+typeOf: schema:FuelUsageSourceEnum
+name: "Cooling"
+
+Node: dcid:SpaceHeating
+typeOf: schema:FuelUsageSourceEnum
+name: "Space Heating"
 
 ## EnergyConsumptionSectorEnum
 
@@ -1027,6 +1049,17 @@ typeOf: dcs:VolumeUnitOfMeasure
 name: "Cubic meter"
 description: "It is the volume of a cube with edges one metre in length, also equal to 1000 liters."
 
+Node: dcid:CubicFoot
+typeOf: dcs:VolumeUnitOfMeasure
+name: "Cubic foot"
+description: "It is the volume of a cube with edges one feet in length."
+
+Node: dcid:USGallon
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USGallon"
+description: "It is the unit of volume equal to 3.785411784 Liters."
+descriptionUrl: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf"
+
 Node: dcid:ShortTon
 typeOf: dcs:EnergyUnitOfMeasure
 description: "A mass measurement unit equal to 2,000 pounds-mass (907.18474 kg). It is commonly used in the United States, where it is known as simply a common ton."
@@ -1043,6 +1076,10 @@ Node: dcid:USCentPerKilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USCentPerKilowattHour"
 
+Node: dcid:USDollarPerKilowattHour
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USDollarPerKilowattHour"
+
 Node: dcid:USDollarPerBarrel
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerBarrel"
@@ -1051,6 +1088,10 @@ Node: dcid:USDollarPerMcf
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerMcf"
 
+Node: dcid:USDollarPerGallon
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerGallon"
+
 Node: dcid:USDollarPerMetricTon
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerMetricTon"
@@ -1058,6 +1099,25 @@ name: "USDollarPerMetricTon"
 Node: dcid:USDollarPerShortTon
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USDollarPerShortTon"
+
+Node: dcid:USDollarPerMillionBtu
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USDollarPerMillionBtu"
+
+Node: dcid:KilowattHourPerSquareFoot
+typeOf: dcs:EnergyUnitOfMeasure
+name: "KilowattHourPerSquareFoot"
+description: "Unit of energy intensity of one KilowattHour for a unit area of one SquareFoot."
+
+Node: dcid:CubicFootPerSquareFoot
+typeOf: dcs:EnergyUnitOfMeasure
+name: "CubicFootPerSquareFoot"
+description: "Unit of fuel intensity of one Cubic feet for a unit area of one SquareFoot."
+
+Node: dcid:USGallonPerSquareFoot
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USGallonPerSquareFoot"
+description: "Unit of fuel intensity of one US gallon for a unit area of one SquareFoot."
 
 #
 # EIA: Coal

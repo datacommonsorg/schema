@@ -2509,6 +2509,12 @@ name: "GovernmentBuilding"
 typeOf: schema:Class
 subClassOf: schema:CivicStructure
 
+Node: CommercialBuilding
+dcid: "CommercialBuilding"
+name: "CommercialBuilding"
+typeOf: schema:Class
+subClassOf: schema:CivicStructure
+
 Node: commentTime
 dcid: "commentTime"
 domainIncludes: schema:UserComments
@@ -8852,7 +8858,7 @@ typeOf: schema:Property
 
 Node: floorSize
 dcid: "floorSize"
-domainIncludes: schema:Accommodation
+domainIncludes: schema:Accommodation, schema:CommercialBuilding, schema:Energy
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 typeOf: schema:Property
 rangeIncludes: schema:QuantitativeValue
@@ -11018,7 +11024,7 @@ description: "A process of care used in either a diagnostic, therapeutic, preven
 Node: dcid:Substance
 typeOf: schema:Class
 subClassOf: schema:MedicalEntity
-name: "MedicalEntity"
+name: "Substance"
 description: "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical."
 
 Node: dcid:Drug
@@ -11029,7 +11035,7 @@ description: "A chemical or biologic substance, used as a medical therapy, that 
 
 Node: dcid:dateEstablished
 typeOf: schema:Property
-name: "dateRevised"
+name: "dateEstablished"
 rangeIncludes: schema:Date,schema:DateTime
 domainIncludes: schema:Thing
 description: "The date on which the CreativeWork first became available for searching on an online database."
