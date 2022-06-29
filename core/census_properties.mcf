@@ -27,14 +27,14 @@ domainIncludes: dcs:HousingUnit
 
 Node: citizenship
 dcid: "citizenship"
-rangeIncludes: dcs:USC_CitizenshipEnum
+rangeIncludes: dcs:CitizenshipEnum
 name: "citizenship"
 typeOf: schema:Property
 domainIncludes: schema:Person
 supersededBy: dcs:citizenshipStatus
 
 Node: dcid:citizenshipStatus
-rangeIncludes: dcs:USC_CitizenshipEnum
+rangeIncludes: dcs:CitizenshipEnum
 name: "citizenshipStatus"
 typeOf: schema:Property
 domainIncludes: schema:Person
@@ -64,7 +64,7 @@ dcid: "educationalAttainment"
 name: "educationalAttainment"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:USC_EducationalAttainmentEnum, dcs:WHO_EducationalAttainmentEnum
+rangeIncludes: dcs:USC_EducationalAttainmentEnum, dcs:WHO_EducationalAttainmentEnum, dcs:SchoolGradeLevelEnum
 
 Node: dcid:bachelorsDegreeMajor
 typeOf: schema:Property
@@ -216,7 +216,7 @@ Node: nativity
 dcid: "nativity"
 name: "nativity"
 typeOf: schema:Property
-rangeIncludes: dcs:USC_NativityEnum
+rangeIncludes: dcs:NativityEnum
 domainIncludes: schema:Person
 
 ## numberOfRooms in schema.org
@@ -502,7 +502,7 @@ descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_
 Node: dcid:householderNativity
 name: "householderNativity"
 typeOf: schema:Property
-rangeIncludes: dcs:USC_NativityEnum
+rangeIncludes: dcs:NativityEnum
 domainIncludes: dcs:Household, dcs:HousingUnit
 
 Node: dcid:dateOfEntry
