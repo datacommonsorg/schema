@@ -1,0 +1,295 @@
+Node: dcid:timePeriodRelativeToPregnancy
+rangeIncludes: dcs:TimePeriodRelativeToPregnancyEnum
+name: "timePeriodRelativeToPregnancy"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Time Period Relative To Pregnancy"
+
+Node: dcid:TimePeriodRelativeToPregnancyEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TimePeriodRelativeToPregnancyEnum"
+description: "Time Period Relative To Pregnancy Enum"
+
+Node: dcid:BeforePregnancy
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "Before Pregnancy"
+
+Node: dcid:3MonthsBeforePregnancy
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "3 Months Before Pregnancy"
+
+Node: dcid:Last3MonthsOfPregnancy
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "Last 3 Months Of Pregnancy"
+
+Node: dcid:Last2YearsBeforePregnancy
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "Last 2 Years Before Pregnancy"
+
+Node: dcid:12MonthsBeforePregnancy
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "12 Months Before Pregnancy"
+
+Node: dcid:12MonthsBeforeBirth
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "12 Months Before Birth"
+
+Node: dcid:Postpartum
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "Postpartum"
+
+Node: dcid:8WeeksAfterPregnancy
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "8 Weeks After Pregnancy"
+
+Node: dcid:FirstTrimester
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "First Trimester"
+
+Node: dcid:DuringPregnancy
+typeOf: dcs:TimePeriodRelativeToPregnancyEnum
+name: "During Pregnancy"
+
+
+Node: dcid:intimatePartnerViolence
+rangeIncludes: dcs:IntimatePartnerViolenceEnum
+name: "intimatePartnerViolence"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Intimate Partner Violence"
+
+Node: dcid:IntimatePartnerViolenceEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "IntimatePartnerViolenceEnum"
+description: "Intimate Partner Violence Enum"
+
+Node: dcid:IntimatePartnerViolenceByCurrentPartnerOrHusband
+typeOf: dcs:IntimatePartnerViolenceEnum
+name: "Intimate Partner Violence By Current Partner Or Husband"
+
+Node: dcid:IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband
+typeOf: dcs:IntimatePartnerViolenceEnum
+name: "Intimate Partner Violence By Current Or ExPartner Or Current Or ExHusband"
+
+
+Node: dcid:mothersHealthBehavior
+rangeIncludes: dcs:HealthBehaviorEnum
+name: "mothersHealthBehavior"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Mother's Health Behavior"
+
+Node: dcid:HookahUsage
+typeOf: dcs:HealthBehaviorEnum
+name: "HookahUsage"
+
+Node: dcid:HeavyDrinking
+typeOf: dcs:HealthBehaviorEnum
+name: "Heavy Drinking"
+
+
+Node: dcid:mothersHealthCondition
+rangeIncludes: dcs:HealthOutcomeEnum
+name: "mothersHealthCondition"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Mother's Health Condition"
+
+Node: dcid:CDC_SelfReportedDepression
+typeOf: dcs:HealthOutcomeEnum
+name: "CDC Self Reported Depression"
+
+
+Node: dcid:mothersHealthPrevention
+rangeIncludes: dcs:HealthPreventionEnum
+name: "mothersHealthPrevention"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Mother's Health Prevention"
+
+Node: dcid:HealthCareVisit
+typeOf: dcs:HealthPreventionEnum
+name: "Health Care Visit"
+
+Node: dcid:PrenatalCare
+typeOf: dcs:HealthPreventionEnum
+name: "Prenatal Care"
+
+Node: dcid:FluShot
+typeOf: dcs:HealthPreventionEnum
+name: "Flu Shot"
+
+Node: dcid:MaternalCheckup
+typeOf: dcs:HealthPreventionEnum
+name: "Maternal Checkup"
+
+Node: dcid:TeethCleanedByDentistOrHygienist
+typeOf: dcs:HealthPreventionEnum
+name: "Teeth Cleaned By Dentist Or Hygienist"
+
+Node: dcid:healthPreventionActionFrequency
+rangeIncludes: dcs:HealthPreventionActionFrequencyEnum
+name: "healthPreventionActionFrequency"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Health Prevention Action Frequency"
+
+Node: dcid:HealthPreventionActionFrequencyEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HealthPreventionActionFrequencyEnum"
+description: "Health Prevention Action Frequency Enum"
+
+Node: dcid:MoreThan4TimesAWeek
+typeOf: dcs:HealthPreventionActionFrequencyEnum
+name: "More Than 4 Times A Week"
+
+Node: dcid:MultivitaminUse
+typeOf: dcs:HealthPreventionEnum
+name: "Multivitamin Use"
+
+
+Node: dcid:pregnancyIntention
+rangeIncludes: dcs:PregnancyIntentionEnum
+name: "pregnancyIntention"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Pregnancy Intention"
+
+Node: dcid:PregnancyIntentionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PregnancyIntentionEnum"
+description: "Pregnancy Intention Enum"
+
+Node: dcid:MistimedPregnancy
+typeOf: dcs:PregnancyIntentionEnum
+name: "Mistimed Pregnancy"
+
+Node: dcid:UnwantedPregnancy
+typeOf: dcs:PregnancyIntentionEnum
+name: "Unwanted Pregnancy"
+
+Node: dcid:UnsureIfWantedPregnancy
+typeOf: dcs:PregnancyIntentionEnum
+name: "Unsure If Wanted Pregnancy"
+
+Node: dcid:IntendedPregnancy
+typeOf: dcs:PregnancyIntentionEnum
+name: "Intended Pregnancy"
+
+
+Node: dcid:postpartumFamilyPlanning
+rangeIncludes: dcs:PostpartumFamilyPlanningEnum
+name: "postpartumFamilyPlanning"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Postpartum Family Planning"
+
+Node: dcid:PostpartumFamilyPlanningEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PostpartumFamilyPlanningEnum"
+description: "Postpartum Family Planning Enum"
+
+Node: dcid:AnyPostpartumFamilyPlanning
+typeOf: dcs:PostpartumFamilyPlanningEnum
+name: "Any Postpartum Family Planning"
+
+Node: dcid:ModeratelyEffectiveContraceptiveMethods
+typeOf: dcs:PostpartumFamilyPlanningEnum
+name: "Moderately Effective Contraceptive Methods"
+
+Node: dcid:LeastEffectiveContraceptiveMethods
+typeOf: dcs:PostpartumFamilyPlanningEnum
+name: "Least Effective Contraceptive Methods"
+
+Node: dcid:HighlyEffectiveContraceptiveMethodsEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+specializationOf: dcid:PostpartumFamilyPlanningEnum
+name: "HighlyEffectiveContraceptiveMethodsEnum"
+description: "Highly Effective Contraceptive Methods Enum"
+
+Node: dcid:MaleOrFemaleSterilization
+typeOf: dcs:HighlyEffectiveContraceptiveMethodsEnum
+name: "Male Or Female Sterilization"
+
+Node: dcid:LongActingReversibleContraceptiveMethods
+typeOf: dcs:HighlyEffectiveContraceptiveMethodsEnum
+name: "Long Acting Reversible Contraceptive Methods"
+
+
+Node: dcid:infantSleepPractice
+rangeIncludes: dcs:SleepPracticeEnum
+name: "infantSleepPractice"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Infant Sleep Practice"
+
+Node: dcid:SleepPracticeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SleepPracticeEnum"
+description: "Sleep Practice Enum"
+
+Node: dcid:BabyMostOftenLaidOnBackToSleep
+typeOf: dcs:SleepPracticeEnum
+name: "Baby Most Often Laid On Back To Sleep"
+
+
+Node: dcid:breastFeedingPractice
+rangeIncludes: dcs:BreastFeedingPracticeEnum
+name: "breastFeedingPractice"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Breast Feeding Practice"
+
+Node: dcid:BreastFeedingPracticeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BreastFeedingPracticeEnum"
+description: "Breast Feeding Practice Enum"
+
+Node: dcid:EverBreastfed
+typeOf: dcs:BreastFeedingPracticeEnum
+name: "Ever Breastfed"
+
+Node: dcid:AnyBreastfeedingAt8Weeks
+typeOf: dcs:BreastFeedingPracticeEnum
+name: "Any Breastfeeding At 8 Weeks"
+
+Node: dcid:healthInsuranceStatusOneMonthBeforePregnancy
+rangeIncludes: dcs:USC_HealthInsuranceEnum
+name: "healthInsuranceStatusOneMonthBeforePregnancy"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Health Insurance Status One Month Before Pregnancy"
+
+Node: dcid:healthInsuranceStatusForPrenatalCare
+rangeIncludes: dcs:USC_HealthInsuranceEnum
+name: "healthInsuranceStatusForPrenatalCare"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Health Insurance Status for Prenatal Care"
+
+Node: dcid:healthInsuranceStatusPostpartum
+rangeIncludes: dcs:USC_HealthInsuranceEnum
+name: "healthInsuranceStatusPostpartum"
+typeOf: schema:Property
+domainIncludes: dcs:LiveBirthPregnancyEvent
+description: "Health Insurance Status Postpartum"
+
+Node: dcid:LiveBirthPregnancyEvent
+typeOf: schema:Class
+subClassOf: dcs:BirthEvent
+name: "LiveBirthPregnancyEvent"
+description: "Live Births in the past 1 year"
+
+Node: dcid:Infant
+typeOf: schema:Class
+subClassOf: schema:Person
+name: "Infant"
+description: "Infant"
