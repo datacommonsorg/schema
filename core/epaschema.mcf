@@ -1,0 +1,71 @@
+Node: dcid:StationaryFuelCombustion
+typeOf: dcs:EmissionSourceEnum
+name: "Stationary Fuel Combustion"
+
+Node: dcid:IndustrialAndOtherProcesses
+typeOf: dcs:EmissionSourceEnum
+name: "Industrial And Other Processes"
+
+Node: dcid:FuelCombustionElectricUtility
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StationaryFuelCombustion
+name: "Fuel Combustion Electric Utility"
+
+Node: dcid:FuelCombustionIndustrial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StationaryFuelCombustion
+name: "Fuel Combustion Industrial"
+
+Node: dcid:EPA_FuelCombustionOther
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StationaryFuelCombustion
+name: "EPA Fuel Combustion Other"
+
+Node: dcid:ChemicalAndAlliedProductManufacturing
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Chemical And Allied Product Manufacturing"
+
+Node: dcid:MetalsProcessing
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Metals Processing"
+
+Node: dcid:PetroleumAndRelatedIndustries
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Petroleum And Related Industries"
+
+Node: dcid:EPA_OtherIndustrialProcesses
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "EPA Other Industrial Processes"
+
+Node: dcid:SolventUtilization
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Solvent Utilization"
+
+Node: dcid:StorageAndTransport
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Storage And Transport"
+
+Node: dcid:WasteDisposalAndRecycling
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Waste Disposal And Recycling"
+
+Node: dcid:OnRoadVehicles
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Transportation
+name: "OnRoad Vehicles"
+
+Node: dcid:NonRoadEnginesAndVehicles
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Transportation
+name: "Non Road Engines And Vehicles"
+
+Node: dcid:EPA_MiscellaneousEmissionSource
+typeOf: dcs:EmissionSourceEnum
+name: "EPA Miscellaneous Emission Source"

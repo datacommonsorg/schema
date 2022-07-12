@@ -473,8 +473,13 @@ Node: dcs:CarbonMonoxide
 typeOf: dcs:AirPollutantEnum
 name: "CarbonMonoxide"
 
+Node: dcid:OxidesOfNitrogen
+typeOf: dcs:AirPollutantEnum
+name: "Oxides Of Nitrogen (NOX)"
+
 Node: dcs:NitrogenDioxide
 typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:OxidesOfNitrogen
 name: "NitrogenDioxide"
 
 Node: dcs:DieselPM
@@ -488,6 +493,12 @@ name: "PM2.5"
 Node: dcs:PM10
 typeOf: dcs:AirPollutantEnum
 name: "PM10"
+
+Node: dcid:VolatileOrganicCompound
+typeOf: dcs:AirPollutantEnum
+name: "Volatile Organic Compound (VOC)"
+description: "Volatile organic compounds are compounds that have a high vapor pressure and low water solubility."
+descriptionUrl: "https://www.epa.gov/indoor-air-quality-iaq/what-are-volatile-organic-compounds-vocs"
 
 Node: dcs:Oxygen
 typeOf: dcs:GasType
