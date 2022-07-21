@@ -538,3 +538,31 @@ rangeIncludes: dcs:ReligionEnum
 name: "religion"
 typeOf: schema:Property
 domainIncludes: schema:Person
+
+Node: dcid:personMilesTraveled
+rangeIncludes: dcs:Quantity
+name: "personMilesTraveled"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of miles traveled by person in any mode of transportation."
+
+Node: dcid:personTrips
+rangeIncludes: dcs:Quantity
+name: "personTrips"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of trips made by a person in any mode of transportation."
+
+Node: dcid:vehicleMilesTraveled
+rangeIncludes: dcs:Quantity
+name: "vehicleMilesTraveled"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of miles a vehicle traveled/covered."
+
+Node: dcid:vehicleTrips
+rangeIncludes: dcs:Quantity
+name: "vehicleTrips"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of trips made by a vehicle."

@@ -209,3 +209,29 @@ name: "NORSNonInfectiousDisease"
 typeOf: dcs:MeasurementMethodEnum
 description: "National Outbreak Reporting System (NORS) data from reports of foodborne and waterborne disease outbreaks and enteric (intestinal) disease outbreaks spread by contact with environmental sources, infected people or animals, and other means."
 descriptionUrl: "https://wwwn.cdc.gov/norsdashboard/"
+
+Node: dcid:NationalHouseholdTransportationSurveyEnum
+name: "NationalHouseholdTransportationSurveyEnum"
+subClassOf: dcs:MeasurementMethodEnum
+description: "Measurement method for US National Household Transportation Survey."
+typeOf: schema:Class
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates
+name: "NationalHouseholdTransportationSurveyEstimates"
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates."
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates_MarginOfErrorMoreThanACSSurvey
+name: "NationalHouseholdTransportationSurveyEstimates_MarginOfErrorMoreThanACSSurvey"
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates where Margin of Error is greater than ACS Survey estimates."
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey
+name: "NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey"
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates where ACS Survey estimates are not available."
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey_MarginOfErrorMoreThanACSSurvey
+name: "NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey_MarginOfErrorMoreThanACSSurvey."
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates with combination of Margin of Error greater than ACS Survey estimates and ACS Survey estimates are not available."
