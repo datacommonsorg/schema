@@ -1,3 +1,35 @@
 #
 # File for StatVar nodes introduced by the stat_var_aggregation flow.
 #
+Node: dcid:Count_Person_NoPrivateHealthInsurance
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:NoPrivateHealthInsurance
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_NoPublicHealthInsurance
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:NoPublicHealthInsurance
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_WithOneTypeOfHealthInsurance
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:WithOneTypeOfHealthInsurance
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_WithPublicCoverage
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:WithPublicCoverage
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+name: "Population: With Public Health Insurance Coverage"
+
+
+
+
