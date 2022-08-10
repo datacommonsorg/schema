@@ -56,6 +56,7 @@ typeOf: dcs:EmissionSourceEnum
 specializationOf: dcs:IndustrialAndOtherProcesses
 name: "Waste Disposal And Recycling"
 
+#Vehicles may need to be removed as gas station emissions are also included.
 Node: dcid:OnRoadVehicles
 typeOf: dcs:EmissionSourceEnum
 specializationOf: dcs:Transportation
@@ -69,3 +70,1334 @@ name: "Non Road Engines And Vehicles"
 Node: dcid:EPA_MiscellaneousEmissionSource
 typeOf: dcs:EmissionSourceEnum
 name: "EPA Miscellaneous Emission Source"
+
+Node: dcid:MobileLightCommercialTruckE85
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLightCommercialTruckE85"
+epaSccCode: "2205320080"
+description: "SCC Code - 2205320080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Ethanol (E-85), Level 3 - Light Commercial Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileIntercityBusDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileIntercityBusDiesel"
+epaSccCode: "2202410080"
+description: "SCC Code - 2202410080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Other Buses, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileMotorcycleGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotorcycleGas"
+epaSccCode: "2201110080"
+description: "SCC Code - 2201110080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycle, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileSchoolBusDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileSchoolBusDiesel"
+epaSccCode: "2202430080"
+description: "SCC Code - 2202430080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - School Bus, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileTransitBusDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileTransitBusDiesel"
+epaSccCode: "2202420080"
+description: "SCC Code - 2202420080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Transit Bus, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileMotorHomeDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotorHomeDiesel"
+epaSccCode: "2202540080"
+description: "SCC Code - 2202540080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Motor Home, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileLightCommercialTruckDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLightCommercialTruckDiesel"
+epaSccCode: "2202320080"
+description: "SCC Code - 2202320080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Commercial Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileSingleUnitLonghaulTruckDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileSingleUnitLonghaulTruckDiesel"
+epaSccCode: "2202530080"
+description: "SCC Code - 2202530080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Single Unit Long-haul Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileSingleUnitShorthaulTruckGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileSingleUnitShorthaulTruckGas"
+epaSccCode: "2201520080"
+description: "SCC Code - 2201520080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Single Unit Short-haul Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileRefuseTruckGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileRefuseTruckGas"
+epaSccCode: "2201510080"
+description: "SCC Code - 2201510080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Refuse Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileRefuseTruckDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileRefuseTruckDiesel"
+epaSccCode: "2202510080"
+description: "SCC Code - 2202510080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Refuse Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobilePassengerTruckE85
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerTruckE85"
+epaSccCode: "2205310080"
+description: "SCC Code - 2205310080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Ethanol (E-85), Level 3 - Passenger Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobilePassengerCarE85
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerCarE85"
+epaSccCode: "2205210080"
+description: "SCC Code - 2205210080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Ethanol (E-85), Level 3 - Passenger Car, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobilePassengerTruckGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerTruckGas"
+epaSccCode: "2201310080"
+description: "SCC Code - 2201310080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Passenger Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileSchoolBusGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileSchoolBusGas"
+epaSccCode: "2201430080"
+description: "SCC Code - 2201430080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - School Bus, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileRefuelingGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileRefuelingGas"
+epaSccCode: "2201000062"
+description: "SCC Code - 2201000062, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Refueling, Level 4 - Total Spillage and Displacement, Sector - Gas Stations"
+
+Node: dcid:MobileSingleUnitLonghaulTruckGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileSingleUnitLonghaulTruckGas"
+epaSccCode: "2201530080"
+description: "SCC Code - 2201530080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Single Unit Long-haul Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobilePassengerTruckDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerTruckDiesel"
+epaSccCode: "2202310080"
+description: "SCC Code - 2202310080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Passenger Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobilePassengerCarGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerCarGas"
+epaSccCode: "2201210080"
+description: "SCC Code - 2201210080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Passenger Car, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileCombinationShorthaulTruckGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileCombinationShorthaulTruckGas"
+epaSccCode: "2201610080"
+description: "SCC Code - 2201610080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Combination Short-haul Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobilePassengerCarDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerCarDiesel"
+epaSccCode: "2202210080"
+description: "SCC Code - 2202210080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Passenger Car, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileCombinationLonghaulTruckDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileCombinationLonghaulTruckDiesel"
+epaSccCode: "2202620080"
+description: "SCC Code - 2202620080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Combination Long-haul Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileSingleUnitShorthaulTruckDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileSingleUnitShorthaulTruckDiesel"
+epaSccCode: "2202520080"
+description: "SCC Code - 2202520080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Single Unit Short-haul Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileCombinationShorthaulTruckDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileCombinationShorthaulTruckDiesel"
+epaSccCode: "2202610080"
+description: "SCC Code - 2202610080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Combination Short-haul Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileRefuelingDiesel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileRefuelingDiesel"
+epaSccCode: "2202000062"
+description: "SCC Code - 2202000062, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Refueling, Level 4 - Total Spillage and Displacement, Sector - Gas Stations"
+
+Node: dcid:MobileMotorHomeGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotorHomeGas"
+epaSccCode: "2201540080"
+description: "SCC Code - 2201540080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motor Home, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileTransitBusGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileTransitBusGas"
+epaSccCode: "2201420080"
+description: "SCC Code - 2201420080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Transit Bus, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileRefuelingEthanol
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileRefuelingEthanol"
+epaSccCode: "2205000062"
+description: "SCC Code - 2205000062, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Ethanol (E-85), Level 3 - Refueling, Level 4 - Total Spillage and Displacement, Sector - Gas Stations"
+
+Node: dcid:MobileLightCommercialTruckGas
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLightCommercialTruckGas"
+epaSccCode: "2201320080"
+description: "SCC Code - 2201320080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Commercial Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileTransitBusCNG
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileTransitBusCNG"
+epaSccCode: "2203420080"
+description: "SCC Code - 2203420080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Compressed Natural Gas (CNG), Level 3 - Transit Bus, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobilePassengerTruckElectric
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerTruckElectric"
+epaSccCode: "2209310080"
+description: "SCC Code - 2209310080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Electricity, Level 3 - Passenger Truck, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobilePassengerCarElectric
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobilePassengerCarElectric"
+epaSccCode: "2209210080"
+description: "SCC Code - 2209210080, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Electricity, Level 3 - Passenger Car, Level 4 - All on and off-network processes except refueling, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDGVGasRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasRuralInterstate"
+epaSccCode: "2201001110"
+description: "SCC Code - 2201001110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Rural Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasRuralOtherPrincipalArterial"
+epaSccCode: "2201001130"
+description: "SCC Code - 2201001130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Rural Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasRuralMinorArterial"
+epaSccCode: "2201001150"
+description: "SCC Code - 2201001150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Rural Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasRuralMajorCollector"
+epaSccCode: "2201001170"
+description: "SCC Code - 2201001170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Rural Major Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasRuralMinorCollector"
+epaSccCode: "2201001190"
+description: "SCC Code - 2201001190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Rural Minor Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasRuralLocal"
+epaSccCode: "2201001210"
+description: "SCC Code - 2201001210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Rural Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasUrbanInterstate"
+epaSccCode: "2201001230"
+description: "SCC Code - 2201001230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Urban Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasUrbanOtherFreewaysandExpressways"
+epaSccCode: "2201001250"
+description: "SCC Code - 2201001250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasUrbanOtherPrincipalArterial"
+epaSccCode: "2201001270"
+description: "SCC Code - 2201001270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Urban Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasUrbanMinorArterial"
+epaSccCode: "2201001290"
+description: "SCC Code - 2201001290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Urban Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasUrbanCollector"
+epaSccCode: "2201001310"
+description: "SCC Code - 2201001310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Urban Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasUrbanLocal"
+epaSccCode: "2201001330"
+description: "SCC Code - 2201001330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Urban Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGVGasParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGVGasParkingArea"
+epaSccCode: "2201001390"
+description: "SCC Code - 2201001390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Vehicles (LDGV), Level 4 - Parking Area: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasRuralInterstate"
+epaSccCode: "2201020110"
+description: "SCC Code - 2201020110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Rural Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasRuralOtherPrincipalArterial"
+epaSccCode: "2201020130"
+description: "SCC Code - 2201020130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Rural Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasRuralMinorArterial"
+epaSccCode: "2201020150"
+description: "SCC Code - 2201020150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Rural Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasRuralMajorCollector"
+epaSccCode: "2201020170"
+description: "SCC Code - 2201020170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Rural Major Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasRuralMinorCollector"
+epaSccCode: "2201020190"
+description: "SCC Code - 2201020190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Rural Minor Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasRuralLocal"
+epaSccCode: "2201020210"
+description: "SCC Code - 2201020210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Rural Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasUrbanInterstate"
+epaSccCode: "2201020230"
+description: "SCC Code - 2201020230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Urban Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasUrbanOtherFreewaysandExpressways"
+epaSccCode: "2201020250"
+description: "SCC Code - 2201020250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasUrbanOtherPrincipalArterial"
+epaSccCode: "2201020270"
+description: "SCC Code - 2201020270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Urban Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasUrbanMinorArterial"
+epaSccCode: "2201020290"
+description: "SCC Code - 2201020290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Urban Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasUrbanCollector"
+epaSccCode: "2201020310"
+description: "SCC Code - 2201020310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Urban Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasUrbanLocal"
+epaSccCode: "2201020330"
+description: "SCC Code - 2201020330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Urban Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT1GasParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT1GasParkingArea"
+epaSccCode: "2201020390"
+description: "SCC Code - 2201020390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 1 & 2 (M6) = LDGT1 (M5), Level 4 - Parking Area: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasRuralInterstate"
+epaSccCode: "2201040110"
+description: "SCC Code - 2201040110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Rural Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasRuralOtherPrincipalArterial"
+epaSccCode: "2201040130"
+description: "SCC Code - 2201040130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Rural Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasRuralMinorArterial"
+epaSccCode: "2201040150"
+description: "SCC Code - 2201040150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Rural Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasRuralMajorCollector"
+epaSccCode: "2201040170"
+description: "SCC Code - 2201040170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Rural Major Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasRuralMinorCollector"
+epaSccCode: "2201040190"
+description: "SCC Code - 2201040190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Rural Minor Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasRuralLocal"
+epaSccCode: "2201040210"
+description: "SCC Code - 2201040210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Rural Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasUrbanInterstate"
+epaSccCode: "2201040230"
+description: "SCC Code - 2201040230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Urban Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasUrbanOtherFreewaysandExpressways"
+epaSccCode: "2201040250"
+description: "SCC Code - 2201040250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasUrbanOtherPrincipalArterial"
+epaSccCode: "2201040270"
+description: "SCC Code - 2201040270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Urban Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasUrbanMinorArterial"
+epaSccCode: "2201040290"
+description: "SCC Code - 2201040290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Urban Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasUrbanCollector"
+epaSccCode: "2201040310"
+description: "SCC Code - 2201040310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Urban Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasUrbanLocal"
+epaSccCode: "2201040330"
+description: "SCC Code - 2201040330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Urban Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileLDGT2GasParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDGT2GasParkingArea"
+epaSccCode: "2201040390"
+description: "SCC Code - 2201040390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Light Duty Gasoline Trucks 3 & 4 (M6) = LDGT2 (M5), Level 4 - Parking Area: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileHDGVGasRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasRuralInterstate"
+epaSccCode: "2201070110"
+description: "SCC Code - 2201070110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Rural Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileHDGVGasRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasRuralOtherPrincipalArterial"
+epaSccCode: "2201070130"
+description: "SCC Code - 2201070130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasRuralMinorArterial"
+epaSccCode: "2201070150"
+description: "SCC Code - 2201070150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasRuralMajorCollector"
+epaSccCode: "2201070170"
+description: "SCC Code - 2201070170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasRuralMinorCollector"
+epaSccCode: "2201070190"
+description: "SCC Code - 2201070190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasRuralLocal"
+epaSccCode: "2201070210"
+description: "SCC Code - 2201070210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Rural Local: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasUrbanInterstate"
+epaSccCode: "2201070230"
+description: "SCC Code - 2201070230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasUrbanOtherFreewaysandExpressways"
+epaSccCode: "2201070250"
+description: "SCC Code - 2201070250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasUrbanOtherPrincipalArterial"
+epaSccCode: "2201070270"
+description: "SCC Code - 2201070270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Urban Other Principal Arterial: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasUrbanMinorArterial"
+epaSccCode: "2201070290"
+description: "SCC Code - 2201070290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Urban Minor Arterial: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasUrbanCollector"
+epaSccCode: "2201070310"
+description: "SCC Code - 2201070310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Urban Collector: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasUrbanLocal"
+epaSccCode: "2201070330"
+description: "SCC Code - 2201070330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Urban Local: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDGVGasParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDGVGasParkingArea"
+epaSccCode: "2201070390"
+description: "SCC Code - 2201070390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Heavy Duty Gasoline Vehicles 2B thru 8B & Buses (HDGV), Level 4 - Parking Area: Total, Sector - Mobile - On-Road non-Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasRuralInterstate"
+epaSccCode: "2201080110"
+description: "SCC Code - 2201080110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Rural Interstate: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasRuralOtherPrincipalArterial"
+epaSccCode: "2201080130"
+description: "SCC Code - 2201080130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasRuralMinorArterial"
+epaSccCode: "2201080150"
+description: "SCC Code - 2201080150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasRuralMajorCollector"
+epaSccCode: "2201080170"
+description: "SCC Code - 2201080170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasRuralMinorCollector"
+epaSccCode: "2201080190"
+description: "SCC Code - 2201080190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasRuralLocal"
+epaSccCode: "2201080210"
+description: "SCC Code - 2201080210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Rural Local: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasUrbanInterstate"
+epaSccCode: "2201080230"
+description: "SCC Code - 2201080230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasUrbanOtherFreewaysandExpressways"
+epaSccCode: "2201080250"
+description: "SCC Code - 2201080250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasUrbanOtherPrincipalArterial"
+epaSccCode: "2201080270"
+description: "SCC Code - 2201080270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Urban Other Principal Arterial: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasUrbanMinorArterial"
+epaSccCode: "2201080290"
+description: "SCC Code - 2201080290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Urban Minor Arterial: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasUrbanCollector"
+epaSccCode: "2201080310"
+description: "SCC Code - 2201080310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Urban Collector: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasUrbanLocal"
+epaSccCode: "2201080330"
+description: "SCC Code - 2201080330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Urban Local: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileMotocycleGasParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileMotocycleGasParkingArea"
+epaSccCode: "2201080390"
+description: "SCC Code - 2201080390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Gasoline, Level 3 - Motorcycles (MC), Level 4 - Parking Area: Total, Sector - Mobile - On-Road non-Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselRuralInterstate"
+epaSccCode: "2230001110"
+description: "SCC Code - 2230001110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Rural Interstate: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselRuralOtherPrincipalArterial"
+epaSccCode: "2230001130"
+description: "SCC Code - 2230001130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselRuralMinorArterial"
+epaSccCode: "2230001150"
+description: "SCC Code - 2230001150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselRuralMajorCollector"
+epaSccCode: "2230001170"
+description: "SCC Code - 2230001170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselRuralMinorCollector"
+epaSccCode: "2230001190"
+description: "SCC Code - 2230001190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselRuralLocal"
+epaSccCode: "2230001210"
+description: "SCC Code - 2230001210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Rural Local: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselUrbanInterstate"
+epaSccCode: "2230001230"
+description: "SCC Code - 2230001230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselUrbanOtherFreewaysandExpressways"
+epaSccCode: "2230001250"
+description: "SCC Code - 2230001250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselUrbanOtherPrincipalArterial"
+epaSccCode: "2230001270"
+description: "SCC Code - 2230001270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Urban Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselUrbanMinorArterial"
+epaSccCode: "2230001290"
+description: "SCC Code - 2230001290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Urban Minor Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselUrbanCollector"
+epaSccCode: "2230001310"
+description: "SCC Code - 2230001310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Urban Collector: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselUrbanLocal"
+epaSccCode: "2230001330"
+description: "SCC Code - 2230001330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Urban Local: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDVDieselParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDVDieselParkingArea"
+epaSccCode: "2230001390"
+description: "SCC Code - 2230001390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Vehicles (LDDV), Level 4 - Parking Area: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselRuralInterstate"
+epaSccCode: "2230060110"
+description: "SCC Code - 2230060110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Rural Interstate: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselRuralOtherPrincipalArterial"
+epaSccCode: "2230060130"
+description: "SCC Code - 2230060130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselRuralMinorArterial"
+epaSccCode: "2230060150"
+description: "SCC Code - 2230060150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselRuralMajorCollector"
+epaSccCode: "2230060170"
+description: "SCC Code - 2230060170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselRuralMinorCollector"
+epaSccCode: "2230060190"
+description: "SCC Code - 2230060190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselRuralLocal"
+epaSccCode: "2230060210"
+description: "SCC Code - 2230060210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Rural Local: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselUrbanInterstate"
+epaSccCode: "2230060230"
+description: "SCC Code - 2230060230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselUrbanOtherFreewaysandExpressways"
+epaSccCode: "2230060250"
+description: "SCC Code - 2230060250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselUrbanOtherPrincipalArterial"
+epaSccCode: "2230060270"
+description: "SCC Code - 2230060270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Urban Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselUrbanMinorArterial"
+epaSccCode: "2230060290"
+description: "SCC Code - 2230060290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Urban Minor Arterial: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselUrbanCollector"
+epaSccCode: "2230060310"
+description: "SCC Code - 2230060310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Urban Collector: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselUrbanLocal"
+epaSccCode: "2230060330"
+description: "SCC Code - 2230060330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Urban Local: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileLDDTDieselParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileLDDTDieselParkingArea"
+epaSccCode: "2230060390"
+description: "SCC Code - 2230060390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Light Duty Diesel Trucks 1 thru 4 (M6) (LDDT), Level 4 - Parking Area: Total, Sector - Mobile - On-Road Diesel Light Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselRuralInterstate"
+epaSccCode: "2230071110"
+description: "SCC Code - 2230071110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Rural Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselRuralOtherPrincipalArterial"
+epaSccCode: "2230071130"
+description: "SCC Code - 2230071130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselRuralMinorArterial"
+epaSccCode: "2230071150"
+description: "SCC Code - 2230071150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselRuralMajorCollector"
+epaSccCode: "2230071170"
+description: "SCC Code - 2230071170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselRuralMinorCollector"
+epaSccCode: "2230071190"
+description: "SCC Code - 2230071190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselRuralLocal"
+epaSccCode: "2230071210"
+description: "SCC Code - 2230071210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Rural Local: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselUrbanInterstate"
+epaSccCode: "2230071230"
+description: "SCC Code - 2230071230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselUrbanOtherFreewaysandExpressways"
+epaSccCode: "2230071250"
+description: "SCC Code - 2230071250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselUrbanOtherPrincipalArterial"
+epaSccCode: "2230071270"
+description: "SCC Code - 2230071270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Urban Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselUrbanMinorArterial"
+epaSccCode: "2230071290"
+description: "SCC Code - 2230071290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Urban Minor Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselUrbanCollector"
+epaSccCode: "2230071310"
+description: "SCC Code - 2230071310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Urban Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselUrbanLocal"
+epaSccCode: "2230071330"
+description: "SCC Code - 2230071330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Urban Local: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV2BDieselParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV2BDieselParkingArea"
+epaSccCode: "2230071390"
+description: "SCC Code - 2230071390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 2B, Level 4 - Parking Area: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselRuralInterstate"
+epaSccCode: "2230072110"
+description: "SCC Code - 2230072110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Rural Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselRuralOtherPrincipalArterial"
+epaSccCode: "2230072130"
+description: "SCC Code - 2230072130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselRuralMinorArterial"
+epaSccCode: "2230072150"
+description: "SCC Code - 2230072150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselRuralMajorCollector"
+epaSccCode: "2230072170"
+description: "SCC Code - 2230072170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselRuralMinorCollector"
+epaSccCode: "2230072190"
+description: "SCC Code - 2230072190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselRuralLocal"
+epaSccCode: "2230072210"
+description: "SCC Code - 2230072210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Rural Local: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselUrbanInterstate"
+epaSccCode: "2230072230"
+description: "SCC Code - 2230072230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselUrbanOtherFreewaysandExpressways"
+epaSccCode: "2230072250"
+description: "SCC Code - 2230072250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselUrbanOtherPrincipalArterial"
+epaSccCode: "2230072270"
+description: "SCC Code - 2230072270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Urban Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselUrbanMinorArterial"
+epaSccCode: "2230072290"
+description: "SCC Code - 2230072290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Urban Minor Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselUrbanCollector"
+epaSccCode: "2230072310"
+description: "SCC Code - 2230072310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Urban Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselUrbanLocal"
+epaSccCode: "2230072330"
+description: "SCC Code - 2230072330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Urban Local: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV345DieselParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV345DieselParkingArea"
+epaSccCode: "2230072390"
+description: "SCC Code - 2230072390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 3, 4, & 5, Level 4 - Parking Area: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselRuralInterstate"
+epaSccCode: "2230073110"
+description: "SCC Code - 2230073110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Rural Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselRuralOtherPrincipalArterial"
+epaSccCode: "2230073130"
+description: "SCC Code - 2230073130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselRuralMinorArterial"
+epaSccCode: "2230073150"
+description: "SCC Code - 2230073150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselRuralMajorCollector"
+epaSccCode: "2230073170"
+description: "SCC Code - 2230073170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselRuralMinorCollector"
+epaSccCode: "2230073190"
+description: "SCC Code - 2230073190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselRuralLocal"
+epaSccCode: "2230073210"
+description: "SCC Code - 2230073210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Rural Local: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselUrbanInterstate"
+epaSccCode: "2230073230"
+description: "SCC Code - 2230073230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselUrbanOtherFreewaysandExpressways"
+epaSccCode: "2230073250"
+description: "SCC Code - 2230073250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselUrbanOtherPrincipalArterial"
+epaSccCode: "2230073270"
+description: "SCC Code - 2230073270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Urban Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselUrbanMinorArterial"
+epaSccCode: "2230073290"
+description: "SCC Code - 2230073290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Urban Minor Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselUrbanCollector"
+epaSccCode: "2230073310"
+description: "SCC Code - 2230073310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Urban Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselUrbanLocal"
+epaSccCode: "2230073330"
+description: "SCC Code - 2230073330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Urban Local: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV67DieselParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV67DieselParkingArea"
+epaSccCode: "2230073390"
+description: "SCC Code - 2230073390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 6 & 7, Level 4 - Parking Area: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselRuralInterstate"
+epaSccCode: "2230074110"
+description: "SCC Code - 2230074110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Rural Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselRuralOtherPrincipalArterial"
+epaSccCode: "2230074130"
+description: "SCC Code - 2230074130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Rural Other Principal Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselRuralMinorArterial"
+epaSccCode: "2230074150"
+description: "SCC Code - 2230074150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Rural Minor Arterial: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselRuralMajorCollector"
+epaSccCode: "2230074170"
+description: "SCC Code - 2230074170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Rural Major Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselRuralMinorCollector"
+epaSccCode: "2230074190"
+description: "SCC Code - 2230074190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Rural Minor Collector: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselRuralLocal"
+epaSccCode: "2230074210"
+description: "SCC Code - 2230074210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Rural Local: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselUrbanInterstate"
+epaSccCode: "2230074230"
+description: "SCC Code - 2230074230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Urban Interstate: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselUrbanOtherFreewaysandExpressways"
+epaSccCode: "2230074250"
+description: "SCC Code - 2230074250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Urban Other Freeways and Expressways: Total, Sector - Mobile - On-Road Diesel Heavy Duty Vehicles"
+
+Node: dcid:MobileHDDV8DieselUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselUrbanOtherPrincipalArterial"
+epaSccCode: "2230074270"
+description: "SCC Code - 2230074270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Urban Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileHDDV8DieselUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselUrbanMinorArterial"
+epaSccCode: "2230074290"
+description: "SCC Code - 2230074290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Urban Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileHDDV8DieselUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselUrbanCollector"
+epaSccCode: "2230074310"
+description: "SCC Code - 2230074310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Urban Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileHDDV8DieselUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselUrbanLocal"
+epaSccCode: "2230074330"
+description: "SCC Code - 2230074330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Urban Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileHDDV8DieselParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileHDDV8DieselParkingArea"
+epaSccCode: "2230074390"
+description: "SCC Code - 2230074390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Vehicles (HDDV) Class 8A & 8B, Level 4 - Parking Area: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselRuralInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselRuralInterstate"
+epaSccCode: "2230075110"
+description: "SCC Code - 2230075110, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Rural Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselRuralOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselRuralOtherPrincipalArterial"
+epaSccCode: "2230075130"
+description: "SCC Code - 2230075130, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Rural Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselRuralMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselRuralMinorArterial"
+epaSccCode: "2230075150"
+description: "SCC Code - 2230075150, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Rural Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselRuralMajorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselRuralMajorCollector"
+epaSccCode: "2230075170"
+description: "SCC Code - 2230075170, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Rural Major Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselRuralMinorCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselRuralMinorCollector"
+epaSccCode: "2230075190"
+description: "SCC Code - 2230075190, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Rural Minor Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselRuralLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselRuralLocal"
+epaSccCode: "2230075210"
+description: "SCC Code - 2230075210, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Rural Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselUrbanInterstate
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselUrbanInterstate"
+epaSccCode: "2230075230"
+description: "SCC Code - 2230075230, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Urban Interstate: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselUrbanOtherFreewaysandExpressways
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselUrbanOtherFreewaysandExpressways"
+epaSccCode: "2230075250"
+description: "SCC Code - 2230075250, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Urban Other Freeways and Expressways: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselUrbanOtherPrincipalArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselUrbanOtherPrincipalArterial"
+epaSccCode: "2230075270"
+description: "SCC Code - 2230075270, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Urban Other Principal Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselUrbanMinorArterial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselUrbanMinorArterial"
+epaSccCode: "2230075290"
+description: "SCC Code - 2230075290, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Urban Minor Arterial: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselUrbanCollector
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselUrbanCollector"
+epaSccCode: "2230075310"
+description: "SCC Code - 2230075310, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Urban Collector: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselUrbanLocal
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselUrbanLocal"
+epaSccCode: "2230075330"
+description: "SCC Code - 2230075330, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Urban Local: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:MobileBusDieselParkingArea
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcid:OnRoadVehicles
+name: "MobileBusDieselParkingArea"
+epaSccCode: "2230075390"
+description: "SCC Code - 2230075390, Level 1 - Mobile Sources, Level 2 - Highway Vehicles - Diesel, Level 3 - Heavy Duty Diesel Buses (School & Transit), Level 4 - Parking Area: Total, Sector - Industrial Processes - Chemical Manuf"
+
+Node: dcid:epaSccCode
+name: "epaSccCode"
+typeOf: schema:Property
+domainIncludes: schema:Emissions
+rangeIncludes: schema:Text
+description: "US Environmental Protection Agency (EPA) assigned unique codes that classify the different sources of Emissions."
+
+Node: dcid:epaPollutantCode
+name: "epaPollutantCode"
+typeOf: schema:Property
+domainIncludes: schema:Emissions
+rangeIncludes: schema:Text
+description: "Unique codes allocated to different pollutants."
+descriptionUrl: "https://aqs.epa.gov/aqsweb/documents/codetables/methods_all.html"

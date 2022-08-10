@@ -478,37 +478,85 @@ typeOf: dcs:AirPollutantEnum
 name: "Ozone"
 
 Node: dcs:SulfurDioxide
-typeOf: dcs:AirPollutantEnum
+typeOf: dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "SO2"
 name: "SulfurDioxide"
 
-Node: dcs:CarbonMonoxide
+Node: dcid:Sulfate
 typeOf: dcs:AirPollutantEnum
+name: "Sulfate"
+
+Node: dcs:CarbonMonoxide
+typeOf: dcid:EPA_CriteriaAirPollutant
 name: "CarbonMonoxide"
+epaPollutantCode: "CO"
+
+Node: dcid:CarbonDioxide
+typeOf: dcid:GreenhouseGas
+name: "Carbon Dioxide (CO2)"
+epaPollutantCode: "CO2"
 
 Node: dcid:OxidesOfNitrogen
-typeOf: dcs:AirPollutantEnum
+typeOf: dcid:EPA_CriteriaAirPollutant
 name: "Oxides Of Nitrogen (NOX)"
+epaPollutantCode: "NOX"
 
 Node: dcs:NitrogenDioxide
 typeOf: dcs:AirPollutantEnum
 specializationOf: dcs:OxidesOfNitrogen
 name: "NitrogenDioxide"
 
+Node: dcid:Nitrate
+typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:OxidesOfNitrogen
+name: "Nitrate (NO3)"
+epaPollutantCode: "NO3"
+
+Node: dcid:ElementalCarbon
+typeOf: dcs:AirPollutantEnum
+name: "Elemental Carbon"
+epaPollutantCode: "EC"
+
+Node: dcid:OrganicCarbon
+typeOf: dcs:AirPollutantEnum
+name: "Organic Carbon"
+epaPollutantCode: "OC"
+
 Node: dcs:DieselPM
 typeOf: dcs:AirPollutantEnum
 name: "DieselParticulateMatter"
 
-Node: dcs:PM2.5
+Node: dcid:DieselPM2.5
 typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:DieselPM
+epaPollutantCode: "DIESEL-PM25","DIESEL-PM2"
+name: "Diesel Particulate Matter 2.5"
+
+Node: dcid:DieselPM10
+typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:DieselPM
+epaPollutantCode: "DIESEL-PM10","DIESEL-PM1"
+name: "Diesel Particulate Matter 10"
+
+Node: dcs:PM2.5
+typeOf: dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "PM25-PRI"
 name: "PM2.5"
 
 Node: dcs:PM10
-typeOf: dcs:AirPollutantEnum
+typeOf: dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "PM10-PRI"
 name: "PM10"
 
-Node: dcid:VolatileOrganicCompound
+Node: dcid:PMFINE
 typeOf: dcs:AirPollutantEnum
+epaPollutantCode: "PMFINE"
+name: "PMFINE"
+
+Node: dcid:VolatileOrganicCompound
+typeOf: dcid:EPA_CriteriaAirPollutant
 name: "Volatile Organic Compound (VOC)"
+epaPollutantCode: "VOC"
 description: "Volatile organic compounds are compounds that have a high vapor pressure and low water solubility."
 descriptionUrl: "https://www.epa.gov/indoor-air-quality-iaq/what-are-volatile-organic-compounds-vocs"
 

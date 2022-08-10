@@ -3,7 +3,8 @@
 
 Node: dcid:Cobalt
 name: "Cobalt"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7440484"
 isProvisional: schema:True
 
 Node: dcid:Platinum
@@ -18,7 +19,8 @@ isProvisional: schema:True
 
 Node: dcid:Antimony
 name: "Antimony"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7440360"
 isProvisional: schema:True
 
 Node: dcid:Tungsten
@@ -38,7 +40,8 @@ isProvisional: schema:True
 
 Node: dcid:Methane
 name: "Methane"
-typeOf: dcid:ChemicalCompound
+typeOf: dcid:ChemicalCompound, dcs:GreenhouseGas
+epaPollutantCode: "CH4"
 isProvisional: schema:True
 
 Node: dcid:Neptunium
@@ -78,7 +81,8 @@ isProvisional: schema:True
 
 Node: dcid:Phosphorus
 name: "Phosphorus"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7723140"
 isProvisional: schema:True
 
 Node: dcid:Chromium
@@ -109,12 +113,14 @@ isProvisional: schema:True
 
 Node: dcid:Selenium
 name: "Selenium"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7782492"
 isProvisional: schema:True
 
 Node: dcid:Lead
 name: "Lead"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "7439921"
 isProvisional: schema:True
 
 Node: dcid:Lithium
@@ -124,7 +130,8 @@ isProvisional: schema:True
 
 Node: dcid:Manganese
 name: "Manganese"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7439965"
 isProvisional: schema:True
 
 Node: dcid:Neodymium
@@ -149,7 +156,8 @@ isProvisional: schema:True
 
 Node: dcid:Nickel
 name: "Nickel"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7440020"
 isProvisional: schema:True
 
 Node: dcid:Strontium
@@ -194,7 +202,8 @@ isProvisional: schema:True
 
 Node: dcid:Arsenic
 name: "Arsenic"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7440382"
 isProvisional: schema:True
 
 Node: dcid:Calcium
@@ -224,7 +233,8 @@ isProvisional: schema:True
 
 Node: dcid:Mercury
 name: "Mercury"
-typeOf: dcid:ChemicalElement
+typeOf: dcid:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7439976"
 isProvisional: schema:True
 
 Node: dcid:Curium
@@ -255,7 +265,8 @@ isProvisional: schema:True
 
 Node: dcid:Chlorine
 name: "Chlorine"
-typeOf: dcs:ChemicalElement
+typeOf: dcs:ChemicalElement, dcid:EPA_HazardousAirPollutant
+epaPollutantCode: "7782505"
 isProvisional: schema:True
 
 # Contaminants
@@ -300,12 +311,14 @@ isProvisional: schema:True
 Node: dcid:Ammonia
 name: "Ammonia"
 alternateName: "Azane"
-typeOf: dcid:ChemicalCompound, dcs:AirPollutantEnum
+typeOf: dcid:ChemicalCompound, dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "NH3"
 isProvisional: schema:True
 
 Node: dcid:Sulfate
 name: "Sulfate"
-typeOf: dcid:ChemicalCompound
+typeOf: dcid:ChemicalCompound, dcs:AirPollutantEnum
+epaPollutantCode: "SO4"
 isProvisional: schema:True
 
 Node: dcid:Nitrite
@@ -346,8 +359,9 @@ name: "Ethyl acrylate"
 isProvisional: schema:True
 
 Node: dcid:EthylBenzene
-typeOf: dcs:ChemicalCompound
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
 name: "Ethyl benzene"
+epaPollutantCode: "100414"
 isProvisional: schema:True
 
 Node: dcid:EthyleneGlycol
@@ -390,8 +404,15 @@ name: "Xylene"
 isProvisional: schema:True
 
 Node: dcid:Toluene
-typeOf: dcs:ChemicalCompound
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
 name: "Toluene"
+epaPollutantCode: "108883"
+isProvisional: schema:True
+
+Node: dcid:Chrysene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Chrysene"
+epaPollutantCode: "218019"
 isProvisional: schema:True
 
 Node: dcid:Toxaphene
@@ -404,3 +425,327 @@ typeOf: dcs:ChemicalCompound
 name: "Trichloroethylene"
 isProvisional: schema:True
 
+Node: dcid:Propanal
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Propanal"
+alternateName: "Propionaldehyde"
+epaPollutantCode: "123386"
+isProvisional: schema:True
+
+Node: dcid:NitrousOxide
+typeOf: dcs:ChemicalCompound, dcs:GreenhouseGas
+name: "Nitrous Oxide"
+epaPollutantCode: "N20"
+isProvisional: schema:True
+
+Node: dcid:Chromium_6
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Chromium(VI)"
+epaPollutantCode: "18540299"
+isProvisional: schema:True
+
+Node: dcid:Acenaphthylene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Acenaphthylene"
+epaPollutantCode: "208968"
+isProvisional: schema:True
+
+Node: dcid:Naphtho_1_2_B_Phenanthrene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Naphtho[1,2-b]Phenanthrene"
+alternateName: "Dibenzo[a,h]Anthracene"
+epaPollutantCode: "53703"
+isProvisional: schema:True
+
+Node: dcid:Acetaldehyde
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Acetaldehyde"
+epaPollutantCode: "75070"
+isProvisional: schema:True
+
+Node: dcid:Pyrene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Pyrene"
+epaPollutantCode: "129000"
+isProvisional: schema:True
+
+Node: dcid:Benzo_B_Fluoranthene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Benzo[b]Fluoranthene"
+epaPollutantCode: "205992"
+isProvisional: schema:True
+
+Node: dcid:Benzo_K_Fluoranthene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Benzo[k]Fluoranthene"
+epaPollutantCode: "207089"
+isProvisional: schema:True
+
+Node: dcid:Fluorene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Fluorene", "9H-Fluorene"
+epaPollutantCode: "86737"
+isProvisional: schema:True
+
+Node: dcid:Formaldehyde
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Formaldehyde"
+epaPollutantCode: "50000"
+isProvisional: schema:True
+
+Node: dcid:Acenaphthene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Acenaphthene"
+alternateName: "1,2-dihydroacenaphthylene"
+epaPollutantCode: "83329"
+isProvisional: schema:True
+
+Node: dcid:Acrolein
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Acrolein"
+alternateName: "Prop-2-Enal"
+epaPollutantCode: "107028"
+isProvisional: schema:True
+
+Node: dcid:Fluoranthene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Fluoranthene"
+epaPollutantCode: "206440"
+isProvisional: schema:True
+
+Node: dcid:Benzo_GHI_Perylene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Benzo[Ghi]Perylene","Benzo[g,h,i,]Perylene"
+epaPollutantCode: "191242"
+isProvisional: schema:True
+
+Node: dcid:Hexane
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Hexane"
+epaPollutantCode: "110543"
+isProvisional: schema:True
+
+Node: dcid:Anthracene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Anthracene"
+epaPollutantCode: "120127"
+isProvisional: schema:True
+
+Node: dcid:Benzo_A_Pyrene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Benzo[a]Pyrene"
+epaPollutantCode: "56553"
+isProvisional: schema:True
+
+Node: dcid:2_2_4_Trimethylpentane
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "2,2,4-Trimethylpentane"
+epaPollutantCode: "540841"
+isProvisional: schema:True
+
+Node: dcid:Styrene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Styrene"
+epaPollutantCode: "100425"
+isProvisional: schema:True
+
+Node: dcid:Benzo_A_Anthracene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Benzo[a]Anthracene "
+epaPollutantCode: "56553"
+isProvisional: schema:True
+
+Node: dcid:Indeno_1_2_3_C_D_Pyrene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Indeno[1,2,3-c,d]Pyrene"
+epaPollutantCode: "193395"
+isProvisional: schema:True
+
+Node: dcid:Benzene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Benzene"
+epaPollutantCode: "71432"
+isProvisional: schema:True
+
+Node: dcid:Phenanthrene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Phenanthrene"
+epaPollutantCode: "85018"
+isProvisional: schema:True
+
+Node: dcid:Naphthalene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Naphthalene"
+epaPollutantCode: "91203"
+isProvisional: schema:True
+
+Node: dcid:Buta_1_3_Diene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "buta-1,3-diene"
+alternateName: "1,3-Butadiene"
+epaPollutantCode: "106990"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_4_7_8_9_Heptachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,4,7,8,9-Heptachlorodibenzofuran"
+epaPollutantCode: "55673897"
+isProvisional: schema:True
+
+Node: dcid:2_3_4_6_7_8_Hexachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "2,3,4,6,7,8-Hexachlorodibenzofuran"
+epaPollutantCode: "60851345"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_4_6_7_8_9_Octachlorodibenzo_P_Dioxin
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,4,6,7,8,9-octachlorodibenzo-p-dioxin"
+alternateName: "Octachlorodibenzo-p-Dioxin"
+epaPollutantCode: "3268879"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_7_8_Pentachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,7,8-Pentachlorodibenzofuran"
+epaPollutantCode: "57117416"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_7_8_Pentachlorodibenzo_P_Dioxin
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,7,8-Pentachlorodibenzo-p-Dioxin"
+epaPollutantCode: "40321764"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_7_8_9_Hexachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,7,8,9-Hexachlorodibenzofuran"
+epaPollutantCode: "72918219"
+isProvisional: schema:True
+
+Node: dcid:2_3_7_8_Tetrachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "2,3,7,8-Tetrachlorodibenzofuran"
+epaPollutantCode: "51207319"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_6_7_8_Hexachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,6,7,8-Hexachlorodibenzofuran"
+epaPollutantCode: "57117449"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_7_8_9_Hexachlorodibenzo_P_Dioxin
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,7,8,9-Hexachlorodibenzo-p-Dioxin"
+epaPollutantCode: "19408743"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_4_6_7_8_Heptachlorodibenzo_P_Dioxin
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,4,6,7,8-Heptachlorodibenzo-p-Dioxin"
+epaPollutantCode: "35822469"
+isProvisional: schema:True
+
+Node: dcid:2_3_4_7_8_Pentachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "2,3,4,7,8-Pentachlorodibenzofuran"
+epaPollutantCode: "57117314"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_4_6_7_8_9_Octachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,4,6,7,8,9-Octachlorodibenzofuran"
+alternateName: "Octachlorodibenzofuran"
+epaPollutantCode: "39001020"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_4_7_8_Hexachlorodibenzofuran
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,4,7,8-Hexachlorodibenzofuran"
+epaPollutantCode: "70648269"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_6_7_8_Hexachlorodibenzo_P_Dioxin
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,6,7,8-Hexachlorodibenzo-p-Dioxin"
+epaPollutantCode: "57653857"
+isProvisional: schema:True
+
+Node: dcid:1_2_3_4_7_8_Hexachlorodibenzo_P_Dioxin
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2,3,4,7,8-Hexachlorodibenzo-p-Dioxin"
+epaPollutantCode: "39227286"
+isProvisional: schema:True
+
+Node: dcid:2_3_7_8_Tetrachlorodibenzo_P_Dioxin
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "2,3,7,8-Tetrachlorodibenzo-p-Dioxin"
+epaPollutantCode: "1746016"
+isProvisional: schema:True
+
+Node: dcid:1_2_Xylene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,2-Xylene"
+alternateName: "o-Xylene"
+epaPollutantCode: "95476"
+isProvisional: schema:True
+
+Node: dcid:1_4_Xylene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,4-Xylene"
+alternateName: "p-Xylene"
+epaPollutantCode: "106423"
+isProvisional: schema:True
+
+Node: dcid:Cadmium
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Cadmium"
+epaPollutantCode: "7440439"
+isProvisional: schema:True
+
+Node: dcid:Cumene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Cumene"
+epaPollutantCode: "98828"
+isProvisional: schema:True
+
+Node: dcid:Methanol
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Methanol"
+epaPollutantCode: "67561"
+isProvisional: schema:True
+
+Node: dcid:Oxo_Oxochromiooxy_Chromium
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Oxo(oxochromiooxy)Chromium"
+alternateName: "Chromium III"
+epaPollutantCode: "16065831"
+isProvisional: schema:True
+
+Node: dcid:1_3_Xylene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "1,3-xylene"
+alternateName: "m-Xylene","Xylenes(Mixed Isomers)"
+epaPollutantCode: "1330207"
+isProvisional: schema:True
+
+Node: dcid:PolycyclicAromaticHydrocarbons_Total
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "Polycyclic Aromatic Hydrocarbons Total"
+alternateName: "PAH, total"
+epaPollutantCode: "130498292"
+isProvisional: schema:True
+
+Node: dcid:2_Methoxy_2_Methylpropane
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "2-methoxy-2-methylpropane"
+alternateName: "Methyl Tert-Butyl Ether"
+epaPollutantCode: "1634044"
+isProvisional: schema:True
+
+Node: dcid:2_Methylnaphthalene
+typeOf: dcs:ChemicalCompound, dcid:EPA_HazardousAirPollutant
+name: "2-Methylnaphthalene"
+epaPollutantCode: "91576"
+isProvisional: schema:True
