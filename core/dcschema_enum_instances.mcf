@@ -2180,3 +2180,23 @@ typeOf: dcs:FBI_MeasurementQualifierEnum
 Node: dcid:SummerSeason
 name: "SummerSeason"
 typeOf: dcs:ClimaticSeasonEnum
+
+Node: dcid:FHFA_PurchaseOnly
+name: "FHFA_PurchaseOnly"
+typeOf: dcs:HousingPriceIndexDataCategoryEnum
+description: "Housing price index estimated with FHFA mortage data from purchase of new properties."
+
+Node: dcid:FHFA_PurchaseAndDistressFree
+name: "FHFA_PurchaseOnlyDistressFree"
+typeOf: dcs:HousingPriceIndexDataCategoryEnum
+description: "Housing price index estimated with FHFA purchase only data that excludes bank owned(distressed) properties."
+
+Node: dcid:FHFA_PurchaseAndRefinanced
+name: "FHFA_PurchaseAndRefinance"
+typeOf: dcs:HousingPriceIndexDataCategoryEnum
+description: "Housing price index estimated with FHFA purchase only mortgage data plus refinance mortgages."
+
+Node: dcid:FHFA_Expanded
+name: "FHFA_Expanded"
+typeOf: dcs:HousingPriceIndexDataCategoryEnum
+description: "Housing price index estimated with FHFA purchase only mortgage data plus FHA and county level recorder data."
