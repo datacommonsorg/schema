@@ -784,3 +784,21 @@ measuredProperty: dcs:windSpeed
 statType: dcs:measuredValue
 windComponent: dcs:VComponent
 height: [10 Meter]
+
+Node: dcid:Difference_Mean_Temperature_model1_observed
+measuredProperty: dcid:temperature
+measurementQualifier: dcs:Difference
+measurementMethod: dcAggregate/Difference
+statType: dcid:meanValue
+description: "Difference in mean temperatures between model1 and actual temperatures (observed)>"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+
+Node: dcid:Difference_Mean_Temperature_model2_observed
+measuredProperty: dcid:temperature
+measurementQualifier: dcs:Difference
+measurementMethod: dcAggregate/Difference
+statType: dcid:meanValue
+description: "Difference in mean temperatures between model2 and actual temperatures (observed)>"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
