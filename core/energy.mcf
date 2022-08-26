@@ -44,7 +44,7 @@ descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=H"
 Node: dcid:generation
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
 name: "generation"
 
 Node: dcid:producingSector
@@ -74,7 +74,7 @@ name: "retailSales"
 Node: dcid:consumption
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding
 name: "consumption"
 
 Node: dcid:expenditure
@@ -142,7 +142,7 @@ name: "outage"
 Node: dcid:imports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
 name: "imports"
 
 Node: dcid:exports
@@ -154,7 +154,7 @@ name: "exports"
 Node: dcid:reserves
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Energy, schema:Fuel
 name: "reserves"
 
 Node: dcid:loss
@@ -203,6 +203,10 @@ name: "SubbituminousCoal"
 Node: dcid:ConventionalHydroelectric
 typeOf: dcs:EnergySourceEnum
 name: "ConventionalHydroelectric"
+
+Node: dcid:SmallHydroelectric
+typeOf: dcs:EnergySourceEnum
+name: "SmallHydroelectric"
 
 Node: dcid:Geothermal
 typeOf: dcs:EnergySourceEnum
@@ -332,9 +336,46 @@ Node: dcid:CokeOvenGas
 typeOf: dcs:EnergySourceEnum
 name: "Coke oven gas"
 
+Node: dcid:CokeCoal
+typeOf: dcs:EnergySourceEnum
+name: "Coke coal"
+
 Node: dcid:CokingCoal
 typeOf: dcs:EnergySourceEnum
 name: "Coking coal"
+
+Node: dcid:NonCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Non Coking Coal"
+
+Node: dcid:PrimeCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Prime Coking Coal"
+
+Node: dcid:SemiCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Semi Coking Coal"
+
+Node: dcid:MediumCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Medium Coking Coal"
+
+Node: dcid:HighSulphurCoal
+typeOf: dcs:EnergySourceEnum
+name: "High Sulphur Coal"
+
+Node: dcid:MiddlingsCoal
+typeOf: dcs:EnergySourceEnum
+name: "Middlings Coal"
+
+Node: dcid:RawCoal
+typeOf: dcs:EnergySourceEnum
+name: "Raw Coal"
+
+Node: dcid:WashedCoal
+typeOf: dcs:EnergySourceEnum
+name: "Washed Coal"
+
 
 Node: dcid:CombustibleFuel
 typeOf: dcs:EnergySourceEnum
@@ -415,9 +456,9 @@ typeOf: dcs:EnergySourceEnum
 name: "Liquid bio fuel"
 specializationOf: dcid:HeatCombustibleFuels
 
-Node: dcid:LiquifiedPetroleumGas
+Node: dcid:LiquefiedPetroleumGas
 typeOf: dcs:EnergySourceEnum
-name: "Liquified petroleum gas (LPG)"
+name: "Liquefied petroleum gas (LPG)"
 
 Node: dcid:Lubricants
 typeOf: dcs:EnergySourceEnum
@@ -832,7 +873,40 @@ name: "Industry"
 Node: dcid:EnergyIndustry
 typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Energy industry"
-specializationOf: Industry
+specializationOf: dcs:Industry
+
+Node: dcid:BricksConstructionIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Bricks Construction Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:CementConstructionIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Cement Construction Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:FertilizerIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Fertilizer Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:RetailIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Retail Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:TeaIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Tea Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:OilGasImports
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Oil Gas Imports"
+
+Node: dcid:OilGasSales
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Oil Gas Sales"
 
 Node: dcid:CokeOvens
 typeOf: dcs:EnergyConsumptionSectorEnum
@@ -919,7 +993,7 @@ typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Pump storage plants"
 specializationOf: dcid:EnergyIndustry
 
-Node: dcid:LiquifiedNaturalGasPlants
+Node: dcid:LiquefiedNaturalGasPlants
 typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Liquified natural gas plants"
 specializationOf: dcid:EnergyIndustry
@@ -1079,6 +1153,17 @@ typeOf: dcs:VolumeUnitOfMeasure
 name: "Mcf"
 description: "Volume of 1000 cubic feet."
 descriptionUrl: "https://www.eia.gov/tools/faqs/faq.php?id=45"
+
+Node: dcid:StandardCubicMeter
+typeOf: dcs:VolumeUnitOfMeasure
+name: "MillionMetricStandardCubicMeters"
+description: "Standard cubic meter (SCM) is a unit of measure for amount of gas in one cubic meter at 15° Celcius and an absolute pressure of 1.01325 bar."
+descriptionUrl: "https://www.lawinsider.com/dictionary/standard-cubic-metre"
+
+Node: dcid:MillionMetricStandardCubicMeter
+typeOf: dcs:VolumeUnitOfMeasure
+name: "MillionMetricStandardCubicMeter"
+description: "Million metric standard cubic meter (MMSCM) is a unit of measure for amount of gas in 1000000 cubic meters at 15° Celcius and an absolute pressure of 1.01325 bar."
 
 Node: dcid:USCentPerKilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
@@ -2618,4 +2703,12 @@ typeOf: schema:Property
 name: "electrifiedHouseholds"
 domainIncludes: schema:Electricity, dcs:Households
 rangeIncludes: schema:Quantity
+
+Node: dcid:IndiaEDM_UnspecifiedSector
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "India Energy Dashboard Unspecified Sector"
+
+Node: dcid:IndiaEDM_OtherOilProducts
+typeOf: dcs:EnergySourceEnum
+name: "India Energy Dashboard Other Oil Products"
 
