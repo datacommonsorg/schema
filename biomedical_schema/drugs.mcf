@@ -4,31 +4,24 @@ typeOf: schema:Class
 subClassOf: dcs:ChemicalCompound
 description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
 
-Node: dcid:FlatChemicalID
-name: "FlatChemicalID"
+Node: dcid:StitchFlatCompoundID
+name: "StitchFlatCompoundID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Drug
 description: "STITCH ID for the stereo-specific compound."
 descriptionUrl: "http://stitch.embl.de/download/README"
 
-Node: dcid:StereoChemicalID
-name: "StereoChemicalID"
+Node: dcid:StitchStereoCompoundID
+name: "StitchStereoCompoundID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Drug
 description: "STITCH ID for the "flat" compound, i.e. with merged stereo-isomers." 
 descriptionUrl: "http://stitch.embl.de/download/README"
 
-Node: dcid:SourceChemicalID
-name: "SourceChemicalID"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:Drug
-description: "PubChem Compound ID without any prefix." 
-
-Node: dcid:Atc
-name: "Atc"
+Node: dcid:AnatomicalTherapeuticChemicalID
+name: "AnatomicalTherapeuticChemicalID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Drug
@@ -42,37 +35,23 @@ domainIncludes: dcs:Drug
 description: "Mass of a molecule of a substance, based on 12 as the atomic weight of carbon-12."
 descriptionUrl: "https://www.britannica.com/science/molecular-weight"
 
-Node: dcid:PubChemSimilarSubstanceID
-name: "PubChemSubstanceID"
+Node: dcid:SimilarPubChemSubstanceID
+name: "SimilarPubChemSubstanceID"
 typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:Drug
 description: "PubChem Substance IDs of similar substances."
 
-Node: dcid:PubChemSimilarCompoundID
-name: "PubChemCompoundID"
+Node: dcid:SimilarPubChemCompoundID
+name: "SimilarPubChemCompoundID"
 typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:Drug
 description: "PubChem Compound IDs of similar compounds."
-
-Node: dcid:MeshDCID
-name: "MeshDCID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Drug
-description: "Cluster of one or more concepts used for subject indexing and retrieval. Identified uniquely by a DescriptorUI and DescriptorName. A Descriptor. A Descriptor record. Also known as Main Heading. (Note that this differs from the MEDLINE MeshHeading element. For example, the MEDLINE element includes both the Descriptor name and the Qualifier name assigned to a citation.)." 
-
-Node: dcid:ChemblDCID
-name: "ChemblDCID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Drug
-description: "ID from the ChEMBL database with a 'bio/' prefix." 
 
 Node: dcid:SameAs
 name: "SameAs"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Drug
-description: "Includes the matching ChEMBL ID found in Data Commons and the ChEMBL ID in the ChemblDCID column." 
+description: "Includes the matching ChEMBL ID found in Data Commons and the ChEMBL ID in STITCH." 
