@@ -364,6 +364,13 @@ rangeIncludes: dcs:WindComponentEnum
 name: "windComponent"
 description: "The component of wind vector, which might be one of U, V or Z."
 
+Node: dcid:climateModel
+typeOf: schema:Property
+description: "A climate model for projecting/forecasting measures like temperature, humidity etc."
+domainIncludes: schema:Place
+rangeIncludes: dcs:ClimateModelEnum
+name: "climateModel"
+
 ## Enums
 
 Node: dcid:HumidityParameterCategoryEnum
@@ -662,6 +669,136 @@ Node: dcid:ZComponent
 typeOf: dcs:WindComponentEnum
 name: "ZComponent"
 
+Node: dcid:ClimateModelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ClimateModelEnum"
+description: "Type of climate model."
+
+Node: dcid:MPI-ESM1-2-HR
+typeOf: dcs:ClimateModelEnum
+name: "MPI-ESM1-2-HR"
+
+Node: dcid:CMCC-ESM2
+typeOf: dcs:ClimateModelEnum
+name: "CMCC-ESM2"
+
+Node: dcid:MIROC6
+typeOf: dcs:ClimateModelEnum
+name: "MIROC6"
+
+Node: dcid:INM-CM4-8
+typeOf: dcs:ClimateModelEnum
+name: "INM-CM4-8"
+
+Node: dcid:UKESM1-0-LL
+typeOf: dcs:ClimateModelEnum
+name: "UKESM1-0-LL"
+
+Node: dcid:EC-EARTH3
+typeOf: dcs:ClimateModelEnum
+name: "EC-EARTH3"
+
+Node: dcid:NESM3
+typeOf: dcs:ClimateModelEnum
+name: "NESM3"
+
+Node: dcid:TAIESM1
+typeOf: dcs:ClimateModelEnum
+name: "TAIESM1"
+
+Node: dcid:HADGEM3-GC31-MM
+typeOf: dcs:ClimateModelEnum
+name: "HADGEM3-GC31-MM"
+
+Node: dcid:GISS-E2-1-G
+typeOf: dcs:ClimateModelEnum
+name: "GISS-E2-1-G"
+
+Node: dcid:MIROC-ES2L
+typeOf: dcs:ClimateModelEnum
+name: "MIROC-ES2L"
+
+Node: dcid:NORESM2-LM
+typeOf: dcs:ClimateModelEnum
+name: "NORESM2-LM"
+
+Node: dcid:NORESM2-MM
+typeOf: dcs:ClimateModelEnum
+name: "NORESM2-MM"
+
+Node: dcid:GFDL-CM4
+typeOf: dcs:ClimateModelEnum
+name: "GFDL-CM4"
+
+Node: dcid:CNRM-CM6-1
+typeOf: dcs:ClimateModelEnum
+name: "CNRM-CM6-1"
+
+Node: dcid:MRI-ESM2-0
+typeOf: dcs:ClimateModelEnum
+name: "MRI-ESM2-0"
+
+Node: dcid:HADGEM3-GC31-LL
+typeOf: dcs:ClimateModelEnum
+name: "HADGEM3-GC31-LL"
+
+Node: dcid:FGOALS-G3
+typeOf: dcs:ClimateModelEnum
+name: "FGOALS-G3"
+
+Node: dcid:GFDL-ESM4
+typeOf: dcs:ClimateModelEnum
+name: "GFDL-ESM4"
+
+Node: dcid:INM-CM5-0
+typeOf: dcs:ClimateModelEnum
+name: "INM-CM5-0"
+
+Node: dcid:ACCESS-ESM1-5
+typeOf: dcs:ClimateModelEnum
+name: "ACCESS-ESM1-5"
+
+Node: dcid:CANESM5
+typeOf: dcs:ClimateModelEnum
+name: "CANESM5"
+
+Node: dcid:KACE-1-0-G
+typeOf: dcs:ClimateModelEnum
+name: "KACE-1-0-G"
+
+Node: dcid:KIOST-ESM
+typeOf: dcs:ClimateModelEnum
+name: "KIOST-ESM"
+
+Node: dcid:ACCESS-CM2
+typeOf: dcs:ClimateModelEnum
+name: "ACCESS-CM2"
+
+Node: dcid:MPI-ESM1-2-LR
+typeOf: dcs:ClimateModelEnum
+name: "MPI-ESM1-2-LR"
+
+Node: dcid:BCC-CSM2-MR
+typeOf: dcs:ClimateModelEnum
+name: "BCC-CSM2-MR"
+
+Node: dcid:CNRM-ESM2-1
+typeOf: dcs:ClimateModelEnum
+name: "CNRM-ESM2-1"
+
+Node: dcid:EC-EARTH3-VEG-LR
+typeOf: dcs:ClimateModelEnum
+name: "EC-EARTH3-VEG-LR"
+
+Node: dcid:IPSL-CM6A-LR
+typeOf: dcs:ClimateModelEnum
+name: "IPSL-CM6A-LR"
+
+Node: dcid:CMCC-CM2-SR5
+typeOf: dcs:ClimateModelEnum
+name: "CMCC-CM2-SR5"
+
 ## Units
 
 Node: dcid:MicrogramsPerCubicMeter
@@ -878,12 +1015,3 @@ name: "CMIP6ReferencePeriod"
 description: "The reference period used for comparison in IPCC CMIP6 report, which is from 1995 to 2014."
 sameAs: [1995 2014 dcs:Date]
 
-## Model vs Reference (actual) Differences
-
-Node: dcid:differenceBaselineMeasurementMethod
-typeOf: schema:Property
-name: differenceBaselineMeasurementMethod
-
-Node: dcid:differenceToMeasurementMethod
-typeOf: schema:Property
-name: differenceToMeasurementMethod
