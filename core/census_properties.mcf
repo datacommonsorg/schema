@@ -566,3 +566,10 @@ name: "vehicleTrips"
 typeOf: schema:Property
 domainIncludes: dcs:Person, dcs:Household
 description: "Number of trips made by a vehicle."
+
+Node: dcid:transportationType
+typeOf: dcs:Property
+rangeIncludes: dcs:TransportationTypeEnum
+domainIncludes: dcid:Household, dcid:Person
+name: "transportationType"
+description: "Transportation type used by Household/Person."
