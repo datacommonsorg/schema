@@ -200,7 +200,7 @@ name: "PhysicalActivityEnum"
 description: "The type of physical activity performed."
 
 Node: dcid:PhysicalActivity
-typeOf:dcs:PhysicalActivityEnum
+typeOf: dcs:PhysicalActivityEnum
 name: "Physical Activity"
 
 Node: dcid:HealthEnhancingPhysicalActivity
@@ -331,31 +331,31 @@ name: "FrequencyEnum"
 description: "The rate at which something occurs over a particular period of time."
 
 Node: dcid:Daily
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "Daily"
 
 Node: dcid:EveryMonth
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "EveryMonth"
 
 Node: dcid:EveryWeek
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "EveryWeek"
 
 Node: dcid:LessThanOnceAMonth
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "LessThanOnceAMonth"
 
 Node: dcid:Never
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "Never"
 
 Node: dcid:NotInTheLast12Months
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "NotInTheLast12Months"
 
 Node: dcid:AtLeastOnceAWeek
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "AtLeastOnceAWeek"
 
 Node: dcid:AtLeast30MinutesPerDay
@@ -363,24 +363,52 @@ typeOf: dcid:FrequencyEnum
 name: "AtLeast30MinutesPerDay"
 
 Node: dcid:AtLeastOneHourPerDay
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "AtLeastOneHourPerDay"
 
 Node: dcid:Occasional
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "Occasional"
 
 Node: dcid:LessThanOnceAWeek
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "LessThanOnceAWeek"
 
 Node: dcid:LessThanOneHourPerDay
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "LessThanOneHourPerDay"
 
 Node: dcid:Rarely
-typeOf: dcid:FrequencyEnum
+typeOf: dcs:FrequencyEnum
 name: "Rarely"
+
+Node: dcid:OnceADay
+typeOf: dcs:FrequencyEnum
+name: "OnceADay"
+
+Node: dcid:AtLeastOnceADay
+typeOf: dcs:FrequencyEnum
+name: "AtLeastOnceADay"
+
+Node: dcid:AtleastTwiceADay
+typeOf: dcs:FrequencyEnum
+name: "AtleastTwiceADay"
+
+Node: dcid:LessThanOnceAWeek
+typeOf: dcs:FrequencyEnum
+name: "LessThanOnceAWeek"
+
+Node: dcid:From1To3TimesAWeek
+typeOf: dcs:FrequencyEnum
+name: "From1To3TimesAWeek"
+
+Node: dcid:From4To6TimesAWeek
+typeOf: dcs:FrequencyEnum
+name: "From4To6TimesAWeek"
+
+Node: dcid:NeverOrOccasionally
+typeOf: dcs:FrequencyEnum
+name: "NeverOrOccasionally"
 
 Node: dcid:activityFrequency
 typeOf: schema:Property
@@ -388,3 +416,98 @@ name: "activityFrequency"
 rangeIncludes: dcs:FrequencyEnum, dcs:QuantityRange
 domainIncludes: dcs:Person
 description: "The interval at which an activity or event takes place."
+
+# Consumption of Fruits and vegetables
+Node: dcid:ConsumptionOfFruits
+typeOf: dcs:HealthBehaviorEnum
+name: "ConsumptionOfFruits"
+
+Node: dcid:ConsumptionOfVegetables
+typeOf: dcs:HealthBehaviorEnum
+name: "ConsumptionOfVegetables"
+
+Node: dcid:ConsumptionOfSugarSweetenedSoftDrinks
+typeOf: dcs:HealthBehaviorEnum
+name: "ConsumptionOfSugarSweetenedSoftDrinks"
+
+Node: dcid:ConsumptionOfPureFruitOrVegetableJuice
+typeOf: dcs:HealthBehaviorEnum
+name: "ConsumptionOfPureFruitOrVegetableJuice"
+
+# SocialSupportLevel
+Node: dcid:SocialSupportLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SocialSupportLevelEnum"
+description: "Social support is the perception that one has close people to count on, concern shown by other people, practical help from neighbours in case of need."
+
+Node: dcid:ReceivingStrongSocialSupport
+typeOf: dcs:SocialSupportLevelEnum
+name: "ReceivingStrongSocialSupport"
+description: "Receiving strong social support."
+
+Node: dcid:ReceivingIntermediateSocialSupport
+typeOf: dcs:SocialSupportLevelEnum
+name: "ReceivingIntermediateSocialSupport"
+description: "Receiving intermediate social support."
+
+Node: dcid:ReceivingPoorSocialSupport
+typeOf: dcs:SocialSupportLevelEnum
+name: "ReceivingPoorSocialSupport"
+description: "Receiving poor social support."
+
+Node: dcid:socialSupportLevel
+typeOf: schema:Property
+name: "socialSupportLevel"
+rangeIncludes: dcs:SocialSupportLevelEnum
+domainIncludes: dcs:Person
+description: "Level of perceived social support (perception that one has close people to count on, concern shown by other people, practical help from neighbours in case of need)."
+descriptionUrl: "https://ec.europa.eu/eurostat/cache/metadata/en/hlth_det_esms.htm"
+
+# SocialSupportType
+Node: dcid:SocialSupportTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SocialSupportTypeEnum"
+description: "Type of social support a person is providing or receiving."
+
+Node: dcid:ProvidingInformalCareOrAssistance
+typeOf: dcs:SocialSupportTypeEnum
+name: "ProvidingInformalCareOrAssistance"
+description: "Providing care or assistance to persons suffering from some age problem, chronic health condition or infirmity."
+
+Node: dcid:NotProvidingInformalCareOrAssistance
+typeOf: dcs:SocialSupportTypeEnum
+name: "NotProvidingInformalCareOrAssistance"
+description: "Not providing care or assistance to persons suffering from some age problem, chronic health condition or infirmity."
+
+Node: dcid:socialSupportType
+typeOf: schema:Property
+name: "socialSupportType"
+rangeIncludes: dcs:SocialSupportTypeEnum
+domainIncludes: dcs:Person
+description: "Type of social support a person is providing or receiving."
+
+# SocialSupportBeneficiaryType
+Node: dcid:SocialSupportBeneficiaryTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SocialSupportBeneficiaryTypeEnum"
+description: "Category of people receiving the social support."
+
+Node: dcid:Relatives
+typeOf: dcs:SocialSupportBeneficiaryTypeEnum
+name: "Relatives"
+description: "Persons receiving social support are connected by blood or marriage."
+
+Node: dcid:NonRelatives
+typeOf: dcs:SocialSupportBeneficiaryTypeEnum
+name: "NonRelatives"
+description: "Persons receiving social support are not connected by blood or marriage."
+
+Node: dcid:socialSupportBeneficiaryType
+typeOf: schema:Property
+name: "socialSupportBeneficiaryType"
+rangeIncludes: dcs:SocialSupportBeneficiaryTypeEnum
+domainIncludes: dcs:Person
+description: "Category of people receiving the social support."
