@@ -25,6 +25,20 @@ subClassOf: dcs:Event
 description: "Wildland fire is any non-structure fire that occurs in an area in which development is essentially non-existent, except for roads, railroads, power lines, and similar transportation facilities."
 descriptionUrl: "https://www.nifc.gov/prevEdu/comm_guide/ch2.html"
 
+Node: dcid:PrescribedFireEvent
+typeOf: schema:Class
+name: "PrescribedFireEvent"
+subClassOf: dcs:Event
+description: "A wildland fire originating from a planned ignition in accordance with applicable laws, policies, and regulations to meet specific objectives."
+descriptionUrl: "https://www.nwcg.gov/term/glossary/prescribed-fire"
+
+Node: dcid:IncidentComplexEvent
+typeOf: schema:Class
+name: "IncidentComplexEvent"
+subClassOf: dcs:Event
+description: "Two or more distinct incidents in the same general area that, by management action, are managed under a single incident commander or unified command in order to improve efficiency and simplify incident management processes."
+descriptionUrl: "https://www.nwcg.gov/term/glossary/incident-complex"
+
 Node: dcid:StormEpisode
 typeOf: schema:Class
 name: "StormEpisode"
@@ -239,7 +253,7 @@ name: "ThunderstormWindEvent"
 subClassOf: dcs:MeteorologicalEvent
 
 Node: dcid:LightningEvent
-typeOf: schema:Class
+typeOf: schema:Class, dcs:FireCauseGeneralEnum
 name: "LightningEvent"
 subClassOf: dcs:MeteorologicalEvent
 
@@ -742,7 +756,7 @@ descriptionUrl: "https://www.nifc.gov/prevEdu/comm_guide/ch2.html"
 
 Node: dcid:PrescribedFire
 name: "PrescribedFire"
-typeOf: dcs:FireIncidentTypeEnum, dcs:EmissionSourceEnum
+typeOf: dcs:FireIncidentTypeEnum, dcs:EmissionSourceEnum, dcs:FireCauseEnum
 description: "Any fire ignited by management actions to meet specific objectives, e.g., the establishment/maintenance of healthy forests and grasslands or the enhancement of certain wildlife habitat. Prescribed fire is a well-established practice on public and private lands throughout the world, and is based on years of scientific research. Resource managers carefully calculate meteorological factors, fuels, slope of land, and other relevant conditions in planning prescribed fires. Utmost care is taken to protect human life and property, manage impacts of smoke, protect historical and archeological resources, and protect the ecological integrity of the physical and biological resources (NIFC.gov)."
 descriptionUrl: "https://www.nifc.gov/prevEdu/comm_guide/ch2.html"
 
@@ -756,6 +770,20 @@ name: "FireCauseEnum"
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 description: "Possible fire causes."
+
+Node: dcid:FireCauseGeneralEnum
+name: "FireCauseGeneralEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "General fire causes."
+specializationOf: dcid:FireCauseEnum
+
+Node: dcid:FireCauseSpecificEnum
+name: "FireCauseSpecificEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Specific fire causes."
+specializationOf: dcid:FireCauseGeneralEnum
 
 Node: dcid:FireCauseHuman
 name: "FireCauseHuman"
@@ -771,23 +799,538 @@ typeOf: dcs:FireCauseEnum
 
 Node: dcid:FireCauseUnknown
 name: "FireCauseUnknown"
-typeOf: dcs:FireCauseEnum
+typeOf: dcs:FireCauseEnum, dcs:FireCauseGeneralEnum, dcs:FireCauseSpecificEnum
 
 Node: dcid:FireCauseOther
 name: "FireCauseOther"
-typeOf: dcs:FireCauseEnum
+typeOf: dcs:FireCauseEnum, dcs:FireCauseGeneralEnum, dcs:FireCauseSpecificEnum
+
+## WGIFS Causes - General
+Node: dcid:Camping
+name: "Camping"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:CoalSeam
+name: "CoalSeam"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:DebrisOrOpenBurning
+name: "DebrisOrOpenBurning"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:EquipmentAndVehicleUse
+name: "EquipmentAndVehicleUse"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:FirearmsAndExplosivesUse
+name: "FirearmsAndExplosivesUse"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:FirearmsOrWeapons
+name: "FirearmsOrWeapons"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:Fireworks
+name: "Fireworks"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:IncendiaryMaterials
+name: "IncendiaryMaterials"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:InvestigatedButUndetermined
+name: "InvestigatedButUndetermined"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:MisuseOfFireByMinor
+name: "MisuseOfFireByMinor"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:NIFC_OtherHumanFireCause
+name: "NIFC_OtherHumanFireCause"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:NIFC_OtherNaturalFireCause
+name: "NIFC_OtherNaturalFireCause"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:PowerProduction
+name: "PowerProduction"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:Railroad
+name: "Railroad"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:RailroadOperationsAndMaintenance
+name: "RailroadOperationsAndMaintenance"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:RecreationAndCeremony
+name: "RecreationAndCeremony"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:FireCauseUndetermined
+name: "FireCauseUndetermined"
+typeOf: dcs:FireCauseGeneralEnum
+
+Node: dcid:FireCauseUtilities
+name: "FireCauseUtilities"
+typeOf: dcs:FireCauseGeneralEnum
+
+## WGIFS Causes - Specific
+# Specific fire causes
+Node: dcid:AccidentOrDerailment
+name: "AccidentOrDerailment"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Aerialfireworks
+name: "Aerialfireworks"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Ammunition
+name: "Ammunition"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ArmorPiercingIncendiaryOrTracerAmmunition
+name: "ArmorPiercingIncendiaryOrTracerAmmunition"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ArsonCrimeConcealment
+name: "Arson-CrimeConcealment"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ArsonExcitement
+name: "ArsonExcitement"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ArsonExtremismOrTerrorism
+name: "ArsonExtremismOrTerrorism"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ArsonProfit
+name: "ArsonProfit"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ArsonRetaliation
+name: "ArsonRetaliation"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ArsonVandalism
+name: "ArsonVandalism"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:AshDisposal
+name: "AshDisposal"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:BarbequeOrSmoker
+name: "BarbequeOrSmoker"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FireCauseBarrel
+name: "FireCauseBarrel"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Blasting
+name: "Blasting"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Bonfire
+name: "Bonfire"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:BrakeShoeParticle
+name: "BrakeShoeParticle"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Branding
+name: "Branding"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:BurningPersonalItems
+name: "BurningPersonalItems"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Campfire
+name: "Campfire"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:CatalystWelding
+name: "CatalystWelding"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:CeremonialOrCultural
+name: "CeremonialOrCultural"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ChainsawOrBrushsawOrWeedtrimmer
+name: "ChainsawOrBrushsawOrWeedtrimmer"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:CigarOrCigaretteOrPipe
+name: "CigarOrCigaretteOrPipe"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:CommercialTransportVehicle
+name: "CommercialTransportVehicle"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Cooking
+name: "Cooking"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:CookingFire
+name: "CookingFire"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Cultural
+name: "Cultural"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:CuttingOrWelding
+name: "CuttingOrWelding"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:DitchOrFence
+name: "DitchOrFence"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:DrugOperations
+name: "DrugOperations"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:DrugParaphernalia
+name: "DrugParaphernalia"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:DynamicGridFailure
+name: "DynamicGridFailure"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ElectricFences
+name: "ElectricFences"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ElectricMotorOrPowerToolsOrBattery
+name: "ElectricMotorOrPowerToolsOrBattery"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ElectricalTransmissionOrDistributionSystems
+name: "ElectricalTransmissionOrDistributionSystems"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:EscapedPrescribedBurn
+name: "EscapedPrescribedBurn"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ExhaustSystemParticle
+name: "ExhaustSystemParticle"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ExplodingTargets
+name: "ExplodingTargets"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:ExplodingTargetShooting
+name: "Explodingtargetshooting"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FarmingEquipment
+name: "FarmingEquipment"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FieldBurning
+name: "FieldBurning"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FirePlay
+name: "FirePlay"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FireworksConsumerOrPersonalUse
+name: "FireworksConsumerOrPersonalUse"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FireworksDisplayOrProfessionalUse
+name: "FireworksDisplayOrProfessionalUse"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Flares
+name: "Flares"
+typeOf: dcs:FireCauseSpecificEnum
+
+
+Node: dcid:FlaresOrFuses
+name: "FlaresOrFuses"
+typeOf: dcs:FireCauseSpecificEnum
+
+
+Node: dcid:FlueSparks
+name: "FlueSparks"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:GasCookingOrWarmingOrLightingDevice
+name: "GascookingOrwarmingOrlightingdevice"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:GlassRefractionOrMagnification
+name: "GlassRefractionOrMagnification"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:GrazingImprovement
+name: "GrazingImprovement"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Groundfireworks
+name: "Groundfireworks"
+typeOf: dcs:FireCauseSpecificEnum
+
+
+Node: dcid:HabitatImprovement
+name: "HabitatImprovement"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:HandpileOrSlash
+name: "HandpileOrslash"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:HeavyEquipment
+name: "HeavyEquipment"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:HeavyEquipmentAmdImplements
+name: "Heavyequipment&implements"
+typeOf: dcs:FireCauseSpecificEnum
+
+
+Node: dcid:HomeOutdoorWoodBurningFurnaces
+name: "HomeOutdoorWoodBurningFurnaces"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Hotset
+name: "Hotset"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:HotworkWelderOrGrinderOrTorchOrCutter
+name: "HotworkWelderOrGrinderOrTorchOrCutter"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:IncendiaryAmmunition
+name: "IncendiaryAmmunition"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:IncendiaryDevice
+name: "IncendiaryDevice"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:IncendiaryTracerAmmunition
+name: "IncendiaryTracerAmmunition"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:LandClearing
+name: "LandClearing"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:LanternOrCatalyticHeater
+name: "LanternOrCatalyticHeater"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Lighter
+name: "Lighter"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:LighterOrMatches
+name: "LighterOrmatches"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:LoggingEquipment
+name: "LoggingEquipment"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:MachinePileOrSlash
+name: "MachinePileOrSlash"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Matches
+name: "Matches"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:MilitaryOrdinance
+name: "MilitaryOrdinance"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:MotorVehicle
+name: "MotorVehicle"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Mowing
+name: "Mowing"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:MuzzleLoadingFirearms
+name: "MuzzleLoadingFirearms"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Notinvestigated
+name: "Notinvestigated"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:OhvOrAtvOrMotorcycle
+name: "OhvOrAtvOrMotorcycle"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:OilOrGasProductionOrTransportation
+name: "OilOrGasProductionOrTransportation"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:OpenTrashBurning
+name: "OpenTrashBurning"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:OriginDestroyed
+name: "OriginDestroyed"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:OtherLandClearing
+name: "Otherlandclearing"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Othersmallengineequipment
+name: "Othersmallengineequipment"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:PrescribedFire
+name: "PrescribedFire"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FireCauseOtherKnown
+name: "Other,Known"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:FireCauseOtherUnknown
+name: "FireCauseOtherUnknown"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:PassengerVehicleOrMotorizedRV
+name: "PassengerVehicleOrMotorizedRV"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Pipe
+name: "Pipe"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:PortableStove
+name: "PortableStove"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:PowerGenerationOrTransmission
+name: "PowerGenerationOrTransmission"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:PowerTools
+name: "PowerTools"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:RailOrTrackGrinding
+name: "RailOrTrackGrinding"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:RightOfWay
+name: "RightOfWay"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:RightOfWayMaintenance
+name: "Right-of-WayMaintenance"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:SmallEngineEquipment
+name: "SmallEngineEquipment"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:SmokeOut
+name: "SmokeOut"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:SmokerOrCampStove
+name: "SmokerOrCampStove"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:SpontaneousCombustion
+name: "SpontaneousCombustion"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:StarburstAmmunition
+name: "StarburstAmmunition"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:SteelComponentAmmunition
+name: "SteelComponentAmmunition"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Structure
+name: "Structure"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:TracerAmmunition
+name: "TracerAmmunition"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:TractorsOrMowersOrBrushhogs
+name: "TractorsOrMowersOrBrushhogs"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:TrashBurning
+name: "TrashBurning"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Turbocharger
+name: "Turbocharger"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:UnderInvestigation
+name: "UnderInvestigation"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:Warming
+name: "Warming"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:WheelBearingFailure
+name: "WheelBearingFailure"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:WheelSlipOrSlide
+name: "WheelSlipOrSlide"
+typeOf: dcs:FireCauseSpecificEnum
+
+Node: dcid:YardDebris
+name: "YardDebris"
+typeOf: dcs:FireCauseSpecificEnum
 
 ## properties
 
 Node: dcid:cause
 typeOf: schema:Property
 name: "cause"
-domainIncludes: dcs:WildlandFireEvent, dcs:MeteorologicalEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:MeteorologicalEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
 rangeIncludes: dcs:FireCauseEnum, dcs:FloodCauseEnum
+
+Node: dcid:generalHazardCause
+typeOf: schema:Property
+name: "generalHazardCause"
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: dcs:FireCauseGeneralEnum
+
+Node: dcid:specificHazardCause
+typeOf: schema:Property
+name: "specificHazardCause"
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: dcs:FireCauseSpecificEnum
 
 Node: dcid:discoveryDate
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "discoveryDate"
 description: "The date the fire was confirmed to exist or was reported as discovered."
@@ -795,7 +1338,7 @@ descriptionUrl: "https://www.nwcg.gov/data-standards-approved"
 
 Node: dcid:controlledDate
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "controlledDate"
 description: "When the fire was declared controlled, where controlled is defined as: The completion of control line around a fire, any spot fires therefrom, and any interior islands to be saved; burned out any unburned area adjacent to the fire side of control lines; and cool down all hot spots that are immediate threats to the control line, until the lines can be reasonably expected to hold under the foreseeable conditions."
@@ -803,14 +1346,14 @@ descriptionUrl: "https://www.nwcg.gov/data-standards-approved"
 
 Node: dcid:surfaceArea
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "surfaceArea"
 
 Node: dcid:totalDamage
 name: "totalDamage"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
 rangeIncludes: schema:Quantity
 
 Node: dcid:expectedLoss
@@ -819,3 +1362,57 @@ description: "The estimated economic loss resulting from natural hazards. It qua
 descriptionUrl: "https://hazards.fema.gov/nri/expected-annual-loss"
 name: "expectedLoss"
 domainIncludes: dcid:NaturalHazardImpact
+
+Node: dcid:containmentDate
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: schema:DateTime
+name: "containmentDate"
+description: "The date and time a wildfire was declared contained."
+
+Node: dcid:initialResponseDate
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: schema:DateTime
+name: "initialResponseDate"
+description: "The date/time of the initial response to the incident."
+
+Node: dcid:burnedArea
+name: "burnedArea"
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: dcs:Quantity
+description: "A measure of acres reported for a fire.  More specifically, the number of acres within the current perimeter of a specific, individual incident, including unburned and unburnable islands."
+
+Node: dcid:initialResponseArea
+name: "initialResponseArea"
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: dcs:Quantity
+description: "An estimate of acres burning at the time of initial response. More specifically when the IC arrives and performs initial size up."
+
+Node: dcid:totalIncidentPersonnel
+name: "totalIncidentPersonnel"
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: dcs:Quantity
+description: "The total number of personnel assigned. Includes overhead, crewmembers, helicopter crewmember, engine crewmembers, camp crew people, etc."
+
+Node: dcid:wfigsFireID
+name: "wfigsFireID"
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+description: "Unique identifier assigned to each wildland fire.  yyyy = calendar year, SSUUUU = POO protecting unit identifier (5 or 6 characters), xxxxxx = local incident identifier (6 to 10 characters) "
+
+Node: dcid:irwinID
+name: "irwinID"
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+description: "Unique identifier assigned to each incident record in IRWIN(Integrated Reporting of Wildland-Fire Information)."
+
+Node: dcid:incidentLocationDescription
+name: "incidentLocationDescription"
+typeOf: schema:Property
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+rangeIncludes: dcs:Text
+description: "General descriptive location of the incident such as the number of miles from an identifiable town."

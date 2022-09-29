@@ -6406,7 +6406,7 @@ typeOf: schema:ContactPointOption
 Node: trailer
 dcid: "trailer"
 name: "trailer"
-typeOf: schema:Property
+typeOf: schema:Property, dcs:FireCauseSpecificEnum
 rangeIncludes: schema:VideoObject
 domainIncludes: schema:VideoGame
 
@@ -7199,7 +7199,7 @@ Node: aircraft
 dcid: "aircraft"
 rangeIncludes: schema:Vehicle
 domainIncludes: schema:Flight
-typeOf: schema:Property
+typeOf: schema:Property, dcs:FireCauseSpecificEnum
 name: "aircraft"
 
 Node: genre
@@ -9548,7 +9548,7 @@ supersededBy: "availableOnDevice"
 domainIncludes: schema:SoftwareApplication
 name: "device"
 rangeIncludes: schema:Text
-typeOf: schema:Property
+typeOf: schema:Property, dcs:FireCauseEnum
 
 Node: arrivalPlatform
 dcid: "arrivalPlatform"

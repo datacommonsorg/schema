@@ -831,7 +831,7 @@ typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Households"
 
 Node: dcid:Agriculture
-typeOf: dcs:EnergyConsumptionSectorEnum, dcs:EmissionSourceEnum
+typeOf: dcs:EnergyConsumptionSectorEnum, dcs:EmissionSourceEnum, dcs:FireCauseSpecificEnum
 name: "Agriculture"
 
 Node: dcid:CommerceAndPublicServices
@@ -2589,7 +2589,7 @@ name: "Oil And Gas"
 description: "Oil and gas production, refining, and solid-fuels."
 
 Node: dcid:OilAndGasProduction
-typeOf: EmissionSourceEnum
+typeOf: EmissionSourceEnum, dcs:FireCauseSpecificEnum
 name: "Oil And Gas Production"
 description: "Flaring, venting combustion, and non-combustion related processes during oil and gas exploration, production, processing, and transport of crude oil, gas, and liquefied natural gas."
 specializationOf: dcid:OilAndGas
@@ -2648,7 +2648,7 @@ description: "Composting and anaerobic digestion of organic waste, such as food 
 specializationOf: dcid:WasteManagement
 
 Node: dcid:OpenBurningWaste
-typeOf: EmissionSourceEnum
+typeOf: EmissionSourceEnum, dcs:FireCauseSpecificEnum
 name: "Open Burning Waste"
 description: "Combustion of solid and liquid waste in controlled incineration facilities, as well as in nature (open-air) or in open dumps."
 specializationOf: dcid:WasteManagement
