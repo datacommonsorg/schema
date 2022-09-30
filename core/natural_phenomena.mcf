@@ -32,9 +32,9 @@ subClassOf: dcs:Event
 description: "A wildland fire originating from a planned ignition in accordance with applicable laws, policies, and regulations to meet specific objectives."
 descriptionUrl: "https://www.nwcg.gov/term/glossary/prescribed-fire"
 
-Node: dcid:IncidentComplexEvent
+Node: dcid:FireIncidentComplexEvent
 typeOf: schema:Class
-name: "IncidentComplexEvent"
+name: "FireIncidentComplexEvent"
 subClassOf: dcs:Event
 description: "Two or more distinct incidents in the same general area that, by management action, are managed under a single incident commander or unified command in order to improve efficiency and simplify incident management processes."
 descriptionUrl: "https://www.nwcg.gov/term/glossary/incident-complex"
@@ -1313,24 +1313,24 @@ typeOf: dcs:FireCauseSpecificEnum
 Node: dcid:cause
 typeOf: schema:Property
 name: "cause"
-domainIncludes: dcs:WildlandFireEvent, dcs:MeteorologicalEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:MeteorologicalEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:FireCauseEnum, dcs:FloodCauseEnum
 
 Node: dcid:generalHazardCause
 typeOf: schema:Property
 name: "generalHazardCause"
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:FireCauseGeneralEnum
 
 Node: dcid:specificHazardCause
 typeOf: schema:Property
 name: "specificHazardCause"
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:FireCauseSpecificEnum
 
 Node: dcid:discoveryDate
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "discoveryDate"
 description: "The date the fire was confirmed to exist or was reported as discovered."
@@ -1338,7 +1338,7 @@ descriptionUrl: "https://www.nwcg.gov/data-standards-approved"
 
 Node: dcid:controlledDate
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "controlledDate"
 description: "When the fire was declared controlled, where controlled is defined as: The completion of control line around a fire, any spot fires therefrom, and any interior islands to be saved; burned out any unburned area adjacent to the fire side of control lines; and cool down all hot spots that are immediate threats to the control line, until the lines can be reasonably expected to hold under the foreseeable conditions."
@@ -1346,14 +1346,14 @@ descriptionUrl: "https://www.nwcg.gov/data-standards-approved"
 
 Node: dcid:surfaceArea
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "surfaceArea"
 
 Node: dcid:totalDamage
 name: "totalDamage"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: schema:Quantity
 
 Node: dcid:expectedLoss
@@ -1365,14 +1365,14 @@ domainIncludes: dcid:NaturalHazardImpact
 
 Node: dcid:containmentDate
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "containmentDate"
 description: "The date and time a wildfire was declared contained."
 
 Node: dcid:initialResponseDate
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: schema:DateTime
 name: "initialResponseDate"
 description: "The date/time of the initial response to the incident."
@@ -1380,39 +1380,52 @@ description: "The date/time of the initial response to the incident."
 Node: dcid:burnedArea
 name: "burnedArea"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:Quantity
 description: "A measure of acres reported for a fire.  More specifically, the number of acres within the current perimeter of a specific, individual incident, including unburned and unburnable islands."
 
 Node: dcid:initialResponseArea
 name: "initialResponseArea"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:Quantity
 description: "An estimate of acres burning at the time of initial response. More specifically when the IC arrives and performs initial size up."
 
 Node: dcid:totalIncidentPersonnel
 name: "totalIncidentPersonnel"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:Quantity
 description: "The total number of personnel assigned. Includes overhead, crewmembers, helicopter crewmember, engine crewmembers, camp crew people, etc."
 
 Node: dcid:wfigsFireID
 name: "wfigsFireID"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 description: "Unique identifier assigned to each wildland fire.  yyyy = calendar year, SSUUUU = POO protecting unit identifier (5 or 6 characters), xxxxxx = local incident identifier (6 to 10 characters) "
 
 Node: dcid:irwinID
 name: "irwinID"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 description: "Unique identifier assigned to each incident record in IRWIN(Integrated Reporting of Wildland-Fire Information)."
 
 Node: dcid:incidentLocationDescription
 name: "incidentLocationDescription"
 typeOf: schema:Property
-domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:IncidentComplexEvent
+domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:Text
 description: "General descriptive location of the incident such as the number of miles from an identifiable town."
+
+# Statistical Variables
+Node: dcid:Count_PrescribedFireEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:PrescribedFireEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+
+Node: dcid:Count_FireIncidentComplex
+typeOf: dcs:StatisticalVariable
+populationType: dcs:FireIncidentComplexEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
