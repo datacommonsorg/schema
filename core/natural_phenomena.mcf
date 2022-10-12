@@ -1458,16 +1458,3 @@ typeOf: schema:Property
 domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:Text
 description: "General descriptive location of the incident such as the number of miles from an identifiable town."
-
-# Statistical Variables
-Node: dcid:Count_PrescribedFireEvent
-typeOf: dcs:StatisticalVariable
-populationType: dcs:PrescribedFireEvent
-statType: dcs:measuredValue
-measuredProperty: dcs:count
-
-Node: dcid:Count_FireIncidentComplex
-typeOf: dcs:StatisticalVariable
-populationType: dcs:FireIncidentComplexEvent
-statType: dcs:measuredValue
-measuredProperty: dcs:count
