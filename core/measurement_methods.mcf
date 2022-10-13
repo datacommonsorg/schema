@@ -250,3 +250,13 @@ Node: dcid:ClimateTraceEstimate
 name: "ClimateTraceEstimate"
 typeOf: dcs:MeasurementMethodEnum
 description: "Estimates made by the Climate TRACE. These estimates are based on models built using data from satellites, direct measurements and artificial intelligence."
+
+Node: dcid:ProbabilityDistributionEnum
+name: "ProbabilityDistributionEnum"
+subClassOf: dcs:MeasurementMethodEnum
+description: "Measurement methods for derived observations that are calculated using different probability distributions."
+typeOf: schema:Class
+
+Node: dcid:PearsonDistribution
+name: "PearsonDistribution"
+typeOf: dcs:ProbabilityDistributionEnum

@@ -360,6 +360,13 @@ domainIncludes: schema:Observation, schema:StatVarObservation
 rangeIncludes: schema:Text
 description: "The length of time an Observation took place over. The format follows `P[0-9]*[Y|M|D|h|m|s]`. For example, P1Y is Period 1 Year, P3M is Period 3 Months, P3h is Period 3 hours."
 
+Node: dcid:accumulationPeriod
+name: "accumulationPeriod"
+typeOf: schema:Property
+domainIncludes: schema:Observation, schema:StatVarObservation
+rangeIncludes: schema:Quantity
+description: "The length of time an Observation covers. Observation does not happen throughout that time. For example, [2 dcs:Month] means that a value includes accumulation of the previous 2 months."
+
 Node: housingUnits
 dcid: "housingUnits"
 typeOf: schema:Property
