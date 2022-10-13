@@ -2753,6 +2753,12 @@ name: "confidenceIntervalUpperLimit"
 description: "The upper limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
 
+Node: dcid:numberOfDays
+rangeIncludes: schema:Integer
+domainIncludes: schema:Place, dcs:HeatWaveEvent
+typeOf: schema:Property
+name: "numberOfDays"
+
 Node: dcid:numberOfMonths
 rangeIncludes: schema:Integer
 domainIncludes: schema:Place

@@ -838,7 +838,7 @@ description: "A speed unit of measure representing one meter per second."
 Node: dcid:RadiationUnitOfMeasure
 typeOf: schema:Class
 subClassOf: dcs:UnitOfMeasure
-name: "RadiationUniOfMeasure"
+name: "RadiationUnitOfMeasure"
 description: "A unit used to denote a measurement of radiation."
 
 Node: dcid:WattsPerSquareMeter
@@ -1035,3 +1035,9 @@ name: "CMIP6ReferencePeriod"
 description: "The reference period used for comparison in IPCC CMIP6 report, which is from 1995 to 2014."
 sameAs: [1995 2014 dcs:Date]
 
+Node: dcid:heatWaveIntensity
+typeOf: dcs:Property
+name: "heatWaveIntensity"
+domainIncludes: dcs:HeatWaveEvent
+rangeIncludes: dcs:Quantity
+description: "Describes how hot the temperature is during heat waves. It is defined as the difference in temperature (measured in degrees Celsius) between the local threshold for heat waves and the average of the daily minimum temperature during the heat wave."

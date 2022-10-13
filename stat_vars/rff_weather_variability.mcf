@@ -72,3 +72,43 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:Place
 measuredProperty: dcs:consecutiveDryDays
 statType: dcs:measuredValue
+
+Node: dcid:Intensity_HeatWaveEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:HeatWaveEvent
+measuredProperty: dcs:heatWaveIntensity
+statType: dcs:measuredValue
+
+Node: dcid:NumberOfDays_HeatWaveEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:HeatWaveEvent
+measuredProperty: dcs:numberOfDays
+statType: dcs:measuredValue
+
+Node: dcid:Count_HeatWaveEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:HeatWaveEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:InterannualRange_Monthly_Precipitation
+typeOf: dcs:StatisticalVariable
+populationType: schema:Place
+measuredProperty: dcs:precipitation
+measurementQualifier: dcs:InterannualRangeOfMonthlyAggregate
+statType: dcs:measuredValue
+
+Node: dcid:InterannualRange_Monthly_MaxTemperature
+typeOf: dcs:StatisticalVariable
+populationType: schema:Place
+measuredProperty: dcs:maxTemperature
+measurementQualifier: dcs:InterannualRangeOfMonthlyAggregate
+statType: dcs:measuredValue
+
+Node: dcid:InterannualRange_Monthly_MinTemperature
+typeOf: dcs:StatisticalVariable
+populationType: schema:Place
+measuredProperty: dcs:minTemperature
+measurementQualifier: dcs:InterannualRangeOfMonthlyAggregate
+statType: dcs:measuredValue
+
