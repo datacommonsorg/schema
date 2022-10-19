@@ -1,0 +1,471 @@
+# Schema for flood related properties and enums.
+
+# Schema for Flood insurance
+Node: dcid:NaturalHazardInsurance
+typeOf: dcs:Class
+subClassOf: dcs:Intangible
+name: "NaturalHazardInsurance"
+
+# Properties for flood insurance
+Node: dcid:insuredThing
+name: "insuredThing"
+typeOf: dcs:Property
+domainIncludes: dcs:NaturalHazardInsurance
+rangeIncludes: dcs:InsuredItemEnum
+description: "The type of item insured for a natural hazard such as building or its contents for hazards like fire, flood, or earthquake."
+
+Node: dcid:countOfClaims
+name: "countOfClaims"
+typeOf: dcs:Property
+domainIncludes: dcs:NaturalHazardInsurance
+rangeIncludes: dcs:Quantity
+description: "Number of Insurance claims submitted for a disasters in a specific time period."
+
+Node: dcid:settlementAmount
+name: "settlementAmount"
+typeOf: dcs:Property
+domainIncludes: dcs:NaturalHazardInsurance
+rangeIncludes: dcs:Quantity
+description: "Total amount paid for an insurance claim for a disaster."
+
+
+Node: dcid:floodZoneType
+name: "floodZoneType"
+typeOf: dcs:Property
+domainIncludes: dcs:NaturalHazardInsurance
+rangeIncludes: dcs:FEMAFloodZoneEnum
+description: "Flood zone describing the risk level or likelihood of floods. The US Federal Emergency management Agency (FEMA) publishes a Flood Insurance Rate Map (FIRM) with flood risk for specific regions that is used to rate the insured property."
+descriptionUrl: "https://www.fema.gov/glossary/flood-zones"
+
+
+# Enums for flood insurance
+Node: dcid:InsuredItemEnum
+typeOf: dcs:Class
+subClassOf: dcs:Enumeration
+name: "InsuredItemEnum"
+description: "The specific type of items covered under an insurance policy."
+
+Node: dcid:BuildingStructure
+typeOf: dcid:InsuredItemEnum
+name: "Building Structure"
+
+Node: dcid:BuildingContents
+typeOf: dcid:InsuredItemEnum
+name: "Building Contents"
+
+Node: dcid:BuildingStructureAndContents
+typeOf: dcid:InsuredItemEnum
+name: "Building Structure and Contents"
+
+# Enums for FEMA Flood zones.
+Node: dcid:FEMAFloodZoneEnum
+typeOf: dcs:Class
+subClassOf: dcs:Enumeration
+name: "FEMAFloodZoneEnum"
+description: "The land areas that could be covered by flood waters."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAHighRiskFloodZone
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMA High Risk Flood Zone (100 year flood)"
+description: "Special Flood Hazard Areas (SFHA) that have a 1-percent chance of annual floods also referred to as 100-year flood. They are shown on the flood maps as zones labeled as Zone A, Zone AO, Zone AH, Zones A1-A30, Zone AE, Zone A99, Zone AR, Zone AR/AE, Zone AR/AO, Zone AR/A1-A30, Zone AR/A, Zone V, Zone VE, and Zones V1-V30."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+
+Node: dcid:FEMAModerateRiskFloodZone
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMA Moderate Risk Flood Zone (500 year flood)"
+description: "In moderate risk areas have a 0.2 percent chance of annual floods also referred to as 500-year flood. These flood zones are labelled as Zone B or Zone X(shaded)."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMALowRiskFloodZone
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMA Low Risk Flood Zone (500 year flood)"
+description: "In low risk areas have a lower than 0.2 percent chance of annual floods. These flood zones are labelled as Zone C or Zone X(unshaded)."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAUndeterminedFloodZone
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMA Undetermined Flood Zone"
+description: "No flood-hazard analysis has been conducted in these areas, but a flood risk still exists. Flood insurance rates reflect the uncertainty of the flood risk. These areas are labeled with the letter D on the flood maps."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+
+Node: dcid:FEMAFloodZone0
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZone0"
+
+Node: dcid:FEMAFloodZoneA
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA"
+specializationOf: dcid:FEMAHighRiskFloodZone
+description: "Areas subject to inundation by the 1-percent-annual-chance flood event generally determined using approximate methodologies. Flood risk determined by detailed methods with base flood elevations are designated AE or A1-30."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAFloodZoneA01
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA01"
+specializationOf: dcid:FEMAFloodZoneA
+
+
+Node: dcid:FEMAFloodZoneA02
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA02"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA03
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA03"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA04
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA04"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA05
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA05"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA06
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA06"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA07
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA07"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA08
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA08"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA09
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA09"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA10
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA10"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA11
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA11"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA12
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA12"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA13
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA13"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA14
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA14"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA15
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA15"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA16
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA16"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA17
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA17"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA18
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA18"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA19
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA19"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA20
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA20"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA21
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA21"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA22
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA22"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA23
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA23"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA24
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA24"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA25
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA25"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA26
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA26"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA27
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA27"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA28
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA28"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA29
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA29"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA30
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA30"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneA99
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneA99"
+specializationOf: dcid:FEMAFloodZoneA
+description: "Areas subject to inundation by the 1-percent-annual-chance flood event, but which will ultimately be protected upon completion of an under-construction Federal flood protection system."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAFloodZoneAA
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAA"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneAE
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAE"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneAH
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAH"
+specializationOf: dcid:FEMAFloodZoneA
+description: "Areas subject to inundation by 1-percent-annual-chance shallow flooding (usually areas of ponding) where average depths are between one and three feet."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAFloodZoneAHB
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAHB"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneAO
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAO"
+specializationOf: dcid:FEMAFloodZoneA
+description: "Areas subject to inundation by 1-percent-annual-chance shallow flooding (usually sheet flow on sloping terrain) where average depths are between one and three feet."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAFloodZoneAOB
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAOB"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneAR
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAR"
+specializationOf: dcid:FEMAFloodZoneA
+description: "Areas that result from the decertification of a previously accredited flood protection system that is determined to be in the process of being restored to provide base flood protection."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAFloodZoneAS
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneAS"
+specializationOf: dcid:FEMAFloodZoneA
+
+Node: dcid:FEMAFloodZoneB
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneB"
+specializationOf: dcid:FEMAModerateRiskFloodZone
+
+Node: dcid:FEMAFloodZoneC
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneC"
+specializationOf: dcid:FEMALowRiskFloodZone
+
+Node: dcid:FEMAFloodZoneD
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneD"
+specializationOf: dcid:FEMAUndeterminedFloodZone
+
+Node: dcid:FEMAFloodZoneV
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV"
+specializationOf: dcid:FEMAHighRiskFloodZone
+description: "Areas along coasts subject to inundation by the 1-percent-annual-chance flood event with additional hazards associated with storm-induced waves."
+descriptionUrl: "https://floodpartners.com/flood-zones/"
+
+Node: dcid:FEMAFloodZoneV01
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV01"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV02
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV02"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV03
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV03"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV04
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV04"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV05
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV05"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV06
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV06"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV07
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV07"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV08
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV08"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV09
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV09"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV10
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV10"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV11
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV11"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV12
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV12"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV13
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV13"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV14
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV14"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV15
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV15"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV16
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV16"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV17
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV17"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV18
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV18"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV19
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV19"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV20
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV20"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV21
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV21"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV22
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV22"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV23
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV23"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV24
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV24"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV27
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV27"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneV30
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneV30"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneVE
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneVE"
+specializationOf: dcid:FEMAFloodZoneV
+
+Node: dcid:FEMAFloodZoneX
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMAFloodZoneX"
+specializationOf: dcid:FEMAModerateRiskFloodZone
+description: "An area that is outside the Special Flood hazard Area with moderate or minimal flood hazard."
+
