@@ -357,6 +357,22 @@ domainIncludes: dcs:Place
 rangeIncludes: dcs:Quantity
 name: "precipitation"
 
+Node: dcid:precipitableWater
+typeOf: schema:Property
+description: "Amount of water in a column of the atmosphere, if the entire column were precipitated as rain."
+descriptionUrl: "https://en.wikipedia.org/wiki/Precipitable_water"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "precipitableWater"
+
+Node: dcid:cloudCover
+typeOf: schema:Property
+description: "The fraction of the sky obscured by clouds."
+descriptionUrl: "https://en.wikipedia.org/wiki/Cloud_cover"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "cloudCover"
+
 Node: dcid:windComponent
 typeOf: dcs:Property
 domainIncludes: dcs:Place
@@ -891,6 +907,11 @@ Node: dcid:PartsPerBillion
 typeOf: dcs:ConcentrationUnitOfMeasure
 name: "PartsPerBillion"
 description: "Number of units of mass of something (like pollutant) per billion units of total mass"
+
+Node: dcid:GramsPerKilogram
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "GramsPerKilogram"
+description: "A unit of a mass fraction expressed as a number of grams per kilogram of mixture."
 
 Node: dcid:MetersPerSecond
 typeOf: dcs:SpeedUnitOfMeasure
