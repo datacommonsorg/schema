@@ -1199,3 +1199,579 @@ typeOf: schema:Property
 domainIncludes: dcs:Person, dcs:Student
 rangeIncludes: schema:Number
 description: "Percentage of students who are no longer enrolled."
+
+# NCES Fiscal schema - Revenue Categories
+
+Node: dcid:NCESRevenueCategoryEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "NCES_RevenueCategoryEnum"
+description: "Revenue categories defined in NCES Commom Core Data"
+
+Node: dcid:NCESFederalRevenue
+typeOf: dcs:NCES_RevenueCategoryEnum
+name: "NCES Federal Revenue"
+
+Node: dcid:NCESFederalRevenueThruStateTitle1
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state title 1"
+
+Node: dcid:NCESFederalRevenueThruStateIdea
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state Individauls with Disability Education Act"
+
+Node: dcid:NCESFederalRevenueThruStateMathScienceAndTeacherQuality
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state Math Science And Teacher Quality"
+
+Node: dcid:NCESFederalRevenueThruStateNationalActivitiesForSchoolSafety
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state National Activities For School Safety"
+
+Node: dcid:NCESFederalRevenueThruStateVacationalAndStateEducation
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state Vacational And State Education"
+
+Node: dcid:NCESFederalRevenueThruStateBilingualEducation
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state Bilingual Education"
+
+Node: dcid:NCESFederalRevenueThruStateChildNutritionAct
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state Child Nutrition Act"
+
+Node: dcid:NCESFederalRevenueThruStateOther
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue - Thru state Other"
+
+Node: dcid:NCESFederalRevenueNonSpecified
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue -  Nonspecified"
+
+Node: dcid:NCESFederalRevenueDirectImpactAid
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue -  Direct Impact Aid"
+
+Node: dcid:NCESFederalRevenueDirectIndianEducation
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue -  Direct Indian Education"
+
+Node: dcid:NCESFederalRevenueDirectGrants
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue -  Direct Grants"
+
+Node: dcid:NCESFederalRevenueDirectOther
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue -  Direct Other"
+
+Node: dcid:NCESFederalRevenueThruIntermediateAgencies
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESFederalRevenue
+name: "NCES Federal Revenue -  Thru Intermediate Agencies"
+
+Node: dcid:NCESStateRevenue
+typeOf: dcs:NCES_RevenueCategoryEnum
+name: "NCES State Revenue"
+
+Node: dcid:NCESStateRevenueGeneralFormulaAssistance
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue -  General Formula Assistance"
+
+Node: dcid:NCESStateRevenueStaffImprovementPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Staff Improvement Programs"
+
+Node: dcid:NCESStateRevenueSpecialEducationPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Special Education Programs"
+
+Node: dcid:NCESStateRevenueCompensatoryandBasicSkillsPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Compensatory and Basic Skills Programs"
+
+Node: dcid:NCESStateRevenueBilingualEducationPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Bilingual Education Programs"
+
+Node: dcid:NCESStateRevenueGiftedandTalentedPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Gifted and Talented Programs"
+
+Node: dcid:NCESStateRevenueVocationalEducationPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Vocational Education Programs"
+
+Node: dcid:NCESStateRevenueSchoolLunchPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - School Lunch Programs"
+
+Node: dcid:NCESStateRevenueCapitalOutlayAndDebtServicesPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Capital Outlay and Debt Services Programs"
+
+Node: dcid:NCESStateRevenueTransportationPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Transportation Programs"
+
+Node: dcid:NCESStateRevenueOtherPrograms
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Other Programs"
+
+Node: dcid:NCESStateRevenueNonspecified
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - Nonspecified"
+
+Node: dcid:NCESStateRevenueOnBehalfEmployeeBenefits
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - On Behalf Employee Benefits"
+
+Node: dcid:NCESStateRevenueOnBehalfNotEmployeeBenefits
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESStateRevenue
+name: "NCES State Revenue - On Behalf not Employee Benefits"
+
+Node: dcid:NCESLocalRevenue
+typeOf: dcs:NCES_RevenueCategoryEnum
+name: "NCES Local Revenue"
+
+Node: dcid:NCESLocalRevenueDistrictActivityReceipts
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - District Activity Receipts"
+
+Node: dcid:NCESLocalRevenueEarningsonInvestments
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Earnings on Investments"
+
+Node: dcid:NCESLocalRevenueFinesAndForfeits
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Fines and Forfeits"
+
+Node: dcid:NCESLocalRevenueFoodService
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Food Service"
+
+Node: dcid:NCESLocalRevenueIndividualTuition
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Individual Tuition"
+
+Node: dcid:NCESLocalRevenueInterestEarnings
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Interest Earnings"
+
+Node: dcid:NCESLocalRevenueMiscellaneous
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Miscellaneous"
+
+Node: dcid:NCESLocalRevenueCensusBureauStateRevenue
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Census Bureau State Revenue"
+
+Node: dcid:NCESLocalRevenueNonpropertyTax
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Nonproperty Tax"
+
+Node: dcid:NCESLocalRevenueOtherRevenues
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Other Revenues"
+
+Node: dcid:NCESLocalRevenueOtherSalesAndServices
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Other Sales and Services"
+
+Node: dcid:NCESLocalRevenuePrivateContributions
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Private Contributions"
+
+Node: dcid:NCESLocalRevenuePropertyTax
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Property Tax"
+
+Node: dcid:NCESLocalRevenueRentsAndRoyalties
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Rents and Royalties"
+
+Node: dcid:NCESLocalRevenueSaleOfProperty
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Sale of Property"
+
+Node: dcid:NCESLocalRevenueSchoolLunch
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - School Lunch"
+
+Node: dcid:NCESLocalRevenueStudentActivities
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Student Activities"
+
+Node: dcid:NCESLocalRevenueStudentsFeesNonspecified
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Students Fees Nonspecified"
+
+Node: dcid:NCESLocalRevenueSummerSchool
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Summer School"
+
+Node: dcid:NCESLocalRevenueTextbookSalesAndRentals
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Textbook Sales and Rentals"
+
+Node: dcid:NCESLocalRevenueTransportationFeesFromIndividual
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Transportation Fees from Individual"
+
+Node: dcid:NCESLocalRevenueTransportationFeesFromLeas
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Transportation Fees from Leas"
+
+Node: dcid:NCESLocalRevenueTransportationFeesFromPupilsandParents
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Transportation Fees from Pupils and Parents"
+
+Node: dcid:NCESLocalRevenueTuitionFromLeas
+typeOf: dcs:NCES_RevenueCategoryEnum
+specializationOf: dcs:NCESLocalRevenue
+name: "NCES Local Revenue - Tuition from Leas"
+
+Node: dcid:NCESOtherRevenue
+typeOf: dcs:NCES_RevenueCategoryEnum
+name: "NCES Other Revenue"
+description: "NCES reveue category which does not fall into federal, state, local revenue categories."
+
+Node: dcid:revenueType
+name: "revenueType"
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: dcs:NCES_RevenueCategoryEnum
+
+# NCES Fiscal schema - Expenditure Categories
+
+Node: dcid:NCESExpenditureCategoryEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "NCES_ExpenditureCategoryEnum"
+description: "Expenditure categories defined in NCES Commom Core Data"
+
+Node: dcid:NCESCurrentExpenditure
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+name: "NCES Current Expenditure"
+
+Node: dcid:NCESCurrentExpenditureInstructional
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditure
+name: "NCES Current Expenditure - Instructional"
+
+Node: dcid:NCESCurrentExpenditureInstructionalSalaries
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureInstructional
+name: "NCES Current Expenditure - Instructional - Salaries"
+
+Node: dcid:NCESCurrentExpenditureInstructionalEmployeeBenefits
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureInstructional
+name: "NCES Current Expenditure - Instructional - Employee Benefits"
+
+Node: dcid:NCESCurrentExpenditureInstructionalPurchasedServices
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureInstructional
+name: "NCES Current Expenditure - Instructional - Purchased Services"
+
+Node: dcid:NCESCurrentExpenditureInstructionalTuitionToPrivateAndOutOfStateSchools
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureInstructional
+name: "NCES Current Expenditure - Instructional - Tuition to Private and out of State Schools"
+
+Node: dcid:NCESCurrentExpenditureInstructionalSupplies
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureInstructional
+name: "NCES Current Expenditure - Instructional - Supplies"
+
+Node: dcid:NCESCurrentExpenditureInstructionalOther
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureInstructional
+name: "NCES Current Expenditure - Instructional - Other"
+
+Node: dcid:NCESCurrentExpenditureSupportServices
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditure
+name: "NCES Current Expenditure - Support Services"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesSalaries
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Salaries"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesEmployeeBenefits
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Employee Benefits"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesPurchasedServices
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Purchased Services"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesSupplies
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Supplies"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesOther
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Other"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesStudentSupportServices
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Student Support Services"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesInstructionalStaffSupport
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Instructional Staff Support"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesGeneralAdministration
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - General Administration"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesSchoolAdministration
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - School Administration"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesOperationAndMaintenace
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Operation And Maintenace"
+
+Node: dcid:NCESCurrentExpenditureSupportServicesPupilTransportation
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureSupportServices
+name: "NCES Current Expenditure - Support Services - Pupil Transportation"
+
+Node: dcid:NCESCurrentExpenditureNoninstructionalServices
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditure
+name: "NCES Current Expenditure - Noninstructional Services"
+
+Node: dcid:NCESCurrentExpenditureNoninstructionalServicesEnterprise
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureNoninstructionalServices
+name: "NCES Current Expenditure - Noninstructional Services - Enterprise"
+
+Node: dcid:NCESCurrentExpenditureNoninstructionalServicesFoodService
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureNoninstructionalServices
+name: "NCES Current Expenditure - Noninstructional Services - Food Services"
+
+Node: dcid:NCESCurrentExpenditureDirectProgramSupport
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditure
+name: "NCES Current Expenditure - Direct Program Support"
+
+Node: dcid:NCESCurrentExpenditureDirectProgramSupportTextbook
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureDirectProgramSupport
+name: "NCES Current Expenditure - Direct Program Support - Textbook"
+
+Node: dcid:NCESCurrentExpenditureDirectProgramSupportTransportation
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureDirectProgramSupport
+name: "NCES Current Expenditure - Direct Program Support - Transportation"
+
+Node: dcid:NCESCurrentExpenditureDirectProgramSupportEmployeeBenefits
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureDirectProgramSupport
+name: "NCES Current Expenditure - Direct Program Support - Employee Benefits"
+
+Node: dcid:NCESCurrentExpenditureDirectProgramSupportOther
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureDirectProgramSupport
+name: "NCES Current Expenditure - Direct Program Support - Other"
+
+Node: dcid:NCESCurrentExpenditureElementaryOrSecondaryEducation
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditure
+name: "NCES Current Expenditure - Elementary or Secondary Education"
+
+Node: dcid:NCESCurrentExpenditureElementaryOrSecondaryEducationInstruction
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureElementaryOrSecondaryEducation
+name: "NCES Current Expenditure - Elementary or Secondary Education - Instruction"
+
+Node: dcid:NCESCurrentExpenditureElementaryOrSecondaryEducationSupportSerivice
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditureElementaryOrSecondaryEducation
+name: "NCES Current Expenditure - Elementary or Secondary Education - Support Serivices"
+
+Node: dcid:NCESCurrentExpenditureNonElementaryOrSecondary
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESCurrentExpenditure
+name: "NCES Current Expenditure - Non Elementary or Secondary"
+
+Node: dcid:NCESPropertyExpenditure
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+name: "NCES Property Expenditure"
+
+Node: dcid:NCESPropertyExpenditureInstructional
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Instructional"
+
+Node: dcid:NCESPropertyExpenditureNonInstructionalEnterprise
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Non Instructional Services Enterprise"
+
+Node: dcid:NCESPropertyExpenditureNonInstructionalFoodService
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Non Instructional Food Service"
+
+Node: dcid:NCESPropertyExpenditureCommunityServices
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Community Services"
+
+Node: dcid:NCESPropertyExpenditureDirectCostProgram
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Direct Cost Program"
+
+Node: dcid:NCESPropertyExpenditureFacilitiesAquisitionPropertyLandAndBuildings
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Facilities Aquisition Property Land And Buildings"
+
+Node: dcid:NCESPropertyExpenditureFacilitiesAquisitionPropertyEquipment
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Facilities Aquisition Property Equipment"
+
+Node: dcid:NCESPropertyExpenditureSupport
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditure
+name: "NCES Property Expenditure - Support"
+
+Node: dcid:NCESPropertyExpenditureSupportStudent
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditureSupport
+name: "NCES Property Expenditure - Support - Student"
+
+Node: dcid:NCESPropertyExpenditureSupportInstructionalStaff
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditureSupport
+name: "NCES Property Expenditure - Support - Instructional Staff"
+
+Node: dcid:NCESPropertyExpenditureSupportGeneralAdministration
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditureSupport
+name: "NCES Property Expenditure - Support - GeneralAdministration"
+
+Node: dcid:NCESPropertyExpenditureSupportSchoolAdministration
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditureSupport
+name: "NCES Property Expenditure - Support - SchoolAdministration"
+
+Node: dcid:NCESPropertyExpenditureSupportOperationAndMaintenance
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditureSupport
+name: "NCES Property Expenditure - Support - Operation And Maintenance"
+
+Node: dcid:NCESPropertyExpenditureSupportPupilTransportation
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditureSupport
+name: "NCES Property Expenditure - Support - Pupil Transportation"
+
+Node: dcid:NCESPropertyExpenditureSupportOther
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESPropertyExpenditureSupport
+name: "NCES Property Expenditure - Support - Other"
+
+Node: dcid:NCESDirectCostProgramExpenditure
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+name: "NCES Direct Cost Program Expenditure"
+
+Node: dcid:NCESDirectCostProgramExpenditureNonPublicSchool
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESDirectCostProgramExpenditure
+name: "NCES Direct Cost Program Expenditure - Non Public School"
+
+Node: dcid:NCESDirectCostProgramExpenditureAdultEducation
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESDirectCostProgramExpenditure
+name: "NCES Direct Cost Program Expenditure - Adult Education"
+
+Node: dcid:NCESDirectCostProgramExpenditureCollege
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESDirectCostProgramExpenditure
+name: "NCES Direct Cost Program Expenditure - College"
+
+Node: dcid:NCESDirectCostProgramExpenditureOther
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+specializationOf: dcs:NCESDirectCostProgramExpenditure
+name: "NCES Direct Cost Program Expenditure - Other"
+
+Node: dcid:NCESFacilitiesAquisitionNonPropertyExpenditure
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+name: "NCES Facilities Aquisition Non Property Expenditure"
+
+Node: dcid:NCESCommunityServicesNonPropertyExpenditure
+typeOf: dcs:NCES_ExpenditureCategoryEnum
+name: "NCES Community Services Non Property Expenditure"
+
+Node: dcid:attendance
+typeOf: schema:Property
+name: "attendance"
+rangeIncludes: schema:Integer
+domainIncludes: schema:School
+description: "Attendance of students in school."
