@@ -18,6 +18,18 @@ subClassOf: schema:AdministrativeArea
 name: "SchoolDistrict"
 description: "Administrive area that covers multiple specified educational institutions like school or college, and governed by an educational agency"
 
+Node: dcid:PrivateSchool
+typeOf: schema:Class
+description: "School supported by a private organization or individuals rather than by the state."
+subClassOf: schema:School, schema:Place
+name: "PrivateSchool"
+
+Node: dcid:PublicSchool
+typeOf: schema:Class
+description: "A school that is maintained at public expense for the education of the children of a community or district."
+subClassOf: schema:School, schema:Place
+name: "PublicSchool"
+
 # ENUMERATIONS Type for K12 Institutions. Enumeration values would be added to the schema by a script
 
 Node: dcid:USLocalitiesEnum
@@ -44,68 +56,88 @@ subClassOf: schema:Enumeration
 name: "SchoolGradeLevelEnum"
 description: "Enumerations of different grade levels in school"
 
+Node: dcid:PreKindergartenAndKindergarten
+typeOf: dcs:SchoolGradeLevelEnum
+name: "PreKindergarten and Kindergarten"
+description: "Group of Prekindergarten and Kindergarten Students level in school."
+
 Node: dcid:Kindergarten
 typeOf: dcs:SchoolGradeLevelEnum
+specializationOf: dcs:PreKindergartenAndKindergarten
 name: "Kindergarten"
+
+Node: dcid:SchoolGrade
+typeOf: dcs:SchoolGradeLevelEnum
+name: "School Grade"
+
+Node: dcid:SchoolGrade1To8
+typeOf: dcs:SchoolGradeLevelEnum
+name: "Grades 1 to 8"
+description: "Students from Grade 1 to Grade 8 level in school."
 
 Node: dcid:SchoolGrade1
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade1"
+specializationOf: dcs:SchoolGrade1To8
 description: "First Grade level in school."
 
 Node: dcid:SchoolGrade2
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade2"
+specializationOf: dcs:SchoolGrade1To8
 description: "Second Grade level in school."
 
 Node: dcid:SchoolGrade3
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade3"
+specializationOf: dcs:SchoolGrade1To8
 description: "Third Grade level in school."
 
 Node: dcid:SchoolGrade4
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade4"
+specializationOf: dcs:SchoolGrade1To8
 description: "Fourth Grade level in school."
 
 Node: dcid:SchoolGrade5
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade5"
+specializationOf: dcs:SchoolGrade1To8
 description: "Fifth Grade level in school."
 
 Node: dcid:SchoolGrade6
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade6"
+specializationOf: dcs:SchoolGrade1To8
 description: "Sixth Grade level in school."
 
 Node: dcid:SchoolGrade7
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade7"
+specializationOf: dcs:SchoolGrade1To8
 description: "Seventh Grade level in school."
 
 Node: dcid:SchoolGrade8
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade8"
+specializationOf: dcs:SchoolGrade1To8
 description: "Eighth Grade level in school."
+
+Node: dcid:SchoolGrade9To12
+typeOf: dcs:SchoolGradeLevelEnum
+name: "Grades 9 to 12"
+description: "Students from Grade 9 to Grade 12 level in school."
 
 Node: dcid:SchoolGrade9
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade9"
+specializationOf: dcs:SchoolGrade9To12
 description: "Ninth Grade level in school."
 
 Node: dcid:SchoolGrade10
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade10"
+specializationOf: dcs:SchoolGrade9To12
 description: "Tenth Grade level in school."
 
 Node: dcid:SchoolGrade11
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade11"
+specializationOf: dcs:SchoolGrade9To12
 description: "Eleventh Grade level in school."
 
 Node: dcid:SchoolGrade12
 typeOf: dcs:SchoolGradeLevelEnum
-name: "SchoolGrade12"
+specializationOf: dcs:SchoolGrade9To12
 description: "Twelfth Grade level in school."
 
 Node: dcid:SchoolGrade13
@@ -120,6 +152,7 @@ description: "Adult Education."
 
 Node: dcid:PreKindergarten
 typeOf: dcs:SchoolGradeLevelEnum
+specializationOf: dcs:PreKindergartenAndKindergarten
 name: "PreKindergarten"
 description: "Pre-Kindergarten level in school."
 
@@ -127,6 +160,16 @@ Node: dcid:NCESUngradedClasses
 typeOf: dcs:SchoolGradeLevelEnum
 name: "NCESUngradedClasses"
 description: "No Grade Level"
+
+Node: dcid:TransitionalGrade1
+typeOf: dcs:SchoolGradeLevelEnum
+name: "Transitional 1st grade"
+description: "Step-up from Kindergarten but not quite First Grade."
+
+Node: dcid:TransitionalKindergarten
+typeOf: dcs:SchoolGradeLevelEnum
+name: "Transitional Kindergarten"
+description: "Step-up from PreKindergarten but not quite Kindergarten."
 
 Node: dcid:LunchTypeEnum
 typeOf: dcs:Class
@@ -163,6 +206,74 @@ Node: dcid:FreeOrReducedLunch
 name: "FreeOrReducedLunch"
 typeOf: dcs:LunchTypeEnum
 description: "Student lunch is not the original price"
+
+Node: dcid:EducationalMethodEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationalMethodEnum"
+
+Node: dcid:educationalMethod
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: dcs:EducationalMethodEnum
+name: "educationalMethod"
+
+Node: dcid:NCES_Regular
+typeOf: dcs:EducationalMethodEnum
+name: "NCES Regular Elementary Or Secondary"
+
+Node: dcid:NCES_Montessori
+typeOf: dcs:EducationalMethodEnum
+name: "NCES Montessori School"
+
+Node: dcid:NCES_SpecialProgramEmphasis
+typeOf: dcs:EducationalMethodEnum
+name: "NCES Private Schoo lType Special Program Emphasis"
+
+Node: dcid:NCES_SpecialEducation
+typeOf: dcs:EducationalMethodEnum
+name: "NCES  Special Education"
+
+Node: dcid:NCES_CareerOrTechnicalOrVocational
+typeOf: dcs:EducationalMethodEnum
+name: "NCES Career Or Technical Or Vocational"
+
+Node: dcid:NCES_AlternativeOrOther
+typeOf: dcs:EducationalMethodEnum
+name: "NCES Alternative Or Other"
+
+Node: dcid:NCES_EarlyChildhoodProgramOrChildCareCenter
+typeOf: dcs:EducationalMethodEnum
+name: "NCES Private School TypeEarly Childhood Program Or Child Care Center"
+
+Node: dcid:NCES_DataMissing
+typeOf: dcs:EducationalMethodEnum
+name: "NCES Data Missing"
+
+Node: dcid:CoeducationStatusEnum
+typeOf: schema:Class
+description: "School has both Male and Female Students."
+subClassOf: schema:Enumeration
+name: "CoeducationStatusEnum"
+
+Node: dcid:coeducationStatus
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: dcs:CoeducationStatusEnum
+name: "coeducationStatus"
+
+Node: dcid:Coeducational
+typeOf: dcs:CoeducationStatusEnum
+name: "Coeducational"
+
+Node: dcid:AllMale
+typeOf: dcs:CoeducationStatusEnum
+name: "All Male"
+
+Node: dcid:AllFemale
+typeOf: dcs:CoeducationStatusEnum
+name: "All Female"
+
 
 # PROPERTIES for PostalAddress
 
@@ -562,9 +673,17 @@ Node: dcid:HighSchool
 typeOf: dcs:SchoolLevelEnum
 name: HighSchool
 
+Node: dcid:ElementarySchool
+typeOf: schema:SchoolLevelEnum
+name: "Elementary School"
+
 Node: dcid:SecondarySchool
 typeOf: dcs:SchoolLevelEnum
 name: SecondarySchool
+
+Node: dcid:UngradedSchool
+typeOf: schema:SchoolLevelEnum
+name: "Ungraded School"
 
 Node: dcid:NCES_SchoolLevelOther
 typeOf: dcs:SchoolLevelEnum
