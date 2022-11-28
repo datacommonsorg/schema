@@ -188,6 +188,13 @@ domainIncludes: schema:Place
 rangeIncludes: schema:Quantity
 name: "minTemperature"
 
+Node: dcid:climateModelExperimentType
+typeOf: schema:Property
+description: "The type of climate model experiment, e.g. backcast (forecasts in the past) or future forecast of climate indicators, e.g. Temperature."
+domainIncludes: schema:Place
+rangeIncludes: schema:ClimateModelExperimentTypeEnum
+name: "climateModelExperimentType"
+
 Node: dcid:emissionsScenario
 typeOf: schema:Property
 description: "Projections of future greenhouse gas (GHG) emissions used by analysts to assess future vulnerability to climate change."
@@ -416,6 +423,18 @@ Node: dcid:MinRelativeHumidity
 typeOf: dcs:HumidityParameterCategoryEnum
 name: "MinRelativeHumidity"
 specializationOf: dcs:RelativeHumidity
+
+Node: dcid:ClimateModelExperimentTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ClimateModelExperimentTypeEnum"
+description: "The specific type of climate model experiment, e.g. backcast (forecasts in the past) or future forecast of climate indicators, e.g. Temperature."
+
+Node: dcid:CMIP6_HistorcialRun
+typeOf: dcs:ClimateModelExperimentTypeEnum
+name: "CMIP6 Historcial Run"
+description: "CMIP6 model backcasts (forecasts for past dates) for climate variables, e.g. Temperature. These are also known as \"historical experiments\" of the CMIP6 models."
+descriptionUrl: "https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf"
 
 Node: dcid:RepresentativeConcentrationPathwayEnum
 typeOf: schema:Class
