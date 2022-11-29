@@ -39,6 +39,13 @@ subClassOf: dcs:Event
 description: "Two or more distinct incidents in the same general area that, by management action, are managed under a single incident commander or unified command in order to improve efficiency and simplify incident management processes."
 descriptionUrl: "https://www.nwcg.gov/term/glossary/incident-complex"
 
+Node: dcid:FireEvent
+typeOf: schema:Class
+name: "FireEvent"
+subClassOf: dcs:Event
+description: "An occurrence of a fire that burns through wildland, building, dwelling or other structure.  Often involves the use of fire department resources to contain it."
+descriptionUrl: "https://en.wikipedia.org/wiki/Fire"
+
 Node: dcid:StormEpisode
 typeOf: schema:Class
 name: "StormEpisode"
@@ -1458,3 +1465,4 @@ typeOf: schema:Property
 domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: dcs:Text
 description: "General descriptive location of the incident such as the number of miles from an identifiable town."
+
