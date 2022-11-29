@@ -2873,5 +2873,9 @@ description: "The current Iso 4217 code assigned to a currency unit."
 domainIncludes: Currency
 rangeIncludes: Text
 
-
-
+Node: dcid:usesCurrency
+typeOf: schema:Property
+name: "usesCurrency"
+description: "The unit of currency currently used by a Place."
+domainIncludes: schema:Place
+rangeIncludes: dcs: CurrencyUnitOfMeasure
