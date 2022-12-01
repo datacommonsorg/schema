@@ -1186,3 +1186,65 @@ name: "heatWaveIntensity"
 domainIncludes: dcs:HeatWaveEvent
 rangeIncludes: dcs:Quantity
 description: "Describes how hot the temperature is during heat waves. It is defined as the difference in temperature (measured in degrees Celsius) between the local threshold for heat waves and the average of the daily minimum temperature during the heat wave."
+
+## Imputed
+
+Node: ImputationPredictionInterval_Mean_BarometricPressure
+measuredProperty: dcid:barometricPressure
+typeOf: dcid:StatisticalVariable
+statType: dcid:imputationPredictionInterval
+dcid: "ImputationPredictionInterval_Mean_BarometricPressure"
+provenance: dcid:dc/d7tbsb1
+populationType: dcid:Place
+
+Node: ImputationPredictionInterval_Max_Temperature
+statType: dcid:imputationPredictionInterval
+dcid: "ImputationPredictionInterval_Max_Temperature"
+provenance: dcid:dc/d7tbsb1
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+measuredProperty: dcid:temperature
+
+Node: ImputationPredictionInterval_Max_Humidity_RelativeHumidity
+humidityParameter: dcid:RelativeHumidity
+statType: dcid:imputationPredictionInterval
+populationType: dcid:Place
+measuredProperty: dcid:humidity
+constraintProperties: dcid:humidityParameter
+dcid: "ImputationPredictionInterval_Max_Humidity_RelativeHumidity"
+typeOf: dcid:StatisticalVariable
+provenance: dcid:dc/d7tbsb1
+
+Node: ImputationPredictionInterval_Mean_Humidity_RelativeHumidity
+statType: dcid:imputationPredictionInterval
+typeOf: dcid:StatisticalVariable
+provenance: dcid:dc/d7tbsb1
+constraintProperties: dcid:humidityParameter
+dcid: "ImputationPredictionInterval_Mean_Humidity_RelativeHumidity"
+humidityParameter: dcid:RelativeHumidity
+measuredProperty: dcid:humidity
+populationType: dcid:Place
+
+Node: ImputationPredictionInterval_Mean_Visibility
+typeOf: dcid:StatisticalVariable
+provenance: dcid:dc/d7tbsb1
+statType: dcid:imputationPredictionInterval
+dcid: "ImputationPredictionInterval_Mean_Visibility"
+measuredProperty: dcid:visibility
+populationType: dcid:Place
+
+Node: ImputationPredictionInterval_Min_Temperature
+typeOf: dcid:StatisticalVariable
+provenance: dcid:dc/d7tbsb1
+measuredProperty: dcid:temperature
+statType: dcid:imputationPredictionInterval
+dcid: "ImputationPredictionInterval_Min_Temperature"
+populationType: dcid:Place
+
+Node: ImputationPredictionInterval_Max_BarometricPressure
+populationType: dcid:Place
+typeOf: dcid:StatisticalVariable
+measuredProperty: dcid:barometricPressure
+provenance: dcid:dc/d7tbsb1
+statType: dcid:imputationPredictionInterval
+dcid: "ImputationPredictionInterval_Max_BarometricPressure"
