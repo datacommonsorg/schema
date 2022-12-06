@@ -52,13 +52,6 @@ subClassOf: dcs:MeSHConcept
 description: "Alpha-numeric string which comprises the basic unit of the MeSH vocabulary. Also functions as the name of a Descriptor and concept. The term itself is the String element."
 sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#Term"
 
-Node: dcid:medicalSubjectHeadingDescriptorID
-typeOf: schema:Property
-name: "medicalSubjectHeadingDescriptorID"
-domainIncludes: dcs:MeSHDescriptor, dcs:MeSHQualifier, dcs:Disease, dcs:GeneticVariant
-rangeIncludes: dcs:Text, dcs:MeSHDescriptor
-description: "A unique ID for a Medical Subject Heading Descriptor record."
-
 Node: dcid:diseaseOntologyID
 name: "diseaseOntologyID"
 typeOf: schema:Property
@@ -122,12 +115,12 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:MeSHDescriptor
 description: "Classification Number provided by the National Library of Medicine (NLM) Cataloging and Metadata Management Section (CAMMS)."
 
-Node: dcid:medicalSubjectHeadingTreeNumber
-name: "medicalSubjectHeadingTreeNumber"
+Node: dcid:isPharmacologicalActionSubstance
+name: "isPharmacologicalActionSubstance"
 typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHDescriptor
-description: "Alpha-numeric string referring to location within a descriptor hierarchy."
+rangeIncludes: schema:Boolean
+domainIncludes: dcs:MeSHDescriptor, dcs:MeSHSupplementaryRecord
+description: "A MeSHDescriptor or MeSHSupplementaryRecord, which has a pharmacological action."
 
 Node: dcid:medicalSubjectHeadingConceptID
 name: "medicalSubjectHeadingConceptID"
@@ -135,6 +128,20 @@ typeOf: schema:Property
 rangeIncludes: dcs:MeSHConcept, schema:Text
 domainIncludes: dcs:Disease, dcs:MeSHConcept
 description: "A unique ID for a Medical Subject Heading Concept record."
+
+Node: dcid:medicalSubjectHeadingDescriptorID
+typeOf: schema:Property
+name: "medicalSubjectHeadingDescriptorID"
+rangeIncludes: dcs:MeSHDescriptor, schema:Text
+domainIncludes: dcs:Disease, dcs:GeneticVariant, dcs:MeSHConcept, dcs:MeSHDescriptor, dcs:MeSHQualifier, dcs:MeSHSupplementaryRecord
+description: "A unique ID for a Medical Subject Heading Descriptor record."
+
+Node: dcid:medicalSubjectHeadingQualifierAbbreviation
+name: "medicalSubjectHeadingQualifierAbbreviation"
+typeOf: schema:Property
+domainIncludes: dcs:MeSHQualifier
+rangeIncludes: schema:Text
+description: "Qualifier Abbreviation."
 
 Node: dcid:medicalSubjectHeadingSupplementaryRecordID
 name: "medicalSubjectHeadingSupplementaryRecordID"
@@ -146,23 +153,23 @@ description: "A unique ID for a Medical Subject Heading supplementary record."
 Node: dcid:medicalSubjectHeadingTermID
 name: "medicalSubjectHeadingTermID"
 typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHTerm
+rangeIncludes: dcs:MeSHTerm, schema:Text
+domainIncludes: dcs:MeSHConcept, dcs:MeSHTerm
 description: "A unique ID for a Medical Subject Heading Term record."
+
+Node: dcid:medicalSubjectHeadingTreeNumber
+name: "medicalSubjectHeadingTreeNumber"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:MeSHDescriptor, dcs:MeSHQualifier
+description: "Alpha-numeric string referring to location within a MeSH Descriptor or Qualifier hierarchy."
 
 Node: dcid:medicalSubjectHeadingQualifierID
 name: "medicalSubjectHeadingQualifierID"
 typeOf: schema:Property
-domainIncludes: dcs:MeSHQualifier
-rangeIncludes: schema:Text
+rangeIncludes: dcs:MeSHQualifier, schema:Text
+domainIncludes: dcs:MeSHConcept, dcs:MeSHQualifier
 description: "A unique ID for a Medical Subject Heading Qualifier record."
-
-Node: dcid:medicalSubjectHeadingQualifierAbbreviation
-name: "medicalSubjectHeadingQualifierAbbreviation"
-typeOf: schema:Property
-domainIncludes: dcs:MeSHQualifier
-rangeIncludes: schema:Text
-description: "Qualifier Abbreviation."
 
 Node: dcid:associationCooccurrence
 name: "associationCooccurrence"
