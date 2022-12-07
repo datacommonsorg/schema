@@ -2862,14 +2862,14 @@ description: "A unit of measure used to measure serving of food."
 Node: dcid:exchangeRate
 typeOf: schema:Property
 name: "exchangeRate"
-description: "The exchange rate of a currency compared to another currency."
+description: "The price of a base currency need in order to exchange to a single unit of another currency, e.g. it takes 1.2 GBP to exchange for a EUR."
 domainIncludes: schema:Currency
 rangeIncludes: schema:Quantity
 
-Node: dcid: currencyIsoCode
+Node: dcid:currencyISOCode
 typeOf: schema:Property
 name: "currencyISOCode"
-description: "The current Iso 4217 code assigned to a currency unit."
+description: "The current ISO 4217 code assigned to a currency unit."
 domainIncludes: dcs:Currency
 rangeIncludes: schema:Text
 
@@ -2878,4 +2878,4 @@ typeOf: schema:Property
 name: "usesCurrency"
 description: "The unit of currency currently used by a Place."
 domainIncludes: schema:Place
-rangeIncludes: dcs: CurrencyUnitOfMeasure
+rangeIncludes: dcs:CurrencyUnitOfMeasure
