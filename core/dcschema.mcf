@@ -59,6 +59,14 @@ typeOf: schema:Property
 domainIncludes: schema:Observation
 rangeIncludes: schema:Number, dcs:Percent
 
+Node: dcid:marginOfErrorSignificanceLevel
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "marginOfErrorSignificanceLevel"
+description: "The probability (expressed as a percentage) of a predicted/estimated value falling within the margin of error (absolute error) specified."
+rangeIncludes: dcs:Percent
+descriptionUrl: "https://en.wikipedia.org/wiki/Statistical_significance"
+
 Node: dcid:stdError
 name: "stdError"
 typeOf: schema:Property
@@ -2759,6 +2767,38 @@ domainIncludes: schema:Observation
 name: "confidenceIntervalUpperLimit"
 description: "The upper limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
+
+Node: dcid:confidenceIntervalSignificanceLevel
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "confidenceIntervalSignificanceLevel"
+description: "The probability (expressed as a precentage) of a study/experiment rejecting the null hypothesis about a parameter/estimate, given that the null hypothesis is true. It corresponds to the confidence interval constructed."
+rangeIncludes: dcs:Percent
+descriptionUrl: "https://en.wikipedia.org/wiki/Statistical_significance"
+
+Node: dcid:predictionIntervalUpperLimit
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "predictionIntervalUpperLimit"
+description: "The upper limit of a prediction interval within which a future observation will fall, with a certain probability, given what has already been observed."
+rangeIncludes: dcs:Number
+descriptionUrl: "https://en.wikipedia.org/wiki/Prediction_interval"
+
+Node: dcid:predictionIntervalLowerLimit
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "predictionIntervalLowerLimit"
+description: "The lower limit of a prediction interval within which a future observation will fall, with a certain probability, given what has already been observed."
+rangeIncludes: dcs:Number
+descriptionUrl: "https://en.wikipedia.org/wiki/Prediction_interval"
+
+Node: dcid:predictionIntervalSignificanceLevel
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "predictionIntervalSignificanceLevel"
+description: "The probability (expressed as a percentage) of a predicted/estimated value falling within the prediction interval specified."
+rangeIncludes: dcs:Percent
+descriptionUrl: "https://en.wikipedia.org/wiki/Statistical_significance"
 
 Node: dcid:numberOfDays
 rangeIncludes: schema:Integer
