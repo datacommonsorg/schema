@@ -2898,3 +2898,24 @@ Node: dcid:Portion
 typeOf: dcs:UnitOfMeasure
 name: "Portion"
 description: "A unit of measure used to measure serving of food."
+
+Node: dcid:exchangeRate
+typeOf: schema:Property
+name: "exchangeRate"
+description: "The price of a base currency needed in order to exchange to a single unit of another currency, e.g. if the exchange rate of EUR to GBP is 1.2, it takes 1.2 EUR to exchange for 1 GBP."
+domainIncludes: schema:Currency
+rangeIncludes: schema:Quantity
+
+Node: dcid:currencyISOCode
+typeOf: schema:Property
+name: "currencyISOCode"
+description: "The current ISO 4217 code assigned to a currency unit."
+domainIncludes: dcs:Currency
+rangeIncludes: schema:Text
+
+Node: dcid:usesCurrency
+typeOf: schema:Property
+name: "usesCurrency"
+description: "The unit of currency used by a Place."
+domainIncludes: schema:Place
+rangeIncludes: dcs:Currency
