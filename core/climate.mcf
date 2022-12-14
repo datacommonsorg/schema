@@ -510,6 +510,16 @@ name: "SSP5: Fossil-fueled Development"
 description: "The world places increasing faith in competitive markets, innovation and participatory societies to produce rapid technological progress and development of human capital as the path to sustainable development."
 descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
 
+Node: dcid:windDirection
+typeOf: schema:Property
+name: "windDirection"
+description: "Direction of the wind relative to the direction it originates"
+descriptionUrl: "https://en.wikipedia.org/wiki/Wind_direction"
+rangeIncludes: Number
+domainIncludes: schema:Place
+
+# Note that several pollutants are compounds which can also be found in provisional_chemistry.mcf
+# Examples: Ammonia, Benzene, EthylBenzene, Toluene, Xylene etc.
 Node: dcid:AirPollutantEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -609,6 +619,15 @@ Node: dcid:PM2.5Filterable
 typeOf: dcs:AirPollutantEnum
 epaPollutantCode: "PM25-FIL"
 name: "PM2.5 Filterable"
+
+Node: dcid:NitrogenMonoxide
+typeOf: dcs:AirPollutantEnum
+name: “NitrogenMonoxide”
+
+Node: dcid:MPXylene
+typeOf: dcs:AirPollutantEnum
+name: "MP-Xylene"
+description: "Refers to two isomers of Xylene, the m-Xylene and p-Xylene."
 
 Node: dcid:VolatileOrganicCompound
 typeOf: dcid:EPA_CriteriaAirPollutant
