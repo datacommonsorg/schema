@@ -1,0 +1,161 @@
+#
+# IMPORTANT NOTE: The order of values in `relevantVariable` matters a lot!
+#                 Please do not change the order arbitrarily.
+#
+
+Node: dcid:dc/topic/Economy
+typeOf: dcs:Topic
+name: "Economy"
+relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealValue
+relevantVariable: dcid:UnemploymentRate_Person
+relevantVariable: dcid:Median_Income_Person
+relevantVariable: dcid:GiniIndex_EconomicActivity
+relevantVariable: dcid:dc/svpg/RealGDPByIndustry
+
+# Generated with https://paste.googleplex.com/4559733896773632
+Node: dcid:dc/svpg/RealGDPByIndustry
+typeOf: dcs:StatVarPeerGroup
+name: "Breakdown of GDP by Industry"
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAccommodationFoodServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAdministrativeSupportWasteManagementRemediationServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAgricultureForestryFishingHunting_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSArtsEntertainmentRecreation_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSConstruction_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSEducationalServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSFinanceInsurance_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSHealthCareSocialAssistance_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSInformation_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSManagementOfCompaniesEnterprises_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSMiningQuarryingOilGasExtraction_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSOtherServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSProfessionalScientificTechnicalServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSRealEstateRentalLeasing_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSUtilities_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSWholesaleTrade_RealValue
+member: dcid:dc/62n3z7mvfpjx1
+member: dcid:dc/qt7ewllmt3826
+member: dcid:dc/zz6gwv838v9w
+
+Node: dcid:dc/topic/Agriculture
+typeOf: dcs:Topic
+name: "Agriculture"
+relevantVariable: dcid:Area_Farm
+relevantVariable: dcid:Count_Farm
+relevantVariable: dcid:Income_Farm
+relevantVariable: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
+relevantVariable: dcid:dc/svpg/AmountOfFarmInventoryByType
+relevantVariable: dcid:dc/svpg/CountOfFarmInventoryByType
+
+Node: dcid:dc/topic/AgriculturalProduction
+typeOf: dcs:Topic
+name: "Agricultural Production"
+relevantVariable: dcid:Income_Farm
+relevantVariable: dcid:Amount_FarmInventory_Cotton
+relevantVariable: dcid:Amount_FarmInventory_Rice
+relevantVariable: dcid:Amount_FarmInventory_WheatForGrain
+relevantVariable: dcid:Amout_FarmInventory_CornForGrain
+relevantVariable: dcid:Amount_FarmInventory_BarleyForGrain
+relevantVariable: dcid:Count_FarmInventory_BeefCows
+relevantVariable: dcid:Count_FarmInventory_Broilers
+relevantVariable: dcid:Count_FarmInventory_MilkCows
+relevantVariable: dcid:Count_FarmInventory_SheepAndLambs
+
+Node: dcid:dc/svpg/AmountOfFarmInventoryByType
+typeOf: dcs:StatVarPeerGroup
+name: "Farm products"
+member: dcid:AmountFarmInventory_WinterWheatForGrain
+member: dcid:Amount_FarmInventory_BarleyForGrain
+member: dcid:Amount_FarmInventory_CornForSilageOrGreenchop
+member: dcid:Amount_FarmInventory_Cotton
+member: dcid:Amount_FarmInventory_DryEdibleBeans
+member: dcid:Amount_FarmInventory_DurumWheatForGrain
+member: dcid:Amount_FarmInventory_Forage
+member: dcid:Amount_FarmInventory_OatsForGrain
+member: dcid:Amount_FarmInventory_OtherSpringWheatForGrain
+member: dcid:Amount_FarmInventory_PeanutsForNuts
+member: dcid:Amount_FarmInventory_PimaCotton
+member: dcid:Amount_FarmInventory_Rice
+member: dcid:Amount_FarmInventory_SorghumForGrain
+member: dcid:Amount_FarmInventory_SorghumForSilageOrGreenchop
+member: dcid:Amount_FarmInventory_SugarbeetsForSugar
+member: dcid:Amount_FarmInventory_SunflowerSeed
+member: dcid:Amount_FarmInventory_UplandCotton
+member: dcid:Amount_FarmInventory_WheatForGrain
+member: dcid:Amout_FarmInventory_CornForGrain
+
+Node: dcid:dc/svpg/CountOfFarmInventoryByType
+typeOf: dcs:StatVarPeerGroup
+name: "Poultry and Livestock"
+member: dcid:Count_FarmInventory_BeefCows
+member: dcid:Count_FarmInventory_Broilers
+member: dcid:Count_FarmInventory_CattleAndCalves
+member: dcid:Count_FarmInventory_HogsAndPigs
+member: dcid:Count_FarmInventory_Layers
+member: dcid:Count_FarmInventory_MilkCows
+member: dcid:Count_FarmInventory_SheepAndLambs
+
+
+### TODO(shanth): For Topics below this, create StatVarPeerGroup ###
+
+
+Node: dcid:dc/topic/Equity
+typeOf: dcs:Topic
+name: "Equity"
+relevantVariable: dcid:GiniIndex_EconomicActivity
+relevantVariable: dcid:GenderIncomeInequality_Person_15OrMoreYears_WithIncome
+# Inequality by race
+relevantVariable: dcid:Median_Income_Household_HouseholderRaceAsianAlone
+relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
+relevantVariable: dcid:Count_Person_WithDisability_WhiteAlone
+relevantVariable: dcid:Count_Person_AsianAlone_ResidesInJuvenileFacilities
+relevantVariable: dcid:Count_Person_AsianAlone_ResidesInAdultCorrectionalFacilities
+relevantVariable: dcid:Count_Death_AmericanIndianAndAlaskaNativeAlone
+
+Node: dcid:dc/topic/Poverty
+typeOf: dcs:Topic
+name: "Poverty"
+relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months
+relevantVariable: dcid:Count_Household_WithFoodStampsInThePast12Months_BelowPovertyLevelInThePast12Months
+# By gender
+relevantVariable: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months
+# By race
+relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
+# By household type
+relevantVariable: dcid:Count_Household_WithSocialSecurityIncomeInThePast12Months_SingleMotherFamilyHousehold_BelowPovertyLevelInThePast12Months
+
+Node: dcid:dc/topic/Crime
+typeOf: dcs:Topic
+name: "Crime"
+relevantVariable: dcid:Count_CriminalActivities_CombinedCrime
+# By crime Type
+relevantVariable: dcid:Count_CriminalActivities_MotorVehicleTheft
+# Hate Crime
+relevantVariable: dcid:Count_CriminalIncidents_IsHateCrime
+# Hate crimes by bias motivation
+relevantVariable: dcid:Count_CriminalIncidents_BiasMotivationDisabilityStatus_IsHateCrime
+# Hate crimes against difference races
+relevantVariable: dcid:Count_CriminalIncidents_BiasMotivationRace_IsHateCrime_AmericanIndianOrAlaskaNativeAlone
+
+Node: dcid:dc/topic/Health
+typeOf: dcs:Topic
+name: "Health"
+relevantVariable: dcid:LifeExpectancy_Person
+# Prevalence by health outcome
+relevantVariable: dcid:Percent_Person_WithAsthma
+# Prevalence by health behavior
+relevantVariable: dcid:Percent_Person_BingeDrinking
+# Prevalence by health prevention
+relevantVariable: dcid:Percent_Person_ReceivedCholesterolScreening
+# Occurence of medical condition incidents
+relevantVariable: dcid:Count_MedicalConditionIncident_ConditionAIDS
+# Population without insurance
+relevantVariable: dcid:Count_Person_NoHealthInsurance
+# Deaths by cause/race
+relevantVariable: dcid:Count_Death
+relevantVariable: dcid:Count_Death_PregnancyChildbirthThePuerperium
+relevantVariable: dcid:Count_Death_AmericanIndianAndAlaskaNativeAlone
+# covid
+relevantVariable: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedOrProbableCase
+relevantVariable: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_PatientDeceased
+relevantVariable: dcid:CumulativeCount_Vaccine_COVID_19_Administered
+

@@ -2919,3 +2919,21 @@ name: "usesCurrency"
 description: "The unit of currency used by a Place."
 domainIncludes: schema:Place
 rangeIncludes: dcs:Currency
+
+Node: dcid:Topic
+typeOf: schema:Class
+subClassOf: schema:Intangible
+name: "Topic"
+description: "Represents a broad topic in the real-world such as economy, poverty, crime, etc.  Typically used to associated variables (StatisticalVariable) related to a common concept."
+
+Node: dcid:relevantVariable
+typeOf: schema:Property
+description: "List of variables relevant to a topic.  Contains a list of ordered values."
+domainIncludes: dcs:Topic
+rangeIncludes: dcs:StatisticalVariable, schema:Property
+
+Node: dcid:StatVarPeerGroup
+typeOf: schema:Class
+subClassOf: schema:Intangible
+name: "StatVarPeerGroup"
+description: "Represents a group of StatisticalVariable nodes that are comparable peers."
