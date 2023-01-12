@@ -2085,7 +2085,7 @@ description: "Number of images examined to find solar panels in this region"
 Node: dcid:area
 name: "area"
 typeOf: schema:Property
-domainIncludes: dcs:SolarArray
+domainIncludes: dcs:SolarArray, dcs:FireEvent, dcs:FloodEvent
 rangeIncludes: schema:Quantity
 
 Node: dcid:residential
@@ -2236,15 +2236,15 @@ typeOf: dcs:GreenhouseGas
 name: "Other Greenhouse Gas"
 
 Node: dcid:EPA_CriteriaAirPollutant
-name: "EPA Criteria Air Pollutant (CAP)"
-typeOf: schema:Class, dcs:AirPollutantEnum
-description: "Six common air pollutants, found all over the U.S. Includes particle pollution, ground-level ozone, carbon monoxide, sulfur dioxide, nitrogen dioxide, and lead."
+name: "EPA_CriteriaAirPollutant"
+typeOf: dcs:AirPollutantEnum
+description: "Six common air pollutants, considered as Criteria Air Pollutants (CAP), found all over the U.S. Includes particle pollution, ground-level ozone, carbon monoxide, sulfur dioxide, nitrogen dioxide, and lead."
 descriptionUrl: "https://www.epa.gov/criteria-air-pollutants"
 
 Node: dcid:EPA_HazardousAirPollutant
-name: "EPA Hazardous Air Pollutant (HAP)"
-typeOf: schema:Class, dcs:AirPollutantEnum
-description: "Pollutants that are known or suspected to cause cancer or other serious health effects."
+name: "EPA_HazardousAirPollutant"
+typeOf: dcs:AirPollutantEnum
+description: "Pollutants that are known or suspected to cause cancer or other serious health effects considered as Hazardous Air Pollutants (HAP)."
 descriptionUrl: "https://www.epa.gov/haps/what-are-hazardous-air-pollutants"
 # Sources
 
