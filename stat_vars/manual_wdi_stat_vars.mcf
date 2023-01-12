@@ -30,6 +30,7 @@ statType: dcid:measuredValue
 populationType: dcid:Remittance
 measuredProperty: dcid:amount
 transferType: dcid:InwardRemittance
+description: "Total Amount of Inward Remittances"
 
 
 Node: dcid:Count_Person_Rural
@@ -38,6 +39,7 @@ statType: dcid:measuredValue
 placeOfResidenceClassification: dcid:Rural
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
+description: "Number of People Living in Rural Areas"
 
 
 Node: dcid:Count_Person_7To14Years_Employed_AsFractionOf_Count_Person_7To14Years
@@ -109,6 +111,7 @@ typeOf: dcid:StatisticalVariable
 age: dcid:Years15To64
 statType: dcid:measuredValue
 populationType: dcid:Person
+description: "Percent of Working Age People in the Labor Force"
 
 
 Node: dcid:Count_Person_Upto4Years_SevereWasting_AsFractionOf_Count_Person_Upto4Years
@@ -119,6 +122,7 @@ age: dcid:YearsUpto4
 medicalCondition: dcid:SevereWasting
 populationType: dcid:Person
 statType: dcid:measuredValue
+description: "Percent of Children Younger Than 4 With Severe Cachexia (Wasting Syndrome)"
 
 
 Node: dcid:Count_CriminalActivities_MurderAndNonNegligentManslaughter_AsFractionOf_Count_Person
@@ -128,6 +132,7 @@ measuredProperty: dcid:count
 populationType: dcid:CriminalActivities
 measurementDenominator: dcid:Count_Person
 crimeType: dcid:MurderAndNonNegligentManslaughter
+description: "Number of Murder and Non Negligent Manslaughter Cases Per Capita"
 
 
 Node: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
@@ -139,6 +144,7 @@ measuredProperty: dcid:amount
 expensor: dcid:Government
 expenditureType: dcid:EducationExpenditure
 populationType: dcid:EconomicActivity
+description: "Percent of Nominal Gross Domestic Production (GDP) Spent on Education"
 
 
 Node: dcid:Count_Person_25OrMoreYears_Female_BachelorsDegreeOrHigher_AsFractionOf_Count_Person_25OrMoreYears_Female
@@ -171,6 +177,7 @@ measuredProperty: dcid:amount
 typeOf: dcid:StatisticalVariable
 statType: dcid:measuredValue
 activitySource: dcid:ExpenditureActivity
+description: "Healthcare Expenditure Per Person"
 
 
 Node: dcid:Count_Death_IntentionalSelfHarm_AsFractionOf_Count_Person
@@ -189,6 +196,7 @@ populationType: dcid:MortalityEvent
 age: dcid:Years0
 typeOf: dcid:StatisticalVariable
 measuredProperty: dcid:count
+description: "Infant Mortality Rate"
 
 
 Node: dcid:Count_Person_25OrMoreYears_BachelorsDegreeOrHigher_AsFractionOf_Count_Person_25OrMoreYears
@@ -206,6 +214,7 @@ statType: dcid:measuredValue
 measuredProperty: dcid:amount
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Stock
+description: "Total Stock Value"
 
 
 Node: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_ExpenditureActivity_Government
@@ -217,6 +226,7 @@ expensor: dcid:Government
 activitySource: dcid:ExpenditureActivity
 statType: dcid:measuredValue
 populationType: dcid:EconomicActivity
+description: "Percent of Total Government Expenditure Spent on Education"
 
 
 Node: dcid:Count_Person_25OrMoreYears_Male_BachelorsDegreeOrHigher_AsFractionOf_Count_Person_25OrMoreYears_Male
@@ -235,6 +245,7 @@ typeOf: dcid:StatisticalVariable
 measuredProperty: dcid:giniIndex
 statType: dcid:measuredValue
 populationType: dcid:EconomicActivity
+description: "Gini Index of Economic Activity of a Population"
 
 
 Node: dcid:Amount_EconomicActivity_ExpenditureActivity_MilitaryExpenditure_Government
@@ -245,6 +256,7 @@ statType: dcid:measuredValue
 expensor: dcid:Government
 expenditureType: dcid:MilitaryExpenditure
 typeOf: dcid:StatisticalVariable
+description: "Government Expenditure on Military Activities"
 
 
 Node: dcid:Count_Person_15To64Years_Female_InLaborForce_AsFractionOf_Count_Person_15To64Years_Female
@@ -264,6 +276,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Remittance
 statType: dcid:measuredValue
 measuredProperty: dcid:amount
+description: "Total Amount of Outward Remittances"
 
 
 Node: dcid:Amount_Consumption_Alcohol_15OrMoreYears_AsFractionOf_Count_Person_15OrMoreYears
@@ -274,6 +287,7 @@ consumerAge: dcid:Years15Onwards
 typeOf: dcid:StatisticalVariable
 measuredProperty: dcid:amount
 consumedThing: dcid:Alcohol
+description: "Percentage of People Aged 15 Years or More Who Consume Alcohol"
 
 
 Node: dcid:Count_Person_25OrMoreYears_Female_MastersDegreeOrHigher_AsFractionOf_Count_Person_25OrMoreYears_Female
@@ -293,6 +307,7 @@ measuredProperty: dcid:amount
 measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
 typeOf: dcid:StatisticalVariable
 statType: dcid:measuredValue
+description: "Stock Value as a Percentage of Nominal Gross Domestic Production (GDP)"
 
 
 Node: dcid:Count_Person_Upto4Years_Female_Overweight_AsFractionOf_Count_Person_Upto4Years_Female
@@ -312,6 +327,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 placeOfResidenceClassification: dcid:Urban
+description: "Population Living in Urban Areas"
 
 
 Node: dcid:Count_Person_15To64Years_Male_InLaborForce_AsFractionOf_Count_Person_15To64Years_Male
@@ -354,6 +370,7 @@ gender: dcid:Female
 populationType: dcid:MortalityEvent
 measurementDenominator: dcid:Count_BirthEvent_LiveBirth_Female
 age: dcid:Years0
+description: "Female Infant Mortality Rate"
 
 
 Node: dcid:Amount_EconomicActivity_ExpenditureActivity_MilitaryExpenditure_Government_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
@@ -365,6 +382,7 @@ statType: dcid:measuredValue
 expenditureType: dcid:MilitaryExpenditure
 measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
 expensor: dcid:Government
+description: "Percent of Total Government Expenditure Spent on Military Activities"
 
 
 Node: dcid:Count_Person_7To14Years_Male_Employed_AsFractionOf_Count_Person_7To14Years_Male
@@ -386,6 +404,7 @@ populationType: dcid:Person
 medicalCondition: dcid:Wasting
 age: dcid:YearsUpto4
 measuredProperty: dcid:count
+description: "Percent of Children Younger Than 4 With Cachexia (Wasting Syndrome)"
 
 
 Node: dcid:Count_Death_IntentionalSelfHarm_Female_AsFractionOf_Count_Person_Female
@@ -449,6 +468,7 @@ measurementDenominator: dcid:Count_Person_Female
 populationType: dcid:CriminalActivities
 gender: dcid:Female
 crimeType: dcid:MurderAndNonNegligentManslaughter
+description: "Number of Murder and Non-Negligent Manslaughter Crimes Committed Per Capita for the Female Population"
 
 
 Node: dcid:Count_Person_Upto4Years_Female_SevereWasting_AsFractionOf_Count_Person_Upto4Years_Female
@@ -480,6 +500,7 @@ statType: dcid:measuredValue
 populationType: dcid:CriminalActivities
 crimeType: dcid:MurderAndNonNegligentManslaughter
 measurementDenominator: dcid:Count_Person_Male
+description: "Number of Murder and Non-Negligent Manslaughter Crimes Committed Per Capita for the Male Population"
 
 
 Node: dcid:Amount_Remittance_InwardRemittance_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
@@ -489,6 +510,7 @@ transferType: dcid:InwardRemittance
 measuredProperty: dcid:amount
 measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
 populationType: dcid:Remittance
+description: "Inward Remittances as a Percentage of Nominal Gross Domestic Production"
 
 
 Node: dcid:Count_Person_Upto4Years_Overweight_AsFractionOf_Count_Person_Upto4Years
@@ -520,10 +542,11 @@ populationType: dcid:MortalityEvent
 statType: dcid:measuredValue
 age: dcid:Years0
 gender: dcid:Male
+description: "Male Infant Mortality Rate"
 
 
 Node: dcid:Count_CriminalActivities_MurderAndNonNegligentManslaughter_AsFractionOf_Count_Person
-description: "Intentional homicides are unlawful homicides purposely inflicted as a result of domestic disputes, interpersonal violence, violent conflicts over land resources, intergang violence over turf or control, and predatory violence and killing by armed groups. Intentional homicide does not include all intentional killing; the difference is usually in the organization of the killing. Individuals or small groups usually commit homicide, whereas killing in armed conflict is usually committed by fairly cohesive groups of up to several hundred members and is thus usually excluded."
+description: "Number of Murder and Non Negligent Manslaughter Cases Per Capita"
 descriptionUrl: "https://data.worldbank.org/indicator"
 typeOf: dcs:StatisticalVariable
 statType: dcs:measuredValue
@@ -607,7 +630,7 @@ measurementDenominator: dcs:Count_Person
 
 Node: dcid:LifeExpectancy_Person_Female
 name: "Life expectancy at birth, female (years)"
-description: "Number of years a newborn female infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life."
+description: "Female Life Expectancy"
 descriptionUrl: "https://data.worldbank.org/indicator"
 typeOf: dcs:StatisticalVariable
 statType: dcs:measuredValue
@@ -617,7 +640,7 @@ gender: dcs:Female
 
 
 Node: dcid:LifeExpectancy_Person_Male
-description: "Number of years a newborn male infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life."
+description: "Male Life Expectancy"
 descriptionUrl: "https://data.worldbank.org/indicator"
 typeOf: dcs:StatisticalVariable
 statType: dcs:measuredValue
@@ -672,7 +695,7 @@ measurementDenominator: dcs:Count_Person
 
 
 Node: dcid:Count_Product_MobileCellularSubscription_AsFractionOf_Count_Person
-description: "Subscriptions to a public mobile telephone service that provide access to the PSTN using cellular technology. Includes the number of postpaid subscriptions, and the number of active prepaid accounts (i.e. that have been used during the last three months). The indicator applies to all mobile cellular subscriptions that offer voice communications. It excludes subscriptions via data cards or USB modems, subscriptions to public mobile data services, private trunked mobile radio, telepoint, radio paging and telemetry services."
+description: "Number of Mobile Phone Subscriptions Per Person in a Population"
 descriptionUrl: "https://data.worldbank.org/indicator"
 name: "Mobile Subscriptions Per Capita"
 typeOf: dcs:StatisticalVariable
