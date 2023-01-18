@@ -51,6 +51,19 @@ Node: dcid:InArmedForces
 typeOf: dcs:USC_ArmedForcesStatusEnum
 name: "InArmedForces"
 
+Node: dcid:FamifyOfArmedForces
+typeOf: dcs:USC_ArmedForcesStatusEnum
+name: "Family Of Armed Forces"
+
+Node: dcid:ParentsInArmedForces
+typeOf: dcs:USC_ArmedForcesStatusEnum
+specializationOf: dcs:FamifyOfArmedForce
+name: "Parents In Armed Forces"
+
+Node: dcid:NotFamilyOfArmedForces
+typeOf: dcs:USC_ArmedForcesStatusEnum
+name: "Not Family Of Armed Forces"
+
 Node: USC_CashRentStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
