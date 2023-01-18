@@ -403,6 +403,55 @@ Node: dcid:EnglishLanguageArts
 name: "EnglishLanguageArts"
 typeOf: dcs:SchoolSubjectEnum
 
+Node: dcid:Civics
+name: "Civics"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:Economics
+name: "Economics"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:Geography
+name: "Geography"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:History
+name: "History"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:USHistory
+name: "US History"
+typeOf: dcs:SchoolSubjectEnum
+specializationOf: dcs:History
+
+Node: dcid:Music
+name: "Music"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:Reading
+name: "Reading"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:Science
+name: "Science"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:TechnologyAndEngineeringLiteracy
+name: "Technology And Engineering Literacy"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:VisualArts
+name: "Visual Arts"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:Vocabulary
+name: "Vocabulary"
+typeOf: dcs:SchoolSubjectEnum
+
+Node: dcid:Writing
+name: "Writing"
+typeOf: dcs:SchoolSubjectEnum
+
 # Achievement scale metrics
 Node: dcid:cohortScaleAchievement
 name: "cohortScaleAchievement"
@@ -585,6 +634,24 @@ typeOf: dcs:AcademicAssessmentTypeEnum
 name: "Michigan Student Test of Educational Progress"
 # PROPERTIES for School
 # School defined in /cns/jv-d/home/datcom/v3_mcf/schema/K12SchemaExtensions.mcf
+
+Node: dcid:NewYorkStateAlternateAssessment
+typeOf: dcs:AcademicAssessmentTypeEnum
+name: "New York State Alternate Assessment"
+description: "The NYSAA is part of the New York State testing program that measures the attainment of the State's learning standards in the areas of English language arts (ELA), mathematics, and science for students with the most severe cognitive disabilities."
+descriptionUrl: "http://www.nysed.gov/state-assessment/new-york-state-alternate-assessment"
+
+Node: dcid:StateOfTexasAssessmentsOfAcademicReadiness
+typeOf: dcs:AcademicAssessmentTypeEnum
+name: "State Of Texas Assessments Of Academic Readiness"
+description: "The State of Texas Assessments of Academic Readiness (STAAR) program, implemented in spring 2012, includes annual assessments for mathematics at grades 3–8, reading language arts (RLA) at grades 3-8, science at grades 5 and 8, social studies at grade 8 end-of-course (EOC) assessments for Algebra I, English I, English II, Biology, and U.S History."
+descriptionUrl: "https://tea.texas.gov/student-assessment/testing/staar/staar-resources"
+
+Node: dcid:CaliforniaAssessmentOfStudentPerformanceAndProgress
+typeOf: dcs:AcademicAssessmentTypeEnum
+name: "California Assessment Of Student Performance And Progress"
+description: "The California Assessment Of Student Performance And Progress (CAASPP) includes the Smarter Balanced assessment system for English language arts/literacy (ELA) and mathematics, the California Science Test (CAST), the California Alternate Assessments (CAAs) for ELA, mathematics, and science, and the optional California Spanish Assessment (CSA)."
+descriptionUrl: "https://caaspp-elpac.ets.org/caaspp/AboutCAASPP"
 
 Node: dcid:schoolLevelCode
 typeOf: schema:Property
@@ -1379,9 +1446,608 @@ Node: dcid:UDISE_UnknownSchoolManagement
 typeOf: dcs:SchoolManagementEnum
 name: "UDISE Unknown School Management"
 
+Node: dcid:NCES_BureauOfIndianEducation
+typeOf: dcs:SchoolManagementEnum
+name: "NCES Bureau Of Indian Education"
+description: "The Bureau of Indian Education (BIE) is the preeminent provider of culturally relevant educational services and supports provided by highly effective educators to students at BIE-funded schools to foster lifelong learning."
+descriptionUrl: "https://www.bie.edu/topic-page/bureau-indian-education"
+
+Node: dcid:NCES_DepartmentOfDefense
+typeOf: dcs:SchoolManagementEnum
+name: "NCES Department Of Defense"
+
+Node: dcid:NCES_Catholic
+typeOf: dcs:SchoolManagementEnum
+name: "NCES Catholic"
+
 Node: dcid:dropoutRate
 name: "dropoutRate"
 typeOf: schema:Property
 domainIncludes: dcs:Person, dcs:Student
 rangeIncludes: schema:Number
 description: "Percentage of students who are no longer enrolled."
+
+Node: dcid:educationScore
+name: "educationScore"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: schema:Number
+description: "The score secured by students in an assessment."
+
+Node: dcid:subjectAssessmentScale
+name: "subjectAssessmentScale"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:SubjectAssessmentScaleEnum
+description: "The specific subject or area for which the assessment is performed."
+
+Node: dcid:educationalAchievementLevel
+name: "educationalAchievementLevel"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:EducationalAchievementLevelEnum
+description: "The achievement level attained by students based on the assessment like basic, standard, proficient etc."
+
+Node: dcid:educationScorePercentile
+name: "educationScorePercentile"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: schema:Number, dcs:Percentage
+description: "The percentage of students scoring lower than a particular scale score."
+
+Node: dcid:languageLearningStatus
+name: "languageLearningStatus"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:LanguageLearningStatusEnum
+description: "The status of language learned by students like current learner, ever learned, never learned etc."
+
+Node: dcid:languageFluencyLevel
+name: "languageFluencyLevel"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:LanguageFluencyLevelEnum
+description: "The fluency achieved in language like fluent, proficient etc."
+
+Node: dcid:languageLearningDuration
+name: "languageLearningDuration"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:QuantityRange
+description: "Duration (in months or years) for which the language is leaned."
+
+Node: dcid:languageLearningAgeGroup
+name: "languageLearningAgeGroup"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:LanguageLearningAgeGroupEnum
+description: "The age group of student(s) learning the language."
+
+Node: dcid:languageLearned
+name: "languageLearned"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:LanguageLearnedEnum
+description: "The language which is learned."
+
+Node: dcid:socialVulnerabilityStatus
+name: "socialVulnerabilityStatus"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:SocialVulnerabilityStatusEnum
+description: "The potential negative effects on communities caused by external stresses on human."
+descriptionUrl: "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+
+Node: dcid:armedForceStatus
+name: "armedForceStatus"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:USC_ArmedForcesStatusEnum
+description: "The armed force status of a person directly or through family member."
+
+Node: dcid:studentCohortMembership
+name: "studentCohortMembership"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:StudentCohortMembershipEnum
+description: "A group of students who work through a curriculum together to achieve the same academic degree together. The cohort membership gives the details of month of joining and number of years to achieve graduation."
+descriptionUrl: "https://www.p12.nysed.gov/irs/sirs/documents/sirs-manual.pdf"
+
+Node: dcid:educationCertification
+name: "educationCertification"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:EducationCertificationEnum
+description: "The name or type of graduation."
+
+Node: dcid:graduationStatus
+name: "graduationStatus"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:GraduationStatusEnum
+description: "The status of graduation denoting whether the student graduated or dropped out."
+
+Node: dcid:LunchEligibilityEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LunchEligibilityEnum"
+description: "Different lunch eligibility programs."
+
+Node: dcid:FreeLunchEligible
+typeOf: dcs:LunchEligibilityEnum
+name: "Free Lunch Eligible"
+
+Node: dcid:FreeLunchNotEligible
+typeOf: dcs:LunchEligibilityEnum
+name: "Free Lunch Not Eligible"
+
+Node: dcid:FreeLunchEligibilityInfoMissing
+typeOf: dcs:LunchEligibilityEnum
+name: "Free Lunch Eligibility Information Missing"
+
+Node: dcid:EducationalAchievementLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationalAchievementLevelEnum"
+description: "Educational achievement levels based on different assessments."
+
+
+Node: dcid:NAEP_DiscreteAtBasic
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "NAEP Discrete Level Basic"
+description: "National Assessment of Educational Progress Discrete Level Basic."
+
+Node: dcid:NAEP_DiscreteAtProficient
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "NAEP Discrete Level Proficient"
+description: "National Assessment of Educational Progress Discrete Level Proficient."
+
+Node: dcid:NAEP_DiscreteAtAdvanced
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "NAEP Discrete level Advanced"
+description: "National Assessment of Educational Progress Discrete Level Advanced."
+
+Node: dcid:NAEP_CumulativeBelowBasic
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "NAEP Cumulative Level Below Basic"
+description: "National Assessment of Educational Progress Cumulative Level Below Basic."
+
+Node: dcid:NAEP_CumulativeAtOrAboveBasic
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "NAEP Cumulative Level At Or Above Basic"
+description: "National Assessment of Educational Progress Cumulative Level At Or Above Basic"
+
+Node: dcid:NAEP_CumulativeAtOrAboveProficient
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "NAEP Cumulative Level At Or Above Proficient"
+description: "National Assessment of Educational Progress Cumulative Level At Or Above Proficient."
+
+Node: dcid:NAEP_CumulativeAtAdvanced
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "NAEP Cumulative level Advanced"
+description: "National Assessment of Educational Progress Cumulative Level At Or Above Proficient."
+
+Node: dcid:CA_StandardNotMet
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "California Standard Not Met"
+
+Node: dcid:CA_StandardNearlyMet
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "California Standard Nearly Met"
+
+Node: dcid:CA_StandardMet
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "California Standard Met"
+
+Node: dcid:CA_StandardMetAndAbove
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "California Standard Met And Above"
+
+Node: dcid:CA_StandardExceeded
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "California Standard Exceeded"
+
+Node: dcid:NY_BelowProficient
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "New York Below Proficient"
+description: "New York below proficient - Level 1."
+descriptionUrl: "https://data.nysed.gov/files/essa/20-21/glossary.pdf"
+
+Node: dcid:NY_PartialProficient
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "New York Partial Proficient"
+description: "New York Partial Proficient - Level 2."
+descriptionUrl: "https://data.nysed.gov/files/essa/20-21/glossary.pdf"
+
+Node: dcid:NY_Proficient
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "New York Proficient"
+description: "New York Proficient - Level 3."
+descriptionUrl: "https://data.nysed.gov/files/essa/20-21/glossary.pdf"
+
+Node: dcid:NY_Excel
+typeOf: dcs:EducationalAchievementLevelEnum
+name: "New York Excelled"
+description: "New York Excelled - Level 4"
+descriptionUrl: "https://data.nysed.gov/files/essa/20-21/glossary.pdf"
+
+Node: dcid:LanguageLearningStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LanguageLearningStatusEnum"
+description: "Status of learning the language."
+
+Node: dcid:CurrentLearner
+typeOf: dcs:LanguageLearningStatusEnum
+name: "Current Learner"
+
+Node: dcid:EverLearned
+typeOf: dcs:LanguageLearningStatusEnum
+name: "Ever Learned"
+
+Node: dcid:NeverLearned
+typeOf: dcs:LanguageLearningStatusEnum
+name: "Never Learned"
+
+Node: dcid:NotCurrentLearner
+typeOf: dcs:LanguageLearningStatusEnum
+name: "Not Current Learner"
+
+Node: dcid:ToBeDetermined
+typeOf: dcs:LanguageLearningStatusEnum
+name: "To Be Determined"
+
+Node: dcid:LanguageLearnedEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LanguageLearnedEnum"
+description: "The language that is learned."
+
+Node: dcid:English
+typeOf: dcs:LanguageLearnedEnum
+name: "English"
+
+Node: dcid:OtherEnglish
+typeOf: dcs:LanguageLearnedEnum
+name: "OtherEnglish"
+specializationOf: dcs:English
+description: "English other than first language."
+
+Node: dcid:OnlyEnglish
+typeOf: dcs:LanguageLearnedEnum
+name: "OnlyEnglish"
+specializationOf: dcs:English
+description: "English as the first language."
+
+Node: dcid:LanguageLearningAgeGroupEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LanguageLearningAgeGroupEnum"
+description: "Language learning age group like youth, adult."
+
+Node: dcid:Youth
+typeOf: dcs:LanguageLearningAgeGroupEnum
+name: "Youth"
+
+Node: dcid:Adult
+typeOf: dcs:LanguageLearningAgeGroupEnum
+name: "Adult"
+
+Node: dcid:LanguageFluencyLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LanguageFluencyLevelEnum"
+description: "The fluency level achieved in a language."
+
+Node: dcid:InitialFluentProficient
+typeOf: dcs:LanguageFluencyLevelEnum
+name: "Initial Fluent Proficient"
+description: "A student whose score on the Initial ELPAC determines fluent English proficiency and places the student in mainstream classes. This student does not require English Learner services."
+descriptionUrl: "https://caaspp-elpac.ets.org/caaspp/UnderstandingSBResults"
+
+Node: dcid:FluentProficient
+typeOf: dcs:LanguageFluencyLevelEnum
+name: "Fluent Proficient"
+description: "An aggregation of students who have an English Language Acquisition Status of Initial Fluent English Proficient, Reclassified Fluent English Proficient or English Only."
+descriptionUrl: "https://caaspp-elpac.ets.org/caaspp/UnderstandingSBResults"
+
+Node: dcid:ReclassifiedFluentProficient
+typeOf: dcs:LanguageFluencyLevelEnum
+name: "Reclassified Fluent Proficient"
+description: "A student in kindergarten through grade twelve who, upon entering public school in California, is identified as an English learner (EL) and is subsequently reclassified in California as proficient in English."
+descriptionUrl: "https://caaspp-elpac.ets.org/caaspp/UnderstandingSBResults"
+
+Node: dcid:SocialVulnerabilityStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SocialVulnerabilityStatusEnum"
+description: "Different categories of socially vulnerabilities."
+
+Node: dcid:EconomicallyDisadvantaged
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Economically Disadvantaged"
+
+Node: dcid:NotEconomicallyDisadvantaged
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Not Economically Disadvantaged"
+
+Node: dcid:Homeless
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Homeless"
+
+Node: dcid:HavingHome
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Having Home"
+
+Node: dcid:Migrant
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Migrant"
+
+Node: dcid:NotMigrant
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Not Migrant"
+
+Node: dcid:Foster
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Foster"
+
+Node: dcid:NotFoster
+typeOf: dcs:SocialVulnerabilityStatusEnum
+name: "Not Foster"
+
+Node: dcid:StudentCohortMembershipEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "StudentCohortMembershipEnum"
+description: "Different Cohorts based on duration of course and time of joining."
+
+Node: dcid:FourYearJuneCohort
+typeOf: dcs:StudentCohortMembershipEnum
+name: "Four Year June Cohort"
+
+Node: dcid:FourYearAugustCohort
+typeOf: dcs:StudentCohortMembershipEnum
+name: "FourcYearcAugust Cohort"
+
+Node: dcid:FiveYearJuneCohort
+typeOf: dcs:StudentCohortMembershipEnum
+name: "Five Year June Cohort"
+
+Node: dcid:FiveYearAugustCohort
+typeOf: dcs:StudentCohortMembershipEnum
+name: "Five Year August Cohort"
+
+Node: dcid:SixYearJuneCohort
+typeOf: dcs:StudentCohortMembershipEnum
+name: "Six Year June Cohort"
+
+Node: dcid:SixYearAugustCohort
+typeOf: dcs:StudentCohortMembershipEnum
+name: "Six Year August Cohort"
+
+Node: dcid:SubjectAssessmentScaleEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SubjectAssessmentScaleEnum"
+description: "Different scales based on which students are assessed."
+
+Node: dcid:MeaningVocabularyScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Meaning Vocabulary Scale"
+
+Node: dcid:GainInformationEvaluationScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Gain Information Evaluation Scale"
+
+Node: dcid:LiteraryExperienceScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Literary Experience Scale"
+
+Node: dcid:PerformaTaskScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Performa Task Scale"
+
+Node: dcid:GainAndUseInformationScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Gain And Use Information Scale"
+
+Node: dcid:AlgebraScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Algebra Scale"
+
+Node: dcid:DataAnalysisStatisticsAndProbabilityScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Data Analysis Statistics And Probability Scale"
+
+Node: dcid:GeometryScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Geometry Scale"
+
+Node: dcid:MeasurementAndGeometryScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Measurement And Geometry Scale"
+
+Node: dcid:MeasurementScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Measurement Scale"
+
+Node: dcid:NumberPropertiesAndOperationsScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Number Properties And Operations Scale"
+
+Node: dcid:EarthScienceScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Earth Science Scale"
+
+Node: dcid:LifeScienceScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Life Science Scale"
+
+Node: dcid:PhysicalScienceScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Physical Science Scale"
+
+Node: dcid:WritingEvaluationScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Writing Evaluation Scale"
+
+Node: dcid:CivicsScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Civics Scale"
+
+Node: dcid:EnvironmentAndSocietyScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Environment And Society Scale"
+
+Node: dcid:SpaceAndPlaceScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Space And Place Scale"
+
+Node: dcid:SpatialDynamicsScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Spatial Dynamics Scale"
+
+Node: dcid:CulturesScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Cultures Scale"
+
+Node: dcid:DemocracyScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Democracy Scale"
+
+Node: dcid:TechnologyScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Technology Scale"
+
+Node: dcid:WorldRoleScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "World Role Scale"
+
+Node: dcid:InternationalScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "International Scale"
+
+Node: dcid:MarketEvaluationScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Market Evaluation Scale"
+
+Node: dcid:NationalEvaluationScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "National Evaluation Scale"
+
+Node: dcid:MusicScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Music Scale"
+
+Node: dcid:VisualArtsScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Visual Arts Scale"
+
+Node: dcid:DesignAndSystemsScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Design And Systems Scale"
+
+Node: dcid:InformationAndCommunicationTechnologyScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Information And Communication Technology Scale"
+
+Node: dcid:TechnologyAndSocietyScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Technology And Society Scale"
+
+Node: dcid:CommunicatingAndCollaboratingPracticeScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Communicating And Collaborating Practice Scale"
+
+Node: dcid:DevelopingSolutionsAndAchievingGoalsPracticeScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Developing Solutions And Achieving Goals Practice Scale"
+
+Node: dcid:UnderstandingTechnologicalPrinciplesPracticeScale
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "Understanding Technological Principles Practice Scale"
+
+Node: dcid:EducationCertificationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationCertificationEnum"
+description: "Name or type of graduation program."
+
+Node: dcid:HighSchoolDiploma
+typeOf: dcs:EducationCertificationEnum
+name: "High School Diploma"
+
+Node: dcid:CA_UniversityofCaliforniaGradRequirement
+typeOf: dcs:EducationCertificationEnum
+name: "University of California Graduation Requirement"
+
+Node: dcid:CA_SealofBiliteracy
+typeOf: dcs:EducationCertificationEnum
+name: "California Seal of Biliteracy"
+
+Node: dcid:CA_GoldenStateSealMeritDiploma
+typeOf: dcs:EducationCertificationEnum
+name: "California Golden State Seal Merit Diploma"
+
+Node: dcid:CA_HighSchoolProficiencyExam
+typeOf: dcs:EducationCertificationEnum
+name: "California High School Proficiency Exam"
+
+Node: dcid:CA_AdultEducationHighSchoolDiploma
+typeOf: dcs:EducationCertificationEnum
+name: "California Adult Education High School Diploma"
+
+Node: dcid:NY_LocalDiploma
+typeOf: dcs:EducationCertificationEnum
+name: "New York Local Diploma"
+
+Node: dcid:NY_RegentsDiploma
+typeOf: dcs:EducationCertificationEnum
+name: "New York Regents Diploma"
+
+Node: dcid:NY_RegentsDiplomaWithAdvancedDesignation
+typeOf: dcs:EducationCertificationEnum
+name: "New York Regents Diploma With Advanced Designation"
+
+Node: dcid:GraduationStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GraduationStatusEnum"
+description: "Status of completion of a graduation program."
+
+Node: dcid:Graduated
+typeOf: dcs:GraduationStatusEnum
+name: "Graduated"
+
+Node: dcid:DroppedOut
+typeOf: dcs:GraduationStatusEnum
+name: "Dropped Out"
+
+
+Node: dcid:schoolLocationType
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:LocationClassificationEnum
+name: "schoolLocationType"
+
+Node: dcid:LocationClassificationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LocationClassificationEnum"
+description: "Type of location."
+
+Node: dcid:City
+typeOf: dcs:LocationClassificationEnum
+name: "City"
+
+Node: dcid:Town
+typeOf: dcs:LocationClassificationEnum
+name: "Town"
+
+Node: dcid:Suburb
+typeOf: dcs:LocationClassificationEnum
+name: "Suburb"
+
+Node: dcid:Rural
+typeOf: dcs:LocationClassificationEnum
+name: "Rural"
