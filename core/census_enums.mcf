@@ -10,6 +10,12 @@ typeOf: dcs:USC_AbilityToSpeakEnglishEnum
 dcid: "SpeakEnglishNotWell"
 name: "SpeakEnglishNotWell"
 
+Node: dcid:LimitedEnglishSpeakingHousehold
+typeOf: dcs:USC_AbilityToSpeakEnglishEnum
+name: "LimitedEnglishSpeakingHousehold"
+description: "A 'Limited English speaking household' is one in which no member 14 years old and over (1) speaks only English at home or (2) speaks a language other than English at home and speaks English 'Very well.'"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: SpeakEnglishWell
 typeOf: dcs:USC_AbilityToSpeakEnglishEnum
 dcid: "SpeakEnglishWell"
@@ -61,34 +67,34 @@ typeOf: dcs:USC_CashRentStatusEnum
 dcid: "WithCashRent"
 name: "WithCashRent"
 
-Node: USC_CitizenshipEnum
+Node: CitizenshipEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_CitizenshipEnum"
-name: "USC_CitizenshipEnum"
+dcid: "CitizenshipEnum"
+name: "CitizenshipEnum"
 
 Node: USCitizenBornInTheUnitedStates
-typeOf: dcs:USC_CitizenshipEnum
+typeOf: dcs:CitizenshipEnum
 dcid: "USCitizenBornInTheUnitedStates"
 name: "USCitizenBornInTheUnitedStates"
 
 Node: NotAUSCitizen
-typeOf: dcs:USC_CitizenshipEnum
+typeOf: dcs:CitizenshipEnum
 dcid: "NotAUSCitizen"
 name: "NotAUSCitizen"
 
 Node: USCitizenBornAbroadOfAmericanParents
-typeOf: dcs:USC_CitizenshipEnum
+typeOf: dcs:CitizenshipEnum
 dcid: "USCitizenBornAbroadOfAmericanParents"
 name: "USCitizenBornAbroadOfAmericanParents"
 
 Node: USCitizenByNaturalization
-typeOf: dcs:USC_CitizenshipEnum
+typeOf: dcs:CitizenshipEnum
 dcid: "USCitizenByNaturalization"
 name: "USCitizenByNaturalization"
 
 Node: USCitizenBornInPuertoRicoOrUSIslandAreas
-typeOf: dcs:USC_CitizenshipEnum
+typeOf: dcs:CitizenshipEnum
 dcid: "USCitizenBornInPuertoRicoOrUSIslandAreas"
 name: "USCitizenBornInPuertoRicoOrUSIslandAreas"
 
@@ -98,8 +104,14 @@ subClassOf: schema:Enumeration
 dcid: "USC_CollegeOrGraduateSchoolEnrollmentEnum"
 name: "USC_CollegeOrGraduateSchoolEnrollmentEnum"
 
+Node: EnrolledInCollegeOrGraduateSchool
+typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+dcid: "EnrolledInCollegeOrGraduateSchool"
+name: "EnrolledInCollegeOrGraduateSchool"
+
 Node: EnrolledInPublicCollegeOrGraduateSchool
 typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+specializationOf: dcs:EnrolledInCollegeOrGraduateSchool
 dcid: "EnrolledInPublicCollegeOrGraduateSchool"
 name: "EnrolledInPublicCollegeOrGraduateSchool"
 
@@ -110,6 +122,7 @@ name: "NotEnrolledInCollegeOrGraduateSchool"
 
 Node: EnrolledInPrivateCollegeOrGraduateSchool
 typeOf: dcs:USC_CollegeOrGraduateSchoolEnrollmentEnum
+specializationOf: dcs:EnrolledInCollegeOrGraduateSchool
 dcid: "EnrolledInPrivateCollegeOrGraduateSchool"
 name: "EnrolledInPrivateCollegeOrGraduateSchool"
 
@@ -399,6 +412,35 @@ Node: dcid:HighSchoolGraduateGedOrAlternative
 typeOf: dcs:USC_EducationalAttainmentEnum
 name: "HighSchoolGraduateGedOrAlternative"
 
+Node: dcid:CDC_EducationalAttainmentUnknownOrNotStated
+typeOf: dcs:USC_EducationalAttainmentEnum
+name: "CDC_EducationalAttainmentUnknownOrNotStated"
+
+Node: dcid:EducationalMajorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationalMajorEnum"
+
+Node: dcid:ScienceAndEngineeringMajor
+typeOf: dcs:EducationalMajorEnum
+name: "ScienceAndEngineeringMajor"
+
+Node: dcid:ScienceAndEngineeringRelatedMajor
+typeOf: dcs:EducationalMajorEnum
+name: "ScienceAndEngineeringRelatedMajor"
+
+Node: dcid:BusinessMajor
+typeOf: dcs:EducationalMajorEnum
+name: "BusinessMajor"
+
+Node: dcid:EducationMajor
+typeOf: dcs:EducationalMajorEnum
+name: "EducationMajor"
+
+Node: dcid:ArtsHumanitiesAndOtherMajor
+typeOf: dcs:EducationalMajorEnum
+name: "ArtsHumanitiesAndOtherMajor"
+
 Node: USC_HealthInsuranceEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -441,38 +483,61 @@ typeOf: dcs:USC_HealthInsuranceEnum
 dcid: "WithPrivateHealthInsurance"
 name: "WithPrivateHealthInsurance"
 
+Node: dcid:WithPrivateHealthInsuranceOnly
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithPrivateHealthInsuranceOnly"
+specializationOf: dcid:WithPrivateHealthInsurance
+
 Node: NoHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 dcid: "NoHealthInsurance"
 name: "NoHealthInsurance"
 
+Node: dcid:WithEmployerBasedHealthInsurance
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithEmployerBasedHealthInsurance"
+
 Node: dcid:WithEmployerBasedHealthInsuranceOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithEmployerBasedHealthInsuranceOnly"
+specializationOf: dcid:WithEmployerBasedHealthInsurance
+
+Node: dcid:WithTricareMilitaryHealthCoverage
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithTricareMilitaryHealthCoverage"
 
 Node: dcid:WithTricareMilitaryHealthCoverageOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithTricareMilitaryHealthCoverageOnly"
+specializationOf: dcid:WithTricareMilitaryHealthCoverage
 
 Node: dcid:WithVAHealthCareOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithVAHealthCareOnly"
+specializationOf: dcid:WithVAHealthCare
 
 Node: dcid:WithMedicaidOrMeansTestedPublicCoverageOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithMedicaidOrMeansTestedPublicCoverageOnly"
+specializationOf: dcid:WithMedicaidOrMeansTestedPublicCoverage
 
 Node: dcid:WithTwoOrMoreTypesOfHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithTwoOrMoreTypesOfHealthInsurance"
 
+Node: dcid:WithDirectPurchaseHealthInsurance
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithDirectPurchaseHealthInsurance"
+
 Node: dcid:WithDirectPurchaseHealthInsuranceOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithDirectPurchaseHealthInsuranceOnly"
+specializationOf: dcid:WithDirectPurchaseHealthInsurance
 
 Node: dcid:WithMedicareCoverageOnly
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithMedicareCoverageOnly"
+specializationOf: dcid:WithMedicareCoverage
 
 Node: dcid:WithPublicCoverage
 typeOf: dcs:USC_HealthInsuranceEnum
@@ -482,24 +547,45 @@ Node: dcid:WithOneTypeOfHealthInsurance
 typeOf: dcs:USC_HealthInsuranceEnum
 name: "WithOneTypeOfHealthInsurance"
 
-Node: USC_IncomeStatusEnum
+Node: dcid:WithMedicareCoverage
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithMedicareCoverage"
+
+Node: dcid:WithMedicaidOrMeansTestedPublicCoverage
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithMedicaidOrMeansTestedPublicCoverage"
+
+Node: dcid:WithVAHealthCare
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithVAHealthCare"
+
+Node: dcid:WithPublicHealthInsuranceOnly
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithPublicHealthInsuranceOnly"
+specializationOf: dcid:WithPublicHealthInsurance
+
+Node: dcid:WithMedicaid
+typeOf: dcs:USC_HealthInsuranceEnum
+name: "WithMedicaid"
+
+Node: IncomeStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_IncomeStatusEnum"
-name: "USC_IncomeStatusEnum"
+dcid: "IncomeStatusEnum"
+name: "IncomeStatusEnum"
 
 Node: WithIncome
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "WithIncome"
 name: "WithIncome"
 
 Node: WithEarnings
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "WithEarnings"
 name: "WithEarnings"
 
 Node: NoIncome
-typeOf: dcs:USC_IncomeStatusEnum
+typeOf: dcs:IncomeStatusEnum
 dcid: "NoIncome"
 name: "NoIncome"
 
@@ -776,6 +862,11 @@ subClassOf: schema:Enumeration
 dcid: "USC_LevelOfSchoolEnum"
 name: "USC_LevelOfSchoolEnum"
 
+Node: EnrolledInNurseryThroughGrade12
+typeOf: dcs:USC_LevelOfSchoolEnum
+dcid: "EnrolledInNurseryThroughGrade12"
+name: "EnrolledInNurseryThroughGrade12"
+
 Node: EnrolledInGraduateOrProfessionalSchool
 typeOf: dcs:USC_LevelOfSchoolEnum
 dcid: "EnrolledInGraduateOrProfessionalSchool"
@@ -801,6 +892,11 @@ typeOf: dcs:USC_LevelOfSchoolEnum
 dcid: "EnrolledInGrade5ToGrade8"
 name: "EnrolledInGrade5ToGrade8"
 
+Node: EnrolledInCollegeOrGraduateSchool
+typeOf: dcs:USC_LevelOfSchoolEnum
+dcid: "EnrolledInCollegeOrGraduateSchool"
+name: "EnrolledInCollegeOrGraduateSchool"
+
 Node: GraduateOrProfessionalSchool
 typeOf: dcs:USC_LevelOfSchoolEnum
 dcid: "GraduateOrProfessionalSchool"
@@ -824,79 +920,131 @@ name: "USC_MaritalStatusEnum"
 
 Node: Separated
 typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:DivorcedOrSeparated
 dcid: "Separated"
 name: "Separated"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+description: "Includes people legally separated or otherwise absent from their spouse because of marital discord. Those without a final divorce decree are classified as \'separated\'."
+
+Node: dcid:Unmarried
+typeOf: dcs:USC_MaritalStatusEnum
+name: "Unmarried"
+description: "Includes all people who are not married at the time of interview (including those who are now divoriced, widowed and did not re-marry)."
 
 Node: NeverMarried
 typeOf: dcs:USC_MaritalStatusEnum
 dcid: "NeverMarried"
 name: "NeverMarried"
+specializationOf: dcs:Unmarried
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+description: "Includes all people who have never been married, including people whose only marriage(s) was annulled."
+
+Node: dcid:EverMarried
+typeOf: dcs:USC_MaritalStatusEnum
+name: "EverMarried"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+description: "Includes people ever married at the time of interview (including those now married, separated, widowed, or divorced)."
 
 Node: Widowed
 typeOf: dcs:USC_MaritalStatusEnum
 dcid: "Widowed"
 name: "Widowed"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+description: "Includes widows and widowers who have not remarried."
 
 Node: Divorced
 typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:DivorcedOrSeparated
 dcid: "Divorced"
 name: "Divorced"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+description: "Includes people who are legally divorced and who have not remarried. Those without a final divorce decree are classified as \'separated\'."
+
+Node: dcid:DivorcedInThePast12Months
+typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:Divorced
+name: "DivorcedInThePast12Months"
 
 Node: NowMarried
 typeOf: dcs:USC_MaritalStatusEnum
 dcid: "NowMarried"
 name: "NowMarried"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+description: "All people whose current marriage has not ended by widowhood or divorce."
+
+Node: dcid:MarriedInThePast12Months
+typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:NowMarried
+name: "MarriedInThePast12Months"
 
 Node: MarriedAndNotSeparated
 typeOf: dcs:USC_MaritalStatusEnum
+specializationOf: dcs:NowMarried
 dcid: "MarriedAndNotSeparated"
 name: "MarriedAndNotSeparated"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+description: "Includes people whose current marriage has not ended through widowhood or divorce (regardless of previous marital history), and who are not currently separated."
 
-Node: USC_NativityEnum
+Node: DivorcedOrSeparated
+typeOf: dcs:USC_MaritalStatusEnum
+dcid: "DivorcedOrSeparated"
+name: "DivorcedOrSeparated"
+
+Node: dcid:CDC_MaritalStatusUnknownOrNotStated
+typeOf: dcs:USC_MaritalStatusEnum
+name: "CDC_MaritalStatusUnknownOrNotStated"
+
+Node: NativityEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_NativityEnum"
-name: "USC_NativityEnum"
+dcid: "NativityEnum"
+name: "NativityEnum"
 
 Node: USC_ForeignBorn
-typeOf: dcs:USC_NativityEnum
+typeOf: dcs:NativityEnum
 dcid: "USC_ForeignBorn"
 name: "USC_ForeignBorn"
 
 Node: USC_Native
-typeOf: dcs:USC_NativityEnum
+typeOf: dcs:NativityEnum
 dcid: "USC_Native"
 name: "USC_Native"
 
-Node: USC_OccupancyStatusEnum
+Node: dcid:CDC_NativityUnknownOrNotStated
+typeOf: dcs:NativityEnum
+name: "CDC_NativityUnknownOrNotStated"
+
+Node: OccupancyStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_OccupancyStatusEnum"
-name: "USC_OccupancyStatusEnum"
+dcid: "OccupancyStatusEnum"
+name: "OccupancyStatusEnum"
+description: "An enumeration of occupancy status of housing units."
 
 Node: OccupiedHousingUnit
-typeOf: dcs:USC_OccupancyStatusEnum
+typeOf: dcs:OccupancyStatusEnum
 dcid: "OccupiedHousingUnit"
 name: "OccupiedHousingUnit"
 
 Node: VacantHousingUnit
-typeOf: dcs:USC_OccupancyStatusEnum
+typeOf: dcs:OccupancyStatusEnum
 dcid: "VacantHousingUnit"
 name: "VacantHousingUnit"
 
-Node: USC_OccupancyTenureEnum
+Node: OccupancyTenureEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_OccupancyTenureEnum"
-name: "USC_OccupancyTenureEnum"
+dcid: "OccupancyTenureEnum"
+name: "OccupancyTenureEnum"
+description: "An enumeration of occupancy tenure of housing units"
 
 Node: RenterOccupied
-typeOf: dcs:USC_OccupancyTenureEnum
+typeOf: dcs:OccupancyTenureEnum
 dcid: "RenterOccupied"
 name: "RenterOccupied"
 
 Node: OwnerOccupied
-typeOf: dcs:USC_OccupancyTenureEnum
+typeOf: dcs:OccupancyTenureEnum
 dcid: "OwnerOccupied"
 name: "OwnerOccupied"
 
@@ -926,11 +1074,23 @@ typeOf: dcs:USC_PlaceOfBirthEnum
 dcid: "ForeignBorn"
 name: "ForeignBorn"
 
+Node: ForeignBornNotBornAtSea
+typeOf: dcs:USC_PlaceOfBirthEnum
+dcid: "ForeignBornNotBornAtSea"
+specializationOf: dcs:ForeignBorn
+name: "ForeignBornNotBornAtSea"
+
 Node: USC_PovertyStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 dcid: "USC_PovertyStatusEnum"
 name: "USC_PovertyStatusEnum"
+
+Node: PovertyStatusDetermined
+typeOf: dcs:USC_PovertyStatusEnum
+dcid: "PovertyStatusDetermined"
+name: "Poverty Status Determined"
+description: "Poverty Status is determined for families based on their the total income. If the family's total income is less than the threshold for poverty, then that family and every individual in it is considered in poverty."
 
 Node: AbovePovertyLevelInThePast12Months
 typeOf: dcs:USC_PovertyStatusEnum
@@ -1020,12 +1180,12 @@ dcid: "AmericanIndianOrAlaskaNativeAlone"
 name: "AmericanIndianOrAlaskaNativeAlone"
 
 Node: HispanicOrLatino
-typeOf: dcs:RaceCodeEnum
+typeOf: dcs:RaceCodeEnum, dcs:EthnicityEnum
 dcid: "HispanicOrLatino"
 name: "HispanicOrLatino"
 
 Node: NotHispanicOrLatino
-typeOf: dcs:RaceCodeEnum
+typeOf: dcs:RaceCodeEnum, dcs:EthnicityEnum
 dcid: "NotHispanicOrLatino"
 name: "NotHispanicOrLatino"
 
@@ -1086,6 +1246,26 @@ Node: dcid:OtherPacificIslander
 typeOf: dcs:RaceCodeEnum
 name: "OtherPacificIslander"
 
+Node: dcid:AsianOrPacificIslander
+typeOf: dcs:RaceCodeEnum
+name: "AsianOrPacificIslander"
+
+Node: dcid:Arab
+typeOf: dcs:RaceCodeEnum
+name: "Arab"
+
+Node: dcid:UCR_OtherRace
+typeOf: dcs:RaceCodeEnum
+name: "UCR_OtherRace"
+
+Node: dcid:CDC_OtherRace
+typeOf: dcs:RaceCodeEnum
+name: "CDC_OtherRace"
+
+Node: dcid:UnknownRace
+typeOf: dcs:RaceCodeEnum
+name: "UnknownRace"
+
 Node: dcid:USC_RacialMinority
 typeOf: dcs:RaceCodeEnum
 name: "USC_RacialMinority"
@@ -1119,6 +1299,14 @@ name: "USC_BlackOrAfricanAmericanAlone"
 Node: dcid:USC_HispanicOrLatinoRace
 typeOf: dcs:RaceCodeEnum
 name: "USC_HispanicOrLatinoRace"
+
+Node: dcid:NonWhite
+typeOf: dcs:RaceCodeEnum
+name: "NonWhite"
+
+Node: dcid:CDC_RaceUnknownOrNotStated
+typeOf: dcs:RaceCodeEnum
+name: "CDC_RaceUnknownOrNotStated"
 
 Node: USC_SchoolEnrollmentEnum
 typeOf: schema:Class
@@ -1194,19 +1382,20 @@ typeOf: dcs:USC_TypeOfSchoolEnum
 dcid: "PrivateSchool"
 name: "PrivateSchool"
 
-Node: USC_VeteranStatusEnum
+Node: VeteranStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-dcid: "USC_VeteranStatusEnum"
-name: "USC_VeteranStatusEnum"
+dcid: "VeteranStatusEnum"
+name: "VeteranStatusEnum"
+description: "An enumeration of categories of people who are veterans and those who are not"
 
 Node: Veteran
-typeOf: dcs:USC_VeteranStatusEnum
+typeOf: dcs:VeteranStatusEnum
 dcid: "Veteran"
 name: "Veteran"
 
 Node: Nonveteran
-typeOf: dcs:USC_VeteranStatusEnum
+typeOf: dcs:VeteranStatusEnum
 dcid: "Nonveteran"
 name: "Nonveteran"
 
@@ -1291,6 +1480,12 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "USC_WorkStatusEnum"
 
+Node: dcid:WorkedInThePast12Months
+typeOf: dcs:USC_WorkStatusEnum
+name: "WorkedInThePast12Months"
+description: "Any work during the past 12 months a person did for pay or profit (including paid vacation and paid sick leave) or worked without pay on a family farm or in a family business. Weeks of active service in the Armed Forces are also included."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: dcid:USC_FullTimeYearRoundWorker
 typeOf: dcs:USC_WorkStatusEnum
 name: "USC_FullTimeYearRoundWorker"
@@ -1339,6 +1534,10 @@ name: "AdultCorrectionalFacilities"
 Node: dcid:Household
 typeOf: dcs:USC_ResidenceTypeEnum
 name: "Household"
+
+Node: dcid:HousingUnit
+typeOf: dcs:USC_ResidenceTypeEnum
+name: "HousingUnit"
 
 Node: dcid:NoninstitutionalizedGroupQuarters
 typeOf: dcs:USC_ResidenceTypeEnum
@@ -1475,6 +1674,18 @@ specializationOf: dcs:WithDisability
 dcid: "IndependentLivingDifficulty"
 name: "IndependentLivingDifficulty"
 
+Node: dcid:PhysicalDisability
+name: "PhysicalDisability"
+typeOf: dcs:USC_DisabilityStatusEnum
+description: "Any physical impairment; any physiological disorder or condition, cosmetic disfigurement, or anatomical loss affecting one or more of the following body systems: neurological, musculoskeletal, special sense organs, respiratory (including speech organs), cardiovascular, reproductive, digestive, genitourinary, hemic and lymphatic, skin, and endocrine."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:MentalDisability
+name: "MentalDisability"
+typeOf: dcs:USC_DisabilityStatusEnum
+description: "Any mental impairment or psychological disorder such as: organic brain syndrome, emotional or mental illness, and specific learning disabilities."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
 Node: dcid:USC_MortgageStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -1504,12 +1715,27 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "USC_ResidentStatusEnum"
 
+Node: dcid:InUSArmedForcesOverseas
+typeOf:dcs:USC_ResidentStatusEnum
+specializationOf: dcid:InArmedForces
+name: "US Armed Forces Overseas"
+
+Node: dcid:USResident
+typeOf:dcs:USC_ResidentStatusEnum
+name: "US Resident"
+
+Node: dcid:NonUSResident
+typeOf:dcs:USC_ResidentStatusEnum
+name: "Non-US Resident"
+
 Node: dcid:DifferentHouse1YearAgo
 typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:USResident
 name: "DifferentHouse1YearAgo"
 
 Node: dcid:SameHouse1YearAgo
 typeOf: dcs:USC_ResidentStatusEnum
+specializationOf: dcs:USResident
 name: "SameHouse1YearAgo"
 
 Node: dcid:DifferentHouseInTheUS
@@ -1686,3 +1912,250 @@ name: "AgeStatusEnum"
 Node: dcid:USC_AgeNotStated
 typeOf: dcs:AgeStatusEnum
 name: "USC_AgeNotStated"
+
+Node: dcid:BirthEventStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BirthEventStatusEnum"
+
+Node: dcid:BirthInThePast12Months
+typeOf: dcs:BirthEventStatusEnum
+name: "Birth in the past 12 months"
+
+Node: dcid:CommunicationAmentiesEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CommunicationAmentiesEnum"
+
+Node: dcid:TelephoneServicesAvailable
+typeOf: dcs:CommunicationAmentiesEnum
+name: "TelephoneServicesAvailable"
+
+Node: dcid:NoTelephoneService
+typeOf: dcs:CommunicationAmentiesEnum
+name: "NoTelephoneService"
+
+Node: dcid:ReligionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ReligionEnum"
+
+Node: dcid:Hinduism
+typeOf: dcs:ReligionEnum
+name: "Hinduism"
+
+Node: dcid:Islam
+typeOf: dcs:ReligionEnum
+name: "Islam"
+
+Node: dcid:Christianity
+typeOf: dcs:ReligionEnum
+name: "Christianity"
+
+Node: dcid:Sikhism
+typeOf: dcs:ReligionEnum
+name: "Sikhism"
+
+Node: dcid:Buddhism
+typeOf: dcs:ReligionEnum
+name: "Buddhism"
+
+Node: dcid:Jainism
+typeOf: dcs:ReligionEnum
+name: "Jainism"
+
+Node: dcid:IndiaCensus_OtherReligionAndPersuasions
+typeOf: dcs:ReligionEnum
+name: "Other Religion and Persuasions as per Indian Census"
+
+Node: dcid:ReligionNotStated
+typeOf: dcs:ReligionEnum
+name: "ReligionNotStated"
+
+Node: dcid:Judaism
+typeOf: dcs:ReligionEnum
+name: "Judaism"
+
+Node: dcid:Protestantism
+typeOf: dcs:ReligionEnum
+name: "Protestantism"
+
+Node: dcid:Catholicism
+typeOf: dcs:ReligionEnum
+name: "Catholicism"
+
+Node: dcid:JehovahsWitnesses
+typeOf: dcs:ReligionEnum
+name: "JehovahsWitnesses"
+
+Node: dcid:Mormonism
+typeOf: dcs:ReligionEnum
+name: "Mormonism"
+
+Node: dcid:EasternChristianity
+typeOf: dcs:ReligionEnum
+name: "EasternChristianity"
+
+Node: dcid:AtheismOrAgnosticism
+typeOf: dcs:ReligionEnum
+name: "AtheismOrAgnosticism"
+
+Node: dcid:UCR_MultipleReligion
+typeOf: dcs:ReligionEnum
+name: "UCR_MultipleReligion"
+
+Node: dcid:UCR_OtherChristian
+typeOf: dcs:ReligionEnum
+name: "UCR_OtherChristian"
+
+Node: dcid:UCR_OtherReligion
+typeOf: dcs:ReligionEnum
+name: "UCR_OtherReligion"
+
+Node: dcid:TransportationTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TransportationTypeEnum"
+description: "An enumeration of transportation types."
+Node: dcid:LocalAreaTransportation
+typeOf: dcs:TransportationTypeEnum
+name: "LocalAreaTransportation"
+
+Node: dcid:religiousOrientation
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: dcs:ReligionEnum
+name: "religiousOrientation"
+
+Node: dcid:Nonsectarian
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:ReligionNotStated
+name: "Nonsectarian"
+
+Node: dcid:NCES_OtherReligion
+typeOf: dcs:ReligionEnum
+name: "OtherReligious"
+
+Node: dcid:LutheranChurchMissouriSynod
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Lutheran Church – Missouri Synod"
+
+Node: dcid:Amish
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Amish"
+
+Node: dcid:RomanCatholicism
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Catholicism
+name: "Roman Catholic"
+
+Node: dcid:GreekOrthodox
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:EasternChristianity
+name: "Greek Orthodox"
+
+Node: dcid:SeventhDayAdventist
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Seventh–Day Adventist"
+
+Node: dcid:ChurchOfTheNazarene
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Church of the Nazarene"
+
+Node: dcid:ChurchOfChrist
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Protestantism
+name: "Church of Christ"
+
+Node: dcid:Baptist
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Protestantism
+name: "Baptist"
+
+Node: dcid:EvangelicalLutheranChurchInAmerica
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Evangelical Lutheran Church in America (formerly AELC or ALC or LCA)"
+
+Node: dcid:WisconsinEvangelicalLutheranSynod
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Wisconsin Evangelical Lutheran Synod"
+
+Node: dcid:AssemblyOfGod
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Pentecostalism
+name: "Assembly of God"
+
+Node: dcid:FriendsChurch
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Friends"
+
+Node: dcid:ChurchOfGod
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Pentecostalism
+name: "Church of God"
+
+Node: dcid:Methodism
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Pentecostalism
+name: "Methodist"
+
+Node: dcid:Episcopalians
+typeOf: dcs:ReligionEnum
+name: "Episcopal"
+
+Node: dcid:Presbyterian
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Presbyterian"
+
+Node: dcid:Mennonite
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Protestantism
+name: "Mennonite"
+
+Node: dcid:Calvinism
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Calvinist"
+
+Node: dcid:Brethren
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Protestantism
+name: "Brethren"
+
+Node: dcid:Pentecostalism
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Christianity
+name: "Pentecostal"
+
+Node: dcid:AfricanMethodistEpiscopal
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Episcopalians
+name: "African Methodist Episcopal"
+
+Node: dcid:NCES_OtherLutheran
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:LutheranChurchMissouriSynod
+name: "Other Lutheran"
+
+Node: dcid:ChurchOfGodInChrist
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Pentecostalism
+name: "Church of God in Christ"
+
+Node: dcid:LatterDaySaints
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Mormonism
+name: "Latter Day Saints"
+
+Node: dcid:DisciplesOfChrist
+typeOf: dcs:ReligionEnum
+specializationOf: dcs:Protestantism
+name: "Disciples of Christ"

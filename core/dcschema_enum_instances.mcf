@@ -1,3 +1,8 @@
+Node: dcid:CensusACS5yrSurveySubjectTable
+typeOf: dcs:CensusSurveyEnum
+name: "CensusACS5yrSurveySubjectTable"
+description: "American Community Survey 5 year estimates from Subject Tables"
+
 Node: dcid:CensusACS5yrSurvey
 typeOf: dcs:CensusSurveyEnum
 name: "CensusACS5yrSurvey"
@@ -27,6 +32,11 @@ Node: dcid:DifferenceAcrossModels
 typeOf: dcs:BinaryOperatorEnum
 name: "DifferenceAcrossModels"
 description: "Represents the difference of observation values across different models"
+
+Node: dcid:DifferenceRelativeToObservedData
+name: "DifferenceRelativeToObservedData"
+typeOf: dcs:BinaryOperatorEnum
+description: "Represents the difference relative to the value from an observation from satellites, ground-based monitoring stations, etc."
 
 Node: dcid:Ratio
 typeOf: dcs:BinaryOperatorEnum
@@ -143,31 +153,31 @@ typeOf: dcs:OI_RaceCodeEnum
 
 ###---- begin BEA enum instances ----###
 Node: dcid:ConsumerGoodsAndServices
-name: "ConsumerGoodsAndServices"
+name: "Consumer Goods and Services"
 typeOf: dcs:EconomicProductEnum
 description: "Consumer goods are usually tangible final commodities purchased by the average consumer. Consumer services are intangible activities that are typically produced by other people and consumed by the consumer simultaneously."
 descriptionUrl: "https://en.wikipedia.org/wiki/Goods_and_services"
 
 Node: dcid:BEAServicesRents
-name: "BEAServicesRents"
+name: "Housing Rental Prices"
 description: "Indicates Housing Rental Prices to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
 typeOf: dcs:EconomicProductEnum
 dcid: "BEAServicesRents"
 
 Node: dcid:BEAServicesOthers
-name: "BEAServicesOthers"
+name: "Services other than Rentals"
 description: "Indicates Services Others than Rentals to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
 typeOf: dcs:EconomicProductEnum
 dcid: "BEAServicesOthers"
 
 Node: dcid:BEAAllItems
-name: "BEAAllItems"
+name: "All Items"
 description: "Indicates the entire bucket of goods and services used to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
 typeOf: dcs:EconomicProductEnum
 dcid: "BEAAllItems"
 
 Node: dcid:BEAGoods
-name: "BEAGoods"
+name: "List of Goods"
 description: "Indicates the list of Goods to determine Consumer Price Index (CPI) by US Bureau of Economic Analysis."
 typeOf: dcs:EconomicProductEnum
 dcid: "BEAGoods"
@@ -1097,6 +1107,12 @@ typeOf: dcs:RaceCodeEnum
 name: "DAD_Black"
 description: "Black."
 
+Node: dcid:CDC_OtherRace
+typeOf: dcs:RaceCodeEnum
+name: "CDC_OtherRace"
+description: "The CDC defines other race as a separate entity to group races that are stated but do not map to any race in the defined list (American Indian or Alaska Native, Asian or Pacific Islander, Black, and White)."
+descriptionUrl: "https://www.cdc.gov/phin/resources/vocabulary/documents/CDC-Race-Ethnicity-Background-and-Purpose.pdf"
+
 # Begin generic health enums
 Node: dcid:Mammography
 typeOf: dcs:HealthPreventionEnum
@@ -1147,12 +1163,14 @@ name: "Larceny-Theft"
 Node: Burglary
 dcid: "Burglary"
 typeOf: dcs:PropertyCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
 name: "Property Burglary"
 
 Node: MotorVehicleTheft
 dcid: "MotorVehicleTheft"
 name: "Motor Vehicle Theft"
 typeOf: dcs:PropertyCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
 
 Node: ViolentCrime
 dcid: "ViolentCrime"
@@ -1162,26 +1180,31 @@ typeOf: dcs:CrimeTypeEnum
 Node: AggravatedAssault
 dcid: "AggravatedAssault"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
 name: "Aggravated Assault"
 
 Node: ForcibleRape
 dcid: "ForcibleRape"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
 name: "Forcible Rape"
 
 Node: MurderAndNonNegligentManslaughter
 dcid: "MurderAndNonNegligentManslaughter"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
 name: "Murder And Non Negligent Manslaughter"
 
 Node: Robbery
 dcid: "Robbery"
 typeOf: dcs:ViolentCrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
 name: "Robbery"
 
 Node: Arson
 dcid: "Arson"
-typeOf: dcs:CrimeTypeEnum
+typeOf: dcs:CrimeTypeEnum, dcs:FireCauseGeneralEnum
+specializationOf: dcs:CrimeAgainstProperty
 name: "Arson"
 
 Node: UCR_CombinedCrime
@@ -1189,6 +1212,453 @@ dcid: "UCR_CombinedCrime"
 typeOf: dcs:CrimeTypeEnum
 name: "Combined Crime"
 description: "Sum of Property, Violent, and Arson crimes included in the UCR datasets."
+
+Node: CrimeAgainstSociety
+dcid: "CrimeAgainstSociety"
+typeOf: dcs:CrimeTypeEnum
+name: "CrimeAgainstSociety"
+description: "Crimes that represents society's prohibition against engaging in certain type of activities"
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-2019-1-nibrs-user-manua-093020.pdf/view"
+
+Node: CrimeAgainstProperty
+dcid: "CrimeAgainstProperty"
+typeOf: dcs:CrimeTypeEnum
+name: "CrimeAgainstProperty"
+description: "Crimes intended to obtain money, property or some other benefit"
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-2019-1-nibrs-user-manua-093020.pdf/view"
+
+Node: CrimeAgainstPerson
+dcid: "CrimeAgainstPerson"
+typeOf: dcs:CrimeTypeEnum
+name: "CrimeAgainstPerson"
+description: "Crimes where the victims are always individuals"
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-2019-1-nibrs-user-manua-093020.pdf/view"
+
+Node: UCR_OtherCrimesAgainstPerson
+dcid: "UCR_OtherCrimesAgainstPerson"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "UCR_OtherCrimesAgainstPerson"
+
+Node: UCR_OtherCrimesAgainstProperty
+dcid: "UCR_OtherCrimesAgainstProperty"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "UCR_OtherCrimesAgainstProperty"
+
+Node: Intimidation
+dcid: "Intimidation"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Intimidation"
+
+Node: SimpleAssault
+dcid: "SimpleAssault"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "SimpleAssault"
+
+Node: DestructionOrDamageOrVandalismOfProperty
+dcid: "DestructionOrDamageOrVandalismOfProperty"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "DestructionOrDamageOrVandalismOfProperty"
+
+Node: UCR_NotSpecified
+dcid: "UCR_NotSpecified"
+typeOf: dcs:CrimeTypeEnum
+name: "UCR_NotSpecified"
+
+Node: DrugOrNarcoticViolations
+dcid: "DrugOrNarcoticViolations"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "DrugOrNarcoticViolations"
+
+Node: WeaponLawViolations
+dcid: "WeaponLawViolations"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "WeaponLawViolations"
+
+Node: TheftFromMotorVehicle
+dcid: "TheftFromMotorVehicle"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftFromMotorVehicle"
+
+Node: Shoplifting
+dcid: "Shoplifting"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Shoplifting"
+
+Node: UCR_AllOtherLarceny
+dcid: "UCR_AllOtherLarceny"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "All Other Larceny"
+
+Node: TheftOfMotorVehiclePartsOrAccessories
+dcid: "TheftOfMotorVehiclePartsOrAccessories"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftOfMotorVehiclePartsOrAccessories"
+
+Node: Fondling
+dcid: "Fondling"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Fondling"
+
+Node: CounterfeitingOrForgery
+dcid: "CounterfeitingOrForgery"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "CounterfeitingOrForgery"
+
+Node: KidnappingOrAbduction
+dcid: "KidnappingOrAbduction"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "KidnappingOrAbduction"
+
+Node: TheftFromBuilding
+dcid: "TheftFromBuilding"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftFromBuilding"
+
+Node: PornographyOrObsceneMaterial
+dcid: "PornographyOrObsceneMaterial"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "PornographyOrObsceneMaterial"
+
+Node: Embezzlement
+dcid: "Embezzlement"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Embezzlement"
+
+Node: PurseSnatching
+dcid: "PurseSnatching"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "PurseSnatching"
+
+Node: DrugEquipmentViolations
+dcid: "DrugEquipmentViolations"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "DrugEquipmentViolations"
+
+Node: CreditCardOrAutomatedTellerMachineFraud
+dcid: "CreditCardOrAutomatedTellerMachineFraud"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "CreditCardOrAutomatedTellerMachineFraud"
+
+Node: SexualAssaultWithAnObject
+dcid: "SexualAssaultWithAnObject"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "SexualAssaultWithAnObject"
+
+Node: FalsePretenseOrSwindleOrConfidenceGame
+dcid: "FalsePretenseOrSwindleOrConfidenceGame"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "FalsePretenseOrSwindleOrConfidenceGame"
+
+Node: PocketPicking
+dcid: "PocketPicking"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "PocketPicking"
+
+Node: WelfareFraud
+dcid: "WelfareFraud"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "WelfareFraud"
+
+Node: ExtortionOrBlackmail
+dcid: "ExtortionOrBlackmail"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "ExtortionOrBlackmail"
+
+Node: StolenPropertyOffenses
+dcid: "StolenPropertyOffenses"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "StolenPropertyOffenses"
+
+Node: Incest
+dcid: "Incest"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Incest"
+
+Node: Sodomy
+dcid: "Sodomy"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Sodomy"
+
+Node: NegligentManslaughter
+dcid: "NegligentManslaughter"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "NegligentManslaughter"
+
+Node: Rape
+dcid: "Rape"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "Rape"
+
+Node: StatutoryRape
+dcid: "StatutoryRape"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "StatutoryRape"
+
+Node: TheftFromCoinOperatedMachineOrDevice
+dcid: "TheftFromCoinOperatedMachineOrDevice"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "TheftFromCoinOperatedMachineOrDevice"
+
+Node: Impersonation
+dcid: "Impersonation"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Impersonation"
+
+Node: Prostitution
+dcid: "Prostitution"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "Prostitution"
+
+Node: WireFraud
+dcid: "WireFraud"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "WireFraud"
+
+Node: AssistingOrPromotingProstitution
+dcid: "AssistingOrPromotingProstitution"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "AssistingOrPromotingProstitution"
+
+Node: PurchasingProstitution
+dcid: "PurchasingProstitution"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "PurchasingProstitution"
+
+Node: Bribery
+dcid: "Bribery"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "Bribery"
+
+Node: IdentityTheft
+dcid: "IdentityTheft"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "IdentityTheft"
+
+Node: HumanTrafficking_CommercialSexActs
+dcid: "HumanTrafficking_CommercialSexActs"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstPerson
+name: "HumanTrafficking_CommercialSexActs"
+
+Node: HackingOrComputerInvasion
+dcid: "HackingOrComputerInvasion"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstProperty
+name: "HackingOrComputerInvasion"
+
+Node: BettingOrWagering
+dcid: "BettingOrWagering"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "BettingOrWagering"
+
+Node: AnimalCruelty
+dcid: "AnimalCruelty"
+typeOf: dcs:CrimeTypeEnum
+specializationOf: dcs:CrimeAgainstSociety
+name: "AnimalCruelty"
+
+Node: dcid:SingleBias
+typeOf: dcs:BiasMotivationEnum
+name: "SingleBias"
+
+Node: dcid:MultipleBias
+typeOf: dcs:BiasMotivationEnum
+name: "MultipleBias"
+
+Node: dcid:RaceOrEthnicity
+typeOf: dcs:BiasMotivationEnum
+name: "RaceOrEthnicity"
+
+Node: dcid:UCR_OtherRaceOrEthnicity
+typeOf: dcs:BiasMotivationEnum
+name: "UCR_OtherRaceOrEthnicity"
+
+Node: dcid:UnknownBias
+typeOf: dcs:BiasMotivationEnum
+name: "UnknownBias"
+
+Node: ReligiousOrganization
+dcid: "ReligiousOrganization"
+typeOf: dcs:VictimTypeEnum
+name: "Religious Organization"
+
+Node: Business
+dcid: "Business"
+typeOf: dcs:VictimTypeEnum
+name: "Business"
+
+Node: Society
+dcid: "Society"
+typeOf: dcs:VictimTypeEnum
+name: "Society"
+
+Node: UCR_OtherVictimType
+dcid: "UCR_OtherVictimType"
+typeOf: dcs:VictimTypeEnum
+name: "Other Victim Type"
+
+Node: UCR_UnknownVictimType
+dcid: "UCR_UnknownVictimType"
+typeOf: dcs:VictimTypeEnum
+name: "Unknown Victim Type"
+
+Node: FinancialInstitution
+dcid: "FinancialInstitution"
+typeOf: dcs:VictimTypeEnum
+name: "Financial Institution"
+
+Node: LawEnforcementOfficer
+dcid: "LawEnforcementOfficer"
+typeOf: dcs:VictimTypeEnum
+name: "Law Enforcement Officer"
+
+Node: MultipleVictimType
+dcid: "MultipleVictimType"
+typeOf: dcs:VictimTypeEnum
+name: "Multiple Victim Type"
+
+Node: dcid:HighwayOrRoadOrAlleyOrStreetOrSidewalk
+typeOf: dcs:LocationOfCrimeEnum
+name: "HighwayOrRoadOrAlleyOrStreetOrSidewalk"
+
+Node: Supermarket
+dcid: "Supermarket"
+subClassOf: schema:Store
+name: "Supermarket"
+typeOf: schema:Class
+
+Node: dcid:UCR_UnclassifiedLocation
+typeOf: dcs:LocationOfCrimeEnum
+name: "UCR_UnclassifiedLocation"
+
+Node: dcid:CommercialOrOfficeBuilding
+typeOf: dcs:LocationOfCrimeEnum
+name: "CommercialOrOfficeBuilding"
+
+Node: dcid:SpecialtyStore
+typeOf: dcs:LocationOfCrimeEnum
+name: "SpecialtyStore"
+
+Node: dcid:GovernmentOrPublicBuilding
+typeOf: dcs:LocationOfCrimeEnum
+name: "GovernmentOrPublicBuilding"
+
+Node: dcid:JailOrPrisonOrPenitentiaryOrCorrectionsFacility
+typeOf: dcs:LocationOfCrimeEnum
+name: "JailOrPrisonOrPenitentiaryOrCorrectionsFacility"
+
+Node: dcid:FieldOrWoods
+typeOf: dcs:LocationOfCrimeEnum
+name: "FieldOrWoods"
+
+Node: dcid:BankOrSavingsAndLoan
+typeOf: dcs:LocationOfCrimeEnum
+name: "BankOrSavingsAndLoan"
+
+Node: dcid:ConstructionSite
+typeOf: dcs:LocationOfCrimeEnum
+name: "ConstructionSite"
+
+Node: dcid:IndustrialSite
+typeOf: dcs:LocationOfCrimeEnum
+name: "IndustrialSite"
+
+Node: dcid:GamblingFacilityOrCasinoOrRaceTrack
+typeOf: dcs:LocationOfCrimeEnum
+name: "GamblingFacilityOrCasinoOrRaceTrack"
+
+Node: dcid:TribalLands
+typeOf: dcs:LocationOfCrimeEnum
+name: "TribalLands"
+
+Node: dcid:ATMSeparateFromBank
+typeOf: dcs:LocationOfCrimeEnum
+name: "ATMSeparateFromBank"
+
+Node: dcid:FarmFacility
+typeOf: dcs:LocationOfCrimeEnum
+name: "FarmFacility"
+
+Node: dcid:RestArea
+typeOf: dcs:LocationOfCrimeEnum
+name: "RestArea"
+
+Node: dcid:AbandonedOrCondemnedStructure
+typeOf: dcs:LocationOfCrimeEnum
+name: "AbandonedOrCondemnedStructure"
+
+Node: dcid:MissionOrHomelessShelter
+typeOf: dcs:LocationOfCrimeEnum
+name: "MissionOrHomelessShelter"
+
+Node: dcid:DockOrWharfOrFreightOrModalTerminal
+typeOf: dcs:LocationOfCrimeEnum
+name: "DockOrWharfOrFreightOrModalTerminal"
+
+Node: dcid:CommunityCenter
+typeOf: dcs:LocationOfCrimeEnum
+name: "CommunityCenter"
+
+Node: dcid:MilitaryInstallation
+typeOf: dcs:LocationOfCrimeEnum
+name: "MilitaryInstallation"
+
+Node: dcid:Cyberspace
+typeOf: dcs:LocationOfCrimeEnum
+name: "Cyberspace"
+
+Node: dcid:SingleCrimeLocation
+typeOf: dcs:LocationOfCrimeEnum
+name: "SingleCrimeLocation"
+
+Node: dcid:MultipleCrimeLocations
+typeOf: dcs:LocationOfCrimeEnum
+name: "MultipleCrimeLocations"
+
+# Can be removed when sync from schema.org happens
+Node: dcid:MedicalBusiness
+typeOf: dcs:LocationOfCrimeEnum
+name: "MedicalBusiness"
 
 Node: dcid:DataCommonsAggregate
 typeOf: dcs:AggregateTypeEnum
@@ -1344,17 +1814,113 @@ name: COVID_19
 description: "Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)."
 descriptionUrl: "https://en.wikipedia.org/wiki/Coronavirus_disease_2019"
 
+Node: dcid:HeatStress
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "HeatStress"
+description: "Exposure to extreme heat can result in occupational illnesses and injuries. Heat stress can result in heat stroke, heat exhaustion, heat cramps, or heat rashes."
+descriptionUrl: "https://www.cdc.gov/niosh/topics/heatstress/default.html"
+isProvisional: schema:True
+
+Node: dcid:AcuteCondition
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Acute Condition"
+description: "Acute illnesses generally develop suddenly and last a short time, often only a few days or weeks."
+descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease"
+
+Node: dcid:ChronicCondition
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Chronic Condition"
+description: "Chronic conditions develop slowly and may worsen over an extended period of time—months to years."
+descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease"
+
+Node: dcid:PerinatalInfection
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Perinatal Infection"
+description: "Perinatal Infection, also referred as vertically transmitted infection is an infection caused by pathogens (such as bacteria and viruses) that use mother-to-child transmission, that is, transmission directly from the mother to an embryo, fetus, or baby during pregnancy or childbirth."
+descriptionUrl: "https://en.wikipedia.org/wiki/Vertically_transmitted_infection"
+
+Node: dcid:InvasiveDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Invasive Disease"
+description: "Invasive disease means that germs invade parts of the body that are normally free from germs."
+descriptionUrl: "https://www.cdc.gov/pneumococcal/about/infection-types.html"
+
+Node: dcid:NeuroinvasiveDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+specializationOf: dcs:InvasiveDisease
+name: "Neuroinvasive Disease"
+
+Node: dcid:NonNeuroinvasiveDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+specializationOf: dcs:InvasiveDisease
+name: "Non-neuroinvasive Disease"
+
+Node: dcid:CongenitalDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Congenital Disease"
+
+Node: dcid:NonCongenitalDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Non-congenital Disease"
+
+Node: dcid:DrugResistantDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Drug-resistant Disease"
+
+Node: dcid:NonDrugResistantDisease
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Non Drug-Resistant Disease"
+
+Node: dcid:PostDiarrheal
+typeOf: dcs:MedicalConditionIncidentTypeEnum
+name: "Post Diarrheal"
+
+Node: dcid:ImportedCase
+typeOf: dcs:MedicalStatusEnum
+name: "Imported Case"
+description: "An imported case means that the patient was infected non-locally and imported the disease into the local area. This covers a wider range of importations, not only including cases imported from abroad."
+descriptionUrl: "https://www.ijidonline.com/article/S1201-9712(21)00170-3/fulltext"
+
+Node: dcid:IndigenousCase
+typeOf: dcs:MedicalStatusEnum
+name: "Indigenous Case"
+description: "An indigenous case means that the patient was infected locally and the disease is indigenous to the local area"
+
+Node: dcid:ClinicalCase
+typeOf: dcs:MedicalStatusEnum
+name: "Clinical Case"
+description: "In epidemiology, a clinical case definition, a clinical definition, or simply a case definition lists the clinical criteria by which public health professionals determine whether a person's illness is included as a case in an outbreak investigation—that is, whether a person is considered directly affected by an outbreak"
+descriptionUrl: "https://en.wikipedia.org/wiki/Clinical_case_definition"
+
 Node: dcid:PatientDeceased
 typeOf: dcs:MedicalStatusEnum
-name: PatientDeceased
+name: "Patient Deceased"
 
-Node: dcid:ConfirmedCase
+Node: dcid:PediatricMortality
 typeOf: dcs:MedicalStatusEnum
-name: ConfirmedCase
+specializationOf: dcs:PatientDeceased
+name: "Pediatric Mortality"
+description: "Mortality of patients admitted in Pediatric Intensive Care Unit (PICU)"
 
 Node: dcid:ConfirmedOrProbableCase
 typeOf: dcs:MedicalStatusEnum
-name: ConfirmedOrProbableCase
+name: "Confirmed or Probable Case"
+
+Node: dcid:ConfirmedCase
+typeOf: dcs:MedicalStatusEnum
+specializationOf: dcs:ConfirmedOrProbableCase
+name: "Confirmed Case"
+
+Node: dcid:ProbableCase
+typeOf: dcs:MedicalStatusEnum
+specializationOf: dcs:ConfirmedOrProbableCase
+name: "Probable Case"
+
+Node: dcid:SuspectedCase
+typeOf: dcs:MedicalStatusEnum
+name: "Suspected Case"
+description: "Clinically compatible cases without presumptive or confirmatory laboratory results"
+descriptionUrl: "https://www.paho.org/english/sha/be991norms.htm"
 
 Node: dcid:PatientRecovered
 name: "PatientRecovered"
@@ -1370,6 +1936,10 @@ typeOf: dcs:MedicalStatusEnum
 
 Node: dcid:PatientOnVentilator
 name: "PatientOnVentilator"
+typeOf: dcs:MedicalStatusEnum
+
+Node: dcid:VisitedEmergencyDepartment
+name: "VisitedEmergencyDepartment"
 typeOf: dcs:MedicalStatusEnum
 
 Node: dcid:Positive
@@ -1394,17 +1964,31 @@ typeOf: dcs:ICD10Section
 
 Node: dcid:Overweight
 name: "Overweight"
+typeOf: dcs:BodyMassIndexClassificationEnum
+
+Node: dcid:Underweight
 typeOf: dcs:HealthBehaviorEnum
+name: "Underweight"
 
 Node: dcid:ScheduledCaste
 typeOf: dcs:SocialCategoryEnum
 name: "ScheduledCaste"
-description: "Scheduled Caste is an officially designated group of people in India."
+description: "Scheduled Caste (SC) is an officially designated group of people in India."
 
 Node: dcid:ScheduledTribe
 typeOf: dcs:SocialCategoryEnum
 name: "ScheduledTribe"
-description: "Scheduled Tribe is an officially designated group of people in India."
+description: "Scheduled Tribe (ST) is an officially designated group of people in India."
+
+Node: dcid:OtherBackwardClass
+typeOf: dcs:SocialCategoryEnum
+name: "OtherBackwardClass"
+description: "Group of people in India who are not part of Scheduled Cast or Scheduled Tribe, but fall into backward classes."
+
+Node: dcid:GeneralCategory
+typeOf: dcs:SocialCategoryEnum
+name: "GeneralCategory"
+description: "Group of people in India who don't belong to any other categories."
 
 Node: dcid:Illiterate
 typeOf: dcs:LiteracyStatusEnum
@@ -1433,12 +2017,14 @@ name: "OtherWorkers"
 Node: dcid:MainWorker
 typeOf: dcs:WorkerClassificationEnum
 name: "MainWorker"
+specializationOf: dcs:Worker
 description: "Main workers are those who had worked for 6 months or more in the one year preceding the date of enumeration."
 descriptionUrl: "http://www.arthapedia.in/index.php?title=Worker_(Census_Definition)"
 
 Node: dcid:MarginalWorker
 typeOf: dcs:WorkerClassificationEnum
 name: "MarginalWorker"
+specializationOf: dcs:Worker
 description: "Marginal workers are those who had worked for less than 6 months in the one year preceding the date of enumeration."
 descriptionUrl: "http://www.arthapedia.in/index.php?title=Worker_(Census_Definition)"
 
@@ -1450,6 +2036,162 @@ Node: dcid:NonWorker
 typeOf: dcs:WorkerClassificationEnum
 name: "NonWorker"
 
+Node: dcid:PaidWorker
+name: "Paid Worker"
+typeOf: dcs:WorkerClassificationEnum
+description: "Includes people who worked for wages, salary, commission, tips, pay-in-kind, or piece rates for a private, for-profit employer or a private not-for-profit, tax-exempt or charitable organization"
+specializationOf: dcs:Worker
+
+Node: dcid:IncorporatedBusinessOwner
+name: "Incorporated Business Owner"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:PaidWorker
+description: "A self-employed person who is an owner of an incorporated business, professional practice, or farm"
+
+Node: dcid:PaidEmployee
+name: "Paid Employee"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:PaidWorker
+description: "A salaried employee in the for-profit sector. Example: Salaried employee at a private company"
+
+Node: dcid:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
+name: "Unincorporated Buisness Owner Or Unpaid Family Worker"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:Worker
+
+Node: dcid:UnincorporatedBusinessOwner
+name: "Unincorporated Business Owner"
+typeOf: dcs:WorkerClassificationEnum
+specializationOf: dcs:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
+description: "People who worked for profit or fees in their own unincorporated business, profession, or trade, or who operated a farm. This class is often tabulated together with the following group, unpaid family workers."
+
+Node: dcid:UnpaidFamilyWorker
+name: "Unpaid Family Worker"
+typeOf: dcs:WorkerClassificationEnum
+description: "This includes people who worked without pay in a business or on a farm operated by a relative. Note that, on tabulations with earnings data, unpaid family workers may have earnings."
+specializationOf: dcs:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
+
 Node: dcid:EnrolledInEducationOrTraining
 typeOf: dcs:EnrollmentStatusEnum
 name: "EnrolledInEducationOrTraining"
+
+Node: dcid:Transgender
+typeOf: schema:GenderType
+name: "Transgender"
+description: "Of or relating to a person who identifies as a different gender from their gender as determined at birth."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:GenderNonConforming
+typeOf: schema:GenderType
+name: "GenderNonConforming"
+description: "Describes a person who does not conform to the gender-based expectations of society."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:TransgenderOrGenderNonConforming
+typeOf: schema:GenderType
+name: "TransgenderOrGenderNonConforming"
+
+Node: dcid:CDC_GenderUnknownOrNotStated
+typeOf: schema:GenderType
+name: "CDC_GenderUnknownOrNotStated"
+
+Node: dcid:Homosexual
+name: "Homosexual"
+typeOf: dcs:SexualOrientationEnum
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to people of the same sex."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Heterosexual
+name: "Heterosexual"
+typeOf: dcs:SexualOrientationEnum
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to people of the opposite sex."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Lesbian
+name: "Lesbian"
+typeOf: dcs:SexualOrientationEnum
+specializationOf: dcs:Homosexual
+description: "Of or relating to women who are physically, romantically, and/or emotionally attracted to other women."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Gay
+name: "Gay"
+typeOf: dcs:SexualOrientationEnum
+specializationOf: dcs:Homosexual
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to people of the same sex (used especially for males)."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:Bisexual
+name: "Bisexual"
+typeOf: dcs:SexualOrientationEnum
+description: "Of or relating to people who are physically, romantically, and/or emotionally attracted to both men and women."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:LGBT
+name: "LGBT"
+typeOf: dcs:SexualOrientationEnum
+description: "Common initialism for 'lesbian, gay, bisexual, and transgender,'to refer to community organizations or events that serve lesbian, gay, bisexual, transgender, and allied people."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:OffenderAttributesKnown
+name: "OffenderAttributesKnown"
+typeOf: dcs:OffenderTypeEnum
+description: "The term known offender does not imply the suspect’s identity is known; rather, the term indicates some aspect of the suspect was identified, thus distinguishing the suspect from an unknown offender."
+descriptionUrl: "https://ucr.fbi.gov/hate-crime/2019/resource-pages/methodology"
+
+Node: dcid:OffenderRaceKnown
+name: "OffenderRaceKnown"
+typeOf: dcs:OffenderTypeEnum
+specializationOf: dcs:OffenderAttributesKnown
+
+Node: dcid:OffenderAgeKnown
+name: "OffenderAgeKnown"
+typeOf: dcs:OffenderTypeEnum
+specializationOf: dcs:OffenderAttributesKnown
+
+Node: dcid:OffenderEthnicityKnown
+name: "OffenderEthnicityKnown"
+typeOf: dcs:OffenderTypeEnum
+specializationOf: dcs:OffenderAttributesKnown
+
+Node: dcid:UnknownOffender
+name: "UnknownOffender"
+typeOf: dcs:OffenderTypeEnum
+
+Node: dcid:UCR_UnknownEthnicity
+name: "UCR_UnknownEthnicity"
+typeOf: dcs:EthnicityEnum
+
+Node: dcid:UCR_MultipleEthnicity
+name: "UCR_MultipleEthnicity"
+typeOf: dcs:EthnicityEnum
+
+Node: dcid:CDC_EthnicityUnknownOrNotStated
+typeOf: dcs:EthnicityEnum
+name: "CDC_EthnicityUnknownOrNotStated"
+
+Node: dcid:Offense
+name: "Offense"
+typeOf: dcs:FBI_MeasurementQualifierEnum
+
+Node: dcid:Offender
+name: "Offender"
+typeOf: dcs:FBI_MeasurementQualifierEnum
+
+Node: dcid:Victim
+name: "Victim"
+typeOf: dcs:FBI_MeasurementQualifierEnum
+
+Node: dcid:SummerSeason
+name: "SummerSeason"
+typeOf: dcs:ClimaticSeasonEnum
+
+Node: dcid:LocalCurrency
+name: "LocalCurrency"
+typeOf: dcs:CurrencyUnitStandardizationEnum
+description: "The actual currency of a region used during a particular observation period."
+
+Node: dcid:StandardizedCurrency
+name: "StandardizedCurrency"
+typeOf: dcs:CurrencyUnitStandardizationEnum
+description: "The standardized currency used by a region in its most recent reference year."

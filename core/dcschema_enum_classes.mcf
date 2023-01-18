@@ -81,6 +81,24 @@ typeOf: schema:Class
 subClassOf: dcs:CrimeTypeEnum
 description: "Enumeration class of specific violent crime types."
 
+Node: dcid:BiasMotivationEnum
+name: "BiasMotivationEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Enumeration class of bias motivation in hate crimes"
+
+Node: dcid:VictimTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "VictimTypeEnum"
+description: "Enumeration class of victim types like Person, Government, Society, etc."
+
+Node: dcid:LocationOfCrimeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LocationOfCrimeEnum"
+description: "Enumeration class of crime locations types Public Park, Convenience Store, etc."
+
 Node: dcid:EmploymentStatusEnum
 name: "EmploymentStatusEnum"
 subClassOf: schema:Enumeration
@@ -161,20 +179,6 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "CashRentEnum"
 description: "An enumeration of categories of renter occupied housing units that are with or without payment of rent"
-
-Node: OccupancyStatusEnum
-dcid: "OccupancyStatusEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "OccupancyStatusEnum"
-description: "An enumeration of categories of housing units that are occupied or vacant"
-
-Node: OccupancyTenureEnumType
-dcid: "OccupancyTenureEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "OccupancyTenureEnum"
-description: "An enumeration of categories housing units that are owner occupied or renter occupied"
 
 Node: InstitutionalizationEnumType
 dcid: "InstitutionalizationEnum"
@@ -388,3 +392,36 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "EnrollmentStatusEnum"
 description: "Identifies a broad type of institution a person might be enrolled in."
+
+Node: dcid:SexualOrientationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SexualOrientationEnum"
+
+Node: dcid:OffenderTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "OffenderTypeEnum"
+
+Node: dcid:EthnicityEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EthnicityEnum"
+
+Node: dcid:FBI_MeasurementQualifierEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Qualifiers to represent offenses, offenders and victims in Hate Crime data from FBI"
+name: "FBI_MeasurementQualifierEnum"
+
+Node: dcid:ClimaticSeasonEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ClimaticSeasonEnum"
+
+Node: dcid:CurrencyUnitStandardizationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Identifies whether the currency of a region is represented in the currency of the observation period (LocalCurrency), or the current currency of the region (Standardized)."
+name: "CurrencyUnitStandardizationEnum"
+

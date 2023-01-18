@@ -1,0 +1,88 @@
+#
+# File for StatVar nodes introduced by the stat_var_aggregation flow.
+#
+Node: dcid:Count_Person_NoPrivateHealthInsurance
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:NoPrivateHealthInsurance
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_NoPublicHealthInsurance
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:NoPublicHealthInsurance
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_WithOneTypeOfHealthInsurance
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:WithOneTypeOfHealthInsurance
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_WithPublicCoverage
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+healthInsurance: dcs:WithPublicCoverage
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+name: "Population: With Public Health Insurance Coverage"
+
+Node: dcid:Count_Person_Years25Onwards_EducationalAttainment_5ThAnd6ThGrade
+typeOf:  dcs:StatisticalVariable
+populationType: dcs:Person
+age: dcs:Years25Onwards
+educationalAttainment: dcs:5ThAnd6ThGrade
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_Years25Onwards_EducationalAttainment_7ThAnd8ThGrade
+typeOf:  dcs:StatisticalVariable
+populationType: dcs:Person
+age: dcs:Years25Onwards
+educationalAttainment: dcs:7ThAnd8ThGrade
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma
+typeOf:  dcs:StatisticalVariable
+populationType: dcs:Person
+educationalAttainment: dcs:9ThTo12ThGradeNoDiploma
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+description: "Number of People Who Completed Between 9th to 12th Grade With No Diploma"
+
+Node: dcid:Count_Person_EducationalAttainment_LessThan9ThGrade
+typeOf:  dcs:StatisticalVariable
+populationType: dcs:Person
+educationalAttainment: dcs:LessThan9ThGrade
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+description: "Number of People Who Completed Less Than 9th Grade"
+
+Node: dcid:Count_Person_EducationalAttainment_LessThanHighSchoolDiploma
+typeOf:  dcs:StatisticalVariable
+populationType: dcs:Person
+educationalAttainment: dcs:LessThanHighSchoolDiploma
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+description: "Number of People Who Did Not Receive a High School Diploma"
+
+Node: dcid:Count_Person_Years25Onwards_EducationalAttainment_NurseryTo4ThGrade
+typeOf:  dcs:StatisticalVariable
+populationType: dcs:Person
+age: dcs:Years25Onwards
+educationalAttainment: dcs:NurseryTo4ThGrade
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+
+Node: dcid:Count_Person_EducationalAttainment_SomeCollegeNoDegree
+typeOf:  dcs:StatisticalVariable
+populationType: dcs:Person
+educationalAttainment: dcs:SomeCollegeNoDegree
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+description: "Number of People Who Went to College but Did Not Receive a Degree"
+

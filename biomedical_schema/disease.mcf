@@ -11,19 +11,11 @@ typeOf: schema:Class
 subClassOf: dcs:Disease
 description: "The association of a disease with a gene."
 
-Node: dcid:MeSHDescriptor
-name: "MeSHDescriptor"
+Node: dcid:DiseaseSymptomAssociation
+name: "DiseaseSymptomAssociation"
 typeOf: schema:Class
-subClassOf: schema:Thing
-description: "Cluster of one or more concepts used for subject indexing and retrieval. Identified uniquely by a DescriptorUI and DescriptorName. A Descriptor. A Descriptor record. Also known as Main Heading. (Note that this differs from the MEDLINE MeshHeading element. For example, the MEDLINE element includes both the Descriptor name and the Qualifier name assigned to a citation.)."
-sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#DescriptorRecord"
-
-Node: dcid:MeSHTerm
-name: "MeSHTerm"
-typeOf: schema:Class
-subClassOf: dcs:MeSHDescriptor
-description: "Alpha-numeric string which comprises the basic unit of the MeSH vocabulary. Also functions as the name of a Descriptor and concept. The term itself is the String element."
-sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#Term"
+subClassOf: dcs:Disease
+description: "The association of a disease with a symptom."
 
 Node: dcid:MeSHConcept
 name: "MeSHConcept"
@@ -32,11 +24,33 @@ subClassOf: dcs:MeSHDescriptor
 description: "The bearer of linguistic meaning in MeSH as defined by the ScopeNote, comprising a DescriptorRecord or SupplementalRecord or QualifierRecord, and consisting of Term elements. One of the three main objects in the MeSH XML (the others being the record, and term). A single record will have one or more concepts, one of which is the preferred concept of the record. A Concept will have one or more terms, one of which is the preferred term for the concept. Referred to uniquely by both a ConceptUI and a ConceptName."
 sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#Concept"
 
-Node: dcid:DiseaseSymptomAssociation
-name: "DiseaseSymptomAssociation"
+Node: dcid:MeSHDescriptor
+name: "MeSHDescriptor"
 typeOf: schema:Class
-subClassOf: dcs:Disease
-description: "The association of a disease with a symptom."
+subClassOf: schema:Intangible
+description: "Cluster of one or more concepts used for subject indexing and retrieval. Identified uniquely by a DescriptorUI and DescriptorName. A Descriptor. A Descriptor record. Also known as Main Heading. (Note that this differs from the MEDLINE MeshHeading element. For example, the MEDLINE element includes both the Descriptor name and the Qualifier name assigned to a citation.)."
+sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#DescriptorRecord"
+
+Node: dcid:MeSHQualifier
+name: "MeSHQualifier"
+typeOf: schema:Class
+subClassOf: schema:Intangible
+description: "Seven-character alpha-numeric string uniquely identifying a QualifierRecord and, along with the QualifierName, used to represent the Qualifier record in other elements. MeSHQualifiers are used to give additional context to MeSHDescriptor. MeSH has rules governing which Qualifiers can be used with a given Descriptor, as well as which MeSHQualifers cannot be used with a given MeSHDescriptor."
+sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#QualifierUI"
+
+Node: dcid:MeSHSupplementaryRecord
+name: "MeSHSupplementaryRecord"
+typeOf: schema:Class
+subClassOf: dcs:MeSHDescriptor
+description: "Cluster of one or more concepts used for subject indexing and retrieval. Identified uniquely by a SupplementalRecordUI and SupplementalRecordName. SCR. Supplemental Record. Formerly known as Supplementary Chemical Records."
+sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#SupplementalRecord"
+
+Node: dcid:MeSHTerm
+name: "MeSHTerm"
+typeOf: schema:Class
+subClassOf: dcs:MeSHConcept
+description: "Alpha-numeric string which comprises the basic unit of the MeSH vocabulary. Also functions as the name of a Descriptor and concept. The term itself is the String element."
+sameAs: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#Term"
 
 Node: dcid:diseaseOntologyID
 name: "diseaseOntologyID"
@@ -94,160 +108,68 @@ rangeIncludes: schema:Number
 domainIncludes: dcs:DiseaseGeneAssociation
 description: "The p-value of the experiment associating a gene with a disease ontology ID."
 
-Node: dcid:descriptorID
-name: "descriptorID"
+Node: dcid:nationalLibraryOfMedicineClassificationNumber
+name: "nationalLibraryOfMedicineClassificationNumber"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:MeSHDescriptor
-description: "Descriptor Unique Identifier."
+description: "Classification Number provided by the National Library of Medicine (NLM) Cataloging and Metadata Management Section (CAMMS)."
 
-Node: dcid:descriptorName
-name: "descriptorName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHDescriptor
-description: "A term that uniquely refers to its descriptor record."
-
-Node: dcid:descriptorClass
-name: "descriptorClass"
-typeOf: schema:Property
-rangeIncludes: dcs:MeSHDescriptorClassEnum,schema:GenderType
-domainIncludes: dcs:MeSHDescriptor
-description: "This record type plays a central role in MeSH vocabulary as a unit of indexing and retrieval. These descriptors are organized into a numbered tree structure or hierarchy that allows users to browse in an orderly fashion from broader to narrower topics."
-descriptionUrl: "https://www.nlm.nih.gov/mesh/intro_record_types.html"
-
-Node: dcid:nlmClassificationNumber
-name: "nlmClassificationNumber"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHDescriptor
-description: "Classification Number provided by the NLM Cataloging and Metadata Management Section (CAMMS)."
-
-Node: dcid:publicMeSHNote
-name: "publicMeSHNote"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHDescriptor
-description: "Free-text information about the history of changes in the record."
-
-Node: dcid:seeRelatedDescriptor
-name: "seeRelatedDescriptor"
-typeOf: schema:Property
-rangeIncludes: dcs:MeSHDescriptor
-domainIncludes: dcs:MeSHDescriptor
-description: "Reference to a specific Descriptor to which a user is referred by a 'see related' cross-reference."
-
-Node: dcid:treeNumber
-name: "treeNumber"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHDescriptor
-description: "Alpha-numeric string referring to location within a descriptor hierarchy."
-
-Node: dcid:treeParent
-name: "treeParent"
-typeOf: schema:Property
-rangeIncludes: dcs:MeSHDescriptor
-domainIncludes: dcs:MeSHDescriptor
-description: "The MeSH descriptor that is one level higher in the tree number hierarchy."
-
-Node: dcid:conceptID
-name: "conceptID"
-typeOf: schema:Property
-rangeIncludes: dcs:MeSHDescriptor
-domainIncludes: dcs:MeSHConcept,dcs:MeSHDescriptor
-description: "Concept Unique Identifier."
-
-Node: dcid:conceptName
-name: "conceptName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHConcept
-description: "The term that uniquely names the Concept."
-
-Node: dcid:preferredConceptStatus
-name: "preferredConceptStatus"
+Node: dcid:isPharmacologicalActionSubstance
+name: "isPharmacologicalActionSubstance"
 typeOf: schema:Property
 rangeIncludes: schema:Boolean
-domainIncludes: dcs:MeSHConcept
-description: "Whether concept is the preferred concept of the descriptor."
+domainIncludes: dcs:MeSHDescriptor, dcs:MeSHSupplementaryRecord
+description: "A MeSHDescriptor or MeSHSupplementaryRecord, which has a pharmacological action."
 
-Node: dcid:chemicalAbstractsTypeN1Name
-name: "chemicalAbstractsTypeN1Name"
+Node: dcid:medicalSubjectHeadingConceptID
+name: "medicalSubjectHeadingConceptID"
+typeOf: schema:Property
+rangeIncludes: dcs:MeSHConcept, schema:Text
+domainIncludes: dcs:Disease, dcs:MeSHConcept
+description: "A unique ID for a Medical Subject Heading Concept record."
+
+Node: dcid:medicalSubjectHeadingDescriptorID
+typeOf: schema:Property
+name: "medicalSubjectHeadingDescriptorID"
+rangeIncludes: dcs:MeSHDescriptor, schema:Text
+domainIncludes: dcs:Disease, dcs:GeneticVariant, dcs:MeSHConcept, dcs:MeSHDescriptor, dcs:MeSHQualifier, dcs:MeSHSupplementaryRecord
+description: "A unique ID for a Medical Subject Heading Descriptor record."
+
+Node: dcid:medicalSubjectHeadingQualifierAbbreviation
+name: "medicalSubjectHeadingQualifierAbbreviation"
+typeOf: schema:Property
+domainIncludes: dcs:MeSHQualifier
+rangeIncludes: schema:Text
+description: "Qualifier Abbreviation."
+
+Node: dcid:medicalSubjectHeadingSupplementaryRecordID
+name: "medicalSubjectHeadingSupplementaryRecordID"
+typeOf: schema:Property
+rangeIncludes: dcs:MeSHSupplementaryRecord, schema:Text
+domainIncludes: dcs:ChemicalCompound, dcs:MeSHSupplementaryRecord
+description: "A unique ID for a Medical Subject Heading supplementary record."
+
+Node: dcid:medicalSubjectHeadingTermID
+name: "medicalSubjectHeadingTermID"
+typeOf: schema:Property
+rangeIncludes: dcs:MeSHTerm, schema:Text
+domainIncludes: dcs:MeSHConcept, dcs:MeSHTerm
+description: "A unique ID for a Medical Subject Heading Term record."
+
+Node: dcid:medicalSubjectHeadingTreeNumber
+name: "medicalSubjectHeadingTreeNumber"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHConcept
-description: "Chemical Abstracts Type N1 name for the concept."
+domainIncludes: dcs:MeSHDescriptor, dcs:MeSHQualifier
+description: "Alpha-numeric string referring to location within a MeSH Descriptor or Qualifier hierarchy."
 
-Node: dcid:registryNumber
-name: "registryNumber"
+Node: dcid:medicalSubjectHeadingQualifierID
+name: "medicalSubjectHeadingQualifierID"
 typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHConcept
-description: "Registry number associated with a MeSH concepts in one of the following formats EC, CAS, or FDA UNII."
-
-Node: dcid:relatedRegistryNumber
-name: "relatedRegistryNumber"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHConcept
-description: "Registry number for concepts which do not have their own descriptor."
-
-Node: dcid:scopeNote
-name: "scopeNote"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHConcept
-description: "Free-text narrative giving the scope and meaning of the concept."
-
-Node: dcid:termID
-name: "termID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHTerm
-description: "Term unique identifier."
-
-Node: dcid:termName
-name: "termName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHTerm
-description: "The string that constitutes a term."
-
-Node: dcid:conceptPreferredTermStatus
-name: "conceptPreferredTermStatus"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: dcs:MeSHTerm
-description: "Whether a term is the preferred term of the concept."
-
-Node: dcid:permutedTermStatus
-name: "permutedTermStatus"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: dcs:MeSHTerm
-description: "Whether term is created automatically in the MeSH editing application as a variant of another term in the descriptor."
-
-Node: dcid:lexicalTag
-name: "lexicalTag"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHTerm
-description: "Lexical category of term."
-
-Node: dcid:recordPreferredTermStatus
-name: "recordPreferredTermStatus"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: dcs:MeSHTerm
-description: "Whether term is the preferred term of the descriptor."
-
-Node: dcid:entryVersion
-name: "entryVersion"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHTerm
-description: "Custom short form of a MeSHTerm used for NLM indexing and searching."
+rangeIncludes: dcs:MeSHQualifier, schema:Text
+domainIncludes: dcs:MeSHConcept, dcs:MeSHQualifier
+description: "A unique ID for a Medical Subject Heading Qualifier record."
 
 Node: dcid:associationCooccurrence
 name: "associationCooccurrence"
@@ -298,3 +220,75 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:DiseaseSymptomAssociation
 description: "A PubMed identifier for a publication containing reference to a disease and symptom."
 
+Node: dcid:alternateDiseaseOntologyID
+typeOf: schema:Property
+name: "alternateDiseaseOntologyID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "An alternative disease ontology ID (DOID) associated with a disease."
+
+Node: dcid:diseaseSynonym
+typeOf: schema:Property
+name: "diseaseSynonym"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "A synonym for a disease name."
+
+Node: dcid:unifiedMedicalLanguageSystemConceptUniqueIdentifier
+typeOf: schema:Property
+name: "unifiedMedicalLanguageSystemConceptUniqueIdentifier"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "A concept is a meaning. A meaning can have many different names. A key goal of Metathesaurus construction is to understand the intended meaning of each name in each source vocabulary and to link all the names from all of the source vocabularies that mean the same thing (the synonyms). Concept Unique Identifier (CUI) contain the letter C followed by seven numbers. In the example on the right the CUI is C0018681."
+descriptorUrl: "https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_005.html"
+
+Node: dcid:geneticAndRareDiseasesID
+typeOf: schema:Property
+name: "geneticAndRareDiseasesID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The identifier for the disease in the Genetic and Rare Diseases (GARD) database."
+sameAs: "https://rarediseases.info.nih.gov/"
+
+Node: dcid:nationalCancerInstituteID
+typeOf: schema:Property
+name: "nationalCancerInstituteID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The identifier for the disease in the National Cancer Institute (NCI) thesaurus."
+sameAs: "https://www.cancer.gov/"
+
+Node: dcid:internationalClassificationOfDiseasesOntologyID
+typeOf: schema:Property
+name: "internationalClassificationOfDiseasesOntologyID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "International Classification of Diseases Ontology (ICDO) is an ontology representation of the ICD system, which includes ICD-10, ICD-9, and the future ICD-11."
+
+Node: dcid:icd10CMCode
+typeOf: schema:Property
+name: "icd10CMCode"
+domainIncludes: dcs:Disease
+rangeIncludes: dcs:ICD10Code
+description: "The disease diagnosis code for version 10 of the International Classification of Disease Ontology."
+
+Node: dcid:icd10ApproximateSynonym
+typeOf: dcs:Property
+name: "icd10ApproximateSynonym"
+domainIncludes: dcs:Disease
+rangeIncludes: dcs:ICD10Code
+
+Node: dcid:icd9CMID
+typeOf: schema:Property
+name: "icd9CMID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The disease diagnosis code for version 9 of the International Classification of Disease Ontology."
+
+Node: dcid:medDraID
+typeOf: schema:Property
+name: "medDraID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The disease identifiers extracted from the medDRA medical terminology."
+sameAs: "https://www.meddra.org/"

@@ -1,0 +1,98 @@
+Node: dcid:StationaryFuelCombustion
+typeOf: dcs:EmissionSourceEnum
+name: "Stationary Fuel Combustion"
+
+Node: dcid:IndustrialAndOtherProcesses
+typeOf: dcs:EmissionSourceEnum
+name: "Industrial And Other Processes"
+
+Node: dcid:NaturalResource
+typeOf: dcs:EmissionSourceEnum
+name: "Natural Resource"
+
+Node: dcid:FuelCombustionElectricUtility
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StationaryFuelCombustion
+name: "Fuel Combustion Electric Utility"
+
+Node: dcid:FuelCombustionIndustrial
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StationaryFuelCombustion
+name: "Fuel Combustion Industrial"
+
+Node: dcid:EPA_FuelCombustionOther
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StationaryFuelCombustion
+name: "EPA Fuel Combustion Other"
+
+Node: dcid:ChemicalAndAlliedProductManufacturing
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Chemical And Allied Product Manufacturing"
+
+Node: dcid:MetalsProcessing
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Metals Processing"
+
+Node: dcid:PetroleumAndRelatedIndustries
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Petroleum And Related Industries"
+
+Node: dcid:EPA_OtherIndustrialProcesses
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "EPA Other Industrial Processes"
+
+Node: dcid:SolventUtilization
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Solvent Utilization"
+
+Node: dcid:StorageAndTransport
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Storage And Transport"
+
+Node: dcid:WasteDisposalAndRecycling
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Waste Disposal And Recycling"
+
+#Vehicles may need to be removed as gas station emissions are also included.
+Node: dcid:OnRoadVehicles
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Transportation
+name: "OnRoad Vehicles"
+
+Node: dcid:NonRoadEnginesAndVehicles
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Transportation
+name: "Non Road Engines And Vehicles"
+
+Node: dcid:EPA_MiscellaneousEmissionSource
+typeOf: dcs:EmissionSourceEnum
+name: "EPA Miscellaneous Emission Source"
+
+Node: dcid:epaSccCode
+name: "epaSccCode"
+typeOf: schema:Property
+domainIncludes: schema:Emissions
+rangeIncludes: dcid:EpaSccCodeEnum
+description: "US Environmental Protection Agency (EPA) assigned unique codes that classify the different sources of Emissions."
+
+Node: dcid:epaPollutantCode
+name: "epaPollutantCode"
+typeOf: schema:Property
+domainIncludes: schema:Emissions
+rangeIncludes: schema:Text
+description: "Unique codes allocated to different pollutants."
+descriptionUrl: "https://aqs.epa.gov/aqsweb/documents/codetables/methods_all.html"
+
+Node: dcid:EpaSccCodeEnum
+typeOf: dcs:Class
+subClassOf: schema:Enumeration
+name: "EpaSccCodeEnum"
+description: "The U.S. EPA uses Source Classification Codes (SCCs) to classify different types of activities that generate emissions. Each SCC represents a unique source category-specific process or function that emits air pollutants."
+descriptionUrl: "https://sor-scc-api.epa.gov/sccwebservices/sccsearch/"

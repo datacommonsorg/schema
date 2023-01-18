@@ -1,10 +1,41 @@
 ## Population Types
 
+Node: dcid:IPCCPlace_50
+typeOf: schema:Class
+description: "A grid on the Earth's surface approximately corresponding to 0.50 degree resolution for attaching climate related observations. These are defined within the context of a specific country."
+subClassOf: schema:Place
+name: "IPCCPlace_50"
+
+Node: dcid:IPCCPlace_25
+typeOf: schema:Class
+description: "A grid on the Earth's surface approximately corresponding to 0.25 degree resolution for attaching climate related observations. These are defined within the context of a specific country."
+subClassOf: schema:Place
+name: "IPCCPlace_25"
+
 Node: dcid:AirQualitySite
 typeOf: schema:Class
 description: "Site for air quality measurements."
-subClassOf: schema:Organization
+subClassOf: schema:Organization, schema:Place
 name: "AirQualitySite"
+
+Node: dcid:WaterQualitySite
+typeOf: schema:Class
+description: "Site for water quality measurements."
+subClassOf: schema:Organization, schema:Place
+name: "WaterQualitySite"
+
+Node: dcid:SuperfundSite
+name: "SuperfundSite"
+typeOf: schema:Class
+subClassOf: schema:Organization, schema:Place
+description: "Superfund sites are polluted locations in the United States requiring a long-term response to clean up hazardous material contaminations."
+descriptionUrl: "https://en.wikipedia.org/wiki/List_of_Superfund_sites"
+
+Node: dcid:SuperfundMeasurementSite
+name: "SuperfundMeasurementSite"
+typeOf: schema:Class
+subClassOf: schema:Place
+description: "Superfund sites have sampling sites from where the level of contamination is measured over time. Some examples of sampling sites are wells, monitoring stations."
 
 Node: dcid:Atmosphere
 typeOf: schema:Class
@@ -12,7 +43,53 @@ description: "Layer of gases surrounding a planet."
 subClassOf: schema:Thing
 name: "Atmosphere"
 
+Node: dcid:LandCover
+typeOf: schema:Class
+description: "The physical material that is at the surface of the earth."
+descriptionUrl: "https://en.wikipedia.org/wiki/Land_cover"
+subClassOf: schema:Thing
+name: "LandCover"
+
+Node: dcid:TideGaugeStation
+typeOf: schema:Class
+subClassOf: schema:Organization, schema:Place
+name: "TideGaugeStation"
+description: "A station with a tide guage to continuously record the height of the surrounding water level."
+descriptionUrl: "https://oceanservice.noaa.gov/facts/tide-gauge.html"
+
+Node: dcid:GeoGridPlace_1Deg
+typeOf: schema:Class
+subClassOf: schema:Place
+name: "GeoGridPlace_1Deg"
+description: "A place representing a uniform 1x1 degree grid on the surface of the Earth. Unlike IPCCPlace entities, these are not defined in the context of a country."
+
+Node: dcid:GeoGridPlace_0.25Deg
+typeOf: schema:Class
+subClassOf: schema:Place
+name: "GeoGridPlace_0.25Deg"
+description: "A place representing a uniform 0.25x0.25 degree grid on the surface of the Earth."
+
+Node: dcid:GeoGridPlace_4KM
+typeOf: schema:Class
+subClassOf: schema:Place
+name: "GeoGridPlace_4KM"
+description: "A place representing a uniform 4km grid on the surface of the Earth."
+
 ## Properties
+
+Node: dcid:heavyPrecipitationIndex
+typeOf: schema:Property
+name: "heavyPrecipitationIndex"
+description: "Portion of total rainfall within a given time-period that occured on 'extreme' precipitation days (defined as 1st percentile of rainfall)"
+domainIncludes: dcs:Place
+rangeIncludes: schema:Number
+
+Node: dcid:consecutiveDryDays
+typeOf: schema:Property
+name: "consecutiveDryDays"
+description: "Maximum number of consecutive dry days in the given time period"
+domainIncludes: dcs:Place
+rangeIncludes: schema:Number
 
 Node: dcid:airQualitySiteMonitor
 typeOf: schema:Property
@@ -29,7 +106,7 @@ name: "pollutant"
 
 Node: dcid:concentration
 typeOf: schema:Property
-domainIncludes: dcs:Atmosphere
+domainIncludes: dcs:Atmosphere, dcs:SeaBodyOfWater, dcs:WaterSourceTypeEnum, dcs:ContaminatedThingEnum, dcs:BodyOfWater
 rangeIncludes: schema:Number
 name: "concentration"
 
@@ -80,9 +157,17 @@ Node: dcid:temperature
 typeOf: schema:Property
 description: "A physical quantity that expresses hot and cold."
 descriptionUrl: "https://en.wikipedia.org/wiki/Temperature"
-domainIncludes: schema:Place
+domainIncludes: schema:Place, dcs:SeaBodyOfWater, dcs:BodyOfWater
 rangeIncludes: schema:Number
 name: "temperature"
+
+Node: dcid:wetBulbTemperature
+typeOf: schema:Property
+description: "The temperature read by a thermometer covered in water-soaked cloth (a wet-bulb thermometer) over which air is passed."
+descriptionUrl: "https://en.wikipedia.org/wiki/Wet-bulb_temperature"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "wetBulbTemperature"
 
 Node: dcid:precipitationRate
 typeOf: schema:Property
@@ -90,6 +175,25 @@ description: "Amount of precipitation which includes drizzling, rain, sleet, sno
 domainIncludes: schema:Place
 rangeIncludes: schema:Number
 name: "precipitationRate"
+
+Node: dcid:maxTemperature
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: schema:Quantity
+name: "maxTemperature"
+
+Node: dcid:minTemperature
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: schema:Quantity
+name: "minTemperature"
+
+Node: dcid:climateModelExperimentType
+typeOf: schema:Property
+description: "The type of climate model experiment, e.g. backcast (forecasts in the past) or future forecast of climate indicators, e.g. Temperature."
+domainIncludes: schema:Place
+rangeIncludes: schema:ClimateModelExperimentTypeEnum
+name: "climateModelExperimentType"
 
 Node: dcid:emissionsScenario
 typeOf: schema:Property
@@ -99,13 +203,250 @@ domainIncludes: schema:Place
 rangeIncludes: schema:RepresentativeConcentrationPathwayEnum
 name: "emissionsScenario"
 
+Node: dcid:socioeconomicScenario
+typeOf: schema:Property
+description: "Projections of socio-economic development used by analysts to assess future vulnerability to climate change."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+domainIncludes: schema:Place
+rangeIncludes: schema:SharedSocioeconomicPathwayEnum
+name: "socioeconomicScenario"
+
+Node: dcid:humidityParameter
+typeOf: schema:Property
+description: "The kind of relative humidity parameter used for computing derived climate parameters."
+domainIncludes: schema:Place
+rangeIncludes: dcs:HumidityParameterCategoryEnum
+name: "humidityParameter"
+
+Node: dcid:landCoverType
+typeOf: schema:Property
+description: "Identifies the type of physical material that is at the surface of the earth."
+descriptionUrl: "https://en.wikipedia.org/wiki/Land_cover"
+domainIncludes: dcs:LandCover
+rangeIncludes: dcs:LandCoverClassEnum
+name: "landCoverType"
+
+Node: dcid:windSpeed
+typeOf: schema:Property
+description: "A fundamental atmospheric quantity caused by air moving from high to low pressure, usually due to changes in temperature."
+descriptionUrl: "https://en.wikipedia.org/wiki/Wind_speed"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "windSpeed"
+
+Node: dcid:radiation
+typeOf: schema:Property
+description: "The emission or transmission of energy in the form of waves or particles through space or through a material medium."
+descriptionUrl: "https://en.wikipedia.org/wiki/Radiation"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "radiation"
+
+Node: dcid:humidity
+typeOf: schema:Property
+description: "The concentration of water vapour present in the air."
+descriptionUrl: "https://en.wikipedia.org/wiki/Humidity"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "humidity"
+
+Node: dcid:snowfall
+name: "snowfall"
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: dcs:Quantity
+description: "A fall of snow."
+descriptionUrl: "https://www.merriam-webster.com/dictionary/snowfall"
+
+Node: dcid:visibility
+name: "visibility"
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: dcs:Quantity
+description: "The quality or state of being visible."
+descriptionUrl: https://www.merriam-webster.com/dictionary/visibility
+
+Node: dcid:wavelength
+typeOf: schema:Property
+description: "The spatial period of a periodic wave."
+descriptionUrl: "https://en.wikipedia.org/wiki/Wavelength"
+domainIncludes: schema:Place
+rangeIncludes: schema:RadiationWavelengthEnum
+name: "wavelength"
+
+Node: dcid:radiationDirection
+typeOf: schema:Property
+description: "The direction radiation is measured."
+domainIncludes: schema:Place
+rangeIncludes: schema:RadiationDirectionEnum
+name: "radiationDirection"
+
+Node: dcs:waterAlkalinity
+typeOf: schema:Property
+name: "waterAlkalinity"
+description: "Alkalinity is the capacity of water to resist acidification. Measuring alkalinity is important in determining a stream's ability to neutralize acidic pollution from rainfall or wastewater"
+descriptionUrl: "https://en.wikipedia.org/wiki/Alkalinity"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:electricalConductivity
+typeOf: schema:Property
+name: "electricalConductivity"
+description: Electrical Conductivity of water is its ability to conduct an electric current. The purer the water the lower the conductivity.
+descriptionUrl: "https://www.aquaread.com/parameters/ec"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:waterHardness
+typeOf: schema:Property
+name: "waterHardness"
+description: "Water hardness is generally the amount of dissolved calcium and magnesium in water."
+descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science/hardness-water?qt-science_center_objects=0#qt-science_center_objects"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:potentialOfHydrogen
+typeOf: schema:Property
+name: "potentialOfHydrogen"
+description: "Potential of Hydrogens (pH) is a quantitative measure of the acidity or basicity of aqueous or other liquid solutions. Solutions with less than 7 are considered acidic whereas the solutions with pH greater than 7 are known as basic."
+descriptionUrl: "https://www.britannica.com/science/pH"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:residualSodiumCarbonate
+typeOf: schema:Property
+name: "residualSodiumCarbonate"
+description: "The residual sodium carbonate (RSC) of water is used to indicate the alkalinity hazard for water. The RSC index is used to find the suitability of the water for irrigation in clay soils."
+descriptionUrl: "https://en.wikipedia.org/wiki/Residual_sodium_carbonate_index"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:sodiumAdsorptionRatio
+typeOf: schema:Property
+name: "sodiumAdsorptionRatio"
+description: "The Sodium adsorption ratio (SAR) is an irrigation water quality parameter used in the management of sodium-affected soils."
+descriptionUrl: "https://en.wikipedia.org/wiki/Sodium_adsorption_ratio"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:totalDissolvedSolids
+typeOf: schema:Property
+name: "totalDissolvedSolids"
+description: "Total dissolved solids is a measure of the dissolved combined content of all inorganic and organic substances present in water in molecular, ionized, or micro-granular suspended form."
+descriptionUrl: "https://en.wikipedia.org/wiki/Total_dissolved_solids"
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
+
+Node: dcid:surfaceLevel
+typeOf: schema:Property
+name: "surfaceLevel"
+description: "Measure of the surface level of bodies of water, etc."
+domainIncludes: dcs:Water, dcs:BodyOfWater
+rangeIncludes: dcs:Quantity
+
+Node: dcid:atmosphericPressure
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Quantity
+name: "atmosphericPressure"
+
+Node: dcid:dewPointTemperature
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Quantity
+name: "dewPointTemperature"
+description: "Temperature to which air must be cooled to become saturated with water vapor, assuming constant air pressure and water content."
+descriptionUrl: "https://en.wikipedia.org/wiki/Dew_point"
+
+Node: dcid:precipitation
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Quantity
+name: "precipitation"
+
+Node: dcid:precipitableWater
+typeOf: schema:Property
+description: "Amount of water in a column of the atmosphere, if the entire column were precipitated as rain."
+descriptionUrl: "https://en.wikipedia.org/wiki/Precipitable_water"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "precipitableWater"
+
+Node: dcid:cloudCover
+typeOf: schema:Property
+description: "The fraction of the sky obscured by clouds."
+descriptionUrl: "https://en.wikipedia.org/wiki/Cloud_cover"
+domainIncludes: schema:Place
+rangeIncludes: schema:Number
+name: "cloudCover"
+
+Node: dcid:windComponent
+typeOf: dcs:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:WindComponentEnum
+name: "windComponent"
+description: "The component of wind vector, which might be one of U, V or Z."
+
+Node: dcid:climateModel
+typeOf: schema:Property
+description: "A climate model for projecting/forecasting measures like temperature, humidity etc."
+domainIncludes: schema:Place
+rangeIncludes: dcs:ClimateModelEnum
+name: "climateModel"
+
 ## Enums
+
+Node: dcid:HumidityParameterCategoryEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HumidityParameterCategoryEnum"
+
+Node: dcid:SpecificHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "SpecificHumidity"
+
+Node: dcid:RelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "RelativeHumidity"
+
+Node: dcid:MaxRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MaxRelativeHumidity"
+specializationOf: dcs:RelativeHumidity
+
+Node: dcid:MeanRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MeanRelativeHumidity"
+specializationOf: dcs:RelativeHumidity
+
+Node: dcid:MinRelativeHumidity
+typeOf: dcs:HumidityParameterCategoryEnum
+name: "MinRelativeHumidity"
+specializationOf: dcs:RelativeHumidity
+
+Node: dcid:ClimateModelExperimentTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ClimateModelExperimentTypeEnum"
+description: "The specific type of climate model experiment, e.g. backcast (forecasts in the past) or future forecast of climate indicators, e.g. Temperature."
+
+Node: dcid:CMIP6_HistorcialRun
+typeOf: dcs:ClimateModelExperimentTypeEnum
+name: "CMIP6 Historcial Run"
+description: "CMIP6 model backcasts (forecasts for past dates) for climate variables, e.g. Temperature. These are also known as \"historical experiments\" of the CMIP6 models."
+descriptionUrl: "https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf"
 
 Node: dcid:RepresentativeConcentrationPathwayEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "RepresentativeConcentrationPathwayEnum"
 description: "A Representative Concentration Pathway (RCP) is a greenhouse gas concentration (not emissions) trajectory adopted by the IPCC. The pathways describe different climate futures, all of which are considered possible depending on the volume of greenhouse gases (GHG) emitted in the years to come."
+descriptionUrl: "https://en.wikipedia.org/wiki/Representative_Concentration_Pathway"
+
+Node: dcid:RCP1.9
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP1.9"
+description: "A new pathway that focuses on limiting warming to below 1.5C."
 descriptionUrl: "https://en.wikipedia.org/wiki/Representative_Concentration_Pathway"
 
 Node: dcid:RCP2.6
@@ -120,12 +461,17 @@ name: "RCP4.5"
 description: "Stabilization without overshoot pathway to 4.5 W/m2 at stabilization after 2100."
 descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
-Node: dcid:RCP6
+Node: dcid:RCP6.0
 typeOf: dcs:RepresentativeConcentrationPathwayEnum
-name: "RCP6"
+name: "RCP6.0"
 description: "Stabilization without overshoot pathway to 6 W/m2 at stabilization after 2100."
 descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
+Node: dcid:RCP7.0
+typeOf: dcs:RepresentativeConcentrationPathwayEnum
+name: "RCP7.0"
+description: "This is a baseline outcome rather than a mitigation target"
+descriptionUrl: "https://en.wikipedia.org/wiki/Representative_Concentration_Pathway"
 
 Node: dcid:RCP8.5
 typeOf: dcs:RepresentativeConcentrationPathwayEnum
@@ -133,6 +479,47 @@ name: "RCP8.5"
 description: "Rising radiative forcing pathway leading to 8.5 W/m2 in 2100."
 descriptionUrl: "https://sedac.ciesin.columbia.edu/ddc/ar5_scenario_process/RCPs.html"
 
+Node: dcid:SharedSocioeconomicPathwayEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SharedSocioeconomicPathwayEnum"
+description: "Shared Socioeconomic Pathways (SSPs) are scenarios of projected socioeconomic global changes up to 2100. They are used to derive greenhouse gas emissions scenarios with different climate policies."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
+Node: dcid:SSP1
+typeOf: dcs:SharedSocioeconomicPathwayEnum
+name: "SSP1: Sustainability (Taking the Green Road)"
+description: "The world shifts gradually, but pervasively, toward a more sustainable path, emphasizing more inclusive development that respects perceived environmental boundaries."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
+Node: dcid:SSP2
+typeOf: dcs:SharedSocioeconomicPathwayEnum
+name: "SSP2: Middle of the Road"
+description: "The world follows a path in which social, economic, and technological trends do not shift markedly from historical patterns."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
+Node: dcid:SSP3
+typeOf: dcs:SharedSocioeconomicPathwayEnum
+name: "SSP3: Regional rivalry (A Rocky Road)"
+description: "A resurgent nationalism, concerns about competitiveness and security, and regional conflicts push countries to increasingly focus on domestic or, at most, regional issues."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
+Node: dcid:SSP5
+typeOf: dcs:SharedSocioeconomicPathwayEnum
+name: "SSP5: Fossil-fueled Development"
+description: "The world places increasing faith in competitive markets, innovation and participatory societies to produce rapid technological progress and development of human capital as the path to sustainable development."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways"
+
+Node: dcid:windDirection
+typeOf: schema:Property
+name: "windDirection"
+description: "Direction of the wind relative to the direction it originates"
+descriptionUrl: "https://en.wikipedia.org/wiki/Wind_direction"
+rangeIncludes: Number
+domainIncludes: schema:Place
+
+# Note that several pollutants are compounds which can also be found in provisional_chemistry.mcf
+# Examples: Ammonia, Benzene, EthylBenzene, Toluene, Xylene etc.
 Node: dcid:AirPollutantEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -143,28 +530,115 @@ typeOf: dcs:AirPollutantEnum
 name: "Ozone"
 
 Node: dcs:SulfurDioxide
-typeOf: dcs:AirPollutantEnum
+typeOf: dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "SO2"
 name: "SulfurDioxide"
 
-Node: dcs:CarbonMonoxide
+Node: dcid:Sulfate
 typeOf: dcs:AirPollutantEnum
+name: "Sulfate"
+
+Node: dcs:CarbonMonoxide
+typeOf: dcid:EPA_CriteriaAirPollutant
 name: "CarbonMonoxide"
+epaPollutantCode: "CO"
+
+Node: dcid:CarbonDioxide
+typeOf: dcid:GreenhouseGas
+name: "Carbon Dioxide (CO2)"
+epaPollutantCode: "CO2"
+
+Node: dcid:OxidesOfNitrogen
+typeOf: dcid:EPA_CriteriaAirPollutant
+name: "Oxides Of Nitrogen (NOX)"
+epaPollutantCode: "NOX"
 
 Node: dcs:NitrogenDioxide
 typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:OxidesOfNitrogen
 name: "NitrogenDioxide"
+
+Node: dcid:Nitrate
+typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:OxidesOfNitrogen
+name: "Nitrate (NO3)"
+epaPollutantCode: "NO3"
+
+Node: dcid:ElementalCarbon
+typeOf: dcs:AirPollutantEnum
+name: "Elemental Carbon"
+epaPollutantCode: "EC"
+
+Node: dcid:OrganicCarbon
+typeOf: dcs:AirPollutantEnum
+name: "Organic Carbon"
+epaPollutantCode: "OC"
 
 Node: dcs:DieselPM
 typeOf: dcs:AirPollutantEnum
 name: "DieselParticulateMatter"
 
-Node: dcs:PM2.5
+Node: dcid:DieselPM2.5
 typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:DieselPM
+epaPollutantCode: "DIESEL-PM25","DIESEL-PM2"
+name: "Diesel Particulate Matter 2.5"
+
+Node: dcid:DieselPM10
+typeOf: dcs:AirPollutantEnum
+specializationOf: dcs:DieselPM
+epaPollutantCode: "DIESEL-PM10","DIESEL-PM1"
+name: "Diesel Particulate Matter 10"
+
+Node: dcs:PM2.5
+typeOf: dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "PM25-PRI"
 name: "PM2.5"
 
 Node: dcs:PM10
-typeOf: dcs:AirPollutantEnum
+typeOf: dcid:EPA_CriteriaAirPollutant
+epaPollutantCode: "PM10-PRI"
 name: "PM10"
+
+Node: dcid:PMFINE
+typeOf: dcs:AirPollutantEnum
+epaPollutantCode: "PMFINE"
+name: "PMFINE"
+
+Node: dcid:PMCondensible
+typeOf: dcs:AirPollutantEnum
+epaPollutantCode: "PM-CON"
+name: "PM Condensible"
+
+Node: dcid:PM10Filterable
+typeOf: dcs:AirPollutantEnum
+epaPollutantCode: "PM10-FIL"
+name: "PM10 Filterable"
+
+Node: dcid:PM2.5Filterable
+typeOf: dcs:AirPollutantEnum
+epaPollutantCode: "PM25-FIL"
+name: "PM2.5 Filterable"
+
+Node: dcid:NitrogenMonoxide
+typeOf: dcs:AirPollutantEnum
+name: “NitrogenMonoxide”
+
+Node: dcid:MPXylene
+typeOf: dcs:AirPollutantEnum
+name: "MP-Xylene"
+description: "Refers to two isomers of Xylene, the m-Xylene and p-Xylene."
+
+Node: dcid:VolatileOrganicCompound
+typeOf: dcid:EPA_CriteriaAirPollutant
+name: "Volatile Organic Compound (VOC)"
+epaPollutantCode: "VOC"
+description: "Volatile organic compounds are compounds that have a high vapor pressure and low water solubility."
+descriptionUrl: "https://www.epa.gov/indoor-air-quality-iaq/what-are-volatile-organic-compounds-vocs"
+
+Node: dcs:Oxygen
+typeOf: dcs:GasType
+name: "Oxygen"
 
 Node: dcid:PollutantHealthRiskEnum
 typeOf: schema:Class
@@ -175,13 +649,559 @@ Node: dcs:NonCarcinogenicRespiratoryHazard
 typeOf: dcs:PollutantHealthRiskEnum
 name: "NonCarcinogenicRespiratoryHazard"
 
+Node: dcs:LandCoverClassEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LandCoverClassEnum"
+
+Node: dcid:BareSparseVegetation
+typeOf: dcs:LandCoverClassEnum
+name: "BareSparseVegetation"
+
+Node: dcid:Cropland
+typeOf: dcs:LandCoverClassEnum
+name: "Cropland"
+
+Node: dcid:HerbaceousVegetation
+typeOf: dcs:LandCoverClassEnum
+name: "HerbaceousVegetation"
+
+Node: dcid:MossAndLichen
+typeOf: dcs:LandCoverClassEnum
+name: "MossAndLichen"
+
+Node: dcid:Shrubland
+typeOf: dcs:LandCoverClassEnum
+name: "Shrubland"
+
+Node: dcid:Forest
+typeOf: dcs:LandCoverClassEnum
+name: "Forest"
+
+Node: dcid:SnowIce
+typeOf: dcs:LandCoverClassEnum
+name: "SnowIce"
+
+Node: dcid:BuiltUp
+typeOf: dcs:LandCoverClassEnum
+name: "BuiltUp"
+
+Node: dcid:PermanentWater
+typeOf: dcs:LandCoverClassEnum
+name: "PermanentWater"
+
+Node: dcid:SeasonalWater
+typeOf: dcs:LandCoverClassEnum
+name: "SeasonalWater"
+
+Node: dcid:RadiationWavelengthEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "RadiationWavelengthEnum"
+
+Node: dcs:ShortwaveRadiation
+typeOf: dcs:RadiationWavelengthEnum
+description: "Radiant energy with wavelengths in the visible, near-ultraviolet, and near-infrared spectra."
+descriptionUrl: "https://en.wikipedia.org/wiki/Shortwave_radiation"
+name: "ShortwaveRadiation"
+
+Node: dcs:LongwaveRadiation
+typeOf: dcs:RadiationWavelengthEnum
+description: "Electromagnetic radiation emitted by the surface and atmosphere at wavelengths between 3 and 100 μm, i.e. within the range of infrared radiation"
+descriptionUrl: "https://www.oxfordreference.com/view/10.1093/oi/authority.20110803100114357"
+name: "LongwaveRadiation"
+
+Node: dcid:RadiationDirectionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "RadiationDirectionEnum"
+
+Node: dcs:Downwelling
+typeOf: dcs:RadiationDirectionEnum
+name: "Downwelling"
+
+Node: dcid:WindComponentEnum
+typeOf: schema:Enumeration
+subClassOf: schema:Class
+name: "WindComponentEnum"
+description: "Represents the components of the wind vector."
+
+Node: dcid:UComponent
+typeOf: dcs:WindComponentEnum
+name: "UComponent"
+
+Node: dcid:VComponent
+typeOf: dcs:WindComponentEnum
+name: "VComponent"
+
+Node: dcid:ZComponent
+typeOf: dcs:WindComponentEnum
+name: "ZComponent"
+
+Node: dcid:ClimateModelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ClimateModelEnum"
+description: "Type of climate model."
+
+Node: dcid:MPI-ESM1-2-HR
+typeOf: dcs:ClimateModelEnum
+name: "MPI-ESM1-2-HR (Germany - MPI, DWD, DKRZ)"
+description: "Model by: MPI-M (Max Planck Institute for Meteorology, Hamburg 20146, Germany); DWD (Deutscher Wetterdienst, Offenbach am Main 63067, Germany); DKRZ (Deutsches Klimarechenzentrum, Hamburg 20146, Germany)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:CMCC-ESM2
+typeOf: dcs:ClimateModelEnum
+name: "CMCC-ESM2 (Italy - CMCC)"
+description: "Model by: CMCC (Fondazione Centro Euro-Mediterraneo sui Cambiamenti Climatici, Lecce 73100, Italy)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:MIROC6
+typeOf: dcs:ClimateModelEnum
+name: "MIROC6 (Japan - MIROC)"
+description: "Model by: JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan); AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan); NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan); and R-CCS (RIKEN Center for Computational Science, Hyogo 650-0047, Japan)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:INM-CM4-8
+typeOf: dcs:ClimateModelEnum
+name: "INM-CM4-8 (Russia - INM)"
+description: "Model by: INM (Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:UKESM1-0-LL
+typeOf: dcs:ClimateModelEnum
+name: "UKESM1-0-LL (UK, Korea, New Zealand - MOHC, NERC, NIMS-KMA, NIWA)"
+description: "Model by: MOHC (Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK); NERC (Natural Environment Research Council, STFC-RAL, Harwell, Oxford, OX11 0QX, UK);  NIMS-KMA (National Institute of Meteorological Sciences/Korea Meteorological Administration, Climate Research Division, Seoho-bukro 33, Seogwipo-si, Jejudo 63568, Republic of Korea); NIWA (National Institute of Water and Atmospheric Research, Hataitai, Wellington 6021, New Zealand)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:EC-EARTH3
+typeOf: dcs:ClimateModelEnum
+name: "EC-Earth3 (Europe - EC Earth Consortium)"
+description: "Model by: AEMET, Spain; BSC, Spain; CNR-ISAC, Italy; DMI, Denmark; ENEA, Italy; FMI, Finland; Geomar, Germany; ICHEC, Ireland; ICTP, Italy; IDL, Portugal; IMAU, The Netherlands; IPMA, Portugal; KIT, Karlsruhe, Germany; KNMI, The Netherlands; Lund University, Sweden; Met Eireann, Ireland; NLeSC, The Netherlands; NTNU, Norway; Oxford University, UK; surfSARA, The Netherlands; SMHI, Sweden; Stockholm University, Sweden; Unite ASTR, Belgium; University College Dublin, Ireland; University of Bergen, Norway; University of Copenhagen, Denmark; University of Helsinki, Finland; University of Santiago de Compostela, Spain; Uppsala University, Sweden; Utrecht University, The Netherlands; Vrije Universiteit Amsterdam, the Netherlands; Wageningen University, The Netherlands."
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:NESM3
+typeOf: dcs:ClimateModelEnum
+name: "NESM3 (China - NUIST)"
+description: "Model by: NESM3 (Nanjing University of Information Science and Technology, Nanjing, 210044, China)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:TAIESM1
+typeOf: dcs:ClimateModelEnum
+name: "TaiESM1 (Taiwan, AS-RCEC)"
+description: "Model by: AS-RCEC (Research Center for Environmental Changes, Academia Sinica, Nankang, Taipei 11529, Taiwan)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:HADGEM3-GC31-MM
+typeOf: dcs:ClimateModelEnum
+name: "HadGEM3-GC31-MM (UK - MOHC)"
+description: "Model by: MOHC (Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:GISS-E2-1-G
+typeOf: dcs:ClimateModelEnum
+name: "GISS-E2-1-G (USA - NASA)"
+description: "Model by: NASA-GISS (Goddard Institute for Space Studies, New York, NY 10025, USA)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:MIROC-ES2L
+typeOf: dcs:ClimateModelEnum
+name: "MIROC-ES2L (Japan - MIROC)"
+description: "Model by: JAMSTEC (Japan Agency for Marine-Earth Science and Technology, Kanagawa 236-0001, Japan); AORI (Atmosphere and Ocean Research Institute, The University of Tokyo, Chiba 277-8564, Japan); NIES (National Institute for Environmental Studies, Ibaraki 305-8506, Japan); and R-CCS (RIKEN Center for Computational Science, Hyogo 650-0047, Japan)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:NORESM2-LM
+typeOf: dcs:ClimateModelEnum
+name: "NorESM2-LM (Norway - NCC)"
+description: "Model by: NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349); MET-Norway (Norwegian Meteorological Institute, Oslo 0313); NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006); NILU (Norwegian Institute for Air Research, Kjeller 2027); UiB (University of Bergen, Bergen 5007); UiO (University of Oslo, Oslo 0313); and UNI (Uni Research, Bergen 5008), Norway"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:NORESM2-MM
+typeOf: dcs:ClimateModelEnum
+name: "NorESM2-MM (Norway - NCC)"
+description: "Model by: NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349); MET-Norway (Norwegian Meteorological Institute, Oslo 0313); NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006); NILU (Norwegian Institute for Air Research, Kjeller 2027); UiB (University of Bergen, Bergen 5007); UiO (University of Oslo, Oslo 0313); and UNI (Uni Research, Bergen 5008), Norway"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:GFDL-CM4
+typeOf: dcs:ClimateModelEnum
+name: "GFDL-CM4 (USA - NOAA)"
+description: "Model by: NOAA-GFDL (National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:CNRM-CM6-1
+typeOf: dcs:ClimateModelEnum
+name: "CNRM-CM6-1 (France - CNRM, CERFACS )"
+description: "Model by: CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France), CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:MRI-ESM2-0
+typeOf: dcs:ClimateModelEnum
+name: "MRI-ESM2-0 (Japan - MRI)"
+description: "Model by: MRI (Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:HADGEM3-GC31-LL
+typeOf: dcs:ClimateModelEnum
+name: "HadGEM3-GC31-LL (UK - MOHC, NERC)"
+description: "Model by: MOHC (Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK); NERC (Natural Environment Research Council, STFC-RAL, Harwell, Oxford, OX11 0QX, UK)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:FGOALS-G3
+typeOf: dcs:ClimateModelEnum
+name: "FGOALS-g3 (China - CAS)"
+description: "Model by: CAS (Chinese Academy of Sciences, Beijing 100029, China)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:GFDL-ESM4
+typeOf: dcs:ClimateModelEnum
+name: "GFDL-ESM4 (USA - NOAA)"
+description: "Model by: NOAA-GFDL (National Oceanic and Atmospheric Administration, Geophysical Fluid Dynamics Laboratory, Princeton, NJ 08540, USA)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:INM-CM5-0
+typeOf: dcs:ClimateModelEnum
+name: "INM-CM5-0 (Russia - INM)"
+description: "Model by: INM (Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:ACCESS-ESM1-5
+typeOf: dcs:ClimateModelEnum
+name: "ACCESS-ESM1-5 (Australia - CSIRO)"
+description: "Model by: CSIRO (Commonwealth Scientific and Industrial Research Organisation, Aspendale, Victoria 3195, Australia)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:CANESM5
+typeOf: dcs:ClimateModelEnum
+name: "CanESM5 (Canada - CCCma)"
+description: "Model by: CCCma (Canadian Centre for Climate Modelling and Analysis, Environment and Climate Change Canada, Victoria, BC V8P 5C2, Canada)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:KACE-1-0-G
+typeOf: dcs:ClimateModelEnum
+name: "KACE-1-0-G (Korea - NIMS-KMA)"
+description: "Model by: NIMS-KMA (National Institute of Meteorological Sciences/Korea Meteorological Administration, Climate Research Division, Seoho-bukro 33, Seogwipo-si, Jejudo 63568, Republic of Korea)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:KIOST-ESM
+typeOf: dcs:ClimateModelEnum
+name: "KIOST-ESM (Korea - KIOST)"
+description: "Model by: KIOST (Korea Institute of Ocean Science and Technology, Busan 49111, Republic of Korea)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:ACCESS-CM2
+typeOf: dcs:ClimateModelEnum
+name: "ACCESS-CM2 (Australia - CSIRO, ARCCSS)"
+description: "Model by: CSIRO (Commonwealth Scientific and Industrial Research Organisation, Aspendale, Victoria 3195, Australia); ARCCSS (Australian Research Council Centre of Excellence for Climate System Science)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:MPI-ESM1-2-LR
+typeOf: dcs:ClimateModelEnum
+name: "MPI-ESM1-2-LR (Germany - MPI, AWI, DWD, DKRZ)"
+description: "Model by: MPI-M (Max Planck Institute for Meteorology, Hamburg 20146, Germany); AWI (Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570 Bremerhaven, Germany); DWD (Deutscher Wetterdienst, Offenbach am Main 63067, Germany); DKRZ (Deutsches Klimarechenzentrum, Hamburg 20146, Germany)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:BCC-CSM2-MR
+typeOf: dcs:ClimateModelEnum
+name: "BCC-CSM2-MR (China - BCC)"
+description: "Model by: BCC (Beijing Climate Center, Beijing 100081, China)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:CNRM-ESM2-1
+typeOf: dcs:ClimateModelEnum
+name: "CNRM-ESM2-1 (France - CNRM, CERFACS )"
+description: "Model by: CNRM (Centre National de Recherches Meteorologiques, Toulouse 31057, France); CERFACS (Centre Europeen de Recherche et de Formation Avancee en Calcul Scientifique, Toulouse 31057, France)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:EC-EARTH3-VEG-LR
+typeOf: dcs:ClimateModelEnum
+name: "EC-Earth3-Veg-LR (Europe - EC Earth Consortium)"
+description: "Model by: AEMET, Spain; BSC, Spain; CNR-ISAC, Italy; DMI, Denmark; ENEA, Italy; FMI, Finland; Geomar, Germany; ICHEC, Ireland; ICTP, Italy; IDL, Portugal; IMAU, The Netherlands; IPMA, Portugal; KIT, Karlsruhe, Germany; KNMI, The Netherlands; Lund University, Sweden; Met Eireann, Ireland; NLeSC, The Netherlands; NTNU, Norway; Oxford University, UK; surfSARA, The Netherlands; SMHI, Sweden; Stockholm University, Sweden; Unite ASTR, Belgium; University College Dublin, Ireland; University of Bergen, Norway; University of Copenhagen, Denmark; University of Helsinki, Finland; University of Santiago de Compostela, Spain; Uppsala University, Sweden; Utrecht University, The Netherlands; Vrije Universiteit Amsterdam, the Netherlands; Wageningen University, The Netherlands"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:IPSL-CM6A-LR
+typeOf: dcs:ClimateModelEnum
+name: "IPSL-CM6A-LR (France -IPSL)"
+description: "Model by: IPSL (Institut Pierre Simon Laplace, Paris 75252, France)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:CMCC-CM2-SR5
+typeOf: dcs:ClimateModelEnum
+name: "CMCC-CM2-SR5 (Italy - CMCC)"
+description: "Model by: CMCC (Fondazione Centro Euro-Mediterraneo sui Cambiamenti Climatici, Lecce 73100, Italy)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:CESM2
+typeOf: dcs:ClimateModelEnum
+name: "CESM2 (USA - NCAR)"
+description: "Model by: NCAR (National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:CESM2-WACCM
+typeOf: dcs:ClimateModelEnum
+name: "CESM2-WACCM (USA - NCAR)"
+description: "Model by: NCAR (National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
+Node: dcid:IITM-ESM
+typeOf: dcs:ClimateModelEnum
+name: "IITM-ESM (India - CCCR-IITM)"
+description: "Model by: CCCR-IITM (Centre for Climate Change Research, Indian Institute of Tropical Meteorology Pune, Maharashtra 411 008, India)"
+descriptionUrl: "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_institution_id.html"
+
 ## Units
 
 Node: dcid:MicrogramsPerCubicMeter
 typeOf: dcs:ConcentrationUnitOfMeasure
 name: "MicrogramsPerCubicMeter"
 
+Node: dcid:PartsPerMillion
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "PartsPerMillion"
+description: "Number of units of mass of something (like pollutant) per million units of total mass"
+
 Node: dcid:PartsPerBillion
 typeOf: dcs:ConcentrationUnitOfMeasure
 name: "PartsPerBillion"
 description: "Number of units of mass of something (like pollutant) per billion units of total mass"
+
+Node: dcid:GramsPerKilogram
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "GramsPerKilogram"
+description: "A unit of a mass fraction expressed as a number of grams per kilogram of mixture."
+
+Node: dcid:MetersPerSecond
+typeOf: dcs:SpeedUnitOfMeasure
+name: "MetersPerSecond"
+description: "A speed unit of measure representing one meter per second."
+
+Node: dcid:RadiationUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "RadiationUnitOfMeasure"
+description: "A unit used to denote a measurement of radiation."
+
+Node: dcid:WattsPerSquareMeter
+typeOf: dcs:RadiationUnitOfMeasure
+name: "WattsPerSquareMeter"
+description: "A radiation unit of measure representing one watt per square meter."
+
+Node: dcid:MilligramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "MilligramsPerLitre"
+
+Node: dcid:MicrogramsPerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "MicrogramsPerLitre"
+
+Node: dcid:MilligramsCaCO3PerLitre
+typeOf: dcs:ConcentrationUnitOfMeasure
+name: "MilligramsCaCO3PerLitre"
+description: "Carbonate hardness is a measure of the water hardness caused by the presence of carbonate and is usually expressed as mgCaCO3/L (Milligrams CaCO3 Per Litre) – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions."
+descriptionUrl: "https://en.wikipedia.org/wiki/Carbonate_hardness"
+
+Node: dcid:MicroseimensPerCentimeter
+typeOf: dcs:UnitOfMeasure
+name: "MicroseimensPerCentimeter"
+description: "Microseimens per Centimeter (μS/cm) is a traditional unit of mesaure to determine specific conductance, in other words the amount of electricity that an electrolyte solution can conduct."
+
+Node: dcid:Pascal
+typeOf: dcs:PressureUnitOfMeasure
+name: "Pascal"
+
+## IPCC Confidence levels
+
+Node: dcid:IPCC_ConfidenceLevelEnum
+name: "IPCC_ConfidenceLevelEnum"
+typeOf: dcs:Enumeration
+description: "Confidence level synthesizes the IPCC report author teams’ judgments about the validity of findings as determined through evaluation of evidence and agreement."
+descriptionUrl: "https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf"
+
+Node: dcid:IPCC_MediumConfidence
+name: "IPCC_MediumConfidence"
+typeOf: dcs:IPCC_ConfidenceLevelEnum
+
+Node: dcid:IPCC_LowConfidence
+name: "IPCC_LowConfidence"
+typeOf: dcs:IPCC_ConfidenceLevelEnum
+
+## Measurement Qualifiers
+
+Node: dcid:IPCC_MeasurementQualifierEnum
+typeOf: dcs:Enumeration
+name: "IPCC_MeasurementQualifierEnum"
+description: "Qualifiers used to represent specific aggregations in Climate data from IPCC"
+
+Node: dcid:MedianAcrossModels
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "MedianAcrossModels"
+
+Node: dcid:Percentile10AcrossModels
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "Percentile90AcrossModels"
+
+Node: dcid:Percentile90AcrossModels
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "Percentile90AcrossModels"
+
+Node: dcid:AggregateMax
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "AggregateMax"
+
+Node: dcid:AggregateMin
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "AggregateMin"
+
+Node: dcid:LowestValue
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "LowestValue"
+
+Node: dcid:HighestValue
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "HighestValue"
+
+Node: dcid:FrequencyOfOutliers
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "FrequencyOfOutliers"
+
+Node: dcid:RateOfChange
+typeOf: dcs:IPCC_MeasurementQualifierEnum
+name: "RateOfChange"
+
+# Temporary properties for better viz of SV Hierarchy
+Node: dcid:multiModelEnsemble
+typeOf: schema:Property
+name: "multiModelEnsemble"
+rangeIncludes: dcs:IPCC_MeasurementQualifierEnum
+domainIncludes: dcs:Thing
+
+Node: dcid:extremesOverTime
+typeOf: schema:Property
+name: "extremesOverTime"
+rangeIncludes: dcs:IPCC_MeasurementQualifierEnum
+domainIncludes: dcs:Thing
+
+## Tidal
+
+Node: dcid:salinity
+typeOf: schema:Property
+name: "salinity"
+description: "Salinity is the saltiness or amount of salt dissolved in a body of water, called saline water."
+descriptionUrl: "https://en.wikipedia.org/wiki/Salinity"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:SeaBodyOfWater
+
+Node: dcid:DepthClassificationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DepthClassificationEnum"
+
+Node: dcid:SurfaceLevel
+typeOf: dcs:DepthClassificationEnum
+name: "SurfaceLevel"
+
+Node: dcid:PracticalSalinityUnit
+typeOf: dcs:UnitOfMeasure
+name: "PracticalSalinityUnit"
+
+Node: dcid:S2CellLevel7
+typeOf: dcs:Class
+name: "S2CellLevel7"
+description: "S2 cell at level 7 which corresponds to an average area of 5188.66 sq km."
+subClassOf: schema:Place
+
+Node: dcid:S2CellLevel8
+typeOf: dcs:Class
+name: "S2CellLevel8"
+description: "S2 cell at level 8 which corresponds to an average area of 1297.17 sq km."
+subClassOf: schema:Place
+
+Node: dcid:S2CellLevel9
+typeOf: dcs:Class
+name: "S2CellLevel9"
+description: "S2 cell at level 9 which corresponds to an average area of 324.29 sq km."
+subClassOf: schema:Place
+
+Node: dcid:S2CellLevel10
+typeOf: dcs:Class
+name: "S2CellLevel10"
+description: "S2 cell at level 10 which corresponds to an average area of 81.07 sq km."
+subClassOf: schema:Place
+
+Node: dcid:S2CellLevel11
+typeOf: dcs:Class
+name: "S2CellLevel11"
+description: "S2 cell at level 11 which corresponds to an average area of 20.27 sq km."
+subClassOf: schema:Place
+
+Node: dcid:S2CellLevel12
+typeOf: dcs:Class
+name: "S2CellLevel12"
+description: "S2 cell at level 12 which corresponds to an average area of 5.07 sq km."
+subClassOf: schema:Place
+
+Node: dcid:S2CellLevel13
+typeOf: dcs:Class
+name: "S2CellLevel13"
+description: "S2 cell at level 13 which corresponds to an average area of 1.27 sq km."
+subClassOf: schema:Place
+
+Node: dcid:S2CellLevel14
+typeOf: dcs:Class
+name: "S2CellLevel14"
+description: "S2 cell at level 14 which corresponds to an average area of 0.32 sq km."
+subClassOf: schema:Place
+
+
+## FEMA NRI
+
+###  FEMA NRI-specific measuredProperties
+Node: dcid:femaSocialVulnerability
+typeOf: dcid:Property
+description: "The susceptibility of social groups to the adverse impacts of natural hazards, including disproportionate death, injury, loss, or disruption of livelihood. This is a measure defined and computed by the US Federal Emergency Management Agency (FEMA)."
+descriptionUrl: "https://hazards.fema.gov/nri/social-vulnerability"
+name: "femaSocialVulnerability"
+domainIncludes: dcid:NaturalHazardImpact
+
+Node: dcid:femaCommunityResilience
+typeOf: dcid:Property
+description: "The ability of a community to prepare for anticipated natural hazards, adapt to changing conditions, and withstand and recover rapidly from disruptions. This is a measure defined and computed by the US Federal Emergency Management Agency (FEMA)."
+descriptionUrl: "https://hazards.fema.gov/nri/community-resilience"
+name: "femaCommunityResilience"
+domainIncludes: dcid:NaturalHazardImpact
+
+# New unit: Fema Risk Index
+Node: dcid:femaNaturalHazardRiskIndex
+typeOf: dcid:Property
+description: "The potential for negative impacts as a result of a natural hazard. This is a measure defined and computed by the US Federal Emergency Management Agency (FEMA)."
+descriptionUrl: "https://hazards.fema.gov/nri/determining-risk"
+name: "femaNaturalHazardRiskIndex"
+domainIncludes: dcid:NaturalHazardImpact
+
+### FEMA NRI-specific units
+Node: dcid:FemaNationalRiskScore
+typeOf: dcid:UnitOfMeasure
+description: "A unit describing the relative risk from natural hazards that a place is estimated to be, according to the FEMA National Risk Index study. Ranging from 0 to 100, where 0 is the least at risk, and 100 is the most at risk. This is a relative scoring system defined and computed by the US Federal Emergency Management Agency (FEMA)."
+name: "FemaNationalRiskScore"
+descriptionUrl: "https://hazards.fema.gov/nri/understanding-scores-ratings"
+
+### FEMA NRI-specific population type
+Node: dcid:NaturalHazardImpact
+typeOf: dcid:Class
+description: "Negative impacts, such as destruction or death, imposed upon factors such as Buildings, People, and Agriculture through occurrences of natural hazards."
+name: "NaturalHazardImpact"
+subClassOf: dcid:Intangible
+
+## Misc
+
+Node: dcid:CMIP6ReferencePeriod
+typeOf: dcs:QuantityRange
+name: "CMIP6ReferencePeriod"
+description: "The reference period used for comparison in IPCC CMIP6 report, which is from 1995 to 2014."
+sameAs: [1995 2014 dcs:Date]
+
+Node: dcid:heatWaveIntensity
+typeOf: dcs:Property
+name: "heatWaveIntensity"
+domainIncludes: dcs:HeatWaveEvent
+rangeIncludes: dcs:Quantity
+description: "Describes how hot the temperature is during heat waves. It is defined as the difference in temperature (measured in degrees Celsius) between the local threshold for heat waves and the average of the daily minimum temperature during the heat wave."

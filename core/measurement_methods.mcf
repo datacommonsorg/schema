@@ -70,6 +70,17 @@ name: "EurostatRegionalStatistics"
 typeOf: dcs:StatisticSourceEnum
 description: "Measurement method for regional statistics collected by eurostat.org."
 
+Node: dcid:EurostatRegionalStatistics_LowReliability
+name: "EurostatRegionalStatistics_LowReliability"
+typeOf: dcs:StatisticSourceEnum
+description: "Low reliability in series statistics collected by eurostat.org. The series is set to low reliability if one or more observations inseries are marked as low reliable in source. An estimate is published with a flag low reliability if it is based on 20 to 49 sample observations or if non-response for the item concerned exceeds 20% and is lower or equal to 50%."
+
+Node: dcid:EurostatRegionalStatistics_DefinitionDiffers
+name: "EurostatRegionalStatistics_DefinitionDiffers"
+typeOf: dcs:StatisticSourceEnum
+description: "Measurement method of statistics collected by eurostat.org where the national definition differs from the definition in methodological guidelines and this deviation is supposed to have impact on the results. The series is set to deinition differs if one or more observations inseries are marked as deinition differs in source."
+descriptionUrl: "https://ec.europa.eu/eurostat/cache/metadata/en/hlth_det_esms.htm"
+
 Node: dcid:NationalPrisonerStatistics
 name: "NationalPrisonerStatistics"
 typeOf: dcs:MeasurementMethodEnum
@@ -110,7 +121,163 @@ name: "FBI_Crime"
 typeOf: dcs:MeasurementMethodEnum
 description: "Measurement method for FBI crime data."
 
-Node: dcs:EPA_GHGRP
+Node: dcid:EPA_GHGRP
 name: "EPA_GHGRP"
 typeOf: dcs:MeasurementMethodEnum
 description: "Measurement method for data from US EPA Greenhouse Gas Reporting Program."
+
+Node: dcid:UNStatsEstimate
+name: "UNStatsEstimate"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for data from UN Stats that are estimates."
+
+Node: dcid:GoogleEarthEngine_MeanReduction
+name: "GoogleEarthEngine_MeanReduction"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for stats that were computed as means over coverage area using Google Earth Engine"
+
+Node: dcid:IndiaWRIS
+name: "IndiaWRIS"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for data from India Water Resources Infromation System (WRIS)"
+
+Node: dcid:NASAGSOD_NASAGHCN_EPA
+name: "NASAGSOD_NASAGHCN_EPA"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for weather data that comes from EPA, NASA-GSOD, NASA-GHCN."
+
+Node: dcid:NASA_Mean_CMIP6_WithBaseAs_NASAGSOD_NASAGHCN_EPA
+name: "NASA_Mean_CMIP6_WithBaseAs_NASAGSOD_NASAGHCN_EPA"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for values calculated with reference to the NASAGSOD_NASAGHCN_EPA data."
+
+Node: dcid:ERA5Monthly
+name: "ERA5Monthly"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for Copernicus ECMWF ERA5 monthly aggregates. Contains modified Copernicus Climate Change Service information (2022)."
+
+Node: dcid:Aggregate_NCHS2013_BRFSS2016To2018
+name: "Aggregate_NCHS2013_BRFSS2016To2018"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for estimates determined by merging 2016–2018 Behavioral Risk Factor Surveillance System(BRFSS) data with the 2013 National Center for Health Statistics (NCHS) six-level urban-rural classification scheme for US counties and county-equivalent entities (not applicable for US territories)."
+descriptionUrl: "https://www.cdc.gov/asthma/national-surveillance-data/pdfs/State-maps-for-asthma-prevalence-by-six-level-urban-rural-classification-2016-2018-p.pdf"
+
+Node: dcid:CDC_NNDSS_Diseases_WeeklyTables
+name: "CDC_NNDSS_Diseases_WeeklyTables"
+typeOf: dcs:MeasurementMethodEnum
+description: "Weekly cases of selected infectious national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS); data is reported by the 50 states, New York City, the District of Columbia, and the U.S. territories."
+descriptionUrl: "https://wonder.cdc.gov/nndss/nndss_weekly_tables_menu.asp"
+
+Node: dcid:CDC_NNDSS_Diseases_AnnualTables
+name: "CDC_NNDSS_Diseases_AnnualTables"
+typeOf:dcs:MeasurementMethodEnum
+description: "Annual cases of selected national notifiable(infectious and non-infectious) diseases, from the National Notifiable Diseases Surveillance System (NNDSS); data is reported by the 50 states, New York City, the District of Columbia, and the U.S. territories."
+descriptionUrl: "https://wonder.cdc.gov/nndss/nndss_annual_tables_menu.asp"
+
+Node: dcid:CensusPEPSurvey
+name: "CensusPEPSurvey"
+typeOf: dcs:CensusSurveyEnum
+description: "Measurement method for US Census Population Estimates Program Survey"
+
+Node: dcid:EPA_NationalEmissionInventory
+name: "EPA_NationalEmissionInventory"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for US EPA Air Pollution Emissions Survey"
+
+Node: dcid:EPA_NationalEmissionInventory_Tier1Summary
+name: "EPA_NationalEmissionInventory_Tier1Summary"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for US EPA Tier 1 Source, Criteria Air Pollutant Emission"
+
+Node: dcid:CensusPEPSurvey_RaceUpto1999
+name: "CensusPEPSurvey_RaceUpto1999"
+typeOf: dcs:CensusSurveyEnum
+description: "Measurement method for US Census Population Estimates Program Survey with Race data upto the year 1999"
+
+Node: dcid:CensusPEPSurvey_Race2000Onwards
+name: "CensusPEPSurvey_Race2000Onwards"
+typeOf: dcs:CensusSurveyEnum
+description: "Measurement method for US Census Population Estimates Program Survey with Race data since the year 2000"
+
+Node: dcid:CensusPEPSurvey_PartialAggregate
+name: "CensusPEPSurvey_PartialAggregate"
+typeOf: dcs:CensusSurveyEnum
+description: "Measurement method for US Census Population Estimates Program Survey which contains a combination of direct from source and aggregated data"
+
+Node: dcid:CensusPEPSurvey_PartialAggregate_Race2000Onwards
+name: "CensusPEPSurvey_PartialAggregate_Race2000Onwards"
+typeOf: dcs:CensusSurveyEnum
+description: "Measurement method for US Census Population Estimates Program Survey with Race data since the year 2000, contains a combination of direct from source and aggregated data"
+
+Node: dcid:CensusPEPSurvey_PartialAggregate_RaceUpto1999
+name: "CensusPEPSurvey_PartialAggregate_RaceUpto1999"
+typeOf: dcs:CensusSurveyEnum
+description: "Measurement method for US Census Population Estimates Program Survey with Race data upto the year 1999, contains a combination of direct from source and aggregated data"
+
+Node: dcid:NORSNonInfectiousDisease
+name: "NORSNonInfectiousDisease"
+typeOf: dcs:MeasurementMethodEnum
+description: "National Outbreak Reporting System (NORS) data from reports of foodborne and waterborne disease outbreaks and enteric (intestinal) disease outbreaks spread by contact with environmental sources, infected people or animals, and other means."
+descriptionUrl: "https://wwwn.cdc.gov/norsdashboard/"
+
+Node: dcid:NationalHouseholdTransportationSurveyEnum
+name: "NationalHouseholdTransportationSurveyEnum"
+subClassOf: dcs:MeasurementMethodEnum
+description: "Measurement method for US National Household Transportation Survey."
+typeOf: schema:Class
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates
+name: "NationalHouseholdTransportationSurveyEstimates"
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates."
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates_MarginOfErrorMoreThanACSSurvey
+name: "NationalHouseholdTransportationSurveyEstimates_MarginOfErrorMoreThanACSSurvey"
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates where Margin of Error is greater than ACS Survey estimates."
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey
+name: "NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey"
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates where ACS Survey estimates are not available."
+
+Node: dcid:NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey_MarginOfErrorMoreThanACSSurvey
+name: "NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey_MarginOfErrorMoreThanACSSurvey."
+typeOf: dcs:NationalHouseholdTransportationSurveyEnum
+description: "Measurement method for US Census National Household Transportation Survey Estimates with combination of Margin of Error greater than ACS Survey estimates and ACS Survey estimates are not available."
+
+Node: dcid:ClimateTraceEstimate
+name: "ClimateTraceEstimate"
+typeOf: dcs:MeasurementMethodEnum
+description: "Estimates made by the Climate TRACE. These estimates are based on models built using data from satellites, direct measurements and artificial intelligence."
+
+Node: dcid:ProbabilityDistributionEnum
+name: "ProbabilityDistributionEnum"
+subClassOf: dcs:MeasurementMethodEnum
+description: "Measurement methods for derived observations that are calculated using different probability distributions."
+typeOf: schema:Class
+
+Node: dcid:PearsonDistribution
+name: "PearsonDistribution"
+typeOf: dcs:ProbabilityDistributionEnum
+
+Node: dcid:GridWeightedPearson
+name: "GridWeightedPearson"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for aggregating a Pearson distribution measurement of a place by taking the weighted mean of %area of that place in geo grids."
+
+Node: dcid:NFIPInsuranceClaims
+name: "NFIPInsuranceClaims"
+typeOf: dcs:MeasurementMethodEnum
+description: "Insurance claims under the US National Flood Insurance Program (NFIP)."
+
+Node: dcid:NOAA_GFS
+name: "NOAA_GFS"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for weather forecast data from NOAA Global Forecast System."
+url: "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+
+Node: dcid:US_NCES_Demographics
+name: "US NCES Demographics"
+typeOf: dcs:MeasurementMethodEnum
+description: "US National Center for Education Statistics-Demographic data."

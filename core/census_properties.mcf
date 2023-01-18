@@ -4,6 +4,8 @@ Node: abilityToSpeakEnglish
 dcid: "abilityToSpeakEnglish"
 typeOf: schema:Property
 name: "abilityToSpeakEnglish"
+domainIncludes: schema:Person, dcs:Household
+rangeIncludes: dcs:USC_AbilityToSpeakEnglishEnum
 
 ## age in schema.org
 
@@ -25,14 +27,14 @@ domainIncludes: dcs:HousingUnit
 
 Node: citizenship
 dcid: "citizenship"
-rangeIncludes: dcs:USC_CitizenshipEnum
+rangeIncludes: dcs:CitizenshipEnum
 name: "citizenship"
 typeOf: schema:Property
 domainIncludes: schema:Person
 supersededBy: dcs:citizenshipStatus
 
 Node: dcid:citizenshipStatus
-rangeIncludes: dcs:USC_CitizenshipEnum
+rangeIncludes: dcs:CitizenshipEnum
 name: "citizenshipStatus"
 typeOf: schema:Property
 domainIncludes: schema:Person
@@ -62,7 +64,13 @@ dcid: "educationalAttainment"
 name: "educationalAttainment"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:USC_EducationalAttainmentEnum, dcs:WHO_EducationalAttainmentEnum
+rangeIncludes: dcs:USC_EducationalAttainmentEnum, dcs:WHO_EducationalAttainmentEnum, dcs:SchoolGradeLevelEnum
+
+Node: dcid:bachelorsDegreeMajor
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:EducationalMajorEnum
+name: "bachelorsDegreeMajor"
 
 ## gender in schema.org
 
@@ -93,7 +101,7 @@ dcid: "householderAge"
 name: "householderAge"
 description: "Age of the householder"
 rangeIncludes: dcs:Quantity, schema:Number
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:HousingUnit
 
 Node: householderRace
 typeOf: schema:Property
@@ -101,7 +109,7 @@ dcid: "householderRace"
 name: "householderRace"
 description: "Race of the householder"
 rangeIncludes: dcs:RaceCodeEnum
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:HousingUnit
 
 Node: householderWorkStatus
 typeOf: schema:Property
@@ -117,13 +125,14 @@ dcid: "householderEducationalAttainment"
 name: "householderEducationalAttainment"
 description: "Educational attainment of the householder"
 rangeIncludes: dcs:USC_EducationalAttainmentEnum
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:HousingUnit
 
 Node: householderRelatedChildrenUnder18Years
 typeOf: schema:Property
 dcid: "householderRelatedChildrenUnder18Years"
 name: "householderRelatedChildrenUnder18Years"
-description: "Number of related children of the householder under 18 years"
+description: "Number of related children of the householder under 18 years. A related child is any child under 18 years old who is related to the householder by birth, marriage, or adoption. Related children of the householder include evermarried as well as never-married children."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 rangeIncludes: dcs:Quantity, dcs:QuantityRange
 domainIncludes: dcs:Household
 
@@ -131,7 +140,8 @@ Node: householderOwnChildrenUnder18Years
 typeOf: schema:Property
 dcid: "householderOwnChildrenUnder18Years"
 name: "householderOwnChildrenUnder18Years"
-description: "Number of own children of the householder under 18 years"
+description: "Number of own children of the householder under 18 years. An own child is a never-married child under 18 years who is a son or daughter by birth, a stepchild, or an adopted child of the householder. In certain tabulations, own children are further classified as living with two parents or with one parent only."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 rangeIncludes: dcs:Quantity, dcs:QuantityRange
 domainIncludes: dcs:Household
 
@@ -146,9 +156,9 @@ domainIncludes: dcs:Household
 Node: income
 dcid: "income"
 typeOf: schema:Property
-rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile
+rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile, dcs:Farm
 name: "income"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcs:Household
 
 Node: householdIncome
 dcid: "householdIncome"
@@ -186,13 +196,14 @@ Node: languageSpokenAtHome
 dcid: "languageSpokenAtHome"
 typeOf: schema:Property
 name: "languageSpokenAtHome"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcs:Household
 rangeIncludes: dcs:USC_LanguageSpokenAtHomeEnum
 
 Node: levelOfSchool
 dcid: "levelOfSchool"
 name: "levelOfSchool"
 typeOf: schema:Property
+rangeIncludes: dcs:USC_LevelOfSchoolEnum
 
 Node: maritalStatus
 dcid: "maritalStatus"
@@ -205,21 +216,26 @@ Node: nativity
 dcid: "nativity"
 name: "nativity"
 typeOf: schema:Property
+rangeIncludes: dcs:NativityEnum
+domainIncludes: schema:Person
 
 ## numberOfRooms in schema.org
 
 Node: occupancyStatus
 dcid: "occupancyStatus"
+rangeIncludes: dcs:OccupancyStatusEnum
 name: "occupancyStatus"
+description: "An enumeration of occupancy status of housing units"
 typeOf: schema:Property
+domainIncludes: dcs:HousingUnit
 
 Node: occupancyTenure
 typeOf: schema:Property
 dcid: "occupancyTenure"
 name: "occupancyTenure"
-description: "Describes whether Housing units are owner occupied or renter occupied"
+description: "An enumeration of occupancy tenure of housing units"
 rangeIncludes: dcs:OccupancyTenureEnum
-domainIncludes: dcs:HousingUnit, dcs:Household
+domainIncludes: dcs:HousingUnit, dcs:Household, dcs:Person
 
 Node: placeOfBirth
 dcid: "placeOfBirth"
@@ -342,7 +358,7 @@ domainIncludes: dcs:USCFirm
 
 Node: dcid:ownerGender
 typeOf: schema:Property
-name: "majorityOwnerGender"
+name: "ownerGender"
 description: "Identifies the gender of majority owner for a firm or business. In case of single owner, this identifies gender of the owner."
 rangeIncludes: dcs:USC_OwnerGenderEnum
 domainIncludes: dcs:USCFirm
@@ -431,3 +447,129 @@ description: "Number of vehicles available at a place."
 domainIncludes: dcs:Household
 rangeIncludes: schema:Quantity, dcs:QuantityRange
 
+Node: dcid:birthEventStatus
+rangeIncludes: dcs:BirthEventStatusEnum
+name: "birthEventStatus"
+typeOf: schema:Property
+domainIncludes: schema:Person
+
+Node: dcid:childrenStatus
+rangeIncludes: dcs:HousingMemberStatusEnum
+name: "childrenStatus"
+typeOf: schema:Property
+domainIncludes: schema:Person
+
+Node: dcid:retirementIncome
+typeOf: schema:Property
+rangeIncludes: schema:Number, dcs:Quantity
+name: "retirementIncome"
+domainIncludes: schema:Person, dcs:Household
+description: "Retirement income includes regular income from a company pension, union pension, Federal government pension, state government pension, local government pension, U.S. military pension, KEOGH retirement plan, SEP (Simplified Employee Pension) or any other type of pension, retirement account or annuity such as IRA, ROTH IRA, 401(k) or 403(b)"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
+Node: dcid:socialSecurityIncome
+typeOf: schema:Property
+rangeIncludes: schema:Number, dcs:Quantity
+name: "socialSecurityIncome"
+domainIncludes: schema:Person, dcs:Household
+description: "Social Security income includes Social Security and U.S. railroad retirement pensions and survivor benefits, permanent disability insurance payments made by the Social Security Administration prior to deductions for medical insurance, and railroad retirement insurance checks from the U.S. government. Medicare reimbursements are not included"
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
+Node: dcid:supplementalSecurityIncome
+typeOf: schema:Property
+rangeIncludes: schema:Number, dcs:Quantity
+name: "supplementalSecurityIncome"
+domainIncludes: schema:Person, dcs:Household
+description: "Supplemental Security Income (SSI) is a nationwide U.S. assistance program administered by the Social Security Administration that guarantees a minimum level of income for needy aged, blind, or disabled individuals."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
+Node: dcid:cashAssistance
+typeOf: schema:Property
+rangeIncludes: schema:Number, dcs:Quantity
+name: "cashAssistance"
+domainIncludes: schema:Person, dcs:Household
+description: "Public assistance income includes general assistance and Temporary Assistance to Needy Families (TANF). Separate payments received for hospital or other medical care (vendor payments) are excluded. This does not include Supplemental Security Income (SSI) or noncash benefits such as Food Stamps."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
+Node: dcid:earnings
+typeOf: schema:Property
+rangeIncludes: schema:Number, dcs:Quantity
+name: "earnings"
+domainIncludes: schema:Person, dcs:Household
+description: "Earnings are defined as the sum of wage or salary income and net income from self-employment."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
+Node: dcid:householderNativity
+name: "householderNativity"
+typeOf: schema:Property
+rangeIncludes: dcs:NativityEnum
+domainIncludes: dcs:Household, dcs:HousingUnit
+
+Node: dcid:dateOfEntry
+typeOf: schema:Property
+name: "dateOfEntry"
+description: "Used to specify the date when an individual entered a country. Eg: Entered 2000 to 2009"
+domainIncludes: dcs:Person
+rangeIncludes: schema:DateTime, schema:Quantity
+
+Node: dcid:telephoneServiceAvailability
+typeOf: schema:Property
+name: "telephoneServiceAvailability"
+description: "Used to describe if the household has telephone service or not"
+domainIncludes: dcs:HousingUnit, dcs:Household
+rangeIncludes: dcs:CommunicationAmentiesEnum
+
+Node: dcid:numberOfOccupants
+typeOf: schema:Property
+name: "numberOfOccupants"
+description: "Used to describe the number of people living or sharing a household, housing unit or a room in a housing unit"
+domainIncludes: dcs:HousingUnit, dcs:Household
+rangeIncludes: schema:Quantity
+
+Node: dcid:dateMovedIn
+typeOf: schema:Property
+name: "dateMovedIn"
+description: "The date when the householder moved into the housing unit"
+domainIncludes: dcs:HousingUnit
+rangeIncludes: schema:DateTime, schema:Quantity
+
+Node: dcid:religion
+rangeIncludes: dcs:ReligionEnum
+name: "religion"
+typeOf: schema:Property
+domainIncludes: schema:Person
+
+Node: dcid:personMilesTraveled
+rangeIncludes: dcs:Quantity
+name: "personMilesTraveled"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of miles traveled by person in any mode of transportation."
+
+Node: dcid:personTrips
+rangeIncludes: dcs:Quantity
+name: "personTrips"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of trips made by a person in any mode of transportation."
+
+Node: dcid:vehicleMilesTraveled
+rangeIncludes: dcs:Quantity
+name: "vehicleMilesTraveled"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of miles a vehicle traveled/covered."
+
+Node: dcid:vehicleTrips
+rangeIncludes: dcs:Quantity
+name: "vehicleTrips"
+typeOf: schema:Property
+domainIncludes: dcs:Person, dcs:Household
+description: "Number of trips made by a vehicle."
+
+Node: dcid:transportationType
+typeOf: dcs:Property
+rangeIncludes: dcs:TransportationTypeEnum
+domainIncludes: dcid:Household, dcid:Person
+name: "transportationType"
+description: "Transportation type used by Household/Person."

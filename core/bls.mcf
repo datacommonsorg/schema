@@ -3,7 +3,7 @@ typeOf: schema:Property
 dcid: "unemploymentRate"
 name: "unemploymentRate"
 description: "The unemployment rate is a measure of the prevalence of unemployment. It is calculated as a percentage by dividing the number of unemployed individuals by all individuals currently in the labor force."
-rangeIncludes: schema:Number
+rangeIncludes: dcs:Percent
 domainIncludes: schema:StatisticalPopulation
 
 Node: wagesTotalProperty
@@ -166,16 +166,19 @@ Node: EstablishmentOwnership1
 typeOf: dcs:EstablishmentOwnershipEnum
 dcid: "FederalGovernmentOwned"
 name: "Federal Government"
+specializationOf: dcs:GovernmentOwned
 
 Node: EstablishmentOwnership2
 typeOf: dcs:EstablishmentOwnershipEnum
 dcid: "StateGovernmentOwned"
 name: "State Government"
+specializationOf: dcs:GovernmentOwned
 
 Node: EstablishmentOwnership3
 typeOf: dcs:EstablishmentOwnershipEnum
 dcid: "LocalGovernmentOwned"
 name: "Local Government"
+specializationOf: dcs:GovernmentOwned
 
 Node: EstablishmentOwnership4
 typeOf: dcs:EstablishmentOwnershipEnum
@@ -186,6 +189,16 @@ Node: EstablishmentOwnership5
 typeOf: dcs:EstablishmentOwnershipEnum
 dcid: "PrivatelyOwned"
 name: "Private"
+
+Node: dcid:PrivatelyOwnedForProfit
+typeOf: dcs:EstablishmentOwnershipEnum
+specializationOf: dcs:PrivatelyOwned
+name: "Privately Owned and For-Profit establishment"
+
+Node: dcid:PrivatelyOwnedNotForProfit
+typeOf: dcs:EstablishmentOwnershipEnum
+specializationOf: dcs:PrivatelyOwned
+name: "Privately Owned and Not-For-Profit establishment"
 
 Node: EstablishmentOwnership8
 typeOf: dcs:EstablishmentOwnershipEnum

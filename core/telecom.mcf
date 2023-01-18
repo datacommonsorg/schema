@@ -1,0 +1,65 @@
+Node: dcid:NetworkSubscriber
+name: "NetworkSubscriber"
+typeOf: schema:Class
+subClassOf: schema:Thing
+networkClass: NetworkClassEnum
+
+Node: dcid:NetworkClassEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "NetworkClassEnum"
+description: "Enumeration class of different internet network classifications."
+
+Node: dcid:networkClass
+typeOf: schema:Property
+name: "networkClass"
+rangeIncludes: schema:NetworkClassEnum
+domainIncludes: schema:NetworkSubscriber
+
+Node: dcid:percent
+name: "percent"
+typeOf: schema:Property
+domainIncludes: dcid:NetworkSubscriber
+rangeIncludes: schema:Number, dcs:Percent
+supersededBy: dcs:countRelative
+
+Node: dcid:WirelessAll
+typeOf: dcs:NetworkClassEnum
+name: "WirelessAll"
+
+Node: dcid:Wireless2g
+typeOf: dcs:NetworkClassEnum
+name: "Wireless2g"
+
+Node: dcid:Wireless3g
+typeOf: dcs:NetworkClassEnum
+name: "Wireless3g"
+
+Node: dcid:Wireless4g
+typeOf: dcs:NetworkClassEnum
+name: "Wireless4g"
+
+Node: dcid:Wireless5g
+typeOf: dcs:NetworkClassEnum
+name: "Wireless5g"
+
+Node: dcid:WirelineAll
+typeOf: dcs:NetworkClassEnum
+name: "WirelineAll"
+
+Node: dcid:PSTN
+typeOf: dcs:NetworkClassEnum
+name: "PSTN"
+
+Node: dcid:VOIP
+typeOf: dcs:NetworkClassEnum
+name: "VOIP"
+
+Node: dcid:Broadband
+typeOf: dcs:NetworkClassEnum
+name: "Broadband"
+
+Node: dcid:TelegeographyCountry
+name: "TelegeographyCountry"
+typeOf: dcs:MeasurementMethodEnum
+description: "Telegeography Country Level data - contains internet network usage across populations of countries."

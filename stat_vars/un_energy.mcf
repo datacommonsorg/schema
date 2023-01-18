@@ -6109,7 +6109,7 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Generation_Fuel_CrudeOil
-description: "UN Energy data for CrudeOil generation, Conventional crude oil - production (code: CR01)"
+description: "Annual Energy Generation From Crude Oil"
 fuelType: dcid:CrudeOil
 measuredProperty: dcs:generation
 measurementQualifier: dcs:Annual
@@ -7215,7 +7215,7 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Generation_Fuel_DieselOil
-description: "UN Energy data for DieselOil generation, Gas Oil/ Diesel Oil - Total energy supply (code: DLGA)"
+description: "Annual Energy Generation From Diesel Oil"
 fuelType: dcid:DieselOil
 measuredProperty: dcid:generation
 measurementQualifier: dcs:Annual
@@ -8494,7 +8494,7 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Generation_Electricity
-description: "UN Energy data for Electricity generation, Electricity - Gross production (code: EL01)"
+description: "Annual Energy Generation (All Fuels, All Sectors)"
 measuredProperty: dcs:generation
 measurementQualifier: dcs:Annual
 populationType: dcid:Electricity
@@ -8568,7 +8568,7 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Electricity
-description: "UN Energy data for Electricity consumption, Electricity - Final energy consumption (code: EL12)"
+description: "Annual Electricity Consumption"
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Electricity
@@ -9227,7 +9227,7 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Electricity_LiquifiedNaturalGasPlants_EnergyIndustryOwnUse
-consumingSector: dcid:LiquifiedNaturalGasPlants
+consumingSector: dcid:LiquefiedNaturalGasPlants
 description: "UN Energy data for Electricity consumption, Electricity - Own use by LNG/regasification plants (code: EL0934)"
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
@@ -9407,7 +9407,7 @@ typeOf: dcs:StatisticalVariable
 usedFor: dcid:EnergyIndustryOwnUse
 
 Node: dcid:Annual_Generation_Fuel_Nuclear
-description: "UN Energy data for Nuclear generation, Electricity - total nuclear production (code: EN01)"
+description: "Annual Energy Generation From Nuclear Fuel"
 fuelType: dcs:Nuclear
 measuredProperty: dcs:generation
 measurementQualifier: dcs:Annual
@@ -11384,7 +11384,7 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Generation_Energy_Coal
-description: "UN Energy data for Coal generation, Heat output from hard coal (code: HF01CL)"
+description: "Annual Energy Generation From Coal"
 energySource: dcid:Coal
 measuredProperty: dcs:generation
 measurementQualifier: dcs:Annual
@@ -14029,7 +14029,7 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Generation_Fuel_LiquifiedPetroleumGas
 description: "UN Energy data for LiquifiedPetroleumGas generation, Liquefied petroleum gas (LPG) - Production (code: LP01)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:generation
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14038,7 +14038,7 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Generation_Fuel_LiquifiedPetroleumGas_Refinery
 description: "UN Energy data for LiquifiedPetroleumGas generation, Liquefied petroleum gas (LPG) - production from refineries (code: LP013)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:generation
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14048,7 +14048,7 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Imports_Fuel_LiquifiedPetroleumGas
 description: "UN Energy data for LiquifiedPetroleumGas imports, Liquefied petroleum gas (LPG) - Imports (code: LP03)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcid:imports
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14056,8 +14056,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_LiquifiedPetroleumGas
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Final energy consumption (code: LP12)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Final energy consumption (code: LP12)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14067,7 +14067,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_OtherSector_LiquifiedPetroleumGas
 consumingSector: dcid:UN_OtherSector
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption by other (code: LP123)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14077,7 +14077,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_Households_LiquifiedPetroleumGas
 consumingSector: dcid:Households
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption by households (code: LP1231)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14087,7 +14087,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_UnspecifiedSector_LiquifiedPetroleumGas
 consumingSector: dcid:UN_UnspecifiedSector
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption by other consumers not elsewhere specified (code: LP1234)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14096,7 +14096,7 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Generation_Fuel_LiquifiedPetroleumGas_PetroleumPlants
 description: "UN Energy data for LiquifiedPetroleumGas generation, Liquefied petroleum gas (LPG) - production from plants (code: LP014)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:generation
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14106,7 +14106,7 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Exports_Fuel_LiquifiedPetroleumGas
 description: "UN Energy data for LiquifiedPetroleumGas exports, Liquefied petroleum gas (LPG) - Exports (code: LP04)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcid:exports
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14116,7 +14116,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_Manufacturing_LiquifiedPetroleumGas
 consumingSector: dcid:Manufacturing
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - consumption by manufacturing, construction and non-fuel mining industry (code: LP121)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14126,7 +14126,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_ChemicalPetrochemicalIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:ChemicalPetrochemicalIndustry
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - consumption by chemical and petrochemical (code: LP1213)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14136,7 +14136,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_OtherManufacturingIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:UN_OtherManufacturingIndustry
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - consumption by other manuf., const. and non-fuel min. ind. (code: LP1214)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14145,8 +14145,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_OtherIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:UN_OtherIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by industries not elsewhere specified (code: LP1214o)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by industries not elsewhere specified (code: LP1214o)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14156,7 +14156,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_TransportIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:TransportIndustry
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption by transport (code: LP122)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14166,7 +14166,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_RoadTransport_LiquifiedPetroleumGas
 consumingSector: dcid:RoadTransport
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption in road (code: LP1221)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14176,7 +14176,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_OtherTransport_LiquifiedPetroleumGas
 consumingSector: dcid:UN_OtherTransport
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption not elsewhere specified (transport) (code: LP1225)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14185,8 +14185,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_CommerceAndPublicServices_LiquifiedPetroleumGas
 consumingSector: dcid:CommerceAndPublicServices
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by commerce and public services (code: LP1235)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by commerce and public services (code: LP1235)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14195,7 +14195,7 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:AnnualChange_Stocks_Fuel_LiquifiedPetroleumGas
 description: "UN Energy data for LiquifiedPetroleumGas stocks, Liquefied petroleum gas (LPG) - Stock changes (code: LP06)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcid:stocks
 measurementQualifier: dcid:AnnualChange
 populationType: dcid:Fuel
@@ -14205,7 +14205,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_FuelTransformationIndustry_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:FuelTransformationIndustry
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Transformation (code: LP08)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14216,7 +14216,7 @@ usedFor: dcid:FuelTransformation
 Node: dcid:Annual_Consumption_Fuel_ElectricityGeneration_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:ElectricityGeneration
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Transformation in electricity, CHP and heat plants (code: LP088)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14227,7 +14227,7 @@ usedFor: dcid:FuelTransformation
 Node: dcid:Annual_Consumption_Fuel_EnergyIndustry_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:EnergyIndustry
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Energy industries own use (code: LP09)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14238,7 +14238,7 @@ usedFor: dcid:EnergyIndustryOwnUse
 Node: dcid:Annual_Consumption_Fuel_OilRefineries_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:OilRefineries
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Own use by oil refineries (code: LP0925)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14248,7 +14248,7 @@ usedFor: dcid:EnergyIndustryOwnUse
 
 Node: dcid:Annual_Consumption_Fuel_LiquifiedPetroleumGas_NonEnergyUse
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Non-energy uses (code: LP11)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcid:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14258,8 +14258,8 @@ usedFor: dcid:NonEnergyUse
 
 Node: dcid:Annual_Consumption_Fuel_FoodAndTobaccoIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:FoodAndTobaccoIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by food and tobacco (code: LP1214f)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by food and tobacco (code: LP1214f)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14268,8 +14268,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_ConstructionIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:ConstructionIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by construction (code: LP1214i)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by construction (code: LP1214i)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14279,7 +14279,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_GasWorks_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:GasWorks
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Transformation in gas works (code: LP082)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14290,7 +14290,7 @@ usedFor: dcid:FuelTransformation
 Node: dcid:Annual_Consumption_Fuel_CoalMines_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:CoalMines
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Own use by coal mines (code: LP0911)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14301,7 +14301,7 @@ usedFor: dcid:EnergyIndustryOwnUse
 Node: dcid:Annual_Consumption_Fuel_OilGasExtraction_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:OilGasExtraction
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Own use by oil and gas extraction (code: LP0912)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14312,7 +14312,7 @@ usedFor: dcid:EnergyIndustryOwnUse
 Node: dcid:Annual_Consumption_Fuel_IronSteel_LiquifiedPetroleumGas
 consumingSector: dcid:IronSteel
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - consumption by iron and steel industry (code: LP1211)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14321,8 +14321,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_NonFerrousMetalsIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:NonFerrousMetalsIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by non-ferrous metals (code: LP1214a)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by non-ferrous metals (code: LP1214a)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14331,8 +14331,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_NonMetallicMineralsIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:NonMetallicMineralsIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by non-metallic minerals (code: LP1214b)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by non-metallic minerals (code: LP1214b)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14341,8 +14341,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_TransportEquipmentIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:TransportEquipmentIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by transport equipment (code: LP1214c)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by transport equipment (code: LP1214c)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14351,8 +14351,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_MachineryIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:MachineryIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by machinery (code: LP1214d)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by machinery (code: LP1214d)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14361,8 +14361,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_MiningAndQuarryingIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:MiningAndQuarryingIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by mining and quarrying (code: LP1214e)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by mining and quarrying (code: LP1214e)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14371,8 +14371,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_PaperPulpPrintIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:PaperPulpPrintIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by paper, pulp and print (code: LP1214g)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by paper, pulp and print (code: LP1214g)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14381,8 +14381,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_WoodAndWoodProductsIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:WoodAndWoodProductsIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by wood and wood products (code: LP1214h)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by wood and wood products (code: LP1214h)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14391,8 +14391,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_TextileAndLeatherIndustry_LiquifiedPetroleumGas
 consumingSector: dcid:TextileAndLeatherIndustry
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by textile and leather (code: LP1214j)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by textile and leather (code: LP1214j)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14402,7 +14402,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_RailTransport_LiquifiedPetroleumGas
 consumingSector: dcid:RailTransport
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption in rail (code: LP1222)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14412,7 +14412,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_Agriculture_LiquifiedPetroleumGas
 consumingSector: dcid:Agriculture
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption in agriculture, forestry and fishing (code: LP1232)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14421,8 +14421,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Fuel_MainActivityProducerElectricityPowerPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:MainActivityProducerElectricityPowerPlants
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Transformation in electricity plants - main activity producers (code: LP08811)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Transformation in electricity plants - main activity producers (code: LP08811)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14432,8 +14432,8 @@ usedFor: dcid:FuelTransformation
 
 Node: dcid:Annual_Consumption_Fuel_MainActivityProducerHeatPowerPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:MainActivityProducerHeatPowerPlants
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Transformation in heat plants - main activity producers (code: LP08831)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Transformation in heat plants - main activity producers (code: LP08831)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14443,7 +14443,7 @@ usedFor: dcid:FuelTransformation
 
 Node: dcid:Annual_ProductReclassification_Fuel_LiquifiedPetroleumGas
 description: "UN Energy data for LiquifiedPetroleumGas productReclassification, Liquefied petroleum gas (LPG) - Transfers and recycled products (code: LP07)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcid:productReclassification
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14452,7 +14452,7 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Loss_Fuel_LiquifiedPetroleumGas
 description: "UN Energy data for LiquifiedPetroleumGas loss, Liquefied petroleum gas (LPG) - Losses (code: LP101)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcid:loss
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14462,7 +14462,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_CokeOvens_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:CokeOvens
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Own use by coke ovens (code: LP0921)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14472,8 +14472,8 @@ usedFor: dcid:EnergyIndustryOwnUse
 
 Node: dcid:Annual_Consumption_Fuel_AutoProducerHeatPowerPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:AutoProducerHeatPowerPlants
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Transformation in heat plants - autoproducers (code: LP08832)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Transformation in heat plants - autoproducers (code: LP08832)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14484,7 +14484,7 @@ usedFor: dcid:FuelTransformation
 Node: dcid:Annual_Consumption_Fuel_Industry_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:Industry
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Other energy industry own use (code: LP0928)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14495,7 +14495,7 @@ usedFor: dcid:EnergyIndustryOwnUse
 Node: dcid:Annual_Consumption_Fuel_OtherIndustry_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:UN_OtherIndustry
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Transformation in other energy-producing plants (code: LP089)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14505,8 +14505,8 @@ usedFor: dcid:FuelTransformation
 
 Node: dcid:Annual_Consumption_Fuel_AutoProducerCombinedHeatPowerPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:AutoProducerCombinedHeatPowerPlants
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Transformation in CHP plants - autoproducers (code: LP08822)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Transformation in CHP plants - autoproducers (code: LP08822)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14517,7 +14517,7 @@ usedFor: dcid:FuelTransformation
 Node: dcid:Annual_Consumption_Fuel_ElectricityGeneration_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:ElectricityGeneration
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Own use by electricity, heat and CHP plants (code: LP0927)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14527,8 +14527,8 @@ usedFor: dcid:EnergyIndustryOwnUse
 
 Node: dcid:Annual_Consumption_Fuel_PetrochemicalPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:PetrochemicalPlants
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Transformation in petrochemical plants (code: LP085PP)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Transformation in petrochemical plants (code: LP085PP)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14538,8 +14538,8 @@ usedFor: dcid:FuelTransformation
 
 Node: dcid:Annual_Consumption_Fuel_AutoProducerElectricityPowerPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:AutoProducerElectricityPowerPlants
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Transformation in electricity plants - autoproducers (code: LP08812)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Transformation in electricity plants - autoproducers (code: LP08812)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14549,8 +14549,8 @@ usedFor: dcid:FuelTransformation
 
 Node: dcid:Annual_Consumption_Fuel_MainActivityProducerCombinedHeatPowerPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:MainActivityProducerCombinedHeatPowerPlants
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Transformation in CHP plants - main activity producers (code: LP08821)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Transformation in CHP plants - main activity producers (code: LP08821)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14561,7 +14561,7 @@ usedFor: dcid:FuelTransformation
 Node: dcid:Annual_Consumption_Fuel_NaturalGasPlants_LiquifiedPetroleumGas_FuelTransformation
 consumingSector: dcid:NaturalGasPlants
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Transformation in natural gas blending plants (code: LP087)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14572,7 +14572,7 @@ usedFor: dcid:FuelTransformation
 Node: dcid:Annual_Consumption_Fuel_DomesticAviationTransport_LiquifiedPetroleumGas
 consumingSector: dcid:DomesticAviationTransport
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption by domestic aviation (code: LP1223)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14582,7 +14582,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_DomesticNavigationTransport_LiquifiedPetroleumGas
 consumingSector: dcid:DomesticNavigationTransport
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Consumption by domestic navigation (code: LP1224)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14592,7 +14592,7 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Annual_Consumption_Fuel_GasWorks_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:GasWorks
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Own use by gas works (code: LP0922)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14603,7 +14603,7 @@ usedFor: dcid:EnergyIndustryOwnUse
 Node: dcid:Annual_Consumption_Fuel_BlastFurnaces_LiquifiedPetroleumGas_EnergyIndustryOwnUse
 consumingSector: dcid:BlastFurnaces
 description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied petroleum gas (LPG) - Own use by blast furnaces (code: LP0924)"
-fuelType: dcid:LiquifiedPetroleumGas
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14613,8 +14613,8 @@ usedFor: dcid:EnergyIndustryOwnUse
 
 Node: dcid:Annual_Consumption_Fuel_PipelineTransport_LiquifiedPetroleumGas
 consumingSector: dcid:PipelineTransport
-description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquified Petroleum Gas (LPG) - Consumption by pipeline transport (code: LP1226)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas consumption, Liquefied Petroleum Gas (LPG) - Consumption by pipeline transport (code: LP1226)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcs:consumption
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -14622,8 +14622,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Receipts_Fuel_LiquifiedPetroleumGas
-description: "UN Energy data for LiquifiedPetroleumGas receipts, Liquified Petroleum Gas (LPG) - Receipts from other sources (code: LP022)"
-fuelType: dcid:LiquifiedPetroleumGas
+description: "UN Energy data for LiquifiedPetroleumGas receipts, Liquefied Petroleum Gas (LPG) - Receipts from other sources (code: LP022)"
+fuelType: dcid:LiquefiedPetroleumGas
 measuredProperty: dcid:receipts
 measurementQualifier: dcs:Annual
 populationType: dcid:Fuel
@@ -16166,7 +16166,7 @@ typeOf: dcs:StatisticalVariable
 usedFor: dcid:EnergyIndustryOwnUse
 
 Node: dcid:Annual_Consumption_Fuel_LiquifiedNaturalGasPlants_NaturalGas_EnergyIndustryOwnUse
-consumingSector: dcid:LiquifiedNaturalGasPlants
+consumingSector: dcid:LiquefiedNaturalGasPlants
 description: "UN Energy data for NaturalGas consumption, Natural Gas (including LNG) - own use by LNG/regasification plants (code: NG0934)"
 fuelType: dcs:NaturalGas
 measuredProperty: dcs:consumption
@@ -23692,7 +23692,7 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Annual_Consumption_Energy_LiquifiedNaturalGasPlants_Heat_EnergyIndustryOwnUse
-consumingSector: dcid:LiquifiedNaturalGasPlants
+consumingSector: dcid:LiquefiedNaturalGasPlants
 description: "UN Energy data for Heat consumption, Heat - Consumption by LNG/regasification plants (code: ST0934)"
 energySource: dcid:Heat
 measuredProperty: dcs:consumption

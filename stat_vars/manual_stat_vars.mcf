@@ -27,6 +27,7 @@ measuredProperty: dcs:count
 occupancyStatus: dcs:OccupiedHousingUnit
 occupancyTenure: dcs:RenterOccupied
 statType: dcs:measuredValue
+description: "Number of Housing Units Valued at $2,000 or More"
 
 Node: dcid:Count_HousingUnit_WithRent_100To149USDollar
 typeOf: dcs:StatisticalVariable
@@ -258,6 +259,7 @@ medicalCondition: dcs:COVID_19
 vaccineStatus: dcs:VaccineAdministered
 measuredProperty: dcs:cumulativeCount
 statType: dcs:measuredValue
+description: "Total Number of COVID-19 Vaccines Administered"
 
 Node: dcid:IncrementalCount_Vaccine_COVID_19_Administered
 typeOf: dcs:StatisticalVariable
@@ -266,6 +268,7 @@ medicalCondition: dcs:COVID_19
 vaccineStatus: dcs:VaccineAdministered
 measuredProperty: dcs:incrementalCount
 statType: dcs:measuredValue
+description: "Number of COVID-19 Vaccines Administered Daily"
 
 Node: dcid:IncrementalCount_MedicalTest_ConditionCOVID_19
 typeOf: dcs:StatisticalVariable
@@ -285,6 +288,7 @@ armedForcesStatus: dcs:Civilian
 healthInsurance: dcs:NoHealthInsurance
 measuredProperty: dcs:count
 statType: dcs:measuredValue
+description: "Number of People Without Health Insurance"
 
 Node: dcid:Count_Person_WithHealthInsurance
 typeOf: dcs:StatisticalVariable
@@ -294,6 +298,7 @@ armedForcesStatus: dcs:Civilian
 healthInsurance: dcs:WithHealthInsurance
 measuredProperty: dcs:count
 statType: dcs:measuredValue
+description: "Number of People With Health Insurance"
 
 #
 # Population by disabilityStatus, healthInsurance
@@ -474,3 +479,50 @@ gender: schema:Male
 populationType: dcs:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
+
+#
+# Manually written Google COVID19 Mobility SVs (to match the auto-generated
+# ones).
+#
+Node: dcid:Covid19MobilityTrend_LocalBusiness
+typeOf: dcs:StatisticalVariable
+populationType: dcs:PlaceVisitEvent
+placeCategory: dcs:LocalBusiness
+measuredProperty: dcs:covid19MobilityTrend
+statType: dcs:measuredValue
+
+Node: dcid:Covid19MobilityTrend_GroceryStoreAndPharmacy
+typeOf: dcs:StatisticalVariable
+populationType: dcs:PlaceVisitEvent
+placeCategory: dcs:GroceryStore&Pharmacy
+measuredProperty: dcs:covid19MobilityTrend
+statType: dcs:measuredValue
+
+Node: dcid:Covid19MobilityTrend_Park
+typeOf: dcs:StatisticalVariable
+populationType: dcs:PlaceVisitEvent
+placeCategory: dcs:Park
+measuredProperty: dcs:covid19MobilityTrend
+statType: dcs:measuredValue
+
+Node: dcid:Covid19MobilityTrend_TransportHub
+typeOf: dcs:StatisticalVariable
+populationType: dcs:PlaceVisitEvent
+placeCategory: dcs:TransportHub
+measuredProperty: dcs:covid19MobilityTrend
+statType: dcs:measuredValue
+
+Node: dcid:Covid19MobilityTrend_Workplace
+typeOf: dcs:StatisticalVariable
+populationType: dcs:PlaceVisitEvent
+placeCategory: dcs:Workplace
+measuredProperty: dcs:covid19MobilityTrend
+statType: dcs:measuredValue
+
+Node: dcid:Covid19MobilityTrend_Residence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:PlaceVisitEvent
+placeCategory: dcs:Residence
+measuredProperty: dcs:covid19MobilityTrend
+statType: dcs:measuredValue
+

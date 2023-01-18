@@ -33,6 +33,13 @@ subClassOf: schema:Organization
 name: "Source"
 description: "Represents a data source, which would be an organization."
 
+Node: SchemaDatasetType
+typeOf: schema:Class
+dcid: dcs:Dataset
+subClassOf: dcid:Source
+name: "Dataset"
+description: "Represents a dataset, coming from a Source."
+
 Node: SchemaSourceProperty
 typeOf: schema:Property
 dcid: dcs:source

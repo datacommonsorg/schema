@@ -372,6 +372,13 @@ typeOf: schema:Class
 subClassOf: schema:Landform
 name: "Continent"
 
+Node: dcid:UNGeoRegion
+typeOf: schema:Class
+subClassOf: schema:Place
+name: "UNGeoRegion"
+description: "The United Nations Geoschema for sub-regions"
+descriptionUrl: "https://en.wikipedia.org/wiki/United_Nations_geoscheme"
+
 Node: hasMenuItem
 dcid: "hasMenuItem"
 domainIncludes: schema:MenuSection
@@ -2502,6 +2509,12 @@ name: "GovernmentBuilding"
 typeOf: schema:Class
 subClassOf: schema:CivicStructure
 
+Node: CommercialBuilding
+dcid: "CommercialBuilding"
+name: "CommercialBuilding"
+typeOf: schema:Class
+subClassOf: schema:CivicStructure
+
 Node: commentTime
 dcid: "commentTime"
 domainIncludes: schema:UserComments
@@ -2830,9 +2843,9 @@ rangeIncludes: schema:Text
 Node: numberOfRooms
 dcid: "numberOfRooms"
 typeOf: schema:Property
-domainIncludes: schema:SingleFamilyResidence
+domainIncludes: schema:Accommodation, schema:Apartment, schema:House, schema:LodgingBusiness, schema:SingleFamilyResidence, schema:Suite, dcs:HousingUnit
 name: "numberOfRooms"
-rangeIncludes: schema:Number
+rangeIncludes: schema:Number, schema:Quantity
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 
 Node: MovingCompany
@@ -3958,8 +3971,8 @@ name: "PeopleAudience"
 Node: relatedTo
 dcid: "relatedTo"
 name: "relatedTo"
-rangeIncludes: schema:Person
-domainIncludes: schema:Person
+rangeIncludes: schema:Person, schema:Thing
+domainIncludes: schema:Person, schema:Thing
 typeOf: schema:Property
 
 Node: acquiredFrom
@@ -5175,7 +5188,7 @@ dcid: "area"
 typeOf: schema:Property
 supersededBy: "serviceArea"
 rangeIncludes: schema:Place
-domainIncludes: schema:BroadcastService
+domainIncludes: schema:BroadcastService, dcs:Farm
 name: "area"
 
 Node: defaultValue
@@ -5904,7 +5917,7 @@ source: "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -6393,7 +6406,7 @@ typeOf: schema:ContactPointOption
 Node: trailer
 dcid: "trailer"
 name: "trailer"
-typeOf: schema:Property
+typeOf: schema:Property, dcs:FireCauseSpecificEnum
 rangeIncludes: schema:VideoObject
 domainIncludes: schema:VideoGame
 
@@ -7186,7 +7199,7 @@ Node: aircraft
 dcid: "aircraft"
 rangeIncludes: schema:Vehicle
 domainIncludes: schema:Flight
-typeOf: schema:Property
+typeOf: schema:Property, dcs:FireCauseSpecificEnum
 name: "aircraft"
 
 Node: genre
@@ -7553,9 +7566,9 @@ subClassOf: schema:CivicStructure
 
 Node: amenityFeature
 dcid: "amenityFeature"
-rangeIncludes: schema:LocationFeatureSpecification
+rangeIncludes: schema:LocationFeatureSpecification, dcs:AmenityFeatureEnum
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
-domainIncludes: schema:LodgingBusiness
+domainIncludes: schema:LodgingBusiness, schema:Place
 typeOf: schema:Property
 name: "amenityFeature"
 
@@ -8845,7 +8858,7 @@ typeOf: schema:Property
 
 Node: floorSize
 dcid: "floorSize"
-domainIncludes: schema:Accommodation
+domainIncludes: schema:Accommodation, schema:CommercialBuilding, schema:Energy
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 typeOf: schema:Property
 rangeIncludes: schema:QuantitativeValue
@@ -9535,7 +9548,7 @@ supersededBy: "availableOnDevice"
 domainIncludes: schema:SoftwareApplication
 name: "device"
 rangeIncludes: schema:Text
-typeOf: schema:Property
+typeOf: schema:Property, dcs:FireCauseEnum
 
 Node: arrivalPlatform
 dcid: "arrivalPlatform"
@@ -11011,7 +11024,7 @@ description: "A process of care used in either a diagnostic, therapeutic, preven
 Node: dcid:Substance
 typeOf: schema:Class
 subClassOf: schema:MedicalEntity
-name: "MedicalEntity"
+name: "Substance"
 description: "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical."
 
 Node: dcid:Drug
@@ -11019,3 +11032,17 @@ typeOf: schema:Class
 subClassOf: schema:Substance
 name: "Drug"
 description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
+
+Node: dcid:dateEstablished
+typeOf: schema:Property
+name: "dateEstablished"
+rangeIncludes: schema:Date,schema:DateTime
+domainIncludes: schema:Thing
+description: "The date on which the CreativeWork first became available for searching on an online database."
+
+Node: dcid:dateRevised
+typeOf: schema:Property
+name: "dateRevised"
+rangeIncludes: schema:Date,schema:DateTime
+domainIncludes: schema:Thing
+description: "The date on which the CreativeWork was last edited or revised or the item was last revised on a DataFeed."

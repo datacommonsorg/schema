@@ -1,3 +1,4 @@
+
 Node: dcid:typeOf
 name: "typeOf"
 typeOf: schema:Property
@@ -38,6 +39,13 @@ domainIncludes: schema:Class, schema:Property, schema:Enumeration
 rangeIncludes: schema:URL
 description: "Provenance URL of the description value."
 
+Node: dcid:utteranceTemplate
+name: "utteranceTemplate"
+typeOf: schema:Property
+domainIncludes: schema:Thing, schema:StatisticalVariable
+rangeIncludes: schema:Text
+description: "A text string that captures how a node may be referred to by a user. It can have placeholders prefixed with a '$' to indicate parts that can be substituted with a set of strings, for instance, '$Location' or '$Year'."
+
 Node: dcid:geoId
 name: "geoId"
 typeOf: schema:Property
@@ -50,6 +58,14 @@ name: "marginOfError"
 typeOf: schema:Property
 domainIncludes: schema:Observation
 rangeIncludes: schema:Number, dcs:Percent
+
+Node: dcid:marginOfErrorSignificanceLevel
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "marginOfErrorSignificanceLevel"
+description: "The probability (expressed as a percentage) of a predicted/estimated value falling within the margin of error (absolute error) specified."
+rangeIncludes: dcs:Percent
+descriptionUrl: "https://en.wikipedia.org/wiki/Statistical_significance"
 
 Node: dcid:stdError
 name: "stdError"
@@ -161,6 +177,18 @@ typeOf: schema:Property
 description: "The percentage change of a specific variable within a specific time period and given a certain context."
 descriptionUrl: "https://www.investopedia.com/terms/g/growthrates.asp"
 
+Node: dcid:percentile10
+typeOf: schema:Property
+name: "percentile10"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Number
+
+Node: dcid:percentile90
+typeOf: schema:Property
+name: "percentile90"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Number
+
 Node: dcid:County
 name: "County"
 typeOf: schema:Class
@@ -246,6 +274,19 @@ typeOf: schema:Class
 description: "Subdivisions of US Metropolitan Statistical Areas (MSAs) and New England City and Town Areas (NECTAs)."
 subClassOf: schema:Place
 
+Node: dcid:PinCodeArea
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+name: "PinCodeArea"
+description: "Postal delivery area representations of India Post."
+
+Node: dcid:pinCode
+typeOf: schema:Property
+name: "pinCode"
+description: "PIN code is a six digit code in Indian postal code system used by India Post."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
 Node: dcid:administrativeCapital
 name: "administrativeCapital"
 typeOf: schema:Property
@@ -310,6 +351,8 @@ Node: employmentStatus
 dcid: "employmentStatus"
 typeOf: schema:Property
 name: "employmentStatus"
+domainIncludes: schema:Person
+rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum
 
 Node: geoNamesId
 dcid: "geoNamesId"
@@ -324,6 +367,13 @@ typeOf: schema:Property
 domainIncludes: schema:Observation, schema:StatVarObservation
 rangeIncludes: schema:Text
 description: "The length of time an Observation took place over. The format follows `P[0-9]*[Y|M|D|h|m|s]`. For example, P1Y is Period 1 Year, P3M is Period 3 Months, P3h is Period 3 hours."
+
+Node: dcid:accumulationPeriod
+name: "accumulationPeriod"
+typeOf: schema:Property
+domainIncludes: schema:Observation, schema:StatVarObservation
+rangeIncludes: schema:Quantity
+description: "The length of time an Observation covers. Observation does not happen throughout that time. For example, [2 dcs:Month] means that a value includes accumulation of the previous 2 months."
 
 Node: housingUnits
 dcid: "housingUnits"
@@ -389,6 +439,21 @@ dcid: "CriminalActivities"
 typeOf: schema:Class
 name: "CriminalActivities"
 subClassOf: schema:Intangible
+description: "Refers to an offense which is a breach of the criminal laws."
+
+Node: dcid:CriminalIncidents
+typeOf: schema:Class
+name: "CriminalIncidents"
+subClassOf: schema:Intangible
+description: "A criminal incident is defined as one or more offenses committed by the same offender, or group of offenders acting in concert, at the same time and place."
+descriptionUrl: "https://ucr.fbi.gov/nibrs/2015/resource-pages/incidents-and-offenses-2015_final.pdf"
+
+Node: dcid:HateCrimeIncidents
+typeOf: schema:Class
+name: "HateCrimeIncidents"
+subClassOf: dcs:CriminalIncidents
+description: "A hate crime is a criminal offense against a person or property motivated in whole or in part by an offender's bias against a race, religion, disability, sexual orientation, ethnicity, gender, or gender identity."
+descriptionUrl: "https://www.fbi.gov/investigate/civil-rights/hate-crimes"
 
 Node: location
 dcid: "location"
@@ -416,10 +481,117 @@ rangeIncludes: schema:Text
 
 Node: crimeType
 dcid: "crimeType"
-domainIncludes: schema:CriminalActivities
+domainIncludes: schema:CriminalActivities, dcs:CriminalIncidents
 rangeIncludes: schema:CrimeTypeEnum
 typeOf: schema:Property
 name: "crimeType"
+
+# TODO: Remove this once related statvars are updated to use HateCrimeIncidents
+Node: dcid:isHateCrime
+name: "isHateCrime"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: schema:Boolean
+
+Node: dcid:biasMotivation
+name: "biasMotivation"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
+rangeIncludes: schema:Property, dcs:BiasMotivationEnum
+
+Node: dcid:sexualOrientation
+name: "sexualOrientation"
+typeOf: schema:Property
+domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:SexualOrientationEnum
+description: "The term for a person's physical, romantic, and/or emotional attraction to members of the same and/or opposite sex, including lesbian, gay, bisexual, and heterosexual (straight) individuals."
+descriptionUrl: "https://www.fbi.gov/file-repository/ucr/ucr-hate-crime-data-collection-guidelines-training-manual-02272015.pdf/view"
+
+Node: dcid:offenderType
+name: "offenderType"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:OffenderTypeEnum
+
+Node: dcid:ethnicity
+name: "ethnicity"
+typeOf: schema:Property
+domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:EthnicityEnum
+
+Node: dcid:offenderRace
+name: "offenderRace"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:RaceCodeEnum
+
+Node: dcid:offenderEthnicity
+name: "offenderEthnicity"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+rangeIncludes: dcs:EthnicityEnum
+
+Node: dcid:offenderAge
+name: "offenderAge"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalIncidents
+rangeIncludes: dcs:QuantityRange
+
+Node: dcid:victimAge
+name: "victimAge"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalIncidents
+rangeIncludes: dcs:QuantityRange
+
+Node: dcid:targetedRace
+name: "targetedRace"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
+rangeIncludes: dcs:RaceCodeEnum
+
+Node: dcid:targetedGender
+name: "targetedGender"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
+rangeIncludes: schema:GenderType
+
+Node: dcid:targetedEthnicity
+name: "targetedEthnicity"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
+rangeIncludes: dcs:EthnicityEnum
+
+Node: dcid:targetedReligion
+name: "targetedReligion"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
+rangeIncludes: dcs:ReligionEnum
+
+Node: dcid:targetedDisabilityStatus
+name: "targetedDisabilityStatus"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
+rangeIncludes: dcs:USC_DisabilityStatusEnum
+
+Node: dcid:targetedSexualOrientation
+name: "targetedSexualOrientation"
+typeOf: schema:Property
+domainIncludes: dcs:CriminalActivities, dcs:HateCrimeIncidents
+rangeIncludes: dcs:SexualOrientationEnum
+
+Node: victimType
+dcid: "victimType"
+name: "victimType"
+typeOf: schema:Property
+rangeIncludes: dcs:VictimTypeEnum, schema:Class
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
+
+Node: locationOfCrime
+dcid: "locationOfCrime"
+name: "locationOfCrime"
+typeOf: schema:Property
+rangeIncludes: dcs:LocationOfCrimeEnum, schema:Class
+domainIncludes: dcs:CriminalActivities, dcs:CriminalIncidents
 
 Node: voterStatus
 dcid: "voterStatus"
@@ -453,7 +625,7 @@ Node: area
 dcid: "area"
 name: "area"
 typeOf: schema:Property
-domainIncludes: schema:AdministrativeArea
+domainIncludes: schema:AdministrativeArea, schema:LandCover
 rangeIncludes: schema:Number
 
 Node: countValue
@@ -476,6 +648,36 @@ rangeIncludes: schema:Number
 name: "medianValue"
 typeOf: schema:Property
 domainIncludes: schema:Observation
+
+Node: dcid:stdDeviationValue
+typeOf: schema:Property
+name: "stdDeviationValue"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: dcs:Number
+description: "A measure of the amount of variation or dispersion of a set of values"
+descriptionUrl: "https://en.wikipedia.org/wiki/Standard_deviation"
+
+Node: dcid:skewnessValue
+typeOf: schema:Property
+name: "skewnessValue"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: dcs:Number
+description: "A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean"
+descriptionUrl: "https://en.wikipedia.org/wiki/Skewness"
+
+Node: dcid:kurtosisValue
+typeOf: schema:Property
+name: "kurtosisValue"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: dcs:Number
+description: "A measure of the 'tailedness' of the probability distribution of a real-valued random variable"
+descriptionUrl: "https://en.wikipedia.org/wiki/Kurtosis"
+
+Node: dcid:sampleSize
+typeOf: schema:Property
+name: "sampleSize"
+domainIncludes: schema:Observation
+rangeIncludes: schema:Number
 
 Node: employment
 dcid: "employment"
@@ -558,6 +760,11 @@ subClassOf: schema:Person
 name: "USCWorker"
 description: "An employee or worker as defined by US Census Bureau that excludes self-employed individuals, employees of private households, railroad employees, agricultural production employees and most government employees"
 
+Node: dcid:Child
+typeOf: schema:Class
+subClassOf: schema:Person
+name: "Child"
+
 Node: DarwinCoreBiologicalSpecimen
 dcid: "BiologicalSpecimen"
 name: "BiologicalSpecimen"
@@ -596,6 +803,81 @@ rangeIncludes: dcs:USC_EducationalAttainmentEnum, schema:Text
 domainIncludes: schema:BirthEvent
 description: "The highest level of education attained by the mother at the time of birth"
 
+Node: dcid:mothersEthnicity
+typeOf: schema:Property
+name: "mothersEthnicity"
+rangeIncludes: dcs:EthnicityEnum
+domainIncludes: schema:BirthEvent
+description: "The ethnicity of the mother"
+
+Node: dcid:mothersNativity
+typeOf: schema:Property
+name: "mothersNativity"
+rangeIncludes: dcs:NativityEnum
+domainIncludes: schema:BirthEvent
+description: "The nativity of the mother"
+
+Node: dcid:mothersMaritalStatus
+typeOf: schema:Property
+name: "mothersMaritalStatus"
+rangeIncludes: dcs:USC_MaritalStatusEnum
+domainIncludes: schema:BirthEvent
+description: "The marital status of the mother"
+
+Node: dcid:oeGestationalAge
+typeOf: schema:Property
+name: "oeGestationalAge"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "Obstetric/clinical Estimate (OE) based gestational age is the best estimate of the infant's gestation in completed weeks based on the birth attendant's final estimate of gestation."
+descriptionUrl: "https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf"
+
+Node: dcid:lmpGestationalAge
+typeOf: schema:Property
+name: "lmpGestationalAge"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "Last Menstrual Period (LMP) based gestational age is measured as the difference between the date of the last normal menses and the date of infant's birth."
+descriptionUrl: "https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf"
+
+Node: dcid:birthWeight
+typeOf: schema:Property
+name: "birthWeight"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "The weight of the child at birth."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/Natality.html#Weight"
+
+Node: dcid:prePregnancyBMI
+typeOf: schema:Property
+name: "prePregnancyBMI"
+rangeIncludes: schema:Number
+domainIncludes: schema:BirthEvent
+description: "The pre-pregnancy Body Mass Index (BMI) of the mother."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/natality-expanded.html#Average-Pre-pregnancy-BMI"
+
+Node: dcid:intervalSinceLastBirth
+typeOf: schema:Property
+name: "intervalSinceLastBirth"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "The elapsed time since the mother's last live birth."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/natality-expanded.html#Interval-Last-Live-Birth"
+
+Node: dcid:intervalSinceLastPregnancyOutcomeNotLiveBirth
+typeOf: schema:Property
+name: "intervalSinceLastPregnancyOutcomeNotLiveBirth"
+rangeIncludes: schema:Quantity
+domainIncludes: schema:BirthEvent
+description: "The elapsed time since the mother's last pregnancy outcome for outcomes other than live birth."
+descriptionUrl: "https://wonder.cdc.gov/wonder/help/natality-expanded.html#Interval-Last-Other-Pregnancy-Outcome"
+
+Node: dcid:prenatalVisitCount
+typeOf: schema:Property
+name: "prenatalVisitCount"
+rangeIncludes: schema:Number
+domainIncludes: schema:BirthEvent
+
 # Begin Planned Parenthood additions
 Node: medicalSpecialty
 typeOf: schema:Property
@@ -608,7 +890,7 @@ description: "Any specific branch of medical science or practice. Medical specia
 Node: dcid:PlannedParenthoodClinic
 typeOf: Class
 subClassOf: schema:MedicalClinic
-name: "Planned Parenthood Clinic"
+name: "PlannedParenthoodClinic"
 description: "A Planned Parenthood Health Center"
 # End Planned Parenthood additions
 
@@ -1019,13 +1301,15 @@ subClassOf: schema:Organization
 dcid: "Household"
 name: "Household"
 description: "A household is composed of one or more people who occupy a housing unit. Not all households contain families"
+descriptionUrl: "https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html#household"
 
 Node: HousingUnitClass
 typeOf:schema:Class
 subClassOf: schema:Accommodation
 dcid: "HousingUnit"
 name: "HousingUnit"
-description: "A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room that is occupied, or, if vacant, is intended for occupancy "
+description: "A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room that is occupied, or, if vacant, is intended for occupancy"
+descriptionUrl: "https://www.census.gov/programs-surveys/popest/about/glossary/housing.html"
 
 Node: dcid:grossRent
 typeOf: schema:Property
@@ -1034,19 +1318,27 @@ description: "Gross rent is the contract rent plus estimated average monthly cos
 rangeIncludes: schema:Number
 domainIncludes: dcs:HousingUnit
 
+Node: dcid:ownerCost
+typeOf: schema:Property
+name: "ownerCost"
+description: "Owner cost is the total housing cost which includes but not limited to costs towards taxes, utilities, insurance, mortgages and fuels"
+domainIncludes: dcs:HousingUnit
+rangeIncludes: schema:Quantity, dcs:QuantityRange
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: dcid:householdSize
 typeOf: schema:Property
 name: "householdSize"
 description: "Size of the household in terms of numbers persons residing in the housing unit"
 rangeIncludes: schema:Quantity, dcs:QuantityRange
-domainIncludes: dcs:HousingUnit
+domainIncludes: dcs:HousingUnit, dcs:Household
 
-Node: dcid:occupancyStatus
+Node: dcid:familySize
 typeOf: schema:Property
-name: "occupancyStatus"
-description: "Describes whether Housing units are occupied or not"
-rangeIncludes: dcs:OccupancyStatusEnum
-domainIncludes: dcs:HousingUnit
+name: "familySize"
+description: "Size of the family in terms of numbers of persons in a single-family"
+rangeIncludes: schema:Quantity, dcs:QuantityRange
+domainIncludes: dcs:HousingUnit, dcs:Household
 
 Node: subClassificationOf
 typeOf: schema:Property
@@ -1245,6 +1537,17 @@ typeOf: dcs:WeightUnitOfMeasure
 name: "MetricTon"
 description: "A unit of weight equal to 1000 kilograms."
 
+Node: dcid:Gram
+typeOf: dcs:WeightUnitOfMeasure
+name: "Gram"
+description: "A unit of weight equal to 0.001 kilograms."
+
+Node: dcid:Kilogram
+typeOf: dcs:WeightUnitOfMeasure
+name: "Kilogram"
+description: "The kilogram (kg) is defined by taking the fixed numerical value of the Planck constant h when expressed in the unit J s"
+descriptionUrl: "https://www.nist.gov/pml/weights-and-measures/si-units-mass"
+
 Node: dcid:EnergyUnitOfMeasure
 typeOf: schema:Class
 subClassOf: dcs:UnitOfMeasure
@@ -1258,7 +1561,7 @@ description: "A unit of energy defined as 1/1000th of the amount of energy relea
 descriptionUrl: "https://en.wikipedia.org/wiki/Tonne_of_oil_equivalent"
 
 Node: dcid:Millibar
-typeOf: dcs:SpeedUnitOfMeasure
+typeOf: dcs:PressureUnitOfMeasure
 name: "Millibar"
 description: "A pressure unit of measure representing 100 pascals, or one thousandth of a bar."
 
@@ -1282,13 +1585,14 @@ Node: Inch
 typeOf: dcid:LengthUnitOfMeasure
 name: "Inch"
 dcid: "Inch"
-description: "A length unit of measure equivalent to a twelth of a foot."
+description: "A length unit of measure equivalent to a twelfth of a foot."
 
 Node: Foot
 typeOf: dcid:LengthUnitOfMeasure
 name: "Foot"
 dcid: "Foot"
 description: "A length unit of measure equivalent to a twelve inches."
+alternateName: "Feet"
 
 Node: Yard
 typeOf: dcid:LengthUnitOfMeasure
@@ -1344,6 +1648,13 @@ name: "SquareMeter"
 dcid: "SquareMeter"
 description: "An area equal to a square with each side length equivalent to one meter."
 
+Node: SquareFoot
+typeOf: dcid:AreaUnitOfMeasure
+name: "SquareFoot"
+dcid: "SquareFoot"
+description: "An area equal to a square with each side length equivalent to one foot."
+alternateName: "SquareFeet"
+
 Node: dcid:Acre
 typeOf: dcid:AreaUnitOfMeasure
 name: "Acre"
@@ -1378,6 +1689,11 @@ name: "MilePerSquareMile"
 dcid: "MilePerSquareMile"
 description: "A unit ratio between mile length and square mile area."
 
+Node: dcid:MillimeterPerYear
+typeOf: dcs:UnitOfMeasure
+name: "MillimeterPerYear"
+description: "A rate unit that represents the millimeters of sea-level increase, rainfall, etc. per year."
+
 Node: DeathPer1000Births
 typeOf: dcs:UnitOfMeasure
 name: "DeathPer1000Births"
@@ -1388,6 +1704,12 @@ Node: dcid:USDollar
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "USDollar"
 description: "The official currency of the United States of America."
+
+Node: dcid:InflationAdjustedUSD_CurrentYear
+typeOf: dcs:CurrencyUnitOfMeasure
+name: "InflationAdjustedUSD_CurrentYear"
+description: "The US Dollar adjusted for inflation using Consumer Price Index (CPI) averages"
+descriptionUrl: "https://www.census.gov/content/dam/Census/library/publications/2018/acs/acs_general_handbook_2018_ch10.pdf"
 
 Node: dcid:Euro
 typeOf: dcs:CurrencyUnitOfMeasure
@@ -1457,6 +1779,12 @@ name: "Day"
 dcid: "Day"
 description: "A unit of time equivalent to 24 hours."
 
+Node: Week
+typeOf: dcid:TimeUnitOfMeasure
+name: "Week"
+dcid: "Week"
+description: "A unit of time equivalent to one week on the Gregorian calendar."
+
 Node: Month
 typeOf: dcid:TimeUnitOfMeasure
 name: "Month"
@@ -1469,10 +1797,47 @@ name: "Year"
 dcid: "Year"
 description: "A unit of time equivalent to one year on the Gregorian calendar."
 
+Node: dcid:TemperatureUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "TemperatureUnitOfMeasure"
+description: "A unit used to denote a measurement of temperature."
+
+Node: dcid:Celsius
+typeOf: schema:Class
+subClassOf: dcs:TemperatureUnitOfMeasure
+name: "Celsius"
+
+Node: dcid:Kelvin
+typeOf: schema:Class
+subClassOf: dcs:TemperatureUnitOfMeasure
+name: "Kelvin"
+
+Node: dcid:PrecipiationUnitOfMeasure
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+name: "PrecipiationUnitOfMeasure"
+description: "A unit used to denote a measurement of precipitation."
+
+Node: dcid:KilogramsPerMeterSquaredSecond
+typeOf: schema:Class
+subClassOf: dcs:PrecipiationUnitOfMeasure
+name: "KilogramsPerMeterSquaredSecond"
+
 Node: dcid:RatioToPovertyLine
 typeOf: dcs:UnitOfMeasure
 name: "RatioToPovertyLine"
 description: "A unit indicating a ratio to poverty line. If one is at poverty line, then one has a RatioToPovertyLine of 1. If one's income is twice that of the poverty line threshold, then one has a RatioToPovertyLine of 2."
+
+Node: dcid:RatioToHouseholdIncome
+typeOf: dcs:UnitOfMeasure
+name: "RatioToHouseholdIncome"
+description: "A unit indicating a ratio to household income. If a household does not spend their income, then the household has a RatioToHouseholdIncome of 1. If 30% of a households's income is spent as gross rent for a housing unit, then the household's gross rent has a RatioToHouseholdIncome of 0.3"
+
+Node: dcid:OccupantsPerRoom
+typeOf: dcs:UnitOfMeasure
+name: "OccupantsPerRoom"
+description: "A unit indicating the number of people who occupy a room in a housing unit or a household."
 
 Node: dcid:PublicUtility
 name: "PublicUtility"
@@ -1893,7 +2258,7 @@ description: "Bottom 1000 locations with the same PlaceStatisticalVariable attri
 
 Node: dcid:allLocations
 typeOf: schema:Property
-name: "allLocaitons"
+name: "allLocations"
 domainIncludes: dcs:PlaceStatisticalVariable
 rangeIncludes: schema:Place
 description: "All locations with the same PlaceStatisticalVariable attributes, for a given ranking algorithm."
@@ -2098,6 +2463,11 @@ typeOf: dcs:HumanSettlementClassificationEnum
 description: "A geographic area that is located outside towns and cities, typically with low population density and small settlements."
 descriptionUrl: "https://en.wikipedia.org/wiki/Rural_area"
 
+Node: dcid:SemiUrban
+name: "SemiUrban"
+typeOf: dcs:HumanSettlementClassificationEnum
+description: "A geographic area with population density lower than urban and more than rural."
+
 Node: dcid:isoCode
 domainIncludes: schema:Place
 typeOf: schema:Property
@@ -2279,6 +2649,14 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:QuantityRange
 
+Node: dcid:usualHoursWorked
+name: "usualHoursWorked"
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:QuantityRange
+description: "The number of hours a person usually worked in a work week. If the number of hours worked vary considerably across work weeks, this can also be looked as the approximate average of the hours worked per week."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
 Node: dcid:workerStatus
 name: "workerStatus"
 typeOf: schema:Property
@@ -2289,7 +2667,7 @@ supersededBy: dcs:workerClassification
 Node: dcid:workStatus
 name: "workStatus"
 typeOf: schema:Property
-domainIncludes: schema:Household
+domainIncludes: schema:Household, schema:Person
 rangeIncludes: dcs:USC_WorkStatusEnum
 
 Node: dcid:Vaccine
@@ -2310,6 +2688,14 @@ name: "closeMatch"
 typeOf: schema:Property
 domainIncludes: schema:Thing
 rangeIncludes: schema:Thing, schema:Text
+
+Node: dcid:ochaPCode
+name: "ochaPCode"
+typeOf: schema:Property
+description: "A P-code, short for place code, is a kind of geocode from UN OCHA used mostly by emergency response teams."
+descriptionUrl: "https://en.wikipedia.org/wiki/Place_code"
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
 
 Node: dcid:indianCensusAreaCode2011
 typeOf: schema:Property
@@ -2339,6 +2725,27 @@ description: "A unique code for a place in India as per the Unified District Inf
 domainIncludes: schema:Place
 rangeIncludes: schema:Text
 
+Node: dcid:pinCode
+typeOf: schema:Property
+name: "pinCode"
+description: "PIN code is a six digit code in Indian postal code system used by India Post."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:censusDivisionId
+name: "censusDivisionId"
+typeOf: schema:Property
+domainIncludes: schema:CensusDivision
+rangeIncludes: schema:Text
+description: "An identifier for a census division which is a subdivision of a census region. The US has states grouped into 9 divisions."
+
+Node: dcid:censusRegionId
+name: "censusRegionId"
+typeOf: schema:Property
+domainIncludes: schema:CensusRegion
+rangeIncludes: schema:Text
+description: "An identifier for a census region. The US has states grouped into 4 regions which are sub-divided into 9 census regions."
+
 Node: dcid:cost
 typeOf: schema:Property
 name: "cost"
@@ -2346,3 +2753,187 @@ domainIncludes: dcs:Fuel
 rangeIncludes: schema:Quantity
 description: "The value of money that has been used up to produce something or deliver a service."
 descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
+
+Node: dcid:confidenceIntervalLowerLimit
+typeOf: schema:Property
+domainIncludes: dcs:Observation
+name: "confidenceIntervalLowerLimit"
+description: "The lower limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
+
+Node: dcid:confidenceIntervalUpperLimit
+typeOf: schema:Property
+domainIncludes: schema:Observation
+name: "confidenceIntervalUpperLimit"
+description: "The upper limit of a confidence interval for a measured value."
+rangeIncludes: dcs:Number
+
+Node: dcid:confidenceIntervalSignificanceLevel
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "confidenceIntervalSignificanceLevel"
+description: "The probability (expressed as a precentage) of a study/experiment rejecting the null hypothesis about a parameter/estimate, given that the null hypothesis is true. It corresponds to the confidence interval constructed."
+rangeIncludes: dcs:Percent
+descriptionUrl: "https://en.wikipedia.org/wiki/Statistical_significance"
+
+Node: dcid:predictionIntervalUpperLimit
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "predictionIntervalUpperLimit"
+description: "The upper limit of a prediction interval within which a future observation will fall, with a certain probability, given what has already been observed."
+rangeIncludes: dcs:Number
+descriptionUrl: "https://en.wikipedia.org/wiki/Prediction_interval"
+
+Node: dcid:predictionIntervalLowerLimit
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "predictionIntervalLowerLimit"
+description: "The lower limit of a prediction interval within which a future observation will fall, with a certain probability, given what has already been observed."
+rangeIncludes: dcs:Number
+descriptionUrl: "https://en.wikipedia.org/wiki/Prediction_interval"
+
+Node: dcid:predictionIntervalSignificanceLevel
+typeOf: schema:Property
+domainIncludes: dcs:StatVarObservation
+name: "predictionIntervalSignificanceLevel"
+description: "The probability (expressed as a percentage) of a predicted/estimated value falling within the prediction interval specified."
+rangeIncludes: dcs:Percent
+descriptionUrl: "https://en.wikipedia.org/wiki/Statistical_significance"
+
+Node: dcid:numberOfDays
+rangeIncludes: schema:Integer
+domainIncludes: schema:Place, dcs:HeatWaveEvent
+typeOf: schema:Property
+name: "numberOfDays"
+
+Node: dcid:numberOfMonths
+rangeIncludes: schema:Integer
+domainIncludes: schema:Place
+typeOf: schema:Property
+name: "numberOfMonths"
+
+Node: dcid:AvailableVehicles
+typeOf: dcs:UnitOfMeasure
+name: "AvailableVehicles"
+description: "Describes the number of passenger cars, vans, and pickup or panel trucks of one-ton(2,000 pounds) capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Motorcycles or other recreational vehicles are excluded."
+descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
+
+Node: dcid:AmenityFeatureEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "AmenityFeatureEnum"
+
+Node: dcid:Library
+typeOf: dcs:AmenityFeatureEnum
+name: "Library"
+
+Node: dcid:ComputerFacility
+typeOf: dcs:AmenityFeatureEnum
+name: "ComputerFacility"
+
+Node: dcid:Internet
+typeOf: dcs:AmenityFeatureEnum
+name: "Internet"
+
+Node: dcid:solute
+typeOf: schema:Property
+name: "solute"
+rangeIncludes: schema:Substance
+domainIncludes: schema:Thing
+description: "A solute is a substance dissolved in another substance"
+
+Node: dcid:solvent
+typeOf: schema:Property
+name: "solvent"
+rangeIncludes: schema:Substance
+domainIncludes: schema:Thing
+description: "A solvent is a substance that dissolves another substance"
+
+## Glaciers
+
+Node: dcid:Glacier
+typeOf: schema:Class
+subClassOf: schema:Landform
+name: "Glacier"
+description: "A persistent body of dense ice that is constantly moving under its own weight."
+descriptionUrl: "https://en.wikipedia.org/wiki/Glacier"
+
+Node: dcid:glimsId
+typeOf: schema:Property
+name: "glimsId"
+description: "Identifier of a glacier in GLIMS (Global Land Ice Measurements from Space) databases."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Glacier
+
+Node: dcid:rgiId
+typeOf: schema:Property
+name: "rgiId"
+description: "Identifier of a glacier in Randolph Glacier Inventory."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Glacier
+
+Node: dcid:isProvisional
+typeOf: schema:Property
+name: "isProvisional"
+description: "Boolean flag for schema nodes that are not yet finalized"
+domainIncludes: schema:Thing
+rangeIncludes: schema:Boolean
+
+Node: dcid:climaticSeason
+typeOf: schema:Property
+name: "climaticSeason"
+domainIncludes: dcs:MedicalConditionIncident
+rangeIncludes: dcs:ClimaticSeasonEnum
+description: "A season is a period of the year that is distinguished by special climate conditions."
+descriptionUrl: "https://www.nationalgeographic.org/encyclopedia/season/"
+
+Node: dcid:linkedContainedInPlace
+typeOf: schema:Property
+name: "linkedContainedInPlace"
+domainIncludes: schema:Place
+rangeIncludes: schema:Place
+description: "This a derived property that directly associates entities that are directly and indirectly related by containedInPlace relations."
+
+Node: dcid:Portion
+typeOf: dcs:UnitOfMeasure
+name: "Portion"
+description: "A unit of measure used to measure serving of food."
+
+Node: dcid:exchangeRate
+typeOf: schema:Property
+name: "exchangeRate"
+description: "The price of a base currency needed in order to exchange to a single unit of another currency, e.g. if the exchange rate of EUR to GBP is 1.2, it takes 1.2 EUR to exchange for 1 GBP."
+domainIncludes: schema:Currency
+rangeIncludes: schema:Quantity
+
+Node: dcid:currencyISOCode
+typeOf: schema:Property
+name: "currencyISOCode"
+description: "The current ISO 4217 code assigned to a currency unit."
+domainIncludes: dcs:CurrencyUnitOfMeasure
+rangeIncludes: schema:Text
+
+Node: dcid:usesCurrency
+typeOf: schema:Property
+name: "usesCurrency"
+description: "The unit of currency used by a Place."
+domainIncludes: schema:Place
+rangeIncludes: dcs:Currency
+
+Node: dcid:Topic
+typeOf: schema:Class
+subClassOf: schema:Intangible
+name: "Topic"
+description: "Represents a broad topic in the real-world such as economy, poverty, crime, etc.  Typically used to associated variables (StatisticalVariable) related to a common concept."
+
+Node: dcid:relevantVariable
+typeOf: schema:Property
+description: "List of variables relevant to a topic.  Contains a list of ordered values."
+domainIncludes: dcs:Topic
+rangeIncludes: dcs:StatisticalVariable, schema:Property
+
+Node: dcid:StatVarPeerGroup
+typeOf: schema:Class
+subClassOf: schema:Intangible
+name: "StatVarPeerGroup"
+description: "Represents a group of StatisticalVariable nodes that are comparable peers."

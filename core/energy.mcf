@@ -44,7 +44,7 @@ descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=H"
 Node: dcid:generation
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
 name: "generation"
 
 Node: dcid:producingSector
@@ -74,8 +74,14 @@ name: "retailSales"
 Node: dcid:consumption
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding
 name: "consumption"
+
+Node: dcid:expenditure
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding
+name: "expenditure"
 
 Node: dcid:retailPrice
 typeOf: schema:Property
@@ -88,7 +94,7 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Energy, schema:Fuel, schema:Product
 name: "stock"
-supercededBy: dcid:stocks
+supersededBy: dcid:stocks
 
 Node: dcid:stocks
 typeOf: schema:Property
@@ -101,7 +107,7 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Energy, schema:Fuel, schema:Product
 name: "receipt"
-supercededBy: dcid:receipts
+supersededBy: dcid:receipts
 
 Node: dcid:receipts
 typeOf: schema:Property
@@ -111,8 +117,8 @@ name: "receipts"
 
 Node: dcid:usedFor
 typeOf: schema:Property
-rangeIncludes: dcs:EnergyConsumptionSectorEnum, dcs:FuelUsageSourceEnum
-domainIncludes: dcs:Energy, dcs:Fuel
+rangeIncludes: dcs:EnergyConsumptionSectorEnum, dcs:FuelUsageSourceEnum, dcs:WaterUseCategoryEnum
+domainIncludes: dcs:Energy, dcs:Fuel, dcs:Water
 name: "usedFor"
 
 Node: dcid:salesRevenue
@@ -136,7 +142,7 @@ name: "outage"
 Node: dcid:imports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
 name: "imports"
 
 Node: dcid:exports
@@ -148,7 +154,7 @@ name: "exports"
 Node: dcid:reserves
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Energy, schema:Fuel
 name: "reserves"
 
 Node: dcid:loss
@@ -197,6 +203,10 @@ name: "SubbituminousCoal"
 Node: dcid:ConventionalHydroelectric
 typeOf: dcs:EnergySourceEnum
 name: "ConventionalHydroelectric"
+
+Node: dcid:SmallHydroelectric
+typeOf: dcs:EnergySourceEnum
+name: "SmallHydroelectric"
 
 Node: dcid:Geothermal
 typeOf: dcs:EnergySourceEnum
@@ -326,9 +336,46 @@ Node: dcid:CokeOvenGas
 typeOf: dcs:EnergySourceEnum
 name: "Coke oven gas"
 
+Node: dcid:CokeCoal
+typeOf: dcs:EnergySourceEnum
+name: "Coke coal"
+
 Node: dcid:CokingCoal
 typeOf: dcs:EnergySourceEnum
 name: "Coking coal"
+
+Node: dcid:NonCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Non Coking Coal"
+
+Node: dcid:PrimeCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Prime Coking Coal"
+
+Node: dcid:SemiCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Semi Coking Coal"
+
+Node: dcid:MediumCokingCoal
+typeOf: dcs:EnergySourceEnum
+name: "Medium Coking Coal"
+
+Node: dcid:HighSulphurCoal
+typeOf: dcs:EnergySourceEnum
+name: "High Sulphur Coal"
+
+Node: dcid:MiddlingsCoal
+typeOf: dcs:EnergySourceEnum
+name: "Middlings Coal"
+
+Node: dcid:RawCoal
+typeOf: dcs:EnergySourceEnum
+name: "Raw Coal"
+
+Node: dcid:WashedCoal
+typeOf: dcs:EnergySourceEnum
+name: "Washed Coal"
+
 
 Node: dcid:CombustibleFuel
 typeOf: dcs:EnergySourceEnum
@@ -409,9 +456,9 @@ typeOf: dcs:EnergySourceEnum
 name: "Liquid bio fuel"
 specializationOf: dcid:HeatCombustibleFuels
 
-Node: dcid:LiquifiedPetroleumGas
+Node: dcid:LiquefiedPetroleumGas
 typeOf: dcs:EnergySourceEnum
-name: "Liquified petroleum gas (LPG)"
+name: "Liquefied petroleum gas (LPG)"
 
 Node: dcid:Lubricants
 typeOf: dcs:EnergySourceEnum
@@ -551,6 +598,14 @@ Node: dcid:WhiteSpirit
 typeOf: dcs:EnergySourceEnum
 name: "White spirit"
 
+Node: dcid:DistrictHeat
+typeOf: dcs:EnergySourceEnum
+name: "District Heat"
+
+Node: dcid:CBECS_AllMajorFuels
+typeOf: dcs:EnergySourceEnum
+name: "CBECS All Major Fuels"
+
 ## Electricity production/consumption sector enums
 
 Node: dcid:ElectricityProductionSectorEnum
@@ -580,7 +635,7 @@ typeOf: dcs:ElectricityProductionSectorEnum
 name: "UtilityScale"
 
 Node: dcid:Transportation
-typeOf: dcs:ElectricityConsumptionSectorEnum
+typeOf: dcs:ElectricityConsumptionSectorEnum, dcs:EmissionSourceEnum
 name: "Transportation"
 
 # other enum value: dcid:ElectricPower
@@ -626,7 +681,7 @@ subClassOf: schema:Enumeration
 name: "FuelUsageSourceEnum"
 
 Node: dcid:ElectricityGeneration
-typeOf: dcs:EnergyConsumptionSectorEnum, schema:FuelUsageSourceEnum, dcs:Production
+typeOf: dcs:EnergyConsumptionSectorEnum, schema:FuelUsageSourceEnum, dcs:Production, dcs:EmissionSourceEnum
 name: "ElectricityGeneration"
 
 Node: dcid:UsefulThermalOutputInCHPSystem
@@ -640,6 +695,14 @@ name: "ElectricityGenerationAndThermalOutput"
 Node: dcid:NonEnergyUse
 typeOf: schema:FuelUsageSourceEnum
 name: "Non-energy use"
+
+Node: dcid:Cooling
+typeOf: schema:FuelUsageSourceEnum
+name: "Cooling"
+
+Node: dcid:SpaceHeating
+typeOf: schema:FuelUsageSourceEnum
+name: "Space Heating"
 
 ## EnergyConsumptionSectorEnum
 
@@ -657,7 +720,7 @@ typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Manufacturing, construction, non-fuel mining industry"
 
 Node: dcid:Manufacturing
-typeOf: dcs:EnergyConsumptionSectorEnum
+typeOf: dcs:EnergyConsumptionSectorEnum, dcs:EmissionSourceEnum
 name: "Manufacturing"
 
 Node: dcid:Construction
@@ -768,7 +831,7 @@ typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Households"
 
 Node: dcid:Agriculture
-typeOf: dcs:EnergyConsumptionSectorEnum
+typeOf: dcs:EnergyConsumptionSectorEnum, dcs:EmissionSourceEnum, dcs:FireCauseSpecificEnum
 name: "Agriculture"
 
 Node: dcid:CommerceAndPublicServices
@@ -810,7 +873,40 @@ name: "Industry"
 Node: dcid:EnergyIndustry
 typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Energy industry"
-specializationOf: Industry
+specializationOf: dcs:Industry
+
+Node: dcid:BricksConstructionIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Bricks Construction Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:CementConstructionIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Cement Construction Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:FertilizerIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Fertilizer Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:RetailIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Retail Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:TeaIndustry
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Tea Industry"
+specializationOf: dcs:Industry
+
+Node: dcid:OilGasImports
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Oil Gas Imports"
+
+Node: dcid:OilGasSales
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "Oil Gas Sales"
 
 Node: dcid:CokeOvens
 typeOf: dcs:EnergyConsumptionSectorEnum
@@ -897,7 +993,7 @@ typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Pump storage plants"
 specializationOf: dcid:EnergyIndustry
 
-Node: dcid:LiquifiedNaturalGasPlants
+Node: dcid:LiquefiedNaturalGasPlants
 typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Liquified natural gas plants"
 specializationOf: dcid:EnergyIndustry
@@ -933,6 +1029,14 @@ name: "Weekly"
 Node: dcid:Daily
 typeOf: dcs:StatAccumulationPeriodEnum
 name: "Daily"
+
+Node: dcid:EveryWeekday
+typeOf: dcs:StatAccumulationPeriodEnum
+specializationOf: dcs:Daily
+name: "EveryWeekday"
+description: "Every single weekday of the week except Saturday and Sunday."
+descriptionUrl: "https://nhts.ornl.gov/faq"
+
 
 # Energy Units
 
@@ -1027,6 +1131,17 @@ typeOf: dcs:VolumeUnitOfMeasure
 name: "Cubic meter"
 description: "It is the volume of a cube with edges one metre in length, also equal to 1000 liters."
 
+Node: dcid:CubicFoot
+typeOf: dcs:VolumeUnitOfMeasure
+name: "Cubic foot"
+description: "It is the volume of a cube with edges one feet in length."
+
+Node: dcid:USGallon
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USGallon"
+description: "It is the unit of volume equal to 3.785411784 Liters."
+descriptionUrl: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf"
+
 Node: dcid:ShortTon
 typeOf: dcs:EnergyUnitOfMeasure
 description: "A mass measurement unit equal to 2,000 pounds-mass (907.18474 kg). It is commonly used in the United States, where it is known as simply a common ton."
@@ -1039,9 +1154,24 @@ name: "Mcf"
 description: "Volume of 1000 cubic feet."
 descriptionUrl: "https://www.eia.gov/tools/faqs/faq.php?id=45"
 
+Node: dcid:StandardCubicMeter
+typeOf: dcs:VolumeUnitOfMeasure
+name: "MillionMetricStandardCubicMeters"
+description: "Standard cubic meter (SCM) is a unit of measure for amount of gas in one cubic meter at 15° Celcius and an absolute pressure of 1.01325 bar."
+descriptionUrl: "https://www.lawinsider.com/dictionary/standard-cubic-metre"
+
+Node: dcid:MillionMetricStandardCubicMeter
+typeOf: dcs:VolumeUnitOfMeasure
+name: "MillionMetricStandardCubicMeter"
+description: "Million metric standard cubic meter (MMSCM) is a unit of measure for amount of gas in 1000000 cubic meters at 15° Celcius and an absolute pressure of 1.01325 bar."
+
 Node: dcid:USCentPerKilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USCentPerKilowattHour"
+
+Node: dcid:USDollarPerKilowattHour
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USDollarPerKilowattHour"
 
 Node: dcid:USDollarPerBarrel
 typeOf: dcs:VolumeUnitOfMeasure
@@ -1051,6 +1181,10 @@ Node: dcid:USDollarPerMcf
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerMcf"
 
+Node: dcid:USDollarPerGallon
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerGallon"
+
 Node: dcid:USDollarPerMetricTon
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerMetricTon"
@@ -1058,6 +1192,25 @@ name: "USDollarPerMetricTon"
 Node: dcid:USDollarPerShortTon
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USDollarPerShortTon"
+
+Node: dcid:USDollarPerMillionBtu
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USDollarPerMillionBtu"
+
+Node: dcid:KilowattHourPerSquareFoot
+typeOf: dcs:EnergyUnitOfMeasure
+name: "KilowattHourPerSquareFoot"
+description: "Unit of energy intensity of one KilowattHour for a unit area of one SquareFoot."
+
+Node: dcid:CubicFootPerSquareFoot
+typeOf: dcs:EnergyUnitOfMeasure
+name: "CubicFootPerSquareFoot"
+description: "Unit of fuel intensity of one Cubic feet for a unit area of one SquareFoot."
+
+Node: dcid:USGallonPerSquareFoot
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USGallonPerSquareFoot"
+description: "Unit of fuel intensity of one US gallon for a unit area of one SquareFoot."
 
 #
 # EIA: Coal
@@ -1591,7 +1744,7 @@ name: "Annual change"
 Node: dcid:ElectricUtility
 subClassOf: schema:Organization
 description: "Electric utilities are companies that provide electricity and/or heat. They can be publicly or privately owned."
-name: "Electric Utility"
+name: "ElectricUtility"
 typeOf: schema:Class
 
 Node: dcid:electricUtilityName
@@ -1602,7 +1755,7 @@ rangeIncludes: schema:Text
 
 Node: dcid:powerPlantCode
 domainIncludes: dcs:PowerPlant
-name: "plantCode"
+name: "powerPlantCode"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 
@@ -1614,13 +1767,13 @@ rangeIncludes: schema:Text
 
 Node: dcid:powerPlantGeneratorCode
 domainIncludes: dcs:PowerPlantUnit
-name: "generatorId"
+name: "powerPlantGeneratorCode"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 
 Node: dcid:powerPlantUnitCode
 domainIncludes: dcs:PowerPlantUnit
-name: "unitCode"
+name: "powerPlantUnitCode"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 
@@ -1932,7 +2085,7 @@ description: "Number of images examined to find solar panels in this region"
 Node: dcid:area
 name: "area"
 typeOf: schema:Property
-domainIncludes: dcs:SolarArray
+domainIncludes: dcs:SolarArray, dcs:FireEvent, dcs:FloodEvent
 rangeIncludes: schema:Quantity
 
 Node: dcid:residential
@@ -1970,6 +2123,32 @@ domainIncludes: dcs:EpaReportingFacility
 rangeIncludes: schema:Text
 description: "US EPA facility identifier from the Facility Registry Service."
 
+# Parent Companies
+
+Node: dcid:EpaParentCompany
+dcid: "EpaParentCompany"
+name: "EpaParentCompany"
+subClassOf: dcid:Organization
+description: "EPA Parent Company associated to some  facility in the Greenhouse Gas Reporting Program (GHGRP)."
+typeOf: dcid:Class
+
+Node: dcid:locatedIn
+dcid: "locatedIn"
+name: "locatedIn"
+rangeIncludes: dcid:Place
+typeOf: dcid:Property
+description: "A property which denotes places that an Organization's official location, e.g. the headquarters, is located in."
+domainIncludes: dcs:Organization
+
+# Parent Company Ownership
+
+Node: dcid:ownershipPercentage
+typeOf: schema:Property
+domainIncludes: dcs:EpaParentCompany
+rangeIncludes: schema:Number
+name: ownershipPercentage
+
+
 # Properties
 
 Node: dcs:emissionSource
@@ -1977,7 +2156,7 @@ name: "emissionSource"
 typeOf: schema:Property
 description: "Source of emission."
 domainIncludes: dcs:Emissions
-rangeIncludes: dcs:EmissionSourceEnum
+rangeIncludes: dcs:EmissionSourceEnum, dcs:EpaSccCodeEnum
 
 Node: dcs:emissionSourceType
 name: "emissionSourceType"
@@ -2056,7 +2235,17 @@ Node: dcid:EPA_OtherGreenhouseGas
 typeOf: dcs:GreenhouseGas
 name: "Other Greenhouse Gas"
 
+Node: dcid:EPA_CriteriaAirPollutant
+name: "EPA_CriteriaAirPollutant"
+typeOf: dcs:AirPollutantEnum
+description: "Six common air pollutants, considered as Criteria Air Pollutants (CAP), found all over the U.S. Includes particle pollution, ground-level ozone, carbon monoxide, sulfur dioxide, nitrogen dioxide, and lead."
+descriptionUrl: "https://www.epa.gov/criteria-air-pollutants"
 
+Node: dcid:EPA_HazardousAirPollutant
+name: "EPA_HazardousAirPollutant"
+typeOf: dcs:AirPollutantEnum
+description: "Pollutants that are known or suspected to cause cancer or other serious health effects considered as Hazardous Air Pollutants (HAP)."
+descriptionUrl: "https://www.epa.gov/haps/what-are-hazardous-air-pollutants"
 # Sources
 
 Node: dcs:EmissionSourceTypeEnum
@@ -2073,8 +2262,8 @@ descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-so
 Node: dcs:NonBiogenicEmissionSource
 name: "NonBiogenicEmissionSource"
 typeOf: dcs:EmissionSourceTypeEnum
-description: "Biogenic emission sources are emissions that come from non-natural sources."
-descriptionUrl: "https://www.epa.gov/air-emissions-modeling/biogenic-emission-sources"
+description: "Non-biogenic emission sources are emissions that come from the combustion of fossil fuels, from the use of sorbent, from some other non-combustion processes, and the portion of CO2 from the fossil fuel component of fuels with both fossil and biomass components (i.e., MSW and tires)."
+descriptionUrl: "https://ccdsupport.com/confluence/pages/viewpage.action?pageId=191398007"
 
 Node: dcs:EmissionSourceEnum
 name: "EmissionSourceEnum"
@@ -2096,6 +2285,8 @@ name: "Adipic Acid Production"
 Node: dcid:AluminumProduction
 typeOf: dcs:EmissionSourceEnum
 name: "Aluminum Production"
+description: "Alumina refining and aluminum smelting processes."
+specializationOf: dcid:Manufacturing
 
 Node: dcid:AmmoniaManufacturing
 typeOf: dcs:EmissionSourceEnum
@@ -2104,6 +2295,7 @@ name: "Ammonia Manufacturing"
 Node: dcid:CementProduction
 typeOf: dcs:EmissionSourceEnum
 name: "Cement Production"
+specializationOf: dcid:Manufacturing
 
 Node: dcid:ElectronicsManufacture
 typeOf: dcs:EmissionSourceEnum
@@ -2120,6 +2312,7 @@ name: "Fluorinated GHG Production"
 Node: dcid:GlassProduction
 typeOf: dcs:EmissionSourceEnum
 name: "Glass Production"
+specializationOf: dcid:Manufacturing
 
 Node: dcid:HCFC22ProductionFromHFC23Destruction
 typeOf: dcs:EmissionSourceEnum
@@ -2140,6 +2333,7 @@ name: "Lead Production"
 Node: dcid:LimeProduction
 typeOf: dcs:EmissionSourceEnum
 name: "Lime Production"
+specializationOf: dcid:Manufacturing
 
 Node: dcid:MagnesiumProduction
 typeOf: dcs:EmissionSourceEnum
@@ -2152,6 +2346,7 @@ name: "Miscellaneous Use of Carbonates"
 Node: dcid:NitricAcidProduction
 typeOf: dcs:EmissionSourceEnum
 name: "Nitric Acid Production"
+specializationOf: dcid:Manufacturing
 
 Node: dcid:PetroleumAndNaturalGasSystems_OffshoreProduction
 typeOf: dcs:EmissionSourceEnum
@@ -2180,10 +2375,12 @@ name: "Petroleum and Natural Gas Systems – LNG Import/Export"
 Node: dcid:PetrochemicalProduction
 typeOf: dcs:EmissionSourceEnum
 name: "Petrochemical Production"
+specializationOf: dcid:Manufacturing
 
 Node: dcid:PetroleumRefining
 typeOf: dcs:EmissionSourceEnum
 name: "Petroleum Refining"
+specializationOf: dcid:OilAndGas
 
 Node: dcid:PhosphoricAcidProduction
 typeOf: dcs:EmissionSourceEnum
@@ -2192,6 +2389,7 @@ name: "Phosphoric Acid Production"
 Node: dcid:PulpAndPaperManufacturing
 typeOf: dcs:EmissionSourceEnum
 name: "Pulp and Paper Manufacturing"
+specializationOf: dcid:Manufacturing
 
 Node: dcid:SiliconCarbideProduction
 typeOf: dcs:EmissionSourceEnum
@@ -2228,4 +2426,289 @@ name: "Manufacture of Electric Transmission and Distribution Equipment"
 Node: dcid:IndustrialWasteLandfills
 typeOf: dcs:EmissionSourceEnum
 name: "Industrial Waste Landfills"
+
+## Emission sources from climatetrace.org
+Node: dcid:CroplandFire
+typeOf: dcs:EmissionSourceEnum
+name: "Cropland Fire"
+description: "Combustion of agriculture residues burned on site."
+specializationOf: dcid:Agriculture
+
+Node: dcid:EntericFermentation
+typeOf: dcs:EmissionSourceEnum
+name: "Enteric Fermentation"
+description: "A digestive process by which carbohydrates are broken down by microorganisms into simple molecules for absorption into the bloodstream of an animal."
+specializationOf: dcid:Agriculture
+
+Node: dcid:ManagedSoils
+typeOf: dcs:EmissionSourceEnum
+name: "Managed Soils"
+description: "Soil management practices including synthetic fertilizers, crop residue, manure applied to soils and left on pastures, and drained organic soils."
+specializationOf: dcid:Agriculture
+
+Node: dcid:ManureManagement
+typeOf: dcs:EmissionSourceEnum
+name: "Manure Management"
+description: "Livestock manure decomposition."
+specializationOf: dcid:Agriculture
+
+Node: dcid:RiceCultivation
+typeOf: dcs:EmissionSourceEnum
+name: "Rice Cultivation"
+description: "Anaerobic decomposition of organic matter in paddy fields."
+specializationOf: dcid:Agriculture
+
+Node: dcid:FuelCombustionInBuildings
+typeOf: dcs:EmissionSourceEnum
+name: "Fuel Combustion In Buildings"
+description: "Onsite fuel combustion in residential, commercial and institutional buildings"
+
+
+Node: dcid:FuelCombustionForCooking
+typeOf: dcs:EmissionSourceEnum
+name: "Fuel Combustion For Cooking"
+specializationOf: dcid:FuelCombustionInBuildings
+
+Node: dcid:FuelCombustionForRefrigerationAirConditioning
+typeOf: dcs:EmissionSourceEnum
+name: "Fuel Combustion For Refrigeration Air-Conditioning"
+description: "Use of fluorinated greenhouse gases in mobile and stationary air conditioning systems."
+specializationOf: dcid:FuelCombustionInBuildings
+
+Node: dcid:FuelCombustionForResidentialCommercialOnsiteHeating
+typeOf: dcs:EmissionSourceEnum
+name: "Fuel Combustion For Residential Commercial Onsite Heating Fuel Combustion"
+description: "Fuel combustion in residential, commercial and institutional buildings."
+specializationOf: dcid:FuelCombustionInBuildings
+
+Node: dcid:FluorchemicalProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Fluorchemical Production"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:FoodProcessingBeveragesTobbacoProduction
+typeOf: dcs:EmissionSourceEnum
+name: "Food-Processing Beverages Tobbaco Production"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:SteelManufacturing
+typeOf: dcs:EmissionSourceEnum
+name: "Steel Manufacturing"
+description: "Manufacturing of crude steel."
+specializationOf: dcid:Manufacturing
+
+Node: dcid:ClimateTrace_OtherManufacturing
+typeOf: EmissionSourceEnum
+name: "ClimateTrace Other Manufacturing"
+specializationOf: dcid:Manufacturing
+
+Node: dcid:MaritimeTransport
+typeOf: EmissionSourceEnum
+name: "Maritime Transport"
+description: "Transport of people and goods in domestic waterways and international waters."
+
+Node: dcid:MaritimeShipping
+typeOf: EmissionSourceEnum
+name: "MaritimeShipping"
+description: " International and domestic voyages of vessels greater than 300 tonnes."
+specializationOf: dcid:MaritimeTransport
+
+Node: dcid:MineralExtraction
+typeOf: EmissionSourceEnum
+name: "Mineral Extraction"
+description: "Mining and quarrying."
+
+Node: dcid:BauxiteMining
+typeOf: EmissionSourceEnum
+name: "Bauxite Mining"
+description: "Bauxite mining activities."
+specializationOf: dcid:MineralExtraction
+
+Node: dcid:CoalMining
+typeOf: EmissionSourceEnum
+name: "Coal Mining"
+description: "Coal mining and post-mining activities."
+specializationOf: dcid:MineralExtraction
+
+Node: dcid:CopperMining
+typeOf: EmissionSourceEnum
+name: "Copper Mining"
+description: "Copper mining activities."
+specializationOf: dcid:MineralExtraction
+
+Node: dcid:IronMining
+typeOf: EmissionSourceEnum
+name: "Iron Mining"
+description: "Iron mining activities."
+specializationOf: dcid:MineralExtraction
+
+Node: dcid:RockQuarry
+typeOf: EmissionSourceEnum
+name: "Rock Quarry"
+description: "Mining limestone, granite, and marble."
+specializationOf: dcid:MineralExtraction
+
+Node: dcid:SandQuarry
+typeOf: EmissionSourceEnum
+name: "Sand Quarry"
+description: "Extraction of sand and gravel and used in the construction industry."
+specializationOf: dcid:MineralExtraction
+
+Node: dcid:ForestryAndLandUse
+typeOf: dcs:EmissionSourceEnum
+name: "Forestry And Land Use"
+description: "Forest clearing and fires in forests, shrublands, and savannas."
+
+Node: dcid:ForestClearing
+typeOf: EmissionSourceEnum
+name: "Forest Clearing"
+description: "Forest carbon removed from forest stocks through stand-replacing forest disturbance excluding fire."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ForestFire
+typeOf: EmissionSourceEnum
+name: "Forest Fire"
+description: "Fires in open and closed canopy forests. Includes temperate, boreal, and tropical forests."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:SavannaFire
+typeOf: EmissionSourceEnum
+name: "Savanna Fire"
+description: "Fires in savannas."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ShrublandFire
+typeOf: EmissionSourceEnum
+name: "Shrubland Fire"
+description: "Fires in shrublands."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:OilAndGas
+typeOf: dcs:EmissionSourceEnum
+name: "Oil And Gas"
+description: "Oil and gas production, refining, and solid-fuels."
+
+Node: dcid:OilAndGasProduction
+typeOf: EmissionSourceEnum, dcs:FireCauseSpecificEnum
+name: "Oil And Gas Production"
+description: "Flaring, venting combustion, and non-combustion related processes during oil and gas exploration, production, processing, and transport of crude oil, gas, and liquefied natural gas."
+specializationOf: dcid:OilAndGas
+
+Node: dcid:SolidFuelTransformation
+typeOf: EmissionSourceEnum
+name: "Solid Fuel Transformation"
+description: "Fuel use during coal mining and the manufacture of secondary and tertiary products from solid fuels."
+specializationOf: dcid:OilAndGas
+
+Node: dcid:ElectricityGenerationFromThermalPowerPlant
+typeOf: dcs:EmissionSourceEnum
+name: "Power Generation"
+description: "Electricity generation from thermal power plants."
+specializationOf: dcid:ElectricityGeneration
+
+Node: dcid:ClimateTrace_OtherEnergyUse
+typeOf: EmissionSourceEnum
+name: "ClimateTrace Other Energy Use"
+description: "Energy-producing industries’ energy use not included in the other energy subsectors."
+specializationOf: dcid:ElectricityGeneration
+
+Node: dcid:FuelCombustionForAviation
+typeOf: EmissionSourceEnum
+name: "Fuel Combustion For Aviation"
+description: "Combustion of fuels in international and domestic commercial, cargo, private flights, and general aviation."
+specializationOf: dcid:Transportation
+
+Node: dcid:FuelCombustionForRailways
+typeOf: EmissionSourceEnum
+name: "Fuel Combustion For Railways"
+description: "Combustion of fuels in both freight and passenger trains."
+specializationOf: dcid:Transportation
+
+Node: dcid:FuelCombustionForRoadVehicles
+typeOf: EmissionSourceEnum
+name: "Road Vehicle Fuel Combustion"
+description: "Combustion of fuels in all road vehicles."
+specializationOf: dcid:Transportation
+
+Node: dcid:ClimateTrace_OtherTransportation
+typeOf: EmissionSourceEnum
+name: "Climate Trace - Other Transportation"
+description: "All remaining transport activities."
+specializationOf: dcid:Transportation
+
+Node: dcid:WasteManagement
+typeOf: dcs:EmissionSourceEnum
+name: "Waste Management"
+description: "Solid waste disposal on land, wastewater, waste incineration and any other waste management activity. "
+
+Node: dcid:BiologicalTreatmentOfSolidWasteAndBiogenic
+typeOf: EmissionSourceEnum
+name: "Biological Treatment Of Solid Waste And Biogenic"
+description: "Composting and anaerobic digestion of organic waste, such as food waste, garden (yard) and park waste and sludge."
+specializationOf: dcid:WasteManagement
+
+Node: dcid:OpenBurningWaste
+typeOf: EmissionSourceEnum, dcs:FireCauseSpecificEnum
+name: "Open Burning Waste"
+description: "Combustion of solid and liquid waste in controlled incineration facilities, as well as in nature (open-air) or in open dumps."
+specializationOf: dcid:WasteManagement
+
+Node: dcid:SolidWasteDisposal
+typeOf: EmissionSourceEnum
+name: "Solid Waste Disposal"
+description: "The treatment and disposal of municipal, industrial and other solid waste."
+specializationOf: dcid:WasteManagement
+
+Node: dcid:WastewaterTreatmentAndDischarge
+typeOf: EmissionSourceEnum
+name: "Wastewater Treatment And Discharge"
+description: "The treatment and disposal of wastewater from domestic, commercial and industrial sources."
+specializationOf: dcid:WasteManagement
+
+## Stuff from NREL
+
+Node: dcid:solarInsolation
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: dcs:Quantity
+name: "solarInsolation"
+description: "Amount of solar radiation reaching a given area"
+
+Node: dcid:SUNYSatelliteSolarRadiationModel
+typeOf: dcs:MeasurementMethodEnum
+name: "SUNYSatelliteSolarRadiationModel"
+description: "Model used in the Solar Insolation data sourced from NREL."
+
+Node: dcid:WattHourPerSquareMeterPerDay
+typeOf: dcs:EnergyUnitOfMeasure
+name: "WattHourPerSquareMeterPerDay"
+
+## Properties for India Energy import from NitiAyog.
+
+Node: dcid:potentialCapacity
+typeOf: schema:Property
+name: "potentialCapacity"
+domainIncludes: schema:Electricity, schema:Energy, schema:EnergyGeneration, schema:Fuel
+rangeIncludes: schema:Quantity
+description: "Total capacity potential that can be used to generate electricity"
+
+Node: dcid:energyDemand
+typeOf: schema:Property
+name: "energyDemand"
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+rangeIncludes: schema:Quantity
+
+Node: dcid:electrifiedHouseholds
+typeOf: schema:Property
+name: "electrifiedHouseholds"
+domainIncludes: schema:Electricity, dcs:Households
+rangeIncludes: schema:Quantity
+
+Node: dcid:IndiaEDM_UnspecifiedSector
+typeOf: dcs:EnergyConsumptionSectorEnum
+name: "India Energy Dashboard Unspecified Sector"
+
+Node: dcid:IndiaEDM_OtherOilProducts
+typeOf: dcs:EnergySourceEnum
+name: "India Energy Dashboard Other Oil Products"
 
