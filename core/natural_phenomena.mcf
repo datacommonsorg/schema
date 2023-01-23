@@ -371,6 +371,83 @@ name: "HeatWaveEvent"
 description: "Occurrence of a heat wave event."
 subClassOf: dcid:MeteorologicalEvent
 
+## Wet-Bulb Temperature Events
+Node: dcid:WetBulbTemperatureEvent
+typeOf: schema:Class
+name: "WetBulbTemperatureEvent"
+subClassOf: dcs:TemperatureEvent
+description: "A wet-bulb event happens when the estimated wet-bulb temperature (function of temperature and humidity) exceeds a threshold in Celsius."
+descriptionUrl: "https://en.wikipedia.org/wiki/Wet-bulb_temperature"
+
+Node: dcid:WetBulbTemperatureCelsius31Event
+typeOf: schema:Class
+name: "WetBulbTemperatureCelsius31Event"
+subClassOf: dcs:WetBulbTemperatureEvent
+description: "A wet-bulb event which happens when the wet bulb temperature exceeds 31 degrees Celsius."
+
+Node: dcid:WetBulbTemperatureCelsius32Event
+typeOf: schema:Class
+name: "WetBulbTemperatureCelsius32Event"
+subClassOf: dcs:WetBulbTemperatureEvent
+description: "A wet-bulb event which happens when the wet bulb temperature exceeds 32 degrees Celsius."
+
+Node: dcid:WetBulbTemperatureCelsius33Event
+typeOf: schema:Class
+name: "WetBulbTemperatureCelsius33Event"
+subClassOf: dcs:WetBulbTemperatureEvent
+description: "A wet-bulb event which happens when the wet bulb temperature exceeds 33 degrees Celsius."
+
+Node: dcid:WetBulbTemperatureCelsius34Event
+typeOf: schema:Class
+name: "WetBulbTemperatureCelsius34Event"
+subClassOf: dcs:WetBulbTemperatureEvent
+description: "A wet-bulb event which happens when the wet bulb temperature exceeds 34 degrees Celsius."
+
+Node: dcid:WetBulbTemperatureCelsius35Event
+typeOf: schema:Class
+name: "WetBulbTemperatureCelsius35Event"
+subClassOf: dcs:WetBulbTemperatureEvent
+description: "A wet-bulb event which happens when the wet bulb temperature exceeds 35 degrees Celsius."
+
+Node: dcid:WetBulbTemperatureCelsius36Event
+typeOf: schema:Class
+name: "WetBulbTemperatureCelsius36Event"
+subClassOf: dcs:WetBulbTemperatureEvent
+description: "A wet-bulb event which happens when the wet bulb temperature exceeds 36 degrees Celsius."
+
+## Temperature (Heat and Cold) Events
+Node: dcid:TemperatureEvent
+typeOf: schema:Class
+name: "TemperatureEvent"
+subClassOf: dcs:Event
+description: "A temperature event happens when the max/min temperature for a period (e.g. over a day) exceeds or is less than the reference (e.g. a long term average for the month) by a certain amount."
+
+Node: dcid:HeatEvent
+typeOf: schema:Class
+name: "HeatEvent"
+subClassOf: dcs:TemperatureEvent
+description: "A heat event happens when the maximum temperature for a period (e.g. over a day) exceeds the reference (e.g. a long term average for the month) by a certain amount."
+
+Node: dcid:ColdEvent
+typeOf: schema:Class
+name: "ColdEvent"
+subClassOf: dcs:TemperatureEvent
+description: "A cold event happens when the minimum temperature for a period (e.g. over a day) is below the reference (e.g. a long term average for the month) by a certain amount."
+
+## Temperature Event properties
+Node: dcid:temperatureDifference
+typeOf: schema:Property
+name: "temperatureDifference"
+domainIncludes: dcs:TemperatureEvent, dcs:HeatEvent, dcs:ColdEvent
+rangeIncludes: schema:Quantity
+
+Node: dcid:referenceTemperature
+typeOf: schema:Property
+name: "referenceTemperature"
+domainIncludes: dcs:TemperatureEvent, dcs:HeatEvent, dcs:ColdEvent
+rangeIncludes: schema:Quantity
+
+## Flooding Event
 Node: dcid:RiverineFloodingEvent
 typeOf: dcid:Class
 name: "RiverineFloodingEvent"

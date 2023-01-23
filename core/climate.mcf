@@ -178,13 +178,13 @@ name: "precipitationRate"
 
 Node: dcid:maxTemperature
 typeOf: schema:Property
-domainIncludes: schema:Place
+domainIncludes: schema:Place, dcs:TemperatureEvent, dcs:HeatEvent
 rangeIncludes: schema:Quantity
 name: "maxTemperature"
 
 Node: dcid:minTemperature
 typeOf: schema:Property
-domainIncludes: schema:Place
+domainIncludes: schema:Place, dcs:TemperatureEvent, dcs:ColdEvent
 rangeIncludes: schema:Quantity
 name: "minTemperature"
 
