@@ -422,29 +422,29 @@ name: "TemperatureEvent"
 subClassOf: dcs:Event
 description: "A temperature event happens when the max/min temperature for a period (e.g. over a day) exceeds or is less than the reference (e.g. a long term average for the month) by a certain amount."
 
-Node: dcid:HeatEvent
+Node: dcid:HeatTemperatureEvent
 typeOf: schema:Class
-name: "HeatEvent"
+name: "HeatTemperatureEvent"
 subClassOf: dcs:TemperatureEvent
-description: "A heat event happens when the maximum temperature for a period (e.g. over a day) exceeds the reference (e.g. a long term average for the month) by a certain amount."
+description: "A heat (temperature) event happens when the maximum temperature for a period (e.g. over a day) exceeds the reference (e.g. a long term average for the month) by a certain amount."
 
-Node: dcid:ColdEvent
+Node: dcid:ColdTemperatureEvent
 typeOf: schema:Class
-name: "ColdEvent"
+name: "ColdTemperatureEvent"
 subClassOf: dcs:TemperatureEvent
-description: "A cold event happens when the minimum temperature for a period (e.g. over a day) is below the reference (e.g. a long term average for the month) by a certain amount."
+description: "A cold (temperature) event happens when the minimum temperature for a period (e.g. over a day) is below the reference (e.g. a long term average for the month) by a certain amount."
 
 ## Temperature Event properties
 Node: dcid:temperatureDifference
 typeOf: schema:Property
 name: "temperatureDifference"
-domainIncludes: dcs:TemperatureEvent, dcs:HeatEvent, dcs:ColdEvent
+domainIncludes: dcs:TemperatureEvent, dcs:HeatTemperatureEvent, dcs:ColdTemperatureEvent
 rangeIncludes: schema:Quantity
 
 Node: dcid:referenceTemperature
 typeOf: schema:Property
 name: "referenceTemperature"
-domainIncludes: dcs:TemperatureEvent, dcs:HeatEvent, dcs:ColdEvent
+domainIncludes: dcs:TemperatureEvent, dcs:HeatTemperatureEvent, dcs:ColdTemperatureEvent
 rangeIncludes: schema:Quantity
 
 ## Flooding Event
