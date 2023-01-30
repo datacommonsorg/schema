@@ -157,8 +157,54 @@ relevantVariable: dcid:Count_Person_NoHealthInsurance
 relevantVariable: dcid:Count_Death
 relevantVariable: dcid:Count_Death_PregnancyChildbirthThePuerperium
 relevantVariable: dcid:Count_Death_AmericanIndianAndAlaskaNativeAlone
-# covid
+# Covid
 relevantVariable: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedOrProbableCase
 relevantVariable: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_PatientDeceased
 relevantVariable: dcid:CumulativeCount_Vaccine_COVID_19_Administered
 
+Node: dcid:dc/topic/MedicalConditions
+typeOf: dcs:Topic
+name: "Medical Conditions"
+relevantVariable: dcid:Percent_Person_WithArthritis
+relevantVariable: dcid:Percent_Person_WithAsthma
+relevantVariable: dcid:Percent_Person_WithCancerExcludingSkinCancer
+relevantVariable: dcid:Percent_Person_WithChronicKidneyDisease
+relevantVariable: dcid:Percent_Person_WithChronicObstructivePulmonaryDisease
+relevantVariable: dcid:Percent_Person_WithCoronaryHeartDisease
+relevantVariable: dcid:Percent_Person_WithDiabetes
+relevantVariable: dcid:Percent_Person_WithHighBloodPressure
+relevantVariable: dcid:Percent_Person_WithHighCholesterol
+relevantVariable: dcid:Percent_Person_WithMentalHealthNotGood
+relevantVariable: dcid:Percent_Person_WithPhysicalHealthNotGood
+relevantVariable: dcid:Percent_Person_WithStroke
+
+Node: dcid:dc/topic/HeatIllnesses
+typeOf: dcs:Topic
+name: "Heat Illnesses"
+relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_PatientDeceased
+relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_PatientHospitalized
+relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_VisitedEmergencyDepartment
+
+Node: dcid:dc/topic/Jobs
+typeOf: dcs:Topic
+name: "Jobs"
+relevantVariable: dcid:Count_Worker_NAICSAccommodationFoodServices
+relevantVariable: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
+relevantVariable: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
+relevantVariable: dcid:Count_Worker_NAICSConstruction
+relevantVariable: dcid:Count_Worker_NAICSEducationalServices
+relevantVariable: dcid:Count_Worker_NAICSHealthCareSocialAssistance
+# Manufacturing
+# relevantVariable: dcid:dc/ndg1xk1e9frc2 # TODO: Add SVs in follow up CL
+relevantVariable: dcid:Count_Worker_NAICSFinanceInsurance
+relevantVariable: dcid:Count_Worker_NAICSInformation
+relevantVariable: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
+# Administrative and Support
+# relevantVariable: dcid:dc/f18sq8w498j4f
+relevantVariable: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
+# Retail
+# relevantVariable: dcid:dc/4mm2p1rxr5wz4
+relevantVariable: dcid:Count_Worker_NAICSOtherServices
+# Transportation
+# relevantVariable: dcid:dc/8p97n7l96lgg8
+relevantVariable: dcid:Count_Worker_NAICSUtilities
