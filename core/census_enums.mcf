@@ -231,6 +231,24 @@ subClassOf: schema:Enumeration
 dcid: "USC_EducationalAttainmentEnum"
 name: "USC_EducationalAttainmentEnum"
 
+Node: dcid:parentEducationStatus
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: dcs:USC_EducationalAttainmentEnum
+name: "parentEducationStatus"
+
+Node: dcid:CollegeGraduate
+typeOf: dcs:USC_EducationalAttainmentEnum
+name: "College Graduate"
+
+Node: dcid:GraduateSchoolOrPostGraduate
+typeOf: dcs:USC_EducationalAttainmentEnum
+name: "Graduate School Or Post Graduate"
+
+Node: dcid:CA_DeclinedToState
+typeOf: dcs:USC_EducationalAttainmentEnum
+name: "CA Declined To State"
+
 Node: BachelorsDegree
 typeOf: dcs:USC_EducationalAttainmentEnum
 dcid: "BachelorsDegree"

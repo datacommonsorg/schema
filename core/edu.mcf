@@ -653,6 +653,24 @@ name: "California Assessment Of Student Performance And Progress"
 description: "The California Assessment Of Student Performance And Progress (CAASPP) includes the Smarter Balanced assessment system for English language arts/literacy (ELA) and mathematics, the California Science Test (CAST), the California Alternate Assessments (CAAs) for ELA, mathematics, and science, and the optional California Spanish Assessment (CSA)."
 descriptionUrl: "https://caaspp-elpac.ets.org/caaspp/AboutCAASPP"
 
+## AssessmentStatusEnum definition
+
+Node: dcid:AssessmentStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "AssessmentStatusEnum"
+
+Node: dcid:assessmentStatus
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: dcs:AssessmentStatusEnum
+name: "assessmentStatus"
+description: "Status about the assessment."
+
+Node: dcid:Tested
+typeOf: dcs:AssessmentStatusEnum
+name: "Tested"
+
 Node: dcid:schoolLevelCode
 typeOf: schema:Property
 supersededBy: dcs:schoolGradeLevel
