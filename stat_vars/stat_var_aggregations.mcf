@@ -95,3 +95,29 @@ measurementQualifier: dcs:MeasuredBasedOnJurisdiction
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 description: "Number of people who are incarcerated in a correctional facility outside of their home state."
+
+Node: dcid:Count_Person_WithOwnChildrenUnder18
+typeOf:  dcs:StatisticalVariable
+populationType: schema:Person
+childrenStatus: dcs:WithOwnChildrenUnder18
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+description: "Number of people who have children under 18"
+
+Node: dcid:Count_Person_WithOwnChildrenUnder18_Male
+typeOf:  dcs:StatisticalVariable
+populationType: schema:Person
+childrenStatus: dcs:WithOwnChildrenUnder18
+gender: dcs:Male
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+description: "Number of malews who have children under 18"
+
+Node: dcid:Count_Person_WithOwnChildrenUnder18_Female
+typeOf:  dcs:StatisticalVariable
+populationType: schema:Person
+childrenStatus: dcs:WithOwnChildrenUnder18
+gender:dcs:Female
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+description: "Number of females who Have children under 18"
