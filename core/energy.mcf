@@ -2235,6 +2235,14 @@ Node: dcid:EPA_OtherGreenhouseGas
 typeOf: dcs:GreenhouseGas
 name: "Other Greenhouse Gas"
 
+Node: dcid:CarbonDioxideEquivalent20YearGlobalWarmingPotential
+typeOf: dcs:GreenhouseGas
+name: "Carbon Dioxide Equivalent - 20 Year Global Warming Potential"
+
+Node: dcid:CarbonDioxideEquivalent100YearGlobalWarmingPotential
+typeOf: dcs:GreenhouseGas
+name: "Carbon Dioxide Equivalent - 100 Year Global Warming Potential"
+
 Node: dcid:EPA_CriteriaAirPollutant
 name: "EPA_CriteriaAirPollutant"
 typeOf: dcs:AirPollutantEnum
@@ -2277,6 +2285,7 @@ name: "Stationary Combustion"
 Node: dcid:ElectricityGeneration
 typeOf: dcs:EmissionSourceEnum
 name: "Electricity Generation"
+specializationOf: dcid:Power
 
 Node: dcid:AdipicAcidProduction
 typeOf: dcs:EmissionSourceEnum
@@ -2458,11 +2467,28 @@ name: "Rice Cultivation"
 description: "Anaerobic decomposition of organic matter in paddy fields."
 specializationOf: dcid:Agriculture
 
+Node: dcid:SyntheticFertilizerApplication
+typeOf: dcs:EmissionSourceEnum
+name: "Synthetic Fertilizer Application"
+description: "Direct nitrous oxide emissions from the application of synthetic fertilizers in agricultural soils."
+specializationOf: dcid:Agriculture
+
+Node: dcid:ClimateTrace_OtherAgriculturalSoilEmissions
+typeOf: dcs:EmissionSourceEnum
+name: "Other Agricultural Soil Emissions"
+description: "Greenhouse gas emissions from manure left on pasture, crop residues, and drained organic soils."
+specializationOf: dcid:Agriculture
+
+Node: dcid:ClimateTrace_OtherAgriculture
+typeOf: dcs:EmissionSourceEnum
+name: "Other Agriculture"
+description: "Greenhouse gas emissions arising from agriculture that are not included in any other subsector."
+specializationOf: dcid:Agriculture
+
 Node: dcid:FuelCombustionInBuildings
 typeOf: dcs:EmissionSourceEnum
 name: "Fuel Combustion In Buildings"
 description: "Onsite fuel combustion in residential, commercial and institutional buildings"
-
 
 Node: dcid:FuelCombustionForCooking
 typeOf: dcs:EmissionSourceEnum
@@ -2479,6 +2505,12 @@ Node: dcid:FuelCombustionForResidentialCommercialOnsiteHeating
 typeOf: dcs:EmissionSourceEnum
 name: "Fuel Combustion For Residential Commercial Onsite Heating Fuel Combustion"
 description: "Fuel combustion in residential, commercial and institutional buildings."
+specializationOf: dcid:FuelCombustionInBuildings
+
+Node: dcid:ClimateTrace_OtherOnsiteFuelUsage
+typeOf: dcs:EmissionSourceEnum
+name: "Other Onsite Fuel Usage"
+description: "Greenhouse gas emissions from fuel combustion in stationary and mobile sources not otherwise specified."
 specializationOf: dcid:FuelCombustionInBuildings
 
 Node: dcid:FluorchemicalProduction
@@ -2506,12 +2538,59 @@ Node: dcid:MaritimeTransport
 typeOf: EmissionSourceEnum
 name: "Maritime Transport"
 description: "Transport of people and goods in domestic waterways and international waters."
+specializationOf: dcid:Transportation
 
 Node: dcid:MaritimeShipping
 typeOf: EmissionSourceEnum
 name: "MaritimeShipping"
 description: " International and domestic voyages of vessels greater than 300 tonnes."
 specializationOf: dcid:MaritimeTransport
+
+Node: dcid:FossilFuelOperations
+typeOf: EmissionSourceEnum
+name: "Fossil Fuel Operations"
+description: "Greenhouse gas emissions from oil and gas production, refining, and coal mining."
+
+Node: dcid:CoalMining
+typeOf: EmissionSourceEnum
+name: "Coal Mining"
+description: "Coal mining and post-mining activities."
+specializationOf: dcid:FossilFuelOperations
+
+Node: dcid:SolidFuelTransformation
+typeOf: EmissionSourceEnum
+name: "Solid Fuel Transformation"
+description: "Fuel use during coal mining and the manufacture of secondary and tertiary products from solid fuels."
+specializationOf: dcid:FossilFuelOperations
+
+Node: dcid:OilAndGasProduction
+typeOf: EmissionSourceEnum, dcs:FireCauseSpecificEnum
+name: "Oil And Gas Production"
+description: "Flaring, venting combustion, and non-combustion related processes during oil and gas exploration, production, processing, and transport of crude oil, gas, and liquefied natural gas."
+specializationOf: dcid:FossilFuelOperations
+
+Node: dcid:OilAndGasRefining
+typeOf: EmissionSourceEnum
+name: "Oil And Gas Refining"
+description: "Fugitive and exhaust emissions from combustion-related processes of crude oil refining."
+specializationOf: dcid:FossilFuelOperations
+
+Node: dcid:ClimateTrace_OtherFossilFuelOperations
+typeOf: EmissionSourceEnum
+name: "Other Fossil Fuel Operations"
+description: "Fugitive and exhaust emissions from all remaining fossil fuel operation activities."
+specializationOf: dcid:FossilFuelOperations
+
+Node: dcid:Power
+typeOf: EmissionSourceEnum
+name: "Power"
+description: "Greenhouse gas emissions from electricity generation."
+
+Node: dcid:ClimateTrace_OtherEnergyUse
+typeOf: EmissionSourceEnum
+name: "Other Fossil Fuel Operations"
+description: "Greenhouse gas emissions arising from fuel combustion that are not included in any other subsector."
+specializationOf: dcid:FossilFuelOperations
 
 Node: dcid:MineralExtraction
 typeOf: EmissionSourceEnum
@@ -2522,12 +2601,6 @@ Node: dcid:BauxiteMining
 typeOf: EmissionSourceEnum
 name: "Bauxite Mining"
 description: "Bauxite mining activities."
-specializationOf: dcid:MineralExtraction
-
-Node: dcid:CoalMining
-typeOf: EmissionSourceEnum
-name: "Coal Mining"
-description: "Coal mining and post-mining activities."
 specializationOf: dcid:MineralExtraction
 
 Node: dcid:CopperMining
@@ -2553,6 +2626,17 @@ typeOf: EmissionSourceEnum
 name: "Sand Quarry"
 description: "Extraction of sand and gravel and used in the construction industry."
 specializationOf: dcid:MineralExtraction
+
+Node: dcid:ClimateTrace_OtherMineralExtraction
+typeOf: EmissionSourceEnum
+name: "Other Mineral Extraction"
+description: "Greenhouse gas emissions arising from mineral extraction that are not included in any other subsector."
+specializationOf: dcid:MineralExtraction
+
+Node: dcid:FluorinatedGases
+typeOf: EmissionSourceEnum
+name: "Fluorinated Gases"
+description: "Greenhouse gas emissions from the release of fluorinated gases used in refrigeration, air-conditioning, transport, and industry."
 
 Node: dcid:ForestryAndLandUse
 typeOf: dcs:EmissionSourceEnum
@@ -2583,22 +2667,112 @@ name: "Shrubland Fire"
 description: "Fires in shrublands."
 specializationOf: dcid:ForestryAndLandUse
 
+Node: dcid:ForestLandSink
+typeOf: EmissionSourceEnum
+name: "Forest Land Sink"
+description: "Greenhouse gas emission from forest land sinks."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ForestLandSources
+typeOf: EmissionSourceEnum
+name: "Forest Land Sources"
+description: "Greenhouse gas emission from forest land sources."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:GrasslandSink
+typeOf: EmissionSourceEnum
+name: "Grassland Sink"
+description: "Greenhouse gas emission from grassland sinks."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:WetlandSources
+typeOf: EmissionSourceEnum
+name: "Wetland Sources"
+description: "Greenhouse gas emission from wetland sources."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:WetlandSink
+typeOf: EmissionSourceEnum
+name: "Wetland Sink"
+description: "Greenhouse gas emission from wetland sinks."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ClimateTract_OtherLandSources
+typeOf: EmissionSourceEnum
+name: "Other Land Sources"
+description: "Greenhouse gas emission from other land sources."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ClimateTract_OtherLandSink
+typeOf: EmissionSourceEnum
+name: "Other Land Sink"
+description: "Greenhouse gas emission from other land sinks."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:NetForestEmissions
+typeOf: EmissionSourceEnum
+name: "Net Forest Emissions"
+description: "Emissions and removals of CO2 from living biomass in forest and mangrove lands."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:PeatlandFire
+typeOf: EmissionSourceEnum
+name: "Peatland Fire"
+description: "Fires in peatlands."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ForestGrasslandWetlandSink
+typeOf: EmissionSourceEnum
+name: "Forest, Grassland, Wetland Sink"
+description: "Greenhouse gas emission from forest, grassland, and wetland sinks."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ForestLandClearing
+typeOf: EmissionSourceEnum
+name: "Forest Land Clearing"
+description: "Greenhouse gas emission from forest land clearing."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ForestLandDegredation
+typeOf: EmissionSourceEnum
+name: "Forest Land Degredation"
+description: "Greenhouse gas emission from forest land degredation."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:ForestLandFire
+typeOf: EmissionSourceEnum
+name: "Forest Land Fire"
+description: "Fires in forest lands."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:GrasslandFire
+typeOf: EmissionSourceEnum
+name: "Grassland Fire"
+description: "Fires in grasslands."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:NetGrasslandEmissions
+typeOf: EmissionSourceEnum
+name: "Net Grassland Emissions"
+description: "Emissions and removals of CO2 from living biomass in grasslands and shrublands."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:NetWetlandEmissions
+typeOf: EmissionSourceEnum
+name: "Net Grassland Emissions"
+description: "Emissions and removals of CO2 from living biomass in wetlands."
+specializationOf: dcid:ForestryAndLandUse
+
+Node: dcid:WetlandFire
+typeOf: EmissionSourceEnum
+name: "Wetland Fire"
+description: "Fires in wetlands."
+specializationOf: dcid:ForestryAndLandUse
+
 Node: dcid:OilAndGas
 typeOf: dcs:EmissionSourceEnum
 name: "Oil And Gas"
 description: "Oil and gas production, refining, and solid-fuels."
-
-Node: dcid:OilAndGasProduction
-typeOf: EmissionSourceEnum, dcs:FireCauseSpecificEnum
-name: "Oil And Gas Production"
-description: "Flaring, venting combustion, and non-combustion related processes during oil and gas exploration, production, processing, and transport of crude oil, gas, and liquefied natural gas."
-specializationOf: dcid:OilAndGas
-
-Node: dcid:SolidFuelTransformation
-typeOf: EmissionSourceEnum
-name: "Solid Fuel Transformation"
-description: "Fuel use during coal mining and the manufacture of secondary and tertiary products from solid fuels."
-specializationOf: dcid:OilAndGas
 
 Node: dcid:ElectricityGenerationFromThermalPowerPlant
 typeOf: dcs:EmissionSourceEnum
@@ -2617,6 +2791,18 @@ typeOf: EmissionSourceEnum
 name: "Fuel Combustion For Aviation"
 description: "Combustion of fuels in international and domestic commercial, cargo, private flights, and general aviation."
 specializationOf: dcid:Transportation
+
+Node: dcid:FuelCombustionForDomesticAviation
+typeOf: EmissionSourceEnum
+name: "Fuel Combustion For Domestic Aviation"
+description: "Greenhouse gas emissions from the combustion of fuels in domestic commercial, cargo, private flights, and general aviation."
+specializationOf: dcid:FuelCombustionForAviation
+
+Node: dcid:FuelCombustionForInternationalAviation
+typeOf: EmissionSourceEnum
+name: "Fuel Combustion For International Aviation"
+description: "Greenhouse gas emissions from the combustion of fuels in international commercial, cargo, private flights, and general aviation."
+specializationOf: dcid:FuelCombustionForAviation
 
 Node: dcid:FuelCombustionForRailways
 typeOf: EmissionSourceEnum
