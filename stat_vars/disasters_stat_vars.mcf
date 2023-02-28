@@ -530,3 +530,35 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:ColdTemperatureEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
+
+# Cyclone Stat Vars
+
+Node: dcid:BarometricPressure_CycloneEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:CycloneEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:barometricPressure
+
+Node: dcid:DistanceToLand_CycloneEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:CycloneEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:distanceToLand
+
+Node: dcid:WindSpeed_CycloneEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:CycloneEvent
+statType: dcs:measuredValue
+measuredProperty: dcs:windSpeed
+
+Node: dcid:Classification_CycloneEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:CycloneEvent
+statType: dcs:measurementResult
+measuredProperty: dcs:classification
+
+Node: dcid:Location_CycloneEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:CycloneEvent
+statType: dcs:measurementResult
+measuredProperty: dcs:location
