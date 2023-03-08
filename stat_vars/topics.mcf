@@ -208,3 +208,33 @@ relevantVariable: dcid:Count_Worker_NAICSOtherServices
 # Transportation
 relevantVariable: dcid:dc/8p97n7l96lgg8
 relevantVariable: dcid:Count_Worker_NAICSUtilities
+
+Node: dcid:dc/topic/WetBulbTemperature
+typeOf: dcs:Topic
+name: "Wet Bulb Temperature"
+relevantVariable: dcid:Count_WetBulbTemperatureEvent
+relevantVariable: dcid:Area_WetBulbTemperatureEvent
+relevantVariable: dcid:dc/svpg/NumberOfMonths_WetBulbTemperature_35CorMore_MaxRelativeHumidityByRCPScenario
+relevantVariable: dcid:dc/svpg/NumberOfMonths_WetBulbTemperature_35CorMore_MinRelativeHumidityByRCPScenario
+relevantVariable: dcid:dc/svpg/NumberOfMonths_WetBulbTemperature_35CorMore_MeanRelativeHumidityByRCPScenario
+
+Node: dcid:dc/svpg/NumberOfMonths_WetBulbTemperature_35CorMore_MaxRelativeHumidityByRCPScenario
+typeOf: dcs:StatVarPeerGroup
+name: "Number of Months Reaching Wet Bulb Temperature based on Max Relative Humidity"
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45_MaxRelativeHumidity
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60_MaxRelativeHumidity
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP85_MaxRelativeHumidity
+
+Node: dcid:dc/svpg/NumberOfMonths_WetBulbTemperature_35CorMore_MinRelativeHumidityByRCPScenario
+typeOf: dcs:StatVarPeerGroup
+name: "Number of Months Reaching Wet Bulb Temperature based on Min Relative Humidity"
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45_MinRelativeHumidity
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60_MinRelativeHumidity
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP85_MinRelativeHumidity
+
+Node: dcid:dc/svpg/NumberOfMonths_WetBulbTemperature_35CorMore_MeanRelativeHumidityByRCPScenario
+typeOf: dcs:StatVarPeerGroup
+name: "Number of Months Reaching Wet Bulb Temperature based on Mean Relative Humidity"
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45_MeanRelativeHumidity
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60_MeanRelativeHumidity
+member: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP85_MeanRelativeHumidity
