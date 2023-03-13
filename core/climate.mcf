@@ -595,6 +595,10 @@ typeOf: dcid:EPA_CriteriaAirPollutant
 epaPollutantCode: "PM25-PRI"
 name: "PM2.5"
 
+Node: dcs:SmokePM2.5
+typeOf: dcs:AirPollutantEnum
+name: "Smoke PM2.5"
+
 Node: dcs:PM10
 typeOf: dcid:EPA_CriteriaAirPollutant
 epaPollutantCode: "PM10-PRI"
@@ -1066,6 +1070,11 @@ name: "FrequencyOfOutliers"
 Node: dcid:RateOfChange
 typeOf: dcs:IPCC_MeasurementQualifierEnum
 name: "RateOfChange"
+
+Node: dcid:PopulationWeighted
+typeOf: dcs:Enumeration
+name: "PopulationWeighted"
+description: "Qualifier for PM 2.5 exposure variable weighting"
 
 # Temporary properties for better viz of SV Hierarchy
 Node: dcid:multiModelEnsemble
