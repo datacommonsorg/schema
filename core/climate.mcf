@@ -1205,3 +1205,18 @@ name: "heatWaveIntensity"
 domainIncludes: dcs:HeatWaveEvent
 rangeIncludes: dcs:Quantity
 description: "Describes how hot the temperature is during heat waves. It is defined as the difference in temperature (measured in degrees Celsius) between the local threshold for heat waves and the average of the daily minimum temperature during the heat wave."
+
+Node: dcid:vaporPressureDeficit
+typeOf: dcs:Property
+name: "vaporPressureDeficit"
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Number
+description: "https://en.wikipedia.org/wiki/Vapour-pressure_deficit"
+
+Node: dcid:palmerDroughtSeverityIndex
+typeOf: dcs:Property
+name: "palmerDroughtSeverityIndex"
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Number
+description: "https://climatedataguide.ucar.edu/climate-data/palmer-drought-severity-index-pdsi"
+
