@@ -1064,20 +1064,29 @@ typeOf: dcs:EnergyUnitOfMeasure
 name: "MMBtu"
 description: "Unit of energy that equals a million British thermal units (Btu)."
 
+Node: dcid:QuadrillionBtu
+typeOf: dcs:EnergyUnitOfMeasure
+name: "QuadrillionBtu"
+shortDisplayName: "Quad Btu"
+description: "Unit of energy that equals a quadrillion British thermal units (Btu)."
+
 Node: dcid:BtuPerPound
 typeOf: dcs:EnergyUnitOfMeasure
+shortDisplayName: "Btu/lb"
 description: "Energy, in BTU's, per pound of fuel."
 name: "BtuPerPound"
 
 Node: dcid:Kilowatt
 typeOf: dcs:EnergyUnitOfMeasure
 name: "Kilowatt"
+shortDisplayName: "KW"
 description: "Unit of energy that equals one thousand watts."
 descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Kilowatt"
 
 Node: dcid:Megawatt
 typeOf: dcs:EnergyUnitOfMeasure
 name: "Megawatt"
+shortDisplayName: "MW"
 description: "Unit of energy that equals one million watts."
 descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Megawatt"
 
@@ -1102,43 +1111,88 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Petawatt"
 Node: dcid:KilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "KilowattHour"
+shortDisplayName: "kWh"
 description: "Unit of energy that equals 3600 kilojoules (3.6 megajoules)."
+descriptionUrl: "https://en.wikipedia.org/wiki/Kilowatt-hour"
+
+Node: dcid:BillionKilowatthours
+typeOf: dcs:EnergyUnitOfMeasure
+name: "BillionKilowatthours"
+shortDisplayName: "bn kWh"
+description: "Unit of energy that equals 1,000,000 KilowattHours."
 descriptionUrl: "https://en.wikipedia.org/wiki/Kilowatt-hour"
 
 Node: dcid:MegawattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "MegawattHour"
+shortDisplayName: "MWh"
 description: "Unit of energy that equals 1000 KilowattHours."
 
 Node: dcid:GigawattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "GigawattHour"
+shortDisplayName: "GWh"
 description: "Unit of energy that equals 1000 MegawattHours."
 
 Node: dcid:Terajoule
 typeOf: dcs:EnergyUnitOfMeasure
 name: "Terajoule"
+shortDisplayName: "TJ"
 description: "Unit of energy that equals one trillion joules or about 0.278 GWh."
+
+Node: dcid:Terajoules
+typeOf: dcs:EnergyUnitOfMeasure
+name: "Terajoules"
+shortDisplayName: "TJ"
+description: "Unit of energy each equal one trillion joules or about 0.278 GWh."
 
 Node: dcid:Barrel
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Barrel"
+shortDisplayName: "bbl"
 description: "A barrel is one of several units of volume applied in various contexts. In the worldwide oil industry, an oil barrel is defined as 42 US gallons, which is about 159 litres,[10] or 35 imperial gallons."
 descriptionUrl: "https://en.wikipedia.org/wiki/Barrel_(unit)"
+
+Node: dcid:BillionBarrels
+typeOf: dcs:VolumeUnitOfMeasure
+name: "BillionBarrels"
+shortDisplayName: "Bbbl"
+description: "A barrel is one of several units of volume applied in various contexts. Bbbl is a billion barrels worth of volume."
+
+Node: dcid:MillionsBarrels
+typeOf: dcs:VolumeUnitOfMeasure
+name: "MillionsBarrels"
+shortDisplayName: "Mbbl"
+description: "A barrel is one of several units of volume applied in various contexts. Mbbl is a million barrels worth of volume."
 
 Node: dcid:CubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Cubic meter"
+shortDisplayName: "m³"
 description: "It is the volume of a cube with edges one metre in length, also equal to 1000 liters."
 
 Node: dcid:CubicFoot
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Cubic foot"
+shortDisplayName: "ft³"
 description: "It is the volume of a cube with edges one feet in length."
+
+Node: dcid:BillionCubicFeet
+typeOf: dcs:VolumeUnitOfMeasure
+name: "BillionCubicFeet"
+shortDisplayName: "bn ft³"
+description: "It is the volume of a cube with edges one billion feet in length."
+
+Node: dcid:TrillionCubicFeet
+typeOf: dcs:VolumeUnitOfMeasure
+name: "TrillionCubicFeet"
+shortDisplayName: "TCF"
+description: "It is the volume of a cube with edges one trillion feet in length."
 
 Node: dcid:USGallon
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USGallon"
+shortDisplayName: "US gal"
 description: "It is the unit of volume equal to 3.785411784 Liters."
 descriptionUrl: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf"
 
@@ -1147,12 +1201,38 @@ typeOf: dcs:EnergyUnitOfMeasure
 description: "A mass measurement unit equal to 2,000 pounds-mass (907.18474 kg). It is commonly used in the United States, where it is known as simply a common ton."
 descriptionUrl: "https://en.wikipedia.org/wiki/Short_ton"
 name: "ShortTon"
+shortDisplayName: "ST"
+
+Node: dcid:ShortTons
+typeOf: dcs:EnergyUnitOfMeasure
+description: "Mass measurement unit each equal to 2,000 pounds-mass (907.18474 kg). It is commonly used in the United States, where it is known as simply a common ton."
+descriptionUrl: "https://en.wikipedia.org/wiki/Short_ton"
+name: "ShortTons"
+shortDisplayName: "ST"
+
+Node: dcid:ThousandShortTons
+typeOf: dcs:EnergyUnitOfMeasure
+description: "A mass measurement unit equal to 1,000 Short Tons."
+name: "ThousandShortTons"
+shortDisplayName: "kST"
+
+Node: dcid:MillionShortTons
+typeOf: dcs:EnergyUnitOfMeasure
+description: "A mass measurement unit equal to 1,000,000 Short Tons."
+name: "MillionShortTons"
+shortDisplayName: "MST"
 
 Node: dcid:Mcf
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Mcf"
 description: "Volume of 1000 cubic feet."
 descriptionUrl: "https://www.eia.gov/tools/faqs/faq.php?id=45"
+
+Node: dcid:BillionCubicMeters
+typeOf: dcs:VolumeUnitOfMeasure
+name: "BillionCubicMeters"
+shortDisplayName: "bn m³"
+description: "It is the volume of a cube with edges one billion meters in length."
 
 Node: dcid:StandardCubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
@@ -1168,39 +1248,53 @@ description: "Million metric standard cubic meter (MMSCM) is a unit of measure f
 Node: dcid:USCentPerKilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USCentPerKilowattHour"
+shortDisplayName: "US ¢/kWh"
 
 Node: dcid:USDollarPerKilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USDollarPerKilowattHour"
+shortDisplayName: "USD/kWh"
 
 Node: dcid:USDollarPerBarrel
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerBarrel"
+shortDisplayName: "USD/bbl"
 
 Node: dcid:USDollarPerMcf
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerMcf"
+shortDisplayName: "USD/Mcf"
 
 Node: dcid:USDollarPerGallon
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerGallon"
+shortDisplayName: "USD/gal"
 
 Node: dcid:USDollarPerMetricTon
 typeOf: dcs:VolumeUnitOfMeasure
 name: "USDollarPerMetricTon"
+shortDisplayName: "USD/MT"
 
 Node: dcid:USDollarPerShortTon
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USDollarPerShortTon"
+shortDisplayName: "USD/ST"
 
 Node: dcid:USDollarPerMillionBtu
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USDollarPerMillionBtu"
+shortDisplayName: "USD/MMBtu"
+
+Node: dcid:USDollarPerYear
+typeOf: dcs:EnergyUnitOfMeasure
+name: "USDollarPerYear"
+shortDisplayName: "USD/yr"
 
 Node: dcid:KilowattHourPerSquareFoot
 typeOf: dcs:EnergyUnitOfMeasure
 name: "KilowattHourPerSquareFoot"
 description: "Unit of energy intensity of one KilowattHour for a unit area of one SquareFoot."
+shortDisplayName: "kWh/ft²"
 
 Node: dcid:CubicFootPerSquareFoot
 typeOf: dcs:EnergyUnitOfMeasure
@@ -2179,6 +2273,7 @@ description: "A unit used to denote a measurement of emissions."
 
 Node: dcs:MetricTonCO2e
 name: "MetricTonCO2e"
+shortDisplayName: "tCO2e"
 typeOf: dcs:EmissionUnitOfMeasure
 description: "Represents an amount of a Greenhouse Gas whose atmospheric impact has been standardized to that of one unit mass of carbon dioxide (CO2), based on the global warming potential (GWP) of the gas."
 
@@ -2880,6 +2975,7 @@ description: "Model used in the Solar Insolation data sourced from NREL."
 Node: dcid:WattHourPerSquareMeterPerDay
 typeOf: dcs:EnergyUnitOfMeasure
 name: "WattHourPerSquareMeterPerDay"
+shortDisplayName: "Wh/m²/day"
 
 ## Properties for India Energy import from NitiAyog.
 

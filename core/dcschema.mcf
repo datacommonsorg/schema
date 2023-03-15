@@ -1532,19 +1532,29 @@ subClassOf: dcs:UnitOfMeasure
 name: "WeightUnitOfMeasure"
 description: "A unit used to denote a measurement of weight."
 
+Node: dcid:shortDisplayName
+name: shortDisplayName
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Text
+description: "A shortened name for display on charts and other visual components."
+
 Node: dcid:MetricTon
 typeOf: dcs:WeightUnitOfMeasure
 name: "MetricTon"
+shortDisplayName: "t"
 description: "A unit of weight equal to 1000 kilograms."
 
 Node: dcid:Gram
 typeOf: dcs:WeightUnitOfMeasure
 name: "Gram"
+shortDisplayName: "g"
 description: "A unit of weight equal to 0.001 kilograms."
 
 Node: dcid:Kilogram
 typeOf: dcs:WeightUnitOfMeasure
 name: "Kilogram"
+shortDisplayName: "kg"
 description: "The kilogram (kg) is defined by taking the fixed numerical value of the Planck constant h when expressed in the unit J s"
 descriptionUrl: "https://www.nist.gov/pml/weights-and-measures/si-units-mass"
 
@@ -1557,39 +1567,46 @@ description: "A unit used to denote a measurement of energy."
 Node: dcid:KilogramOfOilEquivalent
 typeOf: dcs:KilogramOfOilEquivalent
 name: "KilogramOfOilEquivalent"
+shortDisplayName: "kgoe"
 description: "A unit of energy defined as 1/1000th of the amount of energy released by burning one tonne of crude oil."
 descriptionUrl: "https://en.wikipedia.org/wiki/Tonne_of_oil_equivalent"
 
 Node: dcid:Millibar
 typeOf: dcs:PressureUnitOfMeasure
 name: "Millibar"
+shortDisplayName: "mbar"
 description: "A pressure unit of measure representing 100 pascals, or one thousandth of a bar."
 
 Node: dcid:Knot
 typeOf: dcs:SpeedUnitOfMeasure
 name: "Knot"
+shortDisplayName: "kn"
 description: "A speed unit of measure representing one nautical mile per hour, exactly 1.852 km/h."
 
 Node: dcid:MilesPerHour
 typeOf: dcs:SpeedUnitOfMeasure
 name: "MilesPerHour (MPH)"
+shortDisplayName: "MPH"
 description: "A speed unit of measure representing one mile per hour."
 
 Node: Percent
 typeOf: dcs:UnitOfMeasure
 name: "Percent"
+shortDisplayName: "%"
 dcid: "Percent"
 description: "A number expressed as a fraction of 100. E.g. 98 denotes 98 percent, while 0.98 denotes 0.98 percent."
 
 Node: Inch
 typeOf: dcid:LengthUnitOfMeasure
 name: "Inch"
+shortDisplayName: "in"
 dcid: "Inch"
 description: "A length unit of measure equivalent to a twelfth of a foot."
 
 Node: Foot
 typeOf: dcid:LengthUnitOfMeasure
 name: "Foot"
+shortDisplayName: "ft"
 dcid: "Foot"
 description: "A length unit of measure equivalent to a twelve inches."
 alternateName: "Feet"
@@ -1609,48 +1626,56 @@ description: "A length unit of measure equivalent to 5280 feet or 1760 yards."
 Node: Millimeter
 typeOf: dcid:LengthUnitOfMeasure
 name: "Millimeter"
+shortDisplayName: "mm"
 dcid: "Millimeter"
 description: "A length unit of measure equivalent to one thousandth of a meter."
 
 Node: Centimeter
 typeOf: dcid:LengthUnitOfMeasure
 name: "Centimeter"
+shortDisplayName: "cm"
 dcid: "Centimeter"
 description: "A length unit of measure equivalent to one hundredth of a meter."
 
 Node: Meter
 typeOf: dcid:LengthUnitOfMeasure
 name: "Meter"
+shortDisplayName: "m"
 dcid: "Meter"
 description: "The base unit of length defined by the International System of Units."
 
 Node: Kilometer
 typeOf: dcid:LengthUnitOfMeasure
 name: "Kilometer"
+shortDisplayName: "km"
 dcid: "Kilometer"
 description: "A length unit of measure equivalent to one thousand meters."
 
 Node: SquareMile
 typeOf: dcid:AreaUnitOfMeasure
 name: "SquareMile"
+shortDisplayName: "mi²"
 dcid: "SquareMile"
 description: "An area equal to a square with each side length equivalent to one mile."
 
 Node: SquareKilometer
 typeOf: dcid:AreaUnitOfMeasure
 name: "SquareKilometer"
+shortDisplayName: "kmi²"
 dcid: "SquareKilometer"
 description: "An area equal to a square with each side length equivalent to one kilometer."
 
 Node: SquareMeter
 typeOf: dcid:AreaUnitOfMeasure
 name: "SquareMeter"
+shortDisplayName: "m²"
 dcid: "SquareMeter"
 description: "An area equal to a square with each side length equivalent to one meter."
 
 Node: SquareFoot
 typeOf: dcid:AreaUnitOfMeasure
 name: "SquareFoot"
+shortDisplayName: "ft²"
 dcid: "SquareFoot"
 description: "An area equal to a square with each side length equivalent to one foot."
 alternateName: "SquareFeet"
@@ -1668,12 +1693,14 @@ description: "Equals 10,000 square meters."
 Node: Milliliter
 typeOf: dcid:VolumeUnitOfMeasure
 name: "Milliliter"
+shortDisplayName: "ml"
 dcid: "Milliliter"
 description: "A volume equal to one thousandth of a liter."
 
 Node: Liter
 typeOf: dcid:VolumeUnitOfMeasure
 name: "Liter"
+shortDisplayName: "L"
 dcid: "Liter"
 description: "A volume unit accepted by the International System of Units equivalent to one cubic decimeter."
 
@@ -1692,6 +1719,7 @@ description: "A unit ratio between mile length and square mile area."
 Node: dcid:MillimeterPerYear
 typeOf: dcs:UnitOfMeasure
 name: "MillimeterPerYear"
+shortDisplayName: "mm/yr"
 description: "A rate unit that represents the millimeters of sea-level increase, rainfall, etc. per year."
 
 Node: DeathPer1000Births
@@ -1703,27 +1731,32 @@ description: "A unit death per one thousand births."
 Node: dcid:USDollar
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "USDollar"
+shortDisplayName: "USD"
 description: "The official currency of the United States of America."
 
 Node: dcid:InflationAdjustedUSD_CurrentYear
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "InflationAdjustedUSD_CurrentYear"
+shortDisplayName: "Infl. adj. USD (CY)"
 description: "The US Dollar adjusted for inflation using Consumer Price Index (CPI) averages"
 descriptionUrl: "https://www.census.gov/content/dam/Census/library/publications/2018/acs/acs_general_handbook_2018_ch10.pdf"
 
 Node: dcid:Euro
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "Euro"
+shortDisplayName: "EUR"
 description: "The official currency of the European Union."
 
 Node: dcid:CanadianDollar
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "CanadianDollar"
+shortDisplayName: "CAD"
 description: "The official currency of Canada."
 
 Node: dcid:IndianRupee
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "IndianRupee"
+shortDisplayName: "INR"
 description: "The official currency of India."
 
 Node: dcid:NationalCurrency
@@ -1734,6 +1767,7 @@ description: "Unit for measurements made in the official currency of the relevan
 Node: dcid:PurchasingPowerStandard
 name: "PurchasingPowerStandard"
 typeOf: dcs:UnitOfMeasure
+shortDisplayName: "PPS"
 description: "The purchasing power standard, abbreviated as PPS, is an artificial currency unit. PPS is the technical term used by Eurostat for the common currency in which national accounts aggregates are expressed when adjusted for price level differences using PPPs. Thus, PPPs can be interpreted as the exchange rate of the PPS against the euro."
 descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Purchasing_power_standard_(PPS)"
 
@@ -1764,6 +1798,7 @@ description: "The base unit of time defined by the International System of Units
 Node: Minute
 typeOf: dcid:TimeUnitOfMeasure
 name: "Minute"
+shortDisplayName: "min"
 dcid: "Minute"
 description: "A unit of time equivalent to 60 seconds."
 
@@ -1783,18 +1818,21 @@ Node: Week
 typeOf: dcid:TimeUnitOfMeasure
 name: "Week"
 dcid: "Week"
+shortDisplayName: "wk"
 description: "A unit of time equivalent to one week on the Gregorian calendar."
 
 Node: Month
 typeOf: dcid:TimeUnitOfMeasure
 name: "Month"
 dcid: "Month"
+shortDisplayName: "mo"
 description: "A unit of time equivalent to one month on the Gregorian calendar."
 
 Node: Year
 typeOf: dcid:TimeUnitOfMeasure
 name: "Year"
 dcid: "Year"
+shortDisplayName: "yr"
 description: "A unit of time equivalent to one year on the Gregorian calendar."
 
 Node: dcid:TemperatureUnitOfMeasure
@@ -1807,11 +1845,13 @@ Node: dcid:Celsius
 typeOf: schema:Class
 subClassOf: dcs:TemperatureUnitOfMeasure
 name: "Celsius"
+shortDisplayName: "C"
 
 Node: dcid:Kelvin
 typeOf: schema:Class
 subClassOf: dcs:TemperatureUnitOfMeasure
 name: "Kelvin"
+shortDisplayName: "K"
 
 Node: dcid:PrecipiationUnitOfMeasure
 typeOf: schema:Class
@@ -1823,6 +1863,7 @@ Node: dcid:KilogramsPerMeterSquaredSecond
 typeOf: schema:Class
 subClassOf: dcs:PrecipiationUnitOfMeasure
 name: "KilogramsPerMeterSquaredSecond"
+shortDisplayName: "kg/sqms"
 
 Node: dcid:RatioToPovertyLine
 typeOf: dcs:UnitOfMeasure
