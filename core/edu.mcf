@@ -1492,6 +1492,13 @@ domainIncludes: dcs:School, dcs:Student
 rangeIncludes: schema:Number
 description: "The score secured by students in an assessment."
 
+Node: dcid:assessmentScore
+name: "assessmentScore"
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: schema:Number
+description: "The score secured by students in an assessment."
+
 Node: dcid:subjectAssessmentScale
 name: "subjectAssessmentScale"
 typeOf: schema:Property
@@ -1736,6 +1743,12 @@ typeOf: dcs:LanguageLearnedEnum
 name: "OnlyEnglish"
 specializationOf: dcs:English
 description: "English as the first language."
+
+Node: dcid:EnglishLearner
+typeOf: dcs:LanguageLearnedEnum
+name: "EnglishLearner"
+specializationOf: dcs:English
+description: "English Language Learner."
 
 Node: dcid:LanguageLearningAgeGroupEnum
 typeOf: schema:Class
