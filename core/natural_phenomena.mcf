@@ -6,6 +6,67 @@ subClassOf: schema:Landform
 description: "In hydrology, an oceanic basin may be anywhere on Earth that is covered by seawater but geologically ocean basins are large geologic basins that are below sea level."
 descriptionUrl: "https://en.wikipedia.org/wiki/Oceanic_basin"
 
+Node: dcid:oceanicBasin/WesternNorthPacific
+name: "WesternNorthPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/SouthIndian
+name: "SouthIndian Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/SouthernPacific
+name: "SouthernPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/EasternNorthPacific
+name: "EasternNorthPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/NorthIndian
+name: "NorthIndian Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/SouthAtlantic
+name: "SouthAtlantic Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/NorthAtlantic
+name: "NorthAtlantic Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/CaribbeanSea
+name: "CaribbeanSea Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/GulfOfMexico
+name: "GulfOfMexico Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/WesternAustralia
+name: "WesternAustralia Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/SouthIndian
+
+Node: dcid:oceanicBasin/BayOfBengal
+name: "BayOfBengal Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/NorthIndian
+
+Node: dcid:oceanicBasin/EasternAustralia
+name: "EasternAustralia Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/SouthernPacific
+
+Node: dcid:oceanicBasin/ArabianSea
+name: "ArabianSea Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/NorthIndian
+
+Node: dcid:oceanicBasin/CentralPacific
+name: "CentralPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/EasternNorthPacific
+
 Node: dcid:MeteorologicalEvent
 typeOf: schema:Class
 name: "MeteorologicalEvent"
@@ -824,35 +885,35 @@ Node: dcid:cycloneTrackType
 typeOf: schema:Property
 name: "cycloneTrackType"
 domainIncludes: dcs:CycloneEvent
-rangeIncludes: dcs:CycloneTrackTypeEnum
+rangeIncludes: dcs:IBTrACS_CycloneTrackTypeEnum
 description: "Type of cyclone track record."
 
-Node: dcid:CycloneTrackTypeEnum
+Node: dcid:IBTrACS_CycloneTrackTypeEnum
 typeOf: schema:Class
-name: "CycloneTrackTypeEnum"
+name: "IBTrACS_CycloneTrackTypeEnum"
 subClassOf: schema:Enumeration
-description: "Types of cyclone track records."
+description: "Types of cyclone track records used by IBTrACS."
 
-Node: dcid:MainCycloneTrack
-typeOf: dcs:CycloneTrackTypeEnum
+Node: dcid:IBTrACS_MainCycloneTrack
+typeOf: dcs:IBTrACS_CycloneTrackTypeEnum
 name: "MainCycloneTrack"
 description: "Primary track associated with a storm system. This is a track that has had some reanalysis and is higher quality than provisional data."
 descriptionUrl: "https://www.ncdc.noaa.gov/ibtracs/pdf/IBTrACS_v04_column_documentation.pdf"
 
-Node: dcid:ProvisionalCycloneTrack
-typeOf: dcs:CycloneTrackTypeEnum
+Node: dcid:IBTrACS_ProvisionalCycloneTrack
+typeOf: dcs:IBTrACS_CycloneTrackTypeEnum
 name: "ProvisionalCycloneTrack"
 description: "Real time data used to populate the position and other parameters of this system. This is a provisional track that will be replaced when reanalysis of the storm is performed (usually within 2 years of the storm's occurence)."
 descriptionUrl: "https://www.ncdc.noaa.gov/ibtracs/pdf/IBTrACS_v04_column_documentation.pdf"
 
-Node: dcid:ProvisionalSpurCycloneTrack
-typeOf: dcs:CycloneTrackTypeEnum
+Node: dcid:IBTrACS_ProvisionalSpurCycloneTrack
+typeOf: dcs:IBTrACS_CycloneTrackTypeEnum
 name: "ProvisionalSpurCycloneTrack"
 description: "Real time data (see ProvisionalCycloneTrack) but due to differences in positions between various inputs, algorithm can not identify accurate position. When counting storms, these should not likely be counted. These should be rare for PROVISIONAL data."
 descriptionUrl: "https://www.ncdc.noaa.gov/ibtracs/pdf/IBTrACS_v04_column_documentation.pdf"
 
-Node: dcid:SpurCycloneTrack
-typeOf: dcs:CycloneTrackTypeEnum
+Node: dcid:IBTrACS_SpurCycloneTrack
+typeOf: dcs:IBTrACS_CycloneTrackTypeEnum
 name: "SpurCycloneTrack"
 description: "Usually short lived tracks associated with a main track and often represents alternate positions at the beginning of a system. Can also represent actual system interactions (e.g., Fujiwhara interactions)."
 descriptionUrl: "https://www.ncdc.noaa.gov/ibtracs/pdf/IBTrACS_v04_column_documentation.pdf"
