@@ -1,0 +1,225 @@
+# GenomeCoverageEnum
+Node: dcid:GenomeCoverageEnum
+name: "GenomeCoverageEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Genome coverage refers to the number of unique reads aligned to a specific locus in a reference genome. Genome coverage can also be used to denote the breadth of coverage of a target genome, which is defined as the percentage of target bases that are sequenced a given number of times."
+descriptionUrl: "https://www.nature.com/articles/nrg3642"
+
+Node: dcid:GenomeCoverageCompleteCodingGenome
+name: "Complete Coding Genome"
+typeOf: dcs:GenomeCoverageEnum
+description: "All of the coding regions (parts of the genome that code for proteins) are covered by sequencing."
+
+Node: dcid:GenomeCoverageCompleteGenome
+name:  "Complete Genome"
+typeOf: dcs:GenomeCoverageEnum
+description: "The entirety of the genome is covered by sequencing."
+
+Node: dcid:GenomeCoverageNoEntryInGenBank
+name: "No Entry In GenBank"
+typeOf: dcs:GenomeCoverageEnum
+description: "The coverage level of a given genome has not been recorded in GenBank."
+
+Node: dcid:GenomeCoveragePartialGenome
+name: "GenomeCoveragePartialGenome"
+typeOf: dcs:GenomeCoverageEnum
+description: "A genome that has been partially sequenced."
+
+
+# VirusGenomeCompositionEnum
+Node: dcid:VirusGenomeCompositionEnum
+name: "VirusGenomeCompositionEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Composition of the virus genome and it's replication method. This follows the Baltimore Classification system, which groups viruses together based on their manner of mRNA synthesis. Characteristics directly related to this include whether the genome is made of deoxyribonucleic acid (DNA) or ribonucleic acid (RNA), the strandedness of the genome, which can be either single- or double-stranded, and the sense of a single-stranded genome, which is either positive or negative."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionDoubleStrandedDNA
+name: "Double-Stranded DNA"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of double stranded DNA (dsDNA). Belongs to Baltimore classification Group I: double-stranded DNA viruses. All dsDNA viruses have their mRNA synthesized in a three-step process. First, a transcription preinitiation complex binds to the DNA upstream of the site where transcription begins, allowing for the recruitment of a host RNA polymerase. Second, once the RNA polymerase is recruited, it uses the negative strand as a template for synthesizing mRNA strands. Third, the RNA polymerase terminates transcription upon reaching a specific signal, such as a polyadenylation site."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionSingleStrandedDNA
+name: "Single-Stranded DNA"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of single stranded DNA (ssDNA), which can be positive or negative. Belongs to Baltimore Classification Group II: single-stranded DNA viruses. ssDNA viruses have the same manner of transcription as dsDNA viruses. However, because the genome is single-stranded, it is first made into a double-stranded form by a DNA polymerase upon entering a host cell. mRNA is then synthesized from the double-stranded form. The double-stranded form of ssDNA viruses may be produced either directly after entry into a cell or as a consequence of replication of the viral genome."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionSingleStrandedDNAPositive
+name: "Single-Stranded DNA-Positive"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of the positive strand of single stranded DNA (ssDNA). Belongs to Baltimore Classification Group II: single-stranded DNA viruses. ssDNA viruses have the same manner of transcription as dsDNA viruses. However, because the genome is single-stranded, it is first made into a double-stranded form by a DNA polymerase upon entering a host cell. mRNA is then synthesized from the double-stranded form. The double-stranded form of ssDNA viruses may be produced either directly after entry into a cell or as a consequence of replication of the viral genome."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionSingleStrandedDNANegative
+name: "Single-Stranded DNA-Negative"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of the negative strand of single stranded DNA (ssDNA). Belongs to Baltimore Classification Group II: single-stranded DNA viruses. ssDNA viruses have the same manner of transcription as dsDNA viruses. However, because the genome is single-stranded, it is first made into a double-stranded form by a DNA polymerase upon entering a host cell. mRNA is then synthesized from the double-stranded form. The double-stranded form of ssDNA viruses may be produced either directly after entry into a cell or as a consequence of replication of the viral genome."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionDoubleStrandedDNAReverseTranscription
+name: "Double=Stranded DNA-Reverse Transcription"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is double-stranded DNA that has an RNA intermediate (dsDNA-RT) in its replication cycle. Belongs to Baltimore Classification Group VII: double-stranded DNA viruses with an RNA intermediate. dsDNA-RT viruses have a gap in one strand, which is repaired to create a complete dsDNA genome prior to transcription. dsDNA-RT viruses are transcribed in the same manner as dsDNA viruses, but make use of reverse transcription to replicate their circular genome while it is still in the capsid. The host cell's RNA polymerase II transcribes RNA strands from the genome in the cytoplasm, and the genome is replicated from these RNA strands. The dsDNA genome is produced from pregenomic RNA strands via the same general mechanism as ssRNA-RT viruses, but with replication occurring in a loop around the circular genome. After replication, the dsDNA genome may be packed or sent to the nucleus for further rounds of transcription."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionDoubleStrandedRNA
+name: "Double-Stranded RNA"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of double stranded RNA (dsRNA). Belongs to Baltimore Classification Group III: double-stranded RNA viruses. After entering a host cell, the dsRNA genome is transcribed to mRNA from the negative strand by the viral RNA-dependent RNA polymerase (RdRp). The mRNA may be used for translation or replication. Single-stranded mRNA is replicated to form the dsRNA genome. The 5′-end of the genome may be naked, capped, or covalently bound to a viral protein."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionSingleStrandedRNA
+name: "Single-Stranded RNA-Positive"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of single stranded RNA (ssRNA). These can be either a positive sense single stranded RNA (+ssRNA) genome belonging to Blatimore Classification Group IV or a negative sense single stranded (-ssRNA) genome belonging to Baltimore Classification Group V."
+
+Node: dcid:VirusGenomeCompositionSingleStrandedRNAPositive
+name: "Single-Stranded RNA-Positive"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of positive sense single stranded RNA (+ssRNA). Belongs to Baltimore Classification Group IV: positive sense single-stranded RNA viruses. For +ssRNA viruses, the genome functions as mRNA, so no transcription is required for translation. +ssRNA viruses will also, however, produce positive sense copies of the genome from negative sense strands of an intermediate dsRNA genome. This acts as both a transcription and a replication process since the replicated RNA is also mRNA. The 5′-end may be naked, capped, or covalently bound to a viral protein, and the 3′-end may be naked or polyadenylated."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionSingleStrandedRNANegative
+name: "Single-Stranded RNA-Negative"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is composed of negative sense single stranded RNA (-ssRNA). Belongs to Baltimore Classification Group V: negative sense single-stranded RNA viruses. mRNA, which is positive sense, is transcribed directly from the negative sense genome. The first process for -ssRNA transcription involves RdRp binding to a leader sequence on the 3′ end of the genome, transcribing a 5′ triphosphate-leader RNA that is capped, then stopping and restarting on a transcription signal which is capped, continuing until a stop signal is reached.[31] The second manner is similar but instead of synthesizing a cap, RdRp may make use of cap snatching, whereby a short sequence of host cell mRNA is taken and used as the 5′ cap of the viral mRNA.[32] Genomic -ssRNA is replicated from the positive sense antigenome in a similar manner as transcription, except in reverse using the antigenome as a template for the genome. RdRp moves from the 3′-end to the 5′-end of the antigenome and ignores all transcription signals when synthesizing genomic -ssRNA."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:VirusGenomeCompositionSingleStrandedRNAReverseTranscription
+name: "Single-Stranded RNA-Reverse Transcription"
+typeOf: dcs:VirusGenomeCompositionEnum
+description: "A virus whose genome is positive-sense single-stranded RNA that has a DNA intermediate ((+)ssRNA-RT) in its replication cycle. Belongs to Baltimore Classification Group VI: single-stranded RNA viruses with a DNA intermediate. ssRNA-RT viruses are transcribed in the same manner as DNA viruses, but their linear genomes are first converted to a dsDNA form through a process called reverse transcription. The viral reverse transcriptase enzyme synthesizes a DNA strand from the ssRNA strand, and the RNA strand is degraded and replaced with a DNA strand to create a dsDNA genome. The genome is then integrated into the DNA of the host cell, where it is now called a provirus. The host cell's RNA polymerase II then transcribes RNA in the nucleus from the proviral DNA. Some of this RNA may become mRNA whereas other strands will become copies of the viral genome for replication."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+
+# VirusHostEnum
+Node: dcid:VirusHostEnum
+name: "VirusHostEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "A specific organism or taxonomic group of organisms that are susceptible to be infected by a virus. Viruses require infection of living host cells to replicate and survive."
+descriptionUrl: "https://www.uniprot.org/help/virus_host"
+
+Node: dcid:VirusHostAlgae
+name: "Algae"
+typeOf: dcs:VirusHostEnum
+
+Node: dcid:VirusHostArchea
+name: "Archea"
+typeOf: dcs:VirusHostEnum
+
+Node: dcid:VirusHostBacteria
+name: "Bacteria"
+typeOf: dcs:VirusHostEnum
+
+Node: dcid:VirusHostFungi
+name: "Fungi"
+typeOf: dcs:VirusHostEnum
+
+Node: dcid:VirusHostInvertebrates
+name: "Invertebrates"
+typeOf: dcs:VirusHostEnum
+
+Node: dcid:VirusHostPlants
+name: "Plants"
+typeOf: dcs:VirusHostEnum
+
+Node: dcid:VirusHostProtists
+name: "Protists"
+typeOf: dcs:VirusHostEnum
+
+Node: dcid:VirusHostVertebrates
+name: "Vertebrates"
+typeOf: dcs:VirusHostEnum
+
+
+# VirusSourceEnum
+Node: dcid:VirusSourceEnum
+name: "VirusSourceEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The source envrionment from which the virus was isolated."
+
+Node: dcid:VirusSourceInvertebrates
+name: "Invertebrates"
+typeOf: dcs:VirusSourceEnum
+
+Node: dcid:VirusSourceMarine
+name: "Marine"
+typeOf: dcs:VirusSourceEnum
+
+Node: dcid:VirusSourcePhytobiome
+name: "Phytobiome"
+typeOf: dcs:VirusSourceEnum
+
+Node: dcid:VirusSourcePlants
+name: "Plants"
+typeOf: dcs:VirusSourceEnum
+
+Node: dcid:ViruSourceProtists
+name: "Protists"
+typeOf: dcs:VirusSourceEnum
+
+Node: dcid:VirusSourceSewage
+name: "Sewage"
+typeOf: dcs:VirusSourceEnum
+
+Node: dcid:VirusSourceSoil
+name: "Soil"
+typeOf: dcs:VirusSourceEnum
+
+
+# VirusLastTaxonomicChangeEnum
+Node: dcid:VirusLastTaxonomicChangeEnum
+name: "VirusLastTaxonomicChangeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The last change made to each virus species across the entire history of the taxon. Possible changes include a combination of the following: abolished, demoted, merged, moved, new, promoted, removed, renamed, or split"
+
+Node: dcid:VirusLastTaxonomicChangeAbolished
+name: "Abolished"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "The taxon is abolished (deleted) from the MSL. All constituent taxa need to be moved, otherwise they will also be deleted."
+
+Node: dcid:VirusLastTaxonomicChangeDemoted
+name: "Demoted"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "A higher rank taxon is moved to a lower rank (potentially requiring a rename). This does NOT necessarily imply that the constituent members of the promoted taxon are subject to any change. This change type was added in 2020."
+
+Node: dcid:VirusLastTaxonomicChangeMerged
+name: "Merged"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "Two separate taxa will be merged into a single taxon. The single taxon may be one of the initial two, or it could be a newly created taxon. All constituent, lower rank members will be automatically moved into the merged taxon."
+
+Node: dcid:VirusLastTaxonomicChangeMoved
+name: "Moved"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "A lower rank taxon and its constituent members is moved from one higher rank taxon to another. (The move usually, but not necessarily, is to a taxon (existing or new) at the same rank as the original parent.)"
+
+Node: dcid:VirusLastTaxonomicChangeNew
+name: "New"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "Creation of a new taxon. New ranks higher than Species must contain new (or moved) lower-rank members."
+
+Node: dcid:VirusLastTaxonomicChangePromoted
+name: "Promoted"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "A lower rank taxon is moved to a higher rank (usually also requiring a rename). This does NOT necessarily imply that the constituent members of the promoted taxon are subject to any change."
+
+Node: dcid:VirusLastTaxonomicChangeRemoved
+name: "Removed"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "A taxon is removed as type species."
+
+Node: dcid:VirusLastTaxonomicChangeRenamed
+name: "Renamed"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "A taxon is renamed. The new name must adhere to the naming rules of the ICTV Code of Virus Classification and Nomenclature."
+
+Node: dcid:VirusLastTaxonomicChangeSplit
+name: "Split"
+typeOf: dcs:VirusLastTaxonomicChangeEnum
+description: "A taxon, along with its constituent members, are split into two or more taxa. The original taxon that was split may, or may not, be retained, and the resulting set of taxa into which the original was split, may consist of existing or new taxa. The change must be accompanied with an indication of where each of the constituent member taxa are to be moved. Theoretically, this action could be accomplished with a combination of changes involving Moved, Abolished, and New, but was created to maintain the history of all changes to the original taxon and its members."
