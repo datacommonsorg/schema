@@ -1,0 +1,229 @@
+# Virus Taxonomy
+Node: dcid:Virus
+name: "Virus"
+typeOf: schema:Class
+subClassOf: dcs:BiologicalSpecimen
+description: "A virus is a submicroscopic infectious agent that replicates only inside the living cells of an organism. Viruses infect all life forms, from animals and plants to microorganisms, including bacteria and archaea. The classification of viruses is developed by the International Committee on the Taxonomy of Viruses (ICTV)."
+descriptionUrl: "https://en.wikipedia.org/wiki/Virus"
+descriptionUrl: "https://talk.ictvonline.org/taxonomy/w/ictv-taxonomy"
+
+Node: dcid:VirusIsolate
+name: "VirusIsolate"
+typeOf: schema:Class
+subClassOf: dcs:Virus
+description: "A virus that has been isolated from an infected host and can be propogated in culture."
+descriptionUrl: "https://talk.ictvonline.org/taxonomy/w/ictv-taxonomy"
+
+Node: dcid:VirusGenomeSegment
+name: "VirusGenomeSegment"
+typeOf: schema:Class
+subClassOf: dcs:VirusIsolate
+description: "A segment of a virus whose genome is fragmented into two or more nucleic acid molecules."
+
+Node: dcid:genomeCoverage
+name: "genomeCoverage"
+typeOf: schema:Property
+domainIncludes: dcs:VirusIsolate
+rangeIncludes: dcs:GenomeCoverageEnum
+description: "Genome coverage refers to the number of unique reads aligned to a specific locus in a reference genome. Genome coverage can also be used to denote the breadth of coverage of a target genome, which is defined as the percentage of target bases that are sequenced a given number of times."
+descriptionUrl: "https://www.nature.com/articles/nrg3642"
+
+Node: dcid:genomeSegmentOf
+name: "genomeSegmentOf"
+typeOf: schema:Property
+domainIncludes: dcs:VirusGenomeSegment
+rangeIncludes: dcs:VirusIsolate
+description: "The virus isolate from which this genome segment was sequenced."
+
+Node: dcid:isExemplarVirusIsolate
+name: "isExemplarVirusIsolate"
+typeOf: schema:Property
+domainIncludes: dcs:VirusIsolate
+rangeIncludes: schema:Boolean
+description: "A virus isolate is a virus that has been isolated from an infected host and can be propogated in culture. ICTV chooses examplar isolates to represent a virus species. An exemplar virus serves as an example of a well-characterized virus isolate of that species and includes the GenBank accession number for the genomic sequence of the isolate as well as the virus name, isolate designation, suggested abbreviation, genome composition, and host source."
+descriptionUrl: "https://ictv.global/vmr"
+
+Node: dcid:ofVirusSpecies
+name: "ofVirusSpecies"
+typeOf: schema:Property
+domainIncludes: dcs:VirusIsolate
+rangeIncludes: dcs:Virus
+description: "The species of a virus isolate."
+
+Node: dcid:proposalForLastChange
+name: "proposalForLastChange"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: schema:Text
+description: "The file name of the taxonomic proposal that details the justification for the last change. Proposals can be retrieved by appending the file nameand '.pdf' to the end of the following url: 'https://talk.ictvonline.org/ictv/proposals/<replace with file name.pdf'."
+
+Node: dcid:taxonHistoryURL
+name: "taxonHistoryURL"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: schema:Number
+description: "The web url link that provides the complete taxonomic history of the species can be found by appending the number value reported here to the following url 'https://ictv.global/taxonomy/taxondetails?taxnode_id='. The proposal indicated above can be downloaded from the link provided by the last changed entry in the history."
+
+Node: dcid:versionOfLastChange
+name: "versionOfLastChange"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: schema:Number
+description: "The release number of the Master Species List (MSL) where the Last Change occurred. See https://talk.ictvonline.org/taxonomy/p/taxonomy_releases for a list of MSLs and their year of release."
+
+Node: dcid:virusGenomeComposition
+name: "virusGenomeComposition"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusGenomeCompositionEnum
+description: "Composition of the virus genome and it's replication method. This follows the Baltimore Classification system, which groups viruses together based on their manner of mRNA synthesis. Characteristics directly related to this include whether the genome is made of deoxyribonucleic acid (DNA) or ribonucleic acid (RNA), the strandedness of the genome, which can be either single- or double-stranded, and the sense of a single-stranded genome, which is either positive or negative."
+descriptionUrl: "https://en.wikipedia.org/wiki/Baltimore_classification"
+
+Node: dcid:virusHost
+name: "virusHost"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusHostEnum
+description: "A specific organism or taxonomic group of organisms that are susceptible to be infected by a virus. Viruses require infection of living host cells to replicate and survive."
+descriptionUrl: "https://www.uniprot.org/help/virus_host"
+
+Node: dcid:virusIsolateDesignation
+name: "virusIsolateDesignation"
+typeOf: schema:Property
+domainIncludes: dcs:VirusIsolate
+rangeIncludes: schema:Text
+description: "The designation of the virus isolate (often also referred to as variants or strains). May be empty if there is no physical isolate."
+
+Node: dcid:virusLastTaxonomicChange
+name: "virusLastTaxonomicChange"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusLastTaxonomicChangeEnum
+description: "The last change made to each virus species across the entire history of the taxon. Possible changes include a combination of the following: abolished, demoted, merged, moved, new, promoted, removed, renamed, or split."
+
+Node: dcid:virusSource
+name: "virusSource"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSourceEnum
+description: "The source envrionment from which the virus was isolated."
+
+Node: dcid:virusRealm
+name: "virusRealm"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusRealmEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'realm' is  the highest taxonomic rank into which virus species can be classified. Use of the taxonomic rank 'realm' is optional. If left blank,  lower taxonomic levels of have not been assigned to a realm. The realm rank suffix is '-viria'."
+
+Node: dcid:virusSubrealm
+name: "virusSubrealm"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSubrealmEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'subrealm' is optional. If left blank,  lower taxonomic levels of have not been assigned to a subrealm.The subrealm rank suffix is '-vira'."
+
+Node: dcid:virusKingdom
+name: "virusKingdom"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusKingdomEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'kingdom' is optional. If left blank,  lower taxonomic levels of have not been assigned to a kingdom. The kingdom rank suffix is '-virae'."
+
+Node: dcid:virusSubkingdom
+name: "virusSubkingdom"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSubkingdomEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'subkingdom' is optional. If left blank,  lower taxonomic levels of have not been assigned to a subkingdom. The subkingdom rank suffix is '-virites'."
+
+Node: dcid:virusPhylum
+name: "virusPhylum"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusPhylumEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'phylum' is optional. If left blank,  lower taxonomic levels of have not been assigned to a phylum.The phylum rank suffix is '-viricota'."
+
+Node: dcid:virusSubphylum
+name: "virusSubphylum"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSubphylumEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'subphylum' is optional. If left blank,  lower taxonomic levels of have not been assigned to a subphylum.The subphylum rank suffix is '-viricotina'."
+
+Node: dcid:virusClass
+name: "virusClass"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusClassEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'class' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'class' is optional. If left blank,  lower taxonomic levels of have not been assigned to a class.The class rank suffix is '-viricetes'."
+
+Node: dcid:virusSubclass
+name: "virusSubclass"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSubclassEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'subclass' is optional. If left blank,  lower taxonomic levels of have not been assigned to a subclass.The subclass rank suffix is '-viricetidae'."
+
+Node: dcid:virusOrder
+name: "virusOrder"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusOrderEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "An 'order' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'order' is optional. If left blank,  lower taxonomic levels of have not been assigned to a order. The order rank suffix is '-virales'."
+
+Node: dcid:virusSuborder
+name: "virusSuborder"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSuborderEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'suborder' is optional. If left blank,  lower taxonomic levels of have not been assigned to a suborder. The suborder rank suffix is '-virineae'."
+
+Node: dcid:virusFamily
+name: "virusFamily"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusFamilyEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'family' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'family' is optional. If left blank,  lower taxonomic levels of have not been assigned to a family.The family rank suffix is '-viridae'."
+
+Node: dcid:virusSubfamily
+name: "virusSubfamily"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSubfamilyEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A  'subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'subfamily' is optional. If left blank,  lower taxonomic levels of have not been assigned to a subfamily. The subfamily rank suffix is '-virinae'."
+
+Node: dcid:virusGenus
+name: "virusGenus"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusGenusEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'genus' is mandatory. Every species should be assigned to a genus. The genus rank suffix is '-virus'."
+
+Node: dcid:virusSubgenus
+name: "virusSubgenus"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: dcs:VirusSubgenusEnum
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A 'subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Use of the taxonomic rank 'subgenus' is optional. If left blank,  species have not been assigned to a subgenus. The genus rank suffix is '-virus'."
+
+Node: dcid:virusSpecies
+name: "virusSpecies"
+typeOf: schema:Property
+domainIncludes: dcs:Virus
+rangeIncludes: schema:Text
+descriptionUrl: "https://ictv.global/taxonomy"
+description: "A Species is the lowest taxonomic rank in the hierarchy approved by the ICTV. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the ICTV does not classify viruses below the species level."

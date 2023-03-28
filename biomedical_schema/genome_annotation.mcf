@@ -51,21 +51,21 @@ name: "Gene"
 typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description: "Gene symbol of a gene, which is the basic hereditary unit of life."
-sameAs: "https://bioportal.bioontology.org/ontologies/OGG"
+descriptionUrl: "https://bioportal.bioontology.org/ontologies/OGG"
 
 Node: dcid:GeneticVariant
 name: "GeneticVariant"
 typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description:  "A single-nucleotide polymorphism, which is a substitution of a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population. These are defined by dbSNP and includes small indels as well."
-sameAs: "http://rohsdb.usc.edu/GBshape/cgi-bin/hgTables?db=hg19&hgta_group=varRep&hgta_track=snp137&hgta_table=snp137&hgta_doSchema=describe+table+schema"
+descriptionUrl: "http://rohsdb.usc.edu/GBshape/cgi-bin/hgTables?db=hg19&hgta_group=varRep&hgta_track=snp137&hgta_table=snp137&hgta_doSchema=describe+table+schema"
 
 Node: dcid:GeneticVariantGeneAssociation
 name: "GeneticVariantGeneAssociation"
 typeOf: schema:Class
 subClassOf: dcs:GeneticAssociation
 description:  "An association between a genetic variant and a gene in a given tissue. This is determined by performing a regression analysis on paired genome sequencing and RNA-sequencing across a population."
-sameAs: "https://storage.googleapis.com/gtex_analysis_v6p/single_tissue_eqtl_data/README_eQTL_v6p.txt"
+descriptionUrl: "https://storage.googleapis.com/gtex_analysis_v6p/single_tissue_eqtl_data/README_eQTL_v6p.txt"
 
 Node: Position
 typeOf: dcs:UnitOfMeasure
@@ -123,14 +123,14 @@ Node: dcid:genBankAccession
 name: "genBankAssemblyAccession"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:GenomeAssembly,dcs:GenomeAssemblyUnit,dcs:Chromosome
+domainIncludes: dcs:BiologicalElement
 description: "The accession version of the GenBank assembly or sequence element."
 
 Node: dcid:refSeqAccession
 name: "refSeqAssemblyAccession"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:GenomeAssembly,dcs:GenomeAssemblyUnit,dcs:Chromosome
+domainIncludes: dcs:BiologicalElement
 description: "The accession version of the RefSeq assembly or sequence element."
 
 Node: dcid:ncbiBioProject

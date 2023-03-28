@@ -2985,3 +2985,10 @@ name: "isFallbackRoot"
 description: "Indicates that a StatVarGroup is to act as the root for all StatisticalVariable nodes that are not explicitly assigned to be a member of a StatVarGroup. This is relevant only in the context of a Custom Data Commons instance."
 domainIncludes: dcs:StatVarGroup
 rangeIncludes: schema:Boolean
+
+Node: dcid:abbreviation
+name: "abbreviation"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Text
+abbreviation: "A shortened form of a word, phrase, or name."
