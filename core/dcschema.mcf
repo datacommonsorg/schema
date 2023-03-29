@@ -2991,11 +2991,18 @@ name: "abbreviation"
 typeOf: schema:Property
 domainIncludes: schema:Thing
 rangeIncludes: schema:Text
-abbreviation: "A shortened form of a word, phrase, or name."
+description: "A shortened form of a word, phrase, or name."
 
 Node: dcid:alternativeID
 name: "alternativeID"
 typeOf: schema:Property
 domainIncludes: schema:Thing
 rangeIncludes: schema:Text
-abbreviation: "Another identifier that is associated with a thing."
+description: "Another identifier that is associated with a thing."
+
+Node: dcid:geoLevel
+name: "geoLevel"
+typeOf: schema:Property
+domainIncludes: schema:StatisticalVariable
+rangeIncludes: schema:Place
+description: "The geo granularity at which a variable has data for"
