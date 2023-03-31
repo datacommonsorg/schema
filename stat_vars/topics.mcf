@@ -3,6 +3,18 @@
 #                 Please do not change the order arbitrarily.
 #
 
+# INSTRUCTIONS FOR ADDING TOPICS:
+# 1) Topics are primarily for display of charts on NL interface
+# 2) Topics have vars and SVPGs.
+# 3) It is important for comparable SVs to be in an SVPG (i.e., same mprop, unit, etc), and for non-comparable SVs to just be top-level SVs in the topic.
+# 4) SVPGs should have a name, and these will show up as the title of the block on NL interface
+# 5) Prefer to have no more than ~10 SVs per SVPG (readability limit on charts)
+# 6) If the SVs being added to the title have a name that is too long or weird, those SVs should get a custom chart title (https://github.com/datacommonsorg/website/tree/master/tools/nl/titles)
+# 7) After adding to the KG and it built in autopush (check on browser), add the topic to the embedding index (https://github.com/datacommonsorg/website/tree/master/tools/nl/embeddings)
+# 8) In the PR with #7 and #6 (if any), validate the fulfillment of the topic and provide screenshots.
+# 9) If the fulfillment is suboptimal (chart order is weird, display looks weird, doesn't load, etc.), file tracking bugs, notify shanth@.
+
+
 Node: dcid:dc/topic/Economy
 typeOf: dcs:Topic
 name: "Economy"
@@ -348,3 +360,98 @@ member: dcid:Count_HousingUnit_HomeValue1000000To1499999USDollar
 member: dcid:Count_HousingUnit_HomeValue1500000To1999999USDollar
 member: dcid:Count_HousingUnit_HomeValue1000000OrMoreUSDollar
 member: dcid:Count_HousingUnit_HomeValue2000000OrMoreUSDollar
+
+Node: dcid:dc/topic/EnergyConsumption
+typeOf: dcs:Topic
+name: "Energy Consumption"
+# Total energy consumption, Annual
+relevantVariable: dcid:eia/INTL.44-2-QBTU.A
+relevantVariable: dcid:dc/svpg/TotalAnnualEnergyConsumption
+relevantVariable: dcid:dc/svpg/SpecificAnnualEnergyConsumption
+relevantVariable: dcid:dc/svpg/TotalAnnualEnergyProduction
+relevantVariable: dcid:dc/svpg/SpecificAnnualEnergyProduction
+relevantVariable: dcid:dc/svpg/AnnualElectricityEnergyProduction
+
+Node: dcid:dc/svpg/TotalAnnualEnergyConsumption
+typeOf: dcs:StatVarPeerGroup
+name: "Total Energy Consumption by Fuel Source, Annual"
+# Total energy consumption from renewables and other, Annual
+member: dcid:eia/INTL.4418-2-QBTU.A
+# Total energy consumption from petroleum and other liquids, Annual
+member: dcid:eia/INTL.4415-2-QBTU.A
+# Total energy consumption from coal, Annual
+member: dcid:eia/INTL.4411-2-QBTU.A
+# Total energy consumption from nuclear, Annual
+member: dcid:eia/INTL.4417-2-QBTU.A
+# Total energy consumption from natural gas, Annual
+member: dcid:eia/INTL.4413-2-QBTU.A
+
+Node: dcid:dc/svpg/SpecificAnnualEnergyConsumption
+typeOf: dcs:StatVarPeerGroup
+name: "Annual Energy Consumption by Specific Fuel Source"
+# Biofuels consumption, Annual
+member: dcid:eia/INTL.79-2-QBTU.A
+# Anthracite consumption, Annual
+member: dcid:eia/INTL.11-2-QBTU.A
+# Biodiesel consumption, Annual
+member: dcid:eia/INTL.81-2-QBTU.A
+# Bituminous consumption, Annual
+member: dcid:eia/INTL.12-2-QBTU.A
+# Ethanol consumption, Annual
+member: dcid:eia/INTL.80-2-QBTU.A
+# Jet fuel consumption, Annual
+member: dcid:eia/INTL.63-2-QBTU.A
+# Kerosene consumption, Annual
+member: dcid:eia/INTL.64-2-QBTU.A
+# Lignite consumption, Annual
+member: dcid:eia/INTL.14-2-QBTU.A
+# Motor gasoline consumption, Annual
+member: dcid:eia/INTL.62-2-QBTU.A
+# Subbituminous consumption, Annual
+member: dcid:eia/INTL.119-2-QBTU.A
+
+Node: dcid:dc/svpg/TotalAnnualEnergyProduction
+typeOf: dcs:StatVarPeerGroup
+name: "Total Energy Production by Fuel Source, Annual"
+# Total energy production from coal, Annual
+member: dcid:eia/INTL.4411-1-QBTU.A
+# Total energy production from natural gas, Annual
+member: dcid:eia/INTL.4413-1-QBTU.A
+# Total energy production from petroleum and other liquids, Annual
+member: dcid:eia/INTL.4415-1-QBTU.A
+# Total energy production from renewables and other, Annual
+member: dcid:eia/INTL.4418-1-QBTU.A
+
+Node: dcid:dc/svpg/SpecificAnnualEnergyProduction
+typeOf: dcs:StatVarPeerGroup
+name: "Annual Energy Production by Specific Fuel Source"
+# Anthracite production, Annual
+member: dcid:eia/INTL.11-1-QBTU.A
+# Biofuels production, Annual
+member: dcid:eia/INTL.79-1-QBTU.A
+# Biodiesel production, Annual
+member: dcid:eia/INTL.81-1-QBTU.A
+# Bituminous production, Annual
+member: dcid:eia/INTL.12-1-QBTU.A
+# Crude oil including lease condensate production, Annual
+member: dcid:eia/INTL.57-1-QBTU.A
+# Dry natural gas production, Annual
+member: dcid:eia/INTL.26-1-QBTU.A
+# Ethanol production, Annual
+member: dcid:eia/INTL.80-1-QBTU.A
+# Lignite production, Annual
+member: dcid:eia/INTL.14-1-QBTU.A
+# Natural gas plant liquids production, Annual
+member: dcid:eia/INTL.58-1-QBTU.A
+# Subbituminous production, Annual
+member: dcid:eia/INTL.119-1-QBTU.A
+
+Node: dcid:dc/svpg/AnnualElectricityEnergyProduction
+typeOf: dcs:StatVarPeerGroup
+name: "Annual Energy Production by Electricity Source"
+# Solar electricity net generation, Annual
+member: dcid:eia/INTL.116-12-QBTU.A
+# Tide and wave electricity net generation, Annual
+member: dcid:eia/INTL.117-12-QBTU.A
+# Wind electricity net generation, Annual
+member: dcid:eia/INTL.37-12-QBTU.A
