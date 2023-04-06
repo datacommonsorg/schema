@@ -5,6 +5,7 @@ populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
 statType: dcs:meanValue
 pollutant: dcs:Ozone
+name: "Mean Concentration of Ozone Air Pollutant"
 
 Node: dcid:Max_Concentration_AirPollutant_Ozone
 description: "Max ozone concentration in air."
@@ -101,6 +102,7 @@ populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
 statType: dcs:meanValue
 pollutant: dcs:PM2.5
+name: "Mean Concentration of PM2.5 Air Pollutant"
 
 Node: dcid:Max_Concentration_AirPollutant_PM2.5
 description: "Max PM2.5 concentration in air."
@@ -148,6 +150,7 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:airQualityIndex
 statType: dcs:measuredValue
+name: "Air Quality Index"
 
 Node: dcid:Mean_Concentration_AirPollutant_DieselPM
 description: "Mean Concentration of Diesel PM Air Pollutant"
@@ -156,6 +159,7 @@ populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
 statType: dcs:meanValue
 pollutant: dcs:DieselPM
+name: "Mean Concentration of Diesel PM Air Pollutant"
 
 Node: dcid:AirPollutant_Cancer_Risk
 description: "Cancer Risk From Air Pollutants"
@@ -164,7 +168,7 @@ populationType: dcs:Atmosphere
 measuredProperty: dcs:lifetimeContractionProbability
 statType: dcs:measuredValue
 pollutantHealthRisk: dcs:Cancer
-name: "Lifetime Cancer Risk"
+name: "Cancer Risk From Air Pollutants"
 
 Node: dcid:AirPollutant_Respiratory_Hazard
 description: "Ratio of lifetime exposure to reference concentration. Value of 1 or lower means unlikely noncancer health effects."
@@ -185,6 +189,7 @@ measurementQualifier: dcs:Annual
 emittedThing: dcs:Methane
 emissionSourceType: dcs:NonBiogenicEmissionSource
 description: "Annual Emissions of Non-Biogenic Methane"
+name: "Annual Emissions of Non Biogenic Methane"
 
 Node: dcid:Annual_Emissions_NitrousOxide_NonBiogenic
 typeOf: dcs:StatisticalVariable
@@ -195,6 +200,7 @@ measurementQualifier: dcs:Annual
 emittedThing: dcs:NitrousOxide
 emissionSourceType: dcs:NonBiogenicEmissionSource
 description: "Annual Emissions of Non-Biogenic Nitrous Oxide"
+name: "Annual Emissions of Non Biogenic Nitrous Oxide"
 
 Node: dcid:Annual_Emissions_Hydrofluorocarbon_NonBiogenic
 typeOf: dcs:StatisticalVariable
@@ -251,6 +257,7 @@ emittedThing: dcs:CarbonDioxide
 emissionSourceType: dcs:NonBiogenicEmissionSource
 description: "Annual Emissions of Non-Biogenic Carbon Dioxide"
 descriptionUrl: "https://ccdsupport.com/confluence/pages/viewpage.action?pageId=191398007"
+name: "Annual Emissions of Non Biogenic Carbon Dioxide"
 
 Node: dcid:Annual_Emissions_EPA_OtherFullyFluorinatedCompound_NonBiogenic
 typeOf: dcs:StatisticalVariable
@@ -296,7 +303,7 @@ statType: dcs:measuredValue
 measurementQualifier: dcs:Annual
 emittedThing: dcs:GreenhouseGas
 emissionSourceType: dcs:NonBiogenicEmissionSource
-name: "Total Annual Greenhouse Gas Emissions (Non-Biogenic)"
+name: "Annual Emissions of Non Biogenic Greenhouse Gases"
 description: "Annual Emissions of Non-Biogenic Greenhouse Gases"
 
 Node: dcid:Annual_Emissions_GreenhouseGas_StationaryCombustion_NonBiogenic

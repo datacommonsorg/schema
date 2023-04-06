@@ -5,6 +5,7 @@ populationType: dcs:Person
 race: dcs:NotHispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Non Hispanic People"
+name: "Non Hispanic Population"
 
 Node: dcid:MarginOfError_Count_Person_NotHispanicOrLatino
 measuredProperty: dcs:count
@@ -28,6 +29,7 @@ populationType: dcs:Person
 povertyStatus: dcs:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 description: "Number of People Living in Poverty"
+name: "Population With Poverty Status Determined"
 
 Node: dcid:MarginOfError_Count_Person_PovertyStatusDetermined
 measuredProperty: dcs:count
@@ -43,6 +45,7 @@ populationType: dcs:Person
 povertyStatus: dcs:PovertyStatusDetermined
 age: [18 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 16 Years Or More With Determined Poverty Status"
 
 Node: dcid:MarginOfError_Count_Person_18OrMoreYears_PovertyStatusDetermined
 measuredProperty: dcs:count
@@ -59,6 +62,7 @@ populationType: dcs:Person
 povertyStatus: dcs:PovertyStatusDetermined
 age: [18 64 Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 18 to 64 Years with Poverty Status Determined"
 
 Node: dcid:MarginOfError_Count_Person_18To64Years_PovertyStatusDetermined
 measuredProperty: dcs:count
@@ -92,6 +96,7 @@ residenceType: dcs:GroupQuarters
 race: dcs:NotHispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Non Hispanics Residing in Group Quarters"
+name: "Non Hispanic Population in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_NotHispanicOrLatino_ResidesInGroupQuarters
 measuredProperty: dcs:count
@@ -118,6 +123,7 @@ residenceType: dcs:GroupQuarters
 povertyStatus: dcs:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 description: "Number of People Residing in Group Quarters Who Had Their Poverty Status Determined"
+name: "Population in Group Quarters With Determined Poverty Status"
 
 Node: dcid:MarginOfError_Count_Person_PovertyStatusDetermined_ResidesInGroupQuarters
 measuredProperty: dcs:count
@@ -196,6 +202,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Number of Males Institutionized in Group Quarters"
+name: "Male Population Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Male_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -213,6 +220,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Number of Females Who Are Institutionalized in Group Quarters"
+name: "Female Population Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Female_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -416,6 +424,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [- 18 Years]
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
+name: "Female Population Aged 18 Years or Less With Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_18OrLessYears_Female_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -442,6 +451,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [65 - Years]
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
+name: "Male Population Aged 65 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_65OrMoreYears_Male_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -476,6 +486,7 @@ statType: dcs:medianValue
 populationType: dcs:Person
 residenceType: dcs:InstitutionalizedGroupQuarters
 typeOf: dcs:StatisticalVariable
+name: "Median Age Population in Institutionalized Group Quarters"
 
 Node: dcid:Count_Person_OneRace_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -485,6 +496,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:OneRace
 typeOf: dcs:StatisticalVariable
 description: "Number of People of a Single Race Who Are Institutionalized in Group Quarters"
+name: "Monoracial Population Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_OneRace_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -502,6 +514,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:WhiteAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Identify as White Alone Residing in Institutionalized Group Quarters"
+name: "White Monoracial Population in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_WhiteAlone_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -519,6 +532,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:BlackOrAfricanAmericanAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are Black or African American Alone and Who Are Institutionalized in Group Quarters"
+name: "Black Population Alone Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_BlackOrAfricanAmericanAlone_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -536,6 +550,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:AmericanIndianOrAlaskaNativeAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are American Indian or Alaska Native Alone and Who Live in Institutionalized in Group Quarters"
+name: "Population American Indian or Alaska Native Alone Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_AmericanIndianOrAlaskaNativeAlone_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -553,6 +568,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:AsianAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are Asian Alone and Who Live in Institutionalized in Group Quarters"
+name: "Population Asian Alone Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_AsianAlone_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -570,6 +586,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are Native Hawaiian or Other Pacific Islander Alone and Are Institutionalized in Group Quarters"
+name: "Population of Native Hawaiian or Other Pacific Islander Alone , Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_NativeHawaiianOrOtherPacificIslanderAlone_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -587,6 +604,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:SomeOtherRaceAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Identify as Some Other Race Alone Residing in Institutionalized Group Quarters"
+name: "Population Identifying as Some Other Race Alone in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_SomeOtherRaceAlone_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -604,6 +622,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:TwoOrMoreRaces
 typeOf: dcs:StatisticalVariable
 description: "Number of Multiracial People Residing in Institutionalized Group Quarters"
+name: "Multiracial Population in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_TwoOrMoreRaces_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -621,6 +640,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:HispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Hispanics Institutionalized in Group Quarters"
+name: "Hispanic Institutionalized Population in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_HispanicOrLatino_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -638,6 +658,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:NotHispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Non Hispanics Residing in Institutionalized Group Quarters"
+name: "Non Hispanic Population in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_NotHispanicOrLatino_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -655,6 +676,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 race: dcs:WhiteAloneNotHispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Non Hispanic People Who Identify as White Alone Residing in Insitutionalized Group Quarters"
+name: "White Hispanic Monoracial Population in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_WhiteAloneNotHispanicOrLatino_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -671,6 +693,7 @@ populationType: dcs:Person
 residenceType: dcs:InstitutionalizedGroupQuarters
 age: [15 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Above 15 Years Old Living in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_15OrMoreYears_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -742,6 +765,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [15 - Years]
 maritalStatus: dcs:Separated
 typeOf: dcs:StatisticalVariable
+name: "Separated Population Aged 15 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Separated_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -760,6 +784,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [15 - Years]
 maritalStatus: dcs:NeverMarried
 typeOf: dcs:StatisticalVariable
+name: "Unmarried Population Aged 15 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_NeverMarried_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -778,6 +803,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 schoolEnrollment: dcs:EnrolledInSchool
 age: [3 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Above 3 Years Old In Institutionalized Group Quarters Enrolled In School"
 
 Node: dcid:MarginOfError_Count_Person_ResidesInInstitutionalizedGroupQuarters_EnrolledInSchool
 measuredProperty: dcs:count
@@ -817,6 +843,7 @@ schoolEnrollment: dcs:EnrolledInSchool
 collegeOrGraduateSchoolEnrollment: dcs:EnrolledInCollegeOrGraduateSchool
 age: [3 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 3 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_EnrolledInCollegeOrGraduateSchool_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -835,6 +862,7 @@ populationType: dcs:Person
 residenceType: dcs:InstitutionalizedGroupQuarters
 age: [25 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 25 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_25OrMoreYears_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -852,6 +880,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [25 - Years]
 educationalAttainment: dcs:HighSchoolGraduateOrHigher
 typeOf: dcs:StatisticalVariable
+name: "High School Graduates Aged 25 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_EducationalAttainmentHighSchoolGraduateOrHigher_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -870,6 +899,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [25 - Years]
 educationalAttainment: dcs:BachelorsDegreeOrHigher
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 25 Years or More With Bachelors Degree or Higher in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_EducationalAttainmentBachelorsDegreeOrHigher_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -888,6 +918,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [18 - Years]
 armedForcesStatus: dcs:Civilian
 typeOf: dcs:StatisticalVariable
+name: "Civilian Population Aged 18 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_18OrMoreYears_Civilian_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1048,6 +1079,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [1 - Years]
 residentStatus: dcs:DifferentHouseInDifferentCounty
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 1 Year or More Residing in Different Houses in Different County in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_ResidesInInstitutionalizedGroupQuarters_DifferentHouseInDifferentCounty
 measuredProperty: dcs:count
@@ -1084,6 +1116,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 age: [1 - Years]
 residentStatus: dcs:DifferentHouseInDifferentCountyDifferentState
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 1 Year or More in Institutionalized Group Quarters of Different Houses in Different County Different State"
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_ResidesInInstitutionalizedGroupQuarters_DifferentHouseInDifferentCountyDifferentState
 measuredProperty: dcs:count
@@ -1183,6 +1216,7 @@ populationType: dcs:Person
 residenceType: dcs:InstitutionalizedGroupQuarters
 nativity: dcs:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_ForeignBorn_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1201,6 +1235,7 @@ nativity: dcs:USC_ForeignBorn
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Number of Foreign Born Males Who Are Institutionalized in Group Quarters"
+name: "Foreign-Born Male Population in Group Institutions"
 
 Node: dcid:MarginOfError_Count_Person_Male_ForeignBorn_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1220,6 +1255,7 @@ nativity: dcs:USC_ForeignBorn
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Number of Foreign Born Females Institutionalized in Group Quarters"
+name: "Foreign Born Female Population Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Female_ForeignBorn_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1239,6 +1275,7 @@ nativity: dcs:USC_ForeignBorn
 citizenship: dcs:USCitizenByNaturalization
 age: [15 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born US Citizen by Naturalization Above 15 Years Old in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_15OrMoreYears_USCitizenByNaturalization_ForeignBorn_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1282,6 +1319,7 @@ citizenship: dcs:USCitizenByNaturalization
 gender: dcs:Female
 age: [15 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Foreign Born Female US Citizens By Naturalization Foreign Aged 15 Years Or More Residing In Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_15OrMoreYears_USCitizenByNaturalization_Female_ForeignBorn_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1366,6 +1404,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 nativity: dcs:USC_ForeignBorn
 dateOfEntry: [2010 - Date]
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population After 2010 In Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2010OrLater_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1384,6 +1423,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 nativity: dcs:USC_ForeignBorn
 dateOfEntry: [2000 2009 Date]
 typeOf: dcs:StatisticalVariable
+name: "Foreign Borns Between 2000 to 2009 in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2000To2009_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1402,6 +1442,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 nativity: dcs:USC_ForeignBorn
 dateOfEntry: [- 2000 Date]
 typeOf: dcs:StatisticalVariable
+name: "Foreign Borns Before 2000 Residing In Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2000OrEarlier_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1465,6 +1506,7 @@ populationType: dcs:Person
 residenceType: dcs:InstitutionalizedGroupQuarters
 age: [16 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 16 Years or More in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_16OrMoreYears_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1501,6 +1543,7 @@ age: [16 - Years]
 employmentStatus: dcs:BLS_InLaborForce
 armedForcesStatus: dcs:Civilian
 typeOf: dcs:StatisticalVariable
+name: "Civilians Aged 16 Years Or More In Non-Institutional Group Quarters In Labor Force"
 
 Node: dcid:MarginOfError_Count_Person_Civilian_InLaborForce_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1582,6 +1625,7 @@ employment: dcs:BLS_Employed
 armedForcesStatus: dcs:Civilian
 employmentStatus: dcs:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
+name: "Civilians Aged 16 Years or More Employed in The Labor Force Residing in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Civilian_Employed_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1629,6 +1673,7 @@ armedForcesStatus: dcs:Civilian
 occupation: dcs:SOCv2018/highLevelAggregation-2
 employmentStatus: dcs:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
+name: "Employed Civilians Above 16 Years Old in the Labor Force Residing in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_SOCServiceOccupation_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1653,6 +1698,7 @@ armedForcesStatus: dcs:Civilian
 occupation: dcs:SOCv2018/highLevelAggregation-3
 employmentStatus: dcs:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
+name: "Civilians Aged 16 Years or More Employed in Sales And Office Occupations Residing in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_SOCSalesOfficeOccupation_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1677,6 +1723,7 @@ armedForcesStatus: dcs:Civilian
 occupation: dcs:SOCv2018/highLevelAggregation-4
 employmentStatus: dcs:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
+name: "Civilians Aged 16 Years or More Employed in Labor Force, Natural Resources, Construction, And Maintenance Occupations in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_SOCNaturalResourcesConstructionMaintenanceOccupation_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1701,6 +1748,7 @@ armedForcesStatus: dcs:Civilian
 occupation: dcs:SOCv2018/highLevelAggregation-5
 employmentStatus: dcs:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
+name: "Civilians Aged 16 Years or More Employed In Labor ForceProductionTransportationAnd Material Moving Occupations"
 
 Node: dcid:MarginOfError_Count_Person_SOCProductionTransportationMaterialMovingOccupation_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1723,6 +1771,7 @@ incomeStatus: dcs:WithEarnings
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Number of Earning Males Who Have Been Institutionalized in Group Quarters"
+name: "Earning Male Population Institutionalized in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Male_WithEarnings_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1742,6 +1791,7 @@ incomeStatus: dcs:WithEarnings
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Number of Earning Females Institutionalized in Group Quarters"
+name: "Earning Female Population Institutionalized in Group Quarters Population"
 
 Node: dcid:MarginOfError_Count_Person_Female_WithEarnings_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1761,6 +1811,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Average Earnings for Males Living in Institutionalized Group Quarters"
+name: "Average Earnings for Male Population in Institutionalized Group Quarters"
 
 Node: dcid:Mean_Earnings_Person_Female_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:earnings
@@ -1771,6 +1822,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Average Earnings for Females Living in Institutionalized Group Quarters"
+name: "Average Earnings for Female Population in Institutionalized Group Quarters"
 
 Node: dcid:Median_Earnings_Person_Male_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:earnings
@@ -1781,6 +1833,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Median Earnings for Males Living in Institutionalized Group Quarters"
+name: "Median Earnings for Male Population Living in Institutionalized Group Quarters"
 
 Node: dcid:Median_Earnings_Person_Female_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:earnings
@@ -1791,6 +1844,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Median Earnings for Females Living in Institutionalized Group Quarters"
+name: "Median Earnings for Female Population Living in Institutionalized Group Quarters"
 
 Node: dcid:Count_Person_WithFoodStampsInThePast12Months_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1800,6 +1854,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 benefitsStatus: dcs:WithFoodStampsInThePast12Months
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Received Food Stamps in the Past 12 Months and Lived in Institutionalized Group Quarters"
+name: "Population Who Received Food Stamps in the Past Year and Lived in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_WithFoodStampsInThePast12Months_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1833,6 +1888,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 povertyStatus: dcs:PovertyStatusDetermined
 age: [18 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Above 18 Years Old with Poverty Status Determined in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_18OrMoreYears_PovertyStatusDetermined_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1869,6 +1925,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 povertyStatus: dcs:PovertyStatusDetermined
 age: [65 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 65 Years or More With Determined Poverty Status in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_65OrMoreYears_PovertyStatusDetermined_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1894,6 +1951,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Number of Males Residing in Non-Institutionalized Group Quarters"
+name: "Male Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Male_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -1911,6 +1969,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Number of Females in Non-Institutionalized Group Quarters"
+name: "Female Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Female_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2096,6 +2155,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [- 18 Years]
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
+name: "Male Population Aged 18 Years or Less in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_18OrLessYears_Male_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2114,6 +2174,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [- 18 Years]
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
+name: "Female Aged 18 Years Or Less In Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_18OrLessYears_Female_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2140,6 +2201,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [65 - Years]
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
+name: "Male Population Aged 65 Years or More in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_65OrMoreYears_Male_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2158,6 +2220,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [65 - Years]
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
+name: "Female Population Aged 65 Years or More in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_65OrMoreYears_Female_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2174,6 +2237,7 @@ statType: dcs:medianValue
 populationType: dcs:Person
 residenceType: dcs:NoninstitutionalizedGroupQuarters
 typeOf: dcs:StatisticalVariable
+name: "Median Aged People Residing in Non-Institutionalized Group Quarters"
 
 Node: dcid:Count_Person_OneRace_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2183,6 +2247,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:OneRace
 typeOf: dcs:StatisticalVariable
 description: "Number of People of a Single Race Who Are Residing in Non-Institutionalized Group Quarters"
+name: "Monoracial Population Residing in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_OneRace_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2200,6 +2265,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:WhiteAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Identify as White Alone Residing in Non-Institutionalized Group Quarters"
+name: "White Monoracial Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_WhiteAlone_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2217,6 +2283,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:BlackOrAfricanAmericanAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are Black or African American Alone and Who Live in Non-Institutionalized Group Quarters"
+name: "Black Population Alone in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_BlackOrAfricanAmericanAlone_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2234,6 +2301,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:AmericanIndianOrAlaskaNativeAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are American Indian or Alaska Native Alone and Who Live in Noninstitutionalized Group Quarters"
+name: "Population American Indian or Alaska Native Alone in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_AmericanIndianOrAlaskaNativeAlone_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2251,6 +2319,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:AsianAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are Asian Alone and Who Live in Noninstitutionalized Group Quarters"
+name: "Population Asian Alone in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_AsianAlone_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2268,6 +2337,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Are Native Hawaiian or Other Pacific Islander Alone and Are Residing in Non-Institutionalized Group Quarters"
+name: "Population of Native Hawaiian or Other Pacific Islander Alone , Residing in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_NativeHawaiianOrOtherPacificIslanderAlone_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2285,6 +2355,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:SomeOtherRaceAlone
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Identify as Some Other Race Alone Residing in Non-Institutionalized Group Quarters"
+name: "Population Identifying as Some Other Race Alone in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_SomeOtherRaceAlone_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2302,6 +2373,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:TwoOrMoreRaces
 typeOf: dcs:StatisticalVariable
 description: "Number of Multiracial People Residing in Non-Institutionalized Group Quarters"
+name: "Multiracial Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_TwoOrMoreRaces_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2319,6 +2391,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:HispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Hispanics in Non-Institutionalized Group Quarters"
+name: "Hispanic Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_HispanicOrLatino_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2336,6 +2409,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:NotHispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Non Hispanics Residing in Non-Institutionalized Group Quarters"
+name: "Non Hispanic Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_NotHispanicOrLatino_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2353,6 +2427,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 race: dcs:WhiteAloneNotHispanicOrLatino
 typeOf: dcs:StatisticalVariable
 description: "Number of Non Hispanic People Who Identify as White Alone Residing in Non-Insitutionalized Group Quarters"
+name: "White Hispanic Monoracial Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_WhiteAloneNotHispanicOrLatino_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2386,6 +2461,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [15 - Years]
 maritalStatus: dcs:MarriedAndNotSeparated
 typeOf: dcs:StatisticalVariable
+name: "Married and Not Separated Population Aged 15 Years Old and Above Residing In Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_MarriedAndNotSeparated_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2404,6 +2480,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [15 - Years]
 maritalStatus: dcs:Widowed
 typeOf: dcs:StatisticalVariable
+name: "Widowed Population Aged 15 Years or More in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Widowed_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2422,6 +2499,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [15 - Years]
 maritalStatus: dcs:Divorced
 typeOf: dcs:StatisticalVariable
+name: "Divorced Population Aged 15 Years Or More In Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Divorced_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2440,6 +2518,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [15 - Years]
 maritalStatus: dcs:Separated
 typeOf: dcs:StatisticalVariable
+name: "Separated Population Aged Above 15 Years Old in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Separated_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2476,6 +2555,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 schoolEnrollment: dcs:EnrolledInSchool
 age: [3 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Above 3 Years Enrolled in Schools in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_ResidesInNoninstitutionalizedGroupQuarters_EnrolledInSchool
 measuredProperty: dcs:count
@@ -2515,6 +2595,7 @@ schoolEnrollment: dcs:EnrolledInSchool
 collegeOrGraduateSchoolEnrollment: dcs:EnrolledInCollegeOrGraduateSchool
 age: [3 - Years]
 typeOf: dcs:StatisticalVariable
+name: "People in Noninstitutionalized Group Quarters for 3 Years or More Enrolled in College"
 
 Node: dcid:MarginOfError_Count_Person_EnrolledInCollegeOrGraduateSchool_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2533,6 +2614,7 @@ populationType: dcs:Person
 residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [25 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 25 Years or More in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_25OrMoreYears_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2586,6 +2668,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [18 - Years]
 armedForcesStatus: dcs:Civilian
 typeOf: dcs:StatisticalVariable
+name: "Civilians Aged 18 Years and Above Residing in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_18OrMoreYears_Civilian_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2675,6 +2758,7 @@ populationType: dcs:Person
 residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [1 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Non-Institutionalized Population Aged 1 Year or More In Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2692,6 +2776,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [1 - Years]
 residentStatus: dcs:SameHouse1YearAgo
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 1 Year or More in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_ResidesInNoninstitutionalizedGroupQuarters_SameHouse1YearAgo
 measuredProperty: dcs:count
@@ -2710,6 +2795,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [1 - Years]
 residentStatus: dcs:DifferentHouseInTheUS
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 1 year Or More Residing In Us Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_ResidesInNoninstitutionalizedGroupQuarters_DifferentHouseInTheUS
 measuredProperty: dcs:count
@@ -2746,6 +2832,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [1 - Years]
 residentStatus: dcs:DifferentHouseInDifferentCounty
 typeOf: dcs:StatisticalVariable
+name: "Population With Different Houses in The Same County in Non-institutionalized Group Quarters For 1 Year or More"
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_ResidesInNoninstitutionalizedGroupQuarters_DifferentHouseInDifferentCounty
 measuredProperty: dcs:count
@@ -2764,6 +2851,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [1 - Years]
 residentStatus: dcs:DifferentHouseInDifferentCountySameState
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 1 Year or More In Non-Institutionalized Group Quarters With A Different House In a Different County In The Same State"
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_ResidesInNoninstitutionalizedGroupQuarters_DifferentHouseInDifferentCountySameState
 measuredProperty: dcs:count
@@ -2819,6 +2907,7 @@ citizenship: dcs:USCitizenBornInTheUnitedStates
 nativity: dcs:USC_Native
 age: [15 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Native US Citizens Born in The United States Aged 15 Years Old or More in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_15OrMoreYears_USCitizenBornInTheUnitedStates_Native_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2881,6 +2970,7 @@ populationType: dcs:Person
 residenceType: dcs:NoninstitutionalizedGroupQuarters
 nativity: dcs:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_ForeignBorn_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2899,6 +2989,7 @@ nativity: dcs:USC_ForeignBorn
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Number of Foreign Born Males Residing in Non-Institutionalized Group Quarters"
+name: "Foreign-Born Male Population in Non Institutionalized Group Settings"
 
 Node: dcid:MarginOfError_Count_Person_Male_ForeignBorn_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2918,6 +3009,7 @@ nativity: dcs:USC_ForeignBorn
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Number of Foreign Born Females in Non-Institutionalized Group Quarters"
+name: "Foreign Born Female Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Female_ForeignBorn_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2958,6 +3050,7 @@ citizenship: dcs:USCitizenByNaturalization
 gender: dcs:Male
 age: [15 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born US Citizens by Naturalization Male Population Aged 15 Years or More in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_15OrMoreYears_USCitizenByNaturalization_Male_ForeignBorn_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -2980,6 +3073,7 @@ citizenship: dcs:USCitizenByNaturalization
 gender: dcs:Female
 age: [15 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Foreign Born Female US Citizens By Naturalization Aged 15 Years Or More In Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_15OrMoreYears_USCitizenByNaturalization_Female_ForeignBorn_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3044,6 +3138,7 @@ citizenship: dcs:NotAUSCitizen
 gender: dcs:Female
 age: [15 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Foreign Born Non-US Female Citizens I Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_15OrMoreYears_NotAUSCitizen_Female_ForeignBorn_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3064,6 +3159,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 nativity: dcs:USC_ForeignBorn
 dateOfEntry: [2010 - Date]
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population Immigrated After 2010 in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2010OrLater_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3100,6 +3196,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 nativity: dcs:USC_ForeignBorn
 dateOfEntry: [- 2000 Date]
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Bornn Population Immigration Before 2000 in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2000OrEarlier_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3145,6 +3242,7 @@ age: [5 - Years]
 languageSpokenAtHome: dcs:LanguageOtherThanEnglish
 abilityToSpeakEnglish: dcs:SpeakEnglishLessThanVeryWell
 typeOf: dcs:StatisticalVariable
+name: "Non-institutionalized Group Quarters Speak Moderate English"
 
 Node: dcid:MarginOfError_Count_Person_SpeakEnglishLessThanVeryWell_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3163,6 +3261,7 @@ populationType: dcs:Person
 residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [16 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 16 Years or More in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_16OrMoreYears_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3199,6 +3298,7 @@ age: [16 - Years]
 employmentStatus: dcs:BLS_InLaborForce
 armedForcesStatus: dcs:Civilian
 typeOf: dcs:StatisticalVariable
+name: "Employed Foreign-Born Civilians Aged 16 Years"
 
 Node: dcid:MarginOfError_Count_Person_Civilian_InLaborForce_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3220,6 +3320,7 @@ employmentStatus: dcs:BLS_InLaborForce
 armedForcesStatus: dcs:Civilian
 employment: dcs:BLS_Unemployed
 typeOf: dcs:StatisticalVariable
+name: "Unemployed Civilians Aged 16 Years or More in Labor Force Living in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Civilian_Unemployed_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3260,6 +3361,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 age: [16 - Years]
 employmentStatus: dcs:BLS_NotInLaborForce
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 16 Years or More Not in The Labor Force Residing in Non-institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_NotInLaborForce_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3351,6 +3453,7 @@ armedForcesStatus: dcs:Civilian
 occupation: dcs:SOCv2018/highLevelAggregation-3
 employmentStatus: dcs:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
+name: "Employed Civilians Aged 16 Years Or More In The Labour Force as Sales And Office Occupations Residing In Non-institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_SOCSalesOfficeOccupation_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3421,6 +3524,7 @@ incomeStatus: dcs:WithEarnings
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Number of Earning Males Residing in Non-Institutionalized Group Quarters"
+name: "Earning Male Population in Non Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_Male_WithEarnings_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3440,6 +3544,7 @@ incomeStatus: dcs:WithEarnings
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Number of Earning Females Staying in Non-Institutionalized Group Quarters"
+name: "Earning Female Population in Non Institutionalized Group Quarters Population"
 
 Node: dcid:MarginOfError_Count_Person_Female_WithEarnings_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3459,6 +3564,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Average Earnings for Males Living in Noninstitutionalized Group Quarters"
+name: "Average Earnings for Male Population in Noninstitutionalized Group Quarters"
 
 Node: dcid:Mean_Earnings_Person_Female_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:earnings
@@ -3469,6 +3575,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Average Earnings for Females Living in Noninstitutionalized Group Quarters"
+name: "Average Earnings for Female Population in Noninstitutionalized Group Quarters"
 
 Node: dcid:Median_Earnings_Person_Male_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:earnings
@@ -3479,6 +3586,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 gender: dcs:Male
 typeOf: dcs:StatisticalVariable
 description: "Median Earnings for Males Living in Noninstitutionalized Group Quarters"
+name: "Median Earnings for Male Population Living in Noninstitutionalized Group Quarters"
 
 Node: dcid:Median_Earnings_Person_Female_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:earnings
@@ -3489,6 +3597,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 gender: dcs:Female
 typeOf: dcs:StatisticalVariable
 description: "Median Earnings for Females Living in Noninstitutionalized Group Quarters"
+name: "Median Earnings for Female Population Living in Noninstitutionalized Group Quarters"
 
 Node: dcid:Count_Person_WithFoodStampsInThePast12Months_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3498,6 +3607,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 benefitsStatus: dcs:WithFoodStampsInThePast12Months
 typeOf: dcs:StatisticalVariable
 description: "Number of People Who Received Food Stamps in the Past 12 Months and Lived in Noninstitutionalized Group Quarters"
+name: "Population Who Received Food Stamps in the Past Year and Lived in Noninstitutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_WithFoodStampsInThePast12Months_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3515,6 +3625,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 povertyStatus: dcs:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 description: "Number of People Residing in Non-Institutionalized Group Quarters Who Had Their Poverty Status Determined"
+name: "Population in Non Institutionalized Group Quarters With Determined Poverty Status"
 
 Node: dcid:MarginOfError_Count_Person_PovertyStatusDetermined_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3532,6 +3643,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 povertyStatus: dcs:PovertyStatusDetermined
 age: [18 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Above 18 Years Old with Poverty Status Determined in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_18OrMoreYears_PovertyStatusDetermined_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3568,6 +3680,7 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 povertyStatus: dcs:PovertyStatusDetermined
 age: [65 - Years]
 typeOf: dcs:StatisticalVariable
+name: "Population Aged 65 Years or More With Determined Poverty Status in Non-Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_65OrMoreYears_PovertyStatusDetermined_ResidesInNoninstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3651,6 +3764,7 @@ populationType: dcs:Person
 dateOfEntry: [2000 - Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population Born After 2000"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2000OrLater
 measuredProperty: dcs:count
@@ -3667,6 +3781,7 @@ populationType: dcs:Person
 dateOfEntry: [1990 1999 Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population Immigration Between 1990 And 1999"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry1990To1999
 measuredProperty: dcs:count
@@ -3683,6 +3798,7 @@ populationType: dcs:Person
 dateOfEntry: [- 1990 Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population Who Immigrated Before 1990"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry1990OrEarlier
 measuredProperty: dcs:count
@@ -3700,6 +3816,7 @@ residenceType: dcs:GroupQuarters
 dateOfEntry: [2000 - Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population of Group Quarters After 2000"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2000OrLater_ResidesInGroupQuarters
 measuredProperty: dcs:count
@@ -3718,6 +3835,7 @@ residenceType: dcs:GroupQuarters
 dateOfEntry: [1990 1999 Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population Between 1990 And 1999 Residing in Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry1990To1999_ResidesInGroupQuarters
 measuredProperty: dcs:count
@@ -3754,6 +3872,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 dateOfEntry: [2000 - Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population After 2000 Living in Institutionalized Groups"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry2000OrLater_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3790,6 +3909,7 @@ residenceType: dcs:InstitutionalizedGroupQuarters
 dateOfEntry: [- 1990 Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population Before 1990 in Institutionalized Group Quarters"
 
 Node: dcid:MarginOfError_Count_Person_DateOfEntry1990OrEarlier_ResidesInInstitutionalizedGroupQuarters
 measuredProperty: dcs:count
@@ -3826,4 +3946,5 @@ residenceType: dcs:NoninstitutionalizedGroupQuarters
 dateOfEntry: [1990 1999 Date]
 nativity: dcid:USC_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Foreign-Born Population Immigration Between 1990 And 1999 in Noninstitutionalized Group Quarters"
 
