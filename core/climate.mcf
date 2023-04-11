@@ -595,6 +595,10 @@ typeOf: dcid:EPA_CriteriaAirPollutant
 epaPollutantCode: "PM25-PRI"
 name: "PM2.5"
 
+Node: dcs:SmokePM2.5
+typeOf: dcid:AirPollutantEnum
+name: "SmokePM2.5"
+
 Node: dcs:PM10
 typeOf: dcid:EPA_CriteriaAirPollutant
 epaPollutantCode: "PM10-PRI"
@@ -1216,3 +1220,28 @@ name: "heatWaveIntensity"
 domainIncludes: dcs:HeatWaveEvent
 rangeIncludes: dcs:Quantity
 description: "Describes how hot the temperature is during heat waves. It is defined as the difference in temperature (measured in degrees Celsius) between the local threshold for heat waves and the average of the daily minimum temperature during the heat wave."
+
+Node: dcid:vaporPressureDeficit
+typeOf: schema:Property
+name: "vaporPressureDeficit"
+description: "The difference (deficit) between the amount of moisture in the air and how much moisture the air can hold when it is saturated."
+descriptionUrl: "https://en.wikipedia.org/wiki/Vapour-pressure_deficit"
+domainIncludes: dcs:Place
+rangeIncludes: dcs:Quantity
+
+Node: dcid:areaType
+typeOf: schema:Property
+name: "areaType"
+description: "Identifies the type of land area, like forest, cropland, etc."
+domainIncludes: dcs:Place, dcs:FireEvent
+rangeIncludes: dcs:Enumeration
+
+Node: dcid:NaturalHazardSeverityEnum
+typeOf: schema:Class
+name: "NaturalHazardSeverityEnum"
+description: "Describes the severity of a natural hazard"
+subClassOf: schema:Enumeration
+
+Node: dcid:HighSeverity
+name: "High"
+typeOf: dcs:NaturalHazardSeverityEnum
