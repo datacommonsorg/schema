@@ -2,6 +2,11 @@
 # Temporary partially curated schema for SDGs.
 ################################################################################
 
+Node: dcid:SDGSeries
+name: "SDGSeries"
+typeOf: schema:Class
+subClassOf: schema:Thing
+
 ## Series
 
 Node: dcid:sdg_AG_FLS_IDX
@@ -6655,12 +6660,12 @@ typeOf: dcs:SDG_AgeEnum
 name: "6 to 59 months old"
 isProvisional: dcs:True
 
-Node: dcid:SDG_AgeEnum__U
+Node: dcid:SDG_AgeEnum_U
 typeOf: dcs:SDG_AgeEnum
 name: "Unknown"
 isProvisional: dcs:True
 
-Node: dcid:SDG_AgeEnum__X
+Node: dcid:SDG_AgeEnum_X
 typeOf: dcs:SDG_AgeEnum
 name: "Not available"
 isProvisional: dcs:True
@@ -6715,22 +6720,22 @@ typeOf: dcs:SDG_SexEnum
 name: "Male"
 isProvisional: dcs:True
 
-Node: dcid:SDG_SexEnum__N
+Node: dcid:SDG_SexEnum_N
 typeOf: dcs:SDG_SexEnum
 name: "No response"
 isProvisional: dcs:True
 
-Node: dcid:SDG_SexEnum__O
+Node: dcid:SDG_SexEnum_O
 typeOf: dcs:SDG_SexEnum
 name: "Other"
 isProvisional: dcs:True
 
-Node: dcid:SDG_SexEnum__U
+Node: dcid:SDG_SexEnum_U
 typeOf: dcs:SDG_SexEnum
 name: "Unknown"
 isProvisional: dcs:True
 
-Node: dcid:SDG_SexEnum__X
+Node: dcid:SDG_SexEnum_X
 typeOf: dcs:SDG_SexEnum
 name: "Not available"
 isProvisional: dcs:True
@@ -12507,7 +12512,7 @@ typeOf: dcs:SDG_CauseOfDeathEnum
 name: "Small arms and light weapons "
 isProvisional: dcs:True
 
-Node: dcid:SDG_CauseOfDeathEnum__U
+Node: dcid:SDG_CauseOfDeathEnum_U
 typeOf: dcs:SDG_CauseOfDeathEnum
 name: "Unknown"
 isProvisional: dcs:True
