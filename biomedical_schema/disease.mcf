@@ -270,7 +270,7 @@ typeOf: schema:Property
 name: "icd10CMCode"
 domainIncludes: dcs:Disease
 rangeIncludes: dcs:ICD10Code
-description: "The disease diagnosis code for version 10 of the International Classification of Disease Ontology."
+description: "The disease diagnosis code for version 10 of the International Classification of Diseases, Clinical Modification."
 
 Node: dcid:icd10ApproximateSynonym
 typeOf: dcs:Property
@@ -278,12 +278,19 @@ name: "icd10ApproximateSynonym"
 domainIncludes: dcs:Disease
 rangeIncludes: dcs:ICD10Code
 
-Node: dcid:icd9CMID
+Node: dcid:icd9CMCode
 typeOf: schema:Property
-name: "icd9CMID"
+name: "icd9CMCode"
 domainIncludes: dcs:Disease
 rangeIncludes: schema:Text
-description: "The disease diagnosis code for version 9 of the International Classification of Disease Ontology."
+description: "The disease diagnosis code for version 9 of the International Classification of Diseases, Clinical Modification."
+
+Node: dcid:icd11CMCode
+typeOf: schema:Property
+name: "icd11CMCode"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "The disease diagnosis code for version 11 of the International Classification of Diseases, Clinical Modification."
 
 Node: dcid:medDraID
 typeOf: schema:Property
@@ -292,3 +299,19 @@ domainIncludes: dcs:Disease
 rangeIncludes: schema:Text
 description: "The disease identifiers extracted from the medDRA medical terminology."
 descriptionUrl: "https://www.meddra.org/"
+
+Node: dcid:snomedCT
+typeOf: schema:Property
+name: "snomedCT"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description "SNOMED CT is a terminology that can cross-map to other international terminologies, classifications and code systems. Maps are associations between particular concepts or terms in one system and concepts or terms in another system that have the same (or similar) meaning."
+descriptionUrl: "https://www.snomed.org/use-snomed-ct"
+
+Node: dcid:umlsConceptUniqueID
+typeOf: schema:Property
+name "umlsConceptUniqueID"
+domainIncludes: dcs:Disease
+rangeIncludes: schema:Text
+description: "A Unified Medical Language System (UMLS) Concept Unique ID (CUI) is a unique identifier in the Metathesaurus for a concept. CUI contain the letter C followed by seven numbers. An example of a CUI is C0018681."
+descriptionUrl: "https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_005.html"
