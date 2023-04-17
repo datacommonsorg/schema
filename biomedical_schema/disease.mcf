@@ -11,12 +11,6 @@ typeOf: schema:Class
 subClassOf: dcs:Disease
 description: "The association of a disease with a gene."
 
-Node: dcid:DiseaseSymptomAssociation
-name: "DiseaseSymptomAssociation"
-typeOf: schema:Class
-subClassOf: dcs:Disease
-description: "The association of a disease with a symptom."
-
 Node: dcid:MeSHConcept
 name: "MeSHConcept"
 typeOf: schema:Class
@@ -170,55 +164,6 @@ typeOf: schema:Property
 rangeIncludes: dcs:MeSHQualifier, schema:Text
 domainIncludes: dcs:MeSHConcept, dcs:MeSHQualifier
 description: "A unique ID for a Medical Subject Heading Qualifier record."
-
-Node: dcid:associationCooccurrence
-name: "associationCooccurrence"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:DiseaseSymptomAssociation
-description: "The number of PubMed publications common to a disease and symptom association."
-
-Node: dcid:associationExpectedCooccurrence
-name: "associationExpectedCooccurrence"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:DiseaseSymptomAssociation
-description: "The expected number of PubMed publications common to a disease and symptom association."
-
-Node: dcid:associationPublicationCount
-name: "associationPublicationCount"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:DiseaseSymptomAssociation
-description: "The number of PubMed publications expected to be common to a disease and symptom."
-
-Node: dcid:associationEnrichment
-name: "associationEnrichment"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:DiseaseSymptomAssociation
-description: "The enrichment of publication cooccurrence associating a disease and symptom."
-
-Node: dcid:associationOddsRatio
-name: "associationOddsRatio"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:DiseaseSymptomAssociation
-description: "The odds of actual publication cooccurrence rate associating a disease and symptom."
-
-Node: dcid:associationFisherTest
-name: "associationFisherTest"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:DiseaseSymptomAssociation
-description: "Fisher test value for non-random association of a disease and symptom."
-
-Node: dcid:associationPMID
-name: "associationPMID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:DiseaseSymptomAssociation
-description: "A PubMed identifier for a publication containing reference to a disease and symptom."
 
 Node: dcid:alternateDiseaseOntologyID
 typeOf: schema:Property

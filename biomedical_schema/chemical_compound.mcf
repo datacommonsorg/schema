@@ -52,13 +52,6 @@ subClassOf: dcs:ChemicalCompound
 description: "Unintended effect of administering a drug."
 descriptionUrl: "http://sideeffects.embl.de/"
 
-Node: dcid:PharmacologicClass
-name: "PharmacologicClass"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
-description: "Pharmacologic class is a group of active moieties that share scientifically documented properties."
-descriptionUrl: "https://www.fda.gov/industry/structured-product-labeling-resources/pharmacologic-class"
-
 Node: dcid:ProteinProteinInteraction
 name: "ProteinProteinInteraction"
 typeOf: schema:Class
@@ -143,7 +136,7 @@ Node: dcid:compoundID
 name: "compoundID"
 typeOf: schema:Property
 rangeIncludes: dcs:ChemicalCompound
-domainIncludes: dcs:ChemicalCompound,dcs:ChemicalCompoundProteinInteraction,dcs:ChemicalCompoundDiseaseTreatment,dcs:ChemicalCompoundDiseaseContraindication,dcs:SideEffect,dcs:PharmacologicClass,dcs:ChemicalCompoundGeneAssociation
+domainIncludes: dcs:ChemicalCompound,dcs:ChemicalCompoundProteinInteraction,dcs:ChemicalCompoundDiseaseTreatment,dcs:ChemicalCompoundDiseaseContraindication,dcs:SideEffect,dcs:ChemicalCompoundGeneAssociation
 description: "The ChemicalCompound node associated with the current node."
 
 Node: dcid:proteinID
@@ -236,27 +229,6 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:SideEffect
 description: "The Alternate Concept Unique Identifier for a Metathesaurus concept to which strings with the same meaning are linked."
-
-Node: dcid:pharmacologicClass
-name: "pharmacologicClass"
-typeOf: schema:Property
-rangeIncludes: dcs:PharmacologicClass
-domainIncludes: dcs:ChemicalCompound
-description: "FDA pharmacologic class."
-
-Node: dcid:pharmacologicClassCode
-name: "pharmacologicClassCode"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:PharmacologicClass
-description: "FDA pharmacologic class code."
-
-Node: dcid:pharmacologicClassType
-name: "pharmacologicClassType"
-typeOf: schema:Property
-rangeIncludes: dcs:PharmacologicClassTypeEnum
-domainIncludes: dcs:PharmacologicClass
-description: "The class type associated with the active moiety for a pharmacologic class."
 
 Node: dcid:swissProtID
 name: "swissProtID"
