@@ -1,5 +1,5 @@
 Node: dcid:Mean_Concentration_AirPollutant_Ozone
-name: "Mean Ozone Concentration"
+name: "Mean Concentration of Ozone Air Pollutant"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -44,7 +44,7 @@ pollutant: dcs:Ozone
 statType: dcs:stdError
 
 Node: dcid:Mean_Concentration_AirPollutant_PM2.5
-name: "Mean PM2.5 Concentration"
+name: "Mean Concentration of PM2.5 Air Pollutant"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -95,6 +95,7 @@ populationType: dcs:Atmosphere
 measuredProperty: dcs:palmerDroughtSeverityIndex
 statType: dcs:measuredValue
 description: "Palmer Drought Severity Index for the Atmosphere"
+name: "Palmer Drought Severity Index for the Atmosphere"
 
 Node: dcid:StandardizedPrecipitationIndex_Atmosphere
 typeOf: dcs:StatisticalVariable
@@ -109,7 +110,7 @@ measuredProperty: dcs:standardizedPrecipitationEvapotranspirationIndex
 statType: dcs:measuredValue
 
 Node: dcid:Percent_Person_65OrMoreYears_WithAllTeethLoss
-name: "Prevalence of 65 Or More Years, All Teeth Loss"
+name: "Percentage of Population Over 65 Years Old Who Have Complete Tooth Loss"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -119,7 +120,7 @@ healthOutcome: dcs:AllTeethLoss
 description: "Percentage of Population Over 65 Years Old Who Have Complete Tooth Loss"
 
 Node: dcid:Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-name: "Prevalence of 21 - 65 Years, Female, Received Cervical Cancer Screening"
+name: "Female Population Aged 21 to 65 Years Received Cervical Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -165,7 +166,7 @@ healthPrevention: dcs:Mammography
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_50To74Years_Female_ReceivedMammography
-name: "Upper Confidence Interval Limit, Prevalence of 50 - 74 Years, Female, Mammography"
+name: "Upper Confidence Interval Limit Among Female Population Aged 50 to 74 Years That Underwent Mammography"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -174,7 +175,7 @@ healthPrevention: dcs:Mammography
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_50To74Years_Female_ReceivedMammography
-name: "Sample Size, Prevalence of 50 - 74 Years, Female, Mammography"
+name: "Sample Size Prevalence of Female Population Aged 50 to 74 Years Who Received Mammography"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -381,7 +382,7 @@ healthPrevention: dcs:ColorectalCancerScreening
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_50To75Years_ReceivedColorectalCancerScreening
-name: "Upper Confidence Interval Limit, Prevalence of 50 - 75 Years, Colorectal Cancer Screening"
+name: "Upper Confidence Interval Limit Prevalence FOr Population Aged 50 to 75 Years Colorectal Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -493,7 +494,7 @@ healthPrevention: dcs:CorePreventiveServices
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_65OrMoreYears_Female_ReceivedCorePreventiveServices
-name: "Upper Confidence Interval Limit, Prevalence of 65 Years or More, Female, Core Preventive Services"
+name: "Upper Confidence Interval Limit of Prevalence Of Core Preventative Services Among Female Population Aged 65 Years Or More"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -657,7 +658,7 @@ healthPrevention: dcs:NoHealthInsurance
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18To64Years_ReceivedNoHealthInsurance
-name: "Upper Confidence Interval Limit, Prevalence of 18 - 64 Years, No Health Insurance"
+name: "Upper Confidence Interval Prevalence of Population Aged 18 to 64 Years Without Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -850,7 +851,7 @@ healthPrevention: dcs:CervicalCancerScreening
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-name: "Upper Confidence Interval Limit, Prevalence of 21 - 65 Years, Female, Received Cervical Cancer Screening"
+name: "Prevalence of Female Population Aged 21 to 65 Years Who Received Cervical Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -911,6 +912,7 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
+name: "Confidence Interval Lower Limit Court Of Live Birth Pregnancies Of Self-Reported Depression"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -940,6 +942,7 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 tobaccoUsageType: dcs:Cigarettes
 mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
+name: "Live Births Among Mothers Who Smoke Cigarettes During the Last 3 Months of Pregnancy"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_Postpartum_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -950,6 +953,7 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 tobaccoUsageType: dcs:Cigarettes
 mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Postpartum
+name: "Confidence Interval Lower Limit Count of Live Birth Pregnancies"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -960,6 +964,7 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 tobaccoUsageType: dcs:ECigarettes
 mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
+name: "Confidence Interval Lower Limit Count of Live Birth Pregnancy Event of Female Population Smockong Cigarettes Three Months Before Pregnancy"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1073,6 +1078,7 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthPrevention: dcs:MaternalCheckup
 timePeriodRelativeToPregnancy: dcs:Postpartum
+name: "Fraction of Count Birth Event Live Birth"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_MistimedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1098,6 +1104,7 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthPrevention: dcs:MultivitaminUse
 healthPreventionActionFrequency: dcs:MoreThan4TimesAWeek
+name: "Confidence Interval Lower Limit of Live Birth Pregnancies With Use of Multivitamin More Than 4 Times a Week"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Obesity_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1123,6 +1130,7 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthPrevention: dcs:PrenatalCare
 timePeriodRelativeToPregnancy: dcs:FirstTrimester
+name: "Fraction of Confidence Interval Lower Limit of Live Birth Pregnancy Events"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_TeethCleanedByDentistOrHygienist_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1189,6 +1197,7 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusOneMonthBeforePregnancy: dcs:WithMedicaid
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
+name: "Confidence Interval Lower Limit Count of Live Birth Pregnancies"
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_NoHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1268,6 +1277,7 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
+name: "Confidence Interval Upper Limit Count of Live Birth Pregnancy Event And Self Reported Depression For 3 Months Before Pregnancy"
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1326,6 +1336,7 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 tobaccoUsageType: dcs:ECigarettes
 mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
+name: "Confidence Interval Lower Limit Court Of Live Birth Pregnancies"
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1406,6 +1417,7 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 intimatePartnerViolence: dcs:IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
+name: "Confidence Interval Upper Limit Count of Live Birth Pregnancy Event"
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_LeastEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1573,6 +1585,7 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusOneMonthBeforePregnancy: dcs:WithPrivateHealthInsurance
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
+name: "Fraction of Confidence Interval Upper Limit of Live Birth Events"
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_WithMedicaid_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1643,6 +1656,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
+name: "Self-Reported Depression Of Live Births During Pregnancies"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_SelfReportedDepression_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1662,6 +1676,7 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 tobaccoUsageType: dcs:Cigarettes
 mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
+name: "Live Birth Pregnancy Event Of Smoking Cigarettes During 3 Months Pregnancy"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1692,6 +1707,7 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 tobaccoUsageType: dcs:ECigarettes
 mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
+name: "Live Birth Pregnancies Among Mothers Smoking ECigarettes 3 Months Before Pregnancy"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1719,6 +1735,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthPrevention: dcs:FluShot
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforeBirth
+name: "Live Birth Pregnancy Event With Flu Shots 12 Months Before Birth"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_HealthCareVisit_12MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1772,6 +1789,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 intimatePartnerViolence: dcs:IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
+name: "Intimate Partner Violence During Pregnancy"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_LeastEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1830,6 +1848,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthPrevention: dcs:MultivitaminUse
 healthPreventionActionFrequency: dcs:MoreThan4TimesAWeek
+name: "Live Birth Pregnancies By Mothers Who Used Multivitamin More Than 4 Times A Week"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Obesity_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1855,6 +1874,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthPrevention: dcs:PrenatalCare
 timePeriodRelativeToPregnancy: dcs:FirstTrimester
+name: "Live Births Due to First Trimester Prenatal Care"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_TeethCleanedByDentistOrHygienist_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1921,6 +1941,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusOneMonthBeforePregnancy: dcs:WithMedicaid
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
+name: "Live Birth Pregnancy Events With Medicaid 1 Month Before Pregnancy"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_NoHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1930,6 +1951,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusOneMonthBeforePregnancy: dcs:NoHealthInsurance
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
+name: "Live Birth Pregnancies Without Health Insurance 1 Month Before Pregnancy"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1939,6 +1961,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusOneMonthBeforePregnancy: dcs:WithPrivateHealthInsurance
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
+name: "Private Health Insurance Of Live Births in 1 Month Before Pregnancy"
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithMedicaid_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
@@ -1966,6 +1989,7 @@ statType: dcs:measuredValue
 measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusPostpartum: dcs:WithPrivateHealthInsurance
 timePeriodRelativeToPregnancy: dcs:Postpartum
+name: "Live Birth By Mothers WithPostpartum Private Health Insurance"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_AnyBreastfeedingAt8Weeks_8WeeksAfterPregnancy
 typeOf: dcs:StatisticalVariable
@@ -1974,6 +1998,7 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 breastFeedingPractice: dcs:AnyBreastfeedingAt8Weeks
 timePeriodRelativeToPregnancy: dcs:8WeeksAfterPregnancy
+name: "Sample Size Count of Breastfeeding Mothers At 8 Weeks After Live Birth Pregnancy"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_AnyPostpartumFamilyPlanning
 typeOf: dcs:StatisticalVariable
@@ -2072,6 +2097,7 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 mothersHealthPrevention: dcs:FluShot
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforeBirth
+name: "Sample Size Count of Live Birth Pregnancy"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_HealthCareVisit_12MonthsBeforePregnancy
 typeOf: dcs:StatisticalVariable
@@ -2088,6 +2114,7 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 mothersHealthBehavior: dcs:HeavyDrinking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
+name: "Live Birth Pregnancies in Heavy Drinking 3 Months Before Pregnancy"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_HookahUsage_Last2YearsBeforePregnancy
 typeOf: dcs:StatisticalVariable
@@ -2111,6 +2138,7 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 intimatePartnerViolence: dcs:IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
+name: "Sample Size of Live Birth Pregnancy With Violent Intimate Partner or Ex Partner or Husband 12 Months Before Pregnancy"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_DuringPregnancy
 typeOf: dcs:StatisticalVariable
@@ -2200,6 +2228,7 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 mothersHealthPrevention: dcs:TeethCleanedByDentistOrHygienist
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
+name: "Teeth Cleaned by Dentist During Pregnancy"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Underweight
 typeOf: dcs:StatisticalVariable
@@ -2258,6 +2287,7 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 healthInsuranceStatusOneMonthBeforePregnancy: dcs:NoHealthInsurance
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
+name: "Sample Size of Live Birth Pregnancy Event Without Health Insurance"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_1MonthBeforePregnancy
 typeOf: dcs:StatisticalVariable
@@ -2282,6 +2312,7 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 healthInsuranceStatusPostpartum: dcs:NoHealthInsurance
 timePeriodRelativeToPregnancy: dcs:Postpartum
+name: "Live Birth Pregnancy Events Postpartum Without Health Insurance"
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_Postpartum
 typeOf: dcs:StatisticalVariable
@@ -2290,3 +2321,4 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 healthInsuranceStatusPostpartum: dcs:WithPrivateHealthInsurance
 timePeriodRelativeToPregnancy: dcs:Postpartum
+name: "Live Birth Pregnancy Postpartum With Private Health Insurance"

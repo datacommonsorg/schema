@@ -5,6 +5,7 @@ populationType: dcs:SolarInstallation
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 producingSector: dcs:Residential
+name: "Residential Solar Installations"
 
 Node: dcid:Count_SolarInstallation_Commercial
 description: "The number of separate commercial solar installations counted by DeepSolar model"
@@ -21,6 +22,7 @@ populationType: dcs:SolarInstallation
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 producingSector: dcs:UtilityScale
+name: "Utility Scale Solar Installations"
 
 Node: dcid:Count_SolarThermalInstallation_NonUtility
 description: "The number of separate solar thermal installations counted by DeepSolar model. Projects are not connected to the grid and energy is not converted to electricity, but used to heat water."
@@ -29,6 +31,7 @@ populationType: dcs:SolarThermalInstallation
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 producingSector: dcs:NonUtility
+name: "Non-Utility Solar Thermal Installations"
 
 Node: dcid:Count_SolarInstallation
 description: "The Total Number of Solar Installations"
@@ -36,6 +39,7 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:SolarInstallation
 measuredProperty: dcs:count
 statType: dcs:measuredValue
+name: "Solar Installations"
 
 Node: dcid:Mean_CoverageArea_SolarInstallation_Residential
 description: "The average area covered by an entire residential solar project"
@@ -44,6 +48,7 @@ populationType: dcs:SolarInstallation
 measuredProperty: dcs:coverageArea
 statType: dcs:measuredValue
 producingSector: dcs:Residential
+name: "Coverage Area of Solar Installation Residential"
 
 Node: dcid:Mean_CoverageArea_SolarInstallation_Commercial
 description: "The average area covered by commercial solar installations as modeled by DeepSolar. Model may underestimate the size."
@@ -52,6 +57,7 @@ populationType: dcs:SolarInstallation
 measuredProperty: dcs:coverageArea
 statType: dcs:measuredValue
 producingSector: dcs:Commercial
+name: "Coverage Area of Solar Installation"
 
 Node: dcid:Mean_CoverageArea_SolarInstallation_UtilityScale
 description: "The average area covered by utility solar installations as modeled by DeepSolar. Model may underestimate the size."
@@ -60,6 +66,7 @@ populationType: dcs:SolarInstallation
 measuredProperty: dcs:coverageArea
 statType: dcs:measuredValue
 producingSector: dcs:UtilityScale
+name: "Utility Scale Area of Solar Installation"
 
 Node: dcid:Mean_CoverageArea_SolarThermalInstallation_NonUtility
 description: "The average area covered by residential solar thermal installations as modeled by DeepSolar. Projects are not connected to the grid and energy is not converted to electricity, but used to heat water."
@@ -68,3 +75,4 @@ populationType: dcs:SolarThermalInstallation
 measuredProperty: dcs:coverageArea
 statType: dcs:measuredValue
 producingSector: dcs:NonUtility
+name: "Coverage Area of Solar Thermal Installation by Non-Utility"

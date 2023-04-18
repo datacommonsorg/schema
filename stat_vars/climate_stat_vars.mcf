@@ -11,6 +11,7 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:Place
 measuredProperty: dcs:temperature
 statType: dcs:maxValue
+name: "Maximum Temperature"
 
 Node: dcid:Min_Temperature
 description: "Minimum near-surface air temperature"
@@ -32,6 +33,7 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:Place
 measuredProperty: dcs:temperature
 statType: dcs:measuredValue
+name: "Temperature in a Location"
 
 Node: dcid:Mean_WindSpeed
 description: "Mean near-surface wind speed"
@@ -57,6 +59,7 @@ measuredProperty: dcs:radiation
 radiationDirection: dcs:Downwelling
 wavelength: dcs:ShortwaveRadiation
 statType: dcs:minValue
+name: "Minimum Surface Downwelling Shortwave Radiation"
 
 Node: dcid:Max_Radiation_Downwelling_ShortwaveRadiation
 description: "Maximum surface downwelling shortwave radiation"
@@ -66,6 +69,7 @@ measuredProperty: dcs:radiation
 radiationDirection: dcs:Downwelling
 wavelength: dcs:ShortwaveRadiation
 statType: dcs:maxValue
+name: "Maximum Downwelling Shortwave Radiation"
 
 Node: dcid:Mean_Radiation_Downwelling_ShortwaveRadiation
 description: "Mean surface downwelling shortwave radiation"
@@ -75,6 +79,7 @@ measuredProperty: dcs:radiation
 radiationDirection: dcs:Downwelling
 wavelength: dcs:ShortwaveRadiation
 statType: dcs:meanValue
+name: "Downwelling Shortwave Radiation"
 
 Node: dcid:Radiation_Downwelling_LongwaveRadiation
 description: "Surface downwelling longwave radiation"
@@ -84,6 +89,7 @@ measuredProperty: dcs:radiation
 statType: dcs:measuredValue
 radiationDirection: dcs:Downwelling
 wavelength: dcs:LongwaveRadiation
+name: "Downwelling And Longwave Radiation"
 
 Node: dcid:Humidity_SpecificHumidity
 description: "Near-surface specific humidity"
@@ -293,6 +299,7 @@ measuredProperty: dcs:temperature
 statType: dcs:maxValue
 emissionsScenario: dcs:RCP4.5
 socioeconomicScenario: dcs:SSP2
+name: "Maximum Temperature Based on RCP 4.5SSP 2"
 
 Node: dcid:Min_Temperature_SSP245
 description: "Minimum near-surface air temperature under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
@@ -302,6 +309,7 @@ measuredProperty: dcs:temperature
 statType: dcs:minValue
 emissionsScenario: dcs:RCP4.5
 socioeconomicScenario: dcs:SSP2
+name: "Minimum Temperature Based on RCP 4.5, SSP 2"
 
 Node: dcid:Temperature_SSP245
 description: "Near-surface air temperature under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
@@ -342,6 +350,7 @@ radiationDirection: dcs:Downwelling
 wavelength: dcs:LongwaveRadiation
 emissionsScenario: dcs:RCP4.5
 socioeconomicScenario: dcs:SSP2
+name: "Radiation Based on RCP 4.5 Downwelling SSP 2 And Longwave Radiation"
 
 Node: dcid:Humidity_SpecificHumidity_SSP245
 description: "Near-surface specific humidity under SSP245 scenario (RCP4.5 global forcing pathway with SSP2 socioeconomic conditions)"
@@ -362,6 +371,7 @@ statType: dcs:measuredValue
 humidityParameter: dcs:RelativeHumidity
 emissionsScenario: dcs:RCP4.5
 socioeconomicScenario: dcs:SSP2
+name: "Relative Humidity Based on RCP 4.5"
 
 # SSP585
 
@@ -373,6 +383,7 @@ measuredProperty: dcs:precipitationRate
 statType: dcs:measuredValue
 emissionsScenario: dcs:RCP8.5
 socioeconomicScenario: dcs:SSP5
+name: "Precipitation Rate Based on RCP 8.5, SSP 5"
 
 Node: dcid:Max_Temperature_SSP585
 description: "Maximum near-surface air temperature under SS585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
@@ -382,6 +393,7 @@ measuredProperty: dcs:temperature
 statType: dcs:maxValue
 emissionsScenario: dcs:RCP8.5
 socioeconomicScenario: dcs:SSP5
+name: "Maximum Temperature: Based on RCP 8.5"
 
 Node: dcid:Min_Temperature_SSP585
 description: "Minimum near-surface air temperature under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
@@ -391,6 +403,7 @@ measuredProperty: dcs:temperature
 statType: dcs:minValue
 emissionsScenario: dcs:RCP8.5
 socioeconomicScenario: dcs:SSP5
+name: "Minimum Temperature Based on RCP 8.5SSP 5"
 
 Node: dcid:Temperature_SSP585
 description: "Near-surface air temperature under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
@@ -409,6 +422,7 @@ measuredProperty: dcs:windSpeed
 statType: dcs:meanValue
 emissionsScenario: dcs:RCP8.5
 socioeconomicScenario: dcs:SSP5
+name: "Mean Wind Speed"
 
 Node: dcid:Radiation_Downwelling_ShortwaveRadiation_SSP585
 description: "Surface downwelling shortwave radiation under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
@@ -441,6 +455,7 @@ statType: dcs:measuredValue
 humidityParameter: dcs:SpecificHumidity
 emissionsScenario: dcs:RCP8.5
 socioeconomicScenario: dcs:SSP5
+name: "Humidity Based on RCP 8.5 SSP 5"
 
 Node: dcid:Humidity_RelativeHumidity_SSP585
 description: "Near-surface relative humidity under SSP585 scenario (RCP8.5 global forcing pathway with SSP5 socioeconomic conditions)"
@@ -490,6 +505,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP8.5
 humidityParameter: dcs:MaxRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP8.5 emissions scenario and estimated max relative humidity based on past weather"
+name: "Number of Months Reaching Wet Bulb Temperature based on RCP 8.5 Max Relative Humidity"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60_MaxRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -500,6 +516,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP6.0
 humidityParameter: dcs:MaxRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP6.0 emissions scenario and estimated max relative humidity based on past weather"
+name: "Number of Months Reaching Wet Bulb Temperature based on RCP 6.0 Max Relative Humidity"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45_MaxRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -510,6 +527,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP4.5
 humidityParameter: dcs:MaxRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP4.5 emissions scenario and estimated max relative humidity based on past weather"
+name: "Maximum Relative Humidity 35 Celsius or More"
 
 ## Wet Bulb Temperature (based on Mean Relative Humidity)
 
@@ -549,6 +567,7 @@ emissionsScenario: dcs:RCP4.5
 socioeconomicScenario: dcs:SSP2
 humidityParameter: dcs:MeanRelativeHumidity
 description: "Wet bulb temperature computed from max temperature and relative humidity under SSP245 scenario"
+name: "Wet Bulb Temperature Based on RCP 4.5 Mean Relative Humidity, SSP 2"
 
 Node: dcid:WetBulbTemperature_SSP585_MeanRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -559,6 +578,7 @@ emissionsScenario: dcs:RCP8.5
 socioeconomicScenario: dcs:SSP5
 humidityParameter: dcs:MeanRelativeHumidity
 description: "Wet bulb temperature computed from max temperature and relative humidity under SSP585 scenario"
+name: "Wet Bulb Temperature Based on RCP 8.5"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP85_MeanRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -569,6 +589,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP8.5
 humidityParameter: dcs:MeanRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP8.5 emissions scenario and estimated mean relative humidity based on past weather"
+name: "Number of Months Reaching Wet Bulb Temperature based on RCP 8.5 Mean Relative Humidity"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60_MeanRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -579,6 +600,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP6.0
 humidityParameter: dcs:MeanRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP6.0 emissions scenario and estimated mean relative humidity based on past weather"
+name: "Number of Months Reaching Wet Bulb Temperature based on RCP 6.0 Mean Relative Humidity"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45_MeanRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -589,6 +611,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP4.5
 humidityParameter: dcs:MeanRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP4.5 emissions scenario and estimated mean relative humidity based on past weather"
+name: "Number of Months Reaching Wet Bulb Temperature based on RCP 4.5 Mean Relative Humidity"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_SSP245_MeanRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -622,6 +645,7 @@ statType: dcs:measuredValue
 emissionsScenario: dcs:RCP8.5
 humidityParameter: dcs:MinRelativeHumidity
 description: "Wet bulb temperature computed from max temperature under RCP8.5 emissions scenario and estimated min relative humidity based on past weather"
+name: "Min Relative Humidity Based on RCP 8.5"
 
 Node: dcid:WetBulbTemperature_RCP60_MinRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -631,6 +655,7 @@ statType: dcs:measuredValue
 emissionsScenario: dcs:RCP6.0
 humidityParameter: dcs:MinRelativeHumidity
 description: "Wet bulb temperature computed from max temperature under RCP6.0 emissions scenario and estimated min relative humidity based on past weather"
+name: "Wet Bulb Temperature Based on RCP 6.0"
 
 Node: dcid:WetBulbTemperature_RCP45_MinRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -640,6 +665,7 @@ statType: dcs:measuredValue
 emissionsScenario: dcs:RCP4.5
 humidityParameter: dcs:MinRelativeHumidity
 description: "Wet bulb temperature computed from max temperature under RCP4.5 emissions scenario and estimated min relative humidity based on past weather"
+name: "Wet Bulb Temperature Based on RCP 4.5Min Relative Humidity"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP85_MinRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -650,6 +676,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP8.5
 humidityParameter: dcs:MinRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP8.5 emissions scenario and estimated min relative humidity based on past weather"
+name: "Number of Months Based on RCP 8.5"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP60_MinRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -660,6 +687,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP6.0
 humidityParameter: dcs:MinRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP6.0 emissions scenario and estimated min relative humidity based on past weather"
+name: "Number of Months Reaching Wet Bulb Temperature based on RCP 6.0 Min Relative Humidity"
 
 Node: dcid:NumberOfMonths_WetBulbTemperature_35COrMore_RCP45_MinRelativeHumidity
 typeOf: dcs:StatisticalVariable
@@ -670,6 +698,7 @@ wetBulbTemperature: [35 - Celsius]
 emissionsScenario: dcs:RCP4.5
 humidityParameter: dcs:MinRelativeHumidity
 description: "Number of months for a year that a place's wet bulb temperature exceeds 35 celsius degrees, under RCP4.5 emissions scenario and estimated min relative humidity based on past weather"
+name: "Number of Months Reaching Wet Bulb Temperature based on RCP 4.5 Min Relative Humidity"
 
 # Manually curated StatVars related to natural phenomena.
 
@@ -690,6 +719,7 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:VolcanicAshEvent
 statType: dcs:measuredValue
 measuredProperty: dcs:count
+name: "Volcano Events"
 
 Node: dcid:Count_NorthernLightsEvent
 typeOf: dcs:StatisticalVariable
@@ -837,7 +867,7 @@ statType: dcs:meanValue
 
 Node: dcid:SurfaceArea
 typeOf: dcs:StatisticalVariable
-name: "Surface area"
+name: "Surface Area"
 populationType: schema:Thing
 measuredProperty: dcs:area
 statType: dcs:measuredValue
@@ -896,6 +926,7 @@ measuredProperty: dcs:windSpeed
 windComponent: dcs:UComponent
 height: [10 Meter]
 statType: dcs:meanValue
+name: "Mean 10 Meter UComponent Wind Speed"
 
 Node: dcid:WindSpeed_VComponent_Height10Meters
 typeOf: dcs:StatisticalVariable
@@ -928,6 +959,7 @@ measuredProperty: dcs:windSpeed
 windComponent: dcs:VComponent
 height: [10 Meter]
 statType: dcs:meanValue
+name: "Mean Wind Speed Component"
 
 Node: dcid:Min_CloudCover
 description: "Minimum cloud coverage of an area"
@@ -962,6 +994,7 @@ statType: dcid:meanValue
 climateModel: dcs:ACCESS-CM2
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (ACCESS-CM2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between ACCESS-CM2 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Australian CMIP6 Historcial Run Mean Temperature"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_ACCESS-CM2
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_ACCESS-CM2"
@@ -1008,6 +1041,7 @@ climateModel: dcs:ACCESS-CM2
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (ACCESS-CM2 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between ACCESS-CM2 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_ACCESS-CM2
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_ACCESS-CM2"
@@ -1020,6 +1054,7 @@ climateModel: dcs:ACCESS-CM2
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (ACCESS-CM2 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between ACCESS-CM2 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Australia Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_ACCESS-CM2
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_ACCESS-CM2"
@@ -1032,6 +1067,7 @@ climateModel: dcs:ACCESS-CM2
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (ACCESS-CM2 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between ACCESS-CM2 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperatures Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_ACCESS-CM2
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_ACCESS-CM2"
@@ -1044,6 +1080,7 @@ climateModel: dcs:ACCESS-CM2
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (ACCESS-CM2 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between ACCESS-CM2 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Max Temperature Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_ACCESS-CM2
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_ACCESS-CM2"
@@ -1056,6 +1093,7 @@ climateModel: dcs:ACCESS-CM2
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (ACCESS-CM2 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between ACCESS-CM2 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature ACCESS-CM2 Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_ACCESS-ESM1-5
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_ACCESS-ESM1-5"
@@ -1101,6 +1139,7 @@ climateModel: dcs:ACCESS-ESM1-5
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (ACCESS-ESM1-5 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between ACCESS-ESM1-5 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Australia Based on RCP 4.5SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_ACCESS-ESM1-5
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_ACCESS-ESM1-5"
@@ -1137,6 +1176,7 @@ climateModel: dcs:ACCESS-ESM1-5
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (ACCESS-ESM1-5 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between ACCESS-ESM1-5 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Difference Relative To Observed Data Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_ACCESS-ESM1-5
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_ACCESS-ESM1-5"
@@ -1149,6 +1189,7 @@ climateModel: dcs:ACCESS-ESM1-5
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (ACCESS-ESM1-5 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between ACCESS-ESM1-5 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_ACCESS-ESM1-5
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_ACCESS-ESM1-5"
@@ -1161,6 +1202,7 @@ climateModel: dcs:ACCESS-ESM1-5
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (ACCESS-ESM1-5 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between ACCESS-ESM1-5 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in the USA Based on RCP 8.5 SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_BCC-CSM2-MR
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_BCC-CSM2-MR"
@@ -1206,6 +1248,7 @@ climateModel: dcs:BCC-CSM2-MR
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (BCC-CSM2-MR RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between BCC-CSM2-MR projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_BCC-CSM2-MR
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_BCC-CSM2-MR"
@@ -1218,6 +1261,7 @@ climateModel: dcs:BCC-CSM2-MR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (BCC-CSM2-MR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between BCC-CSM2-MR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in China Based on RCP 8.5 SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_BCC-CSM2-MR
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_BCC-CSM2-MR"
@@ -1242,6 +1286,7 @@ climateModel: dcs:BCC-CSM2-MR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (BCC-CSM2-MR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between BCC-CSM2-MR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in China Based on RCP 8.5SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_BCC-CSM2-MR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_BCC-CSM2-MR"
@@ -1335,6 +1380,7 @@ climateModel: dcs:CANESM5
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (CANESM5 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between CANESM5 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature In Canada Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_CANESM5
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_CANESM5"
@@ -1347,6 +1393,7 @@ climateModel: dcs:CANESM5
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CANESM5 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between CANESM5 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Canada Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_CANESM5
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_CANESM5"
@@ -1476,6 +1523,7 @@ climateModel: dcs:CESM2
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CESM2 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CESM2 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_CESM2-WACCM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_CESM2-WACCM"
@@ -1498,6 +1546,7 @@ statType: dcid:minValue
 climateModel: dcs:CESM2-WACCM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (CESM2-WACCM Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between CESM2-WACCM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based in United States of America Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_CESM2-WACCM
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_CESM2-WACCM"
@@ -1521,6 +1570,7 @@ climateModel: dcs:CESM2-WACCM
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (CESM2-WACCM RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between CESM2-WACCM projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 4.5SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_CESM2-WACCM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_CESM2-WACCM"
@@ -1533,6 +1583,7 @@ climateModel: dcs:CESM2-WACCM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CESM2-WACCM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between CESM2-WACCM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_CESM2-WACCM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_CESM2-WACCM"
@@ -1569,6 +1620,7 @@ climateModel: dcs:CESM2-WACCM
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (CESM2-WACCM RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CESM2-WACCM projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in the USA Based on RCP 4.5 SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_CESM2-WACCM
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_CESM2-WACCM"
@@ -1581,6 +1633,7 @@ climateModel: dcs:CESM2-WACCM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CESM2-WACCM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CESM2-WACCM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_CMCC-CM2-SR5
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_CMCC-CM2-SR5"
@@ -1650,6 +1703,7 @@ climateModel: dcs:CMCC-CM2-SR5
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (CMCC-CM2-SR5 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between CMCC-CM2-SR5 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Italy Based on RCP 4.5 SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_CMCC-CM2-SR5
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_CMCC-CM2-SR5"
@@ -1686,6 +1740,7 @@ climateModel: dcs:CMCC-CM2-SR5
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CMCC-CM2-SR5 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CMCC-CM2-SR5 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_CMCC-ESM2
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_CMCC-ESM2"
@@ -1697,6 +1752,7 @@ statType: dcid:meanValue
 climateModel: dcs:CMCC-ESM2
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (CMCC-ESM2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between CMCC-ESM2 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in Italy Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_CMCC-ESM2
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_CMCC-ESM2"
@@ -1731,6 +1787,7 @@ climateModel: dcs:CMCC-ESM2
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (CMCC-ESM2 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between CMCC-ESM2 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_CMCC-ESM2
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_CMCC-ESM2"
@@ -1791,6 +1848,7 @@ climateModel: dcs:CMCC-ESM2
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CMCC-ESM2 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CMCC-ESM2 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_CNRM-CM6-1
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_CNRM-CM6-1"
@@ -1848,6 +1906,7 @@ climateModel: dcs:CNRM-CM6-1
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CNRM-CM6-1 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between CNRM-CM6-1 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature CNRM-CM6-1 Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_CNRM-CM6-1
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_CNRM-CM6-1"
@@ -1884,6 +1943,7 @@ climateModel: dcs:CNRM-CM6-1
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (CNRM-CM6-1 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CNRM-CM6-1 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in France Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_CNRM-CM6-1
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_CNRM-CM6-1"
@@ -1907,6 +1967,7 @@ statType: dcid:meanValue
 climateModel: dcs:CNRM-ESM2-1
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (CNRM-ESM2-1 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between CNRM-ESM2-1 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in France CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_CNRM-ESM2-1
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_CNRM-ESM2-1"
@@ -1918,6 +1979,7 @@ statType: dcid:minValue
 climateModel: dcs:CNRM-ESM2-1
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (CNRM-ESM2-1 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between CNRM-ESM2-1 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_CNRM-ESM2-1
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_CNRM-ESM2-1"
@@ -1953,6 +2015,7 @@ climateModel: dcs:CNRM-ESM2-1
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CNRM-ESM2-1 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between CNRM-ESM2-1 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in France Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_CNRM-ESM2-1
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_CNRM-ESM2-1"
@@ -1977,6 +2040,7 @@ climateModel: dcs:CNRM-ESM2-1
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CNRM-ESM2-1 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between CNRM-ESM2-1 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Relative To 2015, Based on RCP 4.5, Highest Value, Median Across Models, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_CNRM-ESM2-1
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_CNRM-ESM2-1"
@@ -1989,6 +2053,7 @@ climateModel: dcs:CNRM-ESM2-1
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (CNRM-ESM2-1 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CNRM-ESM2-1 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_CNRM-ESM2-1
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_CNRM-ESM2-1"
@@ -2001,6 +2066,7 @@ climateModel: dcs:CNRM-ESM2-1
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (CNRM-ESM2-1 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between CNRM-ESM2-1 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperatures Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_EC-EARTH3
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_EC-EARTH3"
@@ -2023,6 +2089,7 @@ statType: dcid:minValue
 climateModel: dcs:EC-EARTH3
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (EC-EARTH3 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between EC-EARTH3 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Europe Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_EC-EARTH3
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_EC-EARTH3"
@@ -2034,6 +2101,7 @@ statType: dcid:maxValue
 climateModel: dcs:EC-EARTH3
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (EC-EARTH3 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between EC-EARTH3 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Europe Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_EC-EARTH3
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_EC-EARTH3"
@@ -2082,6 +2150,7 @@ climateModel: dcs:EC-EARTH3
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (EC-EARTH3 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between EC-EARTH3 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Europe Based on RCP 8.5 SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_EC-EARTH3
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_EC-EARTH3"
@@ -2094,6 +2163,7 @@ climateModel: dcs:EC-EARTH3
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (EC-EARTH3 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between EC-EARTH3 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_EC-EARTH3
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_EC-EARTH3"
@@ -2117,6 +2187,7 @@ statType: dcid:meanValue
 climateModel: dcs:EC-EARTH3-VEG-LR
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (EC-EARTH3-VEG-LR Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between EC-EARTH3-VEG-LR projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in Europe Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_EC-EARTH3-VEG-LR
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_EC-EARTH3-VEG-LR"
@@ -2139,6 +2210,7 @@ statType: dcid:maxValue
 climateModel: dcs:EC-EARTH3-VEG-LR
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (EC-EARTH3-VEG-LR Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between EC-EARTH3-VEG-LR projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Europe CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_EC-EARTH3-VEG-LR
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_EC-EARTH3-VEG-LR"
@@ -2163,6 +2235,7 @@ climateModel: dcs:EC-EARTH3-VEG-LR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (EC-EARTH3-VEG-LR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between EC-EARTH3-VEG-LR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5 SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_EC-EARTH3-VEG-LR
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_EC-EARTH3-VEG-LR"
@@ -2187,6 +2260,7 @@ climateModel: dcs:EC-EARTH3-VEG-LR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (EC-EARTH3-VEG-LR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between EC-EARTH3-VEG-LR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_EC-EARTH3-VEG-LR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_EC-EARTH3-VEG-LR"
@@ -2199,6 +2273,7 @@ climateModel: dcs:EC-EARTH3-VEG-LR
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (EC-EARTH3-VEG-LR RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between EC-EARTH3-VEG-LR projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature EC-Earth3-Veg-LR Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_EC-EARTH3-VEG-LR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_EC-EARTH3-VEG-LR"
@@ -2211,6 +2286,7 @@ climateModel: dcs:EC-EARTH3-VEG-LR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (EC-EARTH3-VEG-LR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between EC-EARTH3-VEG-LR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_FGOALS-G3
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_FGOALS-G3"
@@ -2256,6 +2332,7 @@ climateModel: dcs:FGOALS-G3
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (FGOALS-G3 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between FGOALS-G3 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in China Based on RCP 4.5 SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_FGOALS-G3
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_FGOALS-G3"
@@ -2268,6 +2345,7 @@ climateModel: dcs:FGOALS-G3
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (FGOALS-G3 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between FGOALS-G3 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_FGOALS-G3
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_FGOALS-G3"
@@ -2280,6 +2358,7 @@ climateModel: dcs:FGOALS-G3
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (FGOALS-G3 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between FGOALS-G3 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Difference Relative To Observed Data Based on RCP 45, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_FGOALS-G3
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_FGOALS-G3"
@@ -2373,6 +2452,7 @@ climateModel: dcs:GFDL-CM4
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (GFDL-CM4 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between GFDL-CM4 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_GFDL-CM4
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_GFDL-CM4"
@@ -2385,6 +2465,7 @@ climateModel: dcs:GFDL-CM4
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (GFDL-CM4 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between GFDL-CM4 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_GFDL-CM4
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_GFDL-CM4"
@@ -2397,6 +2478,7 @@ climateModel: dcs:GFDL-CM4
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (GFDL-CM4 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between GFDL-CM4 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Difference Relative To Observed Data Based on RCP 85, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_GFDL-CM4
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_GFDL-CM4"
@@ -2409,6 +2491,7 @@ climateModel: dcs:GFDL-CM4
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (GFDL-CM4 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between GFDL-CM4 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 4.5SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_GFDL-CM4
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_GFDL-CM4"
@@ -2454,6 +2537,7 @@ statType: dcid:maxValue
 climateModel: dcs:GFDL-ESM4
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (GFDL-ESM4 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between GFDL-ESM4 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature CMIP6 Historcial Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_GFDL-ESM4
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_GFDL-ESM4"
@@ -2478,6 +2562,7 @@ climateModel: dcs:GFDL-ESM4
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (GFDL-ESM4 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between GFDL-ESM4 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_GFDL-ESM4
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_GFDL-ESM4"
@@ -2502,6 +2587,7 @@ climateModel: dcs:GFDL-ESM4
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (GFDL-ESM4 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between GFDL-ESM4 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in the USA Based on RCP 8.5SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_GFDL-ESM4
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_GFDL-ESM4"
@@ -2537,6 +2623,7 @@ statType: dcid:meanValue
 climateModel: dcs:GISS-E2-1-G
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (GISS-E2-1-G Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between GISS-E2-1-G projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature CMP6 GISS-E2-1-GHistorical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_GISS-E2-1-G
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_GISS-E2-1-G"
@@ -2548,6 +2635,7 @@ statType: dcid:minValue
 climateModel: dcs:GISS-E2-1-G
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (GISS-E2-1-G Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between GISS-E2-1-G projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature CMIP6 Historcial Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_GISS-E2-1-G
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_GISS-E2-1-G"
@@ -2559,6 +2647,7 @@ statType: dcid:maxValue
 climateModel: dcs:GISS-E2-1-G
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (GISS-E2-1-G Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between GISS-E2-1-G projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature CMIP6 Historcial Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_GISS-E2-1-G
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_GISS-E2-1-G"
@@ -2571,6 +2660,7 @@ climateModel: dcs:GISS-E2-1-G
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (GISS-E2-1-G RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between GISS-E2-1-G projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based On Rcp 4.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_GISS-E2-1-G
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_GISS-E2-1-G"
@@ -2583,6 +2673,7 @@ climateModel: dcs:GISS-E2-1-G
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (GISS-E2-1-G RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between GISS-E2-1-G projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_GISS-E2-1-G
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_GISS-E2-1-G"
@@ -2595,6 +2686,7 @@ climateModel: dcs:GISS-E2-1-G
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (GISS-E2-1-G RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between GISS-E2-1-G projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_GISS-E2-1-G
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_GISS-E2-1-G"
@@ -2619,6 +2711,7 @@ climateModel: dcs:GISS-E2-1-G
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (GISS-E2-1-G RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between GISS-E2-1-G projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature GISS-E2-1-G Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_GISS-E2-1-G
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_GISS-E2-1-G"
@@ -2676,6 +2769,7 @@ climateModel: dcs:HADGEM3-GC31-LL
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (HADGEM3-GC31-LL RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between HADGEM3-GC31-LL projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_HADGEM3-GC31-LL
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_HADGEM3-GC31-LL"
@@ -2700,6 +2794,7 @@ climateModel: dcs:HADGEM3-GC31-LL
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (HADGEM3-GC31-LL RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between HADGEM3-GC31-LL projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_HADGEM3-GC31-LL
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_HADGEM3-GC31-LL"
@@ -2712,6 +2807,7 @@ climateModel: dcs:HADGEM3-GC31-LL
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (HADGEM3-GC31-LL RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between HADGEM3-GC31-LL projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in the UK Based on RCP 8.5SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_HADGEM3-GC31-LL
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_HADGEM3-GC31-LL"
@@ -2724,6 +2820,7 @@ climateModel: dcs:HADGEM3-GC31-LL
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (HADGEM3-GC31-LL RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between HADGEM3-GC31-LL projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 4.5, Highest Value, Median Across Models, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_HADGEM3-GC31-LL
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_HADGEM3-GC31-LL"
@@ -2736,6 +2833,7 @@ climateModel: dcs:HADGEM3-GC31-LL
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (HADGEM3-GC31-LL RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between HADGEM3-GC31-LL projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperatures Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_HADGEM3-GC31-MM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_HADGEM3-GC31-MM"
@@ -2747,6 +2845,7 @@ statType: dcid:meanValue
 climateModel: dcs:HADGEM3-GC31-MM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (HADGEM3-GC31-MM Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between HADGEM3-GC31-MM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_HADGEM3-GC31-MM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_HADGEM3-GC31-MM"
@@ -2758,6 +2857,7 @@ statType: dcid:minValue
 climateModel: dcs:HADGEM3-GC31-MM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (HADGEM3-GC31-MM Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between HADGEM3-GC31-MM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in UK CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_HADGEM3-GC31-MM
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_HADGEM3-GC31-MM"
@@ -2781,6 +2881,7 @@ climateModel: dcs:HADGEM3-GC31-MM
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (HADGEM3-GC31-MM RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between HADGEM3-GC31-MM projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_HADGEM3-GC31-MM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_HADGEM3-GC31-MM"
@@ -2793,6 +2894,7 @@ climateModel: dcs:HADGEM3-GC31-MM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (HADGEM3-GC31-MM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between HADGEM3-GC31-MM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_HADGEM3-GC31-MM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_HADGEM3-GC31-MM"
@@ -2805,6 +2907,7 @@ climateModel: dcs:HADGEM3-GC31-MM
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (HADGEM3-GC31-MM RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between HADGEM3-GC31-MM projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in the UK Based on RCP 4.5SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_HADGEM3-GC31-MM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_HADGEM3-GC31-MM"
@@ -2829,6 +2932,7 @@ climateModel: dcs:HADGEM3-GC31-MM
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (HADGEM3-GC31-MM RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between HADGEM3-GC31-MM projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based On RCP 4.5 SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_HADGEM3-GC31-MM
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_HADGEM3-GC31-MM"
@@ -2841,6 +2945,7 @@ climateModel: dcs:HADGEM3-GC31-MM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (HADGEM3-GC31-MM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between HADGEM3-GC31-MM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_IITM-ESM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_IITM-ESM"
@@ -2852,6 +2957,7 @@ statType: dcid:meanValue
 climateModel: dcs:IITM-ESM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (IITM-ESM Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between IITM-ESM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Relative to Observed Data"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_IITM-ESM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_IITM-ESM"
@@ -2898,6 +3004,7 @@ climateModel: dcs:IITM-ESM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (IITM-ESM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between IITM-ESM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_IITM-ESM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_IITM-ESM"
@@ -2946,6 +3053,7 @@ climateModel: dcs:IITM-ESM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (IITM-ESM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between IITM-ESM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature In India - CCCR-IITM Based on RCP 8.5SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_INM-CM4-8
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_INM-CM4-8"
@@ -2979,6 +3087,7 @@ statType: dcid:maxValue
 climateModel: dcs:INM-CM4-8
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (INM-CM4-8 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between INM-CM4-8 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_INM-CM4-8
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_INM-CM4-8"
@@ -3003,6 +3112,7 @@ climateModel: dcs:INM-CM4-8
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (INM-CM4-8 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between INM-CM4-8 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_INM-CM4-8
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_INM-CM4-8"
@@ -3027,6 +3137,7 @@ climateModel: dcs:INM-CM4-8
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (INM-CM4-8 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between INM-CM4-8 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Russia Based on RCP 8.5SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_INM-CM4-8
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_INM-CM4-8"
@@ -3062,6 +3173,7 @@ statType: dcid:meanValue
 climateModel: dcs:INM-CM5-0
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (INM-CM5-0 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between INM-CM5-0 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in Russia in CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_INM-CM5-0
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_INM-CM5-0"
@@ -3084,6 +3196,7 @@ statType: dcid:maxValue
 climateModel: dcs:INM-CM5-0
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (INM-CM5-0 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between INM-CM5-0 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature of CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_INM-CM5-0
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_INM-CM5-0"
@@ -3096,6 +3209,7 @@ climateModel: dcs:INM-CM5-0
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (INM-CM5-0 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between INM-CM5-0 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_INM-CM5-0
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_INM-CM5-0"
@@ -3108,6 +3222,7 @@ climateModel: dcs:INM-CM5-0
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (INM-CM5-0 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between INM-CM5-0 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in Russia Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_INM-CM5-0
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_INM-CM5-0"
@@ -3144,6 +3259,7 @@ climateModel: dcs:INM-CM5-0
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (INM-CM5-0 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between INM-CM5-0 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Russia Based on RCP 4.5 SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_INM-CM5-0
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_INM-CM5-0"
@@ -3167,6 +3283,7 @@ statType: dcid:meanValue
 climateModel: dcs:IPSL-CM6A-LR
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (IPSL-CM6A-LR Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between IPSL-CM6A-LR projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_IPSL-CM6A-LR
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_IPSL-CM6A-LR"
@@ -3178,6 +3295,7 @@ statType: dcid:minValue
 climateModel: dcs:IPSL-CM6A-LR
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (IPSL-CM6A-LR Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between IPSL-CM6A-LR projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature CMIP6 Historcial Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_IPSL-CM6A-LR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_IPSL-CM6A-LR"
@@ -3189,6 +3307,7 @@ statType: dcid:maxValue
 climateModel: dcs:IPSL-CM6A-LR
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (IPSL-CM6A-LR Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between IPSL-CM6A-LR projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in France Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_IPSL-CM6A-LR
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_IPSL-CM6A-LR"
@@ -3201,6 +3320,7 @@ climateModel: dcs:IPSL-CM6A-LR
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (IPSL-CM6A-LR RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between IPSL-CM6A-LR projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature IPSL-CM6A-LR Based on RCP 4.5 SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_IPSL-CM6A-LR
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_IPSL-CM6A-LR"
@@ -3261,6 +3381,7 @@ climateModel: dcs:IPSL-CM6A-LR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (IPSL-CM6A-LR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between IPSL-CM6A-LR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_KACE-1-0-G
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_KACE-1-0-G"
@@ -3272,6 +3393,7 @@ statType: dcid:meanValue
 climateModel: dcs:KACE-1-0-G
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (KACE-1-0-G Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between KACE-1-0-G projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature KACE-1-0-G CMP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_KACE-1-0-G
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_KACE-1-0-G"
@@ -3283,6 +3405,7 @@ statType: dcid:minValue
 climateModel: dcs:KACE-1-0-G
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (KACE-1-0-G Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between KACE-1-0-G projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperatures in Korea CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_KACE-1-0-G
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_KACE-1-0-G"
@@ -3294,6 +3417,7 @@ statType: dcid:maxValue
 climateModel: dcs:KACE-1-0-G
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (KACE-1-0-G Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between KACE-1-0-G projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_KACE-1-0-G
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_KACE-1-0-G"
@@ -3318,6 +3442,7 @@ climateModel: dcs:KACE-1-0-G
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (KACE-1-0-G RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between KACE-1-0-G projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_KACE-1-0-G
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_KACE-1-0-G"
@@ -3377,6 +3502,7 @@ statType: dcid:meanValue
 climateModel: dcs:KIOST-ESM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (KIOST-ESM Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between KIOST-ESM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature CMIP6 Historrical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_KIOST-ESM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_KIOST-ESM"
@@ -3399,6 +3525,7 @@ statType: dcid:maxValue
 climateModel: dcs:KIOST-ESM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (KIOST-ESM Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between KIOST-ESM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Korea CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_KIOST-ESM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_KIOST-ESM"
@@ -3471,6 +3598,7 @@ climateModel: dcs:KIOST-ESM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (KIOST-ESM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between KIOST-ESM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_MIROC-ES2L
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_MIROC-ES2L"
@@ -3482,6 +3610,7 @@ statType: dcid:meanValue
 climateModel: dcs:MIROC-ES2L
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (MIROC-ES2L Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between MIROC-ES2L projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Of CIMP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_MIROC-ES2L
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_MIROC-ES2L"
@@ -3528,6 +3657,7 @@ climateModel: dcs:MIROC-ES2L
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (MIROC-ES2L RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between MIROC-ES2L projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_MIROC-ES2L
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_MIROC-ES2L"
@@ -3552,6 +3682,7 @@ climateModel: dcs:MIROC-ES2L
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (MIROC-ES2L RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between MIROC-ES2L projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_MIROC-ES2L
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_MIROC-ES2L"
@@ -3587,6 +3718,7 @@ statType: dcid:meanValue
 climateModel: dcs:MIROC6
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (MIROC6 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between MIROC6 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in Japan CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_MIROC6
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_MIROC6"
@@ -3621,6 +3753,7 @@ climateModel: dcs:MIROC6
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (MIROC6 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between MIROC6 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_MIROC6
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP585_MIROC6"
@@ -3669,6 +3802,7 @@ climateModel: dcs:MIROC6
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (MIROC6 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between MIROC6 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 4.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_MIROC6
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_MIROC6"
@@ -3703,6 +3837,7 @@ statType: dcid:minValue
 climateModel: dcs:MPI-ESM1-2-HR
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (MPI-ESM1-2-HR Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between MPI-ESM1-2-HR projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Germany CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_MPI-ESM1-2-HR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_MPI-ESM1-2-HR"
@@ -3750,6 +3885,7 @@ climateModel: dcs:MPI-ESM1-2-HR
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (MPI-ESM1-2-HR RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between MPI-ESM1-2-HR projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Germany Based on RCP 4.5SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_MPI-ESM1-2-HR
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_MPI-ESM1-2-HR"
@@ -3762,6 +3898,7 @@ climateModel: dcs:MPI-ESM1-2-HR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (MPI-ESM1-2-HR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between MPI-ESM1-2-HR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Germany Based on RCP 8.5SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_MPI-ESM1-2-HR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_MPI-ESM1-2-HR"
@@ -3774,6 +3911,7 @@ climateModel: dcs:MPI-ESM1-2-HR
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (MPI-ESM1-2-HR RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between MPI-ESM1-2-HR projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Germany Based on RCP 4.5 SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_MPI-ESM1-2-HR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_MPI-ESM1-2-HR"
@@ -3843,6 +3981,7 @@ climateModel: dcs:MPI-ESM1-2-LR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (MPI-ESM1-2-LR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between MPI-ESM1-2-LR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_MPI-ESM1-2-LR
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_MPI-ESM1-2-LR"
@@ -3867,6 +4006,7 @@ climateModel: dcs:MPI-ESM1-2-LR
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (MPI-ESM1-2-LR RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between MPI-ESM1-2-LR projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based on RCP 8.5 Across Medium Models"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_MPI-ESM1-2-LR
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_MPI-ESM1-2-LR"
@@ -3913,6 +4053,7 @@ statType: dcid:minValue
 climateModel: dcs:MRI-ESM2-0
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (MRI-ESM2-0 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between MRI-ESM2-0 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Japan CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_MRI-ESM2-0
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_MRI-ESM2-0"
@@ -3924,6 +4065,7 @@ statType: dcid:maxValue
 climateModel: dcs:MRI-ESM2-0
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (MRI-ESM2-0 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between MRI-ESM2-0 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Japan Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_MRI-ESM2-0
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_MRI-ESM2-0"
@@ -3948,6 +4090,7 @@ climateModel: dcs:MRI-ESM2-0
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (MRI-ESM2-0 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between MRI-ESM2-0 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_MRI-ESM2-0
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_MRI-ESM2-0"
@@ -3984,6 +4127,7 @@ climateModel: dcs:MRI-ESM2-0
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (MRI-ESM2-0 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between MRI-ESM2-0 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature In Japan - MRI Based on RCP 4.5SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP585_MRI-ESM2-0
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP585_MRI-ESM2-0"
@@ -3996,6 +4140,7 @@ climateModel: dcs:MRI-ESM2-0
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (MRI-ESM2-0 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between MRI-ESM2-0 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Difference Relative To Observed Japan Data Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_NESM3
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_NESM3"
@@ -4029,6 +4174,7 @@ statType: dcid:maxValue
 climateModel: dcs:NESM3
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (NESM3 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between NESM3 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in China Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_NESM3
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_NESM3"
@@ -4053,6 +4199,7 @@ climateModel: dcs:NESM3
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (NESM3 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between NESM3 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in China Based on RCP 8.5 SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_NESM3
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_NESM3"
@@ -4065,6 +4212,7 @@ climateModel: dcs:NESM3
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (NESM3 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between NESM3 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in China Based on RCP 4.5SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_NESM3
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_NESM3"
@@ -4101,6 +4249,7 @@ climateModel: dcs:NESM3
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (NESM3 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between NESM3 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Difference Relative To Observed China Data Based on RCP 8.5, SSP 5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_NORESM2-LM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_NORESM2-LM"
@@ -4134,6 +4283,7 @@ statType: dcid:maxValue
 climateModel: dcs:NORESM2-LM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (NORESM2-LM Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between NORESM2-LM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Norway CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_NORESM2-LM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_NORESM2-LM"
@@ -4182,6 +4332,7 @@ climateModel: dcs:NORESM2-LM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (NORESM2-LM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between NORESM2-LM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_NORESM2-LM
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_NORESM2-LM"
@@ -4206,6 +4357,7 @@ climateModel: dcs:NORESM2-LM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (NORESM2-LM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between NORESM2-LM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Nor ESM2-LM Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_NORESM2-MM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_NORESM2-MM"
@@ -4228,6 +4380,7 @@ statType: dcid:minValue
 climateModel: dcs:NORESM2-MM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (NORESM2-MM Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between NORESM2-MM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Norway CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_NORESM2-MM
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_NORESM2-MM"
@@ -4239,6 +4392,7 @@ statType: dcid:maxValue
 climateModel: dcs:NORESM2-MM
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (NORESM2-MM Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between NORESM2-MM projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_NORESM2-MM
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_NORESM2-MM"
@@ -4263,6 +4417,7 @@ climateModel: dcs:NORESM2-MM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (NORESM2-MM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between NORESM2-MM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature NorESM2-MM Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_NORESM2-MM
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_NORESM2-MM"
@@ -4287,6 +4442,7 @@ climateModel: dcs:NORESM2-MM
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (NORESM2-MM RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between NORESM2-MM projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "MinimumTemperature in Norway Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_SSP245_NORESM2-MM
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_SSP245_NORESM2-MM"
@@ -4333,6 +4489,7 @@ statType: dcid:minValue
 climateModel: dcs:TAIESM1
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (TAIESM1 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between TAIESM1 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Minimum Temperature in Taiwan CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_TAIESM1
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_TAIESM1"
@@ -4344,6 +4501,7 @@ statType: dcid:maxValue
 climateModel: dcs:TAIESM1
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (TAIESM1 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between TAIESM1 projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Taiwan in CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_TAIESM1
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_TAIESM1"
@@ -4380,6 +4538,7 @@ climateModel: dcs:TAIESM1
 emissionsScenario: dcid:RCP4.5
 socioeconomicScenario: dcid:SSP2
 description: "Calculated Value = (TAIESM1 RCP4.5, SSP2 Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between TAIESM1 projections (under RCP4.5, SSP2) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Min Temperature Based on RCP 4.5, SSP 2"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP585_TAIESM1
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP585_TAIESM1"
@@ -4416,6 +4575,7 @@ climateModel: dcs:TAIESM1
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (TAIESM1 RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between TAIESM1 projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_UKESM1-0-LL
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_UKESM1-0-LL"
@@ -4427,6 +4587,7 @@ statType: dcid:meanValue
 climateModel: dcs:UKESM1-0-LL
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (UKESM1-0-LL Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between UKESM1-0-LL projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature of CMIP6 Historcial Run"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_UKESM1-0-LL
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_UKESM1-0-LL"
@@ -4438,6 +4599,7 @@ statType: dcid:minValue
 climateModel: dcs:UKESM1-0-LL
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (UKESM1-0-LL Temperature Projection) - (Observed Temperature). This value is the difference in Min Temperature between UKESM1-0-LL projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature in Korea Based on CMIP6 Historical Run"
 
 Node: DifferenceRelativeToObservationalData_Max_Temperature_UKESM1-0-LL
 dcid: "DifferenceRelativeToObservationalData_Max_Temperature_UKESM1-0-LL"
@@ -4449,6 +4611,7 @@ statType: dcid:maxValue
 climateModel: dcs:UKESM1-0-LL
 climateModelExperimentType: dcid:CMIP6_HistorcialRun
 description: "Calculated Value = (UKESM1-0-LL Temperature Projection) - (Observed Temperature). This value is the difference in Max Temperature between UKESM1-0-LL projections and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Maximum Temperature UKESMII.6ll"
 
 Node: DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_UKESM1-0-LL
 dcid: "DifferenceRelativeToObservationalData_Mean_Temperature_SSP245_UKESM1-0-LL"
@@ -4473,6 +4636,7 @@ climateModel: dcs:UKESM1-0-LL
 emissionsScenario: dcid:RCP8.5
 socioeconomicScenario: dcid:SSP5
 description: "Calculated Value = (UKESM1-0-LL RCP8.5, SSP5 Temperature Projection) - (Observed Temperature). This value is the difference in Mean Temperature between UKESM1-0-LL projections (under RCP8.5, SSP5) and observed values from NASA GSOD, NASA GHCN and EPA."
+name: "Mean Temperature in Korea Based on RCP 8.5"
 
 Node: DifferenceRelativeToObservationalData_Min_Temperature_SSP245_UKESM1-0-LL
 dcid: "DifferenceRelativeToObservationalData_Min_Temperature_SSP245_UKESM1-0-LL"
