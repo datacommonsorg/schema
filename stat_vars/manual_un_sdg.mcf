@@ -57,6 +57,14 @@ name: "Indicator of Food Price Anomalies"
 populationType: dcs:SDG_AG_FPA_CFPI
 statType: dcs:measuredValue
 
+Node: dcid:sdg/AG_FPA_COMM_WHE
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Indicator of Food Price Anomalies: Wheat"
+populationType: dcs:SDG_AG_FPA_COMM
+statType: dcs:measuredValue
+sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_WHE
+
 Node: dcid:sdg/AG_FPA_COMM_RIC
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -64,22 +72,6 @@ name: "Indicator of Food Price Anomalies: Rice"
 populationType: dcs:SDG_AG_FPA_COMM
 statType: dcs:measuredValue
 sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_RIC
-
-Node: dcid:sdg/AG_FPA_COMM_MIL
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Indicator of Food Price Anomalies: Millet"
-populationType: dcs:SDG_AG_FPA_COMM
-statType: dcs:measuredValue
-sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_MIL
-
-Node: dcid:sdg/AG_FPA_COMM_SOR
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Indicator of Food Price Anomalies: Sorghum"
-populationType: dcs:SDG_AG_FPA_COMM
-statType: dcs:measuredValue
-sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_SOR
 
 Node: dcid:sdg/AG_FPA_COMM_MAZ
 typeOf: dcs:StatisticalVariable
@@ -89,13 +81,21 @@ populationType: dcs:SDG_AG_FPA_COMM
 statType: dcs:measuredValue
 sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_MAZ
 
-Node: dcid:sdg/AG_FPA_COMM_WHE
+Node: dcid:sdg/AG_FPA_COMM_SOR
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
-name: "Indicator of Food Price Anomalies: Wheat"
+name: "Indicator of Food Price Anomalies: Sorghum"
 populationType: dcs:SDG_AG_FPA_COMM
 statType: dcs:measuredValue
-sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_WHE
+sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_SOR
+
+Node: dcid:sdg/AG_FPA_COMM_MIL
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Indicator of Food Price Anomalies: Millet"
+populationType: dcs:SDG_AG_FPA_COMM
+statType: dcs:measuredValue
+sdg_typeOfProduct: dcs:SDG_TypeOfProductEnum_MIL
 
 Node: dcid:sdg/AG_LND_DGRD
 typeOf: dcs:StatisticalVariable
@@ -625,14 +625,6 @@ name: "Debt service as a proportion of exports of goods and services"
 populationType: dcs:SDG_DT_TDS_DECT
 statType: dcs:measuredValue
 
-Node: dcid:sdg/EG_ACS_ELEC_RURAL
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Proportion of population with access to electricity: Rural"
-populationType: dcs:SDG_EG_ACS_ELEC
-statType: dcs:measuredValue
-sdg_location: dcs:SDG_LocationEnum_RURAL
-
 Node: dcid:sdg/EG_ACS_ELEC_URBAN
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -647,6 +639,14 @@ measuredProperty: dcs:value
 name: "Proportion of population with access to electricity"
 populationType: dcs:SDG_EG_ACS_ELEC
 statType: dcs:measuredValue
+
+Node: dcid:sdg/EG_ACS_ELEC_RURAL
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Proportion of population with access to electricity: Rural"
+populationType: dcs:SDG_EG_ACS_ELEC
+statType: dcs:measuredValue
+sdg_location: dcs:SDG_LocationEnum_RURAL
 
 Node: dcid:sdg/EG_EGY_CLEAN
 typeOf: dcs:StatisticalVariable
@@ -2406,6 +2406,30 @@ name: "Total wastewater generated"
 populationType: dcs:SDG_EN_WWT_GEN
 statType: dcs:measuredValue
 
+Node: dcid:sdg/EN_WWT_GEN_PRIVHH
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Total wastewater generated: Private households"
+populationType: dcs:SDG_EN_WWT_GEN
+statType: dcs:measuredValue
+sdg_activity: dcs:SDG_ActivityEnum_PRIVHH
+
+Node: dcid:sdg/EN_WWT_GEN_SERVHH
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Total wastewater generated: Services, and activities by households"
+populationType: dcs:SDG_EN_WWT_GEN
+statType: dcs:measuredValue
+sdg_activity: dcs:SDG_ActivityEnum_SERVHH
+
+Node: dcid:sdg/EN_WWT_GEN_ISIC4A
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Total wastewater generated: Agriculture, forestry and fishing"
+populationType: dcs:SDG_EN_WWT_GEN
+statType: dcs:measuredValue
+sdg_activity: dcs:SDG_ActivityEnum_ISIC4A
+
 Node: dcid:sdg/EN_WWT_GEN_INDUSTRIES
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -2413,14 +2437,6 @@ name: "Total wastewater generated: Industries"
 populationType: dcs:SDG_EN_WWT_GEN
 statType: dcs:measuredValue
 sdg_activity: dcs:SDG_ActivityEnum_INDUSTRIES
-
-Node: dcid:sdg/EN_WWT_GEN_URBAN
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Total wastewater generated: Urban"
-populationType: dcs:SDG_EN_WWT_GEN
-statType: dcs:measuredValue
-sdg_location: dcs:SDG_LocationEnum_URBAN
 
 Node: dcid:sdg/EN_WWT_GEN_ISIC4C
 typeOf: dcs:StatisticalVariable
@@ -2438,22 +2454,6 @@ populationType: dcs:SDG_EN_WWT_GEN
 statType: dcs:measuredValue
 sdg_activity: dcs:SDG_ActivityEnum_ISIC4B
 
-Node: dcid:sdg/EN_WWT_GEN_ISIC4F
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Total wastewater generated: Construction"
-populationType: dcs:SDG_EN_WWT_GEN
-statType: dcs:measuredValue
-sdg_activity: dcs:SDG_ActivityEnum_ISIC4F
-
-Node: dcid:sdg/EN_WWT_GEN_ISIC4A
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Total wastewater generated: Agriculture, forestry and fishing"
-populationType: dcs:SDG_EN_WWT_GEN
-statType: dcs:measuredValue
-sdg_activity: dcs:SDG_ActivityEnum_ISIC4A
-
 Node: dcid:sdg/EN_WWT_GEN_ISIC4D
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -2462,21 +2462,21 @@ populationType: dcs:SDG_EN_WWT_GEN
 statType: dcs:measuredValue
 sdg_activity: dcs:SDG_ActivityEnum_ISIC4D
 
-Node: dcid:sdg/EN_WWT_GEN_PRIVHH
+Node: dcid:sdg/EN_WWT_GEN_ISIC4F
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
-name: "Total wastewater generated: Private households"
+name: "Total wastewater generated: Construction"
 populationType: dcs:SDG_EN_WWT_GEN
 statType: dcs:measuredValue
-sdg_activity: dcs:SDG_ActivityEnum_PRIVHH
+sdg_activity: dcs:SDG_ActivityEnum_ISIC4F
 
-Node: dcid:sdg/EN_WWT_GEN_SERVHH
+Node: dcid:sdg/EN_WWT_GEN_URBAN
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
-name: "Total wastewater generated: Services, and activities by households"
+name: "Total wastewater generated: Urban"
 populationType: dcs:SDG_EN_WWT_GEN
 statType: dcs:measuredValue
-sdg_activity: dcs:SDG_ActivityEnum_SERVHH
+sdg_location: dcs:SDG_LocationEnum_URBAN
 
 Node: dcid:sdg/EN_WWT_TREAT
 typeOf: dcs:StatisticalVariable
@@ -5984,12 +5984,60 @@ name: "Fixed Internet broadband subscriptions per 100 inhabitants"
 populationType: dcs:SDG_IT_NET_BBND
 statType: dcs:measuredValue
 
+Node: dcid:sdg/IT_NET_BBND_2MT10MBPS
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Fixed Internet broadband subscriptions per 100 inhabitants: Between 2 mbps and 10 mbps"
+populationType: dcs:SDG_IT_NET_BBND
+statType: dcs:measuredValue
+sdg_typeOfSpeed: dcs:SDG_TypeOfSpeedEnum_2MT10MBPS
+
+Node: dcid:sdg/IT_NET_BBND_10MBPS
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Fixed Internet broadband subscriptions per 100 inhabitants: 10 mbps and over"
+populationType: dcs:SDG_IT_NET_BBND
+statType: dcs:measuredValue
+sdg_typeOfSpeed: dcs:SDG_TypeOfSpeedEnum_10MBPS
+
+Node: dcid:sdg/IT_NET_BBND_256KT2MBPS
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Fixed Internet broadband subscriptions per 100 inhabitants: Between 256 kbps and 2 mbps"
+populationType: dcs:SDG_IT_NET_BBND
+statType: dcs:measuredValue
+sdg_typeOfSpeed: dcs:SDG_TypeOfSpeedEnum_256KT2MBPS
+
 Node: dcid:sdg/IT_NET_BBNDN
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
 name: "Number of fixed Internet broadband subscriptions"
 populationType: dcs:SDG_IT_NET_BBNDN
 statType: dcs:measuredValue
+
+Node: dcid:sdg/IT_NET_BBNDN_2MT10MBPS
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Number of fixed Internet broadband subscriptions: Between 2 mbps and 10 mbps"
+populationType: dcs:SDG_IT_NET_BBNDN
+statType: dcs:measuredValue
+sdg_typeOfSpeed: dcs:SDG_TypeOfSpeedEnum_2MT10MBPS
+
+Node: dcid:sdg/IT_NET_BBNDN_10MBPS
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Number of fixed Internet broadband subscriptions: 10 mbps and over"
+populationType: dcs:SDG_IT_NET_BBNDN
+statType: dcs:measuredValue
+sdg_typeOfSpeed: dcs:SDG_TypeOfSpeedEnum_10MBPS
+
+Node: dcid:sdg/IT_NET_BBNDN_256KT2MBPS
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Number of fixed Internet broadband subscriptions: Between 256 kbps and 2 mbps"
+populationType: dcs:SDG_IT_NET_BBNDN
+statType: dcs:measuredValue
+sdg_typeOfSpeed: dcs:SDG_TypeOfSpeedEnum_256KT2MBPS
 
 Node: dcid:sdg/IT_USE_ii99
 typeOf: dcs:StatisticalVariable
@@ -6601,14 +6649,6 @@ name: "Productivity of large-scale food producers"
 populationType: dcs:SDG_PD_AGR_LSFP
 statType: dcs:measuredValue
 
-Node: dcid:sdg/PD_AGR_SSFP_FEMALE
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Productivity of small-scale food producers: Female"
-populationType: dcs:SDG_PD_AGR_SSFP
-statType: dcs:measuredValue
-gender: dcs:SDG_SexEnum_FEMALE
-
 Node: dcid:sdg/PD_AGR_SSFP_MALE
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -6623,6 +6663,14 @@ measuredProperty: dcs:value
 name: "Productivity of small-scale food producers"
 populationType: dcs:SDG_PD_AGR_SSFP
 statType: dcs:measuredValue
+
+Node: dcid:sdg/PD_AGR_SSFP_FEMALE
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Productivity of small-scale food producers: Female"
+populationType: dcs:SDG_PD_AGR_SSFP
+statType: dcs:measuredValue
+gender: dcs:SDG_SexEnum_FEMALE
 
 Node: dcid:sdg/SD_CPA_UPRDP
 typeOf: dcs:StatisticalVariable
@@ -15207,6 +15255,14 @@ name: "Proportion of population with large household expenditures on health as a
 populationType: dcs:SDG_SH_XPD_EARN25
 statType: dcs:measuredValue
 
+Node: dcid:sdg/SI_AGR_LSFP_FEMALE
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Average income of large-scale food producers, PPP: Female"
+populationType: dcs:SDG_SI_AGR_LSFP
+statType: dcs:measuredValue
+gender: dcs:SDG_SexEnum_FEMALE
+
 Node: dcid:sdg/SI_AGR_LSFP
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -15222,14 +15278,6 @@ populationType: dcs:SDG_SI_AGR_LSFP
 statType: dcs:measuredValue
 gender: dcs:SDG_SexEnum_MALE
 
-Node: dcid:sdg/SI_AGR_LSFP_FEMALE
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Average income of large-scale food producers, PPP: Female"
-populationType: dcs:SDG_SI_AGR_LSFP
-statType: dcs:measuredValue
-gender: dcs:SDG_SexEnum_FEMALE
-
 Node: dcid:sdg/SI_AGR_SSFP_FEMALE
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -15238,13 +15286,6 @@ populationType: dcs:SDG_SI_AGR_SSFP
 statType: dcs:measuredValue
 gender: dcs:SDG_SexEnum_FEMALE
 
-Node: dcid:sdg/SI_AGR_SSFP
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Average income of small-scale food producers, PPP"
-populationType: dcs:SDG_SI_AGR_SSFP
-statType: dcs:measuredValue
-
 Node: dcid:sdg/SI_AGR_SSFP_MALE
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -15252,6 +15293,13 @@ name: "Average income of small-scale food producers, PPP: Male"
 populationType: dcs:SDG_SI_AGR_SSFP
 statType: dcs:measuredValue
 gender: dcs:SDG_SexEnum_MALE
+
+Node: dcid:sdg/SI_AGR_SSFP
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "Average income of small-scale food producers, PPP"
+populationType: dcs:SDG_SI_AGR_SSFP
+statType: dcs:measuredValue
 
 Node: dcid:sdg/SI_COV_BENFTS
 typeOf: dcs:StatisticalVariable
@@ -17028,14 +17076,6 @@ populationType: dcs:SDG_SI_RMT_COST_SC
 statType: dcs:measuredValue
 sdg_counterpart: dcs:SDG_CounterpartEnum_UG
 
-Node: dcid:sdg/SI_RMT_COST_SC_SS
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "SmaRT average remittance costs of sending $200 in a corridor as a proportion of the amount remitted: South Sudan"
-populationType: dcs:SDG_SI_RMT_COST_SC
-statType: dcs:measuredValue
-sdg_counterpart: dcs:SDG_CounterpartEnum_SS
-
 Node: dcid:sdg/SI_RMT_COST_SC_TZ
 typeOf: dcs:StatisticalVariable
 measuredProperty: dcs:value
@@ -17043,6 +17083,14 @@ name: "SmaRT average remittance costs of sending $200 in a corridor as a proport
 populationType: dcs:SDG_SI_RMT_COST_SC
 statType: dcs:measuredValue
 sdg_counterpart: dcs:SDG_CounterpartEnum_TZ
+
+Node: dcid:sdg/SI_RMT_COST_SC_SS
+typeOf: dcs:StatisticalVariable
+measuredProperty: dcs:value
+name: "SmaRT average remittance costs of sending $200 in a corridor as a proportion of the amount remitted: South Sudan"
+populationType: dcs:SDG_SI_RMT_COST_SC
+statType: dcs:measuredValue
+sdg_counterpart: dcs:SDG_CounterpartEnum_SS
 
 Node: dcid:sdg/SI_RMT_COST_SC_JO
 typeOf: dcs:StatisticalVariable
@@ -21801,14 +21849,6 @@ measuredProperty: dcs:value
 name: "Proportion of people with ownership or secure rights over agricultural land"
 populationType: dcs:SDG_SP_LGL_LNDAGSEC
 statType: dcs:measuredValue
-
-Node: dcid:sdg/SP_LGL_LNDAGSEC_X
-typeOf: dcs:StatisticalVariable
-measuredProperty: dcs:value
-name: "Proportion of people with ownership or secure rights over agricultural land: Not available"
-populationType: dcs:SDG_SP_LGL_LNDAGSEC
-statType: dcs:measuredValue
-gender: dcs:SDG_SexEnum_X
 
 Node: dcid:sdg/SP_LGL_LNDDOC
 typeOf: dcs:StatisticalVariable
