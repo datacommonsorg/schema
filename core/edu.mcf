@@ -1508,8 +1508,8 @@ domainIncludes: dcs:Person, dcs:Student
 rangeIncludes: schema:Number
 description: "Percentage of students who are no longer enrolled."
 
-Node: dcid:educationScore
-name: "educationScore"
+Node: dcid:assessmentScore
+name: "assessmentScore"
 typeOf: schema:Property
 domainIncludes: dcs:School, dcs:Student
 rangeIncludes: schema:Number
@@ -2105,3 +2105,23 @@ name: "Suburb"
 Node: dcid:Rural
 typeOf: dcs:LocationClassificationEnum
 name: "Rural"
+
+Node: dcid:SchoolTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SchoolTypeEnum"
+description: "Type of School Private/Public."
+
+Node: dcid:NCES_PublicSchool
+typeOf: dcs:SchoolTypeEnum
+name: "NCES Public School"
+
+Node: dcid:NCES_PrivateSchool
+typeOf: dcs:SchoolTypeEnum
+name: "NCES Private School"
+
+Node: dcid:schoolType
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:SchoolTypeEnum
+name: "schoolType"
