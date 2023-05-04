@@ -152,7 +152,7 @@ description: "BLS Establishment ownership code"
 Node: establishmentOwnership
 dcid: "establishmentOwnership"
 name: "establishmentOwnership"
-rangeIncludes: dcs:EstablishmentOwnershipEnum
+rangeIncludes: dcs:EstablishmentOwnershipEnum, dcs:SchoolManagementEnum
 source: "http://datacommons.org"
 typeOf: schema:Property
 domainIncludes: dcs:BLSWorker, dcs:BLSEstablishment
@@ -189,6 +189,7 @@ Node: EstablishmentOwnership5
 typeOf: dcs:EstablishmentOwnershipEnum
 dcid: "PrivatelyOwned"
 name: "Private"
+nameWithLanguage: "PrivatelyOwned@en", "No Oficial@es"
 
 Node: dcid:PrivatelyOwnedForProfit
 typeOf: dcs:EstablishmentOwnershipEnum
@@ -204,6 +205,7 @@ Node: EstablishmentOwnership8
 typeOf: dcs:EstablishmentOwnershipEnum
 dcid: "GovernmentOwned"
 name: "Total Government"
+nameWithLanguage: "GovernmentOwned@en", "Oficial@es"
 
 Node: SeasonalAdjustmentEnum
 dcid: dcs:SeasonalAdjustmentEnum

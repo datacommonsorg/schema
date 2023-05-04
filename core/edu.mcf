@@ -208,6 +208,42 @@ name: "Brazil_PreVestibular"
 nameWithLanguage: "Brazil PréVestibular@pt"
 description: "It is the course attended by students after High School and before Graduation."
 
+Node: dcid:CLEI
+typeOf: dcs:SchoolGradeLevelEnum
+name: "CLEI"
+description: "CLEI: Ciclos Lectivos Especiales Integrados (Special Integrated Academic Cycles) is the national adult- education program equivalent to certain grades of regular formal education"
+descriptionUrl: "https://www.mineducacion.gov.co/1621/article-87080.html"
+
+Node: dcid:CLEI_Cycle1
+typeOf: dcs:SchoolGradeLevelEnum
+name: "CLEI_Cycle1"
+nameWithLanguage: "CLEI Cycle 1@en", "CLEI Cyclo 1@es"
+
+Node: dcid:CLEI_Cycle2
+typeOf: dcs:SchoolGradeLevelEnum
+name: "CLEI_Cycle2"
+nameWithLanguage: "CLEI Cycle 2@en", "CLEI Cyclo 2@es"
+
+Node: dcid:CLEI_Cycle3
+typeOf: dcs:SchoolGradeLevelEnum
+name: "CLEI_Cycle3"
+nameWithLanguage: "CLEI Cycle 3@en", "CLEI Cyclo 3@es"
+
+Node: dcid:CLEI_Cycle4
+typeOf: dcs:SchoolGradeLevelEnum
+name: "CLEI_Cycle4"
+nameWithLanguage: "CLEI Cycle 4@en", "CLEI Cyclo 4@es"
+
+Node: dcid:CLEI_Cycle5
+typeOf: dcs:SchoolGradeLevelEnum
+name: "CLEI_Cycle5"
+nameWithLanguage: "CLEI Cycle 5@en", "CLEI Cyclo 5@es"
+
+Node: dcid:CLEI_Cycle6
+typeOf: dcs:SchoolGradeLevelEnum
+name: "CLEI_Cycle6"
+nameWithLanguage: "CLEI Cycle 6@en", "CLEI Cyclo 6@es"
+
 Node: dcid:LunchTypeEnum
 typeOf: dcs:Class
 subClassOf: schema:Enumeration
@@ -1427,6 +1463,13 @@ Node: dcid:UDISE_GovernmentAided
 typeOf: dcs:SchoolManagementEnum
 name: "UDISE Government Aided"
 
+Node: dcid:GovernmentalAided
+typeOf: dcs:SchoolManagementEnum
+name:  "Governmental Aided"
+nameWithLanguage:  "GovernmentalAided@en","Contratada@es"
+description: "Schools that are privately operated with autonomy over the use of resources, but publicly funded."
+descriptionUrl: "https://www.oecd-ilibrary.org/sites/9789264303751-7-en/index.html?itemId=/content/component/9789264303751-7-en#annex-d1e21904"
+
 Node: dcid:UDISE_PrivateUnaidedButRecognized
 typeOf: dcs:SchoolManagementEnum
 name: "UDISE Private Unaided But Recognized"
@@ -2125,3 +2168,20 @@ typeOf: schema:Property
 domainIncludes: dcs:School, dcs:Student
 rangeIncludes: dcs:SchoolTypeEnum
 name: "schoolType"
+
+Node: dcid:MethodOfTeachingEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "MethodOfTeachingEnum"
+
+Node: dcid:methodOfTeaching
+typeOf: schema:Property
+domainIncludes: dcs:School
+rangeIncludes: dcs:MethodOfTeachingEnum
+name: "methodOfTeaching"
+
+Node: dcid:FlexibleEducationModel
+typeOf: dcs:MethodOfTeachingEnum
+name: "FlexibleEducationModel"
+description: "Flexible learning, also known as modular learning, gives students some choice in their learning format."
+descriptionUrl: "https://en.wikipedia.org/wiki/Flex_model_of_learning"
