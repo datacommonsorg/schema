@@ -2255,6 +2255,13 @@ domainIncludes: schema:Observation, dcs:StatVarObservation
 rangeIncludes: schema:Number
 description: "Used in conjunction with measurementDenominator, this indicates the factor the denominator is to be scaled by."
 
+Node: dcid:keyString
+typeOf: schema:Property
+name: "keyString"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Text
+description: "Internally generated property with the concatenated property=value strings for the StatVarObservation"
+
 Node: dcid:measurementQualifier
 typeOf: schema:Property
 name: "measurementQualifier"
