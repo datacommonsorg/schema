@@ -1,3 +1,11 @@
+Node: dcid:AnatomicalTherapeuticChemicalCode
+name: "AnatomicalTherapeuticChemicalCode"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalSubstance
+shortDisplayName: "ATC Code"
+description: "In the ATC classification system, the active substances are classified in a hierarchy with five different levels.  The system has fourteen main anatomical/pharmacological groups or 1st levels. Each ATC main group is divided into 2nd levels which could be either pharmacological or therapeutic groups. The 3rd and 4th levels are chemical, pharmacological or therapeutic subgroups and the 5th level is the chemical substance. The 2nd, 3rd and 4th levels are often used to identify pharmacological subgroups when that is considered more appropriate than therapeutic or chemical subgroups."
+descriptionUrl: "https://www.whocc.no/atc/structure_and_principles/"
+
 Node: dcid:BiomedicalElement
 name: "BiomedicalElement"
 typeOf: schema:Class
@@ -89,6 +97,30 @@ typeOf: schema:Class
 subClassOf: schema:Intangible
 description: "The Tissue Atlas contains information regarding the expression profiles of human genes both on the mRNA and protein level. The protein expression data from 44 normal human tissue types is derived from antibody-based protein profiling using immunohistochemistry."
 descriptionUrl: "https://www.proteinatlas.org/humanproteome/tissue"
+
+Node: dcid:activeIngredient
+name: "activeIngredient"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Drug,dcs:DrugStrength
+description: "Any component that provides pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease, or to affect the structure or any function of the body of man or animals."
+descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#A"
+
+Node: dcid:atcCode
+name: "atcCode"
+typeOf: schema:Property
+domainIncludes: dcs:AnatomicalTherapeuticChemicalCode
+rangeIncludes: schema:Text
+description: "A unique code assigned to a medicine according to the organ or system it works on and how it works. The classification system is maintained by the World Health Organization (WHO)."
+descriptionUrl: "https://www.ema.europa.eu/en/glossary/atc-code"
+
+Node: dcid:averageDailyDosage
+name: "averageDailyDosage"
+typeOf: schema:Property
+domainIncludes: dcs:AnatomicalTherapeuticChemicalCode
+rangeIncludes: schema:Quantity
+description: "The assumed average maintenance dose per day for a drug used for its main indication in adults."
+descriptionUrl: "https://www.whocc.no/ddd/definition_and_general_considera/"
 
 Node: dcid:chemblID
 name: "chemblID"
