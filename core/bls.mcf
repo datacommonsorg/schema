@@ -4,7 +4,7 @@ dcid: "unemploymentRate"
 name: "unemploymentRate"
 description: "The unemployment rate is a measure of the prevalence of unemployment. It is calculated as a percentage by dividing the number of unemployed individuals by all individuals currently in the labor force."
 rangeIncludes: dcs:Percent
-domainIncludes: schema:StatisticalPopulation
+domainIncludes: schema:StatisticalPopulation, schema:Person
 
 Node: wagesTotalProperty
 typeOf: schema:Property
@@ -102,6 +102,11 @@ name: "USC_EmployedAndWorking"
 Node: dcid:Employed
 typeOf: dcs:EmploymentEnum
 name: "Employed"
+
+Node: dcid:Unemployed
+typeOf: dcs:EmploymentEnum
+name: "Unemployed"
+description: "The condition of one who is capable of working, actively seeking work, but unable to find any work."
 
 Node: dcid:USC_Unemployed
 typeOf: dcs:EmploymentEnum
