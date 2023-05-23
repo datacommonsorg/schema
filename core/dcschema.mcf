@@ -2862,6 +2862,50 @@ description: "The probability (expressed as a percentage) of a predicted/estimat
 rangeIncludes: dcs:Percent
 descriptionUrl: "https://en.wikipedia.org/wiki/Statistical_significance"
 
+Node: dcid:predictionProbability
+typeOf: schema:Property
+name: "predictionProbability"
+description: "Prediction probability of an event"
+rangeIncludes: dcs:QuantityRange
+domainIncludes: dcs:Thing
+
+# Probability Distributions
+
+Node: dcid:ProbabilityDistributionTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ProbabilityDistributionTypeEnum"
+
+Node: dcs:GaussianDistribution
+typeOf: dcs:ProbabilityDistributionTypeEnum
+name: "Gaussian Distribution"
+
+Node: dcs:MixtureGaussianDistribution
+typeOf: dcs:ProbabilityDistributionTypeEnum
+name: "Mixture of Gaussians Distribution"
+
+Node: dcs:GammaDistribution
+typeOf: dcs:ProbabilityDistributionTypeEnum
+name: "Gamma Distribution"
+
+Node: dcs:MixtureGammaDistribution
+typeOf: dcs:ProbabilityDistributionTypeEnum
+name: "Mixture of Gammas Distribution"
+
+Node: dcid:probabilityDistributionType
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:ProbabilityDistributionTypeEnum
+name: "probabilityDistributionType"
+description: "The type of probability distribution"
+
+Node: dcid:probabilityDistributionWindow
+typeOf: schema:Property
+name: "probabilityDistributionWindow"
+domainIncludes: schema:Thing
+rangeIncludes: dcs:QuantityRange
+description: "The period of observations over which the probability distribution parameters are computed or estimated"
+
 Node: dcid:numberOfDays
 rangeIncludes: schema:Integer
 domainIncludes: schema:Place, dcs:HeatWaveEvent, dcs:Atmosphere
