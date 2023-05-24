@@ -742,11 +742,83 @@ Node: dcid:ZComponent
 typeOf: dcs:WindComponentEnum
 name: "ZComponent"
 
+# CMIP
+
+Node: dcid:CMIPPhaseEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CMIPPhaseEnum"
+description: "The Phase of the Coupled Model Intercomparison Project (CMIP). Each phase has multiple climate models which produce simulations of projected values of temperature, humidity, precipitation etc in the future."
+descriptionUrl: "https://en.wikipedia.org/wiki/Coupled_Model_Intercomparison_Project"
+
+Node: dcid:CMIP5
+typeOf: dcs:CMIPPhaseEnum
+name: "CMIP5"
+
+Node: dcid:CMIP6
+typeOf: dcs:CMIPPhaseEnum
+name: "CMIP6"
+
+Node: dcid:cmipPhase
+typeOf: schema:Property
+domainIncludes: dcs:Place
+rangeIncludes: dcs:CMIPPhaseEnum
+name: "cmipPhase"
+
+# CMIP6 projections.
+
+Node: dcid:PredictedOccurrenceFrequencyEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PredictedOccurrenceFrequencyEnum"
+
+Node: dcid:AtleastOneDayPerYear
+typeOf: dcs:PredictedOccurrenceFrequencyEnum
+name: "Occurs at least one day per year"
+
+Node: dcid:AtleastOneDayPerDecade
+typeOf: dcs:PredictedOccurrenceFrequencyEnum
+name: "Occurs at least one day in a decade"
+
+Node: dcid:predictedOccurrenceFrequency
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:PredictedOccurrenceFrequencyEnum
+name: "predictedOccurrenceFrequency"
+description: "Prediction of the frequency of occurence"
+
+Node: dcid:PredictedThresholdConditionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PredictedThresholdConditionEnum"
+
+Node: dcs:PredictionGreaterThan
+typeOf: dcs:PredictedThresholdConditionEnum
+name: "Prediction range is greater than"
+
+Node: dcid:PredictionLessThan
+typeOf: dcs:PredictedThresholdConditionEnum
+name: "Prediction range is less than"
+
+Node: dcid:predictedThresholdCondition
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:PredictedThresholdConditionEnum
+name: "predictedThresholdCondition"
+description: "The condition for the predicted threshold"
+
+# Climate Models
+
 Node: dcid:ClimateModelEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "ClimateModelEnum"
 description: "Type of climate model."
+
+Node: dcid:EnsembleAcrossModels
+typeOf: dcs:ClimateModelEnum
+name: "Ensemble across Climate Models"
+description: "This model represents an ensemble across all available models"
 
 Node: dcid:MPI-ESM1-2-HR
 typeOf: dcs:ClimateModelEnum
