@@ -100,6 +100,16 @@ typeOf: dcs:StatVarGroup
 name: "Weather"
 specializationOf: dcid:dc/g/Environment
 
+Node: dcid:dc/g/ObservationalWeather
+typeOf: dcs:StatVarGroup
+name: "Observational"
+specializationOf: dcid:dc/g/Weather
+
+Node: dcid:dc/g/ProjectedWeather
+typeOf: dcs:StatVarGroup
+name: "Projected"
+specializationOf: dcid:dc/g/Weather
+
 Node: dcid:dc/g/Disasters
 typeOf: dcs:StatVarGroup
 name: "Disasters"
