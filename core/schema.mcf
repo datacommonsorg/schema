@@ -4790,6 +4790,12 @@ name: "foodEstablishment"
 subPropertyOf: "location"
 domainIncludes: schema:CookAction
 
+Node: dcid:foodEstablishmentType
+typeOf: schema:Property
+domainIncludes: schema:FoodEstablishment
+name: "foodEstablishmentType"
+domainIncludes: dcid:FoodEstablishmentTypeEnum
+
 Node: BedDetails
 dcid: "BedDetails"
 subClassOf: schema:Intangible
