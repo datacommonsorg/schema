@@ -2585,3 +2585,25 @@ typeOf: dcid:RelationshipEvidenceTypeEnum
 name: "Pathway"
 descriptionUrl: "https://www.pharmgkb.org/page/downloadRelationshipsHelp"
 description: "Evidence for relationship between two entities was acquired via Pathway data."
+
+# WordElementTypeEnum
+Node: dcid:WordElementTypeEnum
+name: "WordElementTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "A word's elements are the smallest parts that add meaning to the word."
+
+Node: dcid:WordElementTypePrefix
+name: "Prefix"
+typeOf: dcs:WordElementTypeEnum
+description: "A word element at the beginning of a word."
+
+Node: dcid:WordElementTypeInfix
+name: "Infix"
+typeOf: dcs:WordElementTypeEnum
+description: "A word element inserted in the middle of a word."
+
+Node: dcid:WordElementTypeSuffix
+name: "Suffix"
+typeOf: dcs:WordElementTypeEnum
+description: "A word element at the end of a word."

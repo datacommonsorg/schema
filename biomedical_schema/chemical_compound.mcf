@@ -1,3 +1,9 @@
+Node: dcid:ActiveIngredientAmount
+name: "ActiveIngredientAmount"
+typeOf: schema:Class
+subClassOf: schema:Thing
+description: "Tells how much of the active ingredient is present in a drug dosage."
+
 Node: dcid:AnatomicalTherapeuticChemicalCode
 name: "AnatomicalTherapeuticChemicalCode"
 typeOf: schema:Class
@@ -15,7 +21,7 @@ description: "Biomedical related entities."
 Node: dcid:ChemicalCompound
 name: "ChemicalCompound"
 typeOf: schema:Class
-subClassOf: dcid:ChemicalSubstance
+subClassOf: dcs:ChemicalSubstance
 description: "Chemical compound."
 descriptionUrl: "https://www.ebi.ac.uk/chembl/"
 
@@ -46,31 +52,17 @@ typeOf: schema:Class
 subClassOf: dcs:BiomedicalElement
 description: "The association of a chemical compound with a gene."
 
-Node: dcid:Protein
-name: "Protein"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
-description: "A class of nitrogenous organic compounds that are composed of large molecules called amino acids. These are essential for life in all living organisms."
-descriptionUrl: "https://www.uniprot.org/"
-
-Node: dcid:SideEffect
-name: "SideEffect"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
-description: "Unintended effect of administering a drug."
-descriptionUrl: "http://sideeffects.embl.de/"
-
-Node: dcid:ProteinProteinInteraction
-name: "ProteinProteinInteraction"
-typeOf: schema:Class
-subClassOf: dcs:Protein
-description: "A highly specific physical contact between two or more proteins as a result of a biochemical event."
-
 Node: dcid:Drug
 name: "Drug"
 typeOf: schema:Class
 subClassOf: schema:ChemicalCompound
 description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
+
+Node: dcid:DrugStrength
+name: "DrugStrength"
+typeOf: schema:Class
+subClassOf: schema:Thing
+description: "A specific strength in which a medical drug is available in a specific country."
 
 Node: dcid:FDAApplication
 name: "FDAApplication"
@@ -79,24 +71,40 @@ subClassOf: schema:Thing
 description: "An application filing for approval of one or more drug products with the FDA."
 descriptionUrl: "https://www.accessdata.fda.gov/scripts/cder/daf/"
 
-Node: dcid:ActiveIngredientAmount
-name: "ActiveIngredientAmount"
-typeOf: schema:Class
-subClassOf: schema:Thing
-description: "Tells how much of the active ingredient is present in a drug dosage."
-
-Node: dcid:DrugStrength
-name: "DrugStrength"
-typeOf: schema:Class
-subClassOf: schema:Thing
-description: "A specific strength in which a medical drug is available in a specific country."
-
 Node: dcid:HumanProteinOccurrence
 name: "HumanProteinOccurrence"
 typeOf: schema:Class
 subClassOf: schema:Intangible
 description: "The Tissue Atlas contains information regarding the expression profiles of human genes both on the mRNA and protein level. The protein expression data from 44 normal human tissue types is derived from antibody-based protein profiling using immunohistochemistry."
 descriptionUrl: "https://www.proteinatlas.org/humanproteome/tissue"
+
+Node: dcid:Protein
+name: "Protein"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompound
+description: "A class of nitrogenous organic compounds that are composed of large molecules called amino acids. These are essential for life in all living organisms."
+descriptionUrl: "https://www.uniprot.org/"
+
+Node: dcid:ProteinProteinInteraction
+name: "ProteinProteinInteraction"
+typeOf: schema:Class
+subClassOf: dcs:Protein
+description: "A highly specific physical contact between two or more proteins as a result of a biochemical event."
+
+Node: dcid:SideEffect
+name: "SideEffect"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompound
+description: "Unintended effect of administering a drug."
+descriptionUrl: "http://sideeffects.embl.de/"
+
+Node: dcid:USAdoptedNameStem
+name: "USAdoptedNameStem"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalSubstance
+shortDisplayName: "USAN Stem"
+description: "A common stem for which chemical and/or pharmacologic parameters have been established. This is designated by the United States Adopted Names (USAN) Council."
+descriptionUrl: "https://www.ama-assn.org/about/united-states-adopted-names/united-states-adopted-names-approved-stems"
 
 Node: dcid:activeIngredient
 name: "activeIngredient"
@@ -771,3 +779,10 @@ typeOf: schema:Property
 rangeIncludes: dcs:RelationshipEvidenceTypeEnum
 domainIncludes: dcs:ChemicalCompoundGeneAssociation
 description: "Type of evidence supporting a given relationship between entities."
+
+Node: dcid:wordElementType
+name: "wordElementType"
+typeOf: schema:Property
+domainIncludes: dcs:USAdoptedNameStem
+rangeIncludes: dcs:WordElementTypeEnum
+description: "A word's elements are the smallest parts that add meaning to the word."
