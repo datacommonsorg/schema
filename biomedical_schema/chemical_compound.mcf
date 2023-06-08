@@ -25,6 +25,12 @@ subClassOf: dcs:ChemicalSubstance
 description: "Chemical compound."
 descriptionUrl: "https://www.ebi.ac.uk/chembl/"
 
+ode: dcid:ChemicalCompoundChemicalCompoundAssociation
+name: "ChemicalCompoundChemicalCompoundAssociation"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalSubstance
+description: "Two chemcial compounds that are associated with one another typically due to reacting with one another."
+
 Node: dcid:ChemicalCompoundProteinInteraction
 name: "ChemicalCompoundProteinInteraction"
 typeOf: schema:Class
@@ -57,6 +63,12 @@ name: "Drug"
 typeOf: schema:Class
 subClassOf: schema:ChemicalCompound
 description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
+
+Node: dcid:DrugGeneticVariantAssociation
+name: "DrugGeneticVariantAssociation"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalSubstance
+description: "The association between a drug and a genetic variant."
 
 Node: dcid:DrugStrength
 name: "DrugStrength"
@@ -113,6 +125,162 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:Drug,dcs:DrugStrength
 description: "Any component that provides pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease, or to affect the structure or any function of the body of man or animals."
 descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#A"
+
+Node: dcid:canadianDrugsProductDatabaseDrugIdNumber
+name: "canadianDrugsProductDatabaseDrugIdNumber"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Number
+description: "The Canadian Drug Product Database (DPD) contains product specific information on drugs approved for use in Canada, and includes human pharmaceutical and biological drugs, veterinary drugs and disinfectant products. The drug identification number (DIN) is the id used to find a drug in this database."
+sameAs: "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html"
+
+Node: dcid:dailyMedSetId
+name: "dailyMedSetId"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Text
+description: "The DailyMed database contains labeling for FDA-approved products and additional products regulated, but not approved, by the FDA. These drug labels are submitted to the Food and Drug Administration (FDA) by companies. The Set ID uniquely identifies a drug label in the DailyMed database."
+sameAs: "https://dailymed.nlm.nih.gov/dailymed/"
+
+Node: dcid:dosageGuidelineSource
+name: "dosageGuidelineSource"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: dcs:DosageGuidelineSourceEnum
+description: "A professional society that provides dosage guidelines for a drug."
+
+Node: dcid:drugBrandMixture
+name: "drugBrandMixture"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Text
+description: "Known brand mixtures this drug is in."
+descriptionUrl: "https://www.pharmgkb.org/page/downloadDrugsHelp"
+
+Node: dcid:drugGenericName
+name: "drugGenericName"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Text
+description: "The name of the generic version of a drug, which is a medication with the exact same active ingredient as the brand-name drug."
+
+Node: dcid:drugHasRxAnnotation
+name: "drugHasRxAnnotation"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Boolean
+description: "The drug has a drug label containing pharmacogenetic information approved by the U.S. Food and Drug Administration (FDA), European Medicines Agencey (EMA), Swiss Agenecy of Therapeutic Products (Swissmedic), Pharmaceuticals and Medical Devices Agency, Japan (PMDA) and/or Health Canada (Sante Canada) (HCSC)."
+descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
+
+Node: dcid:drugLabelHasDosingInformation
+name: "drugLabelHasDosingInformation"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Boolean
+description: "The label provides a dose adjustment based on gene/protein/chromosomal variants or phenotypes (e.g. 'poor metabolizers') and does not equivocate on that dose adjustment. The label may also state that a dose adjustment is 'required' or 'should be given'. This tag is not used if the label only states that a dose adjustment 'should be considered'."
+descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend"
+
+Node: dcid:drugTradeName
+name: "drugTradeName"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Text
+description: "A standard term in the pharmaceutical industry for a brand name or trademark name of a drug."
+descriptionUrl: "https://en.wikipedia.org/wiki/Drug_nomenclature#Drug_brands"
+
+Node: dcid:fdaTopPGxLevel
+name: "fdaTopPGxLevel"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: PharmGkbPGxLevelEnum
+description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') is the PharmGKB interpretation of the level of action implied in each drug label. In this case, this is the highest level of confidence interperted for any drug label from the U.S. Food and Drug Administration (FDA)."
+descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
+
+Node: dcid:nationalClinicalTrialNumber
+name: "nationalClinicalTrialNumber"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Text
+sameAs: "https://clinicaltrials.gov/"
+description: "The National Clinical Trial (NCT) number is an identification that ClinicalTrials.gov assigns a study when it is registered. The NCT number is in the format 'NCTXXXXXXXX'."
+
+Node: dcid:nationalDrugCode
+name: "nationalDrugCode"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Text
+sameAs: "https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory"
+description: "FDA's National Drug Code (NDC) Directory contains information about finished drug products, unfinished drugs and compounded drug products. Drugs are identified in this database by the national drug code."
+
+Node: dcid:nationalDrugFileReferenceTerminologyCode
+name: "nationalDrugFileReferenceTerminologyCode"
+typeOf: schema:Property
+domainIncludes: schema:Drug,dcs:MeSHDescriptor
+rangeIncludes: schema:Text
+sameAs: "https://nciterms.nci.nih.gov/ncitbrowser/pages/vocabulary.jsf?dictionary=NDFRT"
+description: "The code that represents the drug in the National Drug File Reference Terminology (NDF-RT) database. NDF-RT is produced by the Veterans Health Administration (VHA) as an extension of the VHA National Drug File (VANDF) formulary. It organizes the drug list into a formal representation. NDF-RT is used for modeling drug characteristics including ingredients, chemical structure, dose form, physiologic effect, mechanism of action, pharmacokinetics, and related diseases. NDF-RT is part of the Federal Medication Terminologies (FMT), and three components -- Mechanism of Action, Physiologic Effect, and Structural Class - are used in FDA Structured Product Labeling (SPL)."
+
+Node: dcid:pharmGkbClinicalAnnotationCount
+name: "pharmGkbClinicalAnnotationCount"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Number
+description: "The number of clinical annotations associated with a drug as reported by PharmGKB. PharmGKB clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant."
+descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
+
+Node: dcid:pharmGkbPathwayCount
+name: "pharmGkbPathwayCount"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Number
+description: "The number of PharmGKB pathways associated with a given drug. PharmGKB pathways are evidence-based diagrams depicting the pharmacokinetics (PK) and/or pharmacodynamics (PD) of a drug with relevant (or potential) pharmacogenetic (PGx) associations. Drugs featured in PharmGKB pathways are chosen through extensive review of a variety of sources, including, but not limited to, the U.S. Food and Drug Administration (FDA) biomarker list and Clinical Pharmacogenetics Implementation Consortium (CPIC) nominations."
+descriptionUrl: "https://www.pharmgkb.org/pathways"
+
+Node: dcid:pharmGkbTopPGxLevel
+name: "pharmGkbTopPGxLevel"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: dcs:PharmGkbPGxLevelEnum
+description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') is the PharmGKB interpretation of the level of action implied in each drug label. In this case, this is the highest level of confidence interperted for any drug label from any source."
+descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
+
+Node: dcid:pharmGkbTopClinicalAnnotationLevel
+name: "pharmGkbTopClinicalAnnotationLevel"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: dcs:PharmGkbClinicalLevelEnum
+description: "PharmGKB clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant. The clinical annotation is given a score, based on the scores of the supporting annotations. A clinical annotation's score is used by PharmGKB curators in the process of assigning a Level of Evidence to the annotation. Levels range from 1-4, with level 1 meeting the highest criteria. The highest level of clinical annotation of any variant associated with a drug is reported here."
+descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
+
+Node: dcid:pharmGkbVariantAnnotationCount
+name: "pharmGkbVariantAnnotationCount"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Number
+description: "The number of variants with a given drug as reported by PharmGKB. PharmGKB clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant."
+descriptionUrl: "https://www.pharmgkb.org/variantAnnotations"
+
+Node: dcid:pharmGkbVeryImportantPharmacogeneCount
+name: "pharmGkbVeryImportantPharmacogeneCount"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Number
+description: "The number of Very Important Pharmacogene (VIP) summaries assocated with a given drug as reported by PharmGKB. VIP summaries provide an overview of a significant gene involved in metabolism of, or response to, one or several drugs. Often, VIPs either play a role in the metabolism of many drugs (e.g. CYP2D6), or contain variants which potentially contribute to a severe drug response (e.g. HLA-B). VIP summaries typically include background information on the gene including any disease associations, as well as in-depth information on the gene's pharmacogenetics. Many VIP summaries have been published in the journal Pharmacogenetics and Genomics."
+descriptionUrl: "https://www.pharmgkb.org/vips"
+
+Node: dcid:rxNormId
+name: "rxNormId"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Number
+sameAs: "https://www.nlm.nih.gov/research/umls/rxnorm/index.html"
+description: "The identifier for this drug in the NIH National Library of Science RxNorm database, which is apart of the Unified Medical Language System (UMLS). RxNorm provides normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software, including those of First Databank, Micromedex, Multum, and Gold Standard Drug Database. By providing links between these vocabularies, RxNorm can mediate messages between systems not using the same software and vocabulary."
+
+Node: dcid:variantID
+typeOf: schema:Property
+domainIncludes: dcs:DrugGeneticVariantAssociation,dcs:GeneGeneticVariantAssociation
+rangeIncludes: dcs:GeneticVariant
+description: "Link to a GeneticVariant node for a genetic variant that is associated with another entity."
 
 Node: dcid:atcCode
 name: "atcCode"
@@ -171,6 +339,13 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:ChemicalCompound
 description: "Simplified Molecular-Input Line-Entry System (SMILES) for compound."
+
+Node: dcid:pkgbTags
+name: "pkgbTags"
+typeOf: schema:Property
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "A tag associated with a chemical compound, which is used internally by the database PharmGKB."
 
 Node: dcid:compoundID
 name: "compoundID"

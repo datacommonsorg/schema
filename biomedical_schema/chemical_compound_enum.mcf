@@ -1,3 +1,20 @@
+Node: dcid:pharmGkbStandardScoringRange
+name: "pharmGkbStandardScoringRange"
+typeOf: schema:Property
+domainIncludes: dcs:PharmGkbClinicalLevelEnum
+rangeIncludes: schema:Text
+description: "The assignment of clinical annotation levels of evidence (LOE) is primarily informed by the PharmGKB annotation scoring system for clinical annotations and variant annotations. This reports the scoring range that determines the level for common genetic variants defined as having a minor allele frequenct (MAF) >=0.01 or >=1%."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+
+Node: dcid:pharmGkbRareVariantScoringRange
+name: "pharmGkbRareVariantScoringRange"
+typeOf: schema:Property
+domainIncludes: dcs:PharmGkbClinicalLevelEnum
+rangeIncludes: schema:Text
+description: "The assignment of clinical annotation levels of evidence (LOE) is primarily informed by the PharmGKB annotation scoring system for clinical annotations and variant annotations. This reports the scoring range that determines the level for rare genetic variants defined as having a minor allele frequenct (MAF) <0.01 or <1%."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+
+# ChemicalCompoundProteinInteractionTypeEnum
 Node: dcid:ChemicalCompoundProteinInteractionTypeEnum
 name: "CompoundProteinInteractionTypeEnum"
 subClassOf: schema:Enumeration
@@ -2607,3 +2624,141 @@ Node: dcid:WordElementTypeSuffix
 name: "Suffix"
 typeOf: dcs:WordElementTypeEnum
 description: "A word element at the end of a word."
+
+# DosageGuidelineSourceEnum
+Node: dcid:DosageGuidelineSourceEnum
+name: "DosageGuidelineSourceEnum"
+typeOf: schema:Enumeration
+description: "A professional society that provides dosage guidelines for a drug."
+
+Node: dcid:DosageGuidelineSourceAmericanCollegeOfRheumatology
+name: "American College of Rheumatology "
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "ACR"
+sameAs: "https://rheumatology.org/"
+
+Node: dcid:DosageGuidelineSourceAustralasianAntifungalGuidelinesSteeringCommittee
+name: "Australasian Antifungal Guidelines Steering Committee"
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "AusNZ"
+description: "The dosage guideline from the Australian and New Zealand consensus guidelines for the management of invasive fungal disease and use of antifungal agents in the hematology/oncology setting."
+
+Node: dcid:DosageGuidelineSourceCysticFibrosisFoundation
+name: "Cystic Fibrosis Foundation"
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "CFF"
+sameAs: "https://www.cff.org/"
+
+Node: dcid:DosageGuidelineSourceClinicalPharmacogenomicsImplementationConsortium
+name: "Clinical Pharmacogenomics Implementation Consortium"
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "CPIC"
+sameAs: "https://cpicpgx.org/"
+
+Node: dcid:DosageGuidelineSourceCanadianPharmacogenomicsNetworkForDrugSafety
+name: "Canadian Pharmacogenomics Network for Drug Safety"
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "CPNDS"
+sameAs: "https://cpnds.ubc.ca/"
+
+Node: dcid:DosageGuidelineSourceDutchPharmacogeneticsWorkingGroup
+name: "DosageGuidelineSourceDutchPharmacogeneticsWorkingGroup"
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "DPWG"
+sameAs: "https://www.knmp.nl/dossiers/farmacogenetica"
+
+Node: dcid:DosageGuidelineSourceFrenchNationalNetworkOfPharmacogenetics
+name: "French National Network of Pharmacogenetics"
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "RNPGx"
+
+Node: dcid:DosageGuidelineSourceSeffSeom
+name: "Spanish Pharmacogenetics and Pharmacogenomics Society (SEFF) and the Spanish Society of Medical Oncology (SECOM)"
+typeOf: dcs:DosageGuidelineSourceEnum
+shortDisplayName: "SEFF/SEOM"
+
+# PharmGkbClinicalLevelEnum
+Node: dcid:PharmGkbClinicalLevelEnum
+name: "PharmGkbClinicalLevelEnum"
+typeOf: schema:Enumeration
+description: "A clinical annotation's score is used by PharmGKB curators in the process of assigning a Level of Evidence to the annotation. Levels range from 1-4, with level 1 meeting the highest criteria."
+descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
+
+Node: dcid:PharmGkbClinicalLevelOneA
+name: "1A"
+typeOf: dcs:PharmGkbClinicalLevelEnum
+description: "Level 1A clinical annotations describe variant-drug combinations that have variant-specific prescribing guidance available in a current clinical guideline annotation or an FDA-approved drug label annotation. Annotations of drug labels or clinical guidelines must give prescribing guidance for specific variants (e.g. CYP2C9*3, HLA-B*57:01) or provide mapping from defined allele functions to diplotypes and phenotypes to be used as supporting evidence for a level 1A clinical annotation. Level 1A clinical annotations must also be supported by at least one publication in addition to a clinical guideline or drug label with variant-specific prescribing guidance."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+pharmGkbStandardScoringRange: "≥80"
+pharmGkbRareVariantScoringRange: "≥80"
+
+Node: dcid:PharmGkbClinicalLevelOneB
+name: "1B"
+typeOf: dcs:PharmGkbClinicalLevelEnum
+description: "Level 1B clinical annotations describe variant-drug combinations with a high level of evidence supporting the association but no variant-specific prescribing guidance in an annotated clinical guideline or FDA drug label. Level 1B clinical annotations must be supported by at least two independent publications."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+pharmGkbStandardScoringRange: "25 - 79.9375"
+pharmGkbRareVariantScoringRange: "10 - 79.9375"
+
+Node: dcid:PharmGkbClinicalLevelTwoA
+name: "2A"
+typeOf: dcs:PharmGkbClinicalLevelEnum
+description: "Variants in Level 2A clinical annotations are found in PharmGKB's Tier 1 Very Important Pharmacogenes (VIPs). These variants are in known pharmacogenes, implying causation of drug phenotype is more likely. These clinical annotations describe variant-drug combinations with a moderate level of evidence supporting the association. For example, the association may be found in multiple cohorts, but there may be a minority of studies that do not support the majority assertion. Level 2A clinical annotations must be supported by at least two independent publications."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+pharmGkbStandardScoringRange: "8 - 24.9375 and variant in a Tier 1 VIP"
+pharmGkbRareVariantScoringRange: "3 - 9.9375 and variant in a Tier 1 VIP"
+
+Node: dcid:PharmGkbClinicalLevelTwoB
+name: "2B"
+typeOf: dcs:PharmGkbClinicalLevelEnum
+description: "Variants in Level 2B clinical annotations are not in PharmGKB's Tier 1 VIPs. These clinical annotations describe variant-drug combinations with a moderate level of evidence supporting the association. For example, the association may be found in multiple cohorts, but there may be a minority of studies that do not support the majority assertion. Level 2B clinical annotations must be supported by at least two independent publications."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+pharmGkbStandardScoringRange: "8 - 24.9375"
+pharmGkbRareVariantScoringRange: "3 - 9.9375"
+
+Node: dcid:PharmGkbClinicalLevelThree
+name: "3"
+typeOf: dcs:PharmGkbClinicalLevelEnum
+description: "Level 3 clinical annotations describe variant-drug combinations with a low level of evidence supporting the association. This association may be based on a single study annotated in PharmGKB, or there may be several studies that failed to replicate the association. The annotation may also be based on preliminary evidence (e.g., a case report, non-significant study, or in vitro, molecular, or functional assay evidence), resulting in a lower calculated score."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+pharmGkbStandardScoringRange: "0 - 7.9375"
+pharmGkbRareVariantScoringRange: "0 - 2.9375"
+
+Node: dcid:PharmGkbClinicalLevelFour
+name: "4"
+typeOf: dcs:PharmGkbClinicalLevelEnum
+description: "Level 4 clinical annotations describe variant-drug combinations where the total score is negative and the evidence does not support an association between the variant and the drug phenotype."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
+pharmGkbStandardScoringRange: "<0"
+pharmGkbRareVariantScoringRange: "<0"
+
+# PharmGkbPGxLevelEnum
+Node: dcid:PharmGkbPGxLevelEnum
+name: "PharmGkbPGxLevelEnum"
+typeOf: schema:Enumeration
+description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') is the PharmGKB interpretation of the level of action implied in each drug label."
+descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
+
+Node: dcid:PharmGkbPGxLevelTestingRequired
+name: "Testing Required"
+typeOf: dcs:PharmGkbPGxLevelEnum
+description: "The label states or implies that some sort of gene, protein or chromosomal testing, including genetic testing, functional protein assays, cytogenetic studies, etc., should be conducted on the gene or gene product mentioned in the annotation before using this drug. This requirement may only be for a particular subset of patients. If a label describes the presence or absence of a gene, genetic variant or gene product as an indication for the drug, PharmGKB considers the label to imply a testing requirement. If the label states a test "should be" performed, this is also interpreted as a requirement."
+descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"
+
+Node: dcid:PharmGkbPGxLevelTestingRecommended
+name: "Testing Recommended"
+typeOf: dcs:PharmGkbPGxLevelEnum
+description: "The label states or implies that some sort of gene, protein or chromosomal testing, including genetic testing, functional protein assays, cytogenetic studies, etc., is recommended to be carried out on the gene or gene product mentioned in the annotation before using this drug. This recommendation may only be for a particular subset of patients. PharmGKB considers labels that say testing "should be considered" or "Consider genotyping or phenotyping" to be recommending testing."
+descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"
+
+Node: dcid:PharmGkbPGxLevelActionablePGx
+name: "Actionable PGx"
+typeOf: dcs:PharmGkbPGxLevelEnum
+description: "The label may contain information about changes in efficacy, dosage, metabolism or toxicity due to gene/protein/chromosomal variants or phenotypes (e.g. "poor metabolizers"). Or the label may mention contraindication of the drug in a particular subset of patients with particular variants/genotypes/phenotypes. However, the label does not require or recommend gene, protein or chromosomal testing."
+descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"
+
+Node: dcid:PharmGkbPGxLevelInformativePGx
+name: "Informative PGx"
+typeOf: dcs:PharmGkbPGxLevelEnum
+description: "The drug label meets one of two criteria: The label contains information stating that particular gene/protein/chromosomal variants or metabolizer phenotypes do not affect a drug's efficacy, dosage, metabolism or toxicity. Or, the label states that particular variants or phenotypes affect a drug's efficacy, dosage, metabolism or toxicity, but this effect is not “clinically” significant. OR The label appears or appeared on the FDA Biomarker List but does not currently meet the requirements to be assigned as “Testing required”, “Testing recommended” or “Actionable PGx”. PharmGKB annotates every label that appears on the FDA Biomarker list, regardless of whether we would otherwise annotate the label."
+descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"

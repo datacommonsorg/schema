@@ -1,38 +1,19 @@
+Node: dcid:Allele
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+name: "Allele"
+
+Node: dcid:BasePairs
+typeOf: dcs:UnitOfMeasure
+name: "BasePairs"
+subClassOf: schema:Thing
+description: "The number of pairs of complementary bases in a double-stranded nucleic acid molecule (DNA), consisting of a purine in one strand linked by hydrogen bonds to a pyrimidine in the other."
+
 Node: dcid:BiologicalElement
 name: "BiologicalElement"
 typeOf: schema:Class
 subClassOf: dcs:BiomedicalElement
 description: "Biological entities."
-
-Node: dcid:GenomeAnnotation
-name: "GenomeAnnotation"
-typeOf: schema:Class
-subClassOf: dcs:BiologicalElement
-description: "Entities or properties of the genome."
-
-Node: dcid:GeneticAssociation
-name: "GeneticAssociation"
-typeOf: schema:Class
-subClassOf: dcs:BiologicalElement
-description: "Genetic associations with phenotypes."
-
-Node: dcid:GenomeAssembly
-name: "GenomeAssembly"
-typeOf: schema:Class
-subClassOf: dcs:GenomeAnnotation
-description:  "The reference genome to which the associated nucleotides have been aligned."
-
-Node: dcid:GenomeAssemblyUnit
-name: "GenomeAssemblyUnit"
-typeOf: schema:Class
-subClassOf: dcs:GenomeAnnotation
-description:  "The unit of assembling a reference genome to which the associated nucleotides have been aligned. Each unit is typically defined by the location of the cell from which the DNA is located such as the nucleus or an organelle."
-
-Node: dcid:Nucleotide
-name: "Nucleotide"
-typeOf: schema:Class
-subClassOf: dcs:GenomeAnnotation
-description: "A recorded nucleotide on the positive strand of a denoted genome assembly."
 
 Node: dcid:Chromosome
 name: "Chromosome"
@@ -40,18 +21,24 @@ typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description: "A threadlike structure of nucleic acids and protein found in the nucleus of most living cells, carrying genetic information in the form of genes."
 
-Node: dcid:RNATranscript
-name: "RNATranscript"
-typeOf: schema:Class
-subClassOf: dcs:GenomeAnnotation
-description: "Recorded transcript. Unique identifier (GENCODE transcript ID for GENCODE Basic)."
-
 Node: dcid:Gene
 name: "Gene"
 typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description: "Gene symbol of a gene, which is the basic hereditary unit of life."
 descriptionUrl: "https://bioportal.bioontology.org/ontologies/OGG"
+
+Node: dcid:GeneGeneAssociation
+name: "GeneGeneAssociation"
+typeOf: schema:Class
+subClassOf: dcs:Gene
+description: "The association between two genes."
+
+Node: dcid:GeneGeneticVariantAssociation
+name: "GeneGeneticVariantAssociation"
+typeOf: schema:Class
+subClassOf: dcs:Gene
+description: "The association between a gene and a genetic variant. This association is typically tissue-specific."
 
 Node: dcid:GeneticVariant
 name: "GeneticVariant"
@@ -67,23 +54,53 @@ subClassOf: dcs:GeneticAssociation
 description:  "An association between a genetic variant and a gene in a given tissue. This is determined by performing a regression analysis on paired genome sequencing and RNA-sequencing across a population."
 descriptionUrl: "https://storage.googleapis.com/gtex_analysis_v6p/single_tissue_eqtl_data/README_eQTL_v6p.txt"
 
-Node: Position
-typeOf: dcs:UnitOfMeasure
-name: "Position"
-dcid: "Position"
-subClassOf: schema:Thing
-description: "The location of an entity."
+Node: dcid:GeneticVariantGeneticVariantAssociation
+name: "GeneticVariantGeneticVariantAssociation"
+typeOf: schema:Class
+subClassOf: dcs:Gene
+description: "The association between two genetic variants."
 
-Node: dcid:BasePairs
-typeOf: dcs:UnitOfMeasure
-name: "BasePairs"
-subClassOf: schema:Thing
-description: "The number of pairs of complementary bases in a double-stranded nucleic acid molecule (DNA), consisting of a purine in one strand linked by hydrogen bonds to a pyrimidine in the other."
+Node: dcid:GenomeAnnotation
+name: "GenomeAnnotation"
+typeOf: schema:Class
+subClassOf: dcs:BiologicalElement
+description: "Entities or properties of the genome."
 
-Node: dcid:Allele
+Node: dcid:GenomeAssembly
+name: "GenomeAssembly"
 typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
-name: "Allele"
+description:  "The reference genome to which the associated nucleotides have been aligned."
+
+Node: dcid:GenomeAssemblyUnit
+name: "GenomeAssemblyUnit"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description:  "The unit of assembling a reference genome to which the associated nucleotides have been aligned. Each unit is typically defined by the location of the cell from which the DNA is located such as the nucleus or an organelle."
+
+Node: dcid:GenomicCoordinates
+name: "GenomicCoordinates"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "The location in the genome of an element of interest. This is reported in the standardized format of [chrom, chromStart, chromEnd]. These coordinates are specific to any given genome assembly."
+
+Node: dcid:GeneticAssociation
+name: "GeneticAssociation"
+typeOf: schema:Class
+subClassOf: dcs:BiologicalElement
+description: "Genetic associations with phenotypes."
+
+Node: dcid:Nucleotide
+name: "Nucleotide"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "A recorded nucleotide on the positive strand of a denoted genome assembly."
+
+Node: dcid:RNATranscript
+name: "RNATranscript"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "Recorded transcript. Unique identifier (GENCODE transcript ID for GENCODE Basic)."
 
 Node: dcid:frequency
 typeOf: schema:Property
@@ -295,6 +312,29 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:RNATranscript,dcs:Gene,dcs:Protein
 description: "A nucleotide sequence or protein annotated and curated by the National Center for Biotechnology Information."
 
+Node: dcid:isVeryImportantPharmacogene
+name: "isVeryImportantPharmacogene"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Boolean
+description: "The gene is signficantly involved in metabolism of, or response to, one or several drugs. Often, the gene either plays a role in the metabolism of many drugs (e.g. CYP2D6), or contain variants which potentially contribute to a severe drug response (e.g. HLA-B)."
+descriptionUrl: "https://www.pharmgkb.org/vips"
+
+Node: dcid:iupharTargetId
+name: "iupharTargetId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Number
+description: "The target id specified by the International Union of Basic and Clinical Pharmacology (IUPHAR), which represents the receptor of a gene targeted by one or more drugs. The IUPHAR is a voluntary, non-profit association representing the interests of pharmacologists around the world through promoting international cooperation, sponsoring regional activities, encouraging free exchange of scientists and ideas, developing public awareness, the Nomenclature and Standards Committee of IUPHAR (NC-IUPHAR), and the GUIDE TO PHARMCOLOGY."
+
+Node: dcid:pharmacogeneVariationConsortiumId
+name: "pharmacogeneVariationConsortiumId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The identifier representing a gene in the Pharmacogene Variation (PharmVar) Consortium database. THe PharmVar Consortium is a central repository for pharmacogene (PGx) variation that focuses on haplotype structure and allelic variation. The information in this resource facilitates basic and clinical research as well as the interpretation of pharmacogenetic test results to guide precision medicine."
+descriptionUrl: "https://www.pharmvar.org/"
+
 Node: dcid:transcriptionCoordinates
 name: "transcriptionCoordinates"
 typeOf: schema:Property
@@ -326,6 +366,30 @@ rangeIncludes: dcs:StrandOrientationEnum
 domainIncludes: dcs:GenomeAnnotation
 description: "The strand on which a given annotation is located."
 
+Node: dcid:chrom
+name: "chrom"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: schema:Text,dcs:Chromosome
+description: "Chromosome (e.g. chr3, chrY, chr2_random) or scaffold (e.g. scaffold10671) name."
+descriptionUrl: "https://en.wikipedia.org/wiki/BED_(file_format)"
+
+Node: dcid:chromStart
+name: "chromStart"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: schema:Number
+description: "Start coordinate on the chromosome or scaffold for the sequence considered (the first base on the chromosome is numbered 0)."
+descriptionUrl: "https://en.wikipedia.org/wiki/BED_(file_format)"
+
+Node: dcid:chromEnd
+name: "chromEnd"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: schema:Number
+description: "End coordinate on the chromosome or scaffold for the sequence considered. This position is non-inclusive, unlike chromStart."
+descriptionUrl: "https://en.wikipedia.org/wiki/BED_(file_format)"
+
 Node: dcid:geneID
 name: "geneID"
 typeOf: schema:Property
@@ -339,6 +403,14 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Gene,dcs:GeneticVariant,dcs:DiseaseGeneAssociation,dcs:GeneticVariantGeneAssociation,dcs:Protein
 description: "Original gene symbol."
+
+Node: dcid:rsID
+name: "rsID"
+typeOf: schema:Property
+domainIncludes: dcs:GeneticVariant
+rangeIncludes: schema:Text
+description: "The rsID number is a unique label ("rs" followed by a number) used by researchers and databases to identify a specific SNP (Single Nucleotide Polymorphism). It stands for Reference SNP cluster ID and is the naming convention used for most SNPs."
+descriptionUrl: "https://customercare.23andme.com/hc/en-us/articles/212196908-What-Are-RS-Numbers-Rsid-"
 
 Node: dcid:makesProtein
 name: "makesProtein"
