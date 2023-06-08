@@ -345,3 +345,150 @@ member: dcid:Count_HousingUnit_HomeValue1000000To1499999USDollar
 member: dcid:Count_HousingUnit_HomeValue1500000To1999999USDollar
 member: dcid:Count_HousingUnit_HomeValue1000000OrMoreUSDollar
 member: dcid:Count_HousingUnit_HomeValue2000000OrMoreUSDollar
+
+Node: dcid:dc/topic/Age
+typeOf: dcs:Topic
+name: "Age"
+relevantVariable: dcid:LifeExpectancy_Person
+relevantVariable: dcid:Median_Age_Person
+relevantVariable: dcid:dc/svpg/dc/topic/Age_MedianAgebyGender
+relevantVariable: dcid:dc/svpg/dc/topic/Age_MedianAgebyRace
+
+Node: dcid:dc/svpg/dc/topic/Age_MedianAgebyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Median Age by Gender"
+member: dcid:Median_Age_Person_Female
+member: dcid:Median_Age_Person_Male
+
+Node: dcid:dc/svpg/dc/topic/Age_MedianAgebyRace
+typeOf: dcs:StatVarPeerGroup
+name: "Median Age by Race"
+member: dcid:Median_Age_Person_AmericanIndianOrAlaskaNativeAlone
+member: dcid:Median_Age_Person_AsianAlone
+member: dcid:Median_Age_Person_BlackAlone
+member: dcid:Median_Age_Person_HispanicOrLatino
+member: dcid:Median_Age_Person_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Median_Age_Person_SomeOtherRaceAlone
+member: dcid:Median_Age_Person_TwoOrMoreRaces
+member: dcid:Median_Age_Person_WhiteAlone
+
+Node: dcid:dc/topic/Births
+typeOf: dcs:Topic
+name: "Births"
+relevantVariable: dcid:Count_BirthEvent
+relevantVariable: dcid:Count_BirthEvent_AsAFractionOfCount_Person
+relevantVariable: dcid:FertilityRate_Person_Female
+relevantVariable: dcid:MeanMothersAge_BirthEvent
+relevantVariable: dcid:Mean_BirthWeight_BirthEvent_LiveBirth
+relevantVariable: dcid:MedianMothersAge_BirthEvent
+
+Node: dcid:dc/topic/COVID19
+typeOf: dcs:Topic
+name: "COVID-19"
+relevantVariable: dcid:CumulativeCount_MedicalTest_ConditionCOVID_19
+relevantVariable: dcid:CumulativeCount_Vaccine_COVID_19_Administered
+relevantVariable: dcid:IncrementalCount_MedicalTest_ConditionCOVID_19
+relevantVariable: dcid:IncrementalCount_Vaccine_COVID_19_Administered
+relevantVariable: dcid:dc/svpg/dc/topic/COVID19_COVID19Cases
+relevantVariable: dcid:dc/svpg/dc/topic/COVID19_COVID19CumulativeCount
+
+Node: dcid:dc/svpg/dc/topic/COVID19_COVID19Cases
+typeOf: dcs:StatVarPeerGroup
+name: "COVID-19 Cases"
+member: dcid:Count_MedicalConditionIncident_COVID_19_PatientHospitalized
+member: dcid:Count_MedicalConditionIncident_COVID_19_PatientInICU
+
+Node: dcid:dc/svpg/dc/topic/COVID19_COVID19CumulativeCount
+typeOf: dcs:StatVarPeerGroup
+name: "COVID-19 Cumulative Count"
+member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedCase
+member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedOrProbableCase
+member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_PatientDeceased
+member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_PatientRecovered
+
+Node: dcid:dc/topic/Commuting
+typeOf: dcs:Topic
+name: "Commuting"
+relevantVariable: dcid:dc/6nl4fvbfpfbf3 # Population working outside of home
+relevantVariable: dcid:dc/svpg/dc/topic/Commuting_CommuteMode
+relevantVariable: dcid:dc/svpg/dc/topic/Commuting_CommuteTime
+
+Node: dcid:dc/svpg/dc/topic/Commuting_CommuteMode
+typeOf: dcs:StatVarPeerGroup
+name: "Commute Mode"
+member: dcid:dc/0gettc3bc60cb
+member: dcid:dc/6rltk4kf75612
+member: dcid:dc/hbkh95kc7pkb6
+member: dcid:dc/vt2q292eme79f
+member: dcid:dc/vt2q292eme79f
+member: dcid:dc/wc8q05drd74bd
+
+Node: dcid:dc/svpg/dc/topic/Commuting_CommuteTime
+typeOf: dcs:StatVarPeerGroup
+name: "Commute Time"
+member: dcid:dc/2r6wbwvbkrz23
+member: dcid:dc/hntm9bl6g1gn5
+member: dcid:dc/jk6hj15v39b0d
+
+Node: dcid:dc/topic/Crime
+typeOf: dcs:Topic
+name: "Crime"
+relevantVariable: dcid:Count_CriminalActivities_CombinedCrime
+relevantVariable: dcid:Count_CriminalActivities_MurderAndNonNegligentManslaughter_AsFractionOf_Count_Person
+relevantVariable: dcid:dc/svpg/dc/topic/Crime_CrimesbyType
+
+Node: dcid:dc/svpg/dc/topic/Crime_CrimesbyType
+typeOf: dcs:StatVarPeerGroup
+name: "Crimes by Type"
+member: dcid:Count_CriminalActivities_AggravatedAssault
+member: dcid:Count_CriminalActivities_Arson
+member: dcid:Count_CriminalActivities_Burglary
+member: dcid:Count_CriminalActivities_ForcibleRape
+member: dcid:Count_CriminalActivities_LarcenyTheft
+member: dcid:Count_CriminalActivities_MotorVehicleTheft
+member: dcid:Count_CriminalActivities_PropertyCrime
+member: dcid:Count_CriminalActivities_Robbery
+member: dcid:Count_CriminalActivities_ViolentCrime
+
+Node: dcid:dc/topic/Disabilities
+typeOf: dcs:Topic
+name: "Disabilities"
+relevantVariable: dcid:dc/svpg/dc/topic/Disabilities_DisabledPopulationbyGender
+relevantVariable: dcid:dc/svpg/dc/topic/Disabilities_DisabledPopulationbyHousingResidency
+relevantVariable: dcid:dc/svpg/dc/topic/Disabilities_DisabledPopulationbyRace
+relevantVariable: dcid:dc/svpg/dc/topic/Disabilities_PopulationbyDisabilityStatus
+
+Node: dcid:dc/svpg/dc/topic/Disabilities_DisabledPopulationbyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Disabled Population by Gender"
+member: dcid:Count_Person_WithDisability_Female
+member: dcid:Count_Person_WithDisability_Male
+
+Node: dcid:dc/svpg/dc/topic/Disabilities_DisabledPopulationbyHousingResidency
+typeOf: dcs:StatVarPeerGroup
+name: "Disabled Population by Housing Residency"
+member: dcid:Count_Person_WithDisability_ResidesInAdultCorrectionalFacilities
+member: dcid:Count_Person_WithDisability_ResidesInCollegeOrUniversityStudentHousing
+member: dcid:Count_Person_WithDisability_ResidesInGroupQuarters
+member: dcid:Count_Person_WithDisability_ResidesInJuvenileFacilities
+member: dcid:Count_Person_WithDisability_ResidesInMilitaryQuartersOrMilitaryShips
+member: dcid:Count_Person_WithDisability_ResidesInNoninstitutionalizedGroupQuarters
+member: dcid:Count_Person_WithDisability_ResidesInNursingFacilities
+
+Node: dcid:dc/svpg/dc/topic/Disabilities_DisabledPopulationbyRace
+typeOf: dcs:StatVarPeerGroup
+name: "Disabled Population by Race"
+member: dcid:Count_Person_WithDisability_AmericanIndianOrAlaskaNativeAlone
+member: dcid:Count_Person_WithDisability_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_WithDisability_HispanicOrLatino
+member: dcid:Count_Person_WithDisability_OneRace
+member: dcid:Count_Person_WithDisability_SomeOtherRaceAlone
+member: dcid:Count_Person_WithDisability_TwoOrMoreRaces
+member: dcid:Count_Person_WithDisability_WhiteAlone
+member: dcid:Count_Person_WithDisability_WhiteAloneNotHispanicOrLatino
+
+Node: dcid:dc/svpg/dc/topic/Disabilities_PopulationbyDisabilityStatus
+typeOf: dcs:StatVarPeerGroup
+name: "Population by Disability Status"
+member: dcid:Count_Person_NoDisability
+member: dcid:Count_Person_WithDisability
