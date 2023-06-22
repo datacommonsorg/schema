@@ -2,11 +2,6 @@
 # Temporary partially curated schema for SDGs.
 ################################################################################
 
-Node: dcid:value
-name: "value"
-typeOf: schema:Property
-domainIncludes: schema:Thing
-
 Node: dcid:SDG_Series
 name: "SDG_Series"
 typeOf: schema:Class
@@ -163,15 +158,7 @@ name: "Agriculture value added share of GDP"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_AG_PRD_FIESMS
-name: "Estimated prevalence of moderate or severe food insecurity in the population"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_AG_PRD_FIESMS
 name: "Prevalence of moderate or severe food insecurity"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_AG_PRD_FIESMSN
-name: "Estimated number of population in moderate or severe food insecurity"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_AG_PRD_FIESMSN
@@ -183,15 +170,7 @@ name: "Population living in households where at least one adult experienced mode
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_AG_PRD_FIESS
-name: "Estimated prevalence of severe food insecurity in the population"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_AG_PRD_FIESS
 name: "Prevalence of severe food insecurity"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_AG_PRD_FIESSN
-name: "Estimated number of population in severe food insecurity"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_AG_PRD_FIESSN
@@ -336,6 +315,26 @@ typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_DC_ODA_TOTLGE
 name: "Official development assistance from OECD-DAC countries on grant equivalent basis"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_DC_OSSD_GRT
+name: "Gross receipts by developing countries of official sustainable development grants"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_DC_OSSD_MPF
+name: "Gross receipts by developing countries of mobilised private finance - on an experimental basis"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_DC_OSSD_OFFCL
+name: "Gross receipts by developing countries of official concessional sustainable development loans"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_DC_OSSD_OFFNL
+name: "Gross receipts by developing countries of official non-concessional sustainable development loans"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_DC_OSSD_PRVGRT
+name: "Gross receipts by developing countries of private grants"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_DC_TOF_AGRL
@@ -1259,23 +1258,11 @@ name: "Average marine acidity measured at agreed suite of representative samplin
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_ER_PTD_FRHWTR
-name: "Proportion of important sites for freshwater biodiversity that are covered by protected areas"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_ER_PTD_FRHWTR
 name: "Average proportion of Freshwater Key Biodiversity Areas covered by protected areas"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_ER_PTD_MTN
-name: "Coverage by protected areas of important sites for mountain biodiversity"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_ER_PTD_MTN
 name: "Average proportion of Mountain Key Biodiversity Areas covered by protected areas"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_ER_PTD_TERR
-name: "Proportion of important sites for terrestrial biodiversity that are covered by protected areas"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_ER_PTD_TERR
@@ -1304,10 +1291,6 @@ typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_ER_RSK_LBREDS
 name: "Proportion of local breeds classified as being at risk as a share of local breeds with known level of extinction risk"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_ER_RSK_LST
-name: "Red List Index"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_ER_RSK_LST
@@ -1498,12 +1481,28 @@ Node: dcid:SDG_GB_XPD_CULNAT_PV
 name: "Total expenditure per capita spent on cultural and natural heritage, private"
 typeOf: dcs:SDG_Series
 
+Node: dcid:SDG_GB_XPD_CUL_PB
+name: "Total expenditure per capita spent on cultural heritage, public"
+typeOf: dcs:SDG_Series
+
 Node: dcid:SDG_GB_XPD_CUL_PBPV
 name: "Total expenditure per capita spent on cultural heritage, public and private"
 typeOf: dcs:SDG_Series
 
+Node: dcid:SDG_GB_XPD_CUL_PV
+name: "Total expenditure per capita spent on cultural heritage, private"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_GB_XPD_NAT_PB
+name: "Total expenditure per capita spent on natural heritage, public"
+typeOf: dcs:SDG_Series
+
 Node: dcid:SDG_GB_XPD_NAT_PBPV
 name: "Total expenditure per capita spent on natural heritage, public and private"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_GB_XPD_NAT_PV
+name: "Total expenditure per capita spent on natural heritage, private"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_GB_XPD_RSDV
@@ -1639,15 +1638,7 @@ name: "Proportion of individuals who own a mobile telephone"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_IT_NET_BBND
-name: "Fixed Internet broadband Subscriptions per 100 inhabitants"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_IT_NET_BBND
 name: "Fixed broadband subscriptions per 100 inhabitants"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_IT_NET_BBNDN
-name: "Fixed Internet broadband Subscriptions per 100 inhabitants"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_IT_NET_BBNDN
@@ -2990,10 +2981,6 @@ Node: dcid:SDG_SH_STA_MORT
 name: "Maternal mortality ratio"
 typeOf: dcs:SDG_Series
 
-Node: dcid:SDG_SH_STA_MORT
-name: "Maternal mortality ratio"
-typeOf: dcs:SDG_Series
-
 Node: dcid:SDG_SH_STA_POISN
 name: "Mortality rate attributed to unintentional poisonings"
 typeOf: dcs:SDG_Series
@@ -3007,15 +2994,7 @@ name: "Number of deaths attributed to suicide"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SH_STA_STNT
-name: "Proportion of stunted children under the age of 5 years"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_SH_STA_STNT
 name: "Proportion of children moderately or severely stunted"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_SH_STA_STNTN
-name: "Number of stunted children under the age of 5 years"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SH_STA_STNTN
@@ -3039,15 +3018,7 @@ name: "Mortality rate attributed to unsafe water, unsafe sanitation and lack of 
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SH_STA_WAST
-name: "Proportion of wasted children under the age of 5 years"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_SH_STA_WAST
 name: "Proportion of children moderately or severely wasted"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_SH_STA_WASTN
-name: "Number of wasted children under the age of 5 years"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SH_STA_WASTN
@@ -3060,10 +3031,6 @@ typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SH_SUD_TREAT
 name: "Coverage of treatment interventions for substance use disorders"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_SH_TBS_INCD
-name: "Tuberculosis incidence per 100K population"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SH_TBS_INCD
@@ -3431,15 +3398,7 @@ name: "Number of undernourished people"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SN_STA_OVWGT
-name: "Proportion of overweight children under the age of 5 years"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_SN_STA_OVWGT
 name: "Proportion of children moderately or severely overweight"
-typeOf: dcs:SDG_Series
-
-Node: dcid:SDG_SN_STA_OVWGTN
-name: "Number of overweight children under the age of 5 years"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SN_STA_OVWGTN
@@ -3459,6 +3418,18 @@ name: "Proportion of population using basic sanitation services"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SP_DISP_RESOL
+name: "Proportion of the population who have experienced a dispute in the past two years who accessed a formal or informal dispute resolution mechanism"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_SP_DISP_RESOL_CTZ
+name: "Proportion of the population who have experienced a dispute in the past two years who accessed a formal or informal dispute resolution mechanism"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_SP_DISP_RESOL_ETH
+name: "Proportion of the population who have experienced a dispute in the past two years who accessed a formal or informal dispute resolution mechanism"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_SP_DISP_RESOL_MIG
 name: "Proportion of the population who have experienced a dispute in the past two years who accessed a formal or informal dispute resolution mechanism"
 typeOf: dcs:SDG_Series
 
@@ -3698,10 +3669,6 @@ Node: dcid:SDG_VC_DSR_AGLH
 name: "Direct agriculture loss attributed to disasters"
 typeOf: dcs:SDG_Series
 
-Node: dcid:SDG_VC_DSR_AGLH
-name: "Direct agriculture loss attributed to disasters"
-typeOf: dcs:SDG_Series
-
 Node: dcid:SDG_VC_DSR_BSDN
 name: "Number of disruptions to basic services attributed to disasters"
 typeOf: dcs:SDG_Series
@@ -3782,10 +3749,6 @@ Node: dcid:SDG_VC_DSR_HOLH
 name: "Direct economic loss in the housing sector attributed to disasters"
 typeOf: dcs:SDG_Series
 
-Node: dcid:SDG_VC_DSR_HOLH
-name: "Direct economic loss in the housing sector attributed to disasters"
-typeOf: dcs:SDG_Series
-
 Node: dcid:SDG_VC_DSR_HSDN
 name: "Number of disruptions to health services attributed to disasters"
 typeOf: dcs:SDG_Series
@@ -3806,10 +3769,6 @@ Node: dcid:SDG_VC_DSR_MMHN
 name: "Number of deaths and missing persons attributed to disasters"
 typeOf: dcs:SDG_Series
 
-Node: dcid:SDG_VC_DSR_MMHN
-name: "Number of deaths and missing persons attributed to disasters"
-typeOf: dcs:SDG_Series
-
 Node: dcid:SDG_VC_DSR_MORT
 name: "Number of deaths due to disaster"
 typeOf: dcs:SDG_Series
@@ -3820,6 +3779,10 @@ typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_VC_DSR_OBDN
 name: "Number of disruptions to other basic services attributed to disasters"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_VC_DSR_PALN
+name: "Direct economic loss to all other damaged or destroyed productive assets attributed to disasters"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_VC_DSR_PDAN
@@ -3958,6 +3921,18 @@ Node: dcid:SDG_VC_VAW_PHYPYV
 name: "Proportion of children aged 1-14 years who experienced physical punishment and/or psychological aggression by caregivers in last month"
 typeOf: dcs:SDG_Series
 
+Node: dcid:SDG_VC_VAW_PHYV
+name: "Proportion of ever-partnered women and girls subjected to physical violence by a current or former intimate partner in the previous 12 months"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_VC_VAW_PSYV
+name: "Proportion of ever-partnered women and girls subjected to psychological violence by a current or former intimate partner in the previous 12 months"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_VC_VAW_SEXV
+name: "Proportion of ever-partnered women and girls subjected to sexual violence by a current or former intimate partner in the previous 12 months"
+typeOf: dcs:SDG_Series
+
 Node: dcid:SDG_VC_VAW_SXVLN
 name: "Proportion of population aged 18-29 years who experienced sexual violence by age 18"
 typeOf: dcs:SDG_Series
@@ -3968,6 +3943,10 @@ typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_VC_VOH_SXPH
 name: "Proportion of persons victim of physical or sexual harassment, in the previous 12 months"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_VC_VOV_DCMN
+name: "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_VC_VOV_GDSD
