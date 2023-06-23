@@ -7,6 +7,11 @@ name: "SDG_Series"
 typeOf: schema:Class
 subClassOf: schema:Thing
 
+Node: dcid:SDG_UnitOfMeasure
+name: "SDG_UnitOfMeasure"
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+
 ## Series
 
 Node: dcid:SDG_AG_FLS_IDX
@@ -3966,6 +3971,5845 @@ name: "Proportion of population subjected to sexual violence in the previous 12 
 typeOf: dcs:SDG_Series
 
 ## Constraint properties
+
+Node: dcid:sdg_activity
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_ActivityEnum
+name: "Activity"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ActivityEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_HH
+typeOf: dcs:SDG_ActivityEnum
+name: "Private households"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC3_D
+typeOf: dcs:SDG_ActivityEnum
+name: "Manufacturing (ISIC3 D)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_A
+typeOf: dcs:SDG_ActivityEnum
+name: "Agriculture, forestry and fishing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_A01_A0210_A0322
+typeOf: dcs:SDG_ActivityEnum
+name: "Agriculture (ISIC4 A01 A0210 A0322)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_B
+typeOf: dcs:SDG_ActivityEnum
+name: "Mining and quarrying"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_BTFXE
+typeOf: dcs:SDG_ActivityEnum
+name: "Industries"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_BTU
+typeOf: dcs:SDG_ActivityEnum
+name: "Non-agriculture"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_C
+typeOf: dcs:SDG_ActivityEnum
+name: "Manufacturing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_C10T32X19
+typeOf: dcs:SDG_ActivityEnum
+name: "Manufacturing excl. coke and refined petroleum products and repair and installation of machinery and equipment"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_D
+typeOf: dcs:SDG_ActivityEnum
+name: "Electricity, gas, steam and air conditioning supply"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_E
+typeOf: dcs:SDG_ActivityEnum
+name: "Water supply; sewerage, waste management and remediation activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_EX38_GTS_U
+typeOf: dcs:SDG_ActivityEnum
+name: "Other economic activities excluding ISIC 01-03, 05-09, 10-33, 35, 38, 41-43, 97-98"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_EX38_GTU
+typeOf: dcs:SDG_ActivityEnum
+name: "XXX"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_F
+typeOf: dcs:SDG_ActivityEnum
+name: "Construction"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_G
+typeOf: dcs:SDG_ActivityEnum
+name: "Wholesale and retail trade; repair of motor vehicles and motorcycles"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_GTS
+typeOf: dcs:SDG_ActivityEnum
+name: "Services"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_GTS_HH
+typeOf: dcs:SDG_ActivityEnum
+name: "Services, and activities by households"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_GTT
+typeOf: dcs:SDG_ActivityEnum
+name: "Services (G to T)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_H
+typeOf: dcs:SDG_ActivityEnum
+name: "Transportation and storage"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_I
+typeOf: dcs:SDG_ActivityEnum
+name: "Accommodation and food service activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_J
+typeOf: dcs:SDG_ActivityEnum
+name: "Information and communication"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_K
+typeOf: dcs:SDG_ActivityEnum
+name: "Financial and insurance activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_L
+typeOf: dcs:SDG_ActivityEnum
+name: "Real estate activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_M
+typeOf: dcs:SDG_ActivityEnum
+name: "Professional, scientific and technical activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_N
+typeOf: dcs:SDG_ActivityEnum
+name: "Administrative and support service activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_O
+typeOf: dcs:SDG_ActivityEnum
+name: "Public administration and defence; compulsory social security"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_P
+typeOf: dcs:SDG_ActivityEnum
+name: "Education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_Q
+typeOf: dcs:SDG_ActivityEnum
+name: "Human health and social work activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_R
+typeOf: dcs:SDG_ActivityEnum
+name: "Arts, entertainment and recreation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_S
+typeOf: dcs:SDG_ActivityEnum
+name: "Other service activities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_T
+typeOf: dcs:SDG_ActivityEnum
+name: "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ActivityEnum_ISIC4_U
+typeOf: dcs:SDG_ActivityEnum
+name: "Activities of extraterritorial organisations and bodies"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "AgeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M0
+typeOf: dcs:SDG_AgeEnum
+name: "under 1 month old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M12T23
+typeOf: dcs:SDG_AgeEnum
+name: "12 to 23 months"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M24T35
+typeOf: dcs:SDG_AgeEnum
+name: "24 to 35 months"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M24T59
+typeOf: dcs:SDG_AgeEnum
+name: "24 to 59 months old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M36T47
+typeOf: dcs:SDG_AgeEnum
+name: "36 to 47 months old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M36T59
+typeOf: dcs:SDG_AgeEnum
+name: "36 to 59 months old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M48T59
+typeOf: dcs:SDG_AgeEnum
+name: "48 to 59 months"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_M6T59
+typeOf: dcs:SDG_AgeEnum
+name: "6 to 59 months old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0
+typeOf: dcs:SDG_AgeEnum
+name: "under 1 year old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T14
+typeOf: dcs:SDG_AgeEnum
+name: "under 15 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T15
+typeOf: dcs:SDG_AgeEnum
+name: "under 16 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T17
+typeOf: dcs:SDG_AgeEnum
+name: "under 18 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T24
+typeOf: dcs:SDG_AgeEnum
+name: "under 25 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T34
+typeOf: dcs:SDG_AgeEnum
+name: "under 35 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T4
+typeOf: dcs:SDG_AgeEnum
+name: "under 5 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T44
+typeOf: dcs:SDG_AgeEnum
+name: "under 45 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T45
+typeOf: dcs:SDG_AgeEnum
+name: "under 46 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T5
+typeOf: dcs:SDG_AgeEnum
+name: "under 6 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T7
+typeOf: dcs:SDG_AgeEnum
+name: "under 8 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y0T9
+typeOf: dcs:SDG_AgeEnum
+name: "under 10 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y10T14
+typeOf: dcs:SDG_AgeEnum
+name: "10 to 14 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y10T17
+typeOf: dcs:SDG_AgeEnum
+name: "10 to 17 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y10T19
+typeOf: dcs:SDG_AgeEnum
+name: "10 to 19 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y10T24
+typeOf: dcs:SDG_AgeEnum
+name: "10 to 24 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y10T74
+typeOf: dcs:SDG_AgeEnum
+name: "10 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y12T14
+typeOf: dcs:SDG_AgeEnum
+name: "12 to 14 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y12T17
+typeOf: dcs:SDG_AgeEnum
+name: "12 to 17 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y12T24
+typeOf: dcs:SDG_AgeEnum
+name: "12 to 24 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y12T30
+typeOf: dcs:SDG_AgeEnum
+name: "12 to 30 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y14T24
+typeOf: dcs:SDG_AgeEnum
+name: "14 to 24 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y14T28
+typeOf: dcs:SDG_AgeEnum
+name: "14 to 28 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y14T29
+typeOf: dcs:SDG_AgeEnum
+name: "14 to 29 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T17
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 17 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T19
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 19 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T24
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 24 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T28
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 28 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T29
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 29 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T44
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 44 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T49
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 49 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T60
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 60 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T64
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 64 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T65
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 65 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T70
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 70 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T72
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 72 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T74
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T80
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 80 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y15T84
+typeOf: dcs:SDG_AgeEnum
+name: "15 to 84 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y16T24
+typeOf: dcs:SDG_AgeEnum
+name: "16 to 24 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y16T65
+typeOf: dcs:SDG_AgeEnum
+name: "16 to 65 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y16T74
+typeOf: dcs:SDG_AgeEnum
+name: "16 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T19
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 19 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T24
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 24 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T27
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 27 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T29
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 29 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T35
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 35 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T44
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 44 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T49
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 49 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T50
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 50 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y18T74
+typeOf: dcs:SDG_AgeEnum
+name: "18 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y19T65
+typeOf: dcs:SDG_AgeEnum
+name: "19 to 65 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y1T14
+typeOf: dcs:SDG_AgeEnum
+name: "1 to 14 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y1T17
+typeOf: dcs:SDG_AgeEnum
+name: "1 to 17 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y1T4
+typeOf: dcs:SDG_AgeEnum
+name: "1 to 4 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y20T24
+typeOf: dcs:SDG_AgeEnum
+name: "20 to 24 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y20T29
+typeOf: dcs:SDG_AgeEnum
+name: "20 to 29 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y20T30
+typeOf: dcs:SDG_AgeEnum
+name: "20 to 30 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y20T49
+typeOf: dcs:SDG_AgeEnum
+name: "20 to 49 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y20T64
+typeOf: dcs:SDG_AgeEnum
+name: "20 to 64 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y20T74
+typeOf: dcs:SDG_AgeEnum
+name: "20 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y25T29
+typeOf: dcs:SDG_AgeEnum
+name: "25 to 29 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y25T34
+typeOf: dcs:SDG_AgeEnum
+name: "25 to 34 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y25T44
+typeOf: dcs:SDG_AgeEnum
+name: "25 to 44 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y25T54
+typeOf: dcs:SDG_AgeEnum
+name: "25 to 54 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y25T64
+typeOf: dcs:SDG_AgeEnum
+name: "25 to 64 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y25T74
+typeOf: dcs:SDG_AgeEnum
+name: "25 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y2T14
+typeOf: dcs:SDG_AgeEnum
+name: "2 to 14 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y30
+typeOf: dcs:SDG_AgeEnum
+name: "30 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y30T34
+typeOf: dcs:SDG_AgeEnum
+name: "30 to 34 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y30T35
+typeOf: dcs:SDG_AgeEnum
+name: "30 to 35 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y30T39
+typeOf: dcs:SDG_AgeEnum
+name: "30 to 39 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y30T69
+typeOf: dcs:SDG_AgeEnum
+name: "30 to 69 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y30T70
+typeOf: dcs:SDG_AgeEnum
+name: "30 to 70 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y35
+typeOf: dcs:SDG_AgeEnum
+name: "35 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y35T39
+typeOf: dcs:SDG_AgeEnum
+name: "35 to 39 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y35T44
+typeOf: dcs:SDG_AgeEnum
+name: "35 to 44 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y35T49
+typeOf: dcs:SDG_AgeEnum
+name: "35 to 49 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y40T44
+typeOf: dcs:SDG_AgeEnum
+name: "40 to 44 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y40T49
+typeOf: dcs:SDG_AgeEnum
+name: "40 to 49 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y45T49
+typeOf: dcs:SDG_AgeEnum
+name: "45 to 49 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y45T54
+typeOf: dcs:SDG_AgeEnum
+name: "45 to 54 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y45T59
+typeOf: dcs:SDG_AgeEnum
+name: "45 to 59 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y45T64
+typeOf: dcs:SDG_AgeEnum
+name: "45 to 64 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y50T54
+typeOf: dcs:SDG_AgeEnum
+name: "50 to 54 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y50T59
+typeOf: dcs:SDG_AgeEnum
+name: "50 to 59 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y55T59
+typeOf: dcs:SDG_AgeEnum
+name: "55 to 59 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y55T64
+typeOf: dcs:SDG_AgeEnum
+name: "55 to 64 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y5T12
+typeOf: dcs:SDG_AgeEnum
+name: "5 to 12 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y5T14
+typeOf: dcs:SDG_AgeEnum
+name: "5 to 14 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y5T17
+typeOf: dcs:SDG_AgeEnum
+name: "5 to 17 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y5T9
+typeOf: dcs:SDG_AgeEnum
+name: "5 to 9 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y60T64
+typeOf: dcs:SDG_AgeEnum
+name: "60 to 64 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y60T69
+typeOf: dcs:SDG_AgeEnum
+name: "60 to 69 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y65T69
+typeOf: dcs:SDG_AgeEnum
+name: "65 to 69 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y65T74
+typeOf: dcs:SDG_AgeEnum
+name: "65 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y6T14
+typeOf: dcs:SDG_AgeEnum
+name: "6 to 14 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y6T17
+typeOf: dcs:SDG_AgeEnum
+name: "6 to 17 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y6T65
+typeOf: dcs:SDG_AgeEnum
+name: "6 to 65 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y70T74
+typeOf: dcs:SDG_AgeEnum
+name: "70 to 74 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y70T79
+typeOf: dcs:SDG_AgeEnum
+name: "70 to 79 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y75T79
+typeOf: dcs:SDG_AgeEnum
+name: "75 to 79 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y75T84
+typeOf: dcs:SDG_AgeEnum
+name: "75 to 84 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y7T14
+typeOf: dcs:SDG_AgeEnum
+name: "7 to 14 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y7T17
+typeOf: dcs:SDG_AgeEnum
+name: "7 to 17 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y80T84
+typeOf: dcs:SDG_AgeEnum
+name: "80 to 84 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y80T89
+typeOf: dcs:SDG_AgeEnum
+name: "80 to 89 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y85T89
+typeOf: dcs:SDG_AgeEnum
+name: "85 to 89 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y90T94
+typeOf: dcs:SDG_AgeEnum
+name: "90 to 94 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y90T99
+typeOf: dcs:SDG_AgeEnum
+name: "90 to 99 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y95T99
+typeOf: dcs:SDG_AgeEnum
+name: "95 to 99 years old"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE10
+typeOf: dcs:SDG_AgeEnum
+name: "10 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE100
+typeOf: dcs:SDG_AgeEnum
+name: "100 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE12
+typeOf: dcs:SDG_AgeEnum
+name: "12 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE14
+typeOf: dcs:SDG_AgeEnum
+name: "14 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE15
+typeOf: dcs:SDG_AgeEnum
+name: "15 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE16
+typeOf: dcs:SDG_AgeEnum
+name: "16 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE18
+typeOf: dcs:SDG_AgeEnum
+name: "18 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE20
+typeOf: dcs:SDG_AgeEnum
+name: "20 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE25
+typeOf: dcs:SDG_AgeEnum
+name: "25 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE3
+typeOf: dcs:SDG_AgeEnum
+name: "3 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE46
+typeOf: dcs:SDG_AgeEnum
+name: "46 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE5
+typeOf: dcs:SDG_AgeEnum
+name: "5 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE50
+typeOf: dcs:SDG_AgeEnum
+name: "50 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE6
+typeOf: dcs:SDG_AgeEnum
+name: "6 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE60
+typeOf: dcs:SDG_AgeEnum
+name: "60 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE65
+typeOf: dcs:SDG_AgeEnum
+name: "65 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE7
+typeOf: dcs:SDG_AgeEnum
+name: "7 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE70
+typeOf: dcs:SDG_AgeEnum
+name: "70 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE75
+typeOf: dcs:SDG_AgeEnum
+name: "75 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE80
+typeOf: dcs:SDG_AgeEnum
+name: "80 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE85
+typeOf: dcs:SDG_AgeEnum
+name: "85 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE90
+typeOf: dcs:SDG_AgeEnum
+name: "90 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum_Y_GE95
+typeOf: dcs:SDG_AgeEnum
+name: "95 years old and over"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum__U
+typeOf: dcs:SDG_AgeEnum
+name: "Unknown"
+isProvisional: dcs:True
+
+Node: dcid:SDG_AgeEnum__X
+typeOf: dcs:SDG_AgeEnum
+name: "Not available"
+isProvisional: dcs:True
+
+Node: dcid:sdg_bioclimaticBelt
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_BioclimaticBeltEnum
+name: "Bioclimatic Belt"
+isProvisional: dcs:True
+
+Node: dcid:SDG_BioclimaticBeltEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BioclimaticBeltEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_BioclimaticBeltEnum_ALPINE
+typeOf: dcs:SDG_BioclimaticBeltEnum
+name: "Alpine"
+isProvisional: dcs:True
+
+Node: dcid:SDG_BioclimaticBeltEnum_MONTANE
+typeOf: dcs:SDG_BioclimaticBeltEnum
+name: "Montane"
+isProvisional: dcs:True
+
+Node: dcid:SDG_BioclimaticBeltEnum_NIVAL
+typeOf: dcs:SDG_BioclimaticBeltEnum
+name: "Nival"
+isProvisional: dcs:True
+
+Node: dcid:SDG_BioclimaticBeltEnum_REMAIN_MOUNT
+typeOf: dcs:SDG_BioclimaticBeltEnum
+name: "Remaining mountain area"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CauseOfDeathEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CauseOfDeathEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CauseOfDeathEnum_COD_EXPLOSIVES
+typeOf: dcs:SDG_CauseOfDeathEnum
+name: "Planted explosives and unexploded ordnance (UXO)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CauseOfDeathEnum_COD_HEAVYWEAPONS
+typeOf: dcs:SDG_CauseOfDeathEnum
+name: "Heavy weapons and explosive munitions "
+isProvisional: dcs:True
+
+Node: dcid:SDG_CauseOfDeathEnum_COD_OTHER
+typeOf: dcs:SDG_CauseOfDeathEnum
+name: "Incendiary; Chemical, biological, radiological, nuclear (CBRN); Electromagnetic weapons; Less lethal weapons; Denial of access to/ destruction of objects indispensable to survival; Accidents related to conflict; Use of objects and other means; Multiple Weapons Used."
+isProvisional: dcs:True
+
+Node: dcid:SDG_CauseOfDeathEnum_COD_SMALLARMS
+typeOf: dcs:SDG_CauseOfDeathEnum
+name: "Small arms and light weapons "
+isProvisional: dcs:True
+
+Node: dcid:SDG_CauseOfDeathEnum_COD_U
+typeOf: dcs:SDG_CauseOfDeathEnum
+name: "Unknown"
+isProvisional: dcs:True
+
+Node: dcid:sdg_counterpart
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_CounterpartEnum
+name: "Counterpart"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CounterpartEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_AF
+typeOf: dcs:SDG_CounterpartEnum
+name: "Afghanistan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_AL
+typeOf: dcs:SDG_CounterpartEnum
+name: "Albania"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_AM
+typeOf: dcs:SDG_CounterpartEnum
+name: "Armenia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_AO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Angola"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_AZ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Azerbaijan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BA
+typeOf: dcs:SDG_CounterpartEnum
+name: "Bosnia and Herzegovina"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BD
+typeOf: dcs:SDG_CounterpartEnum
+name: "Bangladesh"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BG
+typeOf: dcs:SDG_CounterpartEnum
+name: "Bulgaria"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BJ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Benin"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Bolivia (Plurinational State of)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BR
+typeOf: dcs:SDG_CounterpartEnum
+name: "Brazil"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BW
+typeOf: dcs:SDG_CounterpartEnum
+name: "Botswana"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_BY
+typeOf: dcs:SDG_CounterpartEnum
+name: "Belarus"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CD
+typeOf: dcs:SDG_CounterpartEnum
+name: "Democratic Republic of the Congo"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CI
+typeOf: dcs:SDG_CounterpartEnum
+name: "Côte d'Ivoire"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CM
+typeOf: dcs:SDG_CounterpartEnum
+name: "Cameroon"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CN
+typeOf: dcs:SDG_CounterpartEnum
+name: "China"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Colombia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CR
+typeOf: dcs:SDG_CounterpartEnum
+name: "Costa Rica"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CU
+typeOf: dcs:SDG_CounterpartEnum
+name: "Cuba"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_CV
+typeOf: dcs:SDG_CounterpartEnum
+name: "Cabo Verde"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_DO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Dominican Republic"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_DZ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Algeria"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_EC
+typeOf: dcs:SDG_CounterpartEnum
+name: "Ecuador"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_EE
+typeOf: dcs:SDG_CounterpartEnum
+name: "Estonia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_EG
+typeOf: dcs:SDG_CounterpartEnum
+name: "Egypt"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_ER
+typeOf: dcs:SDG_CounterpartEnum
+name: "Eritrea"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_ET
+typeOf: dcs:SDG_CounterpartEnum
+name: "Ethiopia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_FJ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Fiji"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_GE
+typeOf: dcs:SDG_CounterpartEnum
+name: "Georgia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_GH
+typeOf: dcs:SDG_CounterpartEnum
+name: "Ghana"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_GM
+typeOf: dcs:SDG_CounterpartEnum
+name: "Gambia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_GT
+typeOf: dcs:SDG_CounterpartEnum
+name: "Guatemala"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_GY
+typeOf: dcs:SDG_CounterpartEnum
+name: "Guyana"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_HN
+typeOf: dcs:SDG_CounterpartEnum
+name: "Honduras"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_HR
+typeOf: dcs:SDG_CounterpartEnum
+name: "Croatia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_HT
+typeOf: dcs:SDG_CounterpartEnum
+name: "Haiti"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_HU
+typeOf: dcs:SDG_CounterpartEnum
+name: "Hungary"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_ID
+typeOf: dcs:SDG_CounterpartEnum
+name: "Indonesia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_IN
+typeOf: dcs:SDG_CounterpartEnum
+name: "India"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_JM
+typeOf: dcs:SDG_CounterpartEnum
+name: "Jamaica"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_JO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Jordan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_KE
+typeOf: dcs:SDG_CounterpartEnum
+name: "Kenya"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_KG
+typeOf: dcs:SDG_CounterpartEnum
+name: "Kyrgyzstan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_KH
+typeOf: dcs:SDG_CounterpartEnum
+name: "Cambodia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_KM
+typeOf: dcs:SDG_CounterpartEnum
+name: "Comoros"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_KZ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Kazakhstan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_LA
+typeOf: dcs:SDG_CounterpartEnum
+name: "Lao People's Democratic Republic"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_LB
+typeOf: dcs:SDG_CounterpartEnum
+name: "Lebanon"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_LK
+typeOf: dcs:SDG_CounterpartEnum
+name: "Sri Lanka"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_LR
+typeOf: dcs:SDG_CounterpartEnum
+name: "Liberia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_LS
+typeOf: dcs:SDG_CounterpartEnum
+name: "Lesotho"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_LT
+typeOf: dcs:SDG_CounterpartEnum
+name: "Lithuania"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_LV
+typeOf: dcs:SDG_CounterpartEnum
+name: "Latvia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MA
+typeOf: dcs:SDG_CounterpartEnum
+name: "Morocco"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MD
+typeOf: dcs:SDG_CounterpartEnum
+name: "Republic of Moldova"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MG
+typeOf: dcs:SDG_CounterpartEnum
+name: "Madagascar"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MK
+typeOf: dcs:SDG_CounterpartEnum
+name: "North Macedonia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_ML
+typeOf: dcs:SDG_CounterpartEnum
+name: "Mali"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MM
+typeOf: dcs:SDG_CounterpartEnum
+name: "Myanmar"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MW
+typeOf: dcs:SDG_CounterpartEnum
+name: "Malawi"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MX
+typeOf: dcs:SDG_CounterpartEnum
+name: "Mexico"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MY
+typeOf: dcs:SDG_CounterpartEnum
+name: "Malaysia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_MZ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Mozambique"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_NG
+typeOf: dcs:SDG_CounterpartEnum
+name: "Nigeria"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_NI
+typeOf: dcs:SDG_CounterpartEnum
+name: "Nicaragua"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_NP
+typeOf: dcs:SDG_CounterpartEnum
+name: "Nepal"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_PA
+typeOf: dcs:SDG_CounterpartEnum
+name: "Panama"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_PE
+typeOf: dcs:SDG_CounterpartEnum
+name: "Peru"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_PH
+typeOf: dcs:SDG_CounterpartEnum
+name: "Philippines"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_PK
+typeOf: dcs:SDG_CounterpartEnum
+name: "Pakistan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_PL
+typeOf: dcs:SDG_CounterpartEnum
+name: "Poland"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_PS
+typeOf: dcs:SDG_CounterpartEnum
+name: "State of Palestine"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_PY
+typeOf: dcs:SDG_CounterpartEnum
+name: "Paraguay"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_RO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Romania"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_RS
+typeOf: dcs:SDG_CounterpartEnum
+name: "Serbia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_RW
+typeOf: dcs:SDG_CounterpartEnum
+name: "Rwanda"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SD
+typeOf: dcs:SDG_CounterpartEnum
+name: "Sudan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SL
+typeOf: dcs:SDG_CounterpartEnum
+name: "Sierra Leone"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SN
+typeOf: dcs:SDG_CounterpartEnum
+name: "Senegal"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Somalia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SR
+typeOf: dcs:SDG_CounterpartEnum
+name: "Suriname"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SS
+typeOf: dcs:SDG_CounterpartEnum
+name: "South Sudan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SV
+typeOf: dcs:SDG_CounterpartEnum
+name: "El Salvador"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SY
+typeOf: dcs:SDG_CounterpartEnum
+name: "Syrian Arab Republic"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_SZ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Eswatini"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_TG
+typeOf: dcs:SDG_CounterpartEnum
+name: "Togo"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_TH
+typeOf: dcs:SDG_CounterpartEnum
+name: "Thailand"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_TJ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Tajikistan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_TN
+typeOf: dcs:SDG_CounterpartEnum
+name: "Tunisia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_TO
+typeOf: dcs:SDG_CounterpartEnum
+name: "Tonga"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_TR
+typeOf: dcs:SDG_CounterpartEnum
+name: "Turkey"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_TZ
+typeOf: dcs:SDG_CounterpartEnum
+name: "United Republic of Tanzania"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_UA
+typeOf: dcs:SDG_CounterpartEnum
+name: "Ukraine"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_UG
+typeOf: dcs:SDG_CounterpartEnum
+name: "Uganda"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_UZ
+typeOf: dcs:SDG_CounterpartEnum
+name: "Uzbekistan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_VN
+typeOf: dcs:SDG_CounterpartEnum
+name: "Viet Nam"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_VU
+typeOf: dcs:SDG_CounterpartEnum
+name: "Vanuatu"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_WS
+typeOf: dcs:SDG_CounterpartEnum
+name: "Samoa"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_XK
+typeOf: dcs:SDG_CounterpartEnum
+name: "Kosovo"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_YE
+typeOf: dcs:SDG_CounterpartEnum
+name: "Yemen"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_ZA
+typeOf: dcs:SDG_CounterpartEnum
+name: "South Africa"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_ZM
+typeOf: dcs:SDG_CounterpartEnum
+name: "Zambia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_ZW
+typeOf: dcs:SDG_CounterpartEnum
+name: "Zimbabwe"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CounterpartEnum_nan
+typeOf: dcs:SDG_CounterpartEnum
+name: "Namibia"
+isProvisional: dcs:True
+
+Node: dcid:sdg_customBreakdown
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_CustomBreakdownEnum
+name: "Custom Breakdown"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CustomBreakdownEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C01
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C01"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C02
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C02"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C03
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C03"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C04
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C04"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C05
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C05"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C06
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C06"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C07
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C07"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C08
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C08"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C09
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C09"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C10
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C10"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C100
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C100"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C101
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C101"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C102
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C102"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C103
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C103"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C104
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C104"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C105
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C105"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C106
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C106"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C107
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C107"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C108
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C108"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C109
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C109"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C11
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C11"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C110
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C110"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C111
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C111"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C112
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C112"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C113
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C113"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C114
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C114"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C115
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C115"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C116
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C116"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C117
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C117"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C118
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C118"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C119
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C119"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C12
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C12"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C120
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C120"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C121
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C121"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C122
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C122"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C123
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C123"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C124
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C124"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C125
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C125"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C126
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C126"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C127
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C127"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C128
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C128"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C129
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C129"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C13
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C13"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C130
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C130"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C131
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C131"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C132
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C132"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C133
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C133"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C134
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C134"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C135
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C135"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C136
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C136"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C137
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C137"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C138
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C138"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C139
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C139"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C14
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C14"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C140
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C140"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C141
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C141"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C142
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C142"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C143
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C143"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C144
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C144"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C145
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C145"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C146
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C146"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C147
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C147"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C148
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C148"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C149
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C149"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C15
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C15"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C150
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C150"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C16
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C16"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C17
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C17"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C18
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C18"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C19
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C19"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C20
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C20"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C21
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C21"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C22
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C22"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C23
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C23"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C24
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C24"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C25
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C25"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C26
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C26"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C27
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C27"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C28
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C28"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C29
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C29"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C30
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C30"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C31
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C31"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C32
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C32"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C33
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C33"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C34
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C34"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C35
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C35"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C36
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C36"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C37
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C37"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C38
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C38"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C39
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C39"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C40
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C40"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C41
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C41"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C42
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C42"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C43
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C43"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C44
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C44"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C45
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C45"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C46
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C46"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C47
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C47"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C48
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C48"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C49
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C49"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C50
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C50"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C51
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C51"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C52
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C52"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C53
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C53"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C54
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C54"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C55
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C55"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C56
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C56"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C57
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C57"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C58
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C58"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C59
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C59"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C60
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C60"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C61
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C61"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C62
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C62"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C63
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C63"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C64
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C64"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C65
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C65"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C66
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C66"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C67
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C67"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C68
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C68"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C69
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C69"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C70
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C70"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C71
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C71"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C72
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C72"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C73
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C73"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C74
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C74"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C75
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C75"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C76
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C76"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C77
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C77"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C78
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C78"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C79
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C79"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C80
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C80"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C81
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C81"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C82
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C82"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C83
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C83"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C84
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C84"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C85
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C85"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C86
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C86"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C87
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C87"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C88
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C88"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C89
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C89"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C90
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C90"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C91
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C91"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C92
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C92"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C93
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C93"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C94
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C94"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C95
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C95"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C96
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C96"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C97
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C97"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C98
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C98"
+isProvisional: dcs:True
+
+Node: dcid:SDG_CustomBreakdownEnum_C99
+typeOf: dcs:SDG_CustomBreakdownEnum
+name: "C99"
+isProvisional: dcs:True
+
+Node: dcid:sdg_deviationLevel
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_DeviationLevelEnum
+name: "Deviation Level"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DeviationLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DeviationLevelEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DeviationLevelEnum_DL_EXTREME
+typeOf: dcs:SDG_DeviationLevelEnum
+name: "Extreme (75-100%)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DeviationLevelEnum_DL_HIGH
+typeOf: dcs:SDG_DeviationLevelEnum
+name: "High (50-75%)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DeviationLevelEnum_DL_LOW
+typeOf: dcs:SDG_DeviationLevelEnum
+name: "Low (0-25%)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DeviationLevelEnum_DL_MEDIUM
+typeOf: dcs:SDG_DeviationLevelEnum
+name: "Medium (25-50%)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DisabilityStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DisabilityStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DisabilityStatusEnum_PD
+typeOf: dcs:SDG_DisabilityStatusEnum
+name: "Persons with disability"
+isProvisional: dcs:True
+
+Node: dcid:SDG_DisabilityStatusEnum_PWD
+typeOf: dcs:SDG_DisabilityStatusEnum
+name: "Persons without disability"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationLevelEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGGA_01_02
+typeOf: dcs:SDG_EducationLevelEnum
+name: "No primary schooling"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_02T8
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Pre-primary to tertiary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_0_1
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Primary education or less"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_1T3
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Primary and secondary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_1_2
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Primary and lower secondary education (basic education)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_2_3
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Secondary"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_3_4
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Secondary and post-secondary non-tertiary education (intermediate)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_5T8
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Tertiary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_AGG_GE2
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Secondary education or above"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_0
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Less than primary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_01
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Never attended an education programme / No schooling"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_02
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Some early childhood education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_03
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Some primary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_0_G23
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Grades 2/3"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_1
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Primary education, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_2
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Lower secondary education, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_3
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Upper secondary education, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_4
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Post-secondary non-tertiary education, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_5
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Short-cycle tertiary education, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_6
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Bachelor’s or equivalent level, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_7
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Master’s or equivalent level, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11A_8
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Doctoral or equivalent level, sufficient for level completion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_0
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Early childhood education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_01
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Early childhood educational development "
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_02
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Pre-primary"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_1
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Primary"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_10
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Primary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_2
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Lower secondary"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_24
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Lower secondary general education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_25
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Lower secondary vocational education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_25_35_45
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Vocational secondary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_3
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Upper secondary"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_34
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Upper secondary general education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_35
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Upper secondary vocational education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_4
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Post-secondary non-tertiary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_44
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Post-secondary non-tertiary general education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_45
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Post-secondary non-tertiary vocational education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_5
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Short-cycle tertiary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_54
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Short-cycle tertiary general education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_55
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Short-cycle tertiary vocational education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_6
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Bachelor’s or equivalent level"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_7
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Master’s or equivalent level"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_8
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Doctoral or equivalent level"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_9
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Not elsewhere classified   "
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED11_99
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Not elsewhere classified "
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_0
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Pre-primary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_1
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Primary education or first stage of basic education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_2
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Lower secondary or second stage of basic education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_3
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Upper secondary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_4
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Post-secondary non-tertiary education"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_5
+typeOf: dcs:SDG_EducationLevelEnum
+name: "First stage of tertiary education (not leading directly to an advanced research qualification)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_5A
+typeOf: dcs:SDG_EducationLevelEnum
+name: "First stage of tertiary education (theoretically based/research preparatory)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_5B
+typeOf: dcs:SDG_EducationLevelEnum
+name: "First stage of tertiary education (practical/technical/occupationally specific)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_EducationLevelEnum_ISCED97_6
+typeOf: dcs:SDG_EducationLevelEnum
+name: "Second stage of tertiary education (leading to an advanced research qualification)"
+isProvisional: dcs:True
+
+Node: dcid:sdg_fiscalInterventionStage
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_FiscalInterventionStageEnum
+name: "Fiscal Intervention Stage"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FiscalInterventionStageEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "FiscalInterventionStageEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FiscalInterventionStageEnum_FIS_POSTFIS_CON_INC
+typeOf: dcs:SDG_FiscalInterventionStageEnum
+name: "Postfiscal consumable income"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FiscalInterventionStageEnum_FIS_POSTFIS_DIS_INC
+typeOf: dcs:SDG_FiscalInterventionStageEnum
+name: "Postfiscal disposable income"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FiscalInterventionStageEnum_FIS_PREFIS_INC
+typeOf: dcs:SDG_FiscalInterventionStageEnum
+name: "Prefiscal income"
+isProvisional: dcs:True
+
+Node: dcid:sdg_foodWasteSector
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_FoodWasteSectorEnum
+name: "Food Waste Sector"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FoodWasteSectorEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "FoodWasteSectorEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FoodWasteSectorEnum_FWS_HHS
+typeOf: dcs:SDG_FoodWasteSectorEnum
+name: "Households"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FoodWasteSectorEnum_FWS_MNFC
+typeOf: dcs:SDG_FoodWasteSectorEnum
+name: "Manufacturing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FoodWasteSectorEnum_FWS_OOHC
+typeOf: dcs:SDG_FoodWasteSectorEnum
+name: "Out-of-home consumption"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FoodWasteSectorEnum_FWS_RTL
+typeOf: dcs:SDG_FoodWasteSectorEnum
+name: "Retail"
+isProvisional: dcs:True
+
+Node: dcid:sdg_frequencyOfChlorophyllAConcentration
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_FrequencyOfChlorophyllAConcentrationEnum
+name: "Frequency Of Chlorophyll A Concentration"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FrequencyOfChlorophyllAConcentrationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "FrequencyOfChlorophyllAConcentrationEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FrequencyOfChlorophyllAConcentrationEnum_FCC_E
+typeOf: dcs:SDG_FrequencyOfChlorophyllAConcentrationEnum
+name: "Extreme"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FrequencyOfChlorophyllAConcentrationEnum_FCC_H
+typeOf: dcs:SDG_FrequencyOfChlorophyllAConcentrationEnum
+name: "High"
+isProvisional: dcs:True
+
+Node: dcid:SDG_FrequencyOfChlorophyllAConcentrationEnum_FCC_M
+typeOf: dcs:SDG_FrequencyOfChlorophyllAConcentrationEnum
+name: "Moderate"
+isProvisional: dcs:True
+
+Node: dcid:sdg_geoInfoType
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_GeoInfoTypeEnum
+name: "Geo Info Type"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GeoInfoTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GeoInfoTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GeoInfoTypeEnum_GML
+typeOf: dcs:SDG_GeoInfoTypeEnum
+name: "Geography Markup Language"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GeoInfoTypeEnum_GMLJP2
+typeOf: dcs:SDG_GeoInfoTypeEnum
+name: "GML in JPEG 2000 for Geographic Imagery"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GeoInfoTypeEnum_GeoJSON_1_1
+typeOf: dcs:SDG_GeoInfoTypeEnum
+name: "GeoJSON version 1.0"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GeoInfoTypeEnum_KML_2_2
+typeOf: dcs:SDG_GeoInfoTypeEnum
+name: "KML version 2.2"
+isProvisional: dcs:True
+
+Node: dcid:sdg_governmentName
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_GovernmentNameEnum
+name: "Government Name"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GovernmentNameEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_ARTIGAS
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Artigas"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_AYUNTAMIENTO_DE_BARCELONA
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Ayuntamiento de Barcelona"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CANELONES
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Canelones"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CERRO_LARGO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Cerro Largo"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CITY_COUNTY_OF_SAN_FRANCISCO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "City & county of San Francisco"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CITY_OF_PORTLAND_OREGON
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "City of Portland, Oregon"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CITY_OF_POZNAN
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "City of Poznan"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CITY_OF_STAVANGER
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "City of Stavanger"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CITY_OF_TRONDHEIM
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "City of Trondheim"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CITY_OF_WARSAW
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "City of Warsaw"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_CIT_-OF_WROCLAW
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "City of Wroclaw"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_COLONIA
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Colonia"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_COMUNIDAD_AUTONOMA_DEL_PAIS_VASCO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Comunidad Autónoma del País Vasco"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_FLORES
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Flores"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_FLORIDA
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Florida"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_GREATER_POLAND_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Greater Poland Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_KING_COUNTY_WASHINGTON
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "King County, Washington"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_LAVALLEJA
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Lavalleja"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_LESSER_POLAND_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Lesser Poland Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_LODZ_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Lódz Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_LOWER_SILESIAN_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Lower Silesian Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_MALDONADO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Maldonado"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_MASOVIAN_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Masovian Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_MONTEVIDEO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Montevideo"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_PAYSANDU
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Paysandú"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_PODKARPACKIE_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Podkarpackie Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_POMERANIAN_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Pomeranian Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_RIO_NEGRO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Río Negro"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_RIVERA
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Rivera"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_SALTO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Salto"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_SAN_JOSE
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "San José"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_SILESIAN_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Silesian Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_STATE_OF_MINNESOTA
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "State of Minnesota"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_SWIETOKRZYSKIE_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Swietokrzyskie Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_TACUAREMBO
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Tacuarembó"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_TREINTA_Y_TRES
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Treinta Y Tres"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_VLAAMSE_OVERHEID
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Vlaamse overheid (Government of Flanders)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_WALLOON_REGION
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "Walloon region"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GovernmentNameEnum_WEST_POMERANIAN_VOIVODESHIP
+typeOf: dcs:SDG_GovernmentNameEnum
+name: "West Pomeranian Voivodeship"
+isProvisional: dcs:True
+
+Node: dcid:sdg_groundsOfDiscrimination
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Grounds Of Discrimination"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GroundsOfDiscriminationEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_AGE
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Age"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_CLOTH
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Clothing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_COLR
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Colour"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_DIS
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Disability"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_DISHEA
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Disability or health status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_EDU
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Educational"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_ETH
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Ethnic"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_ETHCOLLAN
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Ethnicity, colour, language"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_ETHCOLLANMIG
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Ethnic, colour, language, migration"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_ETHCOLLANNAL
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Ethnicity, colour, language, nationality"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_ETHI
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Ethnic or immigration status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_ETHRACECOLLAN
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Ethnicity, race, colour, language"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_FAM
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Family status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_GENID
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Gender identity"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_GEO
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Geographic location"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_HEALTH
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Health status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_LANDIA
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Language  or dialect"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_MAR
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Marital status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_MARFAM
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Marital and family status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_MIG
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Migration status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_NATION
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Nationality"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_NETW
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Networking"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_ORIGIN
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Place of origin"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_OTHER
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Other"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_PHYSCOND
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Physical condition"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_POLVIEW
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Political opinion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_PREGY
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Pregnancy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_RACE
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Race"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_RACECOLR
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Race or Colour"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_RELIGION
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Religion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_RES
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Place of residence"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_SEX
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Sex"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_SEXGENID
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Sexual/gender identity"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_SEXO
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Sexual orientation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_SEXOGENID
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Sexual orientation and gender identity"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_SOCIOECON
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Socioeconomic status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_TRAD
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Traditions"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_WEALTH
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Wealth status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_WEDLOCK
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Born out of wedlock"
+isProvisional: dcs:True
+
+Node: dcid:SDG_GroundsOfDiscriminationEnum_GRD_WORK
+typeOf: dcs:SDG_GroundsOfDiscriminationEnum
+name: "Work status"
+isProvisional: dcs:True
+
+Node: dcid:sdg_hazardType
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_HazardTypeEnum
+name: "Hazard Type"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HazardTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_ACIDR
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Acid rain"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_ACIDT
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Accident"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_ALLUV
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Alluvion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_ANIAK
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Animal Attack"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_AVALE
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Avalanche"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_BIOGL
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Biological"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_CHESP
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Chemical Spill"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_COLDW
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Cold Wave"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_CONTM
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Contamination"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_COSER
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Coastal Erosion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_COSFL
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Coastal Flood"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_CSOLD
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Consolidate"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_CYCLN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Cyclone"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_DFRST
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Deforestation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_DROUG
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Drought"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_DZUD
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Dzud"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_ELEST
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Electric Storm"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_EPIDM
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Epidemics"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_EPIZT
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Epizootic"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_EROSN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Erosion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_ERQAK
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Earthquake"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_EXPLN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Explosion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_EXTEM
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Extreme Temperature"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_FIREX
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Fire"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_FLOOD
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Flood"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_FLSFL
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Flash Flood"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_FOGXX
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Fog"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_FROST
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Frost"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_FRZRN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Freezing Rain"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_GLCFL
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Glacial Lake Outburst Flood"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_HAILS
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Hailstorm"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_HETWA
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Heat Wave"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_HEVRN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Heavy Rain"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_INFET
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Insect Infestation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_INTOX
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Intoxication"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_LAHAR
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Lahar"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_LIQFN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Liquefaction"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_LNDRG
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Land Degradation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_LNDSL
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Landslide"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_NUCIN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Nuclear Incident"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_OTHER
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Other"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_PANIC
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Panic"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_PEATX
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Peat"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_PESTX
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Pest"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_PLGUE
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Plague"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_POLUT
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Pollution"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_SANDS
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Sand Storm"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_SEDMN
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Sedimentation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_SNSTM
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Snowstorm"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_STCOL
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Structural Collapse"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_STORM
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Storm"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_STUCK
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Stuck"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_SUBSD
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Subsidence"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_TECHH
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Technological Hazard"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_TORND
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Tornado"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_TSUNM
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Tsunami"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_VOLER
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Volcanic Eruption"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_WLDFR
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Wild Fire"
+isProvisional: dcs:True
+
+Node: dcid:SDG_HazardTypeEnum_HZT_WNDST
+typeOf: dcs:SDG_HazardTypeEnum
+name: "Windstorm"
+isProvisional: dcs:True
+
+Node: dcid:sdg_ihrCapacity
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_IhrCapacityEnum
+name: "Ihr Capacity"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "IhrCapacityEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_01
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "National legislation, policy and financing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_02
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Coordination and National Focal Point communications"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_03
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Surveillance"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_04
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Response"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_05
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Preparedness"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_06
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Risk communication"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_07
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Human resources"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_08
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Laboratory"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_09
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Points of entry"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_10
+typeOf: dcs:SDG_IhrCapacityEnum
+name: " Zoonotic events"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_11
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Food safety"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_12
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Chemical events"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_IHR_13
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Radionuclear emergencies"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C01
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Policy, Legal and normative Instruments to implement IHR"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C02
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "IHR Coordination, National IHR Focal Point functions and advocacy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C03
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Financing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C04
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Laboratory"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C05
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Surveillance"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C06
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Human resources"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C07
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Health emergency management"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C08
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Health services provision"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C09
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Infection prevention and control (IPC)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C10
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Risk communication and community engagement (RCCE)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C11
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Points of entry (PoEs) and border health"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C12
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Zoonotic diseases"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C13
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Food safety"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C14
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Chemical events"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR2_C15
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Radiation emergencies"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_01
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Legislation and Financing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_02
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "IHR Coordination and National IHR Focal Point Functions"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_03
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Zoonotic events and the human–animal interface"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_04
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Food safety"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_05
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Laboratory"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_06
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Surveillance"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_07
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Human resources"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_08
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "National Health Emergency Framework"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_09
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Health Service Provision"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_10
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Risk Communication"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_11
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Points of entry"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_12
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Chemical events"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IhrCapacityEnum_SPAR_13
+typeOf: dcs:SDG_IhrCapacityEnum
+name: "Radiation emergencies"
+isProvisional: dcs:True
+
+Node: dcid:sdg_illicitFinancialFlows
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Illicit Financial Flows"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "IllicitFinancialFlowsEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_COR
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Corruption"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_COR_BRB
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Bribery"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_COR_OTHR
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Other corruption"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_COR_TIN
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Trading in influence "
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ETF
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Exploitation-type and terrorism financing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ETF_EXT
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Extortion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ETF_FRA
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Fraud"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ETF_OTHR
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Other exploitation-type and terrorism financing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ETF_THE
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Theft"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ETF_TIP
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Trafficking in persons"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ILM
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Illegal markets"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ILM_DRG
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Drug trafficking"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ILM_FIR
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Firearms trafficking"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ILM_IMN
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Illegal mining"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ILM_OTHR
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Other illegal markets"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ILM_SOM
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Smuggling of migrants"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_ILM_WLD
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Wildlife trafficking"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_TXC
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Tax and commercial IFFs"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_TXC_ATA
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Aggressive tax avoidance"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_TXC_TEV
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Tax evasion"
+isProvisional: dcs:True
+
+Node: dcid:SDG_IllicitFinancialFlowsEnum_IFF_TXC_TMI
+typeOf: dcs:SDG_IllicitFinancialFlowsEnum
+name: "Trade misinvoicing"
+isProvisional: dcs:True
+
+Node: dcid:sdg_landCover
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_LandCoverEnum
+name: "Land Cover"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LandCoverEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_ART
+typeOf: dcs:SDG_LandCoverEnum
+name: "Artificial surfaces"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_CRP
+typeOf: dcs:SDG_LandCoverEnum
+name: "Croplands"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_GRS
+typeOf: dcs:SDG_LandCoverEnum
+name: "Grassland"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_IWB
+typeOf: dcs:SDG_LandCoverEnum
+name: "Inland water bodies"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_MGCI
+typeOf: dcs:SDG_LandCoverEnum
+name: "Mountain Green Cover Index (MGCI)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_PSG
+typeOf: dcs:SDG_LandCoverEnum
+name: "Permanent snow and glaciers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_SAF
+typeOf: dcs:SDG_LandCoverEnum
+name: "Shrubs and/or herbaceous vegetation, aquatic or regularly flooded"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_SHR
+typeOf: dcs:SDG_LandCoverEnum
+name: "Shrub-covered areas"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_SNV
+typeOf: dcs:SDG_LandCoverEnum
+name: "Sparsely natural vegetated areas"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_TBL
+typeOf: dcs:SDG_LandCoverEnum
+name: "Terrestrial barren land"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LandCoverEnum_LC_TRE
+typeOf: dcs:SDG_LandCoverEnum
+name: "Tree-covered areas"
+isProvisional: dcs:True
+
+Node: dcid:sdg_levelOfGovernment
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_LevelOfGovernmentEnum
+name: "Level Of Government"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelOfGovernmentEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LevelOfGovernmentEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelOfGovernmentEnum_LG_LOCAL
+typeOf: dcs:SDG_LevelOfGovernmentEnum
+name: "Local Government"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelOfGovernmentEnum_LG_NAT
+typeOf: dcs:SDG_LevelOfGovernmentEnum
+name: "National Government"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelOfGovernmentEnum_LG_REG
+typeOf: dcs:SDG_LevelOfGovernmentEnum
+name: "Regional Government"
+isProvisional: dcs:True
+
+Node: dcid:sdg_levelOfRequirement
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_LevelOfRequirementEnum
+name: "Level Of Requirement"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelOfRequirementEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LevelOfRequirementEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelOfRequirementEnum_LOR_ADVANCED
+typeOf: dcs:SDG_LevelOfRequirementEnum
+name: "Advanced"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelOfRequirementEnum_LOR_MINIMUM
+typeOf: dcs:SDG_LevelOfRequirementEnum
+name: "Minimum"
+isProvisional: dcs:True
+
+Node: dcid:sdg_levelStatus
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_LevelStatusEnum
+name: "Level Status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LevelStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_ABT2_ACHIEVE
+typeOf: dcs:SDG_LevelStatusEnum
+name: "National target reflecting ABT2 exists and progress is on track to achieve it"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_ABT2_DIGRESS
+typeOf: dcs:SDG_LevelStatusEnum
+name: "National target reflecting ABT2 exists, but moving away from it"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_ABT2_EXCEED
+typeOf: dcs:SDG_LevelStatusEnum
+name: "National target reflecting ABT2  exists and progress is on track to exceed it"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_ABT2_INSUFNT
+typeOf: dcs:SDG_LevelStatusEnum
+name: "National target reflecting ABT2  exists and progress is there, but at as insufficient rate"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_ABT2_NONTLT
+typeOf: dcs:SDG_LevelStatusEnum
+name: "No national target reflecting ABT 2"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_ABT2_NOPROG
+typeOf: dcs:SDG_LevelStatusEnum
+name: "National target reflecting ABT2  exists, but no progress"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_ADVIMP
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Advanced implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_CLDPR
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Clearly defined procedures"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_DEG_HIG
+typeOf: dcs:SDG_LevelStatusEnum
+name: "High level of implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_DEG_LOW
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Low level of implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_DEG_MHIG
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Medium-high level of implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_DEG_MLOW
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Medium-low level of implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_DEG_VHIG
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Very high level of implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_DEG_VLOW
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Very low level of implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_FULIMP
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Fully implemented"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_HIPAR
+typeOf: dcs:SDG_LevelStatusEnum
+name: "High level of participation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_LI_IMP_ADMNG
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Implementation and adaptive management"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_LI_PLA_DSG
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Plan adoption/designation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_LI_PLDV
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Plan development"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_LOPAR
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Low level of participation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_LS_COMP
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Compilation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_LS_COMPDISSE
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Regular compilation and dissemination"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_LS_DISSEM
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Dissemination"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_MOPAR
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Moderate level of participation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_NCDPR
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Not clearly defined procedures"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_NODATA
+typeOf: dcs:SDG_LevelStatusEnum
+name: "No data available"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_NOTIMP
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Not implemented"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_NOTREL
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Not relevant"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_STAIMP
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Started implementation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_UNDDEV
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Under development"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LevelStatusEnum_nan
+typeOf: dcs:SDG_LevelStatusEnum
+name: "Not applicable"
+isProvisional: dcs:True
+
+Node: dcid:sdg_location
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_LocationEnum
+name: "Location"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LocationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LocationEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LocationEnum_CITY
+typeOf: dcs:SDG_LocationEnum
+name: "City"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LocationEnum_R
+typeOf: dcs:SDG_LocationEnum
+name: "Rural"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LocationEnum_TSUB
+typeOf: dcs:SDG_LocationEnum
+name: "Town and semi-dense area"
+isProvisional: dcs:True
+
+Node: dcid:SDG_LocationEnum_U
+typeOf: dcs:SDG_LocationEnum
+name: "Urban"
+isProvisional: dcs:True
+
+Node: dcid:sdg_managementLevel
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_ManagementLevelEnum
+name: "Management Level"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ManagementLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ManagementLevelEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ManagementLevelEnum_SMM
+typeOf: dcs:SDG_ManagementLevelEnum
+name: "Senior and middle management"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ManagementLevelEnum_T
+typeOf: dcs:SDG_ManagementLevelEnum
+name: "Total management"
+isProvisional: dcs:True
+
+Node: dcid:sdg_migratoryStatus
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_MigratoryStatusEnum
+name: "Migratory Status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MigratoryStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "MigratoryStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MigratoryStatusEnum_MS_EUMIGRANT
+typeOf: dcs:SDG_MigratoryStatusEnum
+name: "EU Migrants"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MigratoryStatusEnum_MS_MIGRANT
+typeOf: dcs:SDG_MigratoryStatusEnum
+name: "Migrants"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MigratoryStatusEnum_MS_NOMIGRANT
+typeOf: dcs:SDG_MigratoryStatusEnum
+name: "Non-migrant"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MigratoryStatusEnum_MS_NONEUMIGRANT
+typeOf: dcs:SDG_MigratoryStatusEnum
+name: "Non-EU Migrants"
+isProvisional: dcs:True
+
+Node: dcid:sdg_modeOfTransportation
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_ModeOfTransportationEnum
+name: "Mode Of Transportation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ModeOfTransportationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ModeOfTransportationEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ModeOfTransportationEnum_MOT_AIR
+typeOf: dcs:SDG_ModeOfTransportationEnum
+name: "Air transport"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ModeOfTransportationEnum_MOT_IWW
+typeOf: dcs:SDG_ModeOfTransportationEnum
+name: "Inland waterway transport"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ModeOfTransportationEnum_MOT_RAI
+typeOf: dcs:SDG_ModeOfTransportationEnum
+name: "Rail transport"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ModeOfTransportationEnum_MOT_ROA
+typeOf: dcs:SDG_ModeOfTransportationEnum
+name: "Road transport"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ModeOfTransportationEnum_MOT_SEA
+typeOf: dcs:SDG_ModeOfTransportationEnum
+name: "Maritime"
+isProvisional: dcs:True
+
+Node: dcid:sdg_mountainElevation
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_MountainElevationEnum
+name: "Mountain Elevation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MountainElevationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "MountainElevationEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MountainElevationEnum_ELV_1
+typeOf: dcs:SDG_MountainElevationEnum
+name: "Elevation > 4500 meters"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MountainElevationEnum_ELV_2
+typeOf: dcs:SDG_MountainElevationEnum
+name: "Elevation 3500–4500 meters"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MountainElevationEnum_ELV_3
+typeOf: dcs:SDG_MountainElevationEnum
+name: "Elevation 2500–3500 meters"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MountainElevationEnum_ELV_4
+typeOf: dcs:SDG_MountainElevationEnum
+name: "Elevation 1500–2500 meters and slope > 2"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MountainElevationEnum_ELV_5
+typeOf: dcs:SDG_MountainElevationEnum
+name: "Elevation 1000–1500 meters and slope > 5 or local elevation range (LER 7 kilometer radius) > 300 meters"
+isProvisional: dcs:True
+
+Node: dcid:SDG_MountainElevationEnum_ELV_6
+typeOf: dcs:SDG_MountainElevationEnum
+name: "Elevation 300–1000 meters and local elevation range (7 kilometer radius) > 300 meters"
+isProvisional: dcs:True
+
+Node: dcid:sdg_nameOfInternationalAgreement
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_NameOfInternationalAgreementEnum
+name: "Name Of International Agreement"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalAgreementEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "NameOfInternationalAgreementEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalAgreementEnum_BASCOV
+typeOf: dcs:SDG_NameOfInternationalAgreementEnum
+name: "Basel Convention"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalAgreementEnum_MONPRO
+typeOf: dcs:SDG_NameOfInternationalAgreementEnum
+name: "Montreal Protocol"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalAgreementEnum_ROTCON
+typeOf: dcs:SDG_NameOfInternationalAgreementEnum
+name: "Rotterdam Convention"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalAgreementEnum_STOCON
+typeOf: dcs:SDG_NameOfInternationalAgreementEnum
+name: "Stockholm Convention"
+isProvisional: dcs:True
+
+Node: dcid:sdg_nameOfInternationalInstitution
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "Name Of International Institution"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "NameOfInternationalInstitutionEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_ADB
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "Asian Development Bank"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_AFDB
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "African Development Bank"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_ECOSOC
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "UN Economic and Social Council"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_FSB
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "Financial Stability Board"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_IADB
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "Inter-American Development Bank"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_IBRD
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "International Bank for Reconstruction and Development"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_IFC
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "International Finance Corporation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_IMF
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "International Monetary Fund"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_UNGA
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "UN General Assembly"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_UNSC
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "UN Security Council"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfInternationalInstitutionEnum_IO_WTO
+typeOf: dcs:SDG_NameOfInternationalInstitutionEnum
+name: "World Trade Organisation"
+isProvisional: dcs:True
+
+Node: dcid:sdg_nameOfNonCommunicableDisease
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_NameOfNonCommunicableDiseaseEnum
+name: "Name Of Non Communicable Disease"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfNonCommunicableDiseaseEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "NameOfNonCommunicableDiseaseEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfNonCommunicableDiseaseEnum_NCD_CARDIO
+typeOf: dcs:SDG_NameOfNonCommunicableDiseaseEnum
+name: "Cardiovascular disease"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfNonCommunicableDiseaseEnum_NCD_CNCR
+typeOf: dcs:SDG_NameOfNonCommunicableDiseaseEnum
+name: "Cancer"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfNonCommunicableDiseaseEnum_NCD_CRESPD
+typeOf: dcs:SDG_NameOfNonCommunicableDiseaseEnum
+name: "Chronic respiratory disease"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfNonCommunicableDiseaseEnum_NCD_DIABTS
+typeOf: dcs:SDG_NameOfNonCommunicableDiseaseEnum
+name: "Diabetes"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NameOfNonCommunicableDiseaseEnum_NCD_NCOM
+typeOf: dcs:SDG_NameOfNonCommunicableDiseaseEnum
+name: "Non-communicable disease: Cardiovascular disease, cancer, diabetes, or chronic respiratory disease"
+isProvisional: dcs:True
+
+Node: dcid:sdg_parliamentaryCommittees
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Parliamentary Committees"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ParliamentaryCommitteesEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_DEFENCE
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Defence"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_FAFF_DEF
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Foreign Affairs and Defence"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_FAFF_DEF_FIN
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Foreign Affairs, Defence and Finance"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_FAFF_DEF_HR
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Foreign Affairs, Defence and Human Rights"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_FAFF_HR
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Foreign Affairs and Human Rights"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_FINANCE
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Finance"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_FOR_AFF
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Foreign Affairs"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_GEN_EQU
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Gender Equality"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_HR_GEQU
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Human Rights and Gender Equality"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ParliamentaryCommitteesEnum_PC_HUM_RIGH
+typeOf: dcs:SDG_ParliamentaryCommitteesEnum
+name: "Human Rights"
+isProvisional: dcs:True
+
+Node: dcid:sdg_policyDomains
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_PolicyDomainsEnum
+name: "Policy Domains"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyDomainsEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PolicyDomainsEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyDomainsEnum_PD_1
+typeOf: dcs:SDG_PolicyDomainsEnum
+name: "Domain 1. Migrant rights"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyDomainsEnum_PD_2
+typeOf: dcs:SDG_PolicyDomainsEnum
+name: "Domain 2. Whole-of-government/ Evidence-based policies"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyDomainsEnum_PD_3
+typeOf: dcs:SDG_PolicyDomainsEnum
+name: "Domain 3. Cooperation and partnerships"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyDomainsEnum_PD_4
+typeOf: dcs:SDG_PolicyDomainsEnum
+name: "Domain 4. Socioeconomic well-being"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyDomainsEnum_PD_5
+typeOf: dcs:SDG_PolicyDomainsEnum
+name: "Domain 5. Mobility dimensions of crises"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyDomainsEnum_PD_6
+typeOf: dcs:SDG_PolicyDomainsEnum
+name: "Domain 6. Safe, orderly and regular migration"
+isProvisional: dcs:True
+
+Node: dcid:sdg_policyInstruments
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_PolicyInstrumentsEnum
+name: "Policy Instruments"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyInstrumentsEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PolicyInstrumentsEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyInstrumentsEnum_POL_ECONFIS
+typeOf: dcs:SDG_PolicyInstrumentsEnum
+name: "Economic and fiscal instruments (taxes and tax incentives, grants, preferential loans, etc.) "
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyInstrumentsEnum_POL_MACRO
+typeOf: dcs:SDG_PolicyInstrumentsEnum
+name: "Macro policies (e.g. national strategies/action plans, new institutions/entities)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyInstrumentsEnum_POL_REGLEG
+typeOf: dcs:SDG_PolicyInstrumentsEnum
+name: "Regulatory and legal instruments (e.g. laws, standards, enforcement measures)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PolicyInstrumentsEnum_POL_VOLSRG
+typeOf: dcs:SDG_PolicyInstrumentsEnum
+name: "Voluntary and self-regulation schemes (e.g. sectoral partnerships, codes of conduct, CSR initiatives)"
+isProvisional: dcs:True
+
+Node: dcid:sdg_populationGroup
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_PopulationGroupEnum
+name: "Population Group"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PopulationGroupEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PopulationGroupEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PopulationGroupEnum_POP_A
+typeOf: dcs:SDG_PopulationGroupEnum
+name: "Population Group A"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PopulationGroupEnum_POP_B
+typeOf: dcs:SDG_PopulationGroupEnum
+name: "Population Group B"
+isProvisional: dcs:True
+
+Node: dcid:SDG_PopulationGroupEnum_POP_C
+typeOf: dcs:SDG_PopulationGroupEnum
+name: "Population Group C"
+isProvisional: dcs:True
+
+Node: dcid:sdg_quantile
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_QuantileEnum
+name: "Quantile"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "QuantileEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_B40
+typeOf: dcs:SDG_QuantileEnum
+name: "Bottom 40%"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_B50
+typeOf: dcs:SDG_QuantileEnum
+name: "Bottom 50%"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_Q1
+typeOf: dcs:SDG_QuantileEnum
+name: "Quantile 1 (poorest)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_Q2
+typeOf: dcs:SDG_QuantileEnum
+name: "Quantile 2"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_Q3
+typeOf: dcs:SDG_QuantileEnum
+name: "Quantile 3"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_Q4
+typeOf: dcs:SDG_QuantileEnum
+name: "Quantile 4"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_Q5
+typeOf: dcs:SDG_QuantileEnum
+name: "Quantile 5 (richest)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_R50
+typeOf: dcs:SDG_QuantileEnum
+name: "Richest 50%"
+isProvisional: dcs:True
+
+Node: dcid:SDG_QuantileEnum_R60
+typeOf: dcs:SDG_QuantileEnum
+name: "Richest 60%"
+isProvisional: dcs:True
+
+Node: dcid:sdg_reportOrdinal
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_ReportOrdinalEnum
+name: "Report Ordinal"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ReportOrdinalEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_EIGHTH
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "Eighth"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_FIFTH
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "Fifth"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_FIRST
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "First"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_FOURTH
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "Fourth"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_SECOND
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "Second"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_SEVENTH
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "Seventh"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_SIXTH
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "Sixth"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ReportOrdinalEnum_RO_THIRD
+typeOf: dcs:SDG_ReportOrdinalEnum
+name: "Third"
+isProvisional: dcs:True
+
+Node: dcid:sdg_serviceAttribute
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_ServiceAttributeEnum
+name: "Service Attribute"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ServiceAttributeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ServiceAttributeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ServiceAttributeEnum_SA_ACCESS
+typeOf: dcs:SDG_ServiceAttributeEnum
+name: "Easy to get to the place"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ServiceAttributeEnum_SA_AFFORD
+typeOf: dcs:SDG_ServiceAttributeEnum
+name: "Affordable"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ServiceAttributeEnum_SA_ATTITUDE
+typeOf: dcs:SDG_ServiceAttributeEnum
+name: "Attitude or courtesy of staff"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ServiceAttributeEnum_SA_AVERAGE
+typeOf: dcs:SDG_ServiceAttributeEnum
+name: "Average of positive responses for the five other aspects"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ServiceAttributeEnum_SA_EQUALITY
+typeOf: dcs:SDG_ServiceAttributeEnum
+name: "Equal treatment"
+isProvisional: dcs:True
+
+Node: dcid:SDG_ServiceAttributeEnum_SA_QUALITY
+typeOf: dcs:SDG_ServiceAttributeEnum
+name: "Clean and in good condition facilities"
+isProvisional: dcs:True
+
+Node: dcid:sdg_severityOfPriceLevels
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_SeverityOfPriceLevelsEnum
+name: "Severity Of Price Levels"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SeverityOfPriceLevelsEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SeverityOfPriceLevelsEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SeverityOfPriceLevelsEnum_SPL_A
+typeOf: dcs:SDG_SeverityOfPriceLevelsEnum
+name: "Abnormal: High food prices"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SeverityOfPriceLevelsEnum_SPL_M
+typeOf: dcs:SDG_SeverityOfPriceLevelsEnum
+name: "Moderate: Moderately high food prices"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SexEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SexEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SexEnum_F
+typeOf: dcs:SDG_SexEnum
+name: "Female"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SexEnum_M
+typeOf: dcs:SDG_SexEnum
+name: "Male"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SexEnum__N
+typeOf: dcs:SDG_SexEnum
+name: "No response"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SexEnum__O
+typeOf: dcs:SDG_SexEnum
+name: "Other"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SexEnum__U
+typeOf: dcs:SDG_SexEnum
+name: "Unknown"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SexEnum__X
+typeOf: dcs:SDG_SexEnum
+name: "Not available"
+isProvisional: dcs:True
+
+Node: dcid:sdg_sourceType
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_SourceTypeEnum
+name: "Source Type"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SourceTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SourceTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SourceTypeEnum_O
+typeOf: dcs:SDG_SourceTypeEnum
+name: "Other"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SourceTypeEnum_R
+typeOf: dcs:SDG_SourceTypeEnum
+name: "Administrative records"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SourceTypeEnum_S
+typeOf: dcs:SDG_SourceTypeEnum
+name: "Household based surveys"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SourceTypeEnum_nan
+typeOf: dcs:SDG_SourceTypeEnum
+name: "Not available"
+isProvisional: dcs:True
+
+Node: dcid:sdg_substanceUseDisorders
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_SubstanceUseDisordersEnum
+name: "Substance Use Disorders"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SubstanceUseDisordersEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SubstanceUseDisordersEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SubstanceUseDisordersEnum_SUD_ALCOHOL
+typeOf: dcs:SDG_SubstanceUseDisordersEnum
+name: "Alcohol"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SubstanceUseDisordersEnum_SUD_ATS
+typeOf: dcs:SDG_SubstanceUseDisordersEnum
+name: "Amphetamine-type stimulants (ATS)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SubstanceUseDisordersEnum_SUD_CANNABIS
+typeOf: dcs:SDG_SubstanceUseDisordersEnum
+name: "Cannabis"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SubstanceUseDisordersEnum_SUD_COCAINE
+typeOf: dcs:SDG_SubstanceUseDisordersEnum
+name: "Cocaine"
+isProvisional: dcs:True
+
+Node: dcid:SDG_SubstanceUseDisordersEnum_SUD_OPIOIDS
+typeOf: dcs:SDG_SubstanceUseDisordersEnum
+name: "Opioids"
+isProvisional: dcs:True
+
+Node: dcid:sdg_tariffRegimeStatus
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TariffRegimeStatusEnum
+name: "Tariff Regime Status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TariffRegimeStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TariffRegimeStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TariffRegimeStatusEnum_MFN
+typeOf: dcs:SDG_TariffRegimeStatusEnum
+name: "Most-Favoured-Nation status"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TariffRegimeStatusEnum_PRF
+typeOf: dcs:SDG_TariffRegimeStatusEnum
+name: "Preferential status"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfFacilities
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfFacilitiesEnum
+name: "Type Of Facilities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfFacilitiesEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfFacilitiesEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfFacilitiesEnum_EDUFAC
+typeOf: dcs:SDG_TypeOfFacilitiesEnum
+name: "Education facilities"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfFacilitiesEnum_HEAFAC
+typeOf: dcs:SDG_TypeOfFacilitiesEnum
+name: "Health facilities"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfMobileTechnology
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfMobileTechnologyEnum
+name: "Type Of Mobile Technology"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfMobileTechnologyEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfMobileTechnologyEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfMobileTechnologyEnum_AL2G
+typeOf: dcs:SDG_TypeOfMobileTechnologyEnum
+name: "At least 2G mobile network"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfMobileTechnologyEnum_AL3G
+typeOf: dcs:SDG_TypeOfMobileTechnologyEnum
+name: "At least 3G mobile network"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfMobileTechnologyEnum_AL4G
+typeOf: dcs:SDG_TypeOfMobileTechnologyEnum
+name: "At least 4G mobile network"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfOccupation
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfOccupationEnum
+name: "Type Of Occupation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfOccupationEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_AGG_PSP
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Total national-level public service personnel (including police, education, health, front-desk administrative and all other public service personnel)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_0
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Armed forces occupations (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_1
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Managers (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_1112
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Senior Managers: Senior Government Officials"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_121_1120
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Other Managers: Managing Directors and Chief Executives and Business Services and Administration Managers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_2
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Professionals (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_21_25_26_242
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Administration Professionals"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_221
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Medical doctors"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_2221_3221
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Nursing personnel"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_222_322
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Nursing and midwifery personnel"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_2261
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Dentists"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_2262
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Pharmacists"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_2612
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "JUDGES"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_2619R
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Registrars included in 2619 - Legal Professionals Not Elsewhere Classified"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_3
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Technicians and associate professionals (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_31T35X32
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Business and Administration Associate Professionals"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_4
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Clerical support workers (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_41
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "General and Keyboard Clerks"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_5
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Service and sales workers (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_6
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Skilled agricultural, forestry and fishery workers (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_7
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Craft and related trades workers (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_8
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Plant and machine operators, and assemblers (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_9
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Elementary occupations (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO08_X
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Not elsewhere classified (isco-08)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_0-1
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Professional, technical and related workers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_2
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Administrative and managerial workers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_3
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Clerical and related workers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_4
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Sales workers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_5
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Service workers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_6
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Agriculture, animal husbandry and forestry workers, fishermen and hunters"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_7-9
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Production and related workers, transport equipment operators and labourers"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_AF
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Armed Forces"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO68_X
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Not elsewhere classified"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_0
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Armed forces (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_1
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Legislators, senior officials and managers (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_2
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Professionals (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_2221
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Medical doctors"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_2222
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Dentists"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_2224
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Pharmacists"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_223
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Nursing and midwifery professionals"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_3
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Technicians and associate professionals (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_4
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Clerks (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_5
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Service workers and shop and market sales workers (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_6
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Skilled agricultural and fishery workers (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_7
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Craft and related trades workers (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_8
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Plant and machine operators and assemblers (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_9
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Elementary occupations (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOccupationEnum_ISCO88_X
+typeOf: dcs:SDG_TypeOfOccupationEnum
+name: "Not elsewhere classified (isco-88)"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfProduct
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfProductEnum
+name: "Type Of Product"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfProductEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_AGG_AGR
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Agricultural products"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_AGG_ARMS
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Arms"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_AGG_CLTH
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Clothing"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_AGG_IND
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Industrial products"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_AGG_OIL
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Oil"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_AGG_TXT
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Textiles"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_CPC2_1_111
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Wheat"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_CPC2_1_112
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Maize"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_CPC2_1_113
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Rice"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_CPC2_1_114
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Sorghum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_CPC2_1_118
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Millet"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF1
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Biomass"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF11
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Crops"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF121
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Crop residues"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF122
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Grazed biomass and fodder crops"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF13
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Wood"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF14
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Wild catch and harvest"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF2
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Metal ores"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF21
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Ferrous ores"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF22
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Non-ferrous ores"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF3
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Non-metallic minerals"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF4
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Fossil fuels"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF41
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Coal"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF413
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Oil shale and tar sands"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF421
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Petroleum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF422
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Natural gas"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF_AGG3A
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Non-metallic minerals - construction dominant"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfProductEnum_MF_AGG3B
+typeOf: dcs:SDG_TypeOfProductEnum
+name: "Non-metallic minerals - industrial or agricultural dominant"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfRenewableTechnology
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Type Of Renewable Technology"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfRenewableTechnologyEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum_TRT_BIOENERGY
+typeOf: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Bioenergy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum_TRT_GEOTHERMAL
+typeOf: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Geothermal energy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum_TRT_HYDROPOWER
+typeOf: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Hydropower"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum_TRT_MARINE
+typeOf: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Marine energy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum_TRT_MULTIPLE
+typeOf: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Multiple renewables"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum_TRT_SOLAR
+typeOf: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Solar energy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfRenewableTechnologyEnum_TRT_WIND
+typeOf: dcs:SDG_TypeOfRenewableTechnologyEnum
+name: "Wind energy"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfSkill
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfSkillEnum
+name: "Type Of Skill"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfSkillEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTATCH
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Sending e-mails with attached files"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTCDV
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Connecting and installing new devices"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTCMFL
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Copying or moving a file or folder"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTCPT
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Using copy and paste tools to duplicate or move information within a document"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTPRGM
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Writing a computer program using a specialized programming language"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTPRVCY
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Changing privacy settings on your device, account or app to limit the sharing of personal data and information (e.g. name, contact information, photos)"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTPST
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Creating electronic presentations with presentation software"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTSCRTY
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Setting up effective security measures (e.g. strong passwords, log-in attempt notification) to protect devices and online accounts"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTSFWR
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Finding, downloading, installing and configuring software"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTSSHT
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Using basic arithmetic formula in a spreadsheet"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTTRFF
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Transferring files between a computer and other devices"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_ICTVRFY
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Verifying the reliability of information found online "
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_LTRCY
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Literacy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_MATH
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Skill: Minimum proficiency in mathematics"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_NMRCY
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Numeracy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSkillEnum_SKILL_READ
+typeOf: dcs:SDG_TypeOfSkillEnum
+name: "Skill: Minimum proficiency in reading"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfSpeed
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfSpeedEnum
+name: "Type Of Speed"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSpeedEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfSpeedEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSpeedEnum_IS_256KT2M
+typeOf: dcs:SDG_TypeOfSpeedEnum
+name: "Between 256 kbps and 2 mbps"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSpeedEnum_IS_2MT10M
+typeOf: dcs:SDG_TypeOfSpeedEnum
+name: "Between 2 mbps and 10 mbps"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSpeedEnum_IS_GE10M
+typeOf: dcs:SDG_TypeOfSpeedEnum
+name: "10 mbps and over"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfSupport
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfSupportEnum
+name: "Type Of Support"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSupportEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfSupportEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSupportEnum_TOS_ADAPTATION
+typeOf: dcs:SDG_TypeOfSupportEnum
+name: "Adaptation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSupportEnum_TOS_CROSS_CUTTING
+typeOf: dcs:SDG_TypeOfSupportEnum
+name: "Cross-cutting"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSupportEnum_TOS_MITIGATION
+typeOf: dcs:SDG_TypeOfSupportEnum
+name: "Mitigation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfSupportEnum_TOS_OTHER
+typeOf: dcs:SDG_TypeOfSupportEnum
+name: "Other"
+isProvisional: dcs:True
+
+Node: dcid:sdg_typeOfWasteTreatment
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Type Of Waste Treatment"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfWasteTreatmentEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_COMPOST
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Composting"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_INCINRT
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Incineration"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_INCINRT_EGY
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Incineration to generate energy"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_LANDFIL
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Landfilling"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_LANDFILCTL
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Landfilling, controlled"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_LANDFILNCTL
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Landfilling, uncontrolled"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_OTHERWM
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Other type of waste management"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfWasteTreatmentEnum_WT_RECYCL
+typeOf: dcs:SDG_TypeOfWasteTreatmentEnum
+name: "Recycling"
+isProvisional: dcs:True
+
+## Measurement methods
+
+Node: dcid:SDG_E_A_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_A_G"
+description: "SDG Measurement Method: [Nature = Estimated data, Observation Status = Normal value, Reporting Type = Global]"
+
+Node: dcid:SDG_G_A_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_G_A_G"
+description: "SDG Measurement Method: [Nature = Global monitoring data, Observation Status = Normal value, Reporting Type = Global]"
+
+Node: dcid:SDG_C_A_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_A_G"
+description: "SDG Measurement Method: [Nature = Country data, Observation Status = Normal value, Reporting Type = Global]"
+
+Node: dcid:SDG_E_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_G"
+description: "SDG Measurement Method: [Nature = Estimated data, Reporting Type = Global]"
+
+Node: dcid:SDG_C_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_G"
+description: "SDG Measurement Method: [Nature = Country data, Reporting Type = Global]"
+
+Node: dcid:SDG_E_I_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_I_G"
+description: "SDG Measurement Method: [Nature = Estimated data, Observation Status = Imputed value (CCSA definition), Reporting Type = Global]"
+
+Node: dcid:SDG_E_E_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_E_G"
+description: "SDG Measurement Method: [Nature = Estimated data, Observation Status = Estimated value, Reporting Type = Global]"
+
+Node: dcid:SDG_CA_A_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_CA_A_G"
+description: "SDG Measurement Method: [Nature = Country adjusted data, Observation Status = Normal value, Reporting Type = Global]"
+
+Node: dcid:SDG_G_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_G_G"
+description: "SDG Measurement Method: [Nature = Global monitoring data, Reporting Type = Global]"
+
+Node: dcid:SDG_M_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_M_G"
+description: "SDG Measurement Method: [Nature = Modeled data, Reporting Type = Global]"
+
+Node: dcid:SDG_C_E_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_E_G"
+description: "SDG Measurement Method: [Nature = Country data, Observation Status = Estimated value, Reporting Type = Global]"
+
+Node: dcid:SDG_C_D_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_D_G"
+description: "SDG Measurement Method: [Nature = Country data, Observation Status = Definition differs, Reporting Type = Global]"
+
+Node: dcid:SDG_C_B_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_B_G"
+description: "SDG Measurement Method: [Nature = Country data, Observation Status = Time series break, Reporting Type = Global]"
+
+Node: dcid:SDG_E_D_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_D_G"
+description: "SDG Measurement Method: [Nature = Estimated data, Observation Status = Definition differs, Reporting Type = Global]"
+
+Node: dcid:SDG_C_P_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_P_G"
+description: "SDG Measurement Method: [Nature = Country data, Observation Status = Provisional value, Reporting Type = Global]"
+
+Node: dcid:SDG_N_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_N_G"
+description: "SDG Measurement Method: [Nature = Non-relevant, Reporting Type = Global]"
+
+Node: dcid:SDG_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_G"
+description: "SDG Measurement Method: [Reporting Type = Global]"
+
+Node: dcid:SDG_CA_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_CA_G"
+description: "SDG Measurement Method: [Nature = Country adjusted data, Reporting Type = Global]"
+
+Node: dcid:SDG_C_G_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_G_G"
+description: "SDG Measurement Method: [Nature = Country data, Observation Status = Experimental value, Reporting Type = Global]"
+
+Node: dcid:SDG_E_G_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_G_G"
+description: "SDG Measurement Method: [Nature = Estimated data, Observation Status = Experimental value, Reporting Type = Global]"
+
+Node: dcid:SDG_C_U_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_C_U_G"
+description: "SDG Measurement Method: [Nature = Country data, Observation Status = Low reliability, Reporting Type = Global]"
+
+Node: dcid:SDG_N_M_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_N_M_G"
+description: "SDG Measurement Method: [Nature = Non-relevant, Observation Status = Missing value; data cannot exist, Reporting Type = Global]"
+
+Node: dcid:SDG_M_A_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_M_A_G"
+description: "SDG Measurement Method: [Nature = Modeled data, Observation Status = Normal value, Reporting Type = Global]"
+
+Node: dcid:SDG_M_E_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_M_E_G"
+description: "SDG Measurement Method: [Nature = Modeled data, Observation Status = Estimated value, Reporting Type = Global]"
+
+Node: dcid:SDG_E_Q_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_Q_G"
+description: "SDG Measurement Method: [Nature = Estimated data, Observation Status = Missing value; suppressed, Reporting Type = Global]"
+
+Node: dcid:SDG_N_A_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_N_A_G"
+description: "SDG Measurement Method: [Nature = Non-relevant, Observation Status = Normal value, Reporting Type = Global]"
+
+## Units
+
+Node: dcid:SDG_BOOL
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Boolean or binary measure"
+
+Node: dcid:SDG_CON_PPP_USD
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Constant PPP USD"
+
+Node: dcid:SDG_CON_USD
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Millions of constant United States dollars"
+
+Node: dcid:SDG_CUR_LCU
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Local currency (millions)"
+
+Node: dcid:SDG_GPERM3
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Micrograms per cubic meter"
+
+Node: dcid:SDG_HA
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Thousands of hectares"
+
+Node: dcid:SDG_IX
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Index"
+
+Node: dcid:SDG_KG
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Kilograms"
+
+Node: dcid:SDG_KG_PER_CON_USD
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Kilograms per constant USD"
+
+Node: dcid:SDG_KM2
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Square kilometers"
+
+Node: dcid:SDG_LITRES_PURE_ALCOHOL
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Litres pure alcohol"
+
+Node: dcid:SDG_MJ_PER_GDP_CON_PPP_USD
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Megajoules per USD constant 2011 PPP GDP"
+
+Node: dcid:SDG_MO_EARN
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Number of months of earnings"
+
+Node: dcid:SDG_M_M3_PER_YR
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Million of cubic metres per annum"
+
+Node: dcid:SDG_NUMBER
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Millions"
+
+Node: dcid:SDG_PER_1000000_POP
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per million population"
+
+Node: dcid:SDG_PER_100000_EMP
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 100,000 employees"
+
+Node: dcid:SDG_PER_100000_LIVE_BIRTHS
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 100,000 live births"
+
+Node: dcid:SDG_PER_100000_POP
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 100,000 population"
+
+Node: dcid:SDG_PER_10000_POP
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 10,000 population"
+
+Node: dcid:SDG_PER_1000_LIVE_BIRTHS
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 1,000 live births"
+
+Node: dcid:SDG_PER_1000_POP
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 1,000 population"
+
+Node: dcid:SDG_PER_1000_UNINFECTED_POP
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 1,000 uninfected population"
+
+Node: dcid:SDG_PER_100_POP
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Per 100 population"
+
+Node: dcid:SDG_PT
+typeOf: dcs:SDG_UnitOfMeasure
+name: "% of children aged 36-59 months"
+
+Node: dcid:SDG_P_KM
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Revenue passenger kilometres"
+
+Node: dcid:SDG_RO
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Ratio"
+
+Node: dcid:SDG_SCORE
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Score"
+
+Node: dcid:SDG_T
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Millions of tonnes"
+
+Node: dcid:SDG_TCO2E
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Million tons of CO2 equivalent"
+
+Node: dcid:SDG_TEU
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Twenty-foot equivalent units (TEUs)"
+
+Node: dcid:SDG_T_KM
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Tonne kilometres"
+
+Node: dcid:SDG_T_PER_HA
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Tonnes per hectare"
+
+Node: dcid:SDG_USD
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Billions of current United States dollars"
+
+Node: dcid:SDG_USD_PER_M3
+typeOf: dcs:SDG_UnitOfMeasure
+name: "United States dollars per cubic metre"
+
+Node: dcid:SDG_W_PER_CAPITA
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Watts per capita"
+
+
+# Below this line are old schema that can be removed after data refresh.
 
 Node: dcid:sdg_activity
 typeOf: schema:Property
