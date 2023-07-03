@@ -11160,3 +11160,24 @@ name: "incorporatedInPlace"
 description: "Place where a company was incorporated"
 domainIncludes: dcs:Company
 rangeIncludes: dcid:Place
+
+Node: MedicalServiceUnit
+typeOf: schema:Class
+subClassOf: schema:MedicalOrganization
+dcid: "MedicalClinic"
+name: "MedicalServiceUnit"
+description: "A medical unit is a military or civilian establishment that provides medical services like Physician care,Inpatient care ,Hospital surgical services,Emergency services,Ambulance services,Dental care services,Vision care services."
+
+Node: RegionalPolyclinic
+typeOf: schema:Class
+subClassOf: schema:MedicalOrganization
+dcid: "MedicalClinic"
+name: "RegionalPolyclinic"
+description: "It is a clinic or health care facility that provides both general and specialist examinations and treatments for a wide variety of diseases."
+
+Node: SanatoriumRehabilitationHospital
+typeOf: schema:Class
+subClassOf: schema:MedicalOrganization
+dcid: "MedicalClinic"
+name: "SanatoriumRehabilitationHospital"
+description: "It is a specialized hospital that provides long-term medical care or treatment.Sanatoriums are often located in the countryside, where the climate is healthy. They offer therapy that typically involves specific regimens, such as: Special diet, Fresh air, Daily exercise"
