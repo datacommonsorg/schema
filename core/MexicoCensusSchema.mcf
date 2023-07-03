@@ -1,0 +1,35 @@
+
+Node: dcid:PlaceOfBirthEnum
+subClassOf: schema:Enumeration
+name: "PlaceOfBirthEnum"
+typeOf: schema:Class
+
+Node: dcid:INEGI_OtherCountries
+typeOf: PlaceOfBirthEnum
+name: "Other Countries"
+description: "People who are Born in other countries except USA, Guatemala, Japan, France and Spain."
+Node: dcid:Years100OrMore
+typeOf: QuantityRange
+name: "100 or More Years of age"
+
+
+Node: dcid:employmentExperienceStatus
+name: "employmentExperienceStatus"
+rangeIncludes: dcs:EmploymentExperienceStatusEnum
+typeOf: schema:Property
+description: "People who have gained employment experience or do not have any experience."
+
+Node: dcid:EmploymentExperienceStatusEnum
+subClassOf: schema:Enumeration
+name: "EmploymentExperienceStatusEnum"
+typeOf: schema:Class
+
+Node: dcid:NoExperience
+typeOf: EmploymentExperienceStatusEnum
+name: "No Experience"
+
+Node: dcid:WithExperience
+typeOf: EmploymentExperienceStatusEnum
+name: "With Experience"
+
+
