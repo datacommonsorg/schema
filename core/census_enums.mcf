@@ -334,6 +334,10 @@ typeOf: dcs:USC_EducationalAttainmentEnum
 dcid: "SomeCollegeOrAssociatesDegree"
 name: "SomeCollegeOrAssociatesDegree"
 
+Node: dcid:HighSchoolGraduate
+typeOf: dcs:USC_EducationalAttainmentEnum
+name: "HighSchoolGraduate"
+
 Node: HighSchoolGraduateIncludesEquivalency
 typeOf: dcs:USC_EducationalAttainmentEnum
 dcid: "HighSchoolGraduateIncludesEquivalency"
@@ -971,8 +975,9 @@ descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_
 description: "Includes all people who have never been married, including people whose only marriage(s) was annulled."
 
 Node: dcid:EverMarried
-typeOf: dcs:USC_MaritalStatusEnum
+typeOf: dcs:USC_MaritalStatusEnum, dcs:MaritalStatusEnum
 name: "EverMarried"
+specializationOf: dcs:Married
 descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 description: "Includes people ever married at the time of interview (including those now married, separated, widowed, or divorced)."
 
@@ -997,9 +1002,10 @@ specializationOf: dcs:Divorced
 name: "DivorcedInThePast12Months"
 
 Node: NowMarried
-typeOf: dcs:USC_MaritalStatusEnum
+typeOf: dcs:USC_MaritalStatusEnum, dcs:MaritalStatusEnum
 dcid: "NowMarried"
 name: "NowMarried"
+specializationOf: dcs:Married
 descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 description: "All people whose current marriage has not ended by widowhood or divorce."
 
@@ -1404,12 +1410,12 @@ dcid: "USC_TypeOfSchoolEnum"
 name: "USC_TypeOfSchoolEnum"
 
 Node: PublicSchool
-typeOf: dcs:USC_TypeOfSchoolEnum
+typeOf: dcs:USC_TypeOfSchoolEnum, dcs:SchoolTypeEnum
 dcid: "PublicSchool"
 name: "PublicSchool"
 
 Node: PrivateSchool
-typeOf: dcs:USC_TypeOfSchoolEnum
+typeOf: dcs:USC_TypeOfSchoolEnum, dcs:SchoolTypeEnum
 dcid: "PrivateSchool"
 name: "PrivateSchool"
 

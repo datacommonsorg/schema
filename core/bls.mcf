@@ -53,6 +53,16 @@ dcid: "BLS_NotInLaborForce"
 name: "BLS_NotInLaborForce"
 description: "Persons who are neither employed nor unemployed are not in the labor force. This category includes retired persons, students, those taking care of children or other family members, and others who are neither working nor seeking work"
 
+Node: dcid:NotInLaborForce
+typeOf: dcs:EmploymentStatusEnum
+name: "NotInLaborForce"
+description: "Persons who are neither employed not looking for work are not in the labor force."
+
+Node: dcid:InLaborForce
+typeOf: dcs:EmploymentStatusEnum
+name: "InLaborForce"
+description: "People who are fulfilling the requirement for inclusion in the employed or unemployed."
+
 Node: EmploymentStatusEnum
 dcid: "EmploymentStatusEnum"
 subClassOf: schema:Enumeration

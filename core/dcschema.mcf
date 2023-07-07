@@ -3110,3 +3110,20 @@ typeOf: dcs:AgeGroupClassificationEnum
 name: "OlderAdults"
 description: "People who are sixty-five years or more."
 descriptionUrl: "https://www.nih.gov/nih-style-guide/age"
+
+Node: dcid:MaritalStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "MaritalStatusEnum"
+
+Node: dcid:LivingTogether
+typeOf: dcs:MaritalStatusEnum
+name: "LivingTogether"
+
+Node: dcid:Married
+typeOf: dcs:MaritalStatusEnum
+name: "Married"
+
+Node: dcid:NotLivingTogether
+typeOf: dcs:MaritalStatusEnum
+name: "NotLivingTogether"
