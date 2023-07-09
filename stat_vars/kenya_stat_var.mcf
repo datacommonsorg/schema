@@ -1,0 +1,73 @@
+Node: dcid:Count_Student_SecondaryEducation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+enrollmentLevel: dcid:SecondaryEducation
+
+Node: dcid:Count_Person_Intersex
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Intersex
+
+Node: dcid:Count_MaternalMortalityEvent
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MaternalMortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+
+Node: dcid:Count_MortalityEvent_Newborn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ageGroupClassification: dcid:Newborn
+
+Node: dcid:Count_MaternalMortalityEvent_AsAFractionOf_Count_BirthEvent_LiveBirth
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MaternalMortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+
+Node: dcid:Count_MortalityEvent_5OrLessYears_AsAFractionOf_Count_BirthEvent_LiveBirth
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+age: [- 5 Years]
+
+Node: dcid:Count_MortalityEvent_Infant_AsAFractionOf_Count_BirthEvent_LiveBirth
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+ageGroupClassification: dcid:Infant
+
+Node: dcid:Count_Person_Intersex_Rural
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Intersex
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Person_Intersex_Urban
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Intersex
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_Person_Male_AsAFractionOf_Count_Person_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_Female
+gender: dcid:Male
