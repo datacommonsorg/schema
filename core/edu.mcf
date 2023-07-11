@@ -2207,3 +2207,56 @@ typeOf: dcs:MethodOfTeachingEnum
 name: "FlexibleEducationModel"
 description: "Flexible learning, also known as modular learning, gives students some choice in their learning format."
 descriptionUrl: "https://en.wikipedia.org/wiki/Flex_model_of_learning"
+
+## TenureStatusEnum definition
+
+Node: dcid:TenureStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TenureStatusEnum"
+
+Node: dcid:tenureStatus
+typeOf: schema:Property
+rangeIncludes: dcs:TenureStatusEnum
+name: "tenureStatus"
+description: "Tenure status of an instructor."
+
+Node: dcid:Tenured
+typeOf: dcs:TenureStatusEnum
+name: "Tenured"
+
+Node: dcid:OnTenureTrack
+typeOf: dcs:TenureStatusEnum
+name: "OnTenureTrack"
+
+Node: dcid:NotOnTenureTrack
+typeOf: dcs:TenureStatusEnum
+name: "NotOnTenureTrack"
+
+Node: dcid:TenureNotApplicable
+typeOf: dcs:TenureStatusEnum
+name: "TenureNotApplicable"
+
+# NCSES Occupation Categories
+
+Node: dcid:ScienceAndEngineering
+name: "ScienceAndEngineering"
+typeOf: dcs:OccupationEnum
+
+Node: dcid:ScienceAndEngineeringRelated
+name: "ScienceAndEngineeringRelated"
+typeOf: dcs:OccupationEnum
+
+Node: dcid:NonScienceAndEngineering
+name: "NonScienceAndEngineering"
+typeOf: dcs:OccupationEnum
+
+# NCSES Doctorate Degree Major
+
+Node: dcid:doctorateDegreeMajor
+typeOf: schema:Property
+domainIncludes: schema:Person
+rangeIncludes: dcs:EducationalMajorEnum
+name: "doctorateDegreeMajor"
+
+
