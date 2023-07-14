@@ -2280,3 +2280,75 @@ measuredProperty: dcs:count
 statType: dcs:sampleSize
 healthInsuranceStatusPostpartum: dcs:WithPrivateHealthInsurance
 timePeriodRelativeToPregnancy: dcs:Postpartum
+
+Node: dcid:Percent_Person_18OrMoreYears_WithPoorGeneralHealth
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:PoorGeneralHealth
+name: "Percentage of Population With Poor General Health"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithPoorGeneralHealth
+name: "Lower Confidence Interval Limit, Prevalence of Physical Health Not Good"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:PoorGeneralHealth
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithPoorGeneralHealth
+name: "Upper Confidence Interval Limit, Prevalence of Physical Health Not Good"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:PoorGeneralHealth
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithPoorGeneralHealth
+name: "Sample Size, Prevalence of Physical Health Not Good"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+healthOutcome: dcs:PoorGeneralHealth
+statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithDepression
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:Depression
+name: "Percentage of Population With Poor General Health"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithDepression
+name: "Lower Confidence Interval Limit, Prevalence of Physical Health Not Good"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:Depression
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithDepression
+name: "Upper Confidence Interval Limit, Prevalence of Physical Health Not Good"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:Depression
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithDepression
+name: "Sample Size, Prevalence of Physical Health Not Good"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+healthOutcome: dcs:Depression
+statType: dcs:sampleSize
