@@ -2743,6 +2743,32 @@ typeOf: schema:Property
 domainIncludes: schema:Household, schema:Person
 rangeIncludes: dcs:USC_WorkStatusEnum
 
+Node: dcid:vaccineType
+name: "vaccineType"
+rangeIncludes: dcs:VaccineTypeEnum
+typeOf: schema:Property
+
+Node: dcid:VaccineTypeEnum
+subClassOf: schema:Enumeration
+name: "VaccineTypeEnum"
+typeOf: schema:Class
+
+Node: dcid:BCG
+name: "Bacille Calmette Guerin(BCG)"
+typeOf: dcid:VaccineTypeEnum
+
+Node: dcid:DPT3
+name: "Diphtheria, Tetanus toxoid and Pertussis(DPT3)"
+typeOf: dcid:VaccineTypeEnum
+
+Node: dcid:HaemophilusInfluenzaeTypeB
+name: "Haemophilus Influenzae Type B(HIB)"
+typeOf: dcid:VaccineTypeEnum
+
+Node: dcid:Polio
+name: "Polio"
+typeOf: dcid:VaccineTypeEnum
+
 Node: dcid:Vaccine
 name: "Vaccine"
 typeOf: schema:Class
