@@ -31,6 +31,12 @@ typeOf: schema:Class
 subClassOf: dcs:ChemicalSubstance
 description: "Two chemcial compounds that are associated with one another typically due to reacting with one another."
 
+Node: dcid:ChemicalCompoundGeneticVariantAssociation
+name: "ChemicalCompoundGeneticVariantAssociation"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalSubstance
+description: "The association between a chemical compound, typically a drug, and a genetic variant."
+
 Node: dcid:ChemicalCompoundProteinInteraction
 name: "ChemicalCompoundProteinInteraction"
 typeOf: schema:Class
@@ -63,12 +69,6 @@ name: "Drug"
 typeOf: schema:Class
 subClassOf: schema:ChemicalCompound
 description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
-
-Node: dcid:DrugGeneticVariantAssociation
-name: "DrugGeneticVariantAssociation"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalSubstance
-description: "The association between a drug and a genetic variant."
 
 Node: dcid:DrugStrength
 name: "DrugStrength"
@@ -278,7 +278,7 @@ description: "The identifier for this drug in the NIH National Library of Scienc
 
 Node: dcid:variantID
 typeOf: schema:Property
-domainIncludes: dcs:DrugGeneticVariantAssociation,dcs:GeneGeneticVariantAssociation
+domainIncludes: dcs:ChemicalCompoundGeneticVariantAssociation,dcs:GeneGeneticVariantAssociation
 rangeIncludes: dcs:GeneticVariant
 description: "Link to a GeneticVariant node for a genetic variant that is associated with another entity."
 
@@ -364,7 +364,7 @@ description: "The Protein node associated with the current node."
 Node: dcid:diseaseID
 name: "diseaseID"
 typeOf: schema:Property
-rangeIncludes: dcs:Disease
+rangeIncludes: dcs:Disease,dcs:MeSHDescriptor
 domainIncludes: dcs:ChemicalCompoundDiseaseTreatment,dcs:ChemicalCompoundDiseaseContraindication
 description: "Identifier for disease in a compound-disease treatment."
 
