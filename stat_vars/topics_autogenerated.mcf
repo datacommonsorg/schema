@@ -8,8 +8,8 @@ relevantVariable: dcid:dc/svpg/AdolescentBirthRate_AdolescentBirthRateByAge
 Node: dcid:dc/svpg/AdolescentBirthRate_AdolescentBirthRateByAge
 typeOf: dcs:StatVarPeerGroup
 name: "Adolescent Birth Rate By Age"
-member: dcid:sdg/SP_DYN_ADKL_10-14_FEMALE
-member: dcid:sdg/SP_DYN_ADKL_15-19_FEMALE
+member: dcid:sdg/SP_DYN_ADKL.AGE--Y10T14__SEX--F
+member: dcid:sdg/SP_DYN_ADKL.AGE--Y15T19__SEX--F
 
 Node: dcid:dc/topic/AdultCorrectionalFacilitiesResidents
 typeOf: dcs:Topic
@@ -113,32 +113,32 @@ relevantVariable: dcid:dc/svpg/BankingAccess_PrevalenceofAdultswithBankingAccess
 Node: dcid:dc/svpg/BankingAccess_PrevalenceofAdultswithBankingAccessbyEarnings
 typeOf: dcs:StatVarPeerGroup
 name: "Prevalence of Adults with Banking Access by Earnings"
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_B40
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_R60
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__INCOME_WEALTH_QUANTILE--B40
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__INCOME_WEALTH_QUANTILE--R60
 
 Node: dcid:dc/svpg/BankingAccess_PrevalenceofAdultswithBankingAccessbyEducationStatus
 typeOf: dcs:StatVarPeerGroup
 name: "Prevalence of Adults with Banking Access by Education Status"
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_AGG01
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_AGGGE2
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__EDUCATION_LEV--AGG_0_1
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__EDUCATION_LEV--AGG_GE2
 
 Node: dcid:dc/svpg/BankingAccess_PrevalenceofAdultswithBankingAccessbyGender
 typeOf: dcs:StatVarPeerGroup
 name: "Prevalence of Adults with Banking Access by Gender"
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_FEMALE
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_MALE
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__SEX--F
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__SEX--M
 
 Node: dcid:dc/svpg/BankingAccess_PrevalenceofAdultswithBankingAccessbyMilitaryStatus
 typeOf: dcs:StatVarPeerGroup
 name: "Prevalence of Adults with Banking Access by Military Status"
-member: dcid:sdg/FB_BNK_ACCSS_ILF_15GEQ
-member: dcid:sdg/FB_BNK_ACCSS_OLF_15GEQ
+member: dcid:sdg/FB_BNK_ACCSS_ILF.AGE--Y_GE15
+member: dcid:sdg/FB_BNK_ACCSS_OLF.AGE--Y_GE15
 
 Node: dcid:dc/svpg/BankingAccess_PrevalenceofAdultswithBankingAccessbyResidency
 typeOf: dcs:StatVarPeerGroup
 name: "Prevalence of Adults with Banking Access by Residency"
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_RURAL
-member: dcid:sdg/FB_BNK_ACCSS_15GEQ_URBAN
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__URBANISATION--R
+member: dcid:sdg/FB_BNK_ACCSS.AGE--Y_GE15__URBANISATION--U
 
 Node: dcid:dc/topic/Births
 typeOf: dcs:Topic
@@ -370,7 +370,7 @@ name: "Dentists"
 relevantVariable: dcid:dc/17ckwyxwctzm2
 relevantVariable: dcid:dc/dv0w29brm5866
 relevantVariable: dcid:dc/w2gdszr0f3sh2
-relevantVariable: dcid:sdg/SH_MED_DEN_DENT
+relevantVariable: dcid:sdg/SH_MED_DEN.OCCUPATION--ISCO08_2261
 
 Node: dcid:dc/topic/Diabetes
 typeOf: dcs:Topic
@@ -747,10 +747,10 @@ relevantVariable: dcid:dc/svpg/HealthWorkerDensity_HealthWorkerDensityByOccupati
 Node: dcid:dc/svpg/HealthWorkerDensity_HealthWorkerDensityByOccupation
 typeOf: dcs:StatVarPeerGroup
 name: "Health Worker Density By Occupation"
-member: dcid:sdg/SH_MED_DEN_DENT
-member: dcid:sdg/SH_MED_DEN_NURSMID
-member: dcid:sdg/SH_MED_DEN_PHAR
-member: dcid:sdg/SH_MED_DEN_PHYS
+member: dcid:sdg/SH_MED_DEN.OCCUPATION--ISCO08_2261
+member: dcid:sdg/SH_MED_DEN.OCCUPATION--ISCO08_222_322
+member: dcid:sdg/SH_MED_DEN.OCCUPATION--ISCO08_2262
+member: dcid:sdg/SH_MED_DEN.OCCUPATION--ISCO08_221
 
 Node: dcid:dc/topic/HeatWave
 typeOf: dcs:Topic
@@ -765,8 +765,8 @@ relevantVariable: dcid:PopulationWeighted_NumerOfDays_HeatWaveEvent
 Node: dcid:dc/topic/HeightStunting
 typeOf: dcs:Topic
 name: "HeightStunting"
-relevantVariable: dcid:sdg/SH_STA_STNTN_LT5Y
-relevantVariable: dcid:sdg/SH_STA_STNT_LT5Y
+relevantVariable: dcid:sdg/SH_STA_STNTN.AGE--Y0T4
+relevantVariable: dcid:sdg/SH_STA_STNT.AGE--Y0T4
 
 Node: dcid:dc/topic/HighWind
 typeOf: dcs:Topic
@@ -1035,29 +1035,29 @@ relevantVariable: dcid:dc/svpg/MobilePhoneOwnership_PrevalenceofMobilePhoneOwner
 Node: dcid:dc/svpg/MobilePhoneOwnership_PrevalenceofMobilePhoneOwnershipByGender
 typeOf: dcs:StatVarPeerGroup
 name: "Prevalence of Mobile Phone Ownership By Gender"
-member: dcid:sdg/IT_MOB_OWN_FEMALE
-member: dcid:sdg/IT_MOB_OWN_MALE
+member: dcid:sdg/IT_MOB_OWN.SEX--F
+member: dcid:sdg/IT_MOB_OWN.SEX--M
 
 Node: dcid:dc/topic/MobilePhoneUsage
 typeOf: dcs:Topic
 name: "MobilePhoneUsage"
 relevantVariable: dcid:Count_Product_MobileCellularSubscription_AsFractionOf_Count_Person
 relevantVariable: dcid:dc/topic/MobilePhoneOwnership
-relevantVariable: dcid:sdg/FB_BNK_ACCSS_ILF_15GEQ
-relevantVariable: dcid:sdg/FB_BNK_ACCSS_OLF_15GEQ
+relevantVariable: dcid:sdg/FB_BNK_ACCSS_ILF.AGE--Y_GE15
+relevantVariable: dcid:sdg/FB_BNK_ACCSS_OLF.AGE--Y_GE15
 
 Node: dcid:dc/topic/MortalityRate
 typeOf: dcs:Topic
 name: "MortalityRate"
-relevantVariable: dcid:sdg/SH_DYN_NMRT_LT1M
+relevantVariable: dcid:sdg/SH_DYN_NMRT.AGE--M0
 relevantVariable: dcid:dc/svpg/MortalityRate_InfantMortalityRateByGender
 
 Node: dcid:dc/svpg/MortalityRate_InfantMortalityRateByGender
 typeOf: dcs:StatVarPeerGroup
 name: "InfantMortalityRateByGender"
 member: dcid:sdg/SH_AAP_ASMORT
-member: dcid:sdg/SH_DYN_IMRT_LT1Y_FEMALE
-member: dcid:sdg/SH_DYN_IMRT_LT1Y_MALE
+member: dcid:sdg/SH_DYN_IMRT.AGE--Y0__SEX--F
+member: dcid:sdg/SH_DYN_IMRT.AGE--Y0__SEX--M
 member: dcid:sdg/SH_HAP_ASMORT
 member: dcid:sdg/SH_STA_ASAIRP
 member: dcid:sdg/SH_STA_POISN
@@ -1146,7 +1146,7 @@ relevantVariable: dcid:PalmerDroughtSeverityIndex_Atmosphere
 Node: dcid:dc/topic/Parliament
 typeOf: dcs:Topic
 name: "Parliament"
-relevantVariable: dcid:sdg/SG_DMK_PARLSP_LC_X_X
+relevantVariable: dcid:sdg/SG_DMK_PARLSP_LC.AGE--_X__SEX--_X
 relevantVariable: dcid:dc/svpg/Parliament_Numberofspeakersinparliamentbygender
 relevantVariable: dcid:dc/svpg/Parliament_Proportionofyouthinparliamentbychamber
 relevantVariable: dcid:dc/svpg/Parliament_numberofyouthinparliamentbychamber
@@ -1154,20 +1154,20 @@ relevantVariable: dcid:dc/svpg/Parliament_numberofyouthinparliamentbychamber
 Node: dcid:dc/svpg/Parliament_Numberofspeakersinparliamentbygender
 typeOf: dcs:StatVarPeerGroup
 name: "Number of speakers in parliament by gender"
-member: dcid:sdg/SG_DMK_PARLSP_LC_U_FEMALE
-member: dcid:sdg/SG_DMK_PARLSP_LC_U_MALE
+member: dcid:sdg/SG_DMK_PARLSP_LC.SEX--F
+member: dcid:sdg/SG_DMK_PARLSP_LC.SEX--M
 
 Node: dcid:dc/svpg/Parliament_Proportionofyouthinparliamentbychamber
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of youth in parliament by chamber"
-member: dcid:sdg/SG_DMK_PARLYP_LC_LEQ45Y
-member: dcid:sdg/SG_DMK_PARLYP_UC_LEQ45Y
+member: dcid:sdg/SG_DMK_PARLYP_LC.AGE--Y0T45
+member: dcid:sdg/SG_DMK_PARLYP_UC.AGE--Y0T45
 
 Node: dcid:dc/svpg/Parliament_numberofyouthinparliamentbychamber
 typeOf: dcs:StatVarPeerGroup
 name: "number of youth in parliament by chamber"
-member: dcid:sdg/SG_DMK_PARLYN_LC_LEQ45Y
-member: dcid:sdg/SG_DMK_PARLYN_UC_LEQ45Y
+member: dcid:sdg/SG_DMK_PARLYN_LC.AGE--Y0T45
+member: dcid:sdg/SG_DMK_PARLYN_UC.AGE--Y0T45
 
 Node: dcid:dc/topic/PhysicalActivity
 typeOf: dcs:Topic
@@ -1503,8 +1503,8 @@ relevantVariable: dcid:dc/svpg/RoadTrafficDeaths_RoadTrafficDeathsByGender
 Node: dcid:dc/svpg/RoadTrafficDeaths_RoadTrafficDeathsByGender
 typeOf: dcs:StatVarPeerGroup
 name: "Road Traffic Deaths By Gender"
-member: dcid:sdg/SH_STA_TRAF_FEMALE
-member: dcid:sdg/SH_STA_TRAF_MALE
+member: dcid:sdg/SH_STA_TRAF.SEX--F
+member: dcid:sdg/SH_STA_TRAF.SEX--M
 
 Node: dcid:dc/topic/Sanitation
 typeOf: dcs:Topic
@@ -1517,14 +1517,14 @@ relevantVariable: dcid:dc/svpg/Sanitation_ProportionofPopulationusingsafelymanag
 Node: dcid:dc/svpg/Sanitation_ProportionofPopulationusingbasicsanitationservicesbyresidency
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of Population using basic sanitation services by residency"
-member: dcid:sdg/SP_ACS_BSRVSAN_RURAL
-member: dcid:sdg/SP_ACS_BSRVSAN_URBAN
+member: dcid:sdg/SP_ACS_BSRVSAN.URBANISATION--R
+member: dcid:sdg/SP_ACS_BSRVSAN.URBANISATION--U
 
 Node: dcid:dc/svpg/Sanitation_ProportionofPopulationusingsafelymanagedsanitationservicesbyresidency
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of Population using safely managed sanitation services by residency"
-member: dcid:sdg/SH_SAN_SAFE_RURAL
-member: dcid:sdg/SH_SAN_SAFE_URBAN
+member: dcid:sdg/SH_SAN_SAFE.URBANISATION--R
+member: dcid:sdg/SH_SAN_SAFE.URBANISATION--U
 
 Node: dcid:dc/topic/Snowfall
 typeOf: dcs:Topic
@@ -1654,8 +1654,8 @@ relevantVariable: dcid:dc/svpg/Suicide_SuicideMortalityRateByGender
 Node: dcid:dc/svpg/Suicide_SuicideMortalityRateByGender
 typeOf: dcs:StatVarPeerGroup
 name: "Suicide Mortality Rate By Gender"
-member: dcid:sdg/SH_STA_SCIDE_FEMALE
-member: dcid:sdg/SH_STA_SCIDE_MALE
+member: dcid:sdg/SH_STA_SCIDE.SEX--F
+member: dcid:sdg/SH_STA_SCIDE.SEX--M
 
 Node: dcid:dc/topic/Tariffs
 typeOf: dcs:Topic
@@ -1670,32 +1670,32 @@ relevantVariable: dcid:dc/svpg/Tariffs_Worldweightedtariffaveragebyproducttype
 Node: dcid:dc/svpg/Tariffs_AverageTariffsfromdevelopingcountriesbyproducttype
 typeOf: dcs:StatVarPeerGroup
 name: "Average Tariffs from developing countries by product type"
-member: dcid:sdg/TM_TAX_DMFN_AGR
-member: dcid:sdg/TM_TAX_DMFN_ARM
-member: dcid:sdg/TM_TAX_DMFN_CLO
-member: dcid:sdg/TM_TAX_DMFN_IND
-member: dcid:sdg/TM_TAX_DMFN_OIL
-member: dcid:sdg/TM_TAX_DMFN_TEX
+member: dcid:sdg/TM_TAX_DMFN.PRODUCT--AGG_AGR
+member: dcid:sdg/TM_TAX_DMFN.PRODUCT--AGG_ARMS
+member: dcid:sdg/TM_TAX_DMFN.PRODUCT--AGG_CLTH
+member: dcid:sdg/TM_TAX_DMFN.PRODUCT--AGG_IND
+member: dcid:sdg/TM_TAX_DMFN.PRODUCT--AGG_OIL
+member: dcid:sdg/TM_TAX_DMFN.PRODUCT--AGG_TXT
 
 Node: dcid:dc/svpg/Tariffs_Proportionoftarifflinesappliedtoimportswithzerotariffbyproducttype
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of tariff lines applied to imports with zero-tariff by product type"
-member: dcid:sdg/TM_TRF_ZERO_AGR
-member: dcid:sdg/TM_TRF_ZERO_ARM
-member: dcid:sdg/TM_TRF_ZERO_CLO
-member: dcid:sdg/TM_TRF_ZERO_IND
-member: dcid:sdg/TM_TRF_ZERO_OIL
-member: dcid:sdg/TM_TRF_ZERO_TEX
+member: dcid:sdg/TM_TRF_ZERO.PRODUCT--AGG_AGR
+member: dcid:sdg/TM_TRF_ZERO.PRODUCT--AGG_ARMS
+member: dcid:sdg/TM_TRF_ZERO.PRODUCT--AGG_CLTH
+member: dcid:sdg/TM_TRF_ZERO.PRODUCT--AGG_IND
+member: dcid:sdg/TM_TRF_ZERO.PRODUCT--AGG_OIL
+member: dcid:sdg/TM_TRF_ZERO.PRODUCT--AGG_TXT
 
 Node: dcid:dc/svpg/Tariffs_Worldweightedtariffaveragebyproducttype
 typeOf: dcs:StatVarPeerGroup
 name: "World weighted tariff average by product type"
-member: dcid:sdg/TM_TAX_WMPS_AGR
-member: dcid:sdg/TM_TAX_WMPS_ARM
-member: dcid:sdg/TM_TAX_WMPS_CLO
-member: dcid:sdg/TM_TAX_WMPS_IND
-member: dcid:sdg/TM_TAX_WMPS_OIL
-member: dcid:sdg/TM_TAX_WMPS_TEX
+member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_AGR
+member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_ARMS
+member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_CLTH
+member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_IND
+member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_OIL
+member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_TXT
 
 Node: dcid:dc/topic/Thunderstorm
 typeOf: dcs:Topic
@@ -1785,8 +1785,8 @@ relevantVariable: dcid:dc/svpg/UnintentionalPoisonings_MortalityRatefromUnintent
 Node: dcid:dc/svpg/UnintentionalPoisonings_MortalityRatefromUnintentionalPoisoningsByGender
 typeOf: dcs:StatVarPeerGroup
 name: "Mortality Rate from Unintentional Poisonings By Gender"
-member: dcid:sdg/SH_STA_POISN_FEMALE
-member: dcid:sdg/SH_STA_POISN_MALE
+member: dcid:sdg/SH_STA_POISN.SEX--F
+member: dcid:sdg/SH_STA_POISN.SEX--M
 
 Node: dcid:dc/topic/Vaccines
 typeOf: dcs:Topic
@@ -1832,17 +1832,17 @@ relevantVariable: dcid:dc/svpg/Voting_Proportionofvotingrightsofdevelopingcountr
 Node: dcid:dc/svpg/Voting_Proportionofvotingrightsofdevelopingcountriesbyorganizationtype
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of voting rights of developing countries by organization type"
-member: dcid:sdg/SG_INT_VRTDEV_ADB
-member: dcid:sdg/SG_INT_VRTDEV_AFDB
-member: dcid:sdg/SG_INT_VRTDEV_ECOSOC
-member: dcid:sdg/SG_INT_VRTDEV_FSB
-member: dcid:sdg/SG_INT_VRTDEV_IADB
-member: dcid:sdg/SG_INT_VRTDEV_IBRD
-member: dcid:sdg/SG_INT_VRTDEV_IFC
-member: dcid:sdg/SG_INT_VRTDEV_IMF
-member: dcid:sdg/SG_INT_VRTDEV_UNGA
-member: dcid:sdg/SG_INT_VRTDEV_UNSC
-member: dcid:sdg/SG_INT_VRTDEV_WTO
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_ADB
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_AFDB
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_ECOSOC
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_FSB
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IADB
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IBRD
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IFC
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IMF
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_UNGA
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_UNSC
+member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_WTO
 
 Node: dcid:dc/topic/Weather
 typeOf: dcs:Topic
@@ -1969,8 +1969,8 @@ member: dcid:Count_Person_85OrMoreYears_Divorced
 Node: dcid:dc/topic/HeightStunting
 typeOf: dcs:Topic
 name: "HeightStunting"
-relevantVariable: dcid:sdg/SH_STA_STNTN_LT5Y
-relevantVariable: dcid:sdg/SH_STA_STNT_LT5Y
+relevantVariable: dcid:sdg/SH_STA_STNTN.AGE--Y0T4
+relevantVariable: dcid:sdg/SH_STA_STNT.AGE--Y0T4
 
 Node: dcid:dc/topic/Malnutrition
 typeOf: dcs:Topic
