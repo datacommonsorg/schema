@@ -6038,3 +6038,32 @@ member: dcid:Count_Person_70To74Years_Male_ConditionStroke
 member: dcid:Count_Person_75To79Years_Male_ConditionStroke
 member: dcid:Count_Person_80To84Years_Male_ConditionStroke
 member: dcid:Count_Person_85OrMoreYears_Male_ConditionStroke
+
+Node: dcid:dc/topic/OpiodAntagonists
+typeOf: dcs:Topic
+name: "Opiod Antagonists"
+relevantVariable: dcid:dc/svpg/OpiodAntagonists_AmountofRetailDrugdistributionbyOpiodAntagonistType
+
+Node: dcid:dc/svpg/OpiodAntagonists_AmountofRetailDrugdistributionbyOpiodAntagonistType
+typeOf: dcs:StatVarPeerGroup
+name: "Amount of Retail Drug distribution by Opiod Antagonist Type"
+member: dcid:RetailDrugDistribution_DrugDistribution_Buprenorphine
+member: dcid:RetailDrugDistribution_DrugDistribution_Naloxone
+
+Node: dcid:dc/topic/Opiods
+typeOf: dcs:Topic
+name: "Opiods"
+relevantVariable: dcid:dc/svpg/Opiods_AmountofRetailDrugDistributionbyOpiodType
+
+Node: dcid:dc/svpg/Opiods_AmountofRetailDrugDistributionbyOpiodType
+typeOf: dcs:StatVarPeerGroup
+name: "Amount of Retail Drug Distribution by Opiod Type"
+member: dcid:RetailDrugDistribution_DrugDistribution_Fentanyl
+member: dcid:RetailDrugDistribution_DrugDistribution_Hydrocodone
+member: dcid:RetailDrugDistribution_DrugDistribution_Levorphanol
+member: dcid:RetailDrugDistribution_DrugDistribution_Methadone
+member: dcid:RetailDrugDistribution_DrugDistribution_Morphine
+member: dcid:RetailDrugDistribution_DrugDistribution_Noroxymorphone
+member: dcid:RetailDrugDistribution_DrugDistribution_Oxycodone
+member: dcid:RetailDrugDistribution_DrugDistribution_Oxymorphone
+member: dcid:RetailDrugDistribution_DrugDistribution_Remifentanil
