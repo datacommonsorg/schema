@@ -1,7 +1,6 @@
 # These are auto-generated
-# Topics for the NL Insights Economy Vertical.
-# Reference: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
-
+# These topics are intended for the new NL based Topic Pages (currently called Insights).
+# Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
 
 Node: dcid:dc/topic/Businesses
 typeOf: dcs:Topic
@@ -16,13 +15,13 @@ member: dcid:Count_Establishment_NAICSAdministrativeSupportWasteManagementRemedi
 member: dcid:Count_Establishment_NAICSConstruction
 member: dcid:Count_Establishment_NAICSFinanceInsurance
 member: dcid:Count_Establishment_NAICSInformation
-member: dcid:Count_Establishment_NAICSManufacturing
 member: dcid:Count_Establishment_NAICSOtherServices
 member: dcid:Count_Establishment_NAICSUtilities
 member: dcid:dc/1j7jmy39fwhw5
 member: dcid:dc/2c2e9bn8p7xz6
 member: dcid:dc/2qgvm8lch89n5
 member: dcid:dc/9pz1cse6yndtg
+member: dcid:dc/F1wf1h5esex2d
 member: dcid:dc/br6elkd593zs1
 member: dcid:dc/dc5hbzngddq37
 member: dcid:dc/kcns4cvt14zx2
@@ -42,54 +41,8 @@ member: dcid:Count_Establishment_StateGovernmentOwnedEstablishment_NAICSTotalAll
 Node: dcid:dc/topic/EconomicActivity
 typeOf: dcs:Topic
 name: "Economic Activity"
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesByReceipts
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesBySales
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesByShipmentsorReceipts
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesbyBillingsorSales
 relevantVariable: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesbyNumberofWorkers
 relevantVariable: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesbyRevenue
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicActivity_IndustrybyReceiptsorRevenue
-
-Node: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesByReceipts
-typeOf: dcs:StatVarPeerGroup
-name: "Industries By Receipts"
-member: dcid:Receipts_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices_WithPayroll
-
-Node: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesBySales
-typeOf: dcs:StatVarPeerGroup
-name: "Industries By Sales"
-member: dcid:Sales_Establishment_NAICSAccommodationFoodServices_WithPayroll
-member: dcid:Sales_Establishment_NAICSWholesaleTrade_WithPayroll
-member: dcid:dc/2hl1yfxglmq0c
-member: dcid:dc/31hbegrgs0x05
-member: dcid:dc/3wx4hzg5p6zdb
-member: dcid:dc/41s8qer7mpew9
-member: dcid:dc/g8sxhs8lzmb15
-
-Node: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesByShipmentsorReceipts
-typeOf: dcs:StatVarPeerGroup
-name: "Industries By Shipments or Receipts"
-member: dcid:ShipmentsOrReceipts_Establishment_NAICSMiningQuarryingOilGasExtraction_WithPayroll
-member: dcid:dc/8mty3dlrx26e5
-member: dcid:dc/8vcbgqlfzwvtf
-member: dcid:dc/9bcetmhgnge5f
-member: dcid:dc/c0zdt686eek05
-member: dcid:dc/d796515q44h02
-member: dcid:dc/ekrg82bjht898
-member: dcid:dc/f2g63f2rjbdyh
-member: dcid:dc/gf47xlzfbd3t8
-member: dcid:dc/ghk2rsfpsnc29
-member: dcid:dc/gy5fk764jzhvd
-member: dcid:dc/jxwhv6vc0rye7
-member: dcid:dc/m46wj1egm7j56
-member: dcid:dc/rw3t3r74kv7mc
-member: dcid:dc/sz9ckd47e35b4
-member: dcid:dc/zkmdz1rhlt7q8
-
-Node: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesbyBillingsorSales
-typeOf: dcs:StatVarPeerGroup
-name: "Industries by Billings or Sales"
-member: dcid:ReceiptsBillingsOrSales_Establishment_NAICSConstruction_WithPayroll
 
 Node: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesbyNumberofWorkers
 typeOf: dcs:StatVarPeerGroup
@@ -99,23 +52,44 @@ member: dcid:dc/rydmsxhz7pxh1
 Node: dcid:dc/svpg/dc/topic/EconomicActivity_IndustriesbyRevenue
 typeOf: dcs:StatVarPeerGroup
 name: "Industries by Revenue"
-member: dcid:Revenue_Establishment_NAICSFinanceInsurance_WithPayroll
-member: dcid:Revenue_Establishment_NAICSManagementOfCompaniesEnterprises_WithPayroll
-member: dcid:Revenue_Establishment_NAICSRealEstateRentalLeasing_WithPayroll
-member: dcid:Revenue_Establishment_NAICSUtilities_WithPayroll
-member: dcid:dc/2kz6b9kvps8c9
-member: dcid:dc/4fbqq2v75fwbc
-member: dcid:dc/sythffk3c3ne7
-
-Node: dcid:dc/svpg/dc/topic/EconomicActivity_IndustrybyReceiptsorRevenue
-typeOf: dcs:StatVarPeerGroup
-name: "Industry by Receipts or Revenue"
+member: dcid:ReceiptsBillingsOrSales_Establishment_NAICSConstruction_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSArtsEntertainmentRecreation_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSEducationalServices_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSHealthCareSocialAssistance_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSInformation_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSOtherServices_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSProfessionalScientificTechnicalServices_WithPayroll
+member: dcid:Receipts_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices_WithPayroll
+member: dcid:Revenue_Establishment_NAICSFinanceInsurance_WithPayroll
+member: dcid:Revenue_Establishment_NAICSManagementOfCompaniesEnterprises_WithPayroll
+member: dcid:Revenue_Establishment_NAICSRealEstateRentalLeasing_WithPayroll
+member: dcid:Revenue_Establishment_NAICSUtilities_WithPayroll
+member: dcid:Sales_Establishment_NAICSAccommodationFoodServices_WithPayroll
+member: dcid:Sales_Establishment_NAICSWholesaleTrade_WithPayroll
+member: dcid:ShipmentsOrReceipts_Establishment_NAICSMiningQuarryingOilGasExtraction_WithPayroll
+member: dcid:dc/2hl1yfxglmq0c
+member: dcid:dc/2kz6b9kvps8c9
+member: dcid:dc/31hbegrgs0x05
+member: dcid:dc/3wx4hzg5p6zdb
+member: dcid:dc/41s8qer7mpew9
+member: dcid:dc/4fbqq2v75fwbc
+member: dcid:dc/8mty3dlrx26e5
+member: dcid:dc/8vcbgqlfzwvtf
+member: dcid:dc/9bcetmhgnge5f
+member: dcid:dc/c0zdt686eek05
+member: dcid:dc/d796515q44h02
+member: dcid:dc/ekrg82bjht898
+member: dcid:dc/f2g63f2rjbdyh
+member: dcid:dc/g8sxhs8lzmb15
+member: dcid:dc/gf47xlzfbd3t8
+member: dcid:dc/ghk2rsfpsnc29
+member: dcid:dc/gy5fk764jzhvd
+member: dcid:dc/jxwhv6vc0rye7
+member: dcid:dc/m46wj1egm7j56
+member: dcid:dc/rw3t3r74kv7mc
+member: dcid:dc/sythffk3c3ne7
+member: dcid:dc/sz9ckd47e35b4
+member: dcid:dc/zkmdz1rhlt7q8
 
 Node: dcid:dc/topic/Employment
 typeOf: dcs:Topic
