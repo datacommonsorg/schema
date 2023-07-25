@@ -16,7 +16,7 @@ relevantVariable: dcid:sdg/DT_DOD_DECT_GN_ZS
 
 Node: dcid:dc/topic/EconomicActivity
 typeOf: dcs:Topic
-name: "EconomicActivity"
+name: "Economic Activity"
 relevantVariable: dcid:dc/topic/IndustriesByNumberOfWorkers
 relevantVariable: dcid:dc/topic/IndustriesbyRevenue
 
@@ -32,12 +32,12 @@ relevantVariable: dcid:dc/topic/Poverty
 
 Node: dcid:dc/topic/EducationExpenditure
 typeOf: dcs:Topic
-name: "EducationExpenditure"
-relevantVariable: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureAsFractionOfOtherEconomicActivity
+name: "Education Expenditure"
+relevantVariable: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureComparedToTotalSpending
 
-Node: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureAsFractionOfOtherEconomicActivity
+Node: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureComparedToTotalSpending
 typeOf: dcs:StatVarPeerGroup
-name: "EducationExpenditureAsFractionOfOtherEconomicActivity"
+name: "Education Expenditure Compared To Total Spending"
 member: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_ExpenditureActivity_Government
 member: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
 
@@ -51,12 +51,12 @@ relevantVariable: dcid:dc/topic/UnpaidFamilyWorkers
 
 Node: dcid:dc/topic/EmploymentByIndustry
 typeOf: dcs:Topic
-name: "EmploymentByIndustry"
+name: "Employment By Industry"
 relevantVariable: dcid:dc/svpg/dc/topic/EmploymentByIndustry_NumberOfWorkersByIndustry
 
 Node: dcid:dc/svpg/dc/topic/EmploymentByIndustry_NumberOfWorkersByIndustry
 typeOf: dcs:StatVarPeerGroup
-name: "NumberOfWorkersByIndustry"
+name: "Number Of Workers By Industry"
 member: dcid:Count_Worker_NAICSAccommodationFoodServices
 member: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
 member: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
@@ -79,30 +79,30 @@ name: "GDP"
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealValue
+relevantVariable: dcid:dc/topic/InflationAdjustedGDP
 
 Node: dcid:dc/topic/GlobalEconomicActivity
 typeOf: dcs:Topic
-name: "GlobalEconomicActivity"
+name: "Global Economic Activity"
 relevantVariable: dcid:dc/topic/Debt
 relevantVariable: dcid:dc/topic/EducationExpenditure
 relevantVariable: dcid:dc/topic/GDP
 relevantVariable: dcid:dc/topic/HealthcareExpenditure
-relevantVariable: dcid:dc/topic/InflationAdjustedGDP
 relevantVariable: dcid:dc/topic/Remittance
 
 Node: dcid:dc/topic/HealthcareExpenditure
 typeOf: dcs:Topic
-name: "HealthcareExpenditure"
+name: "Healthcare Expenditure"
 relevantVariable: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_AsFractionOf_Count_Person
 
 Node: dcid:dc/topic/HouseholdIncomeDistribution
 typeOf: dcs:Topic
-name: "HouseholdIncomeDistribution"
-relevantVariable: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_HouseholdType
+name: "Household Income Distribution"
+relevantVariable: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncomeByHouseholdType
 
-Node: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_HouseholdType
+Node: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncomeByHouseholdType
 typeOf: dcs:StatVarPeerGroup
-name: "HouseholdType"
+name: "Median Income By Household Type"
 member: dcid:Median_Income_Household
 member: dcid:Median_Income_Household_FamilyHousehold
 member: dcid:Median_Income_Household_MarriedCoupleFamilyHousehold
@@ -118,12 +118,12 @@ relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
 
 Node: dcid:dc/topic/IndividualIncomeByIndustry
 typeOf: dcs:Topic
-name: "IndividualIncomeByIndustry"
-relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndustryType
+name: "Individual Income By Industry"
+relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndividualIncomeByIndustryType
 
-Node: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndustryType
+Node: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndividualIncomeByIndustryType
 typeOf: dcs:StatVarPeerGroup
-name: "IndustryType"
+name: "Individual Income By Industry Type"
 member: dcid:dc/015d58s9xh8kd
 member: dcid:dc/2wgh04kx6es88
 member: dcid:dc/3ex11eg2q9hp6
@@ -142,12 +142,12 @@ member: dcid:dc/zbpsz8dg01nh2
 
 Node: dcid:dc/topic/IndividualIncomeDistribution
 typeOf: dcs:Topic
-name: "IndividualIncomeDistribution"
-relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_TotalPopulationAtIncomeLevels
+name: "Individual Income Distribution"
+relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_PopulationByIncomeLevel
 
-Node: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_TotalPopulationAtIncomeLevels
+Node: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_PopulationByIncomeLevel
 typeOf: dcs:StatVarPeerGroup
-name: "TotalPopulationAtIncomeLevels"
+name: "Population By Income Level"
 member: dcid:Count_Person_IncomeOf10000To14999USDollar
 member: dcid:Count_Person_IncomeOf25000To34999USDollar
 member: dcid:Count_Person_IncomeOf35000To49999USDollar
@@ -158,12 +158,12 @@ member: dcid:Count_Person_IncomeOfUpto9999USDollar
 
 Node: dcid:dc/topic/IndustriesByNumberOfWorkers
 typeOf: dcs:Topic
-name: "IndustriesByNumberOfWorkers"
+name: "Industries By Number Of Workers"
 relevantVariable: dcid:dc/rydmsxhz7pxh1
 
-Node: dcid:dc/topic/IndustriesbyRevenue
+Node: dcid:dc/topic/IndustriesByRevenue
 typeOf: dcs:Topic
-name: "IndustriesbyRevenue"
+name: "Industries By Revenue"
 relevantVariable: dcid:ReceiptsBillingsOrSales_Establishment_NAICSConstruction_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSArtsEntertainmentRecreation_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSEducationalServices_WithPayroll
@@ -205,17 +205,17 @@ relevantVariable: dcid:dc/zkmdz1rhlt7q8
 
 Node: dcid:dc/topic/InflationAdjustedGDP
 typeOf: dcs:Topic
-name: "InflationAdjustedGDP"
+name: "Inflation Adjusted GDP"
 relevantVariable: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
 
 Node: dcid:dc/topic/NumberOfBusinessesByIndustry
 typeOf: dcs:Topic
-name: "NumberOfBusinessesByIndustry"
-relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_CountEstablishemensByIndustry
+name: "Number Of Businesses By Industry"
+relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEstablishementsByIndustry
 
-Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_CountEstablishemensByIndustry
+Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEstablishementsByIndustry
 typeOf: dcs:StatVarPeerGroup
-name: "CountEstablishemensByIndustry"
+name: "Number of Establishements By Industry"
 member: dcid:Count_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices
 member: dcid:Count_Establishment_NAICSConstruction
 member: dcid:Count_Establishment_NAICSFinanceInsurance
@@ -237,12 +237,12 @@ member: dcid:dc/x52jxxbwspczh
 
 Node: dcid:dc/topic/NumberOfBusinessesByOwnership
 typeOf: dcs:Topic
-name: "NumberOfBusinessesByOwnership"
-relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_CountEstablishmentByOwnershipType
+name: "Number Of Businesses By Ownership"
+relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_NumberofEstablishmentsByOwnershipType
 
-Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_CountEstablishmentByOwnershipType
+Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_NumberofEstablishmentsByOwnershipType
 typeOf: dcs:StatVarPeerGroup
-name: "CountEstablishmentByOwnershipType"
+name: "Number of Establishments By Ownership Type"
 member: dcid:Count_Establishment_FederalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
 member: dcid:Count_Establishment_LocalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
 member: dcid:Count_Establishment_PrivatelyOwnedEstablishment_NAICSTotalAllIndustries
@@ -260,23 +260,23 @@ relevantVariable: dcid:dc/topic/SDG_1
 
 Node: dcid:dc/topic/PovertyByGender
 typeOf: dcs:Topic
-name: "PovertyByGender"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByGender_BelowPovertyByGender
+name: "Poverty By Gender"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByGender_ImpoverishedPopulationByGender
 
-Node: dcid:dc/svpg/dc/topic/PovertyByGender_BelowPovertyByGender
+Node: dcid:dc/svpg/dc/topic/PovertyByGender_ImpoverishedPopulationByGender
 typeOf: dcs:StatVarPeerGroup
-name: "BelowPovertyByGender"
+name: "Impoverished Population By Gender"
 member: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months
 
 Node: dcid:dc/topic/PovertyByLanguageSpokenAtHome
 typeOf: dcs:Topic
-name: "PovertyByLanguageSpokenAtHome"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_BelowPovertyByLanguageSpokenAtHome
+name: "Poverty By Language Spoken At Home"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_ImpoverishedPopulationByByLanguageSpokenAtHome
 
-Node: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_BelowPovertyByLanguageSpokenAtHome
+Node: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_ImpoverishedPopulationByByLanguageSpokenAtHome
 typeOf: dcs:StatVarPeerGroup
-name: "BelowPovertyByLanguageSpokenAtHome"
+name: "Impoverished Population By By Language Spoken At Home"
 member: dcid:Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_5OrMoreYears_SpanishOrSpanishCreoleSpokenAtHome_BelowPovertyLevelInThePast12Months
@@ -284,12 +284,12 @@ member: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome_BelowPovertyLevelInTh
 
 Node: dcid:dc/topic/PovertyByRace
 typeOf: dcs:Topic
-name: "PovertyByRace"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByRace_BelowPovertyByRace
+name: "Poverty By Race"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByRace_ImpoverishedPopulationByRace
 
-Node: dcid:dc/svpg/dc/topic/PovertyByRace_BelowPovertyByRace
+Node: dcid:dc/svpg/dc/topic/PovertyByRace_ImpoverishedPopulationByRace
 typeOf: dcs:StatVarPeerGroup
-name: "BelowPovertyByRace"
+name: "Impoverished Population By Race"
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino
@@ -301,18 +301,18 @@ member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispan
 
 Node: dcid:dc/topic/PovertyByResidency
 typeOf: dcs:Topic
-name: "PovertyByResidency"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByResidency_BelowPovertyByResidency
+name: "Poverty By Residency"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByResidency_ImpoverishedPopulationByResidency
 
-Node: dcid:dc/svpg/dc/topic/PovertyByResidency_BelowPovertyByResidency
+Node: dcid:dc/svpg/dc/topic/PovertyByResidency_ImpoverishedPopulationByResidency
 typeOf: dcs:StatVarPeerGroup
-name: "BelowPovertyByResidency"
+name: "Impoverished Population By Residency"
 member: dcid:Count_Person_Rural_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_Urban_BelowPovertyLevelInThePast12Months
 
 Node: dcid:dc/topic/PovertyLevels
 typeOf: dcs:Topic
-name: "PovertyLevels"
+name: "Poverty Levels"
 relevantVariable: dcid:Count_Household_WithFoodStampsInThePast12Months
 relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months
 relevantVariable: dcid:Count_Person_Civilian_NonInstitutionalized_PovertyStatusDetermined
@@ -329,13 +329,12 @@ relevantVariable: dcid:Amount_Remittance_OutwardRemittance
 
 Node: dcid:dc/topic/UnemploymentRate
 typeOf: dcs:Topic
-name: "UnemploymentRate"
+name: "Unemployment Rate"
 relevantVariable: dcid:UnemploymentRate_Person
 relevantVariable: dcid:UnemploymentRate_Person_Female
 relevantVariable: dcid:UnemploymentRate_Person_Male
 
 Node: dcid:dc/topic/UnpaidFamilyWorkers
 typeOf: dcs:Topic
-name: "UnpaidFamilyWorkers"
+name: "Unpaid Family Workers"
 relevantVariable: dcid:Count_Person_16OrMoreYears_PrivatelyOwnedEstablishment_NoHealthInsurance_UnpaidFamilyWorker_Worker
-
