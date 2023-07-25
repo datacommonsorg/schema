@@ -284,3 +284,86 @@ measuredProperty: dcs:count
 statType: dcs:measuredValue
 age: [5 19 Years]
 
+Node: dcid:Count_Person_EducationalAttainment_1StTo12ThGrade
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+age: dcs:Years25Onwards
+educationalAttainment: dcs:1StTo12ThGrade
+
+Node: dcid:Count_Parent_Occupation_Management_Business_Science_Arts
+typeOf: dcs:StatisticalVariable
+populationType: dcs:ACSEDParent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+hasOccupation: dcs:SOCv2018/highLevelAggregation-1
+name: "Count of Parent: Management, Business, Science, And Arts Occupations"
+
+Node: dcid:Count_Parent_Occupation_Natural_Resources_Construction_Maintenance
+typeOf: dcs:StatisticalVariable
+populationType: dcs:ACSEDParent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+hasOccupation: dcs:SOCv2018/highLevelAggregation-4
+name: "Count of Parent: Natural Resources, Construction, And Maintenance Occupations"
+
+Node: dcid:Count_Parent_Occupation_Production_Transportation_Material_Moving
+typeOf: dcs:StatisticalVariable
+populationType: dcs:ACSEDParent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+hasOccupation: dcs:SOCv2018/highLevelAggregation-5
+name: "Count of Parent: Production, Transportation, And Material Moving Occupations"
+
+Node: dcid:Count_Parent_Occupation_Sales_Office
+typeOf: dcs:StatisticalVariable
+populationType: dcs:ACSEDParent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+hasOccupation: dcs:SOCv2018/highLevelAggregation-3
+name: "Count of Parent: Sales And Office Occupations"
+
+Node: dcid:Count_Parent_Occupation_Service
+typeOf: dcs:StatisticalVariable
+populationType: dcs:ACSEDParent
+statType: dcs:measuredValue
+measuredProperty: dcs:count
+hasOccupation: dcs:SOCv2018/intermediateAggregation-5
+name: "Count of Parent: Service Occupations"
+
+Node: dcid:Count_Person_InLaborForce_Divorced
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: [16 - Years]
+populationType: dcid:Person
+maritalStatus: dcid:Divorced
+employmentStatus: dcid:BLS_InLaborForce
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:Count_Person_InLaborForce_NeverMarried
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: [16 - Years]
+populationType: dcid:Person
+maritalStatus: dcid:NeverMarried
+employmentStatus: dcid:BLS_InLaborForce
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:Count_Person_InLaborForce_MarriedAndNotSeparated
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: [16 - Years]
+populationType: dcid:Person
+maritalStatus: dcid:MarriedAndNotSeparated
+employmentStatus: dcid:BLS_InLaborForce
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:Count_Person_InLaborForce_Widowed
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: [16 - Years]
+populationType: dcid:Person
+maritalStatus: dcid:Widowed
+employmentStatus: dcid:BLS_InLaborForce
+typeOf: dcs:StatisticalVariable
