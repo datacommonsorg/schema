@@ -2,78 +2,114 @@
 # Topics for Education NL Insights.
 # Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
 
+Node: dcid:dc/topic/BachelorsMajorType
+typeOf: dcs:Topic
+name: "BachelorsMajorType"
+relevantVariable: dcid:Count_Person_BachelorOfArtsHumanitiesAndOtherMajor
+relevantVariable: dcid:Count_Person_BachelorOfBusinessMajor
+relevantVariable: dcid:Count_Person_BachelorOfEducationMajor
+relevantVariable: dcid:Count_Person_BachelorOfScienceAndEngineeringMajor
+relevantVariable: dcid:Count_Person_BachelorOfScienceAndEngineeringRelatedMajor
+
+Node: dcid:dc/topic/BreakdownOfSupportServicesStaffInSchools
+typeOf: dcs:Topic
+name: "BreakdownOfSupportServicesStaffInSchools"
+relevantVariable: dcid:Count_Faculty_ElementarySchoolCounselor
+relevantVariable: dcid:Count_Faculty_LEAAdministrativeSupportStaff
+relevantVariable: dcid:Count_Faculty_LEAAdministrator
+relevantVariable: dcid:Count_Faculty_ParaProfessionalsAidesOrInstructionalAide
+relevantVariable: dcid:Count_Faculty_SchoolAdministrator
+relevantVariable: dcid:Count_Faculty_SchoolOtherGuidanceCounselor
+relevantVariable: dcid:Count_Faculty_SchoolPsychologist
+relevantVariable: dcid:Count_Faculty_SecondarySchoolCounselor
+relevantVariable: dcid:Count_Faculty_TotalGuidanceCounselor
+
+Node: dcid:dc/topic/Education
+typeOf: dcs:Topic
+name: "Education"
+relevantVariable: dcid:dc/topic/EducationalAttainment
+relevantVariable: dcid:dc/topic/Parents
+relevantVariable: dcid:dc/topic/SchoolType
+relevantVariable: dcid:dc/topic/Schools
+
 Node: dcid:dc/topic/EducationalAttainment
 typeOf: dcs:Topic
-name: "Educational Attainment"
-relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainment_BachelorsMajorType
-relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainment_EducationalAttainmentbyGender
-relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainment_LevelofEducationalAttainment
+name: "EducationalAttainment"
+relevantVariable: dcid:dc/topic/BachelorsMajorType
+relevantVariable: dcid:dc/topic/EducationalAttainmentbyGenderAndLevel
+relevantVariable: dcid:dc/topic/LevelOfEducationalAttainment
 
-Node: dcid:dc/svpg/dc/topic/EducationalAttainment_BachelorsMajorType
-typeOf: dcs:StatVarPeerGroup
-name: "Bachelors Major Type"
-member: dcid:Count_Person_BachelorOfArtsHumanitiesAndOtherMajor
-member: dcid:Count_Person_BachelorOfBusinessMajor
-member: dcid:Count_Person_BachelorOfEducationMajor
-member: dcid:Count_Person_BachelorOfScienceAndEngineeringMajor
-member: dcid:Count_Person_BachelorOfScienceAndEngineeringRelatedMajor
+Node: dcid:dc/topic/EducationalAttainmentbyGenderAndLevel
+typeOf: dcs:Topic
+name: "EducationalAttainmentbyGenderAndLevel"
+relevantVariable: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Female
+relevantVariable: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Male
+relevantVariable: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
+relevantVariable: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
+relevantVariable: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Female
+relevantVariable: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Male
 
-Node: dcid:dc/svpg/dc/topic/EducationalAttainment_EducationalAttainmentbyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Educational Attainment by Level and Gender"
-member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Female
-member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Male
-member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
-member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
-member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Female
-member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Male
+Node: dcid:dc/topic/FacultyType
+typeOf: dcs:Topic
+name: "FacultyType"
+relevantVariable: dcid:Count_Teacher_ElementaryTeacher
+relevantVariable: dcid:Count_Teacher_SecondaryTeacher
+relevantVariable: dcid:Count_Teacher_UngradedTeacher
+relevantVariable: dcid:Count_Teacher_UniversityAndCollegeTeacher
 
-Node: dcid:dc/svpg/dc/topic/EducationalAttainment_LevelofEducationalAttainment
-typeOf: dcs:StatVarPeerGroup
-name: "Level of Educational Attainment"
-member: dcid:Count_Person_EducationalAttainment10ThGrade
-member: dcid:Count_Person_EducationalAttainment11ThGrade
-member: dcid:Count_Person_EducationalAttainment12ThGradeNoDiploma
-member: dcid:Count_Person_EducationalAttainment1StGrade
-member: dcid:Count_Person_EducationalAttainment2NdGrade
-member: dcid:Count_Person_EducationalAttainment3RdGrade
-member: dcid:Count_Person_EducationalAttainment4ThGrade
-member: dcid:Count_Person_EducationalAttainment5ThGrade
-member: dcid:Count_Person_EducationalAttainment6ThGrade
-member: dcid:Count_Person_EducationalAttainment7ThGrade
-member: dcid:Count_Person_EducationalAttainment8ThGrade
-member: dcid:Count_Person_EducationalAttainment9ThGrade
-member: dcid:Count_Person_EducationalAttainmentAssociatesDegree
-member: dcid:Count_Person_EducationalAttainmentBachelorsDegree
-member: dcid:Count_Person_EducationalAttainmentDoctorateDegree
-member: dcid:Count_Person_EducationalAttainmentGraduateOrProfessionalDegree
-member: dcid:Count_Person_EducationalAttainmentHighSchoolGraduateIncludesEquivalency
-member: dcid:Count_Person_EducationalAttainmentKindergarten
-member: dcid:Count_Person_EducationalAttainmentMastersDegree
-member: dcid:Count_Person_EducationalAttainmentNurserySchool
-member: dcid:Count_Person_EducationalAttainmentPrimarySchool
-member: dcid:Count_Person_EducationalAttainmentRegularHighSchoolDiploma
-member: dcid:Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma
+Node: dcid:dc/topic/LevelOfEducationalAttainment
+typeOf: dcs:Topic
+name: "LevelOfEducationalAttainment"
+relevantVariable: dcid:Count_Person_EducationalAttainment10ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment11ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment12ThGradeNoDiploma
+relevantVariable: dcid:Count_Person_EducationalAttainment1StGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment2NdGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment3RdGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment4ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment5ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment6ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment7ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment8ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainment9ThGrade
+relevantVariable: dcid:Count_Person_EducationalAttainmentAssociatesDegree
+relevantVariable: dcid:Count_Person_EducationalAttainmentBachelorsDegree
+relevantVariable: dcid:Count_Person_EducationalAttainmentDoctorateDegree
+relevantVariable: dcid:Count_Person_EducationalAttainmentGraduateOrProfessionalDegree
+relevantVariable: dcid:Count_Person_EducationalAttainmentHighSchoolGraduateIncludesEquivalency
+relevantVariable: dcid:Count_Person_EducationalAttainmentKindergarten
+relevantVariable: dcid:Count_Person_EducationalAttainmentMastersDegree
+relevantVariable: dcid:Count_Person_EducationalAttainmentNurserySchool
+relevantVariable: dcid:Count_Person_EducationalAttainmentPrimarySchool
+relevantVariable: dcid:Count_Person_EducationalAttainmentRegularHighSchoolDiploma
+relevantVariable: dcid:Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma
+
+Node: dcid:dc/topic/LunchEligibility
+typeOf: dcs:Topic
+name: "LunchEligibility"
+relevantVariable: dcid:Count_Student_DirectCertificationLunch
+relevantVariable: dcid:Count_Student_FreeLunch
 
 Node: dcid:dc/topic/Parents
 typeOf: dcs:Topic
 name: "Parents"
-relevantVariable: dcid:dc/svpg/dc/topic/Parents_ParentsEducationalAttainment
+relevantVariable: dcid:dc/topic/ParentsEducationalAttainment
 
-Node: dcid:dc/svpg/dc/topic/Parents_ParentsEducationalAttainment
-typeOf: dcs:StatVarPeerGroup
-name: "Parents Educational Attainment"
-member: dcid:Percent_Parent_25OrMoreYears_ChildEnrolledInPublicSchool_EducationalAttainmentBachelorsDegreeOrHigher
-member: dcid:Percent_Parent_25OrMoreYears_ChildEnrolledInPublicSchool_EducationalAttainmentHighSchoolGraduateOrHigher
+Node: dcid:dc/topic/ParentsEducationalAttainment
+typeOf: dcs:Topic
+name: "ParentsEducationalAttainment"
+relevantVariable: dcid:Percent_Parent_25OrMoreYears_ChildEnrolledInPublicSchool_EducationalAttainmentBachelorsDegreeOrHigher
+relevantVariable: dcid:Percent_Parent_25OrMoreYears_ChildEnrolledInPublicSchool_EducationalAttainmentHighSchoolGraduateOrHigher
 
 Node: dcid:dc/topic/SchoolType
 typeOf: dcs:Topic
-name: "School Type"
-relevantVariable: dcid:dc/svpg/dc/topic/SchoolType_EnrolledinSchoolTypebyRace
+name: "SchoolType"
+relevantVariable: dcid:dc/topic/EnrolledInSchoolTypeByRace
+relevantVariable: dcid:dc/svpg/dc/topic/SchoolType_EnrolledInSchoolTypeByRace
 
-Node: dcid:dc/svpg/dc/topic/SchoolType_EnrolledinSchoolTypebyRace
+Node: dcid:dc/svpg/dc/topic/SchoolType_EnrolledInSchoolTypeByRace
 typeOf: dcs:StatVarPeerGroup
-name: "Enrolled in School Type by Race"
+name: "EnrolledInSchoolTypeByRace"
 member: dcid:Count_Person_15To19Years_BlackOrAfricanAmericanAlone_EnrolledInPrivateSchool
 member: dcid:Count_Person_15To19Years_BlackOrAfricanAmericanAlone_EnrolledInPublicSchool
 member: dcid:Count_Person_15To19Years_HispanicOrLatino_EnrolledInPrivateSchool
@@ -84,73 +120,56 @@ member: dcid:Count_Person_15To19Years_WhiteAloneNotHispanicOrLatino_EnrolledInPu
 Node: dcid:dc/topic/Schools
 typeOf: dcs:Topic
 name: "Schools"
-relevantVariable: dcid:dc/svpg/dc/topic/Schools_BreakdownofSupportServicesStaffinSchools
-relevantVariable: dcid:dc/svpg/dc/topic/Schools_Facultytype
-relevantVariable: dcid:dc/svpg/dc/topic/Schools_LunchEligibility
-relevantVariable: dcid:dc/svpg/dc/topic/Schools_StudentEnrollmentLevels
-relevantVariable: dcid:dc/svpg/dc/topic/Schools_StudentPopulation
-relevantVariable: dcid:dc/svpg/dc/topic/Schools_StudentTeacherRatio
-relevantVariable: dcid:dc/svpg/dc/topic/Schools_SupportServicesStaffinSchools
+relevantVariable: dcid:dc/topic/LunchEligibility
+relevantVariable: dcid:dc/topic/StudentPopulation
+relevantVariable: dcid:dc/topic/Teacher
 
-Node: dcid:dc/svpg/dc/topic/Schools_BreakdownofSupportServicesStaffinSchools
-typeOf: dcs:StatVarPeerGroup
-name: "Breakdown of Support Services Staff in Schools"
-member: dcid:Count_Faculty_ElementarySchoolCounselor
-member: dcid:Count_Faculty_LEAAdministrativeSupportStaff
-member: dcid:Count_Faculty_LEAAdministrator
-member: dcid:Count_Faculty_ParaProfessionalsAidesOrInstructionalAide
-member: dcid:Count_Faculty_SchoolAdministrator
-member: dcid:Count_Faculty_SchoolOtherGuidanceCounselor
-member: dcid:Count_Faculty_SchoolPsychologist
-member: dcid:Count_Faculty_SecondarySchoolCounselor
-member: dcid:Count_Faculty_TotalGuidanceCounselor
+Node: dcid:dc/topic/StudentEnrollmentLevels
+typeOf: dcs:Topic
+name: "StudentEnrollmentLevels"
+relevantVariable: dcid:Count_Student_HighSchool
+relevantVariable: dcid:Count_Student_Kindergarten
+relevantVariable: dcid:Count_Student_MiddleSchool
+relevantVariable: dcid:Count_Student_PreKindergarten
+relevantVariable: dcid:Count_Student_PrimarySchool
+relevantVariable: dcid:Count_Student_SchoolGrade1To8
+relevantVariable: dcid:Count_Student_SchoolGrade9To12
 
-Node: dcid:dc/svpg/dc/topic/Schools_Facultytype
-typeOf: dcs:StatVarPeerGroup
-name: "Faculty type"
-member: dcid:Count_Teacher_ElementaryTeacher
-member: dcid:Count_Teacher_SecondaryTeacher
-member: dcid:Count_Teacher_UngradedTeacher
-member: dcid:Count_Teacher_UniversityAndCollegeTeacher
+Node: dcid:dc/topic/StudentPopulation
+typeOf: dcs:Topic
+name: "StudentPopulation"
+relevantVariable: dcid:dc/topic/StudentEnrollmentLevels
+relevantVariable: dcid:dc/topic/StudentPopulationBreakdown
 
-Node: dcid:dc/svpg/dc/topic/Schools_LunchEligibility
-typeOf: dcs:StatVarPeerGroup
-name: "Lunch Eligibility"
-member: dcid:Count_Student_DirectCertificationLunch
-member: dcid:Count_Student_FreeLunch
+Node: dcid:dc/topic/StudentPopulationBreakdown
+typeOf: dcs:Topic
+name: "StudentPopulationBreakdown"
+relevantVariable: dcid:Count_Student
+relevantVariable: dcid:Count_Student_Asian
+relevantVariable: dcid:Count_Student_Black
+relevantVariable: dcid:Count_Student_Female
+relevantVariable: dcid:Count_Student_HawaiianNativeOrPacificIslander
+relevantVariable: dcid:Count_Student_HispanicOrLatino
+relevantVariable: dcid:Count_Student_Male
+relevantVariable: dcid:Count_Student_TwoOrMoreRaces
+relevantVariable: dcid:Count_Student_White
 
-Node: dcid:dc/svpg/dc/topic/Schools_StudentEnrollmentLevels
-typeOf: dcs:StatVarPeerGroup
-name: "Student Enrollment Levels"
-member: dcid:Count_Student_HighSchool
-member: dcid:Count_Student_Kindergarten
-member: dcid:Count_Student_MiddleSchool
-member: dcid:Count_Student_PreKindergarten
-member: dcid:Count_Student_PrimarySchool
-member: dcid:Count_Student_SchoolGrade1To8
-member: dcid:Count_Student_SchoolGrade9To12
+Node: dcid:dc/topic/StudentTeacherRatio
+typeOf: dcs:Topic
+name: "StudentTeacherRatio"
+relevantVariable: dcid:Percent_Student_AsAFractionOf_Count_Teacher
 
-Node: dcid:dc/svpg/dc/topic/Schools_StudentPopulation
-typeOf: dcs:StatVarPeerGroup
-name: "Student Population"
-member: dcid:Count_Student
-member: dcid:Count_Student_Asian
-member: dcid:Count_Student_Black
-member: dcid:Count_Student_Female
-member: dcid:Count_Student_HawaiianNativeOrPacificIslander
-member: dcid:Count_Student_HispanicOrLatino
-member: dcid:Count_Student_Male
-member: dcid:Count_Student_TwoOrMoreRaces
-member: dcid:Count_Student_White
+Node: dcid:dc/topic/SupportServicesStaffInSchools
+typeOf: dcs:Topic
+name: "SupportServicesStaffInSchools"
+relevantVariable: dcid:Count_Faculty_SchoolAdministrativeSupportStaff
+relevantVariable: dcid:Count_Faculty_TotalGuidanceCounselor
 
-Node: dcid:dc/svpg/dc/topic/Schools_StudentTeacherRatio
-typeOf: dcs:StatVarPeerGroup
-name: "Student Teacher Ratio"
-member: dcid:Percent_Student_AsAFractionOf_Count_Teacher
-
-Node: dcid:dc/svpg/dc/topic/Schools_SupportServicesStaffinSchools
-typeOf: dcs:StatVarPeerGroup
-name: "Support Services Staff in Schools"
-member: dcid:Count_Faculty_SchoolAdministrativeSupportStaff
-member: dcid:Count_Faculty_TotalGuidanceCounselor
+Node: dcid:dc/topic/Teacher
+typeOf: dcs:Topic
+name: "Teacher"
+relevantVariable: dcid:dc/topic/BreakdownOfSupportServicesStaffInSchools
+relevantVariable: dcid:dc/topic/FacultyType
+relevantVariable: dcid:dc/topic/StudentTeacherRatio
+relevantVariable: dcid:dc/topic/SupportServicesStaffInSchools
 
