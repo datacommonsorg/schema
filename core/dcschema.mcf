@@ -406,7 +406,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:Student
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -2791,7 +2791,7 @@ Node: dcid:enrollmentLevel
 typeOf: schema:Property
 name: "enrollmentLevel"
 description: "Identifies a person's enrollment level."
-rangeIncludes: dcs:EnrollmentLevelEnum, dcs:SchoolGradeLevelEnum
+rangeIncludes: dcs:EnrollmentLevelEnum, dcs:SchoolGradeLevelEnum, dcs:USC_EducationalAttainmentEnum
 domainIncludes: schema:Person, dcs:Student
 
 Node: dcid:workCategory
@@ -3721,3 +3721,14 @@ Node: dcid:GoodsSellingUsage
 typeOf: dcid:InternetUsagePurposeEnum
 name: "Goods Selling Usage"
 
+Node: dcid:familymembertype
+typeOf: dcs:Property
+name: "familymembertype"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:FamilymembertypeEnum,dcid:Class
+
+Node: dcid:literateLanguage
+typeOf: dcs:Property
+name: "literateLanguage"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:USC_LanguageSpokenAtHomeEnum

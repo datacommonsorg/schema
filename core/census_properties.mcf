@@ -1,5 +1,3 @@
-# Current Census properties (/cns/jv-d/home/datcom/tjann/census/pop_counters/topics-values.csv)
-
 Node: abilityToSpeakEnglish
 dcid: "abilityToSpeakEnglish"
 typeOf: schema:Property
@@ -203,12 +201,12 @@ Node: levelOfSchool
 dcid: "levelOfSchool"
 name: "levelOfSchool"
 typeOf: schema:Property
-rangeIncludes: dcs:USC_LevelOfSchoolEnum, dcs:SecondarySchool
+rangeIncludes: dcs:USC_LevelOfSchoolEnum, dcs:SecondarySchool, dcs:MiddleSchool
 domainIncludes: dcs:Student
 
 Node: maritalStatus
 dcid: "maritalStatus"
-rangeIncludes: dcs:USC_MaritalStatusEnum, dcs:MaritalStatusEnum
+rangeIncludes: dcs:USC_MaritalStatusEnum, dcs:MaritalStatusEnum ,dcs:USC_SpouseAbsentReasonEnum
 name: "maritalStatus"
 typeOf: schema:Property
 domainIncludes: schema:Person

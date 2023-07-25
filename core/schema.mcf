@@ -1838,7 +1838,7 @@ rangeIncludes: schema:Person
 name: "employees"
 supersededBy: "employee"
 domainIncludes: schema:Organization
-typeOf: schema:Property
+typeOf: schema:Property, schema:WorkerClassificationEnum
 
 Node: GasStation
 dcid: "GasStation"
@@ -4340,7 +4340,7 @@ dcid: "nationality"
 name: "nationality"
 domainIncludes: schema:Person
 typeOf: schema:Property
-rangeIncludes: schema:Country
+rangeIncludes: schema:Country, schema:Property
 
 Node: ActiveActionStatus
 dcid: "ActiveActionStatus"
@@ -8393,7 +8393,7 @@ name: "lodgingUnitType"
 Node: gender
 dcid: "gender"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:BirthEvent, schema:Household
+domainIncludes: schema:Person, schema:BirthEvent, schema:Household, schema:Student, schema:MortalityEvent
 name: "gender"
 rangeIncludes: schema:GenderType, dcs:SDG_SexEnum
 
