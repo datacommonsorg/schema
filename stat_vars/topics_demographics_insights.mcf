@@ -12,6 +12,34 @@ relevantVariable: dcid:dc/topic/VeryOldAndVeryYoung
 Node: dcid:dc/topic/AgeDistribution
 typeOf: dcs:Topic
 name: "AgeDistribution"
+
+Node: dcid:dc/topic/AgeMedians
+typeOf: dcs:Topic
+name: "AgeMedians"
+relevantVariable: dcid:Median_Age_Person
+relevantVariable: dcid:dc/svpg/dc/topic/AgeMedians_MedianAgeByGender
+
+Node: dcid:dc/svpg/dc/topic/AgeMedians_MedianAgeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "MedianAgeByGender"
+member: dcid:Median_Age_Person_Female
+member: dcid:Median_Age_Person_Male
+
+Node: dcid:dc/topic/CitizenshipStatus
+typeOf: dcs:Topic
+name: "CitizenshipStatus"
+relevantVariable: dcid:dc/svpg/dc/topic/CitizenshipStatus_CountPersonCitizenshipStatus
+
+Node: dcid:dc/svpg/dc/topic/CitizenshipStatus_CountPersonCitizenshipStatus
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonCitizenshipStatus"
+member: dcid:Count_Person_NotAUSCitizen
+member: dcid:Count_Person_USCitizenBornInTheUnitedStates
+member: dcid:Count_Person_USCitizenByNaturalization
+
+Node: dcid:dc/topic/CountPersonAgeBrackets
+typeOf: dcs:Topic
+name: "CountPersonAgeBrackets"
 relevantVariable: dcid:Count_Person_18To24Years
 relevantVariable: dcid:Count_Person_1To4Years
 relevantVariable: dcid:Count_Person_25To34Years
@@ -22,27 +50,18 @@ relevantVariable: dcid:Count_Person_5To17Years
 relevantVariable: dcid:Count_Person_65To74Years
 relevantVariable: dcid:Count_Person_75OrMoreYears
 
-Node: dcid:dc/topic/AgeMedians
-typeOf: dcs:Topic
-name: "AgeMedians"
-relevantVariable: dcid:Median_Age_Person
-relevantVariable: dcid:Median_Age_Person_Female
-relevantVariable: dcid:Median_Age_Person_Male
-
-Node: dcid:dc/topic/CitizenshipStatus
-typeOf: dcs:Topic
-name: "CitizenshipStatus"
-relevantVariable: dcid:Count_Person_NotAUSCitizen
-relevantVariable: dcid:Count_Person_USCitizenBornInTheUnitedStates
-relevantVariable: dcid:Count_Person_USCitizenByNaturalization
-
 Node: dcid:dc/topic/DateOfEntry
 typeOf: dcs:Topic
 name: "DateOfEntry"
-relevantVariable: dcid:Count_Person_DateOfEntry1990OrEarlier
-relevantVariable: dcid:Count_Person_DateOfEntry1990To1999
-relevantVariable: dcid:Count_Person_DateOfEntry2000To2009
-relevantVariable: dcid:Count_Person_DateOfEntry2010OrLater
+relevantVariable: dcid:dc/svpg/dc/topic/DateOfEntry_CountPersonDateOfEntryByYearRanges
+
+Node: dcid:dc/svpg/dc/topic/DateOfEntry_CountPersonDateOfEntryByYearRanges
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonDateOfEntryByYearRanges"
+member: dcid:Count_Person_DateOfEntry1990OrEarlier
+member: dcid:Count_Person_DateOfEntry1990To1999
+member: dcid:Count_Person_DateOfEntry2000To2009
+member: dcid:Count_Person_DateOfEntry2010OrLater
 
 Node: dcid:dc/topic/Demographics
 typeOf: dcs:Topic
@@ -55,12 +74,22 @@ relevantVariable: dcid:dc/topic/MaritalStatus
 Node: dcid:dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus
 typeOf: dcs:Topic
 name: "DivorcedBreakdownByRaceGenderLaborForceStatus"
-relevantVariable: dcid:Count_Person_15OrMoreYears_Divorced_AsianAlone
-relevantVariable: dcid:Count_Person_15OrMoreYears_Divorced_BlackOrAfricanAmerican
-relevantVariable: dcid:Count_Person_15OrMoreYears_Divorced_HispanicOrLatino
-relevantVariable: dcid:Count_Person_Female_Divorced
-relevantVariable: dcid:Count_Person_InLaborForce_Divorced
-relevantVariable: dcid:Count_Person_Male_Divorced
+relevantVariable: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByGender
+relevantVariable: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByRace
+
+Node: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByGender
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonDivorcedByGender"
+member: dcid:Count_Person_Female_Divorced
+member: dcid:Count_Person_InLaborForce_Divorced
+member: dcid:Count_Person_Male_Divorced
+
+Node: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByRace
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonDivorcedByRace"
+member: dcid:Count_Person_15OrMoreYears_Divorced_AsianAlone
+member: dcid:Count_Person_15OrMoreYears_Divorced_BlackOrAfricanAmerican
+member: dcid:Count_Person_15OrMoreYears_Divorced_HispanicOrLatino
 
 Node: dcid:dc/topic/Immigrants
 typeOf: dcs:Topic
@@ -78,9 +107,14 @@ relevantVariable: dcid:dc/topic/LanguageEngish
 Node: dcid:dc/topic/LanguageEngish
 typeOf: dcs:Topic
 name: "LanguageEngish"
-relevantVariable: dcid:Count_Person_SpeakEnglishNotAtAll
-relevantVariable: dcid:Count_Person_SpeakEnglishNotWell
-relevantVariable: dcid:Count_Person_SpeakEnglishWell
+relevantVariable: dcid:dc/svpg/dc/topic/LanguageEngish_CountPersonSpeakingEnglishLevel
+
+Node: dcid:dc/svpg/dc/topic/LanguageEngish_CountPersonSpeakingEnglishLevel
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonSpeakingEnglishLevel"
+member: dcid:Count_Person_SpeakEnglishNotAtAll
+member: dcid:Count_Person_SpeakEnglishNotWell
+member: dcid:Count_Person_SpeakEnglishWell
 
 Node: dcid:dc/topic/LanguageSpokenAtHome
 typeOf: dcs:Topic
@@ -103,58 +137,109 @@ Node: dcid:dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus
 typeOf: dcs:Topic
 name: "MarriedBreakdownByRaceGenderLaborForceStatus"
 relevantVariable: dcid:Count_Person_15OrMoreYears_Divorced_MarriedAndNotSeparated
-relevantVariable: dcid:Count_Person_15OrMoreYears_Divorced_MarriedAndNotSeparated
-relevantVariable: dcid:Count_Person_15OrMoreYears_Divorced_MarriedAndNotSeparated
-relevantVariable: dcid:Count_Person_Female_MarriedAndNotSeparated
 relevantVariable: dcid:Count_Person_InLaborForce_MarriedAndNotSeparated
-relevantVariable: dcid:Count_Person_Male_MarriedAndNotSeparated
+relevantVariable: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByGender
+relevantVariable: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByRace
+
+Node: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByGender
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonMarriedAndNotSeparatedByGender"
+member: dcid:Count_Person_Female_MarriedAndNotSeparated
+member: dcid:Count_Person_Male_MarriedAndNotSeparated
+
+Node: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByRace
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonMarriedAndNotSeparatedByRace"
+member: dcid:Count_Person_MarriedAndNotSeparated_AsianAlone
+member: dcid:Count_Person_MarriedAndNotSeparated_BlackOrAfricanAmerican
+member: dcid:Count_Person_MarriedAndNotSeparated_HispanicOrLatino
 
 Node: dcid:dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus
 typeOf: dcs:Topic
 name: "NeverMarriedBreakdownByRaceGenderLaborForceStatus"
-relevantVariable: dcid:Count_Person_15OrMoreYears_NeverMarried_AsianAlone
-relevantVariable: dcid:Count_Person_15OrMoreYears_NeverMarried_BlackOrAfricanAmerican
-relevantVariable: dcid:Count_Person_15OrMoreYears_NeverMarried_HispanicOrLatino
-relevantVariable: dcid:Count_Person_Female_NeverMarried
 relevantVariable: dcid:Count_Person_InLaborForce_NeverMarried
-relevantVariable: dcid:Count_Person_Male_NeverMarried
+relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedByRace
+relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedGender
+
+Node: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedByRace
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonNeverMarriedByRace"
+member: dcid:Count_Person_15OrMoreYears_NeverMarried_AsianAlone
+member: dcid:Count_Person_15OrMoreYears_NeverMarried_BlackOrAfricanAmerican
+member: dcid:Count_Person_15OrMoreYears_NeverMarried_HispanicOrLatino
+
+Node: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedGender
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonNeverMarriedGender"
+member: dcid:Count_Person_Female_NeverMarried
+member: dcid:Count_Person_Male_NeverMarried
 
 Node: dcid:dc/topic/PlaceOfBirth
 typeOf: dcs:Topic
 name: "PlaceOfBirth"
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthAfrica
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthAsia
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthCaribbean
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthCentralAmericaExceptMexico
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthEurope
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthMexico
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthNorthAmerica
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthOcenia
-relevantVariable: dcid:Count_Person_ForeignBorn_PlaceOfBirthSouthAmerica
+relevantVariable: dcid:dc/svpg/dc/topic/PlaceOfBirth_CountPersonByPlaceOfBirth
+
+Node: dcid:dc/svpg/dc/topic/PlaceOfBirth_CountPersonByPlaceOfBirth
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonByPlaceOfBirth"
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthAfrica
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthAsia
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthCaribbean
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthCentralAmericaExceptMexico
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthEurope
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthMexico
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthNorthAmerica
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthOcenia
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthSouthAmerica
 
 Node: dcid:dc/topic/PopulationsInDifferentStatus
 typeOf: dcs:Topic
 name: "PopulationsInDifferentStatus"
-relevantVariable: dcid:Count_Person_Divorced
-relevantVariable: dcid:Count_Person_MarriedAndNotSeparated
-relevantVariable: dcid:Count_Person_NeverMarried
-relevantVariable: dcid:Count_Person_Widowed
+relevantVariable: dcid:dc/svpg/dc/topic/PopulationsInDifferentStatus_NumberOfPeopleByMaritalStatus
+
+Node: dcid:dc/svpg/dc/topic/PopulationsInDifferentStatus_NumberOfPeopleByMaritalStatus
+typeOf: dcs:StatVarPeerGroup
+name: "NumberOfPeopleByMaritalStatus"
+member: dcid:Count_Person_Divorced
+member: dcid:Count_Person_MarriedAndNotSeparated
+member: dcid:Count_Person_NeverMarried
+member: dcid:Count_Person_Widowed
 
 Node: dcid:dc/topic/VeryOldAndVeryYoung
 typeOf: dcs:Topic
 name: "VeryOldAndVeryYoung"
-relevantVariable: dcid:Count_Person_0To4Years_Female
-relevantVariable: dcid:Count_Person_0To4Years_Male
-relevantVariable: dcid:Count_Person_85OrMoreYears_Female
-relevantVariable: dcid:Count_Person_85OrMoreYears_Male
+relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryOldGender
+relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryYoungGender
+
+Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryOldGender
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonVeryOldGender"
+member: dcid:Count_Person_85OrMoreYears_Female
+member: dcid:Count_Person_85OrMoreYears_Male
+
+Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryYoungGender
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonVeryYoungGender"
+member: dcid:Count_Person_0To4Years_Female
+member: dcid:Count_Person_0To4Years_Male
 
 Node: dcid:dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus
 typeOf: dcs:Topic
 name: "WidowedBreakdownByRaceGenderLaborForceStatus"
-relevantVariable: dcid:Count_Person_15OrMoreYears_Widowed_AsianAlone
-relevantVariable: dcid:Count_Person_15OrMoreYears_Widowed_BlackOrAfricanAmerican
-relevantVariable: dcid:Count_Person_15OrMoreYears_Widowed_HispanicOrLatino
-relevantVariable: dcid:Count_Person_Female_Widowed
-relevantVariable: dcid:Count_Person_InLaborForce_Widowed
-relevantVariable: dcid:Count_Person_Male_Widowed
+relevantVariable: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByGender
+relevantVariable: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByRace
+
+Node: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByGender
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonWidowedByGender"
+member: dcid:Count_Person_Female_Widowed
+member: dcid:Count_Person_InLaborForce_Widowed
+member: dcid:Count_Person_Male_Widowed
+
+Node: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByRace
+typeOf: dcs:StatVarPeerGroup
+name: "CountPersonWidowedByRace"
+member: dcid:Count_Person_15OrMoreYears_Widowed_AsianAlone
+member: dcid:Count_Person_15OrMoreYears_Widowed_BlackOrAfricanAmerican
+member: dcid:Count_Person_15OrMoreYears_Widowed_HispanicOrLatino
 

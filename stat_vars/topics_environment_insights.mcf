@@ -5,21 +5,31 @@
 Node: dcid:dc/topic/AirQualityIndex
 typeOf: dcs:Topic
 name: "AirQualityIndex"
-relevantVariable: dcid:AirQualityIndex_AirPollutant
-relevantVariable: dcid:AirQualityIndex_AirPollutant_CO
-relevantVariable: dcid:AirQualityIndex_AirPollutant_NO2
-relevantVariable: dcid:AirQualityIndex_AirPollutant_Ozone
-relevantVariable: dcid:AirQualityIndex_AirPollutant_PM10
-relevantVariable: dcid:AirQualityIndex_AirPollutant_PM2.5
-relevantVariable: dcid:AirQualityIndex_AirPollutant_SO2
+relevantVariable: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
+
+Node: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
+typeOf: dcs:StatVarPeerGroup
+name: "AQIByPollutant"
+member: dcid:AirQualityIndex_AirPollutant
+member: dcid:AirQualityIndex_AirPollutant_CO
+member: dcid:AirQualityIndex_AirPollutant_NO2
+member: dcid:AirQualityIndex_AirPollutant_Ozone
+member: dcid:AirQualityIndex_AirPollutant_PM10
+member: dcid:AirQualityIndex_AirPollutant_PM2.5
+member: dcid:AirQualityIndex_AirPollutant_SO2
 
 Node: dcid:dc/topic/CarbonMonoxide
 typeOf: dcs:Topic
 name: "CarbonMonoxide"
-relevantVariable: dcid:Max_Concentration_AirPollutant_CO
-relevantVariable: dcid:Mean_Concentration_AirPollutant_CO
-relevantVariable: dcid:Median_Concentration_AirPollutant_CO
-relevantVariable: dcid:Min_Concentration_AirPollutant_CO
+relevantVariable: dcid:dc/svpg/dc/topic/CarbonMonoxide_COConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/CarbonMonoxide_COConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "COConcentrationStats"
+member: dcid:Max_Concentration_AirPollutant_CO
+member: dcid:Mean_Concentration_AirPollutant_CO
+member: dcid:Median_Concentration_AirPollutant_CO
+member: dcid:Min_Concentration_AirPollutant_CO
 
 Node: dcid:dc/topic/DecadeProjectedHighs
 typeOf: dcs:Topic
@@ -89,80 +99,130 @@ relevantVariable: dcid:NumberOfDays_HeatWaveEvent
 Node: dcid:dc/topic/LandCover
 typeOf: dcs:Topic
 name: "LandCover"
-relevantVariable: dcid:LandCoverFraction_BareSparseVegetation
-relevantVariable: dcid:LandCoverFraction_BuiltUp
-relevantVariable: dcid:LandCoverFraction_Cropland
-relevantVariable: dcid:LandCoverFraction_Forest
-relevantVariable: dcid:LandCoverFraction_HerbaceousVegetation
-relevantVariable: dcid:LandCoverFraction_MossAndLichen
-relevantVariable: dcid:LandCoverFraction_PermanentWater
-relevantVariable: dcid:LandCoverFraction_SeasonalWater
-relevantVariable: dcid:LandCoverFraction_Shrubland
-relevantVariable: dcid:LandCoverFraction_SnowIce
+relevantVariable: dcid:dc/svpg/dc/topic/LandCover_LandCoverFractionByType
+
+Node: dcid:dc/svpg/dc/topic/LandCover_LandCoverFractionByType
+typeOf: dcs:StatVarPeerGroup
+name: "LandCoverFractionByType"
+member: dcid:LandCoverFraction_BareSparseVegetation
+member: dcid:LandCoverFraction_BuiltUp
+member: dcid:LandCoverFraction_Cropland
+member: dcid:LandCoverFraction_Forest
+member: dcid:LandCoverFraction_HerbaceousVegetation
+member: dcid:LandCoverFraction_MossAndLichen
+member: dcid:LandCoverFraction_PermanentWater
+member: dcid:LandCoverFraction_SeasonalWater
+member: dcid:LandCoverFraction_Shrubland
+member: dcid:LandCoverFraction_SnowIce
 
 Node: dcid:dc/topic/MaxTemp1PercentLikelyDecade
 typeOf: dcs:Topic
 name: "MaxTemp1PercentLikelyDecade"
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MaxTemp1PercentLikelyDecade_MaxTemp1PercentLikelyPerDecadeByScenario
+
+Node: dcid:dc/svpg/dc/topic/MaxTemp1PercentLikelyDecade_MaxTemp1PercentLikelyPerDecadeByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MaxTemp1PercentLikelyPerDecadeByScenario"
+member: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_Historical
+member: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
+member: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/MaxTemp1PercentLikelyYear
 typeOf: dcs:Topic
 name: "MaxTemp1PercentLikelyYear"
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MaxTemp1PercentLikelyYear_MaxTemp1PercentLikelyPerYearByScenario
+
+Node: dcid:dc/svpg/dc/topic/MaxTemp1PercentLikelyYear_MaxTemp1PercentLikelyPerYearByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MaxTemp1PercentLikelyPerYearByScenario"
+member: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_Historical
+member: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
+member: dcid:MaxTemp_Daily_GaussianMixture_1PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/MaxTemp5PercentLikelyDecade
 typeOf: dcs:Topic
 name: "MaxTemp5PercentLikelyDecade"
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MaxTemp5PercentLikelyDecade_MaxTemp5PercentLikelyPerDecadeByScenario
+
+Node: dcid:dc/svpg/dc/topic/MaxTemp5PercentLikelyDecade_MaxTemp5PercentLikelyPerDecadeByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MaxTemp5PercentLikelyPerDecadeByScenario"
+member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_Historical
+member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
+member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/MaxTemp5PercentLikelyYear
 typeOf: dcs:Topic
 name: "MaxTemp5PercentLikelyYear"
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MaxTemp5PercentLikelyYear_MaxTemp5PercentLikelyPerYearByScenario
+
+Node: dcid:dc/svpg/dc/topic/MaxTemp5PercentLikelyYear_MaxTemp5PercentLikelyPerYearByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MaxTemp5PercentLikelyPerYearByScenario"
+member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_Historical
+member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
+member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/MinTemp1PercentLikelyDecade
 typeOf: dcs:Topic
 name: "MinTemp1PercentLikelyDecade"
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MinTemp1PercentLikelyDecade_MinTemp1PercentLikelyPerDecadeByScenario
+
+Node: dcid:dc/svpg/dc/topic/MinTemp1PercentLikelyDecade_MinTemp1PercentLikelyPerDecadeByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MinTemp1PercentLikelyPerDecadeByScenario"
+member: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_Historical
+member: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
+member: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/MinTemp1PercentLikelyYear
 typeOf: dcs:Topic
 name: "MinTemp1PercentLikelyYear"
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MinTemp1PercentLikelyYear_MinTemp1PercentLikelyPerYearByScenario
+
+Node: dcid:dc/svpg/dc/topic/MinTemp1PercentLikelyYear_MinTemp1PercentLikelyPerYearByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MinTemp1PercentLikelyPerYearByScenario"
+member: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_Historical
+member: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
+member: dcid:MinTemp_Daily_GaussianMixture_1PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/MinTemp5PercentLikelyDecade
 typeOf: dcs:Topic
 name: "MinTemp5PercentLikelyDecade"
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MinTemp5PercentLikelyDecade_MinTemp5PercentLikelyPerDecadeByScenario
+
+Node: dcid:dc/svpg/dc/topic/MinTemp5PercentLikelyDecade_MinTemp5PercentLikelyPerDecadeByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MinTemp5PercentLikelyPerDecadeByScenario"
+member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_Historical
+member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
+member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/MinTemp5PercentLikelyYear
 typeOf: dcs:Topic
 name: "MinTemp5PercentLikelyYear"
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_Historical
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-relevantVariable: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
+relevantVariable: dcid:dc/svpg/dc/topic/MinTemp5PercentLikelyYear_MinTemp5PercentLikelyPerYearByScenario
+
+Node: dcid:dc/svpg/dc/topic/MinTemp5PercentLikelyYear_MinTemp5PercentLikelyPerYearByScenario
+typeOf: dcs:StatVarPeerGroup
+name: "MinTemp5PercentLikelyPerYearByScenario"
+member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_Historical
+member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
+member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
 Node: dcid:dc/topic/NitrogenDioxide
 typeOf: dcs:Topic
 name: "NitrogenDioxide"
-relevantVariable: dcid:Max_Concentration_AirPollutant_NO2
-relevantVariable: dcid:Mean_Concentration_AirPollutant_NO2
-relevantVariable: dcid:Median_Concentration_AirPollutant_NO2
-relevantVariable: dcid:Min_Concentration_AirPollutant_NO2
+relevantVariable: dcid:dc/svpg/dc/topic/NitrogenDioxide_NO2ConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/NitrogenDioxide_NO2ConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "NO2ConcentrationStats"
+member: dcid:Max_Concentration_AirPollutant_NO2
+member: dcid:Mean_Concentration_AirPollutant_NO2
+member: dcid:Median_Concentration_AirPollutant_NO2
+member: dcid:Min_Concentration_AirPollutant_NO2
 
 Node: dcid:dc/topic/Ozone
 typeOf: dcs:Topic
@@ -175,18 +235,28 @@ relevantVariable: dcid:Min_Concentration_AirPollutant_Ozone
 Node: dcid:dc/topic/PM10
 typeOf: dcs:Topic
 name: "PM10"
-relevantVariable: dcid:Max_Concentration_AirPollutant_PM10
-relevantVariable: dcid:Mean_Concentration_AirPollutant_PM10
-relevantVariable: dcid:Median_Concentration_AirPollutant_PM10
-relevantVariable: dcid:Min_Concentration_AirPollutant_PM10
+relevantVariable: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "PM10ConcentrationStats"
+member: dcid:Max_Concentration_AirPollutant_PM10
+member: dcid:Mean_Concentration_AirPollutant_PM10
+member: dcid:Median_Concentration_AirPollutant_PM10
+member: dcid:Min_Concentration_AirPollutant_PM10
 
 Node: dcid:dc/topic/PM2.5
 typeOf: dcs:Topic
 name: "PM2.5"
-relevantVariable: dcid:Max_Concentration_AirPollutant_PM2.5
-relevantVariable: dcid:Mean_Concentration_AirPollutant_PM2.5
-relevantVariable: dcid:Median_Concentration_AirPollutant_PM2.5
-relevantVariable: dcid:Min_Concentration_AirPollutant_PM2.5
+relevantVariable: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "PM2.5ConcentrationStats"
+member: dcid:Max_Concentration_AirPollutant_PM2.5
+member: dcid:Mean_Concentration_AirPollutant_PM2.5
+member: dcid:Median_Concentration_AirPollutant_PM2.5
+member: dcid:Min_Concentration_AirPollutant_PM2.5
 
 Node: dcid:dc/topic/PollutantConcentration
 typeOf: dcs:Topic
@@ -216,12 +286,17 @@ relevantVariable: dcid:Mean_Concentration_AirPollutant_SmokePM25
 Node: dcid:dc/topic/SmokePM2.5
 typeOf: dcs:Topic
 name: "SmokePM2.5"
-relevantVariable: dcid:NumberOfDays_Concentration_SmokePM25_Above12PPM
-relevantVariable: dcid:NumberOfDays_Concentration_SmokePM25_Above150PPM
-relevantVariable: dcid:NumberOfDays_Concentration_SmokePM25_Above250PPM
-relevantVariable: dcid:NumberOfDays_Concentration_SmokePM25_Above35PPM
-relevantVariable: dcid:NumberOfDays_Concentration_SmokePM25_Above55PPM
 relevantVariable: dcid:dc/topic/SmokeConcentration2.5
+relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_NumerOfDaysConcentrationOfSmoke2.5ByLevel
+
+Node: dcid:dc/svpg/dc/topic/SmokePM2.5_NumerOfDaysConcentrationOfSmoke2.5ByLevel
+typeOf: dcs:StatVarPeerGroup
+name: "NumerOfDaysConcentrationOfSmoke2.5ByLevel"
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above12PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above150PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above250PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above35PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above55PPM
 
 Node: dcid:dc/topic/Storm
 typeOf: dcs:Topic
@@ -236,10 +311,15 @@ relevantVariable: dcid:Count_ThunderstormWindEvent
 Node: dcid:dc/topic/SulferDioxide
 typeOf: dcs:Topic
 name: "SulferDioxide"
-relevantVariable: dcid:Max_Concentration_AirPollutant_SO2
-relevantVariable: dcid:Mean_Concentration_AirPollutant_SO2
-relevantVariable: dcid:Median_Concentration_AirPollutant_SO2
-relevantVariable: dcid:Min_Concentration_AirPollutant_SO2
+relevantVariable: dcid:dc/svpg/dc/topic/SulferDioxide_SO2ConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/SulferDioxide_SO2ConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "SO2ConcentrationStats"
+member: dcid:Max_Concentration_AirPollutant_SO2
+member: dcid:Mean_Concentration_AirPollutant_SO2
+member: dcid:Median_Concentration_AirPollutant_SO2
+member: dcid:Min_Concentration_AirPollutant_SO2
 
 Node: dcid:dc/topic/TemperaturePredictions
 typeOf: dcs:Topic

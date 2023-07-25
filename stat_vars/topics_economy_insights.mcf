@@ -33,9 +33,13 @@ relevantVariable: dcid:dc/topic/Poverty
 Node: dcid:dc/topic/EducationExpenditure
 typeOf: dcs:Topic
 name: "EducationExpenditure"
-relevantVariable: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_ExpenditureActivity_Government
-relevantVariable: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
-relevantVariable: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
+relevantVariable: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureAsFractionOfOtherEconomicActivity
+
+Node: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureAsFractionOfOtherEconomicActivity
+typeOf: dcs:StatVarPeerGroup
+name: "EducationExpenditureAsFractionOfOtherEconomicActivity"
+member: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_ExpenditureActivity_Government
+member: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
 
 Node: dcid:dc/topic/Employment
 typeOf: dcs:Topic
@@ -48,21 +52,26 @@ relevantVariable: dcid:dc/topic/UnpaidFamilyWorkers
 Node: dcid:dc/topic/EmploymentByIndustry
 typeOf: dcs:Topic
 name: "EmploymentByIndustry"
-relevantVariable: dcid:Count_Worker_NAICSAccommodationFoodServices
-relevantVariable: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
-relevantVariable: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
-relevantVariable: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
-relevantVariable: dcid:Count_Worker_NAICSEducationalServices
-relevantVariable: dcid:Count_Worker_NAICSFinanceInsurance
-relevantVariable: dcid:Count_Worker_NAICSHealthCareSocialAssistance
-relevantVariable: dcid:Count_Worker_NAICSInformation
-relevantVariable: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
-relevantVariable: dcid:Count_Worker_NAICSOtherServices
-relevantVariable: dcid:Count_Worker_NAICSProfessionalScientificTechnicalServices
-relevantVariable: dcid:Count_Worker_NAICSUtilities
-relevantVariable: dcid:Count_Worker_NAICSWholesaleTrade
-relevantVariable: dcid:dc/8p97n7l96lgg8
-relevantVariable: dcid:dc/p69tpsldf99h7
+relevantVariable: dcid:dc/svpg/dc/topic/EmploymentByIndustry_NumberOfWorkersByIndustry
+
+Node: dcid:dc/svpg/dc/topic/EmploymentByIndustry_NumberOfWorkersByIndustry
+typeOf: dcs:StatVarPeerGroup
+name: "NumberOfWorkersByIndustry"
+member: dcid:Count_Worker_NAICSAccommodationFoodServices
+member: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
+member: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
+member: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
+member: dcid:Count_Worker_NAICSEducationalServices
+member: dcid:Count_Worker_NAICSFinanceInsurance
+member: dcid:Count_Worker_NAICSHealthCareSocialAssistance
+member: dcid:Count_Worker_NAICSInformation
+member: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
+member: dcid:Count_Worker_NAICSOtherServices
+member: dcid:Count_Worker_NAICSProfessionalScientificTechnicalServices
+member: dcid:Count_Worker_NAICSUtilities
+member: dcid:Count_Worker_NAICSWholesaleTrade
+member: dcid:dc/8p97n7l96lgg8
+member: dcid:dc/p69tpsldf99h7
 
 Node: dcid:dc/topic/GDP
 typeOf: dcs:Topic
@@ -86,51 +95,66 @@ typeOf: dcs:Topic
 name: "HealthcareExpenditure"
 relevantVariable: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_AsFractionOf_Count_Person
 
-Node: dcid:dc/topic/HouseholdIncomeDistributionBySize
+Node: dcid:dc/topic/HouseholdIncomeDistribution
 typeOf: dcs:Topic
-name: "HouseholdIncomeDistributionBySize"
-relevantVariable: dcid:Median_Income_Household
-relevantVariable: dcid:Median_Income_Household_FamilyHousehold
-relevantVariable: dcid:Median_Income_Household_MarriedCoupleFamilyHousehold
-relevantVariable: dcid:Median_Income_Household_NoHealthInsurance
-relevantVariable: dcid:Median_Income_Household_NonfamilyHousehold
+name: "HouseholdIncomeDistribution"
+relevantVariable: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_HouseholdType
+
+Node: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_HouseholdType
+typeOf: dcs:StatVarPeerGroup
+name: "HouseholdType"
+member: dcid:Median_Income_Household
+member: dcid:Median_Income_Household_FamilyHousehold
+member: dcid:Median_Income_Household_MarriedCoupleFamilyHousehold
+member: dcid:Median_Income_Household_NoHealthInsurance
+member: dcid:Median_Income_Household_NonfamilyHousehold
 
 Node: dcid:dc/topic/Income
 typeOf: dcs:Topic
 name: "Income"
-relevantVariable: dcid:dc/topic/HouseholdIncomeDistributionBySize
+relevantVariable: dcid:dc/topic/HouseholdIncomeDistribution
 relevantVariable: dcid:dc/topic/IndividualIncomeByIndustry
 relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
 
 Node: dcid:dc/topic/IndividualIncomeByIndustry
 typeOf: dcs:Topic
 name: "IndividualIncomeByIndustry"
-relevantVariable: dcid:dc/015d58s9xh8kd
-relevantVariable: dcid:dc/2wgh04kx6es88
-relevantVariable: dcid:dc/3ex11eg2q9hp6
-relevantVariable: dcid:dc/4z9xy6wn8xns1
-relevantVariable: dcid:dc/5f3gkej4mrq24
-relevantVariable: dcid:dc/7jqw95h5wbelb
-relevantVariable: dcid:dc/9pmyhk89dj3pf
-relevantVariable: dcid:dc/b4dj4sbgqybh7
-relevantVariable: dcid:dc/jefhcs9qxc971
-relevantVariable: dcid:dc/knhvyxwsd3y6h
-relevantVariable: dcid:dc/m07n4w3ywjzs3
-relevantVariable: dcid:dc/t6m99mqmqxjbc
-relevantVariable: dcid:dc/xj2nk2bg60fg
-relevantVariable: dcid:dc/yw52qqrrb2w11
-relevantVariable: dcid:dc/zbpsz8dg01nh2
+relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndustryType
+
+Node: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndustryType
+typeOf: dcs:StatVarPeerGroup
+name: "IndustryType"
+member: dcid:dc/015d58s9xh8kd
+member: dcid:dc/2wgh04kx6es88
+member: dcid:dc/3ex11eg2q9hp6
+member: dcid:dc/4z9xy6wn8xns1
+member: dcid:dc/5f3gkej4mrq24
+member: dcid:dc/7jqw95h5wbelb
+member: dcid:dc/9pmyhk89dj3pf
+member: dcid:dc/b4dj4sbgqybh7
+member: dcid:dc/jefhcs9qxc971
+member: dcid:dc/knhvyxwsd3y6h
+member: dcid:dc/m07n4w3ywjzs3
+member: dcid:dc/t6m99mqmqxjbc
+member: dcid:dc/xj2nk2bg60fg
+member: dcid:dc/yw52qqrrb2w11
+member: dcid:dc/zbpsz8dg01nh2
 
 Node: dcid:dc/topic/IndividualIncomeDistribution
 typeOf: dcs:Topic
 name: "IndividualIncomeDistribution"
-relevantVariable: dcid:Count_Person_IncomeOf10000To14999USDollar
-relevantVariable: dcid:Count_Person_IncomeOf25000To34999USDollar
-relevantVariable: dcid:Count_Person_IncomeOf35000To49999USDollar
-relevantVariable: dcid:Count_Person_IncomeOf50000To64999USDollar
-relevantVariable: dcid:Count_Person_IncomeOf65000To74999USDollar
-relevantVariable: dcid:Count_Person_IncomeOf75000OrMoreUSDollar
-relevantVariable: dcid:Count_Person_IncomeOfUpto9999USDollar
+relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_TotalPopulationAtIncomeLevels
+
+Node: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_TotalPopulationAtIncomeLevels
+typeOf: dcs:StatVarPeerGroup
+name: "TotalPopulationAtIncomeLevels"
+member: dcid:Count_Person_IncomeOf10000To14999USDollar
+member: dcid:Count_Person_IncomeOf25000To34999USDollar
+member: dcid:Count_Person_IncomeOf35000To49999USDollar
+member: dcid:Count_Person_IncomeOf50000To64999USDollar
+member: dcid:Count_Person_IncomeOf65000To74999USDollar
+member: dcid:Count_Person_IncomeOf75000OrMoreUSDollar
+member: dcid:Count_Person_IncomeOfUpto9999USDollar
 
 Node: dcid:dc/topic/IndustriesByNumberOfWorkers
 typeOf: dcs:Topic
@@ -187,32 +211,42 @@ relevantVariable: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProductio
 Node: dcid:dc/topic/NumberOfBusinessesByIndustry
 typeOf: dcs:Topic
 name: "NumberOfBusinessesByIndustry"
-relevantVariable: dcid:Count_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices
-relevantVariable: dcid:Count_Establishment_NAICSConstruction
-relevantVariable: dcid:Count_Establishment_NAICSFinanceInsurance
-relevantVariable: dcid:Count_Establishment_NAICSInformation
-relevantVariable: dcid:Count_Establishment_NAICSOtherServices
-relevantVariable: dcid:Count_Establishment_NAICSUtilities
-relevantVariable: dcid:dc/1j7jmy39fwhw5
-relevantVariable: dcid:dc/1wf1h5esex2d
-relevantVariable: dcid:dc/2c2e9bn8p7xz6
-relevantVariable: dcid:dc/2qgvm8lch89n5
-relevantVariable: dcid:dc/9pz1cse6yndtg
-relevantVariable: dcid:dc/br6elkd593zs1
-relevantVariable: dcid:dc/dc5hbzngddq37
-relevantVariable: dcid:dc/kcns4cvt14zx2
-relevantVariable: dcid:dc/mlf5e4m68h2k7
-relevantVariable: dcid:dc/tz59wt1hkl4y
-relevantVariable: dcid:dc/w8gp902jnk426
-relevantVariable: dcid:dc/x52jxxbwspczh
+relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_CountEstablishemensByIndustry
+
+Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_CountEstablishemensByIndustry
+typeOf: dcs:StatVarPeerGroup
+name: "CountEstablishemensByIndustry"
+member: dcid:Count_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices
+member: dcid:Count_Establishment_NAICSConstruction
+member: dcid:Count_Establishment_NAICSFinanceInsurance
+member: dcid:Count_Establishment_NAICSInformation
+member: dcid:Count_Establishment_NAICSOtherServices
+member: dcid:Count_Establishment_NAICSUtilities
+member: dcid:dc/1j7jmy39fwhw5
+member: dcid:dc/1wf1h5esex2d
+member: dcid:dc/2c2e9bn8p7xz6
+member: dcid:dc/2qgvm8lch89n5
+member: dcid:dc/9pz1cse6yndtg
+member: dcid:dc/br6elkd593zs1
+member: dcid:dc/dc5hbzngddq37
+member: dcid:dc/kcns4cvt14zx2
+member: dcid:dc/mlf5e4m68h2k7
+member: dcid:dc/tz59wt1hkl4y
+member: dcid:dc/w8gp902jnk426
+member: dcid:dc/x52jxxbwspczh
 
 Node: dcid:dc/topic/NumberOfBusinessesByOwnership
 typeOf: dcs:Topic
 name: "NumberOfBusinessesByOwnership"
-relevantVariable: dcid:Count_Establishment_FederalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
-relevantVariable: dcid:Count_Establishment_LocalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
-relevantVariable: dcid:Count_Establishment_PrivatelyOwnedEstablishment_NAICSTotalAllIndustries
-relevantVariable: dcid:Count_Establishment_StateGovernmentOwnedEstablishment_NAICSTotalAllIndustries
+relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_CountEstablishmentByOwnershipType
+
+Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_CountEstablishmentByOwnershipType
+typeOf: dcs:StatVarPeerGroup
+name: "CountEstablishmentByOwnershipType"
+member: dcid:Count_Establishment_FederalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
+member: dcid:Count_Establishment_LocalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
+member: dcid:Count_Establishment_PrivatelyOwnedEstablishment_NAICSTotalAllIndustries
+member: dcid:Count_Establishment_StateGovernmentOwnedEstablishment_NAICSTotalAllIndustries
 
 Node: dcid:dc/topic/Poverty
 typeOf: dcs:Topic
@@ -227,34 +261,54 @@ relevantVariable: dcid:dc/topic/SDG_1
 Node: dcid:dc/topic/PovertyByGender
 typeOf: dcs:Topic
 name: "PovertyByGender"
-relevantVariable: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByGender_BelowPovertyByGender
+
+Node: dcid:dc/svpg/dc/topic/PovertyByGender_BelowPovertyByGender
+typeOf: dcs:StatVarPeerGroup
+name: "BelowPovertyByGender"
+member: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months
 
 Node: dcid:dc/topic/PovertyByLanguageSpokenAtHome
 typeOf: dcs:Topic
 name: "PovertyByLanguageSpokenAtHome"
-relevantVariable: dcid:Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_5OrMoreYears_SpanishOrSpanishCreoleSpokenAtHome_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome_BelowPovertyLevelInThePast12Months
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_BelowPovertyByLanguageSpokenAtHome
+
+Node: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_BelowPovertyByLanguageSpokenAtHome
+typeOf: dcs:StatVarPeerGroup
+name: "BelowPovertyByLanguageSpokenAtHome"
+member: dcid:Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_5OrMoreYears_SpanishOrSpanishCreoleSpokenAtHome_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome_BelowPovertyLevelInThePast12Months
 
 Node: dcid:dc/topic/PovertyByRace
 typeOf: dcs:Topic
 name: "PovertyByRace"
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByRace_BelowPovertyByRace
+
+Node: dcid:dc/svpg/dc/topic/PovertyByRace_BelowPovertyByRace
+typeOf: dcs:StatVarPeerGroup
+name: "BelowPovertyByRace"
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
 
 Node: dcid:dc/topic/PovertyByResidency
 typeOf: dcs:Topic
 name: "PovertyByResidency"
-relevantVariable: dcid:Count_Person_Rural_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_Urban_BelowPovertyLevelInThePast12Months
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByResidency_BelowPovertyByResidency
+
+Node: dcid:dc/svpg/dc/topic/PovertyByResidency_BelowPovertyByResidency
+typeOf: dcs:StatVarPeerGroup
+name: "BelowPovertyByResidency"
+member: dcid:Count_Person_Rural_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_Urban_BelowPovertyLevelInThePast12Months
 
 Node: dcid:dc/topic/PovertyLevels
 typeOf: dcs:Topic
