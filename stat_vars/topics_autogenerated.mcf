@@ -714,31 +714,6 @@ member: dcid:Count_CriminalIncidents_BiasMotivationDisabilityStatus_WeaponLawVio
 member: dcid:Count_CriminalIncidents_BiasMotivationDisabilityStatus_WelfareFraud_IsHateCrime
 member: dcid:Count_CriminalIncidents_BiasMotivationDisabilityStatus_WireFraud_IsHateCrime
 
-Node: dcid:dc/topic/HealthInsurance
-typeOf: dcs:Topic
-name: "HealthInsurance"
-relevantVariable: dcid:dc/svpg/HealthInsurance_HealthInsurancePrevalence
-relevantVariable: dcid:dc/svpg/HealthInsurance_IndividualHealthInsuranceByPrivacyType
-relevantVariable: dcid:dc/svpg/HealthInsurance_IndividualHealthInsuranceByPurchaseType
-
-Node: dcid:dc/svpg/HealthInsurance_HealthInsurancePrevalence
-typeOf: dcs:StatVarPeerGroup
-name: "HealthInsurancePrevalence"
-member: dcid:Count_Person_NoHealthInsurance
-member: dcid:Count_Person_WithHealthInsurance
-
-Node: dcid:dc/svpg/HealthInsurance_IndividualHealthInsuranceByPrivacyType
-typeOf: dcs:StatVarPeerGroup
-name: "IndividualHealthInsuranceByPrivacyType"
-member: dcid:Count_Person_WithPrivateHealthInsuranceOnly
-member: dcid:Count_Person_WithPublicHealthInsuranceOnly
-
-Node: dcid:dc/svpg/HealthInsurance_IndividualHealthInsuranceByPurchaseType
-typeOf: dcs:StatVarPeerGroup
-name: "IndividualHealthInsuranceByPurchaseType"
-member: dcid:Count_Person_WithDirectPurchaseHealthInsurance
-member: dcid:Count_Person_WithEmployerBasedHealthInsurance
-
 Node: dcid:dc/topic/HealthWorkerDensity
 typeOf: dcs:Topic
 name: "HealthWorkerDensity"
