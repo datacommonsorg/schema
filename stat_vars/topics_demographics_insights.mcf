@@ -7,118 +7,97 @@ typeOf: dcs:Topic
 name: "Age"
 relevantVariable: dcid:dc/topic/AgeDistribution
 relevantVariable: dcid:dc/topic/AgeMedians
-relevantVariable: dcid:dc/topic/VeryOldAndVeryYoung
+relevantVariable: dcid:dc/topic/VeryOldAndVeryYoungPopulation
 
 Node: dcid:dc/topic/AgeDistribution
 typeOf: dcs:Topic
-name: "AgeDistribution"
+name: "Age Distribution"
 
 Node: dcid:dc/topic/AgeMedians
 typeOf: dcs:Topic
-name: "AgeMedians"
-relevantVariable: dcid:Median_Age_Person
+name: "Age Medians"
+relevantVariable: dcid:Median Age of Population
 relevantVariable: dcid:dc/svpg/dc/topic/AgeMedians_MedianAgeByGender
 
 Node: dcid:dc/svpg/dc/topic/AgeMedians_MedianAgeByGender
 typeOf: dcs:StatVarPeerGroup
-name: "MedianAgeByGender"
+name: "Median Age By Gender"
 member: dcid:Median_Age_Person_Female
 member: dcid:Median_Age_Person_Male
 
 Node: dcid:dc/topic/CitizenshipStatus
 typeOf: dcs:Topic
-name: "CitizenshipStatus"
-relevantVariable: dcid:dc/svpg/dc/topic/CitizenshipStatus_CountPersonCitizenshipStatus
+name: "Citizenship Status"
+relevantVariable: dcid:dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusType
 
-Node: dcid:dc/svpg/dc/topic/CitizenshipStatus_CountPersonCitizenshipStatus
+Node: dcid:dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusType
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonCitizenshipStatus"
+name: "US Citizenship by Status Type"
 member: dcid:Count_Person_NotAUSCitizen
 member: dcid:Count_Person_USCitizenBornInTheUnitedStates
 member: dcid:Count_Person_USCitizenByNaturalization
-
-Node: dcid:dc/topic/CountPersonAgeBrackets
-typeOf: dcs:Topic
-name: "CountPersonAgeBrackets"
-relevantVariable: dcid:Count_Person_18To24Years
-relevantVariable: dcid:Count_Person_1To4Years
-relevantVariable: dcid:Count_Person_25To34Years
-relevantVariable: dcid:Count_Person_35To44Years
-relevantVariable: dcid:Count_Person_45To54Years
-relevantVariable: dcid:Count_Person_55To64Years
-relevantVariable: dcid:Count_Person_5To17Years
-relevantVariable: dcid:Count_Person_65To74Years
-relevantVariable: dcid:Count_Person_75OrMoreYears
-
-Node: dcid:dc/topic/DateOfEntry
-typeOf: dcs:Topic
-name: "DateOfEntry"
-relevantVariable: dcid:dc/svpg/dc/topic/DateOfEntry_CountPersonDateOfEntryByYearRanges
-
-Node: dcid:dc/svpg/dc/topic/DateOfEntry_CountPersonDateOfEntryByYearRanges
-typeOf: dcs:StatVarPeerGroup
-name: "CountPersonDateOfEntryByYearRanges"
-member: dcid:Count_Person_DateOfEntry1990OrEarlier
-member: dcid:Count_Person_DateOfEntry1990To1999
-member: dcid:Count_Person_DateOfEntry2000To2009
-member: dcid:Count_Person_DateOfEntry2010OrLater
 
 Node: dcid:dc/topic/Demographics
 typeOf: dcs:Topic
 name: "Demographics"
 relevantVariable: dcid:dc/topic/Age
-relevantVariable: dcid:dc/topic/Immigrants
 relevantVariable: dcid:dc/topic/Language
 relevantVariable: dcid:dc/topic/MaritalStatus
+relevantVariable: dcid:dc/topic/Nationality
 
-Node: dcid:dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus
+Node: dcid:dc/topic/DivorcedPopulationByDemographic
 typeOf: dcs:Topic
-name: "DivorcedBreakdownByRaceGenderLaborForceStatus"
-relevantVariable: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByGender
-relevantVariable: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByRace
+name: "Divorced Population By Demographic"
+relevantVariable: dcid:Count_Person_InLaborForce_Divorced
+relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByGender
+relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByRace
 
-Node: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByGender
+Node: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonDivorcedByGender"
+name: "Divorced Population By Gender"
 member: dcid:Count_Person_Female_Divorced
-member: dcid:Count_Person_InLaborForce_Divorced
 member: dcid:Count_Person_Male_Divorced
 
-Node: dcid:dc/svpg/dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus_CountPersonDivorcedByRace
+Node: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByRace
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonDivorcedByRace"
+name: "Divorced Population By Race"
 member: dcid:Count_Person_15OrMoreYears_Divorced_AsianAlone
 member: dcid:Count_Person_15OrMoreYears_Divorced_BlackOrAfricanAmerican
 member: dcid:Count_Person_15OrMoreYears_Divorced_HispanicOrLatino
 
-Node: dcid:dc/topic/Immigrants
+Node: dcid:dc/topic/EnglishSpeakers
 typeOf: dcs:Topic
-name: "Immigrants"
-relevantVariable: dcid:dc/topic/CitizenshipStatus
-relevantVariable: dcid:dc/topic/DateOfEntry
-relevantVariable: dcid:dc/topic/LanguageSpokenAtHome
-relevantVariable: dcid:dc/topic/PlaceOfBirth
+name: "English Speakers"
+relevantVariable: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
 
-Node: dcid:dc/topic/Language
-typeOf: dcs:Topic
-name: "Language"
-relevantVariable: dcid:dc/topic/LanguageEngish
-
-Node: dcid:dc/topic/LanguageEngish
-typeOf: dcs:Topic
-name: "LanguageEngish"
-relevantVariable: dcid:dc/svpg/dc/topic/LanguageEngish_CountPersonSpeakingEnglishLevel
-
-Node: dcid:dc/svpg/dc/topic/LanguageEngish_CountPersonSpeakingEnglishLevel
+Node: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonSpeakingEnglishLevel"
+name: "English Speaking Population by Language Level"
 member: dcid:Count_Person_SpeakEnglishNotAtAll
 member: dcid:Count_Person_SpeakEnglishNotWell
 member: dcid:Count_Person_SpeakEnglishWell
 
+Node: dcid:dc/topic/Immigration
+typeOf: dcs:Topic
+name: "Immigration"
+relevantVariable: dcid:dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry
+
+Node: dcid:dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry
+typeOf: dcs:StatVarPeerGroup
+name: "US Immigration By Date Of Entry"
+member: dcid:Count_Person_DateOfEntry1990OrEarlier
+member: dcid:Count_Person_DateOfEntry1990To1999
+member: dcid:Count_Person_DateOfEntry2000To2009
+member: dcid:Count_Person_DateOfEntry2010OrLater
+
+Node: dcid:dc/topic/Language
+typeOf: dcs:Topic
+name: "Language"
+relevantVariable: dcid:dc/topic/EnglishSpeakers
+
 Node: dcid:dc/topic/LanguageSpokenAtHome
 typeOf: dcs:Topic
-name: "LanguageSpokenAtHome"
+name: "Language Spoken At Home"
 relevantVariable: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_ForeignBorn
 relevantVariable: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome_ForeignBorn
 relevantVariable: dcid:dc/1lm9k2vdxj4c6
@@ -126,62 +105,82 @@ relevantVariable: dcid:dc/wj5l0n6wkep45
 
 Node: dcid:dc/topic/MaritalStatus
 typeOf: dcs:Topic
-name: "MaritalStatus"
-relevantVariable: dcid:dc/topic/DivorcedBreakdownByRaceGenderLaborForceStatus
-relevantVariable: dcid:dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus
-relevantVariable: dcid:dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus
-relevantVariable: dcid:dc/topic/PopulationsInDifferentStatus
-relevantVariable: dcid:dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus
+name: "Marital Status"
+relevantVariable: dcid:dc/topic/DivorcedPopulationByDemographic
+relevantVariable: dcid:dc/topic/MaritalStatusBreakdown
+relevantVariable: dcid:dc/topic/MarriedPopulationByDemographic
+relevantVariable: dcid:dc/topic/NeverMarriedPopulationByDemographic
+relevantVariable: dcid:dc/topic/WidowedPopulationByDemographic
 
-Node: dcid:dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus
+Node: dcid:dc/topic/MaritalStatusBreakdown
 typeOf: dcs:Topic
-name: "MarriedBreakdownByRaceGenderLaborForceStatus"
-relevantVariable: dcid:Count_Person_15OrMoreYears_Divorced_MarriedAndNotSeparated
-relevantVariable: dcid:Count_Person_InLaborForce_MarriedAndNotSeparated
-relevantVariable: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByGender
-relevantVariable: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByRace
+name: "Marital Status Breakdown"
+relevantVariable: dcid:dc/svpg/dc/topic/MaritalStatusBreakdown_PopulationByMaritalStatus
 
-Node: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByGender
+Node: dcid:dc/svpg/dc/topic/MaritalStatusBreakdown_PopulationByMaritalStatus
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonMarriedAndNotSeparatedByGender"
+name: "Population By Marital Status"
+member: dcid:Count_Person_Divorced
+member: dcid:Count_Person_MarriedAndNotSeparated
+member: dcid:Count_Person_NeverMarried
+member: dcid:Count_Person_Widowed
+
+Node: dcid:dc/topic/MarriedPopulationByDemographic
+typeOf: dcs:Topic
+name: "Married Population By Demographic"
+relevantVariable: dcid:Count_Person_InLaborForce_MarriedAndNotSeparated
+relevantVariable: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByGender
+relevantVariable: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByRace
+
+Node: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Married Population By Gender"
 member: dcid:Count_Person_Female_MarriedAndNotSeparated
 member: dcid:Count_Person_Male_MarriedAndNotSeparated
 
-Node: dcid:dc/svpg/dc/topic/MarriedBreakdownByRaceGenderLaborForceStatus_CountPersonMarriedAndNotSeparatedByRace
+Node: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByRace
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonMarriedAndNotSeparatedByRace"
+name: "Married Population By Race"
 member: dcid:Count_Person_MarriedAndNotSeparated_AsianAlone
 member: dcid:Count_Person_MarriedAndNotSeparated_BlackOrAfricanAmerican
 member: dcid:Count_Person_MarriedAndNotSeparated_HispanicOrLatino
 
-Node: dcid:dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus
+Node: dcid:dc/topic/Nationality
 typeOf: dcs:Topic
-name: "NeverMarriedBreakdownByRaceGenderLaborForceStatus"
-relevantVariable: dcid:Count_Person_InLaborForce_NeverMarried
-relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedByRace
-relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedGender
+name: "Nationality"
+relevantVariable: dcid:dc/topic/CitizenshipStatus
+relevantVariable: dcid:dc/topic/Immigration
+relevantVariable: dcid:dc/topic/LanguageSpokenAtHome
+relevantVariable: dcid:dc/topic/PlaceOfBirth
 
-Node: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedByRace
+Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
+typeOf: dcs:Topic
+name: "Never Married Population By Demographic"
+relevantVariable: dcid:Count_Person_InLaborForce_NeverMarried
+relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByGender
+relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByRace
+
+Node: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonNeverMarriedByRace"
+name: "Never Married Population By Gender"
+member: dcid:Count_Person_Female_NeverMarried
+member: dcid:Count_Person_Male_NeverMarried
+
+Node: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Never Married Population By Race"
 member: dcid:Count_Person_15OrMoreYears_NeverMarried_AsianAlone
 member: dcid:Count_Person_15OrMoreYears_NeverMarried_BlackOrAfricanAmerican
 member: dcid:Count_Person_15OrMoreYears_NeverMarried_HispanicOrLatino
 
-Node: dcid:dc/svpg/dc/topic/NeverMarriedBreakdownByRaceGenderLaborForceStatus_CountPersonNeverMarriedGender
-typeOf: dcs:StatVarPeerGroup
-name: "CountPersonNeverMarriedGender"
-member: dcid:Count_Person_Female_NeverMarried
-member: dcid:Count_Person_Male_NeverMarried
-
 Node: dcid:dc/topic/PlaceOfBirth
 typeOf: dcs:Topic
 name: "PlaceOfBirth"
-relevantVariable: dcid:dc/svpg/dc/topic/PlaceOfBirth_CountPersonByPlaceOfBirth
+relevantVariable: dcid:dc/svpg/dc/topic/PlaceOfBirth_PopulationByBirthPlace
 
-Node: dcid:dc/svpg/dc/topic/PlaceOfBirth_CountPersonByPlaceOfBirth
+Node: dcid:dc/svpg/dc/topic/PlaceOfBirth_PopulationByBirthPlace
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonByPlaceOfBirth"
+name: "Population By Birth Place"
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthAfrica
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthAsia
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthCaribbean
@@ -192,54 +191,53 @@ member: dcid:Count_Person_ForeignBorn_PlaceOfBirthNorthAmerica
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthOcenia
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthSouthAmerica
 
-Node: dcid:dc/topic/PopulationsInDifferentStatus
+Node: dcid:dc/topic/PopulationByAgeDistribution
 typeOf: dcs:Topic
-name: "PopulationsInDifferentStatus"
-relevantVariable: dcid:dc/svpg/dc/topic/PopulationsInDifferentStatus_NumberOfPeopleByMaritalStatus
+name: "Population By Age Distribution"
+relevantVariable: dcid:Count_Person_18To24Years
+relevantVariable: dcid:Count_Person_1To4Years
+relevantVariable: dcid:Count_Person_25To34Years
+relevantVariable: dcid:Count_Person_35To44Years
+relevantVariable: dcid:Count_Person_45To54Years
+relevantVariable: dcid:Count_Person_55To64Years
+relevantVariable: dcid:Count_Person_5To17Years
+relevantVariable: dcid:Count_Person_65To74Years
+relevantVariable: dcid:Count_Person_75OrMoreYears
 
-Node: dcid:dc/svpg/dc/topic/PopulationsInDifferentStatus_NumberOfPeopleByMaritalStatus
-typeOf: dcs:StatVarPeerGroup
-name: "NumberOfPeopleByMaritalStatus"
-member: dcid:Count_Person_Divorced
-member: dcid:Count_Person_MarriedAndNotSeparated
-member: dcid:Count_Person_NeverMarried
-member: dcid:Count_Person_Widowed
-
-Node: dcid:dc/topic/VeryOldAndVeryYoung
+Node: dcid:dc/topic/VeryOldAndVeryYoungPopulation
 typeOf: dcs:Topic
-name: "VeryOldAndVeryYoung"
-relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryOldGender
-relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryYoungGender
+name: "Very Old And Very Young Population"
+relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryOldGender
+relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryYoungGender
 
-Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryOldGender
+Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryOldGender
 typeOf: dcs:StatVarPeerGroup
 name: "CountPersonVeryOldGender"
 member: dcid:Count_Person_85OrMoreYears_Female
 member: dcid:Count_Person_85OrMoreYears_Male
 
-Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoung_CountPersonVeryYoungGender
+Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryYoungGender
 typeOf: dcs:StatVarPeerGroup
 name: "CountPersonVeryYoungGender"
 member: dcid:Count_Person_0To4Years_Female
 member: dcid:Count_Person_0To4Years_Male
 
-Node: dcid:dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus
+Node: dcid:dc/topic/WidowedPopulationByDemographic
 typeOf: dcs:Topic
-name: "WidowedBreakdownByRaceGenderLaborForceStatus"
-relevantVariable: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByGender
-relevantVariable: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByRace
+name: "Widowed Population By Demographic"
+relevantVariable: dcid:Count_Person_InLaborForce_Widowed
+relevantVariable: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender
+relevantVariable: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByRace
 
-Node: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByGender
+Node: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonWidowedByGender"
+name: "Widowed Population By Gender"
 member: dcid:Count_Person_Female_Widowed
-member: dcid:Count_Person_InLaborForce_Widowed
 member: dcid:Count_Person_Male_Widowed
 
-Node: dcid:dc/svpg/dc/topic/WidowedBreakdownByRaceGenderLaborForceStatus_CountPersonWidowedByRace
+Node: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByRace
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonWidowedByRace"
+name: "Widowed Population By Race"
 member: dcid:Count_Person_15OrMoreYears_Widowed_AsianAlone
 member: dcid:Count_Person_15OrMoreYears_Widowed_BlackOrAfricanAmerican
 member: dcid:Count_Person_15OrMoreYears_Widowed_HispanicOrLatino
-
