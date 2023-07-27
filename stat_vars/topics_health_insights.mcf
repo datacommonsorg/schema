@@ -220,6 +220,55 @@ member: dcid:Count_Death_Upto1Years_EndocrineNutritionalMetabolicDiseases
 member: dcid:Count_Death_Upto1Years_ExternalCauses
 member: dcid:Count_Death_Upto1Years_Neoplasms
 
+Node: dcid:dc/topic/LifeExpectancy
+typeOf: dcs:Topic
+name: "Life Expectancy"
+relevantVariable: dcid:LifeExpectancy_Person
+relevantVariable: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
+relevantVariable: dcid:Count_Death
+relevantVariable: dcid:Count_Death_AsAFractionOfCount_Person
+relevantVariable: dcid:Median_Age_Person
+
+Node: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Life Expectancy by Gender"
+member: dcid:LifeExpectancy_Person_Female
+member: dcid:LifeExpectancy_Person_Male
+
+Node: dcid:dc/topic/Malaria
+typeOf: dcs:Topic
+name: "Malaria"
+relevantVariable: dcid:Count_MedicalConditionIncident_ConditionMalaria
+relevantVariable: dcid:Count_MedicalConditionIncident_ConditionMalaria_AsAFractionOf_Count_Person
+relevantVariable: dcid:sdg/SH_STA_MALR
+relevantVariable: dcid:dc/svpg/Malaria_MalariaCasesByAge
+
+Node: dcid:dc/svpg/Malaria_MalariaCasesByAge
+typeOf: dcs:StatVarPeerGroup
+name: "Malaria Cases By Age"
+member: dcid:Count_MedicalConditionIncident_15To24Years_ConditionMalaria
+member: dcid:Count_MedicalConditionIncident_1To4Years_ConditionMalaria
+member: dcid:Count_MedicalConditionIncident_1_LessYears_ConditionMalaria
+member: dcid:Count_MedicalConditionIncident_25To39Years_ConditionMalaria
+member: dcid:Count_MedicalConditionIncident_40To64Years_ConditionMalaria
+member: dcid:Count_MedicalConditionIncident_5To14Years_ConditionMalaria
+member: dcid:Count_MedicalConditionIncident_65_MoreYears_ConditionMalaria
+member: dcid:Count_MedicalConditionIncident_AgeNotStated_ConditionMalaria
+
+Node: dcid:dc/topic/Malnutrition
+typeOf: dcs:Topic
+name: "Malnutrition"
+relevantVariable: dcid:Percent_Underweight_In_Count_Person
+relevantVariable: dcid:dc/topic/HeightStunting
+relevantVariable: dcid:sdg/SH_STA_WASHARI
+relevantVariable: dcid:dc/svpg/Malnutrition_UnderweightPopulationbyGender
+
+Node: dcid:dc/svpg/Malnutrition_UnderweightPopulationbyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Underweight Population by Gender"
+member: dcid:Percent_Underweight_In_Count_Person_Female
+member: dcid:Percent_Underweight_In_Count_Person_Male
+
 Node: dcid:dc/topic/MentalHealth
 typeOf: dcs:Topic
 name: "Mental Health"
@@ -330,6 +379,50 @@ member: dcid:Count_Person_NoHealthInsurance_BlackOrAfricanAmericanAlone
 member: dcid:Count_Person_NoHealthInsurance_HispanicOrLatino
 member: dcid:Count_Person_NoHealthInsurance_NativeHawaiianOrOtherPacificIslanderAlone
 member: dcid:Count_Person_NoHealthInsurance_WhiteAlone
+
+Node: dcid:dc/topic/PhysicalActivity
+typeOf: dcs:Topic
+name: "PhysicalActivity"
+relevantVariable: dcid:Percent_PhysicalActivity_In_Count_Person
+relevantVariable: dcid:dc/svpg/PhysicalActivity_Dailyphysicallyactivepopulationbyeducationstatus
+relevantVariable: dcid:dc/svpg/PhysicalActivity_Physicallyactivepopulationbygender
+
+Node: dcid:dc/svpg/PhysicalActivity_Dailyphysicallyactivepopulationbyeducationstatus
+typeOf: dcs:StatVarPeerGroup
+name: "Daily physically active population by education status"
+member: dcid:Percent_AtLeast30MinutesPerDay_WalkingOrCycling_PhysicalActivity_In_Count_Person_LessThanPrimaryEducationOrPrimaryEducationOrLowerSecondaryEducation
+member: dcid:Percent_AtLeast30MinutesPerDay_WalkingOrCycling_PhysicalActivity_In_Count_Person_TertiaryEducation
+member: dcid:Percent_AtLeast30MinutesPerDay_WalkingOrCycling_PhysicalActivity_In_Count_Person_UpperSecondaryEducationOrPostSecondaryNonTertiaryEducation
+
+Node: dcid:dc/svpg/PhysicalActivity_Physicallyactivepopulationbygender
+typeOf: dcs:StatVarPeerGroup
+name: "Physically active population by gender"
+member: dcid:Percent_PhysicalActivity_In_Count_Person_Female
+member: dcid:Percent_PhysicalActivity_In_Count_Person_Male
+
+Node: dcid:dc/topic/PhysicalInactivity
+typeOf: dcs:Topic
+name: "PhysicalInactivity"
+relevantVariable: dcid:Percent_Person_PhysicalInactivity
+relevantVariable: dcid:dc/svpg/PhysicalInactivity_InactivePopulationbyGender
+
+Node: dcid:dc/svpg/PhysicalInactivity_InactivePopulationbyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Inactive Population by Gender"
+member: dcid:dc/tcqb49dvg7k53
+member: dcid:dc/ty7pq88d26963
+
+Node: dcid:dc/topic/Physicians
+typeOf: dcs:Topic
+name: "Physicians"
+relevantVariable: dcid:dc/mxqzyt970qks1
+relevantVariable: dcid:dc/svpg/Physicians_PhysiciansbyTupe
+
+Node: dcid:dc/svpg/Physicians_PhysiciansbyType
+typeOf: dcs:StatVarPeerGroup
+name: "Physicians by Type"
+member: dcid:dc/7yw96gdck5em4
+member: dcid:dc/cerdgf14fp2z1
 
 Node: dcid:dc/topic/PreventativeHealthAndBehavior
 typeOf: dcs:Topic
