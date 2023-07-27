@@ -3061,6 +3061,12 @@ description: "List of variables relevant to a topic.  Contains a list of ordered
 domainIncludes: dcs:Topic
 rangeIncludes: dcs:StatisticalVariable, schema:Property
 
+Node: dcid:relevantVariableList
+typeOf: schema:Property
+description: "List of variables relevant to a topic.  Contains a comma-separated list of ordered values."
+domainIncludes: dcs:Topic
+rangeIncludes: dcs:StatisticalVariable, schema:Property
+
 Node: dcid:StatVarPeerGroup
 typeOf: schema:Class
 subClassOf: schema:Intangible
@@ -3159,3 +3165,9 @@ name: "Married"
 Node: dcid:NotLivingTogether
 typeOf: dcs:MaritalStatusEnum
 name: "NotLivingTogether"
+
+Node: dcid:memberList
+typeOf: schema:Property
+description: "List of members.  Contains a comma-separated list of ordered values."
+domainIncludes: dcs:StatVarPeerGroup
+rangeIncludes: dcs:StatisticalVariable, schema:Property
