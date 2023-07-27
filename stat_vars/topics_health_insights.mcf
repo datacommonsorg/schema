@@ -1,6 +1,18 @@
 # These are auto-generated
 # These topics are intended for the new NL based Topic Pages (currently called Insights)
 
+Node: dcid:dc/topic/Arthritis
+typeOf: dcs:Topic
+name: "Arthritis"
+relevantVariable: dcid:Percent_Person_WithArthritis
+relevantVariable: dcid:dc/svpg/dc/topic/Arthritis_ArthritisByGender
+
+Node: dcid:dc/svpg/dc/topic/Arthritis_ArthritisByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Arthritis By Gender"
+member: dcid:Count_Person_Female_ConditionArthritis
+member: dcid:Count_Person_Male_ConditionArthritis
+
 Node: dcid:dc/topic/Asthma
 typeOf: dcs:Topic
 name: "Asthma"
@@ -46,25 +58,25 @@ member: dcid:Percent_Person_50To75Years_ReceivedColorectalCancerScreening
 Node: dcid:dc/topic/CausesOfDeath
 typeOf: dcs:Topic
 name: "Causes Of Death"
-relevantVariable: dcid:Count_Death_AbnormalNotClassfied
-relevantVariable: dcid:Count_Death_CertainConditionsOriginatingInThePerinatalPeriod
-relevantVariable: dcid:Count_Death_CertainInfectiousParasiticDiseases
-relevantVariable: dcid:Count_Death_CongenitalMalformationsDeformationsChromosomalAbnormalities
-relevantVariable: dcid:Count_Death_DiseasesOfBloodAndBloodFormingOrgansAndImmuneDisorders
-relevantVariable: dcid:Count_Death_DiseasesOfTheCirculatorySystem
-relevantVariable: dcid:Count_Death_DiseasesOfTheDigestiveSystem
-relevantVariable: dcid:Count_Death_DiseasesOfTheGenitourinarySystem
-relevantVariable: dcid:Count_Death_DiseasesOfTheMusculoskeletalSystemConnectiveTissue
 relevantVariable: dcid:Count_Death_DiseasesOfTheNervousSystem
 relevantVariable: dcid:Count_Death_DiseasesOfTheRespiratorySystem
+relevantVariable: dcid:Count_Death_DiseasesOfTheCirculatorySystem
+relevantVariable: dcid:Count_Death_MentalBehaviouralDisorders
+relevantVariable: dcid:Count_Death_ExternalCauses
+relevantVariable: dcid:Count_Death_DiseasesOfTheGenitourinarySystem
+relevantVariable: dcid:Count_Death_DiseasesOfTheMusculoskeletalSystemConnectiveTissue
 relevantVariable: dcid:Count_Death_DiseasesOfTheSkinSubcutaneousTissue
 relevantVariable: dcid:Count_Death_EndocrineNutritionalMetabolicDiseases
-relevantVariable: dcid:Count_Death_ExternalCauses
 relevantVariable: dcid:Count_Death_IntentionalSelfHarm_AsFractionOf_Count_Person
-relevantVariable: dcid:Count_Death_MentalBehaviouralDisorders
-relevantVariable: dcid:Count_Death_Neoplasms
-relevantVariable: dcid:Count_Death_PregnancyChildbirthThePuerperium
 relevantVariable: dcid:Count_Death_SpecialCases
+relevantVariable: dcid:Count_Death_PregnancyChildbirthThePuerperium
+relevantVariable: dcid:Count_Death_CertainConditionsOriginatingInThePerinatalPeriod
+relevantVariable: dcid:Count_Death_CertainInfectiousParasiticDiseases
+relevantVariable: dcid:Count_Death_DiseasesOfTheDigestiveSystem
+relevantVariable: dcid:Count_Death_Neoplasms
+relevantVariable: dcid:Count_Death_AbnormalNotClassfied
+relevantVariable: dcid:Count_Death_CongenitalMalformationsDeformationsChromosomalAbnormalities
+relevantVariable: dcid:Count_Death_DiseasesOfBloodAndBloodFormingOrgansAndImmuneDisorders
 relevantVariable: dcid:Count_MortalityEvent_Assault(Homicide)
 relevantVariable: dcid:Count_MortalityEvent_Diabetes
 relevantVariable: dcid:Count_MortalityEvent_HeartDiseaseExcludingHypertension
@@ -149,13 +161,18 @@ member: dcid:Percent_Person_Smoking
 Node: dcid:dc/topic/HealthConditions
 typeOf: dcs:Topic
 name: "Health Conditions"
+relevantVariable: dcid:dc/topic/Arthritis
 relevantVariable: dcid:dc/topic/Asthma
 relevantVariable: dcid:dc/topic/BloodPressure
 relevantVariable: dcid:dc/topic/Cancer
 relevantVariable: dcid:dc/topic/Cholesterol
 relevantVariable: dcid:dc/topic/Diabetes
-relevantVariable: dcid:dc/topic/MedicalConditions
+relevantVariable: dcid:dc/topic/HeartDisease
 relevantVariable: dcid:dc/topic/MentalHealth
+
+relevantVariable: dcid:Percent_Person_WithChronicKidneyDisease
+relevantVariable: dcid:Percent_Person_WithPhysicalHealthNotGood
+relevantVariable: dcid:Percent_Person_WithStroke
 
 Node: dcid:dc/topic/HealthEquity
 typeOf: dcs:Topic
@@ -197,6 +214,19 @@ member: dcid:Count_Person_WithPrivateHealthInsurance
 member: dcid:Count_Person_WithPrivateHealthInsuranceOnly
 member: dcid:Count_Person_WithPublicHealthInsurance
 member: dcid:Count_Person_WithPublicHealthInsuranceOnly
+
+Node: dcid:dc/topic/HeartDisease
+typeOf: dcs:Topic
+name: "Heart Disease"
+relevantVariable: dcid:Percent_Person_WithCoronaryHeartDisease
+relevantVariable: dcid:Percent_Person_WithChronicObstructivePulmonaryDisease
+relevantVariable: dcid:dc/svpg/dc/topic/HeartDisease_HeartDiseaseByGender
+
+Node: dcid:dc/svpg/dc/topic/HeartDisease_HeartDiseaseByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Heart Disease By Gender"
+member: dcid:Count_Person_Female_ConditionDiseasesOfHeart
+member: dcid:Count_Person_Male_ConditionDiseasesOfHeart
 
 Node: dcid:dc/topic/InfantMortality
 typeOf: dcs:Topic
