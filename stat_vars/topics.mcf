@@ -3,15 +3,6 @@
 #                 Please do not change the order arbitrarily.
 #
 
-Node: dcid:dc/topic/Economy
-typeOf: dcs:Topic
-name: "Economy"
-relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealValue
-relevantVariable: dcid:UnemploymentRate_Person
-relevantVariable: dcid:Median_Income_Person
-relevantVariable: dcid:GiniIndex_EconomicActivity
-relevantVariable: dcid:dc/svpg/RealGDPByIndustry
-
 # Generated with https://paste.googleplex.com/4559733896773632
 Node: dcid:dc/svpg/RealGDPByIndustry
 typeOf: dcs:StatVarPeerGroup
@@ -150,26 +141,34 @@ relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeat
 Node: dcid:dc/topic/Jobs
 typeOf: dcs:Topic
 name: "Jobs"
-relevantVariable: dcid:Count_Worker_NAICSAccommodationFoodServices
-relevantVariable: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
-relevantVariable: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
-relevantVariable: dcid:Count_Worker_NAICSConstruction
-relevantVariable: dcid:Count_Worker_NAICSEducationalServices
-relevantVariable: dcid:Count_Worker_NAICSHealthCareSocialAssistance
+relevantVariable: dcid:dc/svpg/JobsPeerGroup
+
+Node: dcid:dc/topic/JobsPeerGroup
+typeOf: dcs:StatVarPeerGroup
+name: "Categories of Jobs"
+member: dcid:Count_Worker_NAICSAccommodationFoodServices
+member: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
+member: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
+member: dcid:Count_Worker_NAICSConstruction
+member: dcid:Count_Worker_NAICSEducationalServices
+member: dcid:Count_Worker_NAICSHealthCareSocialAssistance
 # Manufacturing
-relevantVariable: dcid:dc/ndg1xk1e9frc2
-relevantVariable: dcid:Count_Worker_NAICSFinanceInsurance
-relevantVariable: dcid:Count_Worker_NAICSInformation
-relevantVariable: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
-# Administrative and Support
-relevantVariable: dcid:dc/f18sq8w498j4f
-relevantVariable: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
-# Retail
-relevantVariable: dcid:dc/4mm2p1rxr5wz4
-relevantVariable: dcid:Count_Worker_NAICSOtherServices
-# Transportation
-relevantVariable: dcid:dc/8p97n7l96lgg8
-relevantVariable: dcid:Count_Worker_NAICSUtilities
+member: dcid:dc/ndg1xk1e9frc2
+member: dcid:Count_Worker_NAICSFinanceInsurance
+member: dcid:Count_Worker_NAICSInformation
+member: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
+member: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
+member: dcid:Count_Worker_NAICSOtherServices
+# Transportation and Warehousing
+member: dcid:dc/8p97n7l96lgg8
+member: dcid:Count_Worker_NAICSUtilities
+# Retail Trade
+member: dcid:dc/p69tpsldf99h7
+member: dcid:Count_Worker_NAICSRealEstateRentalLeasing
+member: dcid:Count_Worker_NAICSPublicAdministration
+member: dcid:Count_Worker_NAICSWholesaleTrade
+member: dcid:Count_Worker_NAICSProfessionalScientificTechnicalServices
+
 
 Node: dcid:dc/topic/WetBulbTemperature
 typeOf: dcs:Topic
