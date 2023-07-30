@@ -2408,7 +2408,7 @@ memberList: "Count_Person_BachelorOfArtsHumanitiesAndOtherMajor,Count_Person_Bac
 
 Node: dcid:dc/topic/Education
 typeOf: dcs:Topic
-relevantVariableList: "dc/topic/EducationalAttainment,dc/topic/Parents,dc/topic/SchoolType,dc/topic/Schools"
+relevantVariableList: "dc/topic/EducationalAttainment,dc/topic/SchoolType,dc/topic/Schools,dc/topic/Parents"
 
 Node: dcid:dc/topic/EducationFaculty
 typeOf: dcs:Topic
@@ -2472,7 +2472,7 @@ relevantVariableList: "dc/topic/PopulationEnrolledInSchoolTypeByRace"
 
 Node: dcid:dc/topic/Schools
 typeOf: dcs:Topic
-relevantVariableList: "dc/topic/StudentLunchEligibility,dc/topic/StudentPopulation,dc/topic/Teacher"
+relevantVariableList: "dc/topic/StudentPopulation,dc/topic/StudentLunchEligibility,dc/topic/Teacher"
 
 Node: dcid:dc/topic/StudentEnrollmentLevels
 typeOf: dcs:Topic
@@ -2480,7 +2480,7 @@ relevantVariableList: "dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulatio
 
 Node: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulationByEnrollmentLevel
 typeOf: dcs:StatVarPeerGroup
-memberList: "member: Count_Person_EnrolledInKindergarten ,member: Count_Person_DetailedPrimarySchool ,member: Count_Person_DetailedMiddleSchool,member: Count_Person_DetailedHighSchool ,member: Count_Person_EnrolledInCollegeUndergraduateYears,member: Count_Person_EnrolledInCollegeOrGraduateSchool"
+memberList: "member: Count_Person_EnrolledInKindergarten,member: Count_Person_DetailedPrimarySchool,member: Count_Person_DetailedMiddleSchool,member: Count_Person_DetailedHighSchool,member: Count_Person_EnrolledInCollegeUndergraduateYears,member: Count_Person_EnrolledInCollegeOrGraduateSchool"
 
 Node: dcid:dc/topic/StudentLunchEligibility
 typeOf: dcs:Topic
@@ -2488,7 +2488,7 @@ relevantVariableList: "Count_Student_DirectCertificationLunch,Count_Student_Free
 
 Node: dcid:dc/topic/StudentPopulation
 typeOf: dcs:Topic
-relevantVariableList: "dc/topic/StudentEnrollmentLevels,dc/topic/StudentPopulationDemographics"
+relevantVariableList: "dc/topic/StudentEnrollmentLevels,dc/topic/StudentsInKindergarten,dc/topic/StudentsInPrimarySchool,dc/topic/StudentsInMiddleSchool,dc/topic/StudentsInHighSchool,dc/topic/StudentsInCollege,dc/topic/StudentsInGraduateOrProfessionalSchool,dc/topic/StudentPopulationDemographics"
 
 Node: dcid:dc/topic/StudentPopulationDemographics
 typeOf: dcs:Topic
@@ -2501,6 +2501,62 @@ memberList: "Count_Student_Female,Count_Student_Male"
 Node: dcid:dc/svpg/dc/topic/StudentPopulationDemographics_StudentPopulationByRace
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_Student_Asian,Count_Student_Black,Count_Student_HawaiianNativeOrPacificIslander,Count_Student_HispanicOrLatino,Count_Student_TwoOrMoreRaces,Count_Student_White"
+
+Node: dcid:dc/topic/StudentsInCollege
+typeOf: dcs:Topic
+relevantVariableList: "dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByGender,dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByRace"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByGender
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/0yv0ry7tjmwzc,dc/pltrqb2ng8dp8"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByRace
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/0jtctjm33mgh1,dc/1t989xd1tn701,dc/4wkzsq23w6reb,dc/50yq5l3ek70t7,dc/55d9n710f1l43,dc/mwbmxs2q9zcgd,dc/nhmjhp72kjr48,dc/wjtdrd9wq4m2g,dc/zv5g19y8dl9r1"
+
+Node: dcid:dc/topic/StudentsInGraduateOrProfessionalSchool
+typeOf: dcs:Topic
+relevantVariableList: "dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByRace"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByRace
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/3z6z9w930dl7b,dc/7fdfhnnjr5sh8,dc/9cqv67nn7pn1b,dc/fmx7fkrpd3jl2,dc/h8p2m5rx43j3b,dc/kz9r60zp6s32b,dc/p3vqwthpjtdw,dc/wyxmw2dy6t2xh,dc/zmp6qzgzp7ly2"
+
+Node: dcid:dc/topic/StudentsInHighSchool
+typeOf: dcs:Topic
+relevantVariableList: "dc/svpg/dc/topic/StudentsInHighSchool_StudentsInHighSchoolByRace"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInHighSchool_StudentsInHighSchoolByRace
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/1kt512ynvpmc2,dc/3bg4r46ly61q9,dc/4hzyqndyzntm,dc/9q73ecfhmd0y9,dc/cc8wk2n0ywd9,dc/dxsxcw009pdm4,dc/dzfdgrtcv5h7,dc/fh4td3znm3l4g,dc/g8537zqf45wl3"
+
+Node: dcid:dc/topic/StudentsInKindergarten
+typeOf: dcs:Topic
+relevantVariableList: "dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByGender,dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByRace"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByGender
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/g8kg52zcxzw9f,dc/p34mhcpgtth76"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByRace
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/1c4zcyw02n71g,dc/3n8g9we5yv7th,dc/556pqlh586bmc,dc/7g77dy8hfb1rg,dc/c6n2z7vh9sy31,dc/gr3zem8shyhbf,dc/ns1rqx6wy9909,dc/nt9cq96phw6nf,dc/qnphlls92tvs9"
+
+Node: dcid:dc/topic/StudentsInMiddleSchool
+typeOf: dcs:Topic
+relevantVariableList: "dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByRace"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByRace
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/6zbb7s5nx6rxb,dc/b3nmcj3w1lhed,dc/c57vzg7l74577,dc/c75qlm98pmcb2,dc/e2szvml8jkld8,dc/g4fthg3t3y5td,dc/njgzb8knf11n8,dc/qvf1yrhwzp8rd,dc/zvr6djt1p9gj3"
+
+Node: dcid:dc/topic/StudentsInPrimarySchool
+typeOf: dcs:Topic
+relevantVariableList: "dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByRace"
+
+Node: dcid:dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByRace
+typeOf: dcs:StatVarPeerGroup
+memberList: "dc/68cg2z97cpl7d,dc/b6h698m2vmdcc,dc/bf85zc6wypd2h,dc/e4y4hqq6mjfsh,dc/env3140jqssg8,dc/jhjdplbeg26k1,dc/p4jzvj8q1lnmd,dc/wk2vjrzfgyq5d,dc/x9e7150515yt7"
 
 Node: dcid:dc/topic/StudentTeacherRatio
 typeOf: dcs:Topic
