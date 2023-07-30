@@ -59,6 +59,9 @@ name: "Drought"
 relevantVariable: dcid:Area_DroughtEvent
 relevantVariable: dcid:ConsecutiveDryDays
 relevantVariable: dcid:Count_DroughtEvent
+relevantVariable: dcid:Mean_PalmerDroughtSeverityIndex
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent
 
 Node: dcid:dc/topic/Environment
 typeOf: dcs:Topic
@@ -82,6 +85,21 @@ name: "Flood"
 relevantVariable: dcid:Area_FloodEvent
 relevantVariable: dcid:Count_FlashFloodEvent
 relevantVariable: dcid:Count_FloodEvent
+relevantVariable: dcid:dc/topic/CoastalFlood
+relevantVariable: dcid:dc/topic/RiverineFlood
+
+Node: dcid:dc/topic/RiverineFlood
+typeOf: dcs:Topic
+name: "RiverineFlood"
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent
+
+Node: dcid:dc/topic/CoastalFlood
+typeOf: dcs:Topic
+name: "CoastalFlood"
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent
+relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_CoastalFloodEvent
 
 Node: dcid:dc/topic/HeatEvent
 typeOf: dcs:Topic
@@ -95,6 +113,9 @@ name: "Heat Wave"
 relevantVariable: dcid:Count_HeatWaveEvent
 relevantVariable: dcid:Intensity_HeatWaveEvent
 relevantVariable: dcid:NumberOfDays_HeatWaveEvent
+relevantVariable: dcid:PopulationWeighted_Count_HeatWaveEvent
+relevantVariable: dcid:PopulationWeighted_Intensity_HeatWaveEvent
+relevantVariable: dcid:PopulationWeighted_NumerOfDays_HeatWaveEvent
 
 Node: dcid:dc/topic/LandCover
 typeOf: dcs:Topic
@@ -291,12 +312,18 @@ member: dcid:Mean_Concentration_AirPollutant_SmokePM25
 Node: dcid:dc/topic/Storm
 typeOf: dcs:Topic
 name: "Storm"
-relevantVariable: dcid:Count_DustDevilEvent
-relevantVariable: dcid:Count_DustStormEvent
-relevantVariable: dcid:Count_IceStormEvent
-relevantVariable: dcid:Count_MarineThunderstormWindEvent
-relevantVariable: dcid:Count_MarineTropicalStormEvent
-relevantVariable: dcid:Count_ThunderstormWindEvent
+relevantVariable: dcid:dc/svpg/Storm_StormEventbytype
+
+Node: dcid:dc/svpg/Storm_StormEventbytype
+typeOf: dcs:StatVarPeerGroup
+name: "Storm Event by type"
+member: dcid:Count_DustStormEvent
+member: dcid:Count_IceStormEvent
+member: dcid:Count_MarineThunderstormWindEvent
+member: dcid:Count_MarineTropicalStormEvent
+member: dcid:Count_ThunderstormWindEvent
+member: dcid:Count_TropicalStormEvent
+member: dcid:Count_WinterStormEvent
 
 Node: dcid:dc/topic/SulfurDioxide
 typeOf: dcs:Topic

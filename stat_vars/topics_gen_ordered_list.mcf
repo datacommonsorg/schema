@@ -22,10 +22,6 @@ Node: dcid:dc/topic/Equity
 typeOf: dcs:Topic
 relevantVariableList: "GiniIndex_EconomicActivity,GenderIncomeInequality_Person_15OrMoreYears_WithIncome,Median_Income_Household_HouseholderRaceAsianAlone,Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone,Count_Person_WithDisability_WhiteAlone,Count_Person_AsianAlone_ResidesInJuvenileFacilities,Count_Person_AsianAlone_ResidesInAdultCorrectionalFacilities,Count_Death_AmericanIndianAndAlaskaNativeAlone"
 
-Node: dcid:dc/topic/Crime
-typeOf: dcs:Topic
-relevantVariableList: "Count_CriminalActivities_CombinedCrime,Count_CriminalActivities_MotorVehicleTheft,Count_CriminalIncidents_IsHateCrime,Count_CriminalIncidents_BiasMotivationDisabilityStatus_IsHateCrime,Count_CriminalIncidents_BiasMotivationRace_IsHateCrime_AmericanIndianOrAlaskaNativeAlone"
-
 Node: dcid:dc/topic/MedicalConditions
 typeOf: dcs:Topic
 relevantVariableList: "Percent_Person_WithArthritis,Percent_Person_WithAsthma,Percent_Person_WithCancerExcludingSkinCancer,Percent_Person_WithChronicKidneyDisease,Percent_Person_WithChronicObstructivePulmonaryDisease,Percent_Person_WithCoronaryHeartDisease,Percent_Person_WithDiabetes,Percent_Person_WithHighBloodPressure,Percent_Person_WithHighCholesterol,Percent_Person_WithMentalHealthNotGood,Percent_Person_WithPhysicalHealthNotGood,Percent_Person_WithStroke"
@@ -110,18 +106,6 @@ Node: dcid:dc/svpg/AdultCorrectionalFacilitiesResidents_AdultCorrectionalFacilit
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_Person_Female_ResidesInAdultCorrectionalFacilities,Count_Person_Male_ResidesInAdultCorrectionalFacilities"
 
-Node: dcid:dc/topic/Age
-typeOf: dcs:Topic
-relevantVariableList: "LifeExpectancy_Person,Median_Age_Person,dc/svpg/Age_MedianAgebyGender,dc/svpg/Age_MedianAgebyRace"
-
-Node: dcid:dc/svpg/Age_MedianAgebyGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Median_Age_Person_Female,Median_Age_Person_Male"
-
-Node: dcid:dc/svpg/Age_MedianAgebyRace
-typeOf: dcs:StatVarPeerGroup
-memberList: "Median_Age_Person_AmericanIndianOrAlaskaNativeAlone,Median_Age_Person_AsianAlone,Median_Age_Person_BlackOrAfricanAmericanAlone,Median_Age_Person_HispanicOrLatino,Median_Age_Person_NativeHawaiianOrOtherPacificIslanderAlone,Median_Age_Person_SomeOtherRaceAlone,Median_Age_Person_TwoOrMoreRaces,Median_Age_Person_WhiteAlone"
-
 Node: dcid:dc/topic/AlcoholIndustry
 typeOf: dcs:Topic
 relevantVariableList: "dc/svpg/AlcoholIndustry_AlcoholEstablishments,dc/svpg/AlcoholIndustry_SalesfromAlcoholEstablishments,dc/svpg/AlcoholIndustry_WagesfromAlcoholEstablishments"
@@ -198,18 +182,6 @@ Node: dcid:dc/svpg/COVID19_COVID19CumulativeCount
 typeOf: dcs:StatVarPeerGroup
 memberList: "CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedCase,CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedOrProbableCase,CumulativeCount_MedicalConditionIncident_COVID_19_PatientDeceased,CumulativeCount_MedicalConditionIncident_COVID_19_PatientRecovered"
 
-Node: dcid:dc/topic/Cancer
-typeOf: dcs:Topic
-relevantVariableList: "Count_Person_ConditionCancer,dc/svpg/Cancer_CancerCasesByAge,dc/svpg/Cancer_CancerCasesByGender"
-
-Node: dcid:dc/svpg/Cancer_CancerCasesByAge
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_0To4Years_ConditionCancer,Count_Person_10To14Years_ConditionCancer,Count_Person_15To19Years_ConditionCancer,Count_Person_20To24Years_ConditionCancer,Count_Person_25To29Years_ConditionCancer,Count_Person_30To34Years_ConditionCancer,Count_Person_35To39Years_ConditionCancer,Count_Person_40To44Years_ConditionCancer,Count_Person_45To49Years_ConditionCancer,Count_Person_50To54Years_ConditionCancer,Count_Person_55To59Years_ConditionCancer,Count_Person_5To9Years_ConditionCancer,Count_Person_60To64Years_ConditionCancer,Count_Person_65To69Years_ConditionCancer,Count_Person_70To74Years_ConditionCancer,Count_Person_75To79Years_ConditionCancer,Count_Person_80To84Years_ConditionCancer,Count_Person_85OrMoreYears_ConditionCancer"
-
-Node: dcid:dc/svpg/Cancer_CancerCasesByGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_Female_ConditionCancer,Count_Person_Male_ConditionCancer"
-
 Node: dcid:dc/topic/CardiovascularDisease
 typeOf: dcs:Topic
 relevantVariableList: "dc/svpg/CardiovascularDisease_CardiovascularDiseasePerCapitaByAge"
@@ -225,10 +197,6 @@ relevantVariableList: "Count_FunnelCloudEvent,dc/topic/Visibility,dc/svpg/Clouds
 Node: dcid:dc/svpg/Clouds_CloudCover
 typeOf: dcs:StatVarPeerGroup
 memberList: "Max_CloudCover,Mean_CloudCover,Min_CloudCover"
-
-Node: dcid:dc/topic/CoastalFlood
-typeOf: dcs:Topic
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent,NaturalHazardRiskScore_SuperfundSite_CoastalFloodEvent"
 
 Node: dcid:dc/topic/CollegeOrUniversityStudentHousingResidents
 typeOf: dcs:Topic
@@ -270,18 +238,6 @@ Node: dcid:dc/topic/Dentists
 typeOf: dcs:Topic
 relevantVariableList: "dc/17ckwyxwctzm2,dc/dv0w29brm5866,dc/w2gdszr0f3sh2,sdg/SH_MED_DEN.OCCUPATION--ISCO08_2261"
 
-Node: dcid:dc/topic/Diabetes
-typeOf: dcs:Topic
-relevantVariableList: "Count_Person_ConditionDiabetes,Percent_Person_WithDiabetes,dc/svpg/Diabetes_DiabetesCasesByGender,dc/svpg/Diabetes_PrevalenceofDiabetesbyGender"
-
-Node: dcid:dc/svpg/Diabetes_DiabetesCasesByGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_Female_ConditionDiabetes,Count_Person_Male_ConditionDiabetes"
-
-Node: dcid:dc/svpg/Diabetes_PrevalenceofDiabetesbyGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "dc/nh3s4skee5483,dc/xmpy89x1nh8cg"
-
 Node: dcid:dc/topic/Disabilities
 typeOf: dcs:Topic
 relevantVariableList: "dc/svpg/Disabilities_DisabledPopulationbyGender,dc/svpg/Disabilities_DisabledPopulationbyHousingResidency,dc/svpg/Disabilities_DisabledPopulationbyRace,dc/svpg/Disabilities_PopulationbyDisabilityStatus"
@@ -302,21 +258,9 @@ Node: dcid:dc/svpg/Disabilities_PopulationbyDisabilityStatus
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_Person_NoDisability,Count_Person_WithDisability"
 
-Node: dcid:dc/topic/Disasters
-typeOf: dcs:Topic
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact,dc/svpg/Disasters_DisasterEventsByType"
-
-Node: dcid:dc/svpg/Disasters_DisasterEventsByType
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_CoastalFloodEvent,Count_CycloneEvent,Count_DroughtEvent,Count_EarthquakeEvent,Count_FloodEvent,Count_HeatEvent,Count_HeavyRainEvent,Count_VolcanicAshEvent"
-
 Node: dcid:dc/topic/Disease
 typeOf: dcs:Topic
 relevantVariableList: "dc/topic/CardiovascularDisease,dc/topic/Dengue,dc/topic/Diabetes,dc/topic/HIV,dc/topic/Malaria,dc/topic/NeglectedTropicalDiseases,dc/topic/Tuberculosis"
-
-Node: dcid:dc/topic/Drought
-typeOf: dcs:Topic
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent,ConsecutiveDryDays,Count_DroughtEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent,Mean_PalmerDroughtSeverityIndex"
 
 Node: dcid:dc/topic/Dust
 typeOf: dcs:Topic
@@ -325,26 +269,6 @@ relevantVariableList: "Count_DustDevilEvent,Count_DustStormEvent"
 Node: dcid:dc/topic/Earthquake
 typeOf: dcs:Topic
 relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_EarthquakeEvent,Count_EarthquakeEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_EarthquakeEvent,NaturalHazardRiskScore_SuperfundSite_EarthquakeEvent"
-
-Node: dcid:dc/topic/Education
-typeOf: dcs:Topic
-relevantVariableList: "Count_Establishment_NAICSEducationalServices,Count_Teacher,dc/svpg/Education_EducationalEstablishmnentsbySchoolType,dc/svpg/Education_PopulationbyEducationalAttainmentLevel,dc/svpg/Education_PopulationbySchoolEnrollmentStatus,dc/svpg/Education_PopulationbySchoollevel"
-
-Node: dcid:dc/svpg/Education_EducationalEstablishmnentsbySchoolType
-typeOf: dcs:StatVarPeerGroup
-memberList: "dc/0kh1dp9qwqerg,dc/1xbz8tzx9lhmg,dc/53f31qynnp447,dc/ds35leh1tbb6d,dc/ltt37b7nrkjgc,dc/xj35eff6l86p2,dc/zqe29wdh7mkmd"
-
-Node: dcid:dc/svpg/Education_PopulationbyEducationalAttainmentLevel
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_EducationalAttainmentAssociatesDegree,Count_Person_EducationalAttainmentBachelorsDegree,Count_Person_EducationalAttainmentDoctorateDegree,Count_Person_EducationalAttainmentGedOrAlternativeCredential,Count_Person_EducationalAttainmentMastersDegree,Count_Person_EducationalAttainmentNoSchoolingCompleted,Count_Person_EducationalAttainmentPrimarySchool,Count_Person_EducationalAttainmentRegularHighSchoolDiploma"
-
-Node: dcid:dc/svpg/Education_PopulationbySchoolEnrollmentStatus
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_EnrolledInSchool,Count_Person_NotEnrolledInSchool"
-
-Node: dcid:dc/svpg/Education_PopulationbySchoollevel
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_DetailedHighSchool,Count_Person_DetailedMiddleSchool,Count_Person_DetailedPrimarySchool"
 
 Node: dcid:dc/topic/ExcessiveColdEvent
 typeOf: dcs:Topic
@@ -366,10 +290,6 @@ Node: dcid:dc/topic/ExtremeTide
 typeOf: dcs:Topic
 relevantVariableList: "Count_AstronomicalLowTideEvent,Count_RipCurrentEvent,Count_StormSurgeTideEvent"
 
-Node: dcid:dc/topic/Flood
-typeOf: dcs:Topic
-relevantVariableList: "Count_FlashFloodEvent,Count_FloodEvent,NaturalHazardRiskScore_SuperfundSite_FloodEvent,dc/topic/CoastalFlood,dc/topic/RiverineFlood"
-
 Node: dcid:dc/topic/Fog
 typeOf: dcs:Topic
 relevantVariableList: "dc/topic/Visibility,dc/svpg/Fog_Fogeventsbytype"
@@ -385,10 +305,6 @@ relevantVariableList: "Area_Forest,Mean_MaxTemperature_Forest,Mean_PalmerDrought
 Node: dcid:dc/topic/FossilFuelSubsidies
 typeOf: dcs:Topic
 relevantVariableList: "sdg/ER_FFS_CMPT_CD,sdg/ER_FFS_CMPT_GDP,sdg/ER_FFS_CMPT_PC_CD"
-
-Node: dcid:dc/topic/GDP
-typeOf: dcs:Topic
-relevantVariableList: "Amount_EconomicActivity_GrossDomesticProduction_Nominal,Amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita,GrowthRate_Amount_EconomicActivity_GrossDomesticProduction,eia/INTL.4701-34-BDOLPPP.A,eia/SEDS.GDPRV.A,eia/SEDS.GDPRX.A,sdg/NY_GDP_MKTP_KD_ZG,sdg/NY_GDP_PCAP,sdg/SL_EMP_GTOTL,sdg/SL_EMP_PCAP"
 
 Node: dcid:dc/topic/GroupQuartersResidents
 typeOf: dcs:Topic
@@ -433,10 +349,6 @@ relevantVariableList: "dc/svpg/HealthWorkerDensity_HealthWorkerDensityByOccupati
 Node: dcid:dc/svpg/HealthWorkerDensity_HealthWorkerDensityByOccupation
 typeOf: dcs:StatVarPeerGroup
 memberList: "sdg/SH_MED_DEN.OCCUPATION--ISCO08_2261,sdg/SH_MED_DEN.OCCUPATION--ISCO08_222_322,sdg/SH_MED_DEN.OCCUPATION--ISCO08_2262,sdg/SH_MED_DEN.OCCUPATION--ISCO08_221"
-
-Node: dcid:dc/topic/HeatWave
-typeOf: dcs:Topic
-relevantVariableList: "Count_HeatWaveEvent,Intensity_HeatWaveEvent,NumberOfDays_HeatWaveEvent,PopulationWeighted_Count_HeatWaveEvent,PopulationWeighted_Intensity_HeatWaveEvent,PopulationWeighted_NumerOfDays_HeatWaveEvent"
 
 Node: dcid:dc/topic/HeightStunting
 typeOf: dcs:Topic
@@ -498,14 +410,6 @@ Node: dcid:dc/svpg/JuvenileFacilitiesResidents_JuvenileFacilitiesPopulationbyGen
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_Person_Female_ResidesInJuvenileFacilities,Count_Person_Male_ResidesInJuvenileFacilities"
 
-Node: dcid:dc/topic/LandCover
-typeOf: dcs:Topic
-relevantVariableList: "dc/svpg/LandCover_PercentofLandCoverbyLandType"
-
-Node: dcid:dc/svpg/LandCover_PercentofLandCoverbyLandType
-typeOf: dcs:StatVarPeerGroup
-memberList: "LandCoverFraction_BareSparseVegetation,LandCoverFraction_BuiltUp,LandCoverFraction_Cropland,LandCoverFraction_Forest,LandCoverFraction_HerbaceousVegetation,LandCoverFraction_MossAndLichen,LandCoverFraction_PermanentWater,LandCoverFraction_SeasonalWater,LandCoverFraction_Shrubland,LandCoverFraction_SnowIce"
-
 Node: dcid:dc/topic/Landslide
 typeOf: dcs:Topic
 relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_LandslideEvent,Count_LandslideEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_LandslideEvent,NaturalHazardRiskScore_SuperfundSite_LandslideEvent"
@@ -541,14 +445,6 @@ relevantVariableList: "dc/svpg/MarineEvents_MarineEventsbyType"
 Node: dcid:dc/svpg/MarineEvents_MarineEventsbyType
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_MarineDenseFogEvent,Count_MarineHailEvent,Count_MarineHighWindEvent,Count_MarineHurricaneTyphoonEvent,Count_MarineLightningEvent,Count_MarineStrongWindEvent,Count_MarineThunderstormWindEvent,Count_MarineTropicalDepressionEvent,Count_MarineTropicalStormEvent"
-
-Node: dcid:dc/topic/MaritalStatus
-typeOf: dcs:Topic
-relevantVariableList: "dc/svpg/MaritalStatus_PopulationbyMaritalStatus"
-
-Node: dcid:dc/svpg/MaritalStatus_PopulationbyMaritalStatus
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_Divorced,Count_Person_DivorcedOrSeparated,Count_Person_MarriedAndNotSeparated,Count_Person_NeverMarried,Count_Person_Separated,Count_Person_Widowed"
 
 Node: dcid:dc/topic/Military
 typeOf: dcs:Topic
@@ -794,14 +690,6 @@ Node: dcid:dc/topic/PopulationWeight
 typeOf: dcs:Topic
 relevantVariableList: "dc/topic/PopulationNormalWeight,dc/topic/PopulationObese,dc/topic/PopulationOverweight,dc/topic/PopulationPreObese,dc/topic/PopulationUnderweight,dc/topic/PopulationUnderweight"
 
-Node: dcid:dc/topic/Poverty
-typeOf: dcs:Topic
-relevantVariableList: "Count_Household_FamilyHousehold_BelowPovertyLevelInThePast12Months,Count_Person_BelowPovertyLevelInThePast12Months,dc/svpg/Poverty_PopulationBelowPovertyLinebyRace"
-
-Node: dcid:dc/svpg/Poverty_PopulationBelowPovertyLinebyRace
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone,Count_Person_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone,Count_Person_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces,Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone"
-
 Node: dcid:dc/topic/Precipitation
 typeOf: dcs:Topic
 relevantVariableList: "HeavyPrecipitationIndex,InterannualRange_Monthly_Precipitation,Max_PrecipitableWater_Atmosphere,Mean_PrecipitableWater_Atmosphere,Min_PrecipitableWater_Atmosphere,PrecipitationRate,dc/topic/Rainfall,dc/topic/Snowfall"
@@ -829,10 +717,6 @@ relevantVariableList: "Count_CriminalIncidents_BiasMotivationReligion_IsHateCrim
 Node: dcid:dc/svpg/Religion_PopulationbyReligion
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_Person_BrazilOtherReligion,Count_Person_Evangelical,Count_Person_Irreligion,Count_Person_RomanCatholicismApostolic"
-
-Node: dcid:dc/topic/RiverineFlood
-typeOf: dcs:Topic
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent"
 
 Node: dcid:dc/topic/RoadTrafficDeaths
 typeOf: dcs:Topic
@@ -905,14 +789,6 @@ memberList: "eia/TOTAL.SODTB.A,eia/TOTAL.SOT5B.A,eia/TOTAL.SOTCB.A"
 Node: dcid:dc/svpg/SolarConsumption_TotalMonthlyDistributedSolarConsumption
 typeOf: dcs:StatVarPeerGroup
 memberList: "eia/TOTAL.SODTB.M,eia/TOTAL.SOT5B.M,eia/TOTAL.SOTCB.M"
-
-Node: dcid:dc/topic/Storm
-typeOf: dcs:Topic
-relevantVariableList: "dc/svpg/Storm_StormEventbytype"
-
-Node: dcid:dc/svpg/Storm_StormEventbytype
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_DustStormEvent,Count_IceStormEvent,Count_MarineThunderstormWindEvent,Count_MarineTropicalStormEvent,Count_ThunderstormWindEvent,Count_TropicalStormEvent,Count_WinterStormEvent"
 
 Node: dcid:dc/topic/Subsidies
 typeOf: dcs:Topic
@@ -1062,18 +938,6 @@ Node: dcid:dc/svpg/DivorcedPopulationByAge_DivorcedPopulationByAge
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_Person_10To14Years_Divorced,Count_Person_15To19Years_Divorced,Count_Person_20To24Years_Divorced,Count_Person_25To29Years_Divorced,Count_Person_30To34Years_Divorced,Count_Person_35To39Years_Divorced,Count_Person_40To44Years_Divorced,Count_Person_45To49Years_Divorced,Count_Person_50To54Years_Divorced,Count_Person_55To59Years_Divorced,Count_Person_60To64Years_Divorced,Count_Person_65To69Years_Divorced,Count_Person_70To74Years_Divorced,Count_Person_75To79Years_Divorced,Count_Person_80To84Years_Divorced,Count_Person_85OrMoreYears_Divorced"
 
-Node: dcid:dc/topic/HeightStunting
-typeOf: dcs:Topic
-relevantVariableList: "sdg/SH_STA_STNTN.AGE--Y0T4,sdg/SH_STA_STNT.AGE--Y0T4"
-
-Node: dcid:dc/topic/Malnutrition
-typeOf: dcs:Topic
-relevantVariableList: "Percent_Underweight_In_Count_Person,dc/topic/HeightStunting,sdg/SH_STA_WASHARI,dc/svpg/Malnutrition_UnderweightPopulationbyGender"
-
-Node: dcid:dc/svpg/Malnutrition_UnderweightPopulationbyGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_Underweight_In_Count_Person_Female,Percent_Underweight_In_Count_Person_Male"
-
 Node: dcid:dc/topic/NeverMarriedFemalePopulationByAge
 typeOf: dcs:Topic
 relevantVariableList: "dc/svpg/NeverMarriedFemalePopulationByAge_NeverMarriedFemalePopulationByAge"
@@ -1122,117 +986,9 @@ Node: dcid:dc/svpg/NowMarriedPopulationByAge_NowMarriedPopulationByAge
 typeOf: dcs:StatVarPeerGroup
 memberList: "Count_Person_10To14Years_NowMarried,Count_Person_15To19Years_NowMarried,Count_Person_20To24Years_NowMarried,Count_Person_25To29Years_NowMarried,Count_Person_30To34Years_NowMarried,Count_Person_35To39Years_NowMarried,Count_Person_40To44Years_NowMarried,Count_Person_45To49Years_NowMarried,Count_Person_50To54Years_NowMarried,Count_Person_55To59Years_NowMarried,Count_Person_60To64Years_NowMarried,Count_Person_65To69Years_NowMarried,Count_Person_70To74Years_NowMarried,Count_Person_75To79Years_NowMarried,Count_Person_80To84Years_NowMarried,Count_Person_85OrMoreYears_NowMarried"
 
-Node: dcid:dc/topic/PhysicalActivity
-typeOf: dcs:Topic
-relevantVariableList: "Percent_PhysicalActivity_In_Count_Person,dc/svpg/PhysicalActivity_Dailyphysicallyactivepopulationbyeducationstatus,dc/svpg/PhysicalActivity_Physicallyactivepopulationbygender"
-
-Node: dcid:dc/svpg/PhysicalActivity_Dailyphysicallyactivepopulationbyeducationstatus
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_AtLeast30MinutesPerDay_WalkingOrCycling_PhysicalActivity_In_Count_Person_LessThanPrimaryEducationOrPrimaryEducationOrLowerSecondaryEducation,Percent_AtLeast30MinutesPerDay_WalkingOrCycling_PhysicalActivity_In_Count_Person_TertiaryEducation,Percent_AtLeast30MinutesPerDay_WalkingOrCycling_PhysicalActivity_In_Count_Person_UpperSecondaryEducationOrPostSecondaryNonTertiaryEducation"
-
-Node: dcid:dc/svpg/PhysicalActivity_Physicallyactivepopulationbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_PhysicalActivity_In_Count_Person_Female,Percent_PhysicalActivity_In_Count_Person_Male"
-
-Node: dcid:dc/topic/PopulationFormerSmoker
-typeOf: dcs:Topic
-relevantVariableList: "Percent_FormerSmoker_Daily_TobaccoProducts_In_Count_Person,dc/svpg/PopulationFormerSmoker_Prevalenceofformerdailysmokersbygender,dc/svpg/PopulationFormerSmoker_Prevalenceofformerecigarettesmokersbygender"
-
-Node: dcid:dc/svpg/PopulationFormerSmoker_Prevalenceofformerdailysmokersbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_FormerSmoker_Daily_TobaccoProducts_In_Count_Person_Female,Percent_FormerSmoker_Daily_TobaccoProducts_In_Count_Person_Male,Percent_FormerSmoker_Formerly_ECigarettes_In_Count_Person"
-
-Node: dcid:dc/svpg/PopulationFormerSmoker_Prevalenceofformerecigarettesmokersbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_FormerSmoker_Formerly_ECigarettes_In_Count_Person_Female,Percent_FormerSmoker_Formerly_ECigarettes_In_Count_Person_Male"
-
-Node: dcid:dc/topic/PopulationNonsmokingTobaccoUser
-typeOf: dcs:Topic
-relevantVariableList: "Percent_NonSmoker_TobaccoProducts_In_Count_Person,dc/svpg/PopulationNonsmokingTobaccoUser_PrevalenceofNonSmokingTobaccoUsersbygender,dc/svpg/PopulationNonsmokingTobaccoUser_PrevalenceofNonSmokingTobaccoUsersbyresidency"
-
-Node: dcid:dc/svpg/PopulationNonsmokingTobaccoUser_PrevalenceofNonSmokingTobaccoUsersbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_NonSmoker_TobaccoProducts_In_Count_Person_Female,Percent_NonSmoker_TobaccoProducts_In_Count_Person_Male"
-
-Node: dcid:dc/svpg/PopulationNonsmokingTobaccoUser_PrevalenceofNonSmokingTobaccoUsersbyresidency
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_NonSmoker_TobaccoProducts_In_Count_Person_Rural,Percent_NonSmoker_TobaccoProducts_In_Count_Person_SemiUrban,Percent_NonSmoker_TobaccoProducts_In_Count_Person_Urban"
-
-Node: dcid:dc/topic/PopulationNormalWeight
-typeOf: dcs:Topic
-relevantVariableList: "Percent_Normalweight_In_Count_Person,dc/svpg/PopulationNormalWeight_PrevalanceofNormalWeightAdultPopulationByResidency,dc/svpg/PopulationNormalWeight_Prevalanceofnormalweightpopulationbygender"
-
-Node: dcid:dc/svpg/PopulationNormalWeight_PrevalanceofNormalWeightAdultPopulationByResidency
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_Normalweight_In_Count_Person_Rural,Percent_Normalweight_In_Count_Person_SemiUrban,Percent_Normalweight_In_Count_Person_Urban"
-
-Node: dcid:dc/svpg/PopulationNormalWeight_Prevalanceofnormalweightpopulationbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_Normalweight_In_Count_Person_Female,Percent_Normalweight_In_Count_Person_Male"
-
-Node: dcid:dc/topic/PopulationObese
-typeOf: dcs:Topic
-relevantVariableList: "Percent_Person_Obesity,dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByGender,dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByResidency"
-
-Node: dcid:dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_18OrMoreYears_Female_Obesity_AsAFractionOf_Count_Person_18OrMoreYears_Female,Count_Person_18OrMoreYears_Male_Obesity_AsAFractionOf_Count_Person_18OrMoreYears_Male"
-
-Node: dcid:dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByResidency
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_18OrMoreYears_Obesity_Rural_AsAFractionOf_Count_Person_18OrMoreYears_Rural,Count_Person_18OrMoreYears_Obesity_Urban_AsAFractionOf_Count_Person_18OrMoreYears_Urban"
-
-Node: dcid:dc/topic/PopulationOverweight
-typeOf: dcs:Topic
-relevantVariableList: "Percent_Overweight_In_Count_Person,Percent_Overweight_In_Count_Person_SevereActivityLimitation,dc/svpg/PopulationOverweight_Prevalanceofoverweightpopulationbygender,dc/svpg/PopulationOverweight_PrevalenceofOverweightPopulationunder4yearsoldbygender,dc/svpg/PopulationOverweight_PrevalenceofOverweightpopulationwithsevereactivitylimitationbygender"
-
-Node: dcid:dc/svpg/PopulationOverweight_Prevalanceofoverweightpopulationbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_Overweight_In_Count_Person_Female,Percent_Overweight_In_Count_Person_Male"
-
-Node: dcid:dc/svpg/PopulationOverweight_PrevalenceofOverweightPopulationunder4yearsoldbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_Upto4Years_Female_Overweight_AsFractionOf_Count_Person_Upto4Years_Female,Count_Person_Upto4Years_Male_Overweight_AsFractionOf_Count_Person_Upto4Years_Male"
-
-Node: dcid:dc/svpg/PopulationOverweight_PrevalenceofOverweightpopulationwithsevereactivitylimitationbygender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_Overweight_In_Count_Person_Female_SevereActivityLimitation,Percent_Overweight_In_Count_Person_Male_SevereActivityLimitation"
-
-Node: dcid:dc/topic/PopulationPreObese
-typeOf: dcs:Topic
-relevantVariableList: "Percent_PreObese_In_Count_Person,dc/svpg/PopulationPreObese_PrevalanceofPreObeseAdultPopulationByResidency,dc/svpg/PopulationPreObese_PrevalanceofPreObesityinAdultPopulationByGender"
-
-Node: dcid:dc/svpg/PopulationPreObese_PrevalanceofPreObeseAdultPopulationByResidency
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_PreObese_In_Count_Person_Rural,Percent_PreObese_In_Count_Person_SemiUrban,Percent_PreObese_In_Count_Person_Urban"
-
-Node: dcid:dc/svpg/PopulationPreObese_PrevalanceofPreObesityinAdultPopulationByGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_PreObese_In_Count_Person_Female,Percent_PreObese_In_Count_Person_Male"
-
-Node: dcid:dc/topic/PopulationSmoker
-typeOf: dcs:Topic
-relevantVariableList: "Percent_Person_Smoking,dc/svpg/PopulationSmoker_PrevalenceOfAdultSmokersByGender"
-
-Node: dcid:dc/svpg/PopulationSmoker_PrevalenceOfAdultSmokersByGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Person_15OrMoreYears_Female_Smoking_AsFractionOf_Count_Person_15OrMoreYears_Female,Count_Person_15OrMoreYears_Male_Smoking_AsFractionOf_Count_Person_15OrMoreYears_Male"
-
 Node: dcid:dc/topic/PopulationUndersleeping
 typeOf: dcs:Topic
 relevantVariableList: "Percent_Person_SleepLessThan7Hours"
-
-Node: dcid:dc/topic/PopulationUnderweight
-typeOf: dcs:Topic
-relevantVariableList: "Percent_Underweight_In_Count_Person,dc/svpg/PopulationUnderweight_UnderweightPopulationbyGender"
-
-Node: dcid:dc/svpg/PopulationUnderweight_UnderweightPopulationbyGender
-typeOf: dcs:StatVarPeerGroup
-memberList: "Percent_Underweight_In_Count_Person_Female,Percent_Underweight_In_Count_Person_Male"
-
-Node: dcid:dc/topic/PopulationWeight
-typeOf: dcs:Topic
-relevantVariableList: "dc/topic/PopulationNormalWeight,dc/topic/PopulationObese,dc/topic/PopulationOverweight,dc/topic/PopulationPreObese,dc/topic/PopulationUnderweight,dc/topic/PopulationUnderweight"
 
 Node: dcid:dc/topic/RuralFemalePopulationByAge
 typeOf: dcs:Topic
@@ -2724,7 +2480,7 @@ relevantVariableList: "dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulatio
 
 Node: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulationByEnrollmentLevel
 typeOf: dcs:StatVarPeerGroup
-memberList: "Count_Student_HighSchool,Count_Student_Kindergarten,Count_Student_MiddleSchool,Count_Student_PreKindergarten,Count_Student_PrimarySchool,Count_Student_SchoolGrade1To8,Count_Student_SchoolGrade9To12"
+memberList: "member: Count_Person_EnrolledInKindergarten ,member: Count_Person_DetailedPrimarySchool ,member: Count_Person_DetailedMiddleSchool,member: Count_Person_DetailedHighSchool ,member: Count_Person_EnrolledInCollegeUndergraduateYears,member: Count_Person_EnrolledInCollegeOrGraduateSchool"
 
 Node: dcid:dc/topic/StudentLunchEligibility
 typeOf: dcs:Topic
@@ -2792,7 +2548,7 @@ relevantVariableList: "dc/topic/Drought,dc/topic/Fire,dc/topic/Flood,dc/topic/He
 
 Node: dcid:dc/topic/Drought
 typeOf: dcs:Topic
-relevantVariableList: "Area_DroughtEvent,ConsecutiveDryDays,Count_DroughtEvent"
+relevantVariableList: "Area_DroughtEvent,ConsecutiveDryDays,Count_DroughtEvent,Mean_PalmerDroughtSeverityIndex,Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent"
 
 Node: dcid:dc/topic/Environment
 typeOf: dcs:Topic
@@ -2804,7 +2560,15 @@ relevantVariableList: "BurnedArea_FireEvent,Count_FireEvent,Percent_BurnedArea_F
 
 Node: dcid:dc/topic/Flood
 typeOf: dcs:Topic
-relevantVariableList: "Area_FloodEvent,Count_FlashFloodEvent,Count_FloodEvent"
+relevantVariableList: "Area_FloodEvent,Count_FlashFloodEvent,Count_FloodEvent,dc/topic/CoastalFlood,dc/topic/RiverineFlood"
+
+Node: dcid:dc/topic/RiverineFlood
+typeOf: dcs:Topic
+relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent"
+
+Node: dcid:dc/topic/CoastalFlood
+typeOf: dcs:Topic
+relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent,NaturalHazardRiskScore_SuperfundSite_CoastalFloodEvent"
 
 Node: dcid:dc/topic/HeatEvent
 typeOf: dcs:Topic
@@ -2812,7 +2576,7 @@ relevantVariableList: "Count_ExcessiveHeatEvent,dc/topic/HeatEvent"
 
 Node: dcid:dc/topic/HeatWave
 typeOf: dcs:Topic
-relevantVariableList: "Count_HeatWaveEvent,Intensity_HeatWaveEvent,NumberOfDays_HeatWaveEvent"
+relevantVariableList: "Count_HeatWaveEvent,Intensity_HeatWaveEvent,NumberOfDays_HeatWaveEvent,PopulationWeighted_Count_HeatWaveEvent,PopulationWeighted_Intensity_HeatWaveEvent,PopulationWeighted_NumerOfDays_HeatWaveEvent"
 
 Node: dcid:dc/topic/LandCover
 typeOf: dcs:Topic
@@ -2936,7 +2700,11 @@ memberList: "Concentration_AirPollutant_SmokePM25,Max_Concentration_AirPollutant
 
 Node: dcid:dc/topic/Storm
 typeOf: dcs:Topic
-relevantVariableList: "Count_DustDevilEvent,Count_DustStormEvent,Count_IceStormEvent,Count_MarineThunderstormWindEvent,Count_MarineTropicalStormEvent,Count_ThunderstormWindEvent"
+relevantVariableList: "dc/svpg/Storm_StormEventbytype"
+
+Node: dcid:dc/svpg/Storm_StormEventbytype
+typeOf: dcs:StatVarPeerGroup
+memberList: "Count_DustStormEvent,Count_IceStormEvent,Count_MarineThunderstormWindEvent,Count_MarineTropicalStormEvent,Count_ThunderstormWindEvent,Count_TropicalStormEvent,Count_WinterStormEvent"
 
 Node: dcid:dc/topic/SulfurDioxide
 typeOf: dcs:Topic
