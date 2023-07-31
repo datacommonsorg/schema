@@ -1,33 +1,23 @@
-# These are auto-generated
+# LINT.IfChange
+
+Node: dcid:dc/topic/Equity
+typeOf: dcs:Topic
+name: "Equity"
+relevantVariable: dcid:dc/topic/EconomicEquity
+relevantVariable: dcid:dc/topic/EducationEquity
+relevantVariable: dcid:dc/topic/HealthEquity
+relevantVariable: dcid:dc/topic/JusticeSystemEquity
 
 Node: dcid:dc/topic/EconomicEquity
 typeOf: dcs:Topic
 name: "Economic Equity"
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_PovertybyGender
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_PovertybyRace
+relevantVariable: dcid:dc/topic/PovertyByGender
+relevantVariable: dcid:dc/topic/PovertyByRace
+relevantVariable: dcid:dc/topic/Benefits
 
-Node: dcid:dc/svpg/dc/topic/EconomicEquity_PovertybyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Poverty by Gender"
-member: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months
-member: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months
-
-Node: dcid:dc/svpg/dc/topic/EconomicEquity_PovertybyRace
-typeOf: dcs:StatVarPeerGroup
-name: "Poverty by Race"
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
-
-Node: dcid:dc/topic/Educationalattainment
+Node: dcid:dc/topic/EducationEquity
 typeOf: dcs:Topic
-name: "Educational attainment"
+name: "Education Equity"
 relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeofhigherbyRace
 relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_CollegedegreebyRace
 relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_DoctoratedegreebyGender
@@ -77,9 +67,9 @@ name: "college or professional degree by Gender"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentProfessionalSchoolDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentProfessionalSchoolDegree_Male
 
-Node: dcid:dc/topic/Foodstamps
+Node: dcid:dc/topic/Benefits
 typeOf: dcs:Topic
-name: "Food stamps"
+name: "Benefits"
 relevantVariable: dcid:dc/svpg/dc/topic/Foodstamps_FoodstampsbyRace
 relevantVariable: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyhouseholdtype
 
@@ -105,21 +95,13 @@ member: dcid:Count_Household_WithFoodStampsInThePast12Months_NonfamilyHousehold
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_OtherFamilyHousehold
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_SingleFatherFamilyHousehold
 
-Node: dcid:dc/topic/HealthEquity
-typeOf: dcs:Topic
-name: "Health Equity"
-relevantVariable: dcid:LifeExpectancy_Person
-relevantVariable: dcid:dc/topic/HealthInsurance
-relevantVariable: dcid:dc/topic/Mortality
-relevantVariable: dcid:dc/topic/WHODALYByCauses
-
-Node: dcid:dc/topic/JusticesystemEquity
+Node: dcid:dc/topic/JusticeSystemEquity
 typeOf: dcs:Topic
 name: "Justice system Equity"
-relevantVariable: dcid:dc/svpg/dc/topic/JusticesystemEquity_IncarceratedByRace
-relevantVariable: dcid:dc/svpg/dc/topic/JusticesystemEquity_IncarceratedbyGender
+relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByRace
+relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedbyGender
 
-Node: dcid:dc/svpg/dc/topic/JusticesystemEquity_IncarceratedByRace
+Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByRace
 typeOf: dcs:StatVarPeerGroup
 name: "Incarcerated By Race"
 member: dcid:dc/0tn58fc77r0z6
@@ -130,8 +112,9 @@ member: dcid:dc/wp843855b1r4c
 member: dcid:dc/yksgwhwsbtv9c
 member: dcid:dc/zdb0f7sj2419d
 
-Node: dcid:dc/svpg/dc/topic/JusticesystemEquity_IncarceratedbyGender
+Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedbyGender
 typeOf: dcs:StatVarPeerGroup
 name: "Incarcerated by Gender"
 member: dcid:dc/03l0q0wyqrk39
 member: dcid:dc/lnp5g90fwpct8
+# LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
