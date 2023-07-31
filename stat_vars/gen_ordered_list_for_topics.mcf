@@ -3016,7 +3016,7 @@ relevantVariableList: "dc/topic/BachelorsMajor,dc/topic/EducationalAttainmentByG
 Node: dcid:dc/topic/EducationalAttainmentByGenderAndLevel
 typeOf: dcs:Topic
 name: "Educational Attainment By Gender And Level"
-relevantVariableList: "dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender,dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender,dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithDoctorateDegreeByGender"
+relevantVariableList: "dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender,dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender,dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender,dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithDoctorateDegreeByGender"
 
 Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender
 typeOf: dcs:StatVarPeerGroup
@@ -3026,6 +3026,11 @@ memberList: "Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Fe
 Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender
 typeOf: dcs:StatVarPeerGroup
 name: "Population with Bachelors Degree By Gender"
+memberList: "Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female,Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male"
+
+Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Population with Masters Degree By Gender"
 memberList: "Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female,Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male"
 
 Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithDoctorateDegreeByGender
@@ -3476,21 +3481,31 @@ relevantVariableList: "dc/topic/EconomicEquity,dc/topic/EducationEquity,dc/topic
 Node: dcid:dc/topic/EconomicEquity
 typeOf: dcs:Topic
 name: "Economic Equity"
-relevantVariableList: "dc/topic/PovertyByGender,dc/topic/PovertyByRace,dc/topic/Benefits"
+relevantVariableList: "dc/svpg/dc/topic/EconomicEquity_GiniIndex,dc/topic/PovertyByGender,dc/topic/PovertyByRace,dc/topic/Benefits,dc/topic/IncomeEquity,dc/topic/EmploymentEquity"
+
+Node: dcid:dc/topic/EmploymentEquity
+typeOf: dcs:Topic
+name: "Employment Equity"
+relevantVariableList: "dc/svpg/dc/topic/EconomicEquity_LabourForceStatus,dc/topic/UnemploymentRate"
 
 Node: dcid:dc/topic/EducationEquity
 typeOf: dcs:Topic
 name: "Education Equity"
-relevantVariableList: "dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeofhigherbyRace,dc/svpg/dc/topic/Educationalattainment_CollegedegreebyRace,dc/svpg/dc/topic/Educationalattainment_DoctoratedegreebyGender,dc/svpg/dc/topic/Educationalattainment_MastersdegreebyGender,dc/svpg/dc/topic/Educationalattainment_collegeorprofessionaldegreebyGender"
+relevantVariableList: "dc/topic/EducationalAttainmentByGenderAndLevel,dc/topic/EducationalAttainmentByRaceAndLevel"
 
-Node: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeofhigherbyRace
+Node: dcid:dc/topic/EducationalAttainmentByRaceAndLevel
+typeOf: dcs:Topic
+name: "Educational Attainment by Race"
+relevantVariableList: "dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyRace,dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyRace"
+
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyRace
 typeOf: dcs:StatVarPeerGroup
-name: "Bachelors degree of higher by Race"
+name: "Bachelors Degree or Higher by Race"
 memberList: "dc/06f0jf8xvzw4f,dc/4qtse8536dg63,dc/5hc4etrfyj9qg,dc/eg6rrdr1tkf76,dc/hyfn2tlyz48lb,dc/skv4cd74gsnpf,dc/t7403chwvspm,dc/v7yl3k9w3h7e8,dc/wd5g31pcj0zr3"
 
-Node: dcid:dc/svpg/dc/topic/Educationalattainment_CollegedegreebyRace
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyRace
 typeOf: dcs:StatVarPeerGroup
-name: "College degree by Race"
+name: "College Degree by Race"
 memberList: "dc/3w039ndqy7qv1,dc/56md3ndhrmvm7,dc/9sneyc8lpk8dc,dc/epw58ne8mytn5,dc/kpcfmb6lp3zpd,dc/mqxdr821c7kw3,dc/q98jxycvs422f,dc/whn99h1l0xgth"
 
 Node: dcid:dc/svpg/dc/topic/Educationalattainment_DoctoratedegreebyGender
@@ -3513,6 +3528,31 @@ typeOf: dcs:Topic
 name: "Benefits"
 relevantVariableList: "dc/svpg/dc/topic/Foodstamps_FoodstampsbyRace,dc/svpg/dc/topic/Foodstamps_Foodstampsbyhouseholdtype"
 
+Node: dcid:dc/topic/IncomeEquity
+typeOf: dcs:Topic
+name: "Income Equity"
+relevantVariableList: "dc/topic/IndividualIncomeDistribution,dc/topic/MedianHouseholdIncomeByRace,dc/topic/MedianHouseholdIncomeByGender"
+
+Node: dcid:dc/topic/MedianHouseholdIncomeByRace
+typeOf: dcs:Topic
+name: "Median Household Income by Race"
+relevantVariableList: "dc/svpg/dc/topic/MedianHouseholdIncomeByRace"
+
+Node: dcid:dc/topic/MedianHouseholdIncomeByGender
+typeOf: dcs:Topic
+name: "Median Household Income by Gender"
+relevantVariableList: "dc/svpg/dc/topic/MedianHouseholdIncomeByGender"
+
+Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Median Household Income by Race"
+memberList: "Median_Income_Household_HouseholderRaceWhiteAlone,Median_Income_Household_HouseholderRaceAmericanIndianOrAlaskaNativeAlone,Median_Income_Household_HouseholderRaceAsianAlone,Median_Income_Household_HouseholderRaceBlackOrAfricanAmericanAlone,Median_Income_Household_HouseholderRaceHispanicOrLatino,Median_Income_Household_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone,Median_Income_Household_HouseholderRaceSomeOtherRaceAlone,Median_Income_Household_HouseholderRaceTwoOrMoreRaces,Median_Income_Household_HouseholderRaceWhiteAlone,Median_Income_Household_HouseholderRaceWhiteAloneNotHispanicOrLatino"
+
+Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Median Household Income by Gender"
+memberList: "Median_Earnings_Person_Female,Median_Earnings_Person_Male"
+
 Node: dcid:dc/svpg/dc/topic/Foodstamps_FoodstampsbyRace
 typeOf: dcs:StatVarPeerGroup
 name: "Food stamps by Race"
@@ -3522,6 +3562,16 @@ Node: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyhouseholdtype
 typeOf: dcs:StatVarPeerGroup
 name: "Food stamps by household type"
 memberList: "Count_Household_WithFoodStampsInThePast12Months_FamilyHousehold,Count_Household_WithFoodStampsInThePast12Months_MarriedCoupleFamilyHousehold,Count_Household_WithFoodStampsInThePast12Months_NonfamilyHousehold,Count_Household_WithFoodStampsInThePast12Months_OtherFamilyHousehold,Count_Household_WithFoodStampsInThePast12Months_SingleFatherFamilyHousehold"
+
+Node: dcid:dc/svpg/dc/topic/EconomicEquity_LabourForceStatus
+typeOf: dcs:StatVarPeerGroup
+name: "Labour Force Status"
+memberList: "Count_Person_InLaborForce,Count_Person_NotInLaborForce"
+
+Node: dcid:dc/svpg/dc/topic/EconomicEquity_GiniIndex
+typeOf: dcs:StatVarPeerGroup
+name: "Gini Index"
+memberList: "GiniIndex_EconomicActivity"
 
 Node: dcid:dc/topic/JusticeSystemEquity
 typeOf: dcs:Topic

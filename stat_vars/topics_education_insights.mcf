@@ -50,6 +50,7 @@ typeOf: dcs:Topic
 name: "Educational Attainment By Gender And Level"
 relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender
 relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender
+relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender
 relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithDoctorateDegreeByGender
 
 Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender
@@ -61,6 +62,12 @@ member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Ma
 Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender
 typeOf: dcs:StatVarPeerGroup
 name: "Population with Bachelors Degree By Gender"
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
+
+Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Population with Masters Degree By Gender"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
 
