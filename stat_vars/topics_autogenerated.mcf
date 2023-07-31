@@ -556,33 +556,6 @@ relevantVariable: dcid:Count_MarineHighWindEvent
 relevantVariable: dcid:Count_MarineStrongWindEvent
 relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_HighWindEvent
 
-Node: dcid:dc/topic/Housing
-typeOf: dcs:Topic
-name: "Housing"
-relevantVariable: dcid:Count_HousingUnit
-relevantVariable: dcid:dc/svpg/Housing_HousingUnitsbyRoomCount
-relevantVariable: dcid:dc/svpg/Housing_HousingUnitsbyVacancy
-# TODO: Add topics for home value, rent, etc once created
-
-Node: dcid:dc/svpg/Housing_HousingUnitsbyRoomCount
-typeOf: dcs:StatVarPeerGroup
-name: "Housing Units by Room Count"
-member: dcid:Count_HousingUnit_WithTotal1Rooms
-member: dcid:Count_HousingUnit_WithTotal2Rooms
-member: dcid:Count_HousingUnit_WithTotal3Rooms
-member: dcid:Count_HousingUnit_WithTotal4Rooms
-member: dcid:Count_HousingUnit_WithTotal5Rooms
-member: dcid:Count_HousingUnit_WithTotal6Rooms
-member: dcid:Count_HousingUnit_WithTotal7Rooms
-member: dcid:Count_HousingUnit_WithTotal8Rooms
-member: dcid:Count_HousingUnit_WithTotal9OrMoreRooms
-
-Node: dcid:dc/svpg/Housing_HousingUnitsbyVacancy
-typeOf: dcs:StatVarPeerGroup
-name: "Housing Units by Vacancy"
-member: dcid:Count_HousingUnit_OwnerOccupied
-member: dcid:Count_HousingUnit_VacantHousingUnit
-
 Node: dcid:dc/topic/Hurricane
 typeOf: dcs:Topic
 name: "Hurricane"

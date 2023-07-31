@@ -1,0 +1,230 @@
+
+Node: dcid:dc/topic/Housing
+typeOf: dcs:Topic
+name: "Housing"
+relevantVariable: dcid:Count_HousingUnit
+relevantVariable: dcid:dc/svpg/Housing_HousingUnitsbyVacancy
+relevantVariable: dcid:dc/topic/HomeOwnership
+relevantVariable: dcid:dc/topic/RentalHouses
+relevantVariable: dcid:dc/topic/HouseOccupants
+relevantVariable: dcid:dc/topic/HouseFeatures
+
+Node: dcid:dc/svpg/Housing_HousingUnitsbyVacancy
+typeOf: dcs:StatVarPeerGroup
+name: "Housing Units by Vacancy"
+member: dcid:Count_HousingUnit_OwnerOccupied
+member: dcid:Count_HousingUnit_VacantHousingUnit
+
+Node: dcid:dc/topic/HomeOwnership
+typeOf: dcs:Topic
+name: "Home Ownership"
+relevantVariable: dcid:Median_HomeValue_HousingUnit_OccupiedHousingUnit_OwnerOccupied
+relevantVariable: dcid:dc/topic/HousesByHomeValue
+relevantVariable: dcid:dc/topic/HousesByOwnershipCost
+relevantVariable: dcid:dc/topic/HousesByTaxAmount
+
+Node: dcid:dc/topic/HouseOccupants
+typeOf: dcs:Topic
+name: "House Occupants"
+relevantVariable: dcid:Mean_HouseholdSize_HousingUnit_OccupiedHousingUnit
+relevantVariable: dcid:dc/topic/HousesByHouseholderAge
+relevantVariable: dcid:dc/topic/HousesByHouseholderEducationalAttainment
+relevantVariable: dcid:dc/topic/HousesByHouseholderRace
+
+Node: dcid:dc/topic/HouseFeatures
+typeOf: dcs:Topic
+name: "House Features"
+relevantVariable: dcid:dc/topic/HousesByDateofBuild
+relevantVariable: dcid:dc/topic/HousesByFacilities
+relevantVariable: dcid:dc/topic/HousesByRoomCount
+
+Node: dcid:dc/topic/HousesByRoomCount
+typeOf: dcs:Topic
+name: "Houses By Room Count"
+relevantVariable: dcid:dc/svpg/Housing_HousingUnitsbyRoomCount
+
+Node: dcid:dc/svpg/Housing_HousingUnitsbyRoomCount
+typeOf: dcs:StatVarPeerGroup
+name: "Houses by Room Count"
+member: dcid:Count_HousingUnit_WithTotal1Rooms
+member: dcid:Count_HousingUnit_WithTotal2Rooms
+member: dcid:Count_HousingUnit_WithTotal3Rooms
+member: dcid:Count_HousingUnit_WithTotal4Rooms
+member: dcid:Count_HousingUnit_WithTotal5Rooms
+member: dcid:Count_HousingUnit_WithTotal6Rooms
+member: dcid:Count_HousingUnit_WithTotal7Rooms
+member: dcid:Count_HousingUnit_WithTotal8Rooms
+member: dcid:Count_HousingUnit_WithTotal9OrMoreRooms
+
+Node: dcid:dc/topic/HousesByDateofBuild
+typeOf: dcs:Topic
+name: "Houses By Date of Build"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByDateofBuild_AgeofHouse
+
+Node: dcid:dc/svpg/dc/topic/HousesByDateofBuild_AgeofHouse
+typeOf: dcs:StatVarPeerGroup
+name: "Age of House"
+member: dcid:Count_HousingUnit_1940To1949DateBuilt
+member: dcid:Count_HousingUnit_1950To1959DateBuilt
+member: dcid:Count_HousingUnit_1960To1969DateBuilt
+member: dcid:Count_HousingUnit_1970To1979DateBuilt
+member: dcid:Count_HousingUnit_1980To1989DateBuilt
+member: dcid:Count_HousingUnit_1990To1999DateBuilt
+member: dcid:Count_HousingUnit_2000To2004DateBuilt
+member: dcid:Count_HousingUnit_2000To2009DateBuilt
+member: dcid:Count_HousingUnit_2005OrLaterDateBuilt
+member: dcid:Count_HousingUnit_2010OrLaterDateBuilt
+member: dcid:Count_HousingUnit_2010To2013DateBuilt
+member: dcid:Count_HousingUnit_2014OrLaterDateBuilt
+member: dcid:Count_HousingUnit_Before1939DateBuilt
+
+Node: dcid:dc/topic/HousesByFacilities
+typeOf: dcs:Topic
+name: "Houses By Facilities"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByFacilities_KitchenFacilities
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByFacilities_PlumbingFacilities
+
+Node: dcid:dc/svpg/dc/topic/HousesByFacilities_KitchenFacilities
+typeOf: dcs:StatVarPeerGroup
+name: "Kitchen Facilities"
+member: dcid:Count_HousingUnit_CompleteKitchenFacilities_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_IncompleteKitchenFacilities_OccupiedHousingUnit
+
+Node: dcid:dc/svpg/dc/topic/HousesByFacilities_PlumbingFacilities
+typeOf: dcs:StatVarPeerGroup
+name: "Plumbing Facilities"
+member: dcid:Count_HousingUnit_CompletePlumbingFacilities_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_IncompletePlumbingFacilities_OccupiedHousingUnit
+
+Node: dcid:dc/topic/HousesByHomeValue
+typeOf: dcs:Topic
+name: "Houses By Home Value"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByHomeValue_HomeValueofHouses
+
+Node: dcid:dc/svpg/dc/topic/HousesByHomeValue_HomeValueofHouses
+typeOf: dcs:StatVarPeerGroup
+name: "Home Value of Houses"
+member: dcid:Count_HousingUnit_HomeValue1000000To1499999USDollar
+member: dcid:Count_HousingUnit_HomeValue100000To199999USDollar
+member: dcid:Count_HousingUnit_HomeValue1500000To1999999USDollar
+member: dcid:Count_HousingUnit_HomeValue200000To299999USDollar
+member: dcid:Count_HousingUnit_HomeValue300000To499999USDollar
+member: dcid:Count_HousingUnit_HomeValue500000To999999USDollar
+member: dcid:Count_HousingUnit_HomeValue50000To99999USDollar
+member: dcid:Count_HousingUnit_HomeValueUpto49999USDollar
+
+Node: dcid:dc/topic/HousesByHouseholderEducationalAttainment
+typeOf: dcs:Topic
+name: "Houses By Householder Educational Attainment"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByHouseholderEducationalAttainment_EducationalAttainmentofOccupants
+
+Node: dcid:dc/svpg/dc/topic/HousesByHouseholderEducationalAttainment_EducationalAttainmentofOccupants
+typeOf: dcs:StatVarPeerGroup
+name: "Educational Attainment of Occupants"
+member: dcid:Count_HousingUnit_HouseholderEducationalAttainmentBachelorsDegreeOrHigher_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderEducationalAttainmentHighSchoolGraduateIncludesEquivalency_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderEducationalAttainmentLessThanHighSchoolGraduate_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderEducationalAttainmentSomeCollegeOrAssociatesDegree_OccupiedHousingUnit
+
+Node: dcid:dc/topic/HousesByOwnershipCost
+typeOf: dcs:Topic
+name: "Houses By Ownership Cost"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByOwnershipCost_OwnershipCostbyMortgageStatus
+
+Node: dcid:dc/svpg/dc/topic/HousesByOwnershipCost_OwnershipCostbyMortgageStatus
+typeOf: dcs:StatVarPeerGroup
+name: "Ownership Cost by Mortgage Status"
+member: dcid:Median_Cost_HousingUnit_WithMortgage_OccupiedHousingUnit_OwnerOccupied_SelectedMonthlyOwnerCosts
+member: dcid:Median_Cost_HousingUnit_WithoutMortgage_OccupiedHousingUnit_OwnerOccupied_SelectedMonthlyOwnerCosts
+
+Node: dcid:dc/topic/HousesByTaxAmount
+typeOf: dcs:Topic
+name: "Houses By Tax Amount"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByTaxAmount_HouseswithMortgage
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByTaxAmount_HouseswithoutMortgage
+
+Node: dcid:dc/svpg/dc/topic/HousesByTaxAmount_HouseswithMortgage
+typeOf: dcs:StatVarPeerGroup
+name: "Houses with Mortgage"
+member: dcid:dc/065dmg2ls1heb
+member: dcid:dc/9b9gqxj27fqwc
+member: dcid:dc/ejpm616jd1pq1
+member: dcid:dc/g0yn22m8r3639
+member: dcid:dc/h34ge8t21h9m1
+member: dcid:dc/rkq1jgk08zfs7
+
+Node: dcid:dc/svpg/dc/topic/HousesByTaxAmount_HouseswithoutMortgage
+typeOf: dcs:StatVarPeerGroup
+name: "Houses without Mortgage"
+member: dcid:dc/5jy4dp16mtssg
+member: dcid:dc/c9cl49nnrv5x4
+member: dcid:dc/m60n94sqql2d3
+member: dcid:dc/nrh9sl7zy12bf
+member: dcid:dc/q0p7fcll1lv8c
+member: dcid:dc/ye0f3ej72hhj7
+
+Node: dcid:dc/topic/HousesByHouseholderAge
+typeOf: dcs:Topic
+name: "Houses by Householder Age"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByHouseholderAge_AgeDistributionofOccupants
+
+Node: dcid:dc/svpg/dc/topic/HousesByHouseholderAge_AgeDistributionofOccupants
+typeOf: dcs:StatVarPeerGroup
+name: "Age Distribution of Occupants"
+member: dcid:Count_HousingUnit_HouseholderAge35OrLessYears_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderAge35To44Years_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderAge45To54Years_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderAge55To64Years_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderAge65To74Years_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderAge75To84Years_OccupiedHousingUnit
+member: dcid:Count_HousingUnit_HouseholderAge85OrMoreYears_OccupiedHousingUnit
+
+Node: dcid:dc/topic/HousesByHouseholderRace
+typeOf: dcs:Topic
+name: "Houses by Householder Race"
+relevantVariable: dcid:dc/svpg/dc/topic/HousesByHouseholderRace_RacialDistributionofOccupants
+
+Node: dcid:dc/svpg/dc/topic/HousesByHouseholderRace_RacialDistributionofOccupants
+typeOf: dcs:StatVarPeerGroup
+name: "Racial Distribution of Occupants"
+member: dcid:Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone
+member: dcid:Count_HousingUnit_HouseholderRaceAsianAlone
+member: dcid:Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone
+member: dcid:Count_HousingUnit_HouseholderRaceHispanicOrLatino
+member: dcid:Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_HousingUnit_HouseholderRaceWhiteAlone
+
+Node: dcid:dc/topic/RentalHouses
+typeOf: dcs:Topic
+name: "Rental Houses"
+relevantVariable: dcid:Median_GrossRent_HousingUnit_WithCashRent_OccupiedHousingUnit_RenterOccupied
+relevantVariable: dcid:dc/svpg/dc/topic/RentalHouses_HousesbyRentalAmount
+
+Node: dcid:dc/svpg/dc/topic/RentalHouses_HousesbyRentalAmount
+typeOf: dcs:StatVarPeerGroup
+name: "Houses by Rental Amount"
+member: dcid:Count_HousingUnit_WithRent_1000To1249USDollar
+member: dcid:Count_HousingUnit_WithRent_100To149USDollar
+member: dcid:Count_HousingUnit_WithRent_1250To1499USDollar
+member: dcid:Count_HousingUnit_WithRent_1500To1999USDollar
+member: dcid:Count_HousingUnit_WithRent_150To199USDollar
+member: dcid:Count_HousingUnit_WithRent_2000OrMoreUSDollar
+member: dcid:Count_HousingUnit_WithRent_2000To2499USDollar
+member: dcid:Count_HousingUnit_WithRent_200To249USDollar
+member: dcid:Count_HousingUnit_WithRent_2500To2999USDollar
+member: dcid:Count_HousingUnit_WithRent_250To299USDollar
+member: dcid:Count_HousingUnit_WithRent_3000To3499USDollar
+member: dcid:Count_HousingUnit_WithRent_300To349USDollar
+member: dcid:Count_HousingUnit_WithRent_3500OrMoreUSDollar
+member: dcid:Count_HousingUnit_WithRent_350To399USDollar
+member: dcid:Count_HousingUnit_WithRent_400To449USDollar
+member: dcid:Count_HousingUnit_WithRent_450To499USDollar
+member: dcid:Count_HousingUnit_WithRent_500To549USDollar
+member: dcid:Count_HousingUnit_WithRent_550To599USDollar
+member: dcid:Count_HousingUnit_WithRent_600To649USDollar
+member: dcid:Count_HousingUnit_WithRent_650To699USDollar
+member: dcid:Count_HousingUnit_WithRent_700To749USDollar
+member: dcid:Count_HousingUnit_WithRent_750To799USDollar
+member: dcid:Count_HousingUnit_WithRent_800To899USDollar
+member: dcid:Count_HousingUnit_WithRent_900To999USDollar
+member: dcid:Count_HousingUnit_WithRent_Upto100USDollar
