@@ -641,19 +641,6 @@ relevantVariable: dcid:Count_LandslideEvent
 relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_LandslideEvent
 relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_LandslideEvent
 
-Node: dcid:dc/topic/LifeExpectancy
-typeOf: dcs:Topic
-name: "Life Expectancy"
-relevantVariable: dcid:LifeExpectancy_Person
-relevantVariable: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
-relevantVariable: dcid:Median_Age_Person
-
-Node: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Life Expectancy by Gender"
-member: dcid:LifeExpectancy_Person_Female
-member: dcid:LifeExpectancy_Person_Male
-
 Node: dcid:dc/topic/Malaria
 typeOf: dcs:Topic
 name: "Malaria"
@@ -907,18 +894,6 @@ name: "Physically active population by gender"
 member: dcid:Percent_PhysicalActivity_In_Count_Person_Female
 member: dcid:Percent_PhysicalActivity_In_Count_Person_Male
 
-Node: dcid:dc/topic/PhysicalInactivity
-typeOf: dcs:Topic
-name: "PhysicalInactivity"
-relevantVariable: dcid:Percent_Person_PhysicalInactivity
-relevantVariable: dcid:dc/svpg/PhysicalInactivity_InactivePopulationbyGender
-
-Node: dcid:dc/svpg/PhysicalInactivity_InactivePopulationbyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Inactive Population by Gender"
-member: dcid:dc/tcqb49dvg7k53
-member: dcid:dc/ty7pq88d26963
-
 Node: dcid:dc/topic/Physicians
 typeOf: dcs:Topic
 name: "Physicians"
@@ -930,50 +905,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "Physicians by Tupe"
 member: dcid:dc/7yw96gdck5em4
 member: dcid:dc/cerdgf14fp2z1
-
-Node: dcid:dc/topic/Population
-typeOf: dcs:Topic
-name: "Population"
-relevantVariable: dcid:Count_Person
-relevantVariable: dcid:Count_Person_PerArea
-relevantVariable: dcid:Count_Person_WithDisability
-relevantVariable: dcid:GrowthRate_Count_Person
-relevantVariable: dcid:IncrementalCount_Person
-relevantVariable: dcid:Median_Age_Person
-relevantVariable: dcid:dc/svpg/Population_MedianAgeofPopulationbyGender
-relevantVariable: dcid:dc/svpg/Population_PopulationbyGender
-relevantVariable: dcid:dc/svpg/Population_PopulationbyRace
-relevantVariable: dcid:dc/svpg/Population_PopulationwithDiasbilitiesbyGender
-
-Node: dcid:dc/svpg/Population_MedianAgeofPopulationbyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Median Age of Population by Gender"
-member: dcid:Median_Age_Person_Female
-member: dcid:Median_Age_Person_Male
-
-Node: dcid:dc/svpg/Population_PopulationbyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Population by Gender"
-member: dcid:Count_Person_Female
-member: dcid:Count_Person_Male
-
-Node: dcid:dc/svpg/Population_PopulationbyRace
-typeOf: dcs:StatVarPeerGroup
-name: "Population by Race"
-member: dcid:Count_Person_AmericanIndianOrAlaskaNativeAlone
-member: dcid:Count_Person_AsianAlone
-member: dcid:Count_Person_BlackOrAfricanAmericanAlone
-member: dcid:Count_Person_HispanicOrLatino
-member: dcid:Count_Person_NativeHawaiianOrOtherPacificIslanderAlone
-member: dcid:Count_Person_SomeOtherRaceAlone
-member: dcid:Count_Person_TwoOrMoreRaces
-member: dcid:Count_Person_WhiteAlone
-
-Node: dcid:dc/svpg/Population_PopulationwithDiasbilitiesbyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Population with Diasbilities by Gender"
-member: dcid:Count_Person_WithDisability_Female
-member: dcid:Count_Person_WithDisability_Male
 
 Node: dcid:dc/topic/PopulationFormerSmoker
 typeOf: dcs:Topic
@@ -1035,106 +966,6 @@ name: "Prevalance of normal weight population by gender"
 member: dcid:Percent_Normalweight_In_Count_Person_Female
 member: dcid:Percent_Normalweight_In_Count_Person_Male
 
-Node: dcid:dc/topic/PopulationObese
-typeOf: dcs:Topic
-name: "PopulationObese"
-relevantVariable: dcid:Percent_Person_Obesity
-relevantVariable: dcid:dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByGender
-relevantVariable: dcid:dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByResidency
-
-Node: dcid:dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalance of Obesity in Adult Population By Gender"
-member: dcid:Count_Person_18OrMoreYears_Female_Obesity_AsAFractionOf_Count_Person_18OrMoreYears_Female
-member: dcid:Count_Person_18OrMoreYears_Male_Obesity_AsAFractionOf_Count_Person_18OrMoreYears_Male
-
-Node: dcid:dc/svpg/PopulationObese_PrevalanceofObesityinAdultPopulationByResidency
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalance of Obesity in Adult Population By Residency"
-member: dcid:Count_Person_18OrMoreYears_Obesity_Rural_AsAFractionOf_Count_Person_18OrMoreYears_Rural
-member: dcid:Count_Person_18OrMoreYears_Obesity_Urban_AsAFractionOf_Count_Person_18OrMoreYears_Urban
-
-Node: dcid:dc/topic/PopulationOverweight
-typeOf: dcs:Topic
-name: "PopulationOverweight"
-relevantVariable: dcid:Percent_Overweight_In_Count_Person
-relevantVariable: dcid:Percent_Overweight_In_Count_Person_SevereActivityLimitation
-relevantVariable: dcid:dc/svpg/PopulationOverweight_Prevalanceofoverweightpopulationbygender
-relevantVariable: dcid:dc/svpg/PopulationOverweight_PrevalenceofOverweightPopulationunder4yearsoldbygender
-relevantVariable: dcid:dc/svpg/PopulationOverweight_PrevalenceofOverweightpopulationwithsevereactivitylimitationbygender
-
-Node: dcid:dc/svpg/PopulationOverweight_Prevalanceofoverweightpopulationbygender
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalance of overweight population by gender"
-member: dcid:Percent_Overweight_In_Count_Person_Female
-member: dcid:Percent_Overweight_In_Count_Person_Male
-
-Node: dcid:dc/svpg/PopulationOverweight_PrevalenceofOverweightPopulationunder4yearsoldbygender
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalence of Overweight Population under 4 years old by gender"
-member: dcid:Count_Person_Upto4Years_Female_Overweight_AsFractionOf_Count_Person_Upto4Years_Female
-member: dcid:Count_Person_Upto4Years_Male_Overweight_AsFractionOf_Count_Person_Upto4Years_Male
-
-Node: dcid:dc/svpg/PopulationOverweight_PrevalenceofOverweightpopulationwithsevereactivitylimitationbygender
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalence of Overweight population with severe activity limitation by gender"
-member: dcid:Percent_Overweight_In_Count_Person_Female_SevereActivityLimitation
-member: dcid:Percent_Overweight_In_Count_Person_Male_SevereActivityLimitation
-
-Node: dcid:dc/topic/PopulationPreObese
-typeOf: dcs:Topic
-name: "PopulationPreObese"
-relevantVariable: dcid:Percent_PreObese_In_Count_Person
-relevantVariable: dcid:dc/svpg/PopulationPreObese_PrevalanceofPreObeseAdultPopulationByResidency
-relevantVariable: dcid:dc/svpg/PopulationPreObese_PrevalanceofPreObesityinAdultPopulationByGender
-
-Node: dcid:dc/svpg/PopulationPreObese_PrevalanceofPreObeseAdultPopulationByResidency
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalance of Pre Obese Adult Population By Residency"
-member: dcid:Percent_PreObese_In_Count_Person_Rural
-member: dcid:Percent_PreObese_In_Count_Person_SemiUrban
-member: dcid:Percent_PreObese_In_Count_Person_Urban
-
-Node: dcid:dc/svpg/PopulationPreObese_PrevalanceofPreObesityinAdultPopulationByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalance of Pre Obesity in Adult Population By Gender"
-member: dcid:Percent_PreObese_In_Count_Person_Female
-member: dcid:Percent_PreObese_In_Count_Person_Male
-
-Node: dcid:dc/topic/PopulationSmoker
-typeOf: dcs:Topic
-name: "PopulationSmoker"
-relevantVariable: dcid:Percent_Person_Smoking
-relevantVariable: dcid:dc/svpg/PopulationSmoker_Prelalenceofadultsmokersbygender
-
-Node: dcid:dc/svpg/PopulationSmoker_Prelalenceofadultsmokersbygender
-typeOf: dcs:StatVarPeerGroup
-name: "Prelalence of adult smokers by gender"
-member: dcid:Count_Person_15OrMoreYears_Female_Smoking_AsFractionOf_Count_Person_15OrMoreYears_Female
-member: dcid:Count_Person_15OrMoreYears_Male_Smoking_AsFractionOf_Count_Person_15OrMoreYears_Male
-
-Node: dcid:dc/topic/PopulationUnderweight
-typeOf: dcs:Topic
-name: "PopulationUnderweight"
-relevantVariable: dcid:Percent_Underweight_In_Count_Person
-relevantVariable: dcid:dc/svpg/PopulationUnderweight_UnderweightPopulationbyGender
-
-Node: dcid:dc/svpg/PopulationUnderweight_UnderweightPopulationbyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Underweight Population by Gender"
-member: dcid:Percent_Underweight_In_Count_Person_Female
-member: dcid:Percent_Underweight_In_Count_Person_Male
-
-Node: dcid:dc/topic/PopulationWeight
-typeOf: dcs:Topic
-name: "PopulationWeight"
-relevantVariable: dcid:dc/topic/PopulationNormalWeight
-relevantVariable: dcid:dc/topic/PopulationObese
-relevantVariable: dcid:dc/topic/PopulationOverweight
-relevantVariable: dcid:dc/topic/PopulationPreObese
-relevantVariable: dcid:dc/topic/PopulationUnderweight
-relevantVariable: dcid:dc/topic/PopulationUnderweight
-
 Node: dcid:dc/topic/Precipitation
 typeOf: dcs:Topic
 name: "Precipitation"
@@ -1146,20 +977,6 @@ relevantVariable: dcid:Min_PrecipitableWater_Atmosphere
 relevantVariable: dcid:PrecipitationRate
 relevantVariable: dcid:dc/topic/Rainfall
 relevantVariable: dcid:dc/topic/Snowfall
-
-Node: dcid:dc/topic/PreventativeHealth
-typeOf: dcs:Topic
-name: "Preventive Health"
-relevantVariable: dcid:Percent_Person_ReceivedAnnualCheckup
-relevantVariable: dcid:dc/svpg/PreventativeHealth_PrevalenceofHealthScreeningsbyType
-
-Node: dcid:dc/svpg/PreventativeHealth_PrevalenceofHealthScreeningsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalence of Health Screenings by Type"
-member: dcid:Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-member: dcid:Percent_Person_50To75Years_ReceivedColorectalCancerScreening
-member: dcid:Percent_Person_ReceivedCholesterolScreening
-member: dcid:Percent_Person_ReceivedDentalVisit
 
 Node: dcid:dc/topic/Rainfall
 typeOf: dcs:Topic
@@ -1554,24 +1371,6 @@ member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM2.5
 member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_SulfurDioxide
 member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_VolatileOrganicCompound
 
-Node: dcid:dc/topic/BingeDrinking
-typeOf: dcs:Topic
-name: "BingeDrinking"
-relevantVariable: dcid:Percent_Person_BingeDrinking
-relevantVariable: dcid:dc/svpg/BingeDrinking_PrevalenceOfBingeDrinkingByAmount
-
-Node: dcid:dc/svpg/BingeDrinking_PrevalenceOfBingeDrinkingByAmount
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalence of Binge Drinking by Amount"
-member: dcid:Percent_AtLeastOnceAWeek_BingeDrinking_In_Count_Person
-member: dcid:Percent_Daily_BingeDrinking_In_Count_Person
-member: dcid:Percent_EveryMonth_BingeDrinking_In_Count_Person
-member: dcid:Percent_EveryWeek_BingeDrinking_In_Count_Person
-member: dcid:Percent_LessThanOnceAMonth_BingeDrinking_In_Count_Person
-member: dcid:Percent_NeverOrNotInTheLast12Months_BingeDrinking_In_Count_Person
-member: dcid:Percent_NeverOrOccasional_BingeDrinking_In_Count_Person
-member: dcid:Percent_Never_BingeDrinking_In_Count_Person
-
 Node: dcid:dc/topic/DivorcedFemalePopulationByAge
 typeOf: dcs:Topic
 name: "DivorcedFemalePopulationByAge"
@@ -1796,11 +1595,6 @@ member: dcid:Count_Person_70To74Years_NowMarried
 member: dcid:Count_Person_75To79Years_NowMarried
 member: dcid:Count_Person_80To84Years_NowMarried
 member: dcid:Count_Person_85OrMoreYears_NowMarried
-
-Node: dcid:dc/topic/PopulationUndersleeping
-typeOf: dcs:Topic
-name: "PopulationUndersleeping"
-relevantVariable: dcid:Percent_Person_SleepLessThan7Hours
 
 Node: dcid:dc/topic/RuralFemalePopulationByAge
 typeOf: dcs:Topic

@@ -41,15 +41,91 @@ member: dcid:Count_Person_USCitizenByNaturalization
 Node: dcid:dc/topic/Demographics
 typeOf: dcs:Topic
 name: "Demographics"
+relevantVariable: dcid:Count_Person
+relevantVariable: dcid:Count_Person_PerArea
+relevantVariable: dcid:GrowthRate_Count_Person
 relevantVariable: dcid:dc/topic/Age
+relevantVariable: dcid:dc/topic/Gender
+relevantVariable: dcid:dc/topic/Race
 relevantVariable: dcid:dc/topic/Language
 relevantVariable: dcid:dc/topic/MaritalStatus
 relevantVariable: dcid:dc/topic/Nationality
 
+Node: dcid:dc/topic/Gender
+typeOf: dcs:Topic
+name: "Gender"
+relevantVariable: dcid:dc/svpg/Population_PopulationbyGender
+
+Node: dcid:dc/svpg/Population_PopulationbyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Population by Gender"
+member: dcid:Count_Person_Female
+member: dcid:Count_Person_Male
+
+Node: dcid:dc/topic/Race
+typeOf: dcs:Topic
+name: "Population by Race"
+relevantVariable: dcid:dc/svpg/Count_Person_RacesMonoracial
+relevantVariable: dcid:dc/svpg/Count_Person_RacesCombination
+relevantVariable: dcid:dc/svpg/Count_Person_RacesWithHispanicBreakdown
+relevantVariable: dcid:dc/svpg/Count_Person_RacesWithNonHispanicBreakdown
+
+Node: dcid:dc/svpg/Count_Person_RacesMonoracial
+typeOf: dcs:StatVarPeerGroup
+name: "Monoracial Breakdown"
+member: dcid:Count_Person_WhiteAlone
+member: dcid:Count_Person_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_HispanicOrLatino
+member: dcid:Count_Person_AsianAlone
+member: dcid:Count_Person_AmericanIndianAndAlaskaNativeAlone
+member: dcid:Count_Person_AsianOrPacificIslander
+member: dcid:Count_Person_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Person_SomeOtherRaceAlone
+
+Node: dcid:dc/svpg/Count_Person_RacesCombination
+typeOf: dcs:StatVarPeerGroup
+name: "Monoracial/multiracial Breakdown"
+member: dcid:Count_Person_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_AsianAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces
+
+Node: dcid:dc/svpg/Count_Person_RacesWithHispanicBreakdown
+typeOf: dcs:StatVarPeerGroup
+name: "Racial Breakdown with Hispanic Consideration"
+member: dcid:Count_Person_HispanicOrLatino_AmericanIndianOrAlaskaNativeAlone
+member: dcid:Count_Person_HispanicOrLatino_AsianAlone
+member: dcid:Count_Person_HispanicOrLatino_AsianOrPacificIslander
+member: dcid:Count_Person_HispanicOrLatino_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_HispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Person_HispanicOrLatino_TwoOrMoreRaces
+member: dcid:Count_Person_HispanicOrLatino_WhiteAlone
+member: dcid:Count_Person_HispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_HispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_HispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_HispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces
+
+Node: dcid:dc/svpg/Count_Person_RacesWithNonHispanicBreakdown
+typeOf: dcs:StatVarPeerGroup
+name: "Racial Breakdown with Non Hispanic Consideration"
+member: dcid:Count_Person_WhiteAloneNotHispanicOrLatino
+member: dcid:Count_Person_NotHispanicOrLatino_AmericanIndianOrAlaskaNativeAlone
+member: dcid:Count_Person_NotHispanicOrLatino_AsianAlone
+member: dcid:Count_Person_NotHispanicOrLatino_AsianOrPacificIslander
+member: dcid:Count_Person_NotHispanicOrLatino_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_NotHispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Person_NotHispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_TwoOrMoreRaces
+member: dcid:Count_Person_NotHispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces
+
 Node: dcid:dc/topic/DivorcedPopulationByDemographic
 typeOf: dcs:Topic
 name: "Divorced Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_Divorced
+relevantVariable: dcid:Count_Person_Divorced
 relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByRace
 

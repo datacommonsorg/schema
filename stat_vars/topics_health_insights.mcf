@@ -171,6 +171,15 @@ relevantVariable: dcid:dc/topic/HeartDisease
 relevantVariable: dcid:dc/topic/MentalHealth
 relevantVariable: dcid:dc/topic/KidneyDisease
 relevantVariable: dcid:dc/topic/Stroke
+relevantVariable: dcid:dc/topic/HeatIllnesses
+
+Node: dcid:dc/topic/HeatIllnesses
+typeOf: dcs:Topic
+name: "Heat Illnesses"
+relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_PatientDeceased
+relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_PatientHospitalized
+relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_VisitedEmergencyDepartment
+
 
 Node: dcid:dc/topic/KidneyDisease
 typeOf: dcs:Topic
@@ -281,11 +290,23 @@ member: dcid:Count_Death_85Years_MentalBehaviouralDisorders
 Node: dcid:dc/topic/Mortality
 typeOf: dcs:Topic
 name: "Mortality"
-relevantVariable: dcid:LifeExpectancy_Person
+relevantVariable: dcid:dc/topic/LifeExpectancy
 relevantVariable: dcid:dc/topic/CausesOfDeath
 relevantVariable: dcid:dc/topic/FemaleMortality
 relevantVariable: dcid:dc/topic/InfantMortality
 relevantVariable: dcid:dc/topic/MortalityAmongIncarcerated
+
+Node: dcid:dc/topic/LifeExpectancy
+typeOf: dcs:Topic
+name: "Life Expectancy"
+relevantVariable: dcid:LifeExpectancy_Person
+relevantVariable: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
+
+Node: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Life Expectancy by Gender"
+member: dcid:LifeExpectancy_Person_Female
+member: dcid:LifeExpectancy_Person_Male
 
 Node: dcid:dc/topic/MortalityAmongIncarcerated
 typeOf: dcs:Topic
@@ -375,6 +396,20 @@ name: "Preventive Health And Behavior"
 relevantVariable: dcid:dc/topic/HealthBehavior
 relevantVariable: dcid:dc/topic/PreventativeHealth
 
+Node: dcid:dc/topic/PreventativeHealth
+typeOf: dcs:Topic
+name: "Preventive Health"
+relevantVariable: dcid:Percent_Person_ReceivedAnnualCheckup
+relevantVariable: dcid:dc/svpg/PreventativeHealth_PrevalenceofHealthScreeningsbyType
+
+Node: dcid:dc/svpg/PreventativeHealth_PrevalenceofHealthScreeningsbyType
+typeOf: dcs:StatVarPeerGroup
+name: "Prevalence of Health Screenings by Type"
+member: dcid:Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
+member: dcid:Percent_Person_50To75Years_ReceivedColorectalCancerScreening
+member: dcid:Percent_Person_ReceivedCholesterolScreening
+member: dcid:Percent_Person_ReceivedDentalVisit
+
 Node: dcid:dc/topic/PrivateHealthInsuranceType
 typeOf: dcs:Topic
 name: "Private Health Insurance Type"
@@ -407,7 +442,7 @@ member: dcid:Count_Person_WithVAHealthCareOnly
 
 Node: dcid:dc/topic/WHOChildImmunization
 typeOf: dcs:Topic
-name: "Global Child Immunization"
+name: "Child Immunization"
 relevantVariable: dcid:WHO/WHS4_117
 relevantVariable: dcid:WHO/WHS4_128
 relevantVariable: dcid:WHO/WHS4_129
@@ -416,13 +451,13 @@ relevantVariable: dcid:WHO/WHS8_110
 
 Node: dcid:dc/topic/WHOChildImmunizationsByGender
 typeOf: dcs:Topic
-name: "Global Child Immunizations By Gender"
+name: "Child Immunizations By Gender"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforFemales
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforMales
 
 Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforFemales
 typeOf: dcs:StatVarPeerGroup
-name: "Global Child Immunizations for Females"
+name: "Child Immunizations for Females"
 member: dcid:WHO/bcgv_Female
 member: dcid:WHO/dptv_Female
 member: dcid:WHO/fullv_Female
@@ -431,7 +466,7 @@ member: dcid:WHO/poliov_Female
 
 Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforMales
 typeOf: dcs:StatVarPeerGroup
-name: "Global Child Immunizations for Males"
+name: "Child Immunizations for Males"
 member: dcid:WHO/bcgv_Male
 member: dcid:WHO/dptv_Male
 member: dcid:WHO/fullv_Male
@@ -440,13 +475,13 @@ member: dcid:WHO/poliov_Male
 
 Node: dcid:dc/topic/WHOChildImmunizationsByUrbanRural
 typeOf: dcs:Topic
-name: "Global Child Immunizations By Residency"
+name: "Child Immunizations By Residency"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByUrbanRural_ChildImmunizationsinRuralarea
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByUrbanRural_ChildImmunizationsinUrbalarea
 
 Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByUrbanRural_ChildImmunizationsinRuralarea
 typeOf: dcs:StatVarPeerGroup
-name: "Global Child Immunizations in Rural Area"
+name: "Child Immunizations in Rural Area"
 member: dcid:WHO/bcgv_Rural
 member: dcid:WHO/dptv_Rural
 member: dcid:WHO/fullv_Rural
@@ -464,24 +499,24 @@ member: dcid:WHO/poliov_Urban
 
 Node: dcid:dc/topic/WHOChildMortality
 typeOf: dcs:Topic
-name: "Global Child Mortality"
+name: "Child Mortality"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildMortality_ChildMortality
 
 Node: dcid:dc/svpg/dc/topic/WHOChildMortality_ChildMortality
 typeOf: dcs:StatVarPeerGroup
-name: "Global Child Mortality"
+name: "Child Mortality"
 member: dcid:WHO/CM_01
 member: dcid:WHO/CM_02
 member: dcid:WHO/CM_03
 
 Node: dcid:dc/topic/WHOChildrenNonCommunicableDiseases
 typeOf: dcs:Topic
-name: "Global Non-Communicable Diseases Among Children"
+name: "Non-Communicable Diseases Among Children"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildrenNonCommunicableDiseases_Noncommunicablediseasesamongchildren
 
 Node: dcid:dc/svpg/dc/topic/WHOChildrenNonCommunicableDiseases_Noncommunicablediseasesamongchildren
 typeOf: dcs:StatVarPeerGroup
-name: "Global Non-communicable Diseases Among Children"
+name: "Non-communicable Diseases Among Children"
 member: dcid:WHO/LBW_PREVALENCE
 member: dcid:WHO/NUTOVERWEIGHTPREV
 member: dcid:WHO/NUTRITION_ANAEMIA_CHILDREN_PREV
@@ -492,12 +527,12 @@ member: dcid:WHO/NUTSTUNTINGPREV
 
 Node: dcid:dc/topic/WHODALYByCauses
 typeOf: dcs:Topic
-name: "Global DALY Causes"
+name: "DALY Causes"
 relevantVariable: dcid:dc/svpg/dc/topic/WHODALYByCauses_DisabilityAdjustedLifeYears
 
 Node: dcid:dc/svpg/dc/topic/WHODALYByCauses_DisabilityAdjustedLifeYears
 typeOf: dcs:StatVarPeerGroup
-name: "Global Disability-Adjusted Life-Years"
+name: "Disability-Adjusted Life-Years"
 member: dcid:WHO/SA_0000001418
 member: dcid:WHO/SA_0000001419
 member: dcid:WHO/SA_0000001420
@@ -520,12 +555,12 @@ member: dcid:WHO/SA_0000001689
 
 Node: dcid:dc/topic/WHOHealthBehavior
 typeOf: dcs:Topic
-name: "Global Health Behavior"
+name: "Health Behavior"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOHealthBehavior_HealthBehavior
 
 Node: dcid:dc/svpg/dc/topic/WHOHealthBehavior_HealthBehavior
 typeOf: dcs:StatVarPeerGroup
-name: "Global Health Behaviors"
+name: "Health Behaviors"
 member: dcid:WHO/Adult_daily_tob_use
 member: dcid:WHO/M_Est_smk_daily
 member: dcid:WHO/NCD_BMI_18A
@@ -534,20 +569,20 @@ member: dcid:WHO/NCD_PAC
 
 Node: dcid:dc/topic/WHOImmunization
 typeOf: dcs:Topic
-name: "Global Immunization"
+name: "Immunization"
 relevantVariable: dcid:dc/topic/WHOChildImmunization
 relevantVariable: dcid:dc/topic/WHOChildImmunizationsByGender
 relevantVariable: dcid:dc/topic/WHOChildImmunizationsByUrbanRural
 
 Node: dcid:dc/topic/WHOMaternalMortality
 typeOf: dcs:Topic
-name: "Global Maternal Mortality"
+name: "Maternal Mortality"
 relevantVariable: dcid:WHO/MORT_MATERNALNUM
 relevantVariable: dcid:sdg/SH_STA_MORT.SEX--F
 
 Node: dcid:dc/topic/WHOMortality
 typeOf: dcs:Topic
-name: "Global Mortality"
+name: "Mortality"
 relevantVariable: dcid:dc/topic/WHOChildMortality
 relevantVariable: dcid:dc/topic/WHODALYByCauses
 relevantVariable: dcid:dc/topic/WHOMaternalMortality
@@ -555,7 +590,7 @@ relevantVariable: dcid:dc/topic/WHOMortalityCauses
 
 Node: dcid:dc/topic/WHOMortalityCauses
 typeOf: dcs:Topic
-name: "Global Mortality Causes"
+name: "Mortality Causes"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOMortalityCauses_Mortalityratesbycauses
 
 Node: dcid:dc/svpg/dc/topic/WHOMortalityCauses_Mortalityratesbycauses
@@ -586,12 +621,12 @@ member: dcid:WHO/SA_0000001690
 
 Node: dcid:dc/topic/WHONeglectedTropicalDiseases
 typeOf: dcs:Topic
-name: "Global Neglected Tropical Diseases"
+name: "Neglected Tropical Diseases"
 relevantVariable: dcid:dc/svpg/dc/topic/WHONeglectedTropicalDiseases_CasesofNeglectedTroplicalDiseases
 
 Node: dcid:dc/svpg/dc/topic/WHONeglectedTropicalDiseases_CasesofNeglectedTroplicalDiseases
 typeOf: dcs:StatVarPeerGroup
-name: "Global Cases of Neglected Troplical Diseases"
+name: "Cases of Neglected Troplical Diseases"
 member: dcid:WHO/NTD_1
 member: dcid:WHO/NTD_4
 member: dcid:WHO/NTD_5
@@ -602,12 +637,12 @@ member: dcid:WHO/NTD_YAWSNUM
 
 Node: dcid:dc/topic/WHONonCommunicableDiseaseDeaths
 typeOf: dcs:Topic
-name: "Global Non-Communicable Disease Deaths"
+name: "Non-Communicable Disease Deaths"
 relevantVariable: dcid:dc/svpg/dc/topic/WHONonCommunicableDiseaseDeaths_DeathsduetoNoncommunicabledeaths
 
 Node: dcid:dc/svpg/dc/topic/WHONonCommunicableDiseaseDeaths_DeathsduetoNoncommunicabledeaths
 typeOf: dcs:StatVarPeerGroup
-name: "Global Deaths Due To Non-communicable Diseases"
+name: "Deaths Due To Non-communicable Diseases"
 member: dcid:WHO/GDO_q35
 member: dcid:WHO/SDG_SH_DTH_RNCOM_ChronicRespiratoryDiseases
 member: dcid:WHO/SDG_SH_DTH_RNCOM_DiabetesMellitus
@@ -616,7 +651,7 @@ member: dcid:WHO/SDG_SH_DTH_RNCOM_MalignantNeoplasms
 
 Node: dcid:dc/topic/WHONonCommunicableDiseases
 typeOf: dcs:Topic
-name: "Global Non-Communicable Diseases"
+name: "Non-Communicable Diseases"
 relevantVariable: dcid:dc/topic/WHOChildrenNonCommunicableDiseases
 relevantVariable: dcid:dc/topic/WHONonCommunicableDiseaseDeaths
 
