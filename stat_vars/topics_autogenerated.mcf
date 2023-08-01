@@ -69,13 +69,6 @@ relevantVariable: dcid:sdg/SH_AAP_ASMORT
 relevantVariable: dcid:sdg/SH_HAP_ASMORT
 relevantVariable: dcid:sdg/SH_STA_ASAIRP
 
-Node: dcid:dc/topic/Avalanche
-typeOf: dcs:Topic
-name: "Avalanche"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_AvalancheEvent
-relevantVariable: dcid:Count_AvalancheEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_AvalancheEvent
-
 Node: dcid:dc/topic/BankingAccess
 typeOf: dcs:Topic
 name: "BankingAccess"
@@ -125,49 +118,6 @@ relevantVariable: dcid:MeanMothersAge_BirthEvent
 relevantVariable: dcid:Mean_BirthWeight_BirthEvent_LiveBirth
 relevantVariable: dcid:MedianMothersAge_BirthEvent
 
-Node: dcid:dc/topic/CO2Emissions
-typeOf: dcs:Topic
-name: "CO2 Emissions"
-relevantVariable: dcid:eia/INTL.4008-8-MMTCD.A
-relevantVariable: dcid:dc/svpg/CO2Emissions_AnnualCO2EmissionsbySource
-relevantVariable: dcid:dc/svpg/CO2Emissions_MonthlyCO2EmissionsbySource
-
-Node: dcid:dc/svpg/CO2Emissions_AnnualCO2EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "Annual CO2 Emissions by Source"
-member: dcid:eia/TOTAL.AVTCE.A
-member: dcid:eia/TOTAL.CKTCE.A
-member: dcid:eia/TOTAL.DMTCE.A
-member: dcid:eia/TOTAL.HLTCE.A
-member: dcid:eia/TOTAL.JFTCE.A
-member: dcid:eia/TOTAL.KSTCE.A
-member: dcid:eia/TOTAL.LUTCE.A
-member: dcid:eia/TOTAL.MMTCE.A
-member: dcid:eia/TOTAL.NNTCE.A
-member: dcid:eia/TOTAL.OPTCE.A
-member: dcid:eia/TOTAL.PCTCE.A
-member: dcid:eia/TOTAL.PMTCE.A
-member: dcid:eia/TOTAL.RFTCE.A
-member: dcid:eia/TOTAL.TETCE.A
-
-Node: dcid:dc/svpg/CO2Emissions_MonthlyCO2EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "Monthly CO2 Emissions by Source"
-member: dcid:eia/TOTAL.AVTCE.M
-member: dcid:eia/TOTAL.CKTCE.M
-member: dcid:eia/TOTAL.DMTCE.M
-member: dcid:eia/TOTAL.HLTCE.M
-member: dcid:eia/TOTAL.JFTCE.M
-member: dcid:eia/TOTAL.KSTCE.M
-member: dcid:eia/TOTAL.LUTCE.M
-member: dcid:eia/TOTAL.MMTCE.M
-member: dcid:eia/TOTAL.NNTCE.M
-member: dcid:eia/TOTAL.OPTCE.M
-member: dcid:eia/TOTAL.PCTCE.M
-member: dcid:eia/TOTAL.PMTCE.M
-member: dcid:eia/TOTAL.RFTCE.M
-member: dcid:eia/TOTAL.TETCE.M
-
 Node: dcid:dc/topic/COVID19
 typeOf: dcs:Topic
 name: "COVID-19"
@@ -191,37 +141,6 @@ member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedCase
 member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedOrProbableCase
 member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_PatientDeceased
 member: dcid:CumulativeCount_MedicalConditionIncident_COVID_19_PatientRecovered
-
-Node: dcid:dc/topic/CardiovascularDisease
-typeOf: dcs:Topic
-name: "CardiovascularDisease"
-relevantVariable: dcid:dc/svpg/CardiovascularDisease_CardiovascularDiseasePerCapitaByAge
-
-Node: dcid:dc/svpg/CardiovascularDisease_CardiovascularDiseasePerCapitaByAge
-typeOf: dcs:StatVarPeerGroup
-name: "Cardiovascular Disease Per Capita By Age"
-member: dcid:Count_MedicalConditionIncident_0To4Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-member: dcid:Count_MedicalConditionIncident_15To29Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-member: dcid:Count_MedicalConditionIncident_30To44Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-member: dcid:Count_MedicalConditionIncident_45To59Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-member: dcid:Count_MedicalConditionIncident_5To14Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-member: dcid:Count_MedicalConditionIncident_60OrMoreYears_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-member: dcid:Count_MedicalConditionIncident_60To69Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-member: dcid:Count_MedicalConditionIncident_70OrMoreYears_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
-
-Node: dcid:dc/topic/Clouds
-typeOf: dcs:Topic
-name: "Clouds"
-relevantVariable: dcid:Count_FunnelCloudEvent
-relevantVariable: dcid:dc/topic/Visibility
-relevantVariable: dcid:dc/svpg/Clouds_CloudCover
-
-Node: dcid:dc/svpg/Clouds_CloudCover
-typeOf: dcs:StatVarPeerGroup
-name: "Cloud Cover"
-member: dcid:Max_CloudCover
-member: dcid:Mean_CloudCover
-member: dcid:Min_CloudCover
 
 Node: dcid:dc/topic/CollegeOrUniversityStudentHousingResidents
 typeOf: dcs:Topic
@@ -257,20 +176,6 @@ member: dcid:Count_CriminalActivities_MotorVehicleTheft
 member: dcid:Count_CriminalActivities_PropertyCrime
 member: dcid:Count_CriminalActivities_Robbery
 member: dcid:Count_CriminalActivities_ViolentCrime
-
-Node: dcid:dc/topic/Cyclone
-typeOf: dcs:Topic
-name: "Cyclone"
-relevantVariable: dcid:Count_CycloneEvent
-relevantVariable: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
-
-Node: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Cyclone events by type"
-member: dcid:Count_CycloneEvent_ExtratropicalCyclone
-member: dcid:Count_CycloneEvent_ExtratropicalCyclone
-member: dcid:Count_CycloneEvent_TropicalDisturbance
-member: dcid:Count_CycloneEvent_TropicalStorm
 
 Node: dcid:dc/topic/Dengue
 typeOf: dcs:Topic
@@ -348,76 +253,10 @@ name: "Population by Disability Status"
 member: dcid:Count_Person_NoDisability
 member: dcid:Count_Person_WithDisability
 
-Node: dcid:dc/topic/Disease
-typeOf: dcs:Topic
-name: "Disease"
-relevantVariable: dcid:dc/topic/CardiovascularDisease
-relevantVariable: dcid:dc/topic/Dengue
-relevantVariable: dcid:dc/topic/Diabetes
-relevantVariable: dcid:dc/topic/HIV
-relevantVariable: dcid:dc/topic/Malaria
-relevantVariable: dcid:dc/topic/NeglectedTropicalDiseases
-relevantVariable: dcid:dc/topic/Tuberculosis
-
-Node: dcid:dc/topic/Dust
-typeOf: dcs:Topic
-name: "Dust"
-relevantVariable: dcid:Count_DustDevilEvent
-relevantVariable: dcid:Count_DustStormEvent
-
-Node: dcid:dc/topic/Earthquake
-typeOf: dcs:Topic
-name: "Earthquake"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_EarthquakeEvent
-relevantVariable: dcid:Count_EarthquakeEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_EarthquakeEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_EarthquakeEvent
-
-Node: dcid:dc/topic/ExcessiveColdEvent
-typeOf: dcs:Topic
-name: "ExcessiveColdEvent"
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_ExtremeColdWindChillEvent
-relevantVariable: dcid:dc/svpg/ExcessiveColdEvent_ExcessiveColdEventbyType
-
-Node: dcid:dc/svpg/ExcessiveColdEvent_ExcessiveColdEventbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Excessive Cold Event by Type"
-member: dcid:Count_ColdWindChillEvent
-member: dcid:Count_ExtremeColdWindChillEvent
-member: dcid:Count_FreezingFogEvent
-member: dcid:Count_FrostFreezeEvent
-member: dcid:Count_WinterWeatherEvent
-
-Node: dcid:dc/topic/ExcessiveHeatEvent
-typeOf: dcs:Topic
-name: "ExcessiveHeatEvent"
-relevantVariable: dcid:Count_ExcessiveHeatEvent
-relevantVariable: dcid:dc/topic/HeatWave
-
 Node: dcid:dc/topic/ExportSubsidies
 typeOf: dcs:Topic
 name: "ExportSubsidies"
 relevantVariable: dcid:sdg/AG_PRD_XSUBDY
-
-Node: dcid:dc/topic/ExtremeTide
-typeOf: dcs:Topic
-name: "ExtremeTide"
-relevantVariable: dcid:Count_AstronomicalLowTideEvent
-relevantVariable: dcid:Count_RipCurrentEvent
-relevantVariable: dcid:Count_StormSurgeTideEvent
-
-Node: dcid:dc/topic/Fog
-typeOf: dcs:Topic
-name: "Fog"
-relevantVariable: dcid:dc/topic/Visibility
-relevantVariable: dcid:dc/svpg/Fog_Fogeventsbytype
-
-Node: dcid:dc/svpg/Fog_Fogeventsbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Fog events by type"
-member: dcid:Count_DenseFogEvent
-member: dcid:Count_FreezingFogEvent
-member: dcid:Count_FreezingFogEvent
 
 Node: dcid:dc/topic/Forest
 typeOf: dcs:Topic
@@ -426,13 +265,6 @@ relevantVariable: dcid:Area_Forest
 relevantVariable: dcid:Mean_MaxTemperature_Forest
 relevantVariable: dcid:Mean_PalmerDroughtSeverityIndex_Forest
 relevantVariable: dcid:Mean_VaporPressureDeficit_Forest
-
-Node: dcid:dc/topic/FossilFuelSubsidies
-typeOf: dcs:Topic
-name: "FossilFuelSubsidies"
-relevantVariable: dcid:sdg/ER_FFS_CMPT_CD
-relevantVariable: dcid:sdg/ER_FFS_CMPT_GDP
-relevantVariable: dcid:sdg/ER_FFS_CMPT_PC_CD
 
 Node: dcid:dc/topic/GroupQuartersResidents
 typeOf: dcs:Topic
@@ -482,13 +314,6 @@ member: dcid:Count_MedicalConditionIncident_ConditionHIVAIDS_Asian_PacificIsland
 member: dcid:Count_MedicalConditionIncident_ConditionHIVAIDS_Black_AfricanAmericanAlone
 member: dcid:Count_MedicalConditionIncident_ConditionHIVAIDS_OtherRace
 member: dcid:Count_MedicalConditionIncident_ConditionHIVAIDS_WhiteAlone
-
-Node: dcid:dc/topic/Hail
-typeOf: dcs:Topic
-name: "Hail"
-relevantVariable: dcid:Count_HailEvent
-relevantVariable: dcid:Count_MarineHailEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_HailEvent
 
 Node: dcid:dc/topic/HateCrimes
 typeOf: dcs:Topic
@@ -547,23 +372,6 @@ typeOf: dcs:Topic
 name: "HeightStunting"
 relevantVariable: dcid:sdg/SH_STA_STNTN.AGE--Y0T4
 relevantVariable: dcid:sdg/SH_STA_STNT.AGE--Y0T4
-
-Node: dcid:dc/topic/HighWind
-typeOf: dcs:Topic
-name: "HighWind"
-relevantVariable: dcid:Count_HighWindEvent
-relevantVariable: dcid:Count_MarineHighWindEvent
-relevantVariable: dcid:Count_MarineStrongWindEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_HighWindEvent
-
-Node: dcid:dc/topic/Hurricane
-typeOf: dcs:Topic
-name: "Hurricane"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_HurricaneEvent
-relevantVariable: dcid:Count_HurricaneEvent
-relevantVariable: dcid:Count_HurricaneTyphoonEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_HurricaneEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_HurricaneEvent
 
 Node: dcid:dc/topic/Incarceration
 typeOf: dcs:Topic
@@ -632,14 +440,6 @@ name: "JuvenileFacilities Population by Gender"
 member: dcid:Count_Person_Female_ResidesInJuvenileFacilities
 member: dcid:Count_Person_Male_ResidesInJuvenileFacilities
 
-Node: dcid:dc/topic/Landslide
-typeOf: dcs:Topic
-name: "Landslide"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_LandslideEvent
-relevantVariable: dcid:Count_LandslideEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_LandslideEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_LandslideEvent
-
 Node: dcid:dc/topic/Malaria
 typeOf: dcs:Topic
 name: "Malaria"
@@ -673,24 +473,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "Underweight Population by Gender"
 member: dcid:Percent_Underweight_In_Count_Person_Female
 member: dcid:Percent_Underweight_In_Count_Person_Male
-
-Node: dcid:dc/topic/MarineEvents
-typeOf: dcs:Topic
-name: "MarineEvents"
-relevantVariable: dcid:dc/svpg/MarineEvents_MarineEventsbyType
-
-Node: dcid:dc/svpg/MarineEvents_MarineEventsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Marine Events by Type"
-member: dcid:Count_MarineDenseFogEvent
-member: dcid:Count_MarineHailEvent
-member: dcid:Count_MarineHighWindEvent
-member: dcid:Count_MarineHurricaneTyphoonEvent
-member: dcid:Count_MarineLightningEvent
-member: dcid:Count_MarineStrongWindEvent
-member: dcid:Count_MarineThunderstormWindEvent
-member: dcid:Count_MarineTropicalDepressionEvent
-member: dcid:Count_MarineTropicalStormEvent
 
 Node: dcid:dc/topic/Military
 typeOf: dcs:Topic
@@ -840,13 +622,6 @@ name: "Nursing Facilities Population by Gender"
 member: dcid:Count_Person_Female_ResidesInNursingFacilities
 member: dcid:Count_Person_Male_ResidesInNursingFacilities
 
-Node: dcid:dc/topic/PalmerDroughtSeverityIndex
-typeOf: dcs:Topic
-name: "PalmerDroughtSeverityIndex"
-relevantVariable: dcid:Mean_PalmerDroughtSeverityIndex
-relevantVariable: dcid:Mean_PalmerDroughtSeverityIndex_Forest
-relevantVariable: dcid:PalmerDroughtSeverityIndex_Atmosphere
-
 Node: dcid:dc/topic/Parliament
 typeOf: dcs:Topic
 name: "Parliament"
@@ -965,32 +740,6 @@ name: "Prevalance of normal weight population by gender"
 member: dcid:Percent_Normalweight_In_Count_Person_Female
 member: dcid:Percent_Normalweight_In_Count_Person_Male
 
-Node: dcid:dc/topic/Precipitation
-typeOf: dcs:Topic
-name: "Precipitation"
-relevantVariable: dcid:HeavyPrecipitationIndex
-relevantVariable: dcid:InterannualRange_Monthly_Precipitation
-relevantVariable: dcid:Max_PrecipitableWater_Atmosphere
-relevantVariable: dcid:Mean_PrecipitableWater_Atmosphere
-relevantVariable: dcid:Min_PrecipitableWater_Atmosphere
-relevantVariable: dcid:PrecipitationRate
-relevantVariable: dcid:dc/topic/Rainfall
-relevantVariable: dcid:dc/topic/Snowfall
-
-Node: dcid:dc/topic/Rainfall
-typeOf: dcs:Topic
-name: "Rainfall"
-relevantVariable: dcid:Count_FloodEvent
-relevantVariable: dcid:Count_HeavyRainEvent
-relevantVariable: dcid:dc/svpg/Rainfall_RainfallAmount
-
-Node: dcid:dc/svpg/Rainfall_RainfallAmount
-typeOf: dcs:StatVarPeerGroup
-name: "Rainfall Amount"
-member: dcid:Max_Rainfall
-member: dcid:Mean_Rainfall
-member: dcid:Min_Rainfall
-
 Node: dcid:dc/topic/Religion
 typeOf: dcs:Topic
 name: "Religion"
@@ -1038,22 +787,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "Proportion of Population using safely managed sanitation services by residency"
 member: dcid:sdg/SH_SAN_SAFE.URBANISATION--R
 member: dcid:sdg/SH_SAN_SAFE.URBANISATION--U
-
-Node: dcid:dc/topic/Snowfall
-typeOf: dcs:Topic
-name: "Snowfall"
-relevantVariable: dcid:Count_BlizzardEvent
-relevantVariable: dcid:Count_HeavySnowEvent
-relevantVariable: dcid:Count_LakeEffectSnowEvent
-relevantVariable: dcid:Count_WinterStormEvent
-relevantVariable: dcid:dc/svpg/Snowfall_SnowfallAmount
-
-Node: dcid:dc/svpg/Snowfall_SnowfallAmount
-typeOf: dcs:StatVarPeerGroup
-name: "Snowfall Amount"
-member: dcid:Max_Snowfall
-member: dcid:Mean_Snowfall
-member: dcid:Min_Snowfall
 
 Node: dcid:dc/topic/SocialSupport
 typeOf: dcs:Topic
@@ -1194,47 +927,6 @@ member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_IND
 member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_OIL
 member: dcid:sdg/TM_TAX_WMPS.PRODUCT--AGG_TXT
 
-Node: dcid:dc/topic/Thunderstorm
-typeOf: dcs:Topic
-name: "Thunderstorm"
-relevantVariable: dcid:Count_MarineThunderstormWindEvent
-relevantVariable: dcid:Count_ThunderstormWindEvent
-
-Node: dcid:dc/topic/Tornado
-typeOf: dcs:Topic
-name: "Tornado"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_TornadoEvent
-relevantVariable: dcid:Count_TornadoEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_TornadoEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_TornadoEvent
-
-Node: dcid:dc/topic/TropicalWeatherEvents
-typeOf: dcs:Topic
-name: "TropicalWeatherEvents"
-relevantVariable: dcid:dc/svpg/TropicalWeatherEvents_TropicalCycloneEventsbyType
-relevantVariable: dcid:dc/svpg/TropicalWeatherEvents_TropicalWeatherEventsbyType
-
-Node: dcid:dc/svpg/TropicalWeatherEvents_TropicalCycloneEventsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Tropical Cyclone Events by Type"
-member: dcid:Count_CycloneEvent_TropicalDisturbance
-member: dcid:Count_CycloneEvent_TropicalStorm
-
-Node: dcid:dc/svpg/TropicalWeatherEvents_TropicalWeatherEventsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Tropical Weather Events by Type"
-member: dcid:Count_MarineTropicalDepressionEvent
-member: dcid:Count_MarineTropicalStormEvent
-member: dcid:Count_TropicalDepressionEvent
-member: dcid:Count_TropicalStormEvent
-
-Node: dcid:dc/topic/Tsunami
-typeOf: dcs:Topic
-name: "Tsunami"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_TsunamiEvent
-relevantVariable: dcid:Count_TsunamiEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_TsunamiEvent
-
 Node: dcid:dc/topic/Tuberculosis
 typeOf: dcs:Topic
 name: "Tuberculosis"
@@ -1313,14 +1005,6 @@ member: dcid:Max_Visibility
 member: dcid:Mean_Visibility
 member: dcid:Min_Visibility
 
-Node: dcid:dc/topic/Volcano
-typeOf: dcs:Topic
-name: "Volcano"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_VolcanicActivityEvent
-relevantVariable: dcid:Count_VolcanicAshEvent
-relevantVariable: dcid:Count_VolcanicAshfallEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_VolcanicActivityEvent
-
 Node: dcid:dc/topic/Voting
 typeOf: dcs:Topic
 name: "Voting"
@@ -1340,35 +1024,6 @@ member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IMF
 member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_UNGA
 member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_UNSC
 member: dcid:sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_WTO
-
-Node: dcid:dc/topic/Weather
-typeOf: dcs:Topic
-name: "Weather"
-relevantVariable: dcid:ConsecutiveDryDays
-relevantVariable: dcid:HeavyPrecipitationIndex
-relevantVariable: dcid:Max_BarometricPressure
-relevantVariable: dcid:dc/topic/Temperature
-
-Node: dcid:dc/topic/Wildfire
-typeOf: dcs:Topic
-name: "Wildfire"
-relevantVariable: dcid:BurnedArea_FireEvent
-relevantVariable: dcid:Count_FireEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_WildfireEvent
-relevantVariable: dcid:Percent_BurnedArea_FireEvent
-relevantVariable: dcid:Percent_BurnedArea_FireEvent_Forest_HighSeverity
-relevantVariable: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
-
-Node: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
-typeOf: dcs:StatVarPeerGroup
-name: "Annual amount of wildfire emissions by source"
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_Ammonia
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_CarbonMonoxide
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_OxidesOfNitrogen
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM10
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM2.5
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_SulfurDioxide
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_VolatileOrganicCompound
 
 Node: dcid:dc/topic/DivorcedFemalePopulationByAge
 typeOf: dcs:Topic

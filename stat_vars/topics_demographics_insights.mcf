@@ -33,7 +33,7 @@ relevantVariable: dcid:dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusT
 
 Node: dcid:dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusType
 typeOf: dcs:StatVarPeerGroup
-name: "US Citizenship by Status Type"
+name: "Population by US Citizenship"
 member: dcid:Count_Person_NotAUSCitizen
 member: dcid:Count_Person_USCitizenBornInTheUnitedStates
 member: dcid:Count_Person_USCitizenByNaturalization
@@ -124,7 +124,7 @@ member: dcid:Count_Person_NotHispanicOrLatino_WhiteAloneOrInCombinationWithOneOr
 
 Node: dcid:dc/topic/DivorcedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Divorced Population By Demographic"
+name: "Divorced Population"
 relevantVariable: dcid:Count_Person_Divorced
 relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByRace
@@ -149,7 +149,7 @@ relevantVariable: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulatio
 
 Node: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
 typeOf: dcs:StatVarPeerGroup
-name: "English Speaking Population by Language Level"
+name: "Ability to Speak English"
 member: dcid:Count_Person_SpeakEnglishNotAtAll
 member: dcid:Count_Person_SpeakEnglishNotWell
 member: dcid:Count_Person_SpeakEnglishWell
@@ -183,8 +183,8 @@ relevantVariable: dcid:dc/wj5l0n6wkep45
 Node: dcid:dc/topic/MaritalStatus
 typeOf: dcs:Topic
 name: "Marital Status"
-relevantVariable: dcid:dc/topic/DivorcedPopulationByDemographic
 relevantVariable: dcid:dc/topic/MaritalStatusBreakdown
+relevantVariable: dcid:dc/topic/DivorcedPopulationByDemographic
 relevantVariable: dcid:dc/topic/MarriedPopulationByDemographic
 relevantVariable: dcid:dc/topic/NeverMarriedPopulationByDemographic
 relevantVariable: dcid:dc/topic/WidowedPopulationByDemographic
@@ -204,8 +204,8 @@ member: dcid:Count_Person_Widowed
 
 Node: dcid:dc/topic/MarriedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Married Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_MarriedAndNotSeparated
+name: "Married Population"
+relevantVariable: dcid:Count_Person_MarriedAndNotSeparated
 relevantVariable: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByRace
 
@@ -232,8 +232,8 @@ relevantVariable: dcid:dc/topic/PlaceOfBirth
 
 Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Never Married Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_NeverMarried
+name: "Never Married Population"
+relevantVariable: dcid:Count_Person_NeverMarried
 relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByRace
 
@@ -289,20 +289,20 @@ relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPerso
 
 Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryOldGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonVeryOldGender"
+name: "Population 85 or over by Gender "
 member: dcid:Count_Person_85OrMoreYears_Female
 member: dcid:Count_Person_85OrMoreYears_Male
 
 Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryYoungGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonVeryYoungGender"
+name: "Children Population by Gender"
 member: dcid:Count_Person_0To4Years_Female
 member: dcid:Count_Person_0To4Years_Male
 
 Node: dcid:dc/topic/WidowedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Widowed Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_Widowed
+name: "Widowed Population"
+relevantVariable: dcid:Count_Person_Widowed
 relevantVariable: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByRace
 

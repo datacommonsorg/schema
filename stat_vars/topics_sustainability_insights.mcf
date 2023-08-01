@@ -1,38 +1,109 @@
-# These are auto-generated
-#
 
 Node: dcid:dc/topic/Sustainability
 typeOf: dcs:Topic
 name: "Sustainability"
-relevantVariable: dcid:dc/topic/GreenhouseGasses
 relevantVariable: dcid:dc/topic/Emissions
 relevantVariable: dcid:dc/topic/Pollutants
+relevantVariable: dcid:dc/topic/Temperatures
+relevantVariable: dcid:dc/topic/Precipitation
+relevantVariable: dcid:dc/topic/NaturalDisasters
+relevantVariable: dcid:dc/topic/Agriculture
 relevantVariable: dcid:dc/topic/Energy
 relevantVariable: dcid:dc/topic/GreenJobs
-relevantVariable: dcid:dc/topic/LandUse/Coverage
-relevantVariable: dcid:dc/topic/Temperatures
-relevantVariable: dcid:dc/topic/NaturalDisasters
+relevantVariable: dcid:dc/topic/LandUseAndCoverage
 relevantVariable: dcid:dc/topic/OceanHealth
 relevantVariable: dcid:dc/topic/ProductionConsumptionandWaste
-relevantVariable: dcid:dc/topic/Agriculture
 
 Node: dcid:dc/topic/Emissions
 typeOf: dcs:Topic
 name: "Emissions"
+relevantVariable: dcid:Annual_Emissions_GreenhouseGas
+relevantVariable: dcid:dc/topic/GreenhouseGasEmissions
+relevantVariable: dcid:dc/topic/CO2Emissions
 relevantVariable: dcid:dc/topic/Emissions_FlourinatedGases
 relevantVariable: dcid:dc/topic/Emissions_Methane_EmissionsbySource
 relevantVariable: dcid:dc/topic/Emissions_NitrousOxide_EmissionsbySource
 relevantVariable: dcid:dc/topic/Emissions_PM2.5_EmissionsbySource
 relevantVariable: dcid:dc/topic/Emissions_SulfurDioxide_EmissionsbySource
+# TODO: Add Emissions by Sector
+
+Node: dcid:dc/topic/GreenhouseGasEmissions
+typeOf: dcs:Topic
+name: "Greenhouse Gasses"
+relevantVariable: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
+
+Node: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
+typeOf: dcs:StatVarPeerGroup
+name: "Greenhouse Gas Emissions By Source"
+member: dcid:Annual_Emissions_GreenhouseGas_Agriculture
+member: dcid:Annual_Emissions_GreenhouseGas_ElectricityGeneration
+member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionInBuildings
+member: dcid:Annual_Emissions_GreenhouseGas_ForestryAndLandUse
+member: dcid:Annual_Emissions_GreenhouseGas_Manufacturing
+member: dcid:Annual_Emissions_GreenhouseGas_MineralExtraction
+member: dcid:Annual_Emissions_GreenhouseGas_OilAndGas
+member: dcid:Annual_Emissions_GreenhouseGas_Transportation
+member: dcid:Annual_Emissions_GreenhouseGas_WasteManagement
+member: dcid:Annual_Emissions_GreenhouseGas_CementProduction
+member: dcid:Annual_Emissions_GreenhouseGas_SteelManufacturing
+member: dcid:Annual_Emissions_GreenhouseGas_ForestFire
+
+# Uncomment more as we go along.
+# member: dcid:Annual_Emissions_GreenhouseGas_AluminumProduction
+# member: dcid:Annual_Emissions_GreenhouseGas_BauxiteMining
+# member: dcid:Annual_Emissions_GreenhouseGas_ClimateTrace_OtherEnergyUse
+# member: dcid:Annual_Emissions_GreenhouseGas_ClimateTrace_OtherManufacturing
+# member: dcid:Annual_Emissions_GreenhouseGas_CopperMining
+# member: dcid:Annual_Emissions_GreenhouseGas_CroplandFire
+# member: dcid:Annual_Emissions_GreenhouseGas_ElectricityGenerationFromThermalPowerPlant
+# member: dcid:Annual_Emissions_GreenhouseGas_EntericFermentation
+# member: dcid:Annual_Emissions_GreenhouseGas_ForestClearing
+# member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForCooking
+# member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForRefrigerationAirConditioning
+# member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForResidentialCommercialOnsiteHeating
+# member: dcid:Annual_Emissions_GreenhouseGas_IronMining
+# member: dcid:Annual_Emissions_GreenhouseGas_ManagedSoils
+# member: dcid:Annual_Emissions_GreenhouseGas_ManureManagement
+# member: dcid:Annual_Emissions_GreenhouseGas_MaritimeShipping
+# member: dcid:Annual_Emissions_GreenhouseGas_MaritimeTransport
+# member: dcid:Annual_Emissions_GreenhouseGas_OilAndGasProduction
+# member: dcid:Annual_Emissions_GreenhouseGas_PetrochemicalProduction
+# member: dcid:Annual_Emissions_GreenhouseGas_PulpAndPaperManufacturing
+# member: dcid:Annual_Emissions_GreenhouseGas_RiceCultivation
+# member: dcid:Annual_Emissions_GreenhouseGas_RockQuarry
+# member: dcid:Annual_Emissions_GreenhouseGas_SandQuarry
+# member: dcid:Annual_Emissions_GreenhouseGas_SavannaFire
+# member: dcid:Annual_Emissions_GreenhouseGas_ShrublandFire
+
+Node: dcid:dc/topic/CO2Emissions
+typeOf: dcs:Topic
+name: "Carbondioxide (CO2)"
+# CO2 Emissions
+relevantVariable: dcid:eia/INTL.4008-8-MMTCD.A
+relevantVariable: dcid:Amount_Emissions_CarbonDioxide_PerCapita
+relevantVariable: dcid:dc/svpg/Emissions_CO2_EmissionsbySource
+
+Node: dcid:dc/svpg/Emissions_CO2_EmissionsbySource
+typeOf: dcs:StatVarPeerGroup
+name: "CO2 Emissions by Source"
+member: dcid:Annual_Emissions_CarbonDioxide_Agriculture
+member: dcid:Annual_Emissions_CarbonDioxide_FuelCombustionInBuildings
+member: dcid:Annual_Emissions_CarbonDioxide_FossilFuelOperations
+member: dcid:Annual_Emissions_CarbonDioxide_ForestryAndLandUse
+member: dcid:Annual_Emissions_CarbonDioxide_Manufacturing
+member: dcid:Annual_Emissions_CarbonDioxide_MineralExtraction
+member: dcid:Annual_Emissions_CarbonDioxide_Power
+member: dcid:Annual_Emissions_CarbonDioxide_Transportation
+member: dcid:Annual_Emissions_CarbonDioxide_WasteManagement
 
 Node: dcid:dc/topic/Emissions_FlourinatedGases
 typeOf: dcs:Topic
-name: "Flourinated Gase Emissions"
+name: "Flourinated Gas"
 relevantVariable: dcid:dc/svpg/dc/topic/Emissions_FlourinatedGases
 
 Node: dcid:dc/svpg/dc/topic/Emissions_FlourinatedGases
 typeOf: dcs:StatVarPeerGroup
-name: "Flourinated Gase Emissions"
+name: "Flourinated Gas Emissions by Type"
 member: dcid:Annual_Emissions_EPA_OtherFullyFluorinatedCompound_NonBiogenic
 member: dcid:Annual_Emissions_Hydrofluorocarbon_NonBiogenic
 member: dcid:Annual_Emissions_Hydrofluoroether_NonBiogenic
@@ -42,7 +113,7 @@ member: dcid:Annual_Emissions_SulfurHexafluoride_NonBiogenic
 
 Node: dcid:dc/topic/Emissions_Methane_EmissionsbySource
 typeOf: dcs:Topic
-name: "Methane Emissions by Source"
+name: "Methane"
 relevantVariable: dcid:dc/svpg/dc/topic/Emissions_Methane_EmissionsbySource
 
 Node: dcid:dc/svpg/dc/topic/Emissions_Methane_EmissionsbySource
@@ -56,7 +127,7 @@ member: dcid:Annual_Emissions_Methane_WasteManagement
 
 Node: dcid:dc/topic/Emissions_NitrousOxide_EmissionsbySource
 typeOf: dcs:Topic
-name: "Nitrous Oxide Emissions by Source"
+name: "Nitrous Oxide"
 relevantVariable: dcid:dc/svpg/dc/topic/Emissions_NitrousOxide_EmissionsbySource
 
 Node: dcid:dc/svpg/dc/topic/Emissions_NitrousOxide_EmissionsbySource
@@ -72,7 +143,7 @@ member: dcid:Annual_Emissions_NitrousOxide_WastewaterTreatmentAndDischarge
 
 Node: dcid:dc/topic/Emissions_PM2.5_EmissionsbySource
 typeOf: dcs:Topic
-name: "PM 2.5 Emissions by Source"
+name: "PM 2.5"
 relevantVariable: dcid:dc/svpg/dc/topic/Emissions_PM2.5_EmissionsbySource
 
 Node: dcid:dc/svpg/dc/topic/Emissions_PM2.5_EmissionsbySource
@@ -91,17 +162,10 @@ member: Annual_Amount_Emissions_PM2.5_SCC_24_SolventUtilization
 member: Annual_Amount_Emissions_PM2.5_SCC_25_StorageAndTransport
 member: Annual_Amount_Emissions_PM2.5_SCC_26_WasteDisposalTreatmentAndRecovery
 member: Annual_Amount_Emissions_PM2.5_SCC_28_MiscellaneousAreaSources
-# member: dcid:Annual_Emissions_PM2.5_Agriculture
-# member: dcid:Annual_Emissions_PM2.5_FuelCombustionForResidentialCommercialOnsiteHeating
-# member: dcid:Annual_Emissions_PM2.5_Manufacturing
-# member: dcid:Annual_Emissions_PM2.5_NonBiogenic
-# member: dcid:Annual_Emissions_PM2.5_Transportation
-# member: dcid:Annual_Emissions_PM2.5_WasteManagement
-# member: dcid:Annual_Emissions_PM2.5_WastewaterTreatmentAndDischarge
 
 Node: dcid:dc/topic/Emissions_SulfurDioxide_EmissionsbySource
 typeOf: dcs:Topic
-name: "Sulfur Dioxide Emissions by Source"
+name: "Sulfur Dioxide"
 relevantVariable: dcid:dc/svpg/dc/topic/Emissions_SulfurDioxide_EmissionsbySource
 
 Node: dcid:dc/svpg/dc/topic/Emissions_SulfurDioxide_EmissionsbySource
@@ -121,13 +185,8 @@ member: Annual_Amount_Emissions_SulfurDioxide_SCC_25_StorageAndTransport
 member: Annual_Amount_Emissions_SulfurDioxide_SCC_26_WasteDisposalTreatmentAndRecovery
 member: Annual_Amount_Emissions_SulfurDioxide_SCC_28_MiscellaneousAreaSources
 member: Annual_Emissions_SulfurHexafluoride_NonBiogenic
-# member: dcid:Annual_Emissions_SulfurDioxide_Agriculture
-# member: dcid:Annual_Emissions_SulfurDioxide_FuelCombustionForResidentialCommercialOnsiteHeating
-# member: dcid:Annual_Emissions_SulfurDioxide_Manufacturing
-# member: dcid:Annual_Emissions_SulfurDioxide_NonBiogenic
-# member: dcid:Annual_Emissions_SulfurDioxide_Transportation
-# member: dcid:Annual_Emissions_SulfurDioxide_WasteManagement
-# member: dcid:Annual_Emissions_SulfurDioxide_WastewaterTreatmentAndDischarge
+
+#### Energy ####
 
 Node: dcid:dc/topic/Energy
 typeOf: dcs:Topic
@@ -172,7 +231,6 @@ member: dcid:Annual_Generation_Fuel_HardCoal
 member: dcid:Annual_Generation_Energy_NaturalGas
 member: dcid:Annual_Generation_Energy_OilProducts
 member: dcid:Annual_Generation_Fuel_PetroleumCoke
-member: dcid:Annual_Generation_Fuel_Nuclear
 
 Node: dcid:dc/svpg/dc/topic/Energy_FossilFuels_SDG_GDP
 typeOf: dcs:StatVarPeerGroup
@@ -192,7 +250,6 @@ relevantVariable: dcid:dc/svpg/dc/topic/Energy_Generation_NonFossilFuel
 Node: dcid:dc/svpg/dc/topic/Energy_Generation_NonFossilFuel
 typeOf: dcs:StatVarPeerGroup
 name: "Energy Generation by non-Fossil Fuels"
-# member: dcid:Annual_Consumption_Energy_GeothermalAnnual_Generation_Electricity
 member: dcid:Annual_Generation_Electricity_Households
 member: dcid:Annual_Generation_Energy_Geothermal
 member: dcid:Annual_Generation_Energy_Solar
@@ -259,6 +316,8 @@ typeOf: dcs:StatVarPeerGroup
 name: "Per capita Electicity Consumption"
 member: dcid:Amount_Consumption_Electricity_PerCapita
 
+#### Green Jobs ####
+
 Node: dcid:dc/topic/GreenJobs
 typeOf: dcs:Topic
 name: "Green Jobs"
@@ -308,89 +367,55 @@ name: "Renewable energy systems"
 member: dcid:dc/mwcnlh5bmdk63
 member: dcid:dc/s9cn1zj5fv5cc
 
-Node: dcid:dc/topic/GreenhouseGasses
+#### Land Use / Cover ####
+
+Node: dcid:dc/topic/LandUseAndCoverage
 typeOf: dcs:Topic
-name: "Greenhouse Gasses"
-relevantVariable: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
+name: "Land Use and Coverage"
+relevantVariable: dcid:dc/topic/LandCover
+relevantVariable: dcid:dc/topic/SDGBiodiversity
+relevantVariable: dcid:dc/topic/SDGReforestations
 
-Node: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
-typeOf: dcs:StatVarPeerGroup
-name: "Greenhouse Gas Emissions By Source"
-member: dcid:Annual_Emissions_GreenhouseGas_Agriculture
-member: dcid:Annual_Emissions_GreenhouseGas_AluminumProduction
-member: dcid:Annual_Emissions_GreenhouseGas_BauxiteMining
-member: dcid:Annual_Emissions_GreenhouseGas_CementProduction
-member: dcid:Annual_Emissions_GreenhouseGas_ClimateTrace_OtherEnergyUse
-member: dcid:Annual_Emissions_GreenhouseGas_ClimateTrace_OtherManufacturing
-# member: dcid:Annual_Emissions_GreenhouseGas_CoalMining
-member: dcid:Annual_Emissions_GreenhouseGas_CopperMining
-member: dcid:Annual_Emissions_GreenhouseGas_CroplandFire
-member: dcid:Annual_Emissions_GreenhouseGas_ElectricityGeneration
-member: dcid:Annual_Emissions_GreenhouseGas_ElectricityGenerationFromThermalPowerPlant
-member: dcid:Annual_Emissions_GreenhouseGas_EntericFermentation
-# member: dcid:Annual_Emissions_GreenhouseGas_FluorchemicalProduction
-# member: dcid:Annual_Emissions_GreenhouseGas_FoodProcessingBeveragesTobbacoProduction
-member: dcid:Annual_Emissions_GreenhouseGas_ForestClearing
-member: dcid:Annual_Emissions_GreenhouseGas_ForestFire
-member: dcid:Annual_Emissions_GreenhouseGas_ForestryAndLandUse
-member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForCooking
-member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForRefrigerationAirConditioning
-member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForResidentialCommercialOnsiteHeating
-member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionInBuildings
-# member: dcid:Annual_Emissions_GreenhouseGas_GlassProduction
-member: dcid:Annual_Emissions_GreenhouseGas_IronMining
-# member: dcid:Annual_Emissions_GreenhouseGas_LimeProduction
-member: dcid:Annual_Emissions_GreenhouseGas_ManagedSoils
-member: dcid:Annual_Emissions_GreenhouseGas_Manufacturing
-member: dcid:Annual_Emissions_GreenhouseGas_ManureManagement
-member: dcid:Annual_Emissions_GreenhouseGas_MaritimeShipping
-member: dcid:Annual_Emissions_GreenhouseGas_MaritimeTransport
-member: dcid:Annual_Emissions_GreenhouseGas_MineralExtraction
-# member: dcid:Annual_Emissions_GreenhouseGas_NitricAcidProduction
-member: dcid:Annual_Emissions_GreenhouseGas_OilAndGas
-member: dcid:Annual_Emissions_GreenhouseGas_OilAndGasProduction
-member: dcid:Annual_Emissions_GreenhouseGas_PetrochemicalProduction
-member: dcid:Annual_Emissions_GreenhouseGas_PulpAndPaperManufacturing
-member: dcid:Annual_Emissions_GreenhouseGas_RiceCultivation
-member: dcid:Annual_Emissions_GreenhouseGas_RockQuarry
-member: dcid:Annual_Emissions_GreenhouseGas_SandQuarry
-member: dcid:Annual_Emissions_GreenhouseGas_SavannaFire
-member: dcid:Annual_Emissions_GreenhouseGas_ShrublandFire
-member: dcid:Annual_Emissions_GreenhouseGas_SteelManufacturing
-
-Node: dcid:dc/topic/LandUse/Coverage
+Node: dcid:dc/topic/LandCover
 typeOf: dcs:Topic
-name: "Land Use / Coverage"
-relevantVariable: dcid:dc/svpg/dc/topic/LandUse/Coverage_LandUse
-relevantVariable: dcid:dc/svpg/dc/topic/LandUse/Coverage_SDGBiodiversity
-relevantVariable: dcid:dc/svpg/dc/topic/LandUse/Coverage_SDGReforestations
+name: "Land Cover"
+relevantVariable: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
 
-Node: dcid:dc/svpg/dc/topic/LandUse/Coverage_LandUse
+Node: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
 typeOf: dcs:StatVarPeerGroup
-name: "Land Use"
+name: "Percent of Land Cover by Type of Area"
 member: dcid:LandCoverFraction_BareSparseVegetation
 member: dcid:LandCoverFraction_BuiltUp
 member: dcid:LandCoverFraction_Cropland
 member: dcid:LandCoverFraction_Forest
 member: dcid:LandCoverFraction_HerbaceousVegetation
-# member: dcid:LandCoverFraction_MossAndLichen
 member: dcid:LandCoverFraction_PermanentWater
 member: dcid:LandCoverFraction_SeasonalWater
 member: dcid:LandCoverFraction_Shrubland
 member: dcid:LandCoverFraction_SnowIce
 
-Node: dcid:dc/svpg/dc/topic/LandUse/Coverage_SDGBiodiversity
+Node: dcid:dc/topic/SDGBiodiversity
+typeOf: dcs:Topic
+name: "Biodiversity"
+relevantVariable: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGBiodiversity
+
+Node: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGBiodiversity
 typeOf: dcs:StatVarPeerGroup
-name: "SDG Biodiversity"
+name: "Biodiversity"
 member: dcid:sdg/DC_ODA_BDVDL
 member: dcid:sdg/ER_PTD_FRHWTR
 member: dcid:sdg/ER_PTD_MTN
 member: dcid:sdg/ER_PTD_TERR
 member: dcid:sdg/ER_RSK_LST
 
-Node: dcid:dc/svpg/dc/topic/LandUse/Coverage_SDGReforestations
+Node: dcid:dc/topic/SDGReforestations
+typeOf: dcs:Topic
+name: "Reforestations"
+relevantVariable: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGReforestations
+
+Node: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGReforestations
 typeOf: dcs:StatVarPeerGroup
-name: "SDG Reforestations"
+name: "Reforestations"
 member: dcid:sdg/AG_LND_FRST
 member: dcid:sdg/AG_LND_FRSTBIOPHA
 member: dcid:sdg/AG_LND_FRSTCERT
@@ -398,113 +423,7 @@ member: dcid:sdg/AG_LND_FRSTCHG
 member: dcid:sdg/AG_LND_FRSTN
 member: dcid:sdg/AG_LND_FRSTPRCT
 
-Node: dcid:dc/topic/NaturalDisasters
-typeOf: dcs:Topic
-name: "Natural Disasters"
-relevantVariable: dcid:dc/topic/NaturalDisasters_Droughts
-relevantVariable: dcid:dc/topic/NaturalDisasters_Floods
-relevantVariable: dcid:dc/topic/NaturalDisasters_Fires
-relevantVariable: dcid:dc/topic/NaturalDisasters_HeatWaveEvents
-relevantVariable: dcid:dc/topic/NaturalDisasters_Precipitation
-relevantVariable: dcid:dc/topic/NaturalDisasters_WetBulbEvents
-relevantVariable: dcid:dc/topic/NaturalDisasters_Earthquake
-
-Node: dcid:dc/topic/NaturalDisasters_Droughts
-typeOf: dcs:Topic
-name: "Droughts"
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_Droughts
-
-Node: dcid:dc/topic/NaturalDisasters_Floods
-typeOf: dcs:Topic
-name: "Floods"
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_Floods
-
-Node: dcid:dc/topic/NaturalDisasters_Fires
-typeOf: dcs:Topic
-name: "Fires"
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_Fires
-
-Node: dcid:dc/topic/NaturalDisasters_HeatWaveEvents
-typeOf: dcs:Topic
-name: "HeatWave Events"
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Counts
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Intensity
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Duration
-
-Node: dcid:dc/topic/NaturalDisasters_Precipitation
-typeOf: dcs:Topic
-name: "Precipitation"
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_Precipitation
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_PrecipitationRate
-
-Node: dcid:dc/topic/NaturalDisasters_WetBulbEvents
-typeOf: dcs:Topic
-name: "Wet Bulb Events"
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_WetBulbEvents
-
-Node: dcid:dc/topic/NaturalDisasters_Earthquake
-typeOf: dcs:Topic
-name: "Earthquakes"
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Droughts
-typeOf: dcs:StatVarPeerGroup
-name: "Droughts"
-member: dcid:Count_DroughtEvent
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
-typeOf: dcs:StatVarPeerGroup
-name: "Earthquakes by Intensities"
-member: dcid:Count_EarthquakeEvent_M5To6
-member: dcid:Count_EarthquakeEvent_M6To7
-member: dcid:Count_EarthquakeEvent_M7To8
-member: dcid:Count_EarthquakeEvent_M8To9
-member: dcid:Count_EarthquakeEvent_M9Onwards
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Floods
-typeOf: dcs:StatVarPeerGroup
-name: "Floods"
-member: dcid:Count_CoastalFloodEvent
-member: dcid:Count_FloodEvent
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Fires
-typeOf: dcs:StatVarPeerGroup
-name: "Fires"
-member: dcid:Count_FireEvent
-member: dcid:Count_WildlandFireEvent
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Counts
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Heat Wave Events"
-member: dcid:Count_HeatWaveEvent
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Intensity
-typeOf: dcs:StatVarPeerGroup
-name: "Heat Wave Intensities"
-member: dcid:Intensity_HeatWaveEvent
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Duration
-typeOf: dcs:StatVarPeerGroup
-name: "Heat Wave Durations"
-member: dcid:NumberOfDays_HeatWaveEvent
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Precipitation
-typeOf: dcs:StatVarPeerGroup
-name: "Precipitation"
-member: dcid:Max_Rainfall
-member: dcid:Mean_Rainfall
-member: dcid:Min_Rainfall
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_PrecipitationRate
-typeOf: dcs:StatVarPeerGroup
-name: "Precipitation Rate"
-member: dcid:PrecipitationRate
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_WetBulbEvents
-typeOf: dcs:StatVarPeerGroup
-name: "Wet Bulb Events"
-member: dcid:Area_WetBulbTemperatureEvent
-member: dcid:Count_WetBulbTemperatureEvent
+#### Ocean Health ####
 
 Node: dcid:dc/topic/OceanHealth
 typeOf: dcs:Topic
@@ -525,100 +444,138 @@ name: "Litter and Pollution"
 member: dcid:sdg/EN_MAR_BEALITSQ
 member: dcid:sdg/EN_MAR_BEALIT_BP
 member: dcid:sdg/EN_MAR_BEALIT_OP
-# member: dcid:sdg/EN_MAR_CHLANM_High
 member: dcid:sdg/EN_MAR_PLASDD
 
 Node: dcid:dc/svpg/dc/topic/OceanHealth_ProtectedMarineArea
 typeOf: dcs:StatVarPeerGroup
 name: "Protected Marine Area"
-# member: dcid:sdg/ER_MRN_MARIN
-# member: dcid:sdg/ER_MRN_MARINT
 member: dcid:sdg/ER_MRN_MPA
+
+#### Pollutants ####
 
 Node: dcid:dc/topic/Pollutants
 typeOf: dcs:Topic
-name: "Pollutants"
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_AQI
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_CarbonMonoxide
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_Diesel
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_NitrogenDioxide
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_Ozone
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_PM10
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_PM2.5
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_SulfurDioxide
-relevantVariable: dcid:dc/topic/Pollutants_Smoke
+name: "Air Pollutants"
+relevantVariable: dcid:dc/topic/AirQualityIndex
+relevantVariable: dcid:dc/topic/CarbonMonoxide
+relevantVariable: dcid:dc/topic/NitrogenDioxide
+relevantVariable: dcid:dc/topic/Ozone
+relevantVariable: dcid:dc/topic/PM10
+relevantVariable: dcid:dc/topic/PM2.5
+relevantVariable: dcid:dc/topic/SmokePM2.5
+relevantVariable: dcid:dc/topic/DieselPM
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_AQI
-typeOf: dcs:StatVarPeerGroup
-name: "AQI"
+Node: dcid:dc/topic/AirQualityIndex
+typeOf: dcs:Topic
+name: "Air Quality Index"
 member: dcid:AirQualityIndex_AirPollutant
-# member: dcid:Max_AirQualityIndex_AirPollutant
-# member: dcid:Mean_AirQualityIndex_AirPollutant
-# member: dcid:Median_AirQualityIndex_AirPollutant
-# member: dcid:Min_AirQualityIndex_AirPollutant
+relevantVariable: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_CarbonMonoxide
+Node: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
 typeOf: dcs:StatVarPeerGroup
-name: "Carbon Monoxide"
+name: "AQI By Pollutant"
 member: dcid:AirQualityIndex_AirPollutant_CO
-member: dcid:Max_Concentration_AirPollutant_CO
-member: dcid:Mean_Concentration_AirPollutant_CO
-member: dcid:Median_Concentration_AirPollutant_CO
-# member: dcid:Min_Concentration_AirPollutant_CO
+member: dcid:AirQualityIndex_AirPollutant_NO2
+member: dcid:AirQualityIndex_AirPollutant_Ozone
+member: dcid:AirQualityIndex_AirPollutant_PM10
+member: dcid:AirQualityIndex_AirPollutant_PM2.5
+member: dcid:AirQualityIndex_AirPollutant_SO2
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_Diesel
-typeOf: dcs:StatVarPeerGroup
-name: "Diesel"
-member: dcid:Mean_Concentration_AirPollutant_DieselPM
+Node: dcid:dc/topic/DieselPM
+typeOf: dcs:Topic
+name: "Diesel PM"
+relevantVariable: dcid:Mean_Concentration_AirPollutant_DieselPM
 
 Node: dcid:dc/svpg/dc/topic/Pollutants_NitrogenDioxide
 typeOf: dcs:StatVarPeerGroup
 name: "Nitrogen Dioxide"
-member: dcid:AirQualityIndex_AirPollutant_NO2
 member: dcid:Max_Concentration_AirPollutant_NO2
 member: dcid:Mean_Concentration_AirPollutant_NO2
-# member: dcid:Median_Concentration_AirPollutant_NO2
-# member: dcid:Min_Concentration_AirPollutant_NO2
+member: dcid:AirQualityIndex_AirPollutant_NO2
+
+Node: dcid:dc/topic/NitrogenDioxide
+typeOf: dcs:Topic
+name: "NitrogenDioxide"
+relevantVariable: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "Nitrogen Dioxide Concentration"
+member: dcid:Max_Concentration_AirPollutant_NO2
+member: dcid:Mean_Concentration_AirPollutant_NO2
+
+Node: dcid:dc/topic/Ozone
+typeOf: dcs:Topic
+name: "Ozone"
+relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_Ozone
 
 Node: dcid:dc/svpg/dc/topic/Pollutants_Ozone
 typeOf: dcs:StatVarPeerGroup
-name: "Ozone"
-member: dcid:AirQualityIndex_AirPollutant_Ozone
+name: "Ozone Concentration"
 member: dcid:Max_Concentration_AirPollutant_Ozone
 member: dcid:Mean_Concentration_AirPollutant_Ozone
 member: dcid:Median_Concentration_AirPollutant_Ozone
-# member: dcid:Min_Concentration_AirPollutant_Ozone
+member: dcid:AirQualityIndex_AirPollutant_Ozone
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_PM10
-typeOf: dcs:StatVarPeerGroup
+Node: dcid:dc/topic/PM10
+typeOf: dcs:Topic
 name: "PM10"
-member: dcid:AirQualityIndex_AirPollutant_PM10
+relevantVariable: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "PM10 Concentration"
 member: dcid:Max_Concentration_AirPollutant_PM10
 member: dcid:Mean_Concentration_AirPollutant_PM10
-# member: dcid:Median_Concentration_AirPollutant_PM10
-# member: dcid:Min_Concentration_AirPollutant_PM10
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_PM2.5
+Node: dcid:dc/topic/PM2.5
+typeOf: dcs:Topic
+name: "PM 2.5"
+relevantVariable: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
+
+Node: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
 typeOf: dcs:StatVarPeerGroup
-name: "PM2.5"
-member: dcid:AirQualityIndex_AirPollutant_PM2.5
+name: "PM 2.5 Concentration"
 member: dcid:Max_Concentration_AirPollutant_PM2.5
 member: dcid:Mean_Concentration_AirPollutant_PM2.5
 member: dcid:Median_Concentration_AirPollutant_PM2.5
-# member: dcid:Min_Concentration_AirPollutant_PM2.5
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_Smoke
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke"
+Node: dcid:dc/topic/CarbonMonoxide
+typeOf: dcs:Topic
+name: "Carbon Monoxide"
+relevantVariable: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_SulfurDioxide
+Node: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
 typeOf: dcs:StatVarPeerGroup
-name: "Sulfur Dioxide"
-member: dcid:AirQualityIndex_AirPollutant_SO2
-member: dcid:Max_Concentration_AirPollutant_SO2
-member: dcid:Mean_Concentration_AirPollutant_SO2
-# member: dcid:Median_Concentration_AirPollutant_SO2
-# member: dcid:Min_Concentration_AirPollutant_SO2
+name: "Carbon Monoxide Concentration"
+member: dcid:Max_Concentration_AirPollutant_CO
+member: dcid:Mean_Concentration_AirPollutant_CO
+member: dcid:Median_Concentration_AirPollutant_CO
+member: dcid:Min_Concentration_AirPollutant_CO
+
+Node: dcid:dc/topic/SmokePM2.5
+typeOf: dcs:Topic
+name: "Smoke PM 2.5"
+relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
+relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
+
+Node: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
+typeOf: dcs:StatVarPeerGroup
+name: "Smoke PM 2.5 Concentration"
+member: dcid:Concentration_AirPollutant_SmokePM25
+member: dcid:Max_Concentration_AirPollutant_SmokePM25
+member: dcid:Mean_Concentration_AirPollutant_SmokePM25
+
+Node: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
+typeOf: dcs:StatVarPeerGroup
+name: "Number of Days with Smoke PM 2.5 Pollution by Level"
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above12PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above150PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above250PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above35PPM
+member: dcid:NumberOfDays_Concentration_SmokePM25_Above55PPM
+
+#### Consumption and Waste ####
 
 Node: dcid:dc/topic/ProductionConsumptionandWaste
 typeOf: dcs:Topic
@@ -651,85 +608,4 @@ member: dcid:sdg/AG_FOOD_WST
 member: dcid:sdg/AG_FOOD_WST_PC
 member: dcid:sdg/EN_EWT_GENPCAP
 member: dcid:sdg/EN_EWT_GENV
-
-Node: dcid:dc/topic/Pollutants_Smoke
-typeOf: dcs:Topic
-name: "Smoke"
-relevantVariable: dcid:dc/svpg/dc/topic/Smoke_SmokeDays
-relevantVariable: dcid:dc/svpg/dc/topic/Smoke_SmokePM2.5
-
-Node: dcid:dc/svpg/dc/topic/Smoke_SmokeDays
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke Days"
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above12PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above150PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above250PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above35PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above55PPM
-
-Node: dcid:dc/svpg/dc/topic/Smoke_SmokePM2.5
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke PM 2.5"
-# member: dcid:AirQualityIndex_AirPollutant_SmokePM2.5
-member: dcid:Max_Concentration_AirPollutant_SmokePM25
-member: dcid:Mean_Concentration_AirPollutant_SmokePM25
-member: dcid:Concentration_AirPollutant_SmokePM25
-# member: dcid:Min_Concentration_AirPollutant_SmokePM2.5
-
-Node: dcid:dc/topic/Temperatures
-typeOf: dcs:Topic
-name: "Temperatures"
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_DecadalLows5Pct
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_Decadalhighs5Pct
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_WetBulbEvents
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_YearlyHighs5Pct
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_Yearlylows5Pct
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_DecadalLows5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Decadal Projected Temperature Lows 5 Percent"
-member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_Decadalhighs5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Decadal Projected Temperature Highs 5 Percent"
-member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Maximum Temperature"
-member: dcid:Max_Temperature
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Mean Temperature"
-member: dcid:Mean_Temperature
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Minimum Temperature"
-member: dcid:Min_Temperature
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_WetBulbEvents
-typeOf: dcs:StatVarPeerGroup
-name: "Wet Bulb Events"
-member: dcid:Area_WetBulbTemperatureEvent
-member: dcid:Count_WetBulbTemperatureEvent
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_YearlyHighs5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Yearly Projected Temperature Highs 5 Percent"
-member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-member: dcid:MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_Yearlylows5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Yearly Projected Temperature Lows 5 Percent"
-member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 

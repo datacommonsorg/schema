@@ -1,36 +1,268 @@
 # LINT.IfChange
-# These are auto-generated.
-# Topics for Environment NL Insights.
+# This file contains Natural disasters and Climate stuff.
 # Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
 
-Node: dcid:dc/topic/AirQualityIndex
+### Natural Disasters ####
+
+Node: dcid:dc/topic/NaturalDisasters
 typeOf: dcs:Topic
-name: "Air Quality Index"
-relevantVariable: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
+name: "Natural Disasters"
+relevantVariable: dcid:dc/topic/Drought
+relevantVariable: dcid:dc/topic/Flood
+relevantVariable: dcid:dc/topic/Fire
+relevantVariable: dcid:dc/topic/HeatWave
+relevantVariable: dcid:dc/topic/WetBulbEvent
+relevantVariable: dcid:dc/topic/Storm
+relevantVariable: dcid:dc/topic/Earthquake
+relevantVariable: dcid:dc/topic/Avalanche
+relevantVariable: dcid:dc/topic/Landslide
+relevantVariable: dcid:dc/topic/Tsunami
 
-Node: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
-typeOf: dcs:StatVarPeerGroup
-name: "AQI By Pollutant"
-member: dcid:AirQualityIndex_AirPollutant
-member: dcid:AirQualityIndex_AirPollutant_CO
-member: dcid:AirQualityIndex_AirPollutant_NO2
-member: dcid:AirQualityIndex_AirPollutant_Ozone
-member: dcid:AirQualityIndex_AirPollutant_PM10
-member: dcid:AirQualityIndex_AirPollutant_PM2.5
-member: dcid:AirQualityIndex_AirPollutant_SO2
-
-Node: dcid:dc/topic/CarbonMonoxide
+Node: dcid:dc/topic/Drought
 typeOf: dcs:Topic
-name: "Carbon Monoxide"
-relevantVariable: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
+name: "Drought"
+relevantVariable: dcid:Area_DroughtEvent
+relevantVariable: dcid:ConsecutiveDryDays
+relevantVariable: dcid:Count_DroughtEvent
+relevantVariable: dcid:Mean_PalmerDroughtSeverityIndex
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent
 
-Node: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
+Node: dcid:dc/topic/Flood
+typeOf: dcs:Topic
+name: "Flood"
+relevantVariable: dcid:Area_FloodEvent
+relevantVariable: dcid:Count_FloodEvent
+relevantVariable: dcid:Count_FlashFloodEvent
+relevantVariable: dcid:dc/topic/CoastalFlood
+relevantVariable: dcid:dc/topic/RiverineFlood
+
+Node: dcid:dc/topic/RiverineFlood
+typeOf: dcs:Topic
+name: "Riverine Flood"
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent
+
+Node: dcid:dc/topic/CoastalFlood
+typeOf: dcs:Topic
+name: "Coastal Flood"
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent
+
+Node: dcid:dc/topic/Fire
+typeOf: dcs:Topic
+name: "Fire"
+relevantVariable: dcid:Count_FireEvent
+relevantVariable: dcid:Count_WildlandFireEvent
+relevantVariable: dcid:BurnedArea_FireEvent
+relevantVariable: dcid:Percent_BurnedArea_FireEvent
+relevantVariable: dcid:Percent_BurnedArea_FireEvent_Forest_HighSeverity
+relevantVariable: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
+
+Node: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
 typeOf: dcs:StatVarPeerGroup
-name: "Carbon Monoxide Concentration Stats"
-member: dcid:Max_Concentration_AirPollutant_CO
-member: dcid:Mean_Concentration_AirPollutant_CO
-member: dcid:Median_Concentration_AirPollutant_CO
-member: dcid:Min_Concentration_AirPollutant_CO
+name: "Wildfire Emissions by Pollutant"
+member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_Ammonia
+member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_CarbonMonoxide
+member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_OxidesOfNitrogen
+member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM10
+member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM2.5
+member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_SulfurDioxide
+member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_VolatileOrganicCompound
+
+Node: dcid:dc/topic/Storm
+typeOf: dcs:Topic
+name: "Storms"
+relevantVariable: dcid:dc/svpg/Storm_StormEventbytype
+relevantVariable: dcid:dc/topic/Cyclone
+relevantVariable: dcid:dc/topic/Hurricane
+relevantVariable: dcid:dc/topic/Tornado
+
+Node: dcid:dc/svpg/Storm_StormEventbytype
+typeOf: dcs:StatVarPeerGroup
+name: "Storms by Type"
+member: dcid:Count_DustStormEvent
+member: dcid:Count_ThunderstormWindEvent
+member: dcid:Count_TropicalStormEvent
+member: dcid:Count_WinterStormEvent
+member: dcid:Count_IceStormEvent
+member: dcid:Count_MarineThunderstormWindEvent
+member: dcid:Count_MarineTropicalStormEvent
+
+Node: dcid:dc/topic/Cyclone
+typeOf: dcs:Topic
+name: "Cyclones"
+relevantVariable: dcid:Count_CycloneEvent
+relevantVariable: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
+
+Node: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
+typeOf: dcs:StatVarPeerGroup
+name: "Cyclones by Type"
+member: dcid:Count_CycloneEvent_ExtratropicalCyclone
+member: dcid:Count_CycloneEvent_ExtratropicalCyclone
+member: dcid:Count_CycloneEvent_TropicalDisturbance
+member: dcid:Count_CycloneEvent_TropicalStorm
+
+Node: dcid:dc/topic/Hurricane
+typeOf: dcs:Topic
+name: "Hurricanes"
+relevantVariable: dcid:Count_HurricaneEvent
+relevantVariable: dcid:Count_HurricaneTyphoonEvent
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_HurricaneEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_HurricaneEvent
+
+Node: dcid:dc/topic/Tornado
+typeOf: dcs:Topic
+name: "Tornado"
+relevantVariable: dcid:Count_TornadoEvent
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_TornadoEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_TornadoEvent
+
+Node: dcid:dc/topic/HeatWave
+typeOf: dcs:Topic
+name: "Heat Wave"
+relevantVariable: dcid:Count_HeatWaveEvent
+relevantVariable: dcid:Intensity_HeatWaveEvent
+relevantVariable: dcid:NumberOfDays_HeatWaveEvent
+relevantVariable: dcid:PopulationWeighted_Count_HeatWaveEvent
+relevantVariable: dcid:PopulationWeighted_Intensity_HeatWaveEvent
+relevantVariable: dcid:PopulationWeighted_NumerOfDays_HeatWaveEvent
+relevantVariable: dcid:Count_ExcessiveHeatEvent
+
+Node: dcid:dc/topic/ColdEvent
+typeOf: dcs:Topic
+name: "Cold Events"
+member: dcid:Count_ColdWindChillEvent
+member: dcid:Count_ExtremeColdWindChillEvent
+member: dcid:Count_FreezingFogEvent
+member: dcid:Count_FrostFreezeEvent
+member: dcid:Count_WinterWeatherEvent
+
+Node: dcid:dc/topic/WetBulbEvent
+typeOf: dcs:Topic
+name: "Wet Bulb Event"
+relevantVariable: dcid:Area_WetBulbTemperatureEvent
+relevantVariable: dcid:Count_WetBulbTemperatureEvent
+
+Node: dcid:dc/topic/Avalanche
+typeOf: dcs:Topic
+name: "Avalanche"
+relevantVariable: dcid:Count_AvalancheEvent
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_AvalancheEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_AvalancheEvent
+
+Node: dcid:dc/topic/Landslide
+typeOf: dcs:Topic
+name: "Landslide"
+relevantVariable: dcid:Count_LandslideEvent
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_LandslideEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_LandslideEvent
+
+Node: dcid:dc/topic/Tsunami
+typeOf: dcs:Topic
+name: "Tsunami"
+relevantVariable: dcid:Count_TsunamiEvent
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_TsunamiEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_TsunamiEvent
+
+Node: dcid:dc/topic/Volcano
+typeOf: dcs:Topic
+name: "Volcano"
+relevantVariable: dcid:Count_VolcanicAshEvent
+relevantVariable: dcid:Count_VolcanicAshfallEvent
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_VolcanicActivityEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_VolcanicActivityEvent
+
+Node: dcid:dc/topic/Earthquake
+typeOf: dcs:Topic
+name: "Earthquake"
+relevantVariable: dcid:Count_EarthquakeEvent
+relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_EarthquakeEvent
+relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_EarthquakeEvent
+relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
+
+Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
+typeOf: dcs:StatVarPeerGroup
+name: "Earthquakes by Intensity"
+member: dcid:Count_EarthquakeEvent_M5To6
+member: dcid:Count_EarthquakeEvent_M6To7
+member: dcid:Count_EarthquakeEvent_M7To8
+member: dcid:Count_EarthquakeEvent_M8To9
+member: dcid:Count_EarthquakeEvent_M9Onwards
+
+### Precipitation ####
+
+Node: dcid:dc/topic/Precipitation
+typeOf: dcs:Topic
+name: "Precipitation"
+relevantVariable: dcid:HeavyPrecipitationIndex
+relevantVariable: dcid:InterannualRange_Monthly_Precipitation
+relevantVariable: dcid:PrecipitationRate
+relevantVariable: dcid:dc/topic/Rainfall
+relevantVariable: dcid:dc/topic/Snowfall
+
+Node: dcid:dc/topic/Rainfall
+typeOf: dcs:Topic
+name: "Rainfall"
+relevantVariable: dcid:dc/svpg/dc/topic/Rainfall_Amount
+relevantVariable: dcid:Count_HeavyRainEvent
+
+Node: dcid:dc/svpg/dc/topic/Rainfall_Amount
+typeOf: dcs:StatVarPeerGroup
+name: "Rainfall Amount"
+member: dcid:Max_Rainfall
+member: dcid:Mean_Rainfall
+member: dcid:Min_Rainfall
+
+Node: dcid:dc/topic/Snowfall
+typeOf: dcs:Topic
+name: "Snowfall"
+relevantVariable: dcid:dc/svpg/Snowfall_SnowfallAmount
+relevantVariable: dcid:Count_BlizzardEvent
+relevantVariable: dcid:Count_HeavySnowEvent
+relevantVariable: dcid:Count_LakeEffectSnowEvent
+relevantVariable: dcid:Count_WinterStormEvent
+
+Node: dcid:dc/svpg/Snowfall_SnowfallAmount
+typeOf: dcs:StatVarPeerGroup
+name: "Snowfall Amount"
+member: dcid:Max_Snowfall
+member: dcid:Mean_Snowfall
+member: dcid:Min_Snowfall
+
+#### Temperature ####
+
+Node: dcid:dc/topic/Temperatures
+typeOf: dcs:Topic
+name: "Temperature"
+relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
+relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
+relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
+relevantVariable: dcid:dc/topic/WetBulbEvent
+relevantVariable: dcid:dc/topic/TemperaturePredictions
+
+Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
+typeOf: dcs:StatVarPeerGroup
+name: "Historical Maximum Temperature"
+member: dcid:Max_Temperature
+
+Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
+typeOf: dcs:StatVarPeerGroup
+name: "Historical Mean Temperature"
+member: dcid:Mean_Temperature
+
+Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
+typeOf: dcs:StatVarPeerGroup
+name: "Historical Minimum Temperature"
+member: dcid:Min_Temperature
+
+Node: dcid:dc/topic/TemperaturePredictions
+typeOf: dcs:Topic
+name: "Temperature Predictions"
+relevantVariable: dcid:dc/topic/DecadeProjectedTemperatureHighs
+relevantVariable: dcid:dc/topic/DecadeProjectedTemperatureLows
+relevantVariable: dcid:dc/topic/YearlyProjectedTemperatureHighs
+relevantVariable: dcid:dc/topic/YearlyProjectedTemperatureLows
 
 Node: dcid:dc/topic/DecadeProjectedTemperatureHighs
 typeOf: dcs:Topic
@@ -43,99 +275,6 @@ typeOf: dcs:Topic
 name: "Decade Projected Temperature Lows"
 relevantVariable: dcid:dc/topic/MinTemperature1PercentLikelyAtLeastOncePerDecade
 relevantVariable: dcid:dc/topic/MinTemperature5PercentLikelyAtLeastOncePerDecade
-
-Node: dcid:dc/topic/Disasters
-typeOf: dcs:Topic
-name: "Disasters"
-relevantVariable: dcid:dc/topic/Drought
-relevantVariable: dcid:dc/topic/Fire
-relevantVariable: dcid:dc/topic/Flood
-relevantVariable: dcid:dc/topic/HeatEvent
-relevantVariable: dcid:dc/topic/Storm
-relevantVariable: dcid:dc/topic/WetBulbEvent
-
-Node: dcid:dc/topic/Drought
-typeOf: dcs:Topic
-name: "Drought"
-relevantVariable: dcid:Area_DroughtEvent
-relevantVariable: dcid:ConsecutiveDryDays
-relevantVariable: dcid:Count_DroughtEvent
-relevantVariable: dcid:Mean_PalmerDroughtSeverityIndex
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent
-
-Node: dcid:dc/topic/Environment
-typeOf: dcs:Topic
-name: "Environment"
-relevantVariable: dcid:dc/topic/Disasters
-relevantVariable: dcid:dc/topic/LandCover
-relevantVariable: dcid:dc/topic/Pollution
-relevantVariable: dcid:dc/topic/TemperaturePredictions
-
-Node: dcid:dc/topic/Fire
-typeOf: dcs:Topic
-name: "Fire"
-relevantVariable: dcid:BurnedArea_FireEvent
-relevantVariable: dcid:Count_FireEvent
-relevantVariable: dcid:Percent_BurnedArea_FireEvent
-relevantVariable: dcid:Percent_BurnedArea_FireEvent_Forest_HighSeverity
-
-Node: dcid:dc/topic/Flood
-typeOf: dcs:Topic
-name: "Flood"
-relevantVariable: dcid:Area_FloodEvent
-relevantVariable: dcid:Count_FlashFloodEvent
-relevantVariable: dcid:Count_FloodEvent
-relevantVariable: dcid:dc/topic/CoastalFlood
-relevantVariable: dcid:dc/topic/RiverineFlood
-
-Node: dcid:dc/topic/RiverineFlood
-typeOf: dcs:Topic
-name: "RiverineFlood"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent
-
-Node: dcid:dc/topic/CoastalFlood
-typeOf: dcs:Topic
-name: "CoastalFlood"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent
-relevantVariable: dcid:NaturalHazardRiskScore_SuperfundSite_CoastalFloodEvent
-
-Node: dcid:dc/topic/HeatEvent
-typeOf: dcs:Topic
-name: "Heat Event"
-relevantVariable: dcid:Count_ExcessiveHeatEvent
-relevantVariable: dcid:dc/topic/HeatEvent
-
-Node: dcid:dc/topic/HeatWave
-typeOf: dcs:Topic
-name: "Heat Wave"
-relevantVariable: dcid:Count_HeatWaveEvent
-relevantVariable: dcid:Intensity_HeatWaveEvent
-relevantVariable: dcid:NumberOfDays_HeatWaveEvent
-relevantVariable: dcid:PopulationWeighted_Count_HeatWaveEvent
-relevantVariable: dcid:PopulationWeighted_Intensity_HeatWaveEvent
-relevantVariable: dcid:PopulationWeighted_NumerOfDays_HeatWaveEvent
-
-Node: dcid:dc/topic/LandCover
-typeOf: dcs:Topic
-name: "Land Cover"
-relevantVariable: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
-
-Node: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
-typeOf: dcs:StatVarPeerGroup
-name: "Percent Of Land Cover By Type"
-member: dcid:LandCoverFraction_BareSparseVegetation
-member: dcid:LandCoverFraction_BuiltUp
-member: dcid:LandCoverFraction_Cropland
-member: dcid:LandCoverFraction_Forest
-member: dcid:LandCoverFraction_HerbaceousVegetation
-member: dcid:LandCoverFraction_MossAndLichen
-member: dcid:LandCoverFraction_PermanentWater
-member: dcid:LandCoverFraction_SeasonalWater
-member: dcid:LandCoverFraction_Shrubland
-member: dcid:LandCoverFraction_SnowIce
 
 Node: dcid:dc/topic/MaxTemperature1PercentLikelyAtLeastOncePerDecade
 typeOf: dcs:Topic
@@ -224,134 +363,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "Min Temperature Likely (5%) At Least Once Per Year By Scenario"
 member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
 member: dcid:MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
-
-Node: dcid:dc/topic/NitrogenDioxide
-typeOf: dcs:Topic
-name: "NitrogenDioxide"
-relevantVariable: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
-
-Node: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "Nitrogen Dioxide Concentration Stats"
-member: dcid:Max_Concentration_AirPollutant_NO2
-member: dcid:Mean_Concentration_AirPollutant_NO2
-member: dcid:Median_Concentration_AirPollutant_NO2
-member: dcid:Min_Concentration_AirPollutant_NO2
-
-Node: dcid:dc/topic/Ozone
-typeOf: dcs:Topic
-name: "Ozone"
-relevantVariable: dcid:Max_Concentration_AirPollutant_Ozone
-relevantVariable: dcid:Mean_Concentration_AirPollutant_Ozone
-relevantVariable: dcid:Median_Concentration_AirPollutant_Ozone
-relevantVariable: dcid:Min_Concentration_AirPollutant_Ozone
-
-Node: dcid:dc/topic/PM10
-typeOf: dcs:Topic
-name: "PM 10"
-relevantVariable: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
-
-Node: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "PM10 ConcentrationStats"
-member: dcid:Max_Concentration_AirPollutant_PM10
-member: dcid:Mean_Concentration_AirPollutant_PM10
-member: dcid:Median_Concentration_AirPollutant_PM10
-member: dcid:Min_Concentration_AirPollutant_PM10
-
-Node: dcid:dc/topic/PM2.5
-typeOf: dcs:Topic
-name: "PM 2.5"
-relevantVariable: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
-
-Node: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "PM2.5ConcentrationStats"
-member: dcid:Max_Concentration_AirPollutant_PM2.5
-member: dcid:Mean_Concentration_AirPollutant_PM2.5
-member: dcid:Median_Concentration_AirPollutant_PM2.5
-member: dcid:Min_Concentration_AirPollutant_PM2.5
-
-Node: dcid:dc/topic/PollutantConcentration
-typeOf: dcs:Topic
-name: "Pollutant Concentration"
-relevantVariable: dcid:dc/topic/CarbonMonoxide
-relevantVariable: dcid:dc/topic/NitrogenDioxide
-relevantVariable: dcid:dc/topic/Ozone
-relevantVariable: dcid:dc/topic/PM10
-relevantVariable: dcid:dc/topic/PM2.5
-relevantVariable: dcid:dc/topic/SulfurDioxide
-
-Node: dcid:dc/topic/Pollution
-typeOf: dcs:Topic
-name: "Pollution"
-relevantVariable: dcid:dc/topic/AirQualityIndex
-relevantVariable: dcid:dc/topic/PollutantConcentration
-
-Node: dcid:dc/topic/SmokePM2.5
-typeOf: dcs:Topic
-name: "Smoke PM 2.5"
-relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
-relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
-
-Node: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Days with Smoke PM 2.5 Pollution by Pollution Level"
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above12PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above150PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above250PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above35PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above55PPM
-
-Node: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke Concentration 2.5"
-member: dcid:Concentration_AirPollutant_SmokePM25
-member: dcid:Max_Concentration_AirPollutant_SmokePM25
-member: dcid:Mean_Concentration_AirPollutant_SmokePM25
-
-Node: dcid:dc/topic/Storm
-typeOf: dcs:Topic
-name: "Storm"
-relevantVariable: dcid:dc/svpg/Storm_StormEventbytype
-
-Node: dcid:dc/svpg/Storm_StormEventbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Storm Event by type"
-member: dcid:Count_DustStormEvent
-member: dcid:Count_IceStormEvent
-member: dcid:Count_MarineThunderstormWindEvent
-member: dcid:Count_MarineTropicalStormEvent
-member: dcid:Count_ThunderstormWindEvent
-member: dcid:Count_TropicalStormEvent
-member: dcid:Count_WinterStormEvent
-
-Node: dcid:dc/topic/SulfurDioxide
-typeOf: dcs:Topic
-name: "Sulfur Dioxide"
-relevantVariable: dcid:dc/svpg/dc/topic/SulfurDioxide_SulfurDioxideConcentrationStats
-
-Node: dcid:dc/svpg/dc/topic/SulfurDioxide_SulfurDioxideConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "Sulfur Dioxide Concentration Stats"
-member: dcid:Max_Concentration_AirPollutant_SO2
-member: dcid:Mean_Concentration_AirPollutant_SO2
-member: dcid:Median_Concentration_AirPollutant_SO2
-member: dcid:Min_Concentration_AirPollutant_SO2
-
-Node: dcid:dc/topic/TemperaturePredictions
-typeOf: dcs:Topic
-name: "Temperature Predictions"
-relevantVariable: dcid:dc/topic/DecadeProjectedTemperatureHighs
-relevantVariable: dcid:dc/topic/DecadeProjectedTemperatureLows
-relevantVariable: dcid:dc/topic/YearlyProjectedTemperatureHighs
-relevantVariable: dcid:dc/topic/YearlyProjectedTemperatureLows
-
-Node: dcid:dc/topic/WetBulbEvent
-typeOf: dcs:Topic
-name: "Wet Bulb Event"
-relevantVariable: dcid:Area_WetBulbTemperatureEvent
-relevantVariable: dcid:Count_WetBulbTemperatureEvent
 
 Node: dcid:dc/topic/YearlyProjectedTemperatureHighs
 typeOf: dcs:Topic

@@ -18,20 +18,10 @@ typeOf: dcs:StatVarPeerGroup
 name: "Poultry and Livestock"
 memberList: "Count_FarmInventory_BeefCows,Count_FarmInventory_Broilers,Count_FarmInventory_CattleAndCalves,Count_FarmInventory_HogsAndPigs,Count_FarmInventory_Layers,Count_FarmInventory_MilkCows,Count_FarmInventory_SheepAndLambs"
 
-Node: dcid:dc/topic/MedicalConditions
-typeOf: dcs:Topic
-name: "Medical Conditions"
-relevantVariableList: "Percent_Person_WithArthritis,Percent_Person_WithAsthma,Percent_Person_WithCancerExcludingSkinCancer,Percent_Person_WithChronicKidneyDisease,Percent_Person_WithChronicObstructivePulmonaryDisease,Percent_Person_WithCoronaryHeartDisease,Percent_Person_WithDiabetes,Percent_Person_WithHighBloodPressure,Percent_Person_WithHighCholesterol,Percent_Person_WithMentalHealthNotGood,Percent_Person_WithPhysicalHealthNotGood,Percent_Person_WithStroke"
-
 Node: dcid:dc/topic/Literacy
 typeOf: dcs:Topic
 name: "Literacy"
 relevantVariableList: "Count_Person_Literate,Count_Person_Illiterate"
-
-Node: dcid:dc/topic/Temperature
-typeOf: dcs:Topic
-name: "Temperature"
-relevantVariableList: "Mean_Temperature,Max_Temperature,Min_Temperature"
 
 Node: dcid:dc/topic/AdolescentBirthRate
 typeOf: dcs:Topic
@@ -78,11 +68,6 @@ typeOf: dcs:Topic
 name: "AmbientAirPollution"
 relevantVariableList: "sdg/SH_AAP_ASMORT,sdg/SH_HAP_ASMORT,sdg/SH_STA_ASAIRP"
 
-Node: dcid:dc/topic/Avalanche
-typeOf: dcs:Topic
-name: "Avalanche"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_AvalancheEvent,Count_AvalancheEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_AvalancheEvent"
-
 Node: dcid:dc/topic/BankingAccess
 typeOf: dcs:Topic
 name: "BankingAccess"
@@ -118,21 +103,6 @@ typeOf: dcs:Topic
 name: "Births"
 relevantVariableList: "Count_BirthEvent,Count_BirthEvent_AsAFractionOfCount_Person,FertilityRate_Person_Female,MeanMothersAge_BirthEvent,Mean_BirthWeight_BirthEvent_LiveBirth,MedianMothersAge_BirthEvent"
 
-Node: dcid:dc/topic/CO2Emissions
-typeOf: dcs:Topic
-name: "CO2 Emissions"
-relevantVariableList: "eia/INTL.4008-8-MMTCD.A,dc/svpg/CO2Emissions_AnnualCO2EmissionsbySource,dc/svpg/CO2Emissions_MonthlyCO2EmissionsbySource"
-
-Node: dcid:dc/svpg/CO2Emissions_AnnualCO2EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "Annual CO2 Emissions by Source"
-memberList: "eia/TOTAL.AVTCE.A,eia/TOTAL.CKTCE.A,eia/TOTAL.DMTCE.A,eia/TOTAL.HLTCE.A,eia/TOTAL.JFTCE.A,eia/TOTAL.KSTCE.A,eia/TOTAL.LUTCE.A,eia/TOTAL.MMTCE.A,eia/TOTAL.NNTCE.A,eia/TOTAL.OPTCE.A,eia/TOTAL.PCTCE.A,eia/TOTAL.PMTCE.A,eia/TOTAL.RFTCE.A,eia/TOTAL.TETCE.A"
-
-Node: dcid:dc/svpg/CO2Emissions_MonthlyCO2EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "Monthly CO2 Emissions by Source"
-memberList: "eia/TOTAL.AVTCE.M,eia/TOTAL.CKTCE.M,eia/TOTAL.DMTCE.M,eia/TOTAL.HLTCE.M,eia/TOTAL.JFTCE.M,eia/TOTAL.KSTCE.M,eia/TOTAL.LUTCE.M,eia/TOTAL.MMTCE.M,eia/TOTAL.NNTCE.M,eia/TOTAL.OPTCE.M,eia/TOTAL.PCTCE.M,eia/TOTAL.PMTCE.M,eia/TOTAL.RFTCE.M,eia/TOTAL.TETCE.M"
-
 Node: dcid:dc/topic/COVID19
 typeOf: dcs:Topic
 name: "COVID-19"
@@ -147,26 +117,6 @@ Node: dcid:dc/svpg/COVID19_COVID19CumulativeCount
 typeOf: dcs:StatVarPeerGroup
 name: "COVID-19 Cumulative Count"
 memberList: "CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedCase,CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedOrProbableCase,CumulativeCount_MedicalConditionIncident_COVID_19_PatientDeceased,CumulativeCount_MedicalConditionIncident_COVID_19_PatientRecovered"
-
-Node: dcid:dc/topic/CardiovascularDisease
-typeOf: dcs:Topic
-name: "CardiovascularDisease"
-relevantVariableList: "dc/svpg/CardiovascularDisease_CardiovascularDiseasePerCapitaByAge"
-
-Node: dcid:dc/svpg/CardiovascularDisease_CardiovascularDiseasePerCapitaByAge
-typeOf: dcs:StatVarPeerGroup
-name: "Cardiovascular Disease Per Capita By Age"
-memberList: "Count_MedicalConditionIncident_0To4Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person,Count_MedicalConditionIncident_15To29Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person,Count_MedicalConditionIncident_30To44Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person,Count_MedicalConditionIncident_45To59Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person,Count_MedicalConditionIncident_5To14Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person,Count_MedicalConditionIncident_60OrMoreYears_ConditionCardiovascularDisease_AsAFractionOf_Count_Person,Count_MedicalConditionIncident_60To69Years_ConditionCardiovascularDisease_AsAFractionOf_Count_Person,Count_MedicalConditionIncident_70OrMoreYears_ConditionCardiovascularDisease_AsAFractionOf_Count_Person"
-
-Node: dcid:dc/topic/Clouds
-typeOf: dcs:Topic
-name: "Clouds"
-relevantVariableList: "Count_FunnelCloudEvent,dc/topic/Visibility,dc/svpg/Clouds_CloudCover"
-
-Node: dcid:dc/svpg/Clouds_CloudCover
-typeOf: dcs:StatVarPeerGroup
-name: "Cloud Cover"
-memberList: "Max_CloudCover,Mean_CloudCover,Min_CloudCover"
 
 Node: dcid:dc/topic/CollegeOrUniversityStudentHousingResidents
 typeOf: dcs:Topic
@@ -187,16 +137,6 @@ Node: dcid:dc/svpg/Crime_CrimesbyType
 typeOf: dcs:StatVarPeerGroup
 name: "Crimes by Type"
 memberList: "Count_CriminalActivities_AggravatedAssault,Count_CriminalActivities_Arson,Count_CriminalActivities_Burglary,Count_CriminalActivities_ForcibleRape,Count_CriminalActivities_LarcenyTheft,Count_CriminalActivities_MotorVehicleTheft,Count_CriminalActivities_PropertyCrime,Count_CriminalActivities_Robbery,Count_CriminalActivities_ViolentCrime"
-
-Node: dcid:dc/topic/Cyclone
-typeOf: dcs:Topic
-name: "Cyclone"
-relevantVariableList: "Count_CycloneEvent,dc/svpg/Cyclone_Cycloneeventsbytype"
-
-Node: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Cyclone events by type"
-memberList: "Count_CycloneEvent_ExtratropicalCyclone,Count_CycloneEvent_ExtratropicalCyclone,Count_CycloneEvent_TropicalDisturbance,Count_CycloneEvent_TropicalStorm"
 
 Node: dcid:dc/topic/Dengue
 typeOf: dcs:Topic
@@ -243,65 +183,15 @@ typeOf: dcs:StatVarPeerGroup
 name: "Population by Disability Status"
 memberList: "Count_Person_NoDisability,Count_Person_WithDisability"
 
-Node: dcid:dc/topic/Disease
-typeOf: dcs:Topic
-name: "Disease"
-relevantVariableList: "dc/topic/CardiovascularDisease,dc/topic/Dengue,dc/topic/Diabetes,dc/topic/HIV,dc/topic/Malaria,dc/topic/NeglectedTropicalDiseases,dc/topic/Tuberculosis"
-
-Node: dcid:dc/topic/Dust
-typeOf: dcs:Topic
-name: "Dust"
-relevantVariableList: "Count_DustDevilEvent,Count_DustStormEvent"
-
-Node: dcid:dc/topic/Earthquake
-typeOf: dcs:Topic
-name: "Earthquake"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_EarthquakeEvent,Count_EarthquakeEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_EarthquakeEvent,NaturalHazardRiskScore_SuperfundSite_EarthquakeEvent"
-
-Node: dcid:dc/topic/ExcessiveColdEvent
-typeOf: dcs:Topic
-name: "ExcessiveColdEvent"
-relevantVariableList: "NaturalHazardRiskScore_SuperfundSite_ExtremeColdWindChillEvent,dc/svpg/ExcessiveColdEvent_ExcessiveColdEventbyType"
-
-Node: dcid:dc/svpg/ExcessiveColdEvent_ExcessiveColdEventbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Excessive Cold Event by Type"
-memberList: "Count_ColdWindChillEvent,Count_ExtremeColdWindChillEvent,Count_FreezingFogEvent,Count_FrostFreezeEvent,Count_WinterWeatherEvent"
-
-Node: dcid:dc/topic/ExcessiveHeatEvent
-typeOf: dcs:Topic
-name: "ExcessiveHeatEvent"
-relevantVariableList: "Count_ExcessiveHeatEvent,dc/topic/HeatWave"
-
 Node: dcid:dc/topic/ExportSubsidies
 typeOf: dcs:Topic
 name: "ExportSubsidies"
 relevantVariableList: "sdg/AG_PRD_XSUBDY"
 
-Node: dcid:dc/topic/ExtremeTide
-typeOf: dcs:Topic
-name: "ExtremeTide"
-relevantVariableList: "Count_AstronomicalLowTideEvent,Count_RipCurrentEvent,Count_StormSurgeTideEvent"
-
-Node: dcid:dc/topic/Fog
-typeOf: dcs:Topic
-name: "Fog"
-relevantVariableList: "dc/topic/Visibility,dc/svpg/Fog_Fogeventsbytype"
-
-Node: dcid:dc/svpg/Fog_Fogeventsbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Fog events by type"
-memberList: "Count_DenseFogEvent,Count_FreezingFogEvent,Count_FreezingFogEvent"
-
 Node: dcid:dc/topic/Forest
 typeOf: dcs:Topic
 name: "Forest"
 relevantVariableList: "Area_Forest,Mean_MaxTemperature_Forest,Mean_PalmerDroughtSeverityIndex_Forest,Mean_VaporPressureDeficit_Forest"
-
-Node: dcid:dc/topic/FossilFuelSubsidies
-typeOf: dcs:Topic
-name: "FossilFuelSubsidies"
-relevantVariableList: "sdg/ER_FFS_CMPT_CD,sdg/ER_FFS_CMPT_GDP,sdg/ER_FFS_CMPT_PC_CD"
 
 Node: dcid:dc/topic/GroupQuartersResidents
 typeOf: dcs:Topic
@@ -333,11 +223,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "HIV Cases By Race"
 memberList: "Count_MedicalConditionIncident_ConditionHIVAIDS_AmericanIndianAndAlaskaNativeAlone,Count_MedicalConditionIncident_ConditionHIVAIDS_Asian_PacificIslander,Count_MedicalConditionIncident_ConditionHIVAIDS_Black_AfricanAmericanAlone,Count_MedicalConditionIncident_ConditionHIVAIDS_OtherRace,Count_MedicalConditionIncident_ConditionHIVAIDS_WhiteAlone"
 
-Node: dcid:dc/topic/Hail
-typeOf: dcs:Topic
-name: "Hail"
-relevantVariableList: "Count_HailEvent,Count_MarineHailEvent,NaturalHazardRiskScore_SuperfundSite_HailEvent"
-
 Node: dcid:dc/topic/HateCrimes
 typeOf: dcs:Topic
 name: "HateCrimes"
@@ -362,16 +247,6 @@ Node: dcid:dc/topic/HeightStunting
 typeOf: dcs:Topic
 name: "HeightStunting"
 relevantVariableList: "sdg/SH_STA_STNTN.AGE--Y0T4,sdg/SH_STA_STNT.AGE--Y0T4"
-
-Node: dcid:dc/topic/HighWind
-typeOf: dcs:Topic
-name: "HighWind"
-relevantVariableList: "Count_HighWindEvent,Count_MarineHighWindEvent,Count_MarineStrongWindEvent,NaturalHazardRiskScore_SuperfundSite_HighWindEvent"
-
-Node: dcid:dc/topic/Hurricane
-typeOf: dcs:Topic
-name: "Hurricane"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_HurricaneEvent,Count_HurricaneEvent,Count_HurricaneTyphoonEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_HurricaneEvent,NaturalHazardRiskScore_SuperfundSite_HurricaneEvent"
 
 Node: dcid:dc/topic/Incarceration
 typeOf: dcs:Topic
@@ -418,11 +293,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "JuvenileFacilities Population by Gender"
 memberList: "Count_Person_Female_ResidesInJuvenileFacilities,Count_Person_Male_ResidesInJuvenileFacilities"
 
-Node: dcid:dc/topic/Landslide
-typeOf: dcs:Topic
-name: "Landslide"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_LandslideEvent,Count_LandslideEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_LandslideEvent,NaturalHazardRiskScore_SuperfundSite_LandslideEvent"
-
 Node: dcid:dc/topic/Malaria
 typeOf: dcs:Topic
 name: "Malaria"
@@ -442,16 +312,6 @@ Node: dcid:dc/svpg/Malnutrition_UnderweightPopulationbyGender
 typeOf: dcs:StatVarPeerGroup
 name: "Underweight Population by Gender"
 memberList: "Percent_Underweight_In_Count_Person_Female,Percent_Underweight_In_Count_Person_Male"
-
-Node: dcid:dc/topic/MarineEvents
-typeOf: dcs:Topic
-name: "MarineEvents"
-relevantVariableList: "dc/svpg/MarineEvents_MarineEventsbyType"
-
-Node: dcid:dc/svpg/MarineEvents_MarineEventsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Marine Events by Type"
-memberList: "Count_MarineDenseFogEvent,Count_MarineHailEvent,Count_MarineHighWindEvent,Count_MarineHurricaneTyphoonEvent,Count_MarineLightningEvent,Count_MarineStrongWindEvent,Count_MarineThunderstormWindEvent,Count_MarineTropicalDepressionEvent,Count_MarineTropicalStormEvent"
 
 Node: dcid:dc/topic/Military
 typeOf: dcs:Topic
@@ -553,11 +413,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "Nursing Facilities Population by Gender"
 memberList: "Count_Person_Female_ResidesInNursingFacilities,Count_Person_Male_ResidesInNursingFacilities"
 
-Node: dcid:dc/topic/PalmerDroughtSeverityIndex
-typeOf: dcs:Topic
-name: "PalmerDroughtSeverityIndex"
-relevantVariableList: "Mean_PalmerDroughtSeverityIndex,Mean_PalmerDroughtSeverityIndex_Forest,PalmerDroughtSeverityIndex_Atmosphere"
-
 Node: dcid:dc/topic/Parliament
 typeOf: dcs:Topic
 name: "Parliament"
@@ -648,21 +503,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "Prevalance of normal weight population by gender"
 memberList: "Percent_Normalweight_In_Count_Person_Female,Percent_Normalweight_In_Count_Person_Male"
 
-Node: dcid:dc/topic/Precipitation
-typeOf: dcs:Topic
-name: "Precipitation"
-relevantVariableList: "HeavyPrecipitationIndex,InterannualRange_Monthly_Precipitation,Max_PrecipitableWater_Atmosphere,Mean_PrecipitableWater_Atmosphere,Min_PrecipitableWater_Atmosphere,PrecipitationRate,dc/topic/Rainfall,dc/topic/Snowfall"
-
-Node: dcid:dc/topic/Rainfall
-typeOf: dcs:Topic
-name: "Rainfall"
-relevantVariableList: "Count_FloodEvent,Count_HeavyRainEvent,dc/svpg/Rainfall_RainfallAmount"
-
-Node: dcid:dc/svpg/Rainfall_RainfallAmount
-typeOf: dcs:StatVarPeerGroup
-name: "Rainfall Amount"
-memberList: "Max_Rainfall,Mean_Rainfall,Min_Rainfall"
-
 Node: dcid:dc/topic/Religion
 typeOf: dcs:Topic
 name: "Religion"
@@ -697,16 +537,6 @@ Node: dcid:dc/svpg/Sanitation_ProportionofPopulationusingsafelymanagedsanitation
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of Population using safely managed sanitation services by residency"
 memberList: "sdg/SH_SAN_SAFE.URBANISATION--R,sdg/SH_SAN_SAFE.URBANISATION--U"
-
-Node: dcid:dc/topic/Snowfall
-typeOf: dcs:Topic
-name: "Snowfall"
-relevantVariableList: "Count_BlizzardEvent,Count_HeavySnowEvent,Count_LakeEffectSnowEvent,Count_WinterStormEvent,dc/svpg/Snowfall_SnowfallAmount"
-
-Node: dcid:dc/svpg/Snowfall_SnowfallAmount
-typeOf: dcs:StatVarPeerGroup
-name: "Snowfall Amount"
-memberList: "Max_Snowfall,Mean_Snowfall,Min_Snowfall"
 
 Node: dcid:dc/topic/SocialSupport
 typeOf: dcs:Topic
@@ -798,36 +628,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "World weighted tariff average by product type"
 memberList: "sdg/TM_TAX_WMPS.PRODUCT--AGG_AGR,sdg/TM_TAX_WMPS.PRODUCT--AGG_ARMS,sdg/TM_TAX_WMPS.PRODUCT--AGG_CLTH,sdg/TM_TAX_WMPS.PRODUCT--AGG_IND,sdg/TM_TAX_WMPS.PRODUCT--AGG_OIL,sdg/TM_TAX_WMPS.PRODUCT--AGG_TXT"
 
-Node: dcid:dc/topic/Thunderstorm
-typeOf: dcs:Topic
-name: "Thunderstorm"
-relevantVariableList: "Count_MarineThunderstormWindEvent,Count_ThunderstormWindEvent"
-
-Node: dcid:dc/topic/Tornado
-typeOf: dcs:Topic
-name: "Tornado"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_TornadoEvent,Count_TornadoEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_TornadoEvent,NaturalHazardRiskScore_SuperfundSite_TornadoEvent"
-
-Node: dcid:dc/topic/TropicalWeatherEvents
-typeOf: dcs:Topic
-name: "TropicalWeatherEvents"
-relevantVariableList: "dc/svpg/TropicalWeatherEvents_TropicalCycloneEventsbyType,dc/svpg/TropicalWeatherEvents_TropicalWeatherEventsbyType"
-
-Node: dcid:dc/svpg/TropicalWeatherEvents_TropicalCycloneEventsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Tropical Cyclone Events by Type"
-memberList: "Count_CycloneEvent_TropicalDisturbance,Count_CycloneEvent_TropicalStorm"
-
-Node: dcid:dc/svpg/TropicalWeatherEvents_TropicalWeatherEventsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Tropical Weather Events by Type"
-memberList: "Count_MarineTropicalDepressionEvent,Count_MarineTropicalStormEvent,Count_TropicalDepressionEvent,Count_TropicalStormEvent"
-
-Node: dcid:dc/topic/Tsunami
-typeOf: dcs:Topic
-name: "Tsunami"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_TsunamiEvent,Count_TsunamiEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_TsunamiEvent"
-
 Node: dcid:dc/topic/Tuberculosis
 typeOf: dcs:Topic
 name: "Tuberculosis"
@@ -878,11 +678,6 @@ typeOf: dcs:StatVarPeerGroup
 name: "Visibility"
 memberList: "Max_Visibility,Mean_Visibility,Min_Visibility"
 
-Node: dcid:dc/topic/Volcano
-typeOf: dcs:Topic
-name: "Volcano"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_VolcanicActivityEvent,Count_VolcanicAshEvent,Count_VolcanicAshfallEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_VolcanicActivityEvent"
-
 Node: dcid:dc/topic/Voting
 typeOf: dcs:Topic
 name: "Voting"
@@ -892,21 +687,6 @@ Node: dcid:dc/svpg/Voting_Proportionofvotingrightsofdevelopingcountriesbyorganiz
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of voting rights of developing countries by organization type"
 memberList: "sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_ADB,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_AFDB,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_ECOSOC,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_FSB,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IADB,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IBRD,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IFC,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_IMF,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_UNGA,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_UNSC,sdg/SG_INT_VRTDEV.NAME_OF_INTERNATIONAL_INSTITUTION--IO_WTO"
-
-Node: dcid:dc/topic/Weather
-typeOf: dcs:Topic
-name: "Weather"
-relevantVariableList: "ConsecutiveDryDays,HeavyPrecipitationIndex,Max_BarometricPressure,dc/topic/Temperature"
-
-Node: dcid:dc/topic/Wildfire
-typeOf: dcs:Topic
-name: "Wildfire"
-relevantVariableList: "BurnedArea_FireEvent,Count_FireEvent,NaturalHazardRiskScore_SuperfundSite_WildfireEvent,Percent_BurnedArea_FireEvent,Percent_BurnedArea_FireEvent_Forest_HighSeverity,dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource"
-
-Node: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
-typeOf: dcs:StatVarPeerGroup
-name: "Annual amount of wildfire emissions by source"
-memberList: "Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_Ammonia,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_CarbonMonoxide,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_OxidesOfNitrogen,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM10,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM2.5,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_SulfurDioxide,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_VolatileOrganicCompound"
 
 Node: dcid:dc/topic/DivorcedFemalePopulationByAge
 typeOf: dcs:Topic
@@ -2388,7 +2168,7 @@ typeOf: dcs:StatVarPeerGroup
 name: "Male Population With Stroke By Age"
 memberList: "Count_Person_0To4Years_Male_ConditionStroke,Count_Person_10To14Years_Male_ConditionStroke,Count_Person_15To19Years_Male_ConditionStroke,Count_Person_20To24Years_Male_ConditionStroke,Count_Person_25To29Years_Male_ConditionStroke,Count_Person_30To34Years_Male_ConditionStroke,Count_Person_35To39Years_Male_ConditionStroke,Count_Person_40To44Years_Male_ConditionStroke,Count_Person_45To49Years_Male_ConditionStroke,Count_Person_50To54Years_Male_ConditionStroke,Count_Person_55To59Years_Male_ConditionStroke,Count_Person_5To9Years_Male_ConditionStroke,Count_Person_60To64Years_Male_ConditionStroke,Count_Person_65To69Years_Male_ConditionStroke,Count_Person_70To74Years_Male_ConditionStroke,Count_Person_75To79Years_Male_ConditionStroke,Count_Person_80To84Years_Male_ConditionStroke,Count_Person_85OrMoreYears_Male_ConditionStroke"
 
-Node: dcid:dc/topic/Commute
+Node: dcid:dc/topic/WorkCommute
 typeOf: dcs:Topic
 name: "Commute"
 relevantVariableList: "dc/topic/CommuteMode,dc/topic/CommuteTime"
@@ -2475,7 +2255,7 @@ relevantVariableList: "dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusT
 
 Node: dcid:dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusType
 typeOf: dcs:StatVarPeerGroup
-name: "US Citizenship by Status Type"
+name: "Population by US Citizenship"
 memberList: "Count_Person_NotAUSCitizen,Count_Person_USCitizenBornInTheUnitedStates,Count_Person_USCitizenByNaturalization"
 
 Node: dcid:dc/topic/Demographics
@@ -2520,7 +2300,7 @@ memberList: "Count_Person_WhiteAloneNotHispanicOrLatino,Count_Person_NotHispanic
 
 Node: dcid:dc/topic/DivorcedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Divorced Population By Demographic"
+name: "Divorced Population"
 relevantVariableList: "Count_Person_Divorced,dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByGender,dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByRace"
 
 Node: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByGender
@@ -2540,7 +2320,7 @@ relevantVariableList: "dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulatio
 
 Node: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
 typeOf: dcs:StatVarPeerGroup
-name: "English Speaking Population by Language Level"
+name: "Ability to Speak English"
 memberList: "Count_Person_SpeakEnglishNotAtAll,Count_Person_SpeakEnglishNotWell,Count_Person_SpeakEnglishWell"
 
 Node: dcid:dc/topic/Immigration
@@ -2566,7 +2346,7 @@ relevantVariableList: "Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_Foreign
 Node: dcid:dc/topic/MaritalStatus
 typeOf: dcs:Topic
 name: "Marital Status"
-relevantVariableList: "dc/topic/DivorcedPopulationByDemographic,dc/topic/MaritalStatusBreakdown,dc/topic/MarriedPopulationByDemographic,dc/topic/NeverMarriedPopulationByDemographic,dc/topic/WidowedPopulationByDemographic"
+relevantVariableList: "dc/topic/MaritalStatusBreakdown,dc/topic/DivorcedPopulationByDemographic,dc/topic/MarriedPopulationByDemographic,dc/topic/NeverMarriedPopulationByDemographic,dc/topic/WidowedPopulationByDemographic"
 
 Node: dcid:dc/topic/MaritalStatusBreakdown
 typeOf: dcs:Topic
@@ -2580,8 +2360,8 @@ memberList: "Count_Person_Divorced,Count_Person_MarriedAndNotSeparated,Count_Per
 
 Node: dcid:dc/topic/MarriedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Married Population By Demographic"
-relevantVariableList: "Count_Person_InLaborForce_MarriedAndNotSeparated,dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByGender,dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByRace"
+name: "Married Population"
+relevantVariableList: "Count_Person_MarriedAndNotSeparated,dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByGender,dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByRace"
 
 Node: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByGender
 typeOf: dcs:StatVarPeerGroup
@@ -2600,8 +2380,8 @@ relevantVariableList: "dc/topic/CitizenshipStatus,dc/topic/Immigration,dc/topic/
 
 Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Never Married Population By Demographic"
-relevantVariableList: "Count_Person_InLaborForce_NeverMarried,dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByGender,dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByRace"
+name: "Never Married Population"
+relevantVariableList: "Count_Person_NeverMarried,dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByGender,dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByRace"
 
 Node: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByGender
 typeOf: dcs:StatVarPeerGroup
@@ -2635,18 +2415,18 @@ relevantVariableList: "dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPerso
 
 Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryOldGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonVeryOldGender"
+name: "Population 85 or over by Gender "
 memberList: "Count_Person_85OrMoreYears_Female,Count_Person_85OrMoreYears_Male"
 
 Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryYoungGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonVeryYoungGender"
+name: "Children Population by Gender"
 memberList: "Count_Person_0To4Years_Female,Count_Person_0To4Years_Male"
 
 Node: dcid:dc/topic/WidowedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Widowed Population By Demographic"
-relevantVariableList: "Count_Person_InLaborForce_Widowed,dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender,dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByRace"
+name: "Widowed Population"
+relevantVariableList: "Count_Person_Widowed,dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender,dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByRace"
 
 Node: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender
 typeOf: dcs:StatVarPeerGroup
@@ -3088,25 +2868,165 @@ typeOf: dcs:Topic
 name: "Teacher"
 relevantVariableList: "dc/topic/EducationFaculty,dc/topic/StudentTeacherRatio,dc/topic/SupportServicesStaffInSchools"
 
-Node: dcid:dc/topic/AirQualityIndex
+Node: dcid:dc/topic/NaturalDisasters
 typeOf: dcs:Topic
-name: "Air Quality Index"
-relevantVariableList: "dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant"
+name: "Natural Disasters"
+relevantVariableList: "dc/topic/Drought,dc/topic/Flood,dc/topic/Fire,dc/topic/HeatWave,dc/topic/WetBulbEvent,dc/topic/Storm,dc/topic/Earthquake,dc/topic/Avalanche,dc/topic/Landslide,dc/topic/Tsunami"
 
-Node: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
-typeOf: dcs:StatVarPeerGroup
-name: "AQI By Pollutant"
-memberList: "AirQualityIndex_AirPollutant,AirQualityIndex_AirPollutant_CO,AirQualityIndex_AirPollutant_NO2,AirQualityIndex_AirPollutant_Ozone,AirQualityIndex_AirPollutant_PM10,AirQualityIndex_AirPollutant_PM2.5,AirQualityIndex_AirPollutant_SO2"
-
-Node: dcid:dc/topic/CarbonMonoxide
+Node: dcid:dc/topic/Drought
 typeOf: dcs:Topic
-name: "Carbon Monoxide"
-relevantVariableList: "dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats"
+name: "Drought"
+relevantVariableList: "Area_DroughtEvent,ConsecutiveDryDays,Count_DroughtEvent,Mean_PalmerDroughtSeverityIndex,Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent"
 
-Node: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
+Node: dcid:dc/topic/Flood
+typeOf: dcs:Topic
+name: "Flood"
+relevantVariableList: "Area_FloodEvent,Count_FloodEvent,Count_FlashFloodEvent,dc/topic/CoastalFlood,dc/topic/RiverineFlood"
+
+Node: dcid:dc/topic/RiverineFlood
+typeOf: dcs:Topic
+name: "Riverine Flood"
+relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent"
+
+Node: dcid:dc/topic/CoastalFlood
+typeOf: dcs:Topic
+name: "Coastal Flood"
+relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent"
+
+Node: dcid:dc/topic/Fire
+typeOf: dcs:Topic
+name: "Fire"
+relevantVariableList: "Count_FireEvent,Count_WildlandFireEvent,BurnedArea_FireEvent,Percent_BurnedArea_FireEvent,Percent_BurnedArea_FireEvent_Forest_HighSeverity,dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource"
+
+Node: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
 typeOf: dcs:StatVarPeerGroup
-name: "Carbon Monoxide Concentration Stats"
-memberList: "Max_Concentration_AirPollutant_CO,Mean_Concentration_AirPollutant_CO,Median_Concentration_AirPollutant_CO,Min_Concentration_AirPollutant_CO"
+name: "Wildfire Emissions by Pollutant"
+memberList: "Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_Ammonia,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_CarbonMonoxide,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_OxidesOfNitrogen,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM10,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM2.5,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_SulfurDioxide,Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_VolatileOrganicCompound"
+
+Node: dcid:dc/topic/Storm
+typeOf: dcs:Topic
+name: "Storms"
+relevantVariableList: "dc/svpg/Storm_StormEventbytype,dc/topic/Cyclone,dc/topic/Hurricane,dc/topic/Tornado"
+
+Node: dcid:dc/svpg/Storm_StormEventbytype
+typeOf: dcs:StatVarPeerGroup
+name: "Storms by Type"
+memberList: "Count_DustStormEvent,Count_ThunderstormWindEvent,Count_TropicalStormEvent,Count_WinterStormEvent,Count_IceStormEvent,Count_MarineThunderstormWindEvent,Count_MarineTropicalStormEvent"
+
+Node: dcid:dc/topic/Cyclone
+typeOf: dcs:Topic
+name: "Cyclones"
+relevantVariableList: "Count_CycloneEvent,dc/svpg/Cyclone_Cycloneeventsbytype"
+
+Node: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
+typeOf: dcs:StatVarPeerGroup
+name: "Cyclones by Type"
+memberList: "Count_CycloneEvent_ExtratropicalCyclone,Count_CycloneEvent_ExtratropicalCyclone,Count_CycloneEvent_TropicalDisturbance,Count_CycloneEvent_TropicalStorm"
+
+Node: dcid:dc/topic/Hurricane
+typeOf: dcs:Topic
+name: "Hurricanes"
+relevantVariableList: "Count_HurricaneEvent,Count_HurricaneTyphoonEvent,Annual_ExpectedLoss_NaturalHazardImpact_HurricaneEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_HurricaneEvent"
+
+Node: dcid:dc/topic/Tornado
+typeOf: dcs:Topic
+name: "Tornado"
+relevantVariableList: "Count_TornadoEvent,Annual_ExpectedLoss_NaturalHazardImpact_TornadoEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_TornadoEvent"
+
+Node: dcid:dc/topic/HeatWave
+typeOf: dcs:Topic
+name: "Heat Wave"
+relevantVariableList: "Count_HeatWaveEvent,Intensity_HeatWaveEvent,NumberOfDays_HeatWaveEvent,PopulationWeighted_Count_HeatWaveEvent,PopulationWeighted_Intensity_HeatWaveEvent,PopulationWeighted_NumerOfDays_HeatWaveEvent,Count_ExcessiveHeatEvent"
+
+Node: dcid:dc/topic/ColdEvent
+typeOf: dcs:Topic
+name: "Cold Events"
+relevantVariableList: "Count_ColdWindChillEvent,Count_ExtremeColdWindChillEvent,Count_FreezingFogEvent,Count_FrostFreezeEvent,Count_WinterWeatherEvent"
+
+Node: dcid:dc/topic/WetBulbEvent
+typeOf: dcs:Topic
+name: "Wet Bulb Event"
+relevantVariableList: "Area_WetBulbTemperatureEvent,Count_WetBulbTemperatureEvent"
+
+Node: dcid:dc/topic/Avalanche
+typeOf: dcs:Topic
+name: "Avalanche"
+relevantVariableList: "Count_AvalancheEvent,Annual_ExpectedLoss_NaturalHazardImpact_AvalancheEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_AvalancheEvent"
+
+Node: dcid:dc/topic/Landslide
+typeOf: dcs:Topic
+name: "Landslide"
+relevantVariableList: "Count_LandslideEvent,Annual_ExpectedLoss_NaturalHazardImpact_LandslideEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_LandslideEvent"
+
+Node: dcid:dc/topic/Tsunami
+typeOf: dcs:Topic
+name: "Tsunami"
+relevantVariableList: "Count_TsunamiEvent,Annual_ExpectedLoss_NaturalHazardImpact_TsunamiEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_TsunamiEvent"
+
+Node: dcid:dc/topic/Volcano
+typeOf: dcs:Topic
+name: "Volcano"
+relevantVariableList: "Count_VolcanicAshEvent,Count_VolcanicAshfallEvent,Annual_ExpectedLoss_NaturalHazardImpact_VolcanicActivityEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_VolcanicActivityEvent"
+
+Node: dcid:dc/topic/Earthquake
+typeOf: dcs:Topic
+name: "Earthquake"
+relevantVariableList: "Count_EarthquakeEvent,Annual_ExpectedLoss_NaturalHazardImpact_EarthquakeEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_EarthquakeEvent,dc/svpg/dc/topic/NaturalDisasters_Earthquake"
+
+Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
+typeOf: dcs:StatVarPeerGroup
+name: "Earthquakes by Intensity"
+memberList: "Count_EarthquakeEvent_M5To6,Count_EarthquakeEvent_M6To7,Count_EarthquakeEvent_M7To8,Count_EarthquakeEvent_M8To9,Count_EarthquakeEvent_M9Onwards"
+
+Node: dcid:dc/topic/Precipitation
+typeOf: dcs:Topic
+name: "Precipitation"
+relevantVariableList: "HeavyPrecipitationIndex,InterannualRange_Monthly_Precipitation,PrecipitationRate,dc/topic/Rainfall,dc/topic/Snowfall"
+
+Node: dcid:dc/topic/Rainfall
+typeOf: dcs:Topic
+name: "Rainfall"
+relevantVariableList: "dc/svpg/dc/topic/Rainfall_Amount,Count_HeavyRainEvent"
+
+Node: dcid:dc/svpg/dc/topic/Rainfall_Amount
+typeOf: dcs:StatVarPeerGroup
+name: "Rainfall Amount"
+memberList: "Max_Rainfall,Mean_Rainfall,Min_Rainfall"
+
+Node: dcid:dc/topic/Snowfall
+typeOf: dcs:Topic
+name: "Snowfall"
+relevantVariableList: "dc/svpg/Snowfall_SnowfallAmount,Count_BlizzardEvent,Count_HeavySnowEvent,Count_LakeEffectSnowEvent,Count_WinterStormEvent"
+
+Node: dcid:dc/svpg/Snowfall_SnowfallAmount
+typeOf: dcs:StatVarPeerGroup
+name: "Snowfall Amount"
+memberList: "Max_Snowfall,Mean_Snowfall,Min_Snowfall"
+
+Node: dcid:dc/topic/Temperatures
+typeOf: dcs:Topic
+name: "Temperature"
+relevantVariableList: "dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature,dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature,dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature,dc/topic/WetBulbEvent,dc/topic/TemperaturePredictions"
+
+Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
+typeOf: dcs:StatVarPeerGroup
+name: "Historical Maximum Temperature"
+memberList: "Max_Temperature"
+
+Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
+typeOf: dcs:StatVarPeerGroup
+name: "Historical Mean Temperature"
+memberList: "Mean_Temperature"
+
+Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
+typeOf: dcs:StatVarPeerGroup
+name: "Historical Minimum Temperature"
+memberList: "Min_Temperature"
+
+Node: dcid:dc/topic/TemperaturePredictions
+typeOf: dcs:Topic
+name: "Temperature Predictions"
+relevantVariableList: "dc/topic/DecadeProjectedTemperatureHighs,dc/topic/DecadeProjectedTemperatureLows,dc/topic/YearlyProjectedTemperatureHighs,dc/topic/YearlyProjectedTemperatureLows"
 
 Node: dcid:dc/topic/DecadeProjectedTemperatureHighs
 typeOf: dcs:Topic
@@ -3117,61 +3037,6 @@ Node: dcid:dc/topic/DecadeProjectedTemperatureLows
 typeOf: dcs:Topic
 name: "Decade Projected Temperature Lows"
 relevantVariableList: "dc/topic/MinTemperature1PercentLikelyAtLeastOncePerDecade,dc/topic/MinTemperature5PercentLikelyAtLeastOncePerDecade"
-
-Node: dcid:dc/topic/Disasters
-typeOf: dcs:Topic
-name: "Disasters"
-relevantVariableList: "dc/topic/Drought,dc/topic/Fire,dc/topic/Flood,dc/topic/HeatEvent,dc/topic/Storm,dc/topic/WetBulbEvent"
-
-Node: dcid:dc/topic/Drought
-typeOf: dcs:Topic
-name: "Drought"
-relevantVariableList: "Area_DroughtEvent,ConsecutiveDryDays,Count_DroughtEvent,Mean_PalmerDroughtSeverityIndex,Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent"
-
-Node: dcid:dc/topic/Environment
-typeOf: dcs:Topic
-name: "Environment"
-relevantVariableList: "dc/topic/Disasters,dc/topic/LandCover,dc/topic/Pollution,dc/topic/TemperaturePredictions"
-
-Node: dcid:dc/topic/Fire
-typeOf: dcs:Topic
-name: "Fire"
-relevantVariableList: "BurnedArea_FireEvent,Count_FireEvent,Percent_BurnedArea_FireEvent,Percent_BurnedArea_FireEvent_Forest_HighSeverity"
-
-Node: dcid:dc/topic/Flood
-typeOf: dcs:Topic
-name: "Flood"
-relevantVariableList: "Area_FloodEvent,Count_FlashFloodEvent,Count_FloodEvent,dc/topic/CoastalFlood,dc/topic/RiverineFlood"
-
-Node: dcid:dc/topic/RiverineFlood
-typeOf: dcs:Topic
-name: "RiverineFlood"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent"
-
-Node: dcid:dc/topic/CoastalFlood
-typeOf: dcs:Topic
-name: "CoastalFlood"
-relevantVariableList: "Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent,FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent,NaturalHazardRiskScore_SuperfundSite_CoastalFloodEvent"
-
-Node: dcid:dc/topic/HeatEvent
-typeOf: dcs:Topic
-name: "Heat Event"
-relevantVariableList: "Count_ExcessiveHeatEvent,dc/topic/HeatEvent"
-
-Node: dcid:dc/topic/HeatWave
-typeOf: dcs:Topic
-name: "Heat Wave"
-relevantVariableList: "Count_HeatWaveEvent,Intensity_HeatWaveEvent,NumberOfDays_HeatWaveEvent,PopulationWeighted_Count_HeatWaveEvent,PopulationWeighted_Intensity_HeatWaveEvent,PopulationWeighted_NumerOfDays_HeatWaveEvent"
-
-Node: dcid:dc/topic/LandCover
-typeOf: dcs:Topic
-name: "Land Cover"
-relevantVariableList: "dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType"
-
-Node: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
-typeOf: dcs:StatVarPeerGroup
-name: "Percent Of Land Cover By Type"
-memberList: "LandCoverFraction_BareSparseVegetation,LandCoverFraction_BuiltUp,LandCoverFraction_Cropland,LandCoverFraction_Forest,LandCoverFraction_HerbaceousVegetation,LandCoverFraction_MossAndLichen,LandCoverFraction_PermanentWater,LandCoverFraction_SeasonalWater,LandCoverFraction_Shrubland,LandCoverFraction_SnowIce"
 
 Node: dcid:dc/topic/MaxTemperature1PercentLikelyAtLeastOncePerDecade
 typeOf: dcs:Topic
@@ -3252,96 +3117,6 @@ Node: dcid:dc/svpg/dc/topic/MinTemperature5PercentLikelyAtLeastOncePerYear_MinTe
 typeOf: dcs:StatVarPeerGroup
 name: "Min Temperature Likely (5%) At Least Once Per Year By Scenario"
 memberList: "MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245,MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585"
-
-Node: dcid:dc/topic/NitrogenDioxide
-typeOf: dcs:Topic
-name: "NitrogenDioxide"
-relevantVariableList: "dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats"
-
-Node: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "Nitrogen Dioxide Concentration Stats"
-memberList: "Max_Concentration_AirPollutant_NO2,Mean_Concentration_AirPollutant_NO2,Median_Concentration_AirPollutant_NO2,Min_Concentration_AirPollutant_NO2"
-
-Node: dcid:dc/topic/Ozone
-typeOf: dcs:Topic
-name: "Ozone"
-relevantVariableList: "Max_Concentration_AirPollutant_Ozone,Mean_Concentration_AirPollutant_Ozone,Median_Concentration_AirPollutant_Ozone,Min_Concentration_AirPollutant_Ozone"
-
-Node: dcid:dc/topic/PM10
-typeOf: dcs:Topic
-name: "PM 10"
-relevantVariableList: "dc/svpg/dc/topic/PM10_PM10ConcentrationStats"
-
-Node: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "PM10 ConcentrationStats"
-memberList: "Max_Concentration_AirPollutant_PM10,Mean_Concentration_AirPollutant_PM10,Median_Concentration_AirPollutant_PM10,Min_Concentration_AirPollutant_PM10"
-
-Node: dcid:dc/topic/PM2.5
-typeOf: dcs:Topic
-name: "PM 2.5"
-relevantVariableList: "dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats"
-
-Node: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "PM2.5ConcentrationStats"
-memberList: "Max_Concentration_AirPollutant_PM2.5,Mean_Concentration_AirPollutant_PM2.5,Median_Concentration_AirPollutant_PM2.5,Min_Concentration_AirPollutant_PM2.5"
-
-Node: dcid:dc/topic/PollutantConcentration
-typeOf: dcs:Topic
-name: "Pollutant Concentration"
-relevantVariableList: "dc/topic/CarbonMonoxide,dc/topic/NitrogenDioxide,dc/topic/Ozone,dc/topic/PM10,dc/topic/PM2.5,dc/topic/SulfurDioxide"
-
-Node: dcid:dc/topic/Pollution
-typeOf: dcs:Topic
-name: "Pollution"
-relevantVariableList: "dc/topic/AirQualityIndex,dc/topic/PollutantConcentration"
-
-Node: dcid:dc/topic/SmokePM2.5
-typeOf: dcs:Topic
-name: "Smoke PM 2.5"
-relevantVariableList: "dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel,dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5"
-
-Node: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Days with Smoke PM 2.5 Pollution by Pollution Level"
-memberList: "NumberOfDays_Concentration_SmokePM25_Above12PPM,NumberOfDays_Concentration_SmokePM25_Above150PPM,NumberOfDays_Concentration_SmokePM25_Above250PPM,NumberOfDays_Concentration_SmokePM25_Above35PPM,NumberOfDays_Concentration_SmokePM25_Above55PPM"
-
-Node: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke Concentration 2.5"
-memberList: "Concentration_AirPollutant_SmokePM25,Max_Concentration_AirPollutant_SmokePM25,Mean_Concentration_AirPollutant_SmokePM25"
-
-Node: dcid:dc/topic/Storm
-typeOf: dcs:Topic
-name: "Storm"
-relevantVariableList: "dc/svpg/Storm_StormEventbytype"
-
-Node: dcid:dc/svpg/Storm_StormEventbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Storm Event by type"
-memberList: "Count_DustStormEvent,Count_IceStormEvent,Count_MarineThunderstormWindEvent,Count_MarineTropicalStormEvent,Count_ThunderstormWindEvent,Count_TropicalStormEvent,Count_WinterStormEvent"
-
-Node: dcid:dc/topic/SulfurDioxide
-typeOf: dcs:Topic
-name: "Sulfur Dioxide"
-relevantVariableList: "dc/svpg/dc/topic/SulfurDioxide_SulfurDioxideConcentrationStats"
-
-Node: dcid:dc/svpg/dc/topic/SulfurDioxide_SulfurDioxideConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "Sulfur Dioxide Concentration Stats"
-memberList: "Max_Concentration_AirPollutant_SO2,Mean_Concentration_AirPollutant_SO2,Median_Concentration_AirPollutant_SO2,Min_Concentration_AirPollutant_SO2"
-
-Node: dcid:dc/topic/TemperaturePredictions
-typeOf: dcs:Topic
-name: "Temperature Predictions"
-relevantVariableList: "dc/topic/DecadeProjectedTemperatureHighs,dc/topic/DecadeProjectedTemperatureLows,dc/topic/YearlyProjectedTemperatureHighs,dc/topic/YearlyProjectedTemperatureLows"
-
-Node: dcid:dc/topic/WetBulbEvent
-typeOf: dcs:Topic
-name: "Wet Bulb Event"
-relevantVariableList: "Area_WetBulbTemperatureEvent,Count_WetBulbTemperatureEvent"
 
 Node: dcid:dc/topic/YearlyProjectedTemperatureHighs
 typeOf: dcs:Topic
@@ -3491,12 +3266,12 @@ relevantVariableList: "Percent_Person_WithHighBloodPressure,Percent_Person_18OrM
 Node: dcid:dc/topic/Cancer
 typeOf: dcs:Topic
 name: "Cancer"
-relevantVariableList: "Count_Death_Neoplasms,Percent_Person_WithCancerExcludingSkinCancer,dc/svpg/dc/topic/Cancer_DeathsbyAge,dc/svpg/dc/topic/Cancer_PreventativeHealth"
+relevantVariableList: "Percent_Person_WithCancerExcludingSkinCancer,Count_Death_Neoplasms,dc/svpg/dc/topic/Cancer_DeathsbyAge,dc/svpg/dc/topic/Cancer_PreventativeHealth"
 
 Node: dcid:dc/svpg/dc/topic/Cancer_DeathsbyAge
 typeOf: dcs:StatVarPeerGroup
 name: "Cancer Deaths by Age"
-memberList: "Count_Death_15To24Years_Neoplasms,Count_Death_1To4Years_Neoplasms,Count_Death_25To34Years_Neoplasms,Count_Death_35To44Years_Neoplasms,Count_Death_45To54Years_Neoplasms,Count_Death_55To64Years_Neoplasms,Count_Death_5To14Years_Neoplasms,Count_Death_65To74Years_Neoplasms,Count_Death_75To84Years_Neoplasms,Count_Death_85Years_Neoplasms,Count_Death_Upto1Years_Neoplasms"
+memberList: "Count_Death_Upto1Years_Neoplasms,Count_Death_1To4Years_Neoplasms,Count_Death_5To14Years_Neoplasms,Count_Death_15To24Years_Neoplasms,Count_Death_25To34Years_Neoplasms,Count_Death_35To44Years_Neoplasms,Count_Death_45To54Years_Neoplasms,Count_Death_55To64Years_Neoplasms,Count_Death_65To74Years_Neoplasms,Count_Death_75To84Years_Neoplasms,Count_Death_85Years_Neoplasms"
 
 Node: dcid:dc/svpg/dc/topic/Cancer_PreventativeHealth
 typeOf: dcs:StatVarPeerGroup
@@ -3511,7 +3286,7 @@ relevantVariableList: "Count_Death_DiseasesOfTheNervousSystem,Count_Death_Diseas
 Node: dcid:dc/topic/Cholesterol
 typeOf: dcs:Topic
 name: "Cholesterol"
-relevantVariableList: "Percent_Person_ReceivedCholesterolScreening,Percent_Person_WithHighCholesterol"
+relevantVariableList: "Percent_Person_WithHighCholesterol,Percent_Person_ReceivedCholesterolScreening"
 
 Node: dcid:dc/topic/Diabetes
 typeOf: dcs:Topic
@@ -3686,7 +3461,7 @@ relevantVariableList: "dc/svpg/dc/topic/NoHealthInsuranceByIncome_UninsuredByInc
 Node: dcid:dc/svpg/dc/topic/NoHealthInsuranceByIncome_UninsuredByIncome
 typeOf: dcs:StatVarPeerGroup
 name: "Uninsured By Income"
-memberList: "Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf15000To24999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf25000To34999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf35000To49999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf4999OrLessUSDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf50000To74999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf5000To14999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf75000OrMoreUSDollar_WithEarnings"
+memberList: "Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf4999OrLessUSDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf5000To14999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf15000To24999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf25000To34999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf35000To49999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf50000To74999USDollar_WithEarnings,Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf75000OrMoreUSDollar_WithEarnings"
 
 Node: dcid:dc/topic/NoHealthInsuranceByRace
 typeOf: dcs:Topic
@@ -3696,7 +3471,7 @@ relevantVariableList: "dc/svpg/dc/topic/NoHealthInsuranceByRace_UninsuredByRace"
 Node: dcid:dc/svpg/dc/topic/NoHealthInsuranceByRace_UninsuredByRace
 typeOf: dcs:StatVarPeerGroup
 name: "Uninsured By Race"
-memberList: "Count_Person_NoHealthInsurance_AmericanIndianOrAlaskaNativeAlone,Count_Person_NoHealthInsurance_AsianAlone,Count_Person_NoHealthInsurance_BlackOrAfricanAmericanAlone,Count_Person_NoHealthInsurance_HispanicOrLatino,Count_Person_NoHealthInsurance_NativeHawaiianOrOtherPacificIslanderAlone,Count_Person_NoHealthInsurance_WhiteAlone"
+memberList: "Count_Person_NoHealthInsurance_WhiteAlone,Count_Person_NoHealthInsurance_BlackOrAfricanAmericanAlone,Count_Person_NoHealthInsurance_HispanicOrLatino,Count_Person_NoHealthInsurance_AsianAlone,Count_Person_NoHealthInsurance_AmericanIndianOrAlaskaNativeAlone,Count_Person_NoHealthInsurance_NativeHawaiianOrOtherPacificIslanderAlone"
 
 Node: dcid:dc/topic/PreventativeHealthAndBehavior
 typeOf: dcs:Topic
@@ -4031,31 +3806,51 @@ relevantVariableList: "dc/topic/Demographics,dc/topic/Health,dc/topic/Economy,dc
 Node: dcid:dc/topic/EducationHousingAndCommute
 typeOf: dcs:Topic
 name: "Education, Housing and Commute"
-relevantVariableList: "dc/topic/Education,dc/topic/Housing,dc/topic/Commute"
+relevantVariableList: "dc/topic/Education,dc/topic/Housing,dc/topic/WorkCommute"
 
 Node: dcid:dc/topic/Sustainability
 typeOf: dcs:Topic
 name: "Sustainability"
-relevantVariableList: "dc/topic/GreenhouseGasses,dc/topic/Emissions,dc/topic/Pollutants,dc/topic/Energy,dc/topic/GreenJobs,dc/topic/LandUse/Coverage,dc/topic/Temperatures,dc/topic/NaturalDisasters,dc/topic/OceanHealth,dc/topic/ProductionConsumptionandWaste,dc/topic/Agriculture"
+relevantVariableList: "dc/topic/Emissions,dc/topic/Pollutants,dc/topic/Temperatures,dc/topic/Precipitation,dc/topic/NaturalDisasters,dc/topic/Agriculture,dc/topic/Energy,dc/topic/GreenJobs,dc/topic/LandUseAndCoverage,dc/topic/OceanHealth,dc/topic/ProductionConsumptionandWaste"
 
 Node: dcid:dc/topic/Emissions
 typeOf: dcs:Topic
 name: "Emissions"
-relevantVariableList: "dc/topic/Emissions_FlourinatedGases,dc/topic/Emissions_Methane_EmissionsbySource,dc/topic/Emissions_NitrousOxide_EmissionsbySource,dc/topic/Emissions_PM2.5_EmissionsbySource,dc/topic/Emissions_SulfurDioxide_EmissionsbySource"
+relevantVariableList: "Annual_Emissions_GreenhouseGas,dc/topic/GreenhouseGasEmissions,dc/topic/CO2Emissions,dc/topic/Emissions_FlourinatedGases,dc/topic/Emissions_Methane_EmissionsbySource,dc/topic/Emissions_NitrousOxide_EmissionsbySource,dc/topic/Emissions_PM2.5_EmissionsbySource,dc/topic/Emissions_SulfurDioxide_EmissionsbySource"
+
+Node: dcid:dc/topic/GreenhouseGasEmissions
+typeOf: dcs:Topic
+name: "Greenhouse Gasses"
+relevantVariableList: "dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource"
+
+Node: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
+typeOf: dcs:StatVarPeerGroup
+name: "Greenhouse Gas Emissions By Source"
+memberList: "Annual_Emissions_GreenhouseGas_Agriculture,Annual_Emissions_GreenhouseGas_ElectricityGeneration,Annual_Emissions_GreenhouseGas_FuelCombustionInBuildings,Annual_Emissions_GreenhouseGas_ForestryAndLandUse,Annual_Emissions_GreenhouseGas_Manufacturing,Annual_Emissions_GreenhouseGas_MineralExtraction,Annual_Emissions_GreenhouseGas_OilAndGas,Annual_Emissions_GreenhouseGas_Transportation,Annual_Emissions_GreenhouseGas_WasteManagement,Annual_Emissions_GreenhouseGas_CementProduction,Annual_Emissions_GreenhouseGas_SteelManufacturing,Annual_Emissions_GreenhouseGas_ForestFire"
+
+Node: dcid:dc/topic/CO2Emissions
+typeOf: dcs:Topic
+name: "Carbondioxide (CO2)"
+relevantVariableList: "eia/INTL.4008-8-MMTCD.A,Amount_Emissions_CarbonDioxide_PerCapita,dc/svpg/Emissions_CO2_EmissionsbySource"
+
+Node: dcid:dc/svpg/Emissions_CO2_EmissionsbySource
+typeOf: dcs:StatVarPeerGroup
+name: "CO2 Emissions by Source"
+memberList: "Annual_Emissions_CarbonDioxide_Agriculture,Annual_Emissions_CarbonDioxide_FuelCombustionInBuildings,Annual_Emissions_CarbonDioxide_FossilFuelOperations,Annual_Emissions_CarbonDioxide_ForestryAndLandUse,Annual_Emissions_CarbonDioxide_Manufacturing,Annual_Emissions_CarbonDioxide_MineralExtraction,Annual_Emissions_CarbonDioxide_Power,Annual_Emissions_CarbonDioxide_Transportation,Annual_Emissions_CarbonDioxide_WasteManagement"
 
 Node: dcid:dc/topic/Emissions_FlourinatedGases
 typeOf: dcs:Topic
-name: "Flourinated Gase Emissions"
+name: "Flourinated Gas"
 relevantVariableList: "dc/svpg/dc/topic/Emissions_FlourinatedGases"
 
 Node: dcid:dc/svpg/dc/topic/Emissions_FlourinatedGases
 typeOf: dcs:StatVarPeerGroup
-name: "Flourinated Gase Emissions"
+name: "Flourinated Gas Emissions by Type"
 memberList: "Annual_Emissions_EPA_OtherFullyFluorinatedCompound_NonBiogenic,Annual_Emissions_Hydrofluorocarbon_NonBiogenic,Annual_Emissions_Hydrofluoroether_NonBiogenic,Annual_Emissions_NitrogenTrifluoride_NonBiogenic,Annual_Emissions_Perfluorocarbon_NonBiogenic,Annual_Emissions_SulfurHexafluoride_NonBiogenic"
 
 Node: dcid:dc/topic/Emissions_Methane_EmissionsbySource
 typeOf: dcs:Topic
-name: "Methane Emissions by Source"
+name: "Methane"
 relevantVariableList: "dc/svpg/dc/topic/Emissions_Methane_EmissionsbySource"
 
 Node: dcid:dc/svpg/dc/topic/Emissions_Methane_EmissionsbySource
@@ -4065,7 +3860,7 @@ memberList: "Annual_Emissions_Methane_Agriculture,Annual_Emissions_Methane_Fossi
 
 Node: dcid:dc/topic/Emissions_NitrousOxide_EmissionsbySource
 typeOf: dcs:Topic
-name: "Nitrous Oxide Emissions by Source"
+name: "Nitrous Oxide"
 relevantVariableList: "dc/svpg/dc/topic/Emissions_NitrousOxide_EmissionsbySource"
 
 Node: dcid:dc/svpg/dc/topic/Emissions_NitrousOxide_EmissionsbySource
@@ -4075,7 +3870,7 @@ memberList: "Annual_Emissions_NitrousOxide_Agriculture,Annual_Emissions_NitrousO
 
 Node: dcid:dc/topic/Emissions_PM2.5_EmissionsbySource
 typeOf: dcs:Topic
-name: "PM 2.5 Emissions by Source"
+name: "PM 2.5"
 relevantVariableList: "dc/svpg/dc/topic/Emissions_PM2.5_EmissionsbySource"
 
 Node: dcid:dc/svpg/dc/topic/Emissions_PM2.5_EmissionsbySource
@@ -4085,7 +3880,7 @@ memberList: "member: Annual_Amount_Emissions_PM2.5_SCC_1_ExternalCombustion,memb
 
 Node: dcid:dc/topic/Emissions_SulfurDioxide_EmissionsbySource
 typeOf: dcs:Topic
-name: "Sulfur Dioxide Emissions by Source"
+name: "Sulfur Dioxide"
 relevantVariableList: "dc/svpg/dc/topic/Emissions_SulfurDioxide_EmissionsbySource"
 
 Node: dcid:dc/svpg/dc/topic/Emissions_SulfurDioxide_EmissionsbySource
@@ -4121,7 +3916,7 @@ relevantVariableList: "dc/svpg/dc/topic/Energy_Generation_FossilFuels,dc/svpg/dc
 Node: dcid:dc/svpg/dc/topic/Energy_Generation_FossilFuels
 typeOf: dcs:StatVarPeerGroup
 name: "Energy Generation by Fossil Fuels"
-memberList: "Annual_Generation_Energy_NaturalGas,Annual_Generation_Energy_Coal,Annual_Generation_Fuel_HardCoal,Annual_Generation_Energy_NaturalGas,Annual_Generation_Energy_OilProducts,Annual_Generation_Fuel_PetroleumCoke,Annual_Generation_Fuel_Nuclear"
+memberList: "Annual_Generation_Energy_NaturalGas,Annual_Generation_Energy_Coal,Annual_Generation_Fuel_HardCoal,Annual_Generation_Energy_NaturalGas,Annual_Generation_Energy_OilProducts,Annual_Generation_Fuel_PetroleumCoke"
 
 Node: dcid:dc/svpg/dc/topic/Energy_FossilFuels_SDG_GDP
 typeOf: dcs:StatVarPeerGroup
@@ -4218,125 +4013,40 @@ typeOf: dcs:StatVarPeerGroup
 name: "Renewable energy systems"
 memberList: "dc/mwcnlh5bmdk63,dc/s9cn1zj5fv5cc"
 
-Node: dcid:dc/topic/GreenhouseGasses
+Node: dcid:dc/topic/LandUseAndCoverage
 typeOf: dcs:Topic
-name: "Greenhouse Gasses"
-relevantVariableList: "dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource"
+name: "Land Use and Coverage"
+relevantVariableList: "dc/topic/LandCover,dc/topic/SDGBiodiversity,dc/topic/SDGReforestations"
 
-Node: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
-typeOf: dcs:StatVarPeerGroup
-name: "Greenhouse Gas Emissions By Source"
-memberList: "Annual_Emissions_GreenhouseGas_Agriculture,Annual_Emissions_GreenhouseGas_AluminumProduction,Annual_Emissions_GreenhouseGas_BauxiteMining,Annual_Emissions_GreenhouseGas_CementProduction,Annual_Emissions_GreenhouseGas_ClimateTrace_OtherEnergyUse,Annual_Emissions_GreenhouseGas_ClimateTrace_OtherManufacturing,Annual_Emissions_GreenhouseGas_CopperMining,Annual_Emissions_GreenhouseGas_CroplandFire,Annual_Emissions_GreenhouseGas_ElectricityGeneration,Annual_Emissions_GreenhouseGas_ElectricityGenerationFromThermalPowerPlant,Annual_Emissions_GreenhouseGas_EntericFermentation,Annual_Emissions_GreenhouseGas_ForestClearing,Annual_Emissions_GreenhouseGas_ForestFire,Annual_Emissions_GreenhouseGas_ForestryAndLandUse,Annual_Emissions_GreenhouseGas_FuelCombustionForCooking,Annual_Emissions_GreenhouseGas_FuelCombustionForRefrigerationAirConditioning,Annual_Emissions_GreenhouseGas_FuelCombustionForResidentialCommercialOnsiteHeating,Annual_Emissions_GreenhouseGas_FuelCombustionInBuildings,Annual_Emissions_GreenhouseGas_IronMining,Annual_Emissions_GreenhouseGas_ManagedSoils,Annual_Emissions_GreenhouseGas_Manufacturing,Annual_Emissions_GreenhouseGas_ManureManagement,Annual_Emissions_GreenhouseGas_MaritimeShipping,Annual_Emissions_GreenhouseGas_MaritimeTransport,Annual_Emissions_GreenhouseGas_MineralExtraction,Annual_Emissions_GreenhouseGas_OilAndGas,Annual_Emissions_GreenhouseGas_OilAndGasProduction,Annual_Emissions_GreenhouseGas_PetrochemicalProduction,Annual_Emissions_GreenhouseGas_PulpAndPaperManufacturing,Annual_Emissions_GreenhouseGas_RiceCultivation,Annual_Emissions_GreenhouseGas_RockQuarry,Annual_Emissions_GreenhouseGas_SandQuarry,Annual_Emissions_GreenhouseGas_SavannaFire,Annual_Emissions_GreenhouseGas_ShrublandFire,Annual_Emissions_GreenhouseGas_SteelManufacturing"
-
-Node: dcid:dc/topic/LandUse/Coverage
+Node: dcid:dc/topic/LandCover
 typeOf: dcs:Topic
-name: "Land Use / Coverage"
-relevantVariableList: "dc/svpg/dc/topic/LandUse/Coverage_LandUse,dc/svpg/dc/topic/LandUse/Coverage_SDGBiodiversity,dc/svpg/dc/topic/LandUse/Coverage_SDGReforestations"
+name: "Land Cover"
+relevantVariableList: "dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType"
 
-Node: dcid:dc/svpg/dc/topic/LandUse/Coverage_LandUse
+Node: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
 typeOf: dcs:StatVarPeerGroup
-name: "Land Use"
+name: "Percent of Land Cover by Type of Area"
 memberList: "LandCoverFraction_BareSparseVegetation,LandCoverFraction_BuiltUp,LandCoverFraction_Cropland,LandCoverFraction_Forest,LandCoverFraction_HerbaceousVegetation,LandCoverFraction_PermanentWater,LandCoverFraction_SeasonalWater,LandCoverFraction_Shrubland,LandCoverFraction_SnowIce"
 
-Node: dcid:dc/svpg/dc/topic/LandUse/Coverage_SDGBiodiversity
+Node: dcid:dc/topic/SDGBiodiversity
+typeOf: dcs:Topic
+name: "Biodiversity"
+relevantVariableList: "dc/svpg/dc/topic/LandUseAndCoverage_SDGBiodiversity"
+
+Node: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGBiodiversity
 typeOf: dcs:StatVarPeerGroup
-name: "SDG Biodiversity"
+name: "Biodiversity"
 memberList: "sdg/DC_ODA_BDVDL,sdg/ER_PTD_FRHWTR,sdg/ER_PTD_MTN,sdg/ER_PTD_TERR,sdg/ER_RSK_LST"
 
-Node: dcid:dc/svpg/dc/topic/LandUse/Coverage_SDGReforestations
+Node: dcid:dc/topic/SDGReforestations
+typeOf: dcs:Topic
+name: "Reforestations"
+relevantVariableList: "dc/svpg/dc/topic/LandUseAndCoverage_SDGReforestations"
+
+Node: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGReforestations
 typeOf: dcs:StatVarPeerGroup
-name: "SDG Reforestations"
+name: "Reforestations"
 memberList: "sdg/AG_LND_FRST,sdg/AG_LND_FRSTBIOPHA,sdg/AG_LND_FRSTCERT,sdg/AG_LND_FRSTCHG,sdg/AG_LND_FRSTN,sdg/AG_LND_FRSTPRCT"
-
-Node: dcid:dc/topic/NaturalDisasters
-typeOf: dcs:Topic
-name: "Natural Disasters"
-relevantVariableList: "dc/topic/NaturalDisasters_Droughts,dc/topic/NaturalDisasters_Floods,dc/topic/NaturalDisasters_Fires,dc/topic/NaturalDisasters_HeatWaveEvents,dc/topic/NaturalDisasters_Precipitation,dc/topic/NaturalDisasters_WetBulbEvents,dc/topic/NaturalDisasters_Earthquake"
-
-Node: dcid:dc/topic/NaturalDisasters_Droughts
-typeOf: dcs:Topic
-name: "Droughts"
-relevantVariableList: "dc/svpg/dc/topic/NaturalDisasters_Droughts"
-
-Node: dcid:dc/topic/NaturalDisasters_Floods
-typeOf: dcs:Topic
-name: "Floods"
-relevantVariableList: "dc/svpg/dc/topic/NaturalDisasters_Floods"
-
-Node: dcid:dc/topic/NaturalDisasters_Fires
-typeOf: dcs:Topic
-name: "Fires"
-relevantVariableList: "dc/svpg/dc/topic/NaturalDisasters_Fires"
-
-Node: dcid:dc/topic/NaturalDisasters_HeatWaveEvents
-typeOf: dcs:Topic
-name: "HeatWave Events"
-relevantVariableList: "dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Counts,dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Intensity,dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Duration"
-
-Node: dcid:dc/topic/NaturalDisasters_Precipitation
-typeOf: dcs:Topic
-name: "Precipitation"
-relevantVariableList: "dc/svpg/dc/topic/NaturalDisasters_Precipitation,dc/svpg/dc/topic/NaturalDisasters_PrecipitationRate"
-
-Node: dcid:dc/topic/NaturalDisasters_WetBulbEvents
-typeOf: dcs:Topic
-name: "Wet Bulb Events"
-relevantVariableList: "dc/svpg/dc/topic/NaturalDisasters_WetBulbEvents"
-
-Node: dcid:dc/topic/NaturalDisasters_Earthquake
-typeOf: dcs:Topic
-name: "Earthquakes"
-relevantVariableList: "dc/svpg/dc/topic/NaturalDisasters_Earthquake"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Droughts
-typeOf: dcs:StatVarPeerGroup
-name: "Droughts"
-memberList: "Count_DroughtEvent"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
-typeOf: dcs:StatVarPeerGroup
-name: "Earthquakes by Intensities"
-memberList: "Count_EarthquakeEvent_M5To6,Count_EarthquakeEvent_M6To7,Count_EarthquakeEvent_M7To8,Count_EarthquakeEvent_M8To9,Count_EarthquakeEvent_M9Onwards"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Floods
-typeOf: dcs:StatVarPeerGroup
-name: "Floods"
-memberList: "Count_CoastalFloodEvent,Count_FloodEvent"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Fires
-typeOf: dcs:StatVarPeerGroup
-name: "Fires"
-memberList: "Count_FireEvent,Count_WildlandFireEvent"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Counts
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Heat Wave Events"
-memberList: "Count_HeatWaveEvent"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Intensity
-typeOf: dcs:StatVarPeerGroup
-name: "Heat Wave Intensities"
-memberList: "Intensity_HeatWaveEvent"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_HeatWaveEvents_Duration
-typeOf: dcs:StatVarPeerGroup
-name: "Heat Wave Durations"
-memberList: "NumberOfDays_HeatWaveEvent"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Precipitation
-typeOf: dcs:StatVarPeerGroup
-name: "Precipitation"
-memberList: "Max_Rainfall,Mean_Rainfall,Min_Rainfall"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_PrecipitationRate
-typeOf: dcs:StatVarPeerGroup
-name: "Precipitation Rate"
-memberList: "PrecipitationRate"
-
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_WetBulbEvents
-typeOf: dcs:StatVarPeerGroup
-name: "Wet Bulb Events"
-memberList: "Area_WetBulbTemperatureEvent,Count_WetBulbTemperatureEvent"
 
 Node: dcid:dc/topic/OceanHealth
 typeOf: dcs:Topic
@@ -4360,53 +4070,93 @@ memberList: "sdg/ER_MRN_MPA"
 
 Node: dcid:dc/topic/Pollutants
 typeOf: dcs:Topic
-name: "Pollutants"
-relevantVariableList: "dc/svpg/dc/topic/Pollutants_AQI,dc/svpg/dc/topic/Pollutants_CarbonMonoxide,dc/svpg/dc/topic/Pollutants_Diesel,dc/svpg/dc/topic/Pollutants_NitrogenDioxide,dc/svpg/dc/topic/Pollutants_Ozone,dc/svpg/dc/topic/Pollutants_PM10,dc/svpg/dc/topic/Pollutants_PM2.5,dc/svpg/dc/topic/Pollutants_SulfurDioxide,dc/topic/Pollutants_Smoke"
+name: "Air Pollutants"
+relevantVariableList: "dc/topic/AirQualityIndex,dc/topic/CarbonMonoxide,dc/topic/NitrogenDioxide,dc/topic/Ozone,dc/topic/PM10,dc/topic/PM2.5,dc/topic/SmokePM2.5,dc/topic/DieselPM"
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_AQI
-typeOf: dcs:StatVarPeerGroup
-name: "AQI"
-memberList: "AirQualityIndex_AirPollutant"
+Node: dcid:dc/topic/AirQualityIndex
+typeOf: dcs:Topic
+name: "Air Quality Index"
+relevantVariableList: "AirQualityIndex_AirPollutant,dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant"
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_CarbonMonoxide
+Node: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
 typeOf: dcs:StatVarPeerGroup
-name: "Carbon Monoxide"
-memberList: "AirQualityIndex_AirPollutant_CO,Max_Concentration_AirPollutant_CO,Mean_Concentration_AirPollutant_CO,Median_Concentration_AirPollutant_CO"
+name: "AQI By Pollutant"
+memberList: "AirQualityIndex_AirPollutant_CO,AirQualityIndex_AirPollutant_NO2,AirQualityIndex_AirPollutant_Ozone,AirQualityIndex_AirPollutant_PM10,AirQualityIndex_AirPollutant_PM2.5,AirQualityIndex_AirPollutant_SO2"
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_Diesel
-typeOf: dcs:StatVarPeerGroup
-name: "Diesel"
-memberList: "Mean_Concentration_AirPollutant_DieselPM"
+Node: dcid:dc/topic/DieselPM
+typeOf: dcs:Topic
+name: "Diesel PM"
+relevantVariableList: "Mean_Concentration_AirPollutant_DieselPM"
 
 Node: dcid:dc/svpg/dc/topic/Pollutants_NitrogenDioxide
 typeOf: dcs:StatVarPeerGroup
 name: "Nitrogen Dioxide"
-memberList: "AirQualityIndex_AirPollutant_NO2,Max_Concentration_AirPollutant_NO2,Mean_Concentration_AirPollutant_NO2"
+memberList: "Max_Concentration_AirPollutant_NO2,Mean_Concentration_AirPollutant_NO2,AirQualityIndex_AirPollutant_NO2"
+
+Node: dcid:dc/topic/NitrogenDioxide
+typeOf: dcs:Topic
+name: "NitrogenDioxide"
+relevantVariableList: "dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats"
+
+Node: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "Nitrogen Dioxide Concentration"
+memberList: "Max_Concentration_AirPollutant_NO2,Mean_Concentration_AirPollutant_NO2"
+
+Node: dcid:dc/topic/Ozone
+typeOf: dcs:Topic
+name: "Ozone"
+relevantVariableList: "dc/svpg/dc/topic/Pollutants_Ozone"
 
 Node: dcid:dc/svpg/dc/topic/Pollutants_Ozone
 typeOf: dcs:StatVarPeerGroup
-name: "Ozone"
-memberList: "AirQualityIndex_AirPollutant_Ozone,Max_Concentration_AirPollutant_Ozone,Mean_Concentration_AirPollutant_Ozone,Median_Concentration_AirPollutant_Ozone"
+name: "Ozone Concentration"
+memberList: "Max_Concentration_AirPollutant_Ozone,Mean_Concentration_AirPollutant_Ozone,Median_Concentration_AirPollutant_Ozone,AirQualityIndex_AirPollutant_Ozone"
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_PM10
-typeOf: dcs:StatVarPeerGroup
+Node: dcid:dc/topic/PM10
+typeOf: dcs:Topic
 name: "PM10"
-memberList: "AirQualityIndex_AirPollutant_PM10,Max_Concentration_AirPollutant_PM10,Mean_Concentration_AirPollutant_PM10"
+relevantVariableList: "dc/svpg/dc/topic/PM10_PM10ConcentrationStats"
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_PM2.5
+Node: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
 typeOf: dcs:StatVarPeerGroup
-name: "PM2.5"
-memberList: "AirQualityIndex_AirPollutant_PM2.5,Max_Concentration_AirPollutant_PM2.5,Mean_Concentration_AirPollutant_PM2.5,Median_Concentration_AirPollutant_PM2.5"
+name: "PM10 Concentration"
+memberList: "Max_Concentration_AirPollutant_PM10,Mean_Concentration_AirPollutant_PM10"
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_Smoke
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke"
-memberList: ""
+Node: dcid:dc/topic/PM2.5
+typeOf: dcs:Topic
+name: "PM 2.5"
+relevantVariableList: "dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats"
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_SulfurDioxide
+Node: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
 typeOf: dcs:StatVarPeerGroup
-name: "Sulfur Dioxide"
-memberList: "AirQualityIndex_AirPollutant_SO2,Max_Concentration_AirPollutant_SO2,Mean_Concentration_AirPollutant_SO2"
+name: "PM 2.5 Concentration"
+memberList: "Max_Concentration_AirPollutant_PM2.5,Mean_Concentration_AirPollutant_PM2.5,Median_Concentration_AirPollutant_PM2.5"
+
+Node: dcid:dc/topic/CarbonMonoxide
+typeOf: dcs:Topic
+name: "Carbon Monoxide"
+relevantVariableList: "dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats"
+
+Node: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
+typeOf: dcs:StatVarPeerGroup
+name: "Carbon Monoxide Concentration"
+memberList: "Max_Concentration_AirPollutant_CO,Mean_Concentration_AirPollutant_CO,Median_Concentration_AirPollutant_CO,Min_Concentration_AirPollutant_CO"
+
+Node: dcid:dc/topic/SmokePM2.5
+typeOf: dcs:Topic
+name: "Smoke PM 2.5"
+relevantVariableList: "dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5,dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel"
+
+Node: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
+typeOf: dcs:StatVarPeerGroup
+name: "Smoke PM 2.5 Concentration"
+memberList: "Concentration_AirPollutant_SmokePM25,Max_Concentration_AirPollutant_SmokePM25,Mean_Concentration_AirPollutant_SmokePM25"
+
+Node: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
+typeOf: dcs:StatVarPeerGroup
+name: "Number of Days with Smoke PM 2.5 Pollution by Level"
+memberList: "NumberOfDays_Concentration_SmokePM25_Above12PPM,NumberOfDays_Concentration_SmokePM25_Above150PPM,NumberOfDays_Concentration_SmokePM25_Above250PPM,NumberOfDays_Concentration_SmokePM25_Above35PPM,NumberOfDays_Concentration_SmokePM25_Above55PPM"
 
 Node: dcid:dc/topic/ProductionConsumptionandWaste
 typeOf: dcs:Topic
@@ -4427,64 +4177,4 @@ Node: dcid:dc/svpg/dc/topic/ProductionConsumptionandWaste_Waste
 typeOf: dcs:StatVarPeerGroup
 name: "Waste"
 memberList: "sdg/AG_FOOD_WST,sdg/AG_FOOD_WST_PC,sdg/EN_EWT_GENPCAP,sdg/EN_EWT_GENV"
-
-Node: dcid:dc/topic/Pollutants_Smoke
-typeOf: dcs:Topic
-name: "Smoke"
-relevantVariableList: "dc/svpg/dc/topic/Smoke_SmokeDays,dc/svpg/dc/topic/Smoke_SmokePM2.5"
-
-Node: dcid:dc/svpg/dc/topic/Smoke_SmokeDays
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke Days"
-memberList: "NumberOfDays_Concentration_SmokePM25_Above12PPM,NumberOfDays_Concentration_SmokePM25_Above150PPM,NumberOfDays_Concentration_SmokePM25_Above250PPM,NumberOfDays_Concentration_SmokePM25_Above35PPM,NumberOfDays_Concentration_SmokePM25_Above55PPM"
-
-Node: dcid:dc/svpg/dc/topic/Smoke_SmokePM2.5
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke PM 2.5"
-memberList: "Max_Concentration_AirPollutant_SmokePM25,Mean_Concentration_AirPollutant_SmokePM25,Concentration_AirPollutant_SmokePM25"
-
-Node: dcid:dc/topic/Temperatures
-typeOf: dcs:Topic
-name: "Temperatures"
-relevantVariableList: "dc/svpg/dc/topic/Temperatures_DecadalLows5Pct,dc/svpg/dc/topic/Temperatures_Decadalhighs5Pct,dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature,dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature,dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature,dc/svpg/dc/topic/Temperatures_WetBulbEvents,dc/svpg/dc/topic/Temperatures_YearlyHighs5Pct,dc/svpg/dc/topic/Temperatures_Yearlylows5Pct"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_DecadalLows5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Decadal Projected Temperature Lows 5 Percent"
-memberList: "MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245,MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_Decadalhighs5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Decadal Projected Temperature Highs 5 Percent"
-memberList: "MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245,MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Maximum Temperature"
-memberList: "Max_Temperature"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Mean Temperature"
-memberList: "Mean_Temperature"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Minimum Temperature"
-memberList: "Min_Temperature"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_WetBulbEvents
-typeOf: dcs:StatVarPeerGroup
-name: "Wet Bulb Events"
-memberList: "Area_WetBulbTemperatureEvent,Count_WetBulbTemperatureEvent"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_YearlyHighs5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Yearly Projected Temperature Highs 5 Percent"
-memberList: "MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245,MaxTemp_Daily_GaussianMixture_5PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585"
-
-Node: dcid:dc/svpg/dc/topic/Temperatures_Yearlylows5Pct
-typeOf: dcs:StatVarPeerGroup
-name: "Yearly Projected Temperature Lows 5 Percent"
-memberList: "MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245,MinTemp_Daily_GaussianMixture_5PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585"
 

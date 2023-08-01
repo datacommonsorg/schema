@@ -62,34 +62,10 @@ member: dcid:Count_FarmInventory_Layers
 member: dcid:Count_FarmInventory_MilkCows
 member: dcid:Count_FarmInventory_SheepAndLambs
 
-# TODO(muhammadamjad): Remove this when it goes out of the index.
-Node: dcid:dc/topic/MedicalConditions
-typeOf: dcs:Topic
-name: "Medical Conditions"
-relevantVariable: dcid:Percent_Person_WithArthritis
-relevantVariable: dcid:Percent_Person_WithAsthma
-relevantVariable: dcid:Percent_Person_WithCancerExcludingSkinCancer
-relevantVariable: dcid:Percent_Person_WithChronicKidneyDisease
-relevantVariable: dcid:Percent_Person_WithChronicObstructivePulmonaryDisease
-relevantVariable: dcid:Percent_Person_WithCoronaryHeartDisease
-relevantVariable: dcid:Percent_Person_WithDiabetes
-relevantVariable: dcid:Percent_Person_WithHighBloodPressure
-relevantVariable: dcid:Percent_Person_WithHighCholesterol
-relevantVariable: dcid:Percent_Person_WithMentalHealthNotGood
-relevantVariable: dcid:Percent_Person_WithPhysicalHealthNotGood
-relevantVariable: dcid:Percent_Person_WithStroke
-
 Node: dcid:dc/topic/Literacy
 typeOf: dcs:Topic
 name: "Literacy"
 relevantVariable: dcid:Count_Person_Literate
 relevantVariable: dcid:Count_Person_Illiterate
-
-Node: dcid:dc/topic/Temperature
-typeOf: dcs:Topic
-name: "Temperature"
-relevantVariable: dcid:Mean_Temperature
-relevantVariable: dcid:Max_Temperature
-relevantVariable: dcid:Min_Temperature
 
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
