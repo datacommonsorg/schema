@@ -2308,15 +2308,25 @@ typeOf: dcs:StatVarPeerGroup
 name: "Divorced Population By Race"
 memberList: "Count_Person_15OrMoreYears_Divorced_AsianAlone,Count_Person_15OrMoreYears_Divorced_BlackOrAfricanAmericanAlone,Count_Person_15OrMoreYears_Divorced_HispanicOrLatino"
 
-Node: dcid:dc/topic/EnglishSpeakers
+Node: dcid:dc/topic/EnglishLanguageAtHome
 typeOf: dcs:Topic
-name: "English Speakers"
-relevantVariableList: "dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel"
+name: "English Language"
+relevantVariableList: "dc/svpg/EnglishLanguageAtHomeBreakdown"
 
-Node: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
+Node: dcid:dc/topic/NonEnglishLanguageAtHome
+typeOf: dcs:Topic
+name: "Non-English Languages"
+relevantVariableList: "dc/svpg/NonEnglishLanguageAtHomeBreakdown"
+
+Node: dcid:dc/svpg/EnglishLanguageAtHomeBreakdown
 typeOf: dcs:StatVarPeerGroup
-name: "Ability to Speak English"
-memberList: "Count_Person_SpeakEnglishNotAtAll,Count_Person_SpeakEnglishNotWell,Count_Person_SpeakEnglishWell"
+name: "Spoken English at Home"
+memberList: "Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome,Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome"
+
+Node: dcid:dc/svpg/NonEnglishLanguageAtHomeBreakdown
+typeOf: dcs:StatVarPeerGroup
+name: "Non-English Languages Spoken at Home"
+memberList: "Count_Person_5OrMoreYears_AfricanLanguagesSpokenAtHome,Count_Person_5OrMoreYears_ArabicSpokenAtHome,Count_Person_5OrMoreYears_ArmenianSpokenAtHome,Count_Person_5OrMoreYears_BengaliSpokenAtHome,Count_Person_5OrMoreYears_ChineseSpokenAtHome,Count_Person_5OrMoreYears_FrenchInclPatoisCajunSpokenAtHome,Count_Person_5OrMoreYears_GermanSpokenAtHome,Count_Person_5OrMoreYears_GreekSpokenAtHome,Count_Person_5OrMoreYears_GujaratiSpokenAtHome,Count_Person_5OrMoreYears_HaitianSpokenAtHome,Count_Person_5OrMoreYears_HebrewSpokenAtHome,Count_Person_5OrMoreYears_HindiSpokenAtHome,Count_Person_5OrMoreYears_HungarianSpokenAtHome,Count_Person_5OrMoreYears_ItalianSpokenAtHome,Count_Person_5OrMoreYears_JapaneseSpokenAtHome,Count_Person_5OrMoreYears_KhmerSpokenAtHome,Count_Person_5OrMoreYears_KoreanSpokenAtHome,Count_Person_5OrMoreYears_LaotianSpokenAtHome,Count_Person_5OrMoreYears_MalayalamKannadaOrOtherDravidianLanguagesSpokenAtHome,Count_Person_5OrMoreYears_MonKhmerCambodianSpokenAtHome,Count_Person_5OrMoreYears_NavajoSpokenAtHome,Count_Person_5OrMoreYears_NepaliMarathiOrOtherIndicLanguagesSpokenAtHome,Count_Person_5OrMoreYears_PersianSpokenAtHome,Count_Person_5OrMoreYears_PolishSpokenAtHome,Count_Person_5OrMoreYears_PortugueseSpokenAtHome,Count_Person_5OrMoreYears_PunjabiSpokenAtHome,Count_Person_5OrMoreYears_RussianSpokenAtHome,Count_Person_5OrMoreYears_ScandinavianLanguagesSpokenAtHome,Count_Person_5OrMoreYears_SerboCroatianSpokenAtHome,Count_Person_5OrMoreYears_SpanishSpokenAtHome,Count_Person_5OrMoreYears_TagalogSpokenAtHome,Count_Person_5OrMoreYears_TamilSpokenAtHome,Count_Person_5OrMoreYears_TeluguSpokenAtHome,Count_Person_5OrMoreYears_ThaiSpokenAtHome,Count_Person_5OrMoreYears_UkrainianOrOtherSlavicLanguagesSpokenAtHome,Count_Person_5OrMoreYears_UrduSpokenAtHome,Count_Person_5OrMoreYears_VietnameseSpokenAtHome,Count_Person_5OrMoreYears_YiddishSpokenAtHome"
 
 Node: dcid:dc/topic/Immigration
 typeOf: dcs:Topic
@@ -2330,10 +2340,10 @@ memberList: "Count_Person_DateOfEntry1990OrEarlier,Count_Person_DateOfEntry1990T
 
 Node: dcid:dc/topic/Language
 typeOf: dcs:Topic
-name: "Language"
-relevantVariableList: "dc/topic/EnglishSpeakers"
+name: "Language Spoken At Home"
+relevantVariableList: "dc/topic/EnglishLanguageAtHome,dc/topic/NonEnglishLanguageAtHome"
 
-Node: dcid:dc/topic/LanguageSpokenAtHome
+Node: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
 typeOf: dcs:Topic
 name: "Language Spoken At Home"
 relevantVariableList: "Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_ForeignBorn,Count_Person_5OrMoreYears_SpanishSpokenAtHome_ForeignBorn,dc/1lm9k2vdxj4c6,dc/wj5l0n6wkep45"
@@ -2371,7 +2381,7 @@ memberList: "Count_Person_15OrMoreYears_MarriedAndNotSeparated_AsianAlone,Count_
 Node: dcid:dc/topic/Nationality
 typeOf: dcs:Topic
 name: "Nationality"
-relevantVariableList: "dc/topic/CitizenshipStatus,dc/topic/Immigration,dc/topic/LanguageSpokenAtHome,dc/topic/PlaceOfBirth"
+relevantVariableList: "dc/topic/CitizenshipStatus,dc/topic/Immigration,dc/topic/LanguageSpokenAtHome_ForeignBorn,dc/topic/PlaceOfBirth"
 
 Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
 typeOf: dcs:Topic
@@ -3321,7 +3331,7 @@ memberList: "Percent_Person_BingeDrinking,Percent_Person_Obesity,Percent_Person_
 Node: dcid:dc/topic/HealthConditions
 typeOf: dcs:Topic
 name: "Health Conditions"
-relevantVariableList: "dc/topic/Arthritis,dc/topic/Asthma,dc/topic/BloodPressure,dc/topic/Cancer,dc/topic/Cholesterol,dc/topic/Diabetes,dc/topic/HeartDisease,dc/topic/MentalHealth,dc/topic/KidneyDisease,dc/topic/Stroke,dc/topic/HeatIllnesses,dc/svpg/ComparisonOfHealthPrevalence"
+relevantVariableList: "dc/svpg/ComparisonOfHealthPrevalence,dc/topic/Arthritis,dc/topic/Asthma,dc/topic/BloodPressure,dc/topic/Cancer,dc/topic/Cholesterol,dc/topic/Diabetes,dc/topic/HeartDisease,dc/topic/MentalHealth,dc/topic/KidneyDisease,dc/topic/Stroke,dc/topic/HeatIllnesses"
 
 Node: dcid:dc/svpg/ComparisonOfHealthPrevalence
 typeOf: dcs:StatVarPeerGroup
@@ -3846,7 +3856,7 @@ relevantVariableList: "dc/svpg/dc/topic/Emissions_FlourinatedGases"
 Node: dcid:dc/svpg/dc/topic/Emissions_FlourinatedGases
 typeOf: dcs:StatVarPeerGroup
 name: "Flourinated Gas Emissions by Type"
-memberList: "Annual_Emissions_EPA_OtherFullyFluorinatedCompound_NonBiogenic,Annual_Emissions_Hydrofluorocarbon_NonBiogenic,Annual_Emissions_Hydrofluoroether_NonBiogenic,Annual_Emissions_NitrogenTrifluoride_NonBiogenic,Annual_Emissions_Perfluorocarbon_NonBiogenic,Annual_Emissions_SulfurHexafluoride_NonBiogenic"
+memberList: "Annual_Emissions_Hydrofluorocarbon_NonBiogenic,Annual_Emissions_Hydrofluoroether_NonBiogenic,Annual_Emissions_NitrogenTrifluoride_NonBiogenic,Annual_Emissions_Perfluorocarbon_NonBiogenic,Annual_Emissions_SulfurHexafluoride_NonBiogenic,Annual_Emissions_EPA_OtherFullyFluorinatedCompound_NonBiogenic"
 
 Node: dcid:dc/topic/Emissions_Methane_EmissionsbySource
 typeOf: dcs:Topic

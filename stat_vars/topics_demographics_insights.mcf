@@ -142,17 +142,63 @@ member: dcid:Count_Person_15OrMoreYears_Divorced_AsianAlone
 member: dcid:Count_Person_15OrMoreYears_Divorced_BlackOrAfricanAmericanAlone
 member: dcid:Count_Person_15OrMoreYears_Divorced_HispanicOrLatino
 
-Node: dcid:dc/topic/EnglishSpeakers
+Node: dcid:dc/topic/EnglishLanguageAtHome
 typeOf: dcs:Topic
-name: "English Speakers"
-relevantVariable: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
+name: "English Language"
+relevantVariable: dcid:dc/svpg/EnglishLanguageAtHomeBreakdown
 
-Node: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
+Node: dcid:dc/topic/NonEnglishLanguageAtHome
+typeOf: dcs:Topic
+name: "Non-English Languages"
+relevantVariable: dcid:dc/svpg/NonEnglishLanguageAtHomeBreakdown
+
+Node: dcid:dc/svpg/EnglishLanguageAtHomeBreakdown
 typeOf: dcs:StatVarPeerGroup
-name: "Ability to Speak English"
-member: dcid:Count_Person_SpeakEnglishNotAtAll
-member: dcid:Count_Person_SpeakEnglishNotWell
-member: dcid:Count_Person_SpeakEnglishWell
+name: "Spoken English at Home"
+member: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome
+
+Node: dcid:dc/svpg/NonEnglishLanguageAtHomeBreakdown
+typeOf: dcs:StatVarPeerGroup
+name: "Non-English Languages Spoken at Home"
+member: dcid:Count_Person_5OrMoreYears_AfricanLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ArabicSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ArmenianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_BengaliSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ChineseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_FrenchInclPatoisCajunSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_GermanSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_GreekSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_GujaratiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HaitianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HebrewSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HindiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HungarianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ItalianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_JapaneseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_KhmerSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_KoreanSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_LaotianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_MalayalamKannadaOrOtherDravidianLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_MonKhmerCambodianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_NavajoSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_NepaliMarathiOrOtherIndicLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PersianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PolishSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PortugueseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PunjabiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_RussianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ScandinavianLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_SerboCroatianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_TagalogSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_TamilSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_TeluguSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ThaiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_UkrainianOrOtherSlavicLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_UrduSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_VietnameseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_YiddishSpokenAtHome
 
 Node: dcid:dc/topic/Immigration
 typeOf: dcs:Topic
@@ -169,10 +215,11 @@ member: dcid:Count_Person_DateOfEntry2010OrLater
 
 Node: dcid:dc/topic/Language
 typeOf: dcs:Topic
-name: "Language"
-relevantVariable: dcid:dc/topic/EnglishSpeakers
+name: "Language Spoken At Home"
+relevantVariable: dcid:dc/topic/EnglishLanguageAtHome
+relevantVariable: dcid:dc/topic/NonEnglishLanguageAtHome
 
-Node: dcid:dc/topic/LanguageSpokenAtHome
+Node: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
 typeOf: dcs:Topic
 name: "Language Spoken At Home"
 relevantVariable: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_ForeignBorn
@@ -227,7 +274,7 @@ typeOf: dcs:Topic
 name: "Nationality"
 relevantVariable: dcid:dc/topic/CitizenshipStatus
 relevantVariable: dcid:dc/topic/Immigration
-relevantVariable: dcid:dc/topic/LanguageSpokenAtHome
+relevantVariable: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
 relevantVariable: dcid:dc/topic/PlaceOfBirth
 
 Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
