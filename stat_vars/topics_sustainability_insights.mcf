@@ -189,12 +189,13 @@ member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_28_MiscellaneousAreaSourc
 member: dcid:Annual_Emissions_SulfurHexafluoride_NonBiogenic
 
 #### Energy ####
+# TODO(shanth): Cleanup Energy to include total SVs.
 
 Node: dcid:dc/topic/Energy
 typeOf: dcs:Topic
 name: "Energy"
-relevantVariable: dcid:dc/topic/Energy_Consumption_FossilFuels
 relevantVariable: dcid:dc/topic/Energy_Generation
+relevantVariable: dcid:dc/topic/Energy_Consumption_FossilFuels
 relevantVariable: dcid:dc/topic/Energy_Renewables
 relevantVariable: dcid:dc/topic/Electricity_Consumption
 relevantVariable: dcid:dc/topic/Energy_Fraction
@@ -299,8 +300,8 @@ member: dcid:sdg/EG_FEC_RNEW
 Node: dcid:dc/topic/Electricity_Consumption
 typeOf: dcs:Topic
 name: "Electricity Consumption"
+relevantVariable: dcid:Amount_Consumption_Electricity_PerCapita
 relevantVariable: dcid:dc/svpg/dc/topic/Electricity_Consumption_BySector
-relevantVariable: dcid:dc/svpg/dc/topic/Electricity_Consumption_PerCapita
 
 Node: dcid:dc/svpg/dc/topic/Electricity_Consumption_BySector
 typeOf: dcs:StatVarPeerGroup
@@ -312,11 +313,6 @@ member: dcid:Annual_Consumption_Electricity_ConstructionIndustry
 member: dcid:Annual_Consumption_Electricity_Households
 member: dcid:Annual_Consumption_Electricity_Manufacturing
 member: dcid:Annual_Consumption_Electricity_TransportIndustry
-
-Node: dcid:dc/svpg/dc/topic/Electricity_Consumption_PerCapita
-typeOf: dcs:StatVarPeerGroup
-name: "Per capita Electicity Consumption"
-member: dcid:Amount_Consumption_Electricity_PerCapita
 
 #### Green Jobs ####
 

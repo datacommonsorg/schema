@@ -65,6 +65,7 @@ relevantVariable: dcid:dc/svpg/dc/topic/HousesByDateofBuild_AgeofHouse
 Node: dcid:dc/svpg/dc/topic/HousesByDateofBuild_AgeofHouse
 typeOf: dcs:StatVarPeerGroup
 name: "Age of House"
+member: dcid:Count_HousingUnit_Before1939DateBuilt
 member: dcid:Count_HousingUnit_1940To1949DateBuilt
 member: dcid:Count_HousingUnit_1950To1959DateBuilt
 member: dcid:Count_HousingUnit_1960To1969DateBuilt
@@ -77,7 +78,6 @@ member: dcid:Count_HousingUnit_2005OrLaterDateBuilt
 member: dcid:Count_HousingUnit_2010OrLaterDateBuilt
 member: dcid:Count_HousingUnit_2010To2013DateBuilt
 member: dcid:Count_HousingUnit_2014OrLaterDateBuilt
-member: dcid:Count_HousingUnit_Before1939DateBuilt
 
 Node: dcid:dc/topic/HousesByFacilities
 typeOf: dcs:Topic
@@ -105,14 +105,14 @@ relevantVariable: dcid:dc/svpg/dc/topic/HousesByHomeValue_HomeValueofHouses
 Node: dcid:dc/svpg/dc/topic/HousesByHomeValue_HomeValueofHouses
 typeOf: dcs:StatVarPeerGroup
 name: "Home Value of Houses"
-member: dcid:Count_HousingUnit_HomeValue1000000To1499999USDollar
+member: dcid:Count_HousingUnit_HomeValueUpto49999USDollar
+member: dcid:Count_HousingUnit_HomeValue50000To99999USDollar
 member: dcid:Count_HousingUnit_HomeValue100000To199999USDollar
-member: dcid:Count_HousingUnit_HomeValue1500000To1999999USDollar
 member: dcid:Count_HousingUnit_HomeValue200000To299999USDollar
 member: dcid:Count_HousingUnit_HomeValue300000To499999USDollar
 member: dcid:Count_HousingUnit_HomeValue500000To999999USDollar
-member: dcid:Count_HousingUnit_HomeValue50000To99999USDollar
-member: dcid:Count_HousingUnit_HomeValueUpto49999USDollar
+member: dcid:Count_HousingUnit_HomeValue1000000To1499999USDollar
+member: dcid:Count_HousingUnit_HomeValue1500000To1999999USDollar
 
 Node: dcid:dc/topic/HousesByHouseholderEducationalAttainment
 typeOf: dcs:Topic
@@ -204,19 +204,12 @@ relevantVariable: dcid:dc/svpg/dc/topic/RentalHouses_HousesbyRentalAmount
 Node: dcid:dc/svpg/dc/topic/RentalHouses_HousesbyRentalAmount
 typeOf: dcs:StatVarPeerGroup
 name: "Houses by Rental Amount"
-member: dcid:Count_HousingUnit_WithRent_1000To1249USDollar
+member: dcid:Count_HousingUnit_WithRent_Upto100USDollar
 member: dcid:Count_HousingUnit_WithRent_100To149USDollar
-member: dcid:Count_HousingUnit_WithRent_1250To1499USDollar
-member: dcid:Count_HousingUnit_WithRent_1500To1999USDollar
 member: dcid:Count_HousingUnit_WithRent_150To199USDollar
-member: dcid:Count_HousingUnit_WithRent_2000OrMoreUSDollar
-member: dcid:Count_HousingUnit_WithRent_2000To2499USDollar
 member: dcid:Count_HousingUnit_WithRent_200To249USDollar
-member: dcid:Count_HousingUnit_WithRent_2500To2999USDollar
 member: dcid:Count_HousingUnit_WithRent_250To299USDollar
-member: dcid:Count_HousingUnit_WithRent_3000To3499USDollar
 member: dcid:Count_HousingUnit_WithRent_300To349USDollar
-member: dcid:Count_HousingUnit_WithRent_3500OrMoreUSDollar
 member: dcid:Count_HousingUnit_WithRent_350To399USDollar
 member: dcid:Count_HousingUnit_WithRent_400To449USDollar
 member: dcid:Count_HousingUnit_WithRent_450To499USDollar
@@ -228,5 +221,12 @@ member: dcid:Count_HousingUnit_WithRent_700To749USDollar
 member: dcid:Count_HousingUnit_WithRent_750To799USDollar
 member: dcid:Count_HousingUnit_WithRent_800To899USDollar
 member: dcid:Count_HousingUnit_WithRent_900To999USDollar
-member: dcid:Count_HousingUnit_WithRent_Upto100USDollar
+member: dcid:Count_HousingUnit_WithRent_1000To1249USDollar
+member: dcid:Count_HousingUnit_WithRent_1250To1499USDollar
+member: dcid:Count_HousingUnit_WithRent_1500To1999USDollar
+member: dcid:Count_HousingUnit_WithRent_2000OrMoreUSDollar
+member: dcid:Count_HousingUnit_WithRent_2000To2499USDollar
+member: dcid:Count_HousingUnit_WithRent_2500To2999USDollar
+member: dcid:Count_HousingUnit_WithRent_3000To3499USDollar
+member: dcid:Count_HousingUnit_WithRent_3500OrMoreUSDollar
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
