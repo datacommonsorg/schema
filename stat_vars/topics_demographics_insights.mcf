@@ -203,7 +203,16 @@ member: dcid:Count_Person_5OrMoreYears_YiddishSpokenAtHome
 Node: dcid:dc/topic/Immigration
 typeOf: dcs:Topic
 name: "Immigration"
+relevantVariable: dcid:dc/svpg/dc/topic/Immigration_NativeVsForeign
+relevantVariable: dcid:dc/topic/PlaceOfBirth
+relevantVariable: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
 relevantVariable: dcid:dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry
+
+Node: dcid:dc/svpg/dc/topic/Immigration_NativeVsForeign
+typeOf: dcs:StatVarPeerGroup
+name: "Population by Nativity"
+member: dcid:Count_Person_Native
+member: dcid:Count_Person_ForeignBorn
 
 Node: dcid:dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry
 typeOf: dcs:StatVarPeerGroup
@@ -221,7 +230,7 @@ relevantVariable: dcid:dc/topic/NonEnglishLanguageAtHome
 
 Node: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
 typeOf: dcs:Topic
-name: "Language Spoken At Home"
+name: "Language Spoken by Foreign Born Population"
 relevantVariable: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_ForeignBorn
 relevantVariable: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome_ForeignBorn
 relevantVariable: dcid:dc/1lm9k2vdxj4c6
@@ -272,10 +281,8 @@ member: dcid:Count_Person_15OrMoreYears_MarriedAndNotSeparated_HispanicOrLatino
 Node: dcid:dc/topic/Nationality
 typeOf: dcs:Topic
 name: "Nationality"
-relevantVariable: dcid:dc/topic/CitizenshipStatus
 relevantVariable: dcid:dc/topic/Immigration
-relevantVariable: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
-relevantVariable: dcid:dc/topic/PlaceOfBirth
+relevantVariable: dcid:dc/topic/CitizenshipStatus
 
 Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
 typeOf: dcs:Topic

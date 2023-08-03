@@ -2331,7 +2331,12 @@ memberList: "Count_Person_5OrMoreYears_AfricanLanguagesSpokenAtHome,Count_Person
 Node: dcid:dc/topic/Immigration
 typeOf: dcs:Topic
 name: "Immigration"
-relevantVariableList: "dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry"
+relevantVariableList: "dc/svpg/dc/topic/Immigration_NativeVsForeign,dc/topic/PlaceOfBirth,dc/topic/LanguageSpokenAtHome_ForeignBorn,dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry"
+
+Node: dcid:dc/svpg/dc/topic/Immigration_NativeVsForeign
+typeOf: dcs:StatVarPeerGroup
+name: "Population by Nativity"
+memberList: "Count_Person_Native,Count_Person_ForeignBorn"
 
 Node: dcid:dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry
 typeOf: dcs:StatVarPeerGroup
@@ -2345,7 +2350,7 @@ relevantVariableList: "dc/topic/EnglishLanguageAtHome,dc/topic/NonEnglishLanguag
 
 Node: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
 typeOf: dcs:Topic
-name: "Language Spoken At Home"
+name: "Language Spoken by Foreign Born Population"
 relevantVariableList: "Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_ForeignBorn,Count_Person_5OrMoreYears_SpanishSpokenAtHome_ForeignBorn,dc/1lm9k2vdxj4c6,dc/wj5l0n6wkep45"
 
 Node: dcid:dc/topic/MaritalStatus
@@ -2381,7 +2386,7 @@ memberList: "Count_Person_15OrMoreYears_MarriedAndNotSeparated_AsianAlone,Count_
 Node: dcid:dc/topic/Nationality
 typeOf: dcs:Topic
 name: "Nationality"
-relevantVariableList: "dc/topic/CitizenshipStatus,dc/topic/Immigration,dc/topic/LanguageSpokenAtHome_ForeignBorn,dc/topic/PlaceOfBirth"
+relevantVariableList: "dc/topic/Immigration,dc/topic/CitizenshipStatus"
 
 Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
 typeOf: dcs:Topic
@@ -2521,12 +2526,12 @@ relevantVariableList: "dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncome
 Node: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncomeByHouseholdType
 typeOf: dcs:StatVarPeerGroup
 name: "Median Income By Household Type"
-memberList: "Median_Income_Household,Median_Income_Household_FamilyHousehold,Median_Income_Household_MarriedCoupleFamilyHousehold,Median_Income_Household_NoHealthInsurance,Median_Income_Household_NonfamilyHousehold"
+memberList: "Median_Income_Household_FamilyHousehold,Median_Income_Household_MarriedCoupleFamilyHousehold,Median_Income_Household_NonfamilyHousehold"
 
 Node: dcid:dc/topic/Income
 typeOf: dcs:Topic
 name: "Income"
-relevantVariableList: "dc/topic/HouseholdIncomeDistribution,dc/topic/IndividualIncomeByIndustry,dc/topic/IndividualIncomeDistribution"
+relevantVariableList: "Median_Income_Household,Median_Income_Person,dc/topic/IndividualIncomeDistribution,dc/topic/IndividualIncomeByIndustry,dc/topic/HouseholdIncomeDistribution"
 
 Node: dcid:dc/topic/IndividualIncomeByIndustry
 typeOf: dcs:Topic
@@ -2575,7 +2580,7 @@ relevantVariableList: "dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEst
 
 Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEstablishementsByIndustry
 typeOf: dcs:StatVarPeerGroup
-name: "Number of Establishements By Industry"
+name: "Number of Establishments By Industry"
 memberList: "Count_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices,Count_Establishment_NAICSConstruction,Count_Establishment_NAICSFinanceInsurance,Count_Establishment_NAICSInformation,Count_Establishment_NAICSOtherServices,Count_Establishment_NAICSUtilities,dc/1j7jmy39fwhw5,dc/1wf1h5esex2d,dc/2c2e9bn8p7xz6,dc/2qgvm8lch89n5,dc/9pz1cse6yndtg,dc/br6elkd593zs1,dc/dc5hbzngddq37,dc/kcns4cvt14zx2,dc/mlf5e4m68h2k7,dc/tz59wt1hkl4y,dc/w8gp902jnk426,dc/x52jxxbwspczh"
 
 Node: dcid:dc/topic/NumberOfBusinessesByOwnership
@@ -2591,7 +2596,7 @@ memberList: "Count_Establishment_FederalGovernmentOwnedEstablishment_NAICSTotalA
 Node: dcid:dc/topic/Poverty
 typeOf: dcs:Topic
 name: "Poverty"
-relevantVariableList: "dc/topic/PovertyByGender,dc/topic/PovertyByLanguageSpokenAtHome,dc/topic/PovertyByRace,dc/topic/PovertyByResidency,dc/topic/PovertyLevels,dc/topic/SDG_1"
+relevantVariableList: "Count_Person_BelowPovertyLevelInThePast12Months,dc/topic/PovertyByGender,dc/topic/PovertyByRace,dc/topic/PovertyByResidency,dc/topic/PovertyByLanguageSpokenAtHome,dc/topic/SDG_1"
 
 Node: dcid:dc/topic/PovertyByGender
 typeOf: dcs:Topic
@@ -2632,11 +2637,6 @@ Node: dcid:dc/svpg/dc/topic/PovertyByResidency_ImpoverishedPopulationByResidency
 typeOf: dcs:StatVarPeerGroup
 name: "Impoverished Population By Residency"
 memberList: "Count_Person_Rural_BelowPovertyLevelInThePast12Months,Count_Person_Urban_BelowPovertyLevelInThePast12Months"
-
-Node: dcid:dc/topic/PovertyLevels
-typeOf: dcs:Topic
-name: "Poverty Levels"
-relevantVariableList: "Count_Household_WithFoodStampsInThePast12Months,Count_Person_BelowPovertyLevelInThePast12Months,Count_Person_Civilian_NonInstitutionalized_PovertyStatusDetermined,Count_Person_PovertyStatusDetermined,Count_Person_PovertyStatusDetermined_ResidesInGroupQuarters,Count_Person_PovertyStatusDetermined_ResidesInNoninstitutionalizedGroupQuarters"
 
 Node: dcid:dc/topic/Remittance
 typeOf: dcs:Topic
@@ -3371,7 +3371,7 @@ relevantVariableList: "dc/topic/DisabilitiesByGender,dc/topic/DisabilitiesByRace
 Node: dcid:dc/topic/HealthInsurance
 typeOf: dcs:Topic
 name: "Health Insurance"
-relevantVariableList: "dc/topic/HealthInsuranceType,dc/topic/NoHealthInsurance"
+relevantVariableList: "Count_Person_NoHealthInsurance,Count_Person_WithHealthInsurance,dc/topic/HealthInsuranceType,dc/topic/NoHealthInsurance"
 
 Node: dcid:dc/topic/HealthInsuranceByGender
 typeOf: dcs:Topic
@@ -3416,7 +3416,7 @@ memberList: "Count_Death_Upto1Years_AbnormalNotClassfied,Count_Death_Upto1Years_
 Node: dcid:dc/topic/MentalHealth
 typeOf: dcs:Topic
 name: "Mental Health"
-relevantVariableList: "Count_Death_MentalBehaviouralDisorders,Percent_Person_18OrMoreYears_WithDepression,Percent_Person_WithMentalHealthNotGood,dc/svpg/dc/topic/MentalHealth_DeathsbyAge"
+relevantVariableList: "Percent_Person_WithMentalHealthNotGood,Percent_Person_18OrMoreYears_WithDepression,Count_Death_MentalBehaviouralDisorders,dc/svpg/dc/topic/MentalHealth_DeathsbyAge"
 
 Node: dcid:dc/svpg/dc/topic/MentalHealth_DeathsbyAge
 typeOf: dcs:StatVarPeerGroup

@@ -143,18 +143,18 @@ relevantVariable: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncome
 Node: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncomeByHouseholdType
 typeOf: dcs:StatVarPeerGroup
 name: "Median Income By Household Type"
-member: dcid:Median_Income_Household
 member: dcid:Median_Income_Household_FamilyHousehold
 member: dcid:Median_Income_Household_MarriedCoupleFamilyHousehold
-member: dcid:Median_Income_Household_NoHealthInsurance
 member: dcid:Median_Income_Household_NonfamilyHousehold
 
 Node: dcid:dc/topic/Income
 typeOf: dcs:Topic
 name: "Income"
-relevantVariable: dcid:dc/topic/HouseholdIncomeDistribution
-relevantVariable: dcid:dc/topic/IndividualIncomeByIndustry
+relevantVariable: dcid:Median_Income_Household
+relevantVariable: dcid:Median_Income_Person
 relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
+relevantVariable: dcid:dc/topic/IndividualIncomeByIndustry
+relevantVariable: dcid:dc/topic/HouseholdIncomeDistribution
 
 Node: dcid:dc/topic/IndividualIncomeByIndustry
 typeOf: dcs:Topic
@@ -260,7 +260,7 @@ relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEst
 
 Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEstablishementsByIndustry
 typeOf: dcs:StatVarPeerGroup
-name: "Number of Establishements By Industry"
+name: "Number of Establishments By Industry"
 member: dcid:Count_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices
 member: dcid:Count_Establishment_NAICSConstruction
 member: dcid:Count_Establishment_NAICSFinanceInsurance
@@ -296,11 +296,11 @@ member: dcid:Count_Establishment_StateGovernmentOwnedEstablishment_NAICSTotalAll
 Node: dcid:dc/topic/Poverty
 typeOf: dcs:Topic
 name: "Poverty"
+relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months
 relevantVariable: dcid:dc/topic/PovertyByGender
-relevantVariable: dcid:dc/topic/PovertyByLanguageSpokenAtHome
 relevantVariable: dcid:dc/topic/PovertyByRace
 relevantVariable: dcid:dc/topic/PovertyByResidency
-relevantVariable: dcid:dc/topic/PovertyLevels
+relevantVariable: dcid:dc/topic/PovertyByLanguageSpokenAtHome
 relevantVariable: dcid:dc/topic/SDG_1
 
 Node: dcid:dc/topic/PovertyByGender
@@ -355,15 +355,6 @@ name: "Impoverished Population By Residency"
 member: dcid:Count_Person_Rural_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_Urban_BelowPovertyLevelInThePast12Months
 
-Node: dcid:dc/topic/PovertyLevels
-typeOf: dcs:Topic
-name: "Poverty Levels"
-relevantVariable: dcid:Count_Household_WithFoodStampsInThePast12Months
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_Civilian_NonInstitutionalized_PovertyStatusDetermined
-relevantVariable: dcid:Count_Person_PovertyStatusDetermined
-relevantVariable: dcid:Count_Person_PovertyStatusDetermined_ResidesInGroupQuarters
-relevantVariable: dcid:Count_Person_PovertyStatusDetermined_ResidesInNoninstitutionalizedGroupQuarters
 
 Node: dcid:dc/topic/Remittance
 typeOf: dcs:Topic
