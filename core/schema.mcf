@@ -379,6 +379,13 @@ name: "UNGeoRegion"
 description: "The United Nations Geoschema for sub-regions"
 descriptionUrl: "https://en.wikipedia.org/wiki/United_Nations_geoscheme"
 
+Node: dcid:ContinentalUnion
+typeOf: schema:Class
+subClassOf: schema:Place
+name: "ContinentalUnion"
+description: "Pan-continental organization."
+descriptionUrl: "https://en.wikipedia.org/wiki/Continental_union"
+
 Node: hasMenuItem
 dcid: "hasMenuItem"
 domainIncludes: schema:MenuSection
@@ -7453,6 +7460,11 @@ typeOf: schema:MusicAlbumProductionType
 Node: City
 dcid: "City"
 name: "City"
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+
+Node: dcid:Borough
+name: "Borough"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
 

@@ -1,3 +1,4 @@
+# LINT.IfChange
 # These are auto-generated
 # Topics for Demographics NL Insights.
 # Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
@@ -32,7 +33,7 @@ relevantVariable: dcid:dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusT
 
 Node: dcid:dc/svpg/dc/topic/CitizenshipStatus_USCitizenshipbyStatusType
 typeOf: dcs:StatVarPeerGroup
-name: "US Citizenship by Status Type"
+name: "Population by US Citizenship"
 member: dcid:Count_Person_NotAUSCitizen
 member: dcid:Count_Person_USCitizenBornInTheUnitedStates
 member: dcid:Count_Person_USCitizenByNaturalization
@@ -40,15 +41,91 @@ member: dcid:Count_Person_USCitizenByNaturalization
 Node: dcid:dc/topic/Demographics
 typeOf: dcs:Topic
 name: "Demographics"
+relevantVariable: dcid:Count_Person
+relevantVariable: dcid:Count_Person_PerArea
+relevantVariable: dcid:GrowthRate_Count_Person
 relevantVariable: dcid:dc/topic/Age
+relevantVariable: dcid:dc/topic/Gender
+relevantVariable: dcid:dc/topic/Race
 relevantVariable: dcid:dc/topic/Language
 relevantVariable: dcid:dc/topic/MaritalStatus
 relevantVariable: dcid:dc/topic/Nationality
 
+Node: dcid:dc/topic/Gender
+typeOf: dcs:Topic
+name: "Gender"
+relevantVariable: dcid:dc/svpg/Population_PopulationbyGender
+
+Node: dcid:dc/svpg/Population_PopulationbyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Population by Gender"
+member: dcid:Count_Person_Female
+member: dcid:Count_Person_Male
+
+Node: dcid:dc/topic/Race
+typeOf: dcs:Topic
+name: "Population by Race"
+relevantVariable: dcid:dc/svpg/Count_Person_RacesMonoracial
+relevantVariable: dcid:dc/svpg/Count_Person_RacesCombination
+relevantVariable: dcid:dc/svpg/Count_Person_RacesWithHispanicBreakdown
+relevantVariable: dcid:dc/svpg/Count_Person_RacesWithNonHispanicBreakdown
+
+Node: dcid:dc/svpg/Count_Person_RacesMonoracial
+typeOf: dcs:StatVarPeerGroup
+name: "Monoracial Breakdown"
+member: dcid:Count_Person_WhiteAlone
+member: dcid:Count_Person_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_HispanicOrLatino
+member: dcid:Count_Person_AsianAlone
+member: dcid:Count_Person_AmericanIndianAndAlaskaNativeAlone
+member: dcid:Count_Person_AsianOrPacificIslander
+member: dcid:Count_Person_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Person_SomeOtherRaceAlone
+
+Node: dcid:dc/svpg/Count_Person_RacesCombination
+typeOf: dcs:StatVarPeerGroup
+name: "Monoracial/multiracial Breakdown"
+member: dcid:Count_Person_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_AsianAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces
+
+Node: dcid:dc/svpg/Count_Person_RacesWithHispanicBreakdown
+typeOf: dcs:StatVarPeerGroup
+name: "Racial Breakdown with Hispanic Consideration"
+member: dcid:Count_Person_HispanicOrLatino_AmericanIndianOrAlaskaNativeAlone
+member: dcid:Count_Person_HispanicOrLatino_AsianAlone
+member: dcid:Count_Person_HispanicOrLatino_AsianOrPacificIslander
+member: dcid:Count_Person_HispanicOrLatino_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_HispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Person_HispanicOrLatino_TwoOrMoreRaces
+member: dcid:Count_Person_HispanicOrLatino_WhiteAlone
+member: dcid:Count_Person_HispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_HispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_HispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_HispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces
+
+Node: dcid:dc/svpg/Count_Person_RacesWithNonHispanicBreakdown
+typeOf: dcs:StatVarPeerGroup
+name: "Racial Breakdown with Non Hispanic Consideration"
+member: dcid:Count_Person_WhiteAloneNotHispanicOrLatino
+member: dcid:Count_Person_NotHispanicOrLatino_AmericanIndianOrAlaskaNativeAlone
+member: dcid:Count_Person_NotHispanicOrLatino_AsianAlone
+member: dcid:Count_Person_NotHispanicOrLatino_AsianOrPacificIslander
+member: dcid:Count_Person_NotHispanicOrLatino_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_NotHispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Person_NotHispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces
+member: dcid:Count_Person_NotHispanicOrLatino_TwoOrMoreRaces
+member: dcid:Count_Person_NotHispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces
+
 Node: dcid:dc/topic/DivorcedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Divorced Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_Divorced
+name: "Divorced Population"
+relevantVariable: dcid:Count_Person_Divorced
 relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/DivorcedPopulationByDemographic_DivorcedPopulationByRace
 
@@ -65,22 +142,77 @@ member: dcid:Count_Person_15OrMoreYears_Divorced_AsianAlone
 member: dcid:Count_Person_15OrMoreYears_Divorced_BlackOrAfricanAmericanAlone
 member: dcid:Count_Person_15OrMoreYears_Divorced_HispanicOrLatino
 
-Node: dcid:dc/topic/EnglishSpeakers
+Node: dcid:dc/topic/EnglishLanguageAtHome
 typeOf: dcs:Topic
-name: "English Speakers"
-relevantVariable: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
+name: "English Language"
+relevantVariable: dcid:dc/svpg/EnglishLanguageAtHomeBreakdown
 
-Node: dcid:dc/svpg/dc/topic/EnglishSpeakers_EnglishSpeakingPopulationbyLanguageLevel
+Node: dcid:dc/topic/NonEnglishLanguageAtHome
+typeOf: dcs:Topic
+name: "Non-English Languages"
+relevantVariable: dcid:dc/svpg/NonEnglishLanguageAtHomeBreakdown
+
+Node: dcid:dc/svpg/EnglishLanguageAtHomeBreakdown
 typeOf: dcs:StatVarPeerGroup
-name: "English Speaking Population by Language Level"
-member: dcid:Count_Person_SpeakEnglishNotAtAll
-member: dcid:Count_Person_SpeakEnglishNotWell
-member: dcid:Count_Person_SpeakEnglishWell
+name: "Spoken English at Home"
+member: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome
+
+Node: dcid:dc/svpg/NonEnglishLanguageAtHomeBreakdown
+typeOf: dcs:StatVarPeerGroup
+name: "Non-English Languages Spoken at Home"
+member: dcid:Count_Person_5OrMoreYears_AfricanLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ArabicSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ArmenianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_BengaliSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ChineseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_FrenchInclPatoisCajunSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_GermanSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_GreekSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_GujaratiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HaitianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HebrewSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HindiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_HungarianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ItalianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_JapaneseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_KhmerSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_KoreanSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_LaotianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_MalayalamKannadaOrOtherDravidianLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_MonKhmerCambodianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_NavajoSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_NepaliMarathiOrOtherIndicLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PersianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PolishSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PortugueseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_PunjabiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_RussianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ScandinavianLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_SerboCroatianSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_TagalogSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_TamilSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_TeluguSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_ThaiSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_UkrainianOrOtherSlavicLanguagesSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_UrduSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_VietnameseSpokenAtHome
+member: dcid:Count_Person_5OrMoreYears_YiddishSpokenAtHome
 
 Node: dcid:dc/topic/Immigration
 typeOf: dcs:Topic
 name: "Immigration"
+relevantVariable: dcid:dc/svpg/dc/topic/Immigration_NativeVsForeign
+relevantVariable: dcid:dc/topic/PlaceOfBirth
+relevantVariable: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
 relevantVariable: dcid:dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry
+
+Node: dcid:dc/svpg/dc/topic/Immigration_NativeVsForeign
+typeOf: dcs:StatVarPeerGroup
+name: "Population by Nativity"
+member: dcid:Count_Person_Native
+member: dcid:Count_Person_ForeignBorn
 
 Node: dcid:dc/svpg/dc/topic/Immigration_USImmigrationByDateOfEntry
 typeOf: dcs:StatVarPeerGroup
@@ -92,12 +224,13 @@ member: dcid:Count_Person_DateOfEntry2010OrLater
 
 Node: dcid:dc/topic/Language
 typeOf: dcs:Topic
-name: "Language"
-relevantVariable: dcid:dc/topic/EnglishSpeakers
-
-Node: dcid:dc/topic/LanguageSpokenAtHome
-typeOf: dcs:Topic
 name: "Language Spoken At Home"
+relevantVariable: dcid:dc/topic/EnglishLanguageAtHome
+relevantVariable: dcid:dc/topic/NonEnglishLanguageAtHome
+
+Node: dcid:dc/topic/LanguageSpokenAtHome_ForeignBorn
+typeOf: dcs:Topic
+name: "Language Spoken by Foreign Born Population"
 relevantVariable: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_ForeignBorn
 relevantVariable: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome_ForeignBorn
 relevantVariable: dcid:dc/1lm9k2vdxj4c6
@@ -106,8 +239,8 @@ relevantVariable: dcid:dc/wj5l0n6wkep45
 Node: dcid:dc/topic/MaritalStatus
 typeOf: dcs:Topic
 name: "Marital Status"
-relevantVariable: dcid:dc/topic/DivorcedPopulationByDemographic
 relevantVariable: dcid:dc/topic/MaritalStatusBreakdown
+relevantVariable: dcid:dc/topic/DivorcedPopulationByDemographic
 relevantVariable: dcid:dc/topic/MarriedPopulationByDemographic
 relevantVariable: dcid:dc/topic/NeverMarriedPopulationByDemographic
 relevantVariable: dcid:dc/topic/WidowedPopulationByDemographic
@@ -127,8 +260,8 @@ member: dcid:Count_Person_Widowed
 
 Node: dcid:dc/topic/MarriedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Married Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_MarriedAndNotSeparated
+name: "Married Population"
+relevantVariable: dcid:Count_Person_MarriedAndNotSeparated
 relevantVariable: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/MarriedPopulationByDemographic_MarriedPopulationByRace
 
@@ -148,15 +281,13 @@ member: dcid:Count_Person_15OrMoreYears_MarriedAndNotSeparated_HispanicOrLatino
 Node: dcid:dc/topic/Nationality
 typeOf: dcs:Topic
 name: "Nationality"
-relevantVariable: dcid:dc/topic/CitizenshipStatus
 relevantVariable: dcid:dc/topic/Immigration
-relevantVariable: dcid:dc/topic/LanguageSpokenAtHome
-relevantVariable: dcid:dc/topic/PlaceOfBirth
+relevantVariable: dcid:dc/topic/CitizenshipStatus
 
 Node: dcid:dc/topic/NeverMarriedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Never Married Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_NeverMarried
+name: "Never Married Population"
+relevantVariable: dcid:Count_Person_NeverMarried
 relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/NeverMarriedPopulationByDemographic_NeverMarriedPopulationByRace
 
@@ -182,14 +313,14 @@ Node: dcid:dc/svpg/dc/topic/PlaceOfBirth_PopulationByBirthPlace
 typeOf: dcs:StatVarPeerGroup
 name: "Population By Birth Place"
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthAfrica
-member: dcid:Count_Person_ForeignBorn_PlaceOfBirthAsia
+member: dcid:Count_Person_PlaceOfBirthAsia
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthCaribbean
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthCentralAmericaExceptMexico
-member: dcid:Count_Person_ForeignBorn_PlaceOfBirthEurope
+member: dcid:Count_Person_PlaceOfBirthEurope
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthMexico
-member: dcid:Count_Person_ForeignBorn_PlaceOfBirthNorthAmerica
-member: dcid:Count_Person_ForeignBorn_PlaceOfBirthOcenia
-member: dcid:Count_Person_ForeignBorn_PlaceOfBirthSouthAmerica
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthNorthamerica
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthOceania
+member: dcid:Count_Person_ForeignBorn_PlaceOfBirthSouthamerica
 
 Node: dcid:dc/topic/PopulationByAgeDistribution
 typeOf: dcs:Topic
@@ -212,20 +343,20 @@ relevantVariable: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPerso
 
 Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryOldGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonVeryOldGender"
+name: "Population 85 or over by Gender "
 member: dcid:Count_Person_85OrMoreYears_Female
 member: dcid:Count_Person_85OrMoreYears_Male
 
 Node: dcid:dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryYoungGender
 typeOf: dcs:StatVarPeerGroup
-name: "CountPersonVeryYoungGender"
+name: "Children Population by Gender"
 member: dcid:Count_Person_0To4Years_Female
 member: dcid:Count_Person_0To4Years_Male
 
 Node: dcid:dc/topic/WidowedPopulationByDemographic
 typeOf: dcs:Topic
-name: "Widowed Population By Demographic"
-relevantVariable: dcid:Count_Person_InLaborForce_Widowed
+name: "Widowed Population"
+relevantVariable: dcid:Count_Person_Widowed
 relevantVariable: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender
 relevantVariable: dcid:dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByRace
 
@@ -241,3 +372,4 @@ name: "Widowed Population By Race"
 member: dcid:Count_Person_15OrMoreYears_Widowed_AsianAlone
 member: dcid:Count_Person_15OrMoreYears_Widowed_BlackOrAfricanAmericanAlone
 member: dcid:Count_Person_15OrMoreYears_Widowed_HispanicOrLatino
+# LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

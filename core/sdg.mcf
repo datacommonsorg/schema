@@ -2,6 +2,20 @@
 # Temporary partially curated schema for SDGs.
 ################################################################################
 
+Node: dcid:unDataCode
+typeOf: schema:Property
+domainIncludes: dcs:Place
+rangeIncludes: Text
+name: "unDataCode"
+description: "UN-curated place identification code."
+
+Node: dcid:unDataLabel
+typeOf: schema:Property
+domainIncludes: dcs:Place
+rangeIncludes: Text
+name: "unDataLabel"
+description: "UN-curated place label."
+
 Node: dcid:SDG_Series
 name: "SDG_Series"
 typeOf: schema:Class
@@ -9815,7 +9829,7 @@ name: "Per 100 population"
 
 Node: dcid:SDG_PT
 typeOf: dcs:SDG_UnitOfMeasure
-name: "% of children aged 36-59 months"
+name: "Percentage"
 
 Node: dcid:SDG_P_KM
 typeOf: dcs:SDG_UnitOfMeasure

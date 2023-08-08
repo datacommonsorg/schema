@@ -1,3 +1,4 @@
+# LINT.IfChange
 # These are auto-generated
 # These topics are intended for the new NL based Topic Pages (currently called Insights).
 # Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
@@ -17,18 +18,19 @@ relevantVariable: dcid:sdg/DT_DOD_DECT_GN_ZS
 Node: dcid:dc/topic/EconomicActivity
 typeOf: dcs:Topic
 name: "Economic Activity"
-relevantVariable: dcid:dc/topic/IndustriesByNumberOfWorkers
+relevantVariable: dcid:dc/topic/IndustriesByGDP
 relevantVariable: dcid:dc/topic/IndustriesByRevenue
 
-Node: dcid:dc/topic/Economics
+Node: dcid:dc/topic/Economy
 typeOf: dcs:Topic
-name: "Economics"
+name: "Economy"
 relevantVariable: dcid:dc/topic/Businesses
 relevantVariable: dcid:dc/topic/EconomicActivity
 relevantVariable: dcid:dc/topic/Employment
 relevantVariable: dcid:dc/topic/GlobalEconomicActivity
 relevantVariable: dcid:dc/topic/Income
 relevantVariable: dcid:dc/topic/Poverty
+relevantVariable: dcid:dc/topic/Agriculture
 
 Node: dcid:dc/topic/EducationExpenditure
 typeOf: dcs:Topic
@@ -45,33 +47,40 @@ Node: dcid:dc/topic/Employment
 typeOf: dcs:Topic
 name: "Employment"
 relevantVariable: dcid:Count_Person_Employed
-relevantVariable: dcid:dc/topic/EmploymentByIndustry
+relevantVariable: dcid:dc/topic/Jobs
 relevantVariable: dcid:dc/topic/UnemploymentRate
 relevantVariable: dcid:dc/topic/UnpaidFamilyWorkers
 
-Node: dcid:dc/topic/EmploymentByIndustry
+Node: dcid:dc/topic/Jobs
 typeOf: dcs:Topic
-name: "Employment By Industry"
-relevantVariable: dcid:dc/svpg/dc/topic/EmploymentByIndustry_NumberOfWorkersByIndustry
+name: "Jobs"
+relevantVariable: dcid:dc/svpg/JobsPeerGroup
 
-Node: dcid:dc/svpg/dc/topic/EmploymentByIndustry_NumberOfWorkersByIndustry
+Node: dcid:dc/svpg/JobsPeerGroup
 typeOf: dcs:StatVarPeerGroup
-name: "Number Of Workers By Industry"
+name: "Categories of Jobs"
 member: dcid:Count_Worker_NAICSAccommodationFoodServices
 member: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
 member: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
-member: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
+member: dcid:Count_Worker_NAICSConstruction
 member: dcid:Count_Worker_NAICSEducationalServices
-member: dcid:Count_Worker_NAICSFinanceInsurance
 member: dcid:Count_Worker_NAICSHealthCareSocialAssistance
+# Manufacturing
+member: dcid:dc/ndg1xk1e9frc2
+member: dcid:Count_Worker_NAICSFinanceInsurance
 member: dcid:Count_Worker_NAICSInformation
+member: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
 member: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
 member: dcid:Count_Worker_NAICSOtherServices
-member: dcid:Count_Worker_NAICSProfessionalScientificTechnicalServices
-member: dcid:Count_Worker_NAICSUtilities
-member: dcid:Count_Worker_NAICSWholesaleTrade
+# Transportation and Warehousing
 member: dcid:dc/8p97n7l96lgg8
+member: dcid:Count_Worker_NAICSUtilities
+# Retail Trade
 member: dcid:dc/p69tpsldf99h7
+member: dcid:Count_Worker_NAICSRealEstateRentalLeasing
+member: dcid:Count_Worker_NAICSPublicAdministration
+member: dcid:Count_Worker_NAICSWholesaleTrade
+member: dcid:Count_Worker_NAICSProfessionalScientificTechnicalServices
 
 Node: dcid:dc/topic/GDP
 typeOf: dcs:Topic
@@ -79,16 +88,47 @@ name: "GDP"
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealValue
+relevantVariable: dcid:dc/topic/GDPByIndustry
 relevantVariable: dcid:dc/topic/InflationAdjustedGDP
 
 Node: dcid:dc/topic/GlobalEconomicActivity
 typeOf: dcs:Topic
 name: "Global Economic Activity"
+relevantVariable: dcid:dc/topic/GDP
 relevantVariable: dcid:dc/topic/Debt
 relevantVariable: dcid:dc/topic/EducationExpenditure
-relevantVariable: dcid:dc/topic/GDP
 relevantVariable: dcid:dc/topic/HealthcareExpenditure
 relevantVariable: dcid:dc/topic/Remittance
+
+Node: dcid:dc/topic/GDPByIndustry
+typeOf: dcs:Topic
+name: "GDP By Industry"
+relevantVariable: dcid:dc/svpg/RealGDPByIndustry
+
+# Generated with https://paste.googleplex.com/4559733896773632
+Node: dcid:dc/svpg/RealGDPByIndustry
+typeOf: dcs:StatVarPeerGroup
+name: "Breakdown of GDP by Industry"
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAccommodationFoodServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAdministrativeSupportWasteManagementRemediationServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAgricultureForestryFishingHunting_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSArtsEntertainmentRecreation_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSConstruction_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSEducationalServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSFinanceInsurance_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSHealthCareSocialAssistance_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSInformation_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSManagementOfCompaniesEnterprises_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSMiningQuarryingOilGasExtraction_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSOtherServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSProfessionalScientificTechnicalServices_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSRealEstateRentalLeasing_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSUtilities_RealValue
+member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSWholesaleTrade_RealValue
+member: dcid:dc/62n3z7mvfpjx1
+member: dcid:dc/qt7ewllmt3826
+member: dcid:dc/zz6gwv838v9w
+
 
 Node: dcid:dc/topic/HealthcareExpenditure
 typeOf: dcs:Topic
@@ -103,18 +143,18 @@ relevantVariable: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncome
 Node: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncomeByHouseholdType
 typeOf: dcs:StatVarPeerGroup
 name: "Median Income By Household Type"
-member: dcid:Median_Income_Household
 member: dcid:Median_Income_Household_FamilyHousehold
 member: dcid:Median_Income_Household_MarriedCoupleFamilyHousehold
-member: dcid:Median_Income_Household_NoHealthInsurance
 member: dcid:Median_Income_Household_NonfamilyHousehold
 
 Node: dcid:dc/topic/Income
 typeOf: dcs:Topic
 name: "Income"
-relevantVariable: dcid:dc/topic/HouseholdIncomeDistribution
-relevantVariable: dcid:dc/topic/IndividualIncomeByIndustry
+relevantVariable: dcid:Median_Income_Household
+relevantVariable: dcid:Median_Income_Person
 relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
+relevantVariable: dcid:dc/topic/IndividualIncomeByIndustry
+relevantVariable: dcid:dc/topic/HouseholdIncomeDistribution
 
 Node: dcid:dc/topic/IndividualIncomeByIndustry
 typeOf: dcs:Topic
@@ -148,37 +188,42 @@ relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_PopulationB
 Node: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_PopulationByIncomeLevel
 typeOf: dcs:StatVarPeerGroup
 name: "Population By Income Level"
+member: dcid:Count_Person_IncomeOfUpto9999USDollar
 member: dcid:Count_Person_IncomeOf10000To14999USDollar
 member: dcid:Count_Person_IncomeOf25000To34999USDollar
 member: dcid:Count_Person_IncomeOf35000To49999USDollar
 member: dcid:Count_Person_IncomeOf50000To64999USDollar
 member: dcid:Count_Person_IncomeOf65000To74999USDollar
 member: dcid:Count_Person_IncomeOf75000OrMoreUSDollar
-member: dcid:Count_Person_IncomeOfUpto9999USDollar
 
-Node: dcid:dc/topic/IndustriesByNumberOfWorkers
+Node: dcid:dc/topic/IndustriesByGDP
 typeOf: dcs:Topic
-name: "Industries By Number Of Workers"
-relevantVariable: dcid:dc/rydmsxhz7pxh1
+name: "Industries By GDP"
+relevantVariable: dcid:dc/svpg/RealGDPByIndustry
 
 Node: dcid:dc/topic/IndustriesByRevenue
 typeOf: dcs:Topic
 name: "Industries By Revenue"
-relevantVariable: dcid:ReceiptsBillingsOrSales_Establishment_NAICSConstruction_WithPayroll
+relevantVariable: dcid:dc/svpg/dc/topic/IndustriesByRevenue_IndustryType
+
+Node: dcid:dc/svpg/dc/topic/IndustriesByRevenue_IndustryType
+typeOf: dcs:StatVarPeerGroup
+name: "Revenue By Industry Type"
+relevantVariable: dcid:Sales_Establishment_NAICSAccommodationFoodServices_WithPayroll
+relevantVariable: dcid:Receipts_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSArtsEntertainmentRecreation_WithPayroll
+relevantVariable: dcid:ReceiptsBillingsOrSales_Establishment_NAICSConstruction_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSEducationalServices_WithPayroll
+relevantVariable: dcid:Revenue_Establishment_NAICSFinanceInsurance_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSHealthCareSocialAssistance_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSInformation_WithPayroll
+relevantVariable: dcid:Sales_Establishment_NAICSWholesaleTrade_WithPayroll
+relevantVariable: dcid:Revenue_Establishment_NAICSManagementOfCompaniesEnterprises_WithPayroll
+relevantVariable: dcid:ShipmentsOrReceipts_Establishment_NAICSMiningQuarryingOilGasExtraction_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSOtherServices_WithPayroll
 relevantVariable: dcid:ReceiptsOrRevenue_Establishment_NAICSProfessionalScientificTechnicalServices_WithPayroll
-relevantVariable: dcid:Receipts_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices_WithPayroll
-relevantVariable: dcid:Revenue_Establishment_NAICSFinanceInsurance_WithPayroll
-relevantVariable: dcid:Revenue_Establishment_NAICSManagementOfCompaniesEnterprises_WithPayroll
 relevantVariable: dcid:Revenue_Establishment_NAICSRealEstateRentalLeasing_WithPayroll
 relevantVariable: dcid:Revenue_Establishment_NAICSUtilities_WithPayroll
-relevantVariable: dcid:Sales_Establishment_NAICSAccommodationFoodServices_WithPayroll
-relevantVariable: dcid:Sales_Establishment_NAICSWholesaleTrade_WithPayroll
-relevantVariable: dcid:ShipmentsOrReceipts_Establishment_NAICSMiningQuarryingOilGasExtraction_WithPayroll
 relevantVariable: dcid:dc/2hl1yfxglmq0c
 relevantVariable: dcid:dc/2kz6b9kvps8c9
 relevantVariable: dcid:dc/31hbegrgs0x05
@@ -206,7 +251,7 @@ relevantVariable: dcid:dc/zkmdz1rhlt7q8
 Node: dcid:dc/topic/InflationAdjustedGDP
 typeOf: dcs:Topic
 name: "Inflation Adjusted GDP"
-relevantVariable: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
+relevantVariable: dcid:InflationAdjustedGDP
 
 Node: dcid:dc/topic/NumberOfBusinessesByIndustry
 typeOf: dcs:Topic
@@ -215,7 +260,7 @@ relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEst
 
 Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEstablishementsByIndustry
 typeOf: dcs:StatVarPeerGroup
-name: "Number of Establishements By Industry"
+name: "Number of Establishments By Industry"
 member: dcid:Count_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices
 member: dcid:Count_Establishment_NAICSConstruction
 member: dcid:Count_Establishment_NAICSFinanceInsurance
@@ -251,11 +296,11 @@ member: dcid:Count_Establishment_StateGovernmentOwnedEstablishment_NAICSTotalAll
 Node: dcid:dc/topic/Poverty
 typeOf: dcs:Topic
 name: "Poverty"
+relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months
 relevantVariable: dcid:dc/topic/PovertyByGender
-relevantVariable: dcid:dc/topic/PovertyByLanguageSpokenAtHome
 relevantVariable: dcid:dc/topic/PovertyByRace
 relevantVariable: dcid:dc/topic/PovertyByResidency
-relevantVariable: dcid:dc/topic/PovertyLevels
+relevantVariable: dcid:dc/topic/PovertyByLanguageSpokenAtHome
 relevantVariable: dcid:dc/topic/SDG_1
 
 Node: dcid:dc/topic/PovertyByGender
@@ -310,15 +355,6 @@ name: "Impoverished Population By Residency"
 member: dcid:Count_Person_Rural_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_Urban_BelowPovertyLevelInThePast12Months
 
-Node: dcid:dc/topic/PovertyLevels
-typeOf: dcs:Topic
-name: "Poverty Levels"
-relevantVariable: dcid:Count_Household_WithFoodStampsInThePast12Months
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_Civilian_NonInstitutionalized_PovertyStatusDetermined
-relevantVariable: dcid:Count_Person_PovertyStatusDetermined
-relevantVariable: dcid:Count_Person_PovertyStatusDetermined_ResidesInGroupQuarters
-relevantVariable: dcid:Count_Person_PovertyStatusDetermined_ResidesInNoninstitutionalizedGroupQuarters
 
 Node: dcid:dc/topic/Remittance
 typeOf: dcs:Topic
@@ -338,3 +374,4 @@ Node: dcid:dc/topic/UnpaidFamilyWorkers
 typeOf: dcs:Topic
 name: "Unpaid Family Workers"
 relevantVariable: dcid:Count_Person_16OrMoreYears_PrivatelyOwnedEstablishment_NoHealthInsurance_UnpaidFamilyWorker_Worker
+# LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

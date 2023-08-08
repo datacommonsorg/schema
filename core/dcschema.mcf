@@ -715,7 +715,7 @@ description: "A running count of all instances that have satisfied the constrain
 
 Node: dcid:incrementalCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation
+domainIncludes: schema:StatisticalPopulation, dcs:Person
 typeOf: schema:Property
 name: "incrementalCount"
 description: "A count of new instances satisfying the constraints of the Statistical Population since the last observation was made."
@@ -3171,3 +3171,9 @@ typeOf: schema:Property
 description: "List of members.  Contains a comma-separated list of ordered values."
 domainIncludes: dcs:StatVarPeerGroup
 rangeIncludes: dcs:StatisticalVariable, schema:Property
+
+Node: dcid:NewZealand_CivilUnion
+typeOf: dcs:MaritalStatusEnum
+name: "NewZealand_CivilUnion"
+descripion: "A civil union is a legally recognized arrangement similar to marriage, created primarily as a means to provide recognition in law for same-sex couples."
+descriptionUrl: "https://en.wikipedia.org/wiki/Civil_union"

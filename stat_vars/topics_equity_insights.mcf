@@ -1,0 +1,180 @@
+# LINT.IfChange
+
+Node: dcid:dc/topic/Equity
+typeOf: dcs:Topic
+name: "Equity"
+relevantVariable: dcid:dc/topic/EconomicEquity
+relevantVariable: dcid:dc/topic/EducationEquity
+relevantVariable: dcid:dc/topic/HealthEquity
+relevantVariable: dcid:dc/topic/JusticeSystemEquity
+
+Node: dcid:dc/topic/EconomicEquity
+typeOf: dcs:Topic
+name: "Economic Equity"
+relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_GiniIndex
+relevantVariable: dcid:dc/topic/PovertyByGender
+relevantVariable: dcid:dc/topic/PovertyByRace
+relevantVariable: dcid:dc/topic/Benefits
+relevantVariable: dcid:dc/topic/IncomeEquity
+relevantVariable: dcid:dc/topic/EmploymentEquity
+
+Node: dcid:dc/topic/EmploymentEquity
+typeOf: dcs:Topic
+name: "Employment Equity"
+relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_LabourForceStatus
+relevantVariable: dcid:dc/topic/UnemploymentRate
+
+Node: dcid:dc/topic/EducationEquity
+typeOf: dcs:Topic
+name: "Education Equity"
+relevantVariable: dcid:dc/topic/EducationalAttainmentByGenderAndLevel
+relevantVariable: dcid:dc/topic/EducationalAttainmentByRaceAndLevel
+
+Node: dcid:dc/topic/EducationalAttainmentByRaceAndLevel
+typeOf: dcs:Topic
+name: "Educational Attainment by Race"
+relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyRace
+relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyRace
+
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyRace
+typeOf: dcs:StatVarPeerGroup
+name: "Bachelors Degree or Higher by Race"
+member: dcid:dc/06f0jf8xvzw4f
+member: dcid:dc/4qtse8536dg63
+member: dcid:dc/5hc4etrfyj9qg
+member: dcid:dc/eg6rrdr1tkf76
+member: dcid:dc/hyfn2tlyz48lb
+member: dcid:dc/skv4cd74gsnpf
+member: dcid:dc/t7403chwvspm
+member: dcid:dc/v7yl3k9w3h7e8
+member: dcid:dc/wd5g31pcj0zr3
+
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyRace
+typeOf: dcs:StatVarPeerGroup
+name: "College Degree by Race"
+member: dcid:dc/3w039ndqy7qv1
+member: dcid:dc/56md3ndhrmvm7
+member: dcid:dc/9sneyc8lpk8dc
+member: dcid:dc/epw58ne8mytn5
+member: dcid:dc/kpcfmb6lp3zpd
+member: dcid:dc/mqxdr821c7kw3
+member: dcid:dc/q98jxycvs422f
+member: dcid:dc/whn99h1l0xgth
+
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_DoctoratedegreebyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Doctorate degree by Gender"
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Female
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Male
+
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_MastersdegreebyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Masters degree by Gender"
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
+
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_collegeorprofessionaldegreebyGender
+typeOf: dcs:StatVarPeerGroup
+name: "college or professional degree by Gender"
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentProfessionalSchoolDegree_Female
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentProfessionalSchoolDegree_Male
+
+Node: dcid:dc/topic/Benefits
+typeOf: dcs:Topic
+name: "Benefits"
+relevantVariable: dcid:dc/svpg/dc/topic/Foodstamps_FoodstampsbyRace
+relevantVariable: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyhouseholdtype
+
+Node: dcid:dc/topic/IncomeEquity
+typeOf: dcs:Topic
+name: "Income Equity"
+relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
+relevantVariable: dcid:dc/topic/MedianHouseholdIncomeByRace
+relevantVariable: dcid:dc/topic/MedianHouseholdIncomeByGender
+
+Node: dcid:dc/topic/MedianHouseholdIncomeByRace
+typeOf: dcs:Topic
+name: "Median Household Income by Race"
+relevantVariable: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByRace
+
+Node: dcid:dc/topic/MedianHouseholdIncomeByGender
+typeOf: dcs:Topic
+name: "Median Household Income by Gender"
+relevantVariable: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByGender
+
+Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Median Household Income by Race"
+member: dcid:Median_Income_Household_HouseholderRaceWhiteAlone
+member: dcid:Median_Income_Household_HouseholderRaceAmericanIndianOrAlaskaNativeAlone
+member: dcid:Median_Income_Household_HouseholderRaceAsianAlone
+member: dcid:Median_Income_Household_HouseholderRaceBlackOrAfricanAmericanAlone
+member: dcid:Median_Income_Household_HouseholderRaceHispanicOrLatino
+member: dcid:Median_Income_Household_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Median_Income_Household_HouseholderRaceSomeOtherRaceAlone
+member: dcid:Median_Income_Household_HouseholderRaceTwoOrMoreRaces
+member: dcid:Median_Income_Household_HouseholderRaceWhiteAlone
+member: dcid:Median_Income_Household_HouseholderRaceWhiteAloneNotHispanicOrLatino
+
+Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Median Household Income by Gender"
+member: dcid:Median_Earnings_Person_Female
+member: dcid:Median_Earnings_Person_Male
+
+Node: dcid:dc/svpg/dc/topic/Foodstamps_FoodstampsbyRace
+typeOf: dcs:StatVarPeerGroup
+name: "Food stamps by Race"
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_AmericanIndianOrAlaskaNativeAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_AsianAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_BlackOrAfricanAmericanAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_HispanicOrLatino
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_SomeOtherRaceAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_TwoOrMoreRaces
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_WhiteAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_WhiteAloneNotHispanicOrLatino
+
+Node: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyhouseholdtype
+typeOf: dcs:StatVarPeerGroup
+name: "Food stamps by household type"
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_FamilyHousehold
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_MarriedCoupleFamilyHousehold
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_NonfamilyHousehold
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_OtherFamilyHousehold
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_SingleFatherFamilyHousehold
+
+Node: dcid:dc/svpg/dc/topic/EconomicEquity_LabourForceStatus
+typeOf: dcs:StatVarPeerGroup
+name: "Labour Force Status"
+member: dcid:Count_Person_InLaborForce
+member: dcid:Count_Person_NotInLaborForce
+
+Node: dcid:dc/svpg/dc/topic/EconomicEquity_GiniIndex
+typeOf: dcs:StatVarPeerGroup
+name: "Gini Index"
+member: dcid:GiniIndex_EconomicActivity
+
+Node: dcid:dc/topic/JusticeSystemEquity
+typeOf: dcs:Topic
+name: "Justice system Equity"
+relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByRace
+relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedbyGender
+
+Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Incarcerated By Race"
+member: dcid:dc/0tn58fc77r0z6
+member: dcid:dc/510pv6eq2vtw7
+member: dcid:dc/fs27m9j4vpvc7
+member: dcid:dc/rmwl11tzy7vkh
+member: dcid:dc/wp843855b1r4c
+member: dcid:dc/yksgwhwsbtv9c
+member: dcid:dc/zdb0f7sj2419d
+
+Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedbyGender
+typeOf: dcs:StatVarPeerGroup
+name: "Incarcerated by Gender"
+member: dcid:dc/03l0q0wyqrk39
+member: dcid:dc/lnp5g90fwpct8
+# LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

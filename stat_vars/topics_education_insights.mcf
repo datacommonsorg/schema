@@ -1,3 +1,4 @@
+# LINT.IfChange
 # These are auto-generated
 # Topics for Education NL Insights.
 # Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
@@ -20,9 +21,9 @@ Node: dcid:dc/topic/Education
 typeOf: dcs:Topic
 name: "Education"
 relevantVariable: dcid:dc/topic/EducationalAttainment
-relevantVariable: dcid:dc/topic/Parents
 relevantVariable: dcid:dc/topic/SchoolType
 relevantVariable: dcid:dc/topic/Schools
+relevantVariable: dcid:dc/topic/Parents
 
 Node: dcid:dc/topic/EducationFaculty
 typeOf: dcs:Topic
@@ -49,6 +50,7 @@ typeOf: dcs:Topic
 name: "Educational Attainment By Gender And Level"
 relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender
 relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender
+relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender
 relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithDoctorateDegreeByGender
 
 Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender
@@ -60,6 +62,12 @@ member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Ma
 Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender
 typeOf: dcs:StatVarPeerGroup
 name: "Population with Bachelors Degree By Gender"
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
+member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
+
+Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Population with Masters Degree By Gender"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
 
@@ -77,9 +85,9 @@ relevantVariable: dcid:dc/svpg/dc/topic/LevelOfEducationalAttainment_PopulationB
 Node: dcid:dc/svpg/dc/topic/LevelOfEducationalAttainment_PopulationByLevelofEducationalAttainment
 typeOf: dcs:StatVarPeerGroup
 name: "Population By Level of Educational Attainment"
-member: dcid:Count_Person_EducationalAttainment10ThGrade
-member: dcid:Count_Person_EducationalAttainment11ThGrade
-member: dcid:Count_Person_EducationalAttainment12ThGradeNoDiploma
+member: dcid:Count_Person_EducationalAttainmentKindergarten
+member: dcid:Count_Person_EducationalAttainmentNurserySchool
+member: dcid:Count_Person_EducationalAttainmentPrimarySchool
 member: dcid:Count_Person_EducationalAttainment1StGrade
 member: dcid:Count_Person_EducationalAttainment2NdGrade
 member: dcid:Count_Person_EducationalAttainment3RdGrade
@@ -89,17 +97,17 @@ member: dcid:Count_Person_EducationalAttainment6ThGrade
 member: dcid:Count_Person_EducationalAttainment7ThGrade
 member: dcid:Count_Person_EducationalAttainment8ThGrade
 member: dcid:Count_Person_EducationalAttainment9ThGrade
+member: dcid:Count_Person_EducationalAttainment10ThGrade
+member: dcid:Count_Person_EducationalAttainment11ThGrade
+member: dcid:Count_Person_EducationalAttainment12ThGradeNoDiploma
+member: dcid:Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma
+member: dcid:Count_Person_EducationalAttainmentRegularHighSchoolDiploma
+member: dcid:Count_Person_EducationalAttainmentHighSchoolGraduateIncludesEquivalency
 member: dcid:Count_Person_EducationalAttainmentAssociatesDegree
 member: dcid:Count_Person_EducationalAttainmentBachelorsDegree
-member: dcid:Count_Person_EducationalAttainmentDoctorateDegree
 member: dcid:Count_Person_EducationalAttainmentGraduateOrProfessionalDegree
-member: dcid:Count_Person_EducationalAttainmentHighSchoolGraduateIncludesEquivalency
-member: dcid:Count_Person_EducationalAttainmentKindergarten
 member: dcid:Count_Person_EducationalAttainmentMastersDegree
-member: dcid:Count_Person_EducationalAttainmentNurserySchool
-member: dcid:Count_Person_EducationalAttainmentPrimarySchool
-member: dcid:Count_Person_EducationalAttainmentRegularHighSchoolDiploma
-member: dcid:Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma
+member: dcid:Count_Person_EducationalAttainmentDoctorateDegree
 
 Node: dcid:dc/topic/Parents
 typeOf: dcs:Topic
@@ -140,8 +148,8 @@ relevantVariable: dcid:dc/topic/PopulationEnrolledInSchoolTypeByRace
 Node: dcid:dc/topic/Schools
 typeOf: dcs:Topic
 name: "Schools"
-relevantVariable: dcid:dc/topic/StudentLunchEligibility
 relevantVariable: dcid:dc/topic/StudentPopulation
+relevantVariable: dcid:dc/topic/StudentLunchEligibility
 relevantVariable: dcid:dc/topic/Teacher
 
 Node: dcid:dc/topic/StudentEnrollmentLevels
@@ -152,13 +160,12 @@ relevantVariable: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulatio
 Node: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulationByEnrollmentLevel
 typeOf: dcs:StatVarPeerGroup
 name: "Student Population By Enrollment Level"
-member: dcid:Count_Student_HighSchool
-member: dcid:Count_Student_Kindergarten
-member: dcid:Count_Student_MiddleSchool
-member: dcid:Count_Student_PreKindergarten
-member: dcid:Count_Student_PrimarySchool
-member: dcid:Count_Student_SchoolGrade1To8
-member: dcid:Count_Student_SchoolGrade9To12
+member: dcid:Count_Person_EnrolledInKindergarten
+member: dcid:Count_Person_DetailedPrimarySchool
+member: dcid:Count_Person_DetailedMiddleSchool
+member: dcid:Count_Person_DetailedHighSchool
+member: dcid:Count_Person_EnrolledInCollegeUndergraduateYears
+member: dcid:Count_Person_EnrolledInCollegeOrGraduateSchool
 
 Node: dcid:dc/topic/StudentLunchEligibility
 typeOf: dcs:Topic
@@ -170,6 +177,12 @@ Node: dcid:dc/topic/StudentPopulation
 typeOf: dcs:Topic
 name: "Student Population"
 relevantVariable: dcid:dc/topic/StudentEnrollmentLevels
+relevantVariable: dcid:dc/topic/StudentsInKindergarten
+relevantVariable: dcid:dc/topic/StudentsInPrimarySchool
+relevantVariable: dcid:dc/topic/StudentsInMiddleSchool
+relevantVariable: dcid:dc/topic/StudentsInHighSchool
+relevantVariable: dcid:dc/topic/StudentsInCollege
+relevantVariable: dcid:dc/topic/StudentsInGraduateOrProfessionalSchool
 relevantVariable: dcid:dc/topic/StudentPopulationDemographics
 
 Node: dcid:dc/topic/StudentPopulationDemographics
@@ -194,6 +207,128 @@ member: dcid:Count_Student_HawaiianNativeOrPacificIslander
 member: dcid:Count_Student_HispanicOrLatino
 member: dcid:Count_Student_TwoOrMoreRaces
 member: dcid:Count_Student_White
+
+Node: dcid:dc/topic/StudentsInCollege
+typeOf: dcs:Topic
+name: "Students In College"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByGender
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByRace
+
+Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Students In College By Gender"
+member: dcid:dc/0yv0ry7tjmwzc
+member: dcid:dc/pltrqb2ng8dp8
+
+Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Students In College By Race"
+member: dcid:dc/0jtctjm33mgh1
+member: dcid:dc/1t989xd1tn701
+member: dcid:dc/4wkzsq23w6reb
+member: dcid:dc/50yq5l3ek70t7
+member: dcid:dc/55d9n710f1l43
+member: dcid:dc/mwbmxs2q9zcgd
+member: dcid:dc/nhmjhp72kjr48
+member: dcid:dc/wjtdrd9wq4m2g
+member: dcid:dc/zv5g19y8dl9r1
+
+Node: dcid:dc/topic/StudentsInGraduateOrProfessionalSchool
+typeOf: dcs:Topic
+name: "Students In Graduate Or Professional School"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByRace
+
+Node: dcid:dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Students In Graduate Or Professional School By Race"
+member: dcid:dc/3z6z9w930dl7b
+member: dcid:dc/7fdfhnnjr5sh8
+member: dcid:dc/9cqv67nn7pn1b
+member: dcid:dc/fmx7fkrpd3jl2
+member: dcid:dc/h8p2m5rx43j3b
+member: dcid:dc/kz9r60zp6s32b
+member: dcid:dc/p3vqwthpjtdw
+member: dcid:dc/wyxmw2dy6t2xh
+member: dcid:dc/zmp6qzgzp7ly2
+
+Node: dcid:dc/topic/StudentsInHighSchool
+typeOf: dcs:Topic
+name: "Students In High School"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInHighSchool_StudentsInHighSchoolByRace
+
+Node: dcid:dc/svpg/dc/topic/StudentsInHighSchool_StudentsInHighSchoolByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Students In High School By Race"
+member: dcid:dc/1kt512ynvpmc2
+member: dcid:dc/3bg4r46ly61q9
+member: dcid:dc/4hzyqndyzntm
+member: dcid:dc/9q73ecfhmd0y9
+member: dcid:dc/cc8wk2n0ywd9
+member: dcid:dc/dxsxcw009pdm4
+member: dcid:dc/dzfdgrtcv5h7
+member: dcid:dc/fh4td3znm3l4g
+member: dcid:dc/g8537zqf45wl3
+
+Node: dcid:dc/topic/StudentsInKindergarten
+typeOf: dcs:Topic
+name: "Students In Kindergarten"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByGender
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByRace
+
+Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Students In Kindergarten By Gender"
+member: dcid:dc/g8kg52zcxzw9f
+member: dcid:dc/p34mhcpgtth76
+
+Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Students In Kindergarten By Race"
+member: dcid:dc/1c4zcyw02n71g
+member: dcid:dc/3n8g9we5yv7th
+member: dcid:dc/556pqlh586bmc
+member: dcid:dc/7g77dy8hfb1rg
+member: dcid:dc/c6n2z7vh9sy31
+member: dcid:dc/gr3zem8shyhbf
+member: dcid:dc/ns1rqx6wy9909
+member: dcid:dc/nt9cq96phw6nf
+member: dcid:dc/qnphlls92tvs9
+
+Node: dcid:dc/topic/StudentsInMiddleSchool
+typeOf: dcs:Topic
+name: "Students In Middle School"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByRace
+
+Node: dcid:dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Students In Middle School By Race"
+member: dcid:dc/6zbb7s5nx6rxb
+member: dcid:dc/b3nmcj3w1lhed
+member: dcid:dc/c57vzg7l74577
+member: dcid:dc/c75qlm98pmcb2
+member: dcid:dc/e2szvml8jkld8
+member: dcid:dc/g4fthg3t3y5td
+member: dcid:dc/njgzb8knf11n8
+member: dcid:dc/qvf1yrhwzp8rd
+member: dcid:dc/zvr6djt1p9gj3
+
+Node: dcid:dc/topic/StudentsInPrimarySchool
+typeOf: dcs:Topic
+name: "Students In Primary School"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByRace
+
+Node: dcid:dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByRace
+typeOf: dcs:StatVarPeerGroup
+name: "Students In Primary School By Race"
+member: dcid:dc/68cg2z97cpl7d
+member: dcid:dc/b6h698m2vmdcc
+member: dcid:dc/bf85zc6wypd2h
+member: dcid:dc/e4y4hqq6mjfsh
+member: dcid:dc/env3140jqssg8
+member: dcid:dc/jhjdplbeg26k1
+member: dcid:dc/p4jzvj8q1lnmd
+member: dcid:dc/wk2vjrzfgyq5d
+member: dcid:dc/x9e7150515yt7
 
 Node: dcid:dc/topic/StudentTeacherRatio
 typeOf: dcs:Topic
@@ -225,3 +360,4 @@ name: "Teacher"
 relevantVariable: dcid:dc/topic/EducationFaculty
 relevantVariable: dcid:dc/topic/StudentTeacherRatio
 relevantVariable: dcid:dc/topic/SupportServicesStaffInSchools
+# LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

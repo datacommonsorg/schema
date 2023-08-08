@@ -1,0 +1,116 @@
+# LINT.IfChange
+
+Node: dcid:dc/topic/WorkCommute
+typeOf: dcs:Topic
+name: "Commute"
+relevantVariable: dcid:dc/topic/CommuteMode
+relevantVariable: dcid:dc/topic/CommuteTime
+
+Node: dcid:dc/topic/CommuteMode
+typeOf: dcs:Topic
+name: "Commute Mode"
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteMode_ModesofCommute
+relevantVariable: dcid:dc/topic/CommuteModeByOccupation
+
+Node: dcid:dc/svpg/dc/topic/CommuteMode_ModesofCommute
+typeOf: dcs:StatVarPeerGroup
+name: "Modes of Commute"
+member: dcid:dc/0gettc3bc60cb
+member: dcid:dc/6rltk4kf75612
+member: dcid:dc/hbkh95kc7pkb6
+member: dcid:dc/vp8cbt6k79t94
+member: dcid:dc/vt2q292eme79f
+member: dcid:dc/wc8q05drd74bd
+
+Node: dcid:dc/topic/CommuteModeByOccupation
+typeOf: dcs:Topic
+name: "Commute Mode By Occupation"
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ManagementBusinessScienceandArtsOccupations
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_SalesandOfficeOccupations
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ServiceOccupations
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ProductionTransportationandMaterialMovingOccupations
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_NaturalResourcesConstructionandMaintenanceOccupations
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_MilitarySpecificOccupation
+
+Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ManagementBusinessScienceandArtsOccupations
+typeOf: dcs:StatVarPeerGroup
+name: "Management, Business, Science and Arts Occupations"
+member: dcid:dc/nfdf9rt7kbggb
+member: dcid:dc/v33p7mwnpe9vb
+member: dcid:dc/4xklqxfc27w1f
+member: dcid:dc/80q8jrnkvwtt3
+member: dcid:dc/jszfr5wd4f7pb
+member: dcid:dc/y9yb58snpfzw5
+
+Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_MilitarySpecificOccupation
+typeOf: dcs:StatVarPeerGroup
+name: "Military Specific Occupation"
+member: dcid:dc/zf0wjwwyddbj4
+member: dcid:dc/2r1c78wzvbq58
+member: dcid:dc/9vlv8l9dbgsk7
+member: dcid:dc/m54m06x6r5xm9
+member: dcid:dc/wqbf0ppbmly7
+member: dcid:dc/bhc16vntggjyd
+
+Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_NaturalResourcesConstructionandMaintenanceOccupations
+typeOf: dcs:StatVarPeerGroup
+name: "Natural Resources, Construction and Maintenance Occupations"
+member: dcid:dc/vh36nvvkwxz5g
+member: dcid:dc/n99t0lnl3fch6
+member: dcid:dc/2hhr4qp4b4r0b
+member: dcid:dc/j7pej9wer7lkd
+member: dcid:dc/b9plt3q5k6gyb
+member: dcid:dc/06m8j6xz3h0wf
+
+Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ProductionTransportationandMaterialMovingOccupations
+typeOf: dcs:StatVarPeerGroup
+name: "Production Transportation and Material Moving Occupations"
+member: dcid:dc/cs8fvwkmpmlpg
+member: dcid:dc/fgt7thnws9vx9
+member: dcid:dc/j7lkt2ww5qsn5
+member: dcid:dc/dj7khl7q78412
+member: dcid:dc/r0delcsw86kc6
+member: dcid:dc/e27c5t4tbplg
+
+Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_SalesandOfficeOccupations
+typeOf: dcs:StatVarPeerGroup
+name: "Sales and Office Occupations"
+member: dcid:dc/7wt44yv38rew
+member: dcid:dc/zcth2y8fqte1f
+member: dcid:dc/nvrxn11yxlen2
+member: dcid:dc/jxsx1rb4xg84f
+member: dcid:dc/kt900ezddrf79
+member: dcid:dc/slp5hywj7b9c1
+
+Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ServiceOccupations
+typeOf: dcs:StatVarPeerGroup
+name: "Service Occupations"
+member: dcid:dc/dn2h9yfcgbkg2
+member: dcid:dc/bre4whrdn7pt7
+member: dcid:dc/n2vhkpw0slkv5
+member: dcid:dc/m615rq99fwf2c
+member: dcid:dc/k33ngtzpqxql6
+member: dcid:dc/6zrlr86zt61yg
+
+Node: dcid:dc/topic/CommuteTime
+typeOf: dcs:Topic
+name: "Commute Time"
+relevantVariable: dcid:dc/e9gftzl2hm8h9
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteTime_BreakdownbyCommuteTime
+
+Node: dcid:dc/svpg/dc/topic/CommuteTime_BreakdownbyCommuteTime
+typeOf: dcs:StatVarPeerGroup
+name: "Commuters by Commute Time"
+member: dcid:dc/fyc3yvjy0xw6g
+member: dcid:dc/dbe0drezxrpv6
+member: dcid:dc/1fw0t5m6459gb
+member: dcid:dc/vgwx3kjjzz8wf
+member: dcid:dc/7ykp70f9rtck9
+member: dcid:dc/exr9t81en1h34
+member: dcid:dc/62gn48xpbqew9
+member: dcid:dc/vfs5dgtzhp4j4
+member: dcid:dc/pplpj0y0mzd3g
+member: dcid:dc/t0hh9jhx104k7
+member: dcid:dc/kfr6chpkw90e3
+member: dcid:dc/h7ft916g93ys2
+# LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
