@@ -6,13 +6,9 @@
 Node: dcid:dc/topic/Age
 typeOf: dcs:Topic
 name: "Age"
-relevantVariable: dcid:dc/topic/AgeDistribution
 relevantVariable: dcid:dc/topic/AgeMedians
+relevantVariable: dcid:dc/topic/AgeDistribution
 relevantVariable: dcid:dc/topic/VeryOldAndVeryYoungPopulation
-
-Node: dcid:dc/topic/AgeDistribution
-typeOf: dcs:Topic
-name: "Age Distribution"
 
 Node: dcid:dc/topic/AgeMedians
 typeOf: dcs:Topic
@@ -322,18 +318,23 @@ member: dcid:Count_Person_ForeignBorn_PlaceOfBirthNorthamerica
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthOceania
 member: dcid:Count_Person_ForeignBorn_PlaceOfBirthSouthamerica
 
-Node: dcid:dc/topic/PopulationByAgeDistribution
+Node: dcid:dc/topic/AgeDistribution
 typeOf: dcs:Topic
-name: "Population By Age Distribution"
-relevantVariable: dcid:Count_Person_18To24Years
-relevantVariable: dcid:Count_Person_1To4Years
-relevantVariable: dcid:Count_Person_25To34Years
-relevantVariable: dcid:Count_Person_35To44Years
-relevantVariable: dcid:Count_Person_45To54Years
-relevantVariable: dcid:Count_Person_55To64Years
-relevantVariable: dcid:Count_Person_5To17Years
-relevantVariable: dcid:Count_Person_65To74Years
-relevantVariable: dcid:Count_Person_75OrMoreYears
+name: "Age Distribution"
+relevantVariable: dcid:dc/svpg/PopulationByAgeDistribution
+
+Node: dcid:dc/svpg/PopulationByAgeDistribution
+typeOf: dcs:StatVarPeerGroup
+name: "Age Distribution"
+member: dcid:Count_Person_1To4Years
+member: dcid:Count_Person_5To17Years
+member: dcid:Count_Person_18To24Years
+member: dcid:Count_Person_25To34Years
+member: dcid:Count_Person_35To44Years
+member: dcid:Count_Person_45To54Years
+member: dcid:Count_Person_55To64Years
+member: dcid:Count_Person_65To74Years
+member: dcid:Count_Person_75OrMoreYears
 
 Node: dcid:dc/topic/VeryOldAndVeryYoungPopulation
 typeOf: dcs:Topic
