@@ -1261,7 +1261,7 @@ typeOf: dcs:RaceCodeEnum
 name: "AsianIndian"
 
 Node: dcid:Chinese
-typeOf: dcs:RaceCodeEnum
+typeOf: dcs:RaceCodeEnum, dcs:EthnicityEnum
 name: "Chinese"
 
 Node: dcid:Filipino
@@ -2254,3 +2254,23 @@ description: "People who are Non Jewish and Non Arab and are either Non Arab Chr
 Node: dcid:NonJudaism
 typeOf: dcs:ReligionEnum
 name: "NonJudaism"
+
+Node: dcid:ResidentStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ResidentStatusEnum"
+description: "Resident status of people living in the Country"
+
+Node: dcid:Resident
+name: "Resident"
+typeOf: dcs:ResidentStatusEnum
+description: "A person who lives somewhere permanently or on a long-term basis"
+
+Node: dcid:NonResident
+name: "NonResident"
+typeOf: dcs:ResidentStatusEnum
+
+Node: dcid:PermanentResident
+typeOf: dcs:ResidentStatusEnum
+specializationOf: dcs:Resident
+name: "PermanentResident"
