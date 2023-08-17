@@ -2,6 +2,8 @@
 # Temporary partially curated schema for SDGs.
 ################################################################################
 
+## Custom schema
+
 Node: dcid:unDataCode
 typeOf: schema:Property
 domainIncludes: dcs:Place
@@ -30,6 +32,10 @@ Node: dcid:SDG_UnitOfMeasure
 name: "SDG_UnitOfMeasure"
 typeOf: schema:Class
 subClassOf: dcs:UnitOfMeasure
+
+Node: dcid:SDG_HA
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Hectares"
 
 ## Series
 
