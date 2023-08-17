@@ -2327,7 +2327,7 @@ healthOutcome: dcs:Depression
 name: "Percentage of Population With Depression"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithDepression
-name: "Lower Confidence Interval Limit, Prevalence of Physical Health Not Good"
+name: "Lower Confidence Interval Limit, Prevalence of Depression"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -2336,7 +2336,7 @@ healthOutcome: dcs:Depression
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithDepression
-name: "Upper Confidence Interval Limit, Prevalence of Physical Health Not Good"
+name: "Upper Confidence Interval Limit, Prevalence of Depression"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -2345,10 +2345,289 @@ healthOutcome: dcs:Depression
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithDepression
-name: "Sample Size, Prevalence of Physical Health Not Good"
+name: "Sample Size, Prevalence of Depression"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthOutcome: dcs:Depression
 statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithVisionDisability
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:VisionDisability
+name: "Percentage of Population With Vision Disability"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithVisionDisability
+name: "Lower Confidence Interval Limit, Prevalence of Vision Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:VisionDisability
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithVisionDisability
+name: "Upper Confidence Interval Limit, Prevalence of Vision Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:VisionDisability
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithVisionDisability
+name: "Sample Size, Prevalence of Vision Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+disabilityStatus: dcs:VisionDisability
+statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithMobilityDisability
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:MobilityDisability
+name: "Percentage of Population With Mobility Disability"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithMobilityDisability
+name: "Lower Confidence Interval Limit, Prevalence of Mobility Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:MobilityDisability
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithMobilityDisability
+name: "Upper Confidence Interval Limit, Prevalence of Mobility Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:MobilityDisability
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithMobilityDisability
+name: "Sample Size, Prevalence of Mobility Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+disabilityStatus: dcs:MobilityDisability
+statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithSelfCareDisability
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:SelfCareDisability
+name: "Percentage of Population With Self Care Disability"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithSelfCareDisability
+name: "Lower Confidence Interval Limit, Prevalence of Self Care Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:SelfCareDisability
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithSelfCareDisability
+name: "Upper Confidence Interval Limit, Prevalence of Self Care Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:SelfCareDisability
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithSelfCareDisability
+name: "Sample Size, Prevalence of Self Care Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+disabilityStatus: dcs:SelfCareDisability
+statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithAnyDisability
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:AnyDisability
+name: "Percentage of Population With Any Disability"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithAnyDisability
+name: "Lower Confidence Interval Limit, Prevalence of Any Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:AnyDisability
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithAnyDisability
+name: "Upper Confidence Interval Limit, Prevalence of Any Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:AnyDisability
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithAnyDisability
+name: "Sample Size, Prevalence of Any Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+disabilityStatus: dcs:AnyDisability
+statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithIndependentLivingDisability
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:IndependentLivingDisability
+name: "Percentage of Population With Independent Living Disability"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithIndependentLivingDisability
+name: "Lower Confidence Interval Limit, Prevalence of Independent Living Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:IndependentLivingDisability
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithIndependentLivingDisability
+name: "Upper Confidence Interval Limit, Prevalence of Independent Living Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:IndependentLivingDisability
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithIndependentLivingDisability
+name: "Sample Size, Prevalence of Independent Living Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+disabilityStatus: dcs:IndependentLivingDisability
+statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithCognitiveDisability
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:CognitiveDisability
+name: "Percentage of Population With Cognitive Disability"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithCognitiveDisability
+name: "Lower Confidence Interval Limit, Prevalence of Cognitive Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:CognitiveDisability
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithCognitiveDisability
+name: "Upper Confidence Interval Limit, Prevalence of Cognitive Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:CognitiveDisability
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithCognitiveDisability
+name: "Sample Size, Prevalence of Cognitive Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+disabilityStatus: dcs:CognitiveDisability
+statType: dcs:sampleSize
+
+Node: dcid:Percent_Person_18OrMoreYears_WithHearingDisability
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+statType: dcs:measuredValue
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:HearingDisability
+name: "Percentage of Population With Hearing Disability"
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithHearingDisability
+name: "Lower Confidence Interval Limit, Prevalence of Hearing Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:HearingDisability
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithHearingDisability
+name: "Upper Confidence Interval Limit, Prevalence of Hearing Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+disabilityStatus: dcs:HearingDisability
+statType: dcs:confidenceIntervalUpperLimit
+
+Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithHearingDisability
+name: "Sample Size, Prevalence of Hearing Disability"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+disabilityStatus: dcs:HearingDisability
+statType: dcs:sampleSize
+
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithDiabetes
+name: "Lower Confidence Interval Limit, Prevalence of Diabetes"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:Diabetes
+statType: dcs:confidenceIntervalLowerLimit
+
+Node: dcid:SampleSize_Percent_Person_WithDiabetes
+name: "Sample Size, Prevalence of Diabetes"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+age: dcs:Years18Onwards
+healthOutcome: dcs:Diabetes
+statType: dcs:sampleSize
+
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithDiabetes
+name: "Upper Confidence Interval Limit, Prevalence of Diabetes"
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:percent
+age: dcs:Years18Onwards
+healthOutcome: dcs:Diabetes
+statType: dcs:confidenceIntervalUpperLimit
