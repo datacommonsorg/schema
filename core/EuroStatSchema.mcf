@@ -104,6 +104,16 @@ typeOf: dcs:NativityEnum
 name: "ForeignBornOutsideEU28"
 description: "Native to a place outside EU28."
 
+Node: dcid:ForeignBornWithinEU27
+typeOf: dcs:NativityEnum
+name: "ForeignBornWithinEU27"
+description: "Native to a place within EU27 other than the reporting region/country."
+
+Node: dcid:ForeignBornOutsideEU27
+typeOf: dcs:NativityEnum
+name: "ForeignBornOutsideEU27"
+description: "Native to a place outside EU27."
+
 # Citizenship
 Node: dcid:Citizen
 typeOf: dcs:CitizenshipEnum
@@ -125,6 +135,17 @@ Node: dcid:CitizenOutsideEU28
 typeOf: dcs:CitizenshipEnum
 name: "CitizenOutsideEU28"
 description: "Citizen of a country outside EU28."
+
+Node: dcid:WithinEU27AndNotACitizen
+typeOf: dcs:CitizenshipEnum
+name: "WithinEU27AndNotACitizen"
+specializationOf: dcs:NotACitizen
+description: "Citizen of a country within EU27 other than the reporting region/country."
+
+Node: dcid:CitizenOutsideEU27
+typeOf: dcs:CitizenshipEnum
+name: "CitizenOutsideEU27"
+description: "Citizen of a country outside EU27."
 
 # GlobalActivityLimitationindicator
 Node: dcid:GlobalActivityLimitationindicatorEnum
