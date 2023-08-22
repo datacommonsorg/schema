@@ -199,6 +199,8 @@ relevantVariable: dcid:dc/topic/Energy_Consumption_FossilFuels
 relevantVariable: dcid:dc/topic/Energy_Renewables
 relevantVariable: dcid:dc/topic/Electricity_Consumption
 relevantVariable: dcid:dc/topic/Energy_Fraction
+relevantVariable: dcid:dc/topic/GlobalElectricityAccess
+relevantVariable: dcid:dc/topic/GlobalElectricityOutput
 
 Node: dcid:dc/topic/Energy_Consumption_FossilFuels
 typeOf: dcs:Topic
@@ -313,6 +315,32 @@ member: dcid:Annual_Consumption_Electricity_ConstructionIndustry
 member: dcid:Annual_Consumption_Electricity_Households
 member: dcid:Annual_Consumption_Electricity_Manufacturing
 member: dcid:Annual_Consumption_Electricity_TransportIndustry
+
+# Global Electrity Access
+Node: dcid:dc/topic/GlobalElectricityAccess
+typeOf: dcs:Topic
+name: "Access To Electricity"
+relevantVariable: dcid:worldBank/EG_ELC_ACCS_ZS
+relevantVariable: dcid:dc/svpg/dc/topic/GlobalElectricityAccess/ElectricyAccessByResidenceType
+
+Node: dcid:dc/svpg/dc/topic/GlobalElectricityAccess/ElectricyAccessByResidenceType
+typeOf: dcs:StatVarPeerGroup
+name: "Accesss To Electricty By Urban/Rural Split"
+member: dcid:worldBank/EG_ELC_ACCS_UR_ZS
+member: dcid:worldBank/EG_ELC_ACCS_RU_ZS
+
+# Global Electrity Output
+Node: dcid:dc/topic/GlobalElectricityOutput
+typeOf: dcs:Topic
+name: "Electricity Output"
+relevantVariable: dcid:dc/svpg/dc/topic/GlobalElectricityOutput/ElectricyOutputSplits
+relevantVariable: dcid:worldBank/4_1_SHARE_RE_IN_ELECTRICITY
+
+Node: dcid:dc/svpg/dc/topic/GlobalElectricityOutput/ElectricyOutputSplits
+typeOf: dcs:StatVarPeerGroup
+name: "Electricity Output Total vs Renewables"
+member: dcid:worldBank/4_1_1_TOTAL_ELECTRICITY_OUTPUT
+member: dcid:worldBank/4_1_2_REN_ELECTRICITY_OUTPUT
 
 #### Green Jobs ####
 
