@@ -11105,3 +11105,25 @@ typeOf: schema:Property
 domainIncludes: schema:Thing
 rangeIncludes: schema:Text
 description: "One of a number of things that belong together in a grouping."
+
+Node: dcid:minorityServingInstitutionType
+typeOf: schema:Property
+rangeIncludes: dcs:MinorityServingInstitutionTypeEnum
+name: "minorityServingInstitutionType"
+description: "Category of a Minority Serving Institution, e.g. HBCU (Historically Black Colleges and Universities), TCU (Tribal Colleges and Universities)."
+
+Node: dcid:collegeOrUniversityLevel
+typeOf: schema:Property
+rangeIncludes: dcs:CollegeOrUniversityLevelEnum
+name: "collegeOrUniversityLevel"
+description: "Level of a college or university, e.g. 2-year, 4-year."
+
+Node: dcid:educationalProgram
+typeOf:Property
+rangeIncludes:USC_EducationalAttainmentEnum
+name:"educationalProgram"
+
+Node: dcid:educationalDegree
+typeOf:Property
+rangeIncludes:EducationalMajorEnum,SchoolSubjectEnum
+name:"educationalDegree"
