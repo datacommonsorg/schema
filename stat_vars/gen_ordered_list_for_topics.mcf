@@ -1789,13 +1789,7 @@ typeOf: dcid:StatVarPeerGroup
 Node: dcid:dc/svpg/dc/topic/GlobalElectricityAccess/ElectricyAccessByResidenceType
 dcid: "dc/svpg/dc/topic/GlobalElectricityAccess/ElectricyAccessByResidenceType"
 memberList: "worldBank/EG_ELC_ACCS_UR_ZS,worldBank/EG_ELC_ACCS_RU_ZS"
-name: "Accesss To Electricty By Urban/Rural Split"
-typeOf: dcid:StatVarPeerGroup
-
-Node: dcid:dc/svpg/dc/topic/GlobalElectricityOutput/ElectricyOutputSplits
-dcid: "dc/svpg/dc/topic/GlobalElectricityOutput/ElectricyOutputSplits"
-memberList: "worldBank/4_1_1_TOTAL_ELECTRICITY_OUTPUT,worldBank/4_1_2_REN_ELECTRICITY_OUTPUT"
-name: "Electricity Output Total vs Renewables"
+name: "Accesss To Electricty By Percentage Of Urban/Rural Population"
 typeOf: dcid:StatVarPeerGroup
 
 Node: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionWages
@@ -3151,7 +3145,7 @@ typeOf: dcid:Topic
 Node: dcid:dc/topic/GlobalElectricityOutput
 dcid: "dc/topic/GlobalElectricityOutput"
 name: "Electricity Output"
-relevantVariableList: "dc/svpg/dc/topic/GlobalElectricityOutput/ElectricyOutputSplits,worldBank/4_1_SHARE_RE_IN_ELECTRICITY"
+relevantVariableList: "worldBank/4_1_1_TOTAL_ELECTRICITY_OUTPUT,worldBank/4_1_2_REN_ELECTRICITY_OUTPUT,worldBank/4_1_SHARE_RE_IN_ELECTRICITY"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/GlobalHealth
