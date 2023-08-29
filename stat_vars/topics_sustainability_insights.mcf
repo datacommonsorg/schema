@@ -20,6 +20,7 @@ Node: dcid:dc/topic/Emissions
 typeOf: dcs:Topic
 name: "Emissions"
 relevantVariable: dcid:Annual_Emissions_GreenhouseGas
+relevantVariable: dcid:Annual_Emissions_GreenhouseGas_NonBiogenic
 relevantVariable: dcid:dc/topic/GreenhouseGasEmissions
 relevantVariable: dcid:dc/topic/CO2Emissions
 relevantVariable: dcid:dc/topic/Emissions_FlourinatedGases
@@ -50,39 +51,13 @@ member: dcid:Annual_Emissions_GreenhouseGas_CementProduction
 member: dcid:Annual_Emissions_GreenhouseGas_SteelManufacturing
 member: dcid:Annual_Emissions_GreenhouseGas_ForestFire
 
-# Uncomment more as we go along.
-# member: dcid:Annual_Emissions_GreenhouseGas_AluminumProduction
-# member: dcid:Annual_Emissions_GreenhouseGas_BauxiteMining
-# member: dcid:Annual_Emissions_GreenhouseGas_ClimateTrace_OtherEnergyUse
-# member: dcid:Annual_Emissions_GreenhouseGas_ClimateTrace_OtherManufacturing
-# member: dcid:Annual_Emissions_GreenhouseGas_CopperMining
-# member: dcid:Annual_Emissions_GreenhouseGas_CroplandFire
-# member: dcid:Annual_Emissions_GreenhouseGas_ElectricityGenerationFromThermalPowerPlant
-# member: dcid:Annual_Emissions_GreenhouseGas_EntericFermentation
-# member: dcid:Annual_Emissions_GreenhouseGas_ForestClearing
-# member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForCooking
-# member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForRefrigerationAirConditioning
-# member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionForResidentialCommercialOnsiteHeating
-# member: dcid:Annual_Emissions_GreenhouseGas_IronMining
-# member: dcid:Annual_Emissions_GreenhouseGas_ManagedSoils
-# member: dcid:Annual_Emissions_GreenhouseGas_ManureManagement
-# member: dcid:Annual_Emissions_GreenhouseGas_MaritimeShipping
-# member: dcid:Annual_Emissions_GreenhouseGas_MaritimeTransport
-# member: dcid:Annual_Emissions_GreenhouseGas_OilAndGasProduction
-# member: dcid:Annual_Emissions_GreenhouseGas_PetrochemicalProduction
-# member: dcid:Annual_Emissions_GreenhouseGas_PulpAndPaperManufacturing
-# member: dcid:Annual_Emissions_GreenhouseGas_RiceCultivation
-# member: dcid:Annual_Emissions_GreenhouseGas_RockQuarry
-# member: dcid:Annual_Emissions_GreenhouseGas_SandQuarry
-# member: dcid:Annual_Emissions_GreenhouseGas_SavannaFire
-# member: dcid:Annual_Emissions_GreenhouseGas_ShrublandFire
-
 Node: dcid:dc/topic/CO2Emissions
 typeOf: dcs:Topic
 name: "Carbondioxide ( CO2)"
 # CO2 Emissions
 relevantVariable: dcid:eia/INTL.4008-8-MMTCD.A
 relevantVariable: dcid:Amount_Emissions_CarbonDioxide_PerCapita
+relevantVariable: dcid:Annual_Emissions_CarbonDioxide_NonBiogenic
 relevantVariable: dcid:dc/svpg/Emissions_CO2_EmissionsbySource
 
 Node: dcid:dc/svpg/Emissions_CO2_EmissionsbySource
@@ -333,11 +308,11 @@ member: dcid:worldBank/EG_ELC_ACCS_RU_ZS
 Node: dcid:dc/topic/GreenJobs
 typeOf: dcs:Topic
 name: "Green Jobs"
-relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionWages
-relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionbusinesses
 relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergybusinesses
 relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergyrevenue
 relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergysystems
+relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionbusinesses
+relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionWages
 
 Node: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionWages
 typeOf: dcs:StatVarPeerGroup
