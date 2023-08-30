@@ -272,8 +272,16 @@ member: dcid:Count_Person_Male_ConditionDiseasesOfHeart
 Node: dcid:dc/topic/InfantMortality
 typeOf: dcs:Topic
 name: "Infant Mortality"
+relevantVariable: dcid:sdg/SH_DYN_NMRT.AGE--M0
 relevantVariable: dcid:Count_Death_Upto1Years
 relevantVariable: dcid:dc/svpg/dc/topic/InfantMortality_CausesOfDeath
+relevantVariable: dcid:dc/svpg/MortalityRate_InfantMortalityRateByGender
+
+Node: dcid:dc/svpg/MortalityRate_InfantMortalityRateByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Infant Mortality Rate by Gender"
+member: dcid:sdg/SH_DYN_IMRT.AGE--Y0__SEX--F
+member: dcid:sdg/SH_DYN_IMRT.AGE--Y0__SEX--M
 
 Node: dcid:dc/svpg/dc/topic/InfantMortality_CausesOfDeath
 typeOf: dcs:StatVarPeerGroup
@@ -314,6 +322,8 @@ member: dcid:Count_Death_85Years_MentalBehaviouralDisorders
 Node: dcid:dc/topic/Mortality
 typeOf: dcs:Topic
 name: "Mortality"
+relevantVariable: dcid:Count_Death
+relevantVariable: dcid:Count_Death_AsAFractionOfCount_Person
 relevantVariable: dcid:dc/topic/LifeExpectancy
 relevantVariable: dcid:dc/topic/CausesOfDeath
 relevantVariable: dcid:dc/topic/FemaleMortality

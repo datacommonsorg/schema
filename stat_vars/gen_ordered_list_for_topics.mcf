@@ -714,7 +714,7 @@ typeOf: dcid:StatVarPeerGroup
 
 Node: dcid:dc/svpg/MortalityRate_InfantMortalityRateByGender
 dcid: "dc/svpg/MortalityRate_InfantMortalityRateByGender"
-memberList: "sdg/SH_AAP_ASMORT,sdg/SH_DYN_IMRT.AGE--Y0__SEX--F,sdg/SH_DYN_IMRT.AGE--Y0__SEX--M,sdg/SH_HAP_ASMORT,sdg/SH_STA_ASAIRP,sdg/SH_STA_POISN,sdg/SH_STA_SCIDE"
+memberList: "sdg/SH_DYN_IMRT.AGE--Y0__SEX--F,sdg/SH_DYN_IMRT.AGE--Y0__SEX--M"
 name: "Infant Mortality Rate by Gender"
 typeOf: dcid:StatVarPeerGroup
 
@@ -3619,7 +3619,7 @@ typeOf: dcid:Topic
 Node: dcid:dc/topic/InfantMortality
 dcid: "dc/topic/InfantMortality"
 name: "Infant Mortality"
-relevantVariableList: "Count_Death_Upto1Years,dc/svpg/dc/topic/InfantMortality_CausesOfDeath"
+relevantVariableList: "sdg/SH_DYN_NMRT.AGE--M0,Count_Death_Upto1Years,dc/svpg/dc/topic/InfantMortality_CausesOfDeath,dc/svpg/MortalityRate_InfantMortalityRateByGender"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/InflationAdjustedGDP
@@ -3883,7 +3883,7 @@ typeOf: dcid:Topic
 Node: dcid:dc/topic/Mortality
 dcid: "dc/topic/Mortality"
 name: "Mortality"
-relevantVariableList: "dc/topic/LifeExpectancy,dc/topic/CausesOfDeath,dc/topic/FemaleMortality,dc/topic/InfantMortality,dc/topic/MortalityAmongIncarcerated"
+relevantVariableList: "Count_Death,Count_Death_AsAFractionOfCount_Person,dc/topic/LifeExpectancy,dc/topic/CausesOfDeath,dc/topic/FemaleMortality,dc/topic/InfantMortality,dc/topic/MortalityAmongIncarcerated"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/MortalityAmongIncarcerated
@@ -3902,12 +3902,6 @@ Node: dcid:dc/topic/MortalityByRace
 dcid: "dc/topic/MortalityByRace"
 name: "Mortality by Race"
 relevantVariableList: "Count_Death_AmericanIndianAndAlaskaNativeAlone,Count_Death_AsianOrPacificIslander,Count_Death_BlackOrAfricanAmerican,Count_Death_White"
-typeOf: dcid:Topic
-
-Node: dcid:dc/topic/MortalityRate
-dcid: "dc/topic/MortalityRate"
-name: "Mortality Rate"
-relevantVariableList: "sdg/SH_DYN_NMRT.AGE--M0,dc/svpg/MortalityRate_InfantMortalityRateByGender"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/Nationality
@@ -5043,4 +5037,3 @@ dcid: "dc/topic/YearlyProjectedTemperatureLows"
 name: "Yearly Projected Temperature Lows"
 relevantVariableList: "dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline,dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYear"
 typeOf: dcid:Topic
-
