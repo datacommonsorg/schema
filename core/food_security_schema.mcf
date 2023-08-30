@@ -73,3 +73,18 @@ name: "Eligible For Some Federal Benefits"
 Node: dcid:IneligibleForFederalBenefits
 typeOf: dcid:BenefitsStatusEnum
 name: "Ineligible For Federal Benefits"
+
+Node: dcid:costPerMeal
+typeOf: dcs:Property
+name: "costPerMeal"
+domainIncludes: dcs:Person, dcs:Child
+
+Node: dcid:weightedFoodSpendAmount
+typeOf: dcs:Property
+name: "weightedFoodSpendAmount"
+domainIncludes: dcs:Person, dcs:Child
+
+Node: dcid:weightedBudgetShortfall
+typeOf: dcs:Property
+name: "weightedBudgetShortfall"
+domainIncludes: dcs:Food
