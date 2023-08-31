@@ -1,0 +1,406 @@
+Node: dcid:product
+typeOf: dcs:Property
+name: "product"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:ProductEnum,dcid:FarmInventoryTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:ProductEnum
+typeOf: dcs:Class
+subClassOf: dcs:Enumeration
+name: "ProductEnum"
+isProvisional: dcs:True
+
+Node: dcid:LiveAnimals
+typeOf: dcid:ProductEnum
+name: "LiveAnimals"
+isProvisional: dcs:True
+
+Node: dcid:importSource
+typeOf: dcs:Property
+name: "importSource"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:Country,dcid:Place,dcid:ContinentalUnion
+isProvisional: dcs:True
+
+Node: dcid:exportDestination
+typeOf: dcs:Property
+name: "exportDestination"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:Country,dcid:Place,dcid:ContinentalUnion
+isProvisional: dcs:True
+
+Node: dcid:RestOfTheWorld
+typeOf: dcid:Country
+name: "RestOfTheWorld"
+isProvisional: dcs:True
+
+Node: dcid:MeatAndMeatPreparations
+typeOf: dcid:ProductEnum
+name: "MeatAndMeatPreparations"
+isProvisional: dcs:True
+
+Node: dcid:MilkAndCream
+typeOf: dcid:ProductEnum
+name: "MilkAndCream"
+isProvisional: dcs:True
+
+Node: dcid:Cheese
+typeOf: dcid:ProductEnum
+name: "Cheese"
+isProvisional: dcs:True
+
+Node: dcid:OtherDairyProducts
+typeOf: dcid:ProductEnum
+name: "OtherDairyProducts"
+isProvisional: dcs:True
+
+Node: dcid:VegetablesAndTheirPreparations
+typeOf: dcid:ProductEnum
+name: "VegetablesAndTheirPreparations"
+isProvisional: dcs:True
+
+Node: dcid:FruitsNutsAndTheirPreparations
+typeOf: dcid:ProductEnum
+name: "FruitsNutsAndTheirPreparations"
+isProvisional: dcs:True
+
+Node: dcid:OtherPlantsAndPlantProducts
+typeOf: dcid:ProductEnum
+name: "OtherPlantsAndPlantProducts"
+isProvisional: dcs:True
+
+Node: dcid:Coffee
+typeOf: dcid:ProductEnum
+name: "Coffee"
+isProvisional: dcs:True
+
+Node: dcid:TeaAndMat
+typeOf: dcid:ProductEnum
+name: "TeaAndMat"
+isProvisional: dcs:True
+
+Node: dcid:Cocoa
+typeOf: dcid:ProductEnum
+name: "Cocoa"
+isProvisional: dcs:True
+
+Node: dcid:Oilseeds
+typeOf: dcid:ProductEnum
+name: "Oilseeds"
+isProvisional: dcs:True
+
+Node: dcid:VegetableOils
+typeOf: dcid:ProductEnum
+name: "VegetableOils"
+isProvisional: dcs:True
+
+Node: dcid:AnimalFats
+typeOf: dcid:ProductEnum
+name: "AnimalFats"
+isProvisional: dcs:True
+
+Node: dcid:AnimalFeedsAndOtherOilFatProducts
+typeOf: dcid:ProductEnum
+name: "AnimalFeedsAndOtherOilFatProducts"
+isProvisional: dcs:True
+
+Node: dcid:SugarsAndConfectionery
+typeOf: dcid:ProductEnum
+name: "SugarsAndConfectionery"
+isProvisional: dcs:True
+
+Node: dcid:BeveragesAndJuices
+typeOf: dcid:ProductEnum
+name: "BeveragesAndJuices"
+isProvisional: dcs:True
+
+Node: dcid:BeerWinesAndSpirits
+typeOf: dcid:ProductEnum
+name: "BeerWinesAndSpirits"
+isProvisional: dcs:True
+
+Node: dcid:Tobacco
+typeOf: dcid:ProductEnum
+name: "Tobacco"
+isProvisional: dcs:True
+
+Node: dcid:OtherProductsOfVegetableOrigin
+typeOf: dcid:ProductEnum
+name: "OtherProductsOfVegetableOrigin"
+isProvisional: dcs:True
+
+Node: dcid:OtherProductsOfAnimalOrigin
+typeOf: dcid:ProductEnum
+name: "OtherProductsOfAnimalOrigin"
+isProvisional: dcs:True
+
+Node: dcid:FishAndFishProducts
+typeOf: dcid:ProductEnum
+name: "FishAndFishProducts"
+isProvisional: dcs:True
+
+Node: dcid:MineralFuels
+typeOf: dcid:ProductEnum
+name: "MineralFuels"
+isProvisional: dcs:True
+
+Node: dcid:OtherMinerals
+typeOf: dcid:ProductEnum
+name: "OtherMinerals"
+isProvisional: dcs:True
+
+Node: dcid:Fertilisers
+typeOf: dcid:ProductEnum
+name: "Fertilisers"
+isProvisional: dcs:True
+
+Node: dcid:NonMetallicMineralProducts
+typeOf: dcid:ProductEnum
+name: "NonMetallicMineralProducts"
+isProvisional: dcs:True
+
+Node: dcid:NonFerrousMetals
+typeOf: dcid:ProductEnum
+name: "NonFerrousMetals"
+isProvisional: dcs:True
+
+Node: dcid:IronAndSteel
+typeOf: dcid:ProductEnum
+name: "IronAndSteel"
+isProvisional: dcs:True
+
+Node: dcid:MetalProducts
+typeOf: dcid:ProductEnum
+name: "MetalProducts"
+isProvisional: dcs:True
+
+Node: dcid:CrudeOils
+typeOf: dcid:ProductEnum
+name: "CrudeOils"
+isProvisional: dcs:True
+
+Node: dcid:PetroleumOilsOtherThanCrude
+typeOf: dcid:ProductEnum
+name: "PetroleumOilsOtherThanCrude"
+isProvisional: dcs:True
+
+Node: dcid:InorganicChemicals
+typeOf: dcid:ProductEnum
+name: "InorganicChemicals"
+isProvisional: dcs:True
+
+Node: dcid:OrganicChemicals
+typeOf: dcid:ProductEnum
+name: "OrganicChemicals"
+isProvisional: dcs:True
+
+Node: dcid:Pharmaceutical
+typeOf: dcid:ProductEnum
+name: "Pharmaceutical"
+isProvisional: dcs:True
+
+Node: dcid:Plastics
+typeOf: dcid:ProductEnum
+name: "Plastics"
+isProvisional: dcs:True
+
+Node: dcid:OtherChemicalProducts
+typeOf: dcid:ProductEnum
+name: "OtherChemicalProducts"
+isProvisional: dcs:True
+
+Node: dcid:WoodAndWoodProducts
+typeOf: dcid:ProductEnum
+name: "WoodAndWoodProducts"
+isProvisional: dcs:True
+
+Node: dcid:PulpPaperAndPrintedMatter
+typeOf: dcid:ProductEnum
+name: "PulpPaperAndPrintedMatter"
+isProvisional: dcs:True
+
+Node: dcid:Furniture
+typeOf: dcid:ProductEnum
+name: "Furniture"
+isProvisional: dcs:True
+
+Node: dcid:ManMadeFibreYarnAndFabrics
+typeOf: dcid:ProductEnum
+name: "ManMadeFibreYarnAndFabrics"
+isProvisional: dcs:True
+
+Node: dcid:OtherTextileProducts
+typeOf: dcid:ProductEnum
+name: "OtherTextileProducts"
+isProvisional: dcs:True
+
+Node: dcid:Clothing
+typeOf: dcid:ProductEnum
+name: "Clothing"
+isProvisional: dcs:True
+
+Node: dcid:ClothingAccessories
+typeOf: dcid:ProductEnum
+name: "ClothingAccessories"
+isProvisional: dcs:True
+
+Node: dcid:RubberAndRubberProducts
+typeOf: dcid:ProductEnum
+name: "RubberAndRubberProducts"
+isProvisional: dcs:True
+
+Node: dcid:Footwear
+typeOf: dcid:ProductEnum
+name: "Footwear"
+isProvisional: dcs:True
+
+Node: dcid:GeneralPurposeMachinery
+typeOf: dcid:ProductEnum
+name: "GeneralPurposeMachinery"
+isProvisional: dcs:True
+
+Node: dcid:SpecialPurposeMachinery
+typeOf: dcid:ProductEnum
+name: "SpecialPurposeMachinery"
+isProvisional: dcs:True
+
+Node: dcid:PowerGeneratingEquipment
+typeOf: dcid:ProductEnum
+name: "PowerGeneratingEquipment"
+isProvisional: dcs:True
+
+Node: dcid:ComputersAndOfficeMachinery
+typeOf: dcid:ProductEnum
+name: "ComputersAndOfficeMachinery"
+isProvisional: dcs:True
+
+Node: dcid:ElectricMotorsGeneratorsAndTransformers
+typeOf: dcid:ProductEnum
+name: "ElectricMotorsGeneratorsAndTransformers"
+isProvisional: dcs:True
+
+Node: dcid:EquipmentForDistributingElectricity
+typeOf: dcid:ProductEnum
+name: "EquipmentForDistributingElectricity"
+isProvisional: dcs:True
+
+Node: dcid:ElectronicComponents
+typeOf: dcid:ProductEnum
+name: "ElectronicComponents"
+isProvisional: dcs:True
+
+Node: dcid:RadioAndTvApparatus
+typeOf: dcid:ProductEnum
+name: "RadioAndTvApparatus"
+isProvisional: dcs:True
+
+Node: dcid:DomesticAppliances
+typeOf: dcid:ProductEnum
+name: "DomesticAppliances"
+isProvisional: dcs:True
+
+Node: dcid:OtherElectricalMachinery
+typeOf: dcid:ProductEnum
+name: "OtherElectricalMachinery"
+isProvisional: dcs:True
+
+Node: dcid:RailwayAndShips
+typeOf: dcid:ProductEnum
+name: "RailwayAndShips"
+isProvisional: dcs:True
+
+Node: dcid:MotorVehicles
+typeOf: dcid:ProductEnum
+name: "MotorVehicles"
+isProvisional: dcs:True
+
+Node: dcid:BicyclesAndMotorcycles
+typeOf: dcid:ProductEnum
+name: "BicyclesAndMotorcycles"
+isProvisional: dcs:True
+
+Node: dcid:Aircraft
+typeOf: dcid:ProductEnum
+name: "Aircraft"
+isProvisional: dcs:True
+
+Node: dcid:OtherTransportEquipment
+typeOf: dcid:ProductEnum
+name: "OtherTransportEquipment"
+isProvisional: dcs:True
+
+Node: dcid:OpticalAndPhotographicProducts
+typeOf: dcid:ProductEnum
+name: "OpticalAndPhotographicProducts"
+isProvisional: dcs:True
+
+Node: dcid:MeasuringInstruments
+typeOf: dcid:ProductEnum
+name: "MeasuringInstruments"
+isProvisional: dcs:True
+
+Node: dcid:MedicalEquipment
+typeOf: dcid:ProductEnum
+name: "MedicalEquipment"
+isProvisional: dcs:True
+
+Node: dcid:ClocksAndWatches
+typeOf: dcid:ProductEnum
+name: "ClocksAndWatches"
+isProvisional: dcs:True
+
+Node: dcid:ArmsAndAmmunition
+typeOf: dcid:ProductEnum
+name: "ArmsAndAmmunition"
+isProvisional: dcs:True
+
+Node: dcid:RecreationalAndSportsProducts
+typeOf: dcid:ProductEnum
+name: "RecreationalAndSportsProducts"
+isProvisional: dcs:True
+
+Node: dcid:OtherManufactures
+typeOf: dcid:ProductEnum
+name: "OtherManufactures"
+isProvisional: dcs:True
+
+Node: dcid:Unspecified
+typeOf: dcid:ProductEnum
+name: "Unspecified"
+isProvisional: dcs:True
+
+Node: dcid:AllProducts
+typeOf: dcid:ProductEnum
+name: "All Products"
+isProvisional: dcs:True
+
+Node: dcid:TelecommunicationEquipement
+typeOf: dcid:ProductEnum
+name: "Telecommunication Equipement"
+isProvisional: dcs:True
+
+Node: dcid:LeatherAndLeatherProducts
+typeOf: dcid:ProductEnum
+name: "Leather And Leather Products"
+isProvisional: dcs:True
+
+Node: dcid:Cereals
+typeOf: dcid:ProductEnum
+name: "Cereals"
+isProvisional: dcs:True
+
+Node: dcid:NaturalFibreYarnAndFabrics
+typeOf: dcid:ProductEnum
+name: "Natural Fibre Yarn And Fabrics"
+isProvisional: dcs:True
+
+Node: dcid:HouseholdEquipment
+typeOf: dcid:ProductEnum
+name: "Household Equipment"
+isProvisional: dcs:True
+
+Node: dcid:CerealPreparations
+typeOf: dcid:ProductEnum
+name: "Cereal Preparations"
+isProvisional: dcs:True
