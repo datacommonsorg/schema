@@ -1270,6 +1270,58 @@ typeOf: schema:Property
 domainIncludes: dcs:FECAllCandidatesTwoYearFinancialSummary
 rangeIncludes: schema:Number
 
+Node: dcid:lendingEntity
+typeOf: dcs:Property
+name: "lendingEntity"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:LendingEntityEnum,dcid:Country
+
+Node: dcid:amountPrincipalRepayment
+typeOf: dcs:Property
+name: "amountPrincipalRepayment"
+domainIncludes: dcid:Debt
+
+Node: dcid:debtType
+typeOf: dcs:Property
+name: "debtType"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:DebtTypeEnum
+
+Node: dcid:debtGuaranteeStatus
+typeOf: dcs:Property
+name: "debtGuaranteeStatus"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:DebtGuaranteeStatusEnum
+
+Node: dcid:debtCreditorType
+typeOf: dcs:Property
+name: "debtCreditorType"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:DebtCreditorTypeEnum
+
+Node: dcid:debtInstrument
+typeOf: dcs:Property
+name: "debtInstrument"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:DebtInstrumentEnum,dcid:Class
+
+Node: dcid:debtFinancer
+typeOf: dcs:Property
+name: "debtFinancer"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:DebtFinancerEnum
+
+Node: dcid:amountInterest
+typeOf: dcs:Property
+name: "amountInterest"
+domainIncludes: dcid:Debt
+
+Node: dcid:amountOutstandingAndDisbursed
+typeOf: dcs:Property
+name: "amountOutstandingAndDisbursed"
+domainIncludes: dcid:Debt
+
+# TODO(ajaits): add descriptions to new properties
 Node: dcid:totalIndivContrib
 name: totalIndivContrib
 typeOf: schema:Property
@@ -1752,6 +1804,12 @@ typeOf: dcs:UnitOfMeasure
 name: "DeathPer1000Births"
 dcid: "DeathPer1000Births"
 description: "A unit death per one thousand births."
+
+Node: dcid:currency
+typeOf: dcs:Property
+name: "currency"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:Currency, dcid:OneOrg_CurrencyEnum
 
 Node: dcid:USDollar
 typeOf: dcs:CurrencyUnitOfMeasure
