@@ -1,0 +1,62 @@
+Node: dcid:primeRate
+typeOf: dcs:Property
+name: "primeRate"
+domainIncludes: dcid:FinancialInstrument
+
+Node: dcid:instrumentTerm
+typeOf: dcs:Property
+name: "instrumentTerm"
+domainIncludes: dcid:FinancialInstrument
+rangeIncludes: dcid:QuantityRange
+
+Node: dcid:FinancialInstrument
+typeOf: dcid:Class
+name: "FinancialInstrument"
+subClassOf: dcid:Thing
+
+Node: dcid:instrumentType
+typeOf: dcs:Property
+name: "instrumentType"
+domainIncludes: dcid:FinancialInstrument
+rangeIncludes: dcid:InstrumentTypeEnum
+
+Node: dcid:InstrumentTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "InstrumentTypeEnum"
+
+Node: dcid:FederalFund
+typeOf: dcid:InstrumentTypeEnum
+name: "Federal Fund"
+
+Node: dcid:BankLoan
+typeOf: dcid:InstrumentTypeEnum
+name: "Bank Loan"
+
+Node: dcid:PrimaryCredit
+typeOf: dcid:InstrumentTypeEnum
+name: "Primary Credit"
+
+Node: dcid:NonfinancialCommercialPaperAA
+typeOf: dcid:InstrumentTypeEnum
+name: "Nonfinancial Commercial Paper AA"
+
+Node: dcid:FinancialCommercialPaperAA
+typeOf: dcid:InstrumentTypeEnum
+name: "Financial Commercial Paper AA"
+
+Node: dcid:SecondaryMarket
+typeOf: dcid:InstrumentTypeEnum
+name: "Secondary Market"
+
+Node: dcid:ConstantMaturity
+typeOf: dcid:InstrumentTypeEnum
+name: "Constant Maturity"
+
+Node: dcid:ConstantMaturityInflationIndexed
+typeOf: dcid:InstrumentTypeEnum
+name: "Constant Maturity Inflation Indexed"
+
+Node: dcid:GovernmentSecurityLongTerm
+typeOf: dcid:InstrumentTypeEnum
+name: "Government Security, Long Term"
