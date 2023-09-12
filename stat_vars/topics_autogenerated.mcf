@@ -253,11 +253,6 @@ name: "Population by Disability Status"
 member: dcid:Count_Person_NoDisability
 member: dcid:Count_Person_WithDisability
 
-Node: dcid:dc/topic/ExportSubsidies
-typeOf: dcs:Topic
-name: "Export Subsidies"
-relevantVariable: dcid:sdg/AG_PRD_XSUBDY
-
 Node: dcid:dc/topic/Forest
 typeOf: dcs:Topic
 name: "Forest"
@@ -755,22 +750,14 @@ member: dcid:sdg/SH_STA_TRAF.SEX--M
 Node: dcid:dc/topic/Sanitation
 typeOf: dcs:Topic
 name: "Sanitation"
-relevantVariable: dcid:sdg/SH_SAN_SAFE
 relevantVariable: dcid:sdg/SP_ACS_BSRVSAN
 relevantVariable: dcid:dc/svpg/Sanitation_ProportionofPopulationusingbasicsanitationservicesbyresidency
-relevantVariable: dcid:dc/svpg/Sanitation_ProportionofPopulationusingsafelymanagedsanitationservicesbyresidency
 
 Node: dcid:dc/svpg/Sanitation_ProportionofPopulationusingbasicsanitationservicesbyresidency
 typeOf: dcs:StatVarPeerGroup
 name: "Proportion of Population Using Basic Sanitation Services by Residency"
 member: dcid:sdg/SP_ACS_BSRVSAN.URBANISATION--R
 member: dcid:sdg/SP_ACS_BSRVSAN.URBANISATION--U
-
-Node: dcid:dc/svpg/Sanitation_ProportionofPopulationusingsafelymanagedsanitationservicesbyresidency
-typeOf: dcs:StatVarPeerGroup
-name: "Proportion of Population Using Safely Managed Sanitation Services by Residency"
-member: dcid:sdg/SH_SAN_SAFE.URBANISATION--R
-member: dcid:sdg/SH_SAN_SAFE.URBANISATION--U
 
 Node: dcid:dc/topic/SocialSupport
 typeOf: dcs:Topic
