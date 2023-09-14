@@ -3,49 +3,54 @@ name: "typeOf"
 typeOf: schema:Property
 domainIncludes: schema:Thing
 rangeIncludes: schema:Class
-description: "Indicates the type of an entity. The type should be the Class of which the entity is an instance. For example, Addis Ababa is a typeOf City"
+description: "Indicates the type of an entity. The type should be the Class the entity is an instance of."
 
 Node: dcid:subClassOf
 name: "subClassOf"
 typeOf: schema:Property
 domainIncludes: schema:Class
 rangeIncludes: schema:Class
-description: "Indicates one or more superclass(es) of this class, in a class hierarchy. For example, City is a subClassOf AdministrativeArea. All instances of the entity inherit the superclass. Thus, instances of City are also instances of AdministrativeArea."
+description: "Indicates Class hierarchy. For example, City is a subClassOf AdministrativeArea. Thus, instances of City are also instances of AdministrativeArea."
 
 Node: dcid:subPropertyOf
 name: "subPropertyOf"
 typeOf: schema:Property
 domainIncludes: schema:Property
 rangeIncludes: schema:Property
-description: "Indicates the parent of this property, in a property hierarchy."
+description: "Indicates Property hierarchy."
 
 Node: dcid:equivalentClass
 name: "equivalentClass"
 typeOf: schema:Property
 domainIncludes: schema:Class
 rangeIncludes: schema:Class
-description: "Provenance URL of an equivalent Class in another ontology (e.g. DCMI)."
 
 Node: dcid:equivalentProperty
 name: "equivalentProperty"
 typeOf: schema:Property
 domainIncludes: schema:Property
 rangeIncludes: schema:Property
-description: "Provenance URL of an equivalent Property in another ontology (e.g. DCMI)."
 
 Node: dcid:descriptionUrl
 name: "descriptionUrl"
 typeOf: schema:Property
 domainIncludes: schema:Class, schema:Property, schema:Enumeration
 rangeIncludes: schema:URL
-description: "The URL that provides a description used in the 'description' field of a Node."
+description: "Provenance URL of the description value."
 
 Node: dcid:nameWithLanguage
 name: "nameWithLanguage"
 typeOf: schema:Property
 domainIncludes: schema:Class
 rangeIncludes: schema:Text
-description: "Text string in quotes ending with @<lang> where <lang> is a 2-letter ISO 639-1 language code."
+description: "Text string in quotes ending with @<lang> where <lang> is a 2 letter ISO 639-1 language code."
+
+Node: dcid:utteranceTemplate
+name: "utteranceTemplate"
+typeOf: schema:Property
+domainIncludes: schema:Thing, schema:StatisticalVariable
+rangeIncludes: schema:Text
+description: "A text string that captures how a node may be referred to by a user. It can have placeholders prefixed with a '$' to indicate parts that can be substituted with a set of strings, for instance, '$Location' or '$Year'."
 
 Node: dcid:geoId
 name: "geoId"
@@ -59,7 +64,7 @@ name: "usCensusGeoId"
 typeOf: schema:Property
 domainIncludes: schema:Place
 rangeIncludes: schema:Text
-description: "A geographic identifier that uniquely identifies all administrative/legal and statistical geographic areas for which the U.S. Census Bureau tabulates data."
+description: "A geographic identifier that uniquely identify all administrative/legal and statistical geographic areas for which the Census Bureau tabulates data. Some of the most common administrative/legal and statistical geographic entities with unique GEOIDs include states, counties, congressional districts, core based statistical areas (metropolitan and micropolitan areas), census tracts, block groups and census blocks."
 descriptionUrl: "https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html"
 
 Node: dcid:marginOfError
@@ -67,8 +72,6 @@ name: "marginOfError"
 typeOf: schema:Property
 domainIncludes: schema:Observation
 rangeIncludes: schema:Number, dcs:Percent
-description: "A statistic expressing the amount of random sampling error in the results of a survey."
-descriptionUrl: "https://en.wikipedia.org/wiki/Margin_of_error"
 
 Node: dcid:marginOfErrorSignificanceLevel
 typeOf: schema:Property
@@ -91,21 +94,20 @@ name: "countRelative"
 typeOf: schema:Property
 domainIncludes: schema:StatisticalPopulation
 rangeIncludes: schema:Number, dcs:Percent
-supersededBy: dcs:measurementDenominator
+description: "Ratio of counts between the observed population and its parent population with all constraints except population type and location removed. If measuredProperty=count/relative, unit=Percent, measuredValue=34.3 for people with smallpox in San Francisco, then for every 100 people in San Francisco, 34.3 of them have smallpox."
 
 Node: dcid:percent
 name: "percent"
 typeOf: schema:Property
 domainIncludes: schema:StatisticalPopulation, dcs:Person
 rangeIncludes: schema:Number, dcs:Percent
-supersededBy: dcs:Percent
+supersededBy: dcs:countRelative
 
 Node: dcid:unit
 name: "unit"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: schema:Observation, dcs:StatVarObservation
-description: "The unit of measurement used in an observation or statistical variable. For example, it could be USDollars, Meter, Celsius, etc. Values are typically of type UnitOfMeasure."
 
 Node: dcid:subPopulation
 rangeIncludes: schema:StatisticalPopulation
@@ -131,9 +133,8 @@ Node: meanValue
 dcid: "meanValue"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: schema:Observation, dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: schema:Observation
 name: "meanValue"
-description: "A value for the statType property of a StatisticalVariable. Indicates that the variable reports the mean of a range of observations. An example is mean wind speed."
 
 Node: dcid:Election
 name: "Election"
@@ -173,57 +174,49 @@ name: "measurementMethod"
 domainIncludes: schema:Observation, dcs:StatisticalVariable
 rangeIncludes: schema:Text, schema:Enumeration
 typeOf: schema:Property
-description: "Provides additional information about how the measuredProperty of a StatisticalVariable was measured."
+description: "Used when extra clarification is needed about how the measuredProperty was measured."
 
 Node: dcid:measurementResult
 name: "measurementResult"
 domainIncludes: schema:Observation, dcs:StatisticalVariable
 rangeIncludes: schema:Text, schema:Enumeration
 typeOf: schema:Property
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable represents the result of some calculation or answer to a research hypothesis."
+description: "Used when extra description is needed for the measurement result. For example, if there was a result but you do not make it available in Data Commons for privacy reasons, you may set measurementResult to DataSuppressed."
 
 Node: dcid:growthRate
 name: "growthRate"
-domainIncludes: schema:Observation, dcs:StatisticalVariable
+domainIncludes: schema:Observation
 rangeIncludes: schema:Number
 typeOf: schema:Property
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable measures the percentage change in observations over a certain time period. An example of this is a price index."
+description: "The percentage change of a specific variable within a specific time period and given a certain context."
+descriptionUrl: "https://www.investopedia.com/terms/g/growthrates.asp"
 
 Node: dcid:percentile10
 typeOf: schema:Property
 name: "percentile10"
-domainIncludes: dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: schema:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable measures the 10th percentile of some population."
 
 Node: dcid:percentile25
 typeOf: schema:Property
 name: "percentile25"
-domainIncludes: dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: schema:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable measures the 25th percentile of some population."
 
 Node: dcid:percentile75
 typeOf: schema:Property
 name: "percentile75"
-domainIncludes: dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: schema:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable measures the 75th percentile of some population."
 
 Node: dcid:percentile90
 typeOf: schema:Property
 name: "percentile90"
-domainIncludes: dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: schema:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable measures the 90th percentile of some population."
 
 Node: dcid:County
 name: "County"
-typeOf: schema:Class
-subClassOf: schema:AdministrativeArea
-
-Node: dcid:Department
-name: "Department"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
 
@@ -242,11 +235,6 @@ name: "Island"
 typeOf: schema:Class
 subClassOf: dcs:Place
 
-Node: dcid:Lake
-name: "Lake"
-typeOf: schema:Class
-subClassOf: schema:Place
-
 Node: dcid:Oblast
 name: "Oblast"
 typeOf: schema:Class
@@ -260,12 +248,6 @@ subClassOf: schema:AdministrativeArea
 Node: dcid:Province
 name: "Province"
 typeOf: schema:Class
-subClassOf: schema:AdministrativeArea
-
-Node: dcid:Prefecture
-name: "Prefecture"
-typeOf: schema:Class
-description: "Administrative jurisdiction, regional or local government subdivision in various countries"
 subClassOf: schema:AdministrativeArea
 
 Node: dcid:Region
@@ -283,18 +265,8 @@ name: "Municipality"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
 
-Node: dcid:PlanningArea
-name: "PlanningArea"
-typeOf: schema:Class
-subClassOf: schema:AdministrativeArea
-
 Node: dcid:Commune
 name: "Commune"
-typeOf: schema:Class
-subClassOf: schema:AdministrativeArea
-
-Node: dcid:Sector
-name: "Sector"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
 
@@ -485,14 +457,14 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent, dcid:MedicalConditionIncident
+domainIncludes: schema:Person, schema:Organization, schema:Household
 
 Node: employmentStatus
 dcid: "employmentStatus"
 typeOf: schema:Property
 name: "employmentStatus"
-domainIncludes: schema:Person, schema:Household, dcid:Teacher,dcid:Faculty
-rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum, dcs:HealthEstablishment
+domainIncludes: schema:Person, schema:Household
+rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum
 
 Node: geoNamesId
 dcid: "geoNamesId"
@@ -506,14 +478,14 @@ name: "observationPeriod"
 typeOf: schema:Property
 domainIncludes: schema:Observation, schema:StatVarObservation
 rangeIncludes: schema:Text
-description: "The frequency with which an observation is reported. The format follows `P[0-9]*[Y|M|D|h|m|s]`. For example, P1Y is Period 1 Year, P3M is Period 3 Months, P3h is Period 3 hours."
+description: "The length of time an Observation took place over. The format follows `P[0-9]*[Y|M|D|h|m|s]`. For example, P1Y is Period 1 Year, P3M is Period 3 Months, P3h is Period 3 hours."
 
 Node: dcid:accumulationPeriod
 name: "accumulationPeriod"
 typeOf: schema:Property
 domainIncludes: schema:Observation, schema:StatVarObservation
 rangeIncludes: schema:Quantity
-description: "The length of time over which an observation was recorded. For example, an observation could have an observationPeriod of P1Y (reported annually), but have an accumulationPeriod of P1M (recorded monthly)"
+description: "The length of time an Observation covers. Observation does not happen throughout that time. For example, [2 dcs:Month] means that a value includes accumulation of the previous 2 months."
 
 Node: housingUnits
 dcid: "housingUnits"
@@ -532,7 +504,6 @@ typeOf: schema:Property
 domainIncludes: schema:Thing
 name: "dcid"
 rangeIncludes: schema:Text
-description: "The unique Data Commons identifier for an entity or property."
 
 Node: dcid:placeId
 typeOf: schema:Property
@@ -629,7 +600,6 @@ dcid: "location"
 typeOf: schema:Property
 domainIncludes: schema:StatisticalPopulation, schema:Observation, schema:Event
 name: "location"
-description: "Indicates the location at which an event occurred, often reported as geographical coordinates."
 
 Node: workerPopulation
 dcid: "workerPopulation"
@@ -639,9 +609,8 @@ typeOf: schema:Property
 Node: minValue
 dcid: "minValue"
 typeOf: schema:Property
-domainIncludes: schema:Observation, dcs:StatisticalVariable
+domainIncludes: schema:Observation
 name: "minValue"
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the minimum value of a range of observations. An example is minimum temperature."
 
 Node: wikidataId
 dcid: "wikidataId"
@@ -649,7 +618,6 @@ domainIncludes: schema:Thing
 typeOf: schema:Property
 name: "wikidataId"
 rangeIncludes: schema:Text
-description: "The unique Wikidata identifier for an entity or property."
 
 Node: crimeType
 dcid: "crimeType"
@@ -774,10 +742,9 @@ domainIncludes: schema:Person
 
 Node: maxValue
 dcid: "maxValue"
-domainIncludes: schema:Observation, dcs:StatisticalVariable
+domainIncludes: schema:Observation
 typeOf: schema:Property
 name: "maxValue"
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the maximum value of a range of observations. An example is maximum temperature."
 
 Node: tenure
 dcid: "tenure"
@@ -798,7 +765,7 @@ Node: area
 dcid: "area"
 name: "area"
 typeOf: schema:Property
-domainIncludes: schema:AdministrativeArea, schema:LandCover, schema:FarmInventory
+domainIncludes: schema:AdministrativeArea, schema:LandCover
 rangeIncludes: schema:Number
 
 Node: countValue
@@ -807,7 +774,6 @@ typeOf: schema:Property
 domainIncludes: schema:Observation
 rangeIncludes: schema:Integer
 name: "countValue"
-supersededBy: dcid:count
 
 Node: value
 dcid: "value"
@@ -815,58 +781,58 @@ typeOf: schema:Property
 name: "value"
 domainIncludes: schema:Quantity, dcs:QuantitativeValue
 rangeIncludes: schema:Text, schema:Enumeration, schema:Number
-description: "The recorded value of a StatVarObservation. Also used as a value of the measuredProperty property of a StatisticalVariable to indicate that all observations for that variable provide the actual recorded value."
 
 Node: medianValue
 dcid: "medianValue"
 rangeIncludes: schema:Number
 name: "medianValue"
 typeOf: schema:Property
-domainIncludes: schema:Observation, dcs:StatisticalVariable
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the median value of a range of observations. An example is the median age of a population."
+domainIncludes: schema:Observation
 
 Node: dcid:stdDeviationValue
 typeOf: schema:Property
 name: "stdDeviationValue"
-domainIncludes: dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: dcs:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the standard deviation over a range of observations. An example is the standard deviation from the average test score of a population."
+description: "A measure of the amount of variation or dispersion of a set of values"
+descriptionUrl: "https://en.wikipedia.org/wiki/Standard_deviation"
 
 Node: dcid:skewnessValue
 typeOf: schema:Property
 name: "skewnessValue"
-domainIncludes: dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: dcs:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the skewness over a range of observations. An example is the skewness value of a range of temperature measurements."
+description: "A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean"
+descriptionUrl: "https://en.wikipedia.org/wiki/Skewness"
 
 Node: dcid:kurtosisValue
 typeOf: schema:Property
 name: "kurtosisValue"
-domainIncludes: dcs:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: dcs:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the kurtosis over a range of observations. An example is the kurtosis value of a range of temperature measurements."
+description: "A measure of the 'tailedness' of the probability distribution of a real-valued random variable"
 descriptionUrl: "https://en.wikipedia.org/wiki/Kurtosis"
 
 Node: dcid:decileValue
 typeOf: schema:Property
 name: "decileValue"
-domainIncludes: schema:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: schema:StatVarObservation
 rangeIncludes: schema:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the value of one of the 10 deciles of a range of observations."
+description: "Each of ten equal groups into which a population can be divided according to the distribution of values of a particular variable"
 
 Node: dcid:rankingValue
 typeOf: schema:Property
 name: "rankingValue"
-domainIncludes: schema:StatVarObservation, dcs:StatisticalVariable
+domainIncludes: schema:StatVarObservation
 rangeIncludes: schema:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the relative ranking of a sorted range of observations."
+description: "The ordinal value within a some data when the values are sorted."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ranking_(statistics)"
 
 Node: dcid:sampleSize
 typeOf: schema:Property
 name: "sampleSize"
-domainIncludes: schema:Observation, dcs:StatisticalVariable
+domainIncludes: schema:Observation
 rangeIncludes: schema:Number
-description: "A value of the statType property of a StatisticalVariable. Indicates that the variable reports the sample size used to derive a set of observations. For example, to calculate the percentage of a population, results may be extrapolated from a sample of observations."
 
 Node: employment
 dcid: "employment"
@@ -880,21 +846,20 @@ rangeIncludes: schema:Integer
 domainIncludes: schema:StatisticalPopulation
 typeOf: schema:Property
 name: "count"
-description: "A value of the measuredProperty property of a StatisticalVariable. Indicates that the variable reports a count of the measured population."
 
 Node: dcid:cumulativeCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household, dcs:MedicalTest, dcs:MedicalConditionIncident
+domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household
 typeOf: schema:Property
 name: "cumulativeCount"
-description: "A value of the measuredProperty property of a StatisticalVariable. Indicates that the variable reports the running count of all instances of the measured population."
+description: "A running count of all instances that have satisfied the constraints of the Statistical Population."
 
 Node: dcid:incrementalCount
 rangeIncludes: schema:Integer
 domainIncludes: schema:StatisticalPopulation, dcs:Person
 typeOf: schema:Property
 name: "incrementalCount"
-description: "A value of the measuredProperty property of a StatisticalVariable. Indicates that the variable reports only the incremental count for the current instances of the measured population"
+description: "A count of new instances satisfying the constraints of the Statistical Population since the last observation was made."
 
 Node: dcid:daysSinceLastReportedCase
 rangeIncludes: schema:Integer
@@ -922,8 +887,15 @@ Node: dcid:grossDomesticProduct
 typeOf: schema:Property
 name: "grossDomesticProduct"
 rangeIncludes: schema:MonetaryAmount
-domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum, dcs:EconomicActivity
+domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum
 description: "Gross domestic product (GDP) is the monetary value of all the finished goods and services produced within a place in a specific time period"
+
+Node: dcid:growthRate
+typeOf: schema:Property
+name: "growthRate"
+rangeIncludes: schema:Number
+domainIncludes: schema:Observation
+description: "Growth rate refers to percentage change of a specific variable within a time period"
 
 Node: dcid:USCEstablishment
 typeOf: schema:Class
@@ -1772,24 +1744,17 @@ typeOf: schema:Class
 subClassOf: schema:Thing
 name: "UnitOfMeasure"
 dcid: "UnitOfMeasure"
-description: "A unit used to denote a quantitative measurement. Entities of this type are often used as the 'unit' property of a statistical variable or observation."
-
-Node: dcid:PercentGrossDomesticProduct
-typeOf:UnitOfMeasure
-name: "Percentage of gross domestic product"
-shortDisplayName: "% of GDP"
+description: "A unit used to denote a quantitative measurement."
 
 Node: dcid:HectarePerPerson
 typeOf: dcs:UnitOfMeasure
 name: "HectarePerPerson"
-shortDisplayName: "ha/person"
-description: "A unit representing the number of hectares per person."
+description: "A unit person per hectare area."
 
 Node: dcid:KilogramPerHectare
 typeOf: dcs:UnitOfMeasure
 name: "KilogramPerHectare"
-shortDisplayName: "kg/ha"
-description: "A unit representing the number of kilograms per hectare."
+description: "A unit per kilogram per hectare area."
 
 
 Node: LengthUnitOfMeasure
@@ -1881,8 +1846,7 @@ descriptionUrl: "https://www.nist.gov/pml/weights-and-measures/si-units-mass"
 Node: dcid:KilogramPerUSDollar
 typeOf: dcid:WeightUnitOfMeasure
 name: "KilogramPerUSD"
-shortDisplayName: "kg/USD"
-description: "A unit expressing the number of kilograms per US dollar."
+description: Kilogram_per_US_Dollar
 
 Node: dcid:EnergyUnitOfMeasure
 typeOf: schema:Class
@@ -1891,7 +1855,7 @@ name: "EnergyUnitOfMeasure"
 description: "A unit used to denote a measurement of energy."
 
 Node: dcid:KilogramOfOilEquivalent
-typeOf: dcs:EnergyUnitOfMeasure
+typeOf: dcs:KilogramOfOilEquivalent
 name: "KilogramOfOilEquivalent"
 shortDisplayName: "kgoe"
 description: "A unit of energy defined as 1/1000th of the amount of energy released by burning one tonne of crude oil."
@@ -1920,7 +1884,7 @@ typeOf: dcs:UnitOfMeasure
 name: "Percent"
 shortDisplayName: "%"
 dcid: "Percent"
-description: "A number expressed as a fraction of 100. For example, 98 denotes 98 percent, while 0.98 denotes 0.98 percent."
+description: "A number expressed as a fraction of 100. E.g. 98 denotes 98 percent, while 0.98 denotes 0.98 percent."
 
 Node: Inch
 typeOf: dcid:LengthUnitOfMeasure
@@ -1940,14 +1904,12 @@ alternateName: "Feet"
 Node: Yard
 typeOf: dcid:LengthUnitOfMeasure
 name: "Yard"
-shortDisplayName: "yd"
 dcid: "Yard"
 description: "A length unit of measure equivalent to a three feet."
 
 Node: Mile
 typeOf: dcid:LengthUnitOfMeasure
 name: "Mile"
-shortDisplayName: "mi"
 dcid: "Mile"
 description: "A length unit of measure equivalent to 5280 feet or 1760 yards."
 
@@ -2016,7 +1978,6 @@ description: "Equals 4,840 square yards or 0.405 hectares."
 Node: dcid:Hectare
 typeOf: dcid:AreaUnitOfMeasure
 name: "Hectare"
-shortDisplayName: "ha"
 description: "Equals 10,000 square meters."
 
 Node: Milliliter
@@ -2036,22 +1997,19 @@ description: "A volume unit accepted by the International System of Units equiva
 Node: PersonPerSquareMile
 typeOf: dcs:UnitOfMeasure
 name: "PersonPerSquareMile"
-shortDisplayName: "person/mi²"
 dcid: "PersonPerSquareMile"
-description: "A unit measuring the number of persons per square mile."
+description: "A unit person per square mile area."
 
 Node: dcid:PersonPerSquareKilometer
 typeOf: UnitOfMeasure
 name: "PersonPerSquareKilometer"
-shortDisplayName: "person/km²"
-description: "A unit measuring the number of persons per square kilometer."
+description: "A unit person per square kilometer area."
 
 Node: MilePerSquareMile
 typeOf: dcs:UnitOfMeasure
 name: "MilePerSquareMile"
-shortDisplayName: "mi/mi²"
 dcid: "MilePerSquareMile"
-description: "A unit measuring number of miles per square mile."
+description: "A unit ratio between mile length and square mile area."
 
 Node: dcid:MillimeterPerYear
 typeOf: dcs:UnitOfMeasure
@@ -2062,9 +2020,8 @@ description: "A rate unit that represents the millimeters of sea-level increase,
 Node: DeathPer1000Births
 typeOf: dcs:UnitOfMeasure
 name: "DeathPer1000Births"
-shortDisplayName: "deaths/1k births"
 dcid: "DeathPer1000Births"
-description: "A unit that expresses the number of deaths per 1000 births (in the same period)."
+description: "A unit death per one thousand births."
 
 Node: dcid:currency
 typeOf: dcs:Property
@@ -2118,70 +2075,59 @@ descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php/Gl
 Node: PhonesPer1000Persons
 typeOf: dcs:UnitOfMeasure
 name: "PhonesPer1000Persons"
-shortDisplayName: "phones/1k persons"
 dcid: "PhonesPer1000Persons"
-description: "A unit representing the number of phones per 1000 persons."
+description: "A unit phone per one thousand persons."
 
 Node: BirthsPer1000Persons
 typeOf: dcs:UnitOfMeasure
 name: "BirthsPer1000Persons"
-shortDisplayName: "births/1k persons"
 dcid: "BirthsPer1000Persons"
-description: "A unit that expresses the number of births per 1000 persons."
+description: "A unit birth per one thousand persons."
 
 Node: DeathsPer1000Persons
 typeOf: dcs:UnitOfMeasure
 name: "DeathsPer1000Persons"
-shortDisplayName: "deaths/1k persons"
 dcid: "DeathsPer1000Persons"
-description: "A unit that expresses the number of deaths per 1000 persons."
+description: "A unit death per one thousand persons."
 
 Node: dcid:Per100000Females
 typeOf: dcs:UnitOfMeasure
 name: "Per 100k females"
-shortDisplayName: "/100k females"
-description: "A unit expressing a measurement per 100000 females."
+description: "Per 100000 female population."
 
 Node: dcid:Per100000Males
 typeOf: dcs:UnitOfMeasure
 name: "Per 100k males"
-shortDisplayName: "/100k males"
-description: "A unit expressing a measurement per 100000 males."
+description: "Per 100000 male population."
 
 Node: dcid:Per100000Persons
 typeOf: dcs:UnitOfMeasure
 name: "Per 100k people"
-shortDisplayName: "/100k persons"
-description: "A unit expressing a measurement per 100000 persons."
+description: "Per 100000 population."
 
 Node: dcid:Per1000LiveBirths
 typeOf: dcs:UnitOfMeasure
 name: "Per 1000 live births"
-shortDisplayName: "/1k live births"
-description: "Unit expressing a measurement per 1000 live births."
+description: "Per 1000 live birth event."
 
 Node: dcid:Per1000MaleLiveBirths
 typeOf: dcs:UnitOfMeasure
 name: "Per 1000 male live births"
-shortDisplayName: "/1k male live births"
-description: "Unit expressing a measurement per 1000 male live births."
+description: "Per 1000 male live birth event."
 
 Node: dcid:Per1000FemaleLiveBirths
 typeOf: dcs:UnitOfMeasure
 name: "Per 1000 female live births"
-shortDisplayName: "/1k female live births"
-description: "Unit expressing a measurement per 1000 female live births."
+description: "Per 1000 female live birth event."
 
 Node: dcid:Per1000Persons
 typeOf: dcs:UnitOfMeasure
 name: "Per 1000 people"
-shortDisplayName: "/1k persons"
-description: "Unit expressing a measurement per 1000 persons."
+description: "Per 1000 population."
 
 Node: Second
 typeOf: dcid:TimeUnitOfMeasure
 name: "Second"
-shortDisplayName: "s"
 dcid: "Second"
 description: "The base unit of time defined by the International System of Units."
 
@@ -2268,7 +2214,6 @@ description: "A unit indicating a ratio to household income. If a household does
 Node: dcid:OccupantsPerRoom
 typeOf: dcs:UnitOfMeasure
 name: "OccupantsPerRoom"
-shortDisplayName: "occupants/room"
 description: "A unit indicating the number of people who occupy a room in a housing unit or a household."
 
 Node: dcid:Grade
@@ -2556,7 +2501,7 @@ typeOf: schema:Property
 name: "constraintProperties"
 domainIncludes: schema:StatisticalPopulation, dcs:StatisticalVariable
 rangeIncludes: schema:Property
-description: "A set of property-value pairs that are used to provide additional characteristics of a population of a StatisticalVariable. For example, a variable whose populationType is 'Person' could specify additional properties such as 'race' or 'age'."
+sameAs: schema:constraintProperty
 
 Node: dcid:PostalCodeArea
 typeOf: schema:Class
@@ -2568,19 +2513,19 @@ Node: dcid:StatisticalVariable
 typeOf: schema:Class
 subClassOf: schema:Intangible
 name: "StatisticalVariable"
-description: "Represents any type of statistical metric that can be measured at a place and time."
+description: "Represents any type of statistical metric that can be measured at a place and time. An instance typically corresponds to a pair of StatisticalPopulation and Observation node with some generalization (such as, not defining location, observationDate and measuredValue)."
 
 Node: dcid:StatVarObservation
 typeOf: schema:Class
 subClassOf: schema:Intangible
 name: "StatVarObservation"
-description: "Represents an observed measurement of a StatisticalVariable at a particular place and time."
+description: "Represents an observation on a StatisticalVariable associated with a particular place and time."
 
 Node: dcid:StatVarGroup
 typeOf: schema:Class
 subClassOf: schema:Intangible
 name: "StatVarGroup"
-description: "Represents a grouping of StatisticalVariable nodes, typically for display purposes. For example, the categories of variables in the Statistical Variable Explorer (e.g. 'Demographics', 'Agriculture') are defined as stat var groups"
+description: "Represents a grouping of StatisticalVariable nodes."
 
 Node: dcid:specializationOf
 name: "specializationOf"
@@ -2588,7 +2533,6 @@ rangeIncludes: schema:Enumeration, dcs:StatVarGroup, schema:Thing
 domainIncludes: schema:Enumeration, dcs:StatVarGroup, schema:Thing
 source: "https://datacommons.org"
 typeOf: schema:Property
-description: "Represents a specialization of another entity, typically used for an enum value or a StatVarGroup. For example, the 'Demographics' StatVarGroup is a specialization of the 'Root' StatVarGroup."
 
 Node: dcid:displayRank
 typeOf: schema:Property
@@ -2600,16 +2544,16 @@ description: "Represents a rank used to order entities in a UI display.  Compara
 Node: dcid:observationAbout
 typeOf: schema:Property
 name: "observationAbout"
-domainIncludes: dcs:StatVarObservation, dcs:StatVarObsSeries
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: dcs:Place
-description: "Identifies the entity (typically a place) associated with a StatVarObservation."
+description: "Identifies the entity (typically a place) associated with an observation."
 
 Node: dcid:variableMeasured
 typeOf: schema:Property
 name: "variableMeasured"
-domainIncludes: dcs:StatVarObservation, dcs:StatVarObsSeries
+domainIncludes: dcs:StatVarObservation
 rangeIncludes: dcs:StatisticalVariable, schema:Property
-description: "Identifies the StatisticalVariable associated with an StatVarObservation."
+description: "Identifies the variable associated with an observation."
 
 Node: dcid:StatisticalVariableSlice
 typeOf: schema:Class
@@ -2621,14 +2565,14 @@ Node: dcid:PlaceStatisticalVariable
 typeOf: schema:Class
 subClassOf: schema:Intangible
 name: "PlaceStatisticalVariable"
-supersededBy: dcs:StatisticalVariable
+description: "Represents place and its corresponding statistical variable."
 
 Node: dcid:measurementDenominator
 typeOf: schema:Property
 name: "measurementDenominator"
 domainIncludes: schema:Observation, dcs:StatisticalVariable
 rangeIncludes: dcs:StatisticalVariable
-description: "Identifies the StatisticalVariable used as the denominator when a StatisticalVariable or StatVarObservation represents a ratio or percentage."
+description: "Identifies the denominator variable when an observation represents a ratio or percentage."
 
 Node: dcid:scalingFactor
 typeOf: schema:Property
@@ -2649,7 +2593,7 @@ typeOf: schema:Property
 name: "measurementQualifier"
 domainIncludes: schema:Observation, dcs:StatisticalVariable
 rangeIncludes: schema:Enumeration, dcs:EconomicMetricEnum
-description: "Provides additional information on the measurement reported by a StatisticalVariable. For example, a variable measuring the price of goods may use the qualifier 'nominal'."
+description: "Provides additional qualification to an observation. For example, a GDP observation measures the Nominal value."
 
 Node: dcid:relatedLocations
 typeOf: schema:Property
@@ -2664,14 +2608,13 @@ name: "variable"
 description: "Variable of an entity."
 domainIncludes: dcs:PlaceStatisticalVariable, dcs:SourceStatVarInfo
 rangeIncludes: dcs:StatisticalVariable
-supersededBy: dcs:StatisticalVariable
 
 Node: dcid:statType
 typeOf: schema:Property
 name: "statType"
 domainIncludes: dcs:StatisticalVariable
 rangeIncludes: schema:Property
-description: "Indicates the type of measurement a StatisticalVariable represents. Some examples are measuredValue, maxValue, minValue, stdError, etc."
+description: "Identifies a statistical property of Observation."
 
 Node: dcid:rankFromTop
 typeOf: schema:Property
@@ -2730,9 +2673,9 @@ name: "scaledScore"
 
 Node: dcid:isic
 name: "isic"
-rangeIncludes: dcs:ISICv3.1Enum
+rangeIncludes: dcs:ISICv3.1Enum, dcs:ISICv4.1Enum
 typeOf: schema:Property
-domainIncludes: dcs:EconomicActivity
+domainIncludes: dcs:EconomicActivity, dcs:Waste
 description: "This specifies the economic activity type from the International Standard Industrial Classification of All Economic Activities, Version 3.1."
 
 Node: dcid:EmergencyRoom
@@ -2816,8 +2759,8 @@ subClassOf: dcs:Incident, schema:MedicalEntity
 description: "A medical condition incident, such as a case of pneumonia."
 
 Node: dcid:incidentType
-rangeIncludes: dcs:MedicalConditionIncidentTypeEnum, dcs:CauseOfDeathEnum, dcs:CauseOfDeathAndDisabilityEnum, dcs:ICD10_113CausesOfDeath
-domainIncludes: dcs:Incident, dcs:MedicalConditionIncident
+rangeIncludes: dcs:MedicalConditionIncidentTypeEnum
+domainIncludes: dcs:Incident
 typeOf: schema:Property
 name: "incidentType"
 
@@ -2854,7 +2797,7 @@ description: "Average elevation based on Digital Elevation Model (DEM)."
 Node: dcid:sourceScalingFactor
 name: "sourceScalingFactor"
 typeOf: schema:Property
-description: "Describes the scaling factor that was used by the source dataset. Imported data are scaled on a per-unit basis."
+description: "Describes the scaling factor that was used by the source. Imported data are scaled to a per unit basis."
 domainIncludes: dcs:StatVarObservation
 
 Node: dcid:PlaceVisitEvent
@@ -2911,10 +2854,6 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Rural_area"
 Node: dcid:UnknownPlaceOfResidence
 typeOf: dcid:HumanSettlementClassificationEnum
 name: "Unknown Place Of Residence"
-
-Node: dcid:SlumArea
-typeOf: dcid:HumanSettlementClassificationEnum
-name: "Slum Area"
 
 Node: dcid:SemiUrban
 name: "SemiUrban"
@@ -3026,8 +2965,8 @@ Node: dcid:enrollmentStatus
 typeOf: schema:Property
 name: "enrollmentStatus"
 description: "Identifies a person's enrollment status."
-rangeIncludes: dcs:EnrollmentStatusEnum, IdentityActivityEnum
-domainIncludes: schema:Person, schema:Student, schema:Teacher
+rangeIncludes: dcs:EnrollmentStatusEnum
+domainIncludes: schema:Person
 
 Node: dcid:expensor
 typeOf: schema:Property
@@ -3099,7 +3038,7 @@ Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum, dcid:ConsumerGoodsCategoryEnum, dcid:ServiceCategoryEnum,dcid:ServiceTypeEnum
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -3126,7 +3065,7 @@ Node: dcid:workStatus
 name: "workStatus"
 typeOf: schema:Property
 domainIncludes: schema:Household, schema:Person
-rangeIncludes: dcs:USC_WorkStatusEnum, dcs:WorkerClassificationEnum
+rangeIncludes: dcs:USC_WorkStatusEnum
 
 Node: dcid:vaccineType
 name: "vaccineType"
@@ -3184,8 +3123,7 @@ typeOf: schema:Property
 Node: dcs:VaccineDose
 typeOf: dcs:UnitOfMeasure
 name: "Vaccine Dose"
-shortDisplayName: "Dose"
-description: "Number of vaccine doses"
+description: "VaccineDose"
 
 Node: dcid:vaccineInformation
 name: "vaccineInformation"
@@ -3290,7 +3228,7 @@ description: "An identifier for a census region. The US has states grouped into 
 Node: dcid:cost
 typeOf: schema:Property
 name: "cost"
-domainIncludes: dcs:Fuel, dcs:Coal, dcs:HousingUnit
+domainIncludes: dcs:Fuel
 rangeIncludes: schema:Quantity
 description: "The value of money that has been used up to produce something or deliver a service."
 descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
@@ -3386,7 +3324,6 @@ name: "numberOfMonths"
 Node: dcid:AvailableVehicles
 typeOf: dcs:UnitOfMeasure
 name: "AvailableVehicles"
-shortDisplayName: "Vehicles"
 description: "Describes the number of passenger cars, vans, and pickup or panel trucks of one-ton(2,000 pounds) capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Motorcycles or other recreational vehicles are excluded."
 descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2019_ACSSubjectDefinitions.pdf"
 
@@ -3539,12 +3476,12 @@ Node: dcid:StatVarPeerGroup
 typeOf: schema:Class
 subClassOf: schema:Intangible
 name: "StatVarPeerGroup"
-description: "A grouping of statistical variables that have similar characteristics, for the purposes of answering natural-language queries. An example could be a group of variables that are all related to the number of people in a particular place, but have different measured properties."
+description: "Represents a group of StatisticalVariable nodes that are comparable peers."
 
 Node: dcid:isFallbackRoot
 typeOf: schema:Property
 name: "isFallbackRoot"
-description: "Indicates that the StatVarGroup is to act as the root for all StatisticalVariable nodes that are not explicitly assigned to be a member of a StatVarGroup. This is relevant only in the context of a Custom Data Commons instance."
+description: "Indicates that a StatVarGroup is to act as the root for all StatisticalVariable nodes that are not explicitly assigned to be a member of a StatVarGroup. This is relevant only in the context of a Custom Data Commons instance."
 domainIncludes: dcs:StatVarGroup
 rangeIncludes: schema:Boolean
 
@@ -3572,7 +3509,7 @@ description: "The geo granularity at which a variable has data for"
 Node: dcid:ageGroupClassification
 name: "ageGroupClassification"
 rangeIncludes: dcs:AgeGroupClassificationEnum
-domainIncludes: dcs:Person, dcs:MortalityEvent
+domainIncludes: dcs:Person
 typeOf: schema:Property
 description: "People classified based on their age group."
 descriptionUrl: "https://www.nih.gov/nih-style-guide/age"
@@ -3658,7 +3595,6 @@ typeOf: schema:Property
 description: "List of members.  Contains a comma-separated list of ordered values."
 domainIncludes: dcs:StatVarPeerGroup
 rangeIncludes: dcs:StatisticalVariable, schema:Property
-description: "A list of statistical variables, with similar characteristics, that are grouped together to form a StatVarPeerGroup, for the purpose of answering natural-language queries."
 
 Node: dcid:NewZealand_CivilUnion
 typeOf: dcs:MaritalStatusEnum
@@ -3718,7 +3654,7 @@ Node: dcid:healthEstablishmentType
 name: "healthEstablishmentType"
 typeOf: schema:Property
 domainIncludes: dcs:HealthEstablishment
-rangeIncludes: dcs:HealthEstablishmentTypeEnum, dcs:BirthEvent
+rangeIncludes: dcs:HealthEstablishmentTypeEnum
 
 Node: dcid:healthCareAdvice
 name: "healthCareAdvice"
@@ -4125,7 +4061,7 @@ Node: dcid:SourceStatVarInfo
 typeOf: schema:Class
 subClassOf: dcs:Intangible
 name: "SourceStatVarInfo"
-description: "A property of a StatisticalVariable that references the source dataset from which it was derived. The SourceStatVarInfo is essentially the same as a Provenance, with an internal encoding representing the statistical variable."
+description: "Source specific details about a StatisticalVariable."
 
 Node: dcid:url
 typeOf: schema:Property
@@ -4250,8 +4186,7 @@ subClassOf: schema:AdministrativeArea
 Node: dcid:Per1000Males
 typeOf: dcs:UnitOfMeasure
 name: "Per 1k males"
-shortDisplayName: "/1k males"
-description: "Unit representing a measurement per 1000 males."
+description: "Per 1000 male population."
 
 Node: dcid:socialVulnerabilityIndex
 typeOf: dcid:Property
@@ -4281,945 +4216,187 @@ Node: dcid:FullTimeEmployee
 typeOf: dcid:EmploymentStatusEnum
 name: "Full Time Employee"
 
-##EthiopiaStatistics Addition
 
-Node: dcid:wealthIndex
-typeOf: dcid:Property
-name: "wealthIndex"
-domainIncludes: dcid:Person
-rangeIncludes: dcid:WealthIndexEnum
+###oecd waste sector by generation
 
-Node: dcid:WealthIndexEnum
-typeOf: dcid:Class
-subClassOf: dcid:Enumeration
-name: "WealthIndexEnum"
-
-Node: dcid:LowestWealthIndex
-typeOf: dcid:WealthIndexEnum
-name: "Lowest Wealth Index"
-description: "This category represents the bottom 0% to 20% of the population in terms of wealth distribution and includes the poorest households"
-descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
-
-Node: dcid:SecondWealthIndex
-typeOf: dcid:WealthIndexEnum
-name: "Second Wealth Index"
-description: "This group falls within the 21% to 40% range of the total population based on wealth and consists of the poor segment."
-descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
-
-Node: dcid:MiddleWealthIndex
-typeOf: dcid:WealthIndexEnum
-name: "Middle Wealth Index"
-description: "Households in this category are ranked between 41% and 60% in wealth distribution, representing the middle-class population."
-descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
-
-Node: dcid:FourthWealthIndex
-typeOf: dcid:WealthIndexEnum
-name: "Fourth Wealth Index"
-description: "This group includes those who fall within the 61% to 80% range of the wealth spectrum, classified as the rich segment."
-descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
-
-Node: dcid:HighestWealthIndex
-typeOf: dcid:WealthIndexEnum
-name: "Highest Wealth Index"
-description: " Representing the top 81% to 100%, this category includes the richest segment of the population."
-descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
-
-Node: dcid:StudentTeacherRatioUpto30
-typeOf: dcid:QuantityRange
-name: "Student teacher ratio upto 30"
-
-Node: dcid:Year1
-typeOf: dcid:Quantity
-name: "1 year"
-
-Node: dcid:Year2
-typeOf: dcid:Quantity
-name: "2 year"
-
-Node: dcid:Year3
-typeOf: dcid:Quantity
-name: "3 year"
-
-Node: dcid:Year5
-typeOf: dcid:Quantity
-name: "5 year"
-
-Node: dcid:Year7
-typeOf: dcid:Quantity
-name: "7 year"
-
-Node: dcid:Year10
-typeOf: dcid:Quantity
-name: "10 year"
-
-Node: dcid:Year20
-typeOf: dcid:Quantity
-name: "20 year"
-
-Node: dcid:Year30
-typeOf: dcid:Quantity
-name: "30 year"
-
-Node: dcid:USDollarUpto10000
-typeOf: dcid:QuantityRange
-name: "US Dollar upto 10000"
-
-Node: dcid:USDollarUpto14999
-typeOf: dcid:QuantityRange
-name: "USDollar upto 14999"
-
-Node: dcid:USDollar200000To249999
-typeOf: dcid:QuantityRange
-name: "US Dollar 200000 to 249999"
-
-Node: dcid:USDollar70000To79999
-typeOf: dcid:QuantityRange
-name: "US Dollar 70000 to 79999"
-
-Node: dcid:USDollar150000To174999
-typeOf: dcid:QuantityRange
-name: "US Dollar 150000 to 174999"
-
-Node: dcid:USDollar20000To24999
-typeOf: dcid:QuantityRange
-name: "US Dollar 20000 to 24999"
-
-Node: dcid:USDollar35000To39999
-typeOf: dcid:QuantityRange
-name: "US Dollar 35000 to 39999"
-
-Node: dcid:USDollar60000To69999
-typeOf: dcid:QuantityRange
-name: "US Dollar 60000 to 69999"
-
-Node: dcid:USDollar175000To199999
-typeOf: dcid:QuantityRange
-name: "US Dollar 175000 to 199999"
-
-Node: dcid:USDollar500000To749999
-typeOf: dcid:QuantityRange
-name: "US Dollar 500000 to 749999"
-
-Node: dcid:USDollar1500000To1999999
-typeOf: dcid:QuantityRange
-name: "US Dollar 1500000 to 1999999"
-
-Node: dcid:USDollar100000To124999
-typeOf: dcid:QuantityRange
-name: "US Dollar 100000 to 124999"
-
-Node: dcid:USDollar125000To149999
-typeOf: dcid:QuantityRange
-name: "US Dollar 125000 to 149999"
-
-Node: dcid:USDollar2000000Onwards
-typeOf: dcid:QuantityRange
-name: "US Dollar 2000000 onwards"
-
-Node: dcid:USDollar250000To299999
-typeOf: dcid:QuantityRange
-name: "US Dollar 250000 to 299999"
-
-Node: dcid:USDollar1000000Onwards
-typeOf: dcid:QuantityRange
-name: "US Dollar 1000000 onwards"
-
-Node: dcid:USDollar50000To59999
-typeOf: dcid:QuantityRange
-name: "US Dollar 50000 to 59999"
-
-Node: dcid:USDollar750000To999999
-typeOf: dcid:QuantityRange
-name: "US Dollar 750000 to 999999"
-
-Node: dcid:USDollar80000To89999
-typeOf: dcid:QuantityRange
-name: "US Dollar 80000 to 89999"
-
-Node: dcid:USDollar25000To29999
-typeOf: dcid:QuantityRange
-name: "US Dollar 25000 to 29999"
-
-Node: dcid:USDollar30000To34999
-typeOf: dcid:QuantityRange
-name: "US Dollar 30000 to 34999"
-
-Node: dcid:USDollar300000To399999
-typeOf: dcid:QuantityRange
-name: "US Dollar 300000 to 399999"
-
-Node: dcid:USDollar15000To19999
-typeOf: dcid:QuantityRange
-name: "US Dollar 15000 to 19999"
-
-Node: dcid:USDollar90000To99999
-typeOf: dcid:QuantityRange
-name: "US Dollar 90000 to 99999"
-
-Node: dcid:USDollar40000To49999
-typeOf: dcid:QuantityRange
-name: "US Dollar 40000 to 49999"
-
-Node: dcid:USDollar400000To499999
-typeOf: dcid:QuantityRange
-name: "US Dollar 400000 to 499999"
-
-Node: dcid:Date1990To1999
-typeOf: dcid:QuantityRange
-name: "Date 1990 to 1999"
-
-Node: dcid:Date1940To1949
-typeOf: dcid:QuantityRange
-name: "Date 1940 to 1949"
-
-Node: dcid:Date2005Onwards
-typeOf: dcid:QuantityRange
-name: "Date 2005 onwards"
-
-Node: dcid:Date1960To1969
-typeOf: dcid:QuantityRange
-name: "Date 1960 to 1969"
-
-Node: dcid:Date2014Onwards
-typeOf: dcid:QuantityRange
-name: "Date 2014 onwards"
-
-Node: dcid:Date2000To2004
-typeOf: dcid:QuantityRange
-name: "Date 2000 to 2004"
-
-Node: dcid:Date1950To1959
-typeOf: dcid:QuantityRange
-name: "Date 1950 to 1959"
-
-Node: dcid:DateUpto1939
-typeOf: dcid:QuantityRange
-name: "Date upto 1939"
-
-Node: dcid:USDollar1000To1249
-typeOf: dcid:QuantityRange
-name: "US Dollar 1000 to 1249"
-
-Node: dcid:USDollar100To149
-typeOf: dcid:QuantityRange
-name: "US Dollar 100 to 149"
-
-Node: dcid:USDollar1250To1499
-typeOf: dcid:QuantityRange
-name: "US Dollar 1250 to 1499"
-
-Node: dcid:USDollar1500To1999
-typeOf: dcid:QuantityRange
-name: "US Dollar 1500 to 1999"
-
-Node: dcid:USDollar150To199
-typeOf: dcid:QuantityRange
-name: "US Dollar 150 to 199"
-
-Node: dcid:USDollar2000Onwards
-typeOf: dcid:QuantityRange
-name: "US Dollar 2000 onwards"
-
-Node: dcid:USDollar2000To2499
-typeOf: dcid:QuantityRange
-name: "US Dollar 2000 to 2499"
-
-Node: dcid:USDollar200To249
-typeOf: dcid:QuantityRange
-name: "US Dollar 200 to 249"
-
-Node: dcid:USDollar2500To2999
-typeOf: dcid:QuantityRange
-name: "US Dollar 2500 to 2999"
-
-Node: dcid:USDollar250To299
-typeOf: dcid:QuantityRange
-name: "US Dollar 250 to 299"
-
-Node: dcid:USDollar3000To3499
-typeOf: dcid:QuantityRange
-name: "US Dollar 3000 to 3499"
-
-Node: dcid:USDollar300To349
-typeOf: dcid:QuantityRange
-name: "US Dollar 300 to 349"
-
-Node: dcid:USDollar3500Onwards
-typeOf: dcid:QuantityRange
-name: "US Dollar 3500 onwards"
-
-Node: dcid:USDollar350To399
-typeOf: dcid:QuantityRange
-name: "US Dollar 350 to 399"
-
-Node: dcid:USDollar400To449
-typeOf: dcid:QuantityRange
-name: "US Dollar 400 to 449"
-
-Node: dcid:USDollar450To499
-typeOf: dcid:QuantityRange
-name: "US Dollar 450 to 499"
-
-Node: dcid:USDollar500To549
-typeOf: dcid:QuantityRange
-name: "US Dollar 500 to 549"
-
-Node: dcid:USDollar550To599
-typeOf: dcid:QuantityRange
-name: "US Dollar 550 to 599"
-
-Node: dcid:USDollar600To649
-typeOf: dcid:QuantityRange
-name: "US Dollar 600 to 649"
-
-Node: dcid:USDollar650To699
-typeOf: dcid:QuantityRange
-name: "US Dollar 650 to 699"
-
-Node: dcid:USDollar700To749
-typeOf: dcid:QuantityRange
-name: "US Dollar 700 to 749"
-
-Node: dcid:USDollar750To799
-typeOf: dcid:QuantityRange
-name: "US Dollar 750 to 799"
-
-Node: dcid:USDollar800To899
-typeOf: dcid:QuantityRange
-name: "US Dollar 800 to 899"
-
-Node: dcid:USDollar900To999
-typeOf: dcid:QuantityRange
-name: "US Dollar 900 to 999"
-
-Node: dcid:USDollarUpto100
-typeOf: dcid:QuantityRange
-name: "US Dollar upto 100"
-
-Node: dcid:Rooms1
-typeOf: dcid:Quantity
-name: "Rooms 1"
-
-Node: dcid:Rooms2
-typeOf: dcid:Quantity
-name: "Rooms 2"
-
-Node: dcid:Rooms3
-typeOf: dcid:Quantity
-name: "Rooms 3"
-
-Node: dcid:Rooms4
-typeOf: dcid:Quantity
-name: "Rooms 5"
-
-Node: dcid:Rooms6
-typeOf: dcid:Quantity
-name: "Rooms 6"
-
-Node: dcid:Rooms7
-typeOf: dcid:Quantity
-name: "Rooms 7"
-
-Node: dcid:Rooms8
-typeOf: dcid:Quantity
-name: "Rooms 8"
-
-Node: dcid:Rooms9Onwards
-typeOf: dcid:QuantityRange
-name: "Rooms 9 onwards"
-
-Node: dcid:USDollar1000000To1499999
-typeOf: dcs:QuantityRange
-name: "US Dollar 1000000 to 1499999"
-
-Node: dcid:AvailableVehicles4Onwards
-typeOf: dcs:Quantity
-name: "Available vehicles 4 onwards"
-
-Node: dcid:compositeConsumerPriceIndex
+Node: dcid:wasteType
 typeOf: dcs:Property
-name: "compositeConsumerPriceIndex"
-rangeIncludes: dcid:CompositeConsumerPriceIndexEnum
-domainIncludes: dcid:ConsumerGoodsAndServices
+name: "wasteType"
+domainIncludes: dcid:Waste
+rangeIncludes: dcid:WasteTypeEnum
 
-Node: dcid:modeOfTransportation
-typeOf: dcid:Property
-name: "modeOfTransportation"
-domainIncludes: dcid:ConsumerGoodsAndServices
-rangeIncludes: dcid:ModeOfTransportationEnum
+Node: dcid:Waste
+typeOf: schema:Class
+subClassOf: schema:Thing
+name: "Waste"
 
-Node: dcid:consumerGoodsCategory
-typeOf: dcs:Property
-name: "consumerGoodsCategory"
-rangeIncludes: dcid:AlcoholicBeverageTypeEnum,dcid:EducationalMajorEnum
-
-Node: dcid:agricultureType
-typeOf: dcs:Property
-name: "agricultureType"
-domainIncludes: dcid:EconomicActivity
-rangeIncludes: dcid:AgricultureTypeEnum,dcid:WaterUseCategoryEnum
-
-Node: dcid:industryType
-typeOf: dcs:Property
-name: "industryType"
-domainIncludes: dcid:EconomicActivity
-rangeIncludes: dcid:IndustryTypeEnum
-
-Node: dcid:comparisonPeriod
-typeOf: dcs:Property
-name: "comparisonPeriod"
-domainIncludes: dcid:ConsumerGoodsAndServices, dcid:EconomicActivity
-rangeIncludes: dcid:ComparisonPeriodEnum
-
-Node: dcid:courseSpecialization
-typeOf: dcs:Property
-name: "courseSpecialization"
-domainIncludes: dcid:Person
-rangeIncludes: dcid:CourseSpecializationEnum,dcid:ContaminatedThingEnum,dcid:Class,dcid:ElectricityConsumptionSectorEnum,dcid:EmissionSourceEnum
-
-Node: dcid:medicalSpecialization
-typeOf: dcs:Property
-name: "medicalSpecialization"
-domainIncludes: dcid:Person
-rangeIncludes: dcid:MedicalSpecializationEnum,dcid:MedicalSpecialty
-
-Node: dcid:serviceCategory
-typeOf: dcs:Property
-name: "serviceCategory"
-domainIncludes: dcid:EconomicActivity
-rangeIncludes: dcid:ElectricityConsumptionSectorEnum,dcid:EmissionSourceEnum,dcid:ConsumerGoodsCategoryEnum,dcid:ServiceCategoryEnum
-
-Node: dcid:RetailAndFoodServices
-typeOf: dcid:NAICSEnum
-name: "Retail and food services"
-
-Node: dcid:RetailAndFoodServicesExcludingMotorVehicleParts
-typeOf: dcid:NAICSEnum
-specializationOf: dcid:RetailAndFoodServices
-name: "Retail and food services excluding motor vehicle parts"
-
-Node: dcid:RetailAndFoodServicesExcludingGasolineStations
-typeOf: dcid:NAICSEnum
-specializationOf: dcid:RetailAndFoodServices
-name: "Retail and food services excluding gasoline stations"
-
-Node: dcid:RetailAndFoodServicesExcludingMotorVehiclePartsAndGasolineStations
-typeOf: dcid:NAICSEnum
-specializationOf: dcid:RetailAndFoodServices
-name: "Retail and food services excluding motor vehicle parts and gasoline stations"
-
-Node: dcid:RetailServices
-typeOf: dcid:NAICSEnum
-name: "Retail services"
-
-Node: dcid:RetailServicesExcludingMotorVehiclePartsDealer
-typeOf: dcid:NAICSEnum
-specializationOf: dcid:RetailServices
-name: "Retail services excluding motor vehicle parts dealer"
-
-Node: dcid:activitySource
-typeOf: dcs:Property
-name: "activitySource"
-domainIncludes: dcid:EconomicActivity
-
-Node: dcid:StatVarObsSeries
-typeOf: dcs:Class
-name: "StatVarObsSeries"
-description: "A series of observations for a StatisticalVariable and entity."
-subClassOf: dcid:Intangible
-
-Node: dcid:Fruits
-typeOf: dcid:FarmInventoryTypeEnum
-name: "Fruits"
-
-Node: dcid:NetValue
-typeOf: dcid:MeasurementQualifierEnum
-name: "Net Value"
-
-Node: dcid:Wool
-typeOf: dcid:FarmInventoryTypeEnum
-name: "Wool"
-
-Node: dcid:eiaSeriesId
-typeOf:Property
-name:"eiaSeriesId"
-description: "Series ID it's only for the EIA import."
-
-Node: dcid:retailPrice
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-domainIncludes: schema:Product,schema:Electricity
-name: "retailPrice"
-
-Node: dcid:retailSales
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-domainIncludes: schema:Product,schema:Electricity
-name: "retailSales"
-
-Node: dcid:salesRevenue
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-domainIncludes: schema:Product,schema:Electricity
-name: "salesRevenue"
-
-Node: dcid:RowHouse
-typeOf: dcs:USC_ResidenceTypeEnum
-name: "RowHouse"
-
-Node: dcid:InstitutionalHousehold
-typeOf: dcs:USC_ResidenceTypeEnum
-name: "InstitutionalHousehold"
-
-Node: dcid:Abortion
-typeOf: dcid:Class
-name: "Abortion"
-subClassOf: dcs:Thing
-
-Node: dcid:healthDepartmentType
-typeOf: dcs:Property
-name: "healthDepartmentType"
-domainIncludes: dcid:HospitalBed
-rangeIncludes: dcid:HealthDepartmentTypeEnum,dcid:MedicalSpecializationEnum
-
-Node: dcid:HealthDepartmentTypeEnum
+Node: dcid:WasteTypeEnum
 typeOf: schema:Class
 subClassOf: dcs:Enumeration
-name: "HealthDepartmentTypeEnum"
+name: "WasteTypeEnum"
 
-Node: dcid:InternalMedicine
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Internal Medicine"
+Node: dcid:PrimaryWaste
+typeOf: dcid:WasteTypeEnum
+name: "Primary Waste"
 
-Node: dcid:SurgeryAndTraumatology
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Surgery And Traumatology"
+Node: dcid:SecondaryWasteAndSortingResidue
+typeOf: dcid:WasteTypeEnum
+name: "Secondary Waste And Sorting Residue"
 
-Node: dcid:Ophthalmology
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Ophthalmology"
+Node: dcid:RecoveredWaste
+typeOf: dcid:WasteTypeEnum
+name: "Recovered Waste"
 
-Node: dcid:Otolaryngology
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Otolaryngology"
+Node: dcid:RecycledWaste
+typeOf: dcid:WasteTypeEnum
+name: "Recycled Waste"
 
-Node: dcid:Obstetrics
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Obstetrics"
+Node: dcid:InertMineral
+typeOf: dcid:WasteTypeEnum
+name: "Inert Mineral"
 
-Node: dcid:Gynecology
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Gynecology"
 
-Node: dcid:Neurology
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Neurology"
-
-Node: dcid:PsychiatryAndNarcology
-typeOf: dcid:HealthDepartmentTypeEnum
-name: "Psychiatry And Narcology"
-
-Node: dcid:medicalStatus
-typeOf: dcs:Property
-name: "medicalStatus"
-domainIncludes: dcid:Mother
-
-#oecd
-Node: dcid:wasteTreatmentType
-typeOf: dcs:Property
-name: "wasteTreatmentType"
-domainIncludes: dcid:Person
-rangeIncludes: dcid:WasteTreatmentTypeEnum
-
-Node: dcid:WasteTreatmentTypeEnum
+Node: dcid:ISICv4.1Enum
 typeOf: schema:Class
 subClassOf: dcs:Enumeration
-name: "WasteTreatmentTypeEnum"
-
-Node: dcid:WasteWaterTreatment
-typeOf: dcid:WasteTreatmentTypeEnum
-name: "WasteWater Treatment"
-
-Node: dcid:EconomyMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Economy Major"
-
-Node: dcid:PhilosophyMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Philosophy Major"
-
-Node: dcid:ManagementAndAdministrationMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Management And Administration Major"
-
-Node: dcid:AccountingAndTaxationMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Accounting And Taxation Major"
-
-Node: dcid:NaturalSciencesMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Natural Sciences Major"
-
-Node: dcid:EnvironmentMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Environment Major"
-
-Node: dcid:InformationAndCommunicationsTechnologiesMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Information And Communications Technologies Major"
-
-Node: dcid:ConstructionEngineering
-typeOf: dcid:EducationalMajorEnum
-name: "Construction Engineering"
-
-Node: dcid:Industries
-typeOf: dcid:EducationalMajorEnum
-name: "Industries"
-
-Node: dcid:ProcessingEngineering
-typeOf: dcid:EducationalMajorEnum
-name: "Processing Engineering"
-
-Node: dcid:VeterinaryMedicineMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Veterinary Medicine Major"
-
-Node: dcid:OralAndMaxillofacialStudies
-typeOf: dcid:EducationalMajorEnum
-name: "Oral And Maxillofacial Studies"
-
-Node: dcid:NursingAndMidwifery
-typeOf: dcid:EducationalMajorEnum
-name: "Nursing And Midwifery"
-
-Node: dcid:Pharmacology
-typeOf: dcid:EducationalMajorEnum
-name: "Pharmacology"
-
-Node: dcid:Traditional
-typeOf: dcid:EducationalMajorEnum
-name: "Traditional"
-
-Node: dcid:Medicine
-typeOf: dcid:EducationalMajorEnum
-name: "Medicine"
-
-Node: dcid:SocialWelfare
-typeOf: dcid:EducationalMajorEnum
-name: "Social Welfare"
-
-Node: dcid:ServicesRelatedMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Services Related Major"
-
-Node: dcid:GeneralBasicCurriculumMajor
-typeOf: dcid:EducationalMajorEnum
-name: "General Basic Curriculum Major"
-
-Node: dcid:ArtsMajor
-typeOf: dcid:EducationalMajorEnum
-name: "Arts Major"
-
-Node: dcid:Languages
-typeOf: dcid:EducationalMajorEnum
-name: "Languages"
-
-Node: dcid:UpperDiploma
-typeOf: dcid:EnrollmentLevelEnum
-name: "Upper Diploma"
-
-Node: dcid:ForestryEngineering
-typeOf: dcid:EducationalMajorEnum
-name: "Forestry Engineering"
-
-Node: dcid:Fisheries
-typeOf: dcid:EducationalMajorEnum
-name: "Fisheries"
-
-Node: dcid:Veterinary
-typeOf: dcid:EducationalMajorEnum
-name: "Veterinary"
-
-Node: dcid:NaturalSciences
-typeOf: dcid:EducationalMajorEnum
-name: "Natural Sciences"
-
-
-Node: dcid:ProcessingIndustry
-typeOf: dcid:EconomicSectorEnum
-name: "Processing Industry"
-
-Node: dcid:HouseholdActivities
-typeOf: dcid:EconomicSectorEnum
-name: "Household Activities"
-
-Node: dcid:ExtraterritorialOrganizationsAndBodies
-typeOf: dcid:EconomicSectorEnum
-name: "Extraterritorial Organizations And Bodies"
-
-Node: dcid:SpecializedSecondarySchool
-typeOf: dcid:ElementarySchool
-name: "Specialized Secondary School"
-
-Node: dcid:ProvisionalNode
-typeOf: dcs:Class
-subClassOf: dcs:Thing
-name: "ProvisionalNode"
-description: "Temporary placeholder node type to ensure graph consistency."
-
-Node: dcid:NotHighSchoolGraduateOrAlternative
-typeOf: dcid:EducationalAttainmentEnum
-name: "Not High School Graduate Or Alternative"
-
-Node: dcid:certificationStatus
-typeOf: dcs:Property
-name: "certificationStatus"
-domainIncludes: dcid:Teacher
-rangeIncludes: dcid:CertificationStatusEnum
-
-Node: dcid:CertificationStatusEnum
-typeOf: schema:Class
-subClassOf: dcs:Enumeration
-name: "CertificationStatusEnum"
-
-Node: dcid:Certified
-typeOf: dcid:CertificationStatusEnum
-name: "Certified"
-
-Node: dcid:NotCertified
-typeOf: dcid:CertificationStatusEnum
-name: "Not Certified"
-
-Node: dcid:teachingExperienceLevel
-typeOf: dcs:Property
-name: "teachingExperienceLevel"
-domainIncludes: dcid:Teacher
-rangeIncludes: dcid:TeachingExperienceLevelEnum
-
-Node: dcid:TeachingExperienceLevelEnum
-typeOf: schema:Class
-subClassOf: dcs:Enumeration
-name: "TeachingExperienceLevelEnum"
-
-Node: dcid:FirstYear
-typeOf: dcid:TeachingExperienceLevelEnum
-name: "FirstYear"
-
-Node: dcid:SecondYear
-typeOf: dcid:TeachingExperienceLevelEnum
-name: "SecondYear"
-
-Node: dcid:SchoolCounselor
-typeOf: dcid:FacultyTypeEnum
-name: "School Counselor"
-
-Node: dcid:timePeriod
-typeOf: dcs:Property
-name: "timePeriod"
-domainIncludes: dcid:Teacher
-
-Node: dcid:CurrentSchoolYear
-typeOf: dcid:TimePeriodEnum
-name: "Current School Year"
-
-Node: dcid:PreviousSchoolYear
-typeOf: dcid:TimePeriodEnum
-name: "Previous School Year"
-
-Node: dcid:absenteeismStatus
-typeOf: dcs:Property
-name: "absenteeismStatus"
-domainIncludes: dcid:Teacher
-rangeIncludes: dcid:AbsenteeismStatusEnum
-
-Node: dcid:AbsenteeismStatusEnum
-typeOf: schema:Class
-subClassOf: dcs:Enumeration
-name: "AbsenteeismStatusEnum"
-
-Node: dcid:AbsentMoreThan10Days
-typeOf: dcid:AbsenteeismStatusEnum
-name: "Absent More Than 10 Days"
-
-Node: dcid:SecurityGuard
-typeOf: dcid:FacultyTypeEnum
-name: "Security Guard"
-
-Node: dcid:SocialWorker
-typeOf: dcid:FacultyTypeEnum
-name: "Social Worker"
-
-Node: dcid:englishProficiency
-typeOf: dcid:Property
-name: "englishProficiency"
-domainIncludes: dcid:Student
-rangeIncludes: dcid:EnglishProficiencyEnum
-
-Node: dcid:EnglishProficiencyEnum
-typeOf: dcid:Class
-subClassOf: dcid:Enumeration
-name: "EnglishProficiencyEnum"
-
-Node: dcid:LimitedEnglishProficiency
-typeOf: dcid:EnglishProficiencyEnum
-name: "Limited English Proficiency"
-
-Node: dcid:housingStatus
-typeOf: dcid:Property
-name: "housingStatus"
-domainIncludes: dcid:Student
-rangeIncludes: dcid:SocialVulnerabilityStatusEnum
-
-Node: dcid:educationProgram
-typeOf: dcid:Property
-name: "educationProgram"
-domainIncludes: dcid:Student
-rangeIncludes: dcid:EducationProgramEnum
-
-Node: dcid:EducationProgramEnum
-typeOf: dcid:Class
-subClassOf: dcid:Enumeration
-name: "EducationProgramEnum"
-
-Node: dcid:Section504Plan
-typeOf: dcid:EducationProgramEnum
-name: "Section 504Plan"
-description: "Section 504 is part of the Rehabilitation Act of 1973, a civil rights law."
-
-Node: dcid:DataSuppressed
-typeOf: dcid:MeasurementQualifierEnum
-name: "Data Suppressed"
-
-Node: dcid:RobberyWithWeapon
-typeOf: dcid:CrimeTypeEnum
-name: "Robbery With Weapon"
-
-Node: dcid:educationalInstitutionType
-typeOf: dcid:Property
-name: "educationalInstitutionType"
-domainIncludes: dcid:Student
-rangeIncludes: dcid:EducationalInstitutionTypeEnum
-
-Node: dcid:EducationalInstitutionTypeEnum
-typeOf: dcid:Class
-subClassOf: dcid:Enumeration
-name: "EducationalInstitutionTypeEnum"
-
-Node: dcid:JuvenileJusticeFacility
-typeOf: dcid:EducationalInstitutionTypeEnum
-name: "Juvenile Justice Facility"
-
-Node: dcid:firearmPossessionStatus
-typeOf: dcid:Property
-name: "firearmPossessionStatus"
-domainIncludes: dcid:Student
-rangeIncludes: dcid:FirearmPossessionStatusEnum
-
-Node: dcid:FirearmPossessionStatusEnum
-typeOf: dcid:Class
-subClassOf: dcid:Enumeration
-name: "FirearmPossessionStatusEnum"
-
-Node: dcid:FirearmNotPresent
-typeOf: dcid:FirearmPossessionStatusEnum
-name: "Firearm Not Present"
-
-Node: dcid:homicideOccurrence
-typeOf: dcid:Property
-name: "homicideOccurrence"
-domainIncludes: dcid:Student
-rangeIncludes: dcid:HomicideOccurrenceEnum
-
-Node: dcid:HomicideOccurrenceEnum
-typeOf: dcid:Class
-subClassOf: dcid:Enumeration
-name: "HomicideOccurrenceEnum"
-
-Node: dcid:HomicideNotOccurred
-typeOf: dcid:HomicideOccurrenceEnum
-name: "Homicide Not Occurred"
-
-Node: dcid:RobberyWithFirearmOrExplosive
-typeOf: dcid:CrimeTypeEnum
-name: "Robbery With Firearm Or Explosive"
-
-Node: dcid:RobberyWithoutWeapon
-typeOf: dcid:CrimeTypeEnum
-name: "Robbery Without Weapon"
-
-Node: dcid:AttemptedRobberyWithWeapon
-typeOf: dcid:CrimeTypeEnum
-name: "Attempted Robbery With Weapon"
-
-Node: dcid:AttemptedRobberyWithFirearmOrExplosive
-typeOf: dcid:CrimeTypeEnum
-name: "Attempted Robbery With Firearm Or Explosive"
-
-Node: dcid:AttemptedRobberyWithoutWeapon
-typeOf: dcid:CrimeTypeEnum
-name: "Attempted Robbery Without Weapon"
-
-Node: dcid:ThreatOfAttackWithWeapon
-typeOf: dcid:CrimeTypeEnum
-name: "Threat Of Attack With Weapon"
-
-Node: dcid:ThreatOfAttackWithFirearmOrExplosive
-typeOf: dcid:CrimeTypeEnum
-name: "Threat Of Attack With Firearm Or Explosive"
-
-Node: dcid:ThreatOfAttackWithoutWeapon
-typeOf: dcid:CrimeTypeEnum
-name: "Threat Of Attack Without Weapon"
-
-Node: dcid:PossessionOfFirearmOrExplosive
-typeOf: dcid:CrimeTypeEnum
-name: "Possession Of Firearm Or Explosive"
-
-Node: dcid:NotJuvenileJusticeFacility
-typeOf: dcid:EducationalInstitutionTypeEnum
-name: "Not Juvenile Justice Facility"
-
-Node: dcid:FirearmPresent
-typeOf: dcid:FirearmPossessionStatusEnum
-name: "Firearm Present"
-
-Node: dcid:HomicideOccurred
-typeOf: dcid:HomicideOccurrenceEnum
-name: "Homicide Occurred"
-
-Node: dcid:restraintOrSeclusionType
-typeOf: dcid:Property
-name: "restraintOrSeclusionType"
-domainIncludes: dcid:Student
-rangeIncludes: dcid:RestraintOrSeclusionTypeEnum
-
-Node: dcid:RestraintOrSeclusionTypeEnum
-typeOf: dcid:Class
-subClassOf: dcid:Enumeration
-name: "RestraintOrSeclusionTypeEnum"
-
-Node: dcid:MechanicalRestraint
-typeOf: dcid:RestraintOrSeclusionTypeEnum
-name: "Mechanical Restraint"
-
-Node: dcid:NonIDEA
-typeOf: dcid:EducationProgramEnum
-name: "Not Individuals with Disabilities Education Act (NON IDEA)"
-description: "Students not served under the Individuals with Disabilities Education Act"
-
-Node: dcid:PhysicalRestraint
-typeOf: dcid:RestraintOrSeclusionTypeEnum
-name: "Physical Restraint"
-
-Node: dcid:Seclusion
-typeOf: dcid:RestraintOrSeclusionTypeEnum
-name: "Seclusion"
-
-Node: dcid:IDEA
-typeOf: dcid:EducationProgramEnum
-name: "Individuals with Disabilities Education Act (IDEA)"
-description: "Students served under the Individuals with Disabilities Education Act"
-
-
-
-
+name: "ISICv4.1Enum"
+
+Node: dcid:ISIC_V4/01-03
+typeOf: dcid:ISICv4.1Enum
+name: "Agriculture, forestry and fishing"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/10-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacturing industries"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/43
+typeOf: dcid:ISICv4.1Enum
+name: "Construction"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/36-39
+typeOf: dcid:ISICv4.1Enum
+name: "Water supply, sewerage, waste management and remediation activities"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/31-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of furniture; jewellery, musical instruments, toys, repair and installation of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/17-18
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of paper and paper products; printing and reproduction of recorded media"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/13-15
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of textiles, wearing apparel, leather and related products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/10-12
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of food products; beverages and tobacco products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/19
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of coke and refined petroleum products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/29-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of other non-metallic mineral products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/16
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/35
+typeOf: dcid:ISICv4.1Enum
+name: "Electricity, gas, steam and air conditioning supply"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/94-96
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of electronic and optical products, electrical equipment, motor vehicle and other transport equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/26-30
+typeOf: dcid:ISICv4.1Enum
+name: "Other Activities"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/25-28
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/23
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of basic metals and fabricated metal products, machinery and equipment; furnitures; jewellery, musical instrument, toys; repair and installation of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/05-09
+typeOf: dcid:ISICv4.1Enum
+name: "Mining and Quarrying"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/99
+typeOf: dcid:ISICv4.1Enum
+name: "Undifferentiated goods- and services-producing activities of private households for own use"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/17
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of paper and paper products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/24-25
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of basic metals and fabricated metal products, except machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/24
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of fabricated metal products, of computer, electronic and optical products, of electrical equipment, of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/24-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of basic metals"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/01
+typeOf: dcid:ISICv4.1Enum
+name: "Crop and animal production, hunting and related service activities"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/25
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of fabricated metal products, except machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/18
+typeOf: dcid:ISICv4.1Enum
+name: "Printing and reproduction of recorded media"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/20
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of chemicals and pharmaceuticals"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/22
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of rubber and plastics products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/29-30
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
