@@ -1433,3 +1433,27 @@ Node: dcid:ZWD
 typeOf: dcs:Currency
 name: "ZWD"
 description: "Zimbabwe Dollar (old) (historical)."
+
+Node: dcid:SLE
+typeOf: dcs:Currency
+name: "SLE"
+description: "Sierra Leone."
+
+Node: dcid:VED
+typeOf: dcs:Currency
+name: "VED"
+description: "Venezuelan Bolivar."
+
+Node: dcid:fromCurrency
+typeOf: schema:Property
+name: "fromCurrency"
+description: "Exchange rate from currency."
+domainIncludes: schema:Place
+rangeIncludes: dcs:Currency
+
+Node: dcid:toCurrency
+typeOf: schema:Property
+name: "toCurrency"
+description: "Exchange rate to currency."
+domainIncludes: schema:Place
+rangeIncludes: dcs:Currency
