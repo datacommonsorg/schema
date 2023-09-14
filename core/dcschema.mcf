@@ -2596,7 +2596,7 @@ name: "scaledScore"
 
 Node: dcid:isic
 name: "isic"
-rangeIncludes: dcs:ISICv3.1Enum
+rangeIncludes: dcs:ISICv3.1Enum ,dcs:ISICv4.1Enum
 typeOf: schema:Property
 domainIncludes: dcs:EconomicActivity
 description: "This specifies the economic activity type from the International Standard Industrial Classification of All Economic Activities, Version 3.1."
@@ -3886,3 +3886,192 @@ name: "statisticsCanadaGeographicCode"
 typeOf: schema:Property
 domainIncludes: schema:Place
 description: "Unique codes for categorizing and enumerating the census geographic units of Canada"
+
+###OECD
+Node: dcid:Waste
+typeOf: schema:Class
+name: "Waste"
+subClassOf: dcs:Thing
+
+Node: dcid:wasteSourceType
+typeOf: dcs:Property
+name: "wasteSourceType"
+domainIncludes: dcid:Waste
+rangeIncludes: dcid:WasteSourceTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:wasteType
+typeOf: dcs:Property
+name: "wasteType"
+domainIncludes: dcid:Waste
+rangeIncludes: dcid:WasteTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:WasteSourceTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "WasteSourceTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:PrimaryWasteSource
+typeOf: dcid:WasteSourceTypeEnum
+name: "Primary Waste Source"
+isProvisional: dcs:True
+
+Node: dcid:SecondaryWasteSource
+typeOf: dcid:WasteSourceTypeEnum
+name: "Secondary Waste Source"
+isProvisional: dcs:True
+
+Node: dcid:WasteTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "WasteTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SortingResidue
+typeOf: dcid:WasteTypeEnum
+name: "Sorting Residue"
+isProvisional: dcs:True
+
+Node: dcid:TotalPrimaryWasteRecovered
+typeOf: dcid:WasteTypeEnum
+name: "Total Primary Waste Reco Vered"
+isProvisional: dcs:True
+
+Node: dcid:TotalPrimaryWasteRecycled
+typeOf: dcid:WasteTypeEnum
+name: "Total Primary Waste Recycled"
+isProvisional: dcs:True
+
+Node: dcid:InertWaste
+typeOf: dcid:WasteTypeEnum
+name: "Inert Waste"
+isProvisional: dcs:True
+
+Node: dcid:InertWasteRecycled
+typeOf: dcid:WasteTypeEnum
+name: "Inert Waste Recycled"
+isProvisional: dcs:True
+
+Node: dcid:InertWasteRecovered
+typeOf: dcid:WasteTypeEnum
+name: "Inert Waste Reco Vered"
+isProvisional: dcs:True
+
+Node: dcid:ISICv4.1Enum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ISICv4.1Enum"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/43
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Construction"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/05-09
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Mining and Quarrying"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/10-33
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacturing industries: Total"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/10-12
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of food products; beverages and tobacco products"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/13-15
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of textiles, wearing apparel, leather and related products"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/16
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/17-18
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of paper and paper products; printing and reproduction of recorded media"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/19
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of coke and refined petroleum products"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/20-22
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of chemical, pharmaceutical, rubber and plastic products"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/29-33
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of other non-metallic mineral products"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/23
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of basic metals and fabricated metal products, machinery and equipment; furnitures; jewellery, musical instrument, toys; repair and installation of machinery and equipment"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/24-33
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of basic metals"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/24
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of fabricated metal products, of computer, electronic and optical products, of electrical equipment, of machinery and equipment"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/25-28
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/35
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Energy Production"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/01-03
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Agriculture, forestry and fishing"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/24-25
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of basic metals and fabricated metal products, except machinery and equipment"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/26-30
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of computer, electronic and optical products, electrical equipment, motor vehicles and other transport equipment"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/31-33
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment"
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/36-39
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Water supply, sewerage, waste management, etc."
+isProvisional: dcs:True
+
+Node: dcid:ISIC_V4/01
+typeOf: dcid:ISICv4.1Enum
+name: "Total waste from Agriculture"
+isProvisional: dcs:True
+
+Node: dcid:KilogramPerUSD
+typeOf: dcs:UnitOfMeasure
+name: "Kilogram Per USD"
+
+###############################################################
