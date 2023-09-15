@@ -3309,6 +3309,20 @@ description: "The CPI measures the change in the cost of living from one period 
 descriptionUrl: "https://www.bls.gov/cpi/tables/relative-importance/home.htm#:~:text=The%20CPI%20measures%20the%20change,into%20the%20All%2Ditems%20index."
 rangeIncludes: dcs:Number
 
+Node: HealthEstablishment
+typeOf: schema:Class
+subClassOf: schema:Thing
+dcid: "HealthEstablishment"
+name: "HealthEstablishment"
+description: "Health related establishment"
+
+Node: dcid:healthEstablishmentType
+name: "healthEstablishmentType"
+typeOf: schema:Property
+domainIncludes: dcs:HealthEstablishment
+rangeIncludes: dcs:HealthEstablishmentTypeEnum
+
+
 Node: dcid:footnote
 typeOf: schema:Property
 name: "footnote"
