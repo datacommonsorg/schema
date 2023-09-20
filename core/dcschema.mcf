@@ -3803,3 +3803,110 @@ typeOf: dcs:Property
 name: "issuerBank"
 domainIncludes: dcid:Debt
 rangeIncludes: dcid:IssuerBankEnum
+
+Node: dcid:debt
+typeOf: dcid:Property
+name: "debt"
+rangeIncludes: dcid:DebtEnum
+domainIncludes: dcid:Government
+
+Node: dcid:generalGovernmentLending
+typeOf: dcid:Property
+name: "generalGovernmentLending"
+rangeIncludes: dcid:GeneralGovernmentLendingEnum
+domainIncludes: dcid:Government
+
+Node: dcid:wealth
+typeOf: dcid:Property
+name: "wealth"
+rangeIncludes: dcid:WealthEnum
+domainIncludes: dcid:Government
+
+Node: dcid:generalGovernmentExpenditure
+typeOf: dcid:Property
+name: "generalGovernmentExpenditure"
+rangeIncludes: dcid:GeneralGovernmentExpenditureEnum
+domainIncludes: dcid:Government
+
+Node: dcid:beneficiaryType
+typeOf: dcid:Property
+name: "beneficiaryType"
+domainIncludes: dcid:Government
+rangeIncludes: BeneficiaryTypeEnum,VictimTypeEnum,BeneficiaryTypeEnum,dcid:VictimTypeEnum
+
+Node: dcid:compensation
+typeOf: dcid:Property
+name: "compensation"
+rangeIncludes: dcid:CompensationEnum
+domainIncludes: dcid:Government
+
+Node: dcid:workerStatus
+typeOf: dcid:Property
+name: "workerStatus"
+domainIncludes: dcid:Government
+
+Node: dcid:goodsServicesUsed
+typeOf: dcid:Property
+name: "goodsServicesUsed"
+rangeIncludes: dcid:GoodsServicesUsedEnum
+domainIncludes: dcid:Government
+
+Node: dcid:activitySource
+typeOf: dcid:Property
+name: "activitySource"
+domainIncludes: dcid:Government
+rangeIncludes: dcid:Production
+
+Node: dcid:generalGovernmentReserve
+typeOf: dcid:Property
+name: "generalGovernmentReserve"
+rangeIncludes: dcid:GeneralGovernmentReserveEnum
+domainIncludes: dcid:Government
+
+Node: dcid:percentTrustValue
+typeOf: dcid:Property
+name: "percentTrustValue"
+rangeIncludes: dcid:PercentTrustValueEnum
+domainIncludes: dcid:Government
+
+Node: dcid:expenditureConsumptionType
+typeOf: dcid:Property
+name: "expenditureConsumptionType"
+domainIncludes: dcid:Government
+rangeIncludes: dcid:ExpenditureConsumptionTypeEnum
+
+Node: dcid:centralGovernmentExpenditure
+typeOf: dcid:Property
+name: "centralGovernmentExpenditure"
+domainIncludes: dcid:Government
+rangeIncludes: dcid:CentralGovernmentExpenditureEnum
+
+Node: dcid:governmentTrust
+typeOf: dcid:Property
+name: "governmentTrust"
+rangeIncludes: dcid:GovernmentTrustEnum
+domainIncludes: dcid:Government
+
+Node: dcid:generalGovernmentWealth
+typeOf: dcid:Property
+name: "generalGovernmentWealth"
+rangeIncludes: dcid:GeneralGovernmentWealthEnum
+domainIncludes: dcid:Government
+
+Node: dcid:cost
+typeOf: dcid:Property
+name: "cost"
+rangeIncludes: dcid:CostEnum
+domainIncludes: dcid:Government
+
+Node: dcid:generalGovernmentDebt
+typeOf: dcid:Property
+name: "generalGovernmentDebt"
+rangeIncludes: dcid:GeneralGovernmentDebtEnum
+domainIncludes: dcid:Government
+
+Node: dcid:generalGovernmentRevenue
+typeOf: dcid:Property
+name: "generalGovernmentRevenue"
+rangeIncludes: dcid:GeneralGovernmentRevenueEnum
+domainIncludes: dcid:Government
