@@ -2961,7 +2961,7 @@ descriptionUrl: "https://www2.census.gov/programs-surveys/acs/tech_docs/subject_
 Node: dcid:workerStatus
 name: "workerStatus"
 typeOf: schema:Property
-domainIncludes: schema:Person
+domainIncludes: schema:Person,schema:Government
 rangeIncludes: dcs:WorkerClassificationEnum
 supersededBy: dcs:workerClassification
 
@@ -3963,3 +3963,38 @@ typeOf: schema:Property
 domainIncludes: dcs:StatisticalCalculation
 rangeIncludes: schema:Property
 description: "Output property to hold the result of a Data Commons StatisticalCalculation. This is typically a StatisticalVariable."
+
+Node: dcid:incomeBalance
+typeOf: dcs:Property
+name: "incomeBalance"
+domainIncludes: dcid:Government
+description: "The balance of income and expenditure with +ve values indicating a surplus and -ve values indicating a deficit."
+
+Node: dcid:wealth
+typeOf: dcid:Property
+name: "wealth"
+domainIncludes: dcid:Government
+
+Node: dcid:beneficiaryType
+typeOf: dcid:Property
+name: "beneficiaryType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:BeneficiaryTypeEnum,dcid:VictimTypeEnum
+
+Node: dcid:compensation
+typeOf: dcid:Property
+name: "compensation"
+domainIncludes: dcid:Government
+
+Node: dcid:goodsServicesUsed
+typeOf: dcid:Property
+name: "goodsServicesUsed"
+rangeIncludes: dcid:GoodsServicesUsedEnum
+domainIncludes: dcid:Government
+
+Node: dcid:percentTrustValue
+typeOf: dcid:Property
+name: "percentTrustValue"
+rangeIncludes: dcid:PercentTrustValueEnum
+domainIncludes: dcid:Government
+description: "Trust in government refers to the share of people who report having confidence in the national government"
