@@ -260,6 +260,24 @@ typeOf: dcid:SchoolGradeLevelEnum
 description: "Pre-Grade R programs are recommended for children between ages 0-4."
 descriptionUrl: "https://briefly.co.za/107099-grade-r-everything-south-africas-reception-year.html#:~:text=How%20old%20is%20a%20child,5%2D6%20year%2Dolds."
 
+Node: dcid:HigherSecondaryEducation
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Higher Secondary Education"
+description: "Higher secondary education is the education that occurs in classes XI and XII. It is also known as HSC and is the education that comes after secondary education. Higher secondary education can be general, technical, vocational, or special."
+descriptionUrl: "https://www.lawinsider.com/dictionary/higher-secondary-education"
+
+Node: dcid:GraduateOrHigher
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Graduate Or Higher"
+
+Node: dcid:PostGraduateOrHigher
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Post Graduate Or Higher"
+
+Node: dcid:Diploma
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Diploma"
+
 Node: dcid:LunchTypeEnum
 typeOf: dcs:Class
 subClassOf: schema:Enumeration
@@ -896,7 +914,7 @@ typeOf: dcs:SchoolLevelEnum
 name: PrimarySchool
 
 Node: dcid:MiddleSchool
-typeOf: dcs:SchoolLevelEnum
+typeOf: dcs:SchoolLevelEnum,
 name: MiddleSchool
 
 Node: dcid:HighSchool
