@@ -1107,7 +1107,7 @@ dcid: dcs:landArea
 typeOf: schema:Property
 name: "landArea"
 description: "The area of an administrative area."
-domainIncludes: schema:AdministrativeArea
+domainIncludes: schema:AdministrativeArea, dcid:LandCover
 rangeIncludes: schema:Float
 
 Node: populationDensity
@@ -2004,6 +2004,11 @@ Node: dcid:PersonPerSquareKilometer
 typeOf: UnitOfMeasure
 name: "PersonPerSquareKilometer"
 description: "A unit person per square kilometer area."
+
+Node: dcid:SquareMeterPerPerson
+typeOf: UnitOfMeasure
+name: "SquareMeterPerPerson"
+description: "A unit square meter of area per person"
 
 Node: MilePerSquareMile
 typeOf: dcs:UnitOfMeasure
@@ -3014,8 +3019,18 @@ Node: dcid:baseDate
 typeOf: schema:Property
 name: "baseDate"
 description: "Identifies the date to compare observations to (in ISO 8601 format)."
-rangeIncludes: schema:Date
+rangeIncludes: schema:Date, schema:LandCover
 domainIncludes: schema:StatisticalVariable
+
+Node: dcid:BaseYear2000
+typeOf: dcs:BaseDateEnum
+name: "Base Year 2000"
+domainIncludes: dcs:baseDate
+
+Node: dcid:BaseDateEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BaseDateEnum"
 
 Node: dcid:Years
 typeOf: dcs:TimeUnitOfMeasure
@@ -4193,7 +4208,7 @@ typeOf: dcid:Property
 name: "socialVulnerabilityIndex"
 domainIncludes: dcid:Person
 description: "CDC/ATSDR SVI or SVI is a place-based index, database, and mapping application designed to identify and quantify communities experiencing social vulnerability"
-descriptionUrl: "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+descriptionUrl: "https://www.atsdr.cdc.gov/place-health/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.atsdr.cdc.gov%2Fplaceandhealth%2Findex.html"
 
 Node: dcid:vulnerabilityStatus
 typeOf: dcid:Property
@@ -4205,7 +4220,7 @@ Node: dcid:percentileRankValue
 typeOf: dcid:Property
 name: "percentileRankValue"
 description: "Percentile ranking values range from 0 to 1, with higher values indicating greater social vulnerability"
-descriptionUrl: "https://www.atsdr.cdc.gov/placeandhealth/svi/documentation/SVI_documentation_2022.html"
+descriptionUrl: "https://www.atsdr.cdc.gov/place-health/php/svi/index.html"
 
 Node: dcid:StatisticalRegion
 name: "StatisticalRegion"
@@ -4216,3 +4231,31 @@ Node: dcid:FullTimeEmployee
 typeOf: dcid:EmploymentStatusEnum
 name: "Full Time Employee"
 
+#oecd_addition
+Node: dcid:landCoverStatus
+typeOf: dcid:Property
+name: "landCoverStatus"
+domainIncludes: dcid:LandCover
+rangeIncludes: dcid:LandCoverStatusEnum
+isProvisional: dcid:True
+
+Node: dcid:LandCoverStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "LandCoverStatusEnum"
+isProvisional: dcid:True
+
+Node: dcid:Loss
+typeOf: dcid:LandCoverStatusEnum
+name: "Loss"
+isProvisional: dcid:True
+
+Node: dcid:Gain
+typeOf: dcid:LandCoverStatusEnum
+name: "Gain"
+isProvisional: dcid:True
+
+Node: dcid:NetChange
+typeOf: dcid:LandCoverStatusEnum
+name: "Net Change"
+isProvisional: dcid:True
