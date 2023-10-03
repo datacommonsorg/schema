@@ -136,7 +136,7 @@ name: "Above-ground biomass in forest"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_AG_LND_FRSTCERT
-name: "Forest area under an independently verified forest management certification scheme"
+name: "Forest area certified under an independently verified certification scheme"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_AG_LND_FRSTCHG
@@ -683,8 +683,24 @@ Node: dcid:SDG_EN_MAR_CHLDEV
 name: "Chlorophyll-a deviations, remote sensing"
 typeOf: dcs:SDG_Series
 
+Node: dcid:SDG_EN_MAR_COEUPO
+name: "Indicator for Coastal Eutrophication Potential"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_EN_MAR_DSI
+name: "Dissolved silica"
+typeOf: dcs:SDG_Series
+
 Node: dcid:SDG_EN_MAR_PLASDD
 name: "Floating plastic debris density"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_EN_MAR_TN
+name: "Total Nitrogen"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_EN_MAR_TP
+name: "Total Phosphorus"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_EN_MAT_DOMCMPC
@@ -1336,7 +1352,7 @@ name: "Local breeds classified as known being not at risk"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_ER_RSK_LBREDS
-name: "Proportion of local breeds classified as being at risk as a share of local breeds with known level of extinction risk"
+name: "Proportion of local breeds classified as being at risk as a percentage of local breeds with known level of extinction risk"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_ER_RSK_LST
@@ -2301,6 +2317,10 @@ typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SG_CPA_MIGRS
 name: "Countries with migration policies to facilitate orderly, safe, regular and responsible migration and mobility of people, by policy domain"
+typeOf: dcs:SDG_Series
+
+Node: dcid:SDG_SG_CPA_OFDI
+name: "Number of countries with an outward investment promotion scheme which can benefit developing countries, including LDCs"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SG_CPA_SDEVP
@@ -3496,7 +3516,7 @@ name: "Share of women among owners or rights-bearers of agricultural land, by ty
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SP_LGL_LNDAGSEC
-name: "Proportion of people with ownership or secure rights over agricultural land, by sex"
+name: "Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex"
 typeOf: dcs:SDG_Series
 
 Node: dcid:SDG_SP_LGL_LNDDOC
@@ -8425,6 +8445,29 @@ typeOf: dcs:SDG_NameOfNonCommunicableDiseaseEnum
 name: "Non-communicable disease: Cardiovascular disease, cancer, diabetes, or chronic respiratory disease"
 isProvisional: dcs:True
 
+Node: dcid:sdg_nutrientLoading
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_NutrientLoadingEnum
+name: "Nutrient Loading"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NutrientLoadingEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "NutrientLoadingEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NutrientLoadingEnum_NL_N_LOAD
+typeOf: dcs:SDG_NutrientLoadingEnum
+name: "Nitrogen Loading"
+isProvisional: dcs:True
+
+Node: dcid:SDG_NutrientLoadingEnum_NL_P_LOAD
+typeOf: dcs:SDG_NutrientLoadingEnum
+name: "Phosphorus Loading"
+isProvisional: dcs:True
+
 Node: dcid:sdg_occupation
 typeOf: schema:Property
 domainIncludes: dcs:Thing
@@ -9305,6 +9348,39 @@ typeOf: dcs:SDG_TypeOfMobileTechnologyEnum
 name: "At least 4G mobile network"
 isProvisional: dcs:True
 
+Node: dcid:sdg_typeOfOfdiScheme
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: dcs:SDG_TypeOfOfdiSchemeEnum
+name: "Type Of Ofdi Scheme"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOfdiSchemeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfOfdiSchemeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOfdiSchemeEnum_OFDI_DIRECTCPART
+typeOf: dcs:SDG_TypeOfOfdiSchemeEnum
+name: "Direct capital participation"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOfdiSchemeEnum_OFDI_FISFINSUP
+typeOf: dcs:SDG_TypeOfOfdiSchemeEnum
+name: "Fiscal/financial support"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOfdiSchemeEnum_OFDI_INVFACSERV
+typeOf: dcs:SDG_TypeOfOfdiSchemeEnum
+name: "Investment facilitation services"
+isProvisional: dcs:True
+
+Node: dcid:SDG_TypeOfOfdiSchemeEnum_OFDI_INVGUA
+typeOf: dcs:SDG_TypeOfOfdiSchemeEnum
+name: "Investment guarantees"
+isProvisional: dcs:True
+
 Node: dcid:sdg_typeOfRenewableTechnology
 typeOf: schema:Property
 domainIncludes: dcs:Thing
@@ -9620,11 +9696,6 @@ typeOf: dcs:SDG_MeasurementMethodEnum
 name: "SDG_N_G"
 description: "SDG Measurement Method: [Nature = Non-relevant | Reporting Type = Global]"
 
-Node: dcid:SDG_E_G
-typeOf: dcs:SDG_MeasurementMethodEnum
-name: "SDG_E_G"
-description: "SDG Measurement Method: [Nature = Estimated data | Reporting Type = Global]"
-
 Node: dcid:SDG_C_G
 typeOf: dcs:SDG_MeasurementMethodEnum
 name: "SDG_C_G"
@@ -9654,6 +9725,11 @@ Node: dcid:SDG_G_G
 typeOf: dcs:SDG_MeasurementMethodEnum
 name: "SDG_G_G"
 description: "SDG Measurement Method: [Nature = Global monitoring data | Reporting Type = Global]"
+
+Node: dcid:SDG_E_G
+typeOf: dcs:SDG_MeasurementMethodEnum
+name: "SDG_E_G"
+description: "SDG Measurement Method: [Nature = Estimated data | Reporting Type = Global]"
 
 Node: dcid:SDG_M_G
 typeOf: dcs:SDG_MeasurementMethodEnum
@@ -9700,11 +9776,6 @@ typeOf: dcs:SDG_MeasurementMethodEnum
 name: "SDG_N_G_G"
 description: "SDG Measurement Method: [Nature = Non-relevant | Obs Status = Experimental value | Reporting Type = Global]"
 
-Node: dcid:SDG_C_G_G
-typeOf: dcs:SDG_MeasurementMethodEnum
-name: "SDG_C_G_G"
-description: "SDG Measurement Method: [Nature = Country data | Obs Status = Experimental value | Reporting Type = Global]"
-
 Node: dcid:SDG_E_G_G
 typeOf: dcs:SDG_MeasurementMethodEnum
 name: "SDG_E_G_G"
@@ -9715,10 +9786,10 @@ typeOf: dcs:SDG_MeasurementMethodEnum
 name: "SDG_C_U_G"
 description: "SDG Measurement Method: [Nature = Country data | Obs Status = Low reliability | Reporting Type = Global]"
 
-Node: dcid:SDG_N_M_G
+Node: dcid:SDG_O_G
 typeOf: dcs:SDG_MeasurementMethodEnum
-name: "SDG_N_M_G"
-description: "SDG Measurement Method: [Nature = Non-relevant | Obs Status = Missing value; data cannot exist | Reporting Type = Global]"
+name: "SDG_O_G"
+description: "SDG Measurement Method: [Obs Status = Missing value | Reporting Type = Global]"
 
 Node: dcid:SDG_G
 typeOf: dcs:SDG_MeasurementMethodEnum
@@ -9739,16 +9810,6 @@ Node: dcid:SDG_G_E_G
 typeOf: dcs:SDG_MeasurementMethodEnum
 name: "SDG_G_E_G"
 description: "SDG Measurement Method: [Nature = Global monitoring data | Obs Status = Estimated value | Reporting Type = Global]"
-
-Node: dcid:SDG_E_Q_G
-typeOf: dcs:SDG_MeasurementMethodEnum
-name: "SDG_E_Q_G"
-description: "SDG Measurement Method: [Nature = Estimated data | Obs Status = Missing value; suppressed | Reporting Type = Global]"
-
-Node: dcid:SDG_N_Q_G
-typeOf: dcs:SDG_MeasurementMethodEnum
-name: "SDG_N_Q_G"
-description: "SDG Measurement Method: [Nature = Non-relevant | Obs Status = Missing value; suppressed | Reporting Type = Global]"
 
 Node: dcid:SDG_E_B_G
 typeOf: dcs:SDG_MeasurementMethodEnum
