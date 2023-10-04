@@ -2362,6 +2362,42 @@ memberList: "Count_Person_0To4Years_Female,Count_Person_0To4Years_Male"
 name: "Children Population by Gender"
 typeOf: dcid:StatVarPeerGroup
 
+Node: dcid:dc/svpg/dc/topic/VeteransByGender_FemaleAge
+dcid: "dc/svpg/dc/topic/VeteransByGender_FemaleAge"
+memberList: "dc/xjyn3f0sd1vw3,dc/xq512kjx1rffc,dc/t7wbgxy8gr3g9,dc/zv40llg0belh4,dc/0dxr5t9xv7cyf"
+name: "Female Veterans by Age"
+typeOf: dcid:StatVarPeerGroup
+
+Node: dcid:dc/svpg/dc/topic/VeteransByGender_MaleAge
+dcid: "dc/svpg/dc/topic/VeteransByGender_MaleAge"
+memberList: "dc/lcptt9lhzrnrg,dc/g55znmzhk56mf,dc/fzbvjmd5gjgs4,dc/z2v1n65cz84x9,dc/x90mvznfdcqwd"
+name: "Male Veterans by Age"
+typeOf: dcid:StatVarPeerGroup
+
+Node: dcid:dc/svpg/dc/topic/VeteransByGender_VeteransByGender
+dcid: "dc/svpg/dc/topic/VeteransByGender_VeteransByGender"
+memberList: "dc/2qn8p1m6xx3d,dc/l6vp0xtccglcb"
+name: "Veterans By Gender"
+typeOf: dcid:StatVarPeerGroup
+
+Node: dcid:dc/svpg/dc/topic/VeteransByGroupQuartersResidence_VeteransByGroupQuartersResidence
+dcid: "dc/svpg/dc/topic/VeteransByGroupQuartersResidence_VeteransByGroupQuartersResidence"
+memberList: "Count_Person_ResidesInNoninstitutionalizedGroupQuarters_Veteran,Count_Person_ResidesInNursingFacilities_Veteran,Count_Person_ResidesInMilitaryQuartersOrMilitaryShips_Veteran,Count_Person_ResidesInCollegeOrUniversityStudentHousing_Veteran,Count_Person_ResidesInJuvenileFacilities_Veteran,Count_Person_ResidesInInstitutionalizedGroupQuarters_Veteran,Count_Person_ResidesInGroupQuarters_Veteran,Count_Person_ResidesInAdultCorrectionalFacilities_Veteran"
+name: "Veterans By Group Quarters Residence"
+typeOf: dcid:StatVarPeerGroup
+
+Node: dcid:dc/svpg/dc/topic/VeteransByWar_VeteransByWar
+dcid: "dc/svpg/dc/topic/VeteransByWar_VeteransByWar"
+memberList: "dc/ll54s8y2d720d,dc/wpkqjslkwknbc,dc/2d5rby4n8sf38,dc/y1gfw4jel63s3,dc/747gqczgzpcqd,dc/krq9b63v51kmh,dc/jk91lheqelvm3,dc/j4jtrsnn9n2dc,dc/e783knv4pn079,dc/dlp5xgcwee7yb,dc/cc71n5d28t8m6,dc/wnecwy4tfcr17,dc/k7dlecx0l0zn8,dc/b2l0jcm65s4x2,dc/4n1l2j3e2wy7f"
+name: "Veterans By War"
+typeOf: dcid:StatVarPeerGroup
+
+Node: dcid:dc/svpg/dc/topic/VeteransIncome_VeteransIncomeByGender
+dcid: "dc/svpg/dc/topic/VeteransIncome_VeteransIncomeByGender"
+memberList: "dc/21j845ny0gpl6,dc/xg4bepzr1wb93"
+name: "Veterans Income By Gender"
+typeOf: dcid:StatVarPeerGroup
+
 Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforFemales
 dcid: "dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforFemales"
 memberList: "WHO/bcgv_Female,WHO/dptv_Female,WHO/fullv_Female,WHO/mslv_Female,WHO/poliov_Female"
@@ -2797,7 +2833,7 @@ typeOf: dcid:Topic
 Node: dcid:dc/topic/Demographics
 dcid: "dc/topic/Demographics"
 name: "Demographics"
-relevantVariableList: "Count_Person,Count_Person_PerArea,GrowthRate_Count_Person,dc/topic/Age,dc/topic/Gender,dc/topic/Race,dc/topic/Language,dc/topic/MaritalStatus,dc/topic/Nationality"
+relevantVariableList: "Count_Person,Count_Person_PerArea,GrowthRate_Count_Person,dc/topic/Age,dc/topic/Gender,dc/topic/Race,dc/topic/Language,dc/topic/MaritalStatus,dc/topic/Nationality,dc/topic/Veterans"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/Dengue
@@ -4834,6 +4870,36 @@ name: "Very Old and Very Young Population"
 relevantVariableList: "dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryOldGender,dc/svpg/dc/topic/VeryOldAndVeryYoungPopulation_CountPersonVeryYoungGender"
 typeOf: dcid:Topic
 
+Node: dcid:dc/topic/Veterans
+dcid: "dc/topic/Veterans"
+name: "Veterans"
+relevantVariableList: "Count_Person_Veteran,dc/topic/VeteransIncome,dc/topic/VeteransByWar,dc/topic/VeteransByGender,dc/topic/VeteransByGroupQuartersResidence"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/VeteransByGender
+dcid: "dc/topic/VeteransByGender"
+name: "Veterans By Gender"
+relevantVariableList: "dc/svpg/dc/topic/VeteransByGender_VeteransByGender,dc/svpg/dc/topic/VeteransByGender_MaleAge,dc/svpg/dc/topic/VeteransByGender_FemaleAge"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/VeteransByGroupQuartersResidence
+dcid: "dc/topic/VeteransByGroupQuartersResidence"
+name: "Veterans By Group Quarters Residence"
+relevantVariableList: "dc/svpg/dc/topic/VeteransByGroupQuartersResidence_VeteransByGroupQuartersResidence"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/VeteransByWar
+dcid: "dc/topic/VeteransByWar"
+name: "Veterans By War"
+relevantVariableList: "dc/svpg/dc/topic/VeteransByWar_VeteransByWar"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/VeteransIncome
+dcid: "dc/topic/VeteransIncome"
+name: "Veterans Income"
+relevantVariableList: "dc/ec13z1eh1d5d8,dc/svpg/dc/topic/VeteransIncome_VeteransIncomeByGender"
+typeOf: dcid:Topic
+
 Node: dcid:dc/topic/Visibility
 dcid: "dc/topic/Visibility"
 name: "Visibility"
@@ -5031,3 +5097,4 @@ dcid: "dc/topic/YearlyProjectedTemperatureLows"
 name: "Yearly Projected Temperature Lows"
 relevantVariableList: "dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline,dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYear"
 typeOf: dcid:Topic
+
