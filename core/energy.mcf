@@ -2248,7 +2248,7 @@ name: "emissionSource"
 typeOf: schema:Property
 description: "Source of emission."
 domainIncludes: dcs:Emissions
-rangeIncludes: dcs:EmissionSourceEnum, dcs:EpaSccCodeEnum
+rangeIncludes: dcs:EmissionSourceEnum, dcs:EpaSccCodeEnum, dcs:FireCauseSpecificEnum, dcs:EnergyConsumptionSectorEnum
 
 Node: dcs:emissionSourceType
 name: "emissionSourceType"
@@ -2339,6 +2339,18 @@ name: "Carbon Dioxide Equivalent - 100 Year Global Warming Potential"
 Node: dcid:OxidesOfSulfur
 typeOf: dcid:GreenhouseGas
 name: "OxidesOfSulfur"
+
+Node: dcid:SulphurOxide
+typeOf: dcid:GreenhouseGas
+name: "Sulphur Oxide"
+
+Node: dcid:NitrogenOxide
+typeOf: dcid:GreenhouseGas
+name: "Nitrogen Oxide"
+
+Node: dcid:NonMethaneVolatileOrganicCompound
+typeOf: dcid:GreenhouseGas
+name: "Non Methane Volatile Organic Compound"
 
 Node: dcid:EPA_CriteriaAirPollutant
 name: "EPA_CriteriaAirPollutant"
@@ -3007,3 +3019,15 @@ name: "India Energy Dashboard Unspecified Sector"
 Node: dcid:IndiaEDM_OtherOilProducts
 typeOf: dcs:EnergySourceEnum
 name: "India Energy Dashboard Other Oil Products"
+
+Node: dcid:SulphurOxide
+typeOf: dcid:GreenhouseGas
+name: "Sulphur Oxide"
+
+Node: dcid:NitrogenOxide
+typeOf: dcid:GreenhouseGas
+name: "Nitrogen Oxide"
+
+Node: dcid:NonMethaneVolatileOrganicCompound
+typeOf: dcid:GreenhouseGas
+name: "Non Methane Volatile Organic Compound"
