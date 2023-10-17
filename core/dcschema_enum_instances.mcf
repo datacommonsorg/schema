@@ -1529,14 +1529,6 @@ typeOf: dcs:CrimeTypeEnum
 specializationOf: dcs:CrimeAgainstSociety
 name: "AnimalCruelty"
 
-Node: dcid:PhysicalViolence
-typeOf: dcs:CrimeTypeEnum
-name: "PhysicalViolence"
-
-Node: dcid:SexualViolence
-typeOf: dcs:CrimeTypeEnum
-name: "SexualViolence"
-
 Node: dcid:SingleBias
 typeOf: dcs:BiasMotivationEnum
 name: "SingleBias"
@@ -2048,26 +2040,6 @@ Node: dcid:LungCondition
 typeOf: dcs:MedicalConditionIncidentTypeEnum
 name: "Lung Condition"
 description: "Lung Condition is any problem in the lungs that prevents the lungs from working properly."
-
-Node: dcid:Fever
-typeOf: dcs:MedicalConditionIncidentTypeEnum
-name: "Fever"
-
-Node: dcid:Anaemic
-typeOf: dcs:MedicalConditionIncidentTypeEnum
-name: "Anaemic"
-
-Node: dcid:Pregnant
-typeOf: dcs:MedicalConditionIncidentTypeEnum
-name: "Pregnant"
-
-Node: dcid:Stunted
-typeOf: dcs:MedicalConditionIncidentTypeEnum
-name: "Stunted"
-
-Node: dcid:SymptomsOfAcuteRespiratoryInfection
-typeOf: dcs:MedicalConditionIncidentTypeEnum
-name: "Symptoms Of Acute Respiratory Infection"
 
 Node: dcid:ImportedCase
 typeOf: dcs:MedicalStatusEnum
@@ -3124,3 +3096,40 @@ Node: dcid:Sum
 typeOf: dcs:StatisticalAggregationMethodEnum
 name: "Sum"
 description: "Computes the sum of input values in a Data Commons StatisticalAggregation."
+
+Node: dcid:Combustion
+typeOf: dcid:EmissionSourceEnum
+name: "Combustion"
+description: the process of burning
+
+Node: dcid:CombustionExcludingIndustrial
+typeOf: dcid:EmissionSourceEnum
+name: "Combustion Excluding Industrial"
+description: the process of burning excluding the industrial combustion
+
+Node: dcid:IndustrialCombustion
+typeOf: dcid:EmissionSourceEnum
+name: "Industrial Combustion"
+description: a vital part of many manufacturing processes across a wide array of sectors, from chemical plants to food production lines.
+
+Node: dcid:ManMadeEmission
+typeOf: dcid:EmissionSourceEnum
+name: "Man Made Emission"
+description: the emissions of various forms carbon - the most concerning being carbon dioxide - associated with human activities.
+
+Node: dcid:Miscellaneous
+typeOf: dcid:EmissionSourceEnum
+name: "Miscellaneous"
+description: composed of or containing a variety of things; mixed; varied. having varied capabilities, sides, etc.
+
+Node: dcid:MobileSourceExcludingRoadTransport
+typeOf: dcid:EmissionSourceEnum
+name: "Mobile Source Excluding Road Transport"
+
+Node: dcid:PowerStation
+typeOf: dcid:EmissionSourceEnum
+name: "Power Station"
+
+Node: dcid:StationarySource
+typeOf: dcid:EmissionSourceEnum
+name: "Stationary Source"
