@@ -2289,4 +2289,38 @@ domainIncludes: schema:Person
 rangeIncludes: dcs:EducationalMajorEnum
 name: "doctorateDegreeMajor"
 
+Node: dcid:MinorityServingInstitutionTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "MinorityServingInstitutionTypeEnum"
+
+Node: dcid:minorityServingInstitutionType
+typeOf: schema:Property
+rangeIncludes: dcs:MinorityServingInstitutionTypeEnum
+name: "minorityServingInstitutionType"
+description: "Category of a Minority Serving Institution, e.g. HBCU (Historically Black Colleges and Universities), TCU (Tribal Colleges and Universities)."
+
+Node: dcid:HBCU
+typeOf: dcs:MinorityServingInstitutionTypeEnum
+name: "HBCU"
+
+Node: dcid:CollegeOrUniversityLevelEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CollegeOrUniversityLevelEnum"
+
+Node: dcid:collegeOrUniversityLevel
+typeOf: schema:Property
+rangeIncludes: dcs:collegeOrUniversityLevel
+name: "collegeOrUniversityLevel"
+description: "Level of a college or university, e.g. 2-year, 4-year."
+
+Node: dcid:2year
+typeOf: dcs:CollegeOrUniversityLevelEnum
+name: "2year"
+
+Node: dcid:4year
+typeOf: dcs:CollegeOrUniversityLevelEnum
+name: "4year"
+
 
