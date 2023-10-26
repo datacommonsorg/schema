@@ -297,3 +297,41 @@ typeOf: schema:Class
 subClassOf: schema:Person
 name: "Infant"
 description: "Infant"
+
+Node: dcid:TakingMedicine
+typeOf: dcs:HealthPreventionEnum
+name: "TakingMedicine"
+
+Node: dcid:OralRehydrationSalt
+typeOf: dcs:HealthPreventionEnum
+name: "Oral Rehydration Salt"
+
+Node: dcid:ReceivedZinc
+typeOf: dcs:HealthPreventionEnum
+name: "Received Zinc"
+
+Node: dcid:OralCavityExamination
+typeOf: dcs:HealthPreventionEnum
+name: "OralCavityExamination"
+
+Node: dcid:BreastCancerExamination
+typeOf: dcs:HealthPreventionEnum
+name: "Breast Cancer Examination"
+
+Node: dcid:ConsumedIronFolicAcid
+typeOf: dcs:HealthPreventionEnum
+name: "Consumed Iron Folic Acid"
+
+Node: dcid:consumptionPeriod
+name: "consumptionPeriod"
+rangeIncludes: dcs:ConsumptionPeriodEnum
+typeOf: schema:Property
+
+Node: dcid:ConsumptionPeriodEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ConsumptionPeriodEnum"
+
+Node: dcid:BreastFeedingWithinOneHourOfBirth
+typeOf: dcs:BreastFeedingPracticeEnum
+name: "BreastFeedingWithinOneHourOfBirth"
