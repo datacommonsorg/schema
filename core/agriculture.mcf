@@ -101,7 +101,7 @@ name: "expenses"
 Node: dcid:farmInventoryType
 typeOf: schema:Property
 domainIncludes: dcs:Farm, dcs:FarmInventory
-rangeIncludes: dcs:FarmInventoryTypeEnum
+rangeIncludes: dcs:FarmInventoryTypeEnum, dcs:ProductEnum
 name: "farmInventoryType"
 
 Node: dcid:quantitySold
@@ -475,3 +475,536 @@ name: "PrimaryProducer"
 Node:dcid:Wheat
 typeOf:FarmInventoryTypeEnum
 name:"Wheat"
+
+Node: dcid:ShelledAlmonds
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Shelled Almonds"
+
+Node: dcid:economicSector
+typeOf: dcs:Property
+name: "economicSector"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:WaterUseCategoryEnum
+
+Node: dcid:production
+typeOf: dcs:Property
+name: "production"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:Cattle
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cattle"
+
+Node: dcid:Calf
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Calf"
+
+Node: dcid:Cow
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cow"
+
+Node: dcid:LossAndResidual
+typeOf: dcs:FarmInventoryStatusEnum
+name: "Loss And Residual"
+description: "Loss and residual is the amount of animals that are lost or not used for human consumption"
+
+Node: dcid:Slaughtered
+typeOf: dcid:FarmInventoryStatusEnum
+name: "Slaughtered"
+description: "Slaughtered is the amount of animals that are killed"
+
+Node: dcid:Swine
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Swine"
+
+Node: dcid:commodityType
+typeOf: dcs:Property
+name: "commodityType"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:CommodityTypeEnum
+
+Node: dcid:CommodityTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "CommodityTypeEnum"
+
+Node: dcid:Sow
+typeOf: dcid:CommodityTypeEnum
+name: "Sow"
+
+Node: dcid:FreshApples
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fresh Apples"
+
+Node: dcid:industryType
+typeOf: dcs:Property
+name: "industryType"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:ElectricityProductionSectorEnum
+
+Node: dcid:NonCommercial
+typeOf: dcid:ElectricityProductionSectorEnum
+name: "Non Commercial"
+
+Node: dcid:Harvested
+typeOf: dcid:FarmTypeEnum
+name: "Harvested"
+
+Node: dcid:usedFor
+typeOf: dcs:Property
+name: "usedFor"
+description: "usedFor is the purpose of the farm inventory."
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:Feed
+typeOf: dcid:WaterUseCategoryEnum
+name: "Feed"
+
+Node: dcid:consumptionIndustry
+typeOf: dcs:Property
+name: "consumptionIndustry"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:Seed
+typeOf: dcid:FarmInventoryTypeEnum
+name:"Seed"
+
+Node: dcid:exportPeriod
+typeOf: dcs:Property
+name: "exportPeriod"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:ExportPeriodEnum
+
+Node: dcid:ExportPeriodEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ExportPeriodEnum"
+
+Node: dcid:TradeYear
+typeOf: dcid:ExportPeriodEnum
+name: "Trade Year"
+
+Node: dcid:importPeriod
+typeOf: dcs:Property
+name: "importPeriod"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:importedFrom
+typeOf: dcs:Property
+name: "importedFrom"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:Cherries
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cherries"
+
+Node: dcid:GreenCoffee
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Green Coffee"
+
+Node: dcid:coffeeBeanType
+typeOf: dcs:Property
+name: "coffeeBeanType"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:CoffeeBeanTypeEnum
+
+Node: dcid:CoffeeBeanTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "CoffeeBeanTypeEnum"
+
+Node: dcid:Arabica
+typeOf: dcid:CoffeeBeanTypeEnum
+name: "Arabica"
+
+Node: dcid:OtherProduction
+typeOf: dcid:WaterUseCategoryEnum
+name: "Other Production"
+
+Node: dcid:RoastAndGround
+typeOf: dcid:CoffeeBeanTypeEnum
+name: "Roast And Ground"
+
+Node: dcid:Robusta
+typeOf: dcid:CoffeeBeanTypeEnum
+name: "Robusta"
+
+Node: dcid:SolubleGreenCoffee
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Soluble Green Coffee"
+
+Node: dcid:DomesticUse
+typeOf: dcid:WaterUseCategoryEnum
+name: "Domestic Use"
+
+Node: dcid:ToUse
+typeOf: dcid:WaterUseCategoryEnum
+name: "To Use"
+
+Node: dcid:Butter
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Butter"
+
+Node: dcid:totalUse
+typeOf: dcs:Property
+name: "totalUse"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:DryMilkPowder
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Dry Milk Powder"
+
+Node: dcid:FluidMilk
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fluid Milk"
+
+Node: dcid:CowsMilk
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cows Milk"
+
+Node: dcid:FactoryUse
+typeOf: dcid:WaterUseCategoryEnum
+name: "Factory Use"
+
+Node: dcid:Feeding
+typeOf: dcid:WaterUseCategoryEnum
+name: "Feeding"
+
+Node: dcid:FluidUse
+typeOf: dcid:WaterUseCategoryEnum
+name: "Fluid Use"
+
+Node: dcid:OtherMilkProducts
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Other Milk Products"
+
+Node: dcid:NonfatDryMilk
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Nonfat Dry Milk"
+
+Node: dcid:Grapefruit
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Grapefruit"
+
+Node: dcid:FreshGrapes
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fresh Grapes"
+
+Node: dcid:LemonsOrLimes
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Lemons Or Limes"
+
+Node: dcid:CopraMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Copra Meal"
+
+Node: dcid:beanType
+typeOf: dcs:Property
+name: "beanType"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:BeanTypeEnum
+
+Node: dcid:BeanTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "BeanTypeEnum"
+
+Node: dcid:Crush
+typeOf: dcid:BeanTypeEnum
+name: "Crush"
+
+Node: dcid:FeedWaste
+typeOf: dcid:WaterUseCategoryEnum
+name: "Feed Waste"
+
+Node: dcid:FoodUse
+typeOf: dcid:WaterUseCategoryEnum
+name: "Food Use"
+
+Node: dcid:consumptionSector
+typeOf: dcs:Property
+name: "consumptionSector"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:EnergyConsumptionSectorEnum
+
+Node: dcid:CottonseedMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cottonseed Meal"
+
+Node: dcid:FishMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fish Meal"
+
+Node: dcid:CatchForReduction
+typeOf: dcs:FarmInventoryStatusEnum
+name: "CatchForReduction"
+description: "Catch for reduction is the amount of fish that is caught but not used for human consumption."
+
+Node: dcid:Disappeared
+typeOf: dcs:FarmInventoryStatusEnum
+name: "Disappeared"
+description: "Disappeared is the amount of animals that are lost or not used for human consumption."
+
+Node: dcid:PalmKernelMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Palm Kernel Meal"
+
+Node: dcid:PeanutMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Peanut Meal"
+
+Node: dcid:RapeseedMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Rapeseed Meal"
+
+Node: dcid:SoybeanMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Soybean Meal"
+
+Node: dcid:LocalSoybeanMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Local Soybean Meal"
+
+Node: dcid:SunflowerSeedMeal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Sunflower Seed Meal"
+
+Node: dcid:Beef
+typeOf: dcid:FarmInventoryTypeEnum
+name:"Beef"
+
+Node: dcid:Veal
+typeOf: dcid:FarmInventoryTypeEnum
+name:"Veal"
+
+Node: dcid:Meat
+typeOf: dcid:FarmInventoryTypeEnum
+name:"Meat"
+
+Node: dcid:ChickenMeat
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Chicken Meat"
+
+Node: dcid:SwineMeat
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Swine Meat"
+
+Node: dcid:MixedGrain
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Mixed Grain"
+
+Node: dcid:CoconutOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Coconut Oil"
+
+Node: dcid:CottonseedOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cottonseed Oil"
+
+Node: dcid:OliveOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Olive Oil"
+
+Node: dcid:PalmOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Palm Oil"
+
+Node: dcid:PalmKernelOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Palm Kernel Oil"
+
+Node: dcid:PeanutOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Peanut Oil"
+
+Node: dcid:RapeseedOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Rapeseed Oil"
+
+Node: dcid:SoybeanOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Soybean Oil"
+
+Node: dcid:LocalSoybeanOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Local Soybean Oil"
+
+Node: dcid:SunflowerSeedOil
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Sunflower Seed Oil"
+
+Node: dcid:CopraOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Copra Oilseed"
+
+Node: dcid:CottonseedOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cottonseed Oilseed"
+
+Node: dcid:seedToLintRatio
+typeOf: dcs:Property
+name: "seedToLintRatio"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:PalmKernelOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Palm Kernel Oilseed"
+
+Node: dcid:PeanutOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Peanut Oilseed"
+
+Node: dcid:RapeseedOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Rapeseed Oilseed"
+
+Node: dcid:SoybeanOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Soybean Oilseed"
+
+Node: dcid:LocalSoybeanOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Local Soybean Oilseed"
+
+Node: dcid:SunflowerSeedOilseed
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Sunflower Seed Oilseed"
+
+Node: dcid:OrangeJuice
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Orange Juice"
+
+Node: dcid:FreshOranges
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fresh Oranges"
+
+Node: dcid:PeachesNectarines
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Peaches Nectarines"
+
+Node: dcid:FreshPears
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fresh Pears"
+
+Node: dcid:InShellPistachios
+typeOf: dcid:FarmInventoryTypeEnum
+name: "InShell Pistachios"
+
+Node: dcid:Poultry
+typeOf: dcid:FarmInventoryTypeEnum
+name:"Poultry"
+
+Node: dcid:Broiler
+typeOf:FarmInventoryTypeEnum
+name:"Broiler"
+
+Node: dcid:MilledRice
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Milled Rice"
+
+Node: dcid:millingRate
+typeOf: dcs:Property
+name: "millingRate"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:productionMethod
+typeOf: dcs:Property
+name: "productionMethod"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:ProductionMethodEnum
+
+Node: dcid:ProductionMethodEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ProductionMethodEnum"
+
+Node: dcid:RoughProduction
+typeOf: dcid:ProductionMethodEnum
+name: "Rough Production"
+
+Node: dcid:Sorghum
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Sorghum"
+
+Node: dcid:BeetSugar
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Beet Sugar"
+
+Node: dcid:CentrifugalSugar
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Centrifugal Sugar"
+
+Node: dcid:WaterForHumanUse
+typeOf: dcid:WaterUseCategoryEnum
+name: "Human Use"
+
+Node: dcid:causeOfDisappearance
+typeOf: dcs:Property
+name: "causeOfDisappearance"
+rangeIncludes: dcid:CauseOfDisappearanceEnum
+
+Node: dcid:CauseOfDisappearanceEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "CauseOfDisappearanceEnum"
+
+Node: dcid:USDA_OtherCauses
+typeOf: dcid:CauseOfDisappearanceEnum
+name: "USDA Other Causes"
+
+Node: dcid:processingType
+typeOf: dcs:Property
+name: "processingType"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:ProcessingTypeEnum
+
+Node: dcid:ProcessingTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ProcessingTypeEnum"
+
+Node: dcid:Raw
+typeOf: dcid:ProcessingTypeEnum
+name: "Raw"
+
+Node: dcid:Refined
+typeOf: dcid:ProcessingTypeEnum
+name: "Refined"
+
+Node: dcid:TangerinesOrMandarins
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Tangerines Or Mandarins"
+
+Node: dcid:InShellWalnuts
+typeOf: dcid:FarmInventoryTypeEnum
+name: "In Shell Walnuts"
+
+Node: dcid:TotalDistribution
+typeOf: dcid:Thing
+name: "Distribution"
+
+Node: dcid:stocksToUse
+typeOf: dcs:Property
+name: "stocksToUse"
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:Supply
+typeOf: dcid:Thing
+name: "Supply"
+
+Node: dcid:TotalUse
+typeOf: dcid:Thing
+name: "Total Use"
+
+Node: dcid:EnteringTheHerd
+typeOf: dcid:Thing
+name: "Entering The Herd"
+description: "Entering the herd is the amount of animals that are added to the herd."
+
+Node: dcid:Dissapeared
+typeOf: dcid:Thing
+name: "Disappeared"
+
+Node: dcid:LossAndResidual
+typeOf: dcid:Thing
+name: "Loss And Residual"

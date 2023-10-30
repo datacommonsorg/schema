@@ -92,7 +92,7 @@ name: "retailPrice"
 Node: dcid:stock
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Energy, schema:Fuel, schema:Product
+domainIncludes: schema:Energy, schema:Fuel, schema:Product, schema:FarmInventory
 name: "stock"
 supersededBy: dcid:stocks
 
@@ -142,13 +142,13 @@ name: "outage"
 Node: dcid:imports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, schema:FarmInventory
 name: "imports"
 
 Node: dcid:exports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:FarmInventory
 name: "exports"
 
 Node: dcid:reserves
@@ -160,7 +160,7 @@ name: "reserves"
 Node: dcid:loss
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:FarmInventory
 name: "loss"
 
 Node: dcid:productReclassification
@@ -2177,7 +2177,7 @@ description: "Number of images examined to find solar panels in this region"
 Node: dcid:area
 name: "area"
 typeOf: schema:Property
-domainIncludes: dcs:SolarArray, dcs:FireEvent, dcs:FloodEvent
+domainIncludes: dcs:SolarArray, dcs:FireEvent, dcs:FloodEvent, dcs:FarmInventory
 rangeIncludes: schema:Quantity
 
 Node: dcid:residential
