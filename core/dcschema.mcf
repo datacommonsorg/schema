@@ -39,6 +39,13 @@ domainIncludes: schema:Class, schema:Property, schema:Enumeration
 rangeIncludes: schema:URL
 description: "Provenance URL of the description value."
 
+Node: dcid:nameWithLanguage
+name: "nameWithLanguage"
+typeOf: schema:Property
+domainIncludes: schema:Class
+rangeIncludes: schema:Text
+description: "Text string in quotes ending with @<lang> where <lang> is a 2 letter ISO 639-1 language code."
+
 Node: dcid:utteranceTemplate
 name: "utteranceTemplate"
 typeOf: schema:Property
@@ -287,6 +294,40 @@ name: "USMetropolitanDivision"
 typeOf: schema:Class
 description: "Subdivisions of US Metropolitan Statistical Areas (MSAs) and New England City and Town Areas (NECTAs)."
 subClassOf: schema:Place
+
+Node: dcid:CensusOutputArea
+name: "CensusOutputArea"
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+description: "Output Areas (OA) are the lowest level of geographical area for census statistics in the United Kingdom."
+descriptionUrl: "https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeographies/census2021geographies#output-areas-oas"
+
+Node: dcid:LowerLayerSuperOutputArea
+name: "LowerLayerSuperOutputArea"
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+description: "Lower layer Super Output Areas (LSOA) are geographical area for census statistics in the United kingdom. They are made up of groups of Output Area (OAs), usually four or five. They comprise between 400 and 1,200 households and have a usually resident population between 1,000 and 3,000 persons."
+descriptionUrl: "https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeographies/census2021geographies#lower-layer-super-output-areas-lsoas"
+
+Node: dcid:MiddleLayerSuperOutputArea
+name: "MiddleLayerSuperOutputArea"
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+description: "Middle layer Super Output Areas (MSOA) are geographical area for census statistics in the United kingdom. They are made up of groups of Lower layer Super Output Area (LSOAs), usually four or five. They comprise between 2,000 and 6,000 households and have a usually resident population between 5,000 and 15,000 persons. MSOAs fit within local authorities."
+descriptionUrl: "https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeographies/census2021geographies#middle-layer-super-output-areas-msoas"
+
+Node: dcid:ElectoralWard
+name: "ElectoralWard"
+typeOf: schema:Class
+subClassOf: schema:AdministrativeArea
+description: "Electoral wards are spatial units of UK administrative geography used to elect local government councillors."
+descriptionUrl: "https://geoportal.statistics.gov.uk/documents/ons::a-beginners-guide-to-uk-geography-2021-v1-0-1/explore"
+
+Node: dcid:governmentStatisticalServiceCode
+typeOf: schema:Property
+name: "governmentStatisticalServiceCode"
+description: "Government Statistical Service (GSS) codes are nine-character geocodes maintained by the United Kingdom's Office for National Statistics to represent a wide range of geographical areas of the UK, for use in tabulating census and other statistical data. The first three characters of the GSS code indicate the level of geography, and the six digits following define the individual unit."
+descriptionUrl: "https://en.wikipedia.org/wiki/GSS_coding_system"
 
 Node: dcid:PinCodeArea
 typeOf: schema:Class
