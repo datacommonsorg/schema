@@ -565,7 +565,7 @@ rangeIncludes: schema:Text
 Node: crimeType
 dcid: "crimeType"
 domainIncludes: schema:CriminalActivities, dcs:CriminalIncidents
-rangeIncludes: schema:CrimeTypeEnum
+rangeIncludes: schema:CrimeTypeEnum, schema:ViolentCrimeTypeEnum
 typeOf: schema:Property
 name: "crimeType"
 
@@ -2577,8 +2577,8 @@ typeOf: schema:Property
 name: "incidentType"
 
 Node: dcid:medicalStatus
-rangeIncludes: dcs:MedicalStatusEnum
-domainIncludes: dcs:MedicalConditionIncident
+rangeIncludes: dcs:MedicalStatusEnum, dcs:MedicalEventEnum
+domainIncludes: dcs:MedicalConditionIncident, dcs:BirthEvent
 typeOf: schema:Property
 name: "medicalStatus"
 description: "Used to indicate the status of a medical condition incident."
@@ -2873,6 +2873,7 @@ rangeIncludes: dcs:USC_WorkStatusEnum
 Node: dcid:vaccineType
 name: "vaccineType"
 rangeIncludes: dcs:VaccineTypeEnum
+domainIncludes: dcs:Person
 typeOf: schema:Property
 
 Node: dcid:VaccineTypeEnum
@@ -2906,7 +2907,7 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Vaccine"
 Node: dcid:vaccineStatus
 name: "vaccineStatus"
 typeOf: schema:Property
-domainIncludes: dcs:Vaccine
+domainIncludes: dcs:Vaccine, dcs:Person
 rangeIncludes: dcs:VaccineStatusEnum
 
 Node: dcid:closeMatch
@@ -3231,6 +3232,7 @@ description: "The geo granularity at which a variable has data for"
 Node: dcid:ageGroupClassification
 name: "ageGroupClassification"
 rangeIncludes: dcs:AgeGroupClassificationEnum
+domainIncludes: dcs:Person
 typeOf: schema:Property
 description: "People classified based on their age group."
 descriptionUrl: "https://www.nih.gov/nih-style-guide/age"
@@ -3370,3 +3372,10 @@ name: "footnote"
 description: "Footnote for a StatisticalVariable."
 domainIncludes: dcs:StatisticalVariable
 rangeIncludes: dcs:Text
+
+Node: dcid:palmaRatio
+typeOf: dcs:Property
+name: "palmaRatio"
+description: "The Palma ratio is a measure of inequality that divides the share received by the richest 10% by the share of the poorest 40%"
+descriptionUrl: "https://ourworldindata.org/grapher/palma-ratio-s90s40-ratio"
+

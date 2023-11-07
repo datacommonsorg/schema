@@ -85,7 +85,7 @@ dcid: "healthInsurance"
 name: "healthInsurance"
 description: "This property describes the status of Health Insurance of a person"
 rangeIncludes: dcs:USC_HealthInsuranceEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 
 Node: homeValue
 typeOf: schema:Property
@@ -203,7 +203,8 @@ Node: levelOfSchool
 dcid: "levelOfSchool"
 name: "levelOfSchool"
 typeOf: schema:Property
-rangeIncludes: dcs:USC_LevelOfSchoolEnum
+rangeIncludes: dcs:USC_LevelOfSchoolEnum, dcs:SecondarySchool
+domainIncludes: dcs:Student
 
 Node: maritalStatus
 dcid: "maritalStatus"
@@ -395,14 +396,14 @@ Node: dcid:facilities
 typeOf: schema:Property
 name: "facilities"
 description: "Facilities available in a building, e.g. plumbing facilities, kitchen facilities."
-domainIncludes: dcs:HousingUnit
+domainIncludes: dcs:HousingUnit, dcs:Household, dcs:Place, dcs:Person, dcs:Households, dcs:Village, dcs:MunicipalWard, dcs:Place, dcs:Households, dcs:Person
 rangeIncludes: dcs:USC_FacilitiesEnum
 
 Node: dcid:internetAccessStatus
 typeOf: schema:Property
 name: "internetAccessStatus"
 description: "The status of a household's internet access."
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:Person
 rangeIncludes: dcs:USC_InternetAccessStatusEnum
 
 Node: dcid:periodOfMilitaryService

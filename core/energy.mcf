@@ -80,7 +80,7 @@ name: "consumption"
 Node: dcid:expenditure
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:CommercialBuilding, schema:Household
 name: "expenditure"
 
 Node: dcid:retailPrice
@@ -130,7 +130,7 @@ name: "salesRevenue"
 Node: dcid:capacity
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:EnergyGeneration, schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:EnergyGeneration, schema:Fuel, schema:Place
 name: "capacity"
 
 Node: dcid:outage
@@ -2108,7 +2108,7 @@ Node: dcid:energySource
 name: "energySource"
 typeOf: schema:Property
 rangeIncludes: dcs:EnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
+domainIncludes: dcs:PowerPlantUnit, dcs:Electricity
 
 Node: dcid:primeMover
 name: "primeMover"
@@ -2995,8 +2995,8 @@ rangeIncludes: schema:Quantity
 Node: dcid:electrifiedHouseholds
 typeOf: schema:Property
 name: "electrifiedHouseholds"
-domainIncludes: schema:Electricity, dcs:Households
-rangeIncludes: schema:Quantity
+domainIncludes: schema:Electricity, dcs:Households, dcs:Household
+rangeIncludes: schema:Quantity, schema:Household
 
 Node: dcid:IndiaEDM_UnspecifiedSector
 typeOf: dcs:EnergyConsumptionSectorEnum

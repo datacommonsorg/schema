@@ -1,0 +1,978 @@
+Node: dcid:Amount_EconomicActivity_UtilisedScheduledCasteSubPlanFund
+typeOf: dcid:StatisticalVariable
+name: "Scheduled Caste Sub Plan fund utilised (%)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+benefitStatus: dcid:UtilisedScheduledCasteSubPlanFund
+
+Node: dcid:Amount_EconomicActivity_UtilisedTribalSubPlanFund
+typeOf: dcid:StatisticalVariable
+name: "Tribal Sub Plan fund utilised (%)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+benefitStatus: dcid:UtilisedTribalSubPlanFund
+
+Node: dcid:Amount_FarmInventory_RiceOrWheat_AsAFractionOf_Area_Farm_RiceOrWheat
+typeOf: dcid:StatisticalVariable
+name: "Rice, wheat and coarse cereals produced annually per unit area (Kg/Ha)","Rice and wheat produced annually per unit area  (Kg/Ha)"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Area_Farm_RiceOrWheat
+farmInventoryType: dcid:Rice__Wheat
+
+Node: dcid:Annual_Count_MedicalConditionIncident_ConditionTuberculosis_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Annual notification of Tuberculosis cases per 1 lakh population"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+medicalCondition: dcid:Tuberculosis
+
+Node: dcid:Annual_Reserve_Water
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Water
+measuredProperty: dcid:reserve
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+
+Node: dcid:Annual_WithdrawalRate_Water_AsAFractionOf_Annual_Reserve_Water
+typeOf: dcid:StatisticalVariable
+name: "Annual ground water withdrawal against net annual availability (%)"
+populationType: dcid:Water
+measuredProperty: dcid:withdrawalRate
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+measurementDenominator: dcid:Annual_Reserve_Water
+
+Node: dcid:Area_Farm_RiceOrWheat
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Farm
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmInventoryType: dcid:Rice__Wheat
+
+Node: dcid:Capacity_Electricity
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Electricity
+measuredProperty: dcid:capacity
+statType: dcid:measuredValue
+
+Node: dcid:Capacity_Electricity_Renewables_AsAFractionOf_Capacity_Electricity
+typeOf: dcid:StatisticalVariable
+name: "Renewable share of installed generating capacity (%)"
+populationType: dcid:Electricity
+measuredProperty: dcid:capacity
+statType: dcid:measuredValue
+measurementDenominator: dcid:Capacity_Electricity
+energySource: dcid:Renewables
+
+Node: dcid:Capacity_Place_SewageTreatement_Urban_AsAFractionOf_GeneratedSewage_Place_Urban
+typeOf: dcid:StatisticalVariable
+name: "Installed sewage treatment capacity as a proportion of sewage created in urban areas (%)"
+populationType: dcid:Place
+measuredProperty: dcid:capacity
+statType: dcid:measuredValue
+measurementDenominator: dcid:GeneratedSewage_Place_Urban
+facilities: dcid:SewageTreatement
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Constructed_House_PradhanMantriAwasYojana_AsAFractionOf_Demand_House
+typeOf: dcid:StatisticalVariable
+name: "Houses completed under PMAY as a percentage of net demand assessment for houses"
+populationType: dcid:House
+measuredProperty: dcid:constructed
+statType: dcid:measuredValue
+measurementDenominator: dcid:Demand_House
+benefitStatus: dcid:PradhanMantriAwasYojana
+
+Node: dcid:Count_BirthEvent_Female_LiveBirth_AsAFractionOf_Count_BirthEvent_LiveBirth_Male
+typeOf: dcid:StatisticalVariable
+name: "Sex  Ratio at Birth (female per 1000 male)"
+populationType: dcid:BirthEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_BirthEvent_LiveBirth_Male
+gender: dcid:Female
+medicalStatus: dcid:LiveBirth
+
+Node: dcid:Count_BirthEvent_Registered_AsAFractionOf_Count_BirthEvent
+typeOf: dcid:StatisticalVariable
+name: "Births registered (%)"
+populationType: dcid:BirthEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_BirthEvent
+registrationStatus: dcid:Registered
+
+Node: dcid:Count_BirthEvent_YearsUpto5_LiveBirth
+typeOf: dcid:StatisticalVariable
+populationType: dcid:BirthEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:YearsUpto5
+medicalStatus: dcid:LiveBirth
+
+Node: dcid:Count_Courthouse_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Estimated number of courts per 10 Lakh persons"
+populationType: dcid:Courthouse
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+
+Node: dcid:Count_CriminalIncidents_CorruptionCrime_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Estimated reported corruption crimes per 1 crore population"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+crimeType: dcid:CorruptionCrime
+
+Node: dcid:Count_CriminalIncidents_CrimeAgainstChildren_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Reported cognizable crimes against children per 1 lakh population"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+crimeType: dcid:CrimeAgainstChildren
+
+Node: dcid:Count_Household_BankAccount_AsAFractionOf_Count_Household
+typeOf: dcid:StatisticalVariable
+name: "Households with a bank account (%)"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Household
+facilities: dcid:BankAccount
+
+Node: dcid:Count_Household_Homeless
+typeOf: dcid:StatisticalVariable
+name: "Number of homeless households per 10,000 households"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+socialVulnerabilityStatus: dcid:Homeless
+
+Node: dcid:Count_Household_IncomeOfIndianRupeeUpto5000_Rural
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+income: dcid:IndianRupeeUpto5000
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Household_PradhanMantriGramSadakYojana_Road_AsAFractionOf_Count_Household
+typeOf: dcid:StatisticalVariable
+name: "Targeted habitations  connected by all-weather roads under Pradhan Mantri Gram Sadak Yojana (%)"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Household
+benefitStatus: dcid:PradhanMantriGramSadakYojana
+facilities: dcid:Road
+
+Node: dcid:Count_Household_PublicDistributionSystem_IncomeOfIndianRupeeUpto5000_Rural_AsAFractionOf_Count_Household_IncomeOfIndianRupeeUpto5000_Rural
+typeOf: dcid:StatisticalVariable
+name: "Ratio of rural households covered under public distribution system to rural households where monthly income of highest earning member is less than Rs.5,000"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Household_IncomeOfIndianRupeeUpto5000_Rural
+benefitStatus: dcid:PublicDistributionSystem
+income: dcid:IndianRupeeUpto5000
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Household_Toilet_Rural_AsAFractionOf_Count_Household_Rural
+typeOf: dcid:StatisticalVariable
+name: "Rural households with individual household toilets (%)"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Household_Rural
+facilities: dcid:Toilet
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Household_WithHealthSchemeOrWithHealthInsurance_AsAFractionOf_Count_Household
+typeOf: dcid:StatisticalVariable
+name: "Households with any usual member covered by any health scheme or health insurance (%)"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Household
+healthInsurance: dcid:WithHealthScheme__WithHealthInsurance
+
+Node: dcid:Count_MortalityEvent_YearsUpto5_AsAFractionOf_Count_BirthEvent_YearsUpto5_LiveBirth
+typeOf: dcid:StatisticalVariable
+name: "Under-five mortality rate per 1,000 live births"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_BirthEvent_YearsUpto5_LiveBirth
+age: dcid:YearsUpto5
+
+Node: dcid:Count_MunicipalWard
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MunicipalWard
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+
+Node: dcid:Count_MunicipalWard_100Percent_DoorToDoorWasteCollection_AsAFractionOf_Count_MunicipalWard
+typeOf: dcid:StatisticalVariable
+name: "Wards with 100% door to door waste collection (%)"
+populationType: dcid:MunicipalWard
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_MunicipalWard
+coverage: [100 Percent]
+facilities: dcid:DoorToDoorWasteCollection
+
+Node: dcid:Count_Person_15To49Year_Female_Married
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 49 Year]
+gender: dcid:Female
+maritalStatus: dcid:Married
+
+Node: dcid:Count_Person_15To49Year_SpousalViolence_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married
+typeOf: dcid:StatisticalVariable
+name: "Married women aged 15-49 who have ever experienced spousal violence (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
+age: [15 49 Year]
+crimeType: dcid:SpousalViolence
+gender: dcid:Female
+maritalStatus: dcid:Married
+
+Node: dcid:Count_Person_1To2Year
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [1 2 Year]
+
+Node: dcid:Count_Person_1To2Year_VaccineAdministered_BCGOrMeaslesOrPentavalent_AsAFractionOf_Count_Person_1To2Year
+typeOf: dcid:StatisticalVariable
+name: "Children aged 12-23 months fully immunized (BCG, Measles and three doses of Pentavalent vaccine) (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_1To2Year
+age: [1 2 Year]
+vaccineStatus: dcid:VaccineAdministered
+vaccineType: dcid:BCG__Measles__Pentavalent
+
+Node: dcid:Count_Person_6To13Year
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [6 13 Year]
+
+Node: dcid:Count_Person_6To13Year_NotEnrolledInSchool_AsAFractionOf_Count_Person_6To13Year
+typeOf: dcid:StatisticalVariable
+name: "Children in the age group of 6-13 who are out of school (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To13Year
+age: [6 13 Year]
+schoolEnrollment: dcid:NotEnrolledInSchool
+
+Node: dcid:Count_Person_ATM_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Number of ATMs per 1,00,000 population"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+facilities: dcid:ATM
+
+Node: dcid:Count_Person_Aadhaar_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Population covered under Aadhaar (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+governmentId: dcid:Aadhaar
+
+Node: dcid:Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+benefitStatus: dcid:EligibleSocialProtectionBenefitUnderMaternityBenefit
+
+Node: dcid:Count_Person_Employed_AsAFractionOf_Count_Person_MGNREGAUnemployed
+typeOf: dcid:StatisticalVariable
+name: "Persons provided employment as a percentage of persons who demanded employment under MGNREGA (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_MGNREGAUnemployed
+employmentStatus: dcid:Employed
+
+Node: dcid:Count_Person_EnrolledInSchool_SchoolGrade1To10_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Adjusted Net Enrolment Ratio at Elementary  (Class 1-8) and Secondary (Class 9-10) school (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+schoolEnrollment: dcid:EnrolledInSchool
+schoolGradeLevel: dcid:SchoolGrade1To10
+
+Node: dcid:Count_Person_Female_LegislatorOccupation_AsAFractionOf_Count_Person_LegislatorOccupation
+typeOf: dcid:StatisticalVariable
+name: "Seats won by women in the general elections to state legislative assembly (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_LegislatorOccupation
+gender: dcid:Female
+occupation: dcid:Legislator
+
+Node: dcid:Count_Person_Government_PhysicianOrNurseAndMidwivesOccupation_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Number of governmental physicians, nurses and midwives per 1,00,000 population"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+employer: dcid:Government
+occupation: dcid:Physician__NurseAndMidwives
+
+Node: dcid:Count_Person_InLaborForce_Female_AsAFractionOf_Count_Person_InLaborForce_Male
+typeOf: dcid:StatisticalVariable
+name: "Ratio of Female Labour force participation rate to Male Labour force participation rate"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_InLaborForce_Male
+employmentStatus: dcid:InLaborForce
+gender: dcid:Female
+
+Node: dcid:Count_Person_InLaborForce_Transgender_AsAFractionOf_Count_Person_Male
+typeOf: dcid:StatisticalVariable
+name: "Ratio of Transgender Labour force participation rate to Male Labour force participation rate"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_Male
+employmentStatus: dcid:InLaborForce
+gender: dcid:Transgender
+
+Node: dcid:Count_Person_LegislatorOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Legislator
+
+Node: dcid:Count_Person_MGNREGAUnemployed
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+employmentStatus: dcid:MGNREGA_Unemployed
+
+Node: dcid:Count_Person_MobileConnection_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Number of mobile connections per 100 persons in rural and urban area (Mobile Tele density)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+facilities: dcid:MobileConnection
+
+Node: dcid:Count_Person_ReceivingSocialProtectionBenefitUnderMaternityBenefit_AsAFractionOf_Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
+typeOf: dcid:StatisticalVariable
+name: "Proportion of the population (out of total eligible population) receiving social protection benefits under Maternity Benefit"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
+benefitStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
+
+Node: dcid:Count_Person_WithInternetSubscription_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Number of Internet Subscribers per 100 population"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+internetAccessStatus: dcid:WithInternetSubscription
+
+Node: dcid:Count_Person_YearsUpto5_ConditionStunted_AsAFractionOf_Count_Person_Upto5Years
+typeOf: dcid:StatisticalVariable
+name: "Children under age 5 years who are stunted (%)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_Upto5Years
+age: dcid:YearsUpto5
+medicalCondition: dcid:Stunted
+
+Node: dcid:Count_Place_District_OpenDefecationFree
+typeOf: dcid:StatisticalVariable
+name: "Districts verified to be Open Defecation Free (%)"
+populationType: dcid:Place
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+placeType: dcid:District
+socialCondition: dcid:OpenDefecationFree
+
+Node: dcid:Count_School_ElementarySchool
+typeOf: dcid:StatisticalVariable
+populationType: dcid:School
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+schoolGradeLevel: dcid:ElementarySchool
+
+Node: dcid:Count_School_ElementarySchool_StudentTeacherRatioUpto30_AsAFractionOf_Count_School_ElementarySchool
+typeOf: dcid:StatisticalVariable
+name: "Elementary and secondary schools with Pupil Teacher Ratio less than/equal to 30 (%)"
+populationType: dcid:School
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_School_ElementarySchool
+schoolGradeLevel: dcid:ElementarySchool
+studentTeacherRatio: dcid:StudentTeacherRatioUpto30
+
+Node: dcid:Count_Student_Pass_SchoolGrade5_LanguageOrMathematicsOrEVS
+typeOf: dcid:StatisticalVariable
+name: "Correct responses on Learning Outcomes in Language, Mathematics and EVS for Class 5 students (%)"
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+assessmentLevel: dcid:Pass
+schoolGradeLevel: dcid:SchoolGrade5
+schoolSubject: dcid:Language__Mathematics__EVS
+
+Node: dcid:Count_Student_Pass_SchoolGrade8_LanguageOrMathematicsOrScienceOrSocialScience
+typeOf: dcid:StatisticalVariable
+name: "Correct responses on Learning Outcomes in Language, Mathematics, Science and Social Science for Class 8 students (%)"
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+assessmentLevel: dcid:Pass
+schoolGradeLevel: dcid:SchoolGrade8
+schoolSubject: dcid:Language__Mathematics__Science__SocialScience
+
+Node: dcid:Count_Teacher_ProfessionallyQualified_AsAFractionOf_Count_Teacher
+typeOf: dcid:StatisticalVariable
+name: "School teachers professionally qualified (%)"
+populationType: dcid:Teacher
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Teacher
+qualificationStatus: dcid:ProfessionallyQualified
+
+Node: dcid:Count_Village
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Village
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+
+Node: dcid:Count_Village_BharatNetBroadbandService_AsAFractionOf_Count_Village
+typeOf: dcid:StatisticalVariable
+name: "Gram Panchayats covered under Bharat Net (%)"
+populationType: dcid:Village
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Village
+facilities: dcid:BharatNetBroadbandService
+
+Node: dcid:Count_WHO/PregnantWomen_15To49Year
+typeOf: dcid:StatisticalVariable
+populationType: dcid:WHO/PregnantWomen
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 49 Year]
+
+Node: dcid:Count_WHO/PregnantWomen_15To49Year_ConditionAnaemia_AsAFractionOf_Count_WHO/PregnantWomen_15To49Year
+typeOf: dcid:StatisticalVariable
+name: "Pregnant women aged 15-49 yrs who are anaemic (11.0g/dl) (%)"
+populationType: dcid:WHO/PregnantWomen
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_WHO/PregnantWomen_15To49Year
+age: [15 49 Year]
+medicalCondition: dcid:Anaemia
+
+Node: dcid:Count_WasteGenerated
+typeOf: dcid:StatisticalVariable
+populationType: dcid:WasteGenerated
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+
+Node: dcid:Count_WasteGenerated_Processed_AsAFractionOf_Count_WasteGenerated
+typeOf: dcid:StatisticalVariable
+name: "Waste processed (%)"
+populationType: dcid:WasteGenerated
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_WasteGenerated
+processingStatus: dcid:Processed
+
+Node: dcid:Demand_House
+typeOf: dcid:StatisticalVariable
+populationType: dcid:House
+measuredProperty: dcid:demand
+statType: dcid:measuredValue
+
+Node: dcid:ElectrifiedHouseholds_Household_AsAFractionOf_Count_Household
+typeOf: dcid:StatisticalVariable
+name: "Households electrified (%)"
+populationType: dcid:Household
+measuredProperty: dcid:electrifiedHouseholds
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Household
+
+Node: dcid:GeneratedSewage_Place_Urban
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+measuredProperty: dcid:generatedSewage
+statType: dcid:measuredValue
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:PalmaRatio_Expenditure_Household_Rural
+typeOf: dcid:StatisticalVariable
+name: "Palma Ratio of Household Expenditure in Rural India"
+populationType: dcid:Household
+measuredProperty: dcid:expenditure
+statType: dcid:palmaRatio
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:PalmaRatio_Expenditure_Household_Urban
+typeOf: dcid:StatisticalVariable
+name: "Palma Ratio of Household Expenditure in Urban India"
+populationType: dcid:Household
+measuredProperty: dcid:expenditure
+statType: dcid:palmaRatio
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:WagesDaily_Person_15To59Year_Female_AsAFractionOf_WagesDaily_Person_15To59Year_Male
+typeOf: dcid:StatisticalVariable
+name: "Average female to male ratio of average wages/salaries received per day by regular wage/salaried employees of age 15-59 for rural and urban"
+populationType: dcid:Person
+measuredProperty: dcid:wagesDaily
+statType: dcid:measuredValue
+measurementDenominator: dcid:WagesDaily_Person_15To59Year_Male
+age: [15 59 Year]
+gender: dcid:Female
+
+Node: dcid:WagesDaily_Person_15To59Year_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:wagesDaily
+statType: dcid:measuredValue
+age: [15 59 Year]
+gender: dcid:Male
+
+Node: dcid:Capacity_Place_SewageTreatement_Urban
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+measuredProperty: dcid:capacity
+statType: dcid:measuredValue
+facilities: dcid:SewageTreatement
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_Person_0To4Year_Underweight
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [0 4 Year]
+healthBehavior: dcid:Underweight
+
+Node: dcid:Count_Person_15To49Year_Adolescents
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 49 Year]
+ageGroupClassification: dcid:Adolescents
+
+Node: dcid:Count_Person_15To49Year_Adolescents_ConditionAnaemia_AsAFractionOf_Count_Person_15To49Year_Adolescents
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Year_Adolescents
+age: [15 49 Year]
+ageGroupClassification: dcid:Adolescents
+medicalCondition: dcid:Anaemia
+
+Node: dcid:Count_Person_EnrolledInSchool_SchoolGrade1To8_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Adjusted Net Enrolment Ratio (ANER) in elementary education (class 1-8)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+schoolEnrollment: dcid:EnrolledInSchool
+schoolGradeLevel: dcid:SchoolGrade1To8
+
+Node: dcid:Count_Person_15To19Year_InLaborForce_Female_AsAFractionOf_Count_Person_15To19Year_InLaborForce_Male
+typeOf: dcid:StatisticalVariable
+name: "Ratio of female to male Labour Force Participation Rate (LFPR) (15-59 years)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Year_InLaborForce_Male
+age: [15 19 Year]
+employmentStatus: dcid:InLaborForce
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To19Year_InLaborForce_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 19 Year]
+employmentStatus: dcid:InLaborForce
+gender: dcid:Male
+
+Node: dcid:UnemploymentRate_Person_15To59Year
+typeOf: dcid:StatisticalVariable
+name: "Unemployment rate (%) (15-59 years)"
+populationType: dcid:Person
+measuredProperty: dcid:unemploymentRate
+statType: dcid:measuredValue
+age: [15 59 Year]
+
+Node: dcid:Count_Households
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Households
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+
+Node: dcid:Count_Households_PradhanMantriGramSadakYojana_Road_AsAFractionOf_Count_Households
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Households
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Households
+benefitStatus: dcid:PradhanMantriGramSadakYojana
+facilities: dcid:Road
+
+Node: dcid:IndexScore_Household_WithHealthSchemeOrWithHealthInsurance
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+healthInsurance: dcid:WithHealthScheme__WithHealthInsurance
+
+Node: dcid:IndexScore_Person_BelowPovertyLevelInThePast12Months
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+povertyStatus: dcid:BelowPovertyLevelInThePast12Months
+
+Node: dcid:IndexScore_Person_ReceivingSocialProtectionBenefitUnderMaternityBenefit
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+benefitStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
+
+Node: dcid:IndexScore_EconomicActivity_UtilisedScheduledCasteSubPlanFund
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+benefitStatus: dcid:UtilisedScheduledCasteSubPlanFund
+
+Node: dcid:IndexScore_EconomicActivity_UtilisedTribalSubPlanFund
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+benefitStatus: dcid:UtilisedTribalSubPlanFund
+
+Node: dcid:IndexScore_House_PradhanMantriAwasYojana
+typeOf: dcid:StatisticalVariable
+populationType: dcid:House
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+benefitStatus: dcid:PradhanMantriAwasYojana
+
+Node: dcid:IndexScore_MunicipalWard_100Percent_DoorToDoorWasteCollection
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MunicipalWard
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+coverage: [100 Percent]
+facilities: dcid:DoorToDoorWasteCollection
+
+Node: dcid:IndexScore_Place_SewageTreatement_Urban
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+facilities: dcid:SewageTreatement
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:IndexScore_WasteGenerated_Processed
+typeOf: dcid:StatisticalVariable
+populationType: dcid:WasteGenerated
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+processingStatus: dcid:Processed
+
+Node: dcid:Annual_IndexScore_Water
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Water
+measuredProperty: dcid:indexScore
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+
+Node: dcid:IndexScore_Electricity_Renewables
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Electricity
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+energySource: dcid:Renewables
+
+Node: dcid:IndexScore_BirthEvent_Registered
+typeOf: dcid:StatisticalVariable
+populationType: dcid:BirthEvent
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+registrationStatus: dcid:Registered
+
+Node: dcid:IndexScore_Courthouse
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Courthouse
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+
+Node: dcid:IndexScore_CriminalActivities_MurderAndNonNegligentManslaughter
+typeOf: dcid:StatisticalVariable
+populationType: dcid:CriminalActivities
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+crimeType: dcid:MurderAndNonNegligentManslaughter
+
+Node: dcid:IndexScore_CriminalIncidents_CorruptionCrime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+crimeType: dcid:CorruptionCrime
+
+Node: dcid:IndexScore_CriminalIncidents_CrimeAgainstChildren
+typeOf: dcid:StatisticalVariable
+name: "Reported cognizable crimes against children per 1 lakh population"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+crimeType: dcid:CrimeAgainstChildren
+
+Node: dcid:IndexScore_Person_Aadhaar
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+governmentId: dcid:Aadhaar
+
+Node: dcid:Count_Person_6To59Year
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [6 59 Year]
+
+Node: dcid:Count_Person_6To59Year_ConditionAnaemia_AsAFractionOf_Count_Person_6To59Year
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To59Year
+age: [6 59 Year]
+medicalCondition: dcid:Anaemia
+
+Node: dcid:IndexScore_Household_PublicDistributionSystem_IncomeOfIndianRupeeUpto5000_Rural
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+benefitStatus: dcid:PublicDistributionSystem
+income: dcid:IndianRupeeUpto5000
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:IndexScore_Person_0To4Year_Underweight
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+age: [0 4 Year]
+healthBehavior: dcid:Underweight
+
+Node: dcid:IndexScore_Person_6To59Year_ConditionAnaemia
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+age: [6 59 Year]
+medicalCondition: dcid:Anaemia
+
+Node: dcid:IndexScore_Person_YearsUpto5_ConditionStunted
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+age: dcid:YearsUpto5
+medicalCondition: dcid:Stunted
+
+Node: dcid:Annual_IndexScore_MedicalConditionIncident_ConditionTuberculosis
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:indexScore
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+medicalCondition: dcid:Tuberculosis
+
+Node: dcid:IndexScore_MaternalMortalityEvent
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MaternalMortalityEvent
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+
+Node: dcid:IndexScore_MortalityEvent_YearsUpto5
+typeOf: dcid:StatisticalVariable
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+age: dcid:YearsUpto5
+
+Node: dcid:IndexScore_Person_Government_PhysicianOrNurseAndMidwivesOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+employer: dcid:Government
+occupation: dcid:Physician__NurseAndMidwives
+
+Node: dcid:IndexScore_Person_6To13Year_NotEnrolledInSchool
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+age: [6 13 Year]
+schoolEnrollment: dcid:NotEnrolledInSchool
+
+Node: dcid:IndexScore_Person_EnrolledInSchool_SchoolGrade1To10
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+schoolEnrollment: dcid:EnrolledInSchool
+schoolGradeLevel: dcid:SchoolGrade1To10
+
+Node: dcid:IndexScore_School_ElementarySchool_StudentTeacherRatioUpto30
+typeOf: dcid:StatisticalVariable
+populationType: dcid:School
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+schoolGradeLevel: dcid:ElementarySchool
+studentTeacherRatio: dcid:StudentTeacherRatioUpto30
+
+Node: dcid:IndexScore_Student_SecondarySchool
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+levelOfSchool: dcid:SecondarySchool
+
+Node: dcid:IndexScore_Person_15To49Year_SpousalViolence_Female_Married
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+age: [15 49 Year]
+crimeType: dcid:SpousalViolence
+gender: dcid:Female
+maritalStatus: dcid:Married
+
+Node: dcid:IndexScore_Person_Female_LegislatorOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Legislator
+
+Node: dcid:Count_Household_Toilet_Urban_AsAFractionOf_Count_Household_Urban
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Household_Urban
+facilities: dcid:Toilet
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:IndexScore_Household_Toilet_Rural
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+facilities: dcid:Toilet
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:IndexScore_Household_Toilet_Urban
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+facilities: dcid:Toilet
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:IndexScore_Place_District_OpenDefecationFree
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Place
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+placeType: dcid:District
+socialCondition: dcid:OpenDefecationFree
+
+Node: dcid:IndexScore_Household
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+
+Node: dcid:IndexScore_Household_BankAccount
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Household
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+facilities: dcid:BankAccount
+
+Node: dcid:IndexScore_Person
+typeOf: dcid:StatisticalVariable
+name: "Unemployment rate (%)"
+populationType: dcid:Person
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+
+Node: dcid:IndexScore_Households_PradhanMantriGramSadakYojana_Road
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Households
+measuredProperty: dcid:indexScore
+statType: dcid:measuredValue
+benefitStatus: dcid:PradhanMantriGramSadakYojana
+facilities: dcid:Road

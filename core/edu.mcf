@@ -459,7 +459,7 @@ description: "Describes the lowest grade level offered by School, grade as defin
 Node: dcid:schoolGradeLevel
 typeOf: schema:Property
 name: "schoolGradeLevel"
-rangeIncludes: dcs:SchoolGradeLevelEnum
+rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool
 rangeIncludes: dcs:SchoolLevelEnum
 domainIncludes: dcs:Student
 description: "Describes the grade level of the student in school. For example, SchoolGrade2 defines the student to be in second grade."
@@ -470,7 +470,7 @@ Node: dcid:studentTeacherRatio
 typeOf: schema:Property
 name: "studentTeacherRatio"
 rangeIncludes: schema:Number
-domainIncludes: dcs:Student, dcs:Faculty
+domainIncludes: dcs:Student, dcs:Faculty, dcs:School
 description: "Describes the ratio of student to teachers in the school"
 
 Node: dcid:schoolSubject
@@ -1676,7 +1676,7 @@ description: "The language which is learned."
 Node: dcid:socialVulnerabilityStatus
 name: "socialVulnerabilityStatus"
 typeOf: schema:Property
-domainIncludes: dcs:School, dcs:Student
+domainIncludes: dcs:School, dcs:Student, dcs:Household
 rangeIncludes: dcs:SocialVulnerabilityStatusEnum
 description: "The potential negative effects on communities caused by external stresses on human."
 descriptionUrl: "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"

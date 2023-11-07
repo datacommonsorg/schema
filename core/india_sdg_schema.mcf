@@ -1,0 +1,363 @@
+Node: dcid:benefitStatus
+typeOf: dcs:Property
+name: "benefitStatus"
+domainIncludes: dcid:Household
+isProvisional: dcs:True
+
+Node: dcid:employer
+typeOf: dcs:Property
+name: "employer"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:Class
+isProvisional: dcs:True
+
+Node: dcid:assessmentLevel
+typeOf: dcs:Property
+name: "assessmentLevel"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:AssessmentLevelEnum
+isProvisional: dcs:True
+
+Node: dcid:qualificationStatus
+typeOf: dcs:Property
+name: "qualificationStatus"
+domainIncludes: dcid:Teacher
+rangeIncludes: dcid:QualificationStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:placeType
+typeOf: dcs:Property
+name: "placeType"
+domainIncludes: dcid:Place
+rangeIncludes: dcid:PlaceTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:socialCondition
+typeOf: dcs:Property
+name: "socialCondition"
+domainIncludes: dcid:Place
+rangeIncludes: dcid:SocialConditionEnum
+isProvisional: dcs:True
+
+Node: dcid:generatedSewage
+typeOf: dcs:Property
+name: "generatedSewage"
+rangeIncludes: dcid:GeneratedSewageEnum
+domainIncludes: schema:Place
+isProvisional: dcs:True
+
+Node: dcid:demand
+typeOf: dcs:Property
+name: "demand"
+domainIncludes:House
+isProvisional: dcs:True
+
+Node: dcid:reserve
+typeOf: dcid:Property
+name: "reserve"
+domainIncludes: schema:Water
+isProvisional: dcs:True
+
+Node: dcid:indexScore
+typeOf: dcs:Property
+name: "indexScore"
+domainIncludes: schema:Water, schema:Courthouse, schema:MaternalMortalityEvent, schema:MunicipalWard, schema:Household, schema:CriminalIncidents, schema:Households, schema:House, schema:WasteGenerated, schema:Student, schema:BirthEvent, schema:School, schema:Electricity, schema:MedicalConditionIncident, schema:MortalityEvent, schema:Person, schema:CriminalActivities, schema:Place
+rangeIncludes: dcid:IndexScoreEnum
+isProvisional: dcs:True
+
+Node: dcid:governmentId
+typeOf: dcs:Property
+name: "governmentId"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:GovernmentIdEnum
+isProvisional: dcs:True
+
+Node: dcid:registrationStatus
+typeOf: dcs:Property
+name: "registrationStatus"
+domainIncludes: dcid:BirthEvent
+rangeIncludes: dcid:RegistrationStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:processingStatus
+typeOf: dcs:Property
+name: "processingStatus"
+domainIncludes: dcid:WasteGenerated
+rangeIncludes: dcid:ProcessingStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:coverage
+typeOf: dcs:Property
+name: "coverage"
+domainIncludes: dcid:MunicipalWard
+rangeIncludes: dcid:QuantityRange
+isProvisional: dcs:True
+
+Node: dcid:constructed
+typeOf: dcs:Property
+name: "constructed"
+rangeIncludes: dcid:ConstructedEnum
+domainIncludes:House
+isProvisional: dcs:True
+
+Node: dcid:AssessmentLevelEnum
+typeOf:Class
+subClassOf: dcid:Enumeration
+name:"AssessmentLevelEnum"
+isProvisional: dcs:True
+
+Node: dcid:QualificationStatusEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"QualificationStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:PlaceTypeEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"PlaceTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:SocialConditionEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"SocialConditionEnum"
+isProvisional: dcs:True
+
+Node: dcid:ConstructedEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"ConstructedEnum"
+isProvisional: dcs:True
+
+Node: dcid:ProcessingStatusEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"ProcessingStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:GovernmentIdEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"GovernmentIdEnum"
+isProvisional: dcs:True
+
+Node:dcid:RegistrationStatusEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"RegistrationStatusEnum"
+isProvisional: dcs:True
+
+Node:dcid:IndexScoreEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"IndexScoreEnum"
+isProvisional: dcs:True
+
+Node: dcid:GeneratedSewageEnum
+typeOf:Class
+subClassOf:Enumeration
+name:"GeneratedSewageEnum"
+isProvisional: dcs:True
+
+Node: dcid:BenefitStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BenefitStatusEnum"
+isProvisional: dcs:True
+
+Node:dcid:WithHealthScheme
+typeOf: dcid:USC_HealthInsuranceEnum
+name:"With Health Scheme"
+isProvisional: dcs:True
+
+Node: dcid:EligibleSocialProtectionBenefitUnderMaternityBenefit
+typeOf: dcid:BenefitsStatusEnum
+name: "Eligible Social Protection Benefit Under Maternity Benefit"
+isProvisional: dcs:True
+
+Node: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
+typeOf: dcid:BenefitsStatusEnum
+name: "Receiving Social Protection Benefit Under Maternity Benefit"
+isProvisional: dcs:True
+
+Node: dcid:IndianRupeeUpto5000
+typeOf: dcid:Quantity
+name: "Indian Rupee Upto 5000"
+isProvisional: dcs:True
+
+Node: dcid:PublicDistributionSystem
+typeOf: dcid:BenefitStatusEnum
+name: "Public Distribution System"
+isProvisional: dcs:True
+
+Node: dcid:Stunted
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Stunted"
+isProvisional: dcs:True
+
+Node: dcid:Anaemia
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Anaemia"
+isProvisional: dcs:True
+
+Node:dcid:CoraseCereal
+typeOf:FarmInventoryTypeEnum
+name:"CoraseCereal"
+isProvisional: dcs:True
+
+Node:dcid:Pentavalent
+typeOf:VaccineTypeEnum
+name:"Pentavalent"
+isProvisional: dcs:True
+
+Node: dcid:NurseAndMidwives
+typeOf:SOCv2018Enum
+name:"NurseAndMidwives"
+isProvisional: dcs:True
+
+Node: dcid:SchoolGrade1To10
+typeOf: dcid:SchoolLevelEnum
+name: "School Grade 1To 10"
+isProvisional: dcs:True
+
+Node: dcid:EVS
+typeOf:SchoolSubjectEnum
+name:"Environmental Studies or Environmental Sciences"
+isProvisional: dcs:True
+
+Node: dcid:Pass
+typeOf: dcid:AssessmentLevelEnum
+name: "Pass"
+isProvisional: dcs:True
+
+Node: dcid:SocialScience
+typeOf: dcid:SchoolSubjectEnum
+name:"SocialScience"
+isProvisional: dcs:True
+
+Node: dcid:ProfessionallyQualified
+typeOf: dcid:QualificationStatusEnum
+name: "Professionally Qualified"
+isProvisional: dcs:True
+
+Node: dcid:SpousalViolence
+typeOf: dcid:CrimeTypeEnum
+name: "Spousal Violence"
+isProvisional: dcs:True
+
+Node: dcid:Legislator
+typeOf: dcid:SOCv2018Enum
+name: "Legislator"
+isProvisional: dcs:True
+
+Node: dcid:Toilet
+typeOf: dcid:USC_FacilitiesEnum
+name: "Toilet"
+isProvisional: dcs:True
+
+Node: dcid:District
+typeOf: dcid:PlaceTypeEnum
+name: "District"
+isProvisional: dcs:True
+
+Node: dcid:OpenDefecationFree
+typeOf: dcid:SocialConditionEnum
+name: "Open Defecation Free"
+isProvisional: dcs:True
+
+Node: dcid:SewageTreatement
+typeOf: dcid:USC_FacilitiesEnum
+name: "Sewage Treatement"
+isProvisional: dcs:True
+
+Node: dcid:Renewables
+typeOf: dcid:EnergySourceEnum
+name: "Renewables"
+isProvisional: dcs:True
+
+Node: dcid:ATM
+typeOf: dcid:USC_FacilitiesEnum
+name: "ATM"
+isProvisional: dcs:True
+
+Node: dcid:Road
+typeOf: dcid:USC_FacilitiesEnum
+name: "Road"
+isProvisional: dcs:True
+
+Node: dcid:MobileConnection
+typeOf: dcid:USC_FacilitiesEnum
+name: "Mobile Connection"
+isProvisional: dcs:True
+
+Node: dcid:BharatNetBroadbandService
+typeOf: dcid:USC_FacilitiesEnum
+name: "Bharat Net Broadband Service"
+isProvisional: dcs:True
+
+Node: dcid:UtilisedScheduledCasteSubPlanFund
+typeOf: dcid:BenefitsStatusEnum
+name: "Utilised Scheduled Caste Sub Plan Fund"
+isProvisional: dcs:True
+
+Node: dcid:UtilisedTribalSubPlanFund
+typeOf: dcid:BenefitsStatusEnum
+name: "Utilised Tribal Sub Plan Fund"
+isProvisional: dcs:True
+
+Node: dcid:PradhanMantriAwasYojana
+typeOf: dcid:BenefitStatusEnum
+name: "Pradhan Mantri Awas Yojana"
+isProvisional: dcs:True
+
+Node: dcid:PradhanMantriGramSadakYojana
+typeOf: dcid:BenefitsStatusEnum
+name: "Pradhan Mantri Gram Sadak Yojana"
+isProvisional: dcs:True
+
+Node: dcid:MunicipalWard
+typeOf: dcid:CivicStructure
+name: "Municipal Ward"
+isProvisional: dcs:True
+
+Node: dcid:DoorToDoorWasteCollection
+typeOf: dcid:USC_FacilitiesEnum
+name: "Door To Door Waste Collection"
+isProvisional: dcs:True
+
+Node: dcid:WasteGenerated
+typeOf: dcid:USC_FacilitiesEnum
+name: "Waste Generated"
+isProvisional: dcs:True
+
+Node: dcid:Processed
+typeOf: dcid:ProcessingStatusEnum
+name: "Processed"
+isProvisional: dcs:True
+
+Node: dcid:CrimeAgainstChildren
+typeOf: dcid:CrimeTypeEnum
+name: "Crime Against Children"
+isProvisional: dcs:True
+
+Node: dcid:CorruptionCrime
+typeOf: dcid:CrimeTypeEnum
+name: "Corruption Crime"
+isProvisional: dcs:True
+
+Node: dcid:Registered
+typeOf: dcid:RegistrationStatusEnum
+name: "Registered"
+isProvisional: dcs:True
+
+Node: dcid:Aadhaar
+typeOf: dcid:GovernmentIdEnum
+name: "Aadhaar"
+isProvisional: dcs:True
+
+
+Node: dcid:MGNREGA_Unemployed
+typeOf: dcid:EmploymentStatusEnum
+name: "MGNREGA_ Unemployed"
+isProvisional: dcs:True
