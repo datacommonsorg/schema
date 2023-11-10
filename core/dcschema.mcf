@@ -756,6 +756,21 @@ rangeIncludes: dcs:Number
 description: "A measure of the 'tailedness' of the probability distribution of a real-valued random variable"
 descriptionUrl: "https://en.wikipedia.org/wiki/Kurtosis"
 
+Node: dcid:rankingValue
+typeOf: schema:Property
+name: "rankingValue"
+domainIncludes: schema:Observation
+rangeIncludes: schema:Number
+description: "The ordinal value within a some data when the values are sorted"
+descriptionUrl: "https://en.wikipedia.org/wiki/Ranking_(statistics)"
+
+Node: dcid:decileValue
+typeOf: schema:Property
+name: "decileValue"
+domainIncludes: schema:Observation
+rangeIncludes: schema:Number
+description: "Each of ten equal groups into which a population can be divided according to the distribution of values of a particular variable"
+
 Node: dcid:sampleSize
 typeOf: schema:Property
 name: "sampleSize"
@@ -1015,6 +1030,14 @@ typeOf: schema:Property
 name: "infantMortality"
 description: "The infant mortality rate or count of an administrative area."
 domainIncludes: schema:AdministrativeArea
+rangeIncludes: schema:Number
+
+Node: deprivation
+dcid: dcs:deprivation
+typeOf: schema:Property
+name: "deprivation"
+description: "The deprivation experienced by individuals in an area."
+domainIncludes: schema:Person
 rangeIncludes: schema:Number
 
 Node: dcid:MaternalMortalityEvent
