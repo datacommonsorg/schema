@@ -12,6 +12,19 @@ shortDisplayName: "ATC Code"
 description: "In the ATC classification system, the active substances are classified in a hierarchy with five different levels.  The system has fourteen main anatomical/pharmacological groups or 1st levels. Each ATC main group is divided into 2nd levels which could be either pharmacological or therapeutic groups. The 3rd and 4th levels are chemical, pharmacological or therapeutic subgroups and the 5th level is the chemical substance. The 2nd, 3rd and 4th levels are often used to identify pharmacological subgroups when that is considered more appropriate than therapeutic or chemical subgroups."
 descriptionUrl: "https://www.whocc.no/atc/structure_and_principles/"
 
+Node: dcid:Antibody
+name: "Antibody"
+typeOf: schema:Class
+subClassOf: dcs:Protein
+description: "An antibody is a kind of protective protein which is produced by the immune system when substances from the outer source invade the living organisms. The process of producing the antibodies is called immune response."
+
+Node: dcid:Antigen
+name: "Antigen"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompound
+description: "The invading substances from the outer source which causes the immune response. It refers to a molecule or molecule structure which may interact with the immune cell antigen receptor or antibody. "
+descriptionUrl:"https://en.wikipedia.org/wiki/Antigen"
+
 Node: dcid:BiomedicalElement
 name: "BiomedicalElement"
 typeOf: schema:Class
@@ -777,19 +790,6 @@ description: "A reliability score is manually set for all genes and indicates th
 descriptionUrl: "https://www.proteinatlas.org/about/assays+annotation#if_reliability_score"
 rangeIncludes: dcs:HumanProteinOccurrenceReliabilityEnum
 domainIncludes: dcs:HumanProteinOccurrence
-
-Node: dcid:Antibody
-name: "Antibody"
-typeOf: schema:Class
-subClassOf: dcs:Protein
-description: "An antibody is a kind of protective protein which is produced by the immune system when substances from the outer source invade the living organisms. The process of producing the antibodies is called immune response."
-
-Node: dcid:Antigen
-name: "Antigen"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
-description: "The invading substances from the outer source which causes the immune response. It refers to a molecule or molecule structure which may interact with the immune cell antigen receptor or antibody. "
-descriptionUrl:"https://en.wikipedia.org/wiki/Antigen"
 
 Node: dcid:recognizesAntigen
 typeOf: schema:Property
