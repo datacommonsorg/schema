@@ -756,6 +756,13 @@ rangeIncludes: dcs:Number
 description: "A measure of the 'tailedness' of the probability distribution of a real-valued random variable"
 descriptionUrl: "https://en.wikipedia.org/wiki/Kurtosis"
 
+Node: dcid:decileValue
+typeOf: schema:Property
+name: "decileValue"
+domainIncludes: schema:StatVarObservation
+rangeIncludes: schema:Number
+description: "Each of ten equal groups into which a population can be divided according to the distribution of values of a particular variable"
+
 Node: dcid:sampleSize
 typeOf: schema:Property
 name: "sampleSize"
@@ -1015,6 +1022,14 @@ typeOf: schema:Property
 name: "infantMortality"
 description: "The infant mortality rate or count of an administrative area."
 domainIncludes: schema:AdministrativeArea
+rangeIncludes: schema:Number
+
+Node: deprivation
+dcid: dcs:deprivation
+typeOf: schema:Property
+name: "deprivation"
+description: "The deprivation experienced by individuals in an area."
+domainIncludes: schema:Person
 rangeIncludes: schema:Number
 
 Node: dcid:MaternalMortalityEvent
@@ -2431,16 +2446,16 @@ description: "Identifies a statistical property of Observation."
 Node: dcid:rankFromTop
 typeOf: schema:Property
 name: "rankFromTop"
-domainIncludes: dcs:PlaceStatisticalVariable
+domainIncludes: dcs:PlaceStatisticalVariable, dcs:StatVarObservation
 rangeIncludes: schema:Number
-description: "Rank (from top) of the place among all locations with the same PlaceStatisticalVariable attributes, for a given ranking algorithm."
+description: "Rank (from top) of the place among all locations with the same attributes, for a given ranking algorithm."
 
 Node: dcid:rankFromBottom
 typeOf: schema:Property
 name: "rankFromBottom"
-domainIncludes: dcs:PlaceStatisticalVariable
+domainIncludes: dcs:PlaceStatisticalVariable, dcs:StatVarObservation
 rangeIncludes: schema:Number
-description: "Rank (from bottom) of the place among all locations with the same PlaceStatisticalVariable attributes, for a given ranking algorithm."
+description: "Rank (from bottom) of the place among all locations with the same attributes, for a given ranking algorithm."
 
 Node: dcid:top1000Locations
 typeOf: schema:Property
