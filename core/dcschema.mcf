@@ -3401,4 +3401,188 @@ domainIncludes: schema:Thing
 rangeIncludes: schema:Thing
 description: "Indicates that an entity is included in another entity. For example, a variable (StatisticalVariable) included in an import (Provenance)."
 
+Node: dcid:childBirthOrder
+name: "childBirthOrder"
+rangeIncludes: dcs:ChildBirthOrderEnum
+typeOf: schema:Property
 
+Node: dcid:ChildBirthOrderEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ChildBirthOrderEnum"
+
+Node: dcid:pregnancyHealthPrevention
+name: "pregnancyHealthPrevention"
+rangeIncludes: dcs:PregnancyHealthPreventionEnum
+typeOf: schema:Property
+
+Node: dcid:postBirthCare
+name: "postBirthCare"
+rangeIncludes: dcs:PostBirthCareEnum
+typeOf: schema:Property
+
+Node: dcid:ReceivedWithin24Hour
+typeOf: dcs:PostBirthCareEnum
+name: "Received Within 24 Hour"
+
+Node: dcid:birthConductedBy
+name: "birthConductedBy"
+rangeIncludes: dcs:HealthWorkerEnum
+typeOf: schema:Property
+
+Node: dcid:PostBirthCareEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PostBirthCareEnum"
+
+#Pregnancy Care
+Node: dcid:pregnancyCare
+name: "pregnancyCare"
+rangeIncludes: dcs:PregnancyCareEnum
+typeOf: schema:Property
+
+Node: dcid:PregnancyCareEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PregnancyCareEnum"
+
+Node: dcid:MotherChildProtectionCard
+typeOf: dcs:PregnancyCareEnum
+name: "Mother Child Protection Card"
+
+Node: dcid:PregnancyHealthPreventionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PregnancyHealthPreventionEnum"
+
+Node: dcid:ProtectionAgainstNeonatalTetanus
+typeOf: dcs:PregnancyHealthPreventionEnum
+name: "Protection Against Neonatal Tetanus"
+
+Node: dcid:vaccineDoseReceived
+name: "vaccineDoseReceived"
+rangeIncludes: dcs:QuantityRange
+typeOf: schema:Property
+
+Node: dcid:VaccineDoseReceivedEnum
+subClassOf: schema:Enumeration
+name: "VaccineDoseReceivedEnum"
+typeOf: schema:Class
+
+Node: dcs:VaccineDose
+typeOf: dcs:UnitOfMeasure
+name: "Vaccine Dose"
+description: "Vaccine Dose"
+
+Node: dcid:vaccineInformation
+name: "vaccineInformation"
+rangeIncludes: dcs:VaccineInformationEnum
+typeOf: schema:Property
+
+Node: dcid:VaccineInformationEnum
+subClassOf: schema:Enumeration
+name: "VaccineInformationEnum"
+typeOf: schema:Class
+
+Node: dcid:VaccinationCard
+typeOf: dcs:VaccineInformationEnum
+name: "Vaccination Card"
+
+Node: dcid:MotherRecall
+typeOf: dcs:VaccineInformationEnum
+name: "Mother Recall"
+
+Node: dcid:Penta
+typeOf: dcs:VaccineTypeEnum
+name: "Penta Vaccine"
+
+Node: dcid:HepatitisB
+typeOf: dcs:VaccineTypeEnum
+name: "HepatitisB Vaccine"
+
+Node: dcid:MarriedBefore18Years
+typeOf: dcs:MaritalStatusEnum
+name: "MarriedBefore18Years"
+
+Node: dcid:healthCareAdvice
+name: "healthCareAdvice"
+rangeIncludes: dcs:HealthCareAdviceEnum
+typeOf: schema:Property
+
+Node: dcid:HealthCareAdviceEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HealthCareAdviceEnum"
+
+Node: dcid:HealthWorkerTalkedAboutFamilyPlanning
+typeOf: dcs:HealthCareAdviceEnum
+name: "Health Worker Talked About Family Planning"
+
+Node: dcid:HealthWorkerEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HealthWorkerEnum"
+
+Node: dcid:HealthPersonnel
+typeOf: dcs:HealthWorkerEnum
+name: "Health Personnel"
+
+Node: dcid:Doctor
+typeOf: dcs:HealthWorkerEnum
+name: "Doctor"
+
+Node: dcid:LadyHealthVisitor
+typeOf: dcs:HealthWorkerEnum
+name: "Lady Health Visitor"
+
+Node: dcid:Nurse
+typeOf: dcs:HealthWorkerEnum
+name: "Nurse"
+
+Node: dcid:AuxiliaryNurseMidwifery
+typeOf: dcs:HealthWorkerEnum
+name: "Auxiliary Nurse Midwifery"
+
+Node: dcid:Midwife
+typeOf: dcs:HealthWorkerEnum
+name: "Midwife"
+
+Node: dcid:HealthPersonnel
+typeOf: dcs:HealthWorkerEnum
+name: "Health Personnel"
+
+Node: dcid:HealthProvider
+typeOf: dcs:HealthWorkerEnum
+name: "Health Provider"
+
+Node: dcid:healthEstablishmentType
+name: "healthEstablishmentType"
+typeOf: schema:Property
+domainIncludes: dcs:HealthEstablishment
+rangeIncludes: dcs:HealthEstablishmentTypeEnum
+
+Node: dcid:vaccinationCentre
+name: "vaccinationCentre"
+rangeIncludes: dcs:HealthEstablishmentTypeEnum
+typeOf: schema:Property
+
+Node: dcid:footnote
+typeOf: schema:Property
+name: "footnote"
+description: "Footnote for a StatisticalVariable."
+domainIncludes: dcs:StatisticalVariable
+rangeIncludes: dcs:Text
+
+Node: dcid:doseTimeFrame
+name: "doseTimeFrame"
+rangeIncludes: dcs:DoseTimeFrameEnum
+typeOf: schema:Property
+
+Node: dcid:DoseTimeFrameEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DoseTimeFrameEnum"
+
+Node: dcid:Last6Months
+typeOf: dcs:DoseTimeFrameEnum
+name: "Last6Months"

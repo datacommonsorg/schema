@@ -11167,3 +11167,310 @@ name: "figi"
 description: "Financial Instrument Global Identifier (FIGI) from OpenFIGI, an open system for identifying instruments globally across all asset classes. A FIGI is a 12 character, alphanumeric, randomly generated ID that covers hundreds of millions of active and inactive instruments that never changes once assigned."
 domainIncludes: dcs:Company
 rangeIncludes: dcid:Place
+
+Node: dcid:familyPlanningType
+name: "familyPlanningType"
+domainIncludes: schema:Person
+typeOf: schema:Property
+
+Node: dcid:FamilyPlanningTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "FamilyPlanningTypeEnum"
+
+Node: dcid:AnyFamilyPlanning
+typeOf: dcs:FamilyPlanningTypeEnum
+name: "Any Family Planning"
+
+Node: dcid:ModernFamilyPlanning
+typeOf: dcs:FamilyPlanningTypeEnum
+name: "Modern Family Planning"
+
+Node: dcid:NoFamilyPlanning
+typeOf: dcs:FamilyPlanningTypeEnum
+name: "No Family Planning"
+
+Node: dcid:WithUnmetNeed
+typeOf: dcs:FamilyPlanningTypeEnum
+name: "WithUnmetNeed"
+
+Node: dcid:postnatalCareReceivedFrom
+name: "postnatalCareReceivedFrom"
+rangeIncludes: dcs:HealthWorkerEnum
+typeOf: schema:Property
+
+Node: dcid:HealthWorkerEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HealthWorkerEnum"
+
+Node: dcid:birthControlMethod
+name: "birthControlMethod"
+rangeIncludes: dcs:BirthControlMethodEnum
+typeOf: schema:Property
+
+Node: dcid:BirthControlMethodEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BirthControlMethodEnum"
+
+Node: dcid:Condom
+typeOf: dcs:BirthControlMethodEnum
+name: "Condom"
+
+Node: dcid:Sterilization
+typeOf: dcs:BirthControlMethodEnum
+name: "Sterilization"
+
+Node: dcid:IntrauterineDevice
+typeOf: dcs:BirthControlMethodEnum
+name: "Intrauterine Device"
+
+Node: dcid:PostpartumIntrauterineContraceptiveDevice
+typeOf: dcs:BirthControlMethodEnum
+name: "Postpartum Intrauterine Contraceptive Device"
+
+Node: dcid:Injectables
+typeOf: dcs:BirthControlMethodEnum
+name: "Injectables"
+
+Node: dcid:MaleSterlization
+typeOf: dcs:BirthControlMethodEnum
+name: "Male Sterlization"
+
+Node: dcid:Pill
+typeOf: dcs:BirthControlMethodEnum
+name: "Pill"
+
+Node: dcid:registeredWith
+name: "registered Authority"
+rangeIncludes: dcs:RegisteredAuthorityEnum
+typeOf: schema:Property
+
+Node: dcid:RegisteredAuthorityEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "RegisteredAuthorityEnum"
+
+Node: dcid:CivilAuthority
+typeOf: dcs:RegisteredAuthorityEnum
+name: "Civil Authority"
+
+Node: dcid:typeOfSalt
+name: "typeOfSalt"
+rangeIncludes: dcs:TypeOfSaltEnum
+typeOf: schema:Property
+
+Node: dcid:TypeOfSaltEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "TypeOfSaltEnum"
+
+Node: dcid:IodizedSalt
+typeOf: dcs:TypeOfSaltEnum
+name: "Iodized Salt"
+
+Node: dcid:antenatalStatus
+name: "antenatalStatus"
+rangeIncludes: dcs:AntenatalStatusEnum
+typeOf: schema:Property
+
+Node: dcid:AntenatalStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "AntenatalStatusEnum"
+
+Node: dcid:RegisteredForAntenatalCareWithinFirstTrimester
+typeOf: dcs:AntenatalStatusEnum
+name: "Registered For Antenatal Care Within First Trimester"
+
+Node: dcid:Atleast4AntenatalCareVisit
+typeOf: dcs:AntenatalStatusEnum
+name: "Atleast 4 Antenatal Care Visit"
+
+Node: dcid:FullAntenatalCareVisit
+typeOf: dcs:AntenatalStatusEnum
+name: "Full Antenatal Care Visit"
+
+Node: dcid:houseFacilityStatus
+name: "houseFacilityStatus"
+rangeIncludes: dcs:HouseFacilityStatusEnum
+typeOf: schema:Property
+
+Node: dcid:HouseFacilityStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HouseFacilityStatusEnum"
+
+Node: dcid:ImprovedSanitationFacility
+typeOf: dcs:HouseFacilityStatusEnum
+name: "Improved Sanitation Facility"
+
+Node: dcid:ImprovedDrinkingWaterSource
+typeOf: dcs:HouseFacilityStatusEnum
+name: "Improved Drinking Water Source"
+
+Node: dcid:WithElectricity
+typeOf: dcs:HouseFacilityStatusEnum
+name: "With Electricity"
+
+Node: dcid:vitaminType
+name: "vitaminType"
+rangeIncludes: dcs:VitaminTypeEnum
+typeOf: schema:Property
+
+Node: dcid:VitaminTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "VitaminTypeEnum"
+
+Node: dcid:VitaminA
+typeOf: dcs:VitaminTypeEnum
+name: "Vitamin A"
+
+Node: dcid:foodIntakeType
+name: "foodIntakeType"
+rangeIncludes: dcs:FoodIntakeTypeEnum
+typeOf: schema:Property
+
+Node: dcid:FoodIntakeTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "FoodIntakeTypeEnum"
+
+Node: dcid:SolidFood
+typeOf: dcs:FoodIntakeTypeEnum
+name: "SolidFood"
+
+Node: dcid:NotBreastMilk
+typeOf: dcs:FoodIntakeTypeEnum
+name: "Not BreastMilk"
+
+Node: dcid:SemisolidFood
+typeOf: dcs:FoodIntakeTypeEnum
+name: "Semisolid Food"
+
+Node: dcid:BreastMilk
+typeOf: dcs:FoodIntakeTypeEnum
+name: "Breast Milk"
+
+Node: dcid:PregnantWoman
+typeOf: dcs:Class
+subClassOf: dcs:Person
+name: "PregnantWoman"
+
+Node: dcid:NonPregnantWoman
+typeOf: dcs:Class
+subClassOf: dcs:Person
+name: "NonPregnantWoman"
+
+Node: dcid:Mother
+typeOf: dcs:Class
+subClassOf: dcs:Person
+name: "Mother"
+
+Node: dcid:MenstrualWoman
+typeOf: dcs:Class
+subClassOf: dcs:Person
+name: "MenstrualWoman"
+
+Node: dcid:menstrualHygieneStatus
+name: "menstrualHygieneStatus"
+rangeIncludes: dcs:MenstrualHygieneStatusEnum
+typeOf: schema:Property
+
+Node: dcid:MenstrualHygieneStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "MenstrualHygieneStatusEnum"
+
+Node: dcid:HygienicMethodsOfProtection
+typeOf: dcs:PregnancyCareEnum
+name: "HygienicMethodsOfProtection"
+
+Node: dcid:PublicHealthFacility
+typeOf: dcs:HealthEstablishmentTypeEnum
+name: "PublicHealthFacility"
+
+Node: dcid:PrivateHealthFacility
+typeOf: dcs:HealthEstablishmentTypeEnum
+name: "Private Health Facility"
+
+Node: dcid:Institutional
+typeOf: dcs:HealthEstablishmentTypeEnum
+name: "Institutional"
+
+Node: dcid:dietType
+name: "dietType"
+rangeIncludes: dcs:Text
+typeOf: schema:Property
+
+Node: dcid:DietTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DietTypeEnum"
+
+Node: dcid:AdequateDiet
+typeOf: dcs:DietTypeEnum
+name: "Adequate Diet"
+
+Node: dcid:childBirthMethod
+name: "childBirthMethod"
+rangeIncludes: schema:Text
+typeOf: schema:Property
+
+Node: dcid:ChildBirthMethodEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ChildBirthMethodEnum"
+
+Node: dcid:Cesarean
+typeOf: dcs:ChildBirthMethodEnum
+name: "Cesarean"
+
+Node: dcid:birthCenter
+name: "birthCenter"
+rangeIncludes: dcs:Text
+typeOf: schema:Property
+
+Node: dcid:BirthCenterEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BirthCenterEnum"
+
+Node: dcid:House
+typeOf: dcs:BirthCenterEnum
+name: "House"
+
+Node: dcid:HighHypertension
+typeOf: dcs:HealthOutcomeEnum
+name: "High Hypertension"
+
+Node: dcid:ReceivedBenefitsUnderJananiSurakshaYojana
+typeOf: dcs:PregnancyCareEnum
+name: "Received Benefits Under Janani Suraksha Yojana"
+
+Node: dcid:ModeratelyHighHypertension
+typeOf: dcs:HealthOutcomeEnum
+name: "Moderately High Hypertension"
+
+Node: dcid:VeryHighHypertension
+typeOf: dcs:HealthOutcomeEnum
+name: "Very High Hypertension"
+
+Node: dcid:BodyMassIndexBelowNormal
+typeOf: dcs:BodyMassIndexClassificationEnum
+name: "Body Mass Index Below Normal"
+
+Node: dcid:MarriedBefore21Years
+typeOf: dcs:MaritalStatusEnum
+name: "MarriedBefore21Years"
+
+Node: dcid:CookingMethodEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "CookingMethodEnum"
+
+Node: dcid:CleanFuelForCooking
+typeOf: dcs:CookingMethodEnum
+name: "Clean Fuel For Cooking"
