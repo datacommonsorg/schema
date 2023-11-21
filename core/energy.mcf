@@ -151,6 +151,14 @@ rangeIncludes: schema:Quantity
 domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
 name: "exports"
 
+###US ITA addition
+Node: dcid:tradeBalance
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, dcid:EconomicActivity
+name: "tradeBalance"
+description:"The difference between export and import"
+
 Node: dcid:reserves
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
