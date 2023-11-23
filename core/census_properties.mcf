@@ -63,8 +63,8 @@ Node: educationalAttainment
 dcid: "educationalAttainment"
 name: "educationalAttainment"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:Household
-rangeIncludes: dcs:USC_EducationalAttainmentEnum, dcs:WHO_EducationalAttainmentEnum, dcs:SchoolGradeLevelEnum, dcs:SDG_EducationLevEnum
+domainIncludes: schema:Person, schema:Household, schema:Student
+rangeIncludes: dcs:USC_EducationalAttainmentEnum, dcs:WHO_EducationalAttainmentEnum, dcs:SchoolGradeLevelEnum, dcs:SDG_EducationLevEnum, dcs:EducationalAttainmentEnum
 
 Node: dcid:bachelorsDegreeMajor
 typeOf: schema:Property
@@ -197,13 +197,13 @@ dcid: "languageSpokenAtHome"
 typeOf: schema:Property
 name: "languageSpokenAtHome"
 domainIncludes: schema:Person, dcs:Household
-rangeIncludes: dcs:USC_LanguageSpokenAtHomeEnum
+rangeIncludes: dcs:USC_LanguageSpokenAtHomeEnum, dcs:LanguageSpokenAtHomeEnum
 
 Node: levelOfSchool
 dcid: "levelOfSchool"
 name: "levelOfSchool"
 typeOf: schema:Property
-rangeIncludes: dcs:USC_LevelOfSchoolEnum, dcs:SecondarySchool
+rangeIncludes: dcs:USC_LevelOfSchoolEnum, dcs:SecondarySchool, dcs:MiddleSchool
 domainIncludes: dcs:Student
 
 Node: maritalStatus
@@ -247,7 +247,7 @@ Node: povertyStatus
 dcid: "povertyStatus"
 domainIncludes: schema:Person
 name: "povertyStatus"
-rangeIncludes: dcs:USC_PovertyStatusEnum
+rangeIncludes: dcs:USC_PovertyStatusEnum, dcs:PovertyStatusEnum
 typeOf: schema:Property
 
 ## race defined in K12 (we probably want to move it to dcschema?)
@@ -256,7 +256,7 @@ Node: schoolEnrollment
 dcid: "schoolEnrollment"
 name: "schoolEnrollment"
 rangeIncludes: dcs:USC_SchoolEnrollmentEnum
-domainIncludes: schema:Person, schema:Household
+domainIncludes: schema:Person, schema:Household, schema:Student
 typeOf: schema:Property
 
 Node: spouseAbsentReason

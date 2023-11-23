@@ -4207,3 +4207,74 @@ Node: dcid:StatisticalRegion
 name: "StatisticalRegion"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
+
+Node: dcid:inflationRate
+typeOf: dcs:Property
+name: "inflationRate"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:revenueType
+typeOf: dcs:Property
+name: "revenueType"
+domainIncludes: dcid:Revenue
+rangeIncludes: dcid:RevenueTypeEnum
+
+Node: dcid:grossCapitalFormation
+typeOf: dcs:Property
+name: "grossCapitalFormation"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:NominalGrossDomesticProduct
+typeOf: dcid:Thing
+name: "Nominal Gross Domestic Product"
+
+Node: dcid:Revenue
+typeOf: dcid:Thing
+name: "Revenue"
+
+Node: dcid:birthControlMethod
+typeOf: dcs:Property
+name: "birthControlMethod"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:BirthControlMethodEnum,dcid:Property
+
+Node: dcid:BirthControlMethodEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "BirthControlMethodEnum"
+
+Node: dcid:healthRiskFactors
+typeOf: dcs:Property
+name: "healthRiskFactors"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthRiskFactorsEnum
+
+Node: dcid:healthDiseasePrevention
+typeOf: dcs:Property
+name: "healthDiseasePrevention"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthDiseasePreventionEnum
+
+Node: dcid:antenatalStatus
+typeOf: dcs:Property
+name: "antenatalStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:AntenatalStatusEnum
+
+Node: dcid:treatmentTechnique
+typeOf: dcs:Property
+name: "treatmentTechnique"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:TreatmentTechniqueEnum
+
+Node: dcid:familyMemberType
+typeOf: dcs:Property
+name: "familyMemberType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:FamilyMemberTypeEnum,dcid:Class
+
+Node: dcid:literateLanguage
+typeOf: dcs:Property
+name: "literateLanguage"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:LanguageSpokenAtHomeEnum
