@@ -151,6 +151,19 @@ rangeIncludes: schema:Quantity
 domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
 name: "exports"
 
+Node: dcid:twowayTrade
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, dcid:EconomicActivity
+name: "twowayTrade"
+description:"Total export and import"
+
+###US ITA Addition
+Node: dcid:tradePartner
+typeOf: dcs:Property
+name: "tradePartner"
+rangeIncludes: dcid:Country
+
 Node: dcid:reserves
 typeOf: schema:Property
 rangeIncludes: schema:Quantity

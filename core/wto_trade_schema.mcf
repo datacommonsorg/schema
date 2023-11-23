@@ -2,7 +2,7 @@ Node: dcid:product
 typeOf: dcs:Property
 name: "product"
 domainIncludes: dcid:EconomicActivity
-rangeIncludes: dcid:ProductEnum,dcid:FarmInventoryTypeEnum
+rangeIncludes: dcid:ProductEnum,dcid:FarmInventoryTypeEnum,dcid:EconomicActivity
 isProvisional: dcs:True
 
 Node: dcid:ProductEnum
@@ -29,6 +29,12 @@ name: "exportDestination"
 domainIncludes: dcid:EconomicActivity
 rangeIncludes: dcid:Country,dcid:Place,dcid:ContinentalUnion
 isProvisional: dcs:True
+
+###US ITA Addition
+Node: dcid:tradePartner
+typeOf: dcs:Property
+name: "tradePartner"
+rangeIncludes: dcid:Country
 
 Node: dcid:RestOfTheWorld
 typeOf: dcid:Country
