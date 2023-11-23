@@ -5977,7 +5977,7 @@ source: "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:GrossDomesticProduct, dcs:NominalGrossDomesticProduct, dcs:Revenue
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -8400,7 +8400,7 @@ name: "lodgingUnitType"
 Node: gender
 dcid: "gender"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:BirthEvent, schema:Household
+domainIncludes: schema:Person, schema:BirthEvent, schema:Household, schema:Student, schema:MortalityEvent, schema:PregnantWomen
 name: "gender"
 rangeIncludes: schema:GenderType, dcs:SDG_SexEnum
 
@@ -11212,3 +11212,26 @@ Node: dcid:Jobs
 typeOf: schema:Class
 subClassOf: dcs:Thing
 name: "Jobs"
+
+Node: dcid:familyPlanningType
+typeOf: dcs:Property
+name: "familyPlanningType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:FamilyPlanningTypeEnum
+
+Node: dcid:treatmentTechnique
+typeOf: dcs:Property
+name: "treatmentTechnique"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:TreatmentTechniqueEnum
+
+Node: dcid:lastIntercourseType
+typeOf: dcid:Property
+name: "lastIntercourseType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:LastIntercourseTypeEnum
+
+Node: dcid:PovertyStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PovertyStatusEnum"
