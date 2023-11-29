@@ -43,7 +43,7 @@ Node: dcid:disabilityStatus
 rangeIncludes: dcs:USC_DisabilityStatusEnum, dcs:SDG_DisabilityStatusEnum
 name: "disabilityStatus"
 typeOf: schema:Property
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 
 Node: collegeOrGraduateSchoolEnrollment
 dcid: "collegeOrGraduateSchoolEnrollment"
@@ -63,7 +63,7 @@ Node: educationalAttainment
 dcid: "educationalAttainment"
 name: "educationalAttainment"
 typeOf: schema:Property
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 rangeIncludes: dcs:USC_EducationalAttainmentEnum, dcs:WHO_EducationalAttainmentEnum, dcs:SchoolGradeLevelEnum, dcs:SDG_EducationLevEnum
 
 Node: dcid:bachelorsDegreeMajor
@@ -156,7 +156,7 @@ domainIncludes: dcs:Household
 Node: income
 dcid: "income"
 typeOf: schema:Property
-rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile, dcs:Farm
+rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile, dcs:Farm, dcs:QuantityRange
 name: "income"
 domainIncludes: schema:Person, dcs:Household
 
@@ -189,8 +189,8 @@ typeOf: schema:Property
 dcid: "institutionalization"
 name: "institutionalization"
 description: "The institutionalized population is persons residing in institutional group quarters such as adult correctional facilities, juvenile facilities, skilled-nursing facilities, mental (psychiatric) hospitals and in-patient hospice facilities. People who ineligible, unable, or unlikely to participate in the labor force"
-rangeIncludes: dcs:InstitutionalizationEnum
-domainIncludes: schema:Person
+rangeIncludes: dcs:InstitutionalizationEnum, dcs:USC_InstitutionalizationEnum
+domainIncludes: schema:Person, dcs:Household
 
 Node: languageSpokenAtHome
 dcid: "languageSpokenAtHome"
@@ -256,7 +256,7 @@ Node: schoolEnrollment
 dcid: "schoolEnrollment"
 name: "schoolEnrollment"
 rangeIncludes: dcs:USC_SchoolEnrollmentEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 typeOf: schema:Property
 
 Node: spouseAbsentReason
@@ -280,7 +280,7 @@ dcid: "veteranStatus"
 name: "veteranStatus"
 description: "This property idenfifies if person is a veteran. A veteran is someone who served in the active military, naval or air service, and was discharged or released under conditions other than dishonorable."
 rangeIncludes: dcs:VeteranStatusEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 
 Node: workExperience
 typeOf: schema:Property

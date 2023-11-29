@@ -400,13 +400,13 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization
+domainIncludes: schema:Person, schema:Organization, schema:Household
 
 Node: employmentStatus
 dcid: "employmentStatus"
 typeOf: schema:Property
 name: "employmentStatus"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum
 
 Node: geoNamesId
@@ -599,8 +599,8 @@ rangeIncludes: dcs:OffenderTypeEnum
 Node: dcid:ethnicity
 name: "ethnicity"
 typeOf: schema:Property
-domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents
-rangeIncludes: dcs:EthnicityEnum
+domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents, dcs:Household
+rangeIncludes: dcs:EthnicityEnum, dcs:RaceCodeEnum
 
 Node: dcid:offenderRace
 name: "offenderRace"
@@ -2678,6 +2678,10 @@ typeOf: dcs:HumanSettlementClassificationEnum
 description: "A geographic area that is located outside towns and cities, typically with low population density and small settlements."
 descriptionUrl: "https://en.wikipedia.org/wiki/Rural_area"
 
+Node: dcid:UnknownPlaceOfResidence
+typeOf: dcid:HumanSettlementClassificationEnum
+name: "Unknown Place Of Residence"
+
 Node: dcid:SemiUrban
 name: "SemiUrban"
 typeOf: dcs:HumanSettlementClassificationEnum
@@ -2756,7 +2760,7 @@ typeOf: schema:Property
 name: "residenceType"
 description: "Identifies the type of residence a person resides in."
 rangeIncludes: dcs:USC_ResidenceTypeEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 
 Node: dcid:enrollmentLevel
 typeOf: schema:Property
@@ -3107,6 +3111,31 @@ Node: dcid:Internet
 typeOf: dcs:AmenityFeatureEnum
 name: "Internet"
 
+Node: dcid:internetUsageLocation
+typeOf: dcs:Property
+name: "internetUsageLocation"
+domainIncludes: dcid:Person,dcid:Household
+rangeIncludes: dcid:InternetUsageLocationEnum,dcid:ComputerUsageLocationEnum
+
+Node: dcid:InternetUsageLocationEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "InternetUsageLocationEnum"
+
+Node: dcid:AnyLocation
+typeOf: dcid:InternetUsageLocationEnum
+name: "Any Location"
+
+Node: dcid:Work
+typeOf: dcid:InternetUsageLocationEnum
+name: "Work"
+
+Node: dcid:PublicPlace
+typeOf: dcid:InternetUsageLocationEnum
+name: "Public Place"
+
+
+
 Node: dcid:solute
 typeOf: schema:Property
 name: "solute"
@@ -3401,4 +3430,240 @@ domainIncludes: schema:Thing
 rangeIncludes: schema:Thing
 description: "Indicates that an entity is included in another entity. For example, a variable (StatisticalVariable) included in an import (Provenance)."
 
+
+Node: dcid:NTIA_OtherRace
+typeOf: dcid:RaceCodeEnum
+name: "NTIA Other Race"
+
+Node: dcid:Home
+typeOf: dcid:ComputerUsageLocationEnum
+name: "Home"
+
+Node: dcid:internetUsagePurpose
+typeOf: dcs:Property
+name: "internetUsagePurpose"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:InternetUsagePurposeEnum
+
+Node: dcid:InternetUsagePurposeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "InternetUsagePurposeEnum"
+
+Node: dcid:JobSearchUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Job Search Usage"
+
+Node: dcid:OnlineClassUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Online Class Usage"
+
+Node: dcid:JobTrainningUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Job Trainning Usage"
+
+Node: dcid:FinancialServicesUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Financial Services Usage"
+
+Node: dcid:reasonNotUsingInternetAtHome
+typeOf: dcs:Property
+name: "reasonNotUsingInternetAtHome"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ReasonNotUsingInternetAtHomeEnum
+
+Node: dcid:ReasonNotUsingInternetAtHomeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ReasonNotUsingInternetAtHomeEnum"
+
+Node: dcid:InternetUseElsewhere
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Use Elsewhere"
+
+Node: dcid:InternetNotNeeded
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Not Needed"
+
+Node: dcid:InternetNotInterested
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Not Interested"
+
+Node: dcid:InternetInadequateComputer
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Inadequate Computer"
+
+Node: dcid:InternetExpensive
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Expensive"
+
+Node: dcid:InternetPrivacyConcerns
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Privacy Concerns"
+
+Node: dcid:InternetSecurityConcerns
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Security Concerns"
+
+Node: dcid:InternetUnavailableInArea
+typeOf: dcid:ReasonNotUsingInternetAtHomeEnum
+name: "Internet Unavailable In Area"
+
+Node: dcid:factorForInternetService
+typeOf: dcs:Property
+name: "factorForInternetService"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:FactorForInternetServiceEnum
+
+Node: dcid:FactorForInternetServiceEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "FactorForInternetServiceEnum"
+
+Node: dcid:FactorForHomeInternetAffordability
+typeOf: dcid:FactorForInternetServiceEnum
+name: "Factor For Home Internet Affordability"
+
+Node: dcid:FactorForHomeInternetCustomerService
+typeOf: dcid:FactorForInternetServiceEnum
+name: "Factor For Home Internet Customer Service"
+
+Node: dcid:InternetBundle
+typeOf: dcid:USC_InternetSubscriptionTypeEnum
+name: "Internet Bundle"
+
+Node: dcid:FactorForHomeInternetMobility
+typeOf: dcid:FactorForInternetServiceEnum
+name: "Factor For Home Internet Mobility"
+
+Node: dcid:FactorForHomeInternetReliability
+typeOf: dcid:FactorForInternetServiceEnum
+name: "Factor For Home Internet Reliability"
+
+Node: dcid:FactorForHomeInternetServiceSpeed
+typeOf: dcid:FactorForInternetServiceEnum
+name: "Factor For Home Internet Service Speed"
+
+Node: dcid:electronicGadgetUsed
+typeOf: dcs:Property
+name: "electronicGadgetUsed"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ElectronicGadgetUsedEnum
+
+Node: dcid:ElectronicGadgetUsedEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ElectronicGadgetUsedEnum"
+
+Node: dcid:DesktopUser
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Desktop User"
+
+Node: dcid:TabletUser
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Tablet User"
+
+Node: dcid:LaptopUser
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Laptop User"
+
+Node: dcid:MobileUser
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Mobile User"
+
+Node: dcid:SmartTelivisionUser
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Smart Telivision User"
+
+Node: dcid:EbookReaderUser
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Ebook Reader User"
+
+Node: dcid:HealthDataResearchUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Health Data Research Usage"
+
+Node: dcid:TelecommutesUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Telecommutes Usage"
+
+Node: dcid:EmailUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Email Usage"
+
+Node: dcid:TextMessagingUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Text Messaging Usage"
+
+Node: dcid:WatchingVideosUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Watching Videos Usage"
+
+Node: dcid:FactorForHomeInternetDataLimit
+typeOf: dcid:FactorForInternetServiceEnum
+name: "Factor For Home Internet Data Limit"
+
+Node: dcid:WebBrowsingUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Web Browsing Usage"
+
+Node: dcid:VideoCallsUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Video Calls Usage"
+
+Node: dcid:AudioCallsUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Audio Calls Usage"
+
+Node: dcid:ConferencingUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Conferencing Usage"
+
+Node: dcid:StreamingUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Streaming Usage"
+
+Node: dcid:MediaDownloadUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Media Download Usage"
+
+Node: dcid:HealthMonitoringServicesUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Health Monitoring Services Usage"
+
+Node: dcid:SocialNetworksUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Social Networks Usage"
+
+Node: dcid:OutsideHome
+typeOf: dcid:InternetUsageLocationEnum
+name: "Outside Home"
+
+Node: dcid:FreeInternet
+typeOf: dcid:USC_InternetSubscriptionTypeEnum
+name: "Free Internet"
+
+Node: dcid:WearableDeviceUser
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Wearable Device User"
+
+Node: dcid:Traveling
+typeOf: dcid:InternetUsageLocationEnum
+name: "Traveling"
+
+Node: dcid:Cafeteria
+typeOf: dcid:InternetUsageLocationEnum
+name: "Cafeteria"
+
+Node: dcid:ServiceForSaleUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Service For Sale Usage"
+
+Node: dcid:UploadMediaUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Upload Media Usage"
+
+Node: dcid:GoodsSellingUsage
+typeOf: dcid:InternetUsagePurposeEnum
+name: "Goods Selling Usage"
 

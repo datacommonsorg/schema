@@ -25,8 +25,19 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Purchasing_power_parity"
 Node: dcid:hasComputer
 name: "hasComputer"
 typeOf: schema:Property
-domainIncludes: dcs:Household
+domainIncludes: dcs:Household, dcs:Person
 rangeIncludes: schema:Boolean
+
+Node: dcid:computerUsageLocation
+typeOf: dcs:Property
+name: "computerUsageLocation"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ComputerUsageLocationEnum
+
+Node: dcid:ComputerUsageLocationEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ComputerUsageLocationEnum"
 
 Node: dcid:emittedThing
 name: "emittedThing"
@@ -200,7 +211,7 @@ typeOf: dcs:ExpenditureTypeEnum
 Node: dcid:isInternetUser
 name: "isInternetUser"
 typeOf: schema:Property
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 rangeIncludes: schema:Boolean
 description: "Represents whether a person is considered as an Internet user."
 
