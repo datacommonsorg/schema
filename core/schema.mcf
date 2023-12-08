@@ -5970,7 +5970,7 @@ source: "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -11167,3 +11167,13 @@ name: "figi"
 description: "Financial Instrument Global Identifier (FIGI) from OpenFIGI, an open system for identifying instruments globally across all asset classes. A FIGI is a 12 character, alphanumeric, randomly generated ID that covers hundreds of millions of active and inactive instruments that never changes once assigned."
 domainIncludes: dcs:Company
 rangeIncludes: dcid:Place
+
+Node: dcid:Investment
+typeOf: dcs:Class
+name: "Investment"
+subClassOf: dcs:Thing
+
+Node: dcid:Jobs
+typeOf: schema:Class
+subClassOf: dcs:Thing
+name: "Jobs"

@@ -3438,6 +3438,35 @@ domainIncludes: schema:Thing
 rangeIncludes: schema:Thing
 description: "Indicates that an entity is included in another entity. For example, a variable (StatisticalVariable) included in an import (Provenance)."
 
+Node: dcid:investmentProgram
+typeOf: dcs:Property
+name: "investmentProgram"
+domainIncludes: dcid:Investment
+rangeIncludes: dcid:InvestmentProgramEnum
+description: "The type of program under which the investement is done."
+
+Node: dcid:economicProgram
+typeOf: dcs:Property
+name: "economicProgram"
+domainIncludes: dcid:Investment,dcid:JobsCreated,dcid:JobsSaved,dcid:EconomicActivity
+rangeIncludes: dcid:EconomicProgramTypeEnum
+description: "The administration sector responsible for development"
+
+Node: dcid:investment
+typeOf: dcs:Property
+name: "investment"
+domainIncludes: dcs:EconomicActivity
+
+Node: dcid:investmentSource
+typeOf: dcs:Property
+name: "investmentSource"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:InvestmentSourceEnum
+
+Node: dcid:jobStatus
+typeOf: dcs:Property
+name: "jobStatus"
+rangeIncludes: dcs:JobStatusEnum
 
 Node: dcid:NTIA_OtherRace
 typeOf: dcid:RaceCodeEnum
