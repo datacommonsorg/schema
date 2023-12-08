@@ -142,14 +142,26 @@ name: "outage"
 Node: dcid:imports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel,dcid:EconomicActivity
 name: "imports"
 
 Node: dcid:exports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, dcid:EconomicActivity
 name: "exports"
+
+Node: dcid:tradeBalance
+typeOf: dcs:Property
+name: "tradeBalance"
+domainIncludes: dcid:EconomicActivity
+isProvisional: dcs:True
+
+Node: dcid:twowayTrade
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcid:EconomicActivity
+name: "twowayTrade"
 
 Node: dcid:reserves
 typeOf: schema:Property
