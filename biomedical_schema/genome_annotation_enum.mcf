@@ -1157,3 +1157,80 @@ Node: dcid:DNASequenceRoleNovelPatch
 name: "DNASequenceRoleNovel-patch"
 typeOf: dcs:DNASequenceRoleEnum
 description: "The object is a novel patch to the assembly-unit scaffold."
+
+Node: dcid:AssociationTypeEnum
+name: "AssociationTypeEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "The way by which an association between two entities is made."
+
+Node: dcid:AssociationTypeExperiment
+typeOf: dcs:AssociationTypeEnum
+name: "Experiment"
+description: "An association between two things was made as a result of a scientific experiment or screening."
+
+Node: dcid:AssociationTypeManuallyCurated
+typeOf: dcs:AssociationTypeEnum
+name: "Manually Curated"
+description: "An association between two things was made through manual curation of scientific literature or database annotations."
+
+Node: dcid:AssociationTypeTextMining
+typeOf: dcs:AssociationTypeEnum
+name: "Text Mining"
+description: "An association between two things was made through automated text mining of the scientific literature."
+
+Node: dcid:NonCodingRNATypeEnum
+name: "NonCodingRNATypeEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "A non-coding RNA (ncRNA) is a functional RNA molecule that is not translated into a protein. The DNA sequence from which a functional non-coding RNA is transcribed is often called an RNA gene. Abundant and functionally important types of non-coding RNAs include transfer RNAs (tRNAs) and ribosomal RNAs (rRNAs), as well as small RNAs such as microRNAs, siRNAs, piRNAs, snoRNAs, snRNAs, exRNAs, scaRNAs and the long ncRNAs such as Xist and HOTAIR."
+descriptionUrl: "https://en.wikipedia.org/wiki/Non-coding_RNA"
+
+Node: dcid:NonCodingRNATypeRibosomalRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Ribosomal RNA"
+shortDisplayName: "rRNA"
+description: "Ribosomal ribonucleic acid (rRNA) is a type of non-coding RNA which is the primary component of ribosomes, essential to all cells."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ribosomal_RNA"
+
+Node: dcid:NonCodingRNATypeLongNonCodingRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Long NonCoding RNA"
+shortDisplayName: "lncRNA"
+description: "Long noncoding RNA (LncRNA) is a large class of RNA molecules with size larger than 200 nucleotides. They exhibit cellular functions although having no protein-coding capability."
+descriptionUrl: "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/long-noncoding-rna"
+
+Node: dcid:NonCodingRNATypeLongIntergenicNonCodingRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Long Intergenic NonCoding RNA"
+shortDisplayName: "lincRNA"
+description: "Long intervening/intergenic noncoding RNAs (lincRNAs) are sequences of lncRNA which do not overlap protein-coding genes."
+descriptionUrl: "https://en.wikipedia.org/wiki/Long_non-coding_RNA"
+
+Node: dcid:NonCodingRNATypeSmallNucleolarRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Small Nucleolar RNA"
+shortDisplayName: "snoRNA"
+description: "Small nucleolar RNAs (snoRNAs) are a class of small RNA molecules that primarily guide chemical modifications of other RNAs, mainly ribosomal RNAs, transfer RNAs and small nuclear RNAs."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_nucleolar_RNA"
+
+Node: dcid:NonCodingRNATypeMicroRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "MicroRNA"
+shortDisplayName: "miRNA"
+description: "MicroRNA (miRNA) are small, single-stranded, non-coding RNA molecules containing 21 to 23 nucleotides."
+descriptionUrl: "https://en.wikipedia.org/wiki/MicroRNA"
+
+Node: dcid:NonCodingRNATypeCircularRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "CircularRNA"
+shortDisplayName: "circRNA"
+description: "Circular RNA (or circRNA) is a type of single-stranded RNA which, unlike linear RNA, forms a covalently closed continuous loop."
+descriptionUrl: "https://en.wikipedia.org/wiki/Circular_RNA"
+
+Node: dcid:NonCodingRNATypePromoterAssociatedRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Promoter-Associated RNA"
+shortDisplayName: "pRNA"
+description: "Promoter-associated RNAs (pRNAs) are a family of ~90–100 nt-long divergent RNAs overlapping the promoter of the rRNA (rDNA) operon."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3929421/"

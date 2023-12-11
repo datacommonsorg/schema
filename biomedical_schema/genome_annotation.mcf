@@ -96,6 +96,13 @@ typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description: "A recorded nucleotide on the positive strand of a denoted genome assembly."
 
+Node: dcid:NonCodingRNA
+name: "NonCodingRNA"
+typeOf: schema:Class
+subClassOf: dcs:Gene
+description: "A non-coding RNA (ncRNA) is a functional RNA molecule that is not translated into a protein. The DNA sequence from which a functional non-coding RNA is transcribed is often called an RNA gene. Abundant and functionally important types of non-coding RNAs include transfer RNAs (tRNAs) and ribosomal RNAs (rRNAs), as well as small RNAs such as microRNAs, siRNAs, piRNAs, snoRNAs, snRNAs, exRNAs, scaRNAs and the long ncRNAs such as Xist and HOTAIR."
+descriptionUrl: "https://en.wikipedia.org/wiki/Non-coding_RNA"
+
 Node: dcid:RNATranscript
 name: "RNATranscript"
 typeOf: schema:Class
@@ -1117,3 +1124,46 @@ name: "regressionSlope"
 typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:StatisticalVariable
+
+Node: dcid:nonCodingRNAType
+name: "nonCodingRNAType"
+typeOf: schema:Property
+domainIncludes: dcs:NonCodingRNA
+rangeIncludes: dcs:NonCodingRNATypeEnum
+description: "A non-coding RNA (ncRNA) is a functional RNA molecule that is not translated into a protein. The DNA sequence from which a functional non-coding RNA is transcribed is often called an RNA gene. Abundant and functionally important types of non-coding RNAs include transfer RNAs (tRNAs) and ribosomal RNAs (rRNAs), as well as small RNAs such as microRNAs, siRNAs, piRNAs, snoRNAs, snRNAs, exRNAs, scaRNAs and the long ncRNAs such as Xist and HOTAIR."
+descriptionUrl: "https://en.wikipedia.org/wiki/Non-coding_RNA"
+
+Node: dcid:associationSource
+name: "associationSource"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Text
+description: "The organization that reported an association between two things."
+
+Node: dcid:associationType
+name: "associationType"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: dcs:AssociationTypeEnum
+description: "The way by which an association between two entities is made."
+
+Node: dcid:confidence
+name: "confidence"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Text
+description: "The level of confidence that a given result is accurate."
+
+Node: dcid:synonym
+name: "synonym"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Text
+description: "Alternative names for the given entity."
+
+Node: dcid:zScore
+name: "zScore"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Text
+description: "A statistical measurement that describes a value's relationship to the mean of a group of values in a normal distribution curve."
