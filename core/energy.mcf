@@ -142,14 +142,27 @@ name: "outage"
 Node: dcid:imports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, dcid:EconomicActivity
 name: "imports"
 
 Node: dcid:exports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, dcid:EconomicActivity
 name: "exports"
+
+Node: dcid:tradeBalance
+typeOf: dcs:Property
+name: "tradeBalance"
+domainIncludes: dcid:EconomicActivity
+description: "The difference between the value of exports and imports."
+
+Node: dcid:twowayTrade
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcid:EconomicActivity
+name: "twowayTrade"
+description: "The sum of the value of exports and imports."
 
 Node: dcid:reserves
 typeOf: schema:Property
@@ -1021,6 +1034,7 @@ name: "Monthly"
 Node: dcid:Triennial
 typeOf:StatAccumulationPeriodEnum
 name: "Triennial"
+description: "A period of three years."
 
 Node: dcid:Quarterly
 typeOf: dcs:StatAccumulationPeriodEnum
