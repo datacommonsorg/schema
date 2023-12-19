@@ -1252,3 +1252,17 @@ subClassOf: schema:Enumeration
 Node: dcid:HighSeverity
 name: "High"
 typeOf: dcs:NaturalHazardSeverityEnum
+
+Node: dcid:estimatedRainfall
+typeOf: dcs:Property
+name: "estimatedRainfall"
+rangeIncludes: dcs:Number,dcs:Quantity
+domainIncludes: dcs:Place
+
+
+Node: dcid:percentDeviationValue
+typeOf: dcs:Property
+name: "percentDeviationValue"
+description: "Percentage change between actual and normal measurements."
+rangeIncludes: dcs:Number
+domainIncludes: dcs:Place
