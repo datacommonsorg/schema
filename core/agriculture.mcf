@@ -71,9 +71,14 @@ name: "valueOfSales"
 
 Node: dcid:farmType
 typeOf: schema:Property
-domainIncludes: dcs:Farm
+domainIncludes: dcs:Farm, dcid:LandCover,dcid:FarmInventory
 rangeIncludes: dcs:FarmTypeEnum
 name: "farmType"
+
+Node: dcid:landCoverType
+typeOf: dcs:Property
+name: "landCoverType"
+rangeIncludes: dcid:FarmTypeEnum
 
 Node: dcid:governmentPaymentStatus
 typeOf: schema:Property
@@ -140,6 +145,10 @@ specializationOf: dcs:Cropland
 Node: dcid:IrrigatedLand
 typeOf: dcs:FarmTypeEnum
 name: "IrrigatedLand"
+
+Node: dcid:ArableLand
+typeOf: dcs:FarmTypeEnum,dcs:LandCoverClassEnum
+name: "ArableLand"
 
 Node: dcid:GovernmentPaymentStatusEnum
 typeOf: schema:Class
@@ -428,6 +437,18 @@ Node: dcid:WheatExcludingDurum
 typeOf: dcs:FarmInventoryTypeEnum
 name: "WheatExcludingDurum"
 specializationOf: dcs:Crops
+
+Node: dcid:Cereal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Cereal"
+
+Node: dcid:Fertilizer
+typeOf: dcs:FarmInventoryTypeEnum
+name: "Fertilizer"
+
+Node: dcid:Tractor
+typeOf: dcs:FarmInventoryTypeEnum
+name: "Tractor"
 
 Node: dcid:FarmInventoryStatusEnum
 typeOf: schema:Class

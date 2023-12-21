@@ -963,6 +963,10 @@ Node: dcid:FederalCollege
 typeOf: dcs:SchoolLevelEnum
 name: Federal College
 
+Node: dcid:TertiarySchool
+name: "TertiarySchool"
+typeOf: dcid:SchoolLevelEnum
+
 ## Public School Type Enum
 
 Node: dcid:PublicSchoolTypeEnum
@@ -1448,6 +1452,14 @@ alternateName: "ISCED Level 8 (Doctorate Degree)"
 description: "Doctorate degree or equivalent level."
 typeOf: dcid:SchoolGradeLevelEnum
 iscedLevel: "ISCEDLevel8"
+
+Node: dcid:NoEducation
+name: "NoEducation"
+typeOf: dcid:SchoolGradeLevelEnum
+
+Node: dcid:SecondaryEducation
+name: "SecondaryEducation"
+typeOf: dcid:SchoolGradeLevelEnum
 
 ## UDISE School Enum
 
@@ -2288,5 +2300,3 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:EducationalMajorEnum
 name: "doctorateDegreeMajor"
-
-

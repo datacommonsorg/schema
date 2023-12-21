@@ -395,6 +395,12 @@ typeOf: schema:Property
 domainIncludes: schema:Observation
 name: "duration"
 
+Node: schoolingDuration
+dcid: "schoolingDuration"
+typeOf: schema:Property
+domainIncludes: schema:Student
+name: "schoolingDuration"
+
 Node: age
 dcid: "age"
 name: "age"
@@ -1635,6 +1641,17 @@ subClassOf: schema:Thing
 name: "UnitOfMeasure"
 dcid: "UnitOfMeasure"
 description: "A unit used to denote a quantitative measurement."
+
+Node: dcid:HectarePerPerson
+typeOf: dcs:UnitOfMeasure
+name: "HectarePerPerson"
+description: "A unit person per hectare area."
+
+Node: dcid:KilogramPerHectare
+typeOf: dcs:UnitOfMeasure
+name: "KilogramPerHectare"
+description: "A unit per kilogram per hectare area."
+
 
 Node: LengthUnitOfMeasure
 typeOf: schema:Class

@@ -4173,7 +4173,7 @@ Node: yield
 dcid: "yield"
 name: "yield"
 typeOf: schema:Property
-domainIncludes: schema:HowTo
+domainIncludes: schema:HowTo, schema:Farm, dcs:FarmInventory
 rangeIncludes: schema:Text
 
 Node: thumbnail
@@ -7367,6 +7367,28 @@ name: "dateVehicleFirstRegistered"
 domainIncludes: schema:Vehicle
 typeOf: schema:Property
 
+Node: dcid:vehicleRegistrationStatus
+typeOf: dcs:Property
+name: "vehicleRegistrationStatus"
+domainIncludes: dcid:FarmInventory
+rangeIncludes: dcid:VehicleRegistrationStatusEnum
+
+Node: dcid:VehicleRegistrationStatusEnum
+name: "VehicleRegistrationStatusEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "An enumeration of registered vehicle"
+
+Node: dcid:vehiclesRegistered
+typeOf: dcs:Property
+name: "vehiclesRegistered"
+rangeIncludes: dcid:VehicleRegistrationStatusEnum
+domainIncludes: dcid:FarmInventory
+
+Node: dcid:VehicleRegistered
+typeOf: dcid:VehicleRegistrationStatusEnum
+name: "Vehicle Registered"
+
 Node: GroupBoardingPolicy
 dcid: "GroupBoardingPolicy"
 typeOf: schema:BoardingPolicyType
@@ -10536,6 +10558,12 @@ source: "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 domainIncludes: schema:Vehicle
 name: "fuelConsumption"
 rangeIncludes: schema:QuantitativeValue
+
+Node: dcid:consumption
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:FarmInventory
+name: "consumption"
 
 Node: pickupLocation
 dcid: "pickupLocation"
