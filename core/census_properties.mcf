@@ -116,7 +116,7 @@ typeOf: schema:Property
 dcid: "householderWorkStatus"
 name: "householderWorkStatus"
 description: "Work status of the householder"
-rangeIncludes: dcs:USC_WorkStatusEnum
+rangeIncludes: dcs:USC_WorkStatusEnum, dcid:EmploymentEnum, dcid:EmploymentStatusEnum
 domainIncludes: dcs:Household
 
 Node: householderEducationalAttainment
@@ -156,7 +156,7 @@ domainIncludes: dcs:Household
 Node: income
 dcid: "income"
 typeOf: schema:Property
-rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile, dcs:Farm, dcs:QuantityRange
+rangeIncludes: schema:Number, dcs:Quantity, dcs:Percentile, dcs:Farm
 name: "income"
 domainIncludes: schema:Person, dcs:Household
 
