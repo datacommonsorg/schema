@@ -36,7 +36,7 @@ name: "sulfurContent"
 Node: dcid:heatContent
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Fuel
+domainIncludes: schema:Fuel, schema:Coal
 name: "heatContent"
 description: "The amount of heat energy available to be released by the transformation or use of a specified physical unit of an energy form (e.g., a ton of coal, a barrel of oil, a kilowatt hour of electricity, a cubic foot of natural gas, or a pound of steam)."
 descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=H"
@@ -1213,6 +1213,11 @@ typeOf: dcs:EnergyUnitOfMeasure
 description: "A mass measurement unit equal to 1,000 Short Tons."
 name: "ThousandShortTons"
 shortDisplayName: "kST"
+
+Node: dcid:USDollarPerMMBtu
+typeOf: dcs:EnergyUnitOfMeasure
+name: "US Dollar Per MMBtu"
+description: "A standard unit used to express the cost or price of a specific quantity of energy. It quantifies the value in US Dollars for every one million British Thermal Units (1,000,000 BTUs), often applied in the pricing of natural gas and other fuels in energy markets."
 
 Node: dcid:MillionShortTons
 typeOf: dcs:EnergyUnitOfMeasure
