@@ -60,6 +60,14 @@ domainIncludes: schema:Place
 rangeIncludes: schema:Text
 description: "An identifier for a place, usually assigned by an administrative agency. For example, Miami-Dade county has a FIPS ID 12086 given by the US government."
 
+Node: dcid:usCensusGeoId
+name: "usCensusGeoId"
+typeOf: schema:Property
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+description: "A geographic identifier that uniquely identify all administrative/legal and statistical geographic areas for which the Census Bureau tabulates data. Some of the most common administrative/legal and statistical geographic entities with unique GEOIDs include states, counties, congressional districts, core based statistical areas (metropolitan and micropolitan areas), census tracts, block groups and census blocks."
+descriptionUrl: "https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html"
+
 Node: dcid:marginOfError
 name: "marginOfError"
 typeOf: schema:Property
