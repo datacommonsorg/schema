@@ -273,6 +273,8 @@ Node: typeOfSchool
 dcid: "typeOfSchool"
 name: "typeOfSchool"
 typeOf: schema:Property
+domainIncludes: dcid:School, dcid:ClassRoom, dcid:Student, dcid:Children, dcid:Teacher
+rangeIncludes: dcid:PublicSchool, dcid:PrivateSchool
 
 Node: veteranStatus
 typeOf: schema:Property
@@ -389,7 +391,7 @@ Node: dcid:residentStatus
 typeOf: schema:Property
 name: "residentStatus"
 description: "The status of a person's residence in a place, e.g. \"lived in the same house 1 year ago.\""
-domainIncludes: dcs:Person
+domainIncludes: dcs:Person, dcid:EconomicActivity
 rangeIncludes: dcs:USC_ResidentStatusEnum, dcs:ResidentStatusEnum
 
 Node: dcid:facilities

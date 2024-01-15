@@ -457,7 +457,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, dcid:Student
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -887,7 +887,7 @@ Node: dcid:grossDomesticProduct
 typeOf: schema:Property
 name: "grossDomesticProduct"
 rangeIncludes: schema:MonetaryAmount
-domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum
+domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum, dcid:EconomicActivity
 description: "Gross domestic product (GDP) is the monetary value of all the finished goods and services produced within a place in a specific time period"
 
 Node: dcid:growthRate
@@ -1476,7 +1476,7 @@ Node: dcid:lendingEntity
 typeOf: dcs:Property
 name: "lendingEntity"
 domainIncludes: dcid:Debt
-rangeIncludes: dcid:LendingEntityEnum,dcid:Country
+rangeIncludes: dcid:LendingEntityEnum,dcid:Country, dcid:DonationSourceEnum
 
 Node: dcid:amountPrincipalRepayment
 typeOf: dcs:Property
@@ -3037,8 +3037,8 @@ rangeIncludes: dcs:MedicalTestResultEnum
 Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
-domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum
+domainIncludes: schema:Person, dcid:EconomicActivity
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum, dcid:EconomicActivitySourceEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -3618,7 +3618,8 @@ description: "Type of income a person received."
 Node: dcid:incomeSource
 typeOf: dcs:Property
 name: "incomeSource"
-rangeIncludes: dcs:IncomeSourceEnum
+rangeIncludes: dcs:IncomeSourceEnum, dcid:EconomicActivitySourceEnum
+domainIncludes: dcid:EconomicActivity
 description: "Priority level of the job a person is getting an income from. A Main Job or All Jobs"
 
 Node: dcid:consumerGoodsCategory

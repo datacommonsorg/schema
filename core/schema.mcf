@@ -8502,7 +8502,7 @@ name: "lodgingUnitType"
 Node: gender
 dcid: "gender"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:BirthEvent, schema:Household
+domainIncludes: schema:Person, schema:BirthEvent, schema:Household, schema:Student, schema:Teacher
 name: "gender"
 rangeIncludes: schema:GenderType, dcs:SDG_SexEnum
 
@@ -11670,3 +11670,9 @@ nameWithLanguage: "Cestas de alimentos@pt"
 subClassOf: dcs:Thing
 description: "The basic food basket in Brazil takes into account the prices of 13 food products that are necessary to guarantee, for one month, the sustenance of an adult worker."
 descriptionUrl: "https://www.statista.com/statistics/1382282/average-price-basic-food-basket-brazil/#:~:text=The%20basic%20food%20basket%20in,of%20over%20739%20Brazilian%20reals."
+
+Node: dcid:Establishment
+typeOf: schema:Class
+subClassOf: dcid:Thing
+name: "Establishment"
+

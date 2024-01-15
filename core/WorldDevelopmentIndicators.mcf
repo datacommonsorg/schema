@@ -142,8 +142,8 @@ description: "The activity of making, providing, purchasing, or selling goods or
 Node: dcid:activitySource
 name: "activitySource"
 typeOf: schema:Property
-domainIncludes: dcs:EconomicActivity
-rangeIncludes: dcs:EconomicActivitySourceEnum
+domainIncludes: dcs:EconomicActivity, dcid:Person, dcid:Debt
+rangeIncludes: dcs:EconomicActivitySourceEnum, dcid:EnergyConsumptionSectorEnum, dcid:Production, dcid:Class
 description: "The source of economic activity. For example, GDP & GNI."
 
 Node: dcid:EconomicActivitySourceEnum
@@ -264,7 +264,7 @@ name: "medicalCondition"
 typeOf: schema:Property
 description: "A medical condition is a broad term that includes all diseases and disorders."
 descriptionUrl: "https://en.wikipedia.org/wiki/Lists_of_diseases"
-domainIncludes: schema:Person, dcs:Disease, dcs:WHO/PregnantWomen, dcs:MedicalConditionIncident
+domainIncludes: schema:Person, dcs:Disease, dcs:WHO/PregnantWomen, dcs:MedicalConditionIncident, dcid:MortalityEvent
 rangeIncludes: dcs:MedicalConditionIncidentTypeEnum, dcs:Disease, dcs:HealthOutcomeEnum, dcs:ICD10_113CausesOfDeath
 
 Node: dcid:Alcohol
