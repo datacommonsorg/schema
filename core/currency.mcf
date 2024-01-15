@@ -472,7 +472,7 @@ description: "Danish Krone."
 Node: dcid:AIF
 typeOf: dcs:Currency
 name: "AIF"
-description: "Affars and Issas Franc (historical)."
+description: "Affairs and Issas Franc (historical)."
 
 Node: dcid:DJF
 typeOf: dcs:Currency
@@ -1448,12 +1448,12 @@ Node: dcid:fromCurrency
 typeOf: schema:Property
 name: "fromCurrency"
 description: "Exchange rate from currency."
-domainIncludes: schema:Place
+domainIncludes: schema:Place, dcid:Currency
 rangeIncludes: dcs:Currency
 
 Node: dcid:toCurrency
 typeOf: schema:Property
 name: "toCurrency"
 description: "Exchange rate to currency."
-domainIncludes: schema:Place
+domainIncludes: schema:Place, dcid:Currency
 rangeIncludes: dcs:Currency
