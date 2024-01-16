@@ -1,0 +1,99 @@
+Node: dcid:comparisonRegion
+typeOf: schema:Property
+name: comparisonRegion
+description: "For Statistical variables whose definition includes comparisons with other places within a set of geographies, the GeoRegion is the set of geographies to compare with"
+domainIncludes: dcs:StatisticalVariable
+rangeIncludes: dcs:GeoRegion, dcs:Place
+
+Node: dcid:EnglishLowerLayerSuperOutputAreas
+typeOf: dcs:GeoRegion
+name: "English Lower Layer Super Output Areas (LSOA) 2011"
+description: "The set of Lower Layer Super Output Areas (LSOAs) within England from the UK Census 2011"
+
+Node: dcid:deprivationDomain
+name: "deprivationDomain"
+typeOf: dcs:Property
+description: "This property contains what particular aspect of deprivation is being measures, things like employment, income, or health"
+domainIncludes: dcs:StatisticalVariable
+rangeIncludes: dcs:DeprivationDomain
+
+Node: dcid:DeprivationDomain
+name: "DeprivationDomain"
+typeOf: schema:Class
+subClassOf: schema:Intangible
+description: "An area of life in which an individual can be deprived, for example income, employment, or health"
+
+Node: dcid:IncomeDeprivation
+name: "IncomeDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+
+Node: dcid:EmploymentDeprivation
+name: "EmploymentDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+
+Node: dcid:EducationSkillsAndTrainingDeprivation
+name: "EducationSkillsAndTrainingDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+
+Node: dcid:AdultSkillsDeprivation
+name: "AdultSkillsDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation caused by poor educational attainment or attendance in children or young people - the "flow" or education deprivation"
+
+Node: dcid:ChildrenAndYoungPeopleEducationDeprivation
+name: "ChildrenAndYoungPeopleEducationDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation caused by poor educational attainment, skills, or language proficiency in adults - the "stock" of education deprivation"
+
+Node: dcid:HealthAndDisabilityDeprivation
+name: "HealthAndDisabilityDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation from poor health outcomes and disability"
+
+Node: dcid:CrimeDeprivation
+name: "CrimeDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+
+Node: dcid:BarriersToHousingAndServices
+name: "BarriersToHousingAndServices"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation from barriers to housing or local services"
+
+Node: dcid:GeographicalBarriersToServices
+name: "GeographicalBarriersToServices"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation from factors like physical distance to local services such as food, healthcare, or education"
+
+Node: dcid:HousingDeprivation
+name: "HousingDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation from barriers to housing like homelessness, overcrowding, or poor housing affordability"
+
+Node: dcid:LivingEnvironmentDeprivation
+name: "LivingEnvironmentDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation from poor quality of the local environment"
+
+Node: dcid:IndoorLivingEnvironmentDeprivation
+name: "IndoorLivingEnvironmentDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation from the indoor local environment from factors like poor quality housing"
+
+Node: dcid:OutdoorLivingEnvironmentDeprivation
+name: "OutdoorLivingEnvironmentDeprivation"
+typeOf: schema:Class
+subClassOf: dcid:DeprivationDomain
+description: "Deprivation from the outdoor local environment from factors like air quality or traffic accidents"
+
