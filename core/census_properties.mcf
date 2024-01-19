@@ -574,3 +574,23 @@ rangeIncludes: dcs:TransportationTypeEnum
 domainIncludes: dcid:Household, dcid:Person
 name: "transportationType"
 description: "Transportation type used by Household/Person."
+
+Node: dcid:carpoolOccupancy
+typeOf: dcid:QuantityRange
+name: "carpoolOccupancy"
+description: "The count of people carpooling to work"
+
+Node: dcid:commuteType
+typeOf: schema:Property
+name: "commuteType"
+rangeIncludes: dcid:CommuteTypeEnum
+
+Node: dcid:commuteStartTime
+typeOf: schema:Property
+name: "commuteStartTime"
+rangeIncludes: dcid:TimeUnitOfMeasure
+
+Node: dcid:numberOfVehiclesInHousehold
+typeOf: schema:Property
+name: "numberOfVehiclesInHousehold"
+rangeIncludes: Quantity
