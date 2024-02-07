@@ -3446,7 +3446,8 @@ description: "Priority level of the job a person is getting an income from. A Ma
 Node: dcid:consumerGoodsCategory
 typeOf: schema:Property
 name: "consumerGoodsCategory"
-rangeIncludes: dcs:ConsumerGoodsCategoryEnum
+domainIncludes: dcs:ConsumerGoodsAndServices
+rangeIncludes: dcs:ConsumerGoodsCategoryEnum, dcs:FarmInventoryTypeEnum, dcs:ProductEnum, dcs:EnergySourceEnum, dcs:SubstanceTypeEnum, dcs:TobaccoUsageTypeEnum, dcs:EmissionSourceEnum
 description: "Products and Services that fall under Consumer Price Index"
 
 Node: dcid:varianceValue
