@@ -153,7 +153,7 @@ name: "exports"
 
 Node: dcid:reserves
 typeOf: schema:Property
-rangeIncludes: schema:Quantity
+rangeIncludes: schema:Quantity, dcid:EnergySourceEnum
 domainIncludes: schema:Coal, schema:Energy, schema:Fuel
 name: "reserves"
 
@@ -376,6 +376,13 @@ Node: dcid:WashedCoal
 typeOf: dcs:EnergySourceEnum
 name: "Washed Coal"
 
+Node: dcid:ImportedCoal
+typeOf: dcid:EnergySourceEnum
+name: "Imported Coal"
+
+Node: dcid:CoalProduct
+typeOf: dcid:EnergySourceEnum
+name: "Coal Product"
 
 Node: dcid:CombustibleFuel
 typeOf: dcs:EnergySourceEnum
@@ -787,6 +794,11 @@ typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Textile and leather industry"
 specializationOf: dcid:Manufacturing
 
+Node: dcid:OtherIndustry
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Other Industry"
+description: "Other industries that are not mentioned by any name particularly."
+
 Node: dcid:UN_OtherManufacturingIndustry
 typeOf: dcs:EnergyConsumptionSectorEnum
 name: "UN Other manufacturing industry"
@@ -1002,6 +1014,62 @@ Node: dcid:NonEnergyIndustry
 typeOf: dcs:EnergyConsumptionSectorEnum
 name: "Non-energy industry"
 specializationOf: dcid:Industry
+
+Node: dcid:SteelAndWashery
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Steel And Washery"
+
+Node: dcid:Chemical
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Chemical"
+
+Node: dcid:Chemical
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Chemical"
+
+Node: dcid:Cokery
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Cokery"
+
+Node: dcid:CollieryOwnConsumption
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Colliery Own Consumption"
+
+Node: dcid:CollieryStaff
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Colliery Staff"
+
+Node: dcid:TextilieAndRayon
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Textilie And Rayon"
+
+Node: dcid:OtherBasicMetal
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Other Basic Metal"
+
+Node: dcid:CapitivePower
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Capitive Power"
+
+Node: dcid:UtilityPower
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Utility Power"
+
+Node: dcid:MetallurgicalUseCokery
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Metallurgical Use Cokery"
+
+Node: dcid:MetallurgicalUseDirectFeed
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Metallurgical Use Direct Feed"
+
+Node: dcid:SpongeIron
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Sponge Iron"
+
+Node: dcid:SteelBoiler
+typeOf: dcid:EnergyConsumptionSectorEnum
+name: "Steel Boiler"
 
 ## StatAccumulationPeriodEnum
 
@@ -1783,8 +1851,8 @@ name: "Fuel loss during extraction"
 
 Node: dcid:reserveType
 typeOf: schema:Property
-rangeIncludes: schema:EnergyReservesEnum
-domainIncludes: schema:Fuel, schema:Energy
+rangeIncludes: schema:ReserveTypeEnum
+domainIncludes: schema:Fuel, schema:Energy, dcid:Coal
 name: "reserveType"
 
 ## Energy Reserves Enum
@@ -1817,6 +1885,28 @@ name: "Hydraulic resources"
 Node: dcid:UN_OtherEnergyReserves
 typeOf: dcid:EnergyReservesEnum
 name: "UN other energy reserves"
+
+### ReserveTypeEnum
+Node: dcid:ReserveTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ReserveTypeEnum"
+
+### ReserveTypeEnumvalues
+Node: dcid:Proved
+typeOf: dcid:ReserveTypeEnum
+name: "Proved"
+description: "The amount of reserve that is proved to be existing"
+
+Node: dcid:Inferred
+typeOf: dcid:ReserveTypeEnum
+name: "Inferred"
+description: "The amount of reserve that is deduced or concluded to be existing from evidence"
+
+Node: dcid:Indicated
+typeOf: dcid:ReserveTypeEnum
+name: "Indicated"
+description: "The amount of reserve that is indicated to be existing"
 
 ## Energy Stocks Enum
 
@@ -2058,7 +2148,7 @@ Node: dcid:energySource
 typeOf: schema:Property
 name: "energySource"
 rangeIncludes: dcid:EnergySourceEnum
-domainIncludes: dcs:PowerPlantUnit
+domainIncludes: dcs:PowerPlantUnit, dcs:Coal
 
 Node: dcid:primeMover
 typeOf: schema:Property
@@ -2659,6 +2749,122 @@ typeOf: EmissionSourceEnum
 name: "Coal Mining"
 description: "Coal mining and post-mining activities."
 specializationOf: dcid:FossilFuelOperations
+
+###Coal Mining Sector
+
+Node: dcid:coalMiningSector
+typeOf: dcid:Property
+name: "coalMiningSector"
+domainIncludes: dcid:Coal
+rangeIncludes: dcid:CoalMiningSectorEnum
+
+Node: dcid:CoalMiningSectorEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CoalMiningSectorEnum"
+
+Node: dcid:Private
+typeOf: dcid:CoalMiningSectorEnum
+name: "Private"
+
+Node: dcid:CIL
+typeOf: dcid:CoalMiningSectorEnum
+name: "Coal India Limited(CIL)"
+
+Node: dcid:OtherPublic
+typeOf: dcid:CoalMiningSectorEnum
+name: "Other Public Sectors"
+
+##### Coal Grade
+
+Node: dcid:coalProductionGrade
+typeOf: dcid:Property
+name: "coalProductionGrade"
+domainIncludes: dcid:Coal
+rangeIncludes: dcid:CoalProductionGradeEnum
+
+Node: dcid:CoalProductionGradeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CoalProductionGradeEnum"
+
+Node: dcid:Steel-II
+typeOf: dcid:CoalProductionGradeEnum
+name: "Steel- II"
+
+Node: dcid:Wash-III
+typeOf: dcid:CoalProductionGradeEnum
+name: "Wash-III"
+
+Node: dcid:AGrade
+typeOf: dcid:CoalProductionGradeEnum
+name: "A Grade Coal"
+
+Node: dcid:CGrade
+typeOf: dcid:CoalProductionGradeEnum
+name: "C Grade Coal"
+
+Node: dcid:GGrade
+typeOf: dcid:CoalProductionGradeEnum
+name: "G Grade Coal"
+
+Node: dcid:DGrade
+typeOf: dcid:CoalProductionGradeEnum
+name: "D Grade Coal"
+
+Node: dcid:Ungraded
+typeOf: dcid:CoalProductionGradeEnum
+name: "Ungraded"
+
+Node: dcid:SC-I
+typeOf: dcid:CoalProductionGradeEnum
+name: "SC-I"
+
+Node: dcid:Steel-I
+typeOf: dcid:CoalProductionGradeEnum
+name: "Steel-I"
+
+Node: dcid:FGrade
+typeOf: dcid:CoalProductionGradeEnum
+name: "F Grade Coal"
+
+Node: dcid:BGrade
+typeOf: dcid:CoalProductionGradeEnum
+name: "B Grade Coal"
+
+Node: dcid:Wash-II
+typeOf: dcid:CoalProductionGradeEnum
+name: "Wash-II"
+
+Node: dcid:SLV1
+typeOf: dcid:CoalProductionGradeEnum
+name: "SLV1"
+
+Node: dcid:Wash-IV
+typeOf: dcid:CoalProductionGradeEnum
+name: "Wash-IV"
+
+Node: dcid:EGrade
+typeOf: dcid:CoalProductionGradeEnum
+name: "E Grade Coal"
+
+Node: dcid:Wash-I
+typeOf: dcid:CoalProductionGradeEnum
+name: "Wash-I"
+
+Node: dcid:SC-1
+typeOf: dcid:CoalProductionGradeEnum
+name: "SC-1"
+
+Node: dcid:Wash-V
+typeOf: dcid:CoalProductionGradeEnum
+name: "Wash-V"
+
+Node: dcid:Wash-VI
+typeOf: dcid:CoalProductionGradeEnum
+name: "Wash- VI"
+
+######
 
 Node: dcid:SolidFuelTransformation
 typeOf: EmissionSourceEnum
