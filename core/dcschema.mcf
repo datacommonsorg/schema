@@ -2646,6 +2646,12 @@ domainIncludes: dcs:PlaceStatisticalVariable
 rangeIncludes: dcs:Class
 description: "The common place type for the related locations for a PlaceStatisticalVariable."
 
+Node: dcid:placeType
+typeOf: dcs:Property
+name: "placeType"
+domainIncludes: dcid:Establishment
+rangeIncludes: dcid:Place
+
 Node: dcid:rankByPerCapita
 typeOf: schema:Property
 name: "rankByPerCapita"
@@ -2747,10 +2753,91 @@ subClassOf: dcs:Incident, schema:MedicalEntity
 description: "A medical condition incident, such as a case of pneumonia."
 
 Node: dcid:incidentType
-rangeIncludes: dcs:MedicalConditionIncidentTypeEnum
-domainIncludes: dcs:Incident
+rangeIncludes: dcs:MedicalConditionIncidentTypeEnum, dcid:CauseOfDeathEnum,dcid:CauseOfDeathAndDisabilityEnum,dcid:ICD10_113CausesOfDeath,dcid:AccidentCauseEnum
+domainIncludes: dcs:Incident, dcid:MedicalConditionIncident
 typeOf: schema:Property
 name: "incidentType"
+
+Node: dcid:FallFromHeight
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Fall From Height"
+
+Node: dcid:CollapseOfBuildings
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Collapse Of Buildings"
+
+Node: dcid:InjuriesDuringWork
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Injuries During Work"
+
+Node: dcid:Scuffles
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Scuffles"
+
+Node: dcid:PoisonGasAndElectricShocks
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Poison Gas And Electric Shocks"
+
+Node: dcid:RenalColicAndDifferentIntestinalDiseases
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Renal Colic And Different Intestinal Diseases"
+
+Node: dcid:HardBirthAndBleeding
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Hard Birth And Bleeding"
+
+Node: dcid:Burns
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Burns"
+
+Node: dcid:Poisoning
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Poisoning"
+
+Node: dcid:SportsGamesAccidents
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Sports Games Accidents"
+
+
+Node: dcid:InjuryFromOtherReasons
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Injury From Other Reasons"
+
+Node: dcid:Bleeding
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Bleeding"
+
+Node: dcid:Wounds
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Wounds"
+
+Node: dcid:LossOfConsciousness
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Loss Of Consciousness"
+
+Node: dcid:Suffocation
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Suffocation"
+
+Node: dcid:InsectBites
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Insect Bites"
+
+Node: dcid:Dislocation
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Dislocation"
+
+Node: dcid:Fracture
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Fracture"
+
+Node: dcid:Anaesthetics
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Anaesthetics"
+
+Node: dcid:ScorpionOrSnakeBites
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Scorpion Or Snake Bites"
 
 Node: dcid:medicalStatus
 rangeIncludes: dcs:MedicalStatusEnum, dcs:MedicalEventEnum
@@ -2872,6 +2959,11 @@ Node: dcid:Bedrooms
 typeOf: dcs:UnitOfMeasure
 name: "Bedrooms"
 description: "A count of the number of bedrooms. For example, in a house."
+
+Node: dcid:Beds
+typeOf: dcs:UnitOfMeasure
+name: "Beds"
+description: "A count of the number of beds. For example, in a hospital."
 
 Node: dcid:socialCategory
 typeOf: schema:Property
@@ -3026,7 +3118,7 @@ Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcs:EnergyConsumptionSectorEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -3638,6 +3730,14 @@ dcid: "HealthEstablishment"
 name: "HealthEstablishment"
 description: "Health related establishment"
 
+Node: dcid:AthleticEstablishment
+typeOf: dcid:EstablishmentTypeEnum
+name: "An athletic establishment is a place where people can engage in physical activities."
+
+Node: dcid:Establishment
+typeOf: dcid:Thing
+name: "Establishment"
+
 Node: dcid:healthEstablishmentType
 name: "healthEstablishmentType"
 typeOf: schema:Property
@@ -3694,6 +3794,28 @@ name: "Health Personnel"
 Node: dcid:HealthProvider
 typeOf: dcs:HealthWorkerEnum
 name: "Health Provider"
+Node: dcid:establishmentType
+typeOf: dcs:Property
+name: "establishmentType"
+domainIncludes: dcid:Establishment
+rangeIncludes: dcid:EstablishmentTypeEnum
+
+Node: dcid:EstablishmentTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EstablishmentTypeEnum"
+
+Node: dcid:SocialCareFacility
+typeOf: dcid:EstablishmentTypeEnum
+name: "Social Care Facility"
+
+Node: dcid:AmbulanceStation
+typeOf: dcid:EstablishmentTypeEnum
+name: "Ambulance Station"
+
+Node: dcid:YouthCenter
+typeOf: dcid:EstablishmentTypeEnum
+name: "Youth Center"
 
 Node: dcid:footnote
 typeOf: schema:Property

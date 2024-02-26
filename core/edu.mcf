@@ -329,6 +329,11 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "EducationalMethodEnum"
 
+Node: dcid:EducationalAttainmentEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationalAttainmentEnum"
+
 Node: dcid:educationalMethod
 typeOf: schema:Property
 domainIncludes: dcs:School
@@ -2326,3 +2331,26 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:EducationalMajorEnum
 name: "doctorateDegreeMajor"
+
+Node: dcid:UniversityAndAboveUniversity
+typeOf: dcid:SchoolLevelEnum
+name: "University And Above University"
+description: "University and Above University refers to an institution of higher education that grants undergraduate and graduate degrees"
+
+Node: dcid:PostIntermediateAndPreUniversity
+typeOf: dcid:EducationalAttainmentEnum
+name: "Post-Intermediate And Pre-University"
+description: "Education attainment higher than Intermediate and lower than University"
+
+Node: dcid:Intermediate
+typeOf: dcid:EducationalAttainmentEnum
+name: "Intermediate"
+
+Node: dcid:LowerThanIntermediate
+typeOf: dcid:EducationalAttainmentEnum
+name: "Lower Than Intermediate"
+
+Node: dcid:ReadAndWrite
+typeOf: dcid:EducationalAttainmentEnum
+name: "Read And Write"
+

@@ -1070,6 +1070,60 @@ Node: dcid:AccidentOrDerailment
 name: "AccidentOrDerailment"
 typeOf: dcs:FireCauseSpecificEnum
 
+Node: dcid:accidentType
+typeOf: dcs:Property
+name: "accidentType"
+domainIncludes: dcid:Incident
+rangeIncludes: dcid:AccidentTypeEnum
+
+Node: dcid:AccidentTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "AccidentTypeEnum"
+
+Node: dcid:TrafficAccident
+typeOf: dcid:AccidentTypeEnum
+name: "Traffic Accident"
+
+Node: dcid:accidentCause
+typeOf: dcs:Property
+name: "accidentCause"
+domainIncludes: dcid:Incident
+rangeIncludes: dcid:AccidentCauseEnum,dcid:Class,dcid:MedicalConditionIncidentTypeEnum
+
+Node: dcid:AccidentCauseEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "AccidentCauseEnum"
+
+Node: dcid:Tram
+typeOf: dcid:AccidentCauseEnum
+name: "Tram"
+
+Node: dcid:BicycleOrMotorbike
+typeOf: dcid:AccidentCauseEnum
+name: "Bicycle Or Motorbike"
+
+Node: dcid:Railway
+typeOf: dcid:AccidentCauseEnum
+name: "Railway"
+
+Node: dcid:Subway
+typeOf: dcid:AccidentCauseEnum
+name: "Subway"
+
+Node: dcid:OtherAccident
+typeOf: dcid:AccidentCauseEnum
+name: "Other Accident"
+
+Node: dcid:Others
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Others"
+
+Node: dcid:AccidentDamage
+typeOf: dcid:AccidentTypeEnum
+name: " Accident Damage"
+
 Node: dcid:Aerialfireworks
 name: "Aerialfireworks"
 typeOf: dcs:FireCauseSpecificEnum
