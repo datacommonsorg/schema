@@ -7146,11 +7146,32 @@ name: "Female"
 
 Node: numberOfBeds
 dcid: "numberOfBeds"
-rangeIncludes: schema:Number
-domainIncludes: schema:BedDetails
+rangeIncludes: schema:Number, dcid:QuantityRange
+domainIncludes: schema:BedDetails, dcid:Establishment
 typeOf: schema:Property
 name: "numberOfBeds"
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
+
+Node: dcid:Beds
+typeOf: dcs:UnitOfMeasure
+name: "Beds"
+description: "A count of the number of beds. For example, in a hospital."
+
+Node: dcid:PublicHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Public Hospital"
+
+Node: dcid:CentralHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Central Hospital"
+
+Node: dcid:PublicHospital__CentralHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Public Hospital__ Central Hospital"
+
+Node: dcid:SpecialtyHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Specialty Hospital"
 
 Node: acceptsReservations
 dcid: "acceptsReservations"
@@ -11212,6 +11233,53 @@ Node: dcid:Jobs
 typeOf: schema:Class
 subClassOf: dcs:Thing
 name: "Jobs"
+
+Node: dcid:AgricultureHuntingForestryCuttingtrees
+typeOf: dcid:EmploymentEnum
+name: "Agriculture Hunting Forestry Cuttingtrees"
+
+Node: dcid:MiningQuarrying
+typeOf: dcid:EmploymentEnum
+name: "Mining Quarrying"
+isProvisional: dcs:True
+
+Node: dcid:Manufactures
+typeOf: dcid:EmploymentEnum
+name: "Manufactures"
+
+Node: dcid:ElectricGasSteamAirconditionsupplies
+typeOf: dcid:EmploymentEnum
+name: "Electric Gas Steam Airconditionsupplies"
+isProvisional: dcs:True
+
+Node: dcid:WatersupportDrainerecycling
+typeOf: dcid:EmploymentEnum
+name: "Watersupport Drainerecycling"
+
+
+Node: dcid:ConstructionAndBuilding
+typeOf: dcid:EmploymentEnum
+name: "Construction And Building"
+
+Node: dcid:WholeRetailsaleVehiclesMotorcyclesrepairing
+typeOf: dcid:EmploymentEnum
+name: "Whole Retailsale Vehicles Motorcyclesrepairing"
+
+Node: dcid:FoodResidenceservices
+typeOf: dcid:EmploymentEnum
+name: "Food Residenceservices"
+
+Node: dcid:InformationsTelecommunications
+typeOf: dcid:EmploymentEnum
+name: "Informations Telecommunications"
+
+Node: dcid:InsuranceFinancialintermediation
+typeOf: dcid:EmploymentEnum
+name: "Insurance Financialintermediation"
+
+Node: dcid:RealestateRenting
+typeOf: dcid:EmploymentEnum
+name: "Realestate Renting"
 
 Node: dcid:FinancialTransaction
 typeOf: dcid:Class
