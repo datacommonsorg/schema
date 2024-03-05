@@ -387,6 +387,11 @@ name: "Pokkesviricetes"
 typeOf: dcs:VirusClassEnum
 specializationOf: dcs:VirusPhylumNucleocytoviricota
 
+Node: dcid:VirusClassAinoaviricetes
+name: "Ainoaviricetes"
+typeOf: dcs:VirusClassEnum
+specializationOf: dcs:VirusPhylumPreplasmiviricota
+
 Node: dcid:VirusClassMaveriviricetes
 name: "Maveriviricetes"
 typeOf: dcs:VirusClassEnum
@@ -430,6 +435,11 @@ name: "Ligamenvirales"
 typeOf: dcs:VirusOrderEnum
 specializationOf: dcs:VirusClassTokiviricetes
 
+Node: dcid:VirusOrderMaximonvirales
+name: "Maximonvirales"
+typeOf: dcs:VirusOrderEnum
+specializationOf: dcs:VirusClassTokiviricetes
+
 Node: dcid:VirusOrderPrimavirales
 name: "Primavirales"
 typeOf: dcs:VirusOrderEnum
@@ -445,13 +455,28 @@ name: "Crassvirales"
 typeOf: dcs:VirusOrderEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusOrderJuravirales
+name: "Juravirales"
+typeOf: dcs:VirusOrderEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusOrderKirjokansivirales
 name: "Kirjokansivirales"
 typeOf: dcs:VirusOrderEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusOrderMagrovirales
+name: "Magrovirales"
+typeOf: dcs:VirusOrderEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusOrderMethanobavirales
 name: "Methanobavirales"
+typeOf: dcs:VirusOrderEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusOrderNakonvirales
+name: "Nakonvirales"
 typeOf: dcs:VirusOrderEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -710,6 +735,11 @@ name: "Chitovirales"
 typeOf: dcs:VirusOrderEnum
 specializationOf: dcs:VirusClassPokkesviricetes
 
+Node: dcid:VirusOrderLautamovirales
+name: "Lautamovirales"
+typeOf: dcs:VirusOrderEnum
+specializationOf: dcs:VirusClassAinoaviricetes
+
 Node: dcid:VirusOrderPriklausovirales
 name: "Priklausovirales"
 typeOf: dcs:VirusOrderEnum
@@ -720,8 +750,18 @@ name: "Orthopolintovirales"
 typeOf: dcs:VirusOrderEnum
 specializationOf: dcs:VirusClassPolintoviricetes
 
+Node: dcid:VirusOrderAtroposvirales
+name: "Atroposvirales"
+typeOf: dcs:VirusOrderEnum
+specializationOf: dcs:VirusClassTectiliviricetes
+
 Node: dcid:VirusOrderBelfryvirales
 name: "Belfryvirales"
+typeOf: dcs:VirusOrderEnum
+specializationOf: dcs:VirusClassTectiliviricetes
+
+Node: dcid:VirusOrderCoyopavirales
+name: "Coyopavirales"
 typeOf: dcs:VirusOrderEnum
 specializationOf: dcs:VirusClassTectiliviricetes
 
@@ -819,6 +859,11 @@ name: "Ungulaviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderLigamenvirales
 
+Node: dcid:VirusFamilyAhmunviridae
+name: "Ahmunviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderMaximonvirales
+
 Node: dcid:VirusFamilyTristromaviridae
 name: "Tristromaviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -829,13 +874,13 @@ name: "Alloherpesviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderHerpesvirales
 
-Node: dcid:VirusFamilyHerpesviridae
-name: "Herpesviridae"
+Node: dcid:VirusFamilyMalacoherpesviridae
+name: "Malacoherpesviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderHerpesvirales
 
-Node: dcid:VirusFamilyMalacoherpesviridae
-name: "Malacoherpesviridae"
+Node: dcid:VirusFamilyOrthoherpesviridae
+name: "Orthoherpesviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderHerpesvirales
 
@@ -859,6 +904,16 @@ name: "Suoliviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderCrassvirales
 
+Node: dcid:VirusFamilyYangangviridae
+name: "Yangangviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderJuravirales
+
+Node: dcid:VirusFamilyYanlukaviridae
+name: "Yanlukaviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderJuravirales
+
 Node: dcid:VirusFamilyGraaviviridae
 name: "Graaviviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -879,6 +934,11 @@ name: "Shortaselviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderKirjokansivirales
 
+Node: dcid:VirusFamilyAoguangviridae
+name: "Aoguangviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderMagrovirales
+
 Node: dcid:VirusFamilyAnaerodiviridae
 name: "Anaerodiviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -888,6 +948,16 @@ Node: dcid:VirusFamilyLeisingerviridae
 name: "Leisingerviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderMethanobavirales
+
+Node: dcid:VirusFamilyAhpuchviridae
+name: "Ahpuchviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderNakonvirales
+
+Node: dcid:VirusFamilyEkchuahviridae
+name: "Ekchuahviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderNakonvirales
 
 Node: dcid:VirusFamilyDruskaviridae
 name: "Druskaviridae"
@@ -916,6 +986,16 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusFamilyAggregaviridae
 name: "Aggregaviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyAliceevansviridae
+name: "Aliceevansviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyArenbergviridae
+name: "Arenbergviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -954,8 +1034,23 @@ name: "Duneviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusFamilyFervensviridae
+name: "Fervensviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusFamilyForsetiviridae
 name: "Forsetiviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyFredfastierviridae
+name: "Fredfastierviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyGrimontviridae
+name: "Grimontviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -971,6 +1066,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusFamilyHerelleviridae
 name: "Herelleviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyKleczkowskaviridae
+name: "Kleczkowskaviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -1019,6 +1119,16 @@ name: "Pervagoviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusFamilyPootjesviridae
+name: "Pootjesviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyPungoviridae
+name: "Pungoviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusFamilyRountreeviridae
 name: "Rountreeviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -1039,6 +1149,16 @@ name: "Schitoviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusFamilySperoviridae
+name: "Speroviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyStanwilliamsviridae
+name: "Stanwilliamsviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusFamilyStraboviridae
 name: "Straboviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -1046,6 +1166,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusFamilySuolaviridae
 name: "Suolaviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusFamilyVerdandiviridae
+name: "Verdandiviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -1134,6 +1259,11 @@ name: "Smacoviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderCremevirales
 
+Node: dcid:VirusFamilyAmesuviridae
+name: "Amesuviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderMulpavirales
+
 Node: dcid:VirusFamilyMetaxyviridae
 name: "Metaxyviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -1173,6 +1303,11 @@ Node: dcid:VirusFamilyPleolipoviridae
 name: "Pleolipoviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderHaloruvirales
+
+Node: dcid:VirusFamilyAlternaviridae
+name: "Alternaviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderGhabrivirales
 
 Node: dcid:VirusFamilyChrysoviridae
 name: "Chrysoviridae"
@@ -1534,6 +1669,11 @@ name: "Orthomyxoviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderArticulavirales
 
+Node: dcid:VirusFamilyTosoviridae
+name: "Tosoviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusPhylumNegarnaviricota
+
 Node: dcid:VirusFamilyAmalgaviridae
 name: "Amalgaviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -1654,6 +1794,11 @@ name: "Marnaviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderPicornavirales
 
+Node: dcid:VirusFamilyNoraviridae
+name: "Noraviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderPicornavirales
+
 Node: dcid:VirusFamilyPicornaviridae
 name: "Picornaviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -1769,8 +1914,23 @@ name: "Phycodnaviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderAlgavirales
 
+Node: dcid:VirusFamilyAllomimiviridae
+name: "Allomimiviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderImitervirales
+
+Node: dcid:VirusFamilyMesomimiviridae
+name: "Mesomimiviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderImitervirales
+
 Node: dcid:VirusFamilyMimiviridae
 name: "Mimiviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderImitervirales
+
+Node: dcid:VirusFamilySchizomimiviridae
+name: "Schizomimiviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderImitervirales
 
@@ -1789,6 +1949,11 @@ name: "Marseilleviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderPimascovirales
 
+Node: dcid:VirusFamilyMamonoviridae
+name: "Mamonoviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusClassMegaviricetes
+
 Node: dcid:VirusFamilyAsfarviridae
 name: "Asfarviridae"
 typeOf: dcs:VirusFamilyEnum
@@ -1798,6 +1963,11 @@ Node: dcid:VirusFamilyPoxviridae
 name: "Poxviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderChitovirales
+
+Node: dcid:VirusFamilyFinnlakeviridae
+name: "Finnlakeviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderLautamovirales
 
 Node: dcid:VirusFamilyLavidaviridae
 name: "Lavidaviridae"
@@ -1809,10 +1979,20 @@ name: "Adintoviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderOrthopolintovirales
 
+Node: dcid:VirusFamilySkuldviridae
+name: "Skuldviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderAtroposvirales
+
 Node: dcid:VirusFamilyTurriviridae
 name: "Turriviridae"
 typeOf: dcs:VirusFamilyEnum
 specializationOf: dcs:VirusOrderBelfryvirales
+
+Node: dcid:VirusFamilyChaacviridae
+name: "Chaacviridae"
+typeOf: dcs:VirusFamilyEnum
+specializationOf: dcs:VirusOrderCoyopavirales
 
 Node: dcid:VirusFamilyTectiviridae
 name: "Tectiviridae"
@@ -1890,16 +2070,20 @@ Node: dcid:VirusFamilyAvsunviroidae
 name: "Avsunviroidae"
 typeOf: dcs:VirusFamilyEnum
 
+Node: dcid:VirusFamilyBartogtaviriformidae
+name: "Bartogtaviriformidae"
+typeOf: dcs:VirusFamilyEnum
+
 Node: dcid:VirusFamilyBicaudaviridae
 name: "Bicaudaviridae"
 typeOf: dcs:VirusFamilyEnum
 
-Node: dcid:VirusFamilyClavaviridae
-name: "Clavaviridae"
+Node: dcid:VirusFamilyBrachygtaviriformidae
+name: "Brachygtaviriformidae"
 typeOf: dcs:VirusFamilyEnum
 
-Node: dcid:VirusFamilyFinnlakeviridae
-name: "Finnlakeviridae"
+Node: dcid:VirusFamilyClavaviridae
+name: "Clavaviridae"
 typeOf: dcs:VirusFamilyEnum
 
 Node: dcid:VirusFamilyFuselloviridae
@@ -1916,6 +2100,10 @@ typeOf: dcs:VirusFamilyEnum
 
 Node: dcid:VirusFamilyHalspiviridae
 name: "Halspiviridae"
+typeOf: dcs:VirusFamilyEnum
+
+Node: dcid:VirusFamilyItzamnaviridae
+name: "Itzamnaviridae"
 typeOf: dcs:VirusFamilyEnum
 
 Node: dcid:VirusFamilyOvaliviridae
@@ -1936,6 +2124,10 @@ typeOf: dcs:VirusFamilyEnum
 
 Node: dcid:VirusFamilyPospiviroidae
 name: "Pospiviroidae"
+typeOf: dcs:VirusFamilyEnum
+
+Node: dcid:VirusFamilyRhodogtaviriformidae
+name: "Rhodogtaviriformidae"
 typeOf: dcs:VirusFamilyEnum
 
 Node: dcid:VirusFamilySpiraviridae
@@ -1960,17 +2152,17 @@ subClassOf: schema:Enumeration
 Node: dcid:VirusSubfamilyAlphaherpesvirinae
 name: "Alphaherpesvirinae"
 typeOf: dcs:VirusSubfamilyEnum
-specializationOf: dcs:VirusFamilyHerpesviridae
+specializationOf: dcs:VirusFamilyOrthoherpesviridae
 
 Node: dcid:VirusSubfamilyBetaherpesvirinae
 name: "Betaherpesvirinae"
 typeOf: dcs:VirusSubfamilyEnum
-specializationOf: dcs:VirusFamilyHerpesviridae
+specializationOf: dcs:VirusFamilyOrthoherpesviridae
 
 Node: dcid:VirusSubfamilyGammaherpesvirinae
 name: "Gammaherpesvirinae"
 typeOf: dcs:VirusSubfamilyEnum
-specializationOf: dcs:VirusFamilyHerpesviridae
+specializationOf: dcs:VirusFamilyOrthoherpesviridae
 
 Node: dcid:VirusSubfamilyCoarsevirinae
 name: "Coarsevirinae"
@@ -2172,6 +2364,11 @@ name: "Pelczarvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusFamilyOrlajensenviridae
 
+Node: dcid:VirusSubfamilyStaniewskivirinae
+name: "Staniewskivirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusFamilyPootjesviridae
+
 Node: dcid:VirusSubfamilyRakietenvirinae
 name: "Rakietenvirinae"
 typeOf: dcs:VirusSubfamilyEnum
@@ -2196,6 +2393,11 @@ Node: dcid:VirusSubfamilyTatarstanvirinae
 name: "Tatarstanvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusFamilySalasmaviridae
+
+Node: dcid:VirusSubfamilyDemetervirinae
+name: "Demetervirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusFamilySchitoviridae
 
 Node: dcid:VirusSubfamilyEnquatrovirinae
 name: "Enquatrovirinae"
@@ -2237,6 +2439,16 @@ name: "Rothmandenesvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusFamilySchitoviridae
 
+Node: dcid:VirusSubfamilyBoydwoodruffvirinae
+name: "Boydwoodruffvirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusFamilyStanwilliamsviridae
+
+Node: dcid:VirusSubfamilyLoccivirinae
+name: "Loccivirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusFamilyStanwilliamsviridae
+
 Node: dcid:VirusSubfamilyEmmerichvirinae
 name: "Emmerichvirinae"
 typeOf: dcs:VirusSubfamilyEnum
@@ -2277,6 +2489,11 @@ name: "Cobavirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusFamilyZobellviridae
 
+Node: dcid:VirusSubfamilyAndregratiavirinae
+name: "Andregratiavirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusSubfamilyAndrewesvirinae
 name: "Andrewesvirinae"
 typeOf: dcs:VirusSubfamilyEnum
@@ -2284,6 +2501,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusSubfamilyArquatrovirinae
 name: "Arquatrovirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusSubfamilyAzeevirinae
+name: "Azeevirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -2297,13 +2519,13 @@ name: "Bclasvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusSubfamilyBeephvirinae
-name: "Beephvirinae"
+Node: dcid:VirusSubfamilyBeaumontvirinae
+name: "Beaumontvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusSubfamilyBoydwoodruffvirinae
-name: "Boydwoodruffvirinae"
+Node: dcid:VirusSubfamilyBeephvirinae
+name: "Beephvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -2332,6 +2554,11 @@ name: "Deejayvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusSubfamilyDeeyouvirinae
+name: "Deeyouvirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusSubfamilyDolichocephalovirinae
 name: "Dolichocephalovirinae"
 typeOf: dcs:VirusSubfamilyEnum
@@ -2357,6 +2584,11 @@ name: "Gochnauervirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusSubfamilyGordonclarkvirinae
+name: "Gordonclarkvirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusSubfamilyGorgonvirinae
 name: "Gorgonvirinae"
 typeOf: dcs:VirusSubfamilyEnum
@@ -2379,6 +2611,16 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusSubfamilyHendrixvirinae
 name: "Hendrixvirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusSubfamilyIiscvirinae
+name: "Iiscvirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusSubfamilyJoanripponvirinae
+name: "Joanripponvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -2424,6 +2666,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusSubfamilyRuthgordonvirinae
 name: "Ruthgordonvirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusSubfamilySejongvirinae
+name: "Sejongvirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -2762,6 +3009,21 @@ name: "Spumaretrovirinae"
 typeOf: dcs:VirusSubfamilyEnum
 specializationOf: dcs:VirusFamilyRetroviridae
 
+Node: dcid:VirusSubfamilyAliimimivirinae
+name: "Aliimimivirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusFamilyMimiviridae
+
+Node: dcid:VirusSubfamilyKlosneuvirinae
+name: "Klosneuvirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusFamilyMimiviridae
+
+Node: dcid:VirusSubfamilyMegamimivirinae
+name: "Megamimivirinae"
+typeOf: dcs:VirusSubfamilyEnum
+specializationOf: dcs:VirusFamilyMimiviridae
+
 Node: dcid:VirusSubfamilyAlphairidovirinae
 name: "Alphairidovirinae"
 typeOf: dcs:VirusSubfamilyEnum
@@ -2859,6 +3121,11 @@ name: "Captovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyUngulaviridae
 
+Node: dcid:VirusGenusYumkaaxvirus
+name: "Yumkaaxvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAhmunviridae
+
 Node: dcid:VirusGenusAlphatristromavirus
 name: "Alphatristromavirus"
 typeOf: dcs:VirusGenusEnum
@@ -2869,25 +3136,35 @@ name: "Betatristromavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyTristromaviridae
 
-Node: dcid:VirusGenusBatrachovirus
-name: "Batrachovirus"
+Node: dcid:VirusGenusBatravirus
+name: "Batravirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAlloherpesviridae
 
-Node: dcid:VirusGenusCyprinivirus
-name: "Cyprinivirus"
+Node: dcid:VirusGenusCyvirus
+name: "Cyvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAlloherpesviridae
 
-Node: dcid:VirusGenusIctalurivirus
-name: "Ictalurivirus"
+Node: dcid:VirusGenusIctavirus
+name: "Ictavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAlloherpesviridae
 
-Node: dcid:VirusGenusSalmonivirus
-name: "Salmonivirus"
+Node: dcid:VirusGenusSalmovirus
+name: "Salmovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAlloherpesviridae
+
+Node: dcid:VirusGenusAurivirus
+name: "Aurivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyMalacoherpesviridae
+
+Node: dcid:VirusGenusOstreavirus
+name: "Ostreavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyMalacoherpesviridae
 
 Node: dcid:VirusGenusIltovirus
 name: "Iltovirus"
@@ -2973,16 +3250,6 @@ Node: dcid:VirusGenusRhadinovirus
 name: "Rhadinovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyGammaherpesvirinae
-
-Node: dcid:VirusGenusAurivirus
-name: "Aurivirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyMalacoherpesviridae
-
-Node: dcid:VirusGenusOstreavirus
-name: "Ostreavirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyMalacoherpesviridae
 
 Node: dcid:VirusGenusJunduvirus
 name: "Junduvirus"
@@ -3194,6 +3461,26 @@ name: "Dechshavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySuoliviridae
 
+Node: dcid:VirusGenusMathaucavirus
+name: "Mathaucavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyYangangviridae
+
+Node: dcid:VirusGenusNohelivirus
+name: "Nohelivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyYangangviridae
+
+Node: dcid:VirusGenusSenitvirus
+name: "Senitvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyYangangviridae
+
+Node: dcid:VirusGenusSweetvirus
+name: "Sweetvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyYanlukaviridae
+
 Node: dcid:VirusGenusBeejeyvirus
 name: "Beejeyvirus"
 typeOf: dcs:VirusGenusEnum
@@ -3229,6 +3516,11 @@ name: "Lonfivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyShortaselviridae
 
+Node: dcid:VirusGenusAobingvirus
+name: "Aobingvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAoguangviridae
+
 Node: dcid:VirusGenusMetforvirus
 name: "Metforvirus"
 typeOf: dcs:VirusGenusEnum
@@ -3238,6 +3530,16 @@ Node: dcid:VirusGenusPsimunavirus
 name: "Psimunavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyLeisingerviridae
+
+Node: dcid:VirusGenusKisinvirus
+name: "Kisinvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAhpuchviridae
+
+Node: dcid:VirusGenusKukulkanvirus
+name: "Kukulkanvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyEkchuahviridae
 
 Node: dcid:VirusGenusHacavirus
 name: "Hacavirus"
@@ -3333,6 +3635,26 @@ Node: dcid:VirusGenusHarrekavirus
 name: "Harrekavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAggregaviridae
+
+Node: dcid:VirusGenusBrussowvirus
+name: "Brussowvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAliceevansviridae
+
+Node: dcid:VirusGenusMoineauvirus
+name: "Moineauvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAliceevansviridae
+
+Node: dcid:VirusGenusVansinderenvirus
+name: "Vansinderenvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAliceevansviridae
+
+Node: dcid:VirusGenusWroclawvirus
+name: "Wroclawvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyArenbergviridae
 
 Node: dcid:VirusGenusCebadecemvirus
 name: "Cebadecemvirus"
@@ -4014,6 +4336,11 @@ name: "Wuhanvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAutographiviridae
 
+Node: dcid:VirusGenusYoungvirus
+name: "Youngvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAutographiviridae
+
 Node: dcid:VirusGenusAhduovirus
 name: "Ahduovirus"
 typeOf: dcs:VirusGenusEnum
@@ -4174,6 +4501,11 @@ name: "Yushanvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyNefertitivirinae
 
+Node: dcid:VirusGenusShantouvirus
+name: "Shantouvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyChaseviridae
+
 Node: dcid:VirusGenusCetovirus
 name: "Cetovirus"
 typeOf: dcs:VirusGenusEnum
@@ -4196,11 +4528,6 @@ specializationOf: dcs:VirusSubfamilyErmolyevavirinae
 
 Node: dcid:VirusGenusEpseptimavirus
 name: "Epseptimavirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusSubfamilyMarkadamsvirinae
-
-Node: dcid:VirusGenusHaartmanvirus
-name: "Haartmanvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyMarkadamsvirinae
 
@@ -4384,10 +4711,45 @@ name: "Unahavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyDuneviridae
 
+Node: dcid:VirusGenusDeepoceanvirus
+name: "Deepoceanvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyFervensviridae
+
 Node: dcid:VirusGenusFreyavirus
 name: "Freyavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyForsetiviridae
+
+Node: dcid:VirusGenusJamesmcgillvirus
+name: "Jamesmcgillvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyFredfastierviridae
+
+Node: dcid:VirusGenusCrifsvirus
+name: "Crifsvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyGrimontviridae
+
+Node: dcid:VirusGenusDalianvirus
+name: "Dalianvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyGrimontviridae
+
+Node: dcid:VirusGenusLibingvirus
+name: "Libingvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyGrimontviridae
+
+Node: dcid:VirusGenusMoazamivirus
+name: "Moazamivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyGrimontviridae
+
+Node: dcid:VirusGenusPrivateervirus
+name: "Privateervirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyGrimontviridae
 
 Node: dcid:VirusGenusCapvunavirus
 name: "Capvunavirus"
@@ -4401,6 +4763,11 @@ specializationOf: dcs:VirusSubfamilyDenniswatsonvirinae
 
 Node: dcid:VirusGenusBrucesealvirus
 name: "Brucesealvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyGuelinviridae
+
+Node: dcid:VirusGenusHzauvirus
+name: "Hzauvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyGuelinviridae
 
@@ -4584,6 +4951,11 @@ name: "Watanabevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyHerelleviridae
 
+Node: dcid:VirusGenusCuauhnahuacvirus
+name: "Cuauhnahuacvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKleczkowskaviridae
+
 Node: dcid:VirusGenusAcionnavirus
 name: "Acionnavirus"
 typeOf: dcs:VirusGenusEnum
@@ -4669,6 +5041,11 @@ name: "Haifavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyKyanoviridae
 
+Node: dcid:VirusGenusHuanghaivirus
+name: "Huanghaivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
 Node: dcid:VirusGenusKanaloavirus
 name: "Kanaloavirus"
 typeOf: dcs:VirusGenusEnum
@@ -4696,6 +5073,11 @@ specializationOf: dcs:VirusFamilyKyanoviridae
 
 Node: dcid:VirusGenusMacariavirus
 name: "Macariavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
+Node: dcid:VirusGenusMakaravirus
+name: "Makaravirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyKyanoviridae
 
@@ -4774,8 +5156,18 @@ name: "Salacisavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyKyanoviridae
 
+Node: dcid:VirusGenusScyllavirus
+name: "Scyllavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
 Node: dcid:VirusGenusSedonavirus
 name: "Sedonavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
+Node: dcid:VirusGenusSerangoonvirus
+name: "Serangoonvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyKyanoviridae
 
@@ -4784,8 +5176,18 @@ name: "Shandvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyKyanoviridae
 
+Node: dcid:VirusGenusShenzhenivirus
+name: "Shenzhenivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
 Node: dcid:VirusGenusSokavirus
 name: "Sokavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
+Node: dcid:VirusGenusTamkungvirus
+name: "Tamkungvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyKyanoviridae
 
@@ -4806,6 +5208,21 @@ specializationOf: dcs:VirusFamilyKyanoviridae
 
 Node: dcid:VirusGenusVellamovirus
 name: "Vellamovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
+Node: dcid:VirusGenusYellowseavirus
+name: "Yellowseavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
+Node: dcid:VirusGenusYushanluvirus
+name: "Yushanluvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyKyanoviridae
+
+Node: dcid:VirusGenusZhoulongquanvirus
+name: "Zhoulongquanvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyKyanoviridae
 
@@ -4899,6 +5316,11 @@ name: "Aresaunavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPeduoviridae
 
+Node: dcid:VirusGenusArsenicumvirus
+name: "Arsenicumvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPeduoviridae
+
 Node: dcid:VirusGenusArsyunavirus
 name: "Arsyunavirus"
 typeOf: dcs:VirusGenusEnum
@@ -4944,6 +5366,11 @@ name: "Duodecimduovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPeduoviridae
 
+Node: dcid:VirusGenusDuonihilunusvirus
+name: "Duonihilunusvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPeduoviridae
+
 Node: dcid:VirusGenusEganvirus
 name: "Eganvirus"
 typeOf: dcs:VirusGenusEnum
@@ -4974,6 +5401,11 @@ name: "Finvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPeduoviridae
 
+Node: dcid:VirusGenusFiravirus
+name: "Firavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPeduoviridae
+
 Node: dcid:VirusGenusGegavirus
 name: "Gegavirus"
 typeOf: dcs:VirusGenusEnum
@@ -4986,6 +5418,11 @@ specializationOf: dcs:VirusFamilyPeduoviridae
 
 Node: dcid:VirusGenusGemsvirus
 name: "Gemsvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPeduoviridae
+
+Node: dcid:VirusGenusGraikaemvirus
+name: "Graikaemvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPeduoviridae
 
@@ -5059,6 +5496,11 @@ name: "Phitrevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPeduoviridae
 
+Node: dcid:VirusGenusPiscesmortuivirus
+name: "Piscesmortuivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPeduoviridae
+
 Node: dcid:VirusGenusPlayavirus
 name: "Playavirus"
 typeOf: dcs:VirusGenusEnum
@@ -5114,6 +5556,11 @@ name: "Tigrvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPeduoviridae
 
+Node: dcid:VirusGenusTresduoquattuorvirus
+name: "Tresduoquattuorvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPeduoviridae
+
 Node: dcid:VirusGenusValbvirus
 name: "Valbvirus"
 typeOf: dcs:VirusGenusEnum
@@ -5153,6 +5600,36 @@ Node: dcid:VirusGenusCallevirus
 name: "Callevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPervagoviridae
+
+Node: dcid:VirusGenusTrinifflemingvirus
+name: "Trinifflemingvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyStaniewskivirinae
+
+Node: dcid:VirusGenusEmnonavirus
+name: "Emnonavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPootjesviridae
+
+Node: dcid:VirusGenusHeverleevirus
+name: "Heverleevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPootjesviridae
+
+Node: dcid:VirusGenusInnesvirus
+name: "Innesvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPootjesviridae
+
+Node: dcid:VirusGenusRollinsvirus
+name: "Rollinsvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPootjesviridae
+
+Node: dcid:VirusGenusFlagovirus
+name: "Flagovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPungoviridae
 
 Node: dcid:VirusGenusAndhravirus
 name: "Andhravirus"
@@ -5254,6 +5731,16 @@ name: "Samsavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySaparoviridae
 
+Node: dcid:VirusGenusAcanvirus
+name: "Acanvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyDemetervirinae
+
+Node: dcid:VirusGenusCyamitesvirus
+name: "Cyamitesvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyDemetervirinae
+
 Node: dcid:VirusGenusEnquatrovirus
 name: "Enquatrovirus"
 typeOf: dcs:VirusGenusEnum
@@ -5266,6 +5753,11 @@ specializationOf: dcs:VirusSubfamilyEnquatrovirinae
 
 Node: dcid:VirusGenusKaypoctavirus
 name: "Kaypoctavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyEnquatrovirinae
+
+Node: dcid:VirusGenusMoovirus
+name: "Moovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyEnquatrovirinae
 
@@ -5344,6 +5836,11 @@ name: "Baltimorevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyRhodovirinae
 
+Node: dcid:VirusGenusGonggongvirus
+name: "Gonggongvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyRhodovirinae
+
 Node: dcid:VirusGenusPlymouthvirus
 name: "Plymouthvirus"
 typeOf: dcs:VirusGenusEnum
@@ -5383,6 +5880,11 @@ Node: dcid:VirusGenusPourcelvirus
 name: "Pourcelvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyRothmandenesvirinae
+
+Node: dcid:VirusGenusCavevirus
+name: "Cavevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySchitoviridae
 
 Node: dcid:VirusGenusCbunavirus
 name: "Cbunavirus"
@@ -5449,6 +5951,16 @@ name: "Penintadodekavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySchitoviridae
 
+Node: dcid:VirusGenusPetruschkyvirus
+name: "Petruschkyvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySchitoviridae
+
+Node: dcid:VirusGenusPhilippevirus
+name: "Philippevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySchitoviridae
+
 Node: dcid:VirusGenusPokkenvirus
 name: "Pokkenvirus"
 typeOf: dcs:VirusGenusEnum
@@ -5474,6 +5986,11 @@ name: "Triduovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySchitoviridae
 
+Node: dcid:VirusGenusVarunavirus
+name: "Varunavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySchitoviridae
+
 Node: dcid:VirusGenusVicoquintavirus
 name: "Vicoquintavirus"
 typeOf: dcs:VirusGenusEnum
@@ -5481,6 +5998,11 @@ specializationOf: dcs:VirusFamilySchitoviridae
 
 Node: dcid:VirusGenusWaedenswilvirus
 name: "Waedenswilvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySchitoviridae
+
+Node: dcid:VirusGenusXoxocotlavirus
+name: "Xoxocotlavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySchitoviridae
 
@@ -5493,6 +6015,56 @@ Node: dcid:VirusGenusZurivirus
 name: "Zurivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySchitoviridae
+
+Node: dcid:VirusGenusGlazvirus
+name: "Glazvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySperoviridae
+
+Node: dcid:VirusGenusCoruscantvirus
+name: "Coruscantvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyBoydwoodruffvirinae
+
+Node: dcid:VirusGenusKarimacvirus
+name: "Karimacvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyBoydwoodruffvirinae
+
+Node: dcid:VirusGenusSamistivirus
+name: "Samistivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyBoydwoodruffvirinae
+
+Node: dcid:VirusGenusTomasvirus
+name: "Tomasvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyBoydwoodruffvirinae
+
+Node: dcid:VirusGenusAnnadreamyvirus
+name: "Annadreamyvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyLoccivirinae
+
+Node: dcid:VirusGenusFaustvirus
+name: "Faustvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyLoccivirinae
+
+Node: dcid:VirusGenusGilsonvirus
+name: "Gilsonvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyLoccivirinae
+
+Node: dcid:VirusGenusWakandavirus
+name: "Wakandavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyLoccivirinae
+
+Node: dcid:VirusGenusWilnyevirus
+name: "Wilnyevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyLoccivirinae
 
 Node: dcid:VirusGenusCeceduovirus
 name: "Ceceduovirus"
@@ -5649,6 +6221,11 @@ name: "Mylasvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyStraboviridae
 
+Node: dcid:VirusGenusNanhuvirus
+name: "Nanhuvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyStraboviridae
+
 Node: dcid:VirusGenusPseudotevenvirus
 name: "Pseudotevenvirus"
 typeOf: dcs:VirusGenusEnum
@@ -5673,6 +6250,16 @@ Node: dcid:VirusGenusPormufvirus
 name: "Pormufvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySuolaviridae
+
+Node: dcid:VirusGenusDolusvirus
+name: "Dolusvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyVerdandiviridae
+
+Node: dcid:VirusGenusTonitrusvirus
+name: "Tonitrusvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyVerdandiviridae
 
 Node: dcid:VirusGenusChaovirus
 name: "Chaovirus"
@@ -5814,6 +6401,16 @@ name: "Vipivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyZobellviridae
 
+Node: dcid:VirusGenusHaetaevirus
+name: "Haetaevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAndregratiavirinae
+
+Node: dcid:VirusGenusKirovvirus
+name: "Kirovvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAndregratiavirinae
+
 Node: dcid:VirusGenusDenvervirus
 name: "Denvervirus"
 typeOf: dcs:VirusGenusEnum
@@ -5878,6 +6475,26 @@ Node: dcid:VirusGenusYosifvirus
 name: "Yosifvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyArquatrovirinae
+
+Node: dcid:VirusGenusGalvastonvirus
+name: "Galvastonvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAzeevirinae
+
+Node: dcid:VirusGenusLiebevirus
+name: "Liebevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAzeevirinae
+
+Node: dcid:VirusGenusManhattanvirus
+name: "Manhattanvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAzeevirinae
+
+Node: dcid:VirusGenusYangvirus
+name: "Yangvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAzeevirinae
 
 Node: dcid:VirusGenusDubowvirus
 name: "Dubowvirus"
@@ -5949,6 +6566,21 @@ name: "Thonkovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyBclasvirinae
 
+Node: dcid:VirusGenusBixiavirus
+name: "Bixiavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyBeaumontvirinae
+
+Node: dcid:VirusGenusSalvavirus
+name: "Salvavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyBeaumontvirinae
+
+Node: dcid:VirusGenusSiaravirus
+name: "Siaravirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyBeaumontvirinae
+
 Node: dcid:VirusGenusFlowerpowervirus
 name: "Flowerpowervirus"
 typeOf: dcs:VirusGenusEnum
@@ -5963,16 +6595,6 @@ Node: dcid:VirusGenusManuelvirus
 name: "Manuelvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyBeephvirinae
-
-Node: dcid:VirusGenusKarimacvirus
-name: "Karimacvirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusSubfamilyBoydwoodruffvirinae
-
-Node: dcid:VirusGenusSamistivirus
-name: "Samistivirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusSubfamilyBoydwoodruffvirinae
 
 Node: dcid:VirusGenusBiseptimavirus
 name: "Biseptimavirus"
@@ -6023,6 +6645,16 @@ Node: dcid:VirusGenusTanisvirus
 name: "Tanisvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyDeejayvirinae
+
+Node: dcid:VirusGenusNevillevirus
+name: "Nevillevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyDeeyouvirinae
+
+Node: dcid:VirusGenusOctobienvirus
+name: "Octobienvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyDeeyouvirinae
 
 Node: dcid:VirusGenusBertelyvirus
 name: "Bertelyvirus"
@@ -6108,6 +6740,21 @@ Node: dcid:VirusGenusWanderervirus
 name: "Wanderervirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyGochnauervirinae
+
+Node: dcid:VirusGenusKuravirus
+name: "Kuravirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyGordonclarkvirinae
+
+Node: dcid:VirusGenusNieuwekanaalvirus
+name: "Nieuwekanaalvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyGordonclarkvirinae
+
+Node: dcid:VirusGenusSuseptimavirus
+name: "Suseptimavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyGordonclarkvirinae
 
 Node: dcid:VirusGenusAphroditevirus
 name: "Aphroditevirus"
@@ -6219,6 +6866,31 @@ name: "Yautsimvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyHendrixvirinae
 
+Node: dcid:VirusGenusAryavirus
+name: "Aryavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyIiscvirinae
+
+Node: dcid:VirusGenusJilinvirus
+name: "Jilinvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyIiscvirinae
+
+Node: dcid:VirusGenusNatevirus
+name: "Natevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyJoanripponvirinae
+
+Node: dcid:VirusGenusSophritavirus
+name: "Sophritavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyJoanripponvirinae
+
+Node: dcid:VirusGenusTsamsavirus
+name: "Tsamsavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyJoanripponvirinae
+
 Node: dcid:VirusGenusBeograduvirus
 name: "Beograduvirus"
 typeOf: dcs:VirusGenusEnum
@@ -6259,8 +6931,8 @@ name: "Charlievirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyNclasvirinae
 
-Node: dcid:VirusGenusBaxtervirus
-name: "Baxtervirus"
+Node: dcid:VirusGenusBaxterfoxvirus
+name: "Baxterfoxvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyNymbaxtervirinae
 
@@ -6368,6 +7040,16 @@ Node: dcid:VirusGenusVendettavirus
 name: "Vendettavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyRuthgordonvirinae
+
+Node: dcid:VirusGenusBasiliskvirus
+name: "Basiliskvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilySejongvirinae
+
+Node: dcid:VirusGenusYihwangvirus
+name: "Yihwangvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilySejongvirinae
 
 Node: dcid:VirusGenusDiegovirus
 name: "Diegovirus"
@@ -6504,6 +7186,11 @@ name: "Unicornvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyWeiservirinae
 
+Node: dcid:VirusGenusAbaiavirus
+name: "Abaiavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusAbbeymikolonvirus
 name: "Abbeymikolonvirus"
 typeOf: dcs:VirusGenusEnum
@@ -6511,6 +7198,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusAbouovirus
 name: "Abouovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusAdaiavirus
+name: "Adaiavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6584,11 +7276,6 @@ name: "Anjalivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusAnnadreamyvirus
-name: "Annadreamyvirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
 Node: dcid:VirusGenusAnthonyvirus
 name: "Anthonyvirus"
 typeOf: dcs:VirusGenusEnum
@@ -6624,6 +7311,11 @@ name: "Armstrongvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusArvduovirus
+name: "Arvduovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusAshduovirus
 name: "Ashduovirus"
 typeOf: dcs:VirusGenusEnum
@@ -6636,6 +7328,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusAstrithrvirus
 name: "Astrithrvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusAtraxavirus
+name: "Atraxavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6664,6 +7361,11 @@ name: "Austintatiousvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusAxeltriavirus
+name: "Axeltriavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusAyohtrevirus
 name: "Ayohtrevirus"
 typeOf: dcs:VirusGenusEnum
@@ -6681,6 +7383,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusBaikalvirus
 name: "Baikalvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusBaileybluvirus
+name: "Baileybluvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6724,6 +7431,11 @@ name: "Becedseptimavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusBeenievirus
+name: "Beenievirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusBeetrevirus
 name: "Beetrevirus"
 typeOf: dcs:VirusGenusEnum
@@ -6759,6 +7471,11 @@ name: "Bievrevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusBigmanorsvirus
+name: "Bigmanorsvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusBingvirus
 name: "Bingvirus"
 typeOf: dcs:VirusGenusEnum
@@ -6774,6 +7491,11 @@ name: "Bjornvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusBocovirus
+name: "Bocovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusBorockvirus
 name: "Borockvirus"
 typeOf: dcs:VirusGenusEnum
@@ -6781,6 +7503,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusBowservirus
 name: "Bowservirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusBranisovskavirus
+name: "Branisovskavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6801,11 +7528,6 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusBrunovirus
 name: "Brunovirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
-Node: dcid:VirusGenusBrussowvirus
-name: "Brussowvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6839,8 +7561,28 @@ name: "Camtrevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusCantarevirus
+name: "Cantarevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusCapnelvirus
+name: "Capnelvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusCarnodivirus
+name: "Carnodivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusCarpasinavirus
 name: "Carpasinavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusCarvajevirus
+name: "Carvajevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6874,8 +7616,18 @@ name: "Cequinquevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusCertevirus
+name: "Certevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusChakrabartyvirus
 name: "Chakrabartyvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusChaoshanvirus
+name: "Chaoshanvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6891,6 +7643,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusChiangmaivirus
 name: "Chiangmaivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusChidieberevirus
+name: "Chidieberevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6914,6 +7671,11 @@ name: "Cinunavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusClawzvirus
+name: "Clawzvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusClownvirus
 name: "Clownvirus"
 typeOf: dcs:VirusGenusEnum
@@ -6924,8 +7686,18 @@ name: "Coatlandelriovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusCobrasixvirus
+name: "Cobrasixvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusCoetzeevirus
 name: "Coetzeevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusCoeurvirus
+name: "Coeurvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6951,6 +7723,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusCoventryvirus
 name: "Coventryvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusCraquatrovirus
+name: "Craquatrovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -6986,6 +7763,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusDemosthenesvirus
 name: "Demosthenesvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusDenisevirus
+name: "Denisevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7041,6 +7823,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusDoucettevirus
 name: "Doucettevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusDubuvirus
+name: "Dubuvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7104,8 +7891,18 @@ name: "Emdodecavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusEmperorvirus
+name: "Emperorvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusEneladusvirus
 name: "Eneladusvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusEnfavirus
+name: "Enfavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7114,8 +7911,18 @@ name: "Enhodamvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusEowynvirus
+name: "Eowynvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusEponavirus
 name: "Eponavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusEricdabvirus
+name: "Ericdabvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7139,6 +7946,11 @@ name: "Fairfaxidumvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusFajavirus
+name: "Fajavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusFarahnazvirus
 name: "Farahnazvirus"
 typeOf: dcs:VirusGenusEnum
@@ -7156,6 +7968,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusFernvirus
 name: "Fernvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusFerozepurvirus
+name: "Ferozepurvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7186,6 +8003,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusFlaumdravirus
 name: "Flaumdravirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusForzavirus
+name: "Forzavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7269,8 +8091,8 @@ name: "Gillianvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusGilsonvirus
-name: "Gilsonvirus"
+Node: dcid:VirusGenusGimaduovirus
+name: "Gimaduovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7324,6 +8146,11 @@ name: "Goslarvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusGrutrevirus
+name: "Grutrevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusGustavvirus
 name: "Gustavvirus"
 typeOf: dcs:VirusGenusEnum
@@ -7364,6 +8191,16 @@ name: "Helsingorvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusHestiavirus
+name: "Hestiavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusHiroshimavirus
+name: "Hiroshimavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusHiyaavirus
 name: "Hiyaavirus"
 typeOf: dcs:VirusGenusEnum
@@ -7389,6 +8226,11 @@ name: "Homburgvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusHowevirus
+name: "Howevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusHubeivirus
 name: "Hubeivirus"
 typeOf: dcs:VirusGenusEnum
@@ -7406,6 +8248,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusIapetusvirus
 name: "Iapetusvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusIggyvirus
+name: "Iggyvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7429,11 +8276,6 @@ name: "Incheonvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusIncheonvrus
-name: "Incheonvrus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
 Node: dcid:VirusGenusIndlulamithivirus
 name: "Indlulamithivirus"
 typeOf: dcs:VirusGenusEnum
@@ -7454,13 +8296,18 @@ name: "Ionavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusJacevirus
-name: "Jacevirus"
+Node: dcid:VirusGenusIsoldevirus
+name: "Isoldevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusJamesmcgillvirus
-name: "Jamesmcgillvirus"
+Node: dcid:VirusGenusIttyvirus
+name: "Ittyvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusJacevirus
+name: "Jacevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7481,11 +8328,6 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusJenstvirus
 name: "Jenstvirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
-Node: dcid:VirusGenusJilinvirus
-name: "Jilinvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7536,6 +8378,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusKelquatrovirus
 name: "Kelquatrovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusKenyattavirus
+name: "Kenyattavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7624,6 +8471,11 @@ name: "Kuleanavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusKumottavirus
+name: "Kumottavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusKungbxnavirus
 name: "Kungbxnavirus"
 typeOf: dcs:VirusGenusEnum
@@ -7631,11 +8483,6 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusKunmingvirus
 name: "Kunmingvirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
-Node: dcid:VirusGenusKuravirus
-name: "Kuravirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7729,11 +8576,6 @@ name: "Lessievirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusLiebevirus
-name: "Liebevirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
 Node: dcid:VirusGenusLietduovirus
 name: "Lietduovirus"
 typeOf: dcs:VirusGenusEnum
@@ -7799,6 +8641,11 @@ name: "Luckytenvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusLudhianavirus
+name: "Ludhianavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusLughvirus
 name: "Lughvirus"
 typeOf: dcs:VirusGenusEnum
@@ -7806,6 +8653,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusLwoffvirus
 name: "Lwoffvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusMaaswegvirus
+name: "Maaswegvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7824,13 +8676,13 @@ name: "Magadivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusMajavirus
-name: "Majavirus"
+Node: dcid:VirusGenusMagiavirus
+name: "Magiavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusManhattanvirus
-name: "Manhattanvirus"
+Node: dcid:VirusGenusMajavirus
+name: "Majavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7846,6 +8698,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusMardecavirus
 name: "Mardecavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusMareflavirus
+name: "Mareflavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7874,6 +8731,16 @@ name: "Maxrubnervirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusMcgonagallvirus
+name: "Mcgonagallvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusMeadowvirus
+name: "Meadowvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusMementomorivirus
 name: "Mementomorivirus"
 typeOf: dcs:VirusGenusEnum
@@ -7894,6 +8761,11 @@ name: "Metrivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusMiamivirus
+name: "Miamivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusMicavirus
 name: "Micavirus"
 typeOf: dcs:VirusGenusEnum
@@ -7904,8 +8776,18 @@ name: "Microwolfvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusMidgardsormrvirus
+name: "Midgardsormrvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusMieseafarmvirus
 name: "Mieseafarmvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusMiltoncavirus
+name: "Miltoncavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -7924,8 +8806,13 @@ name: "Moabitevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusMoineauvirus
-name: "Moineauvirus"
+Node: dcid:VirusGenusMohonavirus
+name: "Mohonavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusMollymurvirus
+name: "Mollymurvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8004,6 +8891,11 @@ name: "Naesvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusNamazuvirus
+name: "Namazuvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusNanhaivirus
 name: "Nanhaivirus"
 typeOf: dcs:VirusGenusEnum
@@ -8034,8 +8926,18 @@ name: "Nickievirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusNimduovirus
+name: "Nimduovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusNonanavirus
 name: "Nonanavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusNorthamptonvirus
+name: "Northamptonvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8064,11 +8966,6 @@ name: "Oengusvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusOliverocinquevirus
-name: "Oliverocinquevirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
 Node: dcid:VirusGenusOmegavirus
 name: "Omegavirus"
 typeOf: dcs:VirusGenusEnum
@@ -8076,6 +8973,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusOneupvirus
 name: "Oneupvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusOnyinyevirus
+name: "Onyinyevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8091,6 +8993,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusOtagovirus
 name: "Otagovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusPaclarkvirus
+name: "Paclarkvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8134,6 +9041,16 @@ name: "Patiencevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusPavtokvirus
+name: "Pavtokvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusPawinskivirus
+name: "Pawinskivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusPbunavirus
 name: "Pbunavirus"
 typeOf: dcs:VirusGenusEnum
@@ -8159,8 +9076,18 @@ name: "Perisivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusPersistencevirus
+name: "Persistencevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusPetsuvirus
 name: "Petsuvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusPhabiovirus
+name: "Phabiovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8204,6 +9131,11 @@ name: "Pikminvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusPiorkowskivirus
+name: "Piorkowskivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusPlaisancevirus
 name: "Plaisancevirus"
 typeOf: dcs:VirusGenusEnum
@@ -8229,6 +9161,11 @@ name: "Polybotosvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusPonsvirus
+name: "Ponsvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusPopoffvirus
 name: "Popoffvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8239,13 +9176,13 @@ name: "Poushouvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusPredatorvirus
-name: "Predatorvirus"
+Node: dcid:VirusGenusPowerballvirus
+name: "Powerballvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusPrivateervirus
-name: "Privateervirus"
+Node: dcid:VirusGenusPredatorvirus
+name: "Predatorvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8274,6 +9211,11 @@ name: "Puppervirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusPurivirus
+name: "Purivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusQingdaovirus
 name: "Qingdaovirus"
 typeOf: dcs:VirusGenusEnum
@@ -8286,6 +9228,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusQuhwahvirus
 name: "Quhwahvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusQuivirus
+name: "Quivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8329,6 +9276,11 @@ name: "Rerduovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusRichievirus
+name: "Richievirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusRigallicvirus
 name: "Rigallicvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8346,6 +9298,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusRisingsunvirus
 name: "Risingsunvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusRivsvirus
+name: "Rivsvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8376,6 +9333,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusRosemountvirus
 name: "Rosemountvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusRoslyckyvirus
+name: "Roslyckyvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8454,8 +9416,18 @@ name: "Saphexavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusSargevirus
+name: "Sargevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusSarumanvirus
 name: "Sarumanvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSasdunavirus
+name: "Sasdunavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8484,6 +9456,11 @@ name: "Sawaravirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusScappvirus
+name: "Scappvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusScapunavirus
 name: "Scapunavirus"
 typeOf: dcs:VirusGenusEnum
@@ -8506,6 +9483,16 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusSchubertvirus
 name: "Schubertvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSeahorsevirus
+name: "Seahorsevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSeamegvirus
+name: "Seamegvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8534,6 +9521,11 @@ name: "Septimatrevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusSerwervirus
+name: "Serwervirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusSeussvirus
 name: "Seussvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8541,6 +9533,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusSextaecvirus
 name: "Sextaecvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSfunavirus
+name: "Sfunavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8564,8 +9561,38 @@ name: "Shirahamavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusShoyavirus
+name: "Shoyavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusShuimuvirus
 name: "Shuimuvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSiatvirus
+name: "Siatvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSidiousvirus
+name: "Sidiousvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSiftrevirus
+name: "Siftrevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSilentrexvirus
+name: "Silentrexvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSixamavirus
+name: "Sixamavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8581,6 +9608,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusSkogvirus
 name: "Skogvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSkulduggeryvirus
+name: "Skulduggeryvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8601,6 +9633,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusSmoothievirus
 name: "Smoothievirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusSnuvirus
+name: "Snuvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8659,6 +9696,11 @@ name: "Steinhofvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusStonewallvirus
+name: "Stonewallvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusStormageddonvirus
 name: "Stormageddonvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8679,6 +9721,11 @@ name: "Swiduovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusSyrbvirus
+name: "Syrbvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusTabernariusvirus
 name: "Tabernariusvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8686,11 +9733,6 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusTakahashivirus
 name: "Takahashivirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
-Node: dcid:VirusGenusTamkungvirus
-name: "Tamkungvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8714,6 +9756,11 @@ name: "Taranisvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusTepukevirus
+name: "Tepukevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusTerapinvirus
 name: "Terapinvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8726,6 +9773,11 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusThornevirus
 name: "Thornevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusTieomvirus
+name: "Tieomvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8814,6 +9866,11 @@ name: "Vedamuthuvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusVeewebvirus
+name: "Veewebvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusVeracruzvirus
 name: "Veracruzvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8889,11 +9946,6 @@ name: "Wifcevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusWilnyevirus
-name: "Wilnyevirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusClassCaudoviricetes
-
 Node: dcid:VirusGenusWizardvirus
 name: "Wizardvirus"
 typeOf: dcs:VirusGenusEnum
@@ -8901,6 +9953,16 @@ specializationOf: dcs:VirusClassCaudoviricetes
 
 Node: dcid:VirusGenusWoesvirus
 name: "Woesvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusWollypogvirus
+name: "Wollypogvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusWolominvirus
+name: "Wolominvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8934,8 +9996,8 @@ name: "Xuquatrovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
-Node: dcid:VirusGenusYangvirus
-name: "Yangvirus"
+Node: dcid:VirusGenusYanchengvirus
+name: "Yanchengvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -8969,8 +10031,23 @@ name: "Zetavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
+Node: dcid:VirusGenusZhangjivirus
+name: "Zhangjivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusZhangqianvirus
+name: "Zhangqianvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
 Node: dcid:VirusGenusZitchvirus
 name: "Zitchvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusClassCaudoviricetes
+
+Node: dcid:VirusGenusZukovirus
+name: "Zukovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusClassCaudoviricetes
 
@@ -9544,8 +10621,8 @@ name: "Hepanhamaparvovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyHamaparvovirinae
 
-Node: dcid:VirusGenusIchthamaparvovirus
-name: "Ichthamaparvovirus"
+Node: dcid:VirusGenusIchtchaphamaparvovirus
+name: "Ichtchaphamaparvovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyHamaparvovirinae
 
@@ -9599,13 +10676,33 @@ name: "Protoparvovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyParvovirinae
 
+Node: dcid:VirusGenusSandeparvovirus
+name: "Sandeparvovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyParvovirinae
+
 Node: dcid:VirusGenusTetraparvovirus
 name: "Tetraparvovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyParvovirinae
 
+Node: dcid:VirusGenusMetalloincertoparvovirus
+name: "Metalloincertoparvovirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyParvoviridae
+
+Node: dcid:VirusGenusAberdnavirus
+name: "Aberdnavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyBacilladnaviridae
+
 Node: dcid:VirusGenusDiatodnavirus
 name: "Diatodnavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyBacilladnaviridae
+
+Node: dcid:VirusGenusKeisodnavirus
+name: "Keisodnavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyBacilladnaviridae
 
@@ -9616,6 +10713,16 @@ specializationOf: dcs:VirusFamilyBacilladnaviridae
 
 Node: dcid:VirusGenusProtobacilladnavirus
 name: "Protobacilladnavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyBacilladnaviridae
+
+Node: dcid:VirusGenusPuahadnavirus
+name: "Puahadnavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyBacilladnaviridae
+
+Node: dcid:VirusGenusSeawadnavirus
+name: "Seawadnavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyBacilladnaviridae
 
@@ -9748,6 +10855,16 @@ Node: dcid:VirusGenusSimismacovirus
 name: "Simismacovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilySmacoviridae
+
+Node: dcid:VirusGenusTemfrudevirus
+name: "Temfrudevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAmesuviridae
+
+Node: dcid:VirusGenusYermavirus
+name: "Yermavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAmesuviridae
 
 Node: dcid:VirusGenusCofodevirus
 name: "Cofodevirus"
@@ -9948,6 +11065,11 @@ Node: dcid:VirusGenusGammapleolipovirus
 name: "Gammapleolipovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPleolipoviridae
+
+Node: dcid:VirusGenusAlternavirus
+name: "Alternavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAlternaviridae
 
 Node: dcid:VirusGenusAlphachrysovirus
 name: "Alphachrysovirus"
@@ -10399,13 +11521,13 @@ name: "Tymovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyTymoviridae
 
-Node: dcid:VirusGenusFlavivirus
-name: "Flavivirus"
+Node: dcid:VirusGenusHepacivirus
+name: "Hepacivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyFlaviviridae
 
-Node: dcid:VirusGenusHepacivirus
-name: "Hepacivirus"
+Node: dcid:VirusGenusOrthoflavivirus
+name: "Orthoflavivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyFlaviviridae
 
@@ -10527,7 +11649,7 @@ specializationOf: dcs:VirusSubfamilyRegressovirinae
 Node: dcid:VirusGenusLuteovirus
 name: "Luteovirus"
 typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyTombusviridae
+specializationOf: dcs:VirusSubfamilyRegressovirinae
 
 Node: dcid:VirusGenusNarnavirus
 name: "Narnavirus"
@@ -12834,6 +13956,11 @@ name: "Pterovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyChuviridae
 
+Node: dcid:VirusGenusRochuvirus
+name: "Rochuvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyChuviridae
+
 Node: dcid:VirusGenusScarabeuvirus
 name: "Scarabeuvirus"
 typeOf: dcs:VirusGenusEnum
@@ -12841,6 +13968,11 @@ specializationOf: dcs:VirusFamilyChuviridae
 
 Node: dcid:VirusGenusTaceavirus
 name: "Taceavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyChuviridae
+
+Node: dcid:VirusGenusVapochuvirus
+name: "Vapochuvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyChuviridae
 
@@ -12894,18 +14026,18 @@ name: "Dianlovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyFiloviridae
 
-Node: dcid:VirusGenusEbolavirus
-name: "Ebolavirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyFiloviridae
-
-Node: dcid:VirusGenusMarburgvirus
-name: "Marburgvirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyFiloviridae
-
 Node: dcid:VirusGenusOblavirus
 name: "Oblavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyFiloviridae
+
+Node: dcid:VirusGenusOrthoebolavirus
+name: "Orthoebolavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyFiloviridae
+
+Node: dcid:VirusGenusOrthomarburgvirus
+name: "Orthomarburgvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyFiloviridae
 
@@ -12924,6 +14056,21 @@ name: "Thamnovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyFiloviridae
 
+Node: dcid:VirusGenusAcridvirus
+name: "Acridvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyLispiviridae
+
+Node: dcid:VirusGenusAleyavirus
+name: "Aleyavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyLispiviridae
+
+Node: dcid:VirusGenusAleybvirus
+name: "Aleybvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyLispiviridae
+
 Node: dcid:VirusGenusAnicalvirus
 name: "Anicalvirus"
 typeOf: dcs:VirusGenusEnum
@@ -12934,8 +14081,23 @@ name: "Anidravirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyLispiviridae
 
+Node: dcid:VirusGenusAranavirus
+name: "Aranavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyLispiviridae
+
+Node: dcid:VirusGenusAranbvirus
+name: "Aranbvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyLispiviridae
+
 Node: dcid:VirusGenusArlivirus
 name: "Arlivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyLispiviridae
+
+Node: dcid:VirusGenusAvesvirus
+name: "Avesvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyLispiviridae
 
@@ -12956,6 +14118,11 @@ specializationOf: dcs:VirusFamilyLispiviridae
 
 Node: dcid:VirusGenusGaniavirus
 name: "Ganiavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyLispiviridae
+
+Node: dcid:VirusGenusHemipvirus
+name: "Hemipvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyLispiviridae
 
@@ -13319,6 +14486,11 @@ name: "Sunrhavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyAlpharhabdovirinae
 
+Node: dcid:VirusGenusThriprhavirus
+name: "Thriprhavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAlpharhabdovirinae
+
 Node: dcid:VirusGenusTibrovirus
 name: "Tibrovirus"
 typeOf: dcs:VirusGenusEnum
@@ -13486,6 +14658,11 @@ specializationOf: dcs:VirusFamilyArenaviridae
 
 Node: dcid:VirusGenusHartmanivirus
 name: "Hartmanivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyArenaviridae
+
+Node: dcid:VirusGenusInnmovirus
+name: "Innmovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyArenaviridae
 
@@ -13674,6 +14851,11 @@ name: "Beidivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPhenuiviridae
 
+Node: dcid:VirusGenusCitricivirus
+name: "Citricivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPhenuiviridae
+
 Node: dcid:VirusGenusCoguvirus
 name: "Coguvirus"
 typeOf: dcs:VirusGenusEnum
@@ -13716,6 +14898,11 @@ specializationOf: dcs:VirusFamilyPhenuiviridae
 
 Node: dcid:VirusGenusLentinuvirus
 name: "Lentinuvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyPhenuiviridae
+
+Node: dcid:VirusGenusMechlorovirus
+name: "Mechlorovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPhenuiviridae
 
@@ -13828,6 +15015,11 @@ Node: dcid:VirusGenusThogotovirus
 name: "Thogotovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyOrthomyxoviridae
+
+Node: dcid:VirusGenusFraservirus
+name: "Fraservirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyTosoviridae
 
 Node: dcid:VirusGenusAmalgavirus
 name: "Amalgavirus"
@@ -14278,6 +15470,11 @@ Node: dcid:VirusGenusSogarnavirus
 name: "Sogarnavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyMarnaviridae
+
+Node: dcid:VirusGenusOrthonoravirus
+name: "Orthonoravirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyNoraviridae
 
 Node: dcid:VirusGenusAilurivirus
 name: "Ailurivirus"
@@ -15114,15 +16311,75 @@ name: "Raphidovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPhycodnaviridae
 
-Node: dcid:VirusGenusCafeteriavirus
-name: "Cafeteriavirus"
+Node: dcid:VirusGenusHeliosvirus
+name: "Heliosvirus"
 typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyMimiviridae
+specializationOf: dcs:VirusFamilyAllomimiviridae
+
+Node: dcid:VirusGenusOceanusvirus
+name: "Oceanusvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyAllomimiviridae
+
+Node: dcid:VirusGenusTethysvirus
+name: "Tethysvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyMesomimiviridae
+
+Node: dcid:VirusGenusRheavirus
+name: "Rheavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyAliimimivirinae
+
+Node: dcid:VirusGenusFadolivirus
+name: "Fadolivirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyKlosneuvirinae
+
+Node: dcid:VirusGenusTheiavirus
+name: "Theiavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyKlosneuvirinae
+
+Node: dcid:VirusGenusYasminevirus
+name: "Yasminevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyKlosneuvirinae
+
+Node: dcid:VirusGenusCotonvirus
+name: "Cotonvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyMegamimivirinae
+
+Node: dcid:VirusGenusMegavirus
+name: "Megavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyMegamimivirinae
 
 Node: dcid:VirusGenusMimivirus
 name: "Mimivirus"
 typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyMimiviridae
+specializationOf: dcs:VirusSubfamilyMegamimivirinae
+
+Node: dcid:VirusGenusMoumouvirus
+name: "Moumouvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyMegamimivirinae
+
+Node: dcid:VirusGenusTupanvirus
+name: "Tupanvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusSubfamilyMegamimivirinae
+
+Node: dcid:VirusGenusBiavirus
+name: "Biavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySchizomimiviridae
+
+Node: dcid:VirusGenusKratosvirus
+name: "Kratosvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySchizomimiviridae
 
 Node: dcid:VirusGenusAscovirus
 name: "Ascovirus"
@@ -15173,6 +16430,11 @@ Node: dcid:VirusGenusMarseillevirus
 name: "Marseillevirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyMarseilleviridae
+
+Node: dcid:VirusGenusMedusavirus
+name: "Medusavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyMamonoviridae
 
 Node: dcid:VirusGenusAsfivirus
 name: "Asfivirus"
@@ -15289,6 +16551,11 @@ name: "Gammaentomopoxvirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusSubfamilyEntomopoxvirinae
 
+Node: dcid:VirusGenusFinnlakevirus
+name: "Finnlakevirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyFinnlakeviridae
+
 Node: dcid:VirusGenusMavirus
 name: "Mavirus"
 typeOf: dcs:VirusGenusEnum
@@ -15309,10 +16576,25 @@ name: "Betadintovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAdintoviridae
 
+Node: dcid:VirusGenusDelusorvirus
+name: "Delusorvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilySkuldviridae
+
 Node: dcid:VirusGenusAlphaturrivirus
 name: "Alphaturrivirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyTurriviridae
+
+Node: dcid:VirusGenusAntichaacvirus
+name: "Antichaacvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyChaacviridae
+
+Node: dcid:VirusGenusHomochaacvirus
+name: "Homochaacvirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyChaacviridae
 
 Node: dcid:VirusGenusAlphatectivirus
 name: "Alphatectivirus"
@@ -15719,20 +17001,25 @@ name: "Pelamoviroid"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyAvsunviroidae
 
+Node: dcid:VirusGenusBartonegtaviriform
+name: "Bartonegtaviriform"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyBartogtaviriformidae
+
 Node: dcid:VirusGenusBicaudavirus
 name: "Bicaudavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyBicaudaviridae
 
+Node: dcid:VirusGenusBrachyspigtaviriform
+name: "Brachyspigtaviriform"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyBrachygtaviriformidae
+
 Node: dcid:VirusGenusClavavirus
 name: "Clavavirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyClavaviridae
-
-Node: dcid:VirusGenusFinnlakevirus
-name: "Finnlakevirus"
-typeOf: dcs:VirusGenusEnum
-specializationOf: dcs:VirusFamilyFinnlakeviridae
 
 Node: dcid:VirusGenusAlphafusellovirus
 name: "Alphafusellovirus"
@@ -15758,6 +17045,16 @@ Node: dcid:VirusGenusSalterprovirus
 name: "Salterprovirus"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyHalspiviridae
+
+Node: dcid:VirusGenusDemiitzamnavirus
+name: "Demiitzamnavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyItzamnaviridae
+
+Node: dcid:VirusGenusPletoitzamnavirus
+name: "Pletoitzamnavirus"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyItzamnaviridae
 
 Node: dcid:VirusGenusAlphaovalivirus
 name: "Alphaovalivirus"
@@ -15808,6 +17105,26 @@ Node: dcid:VirusGenusPospiviroid
 name: "Pospiviroid"
 typeOf: dcs:VirusGenusEnum
 specializationOf: dcs:VirusFamilyPospiviroidae
+
+Node: dcid:VirusGenusDinogtaviriform
+name: "Dinogtaviriform"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyRhodogtaviriformidae
+
+Node: dcid:VirusGenusRhodobactegtaviriform
+name: "Rhodobactegtaviriform"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyRhodogtaviriformidae
+
+Node: dcid:VirusGenusRhodovulugtaviriform
+name: "Rhodovulugtaviriform"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyRhodogtaviriformidae
+
+Node: dcid:VirusGenusRuegerigtaviriform
+name: "Ruegerigtaviriform"
+typeOf: dcs:VirusGenusEnum
+specializationOf: dcs:VirusFamilyRhodogtaviriformidae
 
 Node: dcid:VirusGenusAlphaspiravirus
 name: "Alphaspiravirus"
