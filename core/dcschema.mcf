@@ -186,7 +186,7 @@ description: "Used when extra description is needed for the measurement result. 
 
 Node: dcid:growthRate
 name: "growthRate"
-domainIncludes: schema:Observation
+domainIncludes: schema:Observation, schema:GrossDomesticProduct
 rangeIncludes: schema:Number
 typeOf: schema:Property
 description: "The percentage change of a specific variable within a specific time period and given a certain context."
@@ -414,7 +414,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent, schema:BirthEvent, schema:PregnantWomen, schema:Student
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -844,7 +844,7 @@ Node: dcid:grossDomesticProduct
 typeOf: schema:Property
 name: "grossDomesticProduct"
 rangeIncludes: schema:MonetaryAmount
-domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum
+domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum, dcs:EconomicActivity
 description: "Gross domestic product (GDP) is the monetary value of all the finished goods and services produced within a place in a specific time period"
 
 Node: dcid:growthRate
@@ -3353,7 +3353,7 @@ description: "The geo granularity at which a variable has data for"
 Node: dcid:ageGroupClassification
 name: "ageGroupClassification"
 rangeIncludes: dcs:AgeGroupClassificationEnum
-domainIncludes: dcs:Person
+domainIncludes: dcs:Person, dcs:MortalityEvent
 typeOf: schema:Property
 description: "People classified based on their age group."
 descriptionUrl: "https://www.nih.gov/nih-style-guide/age"
@@ -3455,7 +3455,7 @@ description: "Priority level of the job a person is getting an income from. A Ma
 Node: dcid:consumerGoodsCategory
 typeOf: schema:Property
 name: "consumerGoodsCategory"
-domainIncludes: dcs:ConsumerGoodsAndServices
+domainIncludes: dcs:ConsumerGoodsAndServices, dcs:Household
 rangeIncludes: dcs:ConsumerGoodsCategoryEnum, dcs:FarmInventoryTypeEnum, dcs:ProductEnum, dcs:EnergySourceEnum, dcs:SubstanceTypeEnum, dcs:TobaccoUsageTypeEnum, dcs:EmissionSourceEnum
 description: "Products and Services that fall under Consumer Price Index"
 
@@ -3537,6 +3537,17 @@ Node: dcid:jobStatus
 typeOf: dcs:Property
 name: "jobStatus"
 rangeIncludes: dcs:JobStatusEnum
+Node: dcid:sanitationFacilityType
+typeOf: dcs:Property
+name: "sanitationFacilityType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:SanitationFacilityTypeEnum
+
+Node: dcid:drinkingWaterSourceType
+typeOf: dcs:Property
+name: "drinkingWaterSourceType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:DrinkingWaterSourceTypeEnum
 
 Node: dcid:NTIA_OtherRace
 typeOf: dcid:RaceCodeEnum
@@ -3654,7 +3665,7 @@ name: "Factor For Home Internet Service Speed"
 Node: dcid:electronicGadgetUsed
 typeOf: dcs:Property
 name: "electronicGadgetUsed"
-domainIncludes: dcid:Person
+domainIncludes: dcid:Person, dcid:Household
 rangeIncludes: dcid:ElectronicGadgetUsedEnum
 
 Node: dcid:ElectronicGadgetUsedEnum
@@ -3779,3 +3790,86 @@ typeOf: dcs:Property
 name: "southAfricanMunicipalityCode"
 domainIncludes: dcs:Place
 description: "Identifier for a municipality in South Africa"
+Node: dcid:GrossDomesticProduct
+typeOf: dcs:Class
+subClassOf: dcs:Thing
+name: "GrossDomesticProduct"
+
+Node: dcid:inflationRate
+typeOf: dcs:Property
+name: "inflationRate"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:revenueType
+typeOf: dcs:Property
+name: "revenueType"
+domainIncludes: dcid:Revenue
+rangeIncludes: dcid:RevenueTypeEnum
+
+Node: dcid:grossCapitalFormation
+typeOf: dcs:Property
+name: "grossCapitalFormation"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:NominalGrossDomesticProduct
+typeOf: dcid:Thing
+name: "Nominal Gross Domestic Product"
+
+Node: dcid:Revenue
+typeOf: dcid:Thing
+name: "Revenue"
+
+Node: dcid:birthControlMethod
+typeOf: dcs:Property
+name: "birthControlMethod"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:BirthControlMethodEnum,dcid:Property
+
+Node: dcid:BirthControlMethodEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "BirthControlMethodEnum"
+
+Node: dcid:healthRiskFactors
+typeOf: dcs:Property
+name: "healthRiskFactors"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthRiskFactorsEnum
+
+Node: dcid:PrevalenceOfHiv
+typeOf: dcid:HealthRiskFactorsEnum
+name: "Prevalence Of Hiv"
+
+Node: dcid:healthDiseasePrevention
+typeOf: dcs:Property
+name: "healthDiseasePrevention"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthDiseasePreventionEnum
+
+Node: dcid:ComprehensiveCorrectKnowledgeOfHIV/AIDS
+typeOf: dcid:HealthDiseasePreventionEnum
+name: "Comprehensive Correct Knowledge Of HIV/ AIDS"
+
+Node: dcid:antenatalStatus
+typeOf: dcs:Property
+name: "antenatalStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:AntenatalStatusEnum
+
+Node: dcid:treatmentTechnique
+typeOf: dcs:Property
+name: "treatmentTechnique"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:TreatmentTechniqueEnum
+
+Node: dcid:familyMemberType
+typeOf: dcs:Property
+name: "familyMemberType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:FamilyMemberTypeEnum,dcid:Class
+
+Node: dcid:literateLanguage
+typeOf: dcs:Property
+name: "literateLanguage"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:LanguageSpokenAtHomeEnum

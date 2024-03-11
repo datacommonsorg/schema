@@ -142,13 +142,13 @@ name: "outage"
 Node: dcid:imports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, schema:EconomicActivity
 name: "imports"
 
 Node: dcid:exports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Electricity, schema:Energy, schema:Fuel
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:EconomicActivity
 name: "exports"
 
 Node: dcid:reserves
@@ -3005,4 +3005,3 @@ name: "India Energy Dashboard Unspecified Sector"
 Node: dcid:IndiaEDM_OtherOilProducts
 typeOf: dcs:EnergySourceEnum
 name: "India Energy Dashboard Other Oil Products"
-
