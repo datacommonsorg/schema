@@ -4,7 +4,7 @@ name: "Scheduled Caste Sub Plan fund utilised (%)"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-benefitStatus: dcid:UtilisedScheduledCasteSubPlanFund
+benefitsStatus: dcid:UtilisedScheduledCasteSubPlanFund
 
 Node: dcid:Amount_EconomicActivity_UtilisedTribalSubPlanFund
 typeOf: dcid:StatisticalVariable
@@ -12,7 +12,7 @@ name: "Tribal Sub Plan fund utilised (%)"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-benefitStatus: dcid:UtilisedTribalSubPlanFund
+benefitsStatus: dcid:UtilisedTribalSubPlanFund
 
 Node: dcid:Amount_FarmInventory_RiceOrWheat_AsAFractionOf_Area_Farm_RiceOrWheat
 typeOf: dcid:StatisticalVariable
@@ -51,6 +51,7 @@ measurementDenominator: dcid:Annual_Reserve_Water
 
 Node: dcid:Area_Farm_RiceOrWheat
 typeOf: dcid:StatisticalVariable
+name: "Rice, wheat and coarse cereals produced annually per unit area (Kg/Ha)","Rice and wheat produced annually per unit area  (Kg/Ha)"
 populationType: dcid:Farm
 measuredProperty: dcid:area
 statType: dcid:measuredValue
@@ -88,7 +89,7 @@ populationType: dcid:House
 measuredProperty: dcid:constructed
 statType: dcid:measuredValue
 measurementDenominator: dcid:Demand_House
-benefitStatus: dcid:PradhanMantriAwasYojana
+benefitsStatus: dcid:PradhanMantriAwasYojana
 
 Node: dcid:Count_BirthEvent_Female_LiveBirth_AsAFractionOf_Count_BirthEvent_LiveBirth_Male
 typeOf: dcid:StatisticalVariable
@@ -175,7 +176,7 @@ populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Household
-benefitStatus: dcid:PradhanMantriGramSadakYojana
+benefitsStatus: dcid:PradhanMantriGramSadakYojana
 facilities: dcid:Road
 
 Node: dcid:Count_Household_PublicDistributionSystem_IncomeOfIndianRupeeUpto5000_Rural_AsAFractionOf_Count_Household_IncomeOfIndianRupeeUpto5000_Rural
@@ -185,7 +186,7 @@ populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Household_IncomeOfIndianRupeeUpto5000_Rural
-benefitStatus: dcid:PublicDistributionSystem
+benefitsStatus: dcid:PublicDistributionSystem
 income: dcid:IndianRupeeUpto5000
 placeOfResidenceClassification: dcid:Rural
 
@@ -312,7 +313,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-benefitStatus: dcid:EligibleSocialProtectionBenefitUnderMaternityBenefit
+benefitsStatus: dcid:EligibleSocialProtectionBenefitUnderMaternityBenefit
 
 Node: dcid:Count_Person_Employed_AsAFractionOf_Count_Person_MGNREGAUnemployed
 typeOf: dcid:StatisticalVariable
@@ -403,7 +404,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
-benefitStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
+benefitsStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
 
 Node: dcid:Count_Person_WithInternetSubscription_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
@@ -645,6 +646,15 @@ age: [15 19 Year]
 employmentStatus: dcid:InLaborForce
 gender: dcid:Male
 
+Node: dcid:Count_Person_PradhanMantriJanDhanYojana_BankAccount_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+benefitsStatus: dcid:PradhanMantriJanDhanYojana
+facilities: dcid:BankAccount
+
 Node: dcid:UnemploymentRate_Person_15To59Year
 typeOf: dcid:StatisticalVariable
 name: "Unemployment rate (%) (15-59 years)"
@@ -665,7 +675,7 @@ populationType: dcid:Households
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Households
-benefitStatus: dcid:PradhanMantriGramSadakYojana
+benefitsStatus: dcid:PradhanMantriGramSadakYojana
 facilities: dcid:Road
 
 Node: dcid:IndexScore_Household_WithHealthSchemeOrWithHealthInsurance
@@ -687,28 +697,28 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
-benefitStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
+benefitsStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
 
 Node: dcid:IndexScore_EconomicActivity_UtilisedScheduledCasteSubPlanFund
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
-benefitStatus: dcid:UtilisedScheduledCasteSubPlanFund
+benefitsStatus: dcid:UtilisedScheduledCasteSubPlanFund
 
 Node: dcid:IndexScore_EconomicActivity_UtilisedTribalSubPlanFund
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
-benefitStatus: dcid:UtilisedTribalSubPlanFund
+benefitsStatus: dcid:UtilisedTribalSubPlanFund
 
 Node: dcid:IndexScore_House_PradhanMantriAwasYojana
 typeOf: dcid:StatisticalVariable
 populationType: dcid:House
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
-benefitStatus: dcid:PradhanMantriAwasYojana
+benefitsStatus: dcid:PradhanMantriAwasYojana
 
 Node: dcid:IndexScore_MunicipalWard_100Percent_DoorToDoorWasteCollection
 typeOf: dcid:StatisticalVariable
@@ -810,7 +820,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
-benefitStatus: dcid:PublicDistributionSystem
+benefitsStatus: dcid:PublicDistributionSystem
 income: dcid:IndianRupeeUpto5000
 placeOfResidenceClassification: dcid:Rural
 
@@ -949,11 +959,13 @@ statType: dcid:measuredValue
 placeType: dcid:District
 socialCondition: dcid:OpenDefecationFree
 
-Node: dcid:IndexScore_Household
+Node: dcid:IndexScore_Household_ElectrifiedHouseholds
 typeOf: dcid:StatisticalVariable
+name: "Index Score electrifiedHouseholds"
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
+indexProperty: dcid:electrifiedHouseholds
 
 Node: dcid:IndexScore_Household_BankAccount
 typeOf: dcid:StatisticalVariable
@@ -962,17 +974,18 @@ measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
 facilities: dcid:BankAccount
 
-Node: dcid:IndexScore_Person
+Node: dcid:IndexScore_Person_UnemploymentRate
 typeOf: dcid:StatisticalVariable
-name: "Unemployment rate (%)"
+name: "Index Score unemploymentRate"
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
+indexProperty: dcid:unemploymentRate
 
 Node: dcid:IndexScore_Households_PradhanMantriGramSadakYojana_Road
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Households
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
-benefitStatus: dcid:PradhanMantriGramSadakYojana
+benefitsStatus: dcid:PradhanMantriGramSadakYojana
 facilities: dcid:Road

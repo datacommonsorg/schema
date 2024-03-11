@@ -1,9 +1,3 @@
-Node: dcid:benefitStatus
-typeOf: dcs:Property
-name: "benefitStatus"
-domainIncludes: dcid:Household
-isProvisional: dcs:True
-
 Node: dcid:employer
 typeOf: dcs:Property
 name: "employer"
@@ -22,7 +16,7 @@ Node: dcid:qualificationStatus
 typeOf: dcs:Property
 name: "qualificationStatus"
 domainIncludes: dcid:Teacher
-rangeIncludes: dcid:QualificationStatusEnum
+rangeIncludes: dcid:Qualification Status Enum
 isProvisional: dcs:True
 
 Node: dcid:placeType
@@ -64,6 +58,11 @@ name: "indexScore"
 domainIncludes: schema:Water, schema:Courthouse, schema:MaternalMortalityEvent, schema:MunicipalWard, schema:Household, schema:CriminalIncidents, schema:Households, schema:House, schema:WasteGenerated, schema:Student, schema:BirthEvent, schema:School, schema:Electricity, schema:MedicalConditionIncident, schema:MortalityEvent, schema:Person, schema:CriminalActivities, schema:Place
 rangeIncludes: dcid:IndexScoreEnum
 isProvisional: dcs:True
+
+Node: dcid:indexProperty
+typeOf: dcs:Property
+name: "indexProperty"
+domainIncludes: dcid:Person
 
 Node: dcid:governmentId
 typeOf: dcs:Property
@@ -115,55 +114,49 @@ isProvisional: dcs:True
 Node: dcid:PlaceTypeEnum
 typeOf:Class
 subClassOf:Enumeration
-name:"PlaceTypeEnum"
+name:"Place Type Enum"
 isProvisional: dcs:True
 
 Node: dcid:SocialConditionEnum
 typeOf:Class
 subClassOf:Enumeration
-name:"SocialConditionEnum"
+name:"Social Condition Enum"
 isProvisional: dcs:True
 
 Node: dcid:ConstructedEnum
 typeOf:Class
 subClassOf:Enumeration
-name:"ConstructedEnum"
+name:"Constructed Enum"
 isProvisional: dcs:True
 
 Node: dcid:ProcessingStatusEnum
 typeOf:Class
 subClassOf:Enumeration
-name:"ProcessingStatusEnum"
+name:"Processing Status Enum"
 isProvisional: dcs:True
 
 Node: dcid:GovernmentIdEnum
 typeOf:Class
 subClassOf:Enumeration
-name:"GovernmentIdEnum"
+name:"Government Id Enum"
 isProvisional: dcs:True
 
 Node:dcid:RegistrationStatusEnum
 typeOf:Class
 subClassOf:Enumeration
-name:"RegistrationStatusEnum"
+name:"Registration Status Enum"
 isProvisional: dcs:True
 
 Node:dcid:IndexScoreEnum
 typeOf:Class
 subClassOf:Enumeration
-name:"IndexScoreEnum"
+name:"IndexScore Enum"
 isProvisional: dcs:True
 
 Node: dcid:GeneratedSewageEnum
 typeOf:Class
 subClassOf:Enumeration
 name:"GeneratedSewageEnum"
-isProvisional: dcs:True
-
-Node: dcid:BenefitStatusEnum
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-name: "BenefitStatusEnum"
 isProvisional: dcs:True
 
 Node:dcid:WithHealthScheme
@@ -187,7 +180,7 @@ name: "Indian Rupee Upto 5000"
 isProvisional: dcs:True
 
 Node: dcid:PublicDistributionSystem
-typeOf: dcid:BenefitStatusEnum
+typeOf: dcid:BenefitsStatusEnum
 name: "Public Distribution System"
 isProvisional: dcs:True
 
@@ -203,7 +196,7 @@ isProvisional: dcs:True
 
 Node:dcid:CoraseCereal
 typeOf:FarmInventoryTypeEnum
-name:"CoraseCereal"
+name:"Corase Cereal"
 isProvisional: dcs:True
 
 Node:dcid:Pentavalent
@@ -213,7 +206,7 @@ isProvisional: dcs:True
 
 Node: dcid:NurseAndMidwives
 typeOf:SOCv2018Enum
-name:"NurseAndMidwives"
+name:"Nurse And Midwives"
 isProvisional: dcs:True
 
 Node: dcid:SchoolGrade1To10
@@ -307,13 +300,18 @@ name: "Utilised Tribal Sub Plan Fund"
 isProvisional: dcs:True
 
 Node: dcid:PradhanMantriAwasYojana
-typeOf: dcid:BenefitStatusEnum
+typeOf: dcid:BenefitsStatusEnum
 name: "Pradhan Mantri Awas Yojana"
 isProvisional: dcs:True
 
 Node: dcid:PradhanMantriGramSadakYojana
 typeOf: dcid:BenefitsStatusEnum
 name: "Pradhan Mantri Gram Sadak Yojana"
+isProvisional: dcs:True
+
+Node: dcid:PradhanMantriJanDhanYojana
+typeOf: dcid:BenefitsStatusEnum
+name: "Pradhan Mantri Jan Dhan Yojana"
 isProvisional: dcs:True
 
 Node: dcid:MunicipalWard
@@ -355,7 +353,6 @@ Node: dcid:Aadhaar
 typeOf: dcid:GovernmentIdEnum
 name: "Aadhaar"
 isProvisional: dcs:True
-
 
 Node: dcid:MGNREGA_Unemployed
 typeOf: dcid:EmploymentStatusEnum
