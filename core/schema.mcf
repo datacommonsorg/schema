@@ -5977,7 +5977,7 @@ source: "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -11212,3 +11212,38 @@ Node: dcid:Jobs
 typeOf: schema:Class
 subClassOf: dcs:Thing
 name: "Jobs"
+
+Node: dcid:FinancialTransaction
+typeOf: dcid:Class
+subClassOf: dcid:Thing
+name: "FinancialTransaction"
+source: "https://en.wikipedia.org/wiki/Financial_transaction"
+
+Node: dcid:Bank
+typeOf: dcid:Class
+subClassOf: dcid:Thing
+name: "Bank"
+# comment1#description: ""
+
+Node: dcid:numberOfTransactions
+typeOf: dcid:Property
+name: "numberOfTransactions"
+domainIncludes: dcs:FinancialTransaction
+
+Node: dcid:valueOfTransactions
+typeOf: dcid:Property
+name: "valueOfTransactions"
+domainIncludes: dcs:FinancialTransaction
+description: "The total purchase price paid for the equity of the acquired entity plus debt assumed of the acquired entity as determined in good faith by the Board."
+
+Node: dcid:upTime
+typeOf: dcid:Property
+name: "upTime"
+description: "Uptime is a metric that represents the percentage of time that hardware, an IT system or device is successfully operational."
+domainIncludes: dcid:FinancialTransaction
+
+Node: dcid:downTime
+typeOf: dcid:Property
+name: "downTime"
+description: "Down time is a metric that represents the percentage of time that hardware, an IT system or device is not successful."
+domainIncludes: dcid:FinancialTransaction

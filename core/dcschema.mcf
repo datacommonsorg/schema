@@ -3779,3 +3779,27 @@ typeOf: dcs:Property
 name: "southAfricanMunicipalityCode"
 domainIncludes: dcs:Place
 description: "Identifier for a municipality in South Africa"
+
+Node: dcid:financialProduct
+typeOf: dcid:Property
+name: "financialProduct"
+description: "It is the Point of Sale or payment method for transactions."
+rangeIncludes: dcid:FinancialProductEnum
+
+Node: dcid:productStatus
+typeOf: dcid:Property
+name: "productStatus"
+description: "Status on the medium of the transaction."
+rangeIncludes: dcid:ProductStatusEnum
+
+Node: dcid:transactionStatus
+typeOf: dcs:Property
+name: "transactionStatus"
+description: "It is the status of the transactions."
+rangeIncludes: dcid:TransactionStatusEnum
+
+Node: dcid:issuerBank
+typeOf: dcs:Property
+name: "issuerBank"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:IssuerBankEnum
