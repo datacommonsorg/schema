@@ -3593,7 +3593,7 @@ Node: dcid:consumerGoodsCategory
 typeOf: schema:Property
 name: "consumerGoodsCategory"
 domainIncludes: dcs:ConsumerGoodsAndServices
-rangeIncludes: dcs:ConsumerGoodsCategoryEnum, dcs:FarmInventoryTypeEnum, dcs:ProductEnum, dcs:EnergySourceEnum, dcs:SubstanceTypeEnum, dcs:TobaccoUsageTypeEnum, dcs:EmissionSourceEnum
+rangeIncludes: dcs:ConsumerGoodsCategoryEnum, dcs:FarmInventoryTypeEnum, dcs:ProductEnum, dcs:EnergySourceEnum, dcs:SubstanceTypeEnum, dcs:TobaccoUsageTypeEnum, dcs:EmissionSourceEnum, dcs:AlcoholicBeverageTypeEnum, dcs:EducationalMajorEnum
 description: "Products and Services that fall under Consumer Price Index"
 
 Node: dcid:varianceValue
@@ -4145,3 +4145,25 @@ typeOf: schema:Property
 domainIncludes: dcs:StatisticalCalculation
 rangeIncludes: schema:Property
 description: "Output property to hold the result of a Data Commons StatisticalCalculation. This is typically a StatisticalVariable."
+
+Node: dcid:modeOfTransportation
+typeOf: dcid:Property
+name: "modeOfTransportation"
+description: "Mode of transportation used for a consumer good or service."
+domainIncludes: dcid:ConsumerGoodsAndServices
+rangeIncludes: dcid:ModeOfTransportationEnum
+
+Node: dcid:usedFor
+typeOf: dcid:Property
+name: "usedFor"
+description: "What the consumer good or service is used for."
+domainIncludes: dcid:ConsumerGoodsAndServices
+rangeIncludes: dcid:ConsumerGoodsAndServices
+domainIncludes: dcid:ConsumerGoodsAndServices
+
+Node: dcid:specialization
+typeOf: dcid:Property
+name: "specialization"
+description: "The specialization of a Job."
+domainIncludes: dcid:Person
+rangeIncludes: dcid:SpecializationEnum
