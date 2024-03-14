@@ -1,0 +1,32 @@
+Node: dcid:governmentIdentifier
+typeOf: dcid:Property
+name: "governmentIdentifier"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:GovernmentIdenitifierEnum
+
+Node: dcid:GovernmentIdenitifierEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GovernmentIdenitifierEnum"
+description: "An enumeration of different Government Identifiers"
+
+Node: dcid:Aadhaar
+typeOf: dcs:GovernmentIdenitifierEnum
+name: "Aadhaar"
+description: "Aadhaar is a 12-digit unique identity number that can be obtained voluntarily by all residents of India"
+
+Node: dcid:identityActivity
+typeOf: dcid:Property
+name: "identityActivity"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:IdentityActivityEnum
+
+Node: dcid:IdentityActivityEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "IdentityActivityEnum"
+description: "An enumeration of different activities on the Identity entity like enrolled, updated, authenticated etc"
+
+Node: dcid:Enrolled
+typeOf: dcs:IdentityActivityEnum
+name: "Enrolled"
