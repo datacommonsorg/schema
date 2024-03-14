@@ -1,0 +1,280 @@
+
+Node: dcid:Gross_Area_LandCover_IrrigatedLand
+typeOf: dcid:StatisticalVariable
+name: "Gross irrigated area"
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+measurementQualifier: dcid:GrossValue
+landCoverType: dcid:IrrigatedLand
+
+Node: dcid:Amount_FarmInventory_CoarseCereal
+typeOf: dcid:StatisticalVariable
+name: "Production of Coarse Cereals"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:CoarseCereal
+
+Node: dcid:Amount_FarmInventory_Pulses
+typeOf: dcid:StatisticalVariable
+name: "Production of pulses"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:Pulses
+
+Node: dcid:Amount_FarmInventory_Wheat
+typeOf: dcid:StatisticalVariable
+name: "Production of Wheat"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:Wheat
+
+Node: dcid:Amount_FarmInventory_Oilseeds
+typeOf: dcid:StatisticalVariable
+name: "Production of oilseeds"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:Oilseeds
+
+Node: dcid:Amount_FarmInventory_Sugarcane
+typeOf: dcid:StatisticalVariable
+name: "Production of sugarcane"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:Sugarcane
+
+Node: dcid:Amount_FarmInventory_Cotton
+typeOf: dcid:StatisticalVariable
+name: "Production of cotton"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:Cotton
+
+Node: dcid:Amount_FarmInventory_JuteOrMesta
+typeOf: dcid:StatisticalVariable
+name: "Production of jute and mesta"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:Jute__Mesta
+
+Node: dcid:Amount_FarmInventory_FoodGrain
+typeOf: dcid:StatisticalVariable
+name: "Produciton of food grains"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+farmInventoryType: dcid:FoodGrain
+
+Node: dcid:Area_LandCover_Forest
+typeOf: dcid:StatisticalVariable
+name: "Area of Land Cover: Forest"
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+landCoverType: dcid:Forest
+
+Node: dcid:Area_LandCover_Tree
+typeOf: dcid:StatisticalVariable
+name: "Area of Land Cover: Tree"
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+landCoverType: dcid:Tree
+
+Node: dcid:Annual_Rainfall_Place
+typeOf: dcid:StatisticalVariable
+name: "Annual Rainfall"
+populationType: dcid:Place
+measuredProperty: dcid:rainfall
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+
+Node: dcid:Amount_EconomicActivity_ExpenditureActivity_ReliefOnNaturalCalamity
+typeOf: dcid:StatisticalVariable
+name: "Expenditure on relief on natural calamity"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+activitySource: dcid:ExpenditureActivity
+expenditureType: dcid:ReliefOnNaturalCalamity
+
+# TODO(ajaits): reenable after fixing the statvar to match SDG
+# Node: dcid:Score_SustainableDevelopmentGoals
+# typeOf: dcid:StatisticalVariable
+# name: "Sustainable Development Goals Score"
+# populationType: dcid:SustainableDevelopmentGoals
+# measuredProperty: dcid:score
+# statType: dcid:measuredValue
+
+Node: dcid:Annual_Amount_Electricity
+typeOf: dcid:StatisticalVariable
+name: "Availability of electricity"
+populationType: dcid:Electricity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+
+Node: dcid:Capacity_Electricity
+typeOf: dcid:StatisticalVariable
+name: "Installed capacity of electricity"
+populationType: dcid:Electricity
+measuredProperty: dcid:capacity
+statType: dcid:measuredValue
+
+Node: dcid:Loss_Electricity_TransmissionAndDistribution_AsAFractionOf_Annual_Generation_Electricity
+typeOf: dcid:StatisticalVariable
+name: "Electricity loss due to transmission and distribution"
+populationType: dcid:Electricity
+measuredProperty: dcid:loss
+statType: dcid:measuredValue
+measurementDenominator: dcid:Annual_Generation_Electricity
+lossReason: dcid:TransmissionAndDistribution
+
+Node: dcid:Length_Transportation_NationalHighway
+typeOf: dcid:StatisticalVariable
+name: "Length of national highway"
+populationType: dcid:Transportation
+measuredProperty: dcid:length
+statType: dcid:measuredValue
+transportationFacility: dcid:NationalHighway
+
+Node: dcid:Length_Transportation_Road
+typeOf: dcid:StatisticalVariable
+name: "Length of road"
+populationType: dcid:Transportation
+measuredProperty: dcid:length
+statType: dcid:measuredValue
+transportationFacility: dcid:Road
+
+Node: dcid:Length_Transportation_StateHighway
+typeOf: dcid:StatisticalVariable
+name: "Length of state highway"
+populationType: dcid:Transportation
+measuredProperty: dcid:length
+statType: dcid:measuredValue
+transportationFacility: dcid:StateHighway
+
+Node: dcid:Annual_Amount_Electricity_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Per capita availability of electricity"
+populationType: dcid:Electricity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:Annual
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+
+Node: dcid:Demand_Electricity
+typeOf: dcid:StatisticalVariable
+name: "Electricity requirement"
+populationType: dcid:Electricity
+measuredProperty: dcid:demand
+statType: dcid:measuredValue
+
+Node: dcid:Length_Transportation_Railroad
+typeOf: dcid:StatisticalVariable
+name: "Length of railway route"
+populationType: dcid:Transportation
+measuredProperty: dcid:length
+statType: dcid:measuredValue
+transportationFacility: dcid:Railroad
+
+Node: dcid:Length_Transportation_Road_PradhanMantriGramSadakYojana
+typeOf: dcid:StatisticalVariable
+name: "Length of road constructed under Pradhan Mantri Gram Sadak Yojana (PMGSY)"
+populationType: dcid:Transportation
+measuredProperty: dcid:length
+statType: dcid:measuredValue
+facilities: dcid:Road
+transportationFacility: dcid:PradhanMantriGramSadakYojana
+
+Node: dcid:Count_Person_Telephone_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+electronicGadgetUsed: dcid:Telephone
+
+
+Node: dcid:Mean_WagesDaily_Amount_Male_Rural_ConstructionWorker
+typeOf: dcid:StatisticalVariable
+name: "Average daily wage rates of men in rural India who are Construction Workers."
+populationType: dcid:Amount
+measuredProperty: dcid:wagesDaily
+statType: dcid:meanValue
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+workerClassification: dcid:ConstructionWorker
+
+Node: dcid:Mean_WagesDaily_Amount_Male_Rural_GeneralAgriculturalLabourers
+typeOf: dcid:StatisticalVariable
+name: "Average daily wage rates of men in rural India who are Horticulture Workers."
+populationType: dcid:Amount
+measuredProperty: dcid:wagesDaily
+statType: dcid:meanValue
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+workerClassification: dcid:GeneralAgriculturalLabourers
+
+Node: dcid:Mean_WagesDaily_Amount_Male_Rural_HorticultureWorkers
+typeOf: dcid:StatisticalVariable
+name: "Average daily wage rates of men in rural India who are General Agricultural Labourers."
+populationType: dcid:Amount
+measuredProperty: dcid:wagesDaily
+statType: dcid:meanValue
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+workerClassification: dcid:HorticultureWorkers
+
+Node: dcid:Mean_WagesDaily_Amount_Male_Rural_NonAgriculturalLabourers
+typeOf: dcid:StatisticalVariable
+name: "Average daily wage rates of men in rural India who are Non Agricultural Labourers."
+populationType: dcid:Amount
+measuredProperty: dcid:wagesDaily
+statType: dcid:meanValue
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+workerClassification: dcid:NonAgriculturalLabourers
+
+Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_UrbanHousingSector
+typeOf: dcid:StatisticalVariable
+name: "Average inflation in consumer price index by Urban Housing Sector."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:inflation
+statType: dcid:meanValue
+activitySource: dcid:ConsumerPriceIndex
+consumerGoodsCategory: dcid:UrbanHousingSector
+
+Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_FoodAndDrinksSector
+typeOf: dcid:StatisticalVariable
+name: "Average inflation in consumer price index by Food and Beverages Sector."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:inflation
+statType: dcid:meanValue
+activitySource: dcid:ConsumerPriceIndex
+consumerGoodsCategory: dcid:FoodAndDrinksSector
+
+Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_FuelAndLightSector
+typeOf: dcid:StatisticalVariable
+name: "Average inflation in consumer price index by Fuel and Light Sector."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:inflation
+statType: dcid:meanValue
+activitySource: dcid:ConsumerPriceIndex
+consumerGoodsCategory: dcid:FuelAndLightSector
+
+Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_GeneralSector
+typeOf: dcid:StatisticalVariable
+name: "Average inflation in consumer price index by General Sector."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:inflation
+statType: dcid:meanValue
+activitySource: dcid:ConsumerPriceIndex
+consumerGoodsCategory: dcid:GeneralSector
+

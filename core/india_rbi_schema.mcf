@@ -1,0 +1,168 @@
+Node: dcid:grossValue
+typeOf: dcid:Property
+name: "grossValue"
+rangeIncludes: dcid:Number
+
+Node: dcid:CoarseCereal
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Coarse Cereal"
+
+Node: dcid:Pulses
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Pulses"
+
+Node: dcid:Jute__Mesta
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Jute Mesta"
+
+Node: dcid:FoodGrain
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Food Grain"
+
+Node: dcid:Sugarcane
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Sugarcane"
+Node: dcid:Tree
+typeOf: dcid:LandCoverClassEnum
+name: "Tree"
+
+Node: dcid:ReliefOnNaturalCalamity
+typeOf: dcid:ExpenditureTypeEnum
+name: "Relief On Natural Calamity"
+
+Node: dcid:score
+typeOf: dcid:Property
+name: "score"
+rangeIncludes: dcid:Quantity
+domainIncludes: dcid:SustainableDevelopmentGoals
+
+Node: dcid:SustainableDevelopmentGoals
+typeOf: dcid:Thing
+name: "Sustainable Development Goals"
+Node: dcid:lossReason
+typeOf: dcid:Property
+name: "lossReason"
+domainIncludes: dcid:Electricity
+
+Node: dcid:TransmissionAndDistribution
+typeOf: dcid:EnergyLossEnum
+name: "Transmission And Distribution"
+isProvisional: dcid:True
+
+Node: dcid:length
+typeOf: dcid:Property
+name: "length"
+domainIncludes: dcid:Transportation
+
+Node: dcid:transportationFacility
+typeOf: dcid:Property
+name: "transportationFacility"
+domainIncludes: dcid:Transportation
+rangeIncludes: dcid:TransportationFacilityEnum, dcid:BenefitsStatusEnum
+isProvisional: dcid:True
+
+Node: dcid:TransportationFacilityEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "TransportationFacilityEnum"
+isProvisional: dcid:True
+
+Node: dcid:NationalHighway
+typeOf: dcid:TransportationFacilityEnum
+name: "National Highway"
+isProvisional: dcid:True
+
+Node: dcid:StateHighway
+typeOf: dcid:TransportationFacilityEnum
+name: "State Highway"
+isProvisional: dcid:True
+
+Node: dcid:facilities
+typeOf: dcid:Property
+name: "facilities"
+domainIncludes: dcid:Transportation
+
+Node: dcid:Telephone
+typeOf: dcid:ElectronicGadgetUsedEnum
+name: "Telephone"
+isProvisional: dcid:True
+
+Node: amount
+dcid: "amount"
+typeOf: schema:Property
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Electricity
+name: "amount"
+rangeIncludes: schema:Number
+
+Node: dcid:demand
+typeOf: dcs:Property
+name: "demand"
+domainIncludes:House, dcs:Electricity
+isProvisional: dcs:True
+Node: dcid:workerClassification
+typeOf: schema:Property
+name: "workerClassification"
+description: "Identifies a person's worker classification."
+rangeIncludes: dcs:WorkerClassificationEnum
+domainIncludes: schema:Person, schema:Amount
+
+Node: dcid:Amount
+typeOf: dcid:Thing
+name: "Amount"
+description: "Amount is a property that can exist as a multitude or magnitude, which illustrate discontinuity and continuity."
+descriptionUrl: "https://en.m.wikipedia.org/wiki/Quantity"
+
+Node: dcid:ConsumerPriceIndex
+typeOf: dcid:Class
+name: "ConsumerPriceIndex"
+subClassOf: dcs:Thing
+description: "A Consumer Price Index measures changes in the price level of a weighted average market basket of consumer goods and services purchased by households."
+descriptionUrl: "https://en.wikipedia.org/wiki/Consumer_price_index"
+
+Node: dcid:ConstructionWorker
+typeOf: dcid:WorkerClassificationEnum
+name: "Construction Worker"
+
+Node: dcid:GeneralAgriculturalLabourers
+typeOf: dcid:WorkerClassificationEnum
+name: "General Agricultural Labourers"
+
+Node: dcid:HorticultureWorkers
+typeOf: dcid:WorkerClassificationEnum
+name: "Horticulture Workers"
+
+Node: dcid:NonAgriculturalLabourers
+typeOf: dcid:WorkerClassificationEnum
+name: "Non Agricultural Labourers"
+
+Node: dcid:inflation
+typeOf: dcid:Property
+name: "inflation"
+rangeIncludes: dcs:Integer
+domainIncludes: schema:EconomicActivity
+
+Node: dcid:wagesDaily
+typeOf: schema:Property
+name: "wagesDaily"
+rangeIncludes: schema:Number
+domainIncludes: schema:Person, schema:Amount
+
+Node: dcid:FuelAndLightSector
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Fuel And Light Sector"
+isProvisional: dcid:True
+
+Node: dcid:GeneralSector
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "General Sector"
+isProvisional: dcid:True
+
+Node: dcid:UrbanHousingSector
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Urban Housing Sector"
+isProvisional: dcid:True
+
+Node: dcid:GrossValue
+typeOf: dcid:EconomicMetricEnum
+name: "Gross"
+isProvisional: dcid:True
