@@ -3456,7 +3456,7 @@ Node: dcid:consumerGoodsCategory
 typeOf: schema:Property
 name: "consumerGoodsCategory"
 domainIncludes: dcs:ConsumerGoodsAndServices
-rangeIncludes: dcs:ConsumerGoodsCategoryEnum, dcs:FarmInventoryTypeEnum, dcs:ProductEnum, dcs:EnergySourceEnum, dcs:SubstanceTypeEnum, dcs:TobaccoUsageTypeEnum, dcs:EmissionSourceEnum
+rangeIncludes: dcs:ConsumerGoodsCategoryEnum, dcs:FarmInventoryTypeEnum, dcs:ProductEnum, dcs:EnergySourceEnum, dcs:SubstanceTypeEnum, dcs:TobaccoUsageTypeEnum, dcs:EmissionSourceEnum, dcs:AlcoholicBeverageTypeEnum, dcs:EducationalMajorEnum
 description: "Products and Services that fall under Consumer Price Index"
 
 Node: dcid:varianceValue
@@ -3803,3 +3803,20 @@ typeOf: dcs:Property
 name: "issuerBank"
 domainIncludes: dcid:Debt
 rangeIncludes: dcid:IssuerBankEnum
+
+Node: dcid:modeOfTransportation
+typeOf: dcid:Property
+name: "modeOfTransportation"
+domainIncludes: dcid:ConsumerGoodsAndServices
+rangeIncludes: dcid:ModeOfTransportationEnum
+
+Node: dcid:usedFor
+typeOf: dcid:Property
+name: "usedFor"
+domainIncludes: dcid:ConsumerGoodsAndServices
+
+Node: dcid:specialization
+typeOf: dcid:Property
+name: "specialization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:SpecializationEnum
