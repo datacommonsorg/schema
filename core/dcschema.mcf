@@ -414,7 +414,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MedicalConditionIncident, schema:School
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -795,7 +795,7 @@ Node: employment
 dcid: "employment"
 typeOf: schema:Property
 name: "employment"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:School
 rangeIncludes: dcs:EmploymentEnum
 
 Node: dcid:count
@@ -2867,7 +2867,7 @@ Node: dcid:enrollmentLevel
 typeOf: schema:Property
 name: "enrollmentLevel"
 description: "Identifies a person's enrollment level."
-rangeIncludes: dcs:EnrollmentLevelEnum, dcs:SchoolGradeLevelEnum
+rangeIncludes: dcs:EnrollmentLevelEnum, dcs:SchoolGradeLevelEnum, dcs:SchoolLevelEnum
 domainIncludes: schema:Person, dcs:Student
 
 Node: dcid:workCategory
@@ -3982,3 +3982,34 @@ typeOf: schema:Property
 domainIncludes: dcs:StatisticalCalculation
 rangeIncludes: schema:Property
 description: "Output property to hold the result of a Data Commons StatisticalCalculation. This is typically a StatisticalVariable."
+
+Node: dcid:examStatus
+typeOf: dcid:Property
+name: "examStatus"
+domainIncludes: dcid:Person,School
+rangeIncludes: dcid:ExamStatusEnum
+
+Node: dcid:childrenStatus
+typeOf: dcid:Property
+name: "childrenStatus"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:HasChildrenStatusEnum
+
+Node: dcid:childCount
+typeOf: dcid:Property
+name: "childCount"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:ChildCountEnum
+
+Node: dcid:materialOfOuterWall
+typeOf: dcid:Property
+name: "materialOfOuterWall"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:MaterialOfOuterWallEnum
+description: "Walls that can be made from a wide variety of materials either singly or in combination with other materials. These can include: Masonry such as stone, brick and block and Concrete"
+
+Node: dcid:dwellingsType
+typeOf: dcid:Property
+name: "dwellingsType"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:DwellingsTypeEnum
