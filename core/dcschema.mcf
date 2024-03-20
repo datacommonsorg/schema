@@ -3803,3 +3803,17 @@ typeOf: dcs:Property
 name: "issuerBank"
 domainIncludes: dcid:Debt
 rangeIncludes: dcid:IssuerBankEnum
+
+Node: dcid:isNormalizable
+typeOf: schema:Property
+domainIncludes: dcs:StatisticalVariable
+rangeIncludes: schema:Boolean
+name: "isNormalizable"
+description: "Identifies whether the StatisticalVariable supports normalization by another StatisticalVariable."
+
+Node: dcid:denominatorForNormalization
+typeOf: schema:Property
+domainIncludes: dcs:StatisticalVariable
+rangeIncludes: schema:StatisticalVariable
+name: "denominatorForNormalization"
+description: "Additional StatisticalVariable that can be used for normalizing this StatisticalVariable. If unspecified and `isNormalizable` is True, then `Count_Person` is the default."
