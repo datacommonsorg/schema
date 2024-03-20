@@ -5220,6 +5220,26 @@ typeOf: dcid:EducationProgramEnum
 name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
 
+Node: dcid:externalWallMaterial
+typeOf: dcid:Property
+name: "externalWallMaterial"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:ExternalWallMaterialEnum
 
+Node: dcid:academicAssessmentEvent
+typeOf: dcid:Property
+name: "academicAssessmentEvent"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:AcademicAssessmentEventEnum
 
+Node: dcid:childCount
+typeOf: dcid:Property
+name: "childCount"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:QuantityRange
 
+Node: dcid:dwellingsType
+typeOf: dcid:Property
+name: "dwellingsType"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:DwellingsTypeEnum

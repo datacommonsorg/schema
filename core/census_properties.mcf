@@ -40,10 +40,10 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 
 Node: dcid:disabilityStatus
-rangeIncludes: dcs:USC_DisabilityStatusEnum, dcs:SDG_DisabilityStatusEnum
+rangeIncludes: dcs:USC_DisabilityStatusEnum, dcs:SDG_DisabilityStatusEnum, dcs:DisabilityStatusEnum
 name: "disabilityStatus"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:Household, dcs:Person
+domainIncludes: schema:Person, schema:Household, dcs:Person, schema:MedicalConditionIncident
 
 Node: collegeOrGraduateSchoolEnrollment
 dcid: "collegeOrGraduateSchoolEnrollment"
@@ -204,14 +204,14 @@ dcid: "levelOfSchool"
 name: "levelOfSchool"
 typeOf: schema:Property
 rangeIncludes: dcs:USC_LevelOfSchoolEnum, dcs:SecondarySchool
-domainIncludes: dcs:Student
+domainIncludes: dcs:Student, dcs:Person
 
 Node: maritalStatus
 dcid: "maritalStatus"
 rangeIncludes: dcs:USC_MaritalStatusEnum, dcs:MaritalStatusEnum
 name: "maritalStatus"
 typeOf: schema:Property
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Household
 
 Node: nativity
 dcid: "nativity"
