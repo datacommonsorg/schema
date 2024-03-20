@@ -3803,3 +3803,115 @@ typeOf: dcs:Property
 name: "issuerBank"
 domainIncludes: dcid:Debt
 rangeIncludes: dcid:IssuerBankEnum
+
+Node: dcid:placeOfResidenceClassification
+typeOf: dcid:Property
+name: "placeOfResidenceClassification"
+domainIncludes: dcid:Person,Household,Person,MedicalConditionIncident,Person,School,HousingUnit
+rangeIncludes: dcid:HumanSettlementClassificationEnum
+
+Node: dcid:age
+typeOf: dcid:Property
+name: "age"
+rangeIncludes: dcid:QuantityRange
+domainIncludes: dcid:MedicalConditionIncident,School
+
+Node: dcid:gender
+typeOf: dcid:Property
+name: "gender"
+rangeIncludes: dcid:GenderType
+domainIncludes: dcid:MedicalConditionIncident,School
+
+Node: dcid:enrollmentLevel
+typeOf: dcid:Property
+name: "enrollmentLevel"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:SchoolLevelEnum
+
+Node: dcid:educationalAttainment
+typeOf: dcid:Property
+name: "educationalAttainment"
+rangeIncludes: dcid:SchoolGradeLevelEnum,USC_EducationalAttainmentEnum,SchoolGradeLevelEnum
+
+Node: dcid:levelOfSchool
+typeOf: dcid:Property
+name: "levelOfSchool"
+domainIncludes: dcid:Person,School
+rangeIncludes: dcid:SecondarySchool
+
+Node: dcid:examStatus
+typeOf: dcid:Property
+name: "examStatus"
+domainIncludes: dcid:Person,School
+rangeIncludes: dcid:ExamStatusEnum
+
+Node: dcid:educationCertification
+typeOf: dcid:Property
+name: "educationCertification"
+domainIncludes: dcid:Person
+
+Node: dcid:occupancyTenure
+typeOf: dcid:Property
+name: "occupancyTenure"
+domainIncludes: dcid:Household
+
+Node: dcid:maritalStatus
+typeOf: dcid:Property
+name: "maritalStatus"
+domainIncludes: dcid:Household
+
+Node: dcid:childrenStatus
+typeOf: dcid:Property
+name: "childrenStatus"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:HasChildrenStatusEnum
+
+Node: dcid:childCount
+typeOf: dcid:Property
+name: "childCount"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:ChildCountEnum
+
+Node: dcid:socialVulnerabilityStatus
+typeOf: dcid:Property
+name: "socialVulnerabilityStatus"
+domainIncludes: dcid:Person
+
+Node: dcid:medicalCondition
+typeOf: dcid:Property
+name: "medicalCondition"
+domainIncludes: dcid:MedicalConditionIncident
+rangeIncludes: dcid:Property
+
+Node: dcid:chronicIllness
+typeOf: dcid:Property
+name: "chronicIllness"
+rangeIncludes: dcid:ChronicIllnessEnum
+
+Node: dcid:employment
+typeOf: dcid:Property
+name: "employment"
+domainIncludes: dcid:School
+
+Node: dcid:materialOfOuterWall
+typeOf: dcid:Property
+name: "materialOfOuterWall"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:MaterialOfOuterWallEnum
+
+Node: dcid:facilities
+typeOf: dcid:Property
+name: "facilities"
+domainIncludes: dcid:HousingUnit
+
+Node: dcid:establishmentOwnership
+typeOf: dcid:Property
+name: "establishmentOwnership"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:EstablishmentOwnershipEnum
+
+Node: dcid:dwellingsType
+typeOf: dcid:Property
+name: "dwellingsType"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:DwellingsTypeEnum
