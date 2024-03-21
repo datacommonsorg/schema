@@ -26,29 +26,38 @@ description: "The association between a disease and a genetic variant."
 Node: dcid:MeSHConcept
 name: "MeSHConcept"
 typeOf: schema:Class
-subClassOf: dcs:MeSHDescriptor
+subClassOf: dcs:MeSHRecordType
 description: "The bearer of linguistic meaning in MeSH as defined by the ScopeNote, comprising a DescriptorRecord or SupplementalRecord or QualifierRecord, and consisting of Term elements. One of the three main objects in the MeSH XML (the others being the record, and term). A single record will have one or more concepts, one of which is the preferred concept of the record. A Concept will have one or more terms, one of which is the preferred term for the concept. Referred to uniquely by both a ConceptUI and a ConceptName."
 descriptionUrl: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#Concept"
 
 Node: dcid:MeSHDescriptor
 name: "MeSHDescriptor"
 typeOf: schema:Class
-subClassOf: schema:Intangible
+subClassOf: dcs:MeSHRecordType
 description: "Cluster of one or more concepts used for subject indexing and retrieval. Identified uniquely by a DescriptorUI and DescriptorName. A Descriptor. A Descriptor record. Also known as Main Heading. (Note that this differs from the MEDLINE MeshHeading element. For example, the MEDLINE element includes both the Descriptor name and the Qualifier name assigned to a citation.)."
 descriptionUrl: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#DescriptorRecord"
 
 Node: dcid:MeSHQualifier
 name: "MeSHQualifier"
 typeOf: schema:Class
-subClassOf: schema:Intangible
+subClassOf: dcs:MeSHRecordType
 description: "Seven-character alpha-numeric string uniquely identifying a QualifierRecord and, along with the QualifierName, used to represent the Qualifier record in other elements. MeSHQualifiers are used to give additional context to MeSHDescriptor. MeSH has rules governing which Qualifiers can be used with a given Descriptor, as well as which MeSHQualifers cannot be used with a given MeSHDescriptor."
 descriptionUrl: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#QualifierUI"
 
-Node: dcid:MeSHSupplementaryRecord
-name: "MeSHSupplementaryRecord"
+Node: dcid:MeSHRecordType
+name: "MeSHRecordType"
 typeOf: schema:Class
-subClassOf: dcs:MeSHDescriptor
-description: "Cluster of one or more concepts used for subject indexing and retrieval. Identified uniquely by a SupplementalRecordUI and SupplementalRecordName. SCR. Supplemental Record. Formerly known as Supplementary Chemical Records."
+subClassOf: schema:Intangible
+sameAs: "https://www.nlm.nih.gov/mesh/intro_record_types.html"
+description: "The Medical Subject Headings (MeSH) thesaurus is a controlled and hierarchically-organized vocabulary produced by the National Library of Medicine. It is used for indexing, cataloging, and searching of biomedical and health-related information. MeSH includes the subject headings appearing in MEDLINE/PubMed, the NLM Catalog, and other NLM databases. It is composed of five different record types: Descriptors, Qualifiers, Concept, Terms, and Supplementary Concept Records."
+descriptionUrl: "https://www.nlm.nih.gov/mesh/meshhome.html"
+
+Node: dcid:MeSHSupplementaryConceptRecord
+name: "MeSHSupplementaryConceptRecord"
+typeOf: schema:Class
+subClassOf: dcs:MeSHRecordType
+abbreviation: "MeSH SCR"
+description: "Alpha-numeric string which comprises the basic unit of the MeSH vocabulary. Also functions as the name of a Descriptor and concept. The term itself is the String element."
 descriptionUrl: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#SupplementalRecord"
 
 Node: dcid:MeSHTerm
@@ -114,54 +123,39 @@ rangeIncludes: schema:Number
 domainIncludes: dcs:DiseaseGeneAssociation
 description: "The p-value of the experiment associating a gene with a disease ontology ID."
 
-Node: dcid:nationalLibraryOfMedicineClassificationNumber
-name: "nationalLibraryOfMedicineClassificationNumber"
+# MeSHRecordType SubClass Properties
+Node: dcid:hasMeSHQualifier
+name: "hasMeSHQualifier"
 typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:MeSHDescriptor
-description: "Classification Number provided by the National Library of Medicine (NLM) Cataloging and Metadata Management Section (CAMMS)."
+domainIncludes: dcs:MeSHConcept,dcs:MeSHDescriptor
+rangeIncludes: dcs:MeSHQualifier
+description: "Assigns a MeSH Concept or Descriptor to being associated with a MeSH Qualifier group. These can be used for indexing or cataloging alongside Descriptors by offering a conveinent means to group together references of interest."
 
-Node: dcid:isPharmacologicalActionSubstance
-name: "isPharmacologicalActionSubstance"
+Node: dcid:isConceptPreferredTerm
+name: "isConceptPreferredTerm"
 typeOf: schema:Property
+domainIncludes: dcs:MeSHTerm
 rangeIncludes: schema:Boolean
-domainIncludes: dcs:MeSHDescriptor, dcs:MeSHSupplementaryRecord
-description: "A MeSHDescriptor or MeSHSupplementaryRecord, which has a pharmacological action."
 
-Node: dcid:medicalSubjectHeadingConceptID
-name: "medicalSubjectHeadingConceptID"
+Node: dcid:isPreferredConcept
+name: "isPreferredConcept"
 typeOf: schema:Property
-rangeIncludes: dcs:MeSHConcept, schema:Text
-domainIncludes: dcs:Disease, dcs:MeSHConcept
-description: "A unique ID for a Medical Subject Heading Concept record."
+domainIncludes: dcs:MeSHConcept
+rangeIncludes: schema:Boolean
 
-Node: dcid:medicalSubjectHeadingDescriptorID
+Node: dcid:isRecordPreferredTerm
+name: "isRecordPreferredTerm"
 typeOf: schema:Property
-name: "medicalSubjectHeadingDescriptorID"
-rangeIncludes: dcs:MeSHDescriptor, schema:Text
-domainIncludes: dcs:Disease, dcs:GeneticVariant, dcs:MeSHConcept, dcs:MeSHDescriptor, dcs:MeSHQualifier, dcs:MeSHSupplementaryRecord
-description: "A unique ID for a Medical Subject Heading Descriptor record."
+domainIncludes: dcs:MeSHTerm
+rangeIncludes: schema:Boolean
 
-Node: dcid:medicalSubjectHeadingQualifierAbbreviation
-name: "medicalSubjectHeadingQualifierAbbreviation"
+Node: dcid:mechanismOfAction
+name: "mechanismOfAction"
 typeOf: schema:Property
-domainIncludes: dcs:MeSHQualifier
-rangeIncludes: schema:Text
-description: "Qualifier Abbreviation."
-
-Node: dcid:medicalSubjectHeadingSupplementaryRecordID
-name: "medicalSubjectHeadingSupplementaryRecordID"
-typeOf: schema:Property
-rangeIncludes: dcs:MeSHSupplementaryRecord, schema:Text
-domainIncludes: dcs:ChemicalCompound, dcs:MeSHSupplementaryRecord
-description: "A unique ID for a Medical Subject Heading supplementary record."
-
-Node: dcid:medicalSubjectHeadingTermID
-name: "medicalSubjectHeadingTermID"
-typeOf: schema:Property
-rangeIncludes: dcs:MeSHTerm, schema:Text
-domainIncludes: dcs:MeSHConcept, dcs:MeSHTerm
-description: "A unique ID for a Medical Subject Heading Term record."
+domainIncludes: dcs:MeSHDescriptor,dcs:MeSHSupplementaryConceptRecord,schema:Drug
+rangeIncludes: dcs:MeSHDescriptor
+description: "In pharmacology, the term mechanism of action (MOA) refers to the specific biochemical interaction through which a drug substance produces its pharmacological effect."
+descriptionUrl: "https://en.wikipedia.org/wiki/Mechanism_of_action"
 
 Node: dcid:medicalSubjectHeadingTreeNumber
 name: "medicalSubjectHeadingTreeNumber"
@@ -170,12 +164,19 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:MeSHDescriptor, dcs:MeSHQualifier
 description: "Alpha-numeric string referring to location within a MeSH Descriptor or Qualifier hierarchy."
 
-Node: dcid:medicalSubjectHeadingQualifierID
-name: "medicalSubjectHeadingQualifierID"
+Node: dcid:nationalLibraryOfMedicineClassificationNumber
+name: "nationalLibraryOfMedicineClassificationNumber"
 typeOf: schema:Property
-rangeIncludes: dcs:MeSHQualifier, schema:Text
-domainIncludes: dcs:MeSHConcept, dcs:MeSHQualifier
-description: "A unique ID for a Medical Subject Heading Qualifier record."
+rangeIncludes: schema:Text
+domainIncludes: dcs:MeSHDescriptor
+description: "Classification Number provided by the National Library of Medicine (NLM) Cataloging and Metadata Management Section (CAMMS)."
+
+Node: dcid:preferredMeSHConcept
+name: "preferredMeSHConcept"
+typeOf: schema:Property
+domainIncludes: dcs:MeSHConcept
+rangeIncludes: dcs:MeSHConcept
+description: "The preferred MeSH Concept to which the MeSH Concept that is narrower in scope is related."
 
 Node: dcid:alternateDiseaseOntologyID
 typeOf: schema:Property
