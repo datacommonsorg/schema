@@ -2871,3 +2871,68 @@ description: "Jobs saved under a program"
 Node: dcid:EarlyEducation
 typeOf: dcid:SchoolGradeLevelEnum
 name: "Early Education"
+
+Node: dcid:NoAutomaticRefresh
+typeOf: dcs:AutomaticRefreshTypeEnum
+name: "No automatic refresh"
+description: "No automatic data refresh has been set up."
+
+Node: dcid:GoogleKubernetesEngine
+typeOf: dcs:AutomaticRefreshTypeEnum
+name: "Google Kubernetes Engine"
+description: "Automatic data refresh via Google Kubernetes Engine."
+
+Node: dcid:InternalPipeline
+typeOf: dcs:AutomaticRefreshTypeEnum
+name: "Internal pipeline"
+description: "Automatic data refresh via internal Google pipeline."
+
+Node: dcid:AggregatedStatisticsProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Aggregated statistics provenance"
+description: "Statistics that have been aggregated by Data Commons."
+
+Node: dcid:CuratedStatvarProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Curated StatisticalVariable provenance"
+description: "Statistical Variables with curated dcids."
+
+Node: dcid:EntityProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Entity provenance"
+description: "Nodes that are not schema, StatisticalVariables, StatVarObservations, or Places."
+
+Node: dcid:GeneratedStatvarProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Generated StatisticalVariable provenance"
+description: "StatisticalVariables with auto-generated dcids."
+
+Node: dcid:ImputedStatistitcsProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Imputed statistics provenance"
+descriptions: "Statistics that have values imputed by Data Commons."
+
+Node: dcid:IntermediateStatisticsProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Intermediate statistics provenance"
+description: "Statistics that are used as inputs to derived graph computations, but are not contained in the Knowledge Graph."
+
+Node: dcid:PlaceProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Place provenance"
+description: "Data about locales."
+
+Node: dcid:SchemaProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Schema provenance"
+description: "Triples in the Knowledge Graph that are not related to observations or Places."
+
+Node: dcid:StatisticsProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Statistics provenance"
+description: "Observation-like triples in the Knowledge Graph."
+
+Node: dcid:CustomSchemaProvenance
+typeOf: dcs:ProvenanceCategoryEnum
+name: "Custom schema provenance"
+description: "Triples in the Knowledge Graph coming from a Custom Data Commons instance that are not related to observations or Places"
