@@ -1,4 +1,3 @@
-
 Node: dcid:typeOf
 name: "typeOf"
 typeOf: schema:Property
@@ -844,7 +843,7 @@ Node: dcid:grossDomesticProduct
 typeOf: schema:Property
 name: "grossDomesticProduct"
 rangeIncludes: schema:MonetaryAmount
-domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum
+domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum, dcid:EconomicActivity
 description: "Gross domestic product (GDP) is the monetary value of all the finished goods and services produced within a place in a specific time period"
 
 Node: dcid:growthRate
@@ -1380,7 +1379,7 @@ Node: dcid:lendingEntity
 typeOf: dcs:Property
 name: "lendingEntity"
 domainIncludes: dcid:Debt
-rangeIncludes: dcid:LendingEntityEnum,dcid:Country
+rangeIncludes: dcid:LendingEntityEnum,dcid:Country,dcid:DonationSourceEnum
 
 Node: dcid:amountPrincipalRepayment
 typeOf: dcs:Property
@@ -2936,8 +2935,8 @@ rangeIncludes: dcs:MedicalTestResultEnum
 Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
-domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum
+domainIncludes: schema:Person, dcid:EconomicActivity
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum, dcid:EconomicActivitySourceEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -3449,7 +3448,8 @@ description: "Type of income a person received."
 Node: dcid:incomeSource
 typeOf: dcs:Property
 name: "incomeSource"
-rangeIncludes: dcs:IncomeSourceEnum
+rangeIncludes: dcs:IncomeSourceEnum, dcid:EconomicActivitySourceEnum
+domainIncludes: dcid:EconomicActivity
 description: "Priority level of the job a person is getting an income from. A Main Job or All Jobs"
 
 Node: dcid:consumerGoodsCategory
@@ -3978,3 +3978,100 @@ domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "sourceDataUrl"
 description: "Location of source data to download."
+
+Node: dcid:DRC_CasualPartners
+typeOf: dcid:MaritalStatusEnum
+name: "DRC_ Casual Partners"
+
+Node: dcid:DRC_FirstUnion
+typeOf: dcid:MaritalStatusEnum
+name: "DRC_ First Union"
+
+Node: dcid:inflationRate
+typeOf: dcid:Property
+name: "inflationRate"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:priceIndex
+typeOf: dcid:Property
+name: "priceIndex"
+domainIncludes: dcid:EconomicActivity, Household
+
+Node: dcid:donationType
+typeOf: dcid:Property
+name: "donationType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:DebtInstrumentEnum
+
+Node: dcid:donationSource
+typeOf: dcid:Property
+name: "donationSource"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:DonationSourceEnum,Country
+
+Node: dcid:trade
+typeOf: dcid:Property
+name: "trade"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:amountDue
+typeOf: dcid:Property
+name: "amountDue"
+domainIncludes: dcid:Debt
+
+Node: dcid:amountService
+typeOf: dcid:Property
+name: "amountService"
+domainIncludes: dcid:Debt
+
+Node: dcid:arrears
+typeOf: dcid:Property
+name: "arrears"
+domainIncludes: dcid:Debt
+
+Node: dcid:coverageRates
+typeOf: dcid:Property
+name: "coverageRates"
+rangeIncludes: dcid:CoverageRatesEnum
+domainIncludes: dcid:School
+
+Node: dcid:schoolManagementRegime
+typeOf: dcid:Property
+name: "schoolManagementRegime"
+domainIncludes: School,dcid:ClassRoom,dcid:Establishment,dcid:Person,dcid:Children,dcid:Teacher,dcid:Student
+rangeIncludes: dcid:SchoolManagementRegimeEnum
+
+Node: dcid:teachingExperience
+typeOf: dcid:Property
+name: "teachingExperience"
+domainIncludes: Teacher,dcid:Person
+rangeIncludes: dcid:TeachingExperienceEnum
+
+Node: dcid:typeOfClassroom
+typeOf: dcid:Property
+name: "typeOfClassroom"
+domainIncludes: dcid:ClassRoom
+rangeIncludes: dcid:TypeOfClassroomEnum
+
+Node: dcid:classroomCondition
+typeOf: dcid:Property
+name: "classroomCondition"
+domainIncludes: dcid:ClassRoom
+rangeIncludes: dcid:ClassroomConditionEnum
+
+Node: dcid:schoolEnrollment
+typeOf: dcid:Property
+name: "schoolEnrollment"
+domainIncludes: Children,dcid:Student,dcid:Teacher
+
+Node: dcid:typeOfActivity
+typeOf: dcid:Property
+name: "typeOfActivity"
+domainIncludes: dcid:ClassRoom
+rangeIncludes: dcid:TypeOfActivityEnum
+
+Node: dcid:lethality
+typeOf: dcid:Property
+name: "lethality"
+domainIncludes: dcid:MedicalConditionIncident
+

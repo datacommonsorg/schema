@@ -8400,7 +8400,7 @@ name: "lodgingUnitType"
 Node: gender
 dcid: "gender"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:BirthEvent, schema:Household
+domainIncludes: schema:Person, schema:BirthEvent, schema:Household, schema:Student, schema:Teacher
 name: "gender"
 rangeIncludes: schema:GenderType, dcs:SDG_SexEnum
 
@@ -11247,3 +11247,9 @@ typeOf: dcid:Property
 name: "downTime"
 description: "Down time is a metric that represents the percentage of time that hardware, an IT system or device is not successful."
 domainIncludes: dcid:FinancialTransaction
+
+Node: dcid:Establishment
+typeOf: schema:Class
+subClassOf: dcid:Thing
+name: "Establishment"
+

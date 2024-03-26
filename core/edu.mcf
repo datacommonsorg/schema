@@ -470,8 +470,8 @@ Node: dcid:schoolGradeLevel
 typeOf: schema:Property
 name: "schoolGradeLevel"
 rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool
-rangeIncludes: dcs:SchoolLevelEnum
-domainIncludes: dcs:Student
+rangeIncludes: dcs:SchoolLevelEnum, dcid:SchoolGradeLevelEnum, dcid:SecondarySchool
+domainIncludes: dcs:Student, dcid:School, dcid:ClassRoom, dcid:Establishment
 description: "Describes the grade level of the student in school. For example, SchoolGrade2 defines the student to be in second grade."
 
 # OBSERVATION, Measured Property, for Students, Faculty
