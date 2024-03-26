@@ -3978,3 +3978,24 @@ domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "sourceDataUrl"
 description: "Location of source data to download."
+
+Node: dcid:dataBuildGroup
+typeOf: schema:Property
+domainIncludes: dcs:Provenance
+rangeIncludes: dcs:DataBuildGroupEnum
+name: "dataBuildGroup"
+description: "Data build group consisting of certain provenances."
+
+Node: dcid:earliestObservationDate
+typeOf: schema:Property
+domainIncludes: dcs:Provenance
+rangeIncludes: dcs:Text
+name: "earliestObservationDate"
+description: "Date of the earliest observation of a provenance."
+
+Node: dcid:latestObservationDate
+typeOf: schema:Property
+domainIncludes: dcs:Provenance
+rangeIncludes: dcs:Text
+name: "latestObservationDate"
+description: "Date of the most recent observation of a provenance."
