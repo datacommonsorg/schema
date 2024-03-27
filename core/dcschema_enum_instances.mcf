@@ -2883,9 +2883,9 @@ name: "Google Kubernetes Engine"
 description: "Automatic data refresh via Google Kubernetes Engine."
 
 Node: dcid:InternalPipeline
-typeOf: dcs:AutomaticRefreshTypeEnum
+typeOf: dcs:AutomaticRefreshTypeEnum, dcs:ProcessingMethodEnum
 name: "Internal pipeline"
-description: "Automatic data refresh via internal Google pipeline."
+description: "Internal Google data pipeline."
 
 Node: dcid:AggregatedStatisticsProvenance
 typeOf: dcs:ProvenanceCategoryEnum
@@ -2935,4 +2935,19 @@ description: "Observation-like triples in the Knowledge Graph."
 Node: dcid:CustomSchemaProvenance
 typeOf: dcs:ProvenanceCategoryEnum
 name: "Custom schema provenance"
-description: "Triples in the Knowledge Graph coming from a Custom Data Commons instance that are not related to observations or Places"
+description: "Triples in the Knowledge Graph coming from a Custom Data Commons instance that are not related to observations or Places."
+
+Node: dcid:ReallySimpleImport
+typeOf: dcs:ProcessingMethodEnum
+name: "ReallySimpleImport"
+description: "ReallySimpleImport processing design (https://github.com/datacommonsorg/website/tree/master/custom_dc#import-custom-data)."
+
+Node: dcid:StatVarProcessor
+typeOf: dcs:ProcessingMethodEnum
+name: "StatVar Processor"
+description: "StatVar Processor tool."
+
+Node: dcid:CustomScript
+typeOf: dcs:ProcessingMethodEnum
+name: "Custom script"
+description: "Custom data processing script."
