@@ -2951,3 +2951,23 @@ Node: dcid:CustomScript
 typeOf: dcs:ProcessingMethodEnum
 name: "Custom script"
 description: "Custom data processing script."
+
+Node: dcid:NoEntityResolution
+typeOf: dcs:EntityResolutionTypeEnum
+name: "No entity resolution"
+description: "No entity resolution is necessary because all entities come with pre-assigned DCIDs."
+
+Node: dcid:IdResolutionWithoutKg
+typeOf: dcs:EntityResolutionTypeEnum
+name: "ID resolution without Knowledge Graph"
+description: "Requires generation of DCIDs for certain entities (e.g., StatVarObservation), but does require resolution against entities in Data Commons Knowledge Graph."
+
+Node: dcid:IdBasedKgResolution
+typeOf: dcs:EntityResolutionTypeEnum
+name: "ID-based Knowledge Graph resolution"
+description: "Requires resolution against the Data Commons Knowledge Graph entities based on their unique ID properties, like wikidataId."
+
+Node: dcid:NameBasedKgResolution
+typeOf: dcs:EntityResolutionTypeEnum
+name: "Name-based Knowledge Graph resolution"
+description: "Requires resolution against the Data Commons Knowlege Graph entities based on the name or description property."
