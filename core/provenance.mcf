@@ -114,7 +114,7 @@ description: "Category of data in the provenance."
 Node: dcid:dataBuildGroup
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
-rangeIncludes: dcs:DataBuildGroupEnum
+rangeIncludes: dcs:Text
 name: "dataBuildGroup"
 description: "The data build that a given data import is part of."
 
@@ -188,19 +188,12 @@ rangeIncludes: dcs:Text
 name: "resolvedProtoMcfUrl"
 description: "Location of resolved proto MCF files for the provenance."
 
-Node: dcid:preResolutionCsvUrl
+Node: dcid:preResolutionTableUrl
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
-name: "preResolutionCsvUrl"
-description: "Location of CSV files for the provenance that are not yet aligned with the Knowledge Graph."
-
-Node: dcid:preResolutionTemplateMcfUrl
-typeOf: schema:Property
-domainIncludes: dcs:Provenance
-rangeIncludes: dcs:Text
-name: "preResolutionTemplateMcfUrl"
-description: "Location of template-MCF files for the provenance."
+name: "preResolutionTableUrl"
+description: "Location of CSV files and corresponding Template-MCF file for the provenance that are not yet aligned with the Knowledge Graph. There should be one Template-MCF file with extension `.tmcf` and one or more CSV files or file patterns."
 
 Node: dcid:dataTransformationLogic
 typeOf: schema:Property
@@ -236,13 +229,6 @@ domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "sourceDataUrl"
 description: "Location of source data to download."
-
-Node: dcid:dataBuildGroup
-typeOf: schema:Property
-domainIncludes: dcs:Provenance
-rangeIncludes: dcs:DataBuildGroupEnum
-name: "dataBuildGroup"
-description: "Data build group consisting of certain provenances."
 
 Node: dcid:earliestObservationDate
 typeOf: schema:Property
