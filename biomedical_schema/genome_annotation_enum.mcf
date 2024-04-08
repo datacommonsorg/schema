@@ -1,43 +1,203 @@
-Node: dcid:NucleicAcidEnum
-name: "NucleicAcidEnum"
-subClassOf: schema:Enumeration
-description: "A (Adenine), T (Thymine), G (Guanine), C (Cytosine), and N (unknown) nucleic acid status."
+# AssociationTypeEnum
+Node: dcid:AssociationTypeEnum
+name: "AssociationTypeEnum"
 typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "The way by which an association between two entities is made."
 
-Node: dcid:NucleicAcidStatusA
-name: "A"
-typeOf: dcs:NucleicAcidEnum
+Node: dcid:AssociationTypeExperiment
+typeOf: dcs:AssociationTypeEnum
+name: "Experiment"
+description: "An association between two things was made as a result of a scientific experiment or screening."
 
-Node: dcid:NucleicAcidStatusT
-name: "T"
-typeOf: dcs:NucleicAcidEnum
+Node: dcid:AssociationTypeManuallyCurated
+typeOf: dcs:AssociationTypeEnum
+name: "Manually Curated"
+description: "An association between two things was made through manual curation of scientific literature or database annotations."
 
-Node: dcid:NucleicAcidStatusG
-name: "G"
-typeOf: dcs:NucleicAcidEnum
+Node: dcid:AssociationTypeTextMining
+typeOf: dcs:AssociationTypeEnum
+name: "Text Mining"
+description: "An association between two things was made through automated text mining of the scientific literature."
 
-Node: dcid:NucleicAcidStatusC
-name: "C"
-typeOf: dcs:NucleicAcidEnum
 
-Node: dcid:NucleicAcidStatusN
-name: "N"
-typeOf: dcs:NucleicAcidEnum
-
-Node: dcid:StrandOrientationEnum
-name: "StrandOrientationEnum"
+# ClinSigEnum
+Node: dcid:ClinSigEnum
+name: "ClinSigEnum"
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-description: "Denotes if the gene is on the forward (+) or reverse (-) DNA strands."
+description: "Clinical significance for this single variant: other, affects, uncertain significance, pathogenic, risk_factor, benign, conflicting interpretations of pathogenicity, association, likely pathogenic, protective, likely benign, not provided, association not found, drug response, pathogenic/likely pathogenic, benign/likely benign, unknown, untested, or histocompatibility."
 
-Node: dcid:StrandOrientationPositive
-name: "Positive"
-typeOf: dcs:StrandOrientationEnum
+Node: dcid:ClinSigOther
+name: "Other"
+typeOf: dcs:ClinSigEnum
 
-Node: dcid:StrandOrientationNegative
-name: "Negative"
-typeOf: dcs:StrandOrientationEnum
+Node: dcid:ClinSigAffects
+name: "Affects"
+typeOf: dcs:ClinSigEnum
 
+Node: dcid:ClinSigUncertain
+name: "Uncertain Significance"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigPathogenic
+name: "Pathogenic"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigRiskFactor
+name: "Risk Factor"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigBenign
+name: "Benign"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigConflictingPathogenicity
+name: "Conflicting Interpretations Of Pathogenicity"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigAssociation
+name: "Association"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigLikelyPathogenic
+name: "Likely Pathogenic"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigProtective
+name: "Protective"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigLikelyBenign
+name: "Likely Benign"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigNotProvided
+name: "Not Provided"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigAssociationNotFound
+name: "Association Not Found"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigDrugResponse
+name: "Drug Response"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigPathogenicLikelyPathogenic
+name: "Pathogenic/Likely Pathogenic"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigBenignLikelyBenign
+name: "Benign/Likely Benign"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigUnknown
+name: "Unknown"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigUntested
+name: "Untested"
+typeOf: dcs:ClinSigEnum
+
+Node: dcid:ClinSigHistocompatability
+name: "Histocompatibility"
+typeOf: dcs:ClinSigEnum
+
+
+# ClinVarReviewStatusEnum
+Node: dcid:ClinVarReviewStatusEnum
+name: "ClinVarReviewStatusEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "ClinVar review status: no assertion criteria provided, reviewed by expert panel, conflicting interpretations, criteria provided, non interpretation for the single variant, practice guideline, no conflicts, multiple submitters, or single_submitter."
+
+Node: dcid:ClinVarReviewStatusNoCriteria
+name: "No Assertion Criteria Provided"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusReviewed
+name: "Reviewed By Expert Panel"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusConflictingInterpretations
+name: "Conflicting Interpretations"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusCriteriaProvided
+name: "Criteria Provided"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusNoInterpretation
+name: "Non-interpretation For The Single Variant"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusPracticeGuideline
+name: "Practice Guideline"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusNoConflicts
+name: "No Conflicts"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusMultipleSubmitters
+name: "Multiple Submitters"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+Node: dcid:ClinVarReviewStatusSingleSubmitter
+name: "Single Submitter"
+typeOf: dcs:ClinVarReviewStatusEnum
+
+
+# DNASequenceRoleEnum
+Node: dcid:DNASequenceRoleEnum
+name: "DNASequenceRoleEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The role a defined sequence of DNA has in a genome assembly."
+
+Node: dcid:DNASequenceRoleAssembledMolecule
+name: "Assembled-Molecule"
+typeOf: dcs:DNASequenceRoleEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
+description: "The object represents a chromosome, linkage-group, or plasmid."
+
+Node: dcid:DNASequenceRoleChromosome
+name: "Chromosome"
+typeOf: dcs:DNASequenceRoleEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
+description: "The object represents a chromosome, linkage-group, or plasmid."
+
+Node: dcid:DNASequenceRoleUnlocalizedScaffold
+name: "Unlocalized Scaffold"
+typeOf: dcs:DNASequenceRoleEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
+description: "The object is a scaffold that is associated with a particular chromosome but has not been localized to a specific position on the chromosome."
+
+Node: dcid:DNASequenceRoleUnplacedScaffold
+name: "Unplaced Scaffold"
+typeOf: dcs:DNASequenceRoleEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
+description: "The object is a scaffold that does not have a chromosome assignment."
+
+Node: dcid:DNASequenceRoleAltScaffold
+name: "Alt-Scaffold"
+typeOf: dcs:DNASequenceRoleEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
+description: "The object is either an alternate loci scaffold or a patch scaffold."
+
+Node: dcid:DNASequenceRoleFixPatch
+name: "Fix-Patch"
+typeOf: dcs:DNASequenceRoleEnum
+description: "The object is a fix patch to the assembly-unit scaffold."
+
+Node: dcid:DNASequenceRoleNovelPatch
+name: "Novel-Patch"
+typeOf: dcs:DNASequenceRoleEnum
+description: "The object is a novel patch to the assembly-unit scaffold."
+
+
+# ExonFramesEnum
 Node: dcid:ExonFramesEnum
 name: "ExonFramesEnum"
 typeOf: schema:Class
@@ -45,325 +205,23 @@ subClassOf: schema:Enumeration
 description: "Denotes the exon frame {0,1,2}, or none if no frame for the exon."
 
 Node: dcid:ExonFrame0
-name: "Frame0"
+name: "Frame 0"
 typeOf: dcs:ExonFramesEnum
 
 Node: dcid:ExonFrame1
-name: "Frame1"
+name: "Frame 1"
 typeOf: dcs:ExonFramesEnum
 
 Node: dcid:ExonFrame2
-name: "Frame2"
+name: "Frame 2"
 typeOf: dcs:ExonFramesEnum
 
 Node: dcid:ExonFrameNone
 name: "None"
 typeOf: dcs:ExonFramesEnum
 
-Node: dcid:NomenclatureStatusEnum
-name: "NomenclatureStatuEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "The status of the name from the nomenclature committee: official, interim, or NCBI-supplied."
 
-Node: dcid:NomenclatureStatusOfficial
-name: "Official"
-typeOf: dcs:NomenclatureStatusEnum
-
-Node: dcid:NomenclatureStatusInterim
-name: "Interim"
-typeOf: dcs:NomenclatureStatusEnum
-
-Node: dcid:NomenclatureStatusNCBIsupplied
-name: "NCBI Supplied"
-typeOf: dcs:NomenclatureStatusEnum
-
-Node: dcid:TypeOfGeneEnum
-name: "TypeOfGeneEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "The type of gene as specified by NCBI: biological-region, ncRNA, other, protein-coding, pseudo, rRNA, scRNA, snRNA, snoRNA, tRNA, miscRNA, or unknown."
-
-Node: dcid:TypeOfGeneBiologicalRegion
-name: "BiologicalRegion"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenencRNA
-name: "ncRNA"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGeneOther
-name: "Other"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGeneProteinCoding
-name: "ProteinCoding"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenePseudo
-name: "Pseudo"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenerRNA
-name: "rRNA"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenescRNA
-name: "scRNA"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenesnRNA
-name: "snRNA"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenesnoRNA
-name: "snoRNA"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenetRNA
-name: "tRNA"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGenemiscRNA
-name: "miscRNA"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:TypeOfGeneUnknown
-name: "Unknown"
-typeOf: dcs:TypeOfGeneEnum
-
-Node: dcid:GeneticVariantMolTypeEnum
-name: "GeneticVariantMolTypeEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Sample type from exemplar submitted GeneticVariants (cDNA, genomic, mitochondrial, or unknown)."
-
-Node: dcid:GeneticVariantMolTypecDNA
-name: "cDNA"
-typeOf: dcs:GeneticVariantMolTypeEnum
-
-Node: dcid:GeneticVariantMolTypeGenomic
-name: "Genomic"
-typeOf: dcs:GeneticVariantMolTypeEnum
-
-Node: dcid:GeneticVariantMolTypeMitochondrial
-name: "Mitochondrial"
-typeOf: dcs:GeneticVariantMolTypeEnum
-
-Node: dcid:GeneticVariantMolTypeUnknown
-name: "Unknown"
-typeOf: dcs:GeneticVariantMolTypeEnum
-
-Node: dcid:GeneticVariantClassEnum
-name: "GeneticVariantClassEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Class of variant: single nucleotide variant, deletion, insertion, in-del, named, mixed, mnp, het, microsatellite, inversion, copy number variation, variation, duplication, inversion, copy number loss, or copy number gain."
-
-Node: dcid:GeneticVariantClassSingle
-name: "Single Nucleotide Variant"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassDeletion
-name: "Deletion"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassInsertion
-name: "Insertion"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassIn-del
-name: "InDel"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassNamed
-name: "Named"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassMixed
-name: "Mixed"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassMNP
-name: "MNP"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassHet
-name: "Het"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassMicrosatellite
-name: "microsatellite"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassInversion
-name: "Inversion"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassCopyNumberVariation
-name: "CopyNumberVariation"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassVariation
-name: "Variation"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassDuplication
-name: "Duplication"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassCopyNumberGain
-name: "CopyNumberGain"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantClassCopyNumberLoss
-name: "Copy Number Loss"
-typeOf: dcs:GeneticVariantClassEnum
-
-Node: dcid:GeneticVariantValidationStatusEnum
-name: "GeneticVariantValidationStatusEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Validation status of the genetic variant: cluster, frequency, 1000genomes, HapMap, 2hit-2allele, submitter, or unknown."
-
-Node: dcid:GeneticVariantValidationStatusFrequency
-name: "Frequency"
-typeOf: dcs:GeneticVariantValidationStatusEnum
-
-Node: dcid:GeneticVariantValidationStatusCluster
-name: "Cluster"
-typeOf: dcs:GeneticVariantValidationStatusEnum
-
-Node: dcid:GeneticVariantValidationStatus1000genomes
-name: "1000 Genomes"
-typeOf: dcs:GeneticVariantValidationStatusEnum
-
-Node: dcid:GeneticVariantValidationStatusHapMap
-name: "HapMap"
-typeOf: dcs:GeneticVariantValidationStatusEnum
-
-Node: dcid:GeneticVariantValidationStatusUnknown
-name: "uUknown"
-typeOf: dcs:GeneticVariantValidationStatusEnum
-
-Node: dcid:GeneticVariantValidationStatus2hit-2allele
-name: "2hit-2allele"
-typeOf: dcs:GeneticVariantValidationStatusEnum
-
-Node: dcid:GeneticVariantValidationStatusSubmitter
-name: "Submitter"
-typeOf: dcs:GeneticVariantValidationStatusEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryEnum
-name: "GeneticVariantFunctionalCategoryEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Functional category of the genetic variant (coding-synon, splice_5', missense, frameshift, near_gene_5', 3'_UTR, near_gene_3', nonsense, splice_3', intron, cds_reference, 5'_UTR, unknown, cds_indel, stop_loss, 5' UTR, or ncRNA.)"
-
-Node: dcid:GeneticVariantFunctionalCategoryncRNA
-name: "ncRNA"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryCodingSynon
-name: "Coding Synonomous"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategorySplice5
-name: "Splice 5'"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-description: "In donor splice site"
-
-Node: dcid:GeneticVariantFunctionalCategoryMissense
-name: "Missense"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryFrameshift
-name: "Frameshift"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryNearGene5
-name: "Near Gene 5'"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryUTR3
-name: "3' UTR"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryUTR5
-name: "5' UTR"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryNearGene3
-name: "Near Gene 3'"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryNonsense
-name: "Nonsense"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategorySplice3
-name: "Splice 3'"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-description: "In acceptor splice"
-
-Node: dcid:GeneticVariantFunctionalCategoryIntron
-name: "Intron"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryCDSReference
-name: "cds Reference"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryUTR5
-name: "5' UTR"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryUnknown
-name: "Unknown"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCategoryStopLoss
-name: "Stop Loss"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantFunctionalCDSIndel
-name: "cds Indel"
-typeOf: dcs:GeneticVariantFunctionalCategoryEnum
-
-Node: dcid:GeneticVariantLocTypeEnum
-name: "GeneticVariantLocTypeEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Type of mapping inferred from size on reference; may not agree with class: between, exact, fuzzy, range, range deletion, range insertion, or range substitution."
-
-Node: dcid:GeneticVariantLocTypeBetween
-name: "Between"
-typeOf: dcs:GeneticVariantLocTypeEnum
-
-Node: dcid:GeneticVariantLocTypeExact
-name: "Exact"
-typeOf: dcs:GeneticVariantLocTypeEnum
-
-Node: dcid:GeneticVariantLocTypeRange
-name: "Range"
-typeOf: dcs:GeneticVariantLocTypeEnum
-
-Node: dcid:GeneticVariantLocTypeRangeDeletion
-name: "RangeDeletion"
-typeOf: dcs:GeneticVariantLocTypeEnum
-
-Node: dcid:GeneticVariantLocTypeRangeInsertion
-name: "RangeInsertion"
-typeOf: dcs:GeneticVariantLocTypeEnum
-
-Node: dcid:GeneticVariantLocTypeRangeSubstitution
-name: "RangeSubstituation"
-typeOf: dcs:GeneticVariantLocTypeEnum
-
-Node: dcid:GeneticVariantLocTypeFuzzy
-name: "Fuzzy"
-typeOf: dcs:GeneticVariantLocTypeEnum
-
+# GeneticVariantAlignmentQualityEnum
 Node: dcid:GeneticVariantAlignmentQualityEnum
 name: "GeneticVariantAlignmentQualityEnum"
 typeOf: schema:Class
@@ -382,6 +240,8 @@ Node: dcid:GeneticVariantAlignmentQualityThree
 name: "Many Matches"
 typeOf: dcs:GeneticVariantAlignmentQualityEnum
 
+
+# GeneticVariantAttributeEnum
 Node: dcid:GeneticVariantAttributeEnum
 name: "GeneticVariantAttributeEnum"
 typeOf: schema:Class
@@ -513,6 +373,82 @@ name: "Common SNP"
 typeOf: dcs:GeneticVariantAttributeEnum
 description: "RS is a common SNP. A common SNP is one that has at least one 1000Genomes population with a minor allele of frequency >= 1% and for which 2 or more founders contribute to that minor allele frequency."
 
+
+# GeneticVariantClassEnum
+Node: dcid:GeneticVariantClassEnum
+name: "GeneticVariantClassEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Class of variant: single nucleotide variant, deletion, insertion, in-del, named, mixed, mnp, het, microsatellite, inversion, copy number variation, variation, duplication, inversion, copy number loss, or copy number gain."
+
+Node: dcid:GeneticVariantClassSingle
+name: "Single Nucleotide Polymorphism"
+typeOf: dcs:GeneticVariantClassEnum
+abbreviation: "SNP","SNV"
+
+Node: dcid:GeneticVariantClassDeletion
+name: "Deletion"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassInsertion
+name: "Insertion"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassIn-del
+name: "InDel"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassNamed
+name: "Named"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassMixed
+name: "Mixed"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassMNP
+name: "Multiple Nucleotide Polymorphism"
+typeOf: dcs:GeneticVariantClassEnum
+abbreviation: "MNP","MNV"
+
+Node: dcid:GeneticVariantClassHet
+name: "Heterozygous"
+typeOf: dcs:GeneticVariantClassEnum
+abbreviation: "het"
+
+Node: dcid:GeneticVariantClassMicrosatellite
+name: "Microsatellite"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassInversion
+name: "Inversion"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassCopyNumberVariation
+name: "Copy Number Variation"
+typeOf: dcs:GeneticVariantClassEnum
+abbreviation: "CNV"
+
+Node: dcid:GeneticVariantClassVariation
+name: "Variation"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassDuplication
+name: "Duplication"
+typeOf: dcs:GeneticVariantClassEnum
+
+Node: dcid:GeneticVariantClassCopyNumberGain
+name: "Copy Number Gain"
+typeOf: dcs:GeneticVariantClassEnum
+specializationOf: dcs:GeneticVariantCopyNumberVariation
+
+Node: dcid:GeneticVariantClassCopyNumberLoss
+name: "Copy Number Loss"
+typeOf: dcs:GeneticVariantClassEnum
+specializationOf: dcs:GeneticVariantCopyNumberVariation
+
+
+# GeneticVariantExceptionEnum
 Node: dcid:GeneticVariantExceptionEnum
 name: "GeneticVariantExceptionEnum"
 typeOf: schema:Class
@@ -608,6 +544,724 @@ name: "Inconsistent Alleles"
 typeOf: dcs:GeneticVariantExceptionEnum
 description: "Inconsistent genotype submission for at least one sample."
 
+
+# GeneticVariantFunctionalCategoryEnum
+Node: dcid:GeneticVariantFunctionalCategoryEnum
+name: "GeneticVariantFunctionalCategoryEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Functional category of the genetic variant (coding-synon, splice_5', missense, frameshift, near_gene_5', 3'_UTR, near_gene_3', nonsense, splice_3', intron, cds_reference, 5'_UTR, unknown, cds_indel, stop_loss, 5' UTR, or ncRNA.)"
+
+Node: dcid:GeneticVariantFunctionalCategoryncRNA
+name: "ncRNA"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryCodingSynon
+name: "Coding Synonomous"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategorySplice5
+name: "Splice 5'"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+description: "In donor splice site"
+
+Node: dcid:GeneticVariantFunctionalCategoryMissense
+name: "Missense"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryFrameshift
+name: "Frameshift"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryNearGene5
+name: "Near Gene 5'"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryUTR3
+name: "3' UTR"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryUTR5
+name: "5' UTR"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryNearGene3
+name: "Near Gene 3'"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryNonsense
+name: "Nonsense"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategorySplice3
+name: "Splice 3'"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+description: "In acceptor splice"
+
+Node: dcid:GeneticVariantFunctionalCategoryIntron
+name: "Intron"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryCDSReference
+name: "cds Reference"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryUTR5
+name: "5' UTR"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryUnknown
+name: "Unknown"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCategoryStopLoss
+name: "Stop Loss"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+Node: dcid:GeneticVariantFunctionalCDSIndel
+name: "cds Indel"
+typeOf: dcs:GeneticVariantFunctionalCategoryEnum
+
+
+# GeneticVariantLocTypeEnum
+Node: dcid:GeneticVariantLocTypeEnum
+name: "GeneticVariantLocTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Type of mapping inferred from size on reference; may not agree with class: between, exact, fuzzy, range, range deletion, range insertion, or range substitution."
+
+Node: dcid:GeneticVariantLocTypeBetween
+name: "Between"
+typeOf: dcs:GeneticVariantLocTypeEnum
+
+Node: dcid:GeneticVariantLocTypeExact
+name: "Exact"
+typeOf: dcs:GeneticVariantLocTypeEnum
+
+Node: dcid:GeneticVariantLocTypeRange
+name: "Range"
+typeOf: dcs:GeneticVariantLocTypeEnum
+
+Node: dcid:GeneticVariantLocTypeRangeDeletion
+name: "Range Deletion"
+typeOf: dcs:GeneticVariantLocTypeEnum
+
+Node: dcid:GeneticVariantLocTypeRangeInsertion
+name: "Range Insertion"
+typeOf: dcs:GeneticVariantLocTypeEnum
+
+Node: dcid:GeneticVariantLocTypeRangeSubstitution
+name: "Range Substituation"
+typeOf: dcs:GeneticVariantLocTypeEnum
+
+Node: dcid:GeneticVariantLocTypeFuzzy
+name: "Fuzzy"
+typeOf: dcs:GeneticVariantLocTypeEnum
+
+
+# GeneticVariantMolTypeEnum
+Node: dcid:GeneticVariantMolTypeEnum
+name: "GeneticVariantMolTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Sample type from exemplar submitted GeneticVariants (cDNA, genomic, mitochondrial, or unknown)."
+
+Node: dcid:GeneticVariantMolTypecDNA
+name: "cDNA"
+typeOf: dcs:GeneticVariantMolTypeEnum
+
+Node: dcid:GeneticVariantMolTypeGenomic
+name: "Genomic"
+typeOf: dcs:GeneticVariantMolTypeEnum
+
+Node: dcid:GeneticVariantMolTypeMitochondrial
+name: "Mitochondrial"
+typeOf: dcs:GeneticVariantMolTypeEnum
+
+Node: dcid:GeneticVariantMolTypeUnknown
+name: "Unknown"
+typeOf: dcs:GeneticVariantMolTypeEnum
+
+
+# NomenclatureStatusEnum
+Node: dcid:NomenclatureStatusEnum
+name: "NomenclatureStatuEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The status of the name from the nomenclature committee: official, interim, or NCBI-supplied."
+
+Node: dcid:NomenclatureStatusOfficial
+name: "Official"
+typeOf: dcs:NomenclatureStatusEnum
+
+Node: dcid:NomenclatureStatusInterim
+name: "Interim"
+typeOf: dcs:NomenclatureStatusEnum
+
+Node: dcid:NomenclatureStatusNCBIsupplied
+name: "NCBI Supplied"
+typeOf: dcs:NomenclatureStatusEnum
+
+
+# GeneticVariantValidationStatusEnum
+Node: dcid:GeneticVariantValidationStatusEnum
+name: "GeneticVariantValidationStatusEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Validation status of the genetic variant: cluster, frequency, 1000genomes, HapMap, 2hit-2allele, submitter, or unknown."
+
+Node: dcid:GeneticVariantValidationStatusFrequency
+name: "Frequency"
+typeOf: dcs:GeneticVariantValidationStatusEnum
+
+Node: dcid:GeneticVariantValidationStatusCluster
+name: "Cluster"
+typeOf: dcs:GeneticVariantValidationStatusEnum
+
+Node: dcid:GeneticVariantValidationStatus1000genomes
+name: "1000 Genomes"
+typeOf: dcs:GeneticVariantValidationStatusEnum
+
+Node: dcid:GeneticVariantValidationStatusHapMap
+name: "HapMap"
+typeOf: dcs:GeneticVariantValidationStatusEnum
+
+Node: dcid:GeneticVariantValidationStatusUnknown
+name: "Unknown"
+typeOf: dcs:GeneticVariantValidationStatusEnum
+
+Node: dcid:GeneticVariantValidationStatus2hit-2allele
+name: "2hit-2allele"
+typeOf: dcs:GeneticVariantValidationStatusEnum
+
+Node: dcid:GeneticVariantValidationStatusSubmitter
+name: "Submitter"
+typeOf: dcs:GeneticVariantValidationStatusEnum
+
+
+# GenomeAssemblyDerivedFromEnum
+Node: dcid:GenomeAssemblyDerivedFromEnum
+name: “GenomeAssemblyDerivedFromEnum”
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: “Denotes the relation of the genome assembly with the type material from which it was derived.”
+
+Node: dcid:GenomeAssemblyDerivedFromTypeMaterial
+name: “assembly from type material”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “The sequences in the genome assembly were derived from type material.”
+descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+
+Node: dcid:GenomeAssemblyDerivedFromSynonymTypeMaterial
+name: “assembly from synonym type material”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “The sequences in the genome assembly were derived from synonym type material.”
+descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+
+Node: dcid:GenomeAssemblyDerivedFromPathotypeMaterial
+name: “assembly from pathotype material”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “The sequences in the genome assembly were derived from pathovar material.”
+descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+
+Node: dcid:GenomeAssemblyDerivedFromCladeExemplar
+name: “assembly designated as clade exemplar”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “The sequences in the genome assembly were derived from clade exemplar material.”
+
+Node: dcid:GenomeAssemblyDerivedFromNeotype
+name: “assembly designated as neotype”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “The sequences in the genome assembly were derived from neotype material.”
+descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+
+Node: dcid:GenomeAssemblyDerivedFromReftype
+name: “assembly designated as reftype”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “The sequences in the genome assembly were derived from reference material where type material never was available and is not likely to ever be available.”
+descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+
+Node: dcid:GenomeAssemblyDerivedFromIctvSpeciesExemplar
+name: “ICTV species exemplar”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “ The International Committee on Taxonomy of Viruses (ICTV) designated the genome assembly as the exemplar for the virus species.”
+descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+
+Node: dcid:GenomeAssemblyDerivedFromIctvAdditionalIsolate
+name: “ICTV additional isolate”
+typeOf: dcs:GenomeAssemblyDerivedFromEnum
+description: “ The International Committee on Taxonomy of Viruses (ICTV) designated the genome assembly an additional isolate for the virus species.”
+descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+
+
+# GenomeAssemblyLevelEnum
+Node: dcid:GenomeAssemblyLevelEnum
+name: "GenomeAssemblyLevelEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The highest level of assembly for any object in the assembly."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
+
+Node: dcid:GenomeAssemblyLevelCompleteGenome
+name: "Complete Genome"
+typeOf: dcs:GenomeAssemblyLevelEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
+description: "All chromosomes are gapless and have no runs of 10 or more ambiguous bases (Ns), there are no unplaced or unlocalized scaffolds, and all the expected chromosomes are present (i.e. the assembly is not noted as having partial genome representation). Plasmids and organelles may or may not be included in the assembly but if present then the sequences are gapless."
+
+Node: dcid:GenomeAssemblyLevelChromosome
+name: "Chromosome"
+typeOf: dcs:GenomeAssemblyLevelEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
+description: "There is sequence for one or more chromosomes. This could be a completely sequenced chromosome without gaps or a chromosome containing scaffolds or contigs with gaps between them. There may also be unplaced or unlocalized scaffolds."
+
+Node: dcid:GenomeAssemblyLevelScaffold
+name: " caffold"
+typeOf: dcs:GenomeAssemblyLevelEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
+description: "Some sequence contigs have been connected across gaps to create scaffolds, but the scaffolds are all unplaced or unlocalized."
+
+Node: dcid:GenomeAssemblyLevelContig
+name: "Contig"
+typeOf: dcs:GenomeAssemblyLevelEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
+description: "Nothing is assembled beyond the level of sequence contigs."
+
+
+# GenomeAssemblyReleaseTypeEnum
+Node: dcid:GenomeAssemblyReleaseTypeEnum
+name: "GenomeAssemblyReleaseTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Defines the update type of this genome assembly version release."
+
+Node: dcid:GenomeAssemblyReleaseTypeMajor
+name: "Major"
+typeOf: dcs:GenomeAssemblyReleaseTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+description: "Changes from the previous assembly version result in a significant change to the coordinate system. The first version of an assembly is always a major release. Most subsequent genome assembly updates are also major releases. [Field is not shown for major releases since this is the default type.]"
+
+Node: dcid:GenomeAssemblyReleaseTypeMinor
+name: "Minor"
+typeOf: dcs:GenomeAssemblyReleaseTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+description: "Changes from the previous assembly version are limited to the following changes, none of which result in a significant change to the coordinate system of the primary assembly-unit: adding, removing or changing a non-nuclear assembly-unit; dropping unplaced or unlocalized scaffolds; adding up to 50 unplaced or unlocalized scaffolds which are shorter than the current scaffold-N50 value; or replacing a component with a gap of the same length."
+
+Node: dcid:GenomeAssemblyReleaseTypePatch
+name: "Patch"
+typeOf: dcs:GenomeAssemblyReleaseTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+description: "The only change from the previous assembly version is the addition or modification of a patch assembly-unit (relevant for assemblies maintained by the Genome Reference Consortium)"
+
+
+# GenomeAssemblyTypeEnum
+Node: dcid:GenomeAssemblyTypeEnum
+name: "GenomeAssemblyTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The type of sequence model data defined in this genome assembly."
+
+Node: dcid:GenomeAssemblyTypeAssembly
+name: "Assembly"
+typeOf: dcs:GenomeAssemblyTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: "The set of chromosomes, unlocalized and unplaced (sometimes called 'random') and alternate sequences used to represent an organism's genome. Assemblies are constructed from 1 or more assembly units."
+
+Node: dcid:GenomeAssemblyTypeHaploidAssembly
+name: "Haploid Assembly"
+typeOf: dcs:GenomeAssemblyTypeEnum
+specializationOf: dcs:GenomeAssemblyTypeAssembly
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: "The collection of chromosome assemblies, unlocalized and unplaced sequences that represent an organism's genome. Any locus may be represented 0 or 1 time, and entire chromosomes are only represented 0 or 1 times."
+
+Node: dcid:GenomeAssemblyTypeHaploidWithAltLoci
+name: "Haploid with Alternate Loci"
+typeOf: dcs:GenomeAssemblyTypeEnum
+specializationOf: dcs:GenomeAssemblyTypeAssembly
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: "The collection of chromosome assemblies, unlocalized and unplaced sequences and alternate loci that represent an organism's genome. Any locus may be represented 0, 1 or >1 time, but entire chromosomes are only represented 0 or 1 times."
+synonym: "haploid with alt loci"
+
+Node: dcid:GenomeAssemblyTypeDiploidAssembly
+name: "Diploid Assembly"
+typeOf: dcs:GenomeAssemblyTypeEnum
+specializationOf: dcs:GenomeAssemblyTypeAssembly
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: "A genome assembly for which a chromosome assembly is available for both sets of an individual's chromosomes. It is anticipated that a diploid genome assembly represents the genome of an individual, therefore, it is not expected that alternate loci will be defined for this assembly, although it is possible that unlocalized or unplaced sequences could be part of the assembly."
+
+Node: dcid:GenomeAssemblyTypeUnresolvedDiploid
+name: "Unresolved Diploid"
+typeOf: dcs:GenomeAssemblyTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: "A genome assembly from a diploid in which many of the haplotypic sequences have been resolved but the two haplotypes have not been separated. Consequently, the assembly will be much larger than the expected haploid genome size and many genes will be present in two copies."
+
+Node: dcid:GenomeAssemblyTypeLinkedPseudohaplotypeAssemblies
+name: "Pseudohaplotype Assemblies"
+typeOf: dcs:GenomeAssemblyTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: "A genome assembly from a diploid in which many of the haplotypic sequences have been resolved, phased and the two haplotypes have been separated. The current state of the technology is that most assemblers produce blocks that are phased, separated by blocks where the haplotype cannot be distinguished. The typical result is that the "Principal Pseudohaplotype" assembly is a mosaic of haplotype blocks linked by unresolved segments and the "Alternate Pseudohaplotype" assembly is the other haplotype wherever the haplotypes can be distinguished. A pair of pseudohaplotype assemblies derived from the same diploid individual can be linked with a cross-reference."
+
+Node: dcid:GenomeAssemblyTypeAlternatePseudohaplotype
+name: "Alternate Pseudohaplotype"
+typeOf: dcs:GenomeAssemblyTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: “A genome assembly from a diploid in which many of the haplotypic sequences have been resolved, phased and the two haplotypes have been separated and the resulting haplotypes can be distinguished.”
+specializationOf: dcs:GenomeAssemblyTypeLinkedPseudohaplotypeAssemblies
+
+Node: dcid:GenomeAssemblyTypePrincipalPseudohaplotype
+name: "Principal Pseudohaplotype"
+typeOf: dcs:GenomeAssemblyTypeEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
+description: “A genome assembly from a diploid in which many of the haplotypic sequences have been resolved, phased and the two haplotypes have been separated and the result is a mosaic of haplotype blocks linked by unresolved segments.“
+specializationOf: dcs:GenomeAssemblyTypeLinkedPseudohaplotypeAssemblies
+
+
+# GenVarSourceEnum
+Node: dcid:GenVarSourceEnum
+name: "GenVarSourceEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Sources for observations of genetic variant allele and population frequencies: GenVarSourceUCSCGenomeBrowser, GenVarSourceTheHumanGeneomeProject, GenVarSourceExomeAggregationConsortium, GenVarSourceGOExomeSequencingProject, GenVarSourceTOPMed, GenVarSource1000Genomes, GenVarSourceGnomAD, GenVarSourceGnomADexomes, or GenVarSourcePAGEstudy."
+
+Node: dcid:GenVarSourceUCSCGenomeBrowser
+name: "UCSC Genome Browser"
+url: "https://genome.ucsc.edu/"
+typeOf: dcs:GenVarSourceEnum
+
+Node: dcid:GenVarSourceTheHumanGenomeProject
+name: "The Human Genome Project"
+url: "https://www.genome.gov/human-genome-project"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "HGP"
+
+Node: dcid:GenVarSourceExomeAggregationConsortium
+name: "Exome Aggregation Consortium"
+url: "http://exac.broadinstitute.org/"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "ExAC"
+
+Node: dcid:GenVarSourceGOExomeSequencingProject
+name: "GO Exome Sequencing Project"
+url: "https://esp.gs.washington.edu/drupal/"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "GO-ESP"
+
+Node: dcid:GenVarSourceTOPMed
+name: "Trans-Omics for Precision Medicine Program"
+url: "https://www.nhlbi.nih.gov/science/trans-omics-precision-medicine-topmed-program"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "TOPMed"
+
+Node: dcid:GenVarSource1000Genomes
+name: "1000 Genomes Project"
+url: "https://www.internationalgenome.org/"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "1KGP"
+
+Node: dcid:GenVarSourceGnomAD
+name: "Genome Aggregation Database"
+url: "https://www.gnomad.broadinstitute.org/"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "GnomAD"
+
+Node: dcid:GenVarSourceGnomADexomes
+name: "Genome Aggregation Database Exams"
+url: "https://www.gnomad.broadinstitute.org/"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "GnomAD Exomes"
+
+Node: dcid:GenVarSourcePAGEStudy
+name: "Population Architecture using Genomics and Epidemiology Study"
+url: "https://www.pagestudy.org/"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "PAGE Study"
+
+Node: dcid:GenVarSourceNSDD
+name: "Northern Sweden Diet Database"
+url: "https://snd.gu.se/en/catalogue/study/ext0131"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "NSDD"
+
+Node: dcid:GenVarSourceTwinsUK
+name: "Twins UK"
+url: "https://twinsuk.ac.uk/"
+typeOf: dcs:GenVarSourceEnum
+
+Node: dcid:GenVarSourceALSPAC
+name: "Avon Longitudinal Study of Parents and Children"
+url: "http://www.bristol.ac.uk/alspac/"
+typeOf: dcs:GenVarSourceEnum
+abbreviation: "ALSPAC"
+
+Node: dcid:GenVarSourceVietnameseGenomeProject
+name: "Vietnamese Genetic Variation Database"
+url: "https://genomes.vn/"
+typeOf: dcs:GenVarSourceEnum
+
+Node: dcid:GenVarSourceEstonianGenomeProject
+name: "Estonian Genome Project"
+url: "https://genomics.ut.ee/en/about-us/estonian-genome-centre/"
+typeOf: dcs:GenVarSourceEnum
+
+
+# NonCodingRNATypeEnum
+Node: dcid:NonCodingRNATypeEnum
+name: "NonCodingRNATypeEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "A non-coding RNA (ncRNA) is a functional RNA molecule that is not translated into a protein. The DNA sequence from which a functional non-coding RNA is transcribed is often called an RNA gene. Abundant and functionally important types of non-coding RNAs include transfer RNAs (tRNAs) and ribosomal RNAs (rRNAs), as well as small RNAs such as microRNAs, siRNAs, piRNAs, snoRNAs, snRNAs, exRNAs, scaRNAs and the long ncRNAs such as Xist and HOTAIR."
+descriptionUrl: "https://en.wikipedia.org/wiki/Non-coding_RNA"
+
+Node: dcid:NonCodingRNATypeRibosomalRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Ribosomal RNA"
+shortDisplayName: "rRNA"
+description: "Ribosomal ribonucleic acid (rRNA) is a type of non-coding RNA which is the primary component of ribosomes, essential to all cells."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ribosomal_RNA"
+
+Node: dcid:NonCodingRNATypeLongNonCodingRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Long NonCoding RNA"
+shortDisplayName: "lncRNA"
+description: "Long noncoding RNA (LncRNA) is a large class of RNA molecules with size larger than 200 nucleotides. They exhibit cellular functions although having no protein-coding capability."
+descriptionUrl: "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/long-noncoding-rna"
+
+Node: dcid:NonCodingRNATypeLongIntergenicNonCodingRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Long Intergenic NonCoding RNA"
+shortDisplayName: "lincRNA"
+description: "Long intervening/intergenic noncoding RNAs (lincRNAs) are sequences of lncRNA which do not overlap protein-coding genes."
+descriptionUrl: "https://en.wikipedia.org/wiki/Long_non-coding_RNA"
+
+Node: dcid:NonCodingRNATypeSmallNucleolarRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Small Nucleolar RNA"
+shortDisplayName: "snoRNA"
+description: "Small nucleolar RNAs (snoRNAs) are a class of small RNA molecules that primarily guide chemical modifications of other RNAs, mainly ribosomal RNAs, transfer RNAs and small nuclear RNAs."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_nucleolar_RNA"
+
+Node: dcid:NonCodingRNATypeMicroRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "MicroRNA"
+shortDisplayName: "miRNA"
+description: "MicroRNA (miRNA) are small, single-stranded, non-coding RNA molecules containing 21 to 23 nucleotides."
+descriptionUrl: "https://en.wikipedia.org/wiki/MicroRNA"
+
+Node: dcid:NonCodingRNATypeCircularRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "CircularRNA"
+shortDisplayName: "circRNA"
+description: "Circular RNA (or circRNA) is a type of single-stranded RNA which, unlike linear RNA, forms a covalently closed continuous loop."
+descriptionUrl: "https://en.wikipedia.org/wiki/Circular_RNA"
+
+Node: dcid:NonCodingRNATypePromoterAssociatedRNA
+typeOf: dcs:NonCodingRNATypeEnum
+name: "Promoter-Associated RNA"
+shortDisplayName: "pRNA"
+description: "Promoter-associated RNAs (pRNAs) are a family of ~90–100 nt-long divergent RNAs overlapping the promoter of the rRNA (rDNA) operon."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3929421/"
+
+
+# NucleicAcidEnum
+Node: dcid:NucleicAcidEnum
+name: "NucleicAcidEnum"
+subClassOf: schema:Enumeration
+description: "A (Adenine), T (Thymine), G (Guanine), C (Cytosine), and N (unknown) nucleic acid status."
+typeOf: schema:Class
+
+Node: dcid:NucleicAcidStatusA
+name: "A"
+typeOf: dcs:NucleicAcidEnum
+
+Node: dcid:NucleicAcidStatusT
+name: "T"
+typeOf: dcs:NucleicAcidEnum
+
+Node: dcid:NucleicAcidStatusG
+name: "G"
+typeOf: dcs:NucleicAcidEnum
+
+Node: dcid:NucleicAcidStatusC
+name: "C"
+typeOf: dcs:NucleicAcidEnum
+
+Node: dcid:NucleicAcidStatusN
+name: "N"
+typeOf: dcs:NucleicAcidEnum
+
+
+# RefSeqCategoryEnum
+Node: dcid:RefSeqCategoryEnum
+name: "RefSeqCategoryEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Denotes that the assembly is a reference or representative genome in the NCBI Reference Sequence ( RefSeq ) project classification."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+
+Node: dcid:RefSeqCategoryReferenceGenome
+name: "Reference Genome"
+typeOf: dcs:GenomeAssemblyLevelEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+description: "A manually selected high quality genome assembly that NCBI and the community have identified as being important as a standard against which other data are compared."
+
+Node: dcid:RefSeqCategoryRepresentationGenome
+name: "Representation Genome"
+typeOf: dcs:GenomeAssemblyLevelEnum
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
+description: "A genome computationally or manually selected as a representative from among the best genomes available for a species or clade that does not have a designated reference genome."
+
+
+# StrandOrientationEnum
+Node: dcid:StrandOrientationEnum
+name: "StrandOrientationEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "Denotes if the gene is on the forward (+) or reverse (-) DNA strands."
+
+Node: dcid:StrandOrientationPositive
+name: "Positive"
+typeOf: dcs:StrandOrientationEnum
+
+Node: dcid:StrandOrientationNegative
+name: "Negative"
+typeOf: dcs:StrandOrientationEnum
+
+
+# TypeOfGeneEnum
+Node: dcid:TypeOfGeneEnum
+name: "TypeOfGeneEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The type of gene as specified by NCBI: biological-region, ncRNA, other, protein-coding, pseudo, rRNA, scRNA, snRNA, snoRNA, tRNA, miscRNA, or unknown."
+
+Node: dcid:TypeOfGeneBiologicalRegion
+name: "Biological Region"
+typeOf: dcs:TypeOfGeneEnum
+
+Node: dcid:TypeOfGeneexRNA
+name: "extracellular RNA"
+typeOf: dcs:TypeOfGeneEnum
+specializationOf: dcs:TypeOfGenesRNA
+abbreviation: "exRNA"
+description: "Extracellular RNA (exRNA) describes RNA species present outside of the cells in which they were transcribed. Carried within extracellular vesicles, lipoproteins, and protein complexes, exRNAs are protected from ubiquitous RNA-degrading enzymes. exRNAs may be found in the environment or, in multicellular organisms, within the tissues or biological fluids such as venous blood, saliva, breast milk, urine, semen, menstrual blood, and vaginal fluid. Although their biological function is not fully understood, exRNAs have been proposed to play a role in a variety of biological processes including syntrophy, intercellular communication, and cell regulation."
+descriptionUrl: "https://en.wikipedia.org/wiki/Extracellular_RNA"
+
+Node: dcid:TypeOfGenemiRNA
+name: "microRNA"
+typeOf: dcs:TypeOfGeneEnum
+specializationOf: dcs:TypeOfGenencRNA
+abbreviation: "miRNA"
+description: "MicroRNA (miRNA) are small, single-stranded, non-coding RNA molecules containing 21 to 23 nucleotides. Found in plants, animals and some viruses, miRNAs are involved in RNA silencing and post-transcriptional regulation of gene expression. miRNAs base-pair to complementary sequences in mRNA molecules, then silence said mRNA molecules by one or more of the following processes: cleavage of the mRNA strand into two pieces, destabilization of the mRNA by shortening its poly(A) tail, or reducing translation of the mRNA into proteins. In cells of humans and other animals, miRNAs primarily act by destabilizing the mRNA."
+descriptionUrl: "https://en.wikipedia.org/wiki/MicroRNA
+
+Node: dcid:TypeOfGenemiscRNA
+name: "miscellaneous RNA"
+typeOf: dcs:TypeOfGeneEnum
+abbreviation: "miscRNA"
+description: "Miscellaneous RNA that are in no other classification."
+
+Node: dcid:TypeOfGenencRNA
+name: "non-coding RNA"
+typeOf: dcs:TypeOfGeneEnum
+abbreviation: "ncRNA"
+description: "A non-coding RNA (ncRNA) is a functional RNA molecule that is not translated into a protein. The DNA sequence from which a functional non-coding RNA is transcribed is often called an RNA gene. Abundant and functionally important types of non-coding RNAs include transfer RNAs (tRNAs) and ribosomal RNAs (rRNAs), as well as small RNAs such as microRNAs, siRNAs, piRNAs, snoRNAs, snRNAs, exRNAs, scaRNAs and the long ncRNAs such as Xist and HOTAIR."
+descriptionUrl: "https://en.wikipedia.org/wiki/Non-coding_RNA"
+
+Node: dcid:TypeOfGeneOther
+name: "Other"
+typeOf: dcs:TypeOfGeneEnum
+
+Node: dcid:TypeOfGenepiRNA
+name: "Piwi-interacting RNA"
+typeOF: dcs:TypeOfGeneEnum
+specializationOf: dcs:TypeOfGenesRNA
+abbreviation: "piRNA"
+description: "Piwi-interacting RNA (piRNA) is the largest class of small non-coding RNA molecules expressed in animal cells. piRNAs form RNA-protein complexes through interactions with piwi-subfamily Argonaute proteins. These piRNA complexes are mostly involved in the epigenetic and post-transcriptional silencing of transposable elements and other spurious or repeat-derived transcripts, but can also be involved in the regulation of other genetic elements in germ line cells."
+descriptionUrl: "https://en.wikipedia.org/wiki/Piwi-interacting_RNA"
+
+Node: dcid:TypeOfGeneProteinCoding
+name: "Protein Coding"
+typeOf: dcs:TypeOfGeneEnum
+description: "Protein-coding sequences represent the most widely studied and best understood component of the human genome. These sequences ultimately lead to the production of all human proteins, although several biological processes (e.g. DNA rearrangements and alternative pre-mRNA splicing) can lead to the production of many more unique proteins than the number of protein-coding genes."
+descriptionUrl: "https://en.wikipedia.org/wiki/Human_genome#Coding_sequences_(protein-coding_genes)"
+
+Node: dcid:TypeOfGenePseudo
+name: "Pseudogene"
+typeOf: dcs:TypeOfGeneEnum
+abbreviation: "pseudo"
+description: "Pseudogenes are nonfunctional segments of DNA that resemble functional genes. Most arise as superfluous copies of functional genes, either directly by gene duplication or indirectly by reverse transcription of an mRNA transcript. Pseudogenes are usually identified when genome sequence analysis finds gene-like sequences that lack regulatory sequences needed for transcription or translation, or whose coding sequences are obviously defective due to frameshifts or premature stop codons."
+descriptionUrl: "https://en.wikipedia.org/wiki/Pseudogene"
+
+Node: dcid:TypeOfGenerRNA
+name: "ribosomal RNA"
+typeOf: dcs:TypeOfGeneEnum
+abbreviation: "rRNA"
+specializationOf: dcs:TypeOfGenencRNA
+description: "Ribosomal ribonucleic acid (rRNA) is a type of non-coding RNA which is the primary component of ribosomes, essential to all cells. rRNA is a ribozyme which carries out protein synthesis in ribosomes. Ribosomal RNA is transcribed from ribosomal DNA (rDNA) and then bound to ribosomal proteins to form small and large ribosome subunits. rRNA is the physical and mechanical factor of the ribosome that forces transfer RNA (tRNA) and messenger RNA (mRNA) to process and translate the latter into proteins.[1] Ribosomal RNA is the predominant form of RNA found in most cells; it makes up about 80% of cellular RNA despite never being translated into proteins itself. Ribosomes are composed of approximately 60% rRNA and 40% ribosomal proteins, though this ratio differs between prokaryotes and eukaryotes."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ribosomal_RNA"
+
+Node: dcid:TypeOfGenescaRNA
+name: "Small Cajal body-specific RNA"
+typeOf: dcs:TypeOfGene
+specializationOf: dcs:TypeOfGenesnoRNA
+abbreviation: "scaRNA"
+description: "Small Cajal body-specific RNAs (scaRNAs) are a class of small nucleolar RNAs (snoRNAs) that specifically localise to the Cajal body, a nuclear organelle (cellular sub-organelle) involved in the biogenesis of small nuclear ribonucleoproteins (snRNPs or snurps). ScaRNAs guide the modification (methylation and pseudouridylation) of RNA polymerase II transcribed spliceosomal RNAs U1, U2, U4, U5 and U12."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_Cajal_body-specific_RNA'
+
+Node: dcid:TypeOfGenescRNA
+name: "small conditional RNA"
+typeOf: dcs:TypeOfGeneEnum
+specializationOf: dcs:TypeOfGenesRNA
+abbreviation: "scRNA"
+description: "A small conditional RNA (scRNA) is a small RNA molecule or complex (typically less than approximately 100 nt) engineered to interact and change conformation conditionally in response to cognate molecular inputs so as to perform signal transduction in vitro, in situ, or in vivo."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_conditional_RNA"
+
+Node: dcid:TypeOfGenesiRNA
+name: "small interfering RNA"
+typeOf: dcs:TypeOfGeneEnum
+specializationOf: dcs:TypeOfGenesRNA
+abbreviation: "siRNA"
+synonym: "short interfering RNA", "silencing RNA"
+description: "Small interfering RNA (siRNA), sometimes known as short interfering RNA or silencing RNA, is a class of double-stranded RNA at first non-coding RNA molecules, typically 20–24 (normally 21) base pairs in length, similar to miRNA, and operating within the RNA interference (RNAi) pathway. It interferes with the expression of specific genes with complementary nucleotide sequences by degrading mRNA after transcription, preventing translation. It was discovered in 1998, by Andrew Fire at Carnegie Institution for Science in Washington DC and Craig Mello at University of Massachusetts in Worcester."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_interfering_RNA"
+
+Node: dcid:TypeOfGenesRNA
+name: "small RNA"
+typeOf: dcs:TypeOfGeneEnum
+specializationOf: dcs:TypeOfGenencRNA
+abbreviation: "sRNA"
+description: "Small RNA (sRNA) are polymeric RNA molecules that are less than 200 nucleotides in length, and are usually non-coding. RNA silencing is often a function of these molecules, with the most common and well-studied example being RNA interference (RNAi), in which endogenously expressed microRNA (miRNA) or exogenously derived small interfering RNA (siRNA) induces the degradation of complementary messenger RNA. Other classes of small RNA have been identified, including piwi-interacting RNA (piRNA) and its subspecies repeat associated small interfering RNA (rasiRNA). Small RNA "is unable to induce RNAi alone, and to accomplish the task it must form the core of the RNA–protein complex termed the RNA-induced silencing complex (RISC), specifically with Argonaute protein."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_RNA"
+
+Node: dcid:TypeOfGenesnRNA
+name: "small nuclear RNA"
+typeOf: dcs:TypeOfGeneEnum
+abbreviation: "snRNA"
+specializationOf: dcs:TypeOfGenesRNA
+description: "Small nuclear RNA (snRNA) is a class of small RNA molecules that are found within the splicing speckles and Cajal bodies of the cell nucleus in eukaryotic cells. The length of an average snRNA is approximately 150 nucleotides. They are transcribed by either RNA polymerase II or RNA polymerase III.[1] Their primary function is in the processing of pre-messenger RNA (hnRNA) in the nucleus. They have also been shown to aid in the regulation of transcription factors (7SK RNA) or RNA polymerase II (B2 RNA), and maintaining the telomeres."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_nuclear_RNA"
+
+Node: dcid:TypeOfGenesnoRNA
+name: "small nucleolar RNA"
+typeOf: dcs:TypeOfGeneEnum
+specializationOf: dcs:TypeOfGenesRNA
+abbreviation: "snoRNA"
+description: "In molecular biology, small nucleolar RNAs (snoRNAs) are a class of small RNA molecules that primarily guide chemical modifications of other RNAs, mainly ribosomal RNAs, transfer RNAs and small nuclear RNAs. There are two main classes of snoRNA, the C/D box snoRNAs, which are associated with methylation, and the H/ACA box snoRNAs, which are associated with pseudouridylation. SnoRNAs are commonly referred to as guide RNAs but should not be confused with the guide RNAs that direct RNA editing in trypanosomes or the guide RNAs (gRNAs) used by Cas9 for CRISPR gene editing."
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_nucleolar_RNA"
+
+Node: dcid:TypeOfGenetRNA
+name: "transfer RNA"
+typeOf: dcs:TypeOfGeneEnum
+abbreviation: "tRNA"
+specializationOf: dcs:TypeOfGenencRNA
+description: "Transfer RNA (abbreviated tRNA and formerly referred to as sRNA, for soluble RNA) is an adaptor molecule composed of RNA, typically 76 to 90 nucleotides in length (in eukaryotes), that serves as the physical link between the mRNA and the amino acid sequence of proteins. Transfer RNA (tRNA) does this by carrying an amino acid to the protein-synthesizing machinery of a cell called the ribosome. Complementation of a 3-nucleotide codon in a messenger RNA (mRNA) by a 3-nucleotide anticodon of the tRNA results in protein synthesis based on the mRNA code. As such, tRNAs are a necessary component of translation, the biological synthesis of new proteins in accordance with the genetic code."
+descriptionUrl: "https://en.wikipedia.org/wiki/Transfer_RNA"
+
+Node: dcid:TypeOfGeneUnknown
+name: "Unknown"
+typeOf: dcs:TypeOfGeneEnum
+
+
+# VariantAlleleOriginEnum
 Node: dcid:VariantAlleleOriginEnum
 name: "VariantAlleleOriginEnum"
 typeOf: schema:Class
@@ -666,6 +1320,8 @@ Node: dcid:VariantAlleleOriginOther
 name: "Other"
 typeOf: dcs:VariantAlleleOriginEnum
 
+
+# VariantSuspectReasonCode
 Node: dcid:VariantSuspectReasonCodesEnum
 name: "VariantSuspectReasonCodesEnum"
 typeOf: schema:Class
@@ -700,130 +1356,8 @@ Node: dcid:VariantSuspectReasonCodesOther
 name: "Other"
 typeOf: dcs:VariantSuspectReasonCodesEnum
 
-Node: dcid:ClinVarReviewStatusEnum
-name: "ClinVarReviewStatusEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "ClinVar review status: no assertion criteria provided, reviewed by expert panel, conflicting interpretations, criteria provided, non interpretation for the single variant, practice guideline, no conflicts, multiple submitters, or single_submitter."
 
-Node: dcid:ClinVarReviewStatusNoCriteria
-name: "No Assertion Criteria Provided"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusReviewed
-name: "Reviewed By Expert Panel"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusConflictingInterpretations
-name: "Conflicting Interpretations"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusCriteriaProvided
-name: "Criteria Provided"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusNoInterpretation
-name: "Non-interpretation For The Single Variant"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusPracticeGuideline
-name: "Practice Guideline"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusNoConflicts
-name: "No Conflicts"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusMultipleSubmitters
-name: "Multiple Submitters"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinVarReviewStatusSingleSubmitter
-name: "Single Submitter"
-typeOf: dcs:ClinVarReviewStatusEnum
-
-Node: dcid:ClinSigEnum
-name: "ClinSigEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Clinical significance for this single variant: other, affects, uncertain significance, pathogenic, risk_factor, benign, conflicting interpretations of pathogenicity, association, likely pathogenic, protective, likely benign, not provided, association not found, drug response, pathogenic/likely pathogenic, benign/likely benign, unknown, untested, or histocompatibility."
-
-Node: dcid:ClinSigOther
-name: "Other"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigAffects
-name: "Affects"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigUncertain
-name: "Uncertain Significance"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigPathogenic
-name: "Pathogenic"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigRiskFactor
-name: "Risk Factor"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigBenign
-name: "Benign"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigConflictingPathogenicity
-name: "Conflicting Interpretations Of Pathogenicity"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigAssociation
-name: "Association"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigLikelyPathogenic
-name: "Likely Pathogenic"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigProtective
-name: "Protective"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigLikelyBenign
-name: "Likely Benign"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigNotProvided
-name: "Not Provided"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigAssociationNotFound
-name: "Association Not Found"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigDrugResponse
-name: "Drug Response"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigPathogenicLikelyPathogenic
-name: "Pathogenic/Likely Pathogenic"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigBenignLikelyBenign
-name: "Benign/Likely Benign"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigUnknown
-name: "Unknown"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigUntested
-name: "Untested"
-typeOf: dcs:ClinSigEnum
-
-Node: dcid:ClinSigHistocompatability
-name: "Histocompatibility"
-typeOf: dcs:ClinSigEnum
-
+# VariationTypeEnum
 Node: dcid:VariationTypeEnum
 name: "VariationTypeEnum"
 typeOf: schema:Class
@@ -833,67 +1367,91 @@ description: "Variation type of alternate allele."
 Node: dcid:VariationTypeCNV
 name: "Copy Number Variable Region"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "CNV"
 
 Node: dcid:VariationTypeDEL
-name: "Deletion Relative To The Reference"
+name: "Deletion"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "del"
+description: "Deletion relative to the reference."
 
 Node: dcid:VariationTypeDUP
-name: "Region of Elevated Copy Number Relative to the Reference"
+name: "Duplication"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "dup"
+definition: "Region of elevated copy number relative to the reference."
 
 Node: dcid:VariationTypeINS
-name: "Insertion of Sequence Relative to the Reference"
+name: "Insertion"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "INS"
+description: "Insertion of sequence relative to the reference."
 
 Node: dcid:VariationTypeINV
-name: "Inversion of Reference Sequence"
+name: "Inversion"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "INV"
+description: "Inversion of Reference Sequence."
 
 Node: dcid:VariationTypeDupTandem
 name: "Tandem Duplication"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "Dup Tandem"
 
 Node: dcid:VariationTypeInsertME
-name: "Insertion of a Mobile Element Relative to the Reference"
+name: "Insertion of a Mobile Element"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "Insert ME"
+description: "Insertion of a mobile element relative to the reference."
 
 Node: dcid:VariationTypeDelME
-name: "Deletion of a Mobile Element Relative to the Reference"
+name: "Deletion of a Mobile Element"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "del ME"
+description: "Deletion of a mobile element relative to the reference."
 
 Node: dcid:VariationTypeInsertMEALU
-name: "Insertion of an Alu Mobile Element Relative to the Reference"
+name: "Insertion of an Alu Mobile Element"
 typeOf: dcs:VariationTypeEnum
+abberviation: "Insert ME ALU"
+description: "Insertion of an Alu mobile element relative to the reference."
 
 Node: dcid:VariationTypeInsertDelALU
-name: "DeletionOfAnAluMobileElementRelativeToTheReference"
+name: "Deletion of an Alu Mobile Element"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "del ALU"
+description: "Deletion of an Alu mobile element relative to the reference."
 
 Node: dcid:VariationTypeInsertNovel
-name: "Insertion of Sequence that Does Not Map to the Reference"
+name: "Novel Insertion"
 typeOf: dcs:VariationTypeEnum
+description: "Insertion of sequence that does not map to the reference."
 
 Node: dcid:VariationTypeSNV
 name: "Single Nucleotide Variation"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "SNP","SNV"
 
 Node: dcid:VariationTypeMNV
 name: "Multiple Nucleotide Variations"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "MNP","MNV"
 
 Node: dcid:VariationTypeDIV
 name: "Deletion Insertion Variation"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "DIV"
 
 Node: dcid:VariationTypeHeterozygous
 name: "Heterozygous"
 typeOf: dcs:VariationTypeEnum
 description: "Variable, but undefined at nucleotide level."
+abbreviation: "het"
 
 Node: dcid:VariationTypeSTR
 name: "Short Tandem (microsatellite) Repeat"
 typeOf: dcs:VariationTypeEnum
+abbreviation: "STR"
 
 Node: dcid:VariationTypeNamed
 name: "Insertion/deletion variation of named repetitive element"
@@ -916,321 +1474,4 @@ typeOf: dcs:VariationTypeEnum
 Node: dcid:VariationTypeINDEL
 name: "insertion-deletion"
 typeOf: dcs:VariationTypeEnum
-
-Node: dcid:GenVarSourceEnum
-name: "GenVarSourceEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Sources for observations of genetic variant allele and population frequencies: GenVarSourceUCSCGenomeBrowser, GenVarSourceTheHumanGeneomeProject, GenVarSourceExomeAggregationConsortium, GenVarSourceGOExomeSequencingProject, GenVarSourceTOPMed, GenVarSource1000Genomes, GenVarSourceGnomAD, GenVarSourceGnomADexomes, or GenVarSourcePAGEstudy."
-
-Node: dcid:GenVarSourceUCSCGenomeBrowser
-name: " UCSC Genome Browser"
-url: "https://genome.ucsc.edu/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceTheHumanGenomeProject
-name: "The Human Genome Project"
-url: "https://www.genome.gov/human-genome-project"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceExomeAggregationConsortium
-name: "Exome Aggregation Consortium"
-url: "http://exac.broadinstitute.org/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceGOExomeSequencingProject
-name: "GO Exome Sequencing Project"
-url: "https://esp.gs.washington.edu/drupal/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceTOPMed
-name: "Trans-Omics for Precision Medicine (TOPMed) Program"
-url: "https://www.nhlbi.nih.gov/science/trans-omics-precision-medicine-topmed-program"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSource1000Genomes
-name: "1000 Genomes Project"
-url: "https://www.internationalgenome.org/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceGnomAD
-name: "Genome Aggregation Database"
-url: "https://www.gnomad.broadinstitute.org/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceGnomADexomes
-name: "Genome Aggregation Database Exams"
-url: "https://www.gnomad.broadinstitute.org/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourcePAGEStudy
-name: "Population Architecture using Genomics and Epidemiology Study"
-url: "https://www.pagestudy.org/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceNSDD
-name: "Northern Sweden Diet Database"
-url: "https://snd.gu.se/en/catalogue/study/ext0131"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceTwinsUK
-name: "Twins UK"
-url: "https://twinsuk.ac.uk/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceALSPAC
-name: "Avon Longitudinal Study of Parents and Children"
-url: "http://www.bristol.ac.uk/alspac/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceVietnameseGenomeProject
-name: "Vietnamese Genetic Variation Database"
-url: "https://genomes.vn/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenVarSourceEstonianGenomeProject
-name: "Estonian Genome Project"
-url: "https://genomics.ut.ee/en/about-us/estonian-genome-centre/"
-typeOf: dcs:GenVarSourceEnum
-
-Node: dcid:GenomeAssemblyTypeEnum
-name: "GenomeAssemblyTypeEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "The type of sequence model data defined in this genome assembly."
-
-Node: dcid:GenomeAssemblyTypeAssembly
-name: "GenomeAssemblyTypeAssembly"
-typeOf: dcs:GenomeAssemblyTypeEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
-description: "The set of chromosomes, unlocalized and unplaced (sometimes called 'random') and alternate sequences used to represent an organism's genome. Assemblies are constructed from 1 or more assembly units."
-
-Node: dcid:GenomeAssemblyTypeHaploidAssembly
-name: "GenomeAssemblyTypeHaploidAssembly"
-typeOf: dcs:GenomeAssemblyTypeEnum
-specializationOf: dcs:GenomeAssemblyTypeAssembly
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
-description: "The collection of chromosome assemblies, unlocalized and unplaced sequences that represent an organism's genome. Any locus may be represented 0 or 1 time, and entire chromosomes are only represented 0 or 1 times."
-
-Node: dcid:GenomeAssemblyTypeHaploidWithAltLoci
-name: "GenomeAssemblyTypeHaploidWithAltLoci"
-typeOf: dcs:GenomeAssemblyTypeEnum
-specializationOf: dcs:GenomeAssemblyTypeAssembly
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
-description: "The collection of chromosome assemblies, unlocalized and unplaced sequences and alternate loci that represent an organism's genome. Any locus may be represented 0, 1 or >1 time, but entire chromosomes are only represented 0 or 1 times."
-
-Node: dcid:GenomeAssemblyTypeDiploidAssembly
-name: "GenomeAssemblyTypeDiploidAssembly"
-typeOf: dcs:GenomeAssemblyTypeEnum
-specializationOf: dcs:GenomeAssemblyTypeAssembly
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
-description: "A genome assembly for which a chromosome assembly is available for both sets of an individual's chromosomes. It is anticipated that a diploid genome assembly represents the genome of an individual, therefore, it is not expected that alternate loci will be defined for this assembly, although it is possible that unlocalized or unplaced sequences could be part of the assembly."
-
-Node: dcid:GenomeAssemblyTypeUnresolvedDiploid
-name: "GenomeAssemblyTypeUnresolvedDiploid"
-typeOf: dcs:GenomeAssemblyTypeEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
-description: "A genome assembly from a diploid in which many of the haplotypic sequences have been resolved but the two haplotypes have not been separated. Consequently, the assembly will be much larger than the expected haploid genome size and many genes will be present in two copies."
-
-Node: dcid:GenomeAssemblyTypeLinkedPseudohaplotypeAssemblies
-name: "GenomeAssemblyTypeLinkedPseudohaplotypeAssemblies"
-typeOf: dcs:GenomeAssemblyTypeEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/model/#asmb_def"
-description: "A genome assembly from a diploid in which many of the haplotypic sequences have been resolved, phased and the two haplotypes have been separated. The current state of the technology is that most assemblers produce blocks that are phased, separated by blocks where the haplotype cannot be distinguished. The typical result is that the "Principal Pseudohaplotype" assembly is a mosaic of haplotype blocks linked by unresolved segments and the "Alternate Pseudohaplotype" assembly is the other haplotype wherever the haplotypes can be distinguished. A pair of pseudohaplotype assemblies derived from the same diploid individual can be linked with a cross-reference."
-
-Node: dcid:GenomeAssemblyReleaseTypeEnum
-name: "GenomeAssemblyReleaseTypeEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Defines the update type of this genome assembly version release."
-
-Node: dcid:GenomeAssemblyReleaseTypeMajor
-name: "GenomeAssemblyReleaseTypeMajor"
-typeOf: dcs:GenomeAssemblyReleaseTypeEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
-description: "Changes from the previous assembly version result in a significant change to the coordinate system. The first version of an assembly is always a major release. Most subsequent genome assembly updates are also major releases. [Field is not shown for major releases since this is the default type.]"
-
-Node: dcid:GenomeAssemblyReleaseTypeMinor
-name: "GenomeAssemblyReleaseTypeMinor"
-typeOf: dcs:GenomeAssemblyReleaseTypeEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
-description: "Changes from the previous assembly version are limited to the following changes, none of which result in a significant change to the coordinate system of the primary assembly-unit: adding, removing or changing a non-nuclear assembly-unit; dropping unplaced or unlocalized scaffolds; adding up to 50 unplaced or unlocalized scaffolds which are shorter than the current scaffold-N50 value; or replacing a component with a gap of the same length."
-
-Node: dcid:GenomeAssemblyReleaseTypePatch
-name: "GenomeAssemblyReleaseTypePatch"
-typeOf: dcs:GenomeAssemblyReleaseTypeEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
-description: "The only change from the previous assembly version is the addition or modification of a patch assembly-unit (relevant for assemblies maintained by the Genome Reference Consortium)"
-
-Node: dcid:GenomeAssemblyLevelEnum
-name: "GenomeAssemblyLevelEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "The highest level of assembly for any object in the assembly."
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
-
-Node: dcid:GenomeAssemblyLevelCompleteGenome
-name: "GenomeAssemblyReleaseTypeCompleteGenome"
-typeOf: dcs:GenomeAssemblyLevelEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
-description: "All chromosomes are gapless and have no runs of 10 or more ambiguous bases (Ns), there are no unplaced or unlocalized scaffolds, and all the expected chromosomes are present (i.e. the assembly is not noted as having partial genome representation). Plasmids and organelles may or may not be included in the assembly but if present then the sequences are gapless."
-
-Node: dcid:GenomeAssemblyLevelChromosome
-name: "GenomeAssemblyReleaseTypeChromosome"
-typeOf: dcs:GenomeAssemblyLevelEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
-description: "There is sequence for one or more chromosomes. This could be a completely sequenced chromosome without gaps or a chromosome containing scaffolds or contigs with gaps between them. There may also be unplaced or unlocalized scaffolds."
-
-Node: dcid:GenomeAssemblyLevelScaffold
-name: "GenomeAssemblyReleaseTypeScaffold"
-typeOf: dcs:GenomeAssemblyLevelEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
-description: "Some sequence contigs have been connected across gaps to create scaffolds, but the scaffolds are all unplaced or unlocalized."
-
-Node: dcid:GenomeAssemblyLevelContig
-name: "GenomeAssemblyReleaseTypeContig"
-typeOf: dcs:GenomeAssemblyLevelEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
-description: "Nothing is assembled beyond the level of sequence contigs."
-
-Node: dcid:RefSeqCategoryEnum
-name: "RefSeqCategoryEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Denotes that the assembly is a reference or representative genome in the NCBI Reference Sequence ( RefSeq ) project classification."
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
-
-Node: dcid:RefSeqCategoryReferenceGenome
-name: "RefSeqCategoryReferenceGenome"
-typeOf: dcs:GenomeAssemblyLevelEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
-description: "A manually selected high quality genome assembly that NCBI and the community have identified as being important as a standard against which other data are compared."
-
-Node: dcid:RefSeqCategoryRepresentationGenome
-name: "RefSeqCategoryRepresentationGenome"
-typeOf: dcs:GenomeAssemblyLevelEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
-description: "A genome computationally or manually selected as a representative from among the best genomes available for a species or clade that does not have a designated reference genome."
-
-Node: dcid:DNASequenceRoleEnum
-name: "DNASequenceRoleEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "The role a defined sequence of DNA has in a genome assembly."
-
-Node: dcid:DNASequenceRoleAssembledMolecule
-name: "DNASequenceRoleAssembled-molecule"
-typeOf: dcs:DNASequenceRoleEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
-description: "The object represents a chromosome, linkage-group, or plasmid."
-
-Node: dcid:DNASequenceRoleChromosome
-name: "DNASequenceRoleChromosome"
-typeOf: dcs:DNASequenceRoleEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
-description: "The object represents a chromosome, linkage-group, or plasmid."
-
-Node: dcid:DNASequenceRoleUnlocalizedScaffold
-name: "DNASequenceRoleUnlocalizedScaffold"
-typeOf: dcs:DNASequenceRoleEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
-description: "The object is a scaffold that is associated with a particular chromosome but has not been localized to a specific position on the chromosome."
-
-Node: dcid:DNASequenceRoleUnplacedScaffold
-name: "DNASequenceRoleUnplacedScaffold"
-typeOf: dcs:DNASequenceRoleEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
-description: "The object is a scaffold that does not have a chromosome assignment."
-
-Node: dcid:DNASequenceRoleAltScaffold
-name: "DNASequenceRoleAlt-scaffold"
-typeOf: dcs:DNASequenceRoleEnum
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help"
-description: "The object is either an alternate loci scaffold or a patch scaffold."
-
-Node: dcid:DNASequenceRoleFixPatch
-name: "DNASequenceRoleFix-patch"
-typeOf: dcs:DNASequenceRoleEnum
-description: "The object is a fix patch to the assembly-unit scaffold."
-
-Node: dcid:DNASequenceRoleNovelPatch
-name: "DNASequenceRoleNovel-patch"
-typeOf: dcs:DNASequenceRoleEnum
-description: "The object is a novel patch to the assembly-unit scaffold."
-
-Node: dcid:AssociationTypeEnum
-name: "AssociationTypeEnum"
-typeOf: schema:Class
-subClassOf: dcs:Enumeration
-description: "The way by which an association between two entities is made."
-
-Node: dcid:AssociationTypeExperiment
-typeOf: dcs:AssociationTypeEnum
-name: "Experiment"
-description: "An association between two things was made as a result of a scientific experiment or screening."
-
-Node: dcid:AssociationTypeManuallyCurated
-typeOf: dcs:AssociationTypeEnum
-name: "Manually Curated"
-description: "An association between two things was made through manual curation of scientific literature or database annotations."
-
-Node: dcid:AssociationTypeTextMining
-typeOf: dcs:AssociationTypeEnum
-name: "Text Mining"
-description: "An association between two things was made through automated text mining of the scientific literature."
-
-Node: dcid:NonCodingRNATypeEnum
-name: "NonCodingRNATypeEnum"
-typeOf: schema:Class
-subClassOf: dcs:Enumeration
-description: "A non-coding RNA (ncRNA) is a functional RNA molecule that is not translated into a protein. The DNA sequence from which a functional non-coding RNA is transcribed is often called an RNA gene. Abundant and functionally important types of non-coding RNAs include transfer RNAs (tRNAs) and ribosomal RNAs (rRNAs), as well as small RNAs such as microRNAs, siRNAs, piRNAs, snoRNAs, snRNAs, exRNAs, scaRNAs and the long ncRNAs such as Xist and HOTAIR."
-descriptionUrl: "https://en.wikipedia.org/wiki/Non-coding_RNA"
-
-Node: dcid:NonCodingRNATypeRibosomalRNA
-typeOf: dcs:NonCodingRNATypeEnum
-name: "Ribosomal RNA"
-shortDisplayName: "rRNA"
-description: "Ribosomal ribonucleic acid (rRNA) is a type of non-coding RNA which is the primary component of ribosomes, essential to all cells."
-descriptionUrl: "https://en.wikipedia.org/wiki/Ribosomal_RNA"
-
-Node: dcid:NonCodingRNATypeLongNonCodingRNA
-typeOf: dcs:NonCodingRNATypeEnum
-name: "Long NonCoding RNA"
-shortDisplayName: "lncRNA"
-description: "Long noncoding RNA (LncRNA) is a large class of RNA molecules with size larger than 200 nucleotides. They exhibit cellular functions although having no protein-coding capability."
-descriptionUrl: "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/long-noncoding-rna"
-
-Node: dcid:NonCodingRNATypeLongIntergenicNonCodingRNA
-typeOf: dcs:NonCodingRNATypeEnum
-name: "Long Intergenic NonCoding RNA"
-shortDisplayName: "lincRNA"
-description: "Long intervening/intergenic noncoding RNAs (lincRNAs) are sequences of lncRNA which do not overlap protein-coding genes."
-descriptionUrl: "https://en.wikipedia.org/wiki/Long_non-coding_RNA"
-
-Node: dcid:NonCodingRNATypeSmallNucleolarRNA
-typeOf: dcs:NonCodingRNATypeEnum
-name: "Small Nucleolar RNA"
-shortDisplayName: "snoRNA"
-description: "Small nucleolar RNAs (snoRNAs) are a class of small RNA molecules that primarily guide chemical modifications of other RNAs, mainly ribosomal RNAs, transfer RNAs and small nuclear RNAs."
-descriptionUrl: "https://en.wikipedia.org/wiki/Small_nucleolar_RNA"
-
-Node: dcid:NonCodingRNATypeMicroRNA
-typeOf: dcs:NonCodingRNATypeEnum
-name: "MicroRNA"
-shortDisplayName: "miRNA"
-description: "MicroRNA (miRNA) are small, single-stranded, non-coding RNA molecules containing 21 to 23 nucleotides."
-descriptionUrl: "https://en.wikipedia.org/wiki/MicroRNA"
-
-Node: dcid:NonCodingRNATypeCircularRNA
-typeOf: dcs:NonCodingRNATypeEnum
-name: "CircularRNA"
-shortDisplayName: "circRNA"
-description: "Circular RNA (or circRNA) is a type of single-stranded RNA which, unlike linear RNA, forms a covalently closed continuous loop."
-descriptionUrl: "https://en.wikipedia.org/wiki/Circular_RNA"
-
-Node: dcid:NonCodingRNATypePromoterAssociatedRNA
-typeOf: dcs:NonCodingRNATypeEnum
-name: "Promoter-Associated RNA"
-shortDisplayName: "pRNA"
-description: "Promoter-associated RNAs (pRNAs) are a family of ~90–100 nt-long divergent RNAs overlapping the promoter of the rRNA (rDNA) operon."
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3929421/"
+abbreviation: "INDEL"

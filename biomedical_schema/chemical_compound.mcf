@@ -1,15 +1,15 @@
 Node: dcid:ActiveIngredientAmount
 name: "ActiveIngredientAmount"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: schema:Drug
 description: "Tells how much of the active ingredient is present in a drug dosage."
 
 Node: dcid:AnatomicalTherapeuticChemicalCode
 name: "AnatomicalTherapeuticChemicalCode"
 typeOf: schema:Class
-subClassOf: dcs:ChemicalSubstance
+subClassOf: schema:Intangible,dcs:ChemicalSubstance
 shortDisplayName: "ATC Code"
-description: "In the ATC classification system, the active substances are classified in a hierarchy with five different levels.  The system has fourteen main anatomical/pharmacological groups or 1st levels. Each ATC main group is divided into 2nd levels which could be either pharmacological or therapeutic groups. The 3rd and 4th levels are chemical, pharmacological or therapeutic subgroups and the 5th level is the chemical substance. The 2nd, 3rd and 4th levels are often used to identify pharmacological subgroups when that is considered more appropriate than therapeutic or chemical subgroups."
+description: "In the ATC classification system, the active substances are classified in a hierarchy with five different levels. The system has fourteen main anatomical/pharmacological groups or 1st levels. Each ATC main group is divided into 2nd levels which could be either pharmacological or therapeutic groups. The 3rd and 4th levels are chemical, pharmacological or therapeutic subgroups and the 5th level is the chemical substance. The 2nd, 3rd and 4th levels are often used to identify pharmacological subgroups when that is considered more appropriate than therapeutic or chemical subgroups."
 descriptionUrl: "https://www.whocc.no/atc/structure_and_principles/"
 
 Node: dcid:Antibody
@@ -18,17 +18,10 @@ typeOf: schema:Class
 subClassOf: dcs:Protein
 description: "An antibody is a kind of protective protein which is produced by the immune system when substances from the outer source invade the living organisms. The process of producing the antibodies is called immune response."
 
-Node: dcid:Antigen
-name: "Antigen"
+Node: dcid:BiomedicalEntity
+name: "BiomedicalEntity"
 typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
-description: "The invading substances from the outer source which causes the immune response. It refers to a molecule or molecule structure which may interact with the immune cell antigen receptor or antibody. "
-descriptionUrl:"https://en.wikipedia.org/wiki/Antigen"
-
-Node: dcid:BiomedicalElement
-name: "BiomedicalElement"
-typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: schema:BioChemEntity
 description: "Biomedical related entities."
 
 Node: dcid:ChemicalCompound
@@ -38,55 +31,61 @@ subClassOf: dcs:ChemicalSubstance
 description: "Chemical compound."
 descriptionUrl: "https://www.ebi.ac.uk/chembl/"
 
-ode: dcid:ChemicalCompoundChemicalCompoundAssociation
-name: "ChemicalCompoundChemicalCompoundAssociation"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalSubstance
-description: "Two chemcial compounds that are associated with one another typically due to reacting with one another."
-
-Node: dcid:ChemicalCompoundGeneticVariantAssociation
-name: "ChemicalCompoundGeneticVariantAssociation"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalSubstance
-description: "The association between a chemical compound, typically a drug, and a genetic variant."
-
-Node: dcid:ChemicalCompoundProteinInteraction
-name: "ChemicalCompoundProteinInteraction"
+Node: dcid:ChemicalCompoundAssociation
+name: "ChemicalCompoundAssociation"
 typeOf: schema:Class
 subClassOf: dcs:ChemicalCompound
-description: "Interaction between a compound and a protein."
+description: "Observed association between a chemical compound and another entity type."
+
+Node: dcid:ChemicalCompoundChemicalCompoundAssociation
+name: "ChemicalCompoundChemicalCompoundAssociation"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompoundAssociation,dcs:DiseaseAssociation
+description: "Two chemcial compounds that are associated with one another typically due to reacting with one another."
+
+Node: dcid:ChemicalCompoundDiseaseContraindication
+name: "ChemicalCompoundDiseaseContraindication"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompoundAssociation,dcs:DiseaseAssociation
+description: "Compound that is inadvisable to be used to treat a given disease."
 descriptionUrl: "https://www.ebi.ac.uk/chembl/"
 
 Node: dcid:ChemicalCompoundDiseaseTreatment
 name: "ChemicalCompoundDiseaseTreatment"
 typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
+subClassOf: dcs:ChemicalCompoundAssociation,dcs:DiseaseAssociation
 description: "Compound associated with the treatment of a given disease."
-descriptionUrl: "https://www.ebi.ac.uk/chembl/"
-
-Node: dcid:ChemicalCompoundDiseaseContraindication
-name: "ChemicalCompoundDiseaseContraindication"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
-description: "Compound that is inadvisable to be used to treat a given disease."
 descriptionUrl: "https://www.ebi.ac.uk/chembl/"
 
 Node: dcid:ChemicalCompoundGeneAssociation
 name: "ChemicalCompoundGeneAssociation"
 typeOf: schema:Class
-subClassOf: dcs:BiomedicalElement
+subClassOf: dcs:ChemicalCompoundAssociation,dcs:GeneticAssociation
 description: "The association of a chemical compound with a gene."
+
+Node: dcid:ChemicalCompoundGeneticVariantAssociation
+name: "ChemicalCompoundGeneticVariantAssociation"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompoundAssociation,dcs:GeneticAssociation
+description: "The association between a chemical compound, typically a drug, and a genetic variant."
+
+Node: dcid:ChemicalCompoundProteinInteraction
+name: "ChemicalCompoundProteinInteraction"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompoundAssociation
+description: "Interaction between a compound and a protein."
+descriptionUrl: "https://www.ebi.ac.uk/chembl/"
 
 Node: dcid:Drug
 name: "Drug"
 typeOf: schema:Class
-subClassOf: schema:ChemicalCompound
+subClassOf: dcs:ChemicalCompound
 description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
 
 Node: dcid:DrugStrength
 name: "DrugStrength"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: schema:Drug
 description: "A specific strength in which a medical drug is available in a specific country."
 
 Node: dcid:FDAApplication
@@ -103,6 +102,11 @@ subClassOf: schema:Intangible
 description: "The Tissue Atlas contains information regarding the expression profiles of human genes both on the mRNA and protein level. The protein expression data from 44 normal human tissue types is derived from antibody-based protein profiling using immunohistochemistry."
 descriptionUrl: "https://www.proteinatlas.org/humanproteome/tissue"
 
+Node: dcid:MedicalEntity
+name: "MedicalEntity"
+typeOf: schema:Class
+subClassOf: dcs:BiomedicalEntity
+
 Node: dcid:Protein
 name: "Protein"
 typeOf: schema:Class
@@ -113,20 +117,13 @@ descriptionUrl: "https://www.uniprot.org/"
 Node: dcid:ProteinProteinInteraction
 name: "ProteinProteinInteraction"
 typeOf: schema:Class
-subClassOf: dcs:Protein
+subClassOf: dcs:ChemicalCompoundAssociation
 description: "A highly specific physical contact between two or more proteins as a result of a biochemical event."
-
-Node: dcid:SideEffect
-name: "SideEffect"
-typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
-description: "Unintended effect of administering a drug."
-descriptionUrl: "http://sideeffects.embl.de/"
 
 Node: dcid:USAdoptedNameStem
 name: "USAdoptedNameStem"
 typeOf: schema:Class
-subClassOf: dcs:ChemicalSubstance
+subClassOf: schema:Intangible,dcs:ChemicalSubstance
 shortDisplayName: "USAN Stem"
 description: "A common stem for which chemical and/or pharmacologic parameters have been established. This is designated by the United States Adopted Names (USAN) Council."
 descriptionUrl: "https://www.ama-assn.org/about/united-states-adopted-names/united-states-adopted-names-approved-stems"
@@ -135,9 +132,111 @@ Node: dcid:activeIngredient
 name: "activeIngredient"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:Drug,dcs:DrugStrength
+domainIncludes: schema:Drug
 description: "Any component that provides pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease, or to affect the structure or any function of the body of man or animals."
 descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#A"
+
+Node: dcid:additionalDrugInformation
+name: "additionalDrugInformation"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: schema:Drug
+description: "Additional information associated with a drug."
+
+Node: dcid:abcdID
+typeOf: schema:Property
+name: "abcdID"
+description: "The accession identifier of the antibody in the ABCD antibody database. "
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://web.expasy.org/abcd/"
+
+Node: dcid:addgeneID
+typeOf: schema:Property
+name: "addgeneID"
+description: "The identifier for antibodies in Addgene. They distribute 89,594 plasmids on behalf of 4,322 labs from around the world. They also produce 480 ready-to-use viral vectors from our plasmid collection."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://www.addgene.org/"
+
+Node: dcid:administrationRoute
+name: "administrationRoute"
+typeOf: schema:Property
+rangeIncludes: dcs:AdministrationRouteEnum
+domainIncludes: schema:Drug
+description: "The method by which a drug is administered."
+
+Node: dcid:alternateNCBIProteinAccessionNumber
+name: "alternateNCBIProteinAccessionNumber"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Protein
+description: "Alternate NCBI accession number associated with a protein."
+
+Node: dcid:aminoAcidSequence
+name: "aminoAcidSequence"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Protein
+description: "The amino acid sequence for protein using IUPAC one letter codes for amino acids."
+
+Node: dcid:antibodyApplication
+typeOf: schema:Property
+name: "antibodyApplication"
+description: "The applications of the antibody in the experiments, such as ELISA, Immunofluorescence, Immunoprecipitation, etc."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+
+Node: dcid:antibodyType
+typeOf: schema:Property
+name: "antibodyType"
+description: "The type of antibody, including bispecific antibody, nanobody and DARPins. "
+rangeIncludes: dcs:AntibodyTypeEnum
+domainIncludes: dcs:Antibody
+
+Node: dcid:antigenType
+typeOf: schema:Property
+name: "antigenType"
+description: "The type of the antigen for an antibody which includes protein, chemical compound and other types. "
+rangeIncludes: dcs:Protein
+domainIncludes: dcs:Antibody
+
+Node: dcid:applicationType
+name: "applicationType"
+typeOf: schema:Property
+rangeIncludes: dcs:ApplicationTypeEnum
+domainIncludes: dcs:FDAApplication
+description: "The type of drug product approval application submitted to the FDA."
+
+Node: dcid:atcCode
+name: "atcCode"
+typeOf: schema:Property
+domainIncludes: dcs:AnatomicalTherapeuticChemicalCode
+rangeIncludes: schema:Text
+description: "A unique code assigned to a medicine according to the organ or system it works on and how it works. The classification system is maintained by the World Health Organization (WHO)."
+descriptionUrl: "https://www.ema.europa.eu/en/glossary/atc-code"
+
+Node: dcid:averageDailyDosage
+name: "averageDailyDosage"
+typeOf: schema:Property
+domainIncludes: dcs:AnatomicalTherapeuticChemicalCode
+rangeIncludes: schema:Quantity
+description: "The assumed average maintenance dose per day for a drug used for its main indication in adults."
+descriptionUrl: "https://www.whocc.no/ddd/definition_and_general_considera/"
+
+Node: dcid:bindingDBID
+name: "bindingDBID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Protein,dcs:ChemicalCompound
+description: "BindingDB identifier of a protein."
+
+Node: dcid:bgeeID
+name: "bgeeID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Protein
+description: "Bgee (gene expression data in animals database) identifier of a protein."
 
 Node: dcid:canadianDrugsProductDatabaseDrugIdNumber
 name: "canadianDrugsProductDatabaseDrugIdNumber"
@@ -146,6 +245,36 @@ domainIncludes: schema:Drug
 rangeIncludes: schema:Number
 description: "The Canadian Drug Product Database (DPD) contains product specific information on drugs approved for use in Canada, and includes human pharmaceutical and biological drugs, veterinary drugs and disinfectant products. The drug identification number (DIN) is the id used to find a drug in this database."
 sameAs: "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html"
+abbreviation: "Canadian DPD ID"
+
+Node: dcid:cellosaurusID
+typeOf: schema:Property
+name: "cellosaurusID"
+description: "The identifier of cell line in Cellosaurus. The Cellosaurus is a knowledge resource on cell lines. It attempts to describe all cell lines used in biomedical research."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://web.expasy.org/cellosaurus/"
+
+Node: dcid:chemblID
+name: "chemblID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompound
+description: "ChEMBL identifier."
+
+Node: dcid:compoundID
+name: "compoundID"
+typeOf: schema:Property
+rangeIncludes: dcs:ChemicalCompound
+domainIncludes: dcs:ChemicalCompound
+description: "The ChemicalCompound node associated with the current node."
+
+Node: dcid:confidenceScore
+typeOf: schema:Property
+name: "confidenceScore"
+description: "The confidence score of a protein-protein interaction and the source in which it is recorded."
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ProteinProteinInteraction
 
 Node: dcid:dailyMedSetId
 name: "dailyMedSetId"
@@ -155,12 +284,49 @@ rangeIncludes: schema:Text
 description: "The DailyMed database contains labeling for FDA-approved products and additional products regulated, but not approved, by the FDA. These drug labels are submitted to the Food and Drug Administration (FDA) by companies. The Set ID uniquely identifies a drug label in the DailyMed database."
 sameAs: "https://dailymed.nlm.nih.gov/dailymed/"
 
+Node: dcid:detectedProtein
+typeOf: schema:Property
+name: "detectedProtein"
+description: "The protein whose levels are being assessed."
+rangeIncludes: dcs:Protein
+domainIncludes: dcs:HumanProteinOccurrence
+
+Node: dcid:digitalObjectID
+typeOf: schema:Property
+name: "digitalObjectID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:Thing
+description: "Digital object identifier (doi) generated by the International DOI Foundation (IDF)."
+descriptionUrl: "https://www.doi.org/"
+
+Node: dcid:diseaseID
+name: "diseaseID"
+typeOf: schema:Property
+rangeIncludes: dcs:Disease,dcs:MeSHDescriptor
+domainIncludes: dcs:DiseaseAssociation
+description: "Identifier for disease in a compound-disease treatment."
+
+Node: dcid:dosageForm
+name: "dosageForm"
+typeOf: schema:Property
+rangeIncludes: dcs:DosageFormEnum
+domainIncludes: schema:Drug
+description: "A dosage form is the physical form in which a drug is produced and dispensed, such as a tablet, a capsule, or an injectable."
+descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#form"
+
 Node: dcid:dosageGuidelineSource
 name: "dosageGuidelineSource"
 typeOf: schema:Property
 domainIncludes: schema:Drug
 rangeIncludes: dcs:DosageGuidelineSourceEnum
 description: "A professional society that provides dosage guidelines for a drug."
+
+Node: dcid:drugBankID
+name: "drugBankID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompound
+description: "DrugBank identifier of compound."
 
 Node: dcid:drugBrandMixture
 name: "drugBrandMixture"
@@ -169,6 +335,20 @@ domainIncludes: schema:Drug
 rangeIncludes: schema:Text
 description: "Known brand mixtures this drug is in."
 descriptionUrl: "https://www.pharmgkb.org/page/downloadDrugsHelp"
+
+Node: dcid:drugCentralSource
+name: "drugCentralSource"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompoundDiseaseTreatment,dcs:ChemicalCompoundDiseaseContraindication
+description: "DrugCentral source for drug-disease relationship."
+
+Node: dcid:drugCourse
+name: "drugCourse"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:DrugStrength
+description: "Indicates the length of time that drug should be used."
 
 Node: dcid:drugGenericName
 name: "drugGenericName"
@@ -193,6 +373,20 @@ rangeIncludes: schema:Boolean
 description: "The label provides a dose adjustment based on gene/protein/chromosomal variants or phenotypes (e.g. 'poor metabolizers') and does not equivocate on that dose adjustment. The label may also state that a dose adjustment is 'required' or 'should be given'. This tag is not used if the label only states that a dose adjustment 'should be considered'."
 descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend"
 
+Node: dcid:drugName
+name: "drugName"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: schema:Drug
+
+Node: dcid:drugStrength
+name: "drugStrength"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+rangeIncludes: schema:Text
+domainIncludes: schema:DrugStrength
+description: "Strength of the drug."
+
 Node: dcid:drugTradeName
 name: "drugTradeName"
 typeOf: schema:Property
@@ -201,13 +395,246 @@ rangeIncludes: schema:Text
 description: "A standard term in the pharmaceutical industry for a brand name or trademark name of a drug."
 descriptionUrl: "https://en.wikipedia.org/wiki/Drug_nomenclature#Drug_brands"
 
+Node: dcid:electronMicroscopyDataBankID
+typeOf: schema:Property
+name: "electronMicroscopyDataBankID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction
+description: "The Electron Microscopy Data Bank (EMDB) identifier."
+descriptionUrl: "https://www.ebi.ac.uk/pdbe/emdb/"
+abbreviation: "EMDB ID"
+
+Node: dcid:epitope
+typeOf: schema:Property
+name: "epitope"
+description: "Also known as antigenic determinant. It is the recognizing part of an antigen by the interacting immune cell antigen receptor or the antibody."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://en.wikipedia.org/wiki/Epitope"
+
+Node: dcid:fdaApplicationNumber
+name: "fdaApplicationNumber"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:FDAApplication
+description: "The number of the FDA drug application."
+
+Node: dcid:fdaClinicalTrialPhase
+name: "fdaClinicalTrialPhase"
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: dcs:ChemicalCompoundDiseaseTreatment
+description: "The FDA clinical trial phase for which a compound has been studied to treat the associated disease."
+
+Node: dcid:fdaProductID
+name: "fdaProductID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: schema:DrugStrength
+description: "Product ID according to the FDA."
+
 Node: dcid:fdaTopPGxLevel
 name: "fdaTopPGxLevel"
 typeOf: schema:Property
 domainIncludes: schema:Drug
-rangeIncludes: PharmGkbPGxLevelEnum
+rangeIncludes: dcs:PharmGkbPGxLevelEnum
 description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') is the PharmGKB interpretation of the level of action implied in each drug label. In this case, this is the highest level of confidence interperted for any drug label from the U.S. Food and Drug Administration (FDA)."
 descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
+
+Node: dcid:finalReconstitutedSolutionVolume
+name: "finalReconstitutedSolutionVolume"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:DrugStrength
+description: "Final reconstituted solution volume for drug dose."
+
+Node: dcid:geneSynonym
+name: "geneSynonym"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Protein
+description: "Synonyms for the gene symbol of gene that codes for a protein."
+
+Node: dcid:ginasID
+typeOf: schema:Property
+name: "ginasID"
+description: "The identifier for substances found in medicines in Ginas. The main goal of ginas is the production of software, called G-SRS, to assist agencies in registering and documenting information about substances found in medicines."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://tripod.nih.gov/ginas/#/"
+
+Node: dcid:goID
+typeOf: schema:Property
+name: "goID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:InteractionDetectionMethodEnum,dcs:InteractionTypeEnum,dcs:InteractionSourceEnum
+description: "Identifiers of the Gene Ontology database AmiGO 2."
+descriptionUrl: "http://amigo.geneontology.org/amigo/landing"
+
+Node: dcid:hasActiveIngredientAmount
+name: "hasActiveIngredientAmount"
+typeOf: schema:Property
+rangeIncludes: dcs:ActiveIngredientAmount
+domainIncludes: schema:DrugStrength
+description: "The quantity of active ingredient in the drug."
+
+Node: dcid:humanCellType
+typeOf: schema:Property
+name: "humanCellType"
+description: "The human cell type in which the protein's level is measured."
+rangeIncludes: dcs:HumanCellTypeEnum
+domainIncludes: dcs:HumanProteinOccurrence
+
+Node: dcid:humanProteinOccurrenceReliability
+typeOf: schema:Property
+name: "humanProteinOccurrenceReliability"
+description: "A reliability score is manually set for all genes and indicates the level of reliability of the analyzed protein expression pattern based on available RNA-seq data, protein/gene characterization data and immunohistochemical data from one or several antibodies with non-overlapping epitopes."
+descriptionUrl: "https://www.proteinatlas.org/about/assays+annotation#if_reliability_score"
+rangeIncludes: dcs:HumanProteinOccurrenceReliabilityEnum
+domainIncludes: dcs:HumanProteinOccurrence
+
+Node: dcid:humanTissue
+typeOf: schema:Property
+name: "humanTissue"
+description: "The human tissue in which the protein's level is measured."
+rangeIncludes: dcs:HumanTissueEnum
+domainIncludes: dcs:HumanProteinOccurrence
+
+Node: dcid:imexID
+typeOf: schema:Property
+name: "imexID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction
+description: "The international molecular exchange consortium identifier for a non-redundant physical molecular interaction."
+descriptionUrl: "https://www.imexconsortium.org/"
+
+Node: dcid:imgtMonoclonalAntibodiesDBID
+typeOf: schema:Property
+name: "imgtMonoclonalAntibodiesDBID"
+description: "The identifier for therapeutic monoclonal antibodies in IMGT/mAb-DB. IMGT/mAb-DB is the IMGT monoclonal antibodies (mAb) database."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"http://www.imgt.org/mAb-DB/"
+
+Node: dcid:inChIKey
+name: "inChIKey"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompound
+description: "Hash (SHA-256 algorithm) of compound International Union of Applied Chemistry IUPAC International Chemical Identifier. This is a fixed-length format to represent molecules and is derived from InChI."
+
+Node: dcid:intActID
+typeOf: schema:Property
+name: "intActID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction
+description: "EMBL-EBI IntAct identifier."
+descriptionUrl: "https://www.ebi.ac.uk/intact/"
+
+Node: dcid:interactingProtein
+typeOf: schema:Property
+name: "interactingProtein"
+description: "A participant protein in a protein-protein interaction."
+rangeIncludes: dcs:Protein
+domainIncludes: dcs:ProteinProteinInteraction
+
+Node: dcid:interactionDetectionMethod
+typeOf: schema:Property
+name: "interactionDetectionMethod"
+description: "The interaction detection method used in the experiment."
+rangeIncludes: dcs:InteractionDetectionMethodEnum
+domainIncludes: dcs:ProteinProteinInteraction
+
+Node: dcid:interactionType
+typeOf: schema:Property
+name: "interactionType"
+description: "The molecular interaction type."
+rangeIncludes: dcs:InteractionTypeEnum,dcs:ChemicalCompoundProteinInteractionTypeEnum
+domainIncludes: dcs:ProteinProteinInteraction,dcs:ChemicalCompoundProteinInteraction
+
+Node: dcid:interactionSource
+typeOf: schema:Property
+name: "interactionSource"
+description: "The database from which the interaction record was extracted."
+rangeIncludes: dcs:InteractionSourceEnum
+domainIncludes: dcs:ProteinProteinInteraction
+
+Node: dcid:interProID
+typeOf: schema:Property
+name: "interProID"
+description: "The identifier for protein families in Addgene. InterPro provides functional analysis of proteins by classifying them into families and predicting domains and important sites."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://www.ebi.ac.uk/interpro/"
+
+Node: dcid:ingredientAmount
+name: "ingredientAmount"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+rangeIncludes: dcs:QuantityRange
+rangeIncludes: schema:Text
+domainIncludes: dcs:ActiveIngredientAmount
+description: "Amount of the active ingredient."
+
+Node: dcid:ingredientName
+name: "ingredientName"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ActiveIngredientAmount
+description: "Name of the active ingredient."
+
+Node: dcid:isFDAReferenceStandard
+name: "isFDAReferenceStandard"
+typeOf: schema:Property
+rangeIncludes: schema:Boolean
+domainIncludes: schema:Drug
+description: "Indicates whether the drug is an FDA reference standard."
+
+Node: dcid:isPharmacodynamicRelationship
+name: "isPharmacodynamicRelationship"
+typeOf: schema:Property
+rangeIncludes: schema:Boolean
+domainIncludes: dcs:ChemicalCompoundGeneAssociation
+description: "True if the pair of entities was found in a pharmacodynamic pathway on PharmGKB, or if the Variant Annotation or Very Important Pharmacogene (VIP) was annotated with Pharmacodynamic (PD) in some manner."
+descriptionUrl: "https://www.pharmgkb.org/page/downloadRelationshipsHelp"
+
+Node: dcid:isPharmacokineticRelationship
+name: "isPharmacokineticRelationship"
+typeOf: schema:Property
+rangeIncludes: schema:Boolean
+domainIncludes: dcs:ChemicalCompoundGeneAssociation
+description: "True if the pair of entities was found in a pharmacokinetic pathway on PharmGKB, or if the Variant Annotation or Very Important Pharmacogene (VIP) was annotated with pharmacokinetic (PK) in some manner."
+descriptionUrl: "https://www.pharmgkb.org/page/downloadRelationshipsHelp"
+
+Node: dcid:iupacInternationalChemicalID
+name: "iupacInternationalChemicalID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompound
+description: "International Union of Applied Chemistry (IUPAC) International Chemical Identifier for compound."
+
+Node: dcid:marketingStatus
+name: "marketingStatus"
+typeOf: schema:Property
+rangeIncludes: dcs:MarketingStatusEnum
+domainIncludes: schema:DrugStrength
+description: "Marketing status indicates how a drug product is sold in the United States."
+descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#M"
+
+Node: dcid:maximumFDAClinicalTrialPhase
+name: "maximumFDAClinicalTrialPhase"
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: dcs:ChemicalCompound
+description: "The maximum FDA clinical trials phase in which the compound has participated for any disease."
+
+Node: dcid:mintID
+typeOf: schema:Property
+name: "mintID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction
+description: "Molecular INTeraction database identifier."
+descriptionUrl: "https://mint.bio.uniroma2.it/"
 
 Node: dcid:nationalClinicalTrialNumber
 name: "nationalClinicalTrialNumber"
@@ -233,6 +660,22 @@ rangeIncludes: schema:Text
 sameAs: "https://nciterms.nci.nih.gov/ncitbrowser/pages/vocabulary.jsf?dictionary=NDFRT"
 description: "The code that represents the drug in the National Drug File Reference Terminology (NDF-RT) database. NDF-RT is produced by the Veterans Health Administration (VHA) as an extension of the VHA National Drug File (VANDF) formulary. It organizes the drug list into a formal representation. NDF-RT is used for modeling drug characteristics including ingredients, chemical structure, dose form, physiologic effect, mechanism of action, pharmacokinetics, and related diseases. NDF-RT is part of the Federal Medication Terminologies (FMT), and three components -- Mechanism of Action, Physiologic Effect, and Structural Class - are used in FDA Structured Product Labeling (SPL)."
 
+Node: dcid:neuroMabID
+typeOf: schema:Property
+name: "neuroMabID"
+description: "The identifier for mouse monoclonal antibodies in NeuroMab. The UC Davis/NIH NeuroMab Facility generates mouse monoclonal antibodies extensively validated for use in the mammalian brain."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"http://neuromab.ucdavis.edu/"
+
+Node: dcid:patentID
+typeOf: schema:Property
+name: "patentID"
+description: "The identifier of patent in PATENTSCOPE. Using PATENTSCOPE you can search 90 million patent documents including 3.9 million published international patent applications (PCT)."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://patentscope.wipo.int/search/en/search.jsf"
+
 Node: dcid:pharmGkbClinicalAnnotationCount
 name: "pharmGkbClinicalAnnotationCount"
 typeOf: schema:Property
@@ -248,6 +691,14 @@ domainIncludes: schema:Drug
 rangeIncludes: schema:Number
 description: "The number of PharmGKB pathways associated with a given drug. PharmGKB pathways are evidence-based diagrams depicting the pharmacokinetics (PK) and/or pharmacodynamics (PD) of a drug with relevant (or potential) pharmacogenetic (PGx) associations. Drugs featured in PharmGKB pathways are chosen through extensive review of a variety of sources, including, but not limited to, the U.S. Food and Drug Administration (FDA) biomarker list and Clinical Pharmacogenetics Implementation Consortium (CPIC) nominations."
 descriptionUrl: "https://www.pharmgkb.org/pathways"
+
+Node: dcid:pharmGkbRareVariantScoringRange
+name: "pharmGkbRareVariantScoringRange"
+typeOf: schema:Property
+domainIncludes: dcs:PharmGkbClinicalLevelEnum
+rangeIncludes: schema:Text
+description: "The assignment of clinical annotation levels of evidence (LOE) is primarily informed by the PharmGKB annotation scoring system for clinical annotations and variant annotations. This reports the scoring range that determines the level for rare genetic variants defined as having a minor allele frequenct (MAF) <0.01 or <1%."
+descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
 
 Node: dcid:pharmGkbTopPGxLevel
 name: "pharmGkbTopPGxLevel"
@@ -281,78 +732,6 @@ rangeIncludes: schema:Number
 description: "The number of Very Important Pharmacogene (VIP) summaries assocated with a given drug as reported by PharmGKB. VIP summaries provide an overview of a significant gene involved in metabolism of, or response to, one or several drugs. Often, VIPs either play a role in the metabolism of many drugs (e.g. CYP2D6), or contain variants which potentially contribute to a severe drug response (e.g. HLA-B). VIP summaries typically include background information on the gene including any disease associations, as well as in-depth information on the gene's pharmacogenetics. Many VIP summaries have been published in the journal Pharmacogenetics and Genomics."
 descriptionUrl: "https://www.pharmgkb.org/vips"
 
-Node: dcid:rxNormId
-name: "rxNormId"
-typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: schema:Number
-sameAs: "https://www.nlm.nih.gov/research/umls/rxnorm/index.html"
-description: "The identifier for this drug in the NIH National Library of Science RxNorm database, which is apart of the Unified Medical Language System (UMLS). RxNorm provides normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software, including those of First Databank, Micromedex, Multum, and Gold Standard Drug Database. By providing links between these vocabularies, RxNorm can mediate messages between systems not using the same software and vocabulary."
-
-Node: dcid:variantID
-typeOf: schema:Property
-domainIncludes: dcs:ChemicalCompoundGeneticVariantAssociation,dcs:GeneGeneticVariantAssociation
-rangeIncludes: dcs:GeneticVariant
-description: "Link to a GeneticVariant node for a genetic variant that is associated with another entity."
-
-Node: dcid:atcCode
-name: "atcCode"
-typeOf: schema:Property
-domainIncludes: dcs:AnatomicalTherapeuticChemicalCode
-rangeIncludes: schema:Text
-description: "A unique code assigned to a medicine according to the organ or system it works on and how it works. The classification system is maintained by the World Health Organization (WHO)."
-descriptionUrl: "https://www.ema.europa.eu/en/glossary/atc-code"
-
-Node: dcid:averageDailyDosage
-name: "averageDailyDosage"
-typeOf: schema:Property
-domainIncludes: dcs:AnatomicalTherapeuticChemicalCode
-rangeIncludes: schema:Quantity
-description: "The assumed average maintenance dose per day for a drug used for its main indication in adults."
-descriptionUrl: "https://www.whocc.no/ddd/definition_and_general_considera/"
-
-Node: dcid:chemblID
-name: "chemblID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:ChemicalCompound,dcs:Protein
-description: "ChEMBL identifier."
-
-Node: dcid:drugBankID
-name: "drugBankID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:ChemicalCompound
-description: "DrugBank identifier of compound."
-
-Node: dcid:maximumFDAClinicalTrialPhase
-name: "maximumFDAClinicalTrialPhase"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:ChemicalCompound
-description: "The maximum FDA clinical trials phase in which the compound has participated for any disease."
-
-Node: dcid:iupacInternationalChemicalID
-name: "iupacInternationalChemicalID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:ChemicalCompound
-description: "International Union of Applied Chemistry (IUPAC) International Chemical Identifier for compound."
-
-Node: dcid:inChIKey
-name: "inChIKey"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:ChemicalCompound
-description: "Hash (SHA-256 algorithm) of compound International Union of Applied Chemistry IUPAC International Chemical Identifier. This is a fixed-length format to represent molecules and is derived from InChI."
-
-Node: dcid:simplifiedMolecularInputLineEntrySystem
-name: "simplifiedMolecularInputLineEntrySystem"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:ChemicalCompound
-description: "Simplified Molecular-Input Line-Entry System (SMILES) for compound."
-
 Node: dcid:pkgbTags
 name: "pkgbTags"
 typeOf: schema:Property
@@ -360,68 +739,13 @@ domainIncludes: dcs:ChemicalCompound
 rangeIncludes: schema:Text
 description: "A tag associated with a chemical compound, which is used internally by the database PharmGKB."
 
-Node: dcid:compoundID
-name: "compoundID"
+Node: dcid:prositeID
 typeOf: schema:Property
-rangeIncludes: dcs:ChemicalCompound
-domainIncludes: dcs:ChemicalCompound,dcs:ChemicalCompoundProteinInteraction,dcs:ChemicalCompoundDiseaseTreatment,dcs:ChemicalCompoundDiseaseContraindication,dcs:SideEffect,dcs:ChemicalCompoundGeneAssociation
-description: "The ChemicalCompound node associated with the current node."
-
-Node: dcid:proteinID
-name: "proteinID"
-typeOf: schema:Property
-rangeIncludes: dcs:Protein
-domainIncludes: dcs:ChemicalCompoundProteinInteraction,dcs:ProteinProteinInteraction
-description: "The Protein node associated with the current node."
-
-Node: dcid:diseaseID
-name: "diseaseID"
-typeOf: schema:Property
-rangeIncludes: dcs:Disease,dcs:MeSHDescriptor
-domainIncludes: dcs:ChemicalCompoundDiseaseTreatment,dcs:ChemicalCompoundDiseaseContraindication
-description: "Identifier for disease in a compound-disease treatment."
-
-Node: dcid:fdaClinicalTrialPhase
-name: "fdaClinicalTrialPhase"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:ChemicalCompoundDiseaseTreatment
-description: "The FDA clinical trial phase for which a compound has been studied to treat the associated disease."
-
-Node: dcid:drugCentralSource
-name: "drugCentralSource"
-typeOf: schema:Property
+name: "prositeID"
+description: "The identifier in PROSITE database. PROSITE consists of documentation entries describing protein domains, families and functional sites as well as associated patterns and profiles to identify them."
 rangeIncludes: schema:Text
-domainIncludes: dcs:ChemicalCompoundDiseaseTreatment,dcs:ChemicalCompoundDiseaseContraindication
-description: "DrugCentral source for drug-disease relationship."
-
-Node: dcid:uniProtID
-name: "uniProtID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Protein,dcs:ChemicalCompoundProteinInteraction,dcs:ChemicalCompound,dcs:Gene
-description: "UniProt identifier of protein."
-
-Node: dcid:alternateNCBIProteinAccessionNumber
-name: "alternateNCBIProteinAccessionNumber"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Protein
-description: "Alternate NCBI accession number associated with a protein."
-
-Node: dcid:bindingDBID
-name: "bindingDBID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Protein,dcs:ChemicalCompound
-description: "BindingDB identifier of a protein."
-
-Node: dcid:bgeeID
-name: "bgeeID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Protein
-description: "Bgee (gene expression data in animals database) identifier of a protein."
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://prosite.expasy.org/index.html"
 
 Node: dcid:proteinDataBankID
 name: "proteinDataBankID"
@@ -429,146 +753,6 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Protein,dcs:ChemicalCompound
 description: "Protein Data Bank identifier of a protein."
-
-Node: dcid:geneSynonym
-name: "geneSynonym"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Protein
-description: "Synonyms for the gene symbol of gene that codes for a protein."
-
-Node: dcid:aminoAcidSequence
-name: "aminoAcidSequence"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Protein
-description: "The amino acid sequence for protein using IUPAC one letter codes for amino acids."
-
-Node: dcid:umlsConceptID
-name: "umlsConceptID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:SideEffect
-description: "The Concept Unique Identifier for a Metathesaurus concept to which strings with the same meaning are linked."
-
-Node: dcid:alternateUMLSConceptID
-name: "alternateUMLSConceptID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:SideEffect
-description: "The Alternate Concept Unique Identifier for a Metathesaurus concept to which strings with the same meaning are linked."
-
-Node: dcid:swissProtID
-name: "swissProtID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Protein
-description: "Identifier referring to a protein in the Swiss-Prot database. A manually curated database with records with information extracted from literature and curator-evaluated computational analysis."
-
-Node: dcid:ProteinProteinInteraction
-name: "ProteinProteinInteraction"
-typeOf: schema:Class
-subClassOf: schema:Thing
-description: "A highly specific physical contact between two or more proteins as a result of a biochemical event."
-
-Node: dcid:interactingProtein
-typeOf: schema:Property
-name: "interactingProtein"
-description: "A participant protein in a protein-protein interaction."
-rangeIncludes: dcs:Protein
-domainIncludes: dcs:ProteinProteinInteraction
-
-Node: dcid:interactionDetectionMethod
-typeOf: schema:Property
-name: "interactionDetectionMethod"
-description: "The interaction detection method used in the experiment."
-rangeIncludes: dcs:InteractionDetectionMethodEnum
-domainIncludes: dcs:ProteinProteinInteraction
-
-Node: dcid:interactionType
-typeOf: schema:Property
-name: "interactionType"
-description: "The molecular interaction type."
-rangeIncludes: dcs:InteractionTypeEnum,dcs:ChemicalCompoundProteinInteractionTypeEnum
-domainIncludes: dcs:ProteinProteinInteraction,dcs:ChemicalCompoundProteinInteraction
-
-Node: dcid:interactionSource
-typeOf: schema:Property
-name: "interactionSource"
-description: "The database from which the interaction record was extracted."
-rangeIncludes: dcs:InteractionSourceEnum
-domainIncludes: dcs:ProteinProteinInteraction
-
-Node: dcid:confidenceScore
-typeOf: schema:Property
-name: "confidenceScore"
-description: "The confidence score of a protein-protein interaction and the source in which it is recorded."
-rangeIncludes: schema:Quantity
-domainIncludes: dcs:ProteinProteinInteraction
-
-Node: dcid:mintID
-typeOf: schema:Property
-name: "mintID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction
-description: "Molecular INTeraction database identifier."
-descriptionUrl: "https://mint.bio.uniroma2.it/"
-
-Node: dcid:imexID
-typeOf: schema:Property
-name: "imexID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction
-description: "The international molecular exchange consortium identifier for a non-redundant physical molecular interaction."
-descriptionUrl: "https://www.imexconsortium.org/"
-
-Node: dcid:rcsbPDBID
-typeOf: schema:Property
-name: "rcsbPDBID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction
-description: "Research Collaboratory for Structural Bioinformatics (RCSB) Protein Data Bank (PDB) identifier."
-descriptionUrl: "https://www.rcsb.org/"
-
-Node: dcid:intActID
-typeOf: schema:Property
-name: "intActID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction
-description: "EMBL-EBI IntAct identifier."
-descriptionUrl: "https://www.ebi.ac.uk/intact/"
-
-Node: dcid:electronMicroscopyDataBankID
-typeOf: schema:Property
-name: "electronMicroscopyDataBankID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction
-description: "The Electron Microscopy Data Bank (EMDB) identifier."
-descriptionUrl: "https://www.ebi.ac.uk/pdbe/emdb/"
-
-Node: dcid:worldWideProteinDataBankID
-typeOf: schema:Property
-name: "worldWideProteinDataBankID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction
-description: "The Worldwide Protein Data Bank (wwPDB) identifier, which serves as the single repository of information about the 3D structures of proteins, nucleic acids, and complex assemblies."
-descriptionUrl: "https://www.ebi.ac.uk/pdbe/", "https://www.rcsb.org/", "https://pdbj.org/", "http://www.bmrb.wisc.edu/".
-
-Node: dcid:psimiID
-typeOf: schema:Property
-name: "psimiID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction,dcs:InteractionTypeEnum,dcs:InteractionDetectionMethodEnum,dcs:InteractionSourceEnum
-description: "Proteomics Standard Initiative - Molecular Interaction identifier."
-descriptionUrl: "http://www.psidev.info/"
-
-Node: dcid:reactomePathwayID
-typeOf: schema:Property
-name: "reactomePathwayID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ProteinProteinInteraction
-description: "Reactome identifier. Reactome is a free, open-source, curated and peer-reviewed pathway database."
-descriptionUrl: "https://reactome.org/"
 
 Node: dcid:proteinDataBankInEuropeID
 typeOf: schema:Property
@@ -578,203 +762,6 @@ domainIncludes: dcs:ProteinProteinInteraction
 description: "EMBL-EBI Protein Data Bank in Europe (PDBe) identifier."
 descriptionUrl: "https://www.ebi.ac.uk/pdbe/node/1"
 
-Node: dcid:pubMedID
-typeOf: schema:Property
-name: "pubMedID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:ChemicalCompound,dcs:ChemicalCompoundGeneAssociation
-description: "Identifier for reference paper on PubMed."
-descriptionUrl: "https://pubmed.ncbi.nlm.nih.gov/"
-
-Node: dcid:digitalObjectID
-typeOf: schema:Property
-name: "digitalObjectID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:Thing
-description: "Digital object identifier (doi) generated by the International DOI Foundation (IDF)."
-descriptionUrl: "https://www.doi.org/"
-
-Node: dcid:goID
-typeOf: schema:Property
-name: "goID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:InteractionDetectionMethodEnum,dcs:InteractionTypeEnum,dcs:InteractionSourceEnum
-description: "Identifiers of the Gene Ontology database AmiGO 2."
-descriptionUrl: "http://amigo.geneontology.org/amigo/landing"
-
-Node: dcid:residID
-typeOf: schema:Property
-name: "residID"
-rangeIncludes: schema:Text
-domainIncludes: dcs:InteractionDetectionMethodEnum,dcs:InteractionTypeEnum,dcs:InteractionSourceEnum
-description: "Identifiers of the RESID database which contains the collections of annotations and structures for protein modifications."
-descriptionUrl: "https://proteininformationresource.org/resid/"
-
-Node: dcid:submittedFDAApplication
-name: "submittedFDAApplication"
-typeOf: schema:Property
-rangeIncludes: dcs:FDAApplication
-domainIncludes: schema:DrugStrength
-description: "The application submitted to the FDA for this drug."
-
-Node: dcid:additionalDrugInformation
-name: "additionalDrugInformation"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:Drug
-description: "Additional information associated with a drug."
-
-Node: dcid:manufacturer
-name: "manufacturer"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:DrugStrength
-
-Node: dcid:administrationRoute
-name: "administrationRoute"
-typeOf: schema:Property
-rangeIncludes: dcs:AdministrationRouteEnum
-domainIncludes: schema:Drug
-description: "The method by which a drug is administered."
-
-Node: dcid:dosageForm
-name: "dosageForm"
-typeOf: schema:Property
-rangeIncludes: dcs:DosageFormEnum
-domainIncludes: schema:Drug
-description: "A dosage form is the physical form in which a drug is produced and dispensed, such as a tablet, a capsule, or an injectable."
-descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#form"
-
-Node: dcid:drugName
-name: "drugName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:Drug
-
-Node: dcid:isFDAReferenceStandard
-name: "isFDAReferenceStandard"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: schema:Drug
-description: "Indicates whether the drug is an FDA reference standard."
-
-Node: dcid:applicationType
-name: "applicationType"
-typeOf: schema:Property
-rangeIncludes: dcs:ApplicationTypeEnum
-domainIncludes: dcs:FDAApplication
-description: "The type of drug product approval application submitted to the FDA."
-
-Node: dcid:sponsor
-name: "sponsor"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:FDAApplication
-description: "The sponsor of the application."
-
-Node: dcid:fdaApplicationNumber
-name: "fdaApplicationNumber"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:FDAApplication
-description: "The number of the FDA drug application."
-
-Node: dcid:marketingStatus
-name: "marketingStatus"
-typeOf: schema:Property
-rangeIncludes: dcs:MarketingStatusEnum
-domainIncludes: schema:DrugStrength
-description: "Marketing status indicates how a drug product is sold in the United States."
-descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#M"
-
-Node: dcid:therapeuticEquivalenceCode
-name: "therapeuticEquivalenceCode"
-typeOf: schema:Property
-rangeIncludes: dcs:TherapeuticEquivalenceCodeEnum
-domainIncludes: schema:DrugStrength
-description: "The therapeutic equivalence code indicates whether the FDA has evaluated a particular approved product (e.g., a particular strength of an approved drug) as therapeutically equivalent to other pharmaceutically equivalent products and to provide additional information on the basis of FDA's evaluations (second letter)."
-descriptionUrl: "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface#TEC"
-
-Node: dcid:fdaProductID
-name: "fdaProductID"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: schema:DrugStrength
-description: "Product ID according to the FDA."
-
-Node: dcid:drugCourse
-name: "drugCourse"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-domainIncludes: schema:DrugStrength
-description: "Indicates the length of time that drug should be used."
-
-Node: dcid:singleDose
-name: "singleDose"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: schema:DrugStrength
-description: "Indicates whether the drug is to be taken as a single dose (True) or as multiple doses (False)."
-
-Node: dcid:finalReconstitutedSolutionVolume
-name: "finalReconstitutedSolutionVolume"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-domainIncludes: schema:DrugStrength
-description: "Final reconstituted solution volume for drug dose."
-
-Node: dcid:drugStrength
-name: "drugStrength"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-rangeIncludes: schema:Text
-domainIncludes: schema:DrugStrength
-description: "Strength of the drug."
-
-Node: dcid:hasActiveIngredientAmount
-name: "hasActiveIngredientAmount"
-typeOf: schema:Property
-rangeIncludes: dcs:ActiveIngredientAmount
-domainIncludes: schema:DrugStrength
-description: "The quantity of active ingredient in the drug."
-
-Node: dcid:ingredientName
-name: "ingredientName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:ActiveIngredientAmount
-description: "Name of the active ingredient."
-
-Node: dcid:ingredientAmount
-name: "ingredientAmount"
-typeOf: schema:Property
-rangeIncludes: schema:Quantity
-rangeIncludes: dcs:QuantityRange
-rangeIncludes: schema:Text
-domainIncludes: dcs:ActiveIngredientAmount
-description: "Amount of the active ingredient."
-
-Node: dcid:detectedProtein
-typeOf: schema:Property
-name: "detectedProtein"
-description: "The protein whose levels are being assessed."
-rangeIncludes: dcs:Protein
-domainIncludes: dcs:HumanProteinOccurrence
-
-Node: dcid:humanCellType
-typeOf: schema:Property
-name: "humanCellType"
-description: "The human cell type in which the protein's level is measured."
-rangeIncludes: dcs:HumanCellTypeEnum
-domainIncludes: dcs:HumanProteinOccurrence
-
-Node: dcid:humanTissue
-typeOf: schema:Property
-name: "humanTissue"
-description: "The human tissue in which the protein's level is measured."
-rangeIncludes: dcs:HumanTissueEnum
-domainIncludes: dcs:HumanProteinOccurrence
-
 Node: dcid:proteinExpressionScore
 typeOf: schema:Property
 name: "proteinExpressionScore"
@@ -783,163 +770,60 @@ descriptionUrl: "https://www.proteinatlas.org/about/help#4"
 rangeIncludes: dcs:ProteinExpressionScoreEnum
 domainIncludes: dcs:HumanProteinOccurrence
 
-Node: dcid:humanProteinOccurrenceReliability
+Node: dcid:proteinID
+name: "proteinID"
 typeOf: schema:Property
-name: "humanProteinOccurrenceReliability"
-description: "A reliability score is manually set for all genes and indicates the level of reliability of the analyzed protein expression pattern based on available RNA-seq data, protein/gene characterization data and immunohistochemical data from one or several antibodies with non-overlapping epitopes."
-descriptionUrl: "https://www.proteinatlas.org/about/assays+annotation#if_reliability_score"
-rangeIncludes: dcs:HumanProteinOccurrenceReliabilityEnum
-domainIncludes: dcs:HumanProteinOccurrence
+rangeIncludes: dcs:Protein
+domainIncludes: dcs:ChemicalCompoundProteinInteraction,dcs:ProteinProteinInteraction
+description: "The Protein node associated with the current node."
+
+Node: dcid:psimiID
+typeOf: schema:Property
+name: "psimiID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction,dcs:InteractionTypeEnum,dcs:InteractionDetectionMethodEnum,dcs:InteractionSourceEnum
+description: "Proteomics Standard Initiative - Molecular Interaction identifier."
+descriptionUrl: "http://www.psidev.info/"
+
+Node: dcid:pubMedID
+typeOf: schema:Property
+name: "pubMedID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:BiomedicalEntity
+description: "Identifier for reference paper on PubMed."
+descriptionUrl: "https://pubmed.ncbi.nlm.nih.gov/"
+
+Node: dcid:reactomePathwayID
+typeOf: schema:Property
+name: "reactomePathwayID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction
+description: "Reactome identifier. Reactome is a free, open-source, curated and peer-reviewed pathway database."
+descriptionUrl: "https://reactome.org/"
+
+Node: dcid:rcsbPDBID
+typeOf: schema:Property
+name: "rcsbPDBID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction
+description: "Research Collaboratory for Structural Bioinformatics (RCSB) Protein Data Bank (PDB) identifier."
+descriptionUrl: "https://www.rcsb.org/"
 
 Node: dcid:recognizesAntigen
 typeOf: schema:Property
 name: "recognizesAntigen"
 description: "The targeting antigen of the antibody."
 rangeIncludes: dcs:Protein
-domainIncludes:dcs:Antibody
+domainIncludes: dcs:Antibody
 # rangeIncludes proteins with links to UniProt, chemicals with IDs to ChEBI and a few samples to other databases (InterPro, NCBI, Prosite, UniProt-Subcell).
-
-Node: dcid:antigenType
-typeOf: schema:Property
-name: "antigenType"
-description: "The type of the antigen for an antibody which includes protein, chemical compound and other types. "
-rangeIncludes: dcs:Protein
-domainIncludes:dcs:Antibody
-
-Node: dcid:antibodyType
-typeOf: schema:Property
-name: "antibodyType"
-description: "The type of antibody, including bispecific antibody, nanobody and DARPins. "
-rangeIncludes: dcs:AntibodyTypeEnum
-domainIncludes:dcs:Antibody
-
-Node: dcid:antibodyApplication
-typeOf: schema:Property
-name: "antibodyApplication"
-description: "The applications of the antibody in the experiments, such as ELISA, Immunofluorescence, Immunoprecipitation, etc."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-
-Node: dcid:epitope
-typeOf: schema:Property
-name: "epitope"
-description: "Also known as antigenic determinant. It is the recognizing part of an antigen by the interacting immune cell antigen receptor or the antibody."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://en.wikipedia.org/wiki/Epitope"
-
-Node: dcid:abcdID
-typeOf: schema:Property
-name: "abcdID"
-description: "The accession identifier of the antibody in the ABCD antibody database. "
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://web.expasy.org/abcd/"
-
-Node: dcid:patentID
-typeOf: schema:Property
-name: "patentID"
-description: "The identifier of patent in PATENTSCOPE. Using PATENTSCOPE you can search 90 million patent documents including 3.9 million published international patent applications (PCT)."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://patentscope.wipo.int/search/en/search.jsf"
-
-Node: dcid:cellosaurusID
-typeOf: schema:Property
-name: "cellosaurusID"
-description: "The identifier of cell line in Cellosaurus. The Cellosaurus is a knowledge resource on cell lines. It attempts to describe all cell lines used in biomedical research."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://web.expasy.org/cellosaurus/"
-
-Node: dcid:imgtMonoclonalAntibodiesDBID
-typeOf: schema:Property
-name: "imgtMonoclonalAntibodiesDBID"
-description: "The identifier for therapeutic monoclonal antibodies in IMGT/mAb-DB. IMGT/mAb-DB is the IMGT monoclonal antibodies (mAb) database."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"http://www.imgt.org/mAb-DB/"
-
-Node: dcid:neuroMabID
-typeOf: schema:Property
-name: "neuroMabID"
-description: "The identifier for mouse monoclonal antibodies in NeuroMab. The UC Davis/NIH NeuroMab Facility generates mouse monoclonal antibodies extensively validated for use in the mammalian brain."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"http://neuromab.ucdavis.edu/"
-
-Node: dcid:ginasID
-typeOf: schema:Property
-name: "ginasID"
-description: "The identifier for substances found in medicines in Ginas. The main goal of ginas is the production of software, called G-SRS, to assist agencies in registering and documenting information about substances found in medicines."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://tripod.nih.gov/ginas/#/"
 
 Node: dcid:recombinantAntibodyNetworkID
 typeOf: schema:Property
 name: "recombinantAntibodyNetworkID"
 description: "The identifier for antibodies in Recombinant Antibody Network (RAN). The RAN is an international consortium of three expert centers at the University of Chicago, University of Toronto, and the University of California at San Francisco (UCSF) unified under a common set of goals, technologies, and operational procedures."
 rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
+domainIncludes: dcs:Antibody
 descriptionUrl:"https://recombinant-antibodies.org/"
-
-Node: dcid:addgeneID
-typeOf: schema:Property
-name: "addgeneID"
-description: "The identifier for antibodies in Addgene. They distribute 89,594 plasmids on behalf of 4,322 labs from around the world. They also produce 480 ready-to-use viral vectors from our plasmid collection."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://www.addgene.org/"
-
-Node: dcid:interProID
-typeOf: schema:Property
-name: "interProID"
-description: "The identifier for protein families in Addgene. InterPro provides functional analysis of proteins by classifying them into families and predicting domains and important sites."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://www.ebi.ac.uk/interpro/"
-
-Node: dcid:ncbiTXID
-typeOf: schema:Property
-name: "ncbiTXID"
-description: "The txid identifier in NCBI Taxonomy Browser. The NCBI Taxonomy Database is a curated classification and nomenclature for all of the organisms in the public sequence databases. This currently represents about 10% of the described species of life on the planet."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi"
-# example NCBI:txid46170
-
-Node: dcid:uniProtSubcellularID
-typeOf: schema:Property
-name: "uniProtSubcellularID"
-description: "The identifier of subcellular locations in UniProt. The subcellular locations in which a protein is found are described in UniProtKB entries with a controlled vocabulary, which also includes membrane topology and orientation terms."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://www.uniprot.org/locations/"
-
-Node: dcid:prositeID
-typeOf: schema:Property
-name: "prositeID"
-description: "The identifier in PROSITE database. PROSITE consists of documentation entries describing protein domains, families and functional sites as well as associated patterns and profiles to identify them."
-rangeIncludes: schema:Text
-domainIncludes:dcs:Antibody
-descriptionUrl:"https://prosite.expasy.org/index.html"
-
-Node: dcid:isPharmacokineticRelationship
-name: "isPharmacokineticRelationship"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: dcs:ChemicalCompoundGeneAssociation
-description: "True if the pair of entities was found in a pharmacokinetic pathway on PharmGKB, or if the Variant Annotation or Very Important Pharmacogene (VIP) was annotated with pharmacokinetic (PK) in some manner."
-descriptionUrl: "https://www.pharmgkb.org/page/downloadRelationshipsHelp"
-
-Node: dcid:isPharmacodynamicRelationship
-name: "isPharmacodynamicRelationship"
-typeOf: schema:Property
-rangeIncludes: schema:Boolean
-domainIncludes: dcs:ChemicalCompoundGeneAssociation
-description: "True if the pair of entities was found in a pharmacodynamic pathway on PharmGKB, or if the Variant Annotation or Very Important Pharmacogene (VIP) was annotated with Pharmacodynamic (PD) in some manner."
-descriptionUrl: "https://www.pharmgkb.org/page/downloadRelationshipsHelp"
 
 Node: dcid:relationshipAssociationType
 name: "relationshipAssociationType"
@@ -955,9 +839,91 @@ rangeIncludes: dcs:RelationshipEvidenceTypeEnum
 domainIncludes: dcs:ChemicalCompoundGeneAssociation
 description: "Type of evidence supporting a given relationship between entities."
 
+Node: dcid:residID
+typeOf: schema:Property
+name: "residID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:InteractionDetectionMethodEnum,dcs:InteractionTypeEnum,dcs:InteractionSourceEnum
+description: "Identifiers of the RESID database which contains the collections of annotations and structures for protein modifications."
+descriptionUrl: "https://proteininformationresource.org/resid/"
+
+Node: dcid:rxNormId
+name: "rxNormId"
+typeOf: schema:Property
+domainIncludes: schema:Drug
+rangeIncludes: schema:Number
+sameAs: "https://www.nlm.nih.gov/research/umls/rxnorm/index.html"
+description: "The identifier for this drug in the NIH National Library of Science RxNorm database, which is apart of the Unified Medical Language System (UMLS). RxNorm provides normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software, including those of First Databank, Micromedex, Multum, and Gold Standard Drug Database. By providing links between these vocabularies, RxNorm can mediate messages between systems not using the same software and vocabulary."
+
+Node: dcid:simplifiedMolecularInputLineEntrySystem
+name: "simplifiedMolecularInputLineEntrySystem"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompound
+description: "Simplified Molecular-Input Line-Entry System (SMILES) for compound."
+
+Node: dcid:singleDose
+name: "singleDose"
+typeOf: schema:Property
+rangeIncludes: schema:Boolean
+domainIncludes: schema:DrugStrength
+description: "Indicates whether the drug is to be taken as a single dose (True) or as multiple doses (False)."
+
+Node: dcid:submittedFDAApplication
+name: "submittedFDAApplication"
+typeOf: schema:Property
+rangeIncludes: dcs:FDAApplication
+domainIncludes: schema:DrugStrength
+description: "The application submitted to the FDA for this drug."
+
+Node: dcid:swissProtID
+name: "swissProtID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Protein
+description: "Identifier referring to a protein in the Swiss-Prot database. A manually curated database with records with information extracted from literature and curator-evaluated computational analysis."
+
+Node: dcid:therapeuticEquivalenceCode
+name: "therapeuticEquivalenceCode"
+typeOf: schema:Property
+rangeIncludes: dcs:TherapeuticEquivalenceCodeEnum
+domainIncludes: schema:DrugStrength
+description: "The therapeutic equivalence code indicates whether the FDA has evaluated a particular approved product (e.g., a particular strength of an approved drug) as therapeutically equivalent to other pharmaceutically equivalent products and to provide additional information on the basis of FDA's evaluations (second letter)."
+descriptionUrl: "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface#TEC"
+
+Node: dcid:uniProtID
+name: "uniProtID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Protein,dcs:ChemicalCompoundProteinInteraction,dcs:ChemicalCompound,dcs:Gene
+description: "UniProt identifier of protein."
+Node: dcid:uniProtSubcellularID
+typeOf: schema:Property
+
+name: "uniProtSubcellularID"
+description: "The identifier of subcellular locations in UniProt. The subcellular locations in which a protein is found are described in UniProtKB entries with a controlled vocabulary, which also includes membrane topology and orientation terms."
+rangeIncludes: schema:Text
+domainIncludes: dcs:Antibody
+descriptionUrl:"https://www.uniprot.org/locations/"
+
+Node: dcid:variantID
+typeOf: schema:Property
+domainIncludes: dcs:ChemicalCompoundGeneticVariantAssociation,dcs:GeneGeneticVariantAssociation
+rangeIncludes: dcs:GeneticVariant
+description: "Link to a GeneticVariant node for a genetic variant that is associated with another entity."
+
 Node: dcid:wordElementType
 name: "wordElementType"
 typeOf: schema:Property
 domainIncludes: dcs:USAdoptedNameStem
 rangeIncludes: dcs:WordElementTypeEnum
 description: "A word's elements are the smallest parts that add meaning to the word."
+
+Node: dcid:worldWideProteinDataBankID
+typeOf: schema:Property
+name: "worldWideProteinDataBankID"
+rangeIncludes: schema:Text
+domainIncludes: dcs:ProteinProteinInteraction
+description: "The Worldwide Protein Data Bank (wwPDB) identifier, which serves as the single repository of information about the 3D structures of proteins, nucleic acids, and complex assemblies."
+descriptionUrl: "https://www.ebi.ac.uk/pdbe/", "https://www.rcsb.org/", "https://pdbj.org/", "http://www.bmrb.wisc.edu/".
+abbreviation: "wwPDB ID"

@@ -1,3 +1,4 @@
+# AssociationSourceENum
 Node: dcid:AssociationSourceEnum
 name: "AssociationSourceEnum"
 subClassOf: schema:Enumeration
@@ -15,80 +16,3 @@ typeOf: dcs:AssociationSourceEnum
 Node: dcid:AssociationSourceKnowledge
 name: "Knowledge"
 typeOf: dcs:AssociationSourceEnum
-
-Node: dcid:DiseaseGeneAssociationStatusEnum
-name: "DiseaseGeneAssociationStatusEnum"
-subClassOf: schema:Enumeration
-description: "The status of the association between the disease and the gene."
-typeOf: schema:Class
-
-Node: dcid:DiseaseGeneAssociationStatusCurated
-name: "Curated"
-typeOf: dcs:DiseaseGeneAssociationStatusEnum
-
-Node: dcid:GenitalUlcer
-name: "Genital Ulcer"
-typeOf: dcs:Disease
-
-Node: dcid:Polio
-name: "Polio"
-typeOf: dcs:Disease
-sameAs: dcs:bio/DOID_4953
-icd10CMCode: dcs:ICD/A80
-medicalSubjectHeadingDescriptorID: dcs:bio/D011051
-
-Node: dcid:LymphaticDisorder
-name: "Lymphatic Disorder"
-typeOf: dcs:Disease
-sameAs: dcs:bio/DOID_75
-medicalSubjectHeadingDescriptorID: dcs:bio/D008206
-
-Node: dcid:Diarrhea
-name: "Diarrhea"
-typeOf: dcs:Disease
-sameAs: dcs:bio/DOID_13250
-icd10CMCode: dcs:ICD10/R19.7
-medicalSubjectHeadingDescriptorID: dcs:bio/D003967
-
-Node: dcid:DiarrheaWaterWithoutBlood
-name: "Diarrhea Water Without Blood"
-typeOf: dcs:Disease
-specializationOf: dcs:Diarrhea
-
-Node: dcid:DiarrheaWaterWithBlood
-name: "Diarrhea Water With Blood"
-typeOf: dcs:Disease
-specializationOf: dcs:Diarrhea
-
-Node: dcid:AcuteFlaccidParalysis
-name: "Acute Flaccid Paralysis"
-typeOf: dcs:Disease
-sameAs: dcs:bio/DOID_0080947
-# icd10CMCode: dcs:ICD10/G04.82
-medicalSubjectHeadingSupplementaryRecordID: dcs:bio/C000629404
-
-Node: dcid:VaginalDischarge
-name: "Vaginal Discharge"
-typeOf: dcs:Disease
-sameAs: dcs:bio/DOID_3767
-icd10CMCode: dcs:ICD10/N89.8
-medicalSubjectHeadingDescriptorID: dcs:bio/D019522
-
-Node: dcid:MaleUrethralDischarge
-name: "Male Urethral Discharge"
-typeOf: dcs:Disease
-icd10CMCode: dcs:ICD10/R36.9
-
-Node: dcid:Filariasis
-name: "Filariasis"
-typeOf: dcs:Disease
-sameAs: dcs:bio/DOID_1080
-icd10CMCode: dcs:ICD10/B74
-medicalSubjectHeadingDescriptorID: dcs:bio/D005368
-
-Node: dcid:FemaleNonVesGenitalUlcer
-name: "Female Non-Ves Genital Ulcer"
-typeOf: dcs:Disease
-specializationOf: dcs:GenitalUlcer
-sameAs: dcs:bio/DOID_12566
-icd10CMCode: dcs:ICD10/N76.6

@@ -1,56 +1,62 @@
+Node: dcid:EncodeEntity
+name: EncodeEntity
+typeOf: schema:Class
+subClassOf: dcs:BiomedicalEntity
+description: "An entity related to The Encyclopedia of DNA Elements (ENCODE)."
+
 Node: encode_class_BedLine
 dcid: "BedLine"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "BedLine"
 description: "A line in a bed file."
 
 Node: encode_class_EncodeAward
 dcid: "EncodeAward"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "EncodeAward"
 description: "Research grant information uploaded to the Encode Project."
 
 Node: encode_class_EncodeBedFile
 dcid: "EncodeBedFile"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "EncodeBedFile"
 description: "A bed file uploaded to the Encode Project."
 
 Node: encode_class_EncodeBiosample
 dcid: "EncodeBiosample"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "EncodeBiosample"
 description: "An Encode Project biosample."
 
 Node: encode_class_EncodeBiosampleType
 dcid: "EncodeBiosampleType"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "EncodeBiosampleType"
 description: "The type of a specific Encode Project biosample."
 
 Node: encode_class_EncodeExperiment
 dcid: "EncodeExperiment"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "EncodeExperiment"
 description: "An experiment uploaded to the Encode Project."
 
 Node: encode_class_EncodeLibrary
 dcid: "EncodeLibrary"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "EncodeLibrary"
 description: "An encode molecular library."
 
 Node: encode_class_Lab
 dcid: "Lab"
 typeOf: schema:Class
-subClassOf: schema:Thing
+subClassOf: dcs:EncodeEntity
 name: "Lab"
 description: "A group or organization that performs scientific research."
 
