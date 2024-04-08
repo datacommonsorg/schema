@@ -153,20 +153,6 @@ rangeIncludes: dcs:Text
 name: "lastDataRefreshDate"
 description: "Most recent date of data refresh for the provenance."
 
-Node: dcid:licenseAttribution
-typeOf: schema:Property
-domainIncludes: dcs:Provenance
-rangeIncludes: dcs:Text
-name: "licenseAttribution"
-description: "Details about the license attribution for the provenance."
-
-Node: dcid:licenseType
-typeOf: schema:Property
-domainIncludes: dcs:Provenance
-rangeIncludes: dcs:LicenseTypeEnum
-name: "licenseType"
-description: "Type of data license for certain common types."
-
 Node: dcid:nextDataRefreshDate
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
@@ -243,9 +229,3 @@ domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "latestObservationDate"
 description: "Date of the most recent observation of a provenance."
-
-Node: dcid:license
-typeOf: schema:Property
-domainIncludes: dcs:Provenance
-name: "license"
-description: "A license document that applies to this content, typically indicated by URL."

@@ -3817,3 +3817,23 @@ domainIncludes: dcs:StatisticalVariable
 rangeIncludes: schema:StatisticalVariable
 name: "denominatorForNormalization"
 description: "Additional StatisticalVariable that can be used for normalizing this StatisticalVariable. If unspecified and `isNormalizable` is True, then `Count_Person` is the default."
+
+Node: dcid:license
+typeOf: schema:Property
+domainIncludes: dcs:Provenance, dcs:Dataset, dcs:Source
+name: "license"
+description: "A license document that applies to this content, typically indicated by URL."
+
+Node: dcid:licenseAttribution
+typeOf: schema:Property
+domainIncludes: dcs:Provenance, dcs:Dataset, dcs:Source
+rangeIncludes: dcs:Text
+name: "licenseAttribution"
+description: "Details about the license attribution for the provenance."
+
+Node: dcid:licenseType
+typeOf: schema:Property
+domainIncludes: dcs:Provenance, dcs:Dataset, dcs:Source
+rangeIncludes: dcs:LicenseTypeEnum
+name: "licenseType"
+description: "Type of data license for certain common types."
