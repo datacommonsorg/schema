@@ -2100,10 +2100,34 @@ subClassOf: dcs:PrecipiationUnitOfMeasure
 name: "KilogramsPerMeterSquaredSecond"
 shortDisplayName: "kg/sqms"
 
+Node: dcid:IND_BelowPovertyLevelInThePast12Months
+typeOf: dcs:PovertyStatusEnum
+name: "Below Indian poverty level in the last 12 months"
+description: "India poverty line is the per capita per month expenditure that corresponds to the all India poverty ratio."
+descriptionUrl: "https://pib.gov.in/newsite/erelcontent.aspx?relid=97365"
+
+Node: dcid:IND_UrbanBelowPovertyLevelInThePast12Months
+typeOf: dcs:PovertyStatusEnum
+name: "Below Indian urban poverty level in the last 12 months"
+description: "Below Indian urban povery level is based on the per capita per month expenditure of urban region that corresponds to the poverty ratio."
+descriptionUrl: "https://pib.gov.in/newsite/erelcontent.aspx?relid=97365"
+
+Node: dcid:IND_RuralBelowPovertyLevelInThePast12Months
+typeOf: dcs:PovertyStatusEnum
+name: "Below Indian rural poverty level in the last 12 months"
+description: "Below Indian rural povery level is based on the per capita per month expenditure of rural region that corresponds to the poverty ratio."
+descriptionUrl: "https://pib.gov.in/newsite/erelcontent.aspx?relid=97365"
+
+
 Node: dcid:RatioToPovertyLine
 typeOf: dcs:UnitOfMeasure
 name: "RatioToPovertyLine"
 description: "A unit indicating a ratio to poverty line. If one is at poverty line, then one has a RatioToPovertyLine of 1. If one's income is twice that of the poverty line threshold, then one has a RatioToPovertyLine of 2."
+
+Node: dcid:USC_RatioToPovertyLine
+typeOf: dcs:UnitOfMeasure
+name: "USC_RatioToPovertyLine"
+description: "A unit indicating a ratio to US Census poverty line. If one is at poverty line, then one has a USC_RatioToPovertyLine of 1. If one's income is twice that of the poverty line threshold, then one has a USC_RatioToPovertyLine of 2."
 
 Node: dcid:RatioToHouseholdIncome
 typeOf: dcs:UnitOfMeasure

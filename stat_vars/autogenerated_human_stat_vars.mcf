@@ -2801,19 +2801,21 @@ measuredProperty: dcs:count
 placeOfBirth: dcs:NativeBornOutsideTheUnitedStates
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months
+name: "Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 name: "Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months
+name: "Population Below US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 name: "Population Below Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AmericanIndianAndAlaskaNativeAlone
@@ -10912,244 +10914,274 @@ age: dcs:YearsUpto18
 disabilityStatus: dcs:WithDisability
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLine1.38To4
+name: "Population: 18 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto1.38
+name: "Population: 18 Years or Less, 1.4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto2
+name: "Population: 18 Years or Less, 2 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto2.5
+name: "Population: 18 Years or Less, 2.5 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto4
+name: "Population: 18 Years or Less, 4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 
 Node: dcid:Count_Person_0Years_Female
 typeOf: dcs:StatisticalVariable
@@ -14683,6 +14715,7 @@ age: dcs:YearsUpto5
 placeOfBirth: dcs:NativeBornOutsideTheUnitedStates
 
 Node: dcid:Count_Person_12To17Years_AbovePovertyLevelInThePast12Months
+name: "Population: 12 - 17 Years, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14691,6 +14724,7 @@ age: dcs:Years12To17
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_12To17Years_BelowPovertyLevelInThePast12Months
+name: "Population: 12 - 17 Years, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14699,6 +14733,7 @@ age: dcs:Years12To17
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_18To59Years_AbovePovertyLevelInThePast12Months
+name: "Population: 18 - 59 Years, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14707,6 +14742,7 @@ age: dcs:Years18To59
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_18To59Years_BelowPovertyLevelInThePast12Months
+name: "Population: 18 - 59 Years, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14715,6 +14751,7 @@ age: dcs:Years18To59
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_60To74Years_AbovePovertyLevelInThePast12Months
+name: "Population: 60 - 74 Years, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14723,6 +14760,7 @@ age: dcs:Years60To74
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_60To74Years_BelowPovertyLevelInThePast12Months
+name: "Population: 60 - 74 Years, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14731,6 +14769,7 @@ age: dcs:Years60To74
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_6To11Years_AbovePovertyLevelInThePast12Months
+name: "Population: 6 - 11 Years, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14739,14 +14778,16 @@ age: dcs:Years6To11
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_6To11Years_BelowPovertyLevelInThePast12Months
+name: "Population: 6 - 11 Years, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years6To11
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_75To84Years_AbovePovertyLevelInThePast12Months
+name: "Population: 75 - 84 Years, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14755,6 +14796,7 @@ age: dcs:Years75To84
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_75To84Years_BelowPovertyLevelInThePast12Months
+name: "Population: 75 - 84 Years, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14763,6 +14805,7 @@ age: dcs:Years75To84
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_85OrMoreYears_AbovePovertyLevelInThePast12Months
+name: "Population: 85 Years or More, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14771,6 +14814,7 @@ age: dcs:Years85Onwards
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_85OrMoreYears_BelowPovertyLevelInThePast12Months
+name: "Population: 85 Years or More, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14779,6 +14823,7 @@ age: dcs:Years85Onwards
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_Upto6Years_AbovePovertyLevelInThePast12Months
+name: "Population: 6 Years or Less, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -14787,6 +14832,7 @@ age: dcs:YearsUpto6
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_Upto6Years_BelowPovertyLevelInThePast12Months
+name: "Population: 6 Years or Less, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -15836,30 +15882,33 @@ age: dcs:Years25Onwards
 educationalAttainment: dcs:SomeCollegeLessThan1Year
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months
+name: "Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 name: "Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months
+name: "Female Population Below US Census Poverty Level in the Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 name: "Female Population Below Poverty Level in the Last Year"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months
+name: "Male Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 name: "Male Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months
@@ -16087,164 +16136,182 @@ age: dcs:Years5Onwards
 nativity: dcs:USC_Native
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone
+name: "Native American Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:AmericanIndianOrAlaskaNativeAlone
 name: "Native American Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_AsianAlone
+name: "Asian Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:AsianAlone
 name: "Asian Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
+name: "African American Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:BlackOrAfricanAmericanAlone
 name: "African American Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_HispanicOrLatino
+name: "Hispanic Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:HispanicOrLatino
 name: "Hispanic Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
+name: "Population Above US Census Poverty Level Status in Last Year Who Are Native Hawaiian or Other Pacific Islander Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 name: "Population Above Poverty Level Status in Last Year Who Are Native Hawaiian or Other Pacific Islander Alone"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_SomeOtherRaceAlone
+name: "Population Some Other Race Alone and Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:SomeOtherRaceAlone
 name: "Population Some Other Race Alone and Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_TwoOrMoreRaces
+name: "Multi Racial Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:TwoOrMoreRaces
 name: "Multi Racial Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_WhiteAlone
+name: "White Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:WhiteAlone
 name: "White Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_AbovePovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
+name: "Non Hispanic White Population Above US Census Poverty Level Status in Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:WhiteAloneNotHispanicOrLatino
 name: "Non Hispanic White Population Above Poverty Level Status in Past Year"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone
+name: "Population Below US Census Poverty Level Status in Past Year and American Indian or Alaska Native Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:AmericanIndianOrAlaskaNativeAlone
 name: "Population Below Poverty Level Status in Past Year and American Indian or Alaska Native Alone"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
+name: "Population Below US Census Poverty Level Status in Past Year and Asian Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:AsianAlone
 name: "Population Below Poverty Level Status in Past Year and Asian Alone"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
+name: "Population Below US Census Poverty Level Status in Past Year and Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:BlackOrAfricanAmericanAlone
 name: "Population Below Poverty Level Status in Past Year and Black or African American Alone"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino
+name: "Population Below US Census Poverty Level Status in Past Year and Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:HispanicOrLatino
 name: "Population Below Poverty Level Status in Past Year and Hispanic or Latino"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
+name: "Population Below US Census Poverty Level Status in Past Year and Native Hawaiian or Other Pacific Islander Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 name: "Population Below Poverty Level Status in Past Year and Native Hawaiian or Other Pacific Islander Alone"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone
+name: "Population Below US Census Poverty Level Status in Past Year and Some Other Race Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:SomeOtherRaceAlone
 name: "Population Below Poverty Level Status in Past Year and Some Other Race Alone"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces
+name: "Population Below US Census Poverty Level Status in Past Year and Two or More Races"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:TwoOrMoreRaces
 name: "Population Below Poverty Level Status in Past Year and Two or More Races"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone
+name: "Population Below US Census Poverty Level Status in Past Year and White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:WhiteAlone
 name: "Population Below Poverty Level Status in Past Year and White Alone"
 
 Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
+name: "Population Below US Census Poverty Level Status in Past Year and White Alone Not Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:WhiteAloneNotHispanicOrLatino
 name: "Population Below Poverty Level Status in Past Year and White Alone Not Hispanic or Latino"
 
@@ -39665,1668 +39732,1853 @@ employmentStatus: dcs:BLS_NotInLaborForce
 gender: dcs:Male
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4_Female
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Female
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4_Male
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Male
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38_Female
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Female
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38_Male
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Male
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2_Female
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Female
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2_Male
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Male
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5_Female
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Female
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5_Male
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Male
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4_Female
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Female
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4_Male
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Male
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4_Female
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Female
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4_Male
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Male
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38_Female
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Female
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38_Male
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Male
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2_Female
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Female
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2_Male
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Male
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5_Female
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Female
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5_Male
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Male
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4_Female
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Female
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4_Male
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Male
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4_Female
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Female
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4_Male
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Male
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38_Female
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Female
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38_Male
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Male
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2_Female
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Female
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2_Male
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Male
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5_Female
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Female
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5_Male
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Male
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4_Female
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Female
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4_Male
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Male
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4_Female
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Female
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4_Male
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Male
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38_Female
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Female
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38_Male
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Male
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2_Female
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Female
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2_Male
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Male
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5_Female
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Female
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5_Male
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Male
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4_Female
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Female
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4_Male
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Male
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4_Female
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Female
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4_Male
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 gender: dcs:Male
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38_Female
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Female
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38_Male
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 gender: dcs:Male
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2_Female
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Female
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2_Male
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 gender: dcs:Male
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5_Female
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Female
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5_Male
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 gender: dcs:Male
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4_Female
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, Female"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Female
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4_Male
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, Male"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 gender: dcs:Male
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Population: 18 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Population: 18 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Population: 18 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Population: 18 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Population: 18 Years or Less, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Population: 18 Years or Less, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Population: 18 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Population: 18 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Population: 18 Years or Less, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto18Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Population: 18 Years or Less, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4_BlackOrAfricanAmericanAlone
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4_HispanicOrLatino
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLine1.38To4_WhiteAlone
+name: "Population: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38_BlackOrAfricanAmericanAlone
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38_HispanicOrLatino
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto1.38_WhiteAlone
+name: "Population: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2_BlackOrAfricanAmericanAlone
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2_HispanicOrLatino
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2_WhiteAlone
+name: "Population: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5_BlackOrAfricanAmericanAlone
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5_HispanicOrLatino
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto2.5_WhiteAlone
+name: "Population: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4_BlackOrAfricanAmericanAlone
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4_HispanicOrLatino
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_18To64Years_RatioToPovertyLineUpto4_WhiteAlone
+name: "Population: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4_BlackOrAfricanAmericanAlone
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4_HispanicOrLatino
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLine1.38To4_WhiteAlone
+name: "Population: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38_BlackOrAfricanAmericanAlone
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38_HispanicOrLatino
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto1.38_WhiteAlone
+name: "Population: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2_BlackOrAfricanAmericanAlone
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2_HispanicOrLatino
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2_WhiteAlone
+name: "Population: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5_BlackOrAfricanAmericanAlone
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5_HispanicOrLatino
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto2.5_WhiteAlone
+name: "Population: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4_BlackOrAfricanAmericanAlone
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4_HispanicOrLatino
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_21To64Years_RatioToPovertyLineUpto4_WhiteAlone
+name: "Population: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4_BlackOrAfricanAmericanAlone
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4_HispanicOrLatino
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLine1.38To4_WhiteAlone
+name: "Population: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38_BlackOrAfricanAmericanAlone
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38_HispanicOrLatino
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto1.38_WhiteAlone
+name: "Population: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2_BlackOrAfricanAmericanAlone
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2_HispanicOrLatino
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2_WhiteAlone
+name: "Population: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5_BlackOrAfricanAmericanAlone
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5_HispanicOrLatino
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto2.5_WhiteAlone
+name: "Population: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4_BlackOrAfricanAmericanAlone
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4_HispanicOrLatino
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_40To64Years_RatioToPovertyLineUpto4_WhiteAlone
+name: "Population: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4_BlackOrAfricanAmericanAlone
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4_HispanicOrLatino
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLine1.38To4_WhiteAlone
+name: "Population: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38_BlackOrAfricanAmericanAlone
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38_HispanicOrLatino
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto1.38_WhiteAlone
+name: "Population: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2_BlackOrAfricanAmericanAlone
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2_HispanicOrLatino
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2_WhiteAlone
+name: "Population: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5_BlackOrAfricanAmericanAlone
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5_HispanicOrLatino
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto2.5_WhiteAlone
+name: "Population: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4_BlackOrAfricanAmericanAlone
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4_HispanicOrLatino
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_50To64Years_RatioToPovertyLineUpto4_WhiteAlone
+name: "Population: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4_BlackOrAfricanAmericanAlone
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4_HispanicOrLatino
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLine1.38To4_WhiteAlone
+name: "Population: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38_BlackOrAfricanAmericanAlone
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38_HispanicOrLatino
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto1.38_WhiteAlone
+name: "Population: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2_BlackOrAfricanAmericanAlone
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2_HispanicOrLatino
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2_WhiteAlone
+name: "Population: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5_BlackOrAfricanAmericanAlone
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5_HispanicOrLatino
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto2.5_WhiteAlone
+name: "Population: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4_BlackOrAfricanAmericanAlone
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, Black or African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:BlackOrAfricanAmericanAlone
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4_HispanicOrLatino
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:HispanicOrLatino
 
 Node: dcid:Count_Person_Upto64Years_RatioToPovertyLineUpto4_WhiteAlone
+name: "Population: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 race: dcs:WhiteAlone
 
 Node: dcid:Count_Person_18To64Years_Female_NoHealthInsurance
@@ -41510,6 +41762,7 @@ gender: dcs:Male
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Count_Person_12To14Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 12 - 14 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41519,15 +41772,17 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_12To14Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 12 - 14 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years12To14
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_12To14Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 12 - 14 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41537,6 +41792,7 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_12To14Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 12 - 14 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41546,6 +41802,7 @@ gender: dcs:Male
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_15Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: Years 15, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41555,6 +41812,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_15Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: Years 15, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41564,6 +41822,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_15Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: Years 15, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41573,15 +41832,17 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_15Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: Years 15, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years15
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_16To17Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 16 - 17 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41591,6 +41852,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_16To17Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 16 - 17 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41600,6 +41862,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_16To17Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 16 - 17 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41609,6 +41872,7 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_16To17Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 16 - 17 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41618,6 +41882,7 @@ gender: dcs:Male
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_18To24Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 18 - 24 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41627,6 +41892,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_18To24Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 18 - 24 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41636,6 +41902,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_18To24Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 18 - 24 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41645,6 +41912,7 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_18To24Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 18 - 24 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41654,6 +41922,7 @@ gender: dcs:Male
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_25To34Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 25 - 34 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41663,15 +41932,17 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_25To34Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 25 - 34 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years25To34
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_25To34Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 25 - 34 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41681,15 +41952,17 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_25To34Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 25 - 34 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years25To34
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_35To44Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 35 - 44 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41699,15 +41972,17 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_35To44Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 35 - 44 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years35To44
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_35To44Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 35 - 44 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41717,6 +41992,7 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_35To44Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 35 - 44 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41726,6 +42002,7 @@ gender: dcs:Male
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_45To54Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 45 - 54 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41735,15 +42012,17 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_45To54Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 45 - 54 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years45To54
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_45To54Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 45 - 54 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41753,6 +42032,7 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_45To54Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 45 - 54 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41762,6 +42042,7 @@ gender: dcs:Male
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_55To64Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 55 - 64 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41771,6 +42052,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_55To64Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 55 - 64 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41780,6 +42062,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_55To64Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 55 - 64 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41789,6 +42072,7 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_55To64Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 55 - 64 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41798,6 +42082,7 @@ gender: dcs:Male
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_5Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: Years 5, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41807,6 +42092,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_5Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: Years 5, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41816,6 +42102,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_5Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: Years 5, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41825,15 +42112,17 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_5Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: Years 5, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years5
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_65To74Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 65 - 74 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41843,6 +42132,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_65To74Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 65 - 74 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41852,6 +42142,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_65To74Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 65 - 74 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41861,15 +42152,17 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_65To74Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 65 - 74 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years65To74
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_6To11Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 6 - 11 Years, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41879,6 +42172,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_6To11Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 6 - 11 Years, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41888,6 +42182,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_6To11Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 6 - 11 Years, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41897,15 +42192,17 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_6To11Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 6 - 11 Years, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years6To11
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_75OrMoreYears_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 75 Years or More, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41915,6 +42212,7 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_75OrMoreYears_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 75 Years or More, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41924,6 +42222,7 @@ gender: dcs:Female
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_75OrMoreYears_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 75 Years or More, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41933,6 +42232,7 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_75OrMoreYears_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 75 Years or More, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41942,6 +42242,7 @@ gender: dcs:Male
 povertyStatus: dcs:BelowPovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_Upto5Years_Female_AbovePovertyLevelInThePast12Months
+name: "Population: 5 Years or Less, Female, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41951,15 +42252,17 @@ gender: dcs:Female
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_Upto5Years_Female_BelowPovertyLevelInThePast12Months
+name: "Population: 5 Years or Less, Female, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto5
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_Upto5Years_Male_AbovePovertyLevelInThePast12Months
+name: "Population: 5 Years or Less, Male, Above US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -41969,13 +42272,14 @@ gender: dcs:Male
 povertyStatus: dcs:AbovePovertyLevelInThePast12Months
 
 Node: dcid:Count_Person_Upto5Years_Male_BelowPovertyLevelInThePast12Months
+name: "Population: 5 Years or Less, Male, Below US Census Poverty Level in The Past 12 Months"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:YearsUpto5
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 
 Node: dcid:Count_Person_10To14Years_Female_AmericanIndianOrAlaskaNativeAlone
 typeOf: dcs:StatisticalVariable
@@ -46123,272 +46427,299 @@ schoolEnrollment: dcs:EnrolledInSchool
 name: "Elementary School Students"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone
+name: "Female Population Above US Census Poverty Level in the Past Year and American Indian or Alaska Native Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:AmericanIndianOrAlaskaNativeAlone
 name: "Female Population Above Poverty Level in the Past Year and American Indian or Alaska Native Alone"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_AsianAlone
+name: "Asian Monoracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:AsianAlone
 name: "Asian Monoracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
+name: "African American Monoracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:BlackOrAfricanAmericanAlone
 name: "African American Monoracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_HispanicOrLatino
+name: "Hispanic Monoracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:HispanicOrLatino
 name: "Hispanic Monoracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
+name: "Native Hawaiian or Other Pacific Islander Monoracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 name: "Native Hawaiian or Other Pacific Islander Monoracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_SomeOtherRaceAlone
+name: "Unclassified Race Monoracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:SomeOtherRaceAlone
 name: "Unclassified Race Monoracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_TwoOrMoreRaces
+name: "Multiracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:TwoOrMoreRaces
 name: "Multiracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_WhiteAlone
+name: "White Monoracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:WhiteAlone
 name: "White Monoracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_AbovePovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
+name: "Non Hispanic White Monoracial Female Population Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:WhiteAloneNotHispanicOrLatino
 name: "Non Hispanic White Monoracial Female Population Above Poverty Level in the Past Year"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone
+name: "Female Population Below US Census Poverty Level in the Past Year and American Indian or Alaska Native Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:AmericanIndianOrAlaskaNativeAlone
 name: "Female Population Below Poverty Level in the Past Year and American Indian or Alaska Native Alone"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_AsianAlone
+name: "Female Population Below US Census Poverty Level in the Past Year and Asian Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:AsianAlone
 name: "Female Population Below Poverty Level in the Past Year and Asian Alone"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
+name: "Female Population Below US Census Poverty Level in the Last Year and African American Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:BlackOrAfricanAmericanAlone
 name: "Female Population Below Poverty Level in the Last Year and African American Alone"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_HispanicOrLatino
+name: "Female Population Below US Census Poverty Level in the Last Year and Hispanic"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:HispanicOrLatino
 name: "Female Population Below Poverty Level in the Last Year and Hispanic"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
+name: "Female Population Below US Census Poverty Level in the Last Year and Native Hawaiian or Other Pacific Islander Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 name: "Female Population Below Poverty Level in the Last Year and Native Hawaiian or Other Pacific Islander Alone"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone
+name: "Female Population Below US Census Poverty Level in the Past Year and Some Other Race Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:SomeOtherRaceAlone
 name: "Female Population Below Poverty Level in the Past Year and Some Other Race Alone"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces
+name: "Female Population Below US Census Poverty Level in the Past Year and Two or More Races"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:TwoOrMoreRaces
 name: "Female Population Below Poverty Level in the Past Year and Two or More Races"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_WhiteAlone
+name: "Female Population Below US Census Poverty Level in the Past Year and White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:WhiteAlone
 name: "Female Population Below Poverty Level in the Past Year and White Alone"
 
 Node: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
+name: "Female Population Below US Census Poverty Level in the Past Year and White Alone Not Hispanic or Latino"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:WhiteAloneNotHispanicOrLatino
 name: "Female Population Below Poverty Level in the Past Year and White Alone Not Hispanic or Latino"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone
+name: "Male Population Above US Census Poverty Level Over the Last Year and Who Are American Indian or Alaska Native Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:AmericanIndianOrAlaskaNativeAlone
 name: "Male Population Above Poverty Level Over the Last Year and Who Are American Indian or Alaska Native Alone"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_AsianAlone
+name: "Asian Male Population Above US Census Poverty Level Status Over the Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:AsianAlone
 name: "Asian Male Population Above Poverty Level Status Over the Last Year"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
+name: "African American Male Population Above US Census Poverty Level Status Over the Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:BlackOrAfricanAmericanAlone
 name: "African American Male Population Above Poverty Level Status Over the Last Year"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_HispanicOrLatino
+name: "Hispanic Male Population Above US Census Poverty Level Status Over the Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:HispanicOrLatino
 name: "Hispanic Male Population Above Poverty Level Status Over the Last Year"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
+name: "Male Population Above US Census Poverty Level Status Over the Last Year Who Are Native Hawaiian or Other Pacific Islanders Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 name: "Male Population Above Poverty Level Status Over the Last Year Who Are Native Hawaiian or Other Pacific Islanders Alone"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_SomeOtherRaceAlone
+name: "Male Population Above US Census Poverty Level Over the Last Year Who Are Some Other Race Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:SomeOtherRaceAlone
 name: "Male Population Above Poverty Level Over the Last Year Who Are Some Other Race Alone"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_TwoOrMoreRaces
+name: "Multiracial Male Population Above US Census Poverty Level Over the Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:TwoOrMoreRaces
 name: "Multiracial Male Population Above Poverty Level Over the Last Year"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_WhiteAlone
+name: "White Male Population Above US Census Poverty Level Status Over the Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:WhiteAlone
 name: "White Male Population Above Poverty Level Status Over the Last Year"
 
 Node: dcid:Count_Person_Male_AbovePovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
+name: "Non Hispanic White Male Population Above US Census Poverty Level Status Over the Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:AbovePovertyLevelInThePast12Months
+povertyStatus: dcs:USC_AbovePovertyLevelInThePast12Months
 race: dcs:WhiteAloneNotHispanicOrLatino
 name: "Non Hispanic White Male Population Above Poverty Level Status Over the Last Year"
 
@@ -46443,42 +46774,46 @@ race: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 name: "Male Population Below Poverty Status in the Last Year and Are Native Hawaiianor Other Pacific Islander Alone"
 
 Node: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone
+name: "Male Population Below US Census Poverty Level Status Over the Last Year and Some Other Race Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:SomeOtherRaceAlone
 name: "Male Population Below Poverty Level Status Over the Last Year and Some Other Race Alone"
 
 Node: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces
+name: "Male Population Below US Census Poverty Level Status Over the Last Year and Multiracial"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:TwoOrMoreRaces
 name: "Male Population Below Poverty Level Status Over the Last Year and Multiracial"
 
 Node: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months_WhiteAlone
+name: "Male Population Below US Census Poverty Level Status Over the Last Year and White Alone"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:WhiteAlone
 name: "Male Population Below Poverty Level Status Over the Last Year and White Alone"
 
 Node: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
+name: "Male Population Below US Census Poverty Level Status Over the Last Year and White Alone and Not Hispanic"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 race: dcs:WhiteAloneNotHispanicOrLatino
 name: "Male Population Below Poverty Level Status Over the Last Year and White Alone and Not Hispanic"
 
@@ -49256,543 +49591,603 @@ childSchoolEnrollment: dcs:EnrolledInPublicSchool
 employmentStatus: dcs:BLS_NotInLaborForce
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Percent: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Percent: 18 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Percent: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Percent: 18 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Percent: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Percent: 18 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Percent: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Percent: 18 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Percent: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Percent: 18 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Percent: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Percent: 21 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Percent: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Percent: 21 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Percent: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Percent: 21 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Percent: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Percent: 21 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Percent: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_21To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Percent: 21 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years21To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Percent: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Percent: 40 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Percent: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Percent: 40 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Percent: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Percent: 40 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Percent: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Percent: 40 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Percent: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_40To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Percent: 40 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years40To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Percent: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Percent: 50 - 64 Years, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Percent: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Percent: 50 - 64 Years, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Percent: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Percent: 50 - 64 Years, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Percent: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Percent: 50 - 64 Years, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Percent: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_50To64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Percent: 50 - 64 Years, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years50To64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Percent: 18 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Percent: 18 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Percent: 18 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Percent: 18 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Percent: 18 Years or Less, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Percent: 18 Years or Less, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Percent: 18 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Percent: 18 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Percent: 18 Years or Less, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto18Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Percent: 18 Years or Less, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto18
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLine1.38To4_NoHealthInsurance
+name: "Percent: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLine1.38To4_WithHealthInsurance
+name: "Percent: 64 Years or Less, 1.4 - 4 Ratio To US Census Poverty Line, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLine1.38To4
+familyIncome: dcs:USC_RatioToPovertyLine1.38To4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto1.38_NoHealthInsurance
+name: "Percent: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto1.38_WithHealthInsurance
+name: "Percent: 64 Years or Less, 1.4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto1.38
+familyIncome: dcs:USC_RatioToPovertyLineUpto1.38
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto2_NoHealthInsurance
+name: "Percent: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto2_WithHealthInsurance
+name: "Percent: 64 Years or Less, 2 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2
+familyIncome: dcs:USC_RatioToPovertyLineUpto2
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto2.5_NoHealthInsurance
+name: "Percent: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto2.5_WithHealthInsurance
+name: "Percent: 64 Years or Less, 2.5 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto2.5
+familyIncome: dcs:USC_RatioToPovertyLineUpto2.5
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto4_NoHealthInsurance
+name: "Percent: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:NoHealthInsurance
 
 Node: dcid:Percent_Person_Upto64Years_RatioToPovertyLineUpto4_WithHealthInsurance
+name: "Percent: 64 Years or Less, 4 Ratio To US Census Poverty Line or Less, With Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:YearsUpto64
-familyIncome: dcs:RatioToPovertyLineUpto4
+familyIncome: dcs:USC_RatioToPovertyLineUpto4
 healthInsurance: dcs:WithHealthInsurance
 
 Node: dcid:Percent_Person_18To64Years_Female_NoHealthInsurance

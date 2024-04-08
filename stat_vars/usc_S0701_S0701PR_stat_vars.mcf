@@ -770,11 +770,12 @@ povertyStatus: dcid:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine
+name: "Population: 1 Years or More, 1 Ratio To US Census Poverty Line or Less"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine
@@ -782,15 +783,16 @@ measuredProperty: dcid:count
 statType: dcid:marginOfError
 populationType: dcid:Person
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine
+name: "Population: 1 Years or More, 1 - 1.5 Ratio To US Census Poverty Line"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine
@@ -798,15 +800,16 @@ measuredProperty: dcid:count
 statType: dcid:marginOfError
 populationType: dcid:Person
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine
+name: "Population: 1 Years or More, 1.5 Ratio To US Census Poverty Line or More"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine
@@ -814,7 +817,7 @@ measuredProperty: dcid:count
 statType: dcid:marginOfError
 populationType: dcid:Person
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_ResidesInHousingUnit
@@ -1713,12 +1716,13 @@ povertyStatus: dcid:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseInSameCounty
+name: "Population: 1 Years or More, 1 Ratio To US Census Poverty Line or Less, Different House in Same County"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInSameCounty
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseInSameCounty
@@ -1727,16 +1731,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInSameCounty
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseInSameCounty
+name: "Population: 1 Years or More, 1 - 1.5 Ratio To US Census Poverty Line, Different House in Same County"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInSameCounty
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseInSameCounty
@@ -1745,16 +1750,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInSameCounty
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseInSameCounty
+name: "Population: 1 Years or More, 1.5 Ratio To US Census Poverty Line or More, Different House in Same County"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInSameCounty
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseInSameCounty
@@ -1763,7 +1769,7 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInSameCounty
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_ResidesInHousingUnit_DifferentHouseInSameCounty
@@ -2668,12 +2674,13 @@ povertyStatus: dcid:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseInDifferentCountySameState
+name: "Population: 1 Years or More, 1 Ratio To US Census Poverty Line or Less, Different House in Different County Same State"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountySameState
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseInDifferentCountySameState
@@ -2682,16 +2689,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountySameState
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseInDifferentCountySameState
+name: "Population: 1 Years or More, 1 - 1.5 Ratio To US Census Poverty Line, Different House in Different County Same State"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountySameState
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseInDifferentCountySameState
@@ -2700,16 +2708,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountySameState
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseInDifferentCountySameState
+name: "Population: 1 Years or More, 1.5 Ratio To US Census Poverty Line or More, Different House in Different County Same State"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountySameState
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseInDifferentCountySameState
@@ -2718,7 +2727,7 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountySameState
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_ResidesInHousingUnit_DifferentHouseInDifferentCountySameState
@@ -3623,12 +3632,13 @@ povertyStatus: dcid:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseInDifferentCountyDifferentState
+name: "Population: 1 Years or More, 1 Ratio To US Census Poverty Line or Less, Different House in Different County Different State"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountyDifferentState
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseInDifferentCountyDifferentState
@@ -3637,16 +3647,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountyDifferentState
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseInDifferentCountyDifferentState
+name: "Population: 1 Years or More, 1 - 1.5 Ratio To US Census Poverty Line, Different House in Different County Different State"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountyDifferentState
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseInDifferentCountyDifferentState
@@ -3655,16 +3666,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountyDifferentState
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseInDifferentCountyDifferentState
+name: "Population: 1 Years or More, 1.5 Ratio To US Census Poverty Line or More, Different House in Different County Different State"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountyDifferentState
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseInDifferentCountyDifferentState
@@ -3673,7 +3685,7 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseInDifferentCountyDifferentState
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_ResidesInHousingUnit_DifferentHouseInDifferentCountyDifferentState
@@ -4578,12 +4590,13 @@ povertyStatus: dcid:PovertyStatusDetermined
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseAbroad
+name: "Population: 1 Years or More, 1 Ratio To US Census Poverty Line or Less, Different House Abroad"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseAbroad
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1OrLessRatioToPovertyLine_DifferentHouseAbroad
@@ -4592,16 +4605,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseAbroad
 age: [1 - Years]
-povertyStatus: [- 1.0 RatioToPovertyLine]
+povertyStatus: [- 1.0 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseAbroad
+name: "Population: 1 Years or More, 1 - 1.5 Ratio To US Census Poverty Line, Different House Abroad"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseAbroad
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1To1.49RatioToPovertyLine_DifferentHouseAbroad
@@ -4610,16 +4624,17 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseAbroad
 age: [1 - Years]
-povertyStatus: [1.0 1.49 RatioToPovertyLine]
+povertyStatus: [1.0 1.49 USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseAbroad
+name: "Population: 1 Years or More, 1.5 Ratio To US Census Poverty Line or More, Different House Abroad"
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseAbroad
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_Person_1OrMoreYears_1.5OrMoreRatioToPovertyLine_DifferentHouseAbroad
@@ -4628,7 +4643,7 @@ statType: dcid:marginOfError
 populationType: dcid:Person
 residentStatus: dcid:DifferentHouseAbroad
 age: [1 - Years]
-povertyStatus: [1.5 - RatioToPovertyLine]
+povertyStatus: [1.5 - USC_RatioToPovertyLine]
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_1OrMoreYears_ResidesInHousingUnit_DifferentHouseAbroad

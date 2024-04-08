@@ -1128,9 +1128,15 @@ name: "ForeignBornNotBornAtSea"
 
 Node: USC_PovertyStatusEnum
 typeOf: schema:Class
-subClassOf: schema:Enumeration
+subClassOf: schema:PovertyStatusEnum
 dcid: "USC_PovertyStatusEnum"
 name: "USC_PovertyStatusEnum"
+
+Node: PovertyStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+dcid: "PovertyStatusEnum"
+name: "PovertyStatusEnum"
 
 Node: PovertyStatusDetermined
 typeOf: dcs:USC_PovertyStatusEnum
@@ -1142,6 +1148,11 @@ Node: AbovePovertyLevelInThePast12Months
 typeOf: dcs:USC_PovertyStatusEnum
 dcid: "AbovePovertyLevelInThePast12Months"
 name: "AbovePovertyLevelInThePast12Months"
+
+Node: USC_AbovePovertyLevelInThePast12Months
+typeOf: dcs:USC_PovertyStatusEnum
+dcid: "USC_AbovePovertyLevelInThePast12Months"
+name: "Income in the past 12 months above the US Census poverty level"
 
 Node: BelowPovertyLevelInThePast12Months
 typeOf: dcs:USC_PovertyStatusEnum
@@ -1163,6 +1174,7 @@ name: "AboveTwicePovertyLevel"
 Node: dcid:USC_IncomeInThePast12MonthsBelowPovertyLevel
 typeOf: dcs:USC_PovertyStatusEnum
 name: "USC_IncomeInThePast12MonthsBelowPovertyLevel"
+description: "Income in past 12 months below the US census poverty level."
 
 Node: RaceCodeEnum
 typeOf: schema:Class
