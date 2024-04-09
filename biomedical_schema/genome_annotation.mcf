@@ -160,7 +160,7 @@ domainIncludes: dcs:GeneticVariant
 description: "Standard Error for the average heterozygosity."
 
 Node: dcid:betaDistributionShapes
-name: "betaShapeDistribution"
+name: "betaDistributionShapes"
 typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:GeneticVariantGeneAssociation
@@ -342,28 +342,28 @@ domainIncludes: dcs:Gene
 description: "The full name of the gene."
 
 Node: dcid:gcContent
-name: “gcContent”
+name: "gcContent"
 typeOf: schema:Property
 domainIncludes: dcs:GenomeAnnotation
 rangeIncludes: schema:Quantity
-description: “Percent of nitrogenous bases (guanine or cytosine) in DNA submitted for the assembly, rounded to the nearest 0.5%.”
-descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+description: "Percent of nitrogenous bases (guanine or cytosine) in DNA submitted for the assembly, rounded to the nearest 0.5%."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
 Node: dcid:geneCount
-name: “geneCount”
+name: "geneCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAnnotation
 rangeIncludes: schema:Number
-description: “The total number of genes (both protein coding and non-coding genes) within a consensus region of DNA.”
+description: "The total number of genes (both protein coding and non-coding genes) within a consensus region of DNA."
 
 Node: dcid:geneticScaffoldingCount
-name: “geneticScaffoldingCount”
+name: "geneticScaffoldingCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAnnotation
 rangeIncludes: schema:Number
-description: “The number of overlapping DNA segments that represent a consensus region of DNA.”
+description: "The number of overlapping DNA segments that represent a consensus region of DNA."
 
-Node: dcid:genBankAccession
+Node: dcid:genBankAssemblyAccession
 name: "genBankAssemblyAccession"
 typeOf: schema:Property
 rangeIncludes: schema:Text
@@ -371,12 +371,12 @@ domainIncludes: dcs:BiologicalEntity
 description: "The accession version of the GenBank assembly or sequence element."
 
 Node: dcid:genBankNucleotideAccession
-name: “genBankNucleotideAccession”
+name: "genBankNucleotideAccession"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAssembly
 rangeIncludes: schema:Text
-description: “WGS-master: the GenBank Nucleotide accession and version for the master record of the Whole Genome Shotgun (WGS) project for the genome assembly. The master record can be retrieved from the NCBI Nucleotide resource: https://www.ncbi.nlm.nih.gov/nuccore. Genome assemblies that are complete genomes, and those that are clone-based, do not have WGS-master records. GenBank uses a different format for accessions of sequences that are a part of the WGS project.”
-descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+description: "WGS-master: the GenBank Nucleotide accession and version for the master record of the Whole Genome Shotgun (WGS) project for the genome assembly. The master record can be retrieved from the NCBI Nucleotide resource: https://www.ncbi.nlm.nih.gov/nuccore. Genome assemblies that are complete genomes, and those that are clone-based, do not have WGS-master records. GenBank uses a different format for accessions of sequences that are a part of the WGS project."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
 Node: dcid:geneID
 name: "geneID"
@@ -393,12 +393,12 @@ domainIncludes: dcs:Gene,dcs:GeneticVariant,dcs:GeneticAssociation,dcs:Protein
 description: "Original gene symbol."
 
 Node: dcid:geneticRepliconCount
-name: “geneticRepliconCount”
+name: "geneticRepliconCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAssembly
 rangeIncludes: schema:Number
-description: “The total number of chromosomes, organelle genomes, and plasmids in the primary assembly.”
-descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+description: "The total number of chromosomes, organelle genomes, and plasmids in the primary assembly."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
 Node: dcid:geneReviewsID
 name: "geneReviewsID"
@@ -409,12 +409,12 @@ description: "GeneReviews, an international point-of-care resource for busy clin
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/books/NBK1116/"
 
 Node: dcid:geneticScaffoldingCount
-name: “geneticScaffoldingCount”
+name: "geneticScaffoldingCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAssembly
 rangeIncludes: schema:Number
-description: “The number of scaffolds including placed, unlocalized, unplaced, alternate loci and patch scaffolds in the primary assembly.”
-descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+description: "The number of scaffolds including placed, unlocalized, unplaced, alternate loci and patch scaffolds in the primary assembly."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
 Node: dcid:geneticsHomeReferenceID
 name: "geneticsHomeReferenceID"
@@ -435,7 +435,7 @@ descriptionUrl: "https://www.ncbi.nlm.nih.gov/gtr/"
 abbreviation: "GTR ID"
 
 Node: dcid:geneticVariantAlignmentQuality
-name: "alignmentQuality"
+name: "geneticVariantAlignmentQuality"
 typeOf: schema:Property
 rangeIncludes: dcs:GeneticVariantAlignmentQualityEnum
 domainIncludes: dcs:GeneticVariant
@@ -449,21 +449,21 @@ domainIncludes: dcs:GeneticVariant
 description: "Genetic variant attributes extracted from dbSNP's SNP_bitfield table: clinically associated, MAF >5% in some populations, MAF >5% in all populations, has OMIM OMIA, microattribute tpa, submitted by locus-specific database, genotype conflict, rs cluster non-overlapping alleles, observed mismatch, pharmGKB, published, 3D structure, submitter link out, other variant with exact mapping, assembly specific,mutant, validated, included in high density kit, genotypes available, 1000 Genomes Phase 1, 1000 Genomes Phase 3, included in clinical diagnostic assay, withdrawn by some not all submitters, or common SNP."
 
 Node: dcid:geneticVariantClass
-name: "class"
+name: "geneticVariantClass"
 typeOf: schema:Property
 rangeIncludes: dcs:GeneticVariantClassEnum
 domainIncludes: dcs:GeneticVariant
 description: "Class of variant: single_nucleotide_variant, deletion, insertion, in-del, named, mixed, mnp, het, microsatellite, inversion, copy_number_loss, variation, duplication, or copy_number_gain."
 
 Node: dcid:geneticVariantExceptions
-name: "exceptions"
+name: "geneticVariantExceptions"
 typeOf: schema:Property
 rangeIncludes: dcs:GeneticVariantExceptionEnum
 domainIncludes: dcs:GeneticVariant
 description: "Unusual conditions noted by UCSC that may indicate a problem with the data."
 
 Node: dcid:geneticVariantFunctionalCategory
-name: "functionalCategory"
+name: "geneticVariantFunctionalCategory"
 typeOf: schema:Property
 rangeIncludes: dcs:GeneticVariantFunctionalCategoryEnum
 domainIncludes: dcs:GeneticVariant
@@ -491,39 +491,39 @@ domainIncludes: dcs:GeneticVariant
 description: "Difference in length between REF and ALT alleles (bp)."
 
 Node: dcid:geneticVariantLocType
-name: "locType"
+name: "geneticVariantLocType"
 typeOf: schema:Property
 rangeIncludes: dcs:GeneticVariantLocTypeEnum
 domainIncludes: dcs:GeneticVariant
 description: "Type of mapping inferred from size on reference; may not agree with class."
 
 Node: dcid:geneticVariantSubmitterCount
-name: "submitterCount"
+name: "geneticVariantSubmitterCount"
 typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:GeneticVariant
 description: "Number of distinct submitter handles for submitted SNPs for this ref SNP."
 
 Node: dcid:geneticVariantValidationStatus
-name: "validationStatus"
+name: "geneticVariantValidationStatus"
 typeOf: schema:Property
 rangeIncludes: dcs:GeneticVariantValidationStatusEnum
 domainIncludes: dcs:GeneticVariant
 description: "Validation status of the SNP."
 
 Node: dcid:genomeAnnotatedBy
-name: “genomeAnnotatedBy”
+name: "genomeAnnotatedBy"
 typeOf: schema:Property
 domainIncludes: dcs:GenomeAssembly
 rangeIncludes: dcs:Lab,schema:Person,schema:Text
-description: “The group that described the structure and identified functional elements of a genome sequence thereby by providing biological significance.”
+description: "The group that described the structure and identified functional elements of a genome sequence thereby by providing biological significance."
 
 Node: dcid:genomeAssemblyDerivedFrom
-name: “genomeAssemblyDerivedFrom”
+name: "genomeAssemblyDerivedFrom"
 typeOf: schema:Property
 domainIncludes: dcs:GenomeAssembly
 rangeIncludes: schema:Boolean
-description: “Denotes the relation of the genome assembly with the type material from which it was derived.”
+description: "Denotes the relation of the genome assembly with the type material from which it was derived."
 
 Node: dcid:genomeAssemblyType
 name: "genomeAssemblyType"
@@ -570,19 +570,19 @@ description: "The Genome Refrence Consortium name for the genome assembly."
 abbreviation: "GRC assembly name"
 
 Node: dcid:genomeSize
-name: “genomeSize”
+name: "genomeSize"
 typeOf: schema:Property
 domainIncludes: dcs:GenomeAssembly
 rangeIncludes: schema:Quantity
-description: “Total length of all top-level sequences in the primary assembly.”
+description: "Total length of all top-level sequences in the primary assembly."
 
 Node: dcid:genomeSizeUngapped
-name: “genomeSizeUngapped”
+name: "genomeSizeUngapped"
 typeOf: schema:Property
 domainIncludes: dcs:GenomeAssembly
 rangeIncludes: schema:Quantity
-description: “Total length of all top-level sequences in the primary assembly ignoring gaps. Any stretch of 10 or more Ns in asequence is treated like a gap.”
-descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
+description: "Total length of all top-level sequences in the primary assembly ignoring gaps. Any stretch of 10 or more Ns in asequence is treated like a gap."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
 Node: dcid:genomicCoordinates
 name: "genomicCoordinates"
@@ -900,11 +900,11 @@ domainIncludes: dcs:Gene
 description: "The status of the name from the nomenclature committee: official, interim, or NCBI-supplied."
 
 Node: dcid:nonCodingGeneCount
-name: “nonCodingGeneCount”
+name: "nonCodingGeneCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAnnotation
 rangeIncludes: schema:Number
-description: “The number of non-coding genes within a consensus region of DNA.”
+description: "The number of non-coding genes within a consensus region of DNA."
 
 Node: dcid:nonCodingRNAType
 name: "nonCodingRNAType"
@@ -981,11 +981,11 @@ description: "PharmGKB is a comprehensive resource that curates knowledge about 
 descriptionUrl: "https://www.pharmgkb.org/"
 
 Node: dcid:proteinCodingGeneCount
-name: “proteinCodingGeneCount”
+name: "proteinCodingGeneCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAnnotation
 rangeIncludes: schema:Number
-description: “The number of protein coding genes within a consensus region of DNA.”
+description: "The number of protein coding genes within a consensus region of DNA."
 
 Node: dcid:pValueBeta
 name: "pValueBeta"
@@ -1037,7 +1037,7 @@ domainIncludes: dcs:GeneticVariant
 description: "Reference genomic sequence from dbSNP."
 
 Node: dcid:referenceAlleleUCSC
-name: "refUCSC"
+name: "referenceAlleleUCSC"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:GeneticVariant
@@ -1054,7 +1054,7 @@ abbreviation: "rsID", "refSNP cluster ID"
 synonym: "reference SNP ID number"
 sameAs: dcs:rsID
 
-Node: dcid:refSeqAccession
+Node: dcid:refSeqAssemblyAccession
 name: "refSeqAssemblyAccession"
 typeOf: schema:Property
 rangeIncludes: schema:Text

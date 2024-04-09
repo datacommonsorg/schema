@@ -8,7 +8,7 @@ description: "Commonly used organism groups."
 Node: dcid:BiologicalTaxonomyGroupArchaea
 name: "archaea"
 typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Archaea is a domain of single-celled organisms. These microorganisms lack cell nuclei and are therefore prokaryotes.:
+description: "Archaea is a domain of single-celled organisms. These microorganisms lack cell nuclei and are therefore prokaryotes."
 descriptionUrl: "https://en.wikipedia.org/wiki/Archaea"
 
 Node: dcid:BiologicalTaxonomyGroupBacteria
@@ -32,7 +32,7 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Invertebrate"
 Node: dcid:BiologicalTaxonomyGroupMetagenomes
 name: "metagenomes"
 typeOf: dcs:BiologicalTaxonomyGroupEnum
-Description: "Metagenome is a sequence that comes from genetic material recovered directly from environmental or clinical samples."
+description: "Metagenome is a sequence that comes from genetic material recovered directly from environmental or clinical samples."
 
 Node: dcid:BiologicalTaxonomyGroupOther
 name: "other"
@@ -107,3 +107,23 @@ typeOf: dcs:TaxonTopLevelCategoryEnum
 Node: dcid:TaxonTopLevelCategoryUnclassified
 name: "unclassified"
 typeOf: dcs:TaxonTopLevelCategoryEnum
+
+Node: dcid:BioChemEntity
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BioChemEntity"
+
+Node: dcid:BiologicalHostEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BiologicalHostEnum"
+
+Node: dcid:BiologicalTaxonomicDivisionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BiologicalTaxonomicDivisionEnum"
+
+Node: dcid:BiologicalTaxonomicRankEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "BiologicalTaxonomicRankEnum"

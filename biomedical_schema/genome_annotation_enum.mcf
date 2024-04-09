@@ -685,7 +685,7 @@ typeOf: dcs:GeneticVariantMolTypeEnum
 
 # NomenclatureStatusEnum
 Node: dcid:NomenclatureStatusEnum
-name: "NomenclatureStatuEnum"
+name: "NomenclatureStatusEnum"
 typeOf: schema:Class
 subClassOf: schema:Enumeration
 description: "The status of the name from the nomenclature committee: official, interim, or NCBI-supplied."
@@ -741,10 +741,10 @@ typeOf: dcs:GeneticVariantValidationStatusEnum
 
 # GenomeAssemblyDerivedFromEnum
 Node: dcid:GenomeAssemblyDerivedFromEnum
-name: “GenomeAssemblyDerivedFromEnum”
+name: "GenomeAssemblyDerivedFromEnum"
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-description: “Denotes the relation of the genome assembly with the type material from which it was derived.”
+description: "Denotes the relation of the genome assembly with the type material from which it was derived."
 
 Node: dcid:GenomeAssemblyDerivedFromTypeMaterial
 name: “assembly from type material”
@@ -1151,7 +1151,7 @@ typeOf: dcs:TypeOfGeneEnum
 specializationOf: dcs:TypeOfGenencRNA
 abbreviation: "miRNA"
 description: "MicroRNA (miRNA) are small, single-stranded, non-coding RNA molecules containing 21 to 23 nucleotides. Found in plants, animals and some viruses, miRNAs are involved in RNA silencing and post-transcriptional regulation of gene expression. miRNAs base-pair to complementary sequences in mRNA molecules, then silence said mRNA molecules by one or more of the following processes: cleavage of the mRNA strand into two pieces, destabilization of the mRNA by shortening its poly(A) tail, or reducing translation of the mRNA into proteins. In cells of humans and other animals, miRNAs primarily act by destabilizing the mRNA."
-descriptionUrl: "https://en.wikipedia.org/wiki/MicroRNA
+descriptionUrl: "https://en.wikipedia.org/wiki/MicroRNA"
 
 Node: dcid:TypeOfGenemiscRNA
 name: "miscellaneous RNA"
@@ -1172,7 +1172,7 @@ typeOf: dcs:TypeOfGeneEnum
 
 Node: dcid:TypeOfGenepiRNA
 name: "Piwi-interacting RNA"
-typeOF: dcs:TypeOfGeneEnum
+typeOf: dcs:TypeOfGeneEnum
 specializationOf: dcs:TypeOfGenesRNA
 abbreviation: "piRNA"
 description: "Piwi-interacting RNA (piRNA) is the largest class of small non-coding RNA molecules expressed in animal cells. piRNAs form RNA-protein complexes through interactions with piwi-subfamily Argonaute proteins. These piRNA complexes are mostly involved in the epigenetic and post-transcriptional silencing of transposable elements and other spurious or repeat-derived transcripts, but can also be involved in the regulation of other genetic elements in germ line cells."
@@ -1201,11 +1201,11 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Ribosomal_RNA"
 
 Node: dcid:TypeOfGenescaRNA
 name: "Small Cajal body-specific RNA"
-typeOf: dcs:TypeOfGene
+typeOf: dcs:TypeOfGeneEnum
 specializationOf: dcs:TypeOfGenesnoRNA
 abbreviation: "scaRNA"
 description: "Small Cajal body-specific RNAs (scaRNAs) are a class of small nucleolar RNAs (snoRNAs) that specifically localise to the Cajal body, a nuclear organelle (cellular sub-organelle) involved in the biogenesis of small nuclear ribonucleoproteins (snRNPs or snurps). ScaRNAs guide the modification (methylation and pseudouridylation) of RNA polymerase II transcribed spliceosomal RNAs U1, U2, U4, U5 and U12."
-descriptionUrl: "https://en.wikipedia.org/wiki/Small_Cajal_body-specific_RNA'
+descriptionUrl: "https://en.wikipedia.org/wiki/Small_Cajal_body-specific_RNA"
 
 Node: dcid:TypeOfGenescRNA
 name: "small conditional RNA"
@@ -1229,7 +1229,7 @@ name: "small RNA"
 typeOf: dcs:TypeOfGeneEnum
 specializationOf: dcs:TypeOfGenencRNA
 abbreviation: "sRNA"
-description: "Small RNA (sRNA) are polymeric RNA molecules that are less than 200 nucleotides in length, and are usually non-coding. RNA silencing is often a function of these molecules, with the most common and well-studied example being RNA interference (RNAi), in which endogenously expressed microRNA (miRNA) or exogenously derived small interfering RNA (siRNA) induces the degradation of complementary messenger RNA. Other classes of small RNA have been identified, including piwi-interacting RNA (piRNA) and its subspecies repeat associated small interfering RNA (rasiRNA). Small RNA "is unable to induce RNAi alone, and to accomplish the task it must form the core of the RNA–protein complex termed the RNA-induced silencing complex (RISC), specifically with Argonaute protein."
+description: "Small RNA (sRNA) are polymeric RNA molecules that are less than 200 nucleotides in length, and are usually non-coding. RNA silencing is often a function of these molecules, with the most common and well-studied example being RNA interference (RNAi), in which endogenously expressed microRNA (miRNA) or exogenously derived small interfering RNA (siRNA) induces the degradation of complementary messenger RNA. Other classes of small RNA have been identified, including piwi-interacting RNA (piRNA) and its subspecies repeat associated small interfering RNA (rasiRNA). Small RNA is unable to induce RNAi alone, and to accomplish the task it must form the core of the RNA–protein complex termed the RNA-induced silencing complex (RISC), specifically with Argonaute protein."
 descriptionUrl: "https://en.wikipedia.org/wiki/Small_RNA"
 
 Node: dcid:TypeOfGenesnRNA
@@ -1475,3 +1475,13 @@ Node: dcid:VariationTypeINDEL
 name: "insertion-deletion"
 typeOf: dcs:VariationTypeEnum
 abbreviation: "INDEL"
+
+Node: dcid:GeneticAssoication
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GeneticAssoication"
+
+Node: dcid:GeneticVariantCopyNumberVariation
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GeneticVariantCopyNumberVariation"
