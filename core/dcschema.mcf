@@ -3880,3 +3880,34 @@ Node: dcid:isPartOf
 typeOf: schema:Property
 domainIncludes: dcs:SourceStatVarInfo, dcs:Provenance, dcs:Dataset
 rangeIncludes: dcs:Provenance, dcs:Dataset, dcs:Source
+
+#oecd_addition
+Node: dcid:resourceType
+typeOf: dcs:Property
+name: "resourceType"
+domainIncludes: dcid:Fuel, dcid:Metal
+rangeIncludes: dcid:ResourceTypeEnum
+isProvisional: dcs:True
+
+#Enum
+Node: dcid:ResourceTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ResourceTypeEnum"
+isProvisional: dcs:True
+
+#enumvalues
+Node: dcid:CommerciallyRecoverableResources
+typeOf: dcid:ResourceTypeEnum
+name: "Commercially Recoverable Resources"
+isProvisional: dcs:True
+
+Node: dcid:PotentiallyCommerciallyRecoverableResources
+typeOf: dcid:ResourceTypeEnum
+name: "Potentially Commercially Recoverable Resources"
+isProvisional: dcs:True
+
+Node: dcid:NonCommercialAndOtherDeposits
+typeOf: dcid:ResourceTypeEnum
+name: "Non Commercial And Other Deposits"
+isProvisional: dcs:True
