@@ -396,12 +396,13 @@ householdType: dcs:NonfamilyHousehold
 constraintProperties: dcs:benefitsStatus, dcs:memberStatus, dcs:householdType
 
 Node: dcid:Count_Household_WithFoodStampsInThePast12Months_BelowPovertyLevelInThePast12Months
+name: "Households With Food Stamps in the Past Year and Below US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Household
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 benefitsStatus: dcs:WithFoodStampsInThePast12Months
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 constraintProperties: dcs:benefitsStatus, dcs:povertyStatus
 name: "Households With Food Stamps in the Past Year and Below Poverty Level in the Past Year"
 
@@ -411,10 +412,11 @@ populationType: dcs:Household
 measuredProperty: dcs:count
 statType: dcs:marginOfError
 benefitsStatus: dcs:WithFoodStampsInThePast12Months
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 constraintProperties: dcs:benefitsStatus, dcs:povertyStatus
 
 Node: dcid:Count_Household_WithFoodStampsInThePast12Months_AbovePovertyLevelInThePast12Months
+name: "Households With Food Stamps in the Past Year and Above US Census Poverty Level in the Past Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Household
 measuredProperty: dcs:count
@@ -1153,12 +1155,13 @@ householdType: dcs:NonfamilyHousehold
 constraintProperties: dcs:benefitsStatus, dcs:memberStatus, dcs:householdType
 
 Node: dcid:Count_Household_WithoutFoodStampsInThePast12Months_BelowPovertyLevelInThePast12Months
+name: "Households Not Receiving Food Stamps in Last Year, Income Below US Census Poverty Level"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Household
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 benefitsStatus: dcs:WithoutFoodStampsInThePast12Months
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 constraintProperties: dcs:benefitsStatus, dcs:povertyStatus
 name: "Households Not Receiving Food Stamps in Last Year, Income Below Poverty Level"
 
@@ -1168,10 +1171,11 @@ populationType: dcs:Household
 measuredProperty: dcs:count
 statType: dcs:marginOfError
 benefitsStatus: dcs:WithoutFoodStampsInThePast12Months
-povertyStatus: dcs:BelowPovertyLevelInThePast12Months
+povertyStatus: dcs:USC_IncomeInThePast12MonthsBelowPovertyLevel
 constraintProperties: dcs:benefitsStatus, dcs:povertyStatus
 
 Node: dcid:Count_Household_WithoutFoodStampsInThePast12Months_AbovePovertyLevelInThePast12Months
+name: "Above US Census Poverty Level Households Not Receiving Food Stamps in Last Year"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Household
 measuredProperty: dcs:count
