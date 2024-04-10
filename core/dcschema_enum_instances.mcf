@@ -2069,6 +2069,21 @@ Node: dcid:SymptomsOfAcuteRespiratoryInfection
 typeOf: dcs:MedicalConditionIncidentTypeEnum
 name: "Symptoms Of Acute Respiratory Infection"
 
+Node: dcid:TetanusNeonatorum
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Tetanus Neonatorum"
+description: "Neonatal tetanus (trismus nascentium) is a form of generalised tetanus that occurs in newborns. Infants who have not acquired passive immunity from an immunized mother are at risk."
+
+Node: dcid:DengueHemorrhagicFever
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Dengue Hemorrhagic Fever"
+description: "Dengue fever is a mosquito-borne tropical disease caused by dengue virus"
+
+Node: dcid:DiseasedPerson
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Diseased Person"
+description: "A person suffering from an illness."
+
 Node: dcid:ImportedCase
 typeOf: dcs:MedicalStatusEnum
 name: "Imported Case"
@@ -2139,6 +2154,10 @@ typeOf: dcs:MedicalStatusEnum
 Node: dcid:StillBirth
 typeOf: dcs:MedicalStatusEnum
 name: "Still Birth"
+
+Node: dcid:NewlyConfirmedCase
+typeOf: dcid:MedicalStatusEnum
+name: "Newly Confirmed Case"
 
 Node: dcid:Positive
 typeOf: dcs:MedicalTestResultEnum
@@ -2627,6 +2646,103 @@ typeOf: dcid:HealthEstablishmentTypeEnum
 name: "Medical Service Unit"
 description: "A medical unit is a military or civilian establishment that provides medical services like Physician care, Inpatient care, Hospital surgical services, Emergency services, Ambulance services, Dental care services, Vision care services."
 
+Node: dcid:GeneralHospitals
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "General Hospitals"
+
+Node: dcid:SpecialHospitals
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Special Hospitals"
+
+Node: dcid:PublicHealthCenters
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Public Health Centers"
+
+Node: dcid:GovernmentHospital
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Government Hospital"
+rangeIncludes: dcid:GenderType
+
+Node: dcid:PrivateHospital
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Private Hospital"
+
+Node: dcid:Polyclinic
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Polyclinic"
+
+Node: dcid:DoctorsPractice
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Doctors Practice"
+
+Node: dcid:CommunityHealthCenter
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Community Health Center"
+
+Node: dcid:HealthWorkerPractice
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Health Worker Practice"
+
+Node: dcid:BatraPractice
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Batra Practice"
+
+Node: dcid:BirthAttendant
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Birth Attendant"
+
+Node: dcid:BPS_OtherHealthEstablishments
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "BPS_ Other Health Establishments"
+
+Node: dcid:PracticingDoctor
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Practicing Doctor"
+
+Node: dcid:Midwife
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Midwife"
+
+Node: dcid:JointClinic
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Joint Clinic"
+
+Node: dcid:DoctorPractice
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Doctor Practice"
+
+Node: dcid:VillageMaternityClinic
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Village Maternity"
+
+Node: dcid:IntegratedService
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Integrated Service"
+
+Node: dcid:MedicalCenter
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Medical Center"
+
+Node: dcid:IntegratedService
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Integrated Service"
+
+Node: dcid:MedicalCenter
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Medical Center"
+
+Node: dcid:PracticeTraditional
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Practice Traditional"
+
+Node: dcid:AlternativeMedicine
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Alternative Medicine"
+
+Node: dcid:CommunityHealthResource
+typeOf: dcid:HealthEstablishmentTypeEnum
+name: "Community Health Resource"
+
 Node: dcid:MeaslesVaccine
 name: "Measles Vaccine"
 typeOf: dcs:VaccineTypeEnum
@@ -3105,25 +3221,13 @@ name: "Open Data Commons Open Database License"
 description: "Data available under the Open Data Commons Open Database License."
 url: "https://opendatacommons.org/licenses/odbl/"
 
-Node: dcid:Count
-typeOf: dcs:StatisticalAggregationMethodEnum
-name: "Count"
-description: "Computes the count of input entities in a Data Commons StatisticalAggregation."
+Node: dcid:WithUnmetNeed
+typeOf: dcid:HealthServiceTypeEnum
+name: "With Unmet Need"
 
-Node: dcid:Maximum
-typeOf: dcs:StatisticalAggregationMethodEnum
-name: "Maximum"
-description: "Computes the maximum of input values in a Data Commons StatisticalAggregation."
-
-Node: dcid:Minimum
-typeOf: dcs:StatisticalAggregationMethodEnum
-name: "Minimum"
-description: "Computes the minimum of input values in a Data Commons StatisticalAggregation."
-
-Node: dcid:Sum
-typeOf: dcs:StatisticalAggregationMethodEnum
-name: "Sum"
-description: "Computes the sum of input values in a Data Commons StatisticalAggregation."
+Node: dcid:ContraceptionMethod
+typeOf: dcid:BirthControlMethodEnum
+name: "Contraception Method"
 
 Node: dcid:DataCommonsImputed
 typeOf: dcs:ImputationTypeEnum

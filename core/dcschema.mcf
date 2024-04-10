@@ -845,7 +845,7 @@ name: "count"
 
 Node: dcid:cumulativeCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household
+domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household, schema:MedicalConditionIncident
 typeOf: schema:Property
 name: "cumulativeCount"
 description: "A running count of all instances that have satisfied the constraints of the Statistical Population."
@@ -4078,83 +4078,23 @@ typeOf: schema:Property
 domainIncludes: schema:Place
 description: "Unique codes for categorizing and enumerating the census geographic units of Canada"
 
-Node: dcid:StatisticalAggregation
-typeOf: schema:Class
-subClassOf: schema:Intangible
-name: "StatisticalAggregation"
-description: "Custom aggregation of statistical data in Data Commons, computed by Data Commons. For example, aggregating population with health insurance stats available at county-level to state-level."
+Node: dcid:birthControlMethod
+typeOf: dcid:Property
+name: "birthControlMethod"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:BirthControlMethodEnum
 
-Node: dcid:AggregationSlice
-typeOf: schema:Class
-subClassOf: schema:Intangible
-name: "AggregationSlice"
-description: "Filter to a Data Commons StatisticalAggregation consisting of a property and one or more values, which will further slice the output data. For example, the count of earthquakes might be sliced by different magnitude ranges."
+Node: dcid:healthServiceType
+typeOf: dcid:Property
+name: "healthServiceType"
+domainIncludes: dcid:HealthEstablishment
+rangeIncludes: dcid:HealthServiceTypeEnum
 
 Node: dcid:StatisticalCalculation
 typeOf: schema:Class
 subClassOf: schema:Intangible
 name: "StatisticalCalculation"
 description: "Custom calculation in Data Commons, computed by Data Commons. For example, computing the population without health insurance using an exhaustive age breakdown of such population."
-
-Node: dcid:aggregateProperty
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: schema:Property
-description: "Property being aggregated in a Data Commons StatisticalAggregation. This could be a StatisticalVariable when aggregating across places, or a constraint property when aggregating entities."
-
-Node: dcid:aggregationMethod
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: schema:StatisticalAggregationMethodEnum
-description: "Method by which data is aggregated (minimum, maximum, sum, etc)."
-
-Node: dcid:aggregationSlice
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: schema:AggregationSlice
-description: "Filter to a Data Commons StatisticalAggregation, which will further slice the output data. Output StatisticalVariables will be generated for each slice in the filter."
-
-Node: dcid:aggregationSliceProperty
-typeOf: schema:Property
-domainIncludes: dcs:AggregationSlice
-rangeIncludes: schema:Property
-description: "Property to filter a Data Commons StatisticalAggregation by. Entities will be grouped by this property when computing the aggregation."
-
-Node: dcid:aggregationSliceValue
-typeOf: schema:Property
-domainIncludes: dcs:AggregationSlice
-rangeIncludes: dcs:Enumeration, dcs:QuantityRange
-description: "Value to filter a Data Commons StatisticalAggregation by. Entities will be grouped by this value when computing the aggregation."
-
-Node: dcid:inputEntity
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: schema:Class
-description: "Type of input entity to a Data Commons StatisticalAggregation (place type, event type, etc)."
-
-Node: dcid:inputTimeProperty
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: schema:Property
-description: "Input property in a Data Commons StatisticalAggregation that will be used to indicate the time. Required for aggregating entities. Output StatVarObservations will use this property to determine their date."
-
-Node: dcid:linkProperty
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: schema:Property
-description: "Property linking input to output entities in a Data Commons StatisticalAggregation, such as containment, membership, or hierarchy."
-
-Node: dcid:outputEntity
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: schema:Class
-description: "Type of output entity to a Data Commons StatisticalAggregation. The output StatVarObservations will be attached to entities associated with this type."
-
-Node: dcid:outputTimeGranularity
-typeOf: schema:Property
-domainIncludes: dcs:StatisticalAggregation
-rangeIncludes: dcs:Text
-description: "Date pattern (ISO 8601) to match for aggregating by time. Inputs will by grouped by this date pattern, and the output StatVarObservations will have dates of this pattern."
 
 Node: dcid:inputPropertyExpression
 typeOf: schema:Property

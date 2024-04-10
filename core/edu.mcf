@@ -469,8 +469,8 @@ description: "Describes the lowest grade level offered by School, grade as defin
 Node: dcid:schoolGradeLevel
 typeOf: schema:Property
 name: "schoolGradeLevel"
-rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool,dcs:SchoolLevelEnum
-domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher
+rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool, dcs:SchoolLevelEnum
+domainIncludes: dcs:Student, dcs:School, dcs:Teacher, dcs:ClassRoom
 description: "Describes the grade level of the student in school. For example, SchoolGrade2 defines the student to be in second grade."
 
 # OBSERVATION, Measured Property, for Students, Faculty
@@ -750,7 +750,7 @@ Node: dcid:StateOfTexasAssessmentsOfAcademicReadiness
 typeOf: dcs:AcademicAssessmentTypeEnum
 name: "State Of Texas Assessments Of Academic Readiness"
 description: "The State of Texas Assessments of Academic Readiness (STAAR) program, implemented in spring 2012, includes annual assessments for mathematics at grades 3–8, reading language arts (RLA) at grades 3-8, science at grades 5 and 8, social studies at grade 8 end-of-course (EOC) assessments for Algebra I, English I, English II, Biology, and U.S History."
-descriptionUrl: "https://tea.texas.gov/student-assessment/testing/staar/staar-resources"
+descriptionUrl: "https://tea.texas.gov/student-assessment/testing/staar"
 
 Node: dcid:CaliforniaAssessmentOfStudentPerformanceAndProgress
 typeOf: dcs:AcademicAssessmentTypeEnum
@@ -788,7 +788,7 @@ Node: dcid:schoolManagement
 typeOf: schema:Property
 name: "schoolManagement"
 rangeIncludes: dcid:SchoolManagementEnum
-domainIncludes: schema:School
+domainIncludes: schema:School, schema:Teacher, schema:Student, schema:CollegeOrUniversity
 description: "This identifies the type of institution that manages and runs a school."
 
 Node: dcid:hasFunctionalToilet
@@ -984,6 +984,32 @@ name: Federal College
 Node: dcid:TertiarySchool
 name: "TertiarySchool"
 typeOf: dcid:SchoolLevelEnum
+
+Node: dcid:MadrasahAliyah
+typeOf: dcid:SchoolLevelEnum
+name: "Madrasah Aliyah"
+description: "Madrasah Aliyah (MA) or Islamic senior high school as a part of the national education system plays a big role in advancing the education in Indonesia."
+
+Node: dcid:MadrasahIbtidaiyah
+typeOf: dcid:SchoolLevelEnum
+name: "Madrasah Ibtidaiyah"
+description: "Madrasah Ibtidaiyah. islamic education level in Indonesia equivalent to elementary school."
+
+Node: dcid:RaudatulAthfal
+typeOf: dcid:SchoolLevelEnum
+name: "Raudatul Athfal"
+description: "Raudhatul Athfal (abbreviated as RA) is a level of early childhood education (i.e. ages 4-6 years) in the form of formal education, under the management of the Ministry of Religion."
+
+
+Node: dcid:MadrasahTsanawiyah
+typeOf: dcid:SchoolLevelEnum
+name: "Madrasah Tsanawiyah"
+description: "Madrasah Tsanawiyah (MTs) is the Islamic schooling equivalent of SMP"
+
+Node: dcid:VocationalSchool
+typeOf: dcid:SchoolLevelEnum
+name: "Vocational School"
+description: "Vocational Schools in Indonesia, also known as Sekolah Menengah Kejuruan (SMK), are secondary schools that provide students with job-specific skills and training."
 
 ## Public School Type Enum
 
@@ -1278,7 +1304,7 @@ Node: dcid:householdType
 name: "householdType"
 typeOf: schema:Property
 domainIncludes: dcs:Household, dcs:Person
-rangeIncludes: dcs:HouseholdTypeEnum, dcs:FamilyTypeEnum
+rangeIncludes: dcs:HouseholdTypeEnum
 
 Node: dcid:HouseholdTypeEnum
 name: "HouseholdTypeEnum"
@@ -1479,14 +1505,6 @@ Node: dcid:SecondaryEducation
 name: "SecondaryEducation"
 typeOf: dcid:SchoolGradeLevelEnum
 
-Node: dcid:LowerSecondaryEducation
-typeOf: dcid:SchoolLevelEnum
-name: "Lower Secondary Education"
-
-Node: dcid:UpperSecondaryEducation
-typeOf: dcid:SchoolLevelEnum
-name: "Upper Secondary Education"
-
 ## UDISE School Enum
 
 Node: dcid:UDISE_PrimarySchool_Grade1To5
@@ -1633,6 +1651,15 @@ name: "NCES Department Of Defense"
 Node: dcid:NCES_Catholic
 typeOf: dcs:SchoolManagementEnum
 name: "NCES Catholic"
+
+Node: dcid:UnderMinistryOfReligion
+typeOf: dcid:SchoolManagementEnum
+name: "Under Ministry Of Religion"
+
+Node: dcid:UnderMinistryOfResearchTechnologyAndHigherEducation
+typeOf: dcid:SchoolManagementEnum
+name: "Under Ministry Of Research Technology And Higher Education"
+
 
 Node: dcid:dropoutRate
 name: "dropoutRate"
