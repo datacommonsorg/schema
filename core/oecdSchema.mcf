@@ -1,0 +1,194 @@
+###Property
+Node: dcid:Waste
+typeOf: schema:Class
+name: "Waste"
+subClassOf: dcs:Thing
+
+Node: dcid:wasteSourceType
+typeOf: dcs:Property
+name: "wasteSourceType"
+domainIncludes: dcid:Waste
+rangeIncludes: dcid:WasteSourceTypeEnum
+
+Node: dcid:wasteType
+typeOf: dcs:Property
+name: "wasteType"
+domainIncludes: dcid:Waste
+rangeIncludes: dcid:WasteTypeEnum
+
+###Enums
+Node: dcid:WasteSourceTypeEnum
+typeOf: dcid:Class
+subClassOf:Enumeration
+name: "WasteSourceTypeEnum"
+description:"The wastes are classified into primary,secondary and tertiary depending upon the level of contribution they provided in the generation of waste"
+
+Node: dcid:WasteTypeEnum
+typeOf: dcid:Class
+subClassOf:Enumeration
+name: "WasteTypeEnum"
+description:"The type of waste generated"
+
+Node: dcid:ISICv4Enum
+typeOf: dcid:Class
+subClassOf:Enumeration
+name: "ISICv4Enum"
+description: "International Standard Industrial Classification of All Economic Activities(ISIC), Rev.4 has provided has codes for different industries "
+
+###Enum Values
+Node: dcid:PrimaryWasteSource
+typeOf: dcid:WasteSourceTypeEnum
+name: "Primary Waste Source"
+description:"Trash or garbage from households, schools, offices, marketplaces, restaurants and other public places"
+descriptionUrl:"https://byjus.com/biology/types-of-waste/."
+
+Node: dcid:SecondaryWasteSource
+typeOf: dcid:WasteSourceTypeEnum
+name: "Secondary Waste Source"
+description:"Waste generated from different sources and of different nature, i.e. waste generated in a process that is known as a waste treatment operation; it includes residual materials originating from recovery and disposal operations, such as incineration and composting residues"
+descriptionUrl:"https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Secondary_waste"
+
+Node: dcid:ISICv4/RES
+typeOf: dcid:WasteTypeEnum
+name: "Sorting Residue"
+description:"In sorting plants for light packaging (LVP), the packaging items pass through various packaging items pass through various stations, at each of which a specific fraction of the material is sorted out of the material flow"
+descriptionUrl:"https://vecoplan.com/en/material/alternative-fuel/sorting-residues."
+
+Node: dcid:ISICv4/05-09
+typeOf: dcid:ISICv4Enum
+name: "Mining And Quarrying"
+
+Node: dcid:ISICv4/10-33
+typeOf: dcid:ISICv4Enum
+name: "Total Manufacturing Industries"
+
+Node: dcid:ISICv4/10-12
+typeOf: dcid:ISICv4Enum
+name: "Food Beverages Tobacco Manufacture"
+
+Node: dcid:ISICv4/13-15
+typeOf: dcid:ISICv4Enum
+name: "Textiles Wearing Apparel Leather Products Manufacture"
+
+Node: dcid:ISICv4/16
+typeOf: dcid:ISICv4Enum
+name: "Wood Cork Straw Plaiting Materials Except Furniture Manufacture"
+
+Node: dcid:ISICv4/17-18
+typeOf: dcid:ISICv4Enum
+name: "Paper Products Printing Reproduction Recorded Media Manufacture"
+
+Node: dcid:ISICv4/19
+typeOf: dcid:ISICv4Enum
+name: "Coke Refined Petroleum Products Manufacture"
+
+Node: dcid:ISICv4/20-22
+typeOf: dcid:ISICv4Enum
+name: "Chemical Pharmaceutical Rubber Plastic Products Manufacture"
+
+Node: dcid:ISICv4/23
+typeOf: dcid:ISICv4Enum
+name: "Non Metallic Mineral Products Manufacture"
+
+Node: dcid:ISICv4/24-33
+typeOf: dcid:ISICv4Enum
+name: "Basic Metal Fabricated Metal Machinery Equipments Repair And Installation Furnitures Jewellery MusicalInstrument Toys Manufacture"
+
+Node: dcid:ISICv4/24
+typeOf: dcs:ISICv4Enum
+name: "BasicMetalsManufacture"
+
+Node: dcid:ISICv4/25-28
+typeOf: dcid:ISICv4Enum
+name: "Fabricated Metal Computer Electronic Optical Electrical Equipment Machinery Equipment Manufacture"
+
+Node: dcid:ISICv4/29-33
+typeOf: dcid:ISICv4Enum
+name: "Motor Vehicles OtherTransport And Furniture Repair And Installation Machinery Equipment Manufacture"
+
+Node: dcid:ISICv4/43
+typeOf: dcid:ISICv4Enum
+name: "Construction"
+
+Node: dcid:ISICv4/01-03
+typeOf: dcid:ISICv4Enum
+name: "Agriculture Forestry Fishing"
+
+Node: dcid:ISICv4/24-25
+typeOf: dcid:ISICv4Enum
+name: "Basic Fabricated Metal Except Machinery Equipment Manufacture"
+
+Node: dcid:ISICv4/26-30
+typeOf: dcid:ISICv4Enum
+name: "Computer Electronic Optical Electrical Motor Vehicles Other Transport Equipment Manufacture"
+
+Node: dcid:ISICv4/31-33
+typeOf: dcid:ISICv4Enum
+name: "Furniture Jewellery Musical Instruments Toys Repair And Installation Machinery Equipment Manufacture"
+
+Node: dcid:ISICv4/36-39
+typeOf:  dcs:ISICv4Enum
+name: "Water Supply Sewerage Waste Management"
+
+Node: dcid:ISICv4/01
+typeOf: dcs:ISICv4Enum
+name: "Agriculture"
+
+Node: dcid:ISICv4/35
+typeOf: dcs:ISICv4Enum
+name: "Electricity, gas, steam and air conditioning supply"
+
+Node: dcid:ISICv4/Total_Primary_Recovered
+typeOf: dcs:ISICv4Enum
+name: “Total amounts of primary waste generated recovered”
+
+Node: dcid:ISICv4/TOTAL_Primary_Recycled
+typeOf: dcs:ISICv4Enum
+name: “Total amounts of primary waste generated  recycled”
+
+Node: dcid:ISICv4/Inert_Waste
+typeOf: dcs:ISICv4Enum
+name: “Inert mineral waste generated”
+
+Node: dcid:ISICv4/Inert_Waste_Recovered
+typeOf: dcs:ISICv4Enum
+name: “Inert mineral waste generated, of which recovered”
+
+Node: dcid:ISICv4/Inert_Waste_Recycled
+typeOf: dcs:ISICv4Enum
+name: “Inert mineral waste generated, of which recycled”
+
+Node: dcid:TreeCover
+typeOf: dcid:LandCoverClassEnum
+name: "TreeCover"
+
+Node: dcid:GrassLand
+typeOf: dcid:LandCoverClassEnum
+name: "GrassLand"
+
+Node: dcid:SparseVegetation
+typeOf: dcid:LandCoverClassEnum
+name: "SparseVegetation"
+
+Node: dcid:ArtificialSurfaces
+typeOf: dcid:LandCoverClassEnum
+name: "ArtificialSurfaces"
+
+Node: dcid:InlandWater
+typeOf: dcid:LandCoverClassEnum
+name: "InlandWater"
+
+Node: dcid:BareArea
+typeOf: dcid:LandCoverClassEnum
+name: "BareArea"
+
+Node: dcid:Wetland
+typeOf: dcid:LandCoverClassEnum
+name: "Wetland"
+
+###Unit
+Node: dcid:KilogramPerUSD
+typeOf:WeightUnitOfMeasure
+name:"Kilograms Per USD"
+rangeIncludes:Number
+domainIncludes:Emissions,Waste
