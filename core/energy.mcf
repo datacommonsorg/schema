@@ -2250,7 +2250,7 @@ name: "emissionSource"
 typeOf: schema:Property
 description: "Source of emission."
 domainIncludes: dcs:Emissions
-rangeIncludes: dcs:EmissionSourceEnum, dcs:EpaSccCodeEnum
+rangeIncludes: dcs:EmissionSourceEnum, dcs:EpaSccCodeEnum, dcs:EnergyConsumptionSectorEnum, dcs:FireCauseSpecificEnum, dcs:PowerPlantSectorEnum, dcs:FuelUsageSourceEnum, dcs:ElectricityProductionSectorEnum
 
 Node: dcs:emissionSourceType
 name: "emissionSourceType"
@@ -2262,7 +2262,7 @@ rangeIncludes: dcs:EmissionSourceTypeEnum
 Node: dcs:emittedThing
 name: "emittedThing"
 typeOf: schema:Property
-rangeIncludes: dcs:GreenhouseGas
+rangeIncludes: dcs:GreenhouseGas, dcs:EmissionSourceEnum
 
 # Units
 
@@ -2923,6 +2923,12 @@ name: "Road Vehicle Fuel Combustion"
 description: "Combustion of fuels in all road vehicles."
 specializationOf: dcid:Transportation
 
+Node: dcid:IPCC_OtherTransportation
+typeOf: EmissionSourceEnum
+name: "IPCC - Other Transportation"
+description: "All remaining transport activities for Intergovernmental Panel on Climate Change."
+specializationOf: dcid:Transportation
+
 Node: dcid:ClimateTrace_OtherTransportation
 typeOf: EmissionSourceEnum
 name: "Climate Trace - Other Transportation"
@@ -3006,3 +3012,697 @@ Node: dcid:IndiaEDM_OtherOilProducts
 typeOf: dcs:EnergySourceEnum
 name: "India Energy Dashboard Other Oil Products"
 
+Node: dcid:NonSpecified
+typeOf: dcid:EmissionSourceEnum
+name: "Non Specified"
+isProvisional: dcs:True
+
+Node: dcid:HeatProduction
+typeOf: dcid:EmissionSourceEnum
+name: "Heat Production"
+isProvisional: dcs:True
+
+Node: dcid:ResidentialandOtherSector
+typeOf: dcid:EmissionSourceEnum
+name: "Residentialand Other Sector"
+isProvisional: dcs:True
+
+Node: dcid:WaterBoneNavigation
+typeOf: dcid:EmissionSourceEnum
+name: "Water Bone Navigation"
+isProvisional: dcs:True
+
+Node: dcid:CivilAviation
+typeOf: dcid:EmissionSourceEnum
+name: "Civil Aviation"
+isProvisional: dcs:True
+
+Node: dcid:NonEnergyProductsFuelSolvent
+typeOf: dcid:EmissionSourceEnum
+name: "Non Energy Products Fuel Solvent"
+isProvisional: dcs:True
+
+Node: dcid:NaturalGas__Oil
+typeOf: dcid:EmissionSourceEnum
+name: "Natural Gas or Oil"
+isProvisional: dcs:True
+
+Node: dcid:RoadTransportattionNoResuspension
+typeOf: dcid:EmissionSourceEnum
+name: "Road Transportattion No Resuspension"
+isProvisional: dcs:True
+
+Node: dcid:OtherprocessusesofCarbonate
+typeOf: dcid:EmissionSourceEnum
+name: "Otherprocessusesof Carbonate"
+isProvisional: dcs:True
+
+Node: dcid:EmissionsfromBiomassburning
+typeOf: dcid:EmissionSourceEnum
+name: "Emissionsfrom Biomassburning"
+isProvisional: dcs:True
+
+Node: dcid:ChemicalIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Chemical Industry"
+isProvisional: dcs:True
+
+Node: dcid:SolidFuel
+typeOf: dcid:EmissionSourceEnum
+name: "Solid Fuel"
+isProvisional: dcs:True
+
+Node: dcid:UreaApplication
+typeOf: dcid:EmissionSourceEnum
+name: "Urea Application"
+isProvisional: dcs:True
+
+Node: dcid:Liming
+typeOf: dcid:EmissionSourceEnum
+name: "Liming"
+isProvisional: dcs:True
+
+Node: dcid:ManufactureofSolidFuelsandOtherEnergyIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Manufactureof Solid Fuelsand Other Energy Industry"
+isProvisional: dcs:True
+
+Node: dcid:MetalIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Metal Industry"
+isProvisional: dcs:True
+
+Node: dcid:Railway
+typeOf: dcid:EmissionSourceEnum
+name: "Railway"
+isProvisional: dcs:True
+
+Node: dcid:FossilFuelFire
+typeOf: dcid:EmissionSourceEnum
+name: "Fossil Fuel Fire"
+isProvisional: dcs:True
+
+Node: dcid:PublicElectrictyHeatProduction
+typeOf: dcid:EmissionSourceEnum
+name: "Public Electricty Heat Production"
+isProvisional: dcs:True
+
+Node: dcid:ResidentialOthersector
+typeOf: dcid:EmissionSourceEnum
+name: "Residential Othersector"
+isProvisional: dcs:True
+
+Node: dcid:RoadTransportationNoResuspension
+typeOf: dcid:EmissionSourceEnum
+name: "Road Transportation No Resuspension"
+isProvisional: dcs:True
+
+Node: dcid:InlandNavigation
+typeOf: dcid:EmissionSourceEnum
+name: "Inland Navigation"
+isProvisional: dcs:True
+
+Node: dcid:FugitiveEmissionsfromOilandGas
+typeOf: dcid:EmissionSourceEnum
+name: "Fugitive Emissionsfrom Oiland Gas"
+isProvisional: dcs:True
+
+Node: dcid:Sodaashproductionanduse
+typeOf: dcid:EmissionSourceEnum
+name: "Sodaashproductionanduse"
+isProvisional: dcs:True
+
+Node: dcid:Productionofothermineral
+typeOf: dcid:EmissionSourceEnum
+name: "Productionofothermineral"
+isProvisional: dcs:True
+
+Node: dcid:Non-energyuseoflubricants_waxeCarbonDioxide
+typeOf: dcid:EmissionSourceEnum
+name: "Non-energyuseoflubricants_waxe Carbon Dioxide"
+isProvisional: dcs:True
+
+Node: dcid:Solventandotherproductusepaint
+typeOf: dcid:EmissionSourceEnum
+name: "Solventandotherproductusepaint"
+isProvisional: dcs:True
+
+Node: dcid:SolventandotherproductuseDegrease
+typeOf: dcid:EmissionSourceEnum
+name: "Solventandotherproductuse Degrease"
+isProvisional: dcs:True
+
+Node: dcid:Solventandotherproductuseother
+typeOf: dcid:EmissionSourceEnum
+name: "Solventandotherproductuseother"
+isProvisional: dcs:True
+
+Node: dcid:AgriculturalWasteBurning
+typeOf: dcid:EmissionSourceEnum
+name: "Agricultural Waste Burning"
+isProvisional: dcs:True
+
+Node: dcid:FugitiveEmissionsfromSolidfuel
+typeOf: dcid:EmissionSourceEnum
+name: "Fugitive Emissionsfrom Solidfuel"
+isProvisional: dcs:True
+
+Node: dcid:Productionofchemical
+typeOf: dcid:EmissionSourceEnum
+name: "Productionofchemical"
+isProvisional: dcs:True
+
+Node: dcid:OtherdirectSoilEmission
+typeOf: dcid:EmissionSourceEnum
+name: "Otherdirect Soil Emission"
+isProvisional: dcs:True
+
+Node: dcid:Productionofmetal
+typeOf: dcid:EmissionSourceEnum
+name: "Productionofmetal"
+isProvisional: dcs:True
+
+Node: dcid:FugitiveEmissionsfromgaseousFuel
+typeOf: dcid:EmissionSourceEnum
+name: "Fugitive Emissionsfromgaseous Fuel"
+isProvisional: dcs:True
+
+Node: dcid:RailTransportation
+typeOf: dcid:EmissionSourceEnum
+name: "Rail Transportation"
+isProvisional: dcs:True
+
+Node: dcid:WasteIncineration
+typeOf: dcid:EmissionSourceEnum
+name: "Waste Incineration"
+isProvisional: dcs:True
+
+Node: dcid:SolventandotherproductuseChemical
+typeOf: dcid:EmissionSourceEnum
+name: "Solventandotherproductuse Chemical"
+isProvisional: dcs:True
+
+Node: dcid:OtherEnergyIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Other Energy Industry"
+isProvisional: dcs:True
+
+Node: dcid:InternationalNavigation
+typeOf: dcid:EmissionSourceEnum
+name: "International Navigation"
+isProvisional: dcs:True
+
+Node: dcid:EmissionBiomassBurning
+typeOf: dcid:EmissionSourceEnum
+name: "Emission Biomass Burning"
+isProvisional: dcs:True
+
+Node: dcid:ManufactureofSolidFuelandOtherEnergyIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Manufactureof Solid Fueland Other Energy Industry"
+isProvisional: dcs:True
+
+Node: dcid:BiologicalTreatmentofSolidWaste
+typeOf: dcid:EmissionSourceEnum
+name: "Biological Treatmentof Solid Waste"
+isProvisional: dcs:True
+
+Node: dcid:PublicElectricityHeatProduction
+typeOf: dcid:EmissionSourceEnum
+name: "Public Electricity Heat Production"
+isProvisional: dcs:True
+
+Node: dcid:ManufacturingIndustriesConstruction
+typeOf: dcid:EmissionSourceEnum
+name: "Manufacturing Industries Construction"
+isProvisional: dcs:True
+
+Node: dcid:ResidentialOtherSector
+typeOf: dcid:EmissionSourceEnum
+name: "Residential Other Sector"
+isProvisional: dcs:True
+
+Node: dcid:RoadTransportationResupension
+typeOf: dcid:EmissionSourceEnum
+name: "Road Transportation Resupension"
+isProvisional: dcs:True
+
+Node: dcid:WasteWaterHandling
+typeOf: dcid:EmissionSourceEnum
+name: "Waste Water Handling"
+isProvisional: dcs:True
+
+Node: dcid:ProductionChemical
+typeOf: dcid:EmissionSourceEnum
+name: "Production Chemical"
+isProvisional: dcs:True
+
+Node: dcid:ProductusesSubstitutesforOzoneDepletingSubstances
+typeOf: dcid:EmissionSourceEnum
+name: "Productuses Substitutesfor Ozone Depleting Substances"
+isProvisional: dcs:True
+
+Node: dcid:OtherProductManufactureUse
+typeOf: dcid:EmissionSourceEnum
+name: "Other Product Manufacture Use"
+isProvisional: dcs:True
+
+Node: dcid:ElectronicsIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Electronics Industry"
+isProvisional: dcs:True
+
+Node: dcid:CommericalRefrigeration
+typeOf: dcid:EmissionSourceEnum
+name: "Commerical Refrigeration"
+isProvisional: dcs:True
+
+Node: dcid:Aerosols
+typeOf: dcid:EmissionSourceEnum
+name: "Aerosols"
+isProvisional: dcs:True
+
+Node: dcid:ClosedCellFoam
+typeOf: dcid:EmissionSourceEnum
+name: "Closed Cell Foam"
+isProvisional: dcs:True
+
+Node: dcid:OtherFGasUse
+typeOf: dcid:EmissionSourceEnum
+name: "Other FGas Use"
+isProvisional: dcs:True
+
+Node: dcid:ProductionofMetal
+typeOf: dcid:EmissionSourceEnum
+name: "Productionof Metal"
+isProvisional: dcs:True
+
+Node: dcid:ElectricEquipment
+typeOf: dcid:EmissionSourceEnum
+name: "Electric Equipment"
+isProvisional: dcs:True
+
+Node: dcid:ProductionofHalocarbonsandSF6
+typeOf: dcid:EmissionSourceEnum
+name: "Productionof Halocarbonsand SF6"
+isProvisional: dcs:True
+
+Node: dcid:Semiconductor
+typeOf: dcid:EmissionSourceEnum
+name: "Semiconductor"
+isProvisional: dcs:True
+
+Node: dcid:DomesticRefrigeration
+typeOf: dcid:EmissionSourceEnum
+name: "Domestic Refrigeration"
+isProvisional: dcs:True
+
+Node: dcid:TransportRefrigeration
+typeOf: dcid:EmissionSourceEnum
+name: "Transport Refrigeration"
+isProvisional: dcs:True
+
+Node: dcid:MobileAirConditioning
+typeOf: dcid:EmissionSourceEnum
+name: "Mobile Air Conditioning"
+isProvisional: dcs:True
+
+Node: dcid:StationaryAirConditioning
+typeOf: dcid:EmissionSourceEnum
+name: "Stationary Air Conditioning"
+isProvisional: dcs:True
+
+Node: dcid:FireExtinguisher
+typeOf: dcid:EmissionSourceEnum
+name: "Fire Extinguisher"
+isProvisional: dcs:True
+
+Node: dcid:Solvent
+typeOf: dcid:EmissionSourceEnum
+name: "Solvent"
+isProvisional: dcs:True
+
+Node: dcid:OtherODS
+typeOf: dcid:EmissionSourceEnum
+name: "Other ODS"
+isProvisional: dcs:True
+
+Node: dcid:IndustrialRefrigeration
+typeOf: dcid:EmissionSourceEnum
+name: "Industrial Refrigeration"
+isProvisional: dcs:True
+
+Node: dcid:OpenCellFoam
+typeOf: dcid:EmissionSourceEnum
+name: "Open Cell Foam"
+isProvisional: dcs:True
+
+Node: dcid:FGasSolvent
+typeOf: dcid:EmissionSourceEnum
+name: "FGas Solvent"
+isProvisional: dcs:True
+
+Node: dcid:AgriculturalSoil
+typeOf: dcid:EmissionSourceEnum
+name: "Agricultural Soil"
+isProvisional: dcs:True
+
+Node: dcid:FuelProduction
+typeOf: dcid:EmissionSourceEnum
+name: "Fuel Production"
+isProvisional: dcs:True
+
+Node: dcid:CombustionInManufacturingIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Combustion In Manufacturing Industry"
+isProvisional: dcs:True
+
+Node: dcid:SmallScaleCombustion
+typeOf: dcid:EmissionSourceEnum
+name: "Small Scale Combustion"
+isProvisional: dcs:True
+
+Node: dcid:TransformationIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Transformation Industry"
+isProvisional: dcs:True
+
+Node: dcid:Chemical
+typeOf: dcid:EmissionSourceEnum
+name: "Chemical"
+isProvisional: dcs:True
+
+Node: dcid:NonFerrousMetal
+typeOf: dcid:EmissionSourceEnum
+name: "Non Ferrous Metal"
+isProvisional: dcs:True
+
+Node: dcid:NonMetallicMineral
+typeOf: dcid:EmissionSourceEnum
+name: "Non Metallic Mineral"
+isProvisional: dcs:True
+
+Node: dcid:SolidWasteDisposalIncineration
+typeOf: dcid:EmissionSourceEnum
+name: "Solid Waste Disposal Incineration"
+isProvisional: dcs:True
+
+Node: dcid:SolidWasteDisposalLandfill
+typeOf: dcid:EmissionSourceEnum
+name: "Solid Waste Disposal Landfill"
+isProvisional: dcs:True
+
+Node: dcid:IndirectNitrousOxideEmissionsFromAmmoniaAndOxidesOfNitrogen
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect Nitrous Oxide Emissions From Ammonia And Oxides Of Nitrogen"
+isProvisional: dcs:True
+
+Node: dcid:IndirectNitrousOxideEmissions
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect Nitrous Oxide Emissions"
+isProvisional: dcs:True
+
+Node: dcid:ProductionOrUseOfOtherProduct
+typeOf: dcid:EmissionSourceEnum
+name: "Production Or Use Of Other Product"
+isProvisional: dcs:True
+
+Node: dcid:MainActivityElectricty
+typeOf: dcid:EmissionSourceEnum
+name: "Main Activity Electricty"
+isProvisional: dcs:True
+
+Node: dcid:ResidentalOtherSector
+typeOf: dcid:EmissionSourceEnum
+name: "Residental Other Sector"
+isProvisional: dcs:True
+
+Node: dcid:IndirectNitrousOxideEmissionsFromAtmosphericDepositionOfNitrogenInOxidesOfNitrogenAndAmmonia
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect Nitrous Oxide Emissions From Atmospheric Deposition Of Nitrogen In Oxides Of Nitrogen And Ammonia"
+isProvisional: dcs:True
+
+Node: dcid:EmissionsBiomassBurning
+typeOf: dcid:EmissionSourceEnum
+name: "Emissions Biomass Burning"
+isProvisional: dcs:True
+
+Node: dcid:ManufactureSolidFulesOtherEnergyIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Manufacture Solid Fules Other Energy Industry"
+isProvisional: dcs:True
+
+Node: dcid:IndirectManagedSoil
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect Managed Soil"
+isProvisional: dcs:True
+
+Node: dcid:IndirectManureManagement
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect Manure Management"
+isProvisional: dcs:True
+
+Node: dcid:BiologicalTreatmentOfSolidWaste
+typeOf: dcid:EmissionSourceEnum
+name: "Biological Treatment Of Solid Waste"
+isProvisional: dcs:True
+
+Node: dcid:Building
+typeOf: dcid:EmissionSourceEnum
+name: "Building"
+isProvisional: dcs:True
+
+Node: dcid:OtherIndustrialCombustion
+typeOf: dcid:EmissionSourceEnum
+name: "Other Industrial Combustion"
+isProvisional: dcs:True
+
+Node: dcid:PowerIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Power Industry"
+isProvisional: dcs:True
+
+Node: dcid:Transport
+typeOf: dcid:EmissionSourceEnum
+name: "Transport"
+isProvisional: dcs:True
+
+Node: dcid:OtherProcessUsesCarbonate
+typeOf: dcid:EmissionSourceEnum
+name: "Other Process Uses Carbonate"
+isProvisional: dcs:True
+
+Node: dcid:ManufactureSolidFuelOtherEnergyIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "Manufacture Solid Fuel Other Energy Industry"
+isProvisional: dcs:True
+
+Node: dcid:SodaAshProductionandUse
+typeOf: dcid:EmissionSourceEnum
+name: "Soda Ash Productionand Use"
+isProvisional: dcs:True
+
+Node: dcid:ProductionofOtherMineral
+typeOf: dcid:EmissionSourceEnum
+name: "Productionof Other Mineral"
+isProvisional: dcs:True
+
+Node: dcid:NonEnergyuseofLubricantsandWaxe
+typeOf: dcid:EmissionSourceEnum
+name: "Non Energyuseof Lubricantsand Waxe"
+isProvisional: dcs:True
+
+Node: dcid:SolventandOtherProductusePaint
+typeOf: dcid:EmissionSourceEnum
+name: "Solventand Other Productuse Paint"
+isProvisional: dcs:True
+
+Node: dcid:SolventandOtherProductuseDegrease
+typeOf: dcid:EmissionSourceEnum
+name: "Solventand Other Productuse Degrease"
+isProvisional: dcs:True
+
+Node: dcid:SolventandOtherProductuseOther
+typeOf: dcid:EmissionSourceEnum
+name: "Solventand Other Productuse Other"
+isProvisional: dcs:True
+
+Node: dcid:ProductionofChemical
+typeOf: dcid:EmissionSourceEnum
+name: "Productionof Chemical"
+isProvisional: dcs:True
+
+Node: dcid:FugitiveEmissionGaseousFuel
+typeOf: dcid:EmissionSourceEnum
+name: "Fugitive Emission Gaseous Fuel"
+isProvisional: dcs:True
+
+Node: dcid:SolventandOtherProductuseChemical
+typeOf: dcid:EmissionSourceEnum
+name: "Solventand Other Productuse Chemical"
+isProvisional: dcs:True
+
+Node: dcid:LimestoneandDolomiteUse
+typeOf: dcid:EmissionSourceEnum
+name: "Limestoneand Dolomite Use"
+isProvisional: dcs:True
+
+Node: dcid:SolidFuels
+typeOf: dcid:EmissionSourceEnum
+name: "Solid Fuels"
+isProvisional: dcs:True
+
+Node: dcid:MainActivityElectricityHeatProduction
+typeOf: dcid:EmissionSourceEnum
+name: "Main Activity Electricity Heat Production"
+isProvisional: dcs:True
+
+Node: dcid:IPCC_OtherSectors
+typeOf: dcid:EmissionSourceEnum
+name: "IPCC_ Other Sectors"
+isProvisional: dcs:True
+
+Node: dcid:WaterBorneNavigation
+typeOf: dcid:EmissionSourceEnum
+name: "Water Borne Navigation"
+isProvisional: dcs:True
+
+Node: dcid:OtherProductManufacture
+typeOf: dcid:EmissionSourceEnum
+name: "Other Product Manufacture"
+isProvisional: dcs:True
+
+Node: dcid:Oil_NaturalGas
+typeOf: dcid:EmissionSourceEnum
+name: "Oil_ Natural Gas"
+isProvisional: dcs:True
+
+Node: dcid:IndirectN2OemissionsfromtheatmosphericdepositionofnitrogeninNOxandNH3
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect N2 Oemissionsfromtheatmosphericdepositionofnitrogenin NOxand NH3"
+isProvisional: dcs:True
+
+Node: dcid:RoadTransportationnoresuspension
+typeOf: dcid:EmissionSourceEnum
+name: "Road Transportationnoresuspension"
+isProvisional: dcs:True
+
+Node: dcid:WasteWaterTreatmentDischarge
+typeOf: dcid:EmissionSourceEnum
+name: "Waste Water Treatment Discharge"
+isProvisional: dcs:True
+
+Node: dcid:Burning
+typeOf: dcid:EmissionSourceEnum
+name: "Burning"
+isProvisional: dcs:True
+
+Node: dcid:DirectN2OEmissionsManagedSoils
+typeOf: dcid:EmissionSourceEnum
+name: "Direct N2 OEmissions Managed Soils"
+isProvisional: dcs:True
+
+Node: dcid:IndirectN2OEmissionsManureManagement
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect N2 OEmissions Manure Management"
+isProvisional: dcs:True
+
+Node: dcid:IndirectN2OEmissionsManagedSoils
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect N2 OEmissions Managed Soils"
+isProvisional: dcs:True
+
+Node: dcid:PetrolRefining
+typeOf: dcid:EmissionSourceEnum
+name: "Petrol Refining"
+isProvisional: dcs:True
+
+Node: dcid:Railways
+typeOf: dcid:EmissionSourceEnum
+name: "Railways"
+isProvisional: dcs:True
+
+Node: dcid:IncinerationAndOpenBurningOfWaste
+typeOf: dcid:EmissionSourceEnum
+name: "Incineration And Open Burning Of Waste"
+isProvisional: dcs:True
+
+Node: dcid:BiologicalTreatmentSolidWaste
+typeOf: dcid:EmissionSourceEnum
+name: "Biological Treatment Solid Waste"
+isProvisional: dcs:True
+
+Node: dcid:IPCC_OtherSource
+typeOf: dcid:EmissionSourceEnum
+name: "IPCC_ Other Source"
+isProvisional: dcs:True
+
+Node: dcid:ManufacturingIndustries_Construction
+typeOf: dcid:EmissionSourceEnum
+name: "Manufacturing Industries_ Construction"
+isProvisional: dcs:True
+
+Node: dcid:EmissionsfromSolidFuel
+typeOf: dcid:EmissionSourceEnum
+name: "Emissionsfrom Solid Fuel"
+isProvisional: dcs:True
+
+Node: dcid:Navigation
+typeOf: dcid:EmissionSourceEnum
+name: "Navigation"
+isProvisional: dcs:True
+
+Node: dcid:EmissionsfromOilandGas
+typeOf: dcid:EmissionSourceEnum
+name: "Emissionsfrom Oiland Gas"
+isProvisional: dcs:True
+
+Node: dcid:SolventandotherproductuseOther
+typeOf: dcid:EmissionSourceEnum
+name: "Solventandotherproductuse Other"
+isProvisional: dcs:True
+
+Node: dcid:IndirectNitrousOxidefromnon_agriculturalNOx
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect Nitrous Oxidefromnon_agricultural NOx"
+isProvisional: dcs:True
+
+Node: dcid:IndirectNitrousOxidefromnon_agriculturalNH3
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect Nitrous Oxidefromnon_agricultural NH3"
+isProvisional: dcs:True
+
+Node: dcid:DirectSoilEmission
+typeOf: dcid:EmissionSourceEnum
+name: "Direct Soil Emission"
+isProvisional: dcs:True
+
+Node: dcid:ManureInPastureRangePaddock
+typeOf: dcid:EmissionSourceEnum
+name: "Manure In Pasture Range Paddock"
+isProvisional: dcs:True
+
+Node: dcid:IndirectN2OfromAgriculture
+typeOf: dcid:EmissionSourceEnum
+name: "Indirect N2 Ofrom Agriculture"
+isProvisional: dcs:True
+
+Node: dcid:IPCC_OtherEnergyIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "IPCC_ Other Energy Industry"
+isProvisional: dcs:True
+
+Node: dcid:InternationalAviation
+typeOf: dcid:EmissionSourceEnum
+name: "International Aviation"
+isProvisional: dcs:True
+
+Node: dcid:IPCC_OtherIndustry
+typeOf: dcid:EmissionSourceEnum
+name: "IPCC_ Other Industry"
+isProvisional: dcs:True
+
+Node: dcid:OtherWasteHandling
+typeOf: dcid:EmissionSourceEnum
+name: "Other Waste Handling"
+isProvisional: dcs:True
