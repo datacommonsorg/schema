@@ -100,6 +100,83 @@ subClassOf: dcs:Event
 description: "Two or more distinct incidents in the same general area that, by management action, are managed under a single incident commander or unified command in order to improve efficiency and simplify incident management processes."
 descriptionUrl: "https://www.nwcg.gov/term/glossary/incident-complex"
 
+Node: dcid:FalseAlarmFireEvent
+typeOf: schema:Class
+name: "FalseAlarmFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event where a reported smoke or fire requiring no suppression."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:ManagementFireEvent
+typeOf: schema:Class
+name: "ManagementFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event dealing with agency-specific administrative programs,such as public relations."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:OutofAreaResponseFireEvent
+typeOf: schema:Class
+name: "OutofAreaResponseFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event where resources are mobilized to a Wildfire (WF) Event within their corresponding dispatch Center response area (boundary)."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:IncidentEventSupportEvent
+typeOf: schema:Class
+name: "IncidentEventSupportEvent"
+subClassOf: dcs:FireEvent
+description: "An event dealing with effective and timely support by the wildland fire community of an Event Host's dispatch unit, in order to relieve the dispatch unit of increased business volume due to anticipated or existing wildland fire or event activity."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:VehicleFireEvent
+typeOf: schema:Class
+name: "VehicleFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event dealing with a fire originating in and burning any part of a vehicle or mobile equipment."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:StructureFireEvent
+typeOf: schema:Class
+name: "StructureFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event dealing with a fire originating in and burning any part or all of any building, shelter, or other structure."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:DebrisProductFireEvent
+typeOf: schema:Class
+name: "DebrisProductFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event dealing with a fire spreading from any fire originally ignited to clear land or burn rubbish, garbage, crop stubble, or meadows (excluding incendiary fires)."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:PreparednessPrepositionFireEvent
+typeOf: schema:Class
+name: "PreparednessPrepositionFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event dealing with effective and efficient response by the wildland fire community to planned, anticipated or event activity.This category includes activities such as move-up and cover, fire menace standby, and severity activities."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:ClassroomTrainingFireEvent
+typeOf: schema:Class
+name: "ClassroomTrainingFireEvent"
+subClassOf: dcs:FireEvent
+description: "An event dealing with a scheduled activity in a classroom setting or other controlled environment that provides instruction so as to make attendees fit or qualified for incident support activities."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:MotorVehicleAccidentEvent
+typeOf: schema:Class
+name: "MotorVehicleAccidentEvent"
+subClassOf: dcs:Event
+description: "An event dealing with an accident or mishap involving on- or offhighway vehicles."
+descriptionUrl: "https://www.nwcg.gov/sites/default/files/publications/910-event-kind-category-data-values.pdf"
+
+Node: dcid:NIFC_NSFireEvent
+typeOf: schema:Class
+name: "NIFC_NSFireEvent"
+subClassOf: dcs:FireEvent
+description: "The National Interagency Fire Center (NIFC) is the nation support center for wildland fires and other emergency situations"
+descriptionUrl: "https://www.nifc.gov/fire-information"
+
 Node: dcid:FireEvent
 typeOf: schema:Class
 name: "FireEvent"
