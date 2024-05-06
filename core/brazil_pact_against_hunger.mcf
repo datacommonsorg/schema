@@ -1,0 +1,154 @@
+Node: dcid:brazilAidDistributionPartner
+typeOf: dcid:Property
+name: "brazilAidDistributionPartner"
+domainIncludes: dcid:FoodBasket
+rangeIncludes: dcid:BrazilAidDistributionPartnerEnum
+description: "Food Distribution Act-Food baskets delivered by partners."
+
+Node: dcid:foodBasketStatus
+typeOf: dcid:Property
+name: "foodBasketStatus"
+domainIncludes: dcid:Household,FoodBasket
+rangeIncludes: dcid:FoodBasketStatusEnum
+description: "The status of the food basket being given to the family."
+
+Node: dcid:BrazilAidDistributionPartnerEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BrazilAidDistributionPartnerEnum"
+
+Node: dcid:FamilyTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FamilyTypeEnum"
+
+Node: dcid:FoodBasketStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FoodBasketStatusEnum"
+
+Node: dcid:ReceivedFoodBasket
+typeOf: dcid:FoodBasketStatusEnum
+name: "Received Food Basket"
+nameWithLanguage: "Receberam cestas de alimento@pt"
+description: "Families who have received the food baskets."
+
+Node: dcid:DestinedFoodBasket
+typeOf: dcid:FoodBasketStatusEnum
+name: "Destined Food Basket"
+nameWithLanguage: "Cesta de Alimentos Destinada@pt"
+description: "Families to which the food basket is destined."
+
+Node: dcid:DeliveredFoodBasket
+typeOf: dcid:FoodBasketStatusEnum
+name: "Delivered Food Basket"
+nameWithLanguage: "Cesta de alimentos entregues@pt"
+description: "Families to which the food basket has been delivered."
+
+Node: dcid:GypsyFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Gypsy Family"
+nameWithLanguage: "Família Cigana@pt"
+description: "Brazilian Romani are mostly descendant from German/Italian Sinti (in the South/Southeast regions), and Roma and Calon people."
+
+Node: dcid:InEmergencyCare
+typeOf: dcid:FamilyTypeEnum
+name: "In Emergency Care"
+nameWithLanguage: "Em atendimento de emergência@pt"
+description: "Citizens in need of urgent care and patients referred to emergency care by the assistant team"
+descriptionUrl: "https://www.gov.br/pt-br/servicos/solicitar-atendimento-de-emergencia"
+
+Node: dcid:ExtractiveFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Extractive Family"
+nameWithLanguage: "Família Extrativista@pt"
+description: "Extractivists are traditional communities, they base their subsistence on the extraction of resource renewable natural resources and, in addition, in agriculture subsistence and small animal husbandry."
+
+Node: dcid:FishingFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Fishing Family"
+nameWithLanguage: "Família Pescadora@pt"
+description: "Those who use fishing resources extracted, collected, seized or captured in fresh or salt water for commercial or commercial purposes."
+
+Node: dcid:IndigenousFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Indigenous Family"
+nameWithLanguage: "Família indígena@pt"
+description: "The indigenous people were traditionally mostly semi-nomadic tribes who subsisted on hunting, fishing, gathering, and migrant agriculture."
+
+Node: dcid:QuilombolaFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Quilombola Family"
+nameWithLanguage: "Família Quilombola@pt"
+description: "Quilombo is the denomination for communities of black slaves who resisted the slavery regime that prevailed in Brazil."
+
+Node: dcid:RecyclableMaterialCollectorsFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Recyclable Material Collectors Family"
+nameWithLanguage: "Família de Catadores de Materiais Recicláveis@pt"
+description: "The recyclable material collector is an urban worker who collects recyclable solid waste , such as cardboard , aluminum , glass and others."
+
+Node: dcid:SettledInCamps
+typeOf: dcid:FamilyTypeEnum
+name: "Settled In Camps"
+nameWithLanguage: "Estabelecidos em acampamentos@pt"
+
+Node: dcid:NationalConfederationOfAgricultureSENAR
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "National Confederation Of Agriculture SENAR"
+nameWithLanguage: "Agro Fraterno/Confederação Nacional da Agricultura/SENAR@pt"
+isProvisional: dcid:True
+
+Node: dcid:OrganizationOfCooperativesOfBrazil
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "Organization Of Cooperatives Of Brazil"
+nameWithLanguage: "Agro Fraterno/ Organização da Cooperativas do Brasil@pt"
+isProvisional: dcid:True
+
+Node: dcid:NationalAssociationOfGarlicOrOnionProducers
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "National Association Of Garlic Or Onion Producers"
+nameWithLanguage: "Associação Nacional dos Produtores de Alho/ Associação Nacional de Produtores de Cebola@pt"
+isProvisional: dcid:True
+
+Node: dcid:NationalConfederationOfCommerceSESC
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "National Confederation Of Commerce SESC"
+nameWithLanguage: "Confederação Nacional do Comercio/SESC/Federações do Comércio regionais@pt"
+isProvisional: dcid:True
+
+Node: dcid:NationalConfederationOfIndustrySESI
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "National Confederation Of Industry SESI"
+nameWithLanguage: "Confederação Nacional da Indústria/SESI/Federações da Industria regionais@pt"
+isProvisional: dcid:True
+
+Node: dcid:BancoDoBrasilFoundation
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "Banco Do Brasil Foundation"
+nameWithLanguage: "Fundação Banco do Brasil@pt"
+isProvisional: dcid:True
+
+Node: dcid:CortevaAgriscience
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "Corteva Agriscience"
+nameWithLanguage: "Corteva Agriscience@pt"
+isProvisional: dcid:True
+
+Node: dcid:NutrelliAlimentosECongelattos
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "Nutrelli Alimentos ECongelattos"
+nameWithLanguage: "Nutrelli Alimentos e Congelattos@pt"
+isProvisional: dcid:True
+
+Node: dcid:SaoPauloWarehouseAndWarehouseCompanyCEAGESP
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "Sao Paulo Warehouse And Warehouse Company CEAGESP"
+nameWithLanguage: "Companhia de Entrepostos e Armazéns de São Paulo -CEAGESP@pt"
+isProvisional: dcid:True
+
+Node: dcid:DivineCaldoBrazil
+typeOf: dcid:BrazilAidDistributionPartnerEnum
+name: "Divine Caldo Brazil"
+nameWithLanguage: "Divino Caldo Brasil@pt"
+isProvisional: dcid:True
