@@ -74,7 +74,7 @@ isProvisional: dcs:True
 Node: dcid:registrationStatus
 typeOf: dcs:Property
 name: "registrationStatus"
-domainIncludes: dcid:BirthEvent
+domainIncludes: dcid:BirthEvent, dcid:MortalityEvent
 rangeIncludes: dcid:RegistrationStatusEnum
 isProvisional: dcs:True
 
@@ -353,6 +353,14 @@ Node: dcid:Registered
 typeOf: dcid:RegistrationStatusEnum
 name: "Registered"
 isProvisional: dcs:True
+
+Node: dcid:OnTimeRegistered
+typeOf: dcid:RegistrationStatusEnum
+name: "On Time Registered"
+
+Node: dcid:OutOfDateRegistered
+typeOf: dcid:RegistrationStatusEnum
+name: "Out Of Date Registered"
 
 Node: dcid:Aadhaar
 typeOf: dcid:GovernmentIdEnum
