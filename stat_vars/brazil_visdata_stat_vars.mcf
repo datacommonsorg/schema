@@ -4,8 +4,8 @@ name: "Kilograms of food delivered to families in emergency care"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:InEmergencyCare
 alternateName: "Quilos de alimentos entregues a famílias em atendimentos emergenciais@pt"
+householdType: dcid:InEmergencyCare
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_InEmergencyCare
 typeOf: dcid:StatisticalVariable
@@ -13,20 +13,20 @@ name: "Number of food baskets delivered to families in emergency care"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias em atendimentos emergenciais@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:InEmergencyCare
-alternateName: "Qtde de cestas de alimentos entregues a famílias em atendimentos emergenciais@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_InEmergencyCare_AsAFractionOf_Count_Household_ReceivedFoodBasket_InEmergencyCare
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_InEmergencyCare_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_InEmergencyCare
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to Families in emergency care"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_InEmergencyCare
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_InEmergencyCare
+alternateName: "Percentual de Cestas Básicas entregues a Famílias em atendimentos emergenciais@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:InEmergencyCare
-alternateName: "Percentual de Cestas Básicas entregues a Famílias em atendimentos emergenciais@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_InEmergencyCare
 typeOf: dcid:StatisticalVariable
@@ -34,19 +34,19 @@ name: "Number of food baskets intended for families in emergency care"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias em atendimentos emergenciais@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:InEmergencyCare
-alternateName: "Qtde de cestas de alimentos destinadas a famílias em atendimentos emergenciais@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_InEmergencyCare
 typeOf: dcid:StatisticalVariable
-name: "Number of families in emergency care"
+name: "Number of families in emergency care that received food baskets"
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias em atendimentos emergenciais receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:InEmergencyCare
-alternateName: "Qtde de famílias em atendimentos emergenciais@pt"
 
 Node: dcid:Amount_Food_ExtractiveFamily
 typeOf: dcid:StatisticalVariable
@@ -54,8 +54,8 @@ name: "Kilograms of food delivered to extractive families"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:ExtractiveFamily
 alternateName: "Quilos de alimentos entregues a famílias extrativistas@pt"
+householdType: dcid:ExtractiveFamily
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_ExtractiveFamily
 typeOf: dcid:StatisticalVariable
@@ -63,20 +63,20 @@ name: "Number of food baskets delivered to extractive families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias extrativista@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:ExtractiveFamily
-alternateName: "Qtde de cestas de alimentos entregues a famílias extrativista@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_ExtractiveFamily_AsAFractionOf_Count_Household_ReceivedFoodBasket_ExtractiveFamily
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_ExtractiveFamily_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_ExtractiveFamily
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to extractive families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_ExtractiveFamily
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_ExtractiveFamily
+alternateName: "Percentual de Cestas Básicas entregues a famílias extrativistas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:ExtractiveFamily
-alternateName: "Percentual de Cestas Básicas entregues a famílias extrativistas@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_ExtractiveFamily
 typeOf: dcid:StatisticalVariable
@@ -84,19 +84,19 @@ name: "Number of food baskets destined for extractive families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias extrativista@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:ExtractiveFamily
-alternateName: "Qtde de cestas de alimentos destinadas a famílias extrativista@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_ExtractiveFamily
 typeOf: dcid:StatisticalVariable
-name: "Number of extractive families"
+name: "Number of extractive families that received food baskets"
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias extrativista receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:ExtractiveFamily
-alternateName: "Qtde de famílias extrativista@pt"
 
 Node: dcid:Amount_Food_FishingFamily
 typeOf: dcid:StatisticalVariable
@@ -104,8 +104,8 @@ name: "Kilos of food delivered to fishing families"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:FishingFamily
 alternateName: "Quilos de alimentos entregues a famílias de pescadores@pt"
+householdType: dcid:FishingFamily
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_FishingFamily
 typeOf: dcid:StatisticalVariable
@@ -113,20 +113,20 @@ name: "Number of food baskets delivered to fishing families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias de pescadores@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:FishingFamily
-alternateName: "Qtde de cestas de alimentos entregues a famílias de pescadores@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_FishingFamily_AsAFractionOf_Count_Household_ReceivedFoodBasket_FishingFamily
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_FishingFamily_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_FishingFamily
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to fishing families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_FishingFamily
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_FishingFamily
+alternateName: "Percentual de Cestas Básicas entregues a Famílias de pescadores@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:FishingFamily
-alternateName: "Percentual de Cestas Básicas entregues a Famílias de pescadores@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_FishingFamily
 typeOf: dcid:StatisticalVariable
@@ -134,19 +134,19 @@ name: "Number of food baskets destined for fishing families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias de pescadores@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:FishingFamily
-alternateName: "Qtde de cestas de alimentos destinadas a famílias de pescadores@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_FishingFamily
 typeOf: dcid:StatisticalVariable
-name: "Number of fishing families"
+name: "Number of fishing families that received food baskets"
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias de pescadores receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:FishingFamily
-alternateName: "Qtde de famílias de pescadores@pt"
 
 Node: dcid:Amount_Food_GypsyFamily
 typeOf: dcid:StatisticalVariable
@@ -154,8 +154,8 @@ name: "Kilograms of food delivered to gypsy families"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:GypsyFamily
 alternateName: "Quilos de alimentos entregues a famílias ciganas@pt"
+householdType: dcid:GypsyFamily
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_GypsyFamily
 typeOf: dcid:StatisticalVariable
@@ -163,20 +163,20 @@ name: "Number of food baskets delivered to gypsy families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias ciganas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:GypsyFamily
-alternateName: "Qtde de cestas de alimentos entregues a famílias ciganas@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_GypsyFamily_AsAFractionOf_Count_Household_ReceivedFoodBasket_GypsyFamily
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_GypsyFamily_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_GypsyFamily
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to gypsy families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_GypsyFamily
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_GypsyFamily
+alternateName: "Percentual de Cestas Básicas entregues a  famílias ciganas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:GypsyFamily
-alternateName: "Percentual de Cestas Básicas entregues a  famílias ciganas@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_GypsyFamily
 typeOf: dcid:StatisticalVariable
@@ -184,9 +184,9 @@ name: "Number of food baskets destined for gypsy families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias ciganas@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:GypsyFamily
-alternateName: "Qtde de cestas de alimentos destinadas a famílias ciganas@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_GypsyFamily
 typeOf: dcid:StatisticalVariable
@@ -194,9 +194,9 @@ name: "Number of gypsy families who received food baskets"
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias ciganas que receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:GypsyFamily
-alternateName: "Qtde de famílias ciganas que receberam cestas de alimento@pt"
 
 Node: dcid:Amount_Food_IndigenousFamily
 typeOf: dcid:StatisticalVariable
@@ -204,8 +204,8 @@ name: "Kilograms of food delivered to indigenous families"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:IndigenousFamily
 alternateName: "Quilos de alimentos entregues a famílias indígenas@pt"
+householdType: dcid:IndigenousFamily
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_IndigenousFamily
 typeOf: dcid:StatisticalVariable
@@ -213,20 +213,20 @@ name: "Number of food baskets delivered to indigenous families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias indígenas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:IndigenousFamily
-alternateName: "Qtde de cestas de alimentos entregues a famílias indígenas@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_IndigenousFamily_AsAFractionOf_Count_Household_ReceivedFoodBasket_IndigenousFamily
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_IndigenousFamily_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_IndigenousFamily
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to Indigenous Families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_IndigenousFamily
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_IndigenousFamily
+alternateName: "Percentual de Cestas Básicas entregues a Famílias Indígenas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:IndigenousFamily
-alternateName: "Percentual de Cestas Básicas entregues a Famílias Indígenas@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_IndigenousFamily
 typeOf: dcid:StatisticalVariable
@@ -234,19 +234,19 @@ name: "Number of food baskets destined for indigenous families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias indígenas@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:IndigenousFamily
-alternateName: "Qtde de cestas de alimentos destinadas a famílias indígenas@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_IndigenousFamily
 typeOf: dcid:StatisticalVariable
-name: "Number of indigenous families"
+name: "Number of indigenous families that received food baskets"
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias indígena receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:IndigenousFamily
-alternateName: "Qtde de famílias indígena@pt"
 
 Node: dcid:Amount_Food_QuilombolaFamily
 typeOf: dcid:StatisticalVariable
@@ -254,8 +254,8 @@ name: "Kilos of food delivered to quilombola families"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:QuilombolaFamily
 alternateName: "Quilos de alimentos entregues a famílias quilombolas@pt"
+householdType: dcid:QuilombolaFamily
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_QuilombolaFamily
 typeOf: dcid:StatisticalVariable
@@ -263,20 +263,20 @@ name: "Number of food baskets delivered to quilombola families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias quilombola@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:QuilombolaFamily
-alternateName: "Qtde de cestas de alimentos entregues a famílias quilombola@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_QuilombolaFamily_AsAFractionOf_Count_Household_ReceivedFoodBasket_QuilombolaFamily
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_QuilombolaFamily_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_QuilombolaFamily
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to quilombola families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_QuilombolaFamily
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_QuilombolaFamily
+alternateName: "Percentual de Cestas Básicas entregues a famílias quilombolas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:QuilombolaFamily
-alternateName: "Percentual de Cestas Básicas entregues a famílias quilombolas@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_QuilombolaFamily
 typeOf: dcid:StatisticalVariable
@@ -284,19 +284,19 @@ name: "Number of food baskets destined for quilombola families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias quilombola@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:QuilombolaFamily
-alternateName: "Qtde de cestas de alimentos destinadas a famílias quilombola@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_QuilombolaFamily
 typeOf: dcid:StatisticalVariable
-name: "Number of quilombola families"
+name: "Number of quilombola families that received food baskets"
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias quilombola receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:QuilombolaFamily
-alternateName: "Qtde de famílias quilombola@pt"
 
 Node: dcid:Amount_Food_RecyclableMaterialCollectorsFamily
 typeOf: dcid:StatisticalVariable
@@ -304,8 +304,8 @@ name: "Kilograms of food delivered to families collecting recyclable material"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:RecyclableMaterialCollectorsFamily
 alternateName: "Quilos de alimentos entregues a famílias catadores de material reciclável@pt"
+householdType: dcid:RecyclableMaterialCollectorsFamily
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_RecyclableMaterialCollectorsFamily
 typeOf: dcid:StatisticalVariable
@@ -313,20 +313,20 @@ name: "Number of food baskets delivered to families collecting recyclable materi
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias catadores de material reciclável@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:RecyclableMaterialCollectorsFamily
-alternateName: "Qtde de cestas de alimentos entregues a famílias catadores de material reciclável@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_RecyclableMaterialCollectorsFamily_AsAFractionOf_Count_Household_ReceivedFoodBasket_RecyclableMaterialCollectorsFamily
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_RecyclableMaterialCollectorsFamily_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_RecyclableMaterialCollectorsFamily
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to families who collect recyclable material"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_RecyclableMaterialCollectorsFamily
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_RecyclableMaterialCollectorsFamily
+alternateName: "Percentual de Cestas Básicas entregues a  famílias catadores de material reciclável@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:RecyclableMaterialCollectorsFamily
-alternateName: "Percentual de Cestas Básicas entregues a  famílias catadores de material reciclável@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_RecyclableMaterialCollectorsFamily
 typeOf: dcid:StatisticalVariable
@@ -334,9 +334,9 @@ name: "Number of food baskets destined for families of recyclable material colle
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias de catadores de material reciclável@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:RecyclableMaterialCollectorsFamily
-alternateName: "Qtde de cestas de alimentos destinadas a famílias de catadores de material reciclável@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_RecyclableMaterialCollectorsFamily
 typeOf: dcid:StatisticalVariable
@@ -344,9 +344,9 @@ name: "Number of families of recyclable material collectors who received food ba
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias de catadores de material reciclável que receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:RecyclableMaterialCollectorsFamily
-alternateName: "Qtde de famílias de catadores de material reciclável que receberam cestas de alimento@pt"
 
 Node: dcid:Amount_Food_SettledInCamps
 typeOf: dcid:StatisticalVariable
@@ -354,8 +354,8 @@ name: "Kilograms of food delivered to settled/camped families"
 populationType: dcid:Food
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-householdType: dcid:SettledInCamps
 alternateName: "Quilos de alimentos entregues a famílias assentadas/acampadas@pt"
+householdType: dcid:SettledInCamps
 
 Node: dcid:Count_FoodBasket_DeliveredFoodBasket_SettledInCamps
 typeOf: dcid:StatisticalVariable
@@ -363,20 +363,20 @@ name: "Number of food baskets delivered to settled/camped families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos entregues a famílias assentadas/acampadas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:SettledInCamps
-alternateName: "Qtde de cestas de alimentos entregues a famílias assentadas/acampadas@pt"
 
-Node: dcid:Count_FoodBasket_DeliveredFoodBasket_SettledInCamps_AsAFractionOf_Count_Household_ReceivedFoodBasket_SettledInCamps
+Node: dcid:Count_FoodBasket_DeliveredFoodBasket_SettledInCamps_AsAFractionOf_Count_FoodBasket_DestinedFoodBasket_SettledInCamps
 typeOf: dcid:StatisticalVariable
 name: "Percentage of Basic Food Baskets delivered to settled/camped families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_ReceivedFoodBasket_SettledInCamps
+measurementDenominator: dcid:Count_FoodBasket_DestinedFoodBasket_SettledInCamps
+alternateName: "Percentual de Cestas Básicas entregues a  famílias assentadas/acampadas@pt"
 foodBasketStatus: dcid:DeliveredFoodBasket
 householdType: dcid:SettledInCamps
-alternateName: "Percentual de Cestas Básicas entregues a  famílias assentadas/acampadas@pt"
 
 Node: dcid:Count_FoodBasket_DestinedFoodBasket_SettledInCamps
 typeOf: dcid:StatisticalVariable
@@ -384,9 +384,9 @@ name: "Number of food baskets destined for settled/camped families"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de cestas de alimentos destinadas a famílias assentadas/acampadas@pt"
 foodBasketStatus: dcid:DestinedFoodBasket
 householdType: dcid:SettledInCamps
-alternateName: "Qtde de cestas de alimentos destinadas a famílias assentadas/acampadas@pt"
 
 Node: dcid:Count_Household_ReceivedFoodBasket_SettledInCamps
 typeOf: dcid:StatisticalVariable
@@ -394,9 +394,9 @@ name: "Number of families settled/camped that received food baskets"
 populationType: dcid:Household
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+alternateName: "Qtde de famílias assentadas/acampadas  que receberam cestas de alimento@pt"
 foodBasketStatus: dcid:ReceivedFoodBasket
 householdType: dcid:SettledInCamps
-alternateName: "Qtde de famílias assentadas/acampadas  que receberam cestas de alimento@pt"
 
 Node: dcid:Count_FoodBasket_BancoDoBrasilFoundation
 typeOf: dcid:StatisticalVariable
@@ -404,8 +404,8 @@ name: "Accumulated food baskets delivered by Banco do Brasil Foundation"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:BancoDoBrasilFoundation
 alternateName: "Cestas entregues acumuladas por Fundação Banco do Brasil@pt"
+brazilAidDistributionPartner: dcid:BancoDoBrasilFoundation
 
 Node: dcid:Count_FoodBasket_CortevaAgriscience
 typeOf: dcid:StatisticalVariable
@@ -413,8 +413,8 @@ name: "Accumulated food baskets delivered by Corteva Agriscience"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:CortevaAgriscience
 alternateName: "Cestas entregues acumuladas por Corteva Agriscience@pt"
+brazilAidDistributionPartner: dcid:CortevaAgriscience
 
 Node: dcid:Count_FoodBasket_DivineCaldoBrazil
 typeOf: dcid:StatisticalVariable
@@ -422,8 +422,8 @@ name: "Accumulated food baskets delivered by Divine Caldo Brazil"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:DivineCaldoBrazil
 alternateName: "Cestas entregues acumuladas por Divino Caldo Brasil@pt"
+brazilAidDistributionPartner: dcid:DivineCaldoBrazil
 
 Node: dcid:Count_FoodBasket_NationalAssociationOfGarlicOrOnionProducers
 typeOf: dcid:StatisticalVariable
@@ -431,8 +431,8 @@ name: "Accumulated food baskets delivered by National Association of Garlic Prod
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:NationalAssociationOfGarlicOrOnionProducers
 alternateName: "Cestas entregues acumuladas por Associação Nacional dos Produtores de Alho/ Associação Nacional de Produtores de Cebola@pt"
+brazilAidDistributionPartner: dcid:NationalAssociationOfGarlicOrOnionProducers
 
 Node: dcid:Count_FoodBasket_NationalConfederationOfAgricultureSENAR
 typeOf: dcid:StatisticalVariable
@@ -440,8 +440,8 @@ name: "Accumulated food baskets delivered by Agro Fraterno/National Confederatio
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:NationalConfederationOfAgricultureSENAR
 alternateName: "Cestas entregues acumuladas por Agro Fraterno/Confederação Nacional da Agricultura/SENAR@pt"
+brazilAidDistributionPartner: dcid:NationalConfederationOfAgricultureSENAR
 
 Node: dcid:Count_FoodBasket_NationalConfederationOfCommerceSESC
 typeOf: dcid:StatisticalVariable
@@ -449,8 +449,8 @@ name: "Accumulated food baskets delivered by National Confederation of Commerce/
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:NationalConfederationOfCommerceSESC
 alternateName: "Cestas entregues acumuladas por Confederação Nacional do Comercio/SESC/Federações do Comércio regionais@pt"
+brazilAidDistributionPartner: dcid:NationalConfederationOfCommerceSESC
 
 Node: dcid:Count_FoodBasket_NationalConfederationOfIndustrySESI
 typeOf: dcid:StatisticalVariable
@@ -458,8 +458,8 @@ name: "Accumulated food baskets delivered by National Confederation of Industry/
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:NationalConfederationOfIndustrySESI
 alternateName: "Cestas entregues acumuladas por Confederação Nacional da Indústria/SESI/Federações da Industria regionais@pt"
+brazilAidDistributionPartner: dcid:NationalConfederationOfIndustrySESI
 
 Node: dcid:Count_FoodBasket_NutrelliAlimentosECongelattos
 typeOf: dcid:StatisticalVariable
@@ -467,8 +467,8 @@ name: "Accumulated food baskets delivered by Nutrelli Alimentos e Congelattos"
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:NutrelliAlimentosECongelattos
 alternateName: "Cestas entregues acumuladas por Nutrelli Alimentos e Congelattos@pt"
+brazilAidDistributionPartner: dcid:NutrelliAlimentosECongelattos
 
 Node: dcid:Count_FoodBasket_OrganizationOfCooperativesOfBrazil
 typeOf: dcid:StatisticalVariable
@@ -476,8 +476,8 @@ name: "Accumulated food baskets delivered by Agro Fraterno/ Organization of Coop
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:OrganizationOfCooperativesOfBrazil
 alternateName: "Cestas entregues acumuladas por Agro Fraterno/ Organização da Cooperativas do Brasil@pt"
+brazilAidDistributionPartner: dcid:OrganizationOfCooperativesOfBrazil
 
 Node: dcid:Count_FoodBasket_SaoPauloWarehouseAndWarehouseCompanyCEAGESP
 typeOf: dcid:StatisticalVariable
@@ -485,5 +485,5 @@ name: "Accumulated food baskets delivered by São Paulo Warehouse and Warehouse 
 populationType: dcid:FoodBasket
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-brazilAidDistributionPartner: dcid:SaoPauloWarehouseAndWarehouseCompanyCEAGESP
 alternateName: "Cestas entregues acumuladas por Companhia de Entrepostos e Armazéns de São Paulo -CEAGESP@pt"
+brazilAidDistributionPartner: dcid:SaoPauloWarehouseAndWarehouseCompanyCEAGESP
