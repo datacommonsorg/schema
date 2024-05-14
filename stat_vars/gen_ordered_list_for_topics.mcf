@@ -1534,6 +1534,12 @@ memberList: "Count_Person_NotAUSCitizen,Count_Person_USCitizenBornInTheUnitedSta
 name: "Population by US Citizenship"
 typeOf: dcid:StatVarPeerGroup
 
+Node: dcid:dc/svpg/dc/topic/CollegeEducation_Attainment
+dcid: "dc/svpg/dc/topic/CollegeEducation_Attainment"
+memberList: "Count_Person_EducationalAttainmentAssociatesDegree,Count_Person_EducationalAttainmentBachelorsDegree,Count_Person_EducationalAttainmentMastersDegree,Count_Person_EducationalAttainmentProfessionalSchoolDegree,Count_Person_EducationalAttainmentDoctorateDegree"
+name: "College Education Attainment"
+typeOf: dcid:StatVarPeerGroup
+
 Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ManagementBusinessScienceandArtsOccupations
 dcid: "dc/svpg/dc/topic/CommuteModeByOccupation_ManagementBusinessScienceandArtsOccupations"
 memberList: "dc/nfdf9rt7kbggb,dc/v33p7mwnpe9vb,dc/4xklqxfc27w1f,dc/80q8jrnkvwtt3,dc/jszfr5wd4f7pb,dc/y9yb58snpfzw5"
@@ -1908,7 +1914,7 @@ typeOf: dcid:StatVarPeerGroup
 
 Node: dcid:dc/svpg/dc/topic/Immigration_NativeVsForeign
 dcid: "dc/svpg/dc/topic/Immigration_NativeVsForeign"
-memberList: "Count_Person_Native,Count_Person_ForeignBorn"
+memberList: "Count_Person_ForeignBorn,Count_Person_Native"
 name: "Population by Nativity"
 typeOf: dcid:StatVarPeerGroup
 
@@ -2762,6 +2768,12 @@ Node: dcid:dc/topic/ColdEvent
 dcid: "dc/topic/ColdEvent"
 name: "Cold Events"
 relevantVariableList: "Count_ColdWindChillEvent,Count_ExtremeColdWindChillEvent,Count_FreezingFogEvent,Count_FrostFreezeEvent,Count_WinterWeatherEvent"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/CollegeEducationAttainment
+dcid: "dc/topic/CollegeEducationAttainment"
+name: "College Education"
+relevantVariableList: "dc/svpg/dc/topic/CollegeEducation_Attainment"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/CollegeOrUniversityStudentHousingResidents
