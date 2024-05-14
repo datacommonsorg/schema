@@ -1,0 +1,407 @@
+# Property
+Node: dcid:wasteDisposalMethod
+typeOf: dcid:Property
+name: "wasteDisposalMethod"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:WasteDisposalMethodEnum
+description: "Method used to dispose garbage"
+
+Node: dcid:affectedBy
+typeOf: dcid:Property
+name: "affectedBy"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:AffectedByEnum
+description: "Household affected by any particular event"
+
+Node: dcid:externalWallMaterial
+typeOf: dcid:Property
+name: "externalWallMaterial"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:ExternalWallMaterialEnum
+description: "Material from which house external wall is made of"
+
+Node: dcid:floorMaterial
+typeOf: dcid:Property
+name: "floorMaterial"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:FloorMaterialEnum
+description: "Material from which house floor is made of"
+
+Node: dcid:lightSource
+typeOf: dcid:Property
+name: "lightSource"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:LightSourceEnum
+description: "Source of light using for lighting the house"
+
+Node: dcid:perCapitaIncome
+typeOf: dcid:Property
+name: "perCapitaIncome"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:PerCapitaIncomeEnum
+
+Node: dcid:sanitaryDrainageMethod
+typeOf: dcid:Property
+name: "sanitaryDrainageMethod"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:SanitaryDrainageMethodEnum
+description: "Method used for sanitary drainage"
+
+Node: dcid:registeredIn
+typeOf: dcid:Property
+name: "registeredIn"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:RegisteredInEnum
+description: "Household registered in any government scheme etc"
+
+Node: dcid:householdMemberCount
+typeOf: dcid:Property
+name: "householdMemberCount"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:QuantityRange
+description: "Count of member in a household"
+
+# Enum
+Node: dcid:WasteDisposalMethodEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "WasteDisposalMethodEnum"
+
+Node: dcid:AffectedByEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "AffectedByEnum"
+
+Node: dcid:PovertyStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "PovertyStatusEnum"
+
+Node: dcid:ExternalWallMaterialEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ExternalWallMaterialEnum"
+
+Node: dcid:FloorMaterialEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+
+Node: dcid:LightSourceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "LightSourceEnum"
+
+Node: dcid:PerCapitaIncomeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "PerCapitaIncomeEnum"
+
+Node: dcid:SanitaryDrainageMethodEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "SanitaryDrainageMethodEnum"
+
+Node: dcid:RegisteredInEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "RegisteredInEnum"
+
+
+# Enum Values
+Node: dcid:GarbageDirectCollection
+typeOf: dcid:WasteDisposalMethodEnum
+name: "Garbage Direct Collection"
+description: "Direct collection of garbage for garbage disposal"
+
+Node: dcid:GarbageIndirectCollection
+typeOf: dcid:WasteDisposalMethodEnum
+name: "Garbage Indirect Collection"
+description: "Indirect collection of garbage for garbage disposal"
+
+Node: dcid:BurnedOrBuriedOnTheProperty
+typeOf: dcid:WasteDisposalMethodEnum
+name: "Burned Or Buried On The Property"
+description: "Burned or buried garbage on the property for garbage disposal"
+
+Node: dcid:WasteDumpedOnVacantLandOrPublicSpace
+typeOf: dcid:WasteDisposalMethodEnum
+name: "Waste Dumped On Vacant Land Or Public Space"
+
+Node: dcid:DumpedInRiverOrSea
+typeOf: dcid:WasteDisposalMethodEnum
+name: "Dumped In River Or Sea"
+
+Node: dcid:VISDATA_OtherFormOfWasteDisposal
+typeOf: dcid:WasteDisposalMethodEnum
+name: "VISDATA Other Form Of Waste Disposal"
+
+Node: dcid:VISDATA_UnknownWasteDisposalMethod
+typeOf: dcid:WasteDisposalMethodEnum
+name: "VISDATA Unknown Waste Disposal Method"
+
+Node: dcid:CisternWater
+typeOf: dcid:WaterSourceTypeEnum
+name: "Cistern Water"
+
+Node: dcid:VISDATA_ByOtherWaterSourceMeans
+typeOf: dcid:WaterSourceTypeEnum
+name: "VISDATA By Other Water Source Means"
+
+Node: dcid:VISDATA_UnknownWaterSourceInformation
+typeOf: dcid:WaterSourceTypeEnum
+name: "VISDATA Unknown Water Source Information"
+
+Node: dcid:GeneralWaterDistributionNetwork
+typeOf: dcid:WaterSourceTypeEnum
+name: "General Distribution Network"
+
+Node: dcid:WellWater
+typeOf: dcid:WaterSourceTypeEnum
+name: "Well Water"
+
+Node: dcid:SpringWater
+typeOf: dcid:WaterSourceTypeEnum
+name: "Spring Water"
+
+Node: dcid:InfrastructureProject
+typeOf: dcid:AffectedByEnum
+name: "Infrastructure Project"
+
+Node: dcid:BolsaFamiliaProgram
+typeOf: dcid:BenefitsStatusEnum
+name: "Bolsa Familia Program"
+description: "Bolsa Família is the current social welfare program of the Government of Brazil, part of the Fome Zero network of federal assistance programs. Bolsa Família provided financial aid to poor Brazilian families. In order to be eligible, families had to ensure that children attend school and get vaccinated"
+descriptionUrl: "https://en.wikipedia.org/wiki/Bolsa_Fam%C3%ADlia"
+
+Node: dcid:NotBenifitedByBolsaFamiliaProgram
+typeOf: dcid:BenefitsStatusEnum
+name: "Not Benifited By Bolsa Familia Program"
+
+Node: dcid:Brazil_NationalLandCreditProgram
+typeOf: dcid:BenefitsStatusEnum
+name: "Brazil National Land Credit Program"
+
+Node: dcid:SewageOrRainwaterCollectionSystem
+typeOf: dcid:SanitaryDrainageMethodEnum
+name: "Sewage Or Rainwater Collection System"
+
+Node: dcid:SepticTank
+typeOf: dcid:SanitaryDrainageMethodEnum
+name: "Septic Tank"
+
+Node: dcid:RudimentarySepticTank
+typeOf: dcid:SanitaryDrainageMethodEnum
+name: "Rudimentary Septic Tank"
+specializationOf: dcid:SepticTank
+
+Node: dcid:OpenDitchDrainage
+typeOf: dcid:SanitaryDrainageMethodEnum
+name: "Open Ditch Drainage"
+
+Node: dcid:RiverOrLakeOrSeaDrainage
+typeOf: dcid:SanitaryDrainageMethodEnum
+name: "River Or Lake Or Sea Drainage"
+
+Node: dcid:VISDATA_SanitaryDrainageByOtherMeans
+typeOf: dcid:SanitaryDrainageMethodEnum
+name: "VISDATA Sanitary Drainage By Other Means"
+
+Node: dcid:VISDATA_UnknownSanitaryDrainageMethod
+typeOf: dcid:SanitaryDrainageMethodEnum
+name: "VISDATA Unknown Sanitary Drainage Method"
+
+Node: dcid:CementFloor
+typeOf: dcid:FloorMaterialEnum
+name: "Cement Floor"
+
+Node: dcid:UtilizedWoodFloorMaterial
+typeOf: dcid:FloorMaterialEnum
+name: "Utilized Wood Floor Material"
+
+Node: dcid:EquippedWoodFloorMaterial
+typeOf: dcid:FloorMaterialEnum
+name: "Equipped Wood Floor Material"
+
+Node: dcid:CeramicFloor
+typeOf: dcid:FloorMaterialEnum
+name: "Ceramic Floor"
+
+Node: dcid:CarpetFloor
+typeOf: dcid:FloorMaterialEnum
+name: "Carpet Floor"
+
+Node: dcid:VISDATA_OtherFloorMaterial
+typeOf: dcid:FloorMaterialEnum
+name: "VISDATA Other Floor Material"
+
+Node: dcid:VISDATA_UnknownFloorMaterial
+typeOf: dcid:FloorMaterialEnum
+name: "VISDATA Unknown Floor Material"
+
+Node: dcid:TerraFloorMaterial
+typeOf: dcid:FloorMaterialEnum
+name: "Terra Floor Material"
+
+Node: dcid:UncoatedBrickWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "Uncoated Brick Wall"
+
+Node: dcid:PrimedWoodExternalWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "Primed Wood External Wall"
+
+Node: dcid:MudCoveredExternalWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "Mud Covered External Wall"
+
+Node: dcid:UncoatedMudExternalWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "Uncoated Mud External Wall"
+
+Node: dcid:RecycledWoodExternalWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "Recycled Wood External Wall"
+
+Node: dcid:StrawExternalWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "Straw External Wall"
+
+Node: dcid:VISDATA_OtherMaterialExternalWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "VISDATA Other Material External Wall"
+
+Node: dcid:VISDATA_UnknownMaterialExternalWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "VISDATA Unknown Material External Wall"
+
+Node: dcid:CladdingBrickWall
+typeOf: dcid:ExternalWallMaterialEnum
+name: "Cladding Brick Wall"
+
+Node: dcid:Upto1MinimumWage
+typeOf: dcid:PerCapitaIncomeEnum
+name: "Upto 1 Minimum Wage"
+
+Node: dcid:Between1And2MinimumWage
+typeOf: dcid:PerCapitaIncomeEnum
+name: "Between 1And 2 Minimum Wage"
+
+Node: dcid:Between2And3MinimumWage
+typeOf: dcid:PerCapitaIncomeEnum
+name: "Between 2 And 3 Minimum Wage"
+
+Node: dcid:GreaterThan3MinimumWage
+typeOf: dcid:PerCapitaIncomeEnum
+name: "Greater Than 3 Minimum Wage"
+
+Node: dcid:IncompletePrimaryEducation
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Incomplete Primary Education"
+
+Node: dcid:IncompleteSecondaryEducation
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Incomplete Secondary Education"
+
+Node: dcid:HigherEducation
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Higher Education"
+
+Node: dcid:VISDATA_WithoutEducationalInformation
+typeOf: dcid:SchoolGradeLevelEnum
+name: "VISDATA Without Educational Information"
+
+Node: dcid:Uneducated
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Uneducated"
+
+Node: dcid:AgrarianReformFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Agrarian Reform Family"
+
+Node: dcid:FarmingFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Farming Family"
+
+Node: dcid:RiversideFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Riverside Family"
+
+Node: dcid:PrisonersInPrisonSystem
+typeOf: dcid:FamilyTypeEnum
+name: "Prisoners In Prison System"
+
+Node: dcid:TerreiroCommunity
+typeOf: dcid:FamilyTypeEnum
+name: "Terreiro Community"
+
+Node: dcid:OwnElectricMeter
+typeOf: dcid:LightSourceEnum
+name: "Own Electric Meter"
+
+Node: dcid:CommunityElectricMeter
+typeOf: dcid:LightSourceEnum
+name: "Community Electric Meter"
+
+Node: dcid:WithoutElectricMeter
+typeOf: dcid:LightSourceEnum
+name: "Without Electric Meter"
+
+Node: dcid:Oil
+typeOf: dcid:LightSourceEnum
+name: "Oil"
+
+Node: dcid:Kerosene
+typeOf: dcid:LightSourceEnum
+name: "Kerosene"
+
+Node: dcid:GasLight
+typeOf: dcid:LightSourceEnum
+name: "Gas Light"
+
+Node: dcid:CandleLight
+typeOf: dcid:LightSourceEnum
+name: "Candle Light"
+
+Node: dcid:VISDATA_LightingByOtherMeans
+typeOf: dcid:LightSourceEnum
+name: "VISDATA Lighting By Other Means"
+
+Node: dcid:VISDATA_UnknownSourceOfLighting
+typeOf: dcid:LightSourceEnum
+name: "VISDATA Unknown Source Of Lighting"
+
+Node: dcid:VISDATA_IncomeBand1
+typeOf: dcid:PerCapitaIncomeEnum
+name: "VISDATA Income Band 1"
+
+Node: dcid:VISDATA_IncomeBand2
+typeOf: dcid:PerCapitaIncomeEnum
+name: "VISDATA Income Band 2"
+
+Node: dcid:VISDATA_IncomeBand3
+typeOf: dcid:PerCapitaIncomeEnum
+name: "VISDATA Income Band 3"
+
+Node: dcid:VISDATA_IncomeBand4
+typeOf: dcid:PerCapitaIncomeEnum
+name: "VISDATA Income Band 4"
+
+Node: dcid:HalfOfMinimumWage
+typeOf: dcid:PerCapitaIncomeEnum
+name: "Half Of Minimum Wage"
+
+Node: dcid:AboveHalfOfMinimumWage
+typeOf: dcid:PerCapitaIncomeEnum
+name: "Above Half Of Minimum Wage"
+
+Node: dcid:LowIncome
+typeOf: dcid:PerCapitaIncomeEnum
+name: "Low Income"
+
+Node: dcid:Brazil_SingleRegistry
+typeOf: dcid:RegisteredInEnum
+name: "Brazil Single Registry"
+
+Node: dcid:InPovertyAccordingToBolsaFamiliaProgram
+typeOf: dcid:PovertyStatusEnum
+name: "In Poverty According To Bolsa Familia Program"
