@@ -1,0 +1,12 @@
+Node: dcid:dc/c/Count_Person_1OrMoreYears_DifferentHouseAbroad
+typeOf: dcs:StatisticalCalculation
+inputPropertyExpression: "Count_Person_1OrMoreYears_Female_DifferentHouseAbroad + Count_Person_1OrMoreYears_Male_DifferentHouseAbroad"
+outputProperty: dcs:Count_Person_1OrMoreYears_DifferentHouseAbroad
+
+Node: dcid:Count_Person_1OrMoreYears_DifferentHouseAbroad
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+populationType: dcid:Person
+residentStatus: dcid:DifferentHouseAbroad
+age: [1 - Years]
+typeOf: dcs:StatisticalVariable
