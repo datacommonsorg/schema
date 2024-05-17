@@ -1,0 +1,25 @@
+Node: dcid:dc/c/Count_Person_Female
+typeOf: dcs:StatisticalCalculation
+inputPropertyExpression: "Count_Person_NotACitizen_Female + Count_Person_Citizen_Female"
+outputProperty: dcs:Count_Person_Female
+
+Node: dcid:dc/c/Count_Person_Male
+typeOf: dcs:StatisticalCalculation
+inputPropertyExpression: "Count_Person_NotACitizen_Male + Count_Person_Citizen_Male"
+outputProperty: dcs:Count_Person_Male
+
+Node: dcid:dc/c/Count_Person_NotACitizen
+typeOf: dcs:StatisticalCalculation
+inputPropertyExpression: "Count_Person_NotACitizen_Female + Count_Person_NotACitizen_Male"
+outputProperty: dcs:Count_Person_NotACitizen
+
+Node: dcid:dc/c/Count_Person_Citizen
+typeOf: dcs:StatisticalCalculation
+inputPropertyExpression: "Count_Person_Citizen_Female + Count_Person_Citizen_Male"
+outputProperty: dcs:Count_Person_Citizen
+
+Node: dcid:dc/c/Count_Person
+typeOf: dcs:StatisticalCalculation
+inputPropertyExpression: "Count_Person_Female + Count_Person_Male"
+inputPropertyExpression: "Count_Person_NotACitizen + Count_Person_Citizen"
+outputProperty: dcs:Count_Person
