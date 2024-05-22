@@ -723,7 +723,7 @@ Node: dcid:assessmentType
 typeOf: schema:Property
 name: "assessmentType"
 description: "The type of an academic assessment."
-domainIncludes: dcs:AcademicAssessmentEvent
+domainIncludes: dcs:AcademicAssessmentEvent, dcid:Student
 rangeIncludes: dcs:AcademicAssessmentTypeEnum
 
 ## AcademicAssessmentTypeEnum definition.
@@ -767,7 +767,7 @@ name: "AssessmentStatusEnum"
 
 Node: dcid:assessmentStatus
 typeOf: schema:Property
-domainIncludes: dcs:School
+domainIncludes: dcs:School ,dcid:Student
 rangeIncludes: dcs:AssessmentStatusEnum
 name: "assessmentStatus"
 description: "Status about the assessment."
@@ -838,7 +838,7 @@ domainIncludes: dcs:Student
 Node: dcid:race
 typeOf: schema:Property
 rangeIncludes: dcs:RaceCodeEnum
-domainIncludes: schema:Person, schema:Household
+domainIncludes: schema:Person, schema:Household, dcid:Student
 
 ## Charter School Enum
 # Enum Already Defined in /cns/jv-d/home/datcom/v3_mcf/schema/K12SchemaExtensions.mcf
@@ -2317,3 +2317,44 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:EducationalMajorEnum
 name: "doctorateDegreeMajor"
+
+Node: dcid:DSRC_AllValidTests
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "DSRC_ All Valid Tests"
+description: "District State report cards (DSRC) all valid tests."
+descriptionUrl: "https://webnew.ped.state.nm.us/wp-content/uploads/2023/11/DSRC-SY-2022-23-AVT-Technical-Guide-for-External-Partners.-2023.1006.CCH_.pdf"
+
+Node: dcid:TestAdministered
+typeOf: dcid:AssessmentStatusEnum
+name: "Test Administered"
+
+Node: dcid:DSRC_Proficient
+typeOf: dcid:ProficiencyLevelEnum
+name: "DSRC_ Proficient"
+
+Node: dcid:ProficiencyLevelEnum
+typeOf: schema:Class
+subClassOf:Enumeration
+name:"ProficiencyLevelEnum"
+
+Node: dcid:NotDirectCertificationLunch
+typeOf: dcid:LunchTypeEnum
+name: "Not Direct Certification Lunch"
+descriptionUrl: "https://webnew.ped.state.nm.us/wp-content/uploads/2023/11/DSRC-SY-2022-23-AVT-Technical-Guide-for-External-Partners.-2023.1006.CCH_.pdf"
+
+Node: dcid:NotEnglishLearner
+typeOf: dcid:LanguageLearnedEnum
+name: "Not English Learner"
+descriptionUrl: "https://webnew.ped.state.nm.us/wp-content/uploads/2023/11/DSRC-SY-2022-23-AVT-Technical-Guide-for-External-Partners.-2023.1006.CCH_.pdf"
+
+Node: dcid:Military
+typeOf: dcid:SocialVulnerabilityStatusEnum
+name: "Military"
+descriptionUrl: "https://webnew.ped.state.nm.us/wp-content/uploads/2023/11/DSRC-SY-2022-23-AVT-Technical-Guide-for-External-Partners.-2023.1006.CCH_.pdf"
+
+
+
+
+
+
+
