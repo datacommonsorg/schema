@@ -133,7 +133,7 @@ name: "provenance"
 Node: meanValue
 dcid: "meanValue"
 typeOf: schema:Property
-rangeIncludes: schema:Number
+rangeIncludes: schema:Number, schema:Faculty
 domainIncludes: schema:Observation
 name: "meanValue"
 
@@ -617,7 +617,7 @@ rangeIncludes: schema:Text
 
 Node: crimeType
 dcid: "crimeType"
-domainIncludes: schema:CriminalActivities, dcs:CriminalIncidents
+domainIncludes: schema:CriminalActivities, dcs:CriminalIncidents, dcid:HateCrimeIncidents
 rangeIncludes: schema:CrimeTypeEnum, schema:ViolentCrimeTypeEnum
 typeOf: schema:Property
 name: "crimeType"
@@ -4207,3 +4207,276 @@ Node: dcid:StatisticalRegion
 name: "StatisticalRegion"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
+
+
+####US Education data additions
+
+Node: dcid:enrollmentType
+typeOf: dcid:Property
+name: "enrollmentType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EnrollmentTypeEnum
+
+Node: dcid:EnrollmentTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EnrollmentTypeEnum"
+
+Node: dcid:SharedTime
+typeOf: dcid:EnrollmentTypeEnum
+name: "Shared Time"
+
+Node: dcid:FullTimeEquivalent
+typeOf: dcid:EnrollmentTypeEnum
+name: "Full Time Equivalent"
+
+Node: dcid:FullTime
+typeOf: dcid:EnrollmentTypeEnum
+name: "Full Time"
+
+Node: dcid:courseType
+typeOf: dcid:Property
+name: "courseType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CourseTypeEnum
+
+Node: dcid:CourseTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CourseTypeEnum"
+
+Node: dcid:AdvancedPlacementCourse
+typeOf: dcid:CourseTypeEnum
+name: "Advanced Placement Course"
+description: "An Advanced Placement or AP course is a high school course that culminates in an AP test for which the student can earn college credit."
+descriptionUrl: "https://rc.doe.state.nj.us/Documents/ReferenceGuide.pdf"
+
+Node: dcid:InternationalBaccalaureateCourse
+typeOf: dcid:CourseTypeEnum
+name: "International Baccalaureate Course"
+description: "AnInternational Baccalaureate or IB course is part of a program that gives high school students an opportunity to pursue college-level studies while still in high school"
+descriptionUrl: "https://rc.doe.state.nj.us/Documents/ReferenceGuide.pdf"
+
+Node: dcid:InternationalBaccalaureateExam
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "International Baccalaureate Exam"
+
+Node: dcid:DualEnrollmentCourse
+typeOf: dcid:CourseTypeEnum
+name: "Dual Enrollment Course"
+description: "Courses identified asdual enrollment allow high school students to enroll in college courses for credit prior to their high school graduation, and they may be taught by staff assigned to a school or staff outside ofthe school district."
+descriptionUrl: "https://rc.doe.state.nj.us/Documents/ReferenceGuide.pdf"
+
+Node: dcid:CareerAndTechnicalEducation
+typeOf: dcid:CourseTypeEnum
+name: "Career And Technical Education"
+
+Node: dcid:testStatus
+typeOf: dcid:Property
+name: "testStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:AssessmentStatusEnum
+
+Node: dcid:apQualificationStatus
+typeOf: dcid:Property
+name: "apQualificationStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:QuantityRange
+description: "Advanced Placement Qualification Status which states whether the student has qualified in the AP exam."
+
+Node: dcid:ibQualificationStatus
+typeOf: dcid:Property
+name: "ibQualificationStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:QuantityRange
+description: "International Baccalaureate Qualification Status which states whether the student has qualified in the IB exam."
+
+Node: dcid:Scores
+typeOf: dcid:Class
+subClassOf: dcid:Number
+name: "Scores"
+
+Node: dcid:APScoreQualified
+typeOf: dcid:CareerClusterStatusEnum
+name: "Advanced Placement Course Qualified Score"
+
+Node: dcid:IBScoreSatisfactory
+typeOf: dcid:CareerClusterStatusEnum
+name: "International Baccalaureate Course Qualified Score"
+
+Node: dcid:workExperiencePlace
+typeOf: dcid:Property
+name: "workExperiencePlace"
+domainIncludes: dcid:Faculty
+rangeIncludes: dcid:PlaceTypeEnum
+
+Node: dcid:careerClusterStatus
+typeOf: dcid:Property
+name: "careerClusterStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CareerClusterStatusEnum
+
+Node: dcid:CareerClusterStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CareerClusterStatusEnum"
+
+Node: dcid:CTEParticipant
+typeOf: dcid:CareerClusterStatusEnum
+name: "CTEParticipant"
+description: "CTE Participants are students who have completed only one course in any state approved CTE program area with a sequence of three or more courses as of the reported school year."
+descriptionUrl: "https://rc.doe.state.nj.us/Documents/ReferenceGuide.pdf"
+
+Node: dcid:CTEConcentrator
+typeOf: dcid:CareerClusterStatusEnum
+name: "CTEConcentrator"
+description: "CTE Concentrators are students who have completed two or more courses in any state-approved CTE program area with a sequence of three or more courses as of the reported school year; or completed one course in a single state-approved CTE program area with a program sequence of two courses; or completed the entire state-approved CTE program."
+descriptionUrl: "https://rc.doe.state.nj.us/Documents/ReferenceGuide.pdf"
+
+Node: dcid:StructuredLearningExperienced
+typeOf: dcid:CareerClusterStatusEnum
+name: "Structured Learning Experienced"
+description: "Structured Learning Experience (SLE) means experiential, supervised, in-depth learning experiences aligned to the New Jersey Student Learning Standards that are designed to offer students the opportunity to more fully explore career interests within one or more of the Career Clusters."
+descriptionUrl: "https://rc.doe.state.nj.us/Documents/ReferenceGuide.pdf"
+
+Node: dcid:IndustryValuedCredential
+typeOf: dcid:CareerClusterStatusEnum,WHO_EducationalAttainmentEnum
+name: "Industry Valued Credential"
+description: "Industry-valued credential is defined as “a recognized degree, diploma, certificate or certification awarded for an occupation in New Jersey."
+descriptionUrl: "https://rc.doe.state.nj.us/Documents/ReferenceGuide.pdf"
+
+Node: dcid:Credential
+typeOf: dcid:Thing
+name: "Credential"
+
+Node: dcid:countOfCredentialEarned
+typeOf: dcid:Property
+name: "countOfCredentialEarned"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CountOfCredentialEarnedEnum
+
+Node: dcid:CountOfCredentialEarnedEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CountOfCredentialEarnedEnum"
+
+Node: dcid:AtleastOneCredential
+typeOf: dcid:CountOfCredentialEarnedEnum
+name: "Atleast One Credential"
+
+Node: dcid:careerCluster
+typeOf: dcid:Property
+name: "careerCluster"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CareerClusterEnum
+
+Node: dcid:CareerClusterEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CareerClusterEnum"
+
+Node: dcid:ArchitectureAndConstruction
+typeOf: dcid:CareerClusterEnum
+name: "Architecture And Construction"
+
+Node: dcid:HealthScience
+typeOf: dcid:CareerClusterEnum
+name: "Health Science"
+
+Node: dcid:InformationTechnology
+typeOf: dcid:CareerClusterEnum
+name: "Information Technology"
+
+Node: dcid:TransportationDistributionLogistics
+typeOf: dcid:CareerClusterEnum
+name: "Transportation Distribution Logistics"
+
+Node: dcid:BusinessManagementAdministration
+typeOf: dcid:CareerClusterEnum
+name: "Business Management Administration"
+
+Node: dcid:HospitalityAndTourism
+typeOf: dcid:CareerClusterEnum
+name: "Hospitality And Tourism"
+
+Node: dcid:LawPublicSafetyCorrectionsSecurity
+typeOf: dcid:CareerClusterEnum
+name: "Law Public Safety Corrections Security"
+
+Node: dcid:HumanServices
+typeOf: dcid:CareerClusterEnum
+name: "Human Services"
+
+Node: dcid:ArtsAVTechnologyCommunications
+typeOf: dcid:CareerClusterEnum
+name: "Arts AVTechnology Communications"
+
+Node: dcid:Finance
+typeOf: dcid:CareerClusterEnum
+name: "Finance"
+
+Node: dcid:GovernmentPublicAdministration
+typeOf: dcid:CareerClusterEnum
+name: "Government Public Administration"
+
+Node: dcid:Marketing
+typeOf: dcid:CareerClusterEnum
+name: "Marketing"
+
+Node: dcid:ScienceTechnologyEngineeringAndMathematics
+typeOf: dcid:CareerClusterEnum
+name: "Science Technology Engineering And Mathematics"
+
+Node: dcid:AgricultureFoodNaturalResources
+typeOf: dcid:CareerClusterEnum
+name: "Agriculture Food Natural Resources"
+
+Node: dcid:EducationAndTraining
+typeOf: dcid:CareerClusterEnum
+name: "Education And Training"
+
+Node: dcid:classYear
+typeOf: dcid:Property
+name: "classYear"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:ClassYearEnum
+
+Node: dcid:ClassYearEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ClassYearEnum"
+
+Node: dcid:ClassYear2018
+typeOf: dcid:ClassYearEnum
+name: "Class Year 2018"
+
+Node: dcid:AllInstitution
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "All Institution"
+
+Node: dcid:ClassYear2019
+typeOf: dcid:ClassYearEnum
+name: "Class Year 20 19"
+
+Node: dcid:ClassYear2020
+typeOf: dcid:ClassYearEnum
+name: "Class Year 20 20"
+
+Node: dcid:ClassYear2021
+typeOf: dcid:ClassYearEnum
+name: "Class Year 2021"
+
+Node: dcid:retentionStatus
+typeOf: dcid:Property
+name: "retentionStatus"
+domainIncludes: dcid:Faculty
+rangeIncludes: dcid:RetentionStatusEnum
+
+Node: dcid:RetentionStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "RetentionStatusEnum"
+
+Node: dcid:Retained
+typeOf: dcid:RetentionStatusEnum
+name: "Retained"

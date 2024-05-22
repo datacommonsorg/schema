@@ -485,7 +485,7 @@ description: "Describes the ratio of student to teachers in the school"
 Node: dcid:schoolSubject
 typeOf: schema:Property
 name: "schoolSubject"
-rangeIncludes: dcs:SchoolSubjectEnum
+rangeIncludes: dcs:SchoolSubjectEnum, dcs:LanguageLearnedEnum
 domainIncludes: dcs:Student, dcs:AcademicAssessmentEvent
 description: "Describes a school subject."
 
@@ -552,6 +552,348 @@ typeOf: dcs:SchoolSubjectEnum
 Node: dcid:Writing
 name: "Writing"
 typeOf: dcs:SchoolSubjectEnum
+
+###US_EDU_NJ
+
+Node: dcid:Biology
+typeOf: dcid:SchoolSubjectEnum,ScienceCourseEnum
+name: "Biology"
+
+Node: dcid:CalculusAB
+typeOf: dcid:SchoolSubjectEnum
+name: "Calculus AB"
+description: "The Advanced Placement (AP) Calculus AB course is a college-level mathematics course that introduces the study of calculus. It is the first of two AP Calculus courses. The course is designed to be taken in the student's junior or senior year of high school."
+
+Node: dcid:CalculusBC
+typeOf: dcid:SchoolSubjectEnum
+name: "Calculus BC"
+description: "The Advanced Placement (AP) Calculus BC course is a college-level mathematics course that introduces the study of calculus. It is the second of two AP Calculus courses. The course is designed to be taken in the student's senior year of high school."
+
+Node: dcid:Chemistry
+typeOf: dcid:SchoolSubjectEnum,ScienceCourseEnum
+name: "Chemistry"
+
+Node: dcid:EnglishLanguageAndComposition
+typeOf: dcid:SchoolSubjectEnum
+name: "English Language And Composition"
+
+Node: dcid:EnglishLiteratureAndComposition
+typeOf: dcid:SchoolSubjectEnum
+name: "English Literature And Composition"
+
+Node: dcid:FrenchLanguageAndCulture
+typeOf: dcid:SchoolSubjectEnum
+name: "French Language And Culture"
+
+Node: dcid:Macroeconomics
+typeOf: dcid:SchoolSubjectEnum
+name: "Macroeconomics"
+
+Node: dcid:Microeconomics
+typeOf: dcid:SchoolSubjectEnum
+name: "Microeconomics"
+
+Node: dcid:MusicTheory
+typeOf: dcid:SchoolSubjectEnum
+name: "Music Theory"
+
+Node: dcid:PhysicsC
+typeOf: dcid:SchoolSubjectEnum
+name: "Physics C"
+
+Node: dcid:PhysicsCMechanics
+typeOf: dcid:SchoolSubjectEnum
+name: "Physics C Mechanics"
+
+Node: dcid:Psychology
+typeOf: dcid:SchoolSubjectEnum,SocialCourseEnum
+name: "Psychology"
+
+Node: dcid:SpanishLanguage
+typeOf: dcid:SchoolSubjectEnum
+name: "Spanish Language"
+
+Node: dcid:Statistics
+typeOf: dcid:SchoolSubjectEnum,MathCourseEnum
+name: "Statistics"
+
+Node: dcid:StudioArtDrawingPortfolio
+typeOf: dcid:SchoolSubjectEnum
+name: "Studio Art Drawing Portfolio"
+
+Node: dcid:USGovernmentAndPolitics
+typeOf: dcid:SchoolSubjectEnum
+name: "US Government And Politics"
+
+Node: dcid:ComputerScience
+typeOf: dcid:SchoolSubjectEnum
+name: "Computer Science"
+
+Node: dcid:Physics1
+typeOf: dcid:SchoolSubjectEnum
+name: "Physics 1"
+description: "The Advanced Placement (AP) Physics 1 course is a college-level physics course that introduces the study of physics. It is the first of two AP Physics courses. The course is designed to be taken in the student's junior or senior year of high school."
+
+Node: dcid:PhysicsB
+typeOf: dcid:SchoolSubjectEnum
+name: "Physics B"
+description: "The Advanced Placement (AP) Physics B course is a college-level physics course that introduces the study of physics. It is the second of two AP Physics courses. The course is designed to be taken in the student's senior year of high school."
+
+Node: dcid:EuropeanHistory
+typeOf: dcid:SchoolSubjectEnum
+name: "European History"
+
+Node: dcid:HistoryOfArt
+typeOf: dcid:SchoolSubjectEnum
+name: "History Of Art"
+
+Node: dcid:GermanLanguageAndCulture
+typeOf: dcid:SchoolSubjectEnum
+name: "German Language And Culture"
+
+Node: dcid:Latin
+typeOf: dcid:SchoolSubjectEnum,USC_LanguageSpokenAtHomeEnum
+name: "Latin"
+
+Node: dcid:Physics2
+typeOf: dcid:SchoolSubjectEnum
+name: "Physics 2"
+description: "The Advanced Placement (AP) Physics 2 course is a college-level physics course that introduces the study of physics. It is the second of two AP Physics courses. The course is designed to be taken in the student's senior year of high school."
+
+Node: dcid:PhysicsCElectricityAndMagnetism
+typeOf: dcid:SchoolSubjectEnum
+name: "Physics C Electricity And Magnetism"
+
+Node: dcid:SpanishLiterature
+typeOf: dcid:SchoolSubjectEnum
+name: "Spanish Literature"
+
+Node: dcid:StudioArtTwoDimensional
+typeOf: dcid:SchoolSubjectEnum
+name: "Studio Art Two Dimensional"
+
+Node: dcid:ComputerSciencePrinciples
+typeOf: dcid:SchoolSubjectEnum
+name: "Computer Science Principles"
+
+Node: dcid:ItalianLanguageAndCulture
+typeOf: dcid:SchoolSubjectEnum
+name: "Italian Language And Culture"
+
+Node: dcid:HumanGeography
+typeOf: dcid:SchoolSubjectEnum
+name: "Human Geography"
+
+Node: dcid:WorldHistory
+typeOf: dcid:SchoolSubjectEnum,SocialCourseEnum
+name: "World History"
+
+Node: dcid:ChineseLanguageAndCulture
+typeOf: dcid:SchoolSubjectEnum
+name: "Chinese Language And Culture"
+
+Node: dcid:JapaneseLanguageAndCulture
+typeOf: dcid:SchoolSubjectEnum
+name: "Japanese Language And Culture"
+
+Node: dcid:Seminar
+typeOf: dcid:SchoolSubjectEnum
+name: "Seminar"
+description: "The Advanced Placement (AP) Seminar course is a college-level course that introduces the study of seminar. It is the first of two AP Seminar courses. The course is designed to be taken in the student's junior or senior year of high school."
+
+Node: dcid:EnvironmentalScience
+typeOf: dcid:SchoolSubjectEnum,ScienceCourseEnum
+name: "Environmental Science"
+
+Node: dcid:Film
+typeOf: dcid:SchoolSubjectEnum
+name: "Film"
+description: "The Advanced Placement (AP) Film course is a college-level course that introduces the study of film. It is the first of two AP Film courses. The course is designed to be taken in the student's junior or senior year of high school."
+
+Node: dcid:FurtherMathematicSL
+typeOf: dcid:SchoolSubjectEnum
+name: "Further Mathematic SL"
+
+Node: dcid:LanguageAEnglish
+typeOf: dcid:SchoolSubjectEnum
+name: "Language AEnglish"
+
+Node: dcid:LanguageBFrench
+typeOf: dcid:SchoolSubjectEnum
+name: "Language BFrench"
+
+Node: dcid:LanguageBSpanish
+typeOf: dcid:SchoolSubjectEnum
+name: "Language BSpanish"
+
+Node: dcid:Physics
+typeOf: dcid:SchoolSubjectEnum,ScienceCourseEnum
+name: "Physics"
+
+Node: dcid:TheoryOfKnowledge
+typeOf: dcid:SchoolSubjectEnum
+name: "Theory Of Knowledge"
+
+Node: dcid:StudioArtThreeDimensional
+typeOf: dcid:SchoolSubjectEnum
+name: "Studio Art Three Dimensional"
+
+Node: dcid:ArtOrDesign
+typeOf: dcid:SchoolSubjectEnum
+name: "Art Or Design"
+
+Node: dcid:MathematicsAndComputing
+typeOf: dcid:SchoolSubjectEnum
+name: "Mathematics And Computing"
+
+Node: dcid:ComparativeGovernmentAndPolitics
+typeOf: dcid:SchoolSubjectEnum
+name: "Comparative Government And Politics"
+
+Node: dcid:Dance
+typeOf: dcid:SchoolSubjectEnum,VisualArtCourseEnum
+name: "Dance"
+
+Node: dcid:BusinessAndManagement
+typeOf: dcid:SchoolSubjectEnum
+name: "Business And Management"
+
+Node: dcid:LanguageALiteratureSpanish
+typeOf: dcid:SchoolSubjectEnum
+name: "Language A Literature Spanish"
+
+Node: dcid:Philosophy
+typeOf: dcid:SchoolSubjectEnum
+name: "Philosophy"
+
+Node: dcid:ClassicalLanguagesLatin
+typeOf: dcid:SchoolSubjectEnum
+name: "Classical Languages Latin"
+
+Node: dcid:GlobalPolitics
+typeOf: dcid:SchoolSubjectEnum
+name: "Global Politics"
+
+Node: dcid:LanguageANonEnglishFrench
+typeOf: dcid:SchoolSubjectEnum
+name: "Language ANon English French"
+
+Node: dcid:LanguageALiteraturePortuguese
+typeOf: dcid:SchoolSubjectEnum
+name: "Language ALiterature Portuguese"
+
+Node: dcid:LanguageBPortuguese
+typeOf: dcid:SchoolSubjectEnum
+name: "Language BPortuguese"
+
+Node: dcid:MathematicalStudies
+typeOf: dcid:SchoolSubjectEnum
+name: "Mathematical Studies"
+
+Node: dcid:PhysicalScience
+typeOf: dcid:SchoolSubjectEnum
+name: "Physical Science"
+
+Node: dcid:DesignTechnology
+typeOf: dcid:SchoolSubjectEnum
+name: "Design Technology"
+
+Node: dcid:InformationTechnologyGlobalSociety
+typeOf: dcid:SchoolSubjectEnum
+name: "Information Technology Global Society"
+
+Node: dcid:LanguageBItalian
+typeOf: dcid:SchoolSubjectEnum
+name: "Language B Italian"
+
+Node: dcid:LanguageBGerman
+typeOf: dcid:SchoolSubjectEnum
+name: "Language B German"
+
+Node: dcid:Theatre
+typeOf: dcid:SchoolSubjectEnum
+name: "Theatre"
+
+Node: dcid:ComputingStudies
+typeOf: dcid:SchoolSubjectEnum
+name: "Computing Studies"
+
+Node: dcid:LanguageBChinese
+typeOf: dcid:SchoolSubjectEnum
+name: "Language BChinese"
+
+Node: dcid:SportsExerciseAndHealthScience
+typeOf: dcid:SchoolSubjectEnum
+name: "Sports Exercise And Health Science"
+
+Node: dcid:LanguageAbInitioChinese
+typeOf: dcid:SchoolSubjectEnum
+name: "Language Ab Initio Chinese"
+
+Node: dcid:PersonalAndProfessionalSkills
+typeOf: dcid:SchoolSubjectEnum
+name: "Personal And Professional Skills"
+
+Node: dcid:SportsExerciseAndHealthScience
+typeOf: dcid:SchoolSubjectEnum
+name: "Sports Exercise and Health Science"
+
+Node: dcid:LanguageALanguageAndLiteratureSpanish
+typeOf: dcid:SchoolSubjectEnum
+name: "Language A Language And Literature Spanish"
+
+Node: dcid:LanguageAbInitioSpanish
+typeOf: dcid:SchoolSubjectEnum
+name: "Language Ab Initio Spanish"
+
+Node: dcid:LatinLiterature
+typeOf: dcid:SchoolSubjectEnum
+name: "Latin Literature"
+
+Node: dcid:LanguageALanguageAndLiteratureFrench
+typeOf: dcid:SchoolSubjectEnum
+name: "Language A Language And Literature French"
+
+Node: dcid:LanguageAbInitioItalian
+typeOf: dcid:SchoolSubjectEnum
+name: "Language Ab Initio Italian"
+
+Node: dcid:SocialAnthropology
+typeOf: dcid:SchoolSubjectEnum
+name: "Social Anthropology"
+
+Node: dcid:WorldReligions
+typeOf: dcid:SchoolSubjectEnum
+name: "World Religions"
+
+Node: dcid:ModernWorldHistory
+typeOf: dcid:SchoolSubjectEnum
+name: "Modern World History"
+
+Node: dcid:WorldLanguage
+typeOf: dcid:SchoolSubjectEnum
+name: "World Language"
+
+Node: dcid:MathematicsAnalysisAndApproaches
+typeOf: dcid:SchoolSubjectEnum
+name: "Mathematics Analysis And Approaches"
+
+Node: dcid:ApplicationsAndInterpretationMathematics
+typeOf: dcid:SchoolSubjectEnum
+name: "Applications And Interpretation Mathematics"
+
+Node: dcid:CreativityActionService
+typeOf: dcid:SchoolSubjectEnum
+name: "Creativity Action Service"
+
+Node: dcid:LanguageALanguageAndLiteratureEnglish
+typeOf: dcid:SchoolSubjectEnum
+name: "Language A Language And Literature English"
+
+Node: dcid:SeminarEnglish
+typeOf: dcid:SchoolSubjectEnum
+name: "Seminar English"
+
 
 # Achievement scale metrics
 Node: dcid:cohortScaleAchievement
@@ -621,7 +963,7 @@ typeOf: schema:Property
 name: "facultyType"
 description: "The specific kind of faculty member. For example, Instructional Aide"
 rangeIncludes: dcs:FacultyTypeEnum
-domainIncludes: dcs:Faculty
+domainIncludes: dcs:Faculty, dcs:Student
 
 Node: dcid:ElementarySchoolCounselor
 typeOf: dcs:FacultyTypeEnum
@@ -670,6 +1012,19 @@ name: "School Psychologist"
 Node: dcid:UniversityAndCollegeTeacher
 typeOf: dcs:FacultyTypeEnum
 name: "University And College Teacher"
+
+Node: dcid:IneffectiveTeacher
+typeOf: dcid:FacultyTypeEnum
+name: "Ineffective Teacher"
+
+Node: dcid:InexperiencedTeacher
+typeOf: dcid:FacultyTypeEnum
+name: "Inexperienced Teacher"
+
+Node: dcid:OutOfFieldTeacher
+typeOf: dcid:FacultyTypeEnum
+name: "Out of Field Teacher"
+
 
 # Household properties
 Node: dcid:HasChildrenStatusEnum
@@ -723,7 +1078,7 @@ Node: dcid:assessmentType
 typeOf: schema:Property
 name: "assessmentType"
 description: "The type of an academic assessment."
-domainIncludes: dcs:AcademicAssessmentEvent
+domainIncludes: dcs:AcademicAssessmentEvent, dcid:Student
 rangeIncludes: dcs:AcademicAssessmentTypeEnum
 
 ## AcademicAssessmentTypeEnum definition.
@@ -750,7 +1105,7 @@ Node: dcid:StateOfTexasAssessmentsOfAcademicReadiness
 typeOf: dcs:AcademicAssessmentTypeEnum
 name: "State Of Texas Assessments Of Academic Readiness"
 description: "The State of Texas Assessments of Academic Readiness (STAAR) program, implemented in spring 2012, includes annual assessments for mathematics at grades 3–8, reading language arts (RLA) at grades 3-8, science at grades 5 and 8, social studies at grade 8 end-of-course (EOC) assessments for Algebra I, English I, English II, Biology, and U.S History."
-descriptionUrl: "https://tea.texas.gov/student-assessment/testing/staar/staar-resources"
+descriptionUrl: "https://tea.texas.gov/student-assessment/staar"
 
 Node: dcid:CaliforniaAssessmentOfStudentPerformanceAndProgress
 typeOf: dcs:AcademicAssessmentTypeEnum
@@ -838,7 +1193,7 @@ domainIncludes: dcs:Student
 Node: dcid:race
 typeOf: schema:Property
 rangeIncludes: dcs:RaceCodeEnum
-domainIncludes: schema:Person, schema:Household
+domainIncludes: schema:Person, schema:Household, schema:Student
 
 ## Charter School Enum
 # Enum Already Defined in /cns/jv-d/home/datcom/v3_mcf/schema/K12SchemaExtensions.mcf
@@ -985,6 +1340,10 @@ Node: dcid:TertiarySchool
 name: "TertiarySchool"
 typeOf: dcid:SchoolLevelEnum
 
+Node: dcid:SchoolGrade3OrMore
+typeOf: dcid:SchoolLevelEnum
+name: "School Grade 3Or More"
+
 ## Public School Type Enum
 
 Node: dcid:PublicSchoolTypeEnum
@@ -1127,6 +1486,19 @@ name: TwoOrMoreRaces
 Node: dcid:White
 typeOf: dcs:RaceCodeEnum
 name: White
+
+Node: dcid:AfricanAmerican
+typeOf: dcid:RaceCodeEnum
+name: "African American"
+
+Node: dcid:Hispanic
+typeOf: dcid:RaceCodeEnum
+name: "Hispanic"
+
+Node: dcid:AmericanIndian
+typeOf: dcid:RaceCodeEnum
+name: "American Indian"
+
 
 ## National School Lunch Program Enum
 
@@ -1641,11 +2013,23 @@ domainIncludes: dcs:Person, dcs:Student
 rangeIncludes: schema:Number
 description: "Percentage of students who are no longer enrolled."
 
+Node: dcid:enrollmentRate
+typeOf: dcid:Property
+name: "enrollmentRate"
+rangeIncludes: dcid:EnrollmentStatusEnum,Number
+domainIncludes: dcid:Student
+
+Node: dcid:graduationPeriod
+typeOf: dcid:Property
+name: "graduationPeriod"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CollegeOrUniversityLevelEnum
+
 Node: dcid:assessmentScore
 name: "assessmentScore"
 typeOf: schema:Property
 domainIncludes: dcs:School, dcs:Student
-rangeIncludes: schema:Number
+rangeIncludes: schema:Number, dcid:AssessmentScoreEnum
 description: "The score secured by students in an assessment."
 
 Node: dcid:assessmentScore
@@ -1981,6 +2365,24 @@ name: "Foster"
 Node: dcid:NotFoster
 typeOf: dcs:SocialVulnerabilityStatusEnum
 name: "Not Foster"
+
+Node: dcid:LowIncome
+typeOf: dcid:SocialVulnerabilityStatusEnum
+name: "Low Income"
+
+Node: dcid:NonLowIncome
+typeOf: dcid:SocialVulnerabilityStatusEnum
+name: "Non Low Income"
+
+Node: dcid:Minority
+typeOf: dcid:SocialVulnerabilityStatusEnum
+name: "Minority"
+
+Node: dcid:NonMinority
+typeOf: dcid:SocialVulnerabilityStatusEnum
+name: "Non Minority"
+
+
 
 Node: dcid:StudentCohortMembershipEnum
 typeOf: schema:Class
@@ -2326,3 +2728,311 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:EducationalMajorEnum
 name: "doctorateDegreeMajor"
+
+###US_EDU_NJ
+
+Node: dcid:languageSpokenAtHome
+typeOf: dcid:Property
+name: "languageSpokenAtHome"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:LanguageLearnedEnum, RaceCodeEnum
+
+Node: dcid:LanguageSpokenAtHomeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "LanguageSpokenAtHomeEnum"
+
+Node: dcid:Pashto
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Pashto"
+
+Node: dcid:Albanian
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Albanian"
+
+Node: dcid:Malayalam
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Malayalam"
+
+Node: dcid:Turkish
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Turkish"
+
+Node: dcid:Macedonian
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Macedonian"
+
+Node: dcid:Punjabi
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Punjabi"
+
+Node: dcid:Burmese
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Burmese"
+
+Node: dcid:ModernGreek
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Modern Greek"
+
+Node: dcid:Afar
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Afar"
+
+Node: dcid:CreolesAndPidginsEnglishBased
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Creoles And Pidgins English Based"
+
+Node: dcid:CreolesAndPidginsFrenchBased
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Creoles And Pidgins French Based"
+
+Node: dcid:French
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "French"
+
+Node: dcid:Cree
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Cree"
+
+Node: dcid:Twi
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Twi"
+
+Node: dcid:CreolesAndPidgins
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Creoles And Pidgins"
+
+Node: dcid:Ukrainian
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Ukrainian"
+
+Node: dcid:Mandingo
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Mandingo"
+
+Node: dcid:Yoruba
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Yoruba"
+
+Node: dcid:Persian
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Persian"
+
+Node: dcid:Tagalog
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Tagalog"
+
+Node: dcid:Igbo
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Igbo"
+
+Node: dcid:SlavicLanguages
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Slavic Languages"
+
+Node: dcid:Tibetan
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Tibetan"
+
+Node: dcid:Marathi
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Marathi"
+
+Node: dcid:Syriac
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Syriac"
+
+Node: dcid:Bulgarian
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Bulgarian"
+
+Node: dcid:Dargwa
+typeOf: dcid:LanguageSpokenAtHomeEnum
+name: "Dargwa"
+
+Node: dcid:mathCourse
+typeOf: dcid:Property
+name: "mathCourse"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:MathCourseEnum
+
+Node: dcid:MathCourseEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MathCourseEnum"
+
+Node: dcid:OtherMath
+typeOf: dcid:MathCourseEnum
+name: "Other Math"
+
+Node: dcid:Geometry
+typeOf: dcid:MathCourseEnum
+name: "Geometry"
+
+Node: dcid:Algebra_I
+typeOf: dcid:MathCourseEnum
+name: "Algebra_ I"
+
+Node: dcid:Algebra_II
+typeOf: dcid:MathCourseEnum
+name: "Algebra_ II"
+
+Node: dcid:PreCalculus
+typeOf: dcid:MathCourseEnum, dcid:SchoolSubjectEnum
+name: "PreCalculus"
+
+Node: dcid:Calculus
+typeOf: dcid:MathCourseEnum
+name: "Calculus"
+
+Node: dcid:StateScholasticAssessmentTest
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "State Scholastic Assessment Test"
+
+Node: dcid:AssessmentScoreEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "AssessmentScoreEnum"
+
+Node: dcid:BelowBasicScore
+typeOf: dcid:AssessmentScoreEnum
+name: "Below Basic Score"
+
+Node: dcid:BasicScore
+typeOf: dcid:AssessmentScoreEnum
+name: "Basic Score"
+
+Node: dcid:ProficientScore
+typeOf: dcid:AssessmentScoreEnum
+name: "Proficient Score"
+
+Node: dcid:AdvancedScore
+typeOf: dcid:AssessmentScoreEnum
+name: "Advanced Score"
+
+Node: dcid:ScholasticAssessmentTest
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "Scholastic Assessment Test"
+
+Node: dcid:AmericanCollegeTesting
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "American College Testing"
+
+Node: dcid:PreliminaryScholasticAssessmentTest
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "Preliminary Scholastic Assessment Test"
+
+Node: dcid:StateAmericanCollegeTesting
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "State American College Testing"
+
+Node: dcid:StatePreliminaryScholasticAssessmentTest
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "State Preliminary Scholastic Assessment Test"
+
+Node: dcid:InternationalBaccalaureateExam
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "International Baccalaureate Exam"
+
+Node: dcid:AdvancedPlacementExam
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "AdvancedPlacement Exam"
+
+Node: dcid:kindergartenProgram
+typeOf: dcid:Property
+name: "kindergartenProgram"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:KindergartenProgramEnum
+
+Node: dcid:KindergartenProgramEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "KindergartenProgramEnum"
+
+Node: dcid:HalfDay
+typeOf: dcid:KindergartenProgramEnum
+name: "Half Day"
+
+Node: dcid:FullDay
+typeOf: dcid:KindergartenProgramEnum
+name: "Full Day"
+
+Node: dcid:scienceCourse
+typeOf: dcid:Property
+name: "scienceCourse"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:ScienceCourseEnum
+
+Node: dcid:ScienceCourseEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ScienceCourseEnum"
+
+Node: dcid:EarthAndSpaceScience
+typeOf: dcid:ScienceCourseEnum
+name: "Earth And Space Science"
+
+Node: dcid:OtherScience
+typeOf: dcid:ScienceCourseEnum
+name: "Other Science"
+
+Node: dcid:socialCourse
+typeOf: dcid:Property
+name: "socialCourse"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SocialCourseEnum, dcid:SchoolSubjectEnum
+Node: dcid:SocialCourseEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "SocialCourseEnum"
+
+Node: dcid:USHistoryOneAndTwo
+typeOf: dcid:SocialCourseEnum
+name: "USHistory One And Two"
+
+Node: dcid:SocialStudiesOrHistory
+typeOf: dcid:SocialCourseEnum
+name: "Social Studies Or History"
+
+Node: dcid:Sociology
+typeOf: dcid:SocialCourseEnum
+name: "Sociology"
+
+Node: dcid:taughtBy
+typeOf: dcid:Property
+name: "taughtBy"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:QuantityRange
+
+Node: dcid:visualArtCourse
+typeOf: dcid:Property
+name: "visualArtCourse"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:VisualArtCourseEnum,SchoolSubjectEnum
+
+Node: dcid:VisualArtCourseEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "VisualArtCourseEnum"
+
+Node: dcid:AnyVisualArt
+typeOf: dcid:VisualArtCourseEnum
+name: "Any Visual Art"
+
+Node: dcid:VisualArt
+typeOf: dcid:VisualArtCourseEnum
+name: "Visual Art"
+
+Node: dcid:Drama
+typeOf: dcid:VisualArtCourseEnum
+name: "Drama"
+
+Node: dcid:worldLanguageCourse
+typeOf: dcid:Property
+name: "worldLanguageCourse"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:USC_LanguageSpokenAtHomeEnum,RaceCodeEnum
+
+Node: dcid:OtherLanguage
+typeOf: dcid:USC_LanguageSpokenAtHomeEnum
+name: "Other Language"
