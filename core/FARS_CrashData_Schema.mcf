@@ -1,0 +1,599 @@
+# Class
+Node: dcid:VehicleCrashIncident
+typeOf: schema:Class
+subClassOf: dcs:Incident
+name: "Vehicle Crash Incident"
+description: "Occurrence of a vehicle crash event"
+
+
+# Property
+Node: dcid:crashInvolvement
+typeOf: dcid:Property
+name: "crashInvolvement"
+domainIncludes: dcid:Vehicle,dcid:Person
+rangeIncludes: dcid:CrashInvolvementEnum
+description: "Involvement in the crash occured"
+
+Node: dcid:vehicleStatus
+typeOf: dcid:Property
+name: "vehicleStatus"
+domainIncludes: dcid:Vehicle
+rangeIncludes: dcid:VehicleStatusEnum
+description: "Status of vehicle at the time of crash"
+
+Node: dcid:vehicleOccupantType
+typeOf: dcid:Property
+name: "vehicleOccupantType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:VehicleOccupantTypeEnum
+description: "Status of vehicle occupancy at the time of crash"
+
+Node: dcid:locationType
+typeOf: dcid:Property
+name: "locationType"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:LocationTypeEnum
+description: "Route signing of the trafficway on which the crash occurred"
+descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813417#page=51"
+
+Node: dcid:jurisdiction
+typeOf: dcid:Property
+name: "jurisdiction"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:JurisdictionEnum
+description: "Type of location on the trafficway where the crash occurred"
+
+Node: dcid:mannerOfCollision
+typeOf: dcid:Property
+name: "mannerOfCollision"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:MannerOfCollisionEnum
+description: "Orientation of two motor vehicles in-transport at the time of crash"
+
+Node: dcid:crashType
+typeOf: dcid:Property
+name: "crashType"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:CrashTypeEnum
+description: "Type of crash occured"
+
+Node: dcid:lightCondition
+typeOf: dcid:Property
+name: "lightCondition"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:LightConditionEnum
+description: "Type/level of light that existed at the time of the crash"
+descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813417#pafe=71"
+
+Node: dcid:weatherCondition
+typeOf: dcid:Property
+name: "weatherCondition"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:WeatherConditionEnum,dcid:NOAA_WeatherConditionEnum
+description: "Prevailing atmospheric conditions that existed at the time of the crash"
+descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813417#page=72"
+
+Node: dcid:roadIntersectionType
+typeOf: dcid:Property
+name: "roadIntersectionType"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:RoadIntersectionTypeEnum
+description: "Type of road intersection at which crash occured"
+
+Node: dcid:vehicleType
+typeOf: dcid:Property
+name: "vehicleType"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:VehicleTypeEnum
+description: "Type of vehical involved in crash"
+
+Node: dcid:workZoneType
+typeOf: dcid:Property
+name: "workZoneType"
+domainIncludes: dcid:VehicleCrashIncident
+rangeIncludes: dcid:WorkZoneTypeEnum
+description: "Type of workzone at which the crash occured"
+
+
+# Enumeration
+Node: dcid:VehicleStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "VehicleStatusEnum"
+
+Node: dcid:CrashInvolvementEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CrashInvolvementEnum"
+
+Node: dcid:LocationTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "LocationTypeEnum"
+
+Node: dcid:JurisdictionEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "JurisdictionEnum"
+
+Node: dcid:MannerOfCollisionEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MannerOfCollisionEnum"
+
+Node: dcid:RoadIntersectionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "RoadIntersectionTypeEnum"
+
+Node: dcid:LightConditionEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "LightConditionEnum"
+
+Node: dcid:WeatherConditionEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "WeatherConditionEnum"
+
+Node: dcid:VehicleTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "VehicleTypeEnum"
+
+Node: dcid:WorkZoneTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "WorkZoneTypeEnum"
+
+Node: dcid:CrashTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CrashTypeEnum"
+
+
+# Enum values
+Node: dcid:InvolvedInCrash
+typeOf: dcid:CrashInvolvementEnum
+name: "Involved In Crash"
+
+Node: dcid:MotorVehicleOccupant
+typeOf: dcid:VehicleOccupantTypeEnum
+name: "Motor Vehicle Occupant"
+description: "Indicates person involved in crash is motor vehicle occupant"
+
+Node: dcid:NotMotorVehicleOccupant
+typeOf: dcid:VehicleOccupantTypeEnum
+name: "Not Motor Vehicle Occupant"
+description: "Indicates person involved in crash is not a motor vehicle occupant"
+
+Node: dcid:Motorists
+typeOf: dcid:VehicleOccupantTypeEnum
+name: "Motorists"
+description: "A motorist is a driver, passenger, or unknown occupant type of a motor vehicle in-transport"
+descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813417#page=44"
+
+Node: dcid:NonMotorists
+typeOf: dcid:VehicleOccupantTypeEnum
+name: "Non Motorists"
+description: "Non-motorist is defined as a pedestrian, a cyclist, an occupant of a motor vehicle not in-transport, a person riding a horse, an occupant of an animal drawn conveyance, person associated with non-motorist conveyance (e.g., baby carriage, skateboard, wheelchair), or an other non-motorist (e.g., person outside a trafficway, person in a house)"
+descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813417#page=39"
+
+Node: dcid:NHTSA_OtherUSRoute
+typeOf: dcid:LocationTypeEnum
+name: "NHTSA Other US Route"
+
+Node: dcid:OnRoadway
+typeOf: dcid:LocationTypeEnum
+name: "On Roadway"
+
+Node: dcid:OtherStateRoute
+typeOf: dcid:LocationTypeEnum
+name: "Other State Route"
+
+Node: dcid:OutsideRightOfWay
+typeOf: dcid:LocationTypeEnum
+name: "Outside Right Of Way"
+
+Node: dcid:CountyRoad
+typeOf: dcid:LocationTypeEnum
+name: "County Road"
+
+Node: dcid:OnRoadside
+typeOf: dcid:LocationTypeEnum
+name: "On Roadside"
+
+Node: dcid:LocalStreet
+typeOf: dcid:LocationTypeEnum
+name: "Local Street"
+
+Node: dcid:OnShoulder
+typeOf: dcid:LocationTypeEnum
+name: "On Shoulder"
+
+Node: dcid:OffRoadway
+typeOf: dcid:LocationTypeEnum
+name: "Off Roadway"
+
+Node: dcid:InterstateRoad
+typeOf: dcid:LocationTypeEnum
+name: "Interstate Road"
+
+Node: dcid:NHTSA_UnknownLocationType
+typeOf: dcid:LocationTypeEnum
+name: "NHTSA Unknown Location Type"
+
+Node: dcid:NHTSA_OtherLocation
+typeOf: dcid:LocationTypeEnum
+name: "NHTSA Other Location"
+
+Node: dcid:OnMedian
+typeOf: dcid:LocationTypeEnum
+name: "On Median"
+
+Node: dcid:NHTSA_UnknownLocation
+typeOf: dcid:LocationTypeEnum
+name: "NHTSA Unknown Location"
+
+Node: dcid:OtherLimitedAccessLocation
+typeOf: dcid:LocationTypeEnum
+name: "Other Limited Access Location"
+
+Node: dcid:OtherMajorArterialRoad
+typeOf: dcid:LocationTypeEnum
+name: "Other Major Arterial Road"
+
+Node: dcid:ContinuousLeftTurnLane
+typeOf: dcid:LocationTypeEnum
+name: "Continuous Left Turn Lane"
+
+Node: dcid:NHTSA_NotReportedLocationType
+typeOf: dcid:LocationTypeEnum
+name: "NHTSA Not Reported Location Type"
+
+Node: dcid:GoreRoad
+typeOf: dcid:LocationTypeEnum
+name: "Gore Road"
+description: "In road and highway construction, a gore (or nose in modern British English) is a triangular plot of land as designated when a road forks at the intersection with second road, or merges on and off from a larger one"
+descriptionUrl: "https://en.wikipedia.org/wiki/Gore_(road)"
+
+Node: dcid:ParkingLane
+typeOf: dcid:LocationTypeEnum
+name: "Parking Lane"
+
+Node: dcid:LocalStreetFrontageRoad
+typeOf: dcid:LocationTypeEnum
+name: "Local Street Frontage Road"
+
+Node: dcid:LocalStreetMunicipality
+typeOf: dcid:LocationTypeEnum
+name: "Local Street Municipality"
+
+Node: dcid:LocalStreetTownship
+typeOf: dcid:LocationTypeEnum
+name: "Local Street Township"
+
+Node: dcid:NotOnNationalHighway
+typeOf: dcid:LocationTypeEnum
+name: "Not On National Highway"
+
+Node: dcid:NationalHighway
+typeOf: dcid:LocationTypeEnum
+name: "National Highway"
+
+Node: dcid:PedestrianRefugeIslandOrTrafficIsland
+typeOf: dcid:LocationTypeEnum
+name: "Pedestrian Refuge Island Or Traffic Island"
+
+Node: dcid:RoadSeparator
+typeOf: dcid:LocationTypeEnum
+name: "Road Separator"
+
+Node: dcid:USHighway
+typeOf: dcid:LocationTypeEnum
+name: "USHighway"
+
+Node: dcid:WorkZone
+typeOf: dcid:LocationTypeEnum
+name: "WorkZone"
+
+Node: dcid:NoSpecialJurisdiction
+typeOf: dcid:JurisdictionEnum
+name: "No Special Jurisdiction"
+
+Node: dcid:IndianReservation
+typeOf: dcid:JurisdictionEnum
+name: "Indian Reservation"
+
+Node: dcid:MilitaryJurisdiction
+typeOf: dcid:JurisdictionEnum
+name: "Military Jurisdiction"
+
+Node: dcid:NationalParkService
+typeOf: dcid:JurisdictionEnum
+name: "National Park Service"
+
+Node: dcid:NHTSA_UnknownJurisdiction
+typeOf: dcid:JurisdictionEnum
+name: "NHTSA Unknown Jurisdiction"
+
+Node: dcid:CollegeOrUniversityCampus
+typeOf: dcid:JurisdictionEnum
+name: "College Or University Campus"
+
+Node: dcid:NHTSA_OtherJurisdiction
+typeOf: dcid:JurisdictionEnum
+name: "NHTSA Other Location Jurisdiction"
+
+Node: dcid:OtherFederalProperty
+typeOf: dcid:JurisdictionEnum
+name: "Other Federal Property"
+
+Node: dcid:HeadOnCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Head On Collision"
+
+Node: dcid:CollisionNotWithMotorVehicleInTransport
+typeOf: dcid:MannerOfCollisionEnum
+name: "Collision Not With Motor Vehicle In Transport"
+
+Node: dcid:AngleCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Angle Collision"
+
+Node: dcid:RearEndCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Rear End Collision"
+
+Node: dcid:SideswipeCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Sideswipe Collision"
+
+Node: dcid:NHTSA_UnknownOrientation
+typeOf: dcid:MannerOfCollisionEnum
+name: "NHTSA_ Unknown Orientation"
+
+Node: dcid:RearToRearCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Rear To Rear Collision"
+
+Node: dcid:NHTSA_NotReportedOrientation
+typeOf: dcid:MannerOfCollisionEnum
+name: "NHTSA Not Reported Orientation"
+
+Node: dcid:NHTSA_OtherOrientation
+typeOf: dcid:MannerOfCollisionEnum
+name: "NHTSA Other Orientation"
+
+Node: dcid:FrontToSideOppositeDirectionCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Front To Side Opposite Direction Collision"
+
+Node: dcid:FrontToSideSameDirectionCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Front To Side Same Direction Collision"
+
+Node: dcid:RearToSideCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Rear To Side Collision"
+
+Node: dcid:SideswipeOppositeDirectionCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Sideswipe Opposite Direction Collision"
+
+Node: dcid:SideswipeSameDirectionCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Sideswipe Same Direction Collision"
+
+Node: dcid:CollisionCrash
+typeOf: dcid:CrashTypeEnum
+name: "Collision Crash"
+
+Node: dcid:Dark
+typeOf: dcid:LightConditionEnum
+name: "Dark"
+
+Node: dcid:Daylight
+typeOf: dcid:LightConditionEnum
+name: "Daylight"
+
+Node: dcid:Dawn
+typeOf: dcid:LightConditionEnum
+name: "Dawn"
+
+Node: dcid:Dusk
+typeOf: dcid:LightConditionEnum
+name: "Dusk"
+
+Node: dcid:UnknownLight
+typeOf: dcid:LightConditionEnum
+name: "Unknown Light"
+
+Node: dcid:DarkButLighted
+typeOf: dcid:LightConditionEnum
+name: "Dark But Lighted"
+
+Node: dcid:NHTSA_UnknownLightLevel
+typeOf: dcid:LightConditionEnum
+name: "NHTSA Unknown Light Level"
+
+Node: dcid:NHTSA_LightLevelNotReported
+typeOf: dcid:LightConditionEnum
+name: "NHTSA Light Level Not Reported"
+
+Node: dcid:NHTSA_OtherLightLevel
+typeOf: dcid:LightConditionEnum
+name: "NHTSA Other Light Level"
+
+Node: dcid:NoAdverseWeatherCondition
+typeOf: dcid:WeatherConditionEnum
+name: "No Adverse Weather Condition"
+
+Node: dcid:NHTSA_UnknownWeather
+typeOf: dcid:WeatherConditionEnum
+name: "NHTSA_ Unknown Weather"
+
+Node: dcid:BlowingSandOrSoilOrDirt
+typeOf: dcid:WeatherConditionEnum
+name: "Blowing Sand Or Soil Or Dirt"
+
+Node: dcid:BlowingSnow
+typeOf: dcid:WeatherConditionEnum
+name: "Blowing Snow"
+
+Node: dcid:Cloudy
+typeOf: dcid:WeatherConditionEnum
+name: "Cloudy"
+
+Node: dcid:NHTSA_OtherWeatherCondition
+typeOf: dcid:WeatherConditionEnum
+name: "NHTSA Other Weather Condition"
+
+Node: dcid:NHTSA_WeatherNotReported
+typeOf: dcid:WeatherConditionEnum
+name: "NHTSA Weather Not Reported"
+
+Node: dcid:SevereCrosswind
+typeOf: dcid:WeatherConditionEnum
+name: "Severe Crosswind"
+
+Node: dcid:Fog
+typeOf: dcid:WeatherConditionEnum
+name: "Fog"
+
+Node: dcid:Smoke
+typeOf: dcid:WeatherConditionEnum
+name: "Smoke"
+
+Node: dcid:Smog
+typeOf: dcid:WeatherConditionEnum
+name: "Smog"
+
+Node: dcid:FreezingRain
+typeOf: dcid:WeatherConditionEnum
+name: "Freezing Rain"
+
+Node: dcid:Drizzle
+typeOf: dcid:WeatherConditionEnum
+name: "Drizzle"
+
+Node: dcid:Rain
+typeOf: dcid:WeatherConditionEnum
+name: "Rain"
+
+Node: dcid:Mist
+typeOf: dcid:WeatherConditionEnum
+name: "Mist"
+
+Node: dcid:Sleet
+typeOf: dcid:WeatherConditionEnum
+name: "Sleet"
+
+Node: dcid:Hail
+typeOf: dcid:WeatherConditionEnum
+name: "Hail"
+
+Node: dcid:Construction
+typeOf: dcid:WorkZoneTypeEnum
+name: "Construction"
+
+Node: dcid:Maintenance
+typeOf: dcid:WorkZoneTypeEnum
+name: "Maintenance"
+
+Node: dcid:Utility
+typeOf: dcid:WorkZoneTypeEnum
+name: "Utility"
+
+Node: dcid:NHTSA_UnknownWorkzone
+typeOf: dcid:WorkZoneTypeEnum
+name: "NHTSA Unknown Workzone"
+
+Node: dcid:NHTSA_WorkzoneNotReported
+typeOf: dcid:WorkZoneTypeEnum
+name: "NHTSA Workzone Not Reported"
+
+Node: dcid:NotAWorkZone
+typeOf: dcid:WorkZoneTypeEnum
+name: "Not A Work Zone"
+
+Node: dcid:NotASchoolBus
+typeOf: dcid:VehicleTypeEnum
+name: "Not A School Bus"
+description: "No school bus, or motor vehicle functioning as a school bus, is related to the crash"
+
+Node: dcid:SchoolBus
+typeOf: dcid:VehicleTypeEnum
+name: "School Bus"
+description: "School bus, or motor vehicle functioning as a school bus, is related to the crash"
+descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813417#page=74"
+
+Node: dcid:NHTSA_NotReportedIntersectionType
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "NHTSA Not Reported Intersection Type"
+description: "Not reported intersection type of road at which crash occured"
+
+Node: dcid:NHTSA_OtherIntersectionType
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "NHTSA Other Intersection Type"
+description: "Other intersection type of road intersection at which crash occured"
+
+Node: dcid:NHTSA_UnknownIntersectionType
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "NHTSA Unknown Intersection Type"
+description: "Unknown intersection type of road intersection at which crash occured"
+
+Node: dcid:FivePointOrMore
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "Five Point Or More"
+description: "Five point or more type of road intersection at which crash occured"
+
+Node: dcid:FourWayIntersection
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "Four Way Intersection"
+description: "Four way intersection type of road intersection at which crash occured"
+
+Node: dcid:LIntersection
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "L-Intersection"
+description: "L-Intersection type of road intersection at which crash occured"
+
+Node: dcid:NotAnIntersection
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "Not An Intersection"
+description: "Not an intersection type of road at which crash occured"
+
+Node: dcid:ReportedAsUnknown
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "Reported As Unknown"
+description: "Reported as unknown type of road intersection at which crash occured"
+
+Node: dcid:Roundabout
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "Roundabout"
+description: "Roundabout type of road intersection at which crash occured"
+
+Node: dcid:TIntersection
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "T-Intersection"
+description: "T-Intersection type of road intersection at which crash occured"
+
+Node: dcid:TrafficCircle
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "Traffic Circle"
+description: "Traffic pircle type of road intersection at which crash occured"
+
+Node: dcid:YIntersection
+typeOf: dcid:RoadIntersectionTypeEnum
+name: "Y-Intersection"
+description: "Y-Intersection type of road intersection at which crash occured"
+
+Node: dcid:InTransport
+typeOf: dcid:VehicleStatusEnum
+name: "In Transport"
+description: "Indicated vehical involved in crash is in transport"
+
+Node: dcid:Parked
+typeOf: dcid:VehicleStatusEnum
+name: "Parked"
+description: "Indicated parked vehical involved in crash"
