@@ -2262,7 +2262,7 @@ rangeIncludes: dcs:EmissionSourceTypeEnum
 Node: dcs:emittedThing
 name: "emittedThing"
 typeOf: schema:Property
-rangeIncludes: dcs:GreenhouseGas
+rangeIncludes: dcs:GreenhouseGas, dcid:EPA_CriteriaAirPollutant
 
 # Units
 
@@ -2337,6 +2337,10 @@ name: "Carbon Dioxide Equivalent - 20 Year Global Warming Potential"
 Node: dcid:CarbonDioxideEquivalent100YearGlobalWarmingPotential
 typeOf: dcs:GreenhouseGas
 name: "Carbon Dioxide Equivalent - 100 Year Global Warming Potential"
+
+Node: dcid:OxidesOfSulfur
+typeOf: dcid:GreenhouseGas
+name: "OxidesOfSulfur"
 
 Node: dcid:EPA_CriteriaAirPollutant
 name: "EPA_CriteriaAirPollutant"
@@ -3005,4 +3009,3 @@ name: "India Energy Dashboard Unspecified Sector"
 Node: dcid:IndiaEDM_OtherOilProducts
 typeOf: dcs:EnergySourceEnum
 name: "India Energy Dashboard Other Oil Products"
-
