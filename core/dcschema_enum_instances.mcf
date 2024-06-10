@@ -1871,14 +1871,14 @@ medicalSubjectHeadingDescriptorID: dcid:bio/D000208
 typeOf: dcs:MedicalConditionIncidentTypeEnum
 name: "Acute Condition"
 description: "Acute illnesses generally develop suddenly and last a short time, often only a few days or weeks."
-descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease"
+descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease/"
 
 Node: dcid:ChronicCondition
 medicalSubjectHeadingDescriptorID: dcid:bio/D002908
 typeOf: dcs:MedicalConditionIncidentTypeEnum
 name: "Chronic Condition"
 description: "Chronic conditions develop slowly and may worsen over an extended period of time—months to years."
-descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease"
+descriptionUrl: "https://www.ncoa.org/article/chronic-versus-acute-disease/"
 
 Node: dcid:PerinatalInfection
 icd10CMCode: dcid:ICD10/P35-P39
@@ -3129,3 +3129,29 @@ Node: dcid:DataCommonsImputed
 typeOf: dcs:ImputationTypeEnum
 name: "DataCommonsImputed"
 description: "Represents data imputed by Data Commons."
+
+Node: dcid:Brazil_SingleRegistry
+typeOf: dcid:RegisteredInEnum
+name: "Brazil_ Single Registry"
+description: "The number of individuals in families registered with Brazil's Single Registry"
+
+Node: dcid:UptoHalfOfMinimumWage
+typeOf: dcid:IncomeStatusEnum
+name: "Upto Half Of Minimum Wage"
+description: "The number of individuals in families registered with Brazil's Single Registry having income status upto to half of minimum wage."
+descriptionUrl: "https://dados.gov.br/dados/conjuntos-dados/familias-por-faixa-de-renda-com-cadastro-atualizado-no-cadastro-unico"
+
+Node: dcid:LowIncome
+typeOf: dcid:IncomeStatusEnum
+name: "Low Income"
+description: "The number of individuals in families registered with Brazil's Single Registry having low income status."
+descriptionUrl: "https://dados.gov.br/dados/conjuntos-dados/familias-por-faixa-de-renda-com-cadastro-atualizado-no-cadastro-unico"
+
+Node: dcid:AbovePovertyLine
+typeOf: dcid:IncomeStatusEnum
+name: "Above Poverty Line"
+description: "The number of individuals in families registered with Brazil's Single Registry having above poverty income status."
+descriptionUrl: "https://dados.gov.br/dados/conjuntos-dados/familias-por-faixa-de-renda-com-cadastro-atualizado-no-cadastro-unico"
+
+
+
