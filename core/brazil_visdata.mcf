@@ -12,6 +12,19 @@ domainIncludes: dcid:Household,FoodBasket
 rangeIncludes: dcid:FoodBasketStatusEnum
 description: "The status of the food basket being given to the family."
 
+Node: dcid:benefitType
+typeOf: dcid:Property
+name: "benefitType"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:BenefitTypeEnum
+
+Node: dcid:affectedBy
+typeOf: dcid:Property
+name: "affectedBy"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:AffectedByEnum
+description: "The condition by which the families are affected in a program."
+
 Node: dcid:BrazilAidDistributionPartnerEnum
 typeOf: dcid:Class
 subClassOf: dcid:Enumeration
@@ -26,6 +39,33 @@ Node: dcid:FoodBasketStatusEnum
 typeOf: dcid:Class
 subClassOf: dcid:Enumeration
 name: "FoodBasketStatusEnum"
+
+Node: dcid:BenefitProgramEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BenefitProgramEnum"
+
+Node: dcid:BenefitTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BenefitTypeEnum"
+
+Node: dcid:Brazil_RuralDevelopmentProgram
+typeOf: dcid:BenefitProgramEnum
+name: "Brazil Rural Development Program"
+description: "The program helps poorest rural families can develop their production projects"
+nameWithLanguage: "Programa Fomento Rural@pt"
+descriptionUrl: "https://www.gov.br/mds/pt-br/acoes-e-programas/inclusao-produtiva-rural/programa-fomento-rural"
+
+Node: dcid:Brazil_NationalLandCreditProgram
+typeOf: dcid:BenefitsStatusEnum
+name: "Brazil National Land Credit Program"
+nameWithLanguage: "Programa Nacional de Crédito Fundiário@pt"
+
+Node: dcid:AffectedByEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "AffectedByEnum"
 
 Node: dcid:ReceivedFoodBasket
 typeOf: dcid:FoodBasketStatusEnum
@@ -93,6 +133,41 @@ typeOf: dcid:FamilyTypeEnum
 name: "Settled In Camps"
 nameWithLanguage: "Estabelecidos em acampamentos@pt"
 
+Node: dcid:FarmingFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Farming Family"
+nameWithLanguage: ""
+
+Node: dcid:AgrarianReformFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Agrarian Reform Family"
+nameWithLanguage: ""
+
+Node: dcid:RiversideFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Riverside Family"
+nameWithLanguage: ""
+
+Node: dcid:CampFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Camp Family"
+nameWithLanguage: ""
+
+Node: dcid:PrisonersInPrisonSystem
+typeOf: dcid:FamilyTypeEnum
+name: "Prisoners In Prison System"
+nameWithLanguage: ""
+
+Node: dcid:TerreiroCommunity
+typeOf: dcid:FamilyTypeEnum
+name: "Terreiro Community"
+nameWithLanguage: ""
+
+Node: dcid:FinancialBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Financial Benefit"
+nameWithLanguage: ""
+
 Node: dcid:NationalConfederationOfAgricultureSENAR
 typeOf: dcid:BrazilAidDistributionPartnerEnum
 name: "National Confederation Of Agriculture SENAR"
@@ -152,3 +227,8 @@ typeOf: dcid:BrazilAidDistributionPartnerEnum
 name: "Divine Caldo Brazil"
 nameWithLanguage: "Divino Caldo Brasil@pt"
 isProvisional: dcid:True
+
+Node: dcid:InfrastructureProject
+typeOf: dcid:AffectedByEnum
+name: "Infrastructure Project"
+nameWithLanguage: ""

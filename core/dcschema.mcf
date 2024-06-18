@@ -816,7 +816,7 @@ name: "count"
 
 Node: dcid:cumulativeCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation, schema:FoodBasket
+domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household
 typeOf: schema:Property
 name: "cumulativeCount"
 description: "A running count of all instances that have satisfied the constraints of the Statistical Population."
@@ -2643,7 +2643,7 @@ Node: dcid:benefitProgram
 name: "benefitProgram"
 typeOf: schema:Property
 domainIncludes: dcs:UnemploymentInsuranceClaim
-rangeIncludes: dcs:UnemploymentInsuranceProgramEnum
+rangeIncludes: dcs:UnemploymentInsuranceProgramEnum, dcs:BenefitProgramEnum
 description: "A program that offers benefits. E.g. SNAP (foodstamps), UI (Unemployment Insurance), etc."
 
 Node: dcid:unemploymentInsuranceStatus
