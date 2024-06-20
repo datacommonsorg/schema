@@ -2696,7 +2696,7 @@ description: "Further specification on the type of a claim, application, or requ
 Node: dcid:benefitProgram
 name: "benefitProgram"
 typeOf: schema:Property
-domainIncludes: dcs:UnemploymentInsuranceClaim
+domainIncludes: dcs:UnemploymentInsuranceClaim, dcid:Municipality
 rangeIncludes: dcs:UnemploymentInsuranceProgramEnum, dcs:BenefitProgramEnum
 description: "A program that offers benefits. E.g. SNAP (foodstamps), UI (Unemployment Insurance), etc."
 
@@ -4145,3 +4145,9 @@ typeOf: schema:Property
 domainIncludes: dcs:StatisticalCalculation
 rangeIncludes: schema:Property
 description: "Output property to hold the result of a Data Commons StatisticalCalculation. This is typically a StatisticalVariable."
+
+Node: dcid:Municipality
+typeOf: dcid:Thing
+name: "Municipality"
+
+
