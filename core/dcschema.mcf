@@ -3973,3 +3973,11 @@ typeOf: schema:Property
 domainIncludes: dcs:StatisticalCalculation
 rangeIncludes: schema:Property
 description: "Output property to hold the result of a Data Commons StatisticalCalculation. This is typically a StatisticalVariable."
+
+Node: dcid:registeredIn
+typeOf: dcid:Property
+name: "registeredIn"
+domainIncludes: dcid:Household,dcid:Person
+rangeIncludes: dcid:RegisteredInEnum
+
+
