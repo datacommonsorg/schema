@@ -3973,3 +3973,21 @@ typeOf: schema:Property
 domainIncludes: dcs:StatisticalCalculation
 rangeIncludes: schema:Property
 description: "Output property to hold the result of a Data Commons StatisticalCalculation. This is typically a StatisticalVariable."
+
+Node: dcid:registeredIn
+typeOf: dcid:Property
+name: "registeredIn"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:RegisteredInEnum
+description: "The family which is registered in single registry"
+descriptionUrl: "https://dados.gov.br/dados/conjuntos-dados/familias-por-faixa-de-renda-com-cadastro-atualizado-no-cadastro-unico---mi-social"
+
+Node: dcid:povertyStatus
+typeOf: dcid:Property
+name: "povertyStatus"
+domainIncludes: dcid:Household
+description: "The poverty of family according to some family program"
+descriptionUrl: "https://dados.gov.br/dados/conjuntos-dados/familias-por-faixa-de-renda-com-cadastro-atualizado-no-cadastro-unico---mi-social"
+
+
+
