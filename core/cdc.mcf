@@ -12,6 +12,11 @@ description: "This property describes preventive health measures such as going o
 rangeIncludes: dcs:HealthPreventionEnum
 domainIncludes: schema:Person
 
+Node: dcid:diseaseControlMeasure
+name: "diseaseControlMeasure"
+rangeIncludes: dcs:HealthPreventionEnum
+typeOf: schema:Property
+
 Node: dcid:healthBehavior
 typeOf: schema:Property
 name: "healthBehavior"
@@ -140,6 +145,11 @@ name: "WithHealthInsurance"
 typeOf: dcs:HealthPreventionEnum
 description: "Currently with health insurance."
 
+Node: dcid:WithHealthFinanceScheme
+typeOf: dcs:HealthPreventionEnum
+name: "With Health Finance Scheme"
+description: "Currently with a health finance scheme."
+
 Node: dcid:PapSmearTest
 name: "PapSmearTest"
 typeOf: dcs:HealthPreventionEnum
@@ -165,9 +175,46 @@ Node: dcid:Obesity
 name: "Obesity"
 typeOf: dcs:BodyMassIndexClassificationEnum
 
+Node: dcid:BodyMassIndexBelowNormal
+typeOf: dcs:BodyMassIndexClassificationEnum
+name: "Body Mass Index Below Normal"
+
+Node: dcid:HighRiskOfWaistToHipRatio
+typeOf: dcs:BodyMassIndexClassificationEnum
+name: "High Risk Of Waist To Hip Ratio"
+
 Node: dcid:AllTeethLoss
 name: "AllTeethLoss"
 typeOf: dcs:HealthOutcomeEnum
+
+Node: dcid:OralCancer
+typeOf: dcs:HealthOutcomeEnum
+name: "Oral Cancer"
+
+Node: dcid:HighBloodSugarLevel
+typeOf: dcs:HealthOutcomeEnum
+name: "High Blood Sugar Level"
+
+Node: dcid:VeryHighBloodSugarLevel
+typeOf: dcs:HealthOutcomeEnum
+name: "Very High Blood Sugar Level"
+
+Node: dcid:ElevatedBloodPressure
+typeOf: dcs:HealthOutcomeEnum
+name: "Elevated Blood Pressure"
+
+Node: dcid:MidlyElevatedBloodPressure
+typeOf: dcs:HealthOutcomeEnum
+name: "Midly Elevated Blood Pressure"
+
+Node: dcid:ModeratelyElevatedBloodPressure
+typeOf: dcs:HealthOutcomeEnum
+name: "Moderately Elevated Blood Pressure"
+
+Node: dcid:SeverelyElevatedBloodPressure
+typeOf: dcs:HealthOutcomeEnum
+name: "Severely Elevated Blood Pressure"
+
 
 Node: dcid:Mammography
 name: "Mammography"

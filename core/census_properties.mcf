@@ -406,6 +406,15 @@ description: "The status of a household's internet access."
 domainIncludes: dcs:Household, dcs:Person
 rangeIncludes: dcs:USC_InternetAccessStatusEnum
 
+Node: dcid:InternetAccessStatusEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "InternetAccessStatusEnum"
+
+Node: dcid:EverUsedInternet
+typeOf: dcs:InternetAccessStatusEnum
+name: "EverUsedInternet"
+
 Node: dcid:periodOfMilitaryService
 typeOf: schema:Property
 name: "periodOfMilitaryService"

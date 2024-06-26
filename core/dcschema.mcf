@@ -416,6 +416,7 @@ name: "duration"
 Node: schoolingDuration
 dcid: "schoolingDuration"
 typeOf: schema:Property
+rangeIncludes: dcs:QuantityRange
 domainIncludes: schema:Student
 name: "schoolingDuration"
 
@@ -887,6 +888,12 @@ typeOf: schema:Class
 subClassOf: schema:Person
 name: "Child"
 
+Node: dcid:childBirthOrder
+name: "childBirthOrder"
+description: "The birth order of the child.A first-order birth is the first child born to parents, second-order is the second, and so on."
+rangeIncludes: dcs:QuantityRange
+typeOf: schema:Property
+
 Node: DarwinCoreBiologicalSpecimen
 dcid: "BiologicalSpecimen"
 name: "BiologicalSpecimen"
@@ -901,6 +908,25 @@ subClassOf: schema:Event
 dcid: "BirthEvent"
 name: "BirthEvent"
 description: "Birth"
+
+Node: dcid:birthConductedBy
+name: "birthConductedBy"
+rangeIncludes: dcs:HealthWorkerEnum
+typeOf: schema:Property
+
+Node: dcid:postBirthCare
+name: "postBirthCare"
+rangeIncludes: dcs:PostBirthCareEnum
+typeOf: schema:Property
+
+Node: dcid:PostBirthCareEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PostBirthCareEnum"
+
+Node: dcid:ReceivedBirthCareWithin24Hour
+typeOf: dcs:PostBirthCareEnum
+name: "ReceivedBirthCareWithin24Hour"
 
 # EXTENDING PROPERTIES OF BIRTHEVENT
 Node: mothersAge
@@ -970,6 +996,20 @@ domainIncludes: schema:BirthEvent
 description: "The weight of the child at birth."
 descriptionUrl: "https://wonder.cdc.gov/wonder/help/Natality.html#Weight"
 
+Node: dcid:pregnancyCare
+name: "pregnancyCare"
+rangeIncludes: dcs:PregnancyCareEnum
+typeOf: schema:Property
+
+Node: dcid:PregnancyCareEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PregnancyCareEnum"
+
+Node: dcid:MotherChildProtectionCard
+typeOf: dcs:PregnancyCareEnum
+name: "Mother Child Protection Card"
+
 Node: dcid:prePregnancyBMI
 typeOf: schema:Property
 name: "prePregnancyBMI"
@@ -977,6 +1017,20 @@ rangeIncludes: schema:Number
 domainIncludes: schema:BirthEvent
 description: "The pre-pregnancy Body Mass Index (BMI) of the mother."
 descriptionUrl: "https://wonder.cdc.gov/wonder/help/natality-expanded.html#Average-Pre-pregnancy-BMI"
+
+Node: dcid:pregnancyHealthPrevention
+name: "pregnancyHealthPrevention"
+rangeIncludes: dcs:PregnancyHealthPreventionEnum
+typeOf: schema:Property
+
+Node: dcid:PregnancyHealthPreventionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PregnancyHealthPreventionEnum"
+
+Node: dcid:ProtectionAgainstNeonatalTetanus
+typeOf: dcs:PregnancyHealthPreventionEnum
+name: "Protection Against Neonatal Tetanus"
 
 Node: dcid:intervalSinceLastBirth
 typeOf: schema:Property
@@ -3008,6 +3062,14 @@ Node: dcid:Polio
 name: "Polio"
 typeOf: dcid:VaccineTypeEnum
 
+Node: dcid:Penta
+typeOf: dcs:VaccineTypeEnum
+name: "Penta Vaccine"
+
+Node: dcid:HepatitisB
+typeOf: dcs:VaccineTypeEnum
+name: "HepatitisB Vaccine"
+
 Node: dcid:Vaccine
 name: "Vaccine"
 typeOf: schema:Class
@@ -3020,6 +3082,53 @@ name: "vaccineStatus"
 typeOf: schema:Property
 domainIncludes: dcs:Vaccine, dcs:Person
 rangeIncludes: dcs:VaccineStatusEnum
+
+Node: dcid:vaccineDoseReceived
+name: "vaccineDoseReceived"
+rangeIncludes: dcs:QuantityRange
+typeOf: schema:Property
+
+Node: dcs:VaccineDose
+typeOf: dcs:UnitOfMeasure
+name: "Vaccine Dose"
+description: "VaccineDose"
+
+Node: dcid:vaccineInformation
+name: "vaccineInformation"
+rangeIncludes: dcs:VaccineInformationEnum
+typeOf: schema:Property
+
+Node: dcid:VaccineInformationEnum
+subClassOf: schema:Enumeration
+name: "VaccineInformationEnum"
+typeOf: schema:Class
+
+Node: dcid:VaccinationCard
+typeOf: dcs:VaccineInformationEnum
+name: "Vaccination Card"
+
+Node: dcid:MotherRecall
+typeOf: dcs:VaccineInformationEnum
+name: "Mother Recall"
+
+Node: dcid:vaccinationCentre
+name: "vaccinationCentre"
+rangeIncludes: dcs:HealthEstablishmentTypeEnum
+typeOf: schema:Property
+
+Node: dcid:doseTimeFrame
+name: "doseTimeFrame"
+rangeIncludes: dcs:DoseTimeFrameEnum
+typeOf: schema:Property
+
+Node: dcid:DoseTimeFrameEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "DoseTimeFrameEnum"
+
+Node: dcid:Last6Months
+typeOf: dcs:DoseTimeFrameEnum
+name: "Last6Months"
 
 Node: dcid:closeMatch
 name: "closeMatch"
@@ -3419,6 +3528,11 @@ typeOf: dcs:AgeGroupClassificationEnum
 name: "Perinatal"
 description: "Refers to the number of still-births and deaths of persons under 7 days of age per thousand live-births and still-births"
 
+Node: dcid:Neonate
+typeOf: dcs:AgeGroupClassificationEnum
+name: "Neonate"
+description: "A newborn child, especially one who is less than a month old."
+
 Node: dcid:MaritalStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -3435,6 +3549,14 @@ name: "Married"
 Node: dcid:NotLivingTogether
 typeOf: dcs:MaritalStatusEnum
 name: "NotLivingTogether"
+
+Node: dcid:MarriedBefore18Years
+typeOf: dcs:MaritalStatusEnum
+name: "MarriedBefore18Years"
+
+Node: dcid:MarriedBefore21Years
+typeOf: dcs:MaritalStatusEnum
+name: "MarriedBefore21Years"
 
 Node: dcid:memberList
 typeOf: schema:Property
@@ -3502,6 +3624,56 @@ typeOf: schema:Property
 domainIncludes: dcs:HealthEstablishment
 rangeIncludes: dcs:HealthEstablishmentTypeEnum
 
+Node: dcid:healthCareAdvice
+name: "healthCareAdvice"
+rangeIncludes: dcs:HealthCareAdviceEnum
+typeOf: schema:Property
+
+Node: dcid:HealthCareAdviceEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HealthCareAdviceEnum"
+
+Node: dcid:HealthWorkerTalkedAboutFamilyPlanning
+typeOf: dcs:HealthCareAdviceEnum
+name: "Health Worker Talked About Family Planning"
+
+Node: dcid:HealthWorkerEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HealthWorkerEnum"
+
+Node: dcid:HealthPersonnel
+typeOf: dcs:HealthWorkerEnum
+name: "Health Personnel"
+
+Node: dcid:Doctor
+typeOf: dcs:HealthWorkerEnum
+name: "Doctor"
+
+Node: dcid:LadyHealthVisitor
+typeOf: dcs:HealthWorkerEnum
+name: "Lady Health Visitor"
+
+Node: dcid:Nurse
+typeOf: dcs:HealthWorkerEnum
+name: "Nurse"
+
+Node: dcid:AuxiliaryNurseMidwifery
+typeOf: dcs:HealthWorkerEnum
+name: "Auxiliary Nurse Midwifery"
+
+Node: dcid:Midwife
+typeOf: dcs:HealthWorkerEnum
+name: "Midwife"
+
+Node: dcid:HealthPersonnel
+typeOf: dcs:HealthWorkerEnum
+name: "Health Personnel"
+
+Node: dcid:HealthProvider
+typeOf: dcs:HealthWorkerEnum
+name: "Health Provider"
 
 Node: dcid:footnote
 typeOf: schema:Property
