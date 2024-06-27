@@ -1,0 +1,41 @@
+
+Node: dcid:unDataCode
+typeOf: schema:Property
+domainIncludes: dcs:Place
+rangeIncludes: Text
+name: "unDataCode"
+description: "UN-curated place identification code."
+
+Node: dcid:unDataLabel
+typeOf: schema:Property
+domainIncludes: dcs:Place
+rangeIncludes: Text
+name: "unDataLabel"
+description: "UN-curated place label."
+
+Node: dcid:SDG_Series
+name: "SDG_Series"
+typeOf: schema:Class
+subClassOf: schema:Thing
+
+Node: dcid:SDG_MeasurementMethodEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SDG_MeasurementMethodEnum"
+
+Node: dcid:SDG_UnitOfMeasure
+name: "SDG_UnitOfMeasure"
+typeOf: schema:Class
+subClassOf: dcs:UnitOfMeasure
+
+Node: dcid:SDG_HA
+typeOf: dcs:SDG_UnitOfMeasure
+name: "Hectares"
+shortDisplayName: "Hectares"
+
+Node: dcid:SamplingStation
+typeOf: schema:Class
+name: "SamplingStation"
+description: "A station used for making observations of something."
+subClassOf: schema:Organization
+subClassOf: schema:Place
