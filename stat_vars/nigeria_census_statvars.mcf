@@ -3229,3 +3229,1598 @@ statType: dcid:measuredValue
 employmentStatus: dcid:Employed
 gender: dcid:Male
 workCategory: dcid:AgriculturalLabourers
+
+Node: dcid:Count_Person_15To64Years_Male_Rural
+typeOf: dcid:StatisticalVariable
+name: "Population: 15 - 64 Years Male, Rural"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 64 Years]
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Person_15To64Years_Male_Urban
+typeOf: dcid:StatisticalVariable
+name: "Population: 15 - 64 Years Male, Urban"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 64 Years]
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_Person_Years65Onwards_Male_AsAFractionOf_Count_Person_15To64Years_Male
+typeOf: dcid:StatisticalVariable
+name: "Old age dependency ratio male (65 years or more with 15 to 64 years)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male
+age: dcid:Years65Onwards
+gender: dcid:Male
+
+Node: dcid:Count_Person_Years65Onwards_Male_Rural_AsAFractionOf_Count_Person_15To64Years_Male_Rural
+typeOf: dcid:StatisticalVariable
+name: "Old age dependency ratio male (65 years or more with 15 to 64 years) Rural"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male_Rural
+age: dcid:Years65Onwards
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Person_Years65Onwards_Male_Urban_AsAFractionOf_Count_Person_15To64Years_Male_Urban
+typeOf: dcid:StatisticalVariable
+name: "Old age dependency ratio male (65 years or more with 15 to 64 years) Urban"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male_Urban
+age: dcid:Years65Onwards
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_Person_YearsUpto14OrYears65Onwards_Male_AsAFractionOf_Count_Person_15To64Years_Male
+typeOf: dcid:StatisticalVariable
+name: "Young and Old age dependency ratio male(14 years or less and 65 years or more with 15 to 64 years)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male
+age: dcid:YearsUpto14__Years65Onwards
+gender: dcid:Male
+
+Node: dcid:Count_Person_YearsUpto14OrYears65Onwards_Male_Rural_AsAFractionOf_Count_Person_15To64Years_Male_Rural
+typeOf: dcid:StatisticalVariable
+name: "Young and Old age dependency ratio male(14 years or less and 65 years or more with 15 to 64 years Rural"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male_Rural
+age: dcid:YearsUpto14__Years65Onwards
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Person_YearsUpto14OrYears65Onwards_Male_Urban_AsAFractionOf_Count_Person_15To64Years_Male_Urban
+typeOf: dcid:StatisticalVariable
+name: "Young and Old age dependency ratio male(14 years or less and 65 years or more with 15 to 64 years Urban"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male_Urban
+age: dcid:YearsUpto14__Years65Onwards
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_Person_YearsUpto14_Male_AsAFractionOf_Count_Person_15To64Years_Male
+typeOf: dcid:StatisticalVariable
+name: "Young age dependency ratio male (14 years or less with 15 to 64 years)"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male
+age: dcid:YearsUpto14
+gender: dcid:Male
+
+Node: dcid:Count_Person_YearsUpto14_Male_Rural_AsAFractionOf_Count_Person_15To64Years_Male_Rural
+typeOf: dcid:StatisticalVariable
+name: "Young age dependency ratio male (14 years or less with 15 to 64 years) Rural"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male_Rural
+age: dcid:YearsUpto14
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Person_YearsUpto14_Male_Urban_AsAFractionOf_Count_Person_15To64Years_Male_Urban
+typeOf: dcid:StatisticalVariable
+name: "Young age dependency ratio male (14 years or less with 15 to 64 years) Urban"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To64Years_Male_Urban
+age: dcid:YearsUpto14
+gender: dcid:Male
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_CriminalIncidents
+typeOf: dcid:StatisticalVariable
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+
+Node: dcid:Count_CriminalIncidents_CrimeAgainstPersonOrCrimeAgainstPropertyOrCrimeAgainstLawfulAuthorityOrCrimeAgainstLocalActs
+typeOf: dcid:StatisticalVariable
+name: "Total number of Cases"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+crimeType: dcid:CrimeAgainstPerson__CrimeAgainstProperty__CrimeAgainstLawfulAuthority__CrimeAgainstLocalActs
+
+Node: dcid:Count_CriminalIncidents_CrimeAgainstPersonOrCrimeAgainstPropertyOrCrimeAgainstLawfulAuthorityOrCrimeAgainstLocalActs_AsAFractionOf_Count_CriminalIncidents
+typeOf: dcid:StatisticalVariable
+name: "% Share of Total Cases"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_CriminalIncidents
+crimeType: dcid:CrimeAgainstPerson__CrimeAgainstProperty__CrimeAgainstLawfulAuthority__CrimeAgainstLocalActs
+
+Node: dcid:Offense_Count_CriminalIncidents_CrimeAgainstLawfulAuthority
+typeOf: dcid:StatisticalVariable
+name: "Offence Against Lawfull Authority"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+measurementQualifier: dcid:Offense
+statType: dcid:measuredValue
+crimeType: dcid:CrimeAgainstLawfulAuthority
+
+Node: dcid:Offense_Count_CriminalIncidents_CrimeAgainstLocalActs
+typeOf: dcid:StatisticalVariable
+name: "Offence Against Local Acts"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+measurementQualifier: dcid:Offense
+statType: dcid:measuredValue
+crimeType: dcid:CrimeAgainstLocalActs
+
+Node: dcid:Offense_Count_CriminalIncidents_CrimeAgainstPerson
+typeOf: dcid:StatisticalVariable
+name: "Offence Against Persons"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+measurementQualifier: dcid:Offense
+statType: dcid:measuredValue
+crimeType: dcid:CrimeAgainstPerson
+
+Node: dcid:Offense_Count_CriminalIncidents_CrimeAgainstProperty
+typeOf: dcid:StatisticalVariable
+name: "Offence Against Property"
+populationType: dcid:CriminalIncidents
+measuredProperty: dcid:count
+measurementQualifier: dcid:Offense
+statType: dcid:measuredValue
+crimeType: dcid:CrimeAgainstProperty
+
+Node: dcid:Count_Person_Female_NurseOccupation_AccidentAndEmergency
+typeOf: dcid:StatisticalVariable
+name: "Accident and Emergency Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:AccidentAndEmergency
+
+Node: dcid:Count_Person_Female_NurseOccupation_Administrator
+typeOf: dcid:StatisticalVariable
+name: "Nurse Administrator"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Administrator
+
+Node: dcid:Count_Person_Female_NurseOccupation_Anasthetic
+typeOf: dcid:StatisticalVariable
+name: "Anaesthetic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Anasthetic
+
+Node: dcid:Count_Person_Female_NurseOccupation_BurnsAndPlastic
+typeOf: dcid:StatisticalVariable
+name: "Burns and Plastic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:BurnsAndPlastic
+
+Node: dcid:Count_Person_Female_NurseOccupation_CardioThoracicNurses
+typeOf: dcid:StatisticalVariable
+name: "Cardio Thoracic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:CardioThoracicNurses
+
+Node: dcid:Count_Person_Female_NurseOccupation_ENT
+typeOf: dcid:StatisticalVariable
+name: "Ear, Nose and Throat (ENT) Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:ENT
+
+Node: dcid:Count_Person_Female_NurseOccupation_Educator
+typeOf: dcid:StatisticalVariable
+name: "Nurse Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Educator
+
+Node: dcid:Count_Person_Female_NurseOccupation_GeneralNurse
+typeOf: dcid:StatisticalVariable
+name: "General Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:GeneralNurse
+
+Node: dcid:Count_Person_Female_NurseOccupation_IntensiveCareNurse
+typeOf: dcid:StatisticalVariable
+name: "Intensive-Care Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:IntensiveCareNurse
+
+Node: dcid:Count_Person_Female_NurseOccupation_MidwifeEducators
+typeOf: dcid:StatisticalVariable
+name: "Midwife Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:MidwifeEducators
+
+Node: dcid:Count_Person_Female_NurseOccupation_Midwives
+typeOf: dcid:StatisticalVariable
+name: "Midwives"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Midwives
+
+Node: dcid:Count_Person_Female_NurseOccupation_OccupationalHealth
+typeOf: dcid:StatisticalVariable
+name: "Occupational Health Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:OccupationalHealth
+
+Node: dcid:Count_Person_Female_NurseOccupation_Ophthalmic
+typeOf: dcid:StatisticalVariable
+name: "Ophthalmic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Ophthalmic
+
+Node: dcid:Count_Person_Female_NurseOccupation_Orthopedic
+typeOf: dcid:StatisticalVariable
+name: "Orthopaedic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Orthopedic
+
+Node: dcid:Count_Person_Female_NurseOccupation_Pediatric
+typeOf: dcid:StatisticalVariable
+name: "Paediatric Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Pediatric
+
+Node: dcid:Count_Person_Female_NurseOccupation_Perioperative
+typeOf: dcid:StatisticalVariable
+name: "Perioperative Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Perioperative
+
+Node: dcid:Count_Person_Female_NurseOccupation_Psychatric
+typeOf: dcid:StatisticalVariable
+name: "Psychiatric Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:Psychatric
+
+Node: dcid:Count_Person_Female_NurseOccupation_PublicHealth
+typeOf: dcid:StatisticalVariable
+name: "Public Health Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:PublicHealth
+
+Node: dcid:Count_Person_Female_NurseOccupation_PublicHealthNurseEducators
+typeOf: dcid:StatisticalVariable
+name: "Public Health Nurse Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+occupation: dcid:Nurse
+specialization: dcid:PublicHealthNurseEducators
+
+Node: dcid:Count_Person_Male_NurseOccupation_AccidentAndEmergency
+typeOf: dcid:StatisticalVariable
+name: "Accident and Emergency Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:AccidentAndEmergency
+
+Node: dcid:Count_Person_Male_NurseOccupation_Administrator
+typeOf: dcid:StatisticalVariable
+name: "Nurse Administrator"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Administrator
+
+Node: dcid:Count_Person_Male_NurseOccupation_Anasthetic
+typeOf: dcid:StatisticalVariable
+name: "Anaesthetic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Anasthetic
+
+Node: dcid:Count_Person_Male_NurseOccupation_BurnsAndPlastic
+typeOf: dcid:StatisticalVariable
+name: "Burns and Plastic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:BurnsAndPlastic
+
+Node: dcid:Count_Person_Male_NurseOccupation_CardioThoracicNurses
+typeOf: dcid:StatisticalVariable
+name: "Cardio Thoracic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:CardioThoracicNurses
+
+Node: dcid:Count_Person_Male_NurseOccupation_ENT
+typeOf: dcid:StatisticalVariable
+name: "Ear, Nose and Throat (ENT) Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:ENT
+
+Node: dcid:Count_Person_Male_NurseOccupation_Educator
+typeOf: dcid:StatisticalVariable
+name: "Nurse Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Educator
+
+Node: dcid:Count_Person_Male_NurseOccupation_GeneralNurse
+typeOf: dcid:StatisticalVariable
+name: "General Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:GeneralNurse
+
+Node: dcid:Count_Person_Male_NurseOccupation_IntensiveCareNurse
+typeOf: dcid:StatisticalVariable
+name: "Intensive-Care Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:IntensiveCareNurse
+
+Node: dcid:Count_Person_Male_NurseOccupation_Midwives
+typeOf: dcid:StatisticalVariable
+name: "Midwives"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Midwives
+
+Node: dcid:Count_Person_Male_NurseOccupation_OccupationalHealth
+typeOf: dcid:StatisticalVariable
+name: "Occupational Health Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:OccupationalHealth
+
+Node: dcid:Count_Person_Male_NurseOccupation_Ophthalmic
+typeOf: dcid:StatisticalVariable
+name: "Ophthalmic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Ophthalmic
+
+Node: dcid:Count_Person_Male_NurseOccupation_Orthopedic
+typeOf: dcid:StatisticalVariable
+name: "Orthopaedic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Orthopedic
+
+Node: dcid:Count_Person_Male_NurseOccupation_Pediatric
+typeOf: dcid:StatisticalVariable
+name: "Paediatric Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Pediatric
+
+Node: dcid:Count_Person_Male_NurseOccupation_Perioperative
+typeOf: dcid:StatisticalVariable
+name: "Perioperative Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Perioperative
+
+Node: dcid:Count_Person_Male_NurseOccupation_Psychatric
+typeOf: dcid:StatisticalVariable
+name: "Psychiatric Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:Psychatric
+
+Node: dcid:Count_Person_Male_NurseOccupation_PublicHealth
+typeOf: dcid:StatisticalVariable
+name: "Public Health Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:PublicHealth
+
+Node: dcid:Count_Person_Male_NurseOccupation_PublicHealthNurseEducators
+typeOf: dcid:StatisticalVariable
+name: "Public Health Nurse Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+occupation: dcid:Nurse
+specialization: dcid:PublicHealthNurseEducators
+
+Node: dcid:Count_Person_Nigerian
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+
+Node: dcid:Count_Person_Nigerian_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+gender: dcid:Female
+
+Node: dcid:Count_Person_Nigerian_Female_DentistOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+gender: dcid:Female
+occupation: dcid:Dentist
+
+Node: dcid:Count_Person_Nigerian_Female_MedicalPractitionerOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+gender: dcid:Female
+occupation: dcid:MedicalPractitioner
+
+Node: dcid:Count_Person_Nigerian_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+gender: dcid:Male
+
+Node: dcid:Count_Person_Nigerian_Male_DentistOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+gender: dcid:Male
+occupation: dcid:Dentist
+
+Node: dcid:Count_Person_Nigerian_Male_MedicalPractitionerOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+gender: dcid:Male
+occupation: dcid:MedicalPractitioner
+
+Node: dcid:Count_Person_Nigerian_MedicalPractitionerOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:Nigerian
+occupation: dcid:MedicalPractitioner
+
+Node: dcid:Count_Person_NonNigerian
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:NonNigerian
+
+Node: dcid:Count_Person_NonNigerian_Female_DentistOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:NonNigerian
+gender: dcid:Female
+occupation: dcid:Dentist
+
+Node: dcid:Count_Person_NonNigerian_Female_MedicalPractitionerOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:NonNigerian
+gender: dcid:Female
+occupation: dcid:MedicalPractitioner
+
+Node: dcid:Count_Person_NonNigerian_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:NonNigerian
+gender: dcid:Male
+
+Node: dcid:Count_Person_NonNigerian_Male_DentistOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:NonNigerian
+gender: dcid:Male
+occupation: dcid:Dentist
+
+Node: dcid:Count_Person_NonNigerian_Male_MedicalPractitionerOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:NonNigerian
+gender: dcid:Male
+occupation: dcid:MedicalPractitioner
+
+Node: dcid:Count_Person_NonNigerian_MedicalPractitionerOccupation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ethnicity: dcid:NonNigerian
+occupation: dcid:MedicalPractitioner
+
+Node: dcid:Count_Person_NurseOccupation_AccidentAndEmergency
+typeOf: dcid:StatisticalVariable
+name: "Accident and Emergency Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:AccidentAndEmergency
+
+Node: dcid:Count_Person_NurseOccupation_Administrator
+typeOf: dcid:StatisticalVariable
+name: "Nurse Administrator"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Administrator
+
+Node: dcid:Count_Person_NurseOccupation_Anasthetic
+typeOf: dcid:StatisticalVariable
+name: "Anaesthetic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Anasthetic
+
+Node: dcid:Count_Person_NurseOccupation_BurnsAndPlastic
+typeOf: dcid:StatisticalVariable
+name: "Burns and Plastic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:BurnsAndPlastic
+
+Node: dcid:Count_Person_NurseOccupation_CardioThoracicNurses
+typeOf: dcid:StatisticalVariable
+name: "Cardio Thoracic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:CardioThoracicNurses
+
+Node: dcid:Count_Person_NurseOccupation_ENT
+typeOf: dcid:StatisticalVariable
+name: "Ear, Nose and Throat (ENT) Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:ENT
+
+Node: dcid:Count_Person_NurseOccupation_Educator
+typeOf: dcid:StatisticalVariable
+name: "Nurse Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Educator
+
+Node: dcid:Count_Person_NurseOccupation_GeneralNurse
+typeOf: dcid:StatisticalVariable
+name: "General Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:GeneralNurse
+
+Node: dcid:Count_Person_NurseOccupation_IntensiveCareNurse
+typeOf: dcid:StatisticalVariable
+name: "Intensive-Care Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:IntensiveCareNurse
+
+Node: dcid:Count_Person_NurseOccupation_MidwifeEducators
+typeOf: dcid:StatisticalVariable
+name: "Midwife Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:MidwifeEducators
+
+Node: dcid:Count_Person_NurseOccupation_Midwives
+typeOf: dcid:StatisticalVariable
+name: "Midwives"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Midwives
+
+Node: dcid:Count_Person_NurseOccupation_OccupationalHealth
+typeOf: dcid:StatisticalVariable
+name: "Occupational Health Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:OccupationalHealth
+
+Node: dcid:Count_Person_NurseOccupation_Ophthalmic
+typeOf: dcid:StatisticalVariable
+name: "Ophthalmic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Ophthalmic
+
+Node: dcid:Count_Person_NurseOccupation_Orthopedic
+typeOf: dcid:StatisticalVariable
+name: "Orthopaedic Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Orthopedic
+
+Node: dcid:Count_Person_NurseOccupation_Pediatric
+typeOf: dcid:StatisticalVariable
+name: "Paediatric Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Pediatric
+
+Node: dcid:Count_Person_NurseOccupation_Perioperative
+typeOf: dcid:StatisticalVariable
+name: "Perioperative Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Perioperative
+
+Node: dcid:Count_Person_NurseOccupation_Psychatric
+typeOf: dcid:StatisticalVariable
+name: "Psychiatric Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:Psychatric
+
+Node: dcid:Count_Person_NurseOccupation_PublicHealth
+typeOf: dcid:StatisticalVariable
+name: "Public Health Nurses"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:PublicHealth
+
+Node: dcid:Count_Person_NurseOccupation_PublicHealthNurseEducators
+typeOf: dcid:StatisticalVariable
+name: "Public Health Nurse Educators"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:Nurse
+specialization: dcid:PublicHealthNurseEducators
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Accomodation
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Accommodation services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Accomodation
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AlcoholicBeveragesOrTobaccoOrNarcotics
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Alcoholic Beverage, Tobacco and Narcotics"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:AlcoholicBeverages__Tobacco__Narcotics
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItems
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of All Items"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:AllItems
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFarmProductAndEnergy
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of All Items less Farm Produce and Energy"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:AllItemsExceptFarmProductAndEnergy
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFarmProducts
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of All Items less Farm Produce"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:AllItemsExceptFarmProducts
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AppliancesOrArticleOrPersonalCareProducts
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Appliances, articles and products for personal care"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Appliances__Article__PersonalCareProducts
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Bicycles
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Bicycles"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Bicycles
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_BookOrStationaries
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Books & Stationeries"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Book__Stationaries
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_BreadOrCereals
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Bread and Cereals"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Bread__Cereals
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_CarpetsAndFloorCoverings
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Carpets and other floor coverings"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:CarpetsAndFloorCoverings
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_CateringServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Catering services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:CateringServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ClothingAccessories
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Clothing materials, other articles of clothing and clothing accessories"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:ClothingAccessories
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ClothingOrFootwear
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Clothing and Footwear"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Clothing__Footwear
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_CoffeeOrTeaOrCocoa
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Coffee, tea and cocoa"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Coffee__Tea__Cocoa
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Communication
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Communication"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Communication
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_DentalServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Dental services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:DentalServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_DomesticServicesOrHouseholdServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Domestic services and household services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:DomesticServices__HouseholdServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_DwellingRelatedServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Miscellaneous services relating to the dwelling"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:DwellingRelatedServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Education
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Education"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Education
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Electricity
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Electricity"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Electricity
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Fish
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Fish"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Fish
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Food
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Food"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Food
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_FoodAndNonAlcoholicBeverages
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Food And Non Alcoholic Beverages"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:FoodAndNonAlcoholicBeverages
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_FoodProducts
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Food products"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:FoodProducts
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Fruit
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Fruit"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Fruit
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_FuelOrLubricant_PersonalTransportEquipment
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Fuels and lubricants for personal transport equipment"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Fuel__Lubricant
+usedFor: dcid:PersonalTransportEquipment
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_FurnitureOrFurnishings
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Furniture and furnishings"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Furniture__Furnishings
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_GamesOfChances
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Games of chance"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:GamesOfChances
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Garments
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Garments"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Garments
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Gas
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Gas"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Gas
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_GlasswareOrTablewareOrHouseholdUtensils
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Glassware, tableware and household utensils"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Glassware__Tableware__HouseholdUtensils
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_HaircutsAndOtherPersonalCareServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Hairdressing salons and personal grooming establishments"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:HaircutsAndOtherPersonalCareServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Health
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Health"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Health
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_HospitalServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Hospital services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:HospitalServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_HouseholdEquipmentOrFurnishings
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Furnishings & Household Equipment Maintenance"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:HouseholdEquipment__Furnishings
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_HouseholdTextiles
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Household textiles"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:HouseholdTextiles
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_HousingRentals
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Actual and imputed rentals for housing"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:HousingRentals
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ImportedFood
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Imported Food"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:ImportedFood
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Insurance
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Insurance"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Insurance
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_JewelryAndWatches
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Jewellery, clocks and watches"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:JewelryAndWatches
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_LaundryAndDryCleaningServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Cleaning, repair and hire of clothing"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:LaundryAndDryCleaningServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_LiquidFuel
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Liquid Fuel"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:LiquidFuel
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MaintenanceAndRepair_PersonalTransportEquipment
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Maintenance and repair of personal transport equipment"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:MaintenanceAndRepair
+usedFor: dcid:PersonalTransportEquipment
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Meat
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Meat"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Meat
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MedicalCareServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Medical Services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:MedicalCareServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MilkOrCheeseOrEggs
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Milk, cheese and eggs"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Milk__Cheese__Eggs
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MiscellaneousGoodsAndServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Miscellaneous Goods and Services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:MiscellaneousGoodsAndServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MotorVehiclePartsAndEquipment
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Vehicle Spare Parts"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:MotorVehiclePartsAndEquipment
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Motorcars
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Motor cars"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Motorcars
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Motorcycles
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Motor cycles"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Motorcycles
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MusicInstrumentsAndAccessories
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Musical Instrument"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:MusicInstrumentsAndAccessories
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_NGAOtherServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Other services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:NGA_OtherServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_NGAOtherServices_PersonalTransportEquipment
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Other services in respect of personal transport equipment"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:NGA_OtherServices
+usedFor: dcid:PersonalTransportEquipment
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Narcotics
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Narcotics"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Narcotics
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_NonDurableHouseholdGoods
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Non-durable household goods"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:NonDurableHouseholdGoods
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_OilOrFats
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Oils and fats"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Oil__Fats
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ParamedicalServices
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Paramedical services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:ParamedicalServices
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PassengerTransport_ByAir
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Passenger transport by air"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:PassengerTransport
+modeOfTransportation: dcid:ByAir
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PassengerTransport_ByRoad
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Passenger transport by road"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:PassengerTransport
+modeOfTransportation: dcid:ByRoad
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PassengerTransport_BySeaOrInlandWaterway
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Passenger transport by sea and inland waterway"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:PassengerTransport
+modeOfTransportation: dcid:BySea__InlandWaterway
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Pharmaceutical
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Pharmaceutical products"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Pharmaceutical
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PhotographicDevelopment
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Photographic Development"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:PhotographicDevelopment
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Postage
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Postal services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Postage
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PotatoesOrYam
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Potatoes,Yam & Other Tubers"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Potatoes__Yam
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_RecreationAndCulture
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Recreation and Culture"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:RecreationAndCulture
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_RecreationalAndSportsProducts
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Recreational and sporting services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:RecreationalAndSportsProducts
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_RepairAndHireOfFootwear
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Repair & hire of Footwear"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:RepairAndHireOfFootwear
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_RepairOfFurniture
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Repair of Furniture"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:RepairOfFurniture
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_RepairOfHouseholdAppliances
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Repair of household appliances"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:RepairOfHouseholdAppliances
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_RestaurantOrHotel
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Restaurant & Hotels"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Restaurant__Hotel
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ShoesAndOtherFootwear
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Shoes and other footwear"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:ShoesAndOtherFootwear
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_SoftDrinks
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Soft Drinks"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:SoftDrinks
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_SolidFuel
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Solid Fuels"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:SolidFuel
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Spirits
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Spirits"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Spirits
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_TelephoneAndTelefaxEquipment
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Telephone and telefax equipment"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:TelephoneAndTelefaxEquipment
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_TelephoneAndTelefaxService
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Telephone and telefax services"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:TelephoneAndTelefaxService
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Tobacco
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Tobacco"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Tobacco
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_TransportSector
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Transport"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:TransportSector
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Vegetable
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Vegetables"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Vegetable
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_VideoAndAudioProductsOrPhotographicEquipment
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Audio-visual, photographic and information processing equipment"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:VideoAndAudioProducts__PhotographicEquipment
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WaterOrElectricityOrGasOrOtherFuels
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Housing Water, Electricity, Gas and Other Fuel"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Water__Electricity__Gas__OtherFuels
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WaterSupply
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Water supply"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:WaterSupply
+
+Node: dcid:ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Wine
+typeOf: dcid:StatisticalVariable
+name: "Consumer price index of Wine"
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+statType: dcid:measuredValue
+consumer: dcid:UrbanConsumer
+consumerGoodsCategory: dcid:Wine
