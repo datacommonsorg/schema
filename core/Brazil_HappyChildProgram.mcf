@@ -1,0 +1,47 @@
+Node: dcid:eligiblityStaus
+typeOf: dcid:Property
+name: "eligiblityStaus"
+domainIncludes: dcid:Municipality
+rangeIncludes: dcid:EligiblityStausEnum
+
+Node: dcid:visitationFor
+typeOf: dcid:Property
+name: "visitationFor"
+domainIncludes: dcid:Visit
+rangeIncludes: dcid:AgeGroupClassificationEnum
+
+Node: dcid:visitationStatus
+typeOf: dcid:Property
+name: "visitationStatus"
+domainIncludes: dcid:Children, dcid:Visit
+rangeIncludes: dcid:VisitationStatusEnum
+
+Node: dcid:EligiblityStausEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EligiblityStausEnum"
+
+Node: dcid:VisitationStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "VisitationStatusEnum"
+
+Node: dcid:Eligible
+typeOf: dcid:EligiblityStausEnum
+name: "Eligible"
+
+Node: dcid:Visited
+typeOf: dcid:VisitationStatusEnum
+name: "Visited"
+
+Node: dcid:Brazil_HappyChildProgram
+typeOf: dcid:BenefitProgramEnum
+name: "Brazil Happy Child Program"
+
+Node: dcid:Municipality
+typeOf: dcid:Thing
+name: "Municipality"
+
+Node: dcid:Visit
+typeOf: dcid:Thing
+name: "Visit"
