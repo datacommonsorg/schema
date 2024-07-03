@@ -216,7 +216,11 @@ name: "percentile90"
 domainIncludes: dcs:StatVarObservation
 rangeIncludes: schema:Number
 
-
+Node: dcid:purchase
+typeOf: schema:Property
+rangeIncludes: schema:Quantity, schema:EnergySourceEnum
+domainIncludes: schema:Coal
+name: "purchase"
 
 Node: dcid:County
 name: "County"
@@ -2032,6 +2036,10 @@ Node: dcid:NationalCurrency
 typeOf: dcs:CurrencyUnitOfMeasure
 name: "NationalCurrency"
 description: "Unit for measurements made in the official currency of the relevant country."
+
+Node: dcs:RupeePerTonne
+typeOf: dcs:CurrencyUnitOfMeasure
+name: "Rupee Per Tonne"
 
 Node: dcid:PurchasingPowerStandard
 name: "PurchasingPowerStandard"
@@ -3966,6 +3974,43 @@ typeOf: dcs:Property
 name: "southAfricanMunicipalityCode"
 domainIncludes: dcs:Place
 description: "Identifier for a municipality in South Africa"
+###ModeOfTransport
+
+Node: dcid:modeOfTransportation
+typeOf: dcid:Property
+name: "modeOfTransportation"
+domainIncludes: dcid:Coal
+rangeIncludes: dcid:ModeOfTransportationEnum
+
+Node: dcid:ModeOfTransportationEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ModeOfTransportationEnum"
+
+Node: dcid:Rail
+typeOf: dcid:ModeOfTransportationEnum
+name: "Rail"
+
+Node: dcid:Other
+typeOf: dcid:ModeOfTransportationEnum
+name: "Other Mode of Transports"
+
+Node: dcid:Private
+typeOf: dcid:ModeOfTransportationEnum
+name: "Private Mode of Transport"
+
+Node: dcid:Belt
+typeOf: dcid:ModeOfTransportationEnum
+name: "Belt"
+
+Node: dcid:Rope
+typeOf: dcid:ModeOfTransportationEnum
+name: "Rope"
+
+Node: dcid:MerryGoRound
+typeOf: dcid:ModeOfTransportationEnum
+name: "Merry Go Round Train"
+description: "A merry-go-round train, often abbreviated to MGR, is a block train of hopper wagons which both loads and unloads its cargo while moving."
 
 Node: dcid:financialProduct
 typeOf: dcid:Property
