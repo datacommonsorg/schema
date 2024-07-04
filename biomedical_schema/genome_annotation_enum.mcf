@@ -1110,6 +1110,37 @@ descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
 description: "A genome computationally or manually selected as a representative from among the best genomes available for a species or clade that does not have a designated reference genome."
 
 
+# SequenceOntologySubsetEnum
+Node: dcid:SequenceOntologySubsetEnum
+name: "SequenceOntologySubsetEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "A subset of terms from The Sequence Ontology that can be useful for defined activities."
+
+Node: dcid:SequenceOntologySubsetAllianceOfGenomeResources
+name: "Alliance of Genome Resources"
+typeOf: dcs:SequenceOntologySubsetEnum
+description: "A subset of Sequence Ontology terms used to describe various types of genes."
+
+Node: dcid:SequenceOntologySubsetBiosapiens
+name: "Biosapienes"
+typeOf: dcs:SequenceOntologySubsetEnum
+description: "A set of terms with which to annotate polypeptide sequence, for structural data."
+descriptionUrl: "http://www.sequenceontology.org/?page_id=267"
+
+Node: dcid:SequenceOntologySubsetDbVar
+name: "dbVar"
+typeOf: dcs:SequenceOntologySubsetEnum
+description: "A subset of Sequence Ontology terms used by dbVar to describe genetic variants."
+
+Node: dcid:SequenceOntologySubsetSofa
+name: "Sequence Ontology Feature Annotation"
+typeOf: dcs:SequenceOntologySubsetEnum
+abbreviation: "SOFA"
+description: "A subset of terms from The Sequence Ontology (SO) consisting of some of those terms that can be located onto sequence has been selected; this condensed version of SO is especially well suited for labeling the outputs of automated or semi-automated sequence annotation pipelines."
+descriptionUrl: "https://genomebiology.biomedcentral.com/articles/10.1186/gb-2005-6-5-r44"
+
+
 # StrandOrientationEnum
 Node: dcid:StrandOrientationEnum
 name: "StrandOrientationEnum"
@@ -1124,6 +1155,34 @@ typeOf: dcs:StrandOrientationEnum
 Node: dcid:StrandOrientationNegative
 name: "Negative"
 typeOf: dcs:StrandOrientationEnum
+
+
+# SynonymTypeEnum
+Node: dcid:SynonymTypeEnum
+name: "SynonymTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The level of closeness of a match of a synonym to an original term of interest."
+
+Node: dcid:SynonymTypeRelated
+name: "Related Terms"
+typeOf: dcs:SynonymTypeEnum
+description: "The two terms are related."
+
+Node: dcid:SynonymTypeNarrow
+name: "Narrowly Related Terms"
+typeOf: dcs:SynonymTypeEnum
+description: "The two terms are narrowly related."
+
+Node: dcid:SynonymTypeBroad
+name: "Broadly Related Terms"
+typeOf: dcs:SynonymTypeEnum
+description: "The two terms are broadly related."
+
+Node: dcid:SynonymTypeExact
+name: “Exact Terms”
+typeOf: dcs:SynonymTypeEnum
+description: "The two terms are an exact match."
 
 
 # TypeOfGeneEnum

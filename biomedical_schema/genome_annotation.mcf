@@ -1,3 +1,4 @@
+# Classes
 Node: dcid:Allele
 typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
@@ -103,6 +104,21 @@ typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description: "Recorded transcript. Unique identifier (GENCODE transcript ID for GENCODE Basic)."
 
+Node: dcid:SequenceOntologyTerm
+name: "SequenceOntologyTerm"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "The Sequence Ontology (SO) is a set of terms and relationships used to describe the features and attributes of biological sequence. SO includes different kinds of features which can be located on the sequence. Biological features are those which are defined by their disposition to be involved in a biological process. Examples are binding_site and exon. Biomaterial features are those which are intended for use in an experiment such as aptamer and PCR_product. There are also experimental features which are the result of an experiment. SO also provides a rich set of attributes to describe these features such as polycistronic and maternally_imprinted."
+descriptionUrl: "http://www.sequenceontology.org/"
+
+Node: dcid:SequenceOntologyTermSynonym
+name: "SequenceOntologyTermSynonym"
+typeOf: schema:Class
+subClassOf: dcs:SequenceOntologyTerm
+description: "These are the synonyms for a SequenceOntologyTerm node. This includes information about the closeness of the match with the SequenceOntologyTerm, the source of the information, and a string value of the synonym itself."
+
+
+# Properties
 Node: dcid:alleleOrigin
 name: "alleleOrigin"
 typeOf: schema:Property
@@ -276,12 +292,14 @@ domainIncludes: dcs:GeneticVariant
 description: "Accessions from dbVar for the genetic variant"
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/dbvar/"
 
-Node: dcid:dnaSequenceRole
-name: "dnaSequenceRole"
+Node: dcid:digitalObjectIdentifier
+name: "digitalObjectIdentifier"
 typeOf: schema:Property
-rangeIncludes: dcs:DNASequenceRoleEnum
-domainIncludes: dcs:Chromosome
-description: "The role a defined sequence of DNA has in a genome assembly."
+domainIncludes: dcs:Thing
+rangeIncludes: schema:Text
+abbreviation: "DOI"
+description: "A DOI name is a digital identifier of an object, any object - physical, digital, or abstract. DOIs solve a common problem: keeping track of things. Things can be matter, material, content, or activities. Designed to be used by humans as well as machines, DOIs identify objects persistently. They allow things to be uniquely identified and accessed reliably. You know what you have, where it is, and others can track it too."
+descriptionUrl: "https://www.doi.org/"
 
 Node: dcid:diseaseDescription
 name: "diseaseDescription"
@@ -296,6 +314,13 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:GeneticVariant
 description: "ClinVar's preferred disease name for the concept specified by disease identifiers."
+
+Node: dcid:dnaSequenceRole
+name: "dnaSequenceRole"
+typeOf: schema:Property
+rangeIncludes: dcs:DNASequenceRoleEnum
+domainIncludes: dcs:Chromosome
+description: "The role a defined sequence of DNA has in a genome assembly."
 
 Node: dcid:ensemblID
 name: "ensemblID"
@@ -694,6 +719,31 @@ rangeIncludes: dcs:GenomeAssembly
 domainIncludes: dcs:GenomeAnnotation
 description: "Genome assembly."
 
+Node: dcid:internationalStandardBookNumber
+name: "internationalStandardBookNumber"
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: schema:Text
+abbreviation: "ISBN"
+description: "The International Standard Book Number (ISBN) is a numeric commercial book identifier that is intended to be unique. Publishers purchase or receive ISBNs from an affiliate of the International ISBN Agency."
+descriptionUrl: "https://en.wikipedia.org/wiki/ISBN"
+
+Node: dcid:internationalStandardSerialNumber
+name: "internationalStandardSerialNumber"
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: schema:Text
+abbreviation: "ISSN"
+description: "An International Standard Serial Number is an eight-digit serial number used to uniquely identify a serial publication, such as a magazine. The ISSN is especially helpful in distinguishing between serials with the same title."
+descriptionUrl: "https://en.wikipedia.org/wiki/ISSN"
+
+Node: dcid:isDeprecated
+name: "isDeprecated"
+typeOf: schema:Property
+domainIncludes: dcs:Thing
+rangeIncludes: schema:Boolean
+description: "A term is considered deprecated and is no longer in use."
+
 Node: dcid:isGenomeRepresentationFull
 name: "isGenomeRepresentationFull"
 typeOf: schema:Property
@@ -738,6 +788,14 @@ typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:GeneticVariantGeneAssociation
 description: "The 95% confidence interval of the allelic Fold Change in log2 of the change in gene expression of samples with or without the minor allele: [lowerCI upperCI]."
+
+Node: dcid:loincCode
+name: "loincCode"
+typeOf: schema:Property
+domainIncludes: dcs:BiomedicalEntity
+rangeIncludes: schema:Text
+description: "A code for Logical Observation Identifiers Names and Codes (LOINC), which is clinical terminology that is important for laboratory test orders and results, and is one of a suite of designated standards for use in U.S. Federal Government systems for the electronic exchange of clinical health information."
+descriptionUrl: "https://www.mayocliniclabs.com/test-catalog/appendix/LOINC-Codes#:~:text=Logical%20Observation%20Identifiers%20Names%20and,exchange%20of%20clinical%20health%20information."
 
 Node: dcid:makesProtein
 name: "makesProtein"
@@ -980,12 +1038,36 @@ domainIncludes: dcs:GeneticVariant,dcs:ChemicalCompound,dcs:Gene
 description: "PharmGKB is a comprehensive resource that curates knowledge about the impact of genetic variation on drug response for clinicians and researchers."
 descriptionUrl: "https://www.pharmgkb.org/"
 
+Node: dcid:pomBaseId
+name: "pomBaseId"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: schema:Text
+description: "An identifier for a term in PomBase, a comprehensive knowledgebase for the fission yeast Schizosaccharomyces pombe, providing iterature curation, analysis tools, genome annotation and access to large-scale data sets."
+descriptionUrl: "https://www.pombase.org/"
+
 Node: dcid:proteinCodingGeneCount
 name: "proteinCodingGeneCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAnnotation
 rangeIncludes: schema:Number
 description: "The number of protein coding genes within a consensus region of DNA."
+
+Node: dcid:proteinModificationOntology
+name: "proteinModificationOntology"
+typeOf: schema:Property
+domainIncludes: dcs:BioChemEntity
+rangeIncludes: schema:Text
+description: "An identifier for The Proteomics Standards Initiative modification ontology (PSI-MOD), which aims to define a concensus nomenclature and ontology reconciling, in a hierarchical representation, the complementary descriptions of residue modifications."
+descriptionUrl: "https://bioregistry.io/registry/mod"
+
+Node: dcid:pubMedCentralId
+name: "pubMedCentralId"
+typeOf: schema:Property
+domainIncludes: dcs:BiomedicalEntity
+rangeIncludes: schema:Text
+description: "An identifier that references an article stored in PubMed Central (PMC). PMC is a free full-text archive of biomedical and life sciences journal literature at the U.S. National Institutes of Health's National Library of Medicine (NIH/NLM). In keeping with NLM's legislative mandate to collect and preserve the biomedical literature, PMC is part of the NLM collection, which also includes NLM's extensive print and licensed electronic journal holdings and supports contemporary biomedical and health care research and practice as well as future scholarship. Available to the public online since 2000, PMC was developed and is maintained by the National Center for Biotechnology Information (NCBI) at NLM."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/about/intro/"
 
 Node: dcid:pValueBeta
 name: "pValueBeta"
@@ -1082,6 +1164,13 @@ typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:StatisticalVariable
 
+Node: dcid:rnaModId
+name: "rnaModId"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: schema:Text
+description: "An identifier for RNAmod, a resource that annotates RNA modification across 21 species."
+
 Node: dcid:rsID
 name: "rsID"
 typeOf: schema:Property
@@ -1098,6 +1187,13 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:GeneticVariant
 description: "Sequence Ontology ID: http://www.sequenceontology.org/"
+
+Node: dcid:sequenceOntologySubset
+name: "sequenceOntologySubset"
+typeOf: schema:Property
+domainIncludes: dcs:SequenceOntologyTerm
+rangeIncludes: dcs:SequenceOntologySubsetEnum
+description: "A subset of terms from The Sequence Ontology that can be useful for defined activities."
 
 Node: dcid:sequencingTechnology
 name: "sequencingTechnology"
@@ -1140,8 +1236,15 @@ Node: dcid:synonym
 name: "synonym"
 typeOf: schema:Property
 domainIncludes: schema:Thing
-rangeIncludes: schema:Text
+rangeIncludes: schema:Text, dcs:SequenceOntologyTerm
 description: "Alternative names for the given entity."
+
+Node: dcid:synonymType
+name: "synonymType"
+typeOf: schema:Property
+domainIncludes: dcs:SequenceOntologyTermSynonym
+rangeIncludes: dcs:SynonymTypeEnum
+description: "How two terms are related to each other."
 
 Node: dcid:tissue
 name: "tissue"
