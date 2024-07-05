@@ -43,7 +43,7 @@ Node: dcid:disabilityStatus
 rangeIncludes: dcs:USC_DisabilityStatusEnum, dcs:SDG_DisabilityStatusEnum
 name: "disabilityStatus"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:Household
+domainIncludes: schema:Person, schema:Household, schema:Student
 
 Node: collegeOrGraduateSchoolEnrollment
 dcid: "collegeOrGraduateSchoolEnrollment"
@@ -256,7 +256,7 @@ Node: schoolEnrollment
 dcid: "schoolEnrollment"
 name: "schoolEnrollment"
 rangeIncludes: dcs:USC_SchoolEnrollmentEnum
-domainIncludes: schema:Person, schema:Household
+domainIncludes: schema:Person, schema:Household, dcid:Student
 typeOf: schema:Property
 
 Node: spouseAbsentReason
@@ -288,7 +288,7 @@ dcid: "workExperience"
 name: "workExperience"
 description: "Describes whether a person has worked, over a given period, usually in the previous 12 months."
 rangeIncludes: dcs:WorkExperienceEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcid:Faculty
 
 # Additions from USC Economic Census
 
