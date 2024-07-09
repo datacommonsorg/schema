@@ -4145,3 +4145,32 @@ typeOf: schema:Property
 domainIncludes: dcs:StatisticalCalculation
 rangeIncludes: schema:Property
 description: "Output property to hold the result of a Data Commons StatisticalCalculation. This is typically a StatisticalVariable."
+
+#oecd_addition
+Node: dcid:resourceType
+typeOf: dcs:Property
+name: "resourceType"
+domainIncludes: dcid:Fuel, dcid:Metal
+rangeIncludes: dcid:ResourceTypeEnum
+
+#Enum
+Node: dcid:ResourceTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ResourceTypeEnum"
+
+#enumvalues
+Node: dcid:CommerciallyRecoverableResources
+typeOf: dcid:ResourceTypeEnum
+name: "Commercially Recoverable Resources"
+description: "Resources that are commercially recoverable."
+
+Node: dcid:PotentiallyCommerciallyRecoverableResources
+typeOf: dcid:ResourceTypeEnum
+name: "Potentially Commercially Recoverable Resources"
+description: "Resources that are potentially commercially recoverable."
+
+Node: dcid:NonCommercialAndOtherDeposits
+typeOf: dcid:ResourceTypeEnum
+name: "Non Commercial And Other Deposits"
+description: "Resources that are non commercial and other deposits."

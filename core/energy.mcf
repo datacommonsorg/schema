@@ -99,7 +99,7 @@ supersededBy: dcid:stocks
 Node: dcid:stocks
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Energy, schema:Fuel, schema:Product
+domainIncludes: schema:Energy, schema:Fuel, schema:Product, dcid:Metal
 name: "stocks"
 
 Node: dcid:receipt
@@ -1837,6 +1837,47 @@ Node: dcid:AnnualChange
 typeOf: dcid:EnergyStocksEnum
 name: "Annual change"
 
+#oecd_addition
+Node: dcid:UpwardReappraisals
+typeOf: dcid:EnergyStocksEnum
+name: "Upward Reappraisals"
+isProvisional: dcs:True
+
+Node: dcid:TotalAdditionsToStock
+typeOf: dcid:EnergyStocksEnum
+name: "Total Additions To Stock"
+isProvisional: dcs:True
+
+Node: dcid:TotalReductionsInStock
+typeOf: dcid:EnergyStocksEnum
+name: "Total Reductions In Stock"
+isProvisional: dcs:True
+
+Node: dcid:Discrepancies
+typeOf: dcid:EnergyStocksEnum
+name: "Discrepancies"
+isProvisional: dcs:True
+
+Node: dcid:Extractions
+typeOf: dcid:EnergyStocksEnum
+name: "Extractions"
+isProvisional: dcs:True
+
+Node: dcid:DownwardReappraisals
+typeOf: dcid:EnergyStocksEnum
+name: "Downward Reappraisals"
+isProvisional: dcs:True
+
+Node: dcid:Discoveries
+typeOf: dcid:EnergyStocksEnum
+name: "Discoveries"
+isProvisional: dcs:True
+
+Node: dcid:Reclassifications
+typeOf: dcid:EnergyStocksEnum
+name: "Reclassifications"
+isProvisional: dcs:True
+
 # Begin EIA Form 860 Schema
 
 Node: dcid:ElectricUtility
@@ -1996,9 +2037,17 @@ description: "High voltage electricity system responsible for transmitting elect
 Node: dcid:fuelType
 name: "fuelType"
 typeOf: schema:Property
-rangeIncludes: schema:Text
+rangeIncludes: schema:Text, dcid:EnergySourceEnum
 domainIncludes: schema:Product
 description: "Type of chemical combusted for heat, force, or electricity."
+
+#oced_addition
+Node: dcid:metalType
+typeOf: dcs:Property
+name: "metalType"
+domainIncludes: dcid:Metal
+rangeIncludes: dcid:ChemicalElement
+isProvisional: dcs:True
 
 Node: dcid:uprateCompletionDate
 name: "uprateCompletionDate"
