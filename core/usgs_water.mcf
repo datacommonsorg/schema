@@ -5,6 +5,13 @@ typeOf: schema:Class
 name: "Water"
 subClassOf: schema:Thing
 
+Node: dcid:WasteWater
+typeOf: schema:Class
+subClassOf: dcs:Water
+name: "WasteWater"
+description:"Wastewater is used water. It includes substances such as human waste, food scraps, oils, soaps and chemicals"
+descriptionUrl:"https://www.usgs.gov/special-topics/water-science-school/science/wastewater-treatment-water-use#:~:text=Wastewater%20is%20used%20water.,water%20that%20must%20be%20cleaned."
+
 ## Properties
 
 Node: dcid:withdrawalRate
@@ -34,6 +41,34 @@ name: "waterSource"
 domainIncludes: dcs:Water
 rangeIncludes: dcs:WaterSourceTypeEnum
 description: "The source of water, such as ground water, surface water."
+
+Node: dcid:waterTreatmentLevel
+typeOf: dcs:Property
+name: "waterTreatmentLevel"
+domainIncludes: dcid:WasteWater
+rangeIncludes: dcid:WaterTreatmentLevelEnum
+description:"The treatment level/stage in the wastewater treatment plant"
+
+Node: dcid:waterTreatmentType
+typeOf: dcs:Property
+name: "waterTreatmentType"
+domainIncludes: dcid:WasteWater,dcid:Person
+rangeIncludes: dcid:WaterTreatmentTypeEnum
+description:"The method of the wastewater treatment"
+
+Node: dcid:waterTreatmentStatus
+typeOf: dcs:Property
+name: "waterTreatmentStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WaterTreatmentStatusEnum
+description:"It says whether the wastewater is treated or non-treated"
+
+Node: dcid:waterTreatmentSystem
+typeOf: dcs:Property
+name: "waterTreatmentSystem"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WaterTreatmentSystemEnum
+description:"The type of the system(independently in a small scale or privately/by government in a large scale)by which the waste water is treated"
 
 ## Enums
 
@@ -113,6 +148,79 @@ typeOf: dcs:WaterSourceTypeEnum
 name: "SurfaceWater"
 description: "Water flowing on the Earth's surface."
 descriptionUrl: "https://www.usgs.gov/special-topic/water-science-school/science/rivers-streams-and-creeks"
+
+Node: dcid:WaterTreatmentLevelEnum
+typeOf: dcid:Class
+subClassOf:Enumeration
+name: "WaterTreatmentLevelEnum"
+
+Node: dcid:WaterTreatmentTypeEnum
+typeOf: dcid:Class
+subClassOf:Enumeration
+name: "WaterTreatmentTypeEnum"
+
+Node: dcid:WaterTreatmentSystemEnum
+typeOf: dcid:Class
+subClassOf:Enumeration
+name: "WaterTreatmentSystemEnum"
+
+Node: dcid:WaterTreatmentStatusEnum
+typeOf: dcid:Class
+subClassOf:Enumeration
+name: "WaterTreatmentStatusEnum"
+
+Node: dcid:TertiaryTreatment
+typeOf: dcid:WaterTreatmentLevelEnum
+name: "TertiaryTreatment"
+description:"Tertiary water treatment is the final stage of the multi-stage wastewater cleaning process. This third stage of treatment removes inorganic compounds, bacteria, viruses, and parasites."
+descriptionUrl:"https://aosts.com/tertiary-treatment-of-wastewater-process-methods/#:~:text=Tertiary%20water%20treatment%20is%20the,or%20release%20into%20the%20environment."
+
+Node: dcid:WasteWaterTreatmentPlant
+typeOf: dcid:WaterTreatmentTypeEnum
+name: "WasteWaterTreatmentPlant"
+description:"Conventional wastewater treatment includes pretreatment, primary treatment, and secondary treatment in a treatment facility area."
+descriptionUrl:"https://www.sciencedirect.com/topics/earth-and-planetary-sciences/waste-water-treatment-plant#:~:text=Conventional%20wastewater%20treatment%20includes%20pretreatment,and%20secondary%20sedimentation%2C%20are%20applied."
+
+Node: dcid:WasteWaterTreated
+typeOf: dcid:WaterTreatmentStatusEnum
+name: "WasteWaterTreated"
+description:"Treated wastewater can be reused as reclaimed water. The main purpose of wastewater treatment is for the treated wastewater to be able to be disposed or reused"
+descriptionUrl:"https://en.wikipedia.org/wiki/Wastewater_treatment"
+
+Node: dcid:WasteWaterIndependentlyTreated
+typeOf: dcid:WaterTreatmentSystemEnum
+name: "WasteWaterIndependentlyTreated"
+description:"Home wastewater enters the septic tank, which separates solids from liquids. Solids are held in the septic tank and liquids are conveyed to the final soil treatment site. The septic tank is a “bioreactor” where microorganisms break down organic matter in the wastewater to liquids, gases and solids."
+descriptionUrl:"https://www.ag.ndsu.edu:8000/agriculture/extension/publications/individual-home-sewage-treatment-systems#:~:text=Home%20wastewater%20enters%20the%20septic,to%20liquids%2C%20gases%20and%20solids"
+
+Node: dcid:WasteWaterCollectingSystem
+typeOf: dcid:WaterTreatmentSystemEnum
+name: "WasteWaterCollectingSystem"
+description:"Collection Systems are the system of underground pipes and maintenance structures used to convey wastewater to a Water Resource Recovery Facility (WRRF)"
+descriptionUrl:"https://www.wbdg.org/resources/wastewater-treatment-and-water-resource-recovery-facilities-wrrfs/collection-systems"
+
+Node: dcid:SecondaryTreatment
+typeOf: dcid:WaterTreatmentLevelEnum
+name: "SecondaryTreatment"
+description:"Secondary treatment involves the removal of biodegradable organic matter (BOD) and suspended solids (TSS) through the processes of aeration and filtration."
+descriptionUrl:"https://www.gov.mb.ca/sd/pubs/environmental-approvals/owms/secondary-treatment-systems.pdf"
+
+Node: dcid:UnspecifiedTreatment
+typeOf: dcid:WaterTreatmentLevelEnum
+name: "UnspecifiedTreatment"
+description:"The water treatments in the wastewater plant that are not specified"
+
+Node: dcid:PublicSewerageWithoutTreatment
+typeOf: dcid:WaterTreatmentTypeEnum
+name: "PublicSewerageWithoutTreatment"
+description:"If sewage is discharged untreated, its nitrogen and phosphorus content can lead to pollution of lakes and reservoirs via a process called eutrophication"
+descriptionUrl:"https://en.wikipedia.org/wiki/Sewage#:~:text=If%20sewage%20is%20discharged%20untreated,from%20the%20urea%20in%20urine"
+
+Node: dcid:PrimaryTreatment
+typeOf: dcid:WaterTreatmentLevelEnum
+name: "PrimaryTreatment"
+description:"Primary treatment removes material that will either float or readily settle out by gravity"
+descriptionUrl:"https://www.britannica.com/technology/wastewater-treatment/Primary-treatment#:~:text=Primary%20treatment%20removes%20material%20that,closely%20spaced%2C%20narrow%20metal%20bars"
 
 ## Units
 
