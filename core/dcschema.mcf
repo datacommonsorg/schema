@@ -1080,7 +1080,7 @@ dcid: dcs:landArea
 typeOf: schema:Property
 name: "landArea"
 description: "The area of an administrative area."
-domainIncludes: schema:AdministrativeArea
+domainIncludes: schema:AdministrativeArea, dcid:LandCover
 rangeIncludes: schema:Float
 
 Node: populationDensity
@@ -2987,7 +2987,7 @@ Node: dcid:baseDate
 typeOf: schema:Property
 name: "baseDate"
 description: "Identifies the date to compare observations to (in ISO 8601 format)."
-rangeIncludes: schema:Date
+rangeIncludes: schema:Date, dcid:LandCover
 domainIncludes: schema:StatisticalVariable
 
 Node: dcid:Years
