@@ -2254,7 +2254,7 @@ name: "emissionSource"
 typeOf: schema:Property
 description: "Source of emission."
 domainIncludes: dcs:Emissions
-rangeIncludes: dcs:EmissionSourceEnum, dcs:EpaSccCodeEnum
+rangeIncludes: dcs:EmissionSourceEnum, dcs:EpaSccCodeEnum, dcs:EnergyConsumptionSectorEnum, dcs:FireCauseSpecificEnum, dcs:PowerPlantSectorEnum, dcs:FuelUsageSourceEnum, dcs:ElectricityProductionSectorEnum
 
 Node: dcs:emissionSourceType
 name: "emissionSourceType"
@@ -2266,7 +2266,7 @@ rangeIncludes: dcs:EmissionSourceTypeEnum
 Node: dcs:emittedThing
 name: "emittedThing"
 typeOf: schema:Property
-rangeIncludes: dcs:GreenhouseGas, dcid:EPA_CriteriaAirPollutant
+rangeIncludes: dcs:GreenhouseGas, dcid:EPA_CriteriaAirPollutant, dcs:EmissionSourceEnum
 
 # Units
 
@@ -2931,6 +2931,12 @@ name: "Road Vehicle Fuel Combustion"
 description: "Combustion of fuels in all road vehicles."
 specializationOf: dcid:Transportation
 
+Node: dcid:IPCC_OtherTransportation
+typeOf: EmissionSourceEnum
+name: "IPCC - Other Transportation"
+description: "All remaining transport activities for Intergovernmental Panel on Climate Change."
+specializationOf: dcid:Transportation
+
 Node: dcid:ClimateTrace_OtherTransportation
 typeOf: EmissionSourceEnum
 name: "Climate Trace - Other Transportation"
@@ -3013,3 +3019,4 @@ name: "India Energy Dashboard Unspecified Sector"
 Node: dcid:IndiaEDM_OtherOilProducts
 typeOf: dcs:EnergySourceEnum
 name: "India Energy Dashboard Other Oil Products"
+
