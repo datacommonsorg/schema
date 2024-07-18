@@ -143,6 +143,7 @@ def find_invalid_manifest_urls(allowlisted_urls):
     status, message = get_status(url)
     if not status.startswith("200"):
       invalid_urls[(MANIFEST, url)] = (status, message)
+  return invalid_urls
 
 
 def find_invalid_schema_urls(allowlisted_urls, files):
