@@ -24,19 +24,21 @@ import git
 import requests
 
 FLAGS = flags.FLAGS
-flags.DEFINE_boolean("update_allowlist", False,
-                     "If set, regenerates url_allowlist.csv.")
+flags.DEFINE_boolean(
+    "update_allowlist", False, "If set, regenerates url_allowlist.csv."
+)
 
-API_ERROR = "An HTTP {} code was returned by the autopush API. Please ensure that DC_API_KEY is set to the autopush API key."
+API_ERROR = (
+    "An HTTP {} code was returned by the autopush API. Please ensure that"
+    " DC_API_KEY is set to the autopush API key."
+)
 API_PREFIX = "https://autopush.api.datacommons.org/v2/node?key="
 MANIFEST = "MANIFEST"
 URL_ALLOWLIST = "url_allowlist.csv"
 URL_PROPS = ["license", "url"]
 
 # Using regex in https://www.geeksforgeeks.org/python-check-url-string/.
-URL_REGEX = (
-    r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
-)
+URL_REGEX = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
 
 
 def get_status(url):
@@ -55,12 +57,19 @@ def get_status(url):
     # Redirect.
     if resp.history:
       initial_resp = resp.history[0]
-      return str(initial_resp.status_code
-                ) + " " + initial_resp.reason if initial_resp.reason else str(
-                    initial_resp.status_code), "Redirected to " + resp.url
+      return (
+          str(initial_resp.status_code) + " " + initial_resp.reason
+          if initial_resp.reason
+          else str(initial_resp.status_code),
+          "Redirected to " + resp.url,
+      )
 
-    return str(resp.status_code) + " " + resp.reason if resp.reason else str(
-        resp.status_code), ""
+    return (
+        str(resp.status_code) + " " + resp.reason
+        if resp.reason
+        else str(resp.status_code),
+        "",
+    )
 
   except Exception as e:
     return "ERROR", str(e)
@@ -72,13 +81,16 @@ def get_modified_files():
   Returns:
     List of modified files.
   """
-  repo = git.Repo('.', search_parent_directories=True)
+  repo = git.Repo(".", search_parent_directories=True)
   return [
-      "../" + file for file in sorted(
+      "../" + file
+      for file in sorted(
           filter(
               lambda x: x.endswith(".mcf"),
-              list(item.a_path for item in repo.index.diff(None)) +
-              list(repo.untracked_files)))
+              list(item.a_path for item in repo.index.diff(None))
+              + list(repo.untracked_files),
+          )
+      )
   ]
 
 
@@ -91,15 +103,17 @@ def find_invalid_manifest_urls(allowlisted_urls):
   Returns:
     Map of ("MANIFEST", <url>) -> (<status>, <message>) for invalid urls.
   """
-  dc_api_key = os.environ.get('DC_API_KEY', '')
+  dc_api_key = os.environ.get("DC_API_KEY", "")
 
-  nextToken = ""
+  next_token = ""
   dcids = []
   while True:
     resp = requests.get(
-        API_PREFIX + dc_api_key +
-        "&nodes=Provenance&nodes=Dataset&nodes=Source&property=<-typeOf&nextToken="
-        + nextToken)
+        API_PREFIX
+        + dc_api_key
+        + "&nodes=Provenance&nodes=Dataset&nodes=Source&property=<-typeOf&nextToken="
+        + next_token
+    )
     if resp.status_code != 200:
       raise ValueError(API_ERROR.format(resp.status_code))
 
@@ -110,17 +124,22 @@ def find_invalid_manifest_urls(allowlisted_urls):
         dcids.append(node["dcid"])
 
     if "nextToken" in resp.json():
-      nextToken = urllib.parse.quote(resp.json()["nextToken"], safe="")
+      next_token = urllib.parse.quote(resp.json()["nextToken"], safe="")
     else:
       break
 
-  nextToken = ""
+  next_token = ""
   urls = set()
   while True:
-    resp = requests.get(API_PREFIX + dc_api_key +
-                        "".join(["&nodes=" + dcid for dcid in dcids]) +
-                        "&property=->[" + ",".join(URL_PROPS) + "]&nextToken=" +
-                        nextToken)
+    resp = requests.get(
+        API_PREFIX
+        + dc_api_key
+        + "".join(["&nodes=" + dcid for dcid in dcids])
+        + "&property=->["
+        + ",".join(URL_PROPS)
+        + "]&nextToken="
+        + next_token
+    )
     if resp.status_code != 200:
       raise ValueError(API_ERROR.format(resp.status_code))
 
@@ -133,7 +152,7 @@ def find_invalid_manifest_urls(allowlisted_urls):
             urls.add(node["value"])
 
     if "nextToken" in resp.json():
-      nextToken = urllib.parse.quote(resp.json()["nextToken"], safe="")
+      next_token = urllib.parse.quote(resp.json()["nextToken"], safe="")
     else:
       break
 
@@ -151,6 +170,7 @@ def find_invalid_schema_urls(allowlisted_urls, files):
 
   Args:
     allowlisted_urls: Set of urls to skip checking.
+    files: List of files to check.
 
   Returns:
     Map of (<file>, <url>) -> (<status>, <message>) for invalid urls.
@@ -180,6 +200,7 @@ def find_invalid_urls(allowlisted_urls, files):
 
   Args:
     allowlisted_urls: Set of urls to skip checking.
+    files: List of files to check.
 
   Returns:
     Map of (<file>, <url>) -> (<status>, <message>) for invalid urls.
@@ -192,12 +213,14 @@ def find_invalid_urls(allowlisted_urls, files):
 def update_allowlist():
   """Updates url_allowlist.csv by re-checking all urls."""
   with open(URL_ALLOWLIST, "w") as f_out:
-    writer = csv.DictWriter(f=f_out,
-                            fieldnames=["file", "url", "status", "message"])
+    writer = csv.DictWriter(
+        f=f_out, fieldnames=["file", "url", "status", "message"]
+    )
     writer.writeheader()
 
-    invalid_urls = find_invalid_urls({},
-                                     sorted(pathlib.Path("../").rglob("*.mcf")))
+    invalid_urls = find_invalid_urls(
+        {}, sorted(pathlib.Path("../").rglob("*.mcf"))
+    )
 
     for (file, url), (status, message) in sorted(invalid_urls.items()):
       writer.writerow({
@@ -217,13 +240,15 @@ def check_modified_files():
       allowlisted_urls.add((row["file"], row["url"]))
 
   # Currently only check modified schema files (i.e. not manifest urls).
-  # TODO: Get modified manifest files from g3.
-  invalid_urls = find_invalid_schema_urls(allowlisted_urls,
-                                          get_modified_files())
+  # TODO(nhdiaz): Get modified manifest files from g3.
+  invalid_urls = find_invalid_schema_urls(
+      allowlisted_urls, get_modified_files()
+  )
 
   if invalid_urls:
     print(
-        "\nFound new invalid urls! Please fix the urls below or add to url_allowlist.csv: \n"
+        "\nFound new invalid urls! Please fix the urls below or add to"
+        " url_allowlist.csv: \n"
     )
     for (file, url), (status, message) in sorted(invalid_urls.items()):
       print("File:", file, "\nUrl:", url, "\nStatus:", status)
@@ -245,5 +270,5 @@ def main(argv):
     check_modified_files()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
   app.run(main)
