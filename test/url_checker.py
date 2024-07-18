@@ -13,14 +13,15 @@
 # limitations under the License.
 """Validates schema urls."""
 import csv
-import git
 import os
 import pathlib
 import re
-import requests
+import urllib
 
 from absl import app
 from absl import flags
+import git
+import requests
 
 FLAGS = flags.FLAGS
 flags.DEFINE_boolean("update_allowlist", False,
@@ -30,7 +31,9 @@ API_ERROR = "An HTTP {} code was returned by the autopush API. Please ensure tha
 API_PREFIX = "https://autopush.api.datacommons.org/v2/node?key="
 MANIFEST = "MANIFEST"
 URL_ALLOWLIST = "url_allowlist.csv"
-URL_PROPS = {"license", "url"}
+URL_PROPS = ["license", "url"]
+
+# Using regex in https://www.geeksforgeeks.org/python-check-url-string/.
 URL_REGEX = (
     r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
 )
@@ -90,31 +93,49 @@ def find_invalid_manifest_urls(allowlisted_urls):
   """
   dc_api_key = os.environ.get('DC_API_KEY', '')
 
-  resp = requests.get(
-      API_PREFIX + dc_api_key +
-      "&nodes=Provenance&nodes=Dataset&nodes=Source&property=<-typeOf")
-  if resp.status_code != 200:
-    raise ValueError(API_ERROR.format(resp.status_code))
-
+  nextToken = ""
   dcids = []
-  for _, data in resp.json()["data"].items():
-    for node in data["arcs"]["typeOf"]["nodes"]:
-      dcids.append(node["dcid"])
+  while True:
+    resp = requests.get(
+        API_PREFIX + dc_api_key +
+        "&nodes=Provenance&nodes=Dataset&nodes=Source&property=<-typeOf&nextToken="
+        + nextToken)
+    if resp.status_code != 200:
+      raise ValueError(API_ERROR.format(resp.status_code))
 
-  resp = requests.get(API_PREFIX + dc_api_key +
-                      "".join(["&nodes=" + dcid for dcid in dcids]) +
-                      "&property=->[" + ",".join(URL_PROPS) + "]")
-  if resp.status_code != 200:
-    raise ValueError(API_ERROR.format(resp.status_code))
+    for _, data in resp.json()["data"].items():
+      if not data:
+        continue
+      for node in data["arcs"]["typeOf"]["nodes"]:
+        dcids.append(node["dcid"])
 
+    if "nextToken" in resp.json():
+      nextToken = urllib.parse.quote(resp.json()["nextToken"], safe="")
+    else:
+      break
+
+  nextToken = ""
   urls = set()
-  for _, data in resp.json()["data"].items():
-    if "arcs" not in data:
-      continue
-    for _, nodes in data["arcs"].items():
-      for node in nodes["nodes"]:
-        if (MANIFEST, node["value"]) not in allowlisted_urls:
-          urls.add(node["value"])
+  while True:
+    resp = requests.get(API_PREFIX + dc_api_key +
+                        "".join(["&nodes=" + dcid for dcid in dcids]) +
+                        "&property=->[" + ",".join(URL_PROPS) + "]&nextToken=" +
+                        nextToken)
+    if resp.status_code != 200:
+      raise ValueError(API_ERROR.format(resp.status_code))
+
+    for _, data in resp.json()["data"].items():
+      if "arcs" not in data:
+        continue
+      for _, nodes in data["arcs"].items():
+        for node in nodes["nodes"]:
+          if (MANIFEST, node["value"]) not in allowlisted_urls:
+            urls.add(node["value"])
+
+    if "nextToken" in resp.json():
+      nextToken = urllib.parse.quote(resp.json()["nextToken"], safe="")
+    else:
+      break
 
   invalid_urls = {}
   for url in sorted(urls):
