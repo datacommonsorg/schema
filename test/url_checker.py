@@ -248,12 +248,13 @@ def check_modified_files():
   if invalid_urls:
     print(
         "\nFound new invalid urls! Please fix the urls below or add to"
-        " url_allowlist.csv: \n"
+        " url_allowlist.csv:"
     )
     for (file, url), (status, message) in sorted(invalid_urls.items()):
-      print("File:", file, "\nUrl:", url, "\nStatus:", status)
+      print("\nFile:", file, "\nUrl:", url, "\nStatus:", status)
       if message:
-        print("Message:", message, "\n")
+        print("Message:", message)
+    print("\n")
   else:
     print("\nAll new urls pass! :)")
 
