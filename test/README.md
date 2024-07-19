@@ -21,7 +21,7 @@ python3 url_checker.py
 
 Please fix all invalid urls. (Note that redirects are considered invalid and
 should be replaced by the final url or otherwise updated). By default the
-checker will only process modified files.
+checker will only process locally modified files (i.e. not yet commited).
 
 `url_allowlist.csv` contains previously submitted invalid urls. After fixing a
 url in the allowlist, remove it from the allowlist and re-run the checker to
