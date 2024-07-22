@@ -38,6 +38,14 @@ rangeIncludes: schema:Text
 description: "The individual isolate from which the sequences in the genome assembly were derived."
 descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
+Node: dcid:commonName
+name: "commonName"
+typeOf: schema:Property
+domainIncludes: dcs:Taxon
+rangeIncludes: schema:Text
+description: "In biology, a common name of a taxon or organism (also known as a vernacular name, English name, colloquial name, country name, popular name, or farmer's name) is a name that is based on the normal language of everyday life; and is often contrasted with the scientific name for the same organism, which is often based in Latin. A common name is sometimes frequently used, but that is not always the case."
+descriptionUrl: "https://en.wikipedia.org/wiki/Common_name"
+
 Node: dcid:genBankName
 name: "genBankName"
 typeOf: schema:Property
@@ -88,13 +96,6 @@ domainIncludes: dcs:BioChemEntity
 rangeIncludes: dcs:Taxon
 definition: "In biology, a strain is a genetic variant, a subtype or a culture within a biological species. Strains are often seen as inherently artificial concepts, characterized by a specific intent for genetic isolation."
 definitionUrl: "https://en.wikipedia.org/wiki/Strain_(biology)"
-
-Node: dcid:parentTaxon
-name: "parentTaxon"
-typeOf: schema:Property
-domainIncludes: dcs:Taxon
-rangeIncludes: dcs:Taxon
-definition: "Closest parent taxon of the taxon in question."
 
 Node: dcid:scientificName
 name: "scientificName"
