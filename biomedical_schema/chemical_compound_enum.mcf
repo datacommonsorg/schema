@@ -1222,6 +1222,65 @@ name: "IntAct MiScore"
 description: "The confidence score of a protein-protein interaction given in IntAct Molecular Interaction Database."
 
 
+
+#CPICLevelEnum
+Node: dcid:CPICLevelEnum
+name: "CPICLevelEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The Clinical Pharmacogenetics Implementation Consortium (CPIC) assigns CPIC levels to gene/drug pairs. The levels (A, B, C, and D) assigned are subject to change; only those gene/drug pairs that have been the subject of guidelines have had sufficient in-depth review of evidence to provide definitive CPIC level assignments. Note that only CPIC level A and B gene/drug pairs have sufficient evidence for at least one prescribing action to be recommended. CPIC level C and D gene/drug pairs are not considered to have adequate evidence or actionability to have prescribing recommendations."
+
+Node: dcid:CPICLevelA
+name: "CPIC Level A"
+typeOf: dcs:CPICLevelEnum
+abbreviation: "A"
+description: "Genetic information should be used to change prescribing of affected drug. The preponderance of evidence is high or moderate in favor of changing prescribing. At least one moderate or strong action (change in prescribing) recommended."
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+Node: dcid:CPICLevelA_B
+name: "CPIC Level A/B"
+typeOf: dcs:CPICLevelEnum
+abbreviation: "A/B"
+description: "Preliminary review indicates it is likely that the definitive CPIC level will be either A or B. Full evidence review needed to assess level of evidence, but prescribing actionability is likely. Full review by expert guideline group to assign strength of recommendation."
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+Node: dcid:CPICLevelB
+name: "CPIC Level B"
+typeOf: dcs:CPICLevelEnum
+abbreviation: "B"
+description: "Genetic information could be used to change prescribing of the affected drug because alternative therapies/dosing are extremely likely to be as effective and as safe as non-genetically based dosing. The preponderance of evidence is weak with little conflicting data. At least one optional action (change in prescribing) is recommended."
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+Node: dcid:CPICLevelB_C
+name: "CPIC Level B/C"
+typeOf: dcs:CPICLevelEnum
+abbreviation: "B/C"
+description: "Preliminary review indicates it is likely that the definitive CPIC level will be either B or C. Prescribing actionability based on genetics is not clear without further evidence review. Full review by expert guideline group to assess strength of recommendation."
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+Node: dcid:CPICLevelC
+name: "CPIC Level C"
+typeOf: dcs:CPICLevelEnum
+abbreviation: "C"
+description: "There are published studies at varying levels of evidence, some with mechanistic rationale, but no prescribing actions are recommended because (a) dosing based on genetics makes no convincing difference or (b) alternatives are unclear, possibly less effective, more toxic, or otherwise impractical or (c) few published studies or mostly weak evidence and clinical actions are unclear. Most important for genes that are subject of other CPIC guidelines or genes that are commonly included in clinical or DTC tests. Evidence levels can vary. No prescribing actions are recommended."
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+Node: dcid:CPICLevelC_D
+name: "CPIC Level C/D"
+typeOf: dcs:CPICLevelEnum
+abbreviation: "C/D"
+description: "Preliminary review indicates it is likely that the definitive CPIC level will be either C or D. Evidence levels can vary. No prescribing actions are recommended"
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+Node: dcid:CPICLevelD
+name: "CPIC Level D"
+typeOf: dcs:CPICLevelEnum
+abbreviation: "D"
+description: "There are few published studies, clinical actions are unclear, little mechanistic basis, mostly weak evidence, or substantial conflicting data. If the genes are not widely tested for clinically, evaluations are not needed. Evidence levels can vary. No prescribing actions are recommended."
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+
+
 # DosageFormEnum
 Node: dcid:DosageFormEnum
 typeOf: schema:Class
@@ -2250,6 +2309,57 @@ name: "Spanish Pharmacogenetics and Pharmacogenomics Society (SEFF) and the Span
 typeOf: dcs:DosageGuidelineSourceEnum
 abbreviation: "SEFF/SEOM"
 
+# DosageGuidelineSourceEnum
+Node: dcid:DosageGuidelineSourceCpicNoRecommendation
+name: "CPIC No Recommendation"
+typeOf: dcs:DosageGuidelineSourceEnum
+description: "There is insufficient evidence, confidence, or agreement to provide a recommendation to guide clinical practice at this time."
+descriptionUrl: "https://cpicpgx.org/strength-of-recommendations"
+
+
+
+# DrugTypeEnum
+Node: dcid:DrugTypeEnum
+name: "DrugTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "The therapeuatic modality of a drug."
+
+Node: dcid:DrugTypeBiologicalIntermediate
+name: "Biological Intermediate"
+typeOf: dcs:DrugTypeEnum
+description: "A material produced during a manufacturing process that is not the drug substance or the drug product but for which manufacture is critical to the successful production of the drug substance or the drug product."
+descriptionUrl: "https://en.ennov.com/glossary/intermediate-or-intermediate-product/"
+
+Node: dcid:DrugTypeIon
+name: "Ion"
+typeOf: dcs:DrugTypeEnum
+description: "An ion is an atom or molecule with a net electrical charge."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ion"
+
+Node: dcid:DrugTypeMetabolite
+name: "Metabolite"
+typeOf: dcs:DrugTypeEnum
+description: "A metabolite is an intermediate or end product of metabolism. The term is usually used for small molecules. Metabolites have various functions, including fuel, structure, signaling, stimulatory and inhibitory effects on enzymes, catalytic activity of their own (usually as a cofactor to an enzyme), defense, and interactions with other organisms (e.g. pigments, odorants, and pheromones).."
+descriptionUrl: "https://en.wikipedia.org/wiki/Metabolite"
+
+Node: dcid:DrugTypeProdrug
+name: "Prodrug"
+typeOf: dcs:DrugTypeEnum
+description: "A prodrug is a pharmacologically inactive medication or compound that, after intake, is metabolized (i.e., converted within the body) into a pharmacologically active drug. Instead of administering a drug directly, a corresponding prodrug can be used to improve how the drug is absorbed, distributed, metabolized, and excreted (ADME)."
+descriptionUrl: "https://en.wikipedia.org/wiki/Prodrug"
+
+Node: dcid:DrugTypeSmallMolecule
+name: "Small Molecule"
+typeOf: dcs:DrugTypeEnum
+description: "A drug that can enter cells easily because it has a low molecular weight. Once inside the cells, it can affect other molecules, such as proteins, and may cause cancer cells to die. This is different from drugs that have a large molecular weight, which keeps them from getting inside cells easily. Many targeted therapies are small-molecule drugs."
+descriptionUrl: "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/small-molecule-drug"
+
+Node: dcid:DrugTypeUnknown
+name: "Unknown"
+typeOf: dcs:DrugTypeEnum
+
+
 
 # the instances of HumanCellTypeEnum are in HumanCellTypeEnum.mcf
 Node: dcid:HumanCellTypeEnum
@@ -2356,35 +2466,31 @@ name: "None (Tentative Approval)"
 description: "Drug products that have been tentatively approved."
 descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#M"
 
-Node: dcid:ProteinExpressionScoreEnum
+
+
+# PGxLevelEnum
+Node: dcid:PGxLevelEnum
+name: "PGxLevelEnum"
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "ProteinExpressionScoreEnum"
-description: "The level of protein observed in a specified cell type."
+description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') indicates the level of action implied in each label."
 
-Node: dcid:ProteinExpressionNotDetected
-typeOf: dcs:ProteinExpressionScoreEnum
-name: "Not Detected"
-description: "The protein expression score is ‘Not detected' when the combination of intensity and fractions is negative or weak and <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)."
-descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+Node: dcid:PGxLevelTestingRequired
+name: "Testing Required"
+typeOf: dcs:PGxLevelEnum
 
-Node: dcid:ProteinExpressionLow
-typeOf: dcs:ProteinExpressionScoreEnum
-name: "Low"
-description: "The protein expression score is ‘Low' when the combination of intensity and fractions is weak combined with either 25 - 75% or 75%, or moderate <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
-descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+Node: dcid:PGxLevelTestingRecommended
+name: "Testing Recommended"
+typeOf: dcs:PGxLevelEnum
 
-Node: dcid:ProteinExpressionMedium
-typeOf: dcs:ProteinExpressionScoreEnum
-name: "Medium"
-description: "The protein expression score is ‘Medium' when the combination of intensity and fractions is moderate combined with either 25 - 75% or 75% - medium, or strong <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
-descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+Node: dcid:PGxLevelActionablePGx
+name: "Actionable PGx"
+typeOf: dcs:PGxLevelEnum
 
-Node: dcid:ProteinExpressionHigh
-typeOf: dcs:ProteinExpressionScoreEnum
-name: "High"
-description: "The protein expression score is ‘Medium' when the combination of intensity and fractions is strong combined with either 25 - 75% or 75%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
-descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+Node: dcid:PGxLevelInformativePGx
+name: "Informative PGx"
+typeOf: dcs:PGxLevelEnum
+
 
 
 # PharmGkbClinicalLevelEnum
@@ -2443,36 +2549,59 @@ pharmGkbStandardScoringRange: "<0"
 pharmGkbRareVariantScoringRange: "<0"
 
 
-# PharmGkbPGxLevelEnum
-Node: dcid:PharmGkbPGxLevelEnum
-name: "PharmGkbPGxLevelEnum"
-typeOf: schema:Enumeration
-description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') is the PharmGKB interpretation of the level of action implied in each drug label."
-descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
 
-Node: dcid:PharmGkbPGxLevelTestingRequired
-name: "Testing Required"
-typeOf: dcs:PharmGkbPGxLevelEnum
-description: "The label states or implies that some sort of gene, protein or chromosomal testing, including genetic testing, functional protein assays, cytogenetic studies, etc., should be conducted on the gene or gene product mentioned in the annotation before using this drug. This requirement may only be for a particular subset of patients. If a label describes the presence or absence of a gene, genetic variant or gene product as an indication for the drug, PharmGKB considers the label to imply a testing requirement. If the label states a test "should be" performed, this is also interpreted as a requirement."
-descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"
+# PharmacogeneticAssociationEnum
+Node: dcid:PharmacogeneticAssociationEnum
+name: "PharmacogeneticAssociationEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+description: "These associaitons are based off of the FDA Table of Pharmacogenetic Associations."
 
-Node: dcid:PharmGkbPGxLevelTestingRecommended
-name: "Testing Recommended"
-typeOf: dcs:PharmGkbPGxLevelEnum
-description: "The label states or implies that some sort of gene, protein or chromosomal testing, including genetic testing, functional protein assays, cytogenetic studies, etc., is recommended to be carried out on the gene or gene product mentioned in the annotation before using this drug. This recommendation may only be for a particular subset of patients. PharmGKB considers labels that say testing "should be considered" or "Consider genotyping or phenotyping" to be recommending testing."
-descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"
+Node: dcid:PharmacogeneticAssociationParmacokineticOnly
+name: "Parmacokinetic Only"
+typeOf: dcs:PharmacogeneticAssociationEnum
 
-Node: dcid:PharmGkbPGxLevelActionablePGx
-name: "Actionable PGx"
-typeOf: dcs:PharmGkbPGxLevelEnum
-description: "The label may contain information about changes in efficacy, dosage, metabolism or toxicity due to gene/protein/chromosomal variants or phenotypes (e.g. "poor metabolizers"). Or the label may mention contraindication of the drug in a particular subset of patients with particular variants/genotypes/phenotypes. However, the label does not require or recommend gene, protein or chromosomal testing."
-descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"
+Node: dcid:PharmacogeneticAssociationPotentialSafetyImpact
+name: "Potential Safety Impact"
+typeOf: dcs:PharmacogeneticAssociationEnum
 
-Node: dcid:PharmGkbPGxLevelInformativePGx
-name: "Informative PGx"
-typeOf: dcs:PharmGkbPGxLevelEnum
-description: "The drug label meets one of two criteria: The label contains information stating that particular gene/protein/chromosomal variants or metabolizer phenotypes do not affect a drug's efficacy, dosage, metabolism or toxicity. Or, the label states that particular variants or phenotypes affect a drug's efficacy, dosage, metabolism or toxicity, but this effect is not “clinically” significant. OR The label appears or appeared on the FDA Biomarker List but does not currently meet the requirements to be assigned as “Testing required”, “Testing recommended” or “Actionable PGx”. PharmGKB annotates every label that appears on the FDA Biomarker list, regardless of whether we would otherwise annotate the label."
-descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend#pgx-level"
+Node: dcid:PharmacogeneticAssociationTherapeuticManagementRecommended
+name: "Therapeutic Management Recommended"
+typeOf: dcs:PharmacogeneticAssociationEnum
+
+
+
+# ProteinExpressionScoreEnum
+Node: dcid:ProteinExpressionScoreEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ProteinExpressionScoreEnum"
+description: "The level of protein observed in a specified cell type."
+
+Node: dcid:ProteinExpressionNotDetected
+typeOf: dcs:ProteinExpressionScoreEnum
+name: "Not Detected"
+description: "The protein expression score is ‘Not detected' when the combination of intensity and fractions is negative or weak and <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)."
+descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+
+Node: dcid:ProteinExpressionLow
+typeOf: dcs:ProteinExpressionScoreEnum
+name: "Low"
+description: "The protein expression score is ‘Low' when the combination of intensity and fractions is weak combined with either 25 - 75% or 75%, or moderate <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
+descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+
+Node: dcid:ProteinExpressionMedium
+typeOf: dcs:ProteinExpressionScoreEnum
+name: "Medium"
+description: "The protein expression score is ‘Medium' when the combination of intensity and fractions is moderate combined with either 25 - 75% or 75% - medium, or strong <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
+descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+
+Node: dcid:ProteinExpressionHigh
+typeOf: dcs:ProteinExpressionScoreEnum
+name: "High"
+description: "The protein expression score is ‘Medium' when the combination of intensity and fractions is strong combined with either 25 - 75% or 75%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
+descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+
 
 
 # ProteinTypeEnum

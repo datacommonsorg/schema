@@ -262,6 +262,30 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:ChemicalCompound
 description: "ChEMBL identifier."
 
+Node: dcid:clinicalAnnotationCount
+name: "clinicalAnnotationCount"
+typeOf: schema:Property
+domainIncludes: dcs:BiomedicalEntity
+rangeIncludes: schema:Number
+description: "Clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant. The clinical annotation is given a score, based on the scores of the supporting annotations. A clinical annotation's score is used by PharmGKB curators in the process of assigning a Level of Evidence to the annotation. Levels range from 1-4, with level 1 meeting the highest criteria. This is the number of such reports associated with a given drug or genetic variant."
+descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
+
+Node: dcid:clinicalAnnotationCountLevel1_2
+name: "clinicalAnnotationCountLevel1_2"
+typeOf: schema:Property
+domainIncludes: dcs:BiomedicalEntity
+rangeIncludes: schema:Number
+description: "Clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant. The clinical annotation is given a score, based on the scores of the supporting annotations. A clinical annotation's score is used by PharmGKB curators in the process of assigning a Level of Evidence to the annotation. Levels range from 1-4, with level 1 meeting the highest criteria. This is the number of such reports associated with a given drug or genetic variant whose evidence is at Level 1A, 1B, 2A, or 2B."
+descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
+
+Node: dcid:clinicalGuidelineAnnotationCount
+name: "clinicalGuidelineAnnotationCount"
+typeOf: schema:Property
+domainIncludes: dcs:BiomedicalEntity
+rangeIncludes: schema:Number
+description: "PGx-based drug dosing guidelines published by multiple sources. Annotations present a brief summary of the genotype-based dosing recommendations, including selected excerpts from the guidelines, and links to the source publications/documents. Tags indicate if the guideline provides dosing information, states that a drug is either indicated or contraindicated, or gives other guidance based on genotype/metabolizer phenotype. This is the number of clinical guidelines associated with a given drug, genetic variant, or phenotype."
+descriptionUrl: "https://www.pharmgkb.org/guidelineAnnotations"
+
 Node: dcid:compoundID
 name: "compoundID"
 typeOf: schema:Property
@@ -314,6 +338,13 @@ domainIncludes: schema:Drug
 description: "A dosage form is the physical form in which a drug is produced and dispensed, such as a tablet, a capsule, or an injectable."
 descriptionUrl: "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms#form"
 
+Node: dcid:dosageGuideline
+name: "dosageGuideline"
+typeOf: schema:Property
+domainIncludes: dcs:Drug
+rangeIncludes: schema:Boolean
+description: "Indicates if there is a dosage guideline for a drug."
+
 Node: dcid:dosageGuidelineSource
 name: "dosageGuidelineSource"
 typeOf: schema:Property
@@ -357,6 +388,13 @@ domainIncludes: schema:Drug
 rangeIncludes: schema:Text
 description: "The name of the generic version of a drug, which is a medication with the exact same active ingredient as the brand-name drug."
 
+Node: dcid:drugHasPrescribingInfo
+name: "drugHasPrescribingInfo"
+typeOf: schema:Property
+domainIncludes: dcs:Drug
+rangeIncludes: schema:Boolean
+description: "Indicates if there is a prescribing information for a drug."
+
 Node: dcid:drugHasRxAnnotation
 name: "drugHasRxAnnotation"
 typeOf: schema:Property
@@ -364,6 +402,13 @@ domainIncludes: schema:Drug
 rangeIncludes: schema:Boolean
 description: "The drug has a drug label containing pharmacogenetic information approved by the U.S. Food and Drug Administration (FDA), European Medicines Agencey (EMA), Swiss Agenecy of Therapeutic Products (Swissmedic), Pharmaceuticals and Medical Devices Agency, Japan (PMDA) and/or Health Canada (Sante Canada) (HCSC)."
 descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
+
+Node: dcid:drugLabelAnnotationCount
+name: "drugLabelAnnotationCount"
+typeOf: schema:Property
+domainIncludes: dcs:BiomedicalEntity
+rangeIncludes: schema:Number
+description: "PharmGKB annotates drug labels approved by the US Food and Drug Administration (FDA) containing pharmacogenetic information. Read more about PharmGKB label annotations, PGx Levels and the "tags" found in the table below. If a specific genetic allele is discussed on the label, it is listed in the "Alleles" column. PharmGKB includes the FDA "PGx Association" group, based on the FDA Table of Pharmacogenetic Associations. This is the number of such labels with which a given drug or genetic variant is associated."
 
 Node: dcid:drugLabelHasDosingInformation
 name: "drugLabelHasDosingInformation"
@@ -394,6 +439,13 @@ domainIncludes: schema:Drug
 rangeIncludes: schema:Text
 description: "A standard term in the pharmaceutical industry for a brand name or trademark name of a drug."
 descriptionUrl: "https://en.wikipedia.org/wiki/Drug_nomenclature#Drug_brands"
+
+Node: dcid:drugType
+name: "drugType"
+typeOf: schema:Property
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: dcs:DrugTypeEnum
+description: "The therapeuatic modality of a drug."
 
 Node: dcid:electronMicroscopyDataBankID
 typeOf: schema:Property
@@ -433,13 +485,13 @@ rangeIncludes: schema:Text
 domainIncludes: schema:DrugStrength
 description: "Product ID according to the FDA."
 
-Node: dcid:fdaTopPGxLevel
-name: "fdaTopPGxLevel"
+Node: dcid:fdaTopPharmacogeneticLevel
+name: "fdaTopPharmacogeneticLevel"
 typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: dcs:PharmGkbPGxLevelEnum
-description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') is the PharmGKB interpretation of the level of action implied in each drug label. In this case, this is the highest level of confidence interperted for any drug label from the U.S. Food and Drug Administration (FDA)."
-descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
+domainIncludes: dcs:Drug
+rangeIncludes: dcs:PGxLevelEnum
+description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') indicates the level of action implied in each label. This is the highest level reported by the Food and Drug Administration (FDA)."
+descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend"
 
 Node: dcid:finalReconstitutedSolutionVolume
 name: "finalReconstitutedSolutionVolume"
@@ -447,6 +499,14 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:DrugStrength
 description: "Final reconstituted solution volume for drug dose."
+
+Node: dcid:geneticVariantAnnotationCount
+name: "geneticVariantAnnotationCount"
+typeOf: schema:Property
+domainIncludes: dcs:BiomedicalEntity
+rangeIncludes: schema:Number
+description: "Genetic Variant annotations report the association between a variant (e.g. SNP, indel, repeat, haplotype) and a drug phenotype from a single publication. Annotations are created manually by scientific curators who read each paper, extract the key information (including relevant drugs, study size, population data, statistical values, etc.), and map the variants to a common standard (typically dbSNP rsID if it exists). This is the number of such reports associated with a given drug or genetic variant."
+descriptionUrl: "https://www.pharmgkb.org/variantAnnotations"
 
 Node: dcid:geneSynonym
 name: "geneSynonym"
@@ -477,6 +537,28 @@ typeOf: schema:Property
 rangeIncludes: dcs:ActiveIngredientAmount
 domainIncludes: schema:DrugStrength
 description: "The quantity of active ingredient in the drug."
+
+Node: dcid:hasCpicDosingGuideline
+name: "hasCpicDosingGuideline"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Boolean
+description: "The Clinical Pharmacogenetics Implementation Consortium (CPIC) was established in 2009 as a shared project between PharmGKB and the Pharmacogenomics Research Network (PGRN). CPIC is funded by the NIH/NHGRI. This indicates whether a gene has a drug dosing guideline issued by the CPIC that is associated with it."
+descriptionUrl: "https://www.pharmgkb.org/page/cpic"
+
+Node: dcid:hasGenomicCoordinates
+name: "hasGenomicCoordinates"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: dcs:GenomicCoordinates
+description: "Genomic coordinates specify the location of the position of an element within a specified genome assembly. It is a specified set of chromosome start_position end_position."
+
+Node: dcid:hasGeneticVariantAnnotation
+name: "hasGeneticVariantAnnotation"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Boolean
+description: "Indicates whether there are gene has genetic variants that are associated with it."
 
 Node: dcid:humanCellType
 typeOf: schema:Property
@@ -628,6 +710,22 @@ rangeIncludes: schema:Number
 domainIncludes: dcs:ChemicalCompound
 description: "The maximum FDA clinical trials phase in which the compound has participated for any disease."
 
+Node: dcid:medicalDictionaryForRegulatoryActivitiesId
+name: "medicalDictionaryForRegulatoryActivitiesId"
+typeOf: schema:Property
+abbreviation: "medraId"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "The identifier for a chemical compound within the Medical Dictionary for Regulatory Activities (MedDRA), which is an internationally used set of terms relating to medical conditions, medicines and medical devices."
+
+Node: dcid:metabolicPathwayCount
+name: "metabolicPathwayCount"
+typeOf: schema:Property
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Number
+description: "The number of PharmGKB pathways associated with a given drug. PharmGKB pathways are evidence-based diagrams depicting the pharmacokinetics (PK) and/or pharmacodynamics (PD) of a drug with relevant (or potential) pharmacogenetic (PGx) associations. Drugs featured in PharmGKB pathways are chosen through extensive review of a variety of sources, including, but not limited to, the U.S. Food and Drug Administration (FDA) biomarker list and Clinical Pharmacogenetics Implementation Consortium (CPIC) nominations."
+descriptionUrl: "https://www.pharmgkb.org/pathways"
+
 Node: dcid:mintID
 typeOf: schema:Property
 name: "mintID"
@@ -676,21 +774,12 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:Antibody
 descriptionUrl:"https://patentscope.wipo.int/search/en/search.jsf"
 
-Node: dcid:pharmGkbClinicalAnnotationCount
-name: "pharmGkbClinicalAnnotationCount"
+Node: dcid:pharmacogeneticAssociation
+name: "pharmacogeneticAssociation"
 typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: schema:Number
-description: "The number of clinical annotations associated with a drug as reported by PharmGKB. PharmGKB clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant."
-descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
-
-Node: dcid:pharmGkbPathwayCount
-name: "pharmGkbPathwayCount"
-typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: schema:Number
-description: "The number of PharmGKB pathways associated with a given drug. PharmGKB pathways are evidence-based diagrams depicting the pharmacokinetics (PK) and/or pharmacodynamics (PD) of a drug with relevant (or potential) pharmacogenetic (PGx) associations. Drugs featured in PharmGKB pathways are chosen through extensive review of a variety of sources, including, but not limited to, the U.S. Food and Drug Administration (FDA) biomarker list and Clinical Pharmacogenetics Implementation Consortium (CPIC) nominations."
-descriptionUrl: "https://www.pharmgkb.org/pathways"
+domainIncludes: dcs:Drug
+rangeIncludes: dcs:PharmacogeneticAssociationEnum
+description: "These associaitons are based off of the FDA Table of Pharmacogenetic Associations."
 
 Node: dcid:pharmGkbRareVariantScoringRange
 name: "pharmGkbRareVariantScoringRange"
@@ -699,45 +788,6 @@ domainIncludes: dcs:PharmGkbClinicalLevelEnum
 rangeIncludes: schema:Text
 description: "The assignment of clinical annotation levels of evidence (LOE) is primarily informed by the PharmGKB annotation scoring system for clinical annotations and variant annotations. This reports the scoring range that determines the level for rare genetic variants defined as having a minor allele frequenct (MAF) <0.01 or <1%."
 descriptionUrl: "https://www.pharmgkb.org/page/clinAnnLevels"
-
-Node: dcid:pharmGkbTopPGxLevel
-name: "pharmGkbTopPGxLevel"
-typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: dcs:PharmGkbPGxLevelEnum
-description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') is the PharmGKB interpretation of the level of action implied in each drug label. In this case, this is the highest level of confidence interperted for any drug label from any source."
-descriptionUrl: "https://www.pharmgkb.org/labelAnnotations"
-
-Node: dcid:pharmGkbTopClinicalAnnotationLevel
-name: "pharmGkbTopClinicalAnnotationLevel"
-typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: dcs:PharmGkbClinicalLevelEnum
-description: "PharmGKB clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant. The clinical annotation is given a score, based on the scores of the supporting annotations. A clinical annotation's score is used by PharmGKB curators in the process of assigning a Level of Evidence to the annotation. Levels range from 1-4, with level 1 meeting the highest criteria. The highest level of clinical annotation of any variant associated with a drug is reported here."
-descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
-
-Node: dcid:pharmGkbVariantAnnotationCount
-name: "pharmGkbVariantAnnotationCount"
-typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: schema:Number
-description: "The number of variants with a given drug as reported by PharmGKB. PharmGKB clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant."
-descriptionUrl: "https://www.pharmgkb.org/variantAnnotations"
-
-Node: dcid:pharmGkbVeryImportantPharmacogeneCount
-name: "pharmGkbVeryImportantPharmacogeneCount"
-typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: schema:Number
-description: "The number of Very Important Pharmacogene (VIP) summaries assocated with a given drug as reported by PharmGKB. VIP summaries provide an overview of a significant gene involved in metabolism of, or response to, one or several drugs. Often, VIPs either play a role in the metabolism of many drugs (e.g. CYP2D6), or contain variants which potentially contribute to a severe drug response (e.g. HLA-B). VIP summaries typically include background information on the gene including any disease associations, as well as in-depth information on the gene's pharmacogenetics. Many VIP summaries have been published in the journal Pharmacogenetics and Genomics."
-descriptionUrl: "https://www.pharmgkb.org/vips"
-
-Node: dcid:pkgbTags
-name: "pkgbTags"
-typeOf: schema:Property
-domainIncludes: dcs:ChemicalCompound
-rangeIncludes: schema:Text
-description: "A tag associated with a chemical compound, which is used internally by the database PharmGKB."
 
 Node: dcid:prositeID
 typeOf: schema:Property
@@ -847,6 +897,15 @@ domainIncludes: dcs:InteractionDetectionMethodEnum,dcs:InteractionTypeEnum,dcs:I
 description: "Identifiers of the RESID database which contains the collections of annotations and structures for protein modifications."
 descriptionUrl: "https://proteininformationresource.org/resid/"
 
+Node: dcid:rxConceptUniqueId
+name: "rxConceptUniqueId"
+typeOf: schema:Property
+abbreviation: "rxCUI"
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Text
+description: "RxNorm is two things: a normalized naming system for generic and branded drugs; and a tool for supporting semantic interoperation between drug terminologies and pharmacy knowledge base systems. The National Library of Medicine (NLM) produces RxNorm. This is the Concept Unique Identifier for a concept in RxNorm."
+descriptionUrl: "https://www.nlm.nih.gov/research/umls/rxnorm/overview.html"
+
 Node: dcid:rxNormId
 name: "rxNormId"
 typeOf: schema:Property
@@ -891,6 +950,30 @@ domainIncludes: schema:DrugStrength
 description: "The therapeutic equivalence code indicates whether the FDA has evaluated a particular approved product (e.g., a particular strength of an approved drug) as therapeutically equivalent to other pharmaceutically equivalent products and to provide additional information on the basis of FDA's evaluations (second letter)."
 descriptionUrl: "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface#TEC"
 
+Node: dcid:topClinicalAnnotationLevel
+name: "topClinicalAnnotationLevel"
+typeOf: schema:Property
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: dcs:PharmGkbClinicalLevelEnum
+description: "PharmGKB clinical annotations provide information about variant-drug pairs based on variant annotations and incorporating variant-specific prescribing guidance from clinical guidelines and FDA approved drug labels, when available. PharmGKB scientific curators manually review variant annotations and create genotype-based summaries describing the phenotypic impact of the variant. The clinical annotation is given a score, based on the scores of the supporting annotations. A clinical annotation's score is used by PharmGKB curators in the process of assigning a Level of Evidence to the annotation. Levels range from 1-4, with level 1 meeting the highest criteria. The highest level of clinical annotation of any variant associated with a drug is reported here."
+descriptionUrl: "https://www.pharmgkb.org/clinicalAnnotations"
+
+Node: dcid:topCpicLevel
+name: "topCpicLevel"
+typeOf: schema:Property
+domainIncludes: dcs:Drug
+rangeIncludes: dcs:CPICLevelEnum
+description: "The Clinical Pharmacogenetics Implementation Consortium (CPIC) assigns CPIC levels to gene/drug pairs. The levels (A, B, C, and D) assigned are subject to change; only those gene/drug pairs that have been the subject of guidelines have had sufficient in-depth review of evidence to provide definitive CPIC level assignments. Note that only CPIC level A and B gene/drug pairs have sufficient evidence for at least one prescribing action to be recommended. CPIC level C and D gene/drug pairs are not considered to have adequate evidence or actionability to have prescribing recommendations."
+descriptionUrl: "https://cpicpgx.org/prioritization/"
+
+Node: dcid:topPharmacogeneticLevel
+name: "topPharmacogeneticLevel"
+typeOf: schema:Property
+domainIncludes: dcs:Drug
+rangeIncludes: dcs:PGxLevelEnum
+description: "The 'PGx Level' tag ('Testing required', 'Testing Recommended', 'Actionable PGx' and 'Informative PGx') indicates the level of action implied in each label. This is the highest level reported by any reporting agency."
+descriptionUrl: "https://www.pharmgkb.org/page/drugLabelLegend"
+
 Node: dcid:uniProtID
 name: "uniProtID"
 typeOf: schema:Property
@@ -911,6 +994,14 @@ typeOf: schema:Property
 domainIncludes: dcs:ChemicalCompoundGeneticVariantAssociation,dcs:GeneGeneticVariantAssociation
 rangeIncludes: dcs:GeneticVariant
 description: "Link to a GeneticVariant node for a genetic variant that is associated with another entity."
+
+Node: dcid:veryImportantPharmacogeneCount
+name: "veryImportantPharmacogeneCount"
+typeOf: schema:Property
+domainIncludes: dcs:ChemicalCompound
+rangeIncludes: schema:Number
+description: "The number of Very Important Pharmacogene (VIP) summaries assocated with a given drug as reported by PharmGKB. VIP summaries provide an overview of a significant gene involved in metabolism of, or response to, one or several drugs. Often, VIPs either play a role in the metabolism of many drugs (e.g. CYP2D6), or contain variants which potentially contribute to a severe drug response (e.g. HLA-B). VIP summaries typically include background information on the gene including any disease associations, as well as in-depth information on the gene's pharmacogenetics. Many VIP summaries have been published in the journal Pharmacogenetics and Genomics."
+descriptionUrl: "https://www.pharmgkb.org/vips"
 
 Node: dcid:wordElementType
 name: "wordElementType"
