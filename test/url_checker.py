@@ -190,7 +190,7 @@ def find_invalid_schema_urls(allowlisted_urls, files):
         status, message = get_status(url)
         all_urls.add((file, url))
         if not status.startswith("200"):
-          invalid_urls[(str(file), url)] = (status, message)
+          invalid_urls[(file, url)] = (status, message)
 
   return invalid_urls
 
