@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./test
     steps:
       - name: checkout repo content
         uses: actions/checkout@v4 # checkout the repository content
@@ -18,16 +21,14 @@ jobs:
           python-version: '3.11' # install the python version needed
 
       - name: install python packages
-        working-directory: ./test
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: execute py script # run url_checker.py
-        working-directory: ./test
         env:
           DC_API_KEY: ${{ secrets.DC_API_KEY }}
-        run: python test/url_checker.py
+        run: python url_checker.py
 
       - name: create pull request
         uses: peter-evans/create-pull-request@v6
