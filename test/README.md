@@ -26,7 +26,9 @@ checker will only process locally modified files (i.e. not yet commited).
 `url_allowlist.csv` contains previously submitted invalid urls. After fixing a
 url in the allowlist, remove it from the allowlist and re-run the checker to
 make sure it passes. (When fixing a url, make sure to update each occurrence in
-the schema.)
+the schema. Since the checker only tests locally modified files, you can commit
+each modified file separately to avoid rechecking files that you've already
+updated.)
 
 Alternatively you can automatically update the allowlist (however this will take
 more time since it will process all files):

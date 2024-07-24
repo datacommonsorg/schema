@@ -24,14 +24,12 @@ import git
 import requests
 
 FLAGS = flags.FLAGS
-flags.DEFINE_boolean(
-    "update_allowlist", False, "If set, regenerates url_allowlist.csv."
-)
+flags.DEFINE_boolean("update_allowlist", False,
+                     "If set, regenerates url_allowlist.csv.")
 
 API_ERROR = (
     "An HTTP {} code was returned by the autopush API. Please ensure that"
-    " DC_API_KEY is set to the autopush API key."
-)
+    " DC_API_KEY is set to the autopush API key.")
 API_PREFIX = "https://autopush.api.datacommons.org/v2/node?key="
 MANIFEST = "MANIFEST"
 URL_ALLOWLIST = "url_allowlist.csv"
@@ -59,15 +57,13 @@ def get_status(url):
       initial_resp = resp.history[0]
       return (
           str(initial_resp.status_code) + " " + initial_resp.reason
-          if initial_resp.reason
-          else str(initial_resp.status_code),
+          if initial_resp.reason else str(initial_resp.status_code),
           "Redirected to " + resp.url,
       )
 
     return (
-        str(resp.status_code) + " " + resp.reason
-        if resp.reason
-        else str(resp.status_code),
+        str(resp.status_code) + " " +
+        resp.reason if resp.reason else str(resp.status_code),
         "",
     )
 
@@ -83,14 +79,12 @@ def get_modified_files():
   """
   repo = git.Repo(".", search_parent_directories=True)
   return [
-      "../" + file
-      for file in sorted(
+      "../" + file for file in sorted(
           filter(
               lambda x: x.endswith(".mcf"),
-              list(item.a_path for item in repo.index.diff(None))
-              + list(repo.untracked_files),
-          )
-      )
+              list(item.a_path for item in repo.index.diff(None)) +
+              list(repo.untracked_files),
+          ))
   ]
 
 
@@ -109,11 +103,9 @@ def find_invalid_manifest_urls(allowlisted_urls):
   dcids = []
   while True:
     resp = requests.get(
-        API_PREFIX
-        + dc_api_key
-        + "&nodes=Provenance&nodes=Dataset&nodes=Source&property=<-typeOf&nextToken="
-        + next_token
-    )
+        API_PREFIX + dc_api_key +
+        "&nodes=Provenance&nodes=Dataset&nodes=Source&property=<-typeOf&nextToken="
+        + next_token)
     if resp.status_code != 200:
       raise ValueError(API_ERROR.format(resp.status_code))
 
@@ -131,15 +123,10 @@ def find_invalid_manifest_urls(allowlisted_urls):
   next_token = ""
   urls = set()
   while True:
-    resp = requests.get(
-        API_PREFIX
-        + dc_api_key
-        + "".join(["&nodes=" + dcid for dcid in dcids])
-        + "&property=->["
-        + ",".join(URL_PROPS)
-        + "]&nextToken="
-        + next_token
-    )
+    resp = requests.get(API_PREFIX + dc_api_key +
+                        "".join(["&nodes=" + dcid for dcid in dcids]) +
+                        "&property=->[" + ",".join(URL_PROPS) + "]&nextToken=" +
+                        next_token)
     if resp.status_code != 200:
       raise ValueError(API_ERROR.format(resp.status_code))
 
@@ -213,14 +200,12 @@ def find_invalid_urls(allowlisted_urls, files):
 def update_allowlist():
   """Updates url_allowlist.csv by re-checking all urls."""
   with open(URL_ALLOWLIST, "w") as f_out:
-    writer = csv.DictWriter(
-        f=f_out, fieldnames=["file", "url", "status", "message"]
-    )
+    writer = csv.DictWriter(f=f_out,
+                            fieldnames=["file", "url", "status", "message"])
     writer.writeheader()
 
-    invalid_urls = find_invalid_urls(
-        {}, sorted(pathlib.Path("../").rglob("*.mcf"))
-    )
+    invalid_urls = find_invalid_urls({},
+                                     sorted(pathlib.Path("../").rglob("*.mcf")))
 
     for (file, url), (status, message) in sorted(invalid_urls.items()):
       writer.writerow({
@@ -241,15 +226,12 @@ def check_modified_files():
 
   # Currently only check modified schema files (i.e. not manifest urls).
   # TODO(nhdiaz): Get modified manifest files from g3.
-  invalid_urls = find_invalid_schema_urls(
-      allowlisted_urls, get_modified_files()
-  )
+  invalid_urls = find_invalid_schema_urls(allowlisted_urls,
+                                          get_modified_files())
 
   if invalid_urls:
-    print(
-        "\nFound new invalid urls! Please fix the urls below or add to"
-        " url_allowlist.csv:"
-    )
+    print("\nFound new invalid urls! Please fix the urls below or add to"
+          " url_allowlist.csv:")
     for (file, url), (status, message) in sorted(invalid_urls.items()):
       print("\nFile:", file, "\nUrl:", url, "\nStatus:", status)
       if message:
