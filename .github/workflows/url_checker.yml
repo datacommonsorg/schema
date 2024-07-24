@@ -1,6 +1,7 @@
 name: update url_allowlist.csv
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * MON' # At 00:00 on Monday
 
