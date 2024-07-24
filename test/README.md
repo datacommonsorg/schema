@@ -37,3 +37,6 @@ more time since it will process all files):
 export DC_API_KEY=<AUTOPUSH KEY>
 python3 url_checker.py --update_allowlist
 ```
+
+A GitHub Action periodically will update the full allowlist to check for
+updates to manifest urls and urls that have gone stale.
