@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content
+        uses: actions/checkout@v4 # checkout the repository content
 
       - name: setup python
         uses: actions/setup-python@v4
@@ -25,9 +25,21 @@ jobs:
       - name: execute py script # run url_checker.py
         env:
           DC_API_KEY: ${{ secrets.DC_API_KEY }}
-        run: python test/url_checker.py --update_allowlist
+        run: python test/url_checker.py
 
       - name: create pull request
-        run: gh pr create --title 'Update url_allowlist.csv' --body 'Created by Github action url_checker.yml'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PAT }}
+          commit-message: Update url_allowlist.csv
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: update-url
+          delete-branch: true
+          title: 'Update url_allowlist.csv'
+          body: |
+            Auto-update url_allowlist.csv with url_checker.yml
+          labels: |
+            report
+            automated pr
