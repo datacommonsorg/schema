@@ -28,7 +28,7 @@ jobs:
       - name: execute py script # run url_checker.py
         env:
           DC_API_KEY: ${{ secrets.DC_API_KEY }}
-        run: python url_checker.py
+        run: python url_checker.py --update_allowlist
 
       - name: create pull request
         uses: peter-evans/create-pull-request@v6
