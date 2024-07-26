@@ -34,17 +34,27 @@ jobs:
         run: |
           printf ".env\n\n\n" > .gitignore
 
-      - name: create pull request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: Update url_allowlist.csv
-          committer: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
-          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          delete-branch: true
-          title: 'Update url_allowlist.csv'
-          body: |
-            Auto-update url_allowlist.csv with url_checker.yml
-          labels: |
-            report
-            automated pr
+      #- name: create pull request
+      #  uses: peter-evans/create-pull-request@v6
+      #  with:
+      #    commit-message: Update url_allowlist.csv
+      #    committer: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+      #    author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+      #    signoff: false
+      #    delete-branch: true
+      #    title: 'Update url_allowlist.csv'
+      #    body: |
+      #      Auto-update url_allowlist.csv with url_checker.yml
+      #    labels: |
+      #      report
+      #      automated pr
+
+      - name: commit files
+        run: |
+          git config --local user.name "datcom-bot"
+          git config --local user.email "datcom-bot@google.com"
+          git add --all
+          git commit -am "Update url_allowlist.csv: $(date)" 
+          git push origin main
+        env:
+          REPO_KEY: ${{secrets.GITHUB_TOKEN}}
