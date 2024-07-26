@@ -30,21 +30,32 @@ jobs:
       #    DC_API_KEY: ${{ secrets.DC_API_KEY }}
       #  run: python url_checker.py --update_allowlist
 
-      - name: test
-        run: |
-          printf ".env\n\n\n" > .gitignore
+      #- name: test
+      #  run: |
+      #    printf ".env\n\n\n" > .gitignore
 
-      - name: create pull request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: Update url_allowlist.csv
-          committer: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
-          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          delete-branch: true
-          title: 'Update url_allowlist.csv'
-          body: |
-            Auto-update url_allowlist.csv with url_checker.yml
-          labels: |
-            report
-            automated pr
+      #- name: create pull request
+      #  uses: peter-evans/create-pull-request@v6
+      #  with:
+      #    commit-message: Update url_allowlist.csv
+      #    committer: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+      #    author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+      #    signoff: false
+      #    delete-branch: true
+      #    title: 'Update url_allowlist.csv'
+      #    body: |
+      #      Auto-update url_allowlist.csv with url_checker.yml
+      #    labels: |
+      #      report
+      #      automated pr
+
+      - name: git test
+        run: |
+          git config credential.username "datcom-bot"
+          git config user.email "datcom-bot@google.com"
+          git config user.signingkey "LVZOXL27GUQDCMOB"
+          git branch -d test
+          git checkout -b test
+          printf ".env\n\n\n" > .gitignore
+          git add .
+          git commit -m "test"
