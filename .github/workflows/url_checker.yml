@@ -51,10 +51,10 @@ jobs:
 
       - name: commit changes
         run: |
-          git config --local user.name "datcom-bot"
-          git config --local user.email "datcom-bot@google.com"
+          git config --global user.name "datcom-bot"
+          git config --global user.email "datcom-bot@users.noreply.github.com"
           git add --all
-          git commit -am "Update url_allowlist.csv: $(date)" 
-          git push origin main
+          git commit -am "Auto-update url_allowlist.csv: $(date)" 
+          git push
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
