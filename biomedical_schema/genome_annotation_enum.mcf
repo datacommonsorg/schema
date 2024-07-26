@@ -21,77 +21,6 @@ name: "Text Mining"
 description: "An association between two things was made through automated text mining of the scientific literature."
 
 
-# BiologicalTaxonomyGroupEnum
-Node: dcid:BiologicalTaxonomyGroupEnum
-name: "BiologicalTaxonomyGroupEnum"
-typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Commonly used organism groups."
-
-Node: dcid:BiologicalTaxonomyGroupArchaea
-name: "Archaea"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Archaea is a domain of single-celled organisms. These microorganisms lack cell nuclei and are therefore prokaryotes."
-descriptionUrl: "https://en.wikipedia.org/wiki/Archaea"
-
-Node: dcid:BiologicalTaxonomyGroupBacteria
-name: "Bacteria"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Bacteria are ubiquitous, mostly free-living organisms often consisting of one biological cell. They constitute a large domain of prokaryotic microorganisms. "
-descriptionUrl: "https://en.wikipedia.org/wiki/Bacteria"
-
-Node: dcid:BiologicalTaxonomyGroupFungi
-name: "Fungi"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "A fungus is any member of the group of eukaryotic organisms that includes microorganisms such as yeasts and molds, as well as the more familiar mushrooms. These organisms are classified as one of the traditional eukaryotic kingdoms, along with Animalia, Plantae and either Protista or Protozoa and Chromista."
-descriptionUrl: "https://en.wikipedia.org/wiki/Fungus"
-
-Node: dcid:BiologicalTaxonomyGroupInvertebrate
-name: "Invertebrate"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Invertebrates an umbrella term describing animals that neither develop nor retain a vertebral column (commonly known as a spine or backbone), which evolved from the notochord. It is a paraphyletic grouping including all animals excluding the chordate subphylum Vertebrata, i.e. vertebrates."
-descriptionUrl: "https://en.wikipedia.org/wiki/Invertebrate"
-
-Node: dcid:BiologicalTaxonomyGroupMetagenomes
-name: "Metagenomes"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Metagenome is a sequence that comes from genetic material recovered directly from environmental or clinical samples."
-
-Node: dcid:BiologicalTaxonomyGroupOther
-name: "Other"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-
-Node: dcid:BiologicalTaxonomyGroupPlant
-name: "Plant"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Plants are the eukaryotes that form the kingdom Plantae; they are predominantly photosynthetic. This means that they obtain their energy from sunlight, using chloroplasts derived from endosymbiosis with cyanobacteria to produce sugars from carbon dioxide and water, using the green pigment chlorophyll. Exceptions are parasitic plants that have lost the genes for chlorophyll and photosynthesis, and obtain their energy from other plants or fungi."
-descriptionUrl: "https://en.wikipedia.org/wiki/Plant"
-
-Node: dcid:BiologicalTaxonomyGroupProtozoa
-name: "Protozoa"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Protozoa are a polyphyletic group of single-celled eukaryotes, either free-living or parasitic, that feed on organic matter such as other microorganisms or organic debris."
-descriptionUrl: "https://en.wikipedia.org/wiki/Protozoa"
-
-Node: dcid:BiologicalTaxonomyGroupVertebrateMammalian
-name: "Vertebrate, Mammalian"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "A mammal (from Latin mamma 'breast') is a vertebrate animal of the class Mammalia (/məˈmeɪli.ə/). Mammals are characterized by the presence of milk-producing mammary glands for feeding their young, a neocortex region of the brain, fur or hair, and three middle ear bones."
-descriptionUrl: "https://en.wikipedia.org/wiki/Mammal"
-
-Node: dcid:BiologicalTaxonomyGroupVertebrateOther
-name: "Vertebrate, Other"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "Vertebrates (/ˈvɜːrtəbrɪts, -ˌbreɪts/) are deuterostomal animals with bony or cartilaginous axial endoskeleton — known as the vertebral column, spine or backbone — around and along the spinal cord. This group specifically refers to all vertebrates except for the subgroup mammals."
-descriptionUrl: "https://en.wikipedia.org/wiki/Vertebrate"
-
-Node: dcid:BiologicalTaxonomyGroupViral
-name: "viral"
-typeOf: dcs:BiologicalTaxonomyGroupEnum
-description: "A virus is a submicroscopic infectious agent that replicates only inside the living cells of an organism. Viruses infect all life forms, from animals and plants to microorganisms, including bacteria and archaea."
-descriptionUrl: "https://en.wikipedia.org/wiki/Virus"
-
-
 # ClinSigEnum
 Node: dcid:ClinSigEnum
 name: "ClinSigEnum"
@@ -818,48 +747,48 @@ subClassOf: schema:Enumeration
 description: "Denotes the relation of the genome assembly with the type material from which it was derived."
 
 Node: dcid:GenomeAssemblyDerivedFromTypeMaterial
-name: “Assembly From Type Material”
+name: “assembly from type material”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “The sequences in the genome assembly were derived from type material.”
 descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
 
 Node: dcid:GenomeAssemblyDerivedFromSynonymTypeMaterial
-name: “Assembly From Synonym Type Material”
+name: “assembly from synonym type material”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “The sequences in the genome assembly were derived from synonym type material.”
 descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
 
 Node: dcid:GenomeAssemblyDerivedFromPathotypeMaterial
-name: “Assembly From Pathotype Material”
+name: “assembly from pathotype material”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “The sequences in the genome assembly were derived from pathovar material.”
 descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
 
 Node: dcid:GenomeAssemblyDerivedFromCladeExemplar
-name: “Assembly Designated As Clade Exemplar”
+name: “assembly designated as clade exemplar”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “The sequences in the genome assembly were derived from clade exemplar material.”
 
 Node: dcid:GenomeAssemblyDerivedFromNeotype
-name: “Assembly Designated As Neotype”
+name: “assembly designated as neotype”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “The sequences in the genome assembly were derived from neotype material.”
 descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
 
 Node: dcid:GenomeAssemblyDerivedFromReftype
-name: “Assembly Designated As Reftype”
+name: “assembly designated as reftype”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “The sequences in the genome assembly were derived from reference material where type material never was available and is not likely to ever be available.”
 descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
 
 Node: dcid:GenomeAssemblyDerivedFromIctvSpeciesExemplar
-name: “ICTV Species Exemplar”
+name: “ICTV species exemplar”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “ The International Committee on Taxonomy of Viruses (ICTV) designated the genome assembly as the exemplar for the virus species.”
 descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
 
 Node: dcid:GenomeAssemblyDerivedFromIctvAdditionalIsolate
-name: “ICTV Additional Isolate”
+name: “ICTV additional isolate”
 typeOf: dcs:GenomeAssemblyDerivedFromEnum
 description: “ The International Committee on Taxonomy of Viruses (ICTV) designated the genome assembly an additional isolate for the virus species.”
 descriptionUrl: “https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt”
@@ -886,7 +815,7 @@ descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
 description: "There is sequence for one or more chromosomes. This could be a completely sequenced chromosome without gaps or a chromosome containing scaffolds or contigs with gaps between them. There may also be unplaced or unlocalized scaffolds."
 
 Node: dcid:GenomeAssemblyLevelScaffold
-name: "Scaffold"
+name: " caffold"
 typeOf: dcs:GenomeAssemblyLevelEnum
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/#level"
 description: "Some sequence contigs have been connected across gaps to create scaffolds, but the scaffolds are all unplaced or unlocalized."
@@ -1170,13 +1099,13 @@ descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
 
 Node: dcid:RefSeqCategoryReferenceGenome
 name: "Reference Genome"
-typeOf: dcs:RefSeqCategoryEnum
+typeOf: dcs:GenomeAssemblyLevelEnum
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
 description: "A manually selected high quality genome assembly that NCBI and the community have identified as being important as a standard against which other data are compared."
 
-Node: dcid:RefSeqCategoryRepresentativeGenome
-name: "Representative Genome"
-typeOf: dcs:RefSeqCategoryEnum
+Node: dcid:RefSeqCategoryRepresentationGenome
+name: "Representation Genome"
+typeOf: dcs:GenomeAssemblyLevelEnum
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
 description: "A genome computationally or manually selected as a representative from among the best genomes available for a species or clade that does not have a designated reference genome."
 

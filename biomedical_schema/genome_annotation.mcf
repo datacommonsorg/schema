@@ -277,14 +277,6 @@ domainIncludes: schema:Thing
 rangeIncludes: schema:Text
 description: "The level of confidence that a given result is accurate."
 
-Node: dcid:contigCount
-name: "contigCount"
-typeOf: schema:Property
-domainIncludes: dcs:GenomeAssembly
-rangeIncludes: schema:Text
-description: "The number of contigs in the primary assembly."
-descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
-
 Node: dcid:dbSNPBuildID
 name: "dbSNPBuildID"
 typeOf: schema:Property
@@ -382,6 +374,20 @@ rangeIncludes: schema:Quantity
 description: "Percent of nitrogenous bases (guanine or cytosine) in DNA submitted for the assembly, rounded to the nearest 0.5%."
 descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
+Node: dcid:geneCount
+name: "geneCount"
+typeOf: schema:Property
+domainIncludes dcs:GenomeAnnotation
+rangeIncludes: schema:Number
+description: "The total number of genes (both protein coding and non-coding genes) within a consensus region of DNA."
+
+Node: dcid:geneticScaffoldingCount
+name: "geneticScaffoldingCount"
+typeOf: schema:Property
+domainIncludes dcs:GenomeAnnotation
+rangeIncludes: schema:Number
+description: "The number of overlapping DNA segments that represent a consensus region of DNA."
+
 Node: dcid:genBankAssemblyAccession
 name: "genBankAssemblyAccession"
 typeOf: schema:Property
@@ -396,13 +402,6 @@ domainIncludes dcs:GenomeAssembly
 rangeIncludes: schema:Text
 description: "WGS-master: the GenBank Nucleotide accession and version for the master record of the Whole Genome Shotgun (WGS) project for the genome assembly. The master record can be retrieved from the NCBI Nucleotide resource: https://www.ncbi.nlm.nih.gov/nuccore. Genome assemblies that are complete genomes, and those that are clone-based, do not have WGS-master records. GenBank uses a different format for accessions of sequences that are a part of the WGS project."
 descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
-
-Node: dcid:geneCount
-name: "geneCount"
-typeOf: schema:Property
-domainIncludes: dcs:GenomeAnnotation
-rangeIncludes: schema:Number
-description: "The total number of genes (both protein coding and non-coding genes) within a consensus region of DNA."
 
 Node: dcid:geneID
 name: "geneID"
@@ -434,8 +433,8 @@ domainIncludes: dcs:GeneticVariant
 description: "GeneReviews, an international point-of-care resource for busy clinicians, provides clinically relevant and medically actionable information for inherited conditions in a standardized journal-style format, covering diagnosis, management, and genetic counseling for patients and their families. Each chapter in GeneReviews is written by one or more experts on the specific condition or disease and goes through a rigorous editing and peer review process before being published online."
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/books/NBK1116/"
 
-Node: dcid:geneticScaffoldCount
-name: "geneticScaffoldCount"
+Node: dcid:geneticScaffoldingCount
+name: "geneticScaffoldingCount"
 typeOf: schema:Property
 domainIncludes dcs:GenomeAssembly
 rangeIncludes: schema:Number
