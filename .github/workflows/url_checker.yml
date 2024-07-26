@@ -8,9 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    #defaults:
-    #  run:
-    #   working-directory: ./test
+    defaults:
+      run:
+       working-directory: ./test
     steps:
       - name: checkout repo content
         uses: actions/checkout@v4 # checkout the repository content
