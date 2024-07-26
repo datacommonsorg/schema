@@ -1,85 +1,113 @@
-Node: dcid:Amount_WasteWater_PrimaryTreatment_WasteWaterTreatmentPlant_PerWaterTreatmentLevel
+Node: dcid:Amount_WasteWater_PrimaryTreatment
 typeOf: dcid:StatisticalVariable
-name: "Public total treatment (connected to a wastewater treatment plant), Primary treatment"
 populationType: dcid:WasteWater
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentLevel
+waterTreatmentLevel: dcid:PrimaryTreatment
+
+Node: dcid:Amount_WasteWater_PrimaryTreatment_WasteWaterTreatmentPlant_AsAFractionOf_Amount_WasteWater_PrimaryTreatment
+typeOf: dcid:StatisticalVariable
+name: "Public total treatment (connected to a wastewater treatment plant) Primary treatment"
+populationType: dcid:WasteWater
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_WasteWater_PrimaryTreatment
 waterTreatmentLevel: dcid:PrimaryTreatment
 waterTreatmentType: dcid:WasteWaterTreatmentPlant
 
-Node: dcid:Amount_WasteWater_SecondaryTreatment_WasteWaterTreatmentPlant_PerWaterTreatmentLevel
+Node: dcid:Amount_WasteWater_SecondaryTreatment
 typeOf: dcid:StatisticalVariable
-name: "Public total treatment (connected to a wastewater treatment plant), Secondary treatment"
 populationType: dcid:WasteWater
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentLevel
+waterTreatmentLevel: dcid:SecondaryTreatment
+
+Node: dcid:Amount_WasteWater_SecondaryTreatment_WasteWaterTreatmentPlant_AsAFractionOf_Amount_WasteWater_SecondaryTreatment
+typeOf: dcid:StatisticalVariable
+name: "Public total treatment (connected to a wastewater treatment plant) Secondary treatment"
+populationType: dcid:WasteWater
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_WasteWater_SecondaryTreatment
 waterTreatmentLevel: dcid:SecondaryTreatment
 waterTreatmentType: dcid:WasteWaterTreatmentPlant
 
-Node: dcid:Amount_WasteWater_TertiaryTreatment_WasteWaterTreatmentPlant_PerWaterTreatmentLevel
+Node: dcid:Amount_WasteWater_TertiaryTreatment
 typeOf: dcid:StatisticalVariable
-name: "Public total treatment (connected to a wastewater treatment plant), Tertiary treatment"
 populationType: dcid:WasteWater
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentLevel
+waterTreatmentLevel: dcid:TertiaryTreatment
+
+Node: dcid:Amount_WasteWater_TertiaryTreatment_WasteWaterTreatmentPlant_AsAFractionOf_Amount_WasteWater_TertiaryTreatment
+typeOf: dcid:StatisticalVariable
+name: "Public total treatment (connected to a wastewater treatment plant) Tertiary treatment"
+populationType: dcid:WasteWater
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_WasteWater_TertiaryTreatment
 waterTreatmentLevel: dcid:TertiaryTreatment
 waterTreatmentType: dcid:WasteWaterTreatmentPlant
 
-Node: dcid:Amount_WasteWater_UnspecifiedTreatment_WasteWaterTreatmentPlant_PerWaterTreatmentLevel
+Node: dcid:Amount_WasteWater_UnspecifiedTreatment
 typeOf: dcid:StatisticalVariable
-name: "Public total treatment (connected to a wastewater treatment plant) , Unspecified (other) treatment"
 populationType: dcid:WasteWater
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentLevel
+waterTreatmentLevel: dcid:UnspecifiedTreatment
+
+Node: dcid:Amount_WasteWater_UnspecifiedTreatment_WasteWaterTreatmentPlant_AsAFractionOf_Amount_WasteWater_UnspecifiedTreatment
+typeOf: dcid:StatisticalVariable
+name: "Public total treatment (connected to a wastewater treatment plant)  Unspecified (other) treatment"
+populationType: dcid:WasteWater
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_WasteWater_UnspecifiedTreatment
 waterTreatmentLevel: dcid:UnspecifiedTreatment
 waterTreatmentType: dcid:WasteWaterTreatmentPlant
 
-Node: dcid:Count_Person_PublicSewerageWithoutTreatment_PerWaterTreatmentType
+Node: dcid:Count_Person_PublicSewerageWithoutTreatment_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
-name: "Total public sewerage (% of resident population connected to a wastewater collecting system), Population connected to the public sewerage without treatment"
+name: "Total public sewerage (% of resident population connected to a wastewater collecting system) Population connected to the public sewerage without treatment"
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentType
+measurementDenominator: dcid:Count_Person
 waterTreatmentType: dcid:PublicSewerageWithoutTreatment
 
-Node: dcid:Count_Person_Resident_WasteWaterCollectingSystem_PerWaterTreatmentSystem
+Node: dcid:Count_Person_Resident_WasteWaterCollectingSystem_AsAFractionOf_Count_Person_Resident
 typeOf: dcid:StatisticalVariable
 name: "Total public sewerage (% of resident population connected to a wastewater collecting system)"
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentSystem
+measurementDenominator: dcid:Count_Person_Resident
 residentStatus: dcid:Resident
 waterTreatmentSystem: dcid:WasteWaterCollectingSystem
 
-Node: dcid:Count_Person_WasteWaterIndependentlyTreated_PerWaterTreatmentSystem
+Node: dcid:Count_Person_WasteWaterIndependentlyTreated_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
 name: "Population connected to independent treatment"
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentSystem
+measurementDenominator: dcid:Count_Person
 waterTreatmentSystem: dcid:WasteWaterIndependentlyTreated
 
-Node: dcid:Count_Person_WasteWaterTreated_PerWaterTreatmentStatus
+Node: dcid:Count_Person_WasteWaterTreated_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
 name: "Total connected to wastewater treatment"
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentStatus
+measurementDenominator: dcid:Count_Person
 waterTreatmentStatus: dcid:WasteWaterTreated
 
-Node: dcid:Count_Person_WasteWaterTreatmentPlant_PerWaterTreatmentType
+Node: dcid:Count_Person_WasteWaterTreatmentPlant_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
 name: "Public total treatment (connected to a wastewater treatment plant)"
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-measurementDenominator: dcid:waterTreatmentType
+measurementDenominator: dcid:Count_Person
 waterTreatmentType: dcid:WasteWaterTreatmentPlant
