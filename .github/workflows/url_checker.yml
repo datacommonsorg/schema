@@ -14,6 +14,9 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v4 # checkout the repository content
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
 
       - name: setup python
         uses: actions/setup-python@v4
@@ -56,5 +59,3 @@ jobs:
           git add --all
           git commit -am "Auto-update url_allowlist.csv: $(date)" 
           git push
-        env:
-          REPO_KEY: ${{secrets.GITHUB_TOKEN}}
