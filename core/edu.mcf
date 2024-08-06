@@ -1311,7 +1311,7 @@ rangeIncludes: dcs:USC_SchoolEnrollmentEnum
 Node: dcid:householdType
 name: "householdType"
 typeOf: schema:Property
-domainIncludes: dcs:Household, dcs:Person
+domainIncludes: dcs:Household, dcs:Person, dcid:HouseHold,dcid:Student
 rangeIncludes: dcs:HouseholdTypeEnum, dcs:FamilyTypeEnum
 
 Node: dcid:HouseholdTypeEnum
@@ -1356,7 +1356,7 @@ name: "NonfamilyHouseholdAndOtherLivingArrangements"
 Node: dcid:benefitsStatus
 name: "benefitsStatus"
 typeOf: schema:Property
-domainIncludes: dcs:Household, schema:Person
+domainIncludes: dcs:Household, schema:Person, dcid:HouseHold,dcid:Resource
 rangeIncludes: dcs:BenefitsStatusEnum
 
 Node: dcid:BenefitsStatusEnum
