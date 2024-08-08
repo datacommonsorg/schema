@@ -16,6 +16,14 @@ typeOf: schema:Class
 subClassOf: dcs:BiologicalEntity
 definition: "A set of organisms asserted to represent a natural cohesive biological unit."
 
+Node: dcid:biologicalIsolate
+name: "biologicalIsolate"
+typeOf: schema:Property
+domainIncludes: dcs:BiologicalEntity
+rangeIncludes: schema:Text
+description: "The individual isolate from which the sequences in the genome assembly were derived."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
+
 Node: dcid:biologicalTaxonomyGroup
 name: "biologicalTaxonomyGroup"
 typeOf: schema:Property
@@ -38,6 +46,14 @@ rangeIncludes: schema:Text
 description: "The individual isolate from which the sequences in the genome assembly were derived."
 descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
+Node: dcid:breed
+name: "breed"
+typeOf: schema:Property
+domainIncludes: dcs:BiologicalEntity
+rangeIncludes: schema:Text
+description: "A breed is a specific group of domestic animals having homogeneous appearance (phenotype), homogeneous behavior, and/or other characteristics that distinguish it from other organisms of the same species. In literature, there exist several slightly deviating definitions. Breeds are formed through genetic isolation and either natural adaptation to the environment or selective breeding, or a combination of the two."
+descriptionUrl: "https://en.wikipedia.org/wiki/Breed"
+
 Node: dcid:commonName
 name: "commonName"
 typeOf: schema:Property
@@ -45,6 +61,22 @@ domainIncludes: dcs:Taxon
 rangeIncludes: schema:Text
 description: "In biology, a common name of a taxon or organism (also known as a vernacular name, English name, colloquial name, country name, popular name, or farmer's name) is a name that is based on the normal language of everyday life; and is often contrasted with the scientific name for the same organism, which is often based in Latin. A common name is sometimes frequently used, but that is not always the case."
 descriptionUrl: "https://en.wikipedia.org/wiki/Common_name"
+
+Node: dcid:cultivar
+name: "cultivar"
+typeOf: schema:Property
+domainIncludes: dcs:BiologicalEntity
+rangeIncludes: schema:Text
+description: "A cultivar is a kind of cultivated plant that people have selected for desired traits and which retains those traits when propagated. Methods used to propagate cultivars include division, root and stem cuttings, offsets, grafting, tissue culture, or carefully controlled seed production. Most cultivars arise from deliberate human manipulation, but some originate from wild plants that have distinctive characteristics. Cultivar names are chosen according to rules of the International Code of Nomenclature for Cultivated Plants (ICNCP), and not all cultivated plants qualify as cultivars. Horticulturists generally believe the word cultivar was coined as a term meaning 'cultivated variety'."
+descriptionUrl: "https://en.wikipedia.org/wiki/Cultivar"
+
+Node: dcid:ecotype
+name: "ecotype"
+typeOf: schema:Property
+domainIncludes: dcs:BiologicalEntity
+rangeIncludes: schema:Text
+description: "In evolutionary ecology, an ecotype, sometimes called ecospecies, describes a genetically distinct geographic variety, population, or race within a species, which is genotypically adapted to specific environmental conditions. Typically, though ecotypes exhibit phenotypic differences (such as in morphology or physiology) stemming from environmental heterogeneity, they are capable of interbreeding with other geographically adjacent ecotypes without loss of fertility or vigor."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ecotype"
 
 Node: dcid:genBankName
 name: "genBankName"
@@ -67,6 +99,13 @@ domainIncludes: dcs:BiologicalEntity
 rangeIncludes: schema:Text
 description: "The scientific name for any taxon below the rank of species. This may also be referred to as an infraspecific taxon or infraspecies."
 descriptionUrl: "https://en.wikipedia.org/wiki/Infraspecific_name"
+
+Node: dcid:isLatestVersion
+name: "isLatestVersion"
+typeOf: schema:Property
+domainIncludes: schema:Thing
+rangeIncludes: schema:Boolean
+description: "This is the latest version of the CreativeWork embodied by a specified resource."
 
 Node: dcid:ncbiBlastName
 name: "ncbiBlastName"
@@ -103,6 +142,14 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Taxon
 description: "The scientific name of a species."
+
+Node: dcid:strain
+name: "strain"
+typeOf: schema:Property
+domainIncludes: dcs:BiologicalEntity
+rangeIncludes: schema:Text
+description: "A strain is a genetic variant, a subtype or a culture within a biological species. Strains are often seen as inherently artificial concepts, characterized by a specific intent for genetic isolation."
+descriptionUrl: "https://en.wikipedia.org/wiki/Strain_(biology)"
 
 Node: dcid:taxonDivision
 name: "taxonDivision"
