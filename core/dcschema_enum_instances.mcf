@@ -221,7 +221,7 @@ typeOf: dcs:PoliticalCampaignCmteDesignationEnum
 description: "FEC Committee Designation Types as defined in https://www.fec.gov/campaign-finance-data/candidate-committee-linkage-file-description/"
 
 Node: dcid:FEC_CmteDesignationAuthorized
-name: "AuthorizedByCandiate"
+name: "AuthorizedByCandidate"
 typeOf: dcs:PoliticalCampaignCmteDesignationEnum
 description: "FEC Committee Designation Types as defined in https://www.fec.gov/campaign-finance-data/candidate-committee-linkage-file-description/"
 
@@ -1792,7 +1792,7 @@ typeOf: dcs:ISICv3.1Enum
 Node: dcid:InitialClaimExcludingIntrastateTransitional
 typeOf: dcs:UnemploymentInsuranceClaimTypeEnum
 name: "InitialClaimExcludingIntrastateTransitional"
-description: "Used by State UI programs. Includes intrastate initial claims and interstate initial claims filed from the agent state, but not instrastate transitional claims."
+description: "Used by State UI programs. Includes intrastate initial claims and interstate initial claims filed from the agent state, but not intrastate transitional claims."
 descriptionUrl: "https://wdr.doleta.gov/directives/attach/ETAH/ETHand401_4th_s01.pdf"
 
 Node: dcid:InitialClaim
@@ -2253,7 +2253,7 @@ specializationOf: dcs:PaidWorker
 description: "A salaried employee in the for-profit sector. Example: Salaried employee at a private company"
 
 Node: dcid:UnincorporatedBusinessOwnerOrUnpaidFamilyWorker
-name: "Unincorporated Buisness Owner Or Unpaid Family Worker"
+name: "Unincorporated Business Owner Or Unpaid Family Worker"
 typeOf: dcs:WorkerClassificationEnum
 specializationOf: dcs:Worker
 
@@ -2446,7 +2446,7 @@ name: "USDACommodityProgram"
 Node: dcid:SGP_OtherEthnicity
 name: "SGP_OtherEthnicity"
 typeOf: dcs:EthnicityEnum
-description: "Persons of an ethinicity not explicitly listed in the Singapore Census"
+description: "Persons of an ethnicity not explicitly listed in the Singapore Census"
 
 Node: dcid:Indian
 name: "Indian"
@@ -2950,10 +2950,10 @@ typeOf: dcs:ProvenanceCategoryEnum
 name: "Generated StatisticalVariable provenance"
 description: "StatisticalVariables with auto-generated dcids."
 
-Node: dcid:ImputedStatistitcsProvenance
+Node: dcid:ImputedStatisticsProvenance
 typeOf: dcs:ProvenanceCategoryEnum
 name: "Imputed statistics provenance"
-descriptions: "Statistics that have values imputed by Data Commons."
+description: "Statistics that have values imputed by Data Commons."
 
 Node: dcid:IntermediateStatisticsProvenance
 typeOf: dcs:ProvenanceCategoryEnum
@@ -3014,7 +3014,7 @@ description: "Requires resolution against the Data Commons Knowledge Graph entit
 Node: dcid:NameBasedKgResolution
 typeOf: dcs:EntityResolutionTypeEnum
 name: "Name-based Knowledge Graph resolution"
-description: "Requires resolution against the Data Commons Knowlege Graph entities based on the name or description property."
+description: "Requires resolution against the Data Commons Knowledge Graph entities based on the name or description property."
 
 Node: dcid:PublicDomain
 typeOf: dcs:LicenseTypeEnum

@@ -1620,7 +1620,7 @@ typeOf: schema:Class
 dcid: "BiologicalKingdom"
 name: "BiologicalKingdom"
 subClassOf: schema:Thing
-description: "Top level group; listed as kingdom but may be interpreted as domain or superkingdom. The following eight groups are recognized: Animalia, Archaea, Bacteria, Chromista, Fungi, Plantae, Protozoa, Viruses"
+description: "Top level group; listed as kingdom but may be interpreted as domain or super kingdom. The following eight groups are recognized: Animalia, Archaea, Bacteria, Chromista, Fungi, Plantae, Protozoa, Viruses"
 
 Node: BiologicalPhylum
 typeOf: schema:Class
@@ -1698,7 +1698,7 @@ description: "The name of the lowest or terminal infraspecific epithet of the sc
 # specificEpithet  19
 # infraspecificEpithet  20
 
-#    <!-- Top level group; listed as kingdom but may be interpreted as domain or superkingdom
+#    <!-- Top level group; listed as kingdom but may be interpreted as domain or super kingdom
 #         The following eight groups are recognized: Animalia, Archaea, Bacteria, Chromista,
 #         Fungi, Plantae, Protozoa, Viruses -->
 #    <field index='10' term='http://rs.tdwg.org/dwc/terms/kingdom'/>
@@ -2177,15 +2177,15 @@ subClassOf: dcs:TemperatureUnitOfMeasure
 name: "Kelvin"
 shortDisplayName: "K"
 
-Node: dcid:PrecipiationUnitOfMeasure
+Node: dcid:PrecipitationUnitOfMeasure
 typeOf: schema:Class
 subClassOf: dcs:UnitOfMeasure
-name: "PrecipiationUnitOfMeasure"
+name: "PrecipitationUnitOfMeasure"
 description: "A unit used to denote a measurement of precipitation."
 
 Node: dcid:KilogramsPerMeterSquaredSecond
 typeOf: schema:Class
-subClassOf: dcs:PrecipiationUnitOfMeasure
+subClassOf: dcs:PrecipitationUnitOfMeasure
 name: "KilogramsPerMeterSquaredSecond"
 shortDisplayName: "kg/sqms"
 
@@ -2392,9 +2392,9 @@ rangeIncludes: schema:Number
 domainIncludes: dcs:DrugDistribution
 description: "Total retail drugs distributed per location within the time period."
 
-Node: dcid:residentalSegregationNonWhiteWhite
+Node: dcid:residentialSegregationNonWhiteWhite
 typeOf: schema:Property
-name: "residentalSegregationNonWhiteWhite"
+name: "residentialSegregationNonWhiteWhite"
 rangeIncludes: dcs:UnitOfMeasure
 domainIncludes: schema:Person
 description: "Amount of residential segregation between non-white and white county residents."
@@ -2404,9 +2404,9 @@ typeOf: dcs:UnitOfMeasure
 name: "DissimilarityIndex"
 description: "Index of dissimilarity"
 
-Node: dcid:residentalSegregationBlackWhite
+Node: dcid:residentialSegregationBlackWhite
 typeOf: schema:Property
-name: "residentalSegregationBlackWhite"
+name: "residentialSegregationBlackWhite"
 rangeIncludes: dcs:DissimilarityIndex
 domainIncludes: schema:Person
 description: "Amount of residential segregation between black and white county residents."
@@ -2904,7 +2904,7 @@ domainIncludes: schema:Person, dcs:Household
 Node: dcid:lunchEligiblity
 typeOf: schema:Property
 name: "lunchEligiblity"
-description: "Indicates the type of lunch elibility for students."
+description: "Indicates the type of lunch eligibility for students."
 rangeIncludes: dcs:LunchTypeEnum
 domainIncludes: dcs:Student
 
@@ -3720,7 +3720,7 @@ typeOf: dcs:Property
 name: "investmentProgram"
 domainIncludes: dcid:Investment
 rangeIncludes: dcid:InvestmentProgramEnum
-description: "The type of program under which the investement is done."
+description: "The type of program under which the investment is done."
 
 Node: dcid:economicProgram
 typeOf: dcs:Property
