@@ -450,7 +450,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MedicalConditionIncident
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -831,7 +831,7 @@ Node: employment
 dcid: "employment"
 typeOf: schema:Property
 name: "employment"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:School
 rangeIncludes: dcs:EmploymentEnum
 
 Node: dcid:count
@@ -2723,7 +2723,7 @@ name: "benefitProgram"
 typeOf: schema:Property
 domainIncludes: dcs:UnemploymentInsuranceClaim
 rangeIncludes: dcs:UnemploymentInsuranceProgramEnum, dcs:BenefitProgramEnum
-description: "A program that offers benefits. E.g. SNAP (foodstamps), UI (Unemployment Insurance), etc."
+description: "A program that offers benefits. E.g. SNAP (food stamps), UI (Unemployment Insurance), etc."
 
 Node: dcid:unemploymentInsuranceStatus
 name: "unemploymentInsuranceStatus"
@@ -2804,7 +2804,7 @@ name: "placeCategory"
 typeOf: schema:Property
 domainIncludes: dcs:PlaceVisitEvent
 rangeIncludes: schema:Place
-description: "Describes the type a place is. For example, a Safeway store has a place category of Grocery."
+description: "Describes the type a place is. For example, a Safe way store has a place category of Grocery."
 
 Node: dcid:covid19MobilityTrend
 name: "covid19MobilityTrend"
@@ -2937,7 +2937,7 @@ Node: dcid:enrollmentLevel
 typeOf: schema:Property
 name: "enrollmentLevel"
 description: "Identifies a person's enrollment level."
-rangeIncludes: dcs:EnrollmentLevelEnum, dcs:SchoolGradeLevelEnum
+rangeIncludes: dcs:EnrollmentLevelEnum, dcs:SchoolGradeLevelEnum, dcs:SchoolLevelEnum
 domainIncludes: schema:Person, dcs:Student
 
 Node: dcid:workCategory
@@ -4180,3 +4180,34 @@ Node: dcid:Per1000Males
 typeOf: dcs:UnitOfMeasure
 name: "Per 1k males"
 description: "Per 1000 male population."
+
+Node: dcid:academicAssessmentEvent
+typeOf: dcid:Property
+name: "academicAssessmentEvent"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:AcademicAssessmentEventEnum
+
+Node: dcid:childrenStatus
+typeOf: dcid:Property
+name: "childrenStatus"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:HasChildrenStatusEnum
+
+Node: dcid:childCount
+typeOf: dcid:Property
+name: "childCount"
+domainIncludes: dcid:Household
+rangeIncludes: dcs:Quantity
+
+Node: dcid:externalWallMaterial
+typeOf: dcid:Property
+name: "externalWallMaterial"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:ExternalWallMaterialEnum
+description: "Walls that can be made from a wide variety of materials either singly or in combination with other materials. These can include: Masonry such as stone, brick and block and Concrete"
+
+Node: dcid:dwellingsType
+typeOf: dcid:Property
+name: "dwellingsType"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:DwellingsTypeEnum
