@@ -38,7 +38,7 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Fuel
 name: "heatContent"
-description: "The amount of heat energy available to be released by the transformation or use of a specified physical unit of an energy form (e.g., a ton of coal, a barrel of oil, a kilowatthour of electricity, a cubic foot of natural gas, or a pound of steam)."
+description: "The amount of heat energy available to be released by the transformation or use of a specified physical unit of an energy form (e.g., a ton of coal, a barrel of oil, a kilowatt hour of electricity, a cubic foot of natural gas, or a pound of steam)."
 descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=H"
 
 Node: dcid:generation
@@ -301,7 +301,7 @@ name: "Black liquor"
 
 Node: dcid:BlastFurnaceGas
 typeOf: dcs:EnergySourceEnum
-name: "Blast furnacae gas"
+name: "Blast furnace gas"
 
 Node: dcid:BrownCoal
 typeOf: dcs:EnergySourceEnum
@@ -1119,18 +1119,18 @@ shortDisplayName: "kWh"
 description: "Unit of energy that equals 3600 kilojoules (3.6 megajoules)."
 descriptionUrl: "https://en.wikipedia.org/wiki/Kilowatt-hour"
 
-Node: dcid:BillionKilowatthours
+Node: dcid:BillionKilowattHours
 typeOf: dcs:EnergyUnitOfMeasure
-name: "BillionKilowatthours"
+name: "BillionKilowattHours"
 shortDisplayName: "bn kWh"
-description: "Unit of energy that equals 1,000,000 KilowattHours."
+description: "Unit of energy that equals 1,000,000,000 Kilowatt Hours."
 descriptionUrl: "https://en.wikipedia.org/wiki/Kilowatt-hour"
 
 Node: dcid:MegawattHour
 typeOf: dcs:EnergyUnitOfMeasure
 name: "MegawattHour"
 shortDisplayName: "MWh"
-description: "Unit of energy that equals 1000 KilowattHours."
+description: "Unit of energy that equals 1000 Kilowatt Hours."
 
 Node: dcid:GigawattHour
 typeOf: dcs:EnergyUnitOfMeasure
@@ -1144,12 +1144,6 @@ name: "Terajoule"
 shortDisplayName: "TJ"
 description: "Unit of energy that equals one trillion joules or about 0.278 GWh."
 
-Node: dcid:Terajoules
-typeOf: dcs:EnergyUnitOfMeasure
-name: "Terajoules"
-shortDisplayName: "TJ"
-description: "Unit of energy each equal one trillion joules or about 0.278 GWh."
-
 Node: dcid:Barrel
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Barrel"
@@ -1161,19 +1155,19 @@ Node: dcid:BillionBarrels
 typeOf: dcs:VolumeUnitOfMeasure
 name: "BillionBarrels"
 shortDisplayName: "Bbbl"
-description: "A barrel is one of several units of volume applied in various contexts. Bbbl is a billion barrels worth of volume."
+description: "A barrel is one of several units of volume applied in various contexts. bbbl is a billion barrels worth of volume."
 
 Node: dcid:MillionsBarrels
 typeOf: dcs:VolumeUnitOfMeasure
 name: "MillionsBarrels"
 shortDisplayName: "Mbbl"
-description: "A barrel is one of several units of volume applied in various contexts. Mbbl is a million barrels worth of volume."
+description: "A barrel is one of several units of volume applied in various contexts. mbbl is a million barrels worth of volume."
 
 Node: dcid:CubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Cubic meter"
 shortDisplayName: "m³"
-description: "It is the volume of a cube with edges one metre in length, also equal to 1000 liters."
+description: "It is the volume of a cube with edges one meter in length, also equal to 1000 liters."
 
 Node: dcid:CubicFoot
 typeOf: dcs:VolumeUnitOfMeasure
@@ -1241,13 +1235,13 @@ description: "It is the volume of a cube with edges one billion meters in length
 Node: dcid:StandardCubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
 name: "MillionMetricStandardCubicMeters"
-description: "Standard cubic meter (SCM) is a unit of measure for amount of gas in one cubic meter at 15° Celcius and an absolute pressure of 1.01325 bar."
-descriptionUrl: "https://www.lawinsider.com/dictionary/standard-cubic-metre"
+description: "Standard cubic meter (SCM) is a unit of measure for amount of gas in one cubic meter at 15° celsius and an absolute pressure of 1.01325 bar."
+descriptionUrl: "https://www.lawinsider.com/dictionary/standard-cubic-meter"
 
 Node: dcid:MillionMetricStandardCubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
 name: "MillionMetricStandardCubicMeter"
-description: "Million metric standard cubic meter (MMSCM) is a unit of measure for amount of gas in 1000000 cubic meters at 15° Celcius and an absolute pressure of 1.01325 bar."
+description: "Million metric standard cubic meter (MMSCM) is a unit of measure for amount of gas in 1000000 cubic meters at 15° celsius and an absolute pressure of 1.01325 bar."
 
 Node: dcid:USCentPerKilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
@@ -1297,7 +1291,7 @@ shortDisplayName: "USD/yr"
 Node: dcid:KilowattHourPerSquareFoot
 typeOf: dcs:EnergyUnitOfMeasure
 name: "KilowattHourPerSquareFoot"
-description: "Unit of energy intensity of one KilowattHour for a unit area of one SquareFoot."
+description: "Unit of energy intensity of one Kilowatt Hour for a unit area of one SquareFoot."
 shortDisplayName: "kWh/ft²"
 
 Node: dcid:CubicFootPerSquareFoot
@@ -1324,17 +1318,17 @@ name: "CoalConsumingSectorEnum"
 Node: dcid:ElectricUtility
 typeOf: dcs:CoalConsumingSectorEnum
 name: "ElectricUtility"
-description: "Power plants owned by regulated electric utilties"
+description: "Power plants owned by regulated electric utilities"
 
 Node: dcid:ElectricUtilityNonCogen
 typeOf: dcs:CoalConsumingSectorEnum, dcs:ElectricityProductionSectorEnum
 name: "ElectricUtilityNonCogen"
-description: "Power plants owned by regulated electric utilties that produce electricity only"
+description: "Power plants owned by regulated electric utilities that produce electricity only"
 
 Node: dcid:ElectricUtilityCogen
 typeOf: dcs:CoalConsumingSectorEnum, dcs:ElectricityProductionSectorEnum
 name: "ElectricUtilityCogen"
-description: "Power plants owned by regualted electric utilities that produce both electricity and useful heat"
+description: "Power plants owned by regulated electric utilities that produce both electricity and useful heat"
 
 Node: dcid:CommercialAndInstitutional
 typeOf: dcs:CoalConsumingSectorEnum
@@ -1523,7 +1517,7 @@ typeOf: dcid:Property
 domainIncludes: dcid:PowerPlant
 
 Node: dcid:gridVoltage
-description: "Plant's grid voltage at point of interconnection to transmission or distibution facilities."
+description: "Plant's grid voltage at point of interconnection to transmission or distribution facilities."
 rangeIncludes: dcid:Quantity
 typeOf: dcid:Property
 domainIncludes: dcid:PowerPlant
@@ -1884,7 +1878,7 @@ rangeIncludes: schema:Text
 
 Node: dcid:locationDesignationFERCReporting
 domainIncludes: dcs:PowerPlantUnit
-description: "The designation used to report ths specific location of the wholesale sales transactions to Federal Electricity Regulatory Commission (FERC) for the Electric Quarterly Report"
+description: "The designation used to report the specific location of the wholesale sales transactions to Federal Electricity Regulatory Commission (FERC) for the Electric Quarterly Report"
 name: "locationDesignationFERCReporting"
 typeOf: schema:Property
 rangeIncludes: schema:Text
@@ -1925,9 +1919,9 @@ name: "synchronizedToTransmissionGrid"
 typeOf: schema:Property
 rangeIncludes: schema:Boolean
 
-Node: dcid:turbinesorHydroneticBuoys
+Node: dcid:turbinesOrHydroneticBuoys
 domainIncludes: dcs:PowerPlantUnit
-name: "turbinesorHydroneticBuoys"
+name: "turbinesOrHydroneticBuoys"
 typeOf: schema:Property
 rangeIncludes: schema:Number
 
@@ -1973,9 +1967,9 @@ name: "plannedNewNameplateCapacity"
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
 
-Node: dcid:timefromColdShutdowntoFullLoad
+Node: dcid:timeFromColdShutdownToFullLoad
 domainIncludes: dcs:PowerPlantUnit
-name: "timefromColdShutdowntoFullLoad"
+name: "timeFromColdShutdownToFullLoad"
 typeOf: schema:Property
 rangeIncludes: schema:Duration
 
@@ -2585,7 +2579,7 @@ specializationOf: dcid:Agriculture
 Node: dcid:ClimateTrace_OtherAgriculture
 typeOf: dcs:EmissionSourceEnum
 name: "Other Agriculture"
-description: "Greenhouse gas emissions arising from agriculture that are not included in any other subsector."
+description: "Greenhouse gas emissions arising from agriculture that are not included in any other sub sector."
 specializationOf: dcid:Agriculture
 
 Node: dcid:FuelCombustionInBuildings
@@ -2621,9 +2615,9 @@ typeOf: dcs:EmissionSourceEnum
 name: "Fluorchemical Production"
 specializationOf: dcid:Manufacturing
 
-Node: dcid:FoodProcessingBeveragesTobbacoProduction
+Node: dcid:FoodProcessingBeveragesTobaccoProduction
 typeOf: dcs:EmissionSourceEnum
-name: "Food-Processing Beverages Tobbaco Production"
+name: "Food-Processing Beverages Tobacco Production"
 specializationOf: dcid:Manufacturing
 
 Node: dcid:SteelManufacturing
@@ -2692,7 +2686,7 @@ description: "Greenhouse gas emissions from electricity generation."
 Node: dcid:ClimateTrace_OtherEnergyUse
 typeOf: EmissionSourceEnum
 name: "Other Fossil Fuel Operations"
-description: "Greenhouse gas emissions arising from fuel combustion that are not included in any other subsector."
+description: "Greenhouse gas emissions arising from fuel combustion that are not included in any other sub sector."
 specializationOf: dcid:FossilFuelOperations
 
 Node: dcid:MineralExtraction
@@ -2733,7 +2727,7 @@ specializationOf: dcid:MineralExtraction
 Node: dcid:ClimateTrace_OtherMineralExtraction
 typeOf: EmissionSourceEnum
 name: "Other Mineral Extraction"
-description: "Greenhouse gas emissions arising from mineral extraction that are not included in any other subsector."
+description: "Greenhouse gas emissions arising from mineral extraction that are not included in any other sub sector."
 specializationOf: dcid:MineralExtraction
 
 Node: dcid:FluorinatedGases
@@ -2744,7 +2738,7 @@ description: "Greenhouse gas emissions from the release of fluorinated gases use
 Node: dcid:ForestryAndLandUse
 typeOf: dcs:EmissionSourceEnum
 name: "Forestry And Land Use"
-description: "Forest clearing and fires in forests, shrublands, and savannas."
+description: "Forest clearing and fires in forests, shrub lands, and savannas."
 
 Node: dcid:ForestClearing
 typeOf: EmissionSourceEnum
@@ -2767,7 +2761,7 @@ specializationOf: dcid:ForestryAndLandUse
 Node: dcid:ShrublandFire
 typeOf: EmissionSourceEnum
 name: "Shrubland Fire"
-description: "Fires in shrublands."
+description: "Fires in shrub lands."
 specializationOf: dcid:ForestryAndLandUse
 
 Node: dcid:ForestLandSink
@@ -2833,7 +2827,7 @@ specializationOf: dcid:ForestryAndLandUse
 Node: dcid:PeatlandFire
 typeOf: EmissionSourceEnum
 name: "Peatland Fire"
-description: "Fires in peatlands."
+description: "Fires in peat lands."
 specializationOf: dcid:ForestryAndLandUse
 
 Node: dcid:ForestGrasslandWetlandSink
@@ -2869,7 +2863,7 @@ specializationOf: dcid:ForestryAndLandUse
 Node: dcid:NetGrasslandEmissions
 typeOf: EmissionSourceEnum
 name: "Net Grassland Emissions"
-description: "Emissions and removals of CO2 from living biomass in grasslands and shrublands."
+description: "Emissions and removals of CO2 from living biomass in grasslands and shrub lands."
 specializationOf: dcid:ForestryAndLandUse
 
 Node: dcid:NetWetlandEmissions
@@ -2898,7 +2892,7 @@ specializationOf: dcid:ElectricityGeneration
 Node: dcid:ClimateTrace_OtherEnergyUse
 typeOf: EmissionSourceEnum
 name: "ClimateTrace Other Energy Use"
-description: "Energy-producing industries’ energy use not included in the other energy subsectors."
+description: "Energy-producing industries’ energy use not included in the other energy sub sectors."
 specializationOf: dcid:ElectricityGeneration
 
 Node: dcid:FuelCombustionForAviation
