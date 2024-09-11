@@ -2724,7 +2724,7 @@ description: "Further specification on the type of a claim, application, or requ
 Node: dcid:benefitProgram
 name: "benefitProgram"
 typeOf: schema:Property
-domainIncludes: dcs:UnemploymentInsuranceClaim
+domainIncludes: dcs:UnemploymentInsuranceClaim, dcid:Municipality
 rangeIncludes: dcs:UnemploymentInsuranceProgramEnum, dcs:BenefitProgramEnum
 description: "A program that offers benefits. E.g. SNAP (foodstamps), UI (Unemployment Insurance), etc."
 
@@ -4183,3 +4183,9 @@ Node: dcid:Per1000Males
 typeOf: dcs:UnitOfMeasure
 name: "Per 1k males"
 description: "Per 1000 male population."
+
+Node: dcid:Municipality
+typeOf: dcid:Thing
+name: "Municipality"
+
+
