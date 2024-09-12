@@ -18,7 +18,7 @@ Node: dcid:wagesDaily
 typeOf: schema:Property
 name: "wagesDaily"
 rangeIncludes: schema:Number
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Amount
 
 Node: dcid:wagesWeekly
 typeOf: schema:Property
@@ -238,14 +238,14 @@ Node: BLSSeasonallyAdjustedEnum
 dcid: dcs:BLSSeasonallyAdjusted
 typeOf: dcs:SeasonalAdjustmentEnum
 name: "BLSSeasonallyAdjusted"
-description: "Indicates the adjustment of time series data to eliminate the effect of intrayear variations which tend to occur during the same period on an annual basis"
+description: "Indicates the adjustment of time series data to eliminate the effect of intra year variations which tend to occur during the same period on an annual basis"
 descriptionUrl: "https://www.bls.gov/help/def/ce.htm"
 
 Node: BLSSeasonallyUnadjustedEnum
 dcid: dcs:BLSSeasonallyUnadjusted
 typeOf: dcs:SeasonalAdjustmentEnum
 name: "BLSSeasonallyUnadjusted"
-description: "Indicates raw time series data without adjustments to eliminate the effect of intrayear variations."
+description: "Indicates raw time series data without adjustments to eliminate the effect of intra year variations."
 
 Node: dcid:jobChangeEvent
 name: "jobChangeEvent"
