@@ -173,7 +173,7 @@ dcid: "incomeStatus"
 name: "incomeStatus"
 description: "Describes whether a person has income or not, over a given period, usually in the previous 12 months."
 rangeIncludes: dcs:IncomeStatusEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcid:Household
 
 Node: incomeDeficit
 dcid: "incomeDeficit"
@@ -245,9 +245,9 @@ typeOf: schema:Property
 
 Node: povertyStatus
 dcid: "povertyStatus"
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcid:Household
 name: "povertyStatus"
-rangeIncludes: dcs:USC_PovertyStatusEnum
+rangeIncludes: dcs:USC_PovertyStatusEnum, dcs:PovertyStatusEnum
 typeOf: schema:Property
 
 ## race defined in K12 (we probably want to move it to dcschema?)

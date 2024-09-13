@@ -69,14 +69,12 @@ typeOf: dcs:Property
 name: "governmentId"
 domainIncludes: dcid:Person
 rangeIncludes: dcid:GovernmentIdEnum
-isProvisional: dcs:True
 
 Node: dcid:registrationStatus
 typeOf: dcs:Property
 name: "registrationStatus"
-domainIncludes: dcid:BirthEvent, dcid:MortalityEvent
+domainIncludes: dcid:BirthEvent, dcid:MortalityEvent, dcid:Household
 rangeIncludes: dcid:RegistrationStatusEnum
-isProvisional: dcs:True
 
 Node: dcid:processingStatus
 typeOf: dcs:Property
