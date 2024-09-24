@@ -4183,3 +4183,22 @@ Node: dcid:Per1000Males
 typeOf: dcs:UnitOfMeasure
 name: "Per 1k males"
 description: "Per 1000 male population."
+
+Node: dcid:socialVulnerabilityIndex
+typeOf: dcid:Property
+name: "socialVulnerabilityIndex"
+domainIncludes: dcid:Person
+description: "CDC/ATSDR SVI or SVI is a place-based index, database, and mapping application designed to identify and quantify communities experiencing social vulnerability"
+descriptionUrl: "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+
+Node: dcid:vulnerabilityStatus
+typeOf: dcid:Property
+name: "vulnerabilityStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:VulnerabilityStatusEnum
+
+Node: dcid:percentileRankValue
+typeOf: dcid:Property
+name: "percentileRankValue"
+description: "Percentile ranking values range from 0 to 1, with higher values indicating greater social vulnerability"
+descriptionUrl: "https://www.atsdr.cdc.gov/placeandhealth/svi/documentation/SVI_documentation_2022.html"
