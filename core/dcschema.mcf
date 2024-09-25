@@ -2669,9 +2669,9 @@ name: "scaledScore"
 
 Node: dcid:isic
 name: "isic"
-rangeIncludes: dcs:ISICv3.1Enum
+rangeIncludes: dcs:ISICv3.1Enum, dcs:ISICv4.1Enum
 typeOf: schema:Property
-domainIncludes: dcs:EconomicActivity
+domainIncludes: dcs:EconomicActivity, dcs:Waste
 description: "This specifies the economic activity type from the International Standard Industrial Classification of All Economic Activities, Version 3.1."
 
 Node: dcid:EmergencyRoom
@@ -4207,3 +4207,186 @@ Node: dcid:StatisticalRegion
 name: "StatisticalRegion"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
+
+###oecd waste sector by generation
+
+Node: dcid:wasteType
+typeOf: dcs:Property
+name: "wasteType"
+domainIncludes: dcid:Waste
+rangeIncludes: dcid:WasteTypeEnum
+
+Node: dcid:Waste
+typeOf: dcid:Thing
+name: "Waste"
+
+Node: dcid:WasteTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "WasteTypeEnum"
+
+Node: dcid:PrimaryWaste
+typeOf: dcid:WasteTypeEnum
+name: "Primary Waste"
+
+Node: dcid:SecondaryWasteAndSortingResidue
+typeOf: dcid:WasteTypeEnum
+name: "Secondary Waste And Sorting Residue"
+
+Node: dcid:RecoveredWaste
+typeOf: dcid:WasteTypeEnum
+name: "Recovered Waste"
+
+Node: dcid:RecycledWaste
+typeOf: dcid:WasteTypeEnum
+name: "Recycled Waste"
+
+Node: dcid:InertMineral
+typeOf: dcid:WasteTypeEnum
+name: "Inert Mineral"
+
+
+Node: dcid:ISICv4.1Enum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ISICv4.1Enum"
+
+Node: dcid:ISIC_V4/01-03
+typeOf: dcid:ISICv4.1Enum
+name: "Agriculture, forestry and fishing"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/10-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacturing industries"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/43
+typeOf: dcid:ISICv4.1Enum
+name: "Construction"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/36-39
+typeOf: dcid:ISICv4.1Enum
+name: "Water supply, sewerage, waste management and remediation activities"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/31-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of furniture; jewellery, musical instruments, toys, repair and installation of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/17-18
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of paper and paper products; printing and reproduction of recorded media"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/13-15
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of textiles, wearing apparel, leather and related products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/10-12
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of food products; beverages and tobacco products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/19
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of coke and refined petroleum products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/29-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of other non-metallic mineral products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/16
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/35
+typeOf: dcid:ISICv4.1Enum
+name: "Electricity, gas, steam and air conditioning supply"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/94-96
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of electronic and optical products, electrical equipment, motor vehical and other transport equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/26-30
+typeOf: dcid:ISICv4.1Enum
+name: "Other Activities"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/25-28
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/23
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of basic metals and fabricated metal products, machinery and equipment; furnitures; jewellery, musical instrument, toys; repair and installation of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/05-09
+typeOf: dcid:ISICv4.1Enum
+name: "Mining and Quarrying"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/99
+typeOf: dcid:ISICv4.1Enum
+name: "Undifferentiated goods- and services-producing activities of private households for own use"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/17
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of paper and paper products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/24-25
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of basic metals and fabricated metal products, except machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/24
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of fabricated metal products, of computer, electronic and optical products, of electrical equipment, of machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/24-33
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of basic metals"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/01
+typeOf: dcid:ISICv4.1Enum
+name: "Crop and animal production, hunting and related service activities"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/25
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of fabricated metal products, except machinery and equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/18
+typeOf: dcid:ISICv4.1Enum
+name: "Printing and reproduction of recorded media"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/20
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of chemicals and pharmaceuticals"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/22
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of rubber and plastics products"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
+
+Node: dcid:ISIC_V4/29-30
+typeOf: dcid:ISICv4.1Enum
+name: "Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment"
+descriptionUrl: "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"
