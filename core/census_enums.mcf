@@ -1126,6 +1126,20 @@ dcid: "ForeignBornNotBornAtSea"
 specializationOf: dcs:ForeignBorn
 name: "ForeignBornNotBornAtSea"
 
+Node: PovertyStatusEnum
+dcid: "PovertyStatusEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PovertyStatusEnum"
+
+Node: dcid:ExtremePoverty
+typeOf: dcid:PovertyStatusEnum
+name: "Extreme Poverty"
+
+Node: dcid:InPovertyAccordingToBolsaFamilyProgram
+typeOf: dcid:PovertyStatusEnum
+name: "In Poverty According To Bolsa Family Program"
+
 Node: USC_PovertyStatusEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
