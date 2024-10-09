@@ -259,6 +259,45 @@ typeOf: dcs:AdjustmentTypeEnum
 name: "AgeAdjustedPrevalence"
 description: "Indicates age-adjusted prevalance (often used for health outcomes)."
 
+Node: dcid:healthRelatedSocialNeed
+name: "healthRelatedSocialNeed"
+typeOf: schema:Property
+rangeIncludes: dcs:HealthRelatedSocialNeedEnum
+description: "Health-related social needs are the social factors that significantly impact a person's health and well-being, such as housing, transportation, food security, and social support."
+
+Node: dcid:HealthRelatedSocialNeedEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "HealthRelatedSocialNeedEnum"
+
+Node: dcid:LackReliableTransport
+typeOf: dcs:HealthRelatedSocialNeedEnum
+name: "LackReliableTransport"
+
+Node: dcid:HousingInsecurity
+typeOf: dcs:HealthRelatedSocialNeedEnum
+name: "HousingInsecurity"
+
+Node: dcid:LackSocialAndEmotionalSupport
+typeOf: dcs:HealthRelatedSocialNeedEnum
+name: "LackSocialAndEmotionalSupport"
+
+Node: dcid:ReceivedFoodStamp
+typeOf: dcs:HealthRelatedSocialNeedEnum
+name: "ReceivedFoodStamp"
+
+Node: dcid:FoodInsecurity
+typeOf: dcs:HealthRelatedSocialNeedEnum
+name: "FoodInsecurity"
+
+Node: dcid:UtilityServiceShutoffThreat
+typeOf: dcs:HealthRelatedSocialNeedEnum
+name: "UtilityServiceShutoffThreat"
+
+Node: dcid:SociallyIsolated
+typeOf: dcs:HealthRelatedSocialNeedEnum
+name: "SociallyIsolated"
+
 Node: dcid:particulateMatter2.5
 name: "particulateMatter2.5"
 typeOf: schema:Property
