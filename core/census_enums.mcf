@@ -231,6 +231,12 @@ subClassOf: schema:Enumeration
 dcid: "USC_EducationalAttainmentEnum"
 name: "USC_EducationalAttainmentEnum"
 
+Node: EducationalAttainmentEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+dcid: "EducationalAttainmentEnum"
+name: "EducationalAttainmentEnum"
+
 Node: dcid:parentEducationStatus
 typeOf: schema:Property
 domainIncludes: dcs:School
@@ -649,6 +655,11 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 dcid: "USC_LanguageSpokenAtHomeEnum"
 name: "USC_LanguageSpokenAtHomeEnum"
+
+Node: dcid:LanguageSpokenAtHomeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "LanguageSpokenAtHomeEnum"
 
 Node: Telugu
 typeOf: dcs:USC_LanguageSpokenAtHomeEnum
@@ -1397,6 +1408,12 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 dcid: "USC_SpouseAbsentReasonEnum"
 name: "USC_SpouseAbsentReasonEnum"
+
+Node: SpouseAbsentReasonEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+dcid: "SpouseAbsentReasonEnum"
+name: "SpouseAbsentReasonEnum"
 
 Node: Other
 typeOf: dcs:USC_SpouseAbsentReasonEnum
@@ -2439,3 +2456,25 @@ Node: dcid:WorkedFromHome
 typeOf: dcid:USC_CommuteModeEnum
 description: "The worked from home mode has started from covid period and it is for a short time."
 name: "WorkedFromHome"
+
+Node: dcid:ExtremePoverty
+typeOf: dcid:PovertyStatusEnum
+name: "Extreme Poverty"
+
+Node: dcid:Poverty
+typeOf: dcid:PovertyStatusEnum
+name: "Poverty"
+
+Node: dcid:BelowPovertyLine
+typeOf: dcid:PovertyStatusEnum
+name: "Below Poverty Line"
+
+Node: dcid:PovertyGapRatio
+typeOf: dcid:PovertyStatusEnum
+name: "Poverty Gap Ratio"
+
+Node: dcid:Ghana_InformalOrConsensualUnion
+typeOf: dcs:MaritalStatusEnum
+name: "Ghana_InformalOrConsensualUnion"
+description: "Consensual union refers to the situation when two persons belong to the same household, and have a ‘marriage-like’ relationship with each other, and are not married to or in a registered partnership with each other."
+descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Consensual_union"

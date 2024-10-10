@@ -222,7 +222,7 @@ Node: dcid:landCoverType
 typeOf: schema:Property
 description: "Identifies the type of physical material that is at the surface of the earth."
 descriptionUrl: "https://en.wikipedia.org/wiki/Land_cover"
-domainIncludes: dcs:LandCover
+domainIncludes: dcs:LandCover, dcs:Person
 rangeIncludes: dcs:LandCoverClassEnum
 name: "landCoverType"
 
@@ -1279,3 +1279,15 @@ name: "percentDeviationValue"
 description: "Percentage change between actual and normal measurements."
 rangeIncludes: dcs:Number
 domainIncludes: dcs:Place
+
+Node: dcid:Coastal
+typeOf: dcid:LandCoverClassEnum
+name: "Coastal"
+description: "Coastal is used to refer to things that are in the sea or on the land near a coast"
+descriptionUrl: "https://www.collinsdictionary.com/dictionary/english/coastal-area"
+
+Node: dcid:Savannah
+typeOf: dcid:LandCoverClassEnum
+name: "Savannah"
+description: "A large, flat area of land covered with grass, usually with few trees, that is found in hot countries, especially in Africa."
+descriptionUrl: "https://dictionary.cambridge.org/dictionary/english/savannah"

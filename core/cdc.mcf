@@ -9,7 +9,7 @@ Node: dcid:healthPrevention
 typeOf: schema:Property
 name: "healthPrevention"
 description: "This property describes preventive health measures such as going or not going to a dentist."
-rangeIncludes: dcs:HealthPreventionEnum
+rangeIncludes: dcs:HealthPreventionEnum, dcs:Property
 domainIncludes: schema:Person
 
 Node: dcid:diseaseControlMeasure
@@ -214,7 +214,6 @@ name: "Moderately Elevated Blood Pressure"
 Node: dcid:SeverelyElevatedBloodPressure
 typeOf: dcs:HealthOutcomeEnum
 name: "Severely Elevated Blood Pressure"
-
 
 Node: dcid:Mammography
 name: "Mammography"
@@ -1179,3 +1178,7 @@ Node: dcid:YersiniaUnknown
 typeOf: dcs:EtiologyEnum
 specializationOf: dcs:YersiniaEtiology
 name: "Yersinia unknown"
+
+Node: dcid:InsecticideTreatedBedNets
+typeOf: dcid:HealthPreventionEnum
+name: "Insecticide Treated Bed Nets"
