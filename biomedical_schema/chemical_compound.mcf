@@ -21,7 +21,7 @@ description: "An antibody is a kind of protective protein which is produced by t
 Node: dcid:BiomedicalEntity
 name: "BiomedicalEntity"
 typeOf: schema:Class
-subClassOf: schema:BioChemEntity
+subClassOf: dcs:Thing
 description: "Biomedical related entities."
 
 Node: dcid:ChemicalCompound
@@ -545,20 +545,6 @@ domainIncludes: dcs:Gene
 rangeIncludes: schema:Boolean
 description: "The Clinical Pharmacogenetics Implementation Consortium (CPIC) was established in 2009 as a shared project between PharmGKB and the Pharmacogenomics Research Network (PGRN). CPIC is funded by the NIH/NHGRI. This indicates whether a gene has a drug dosing guideline issued by the CPIC that is associated with it."
 descriptionUrl: "https://www.pharmgkb.org/page/cpic"
-
-Node: dcid:hasGenomicCoordinates
-name: "hasGenomicCoordinates"
-typeOf: schema:Property
-domainIncludes: dcs:GenomeAnnotation
-rangeIncludes: dcs:GenomicCoordinates
-description: "Genomic coordinates specify the location of the position of an element within a specified genome assembly. It is a specified set of chromosome start_position end_position."
-
-Node: dcid:hasGeneticVariantAnnotation
-name: "hasGeneticVariantAnnotation"
-typeOf: schema:Property
-domainIncludes: dcs:Gene
-rangeIncludes: schema:Boolean
-description: "Indicates whether there are gene has genetic variants that are associated with it."
 
 Node: dcid:humanCellType
 typeOf: schema:Property

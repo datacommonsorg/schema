@@ -48,13 +48,6 @@ subClassOf: dcs:GenomeAnnotation
 description:  "A single-nucleotide polymorphism, which is a substitution of a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population. These are defined by dbSNP and includes small indels as well."
 descriptionUrl: "http://rohsdb.usc.edu/GBshape/cgi-bin/hgTables?db=hg19&hgta_group=varRep&hgta_track=snp137&hgta_table=snp137&hgta_doSchema=describe+table+schema"
 
-Node: dcid:GeneticVariantGeneAssociation
-name: "GeneticVariantGeneAssociation"
-typeOf: schema:Class
-subClassOf: dcs:GeneticAssociation
-description:  "An association between a genetic variant and a gene in a given tissue. This is determined by performing a regression analysis on paired genome sequencing and RNA-sequencing across a population."
-descriptionUrl: "https://storage.googleapis.com/gtex_analysis_v6p/single_tissue_eqtl_data/README_eQTL_v6p.txt"
-
 Node: dcid:GeneticVariantGeneticVariantAssociation
 name: "GeneticVariantGeneticVariantAssociation"
 typeOf: schema:Class
@@ -79,11 +72,43 @@ typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description:  "The unit of assembling a reference genome to which the associated nucleotides have been aligned. Each unit is typically defined by the location of the cell from which the DNA is located such as the nucleus or an organelle."
 
+Node: dcid:GeneMendelianInheritanceInManIdentifierAssociation
+name: "GeneMendelianInheritanceInManIdentifierAssociation"
+typeOf: schema:Class
+subClassOf: dcs:GeneticAssociation
+description: "Report of the relationship between MIM numbers (OMIM), GeneIDs, and Records in MedGen."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:GeneOntologyTerm
+name: "GeneOntologyTerm"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+abbreviation: "GO Term"
+description: "A Gene Ontology (GO) term is a controlled vocabulary term used to describe the functions of genes and gene products (proteins and RNA) in a standardized way. It provides a structured representation of biological knowledge, enabling researchers to annotate genes and gene products, compare and integrate data, and explore networks and pathways. It has a heirarchical structure and consists of three seperate ontologies: Biological Process (BP), Molecular Function (MF), and Cellular Component (CC)."
+
+Node: dcid:GeneReferenceIntoFunction
+name: "GeneReferenceIntoFunction"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "A GeneRIF (Gene Reference Into Function) is a concise phrase describing the function of a gene. It provides a quick summary of the gene's role, linking the gene to its known or predicted biological function. GeneRIFs are manually curated from published literature and stored in the NCBI Gene database."
+
 Node: dcid:GenomicCoordinates
 name: "GenomicCoordinates"
 typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
-description: "The location in the genome of an element of interest. This is reported in the standardized format of [chrom, chromStart, chromEnd]. These coordinates are specific to any given genome assembly."
+description: "The location in the genome or DNA conting of an element of interest. This is reported in the standardized format of [chrom, chromStart, chromEnd]. These coordinates are specific to any given genome assembly."
+
+Node: dcid:GenomicPosition
+name: "GenomicPosition"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "The precise nucleotide location in thegenome or DNA contigof an element of interest. This is reported in the standardized format of [chrom position]. This position is specific to any given genome assembly. Genomic position is typically used to refer to genetic variants"
+
+Node: dcid:GenomicRegion
+name: "GenomicRegion"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "A genomic region refers to a contiguous stretch of DNA within an organism's genome. It can encompass a single gene, a group of genes, regulatory elements, or any other segment of DNA with a defined start and end point."
 
 Node: dcid:NonCodingRNA
 name: "NonCodingRNA"
@@ -98,8 +123,21 @@ typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description: "A recorded nucleotide on the positive strand of a denoted genome assembly."
 
-Node: dcid:RNATranscript
-name: "RNATranscript"
+Node: dcid:MaturePeptide
+name: "MaturePeptide"
+typeOf: schema:Class
+subClassOf: dcs:Protein
+description: "A mature peptides represents the final, functional form of a protein after it has undergone post-translational modifications and processing. These modifications can include: cleavage, chemical modifications, and formation of disulfide bonds. It represents the active form of the protein that carries out its biological role. Mature peptides play crucial roles in various cellular processes, including signaling, enzymatic activity, structural support, and immune response."
+
+Node: dcid:MendelianInheritanceInManEntity
+name: "MendelianInheritanceInManEntity"
+typeOf: schema:Class
+subClassOf: dcs:GenomeAnnotation
+description: "An entity representing a human gene or genetic phenotype in Online Mendelian Inheritance in Man (OMIM)."
+url: "https://www.omim.org/"
+
+Node: dcid:RnaTranscript
+name: "RnaTranscript"
 typeOf: schema:Class
 subClassOf: dcs:GenomeAnnotation
 description: "Recorded transcript. Unique identifier (GENCODE transcript ID for GENCODE Basic)."
@@ -117,8 +155,25 @@ typeOf: schema:Class
 subClassOf: dcs:SequenceOntologyTerm
 description: "These are the synonyms for a SequenceOntologyTerm node. This includes information about the closeness of the match with the SequenceOntologyTerm, the source of the information, and a string value of the synonym itself."
 
+Node: dcid:UmlsConceptUniqueIdentifier
+name: "UmlsConceptUniqueIdentifier"
+typeOf: schema:Class
+subClassOf: dcs:BiomedicalEntity
+synonym: "MedGen Concept ID", "CUI"
+description: "A Concept Unique Identifer (CUI) for a entity in MedGen, which is NCBI's portal to information about conditions and phenotypes related to Medical Genetics. Terms from the NIH Genetic Testing Registry (GTR), UMLS, HPO, Orphanet, ClinVar and other sources are aggregated into concepts, each of which is assigned a unique identifier and a preferred name and symbol. The core content of the record may include names, identifiers used by other databases, mode of inheritance, clinical features, and map location of the loci affecting the disorder. The concept identifier (CUI) is used to aggregate information about that concept, similar to the way NCBI Gene serves as a gateway to gene-related information."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/medgen/docs/help/"
 
 # Properties
+Node: dcid:agiLocusCode
+name: "agiLocusCode"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+synonym: "Arabidopsis Genome Initiative"
+description: "The Arabidopsis Information Resource (TAIR) is a continuously updated, online database of genetic and molecular biology data for the model plant Arabidopsis thaliana that provides a global research community with centralized access to data for over 30,000 Arabidopsis genes. Each locus in Arabidopsis is assigned a unique identifier, termed the AGI locus code (AGI, Arabidopsis Genome Initiative) which consists of the prefix At, followed by the chromosome identifier (1-5 or M or C) followed by g for gene and then a unique 5 digit number (e.g. At2g46340). These AGI locus codes are used by other Arabidopsis resources in addition to TAIR, such as Araport."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4545719/)."
+url: "https://www.arabidopsis.org/"
+
 Node: dcid:alleleOrigin
 name: "alleleOrigin"
 typeOf: schema:Property
@@ -133,12 +188,47 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:GeneticVariant
 description: "The allele of a genetic variant observed within a population."
 
+Node: dcid:allianceOfGenomeResourcesId
+name: "allianceOfGenomeResourcesId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by the Alliance of Genome Resources, which is a consortium of seven model organism databases (MODs) and the Gene Ontology (GO) Consortium whose goal is to provide an integrated view of their data to all biologists, clinicians and other interested parties.The primary mission of the Alliance of Genome Resources (the Alliance) is to develop and maintain sustainable genome information resources that facilitate the use of diverse model organisms in understanding the genetic and genomic basis of human biology, health and disease. The seven model organism databases managed by the consortium is as follows: FlyBase, Mouse Genome Database (MGD), Rat Genome Database (RGD), Saccharomyces Genome Database (SGD), WormBase, XenBase, Zebrafish Information Network (ZFIN), and the Genome Ontology Consortium (GOC)."
+url: "https://www.alliancegenome.org/"
+
+Node: dcid:animalQuantitativeTraitLociId
+name: "animalQuantitativeTraitLociId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+abbreviation: "animal QTL Id"
+description: "The gene identifier used by The Animal Quantitative Trait Loci (QTL) Database (Animal QTLdb), a database that strives to collect all publicly available trait mapping data, i.e. QTL (phenotype/expression, eQTL), candidate gene and association data (GWAS), and copy number variations (CNV) mapped to livestock animal genomes, in order to facilitate locating and comparing discoveries within and between species. It supports information on cattle, chickens, horses, goats, pigs, rainbow trout, and sheep."
+descriptionUrl: "https://www.animalgenome.org/cgi-bin/QTLdb/index"
+
 Node: dcid:alternateGeneSymbol
 name: "alternateGeneSymbol"
 typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Gene
 description: "Alternative or secondary symbol for a gene."
+
+Node: dcid:aphidBaseId
+name: "aphidBaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by AphidBase, which is a reference information system providing genomic resources for the study of aphids. It hosts several reference aphid genomes, including the first aphid genome that was sequenced: Acyrthosiphon pisum."
+descriptionUrl: "https://bipaa.genouest.org/is/aphidbase/"
+
+Node: dcid:asapId
+name: "asapId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+synonym: "A Systematic Annotation Package for Community Analysis of Genomes ID"
+description: "The gene identifier used by ASAP (a systematic annotation package for community analysis of genomes), which is is a relational database and web interface developed to store, update and distribute genome sequence data and gene expression data collected by or in collaboration with researchers at the University of Wisconsin - Madison."
+descriptionUrl: "http://asap.ahabs.wisc.edu/asap/ASAP1.htm"
+url: "https://asap.ahabs.wisc.edu/"
 
 Node: dcid:assemblyMethod
 dcid: "assemblyMethod"
@@ -175,12 +265,38 @@ rangeIncludes: schema:Number
 domainIncludes: dcs:GeneticVariant
 description: "Standard Error for the average heterozygosity."
 
+Node: dcid:beetleBaseId
+name: "beetleBaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifiers formatted as 'TC######' used by BeetleBase, which contains comprehensive genomic information for the red flour beetle Tribolium castaneum."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2808946/"
+
 Node: dcid:betaDistributionShapes
 name: "betaDistributionShapes"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The shape parameters of the fitted Beta distribution: B(shape1, shape2)."
+
+Node: dcid:bovineGenomeDatabaseId
+name: "bovineGenomeDatabaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+abbreviation: "BGD ID"
+description: "The gene identifier used by the Bovine Genome Database (BGD), which supports the efforts of bovine genomics researchers by providing data mining, genome navigation and annotation tools for the bovine reference genome based on the hereford cow, L1 Dominette 01449."
+descriptionUrl: "https://bovinegenome.elsiklab.missouri.edu/"
+
+Node: dcid:chickenGeneNomenclatureConsortiumId
+name: "chickenGeneNomenclatureConsortiumId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+abbreviation: "CGNC ID"
+description: "The gene identifier used by the Chicken Gene Nomenclature Consortium (CGNC), which is an international group of researchers interested in providing standardized gene nomenclature for chicken genes."
+descriptionUrl: "http://birdgenenames.org/cgnc/about.jsp"
 
 Node: dcid:chrom
 name: "chrom"
@@ -267,7 +383,7 @@ dcid:codingCoordinates
 name: "codingCoordinates"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:RNATranscript
+domainIncludes: dcs:RnaTranscript
 description: "Specifies the genomic position of the genomic coordinates of the coding region associated with a given RefSeq Accession number."
 
 Node: dcid:confidence
@@ -285,6 +401,14 @@ rangeIncludes: schema:Text
 description: "The number of contigs in the primary assembly."
 descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt"
 
+Node: dcid:cytogeneticMapLocation
+name: "cytogeneticMapLocation"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Gene
+description: "The location of the gene on the chromosome. Each chromosome has a distinct banding pattern, and each band is numbered to help identify a particular region of a chromosome. This method of mapping a gene to a particular band of the chromosome is called cytogenetic mapping. For example, the hemoglobin beta gene (HBB) is found on chromosome 11p15.4. This means that the HBB gene lies on the short arm (p) of chromosome 11 and is found at the band labeled 15.4."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/books/NBK22266/"
+
 Node: dcid:dbSNPBuildID
 name: "dbSNPBuildID"
 typeOf: schema:Property
@@ -299,6 +423,14 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:GeneticVariant
 description: "Accessions from dbVar for the genetic variant"
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/dbvar/"
+
+Node: dcid:dictyBaseGeneId
+name: "dictyBaseGeneId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by dictyBase, an online bioinformatics database dedicated to the model organism Dictyostelium discoideum."
+url: "http://dictybase.org/"
 
 Node: dcid:digitalObjectIdentifier
 name: "digitalObjectIdentifier"
@@ -330,27 +462,74 @@ rangeIncludes: dcs:DNASequenceRoleEnum
 domainIncludes: dcs:Chromosome
 description: "The role a defined sequence of DNA has in a genome assembly."
 
+Node: dcid:ecoCycAccessionId
+name: "ecoCycAccessionId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by BioCyc, which is a collection of 20,050 Pathway/Genome Databases (PGDBs) for model eukaryotes and for thousands of microbes, plus software tools for exploring them. BioCyc is an encyclopedic reference that contains curated data from 146,000 publications."
+descriptionUrl: "https://biocyc.org/"
+
+Node: dcid:echinoBaseGeneId
+name: "echinoBaseGeneId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by Echinobase, which supports the international research community by providing a centralized, integrated and easy to use web based resource to access the diverse and rich, functional genomics data of echinoderm species."
+descriptionUrl: "https://www.echinobase.org/echinobase/"
+
+Node: dcid:encodesGene
+name: "encodesGene"
+typeOf: schema:Property
+domainIncludes: dcs:GenomicRegion
+rangeIncludes: dcs:Gene
+description: "Indicates the gene that the specific genomic region of DNA encodes."
+
 Node: dcid:ensemblID
 name: "ensemblID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:Gene,dcs:GeneticVariantGeneAssociation,dcs:Protein
+domainIncludes: dcs:Gene,dcs:GeneGeneticVariantAssociation,dcs:Protein
 description: "Ensembl ID, which describes a particular gene or protein."
 
-Node: exonCoordinates
-dcid:exonCoordinates
-name: "exonCoordinates"
+Node: dcid:ensemblGeneId
+name: "ensemblGeneId"
 typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:RNATranscript
-description: "Specifies the genomic position of the coordinates of exons associated with a given RefSeq Accession number."
+domainIncludes: dcs:Gene, dcs:RnaTranscript, dcs:Protein
+rangeIncludes: schema:Text
+specializationOf: dcs:ensemblID
+description: "Gene identifier used by Ensembl, which represents a specific genomic locus that is predicted to encode a protein or a functional RNA molecule. They are formatted starting with the prefix 'ENSG' followed by a unique number (e.g. ENSG00000139618 (Human BRCA2 gene)). This locus represents all known transcripts and protein products that originate from this locus, even if they have different splicing patterns or protein isoforms."
 
-Node: dcid:exonFrame
-name: "exonFrame"
+Node: dcid:ensemblProteinId
+name: "ensemblProteinId"
 typeOf: schema:Property
-rangeIncludes: dcs:ExonFramesEnum
-domainIncludes: dcs:RNATranscript
-description: "Exon frame {0,1,2}, or -1 if no frame for exon."
+domainIncludes: dcs:Gene, dcs:RnaTranscript, dcs:Protein
+rangeIncludes: schema:Text
+specializationOf: dcs:ensemblID
+description: "Protein identifier used by Ensembl, which represents a specific protein sequence translated from an mRNA transcript. They are formatted starting with the prefix 'ENSP' followed by a unique number (e.g.  ENSP00000369406 (One of the protein isoforms encoded by the Human BRCA2 gene)). This represents the amino acid sequence that results from the specific combination of exons in the corresponding mRNA."
+
+Node: dcid:ensemblRapidReleaseId
+name: "ensemblRapidReleaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:RnaTranscript, dcs:Protein
+rangeIncludes: schema:Text
+specializationOf: dcs:ensemblID
+
+Node: dcid:ensemblRapidReleaseId
+name: "ensemblRapidReleaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:RnaTranscript, dcs:Protein
+rangeIncludes: schema:Text
+specializationOf: dcs:ensemblID
+description: "Ensembl Rapid Release IDs are unique identifiers assigned to genomic features (primarily genes, but also transcripts and proteins) in newly sequenced genomes that are made available quickly through Ensembl's Rapid Release pipeline. This program has a release cycle of two weeks and the identifiers provide early access to gene annotation for genomes that are not yet fully integrated into the main Ensembl database."
+
+Node: dcid:ensemblRnaId
+name: "ensemblRnaId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:RnaTranscript, dcs:Protein
+rangeIncludes: schema:Text
+specializationOf: dcs:ensemblID
+description: "RNA sequence identifier used by Ensembl, which represents a specific RNA transcript produced from a gene. This could be a messenger RNA (mRNA) that encodes a protein or other types of RNA such as long non-coding RNAs (lncRNAs) or microRNAs (miRNAs). They are formatted starting with the prefix 'ENST' followed by a unique number (e.g. ENST00000380152 (One of the many transcripts of the Human BRCA2 gene). This represents the specific combination of exons included in the mature transcript due to alternative splicing."
 
 Node: dcid:experimentalFactorOntologyID
 name: "experimentalFactorOntologyID"
@@ -360,6 +539,16 @@ domainIncludes: dcs:GeneticVariant
 description: "The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalog."
 descriptionUrl: "https://www.ebi.ac.uk/efo/"
 abbreviation: "EFO ID"
+
+Node: dcid:flyBaseId
+name: "flyBaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+specializationOf: dcs:allianceOfGenomeResourcesId
+description: "The gene identifier used by FlyBase. The aim of the FlyBase project is to provide an openly accessible centralized resource for Drosophila genetic, genomic and functional data. FlyBase is a member of the Alliance of Genome Resources."
+descriptionUrl:"https://wiki.flybase.org/wiki/FlyBase:About#FlyBase_Mission_Statement"
+url:"https://flybase.org/"
 
 Node: dcid:frequency
 typeOf: schema:Property
@@ -404,12 +593,122 @@ domainIncludes: dcs:GenomeAnnotation
 rangeIncludes: schema:Number
 description: "The total number of genes (both protein coding and non-coding genes) within a consensus region of DNA."
 
+Node: dcid:geneGeneOntologyTermRelationshipQualifier
+name: "geneGeneOntologyTermRelationshipQualifier"
+typeOf: schema:Property
+domainIncludes: dcs:GeneOntologyTerm
+rangeIncludes: dcs:GOTermQualifierEnum
+description: "The nature of the association between the gene product and the GO term."
+
 Node: dcid:geneID
 name: "geneID"
 typeOf: schema:Property
 rangeIncludes: dcs:Gene
 domainIncludes: dcs:GeneticAssociation,dcs:GeneticVariant,dcs:Protein
 description: "Link out to the Gene node associated with the current node."
+
+Node: dcid:geneOmimRelationshipComment
+name: "geneOmimRelationshipComment"
+typeOf: schema:Property
+domainIncludes: dcs:GeneMendelianInheritanceInManIdentifierAssociation
+rangeIncludes: dcs:GeneOmimRelationshipCommentEnum
+description: "The qualifiers OMIM provides when reporting a gene/phenotype relationship."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:geneOmimRelationshipSource
+name: "geneOmimRelationshipSource"
+typeOf: schema:Property
+domainIncludes: dcs:GeneMendelianInheritanceInManIdentifierAssociation
+rangeIncludes: dcs:GeneOmimRelationshipSourceEnum
+description: "The source of a report of a relationship between a MIM number that is a phenotype, and a Gene."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:geneOmimRelationshipType
+name: "geneOmimRelationshipType"
+typeOf: schema:Property
+domainIncludes: dcs:GeneMendelianInheritanceInManIdentifierAssociation
+rangeIncludes: dcs:GeneOmimRelationshipTypeEnum
+description: "The type of relationship between the MIM number and the GeneID. The current values are 'gene' (the MIM number associated with a Gene, or a Gene that is assigned to a record where the molecular basis of the disease is not known) and 'phenotype' the MIM number associated with a disease that is associated with a gene."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:geneOntologyCategory
+name: "geneOntologyCategory"
+typeOf: schema:Property
+domainIncludes: dcs:GeneOntologyTerm
+rangeIncludes: dcs:GeneOntologyCategoryEnum
+description: "Indicates which of the three ontologies to which the Gene Ontology Term belongs: Biological Process (BP), Cellular Component (CC), or Molecular Function (MF)."
+
+Node: dcid:geneOntologyEvidenceCode
+name: "geneOntologyEvidenceCode"
+typeOf: schema:Property
+domainIncludes: dcs:GeneOntologyTerm
+rangeIncludes: dcs:GOTermEvidenceCodeEnum
+description: "The evidence code that is associated with a Gene Ontology (GO) term. This indicates the type of evidence supporting the association between the gene product and the GO term (e.g., experimental, computational, or other evidence)."
+
+Node: dcid:geneOntologyId
+name: "geneOntologyId"
+typeOf: schema:Property
+domainIncludes: dcs:GeneOntologyTerm
+rangeIncludes: dcs:GOTermEvidenceCodeEnum
+description: "Every term has a human-readable term name - e.g. mitochondrion, glucose transmembrane transport, or amino acid building - and a GO ID, a unique seven digit identifier prefixed by GO:, e.g. GO:0005739, GO:1904659, or GO:0016597."
+descriptionUrl: "https://geneontology.org/docs/GO-term-elements"
+
+Node: dcid:geneOrtholog
+name: "geneOrtholog"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "Orthologs are genes in different specise taht can be traced back to the sam gene in the most recent common ancestor."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:genePotentialReadthroughSibling
+name: "genePotentialReadthroughSibling"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "A gene that is located close to another gene on the same DNA strand and might be transcribed together into a single RNA molecule due to the lack of a strong termination signal between them. Further analysis is needed to confirm if this readthrough actually occurs."
+
+Node: dcid:geneReadthroughChild
+name: "geneReadthroughChild"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "A gene that is formed when the transcription of an upstream gene (the 'parent') continues past its normal termination signal and into the downstream region, creating a longer RNA transcript that includes the sequence of the 'child' gene."
+
+Node: dcid:geneReadthroughParent
+name: "geneReadthroughParent"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "The upstream gene in a readthrough relationship. It is the gene whose transcription continues past its normal termination point, leading to the formation of a readthrough child gene."
+
+Node: dcid:geneReadthroughSibling
+name: "geneReadthroughSibling"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "Genes located on the same DNA strand that are transcribed together into a single RNA molecule due to the lack of a strong termination signal between them. This is confirmed to occur."
+
+Node: dcid:geneRegionMember
+name: "geneRegionMember"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "A gene located within a defined genomic region. This region might be associated with a specific function, regulatory element, or evolutionary history."
+
+Node: dcid:geneRegionParent
+name: "geneRegionParent"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "A larger genomic region that encompasses multiple genes, including the 'region member'."
+
+Node: dcid:geneReferenceIntoFunction
+name: "geneReferenceIntoFunction"
+typeOf: schema:Property
+domainIncludes: dcs:GeneReferenceIntoFunction
+rangeIncludes: schema:Text
+description: "A short, specific summary of a gene's biological function, which is supported by citations from scientific literature."
 
 Node: dcid:geneSymbol
 name: "geneSymbol"
@@ -499,7 +798,7 @@ Node: dcid:geneticVariantID
 name: "geneticVariantID"
 typeOf: schema:Property
 rangeIncludes: dcs:GeneticVariant
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "Link out to GeneticVariant node associated with the current node."
 
 Node: dcid:geneticVariantImpercise
@@ -628,15 +927,29 @@ Node: dcid:gtexID
 name: "gtexID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "An ID denoting a unique gene and genetic variant association within the GTEx database."
 
-Node: dcid:hasRNATranscript
-name: "hasRNATranscript"
+Node: dcid:hasGeneticVariantAnnotation
+name: "hasGeneticVariantAnnotation"
 typeOf: schema:Property
-rangeIncludes: dcs:RNATranscript
 domainIncludes: dcs:Gene
-description: "Recorded transcript. UCSC Gene ID."
+rangeIncludes: schema:Boolean
+description: "Indicates whether there are gene has genetic variants that are associated with it."
+
+Node: dcid:hasGenomicCoordinates
+name: "hasGenomicCoordinates"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: dcs:GenomicCoordinates
+description: "Genomic coordinates specify the location of the position of an element within a defined DNA contig. It is a specified set of chromosome start_position end_position within a specified genome assembly."
+
+Node: dcid:hasGenomicPosition
+name: "hasGenomicPosition"
+typeOf: schema:Property
+domainIncludes: dcs:GenomeAnnotation
+rangeIncludes: dcs:GenomicPosition
+description: "Genomic position specify the precise nucleotide location within a defined DNA contig. It is a specified set of chromosome and position within a specified genome assembly."
 
 Node: dcid:hgncID
 name: "hgncID"
@@ -646,25 +959,11 @@ domainIncludes: dcs:Gene
 description: "HUGO Gene Nomenclature Committee identifier."
 synonym: "HUGO Gene Nomenclature Committee ID"
 
-Node: dcid:hg19GenomicPosition
-name: "hg19GenomicPosition"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariant
-description: "The genomic position of a genetic variant using the hg19 assembly."
-
-Node: dcid:hg38GenomicPosition
-name: "hg38GenomicPosition"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariant,dcs:GeneticVariantGeneAssociation
-description: "The genomic position of a genetic variant using the hg38 assembly."
-
 Node: dcid:hg38DistanceFromTranscriptionStartSite
 name: "hg38DistanceFromTranscriptionStartSite"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "In the hg38 genome assembly, the distance in base pairs between the associated genetic variant and gene."
 abbreviation: "hg38 distance from TSS"
 
@@ -672,23 +971,9 @@ Node: dcid:hg19DistanceFromTranscriptionStartSite
 name: "hg19DistanceFromTranscriptionStartSite"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "In the hg19 genome assembly, the distance in base pairs between the associated genetic variant and gene."
 abbreviation: "hg19 distance from TSS"
-
-Node: dcid:hg38GenomicLocation
-name: "hg38GenomicLocation"
-typeOf: schema:Property
-rangeIncludes: dcs:QuantityRange
-domainIncludes: dcs:GeneticVariant
-description: "The genomic location of a genetic variant using the hg38 assembly. [chr start stop]."
-
-Node: dcid:hg19GenomicLocation
-name: "hg19GenomicLocation"
-typeOf: schema:Property
-rangeIncludes: dcs:QuantityRange
-domainIncludes: dcs:GeneticVariant
-description: "The genomic location of a genetic variant using the hg19 assembly. [chr start stop]."
 
 Node: dcid:humanGenomeVariationSocietyNomenclature
 name: "humanGenomeVariationSocietyNomenclature"
@@ -716,9 +1001,25 @@ description: "A threadlike structure of nucleic acids and protein found in the n
 Node: dcid:inGenomeAssembly
 name: "inGenomeAssembly"
 typeOf: schema:Property
-rangeIncludes: dcs:GenomeAssembly
+rangeIncludes: dcs:GenomeAssembly, schema:Text
 domainIncludes: dcs:GenomeAnnotation
 description: "Genome assembly."
+
+Node: dcid:internationalImMunoGeneTicsGeneId
+name: "internationalImMunoGeneTicsGeneId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by the international ImMunoGeneTics (IMGT), which is a pioneering international information system in immunogenetics and immunoinformatics. It provides databases and tools based on the IMGT-ONTOLOGY to the scientific community for in-depth exploration of the adaptive immune response."
+descriptionUrl: "https://www.imgt.org/"
+
+Node: dcid:interProAccession
+name: "interProAccession"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:Protein
+rangeIncludes: schema:Text
+description: "The identifier for a protein domain that's used by InterPro, which provides functional analysis of proteins by classifying them into families and predicting domains and important sites. To classify proteins in this way, InterPro uses predictive models, known as signatures, provided by several different databases (referred to as member databases) that make up the InterPro consortium. We combine protein signatures from these member databases into a single searchable resource, capitalising on their individual strengths to produce a powerful integrated database and diagnostic tool."
+descriptionUrl: "https://www.ebi.ac.uk/interpro/"
 
 Node: dcid:internationalStandardBookNumber
 name: "internationalStandardBookNumber"
@@ -780,14 +1081,14 @@ Node: dcid:log2AllelicFoldChange
 name: "log2AllelicFoldChange"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The allelic Fold Change in log2 of the change in gene expression of samples with or without the minor allele."
 
 Node: dcid:log2AllelicFoldChangeConfidenceInterval
 name: "log2AllelicFoldChangeConfidenceInterval"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The 95% confidence interval of the allelic Fold Change in log2 of the change in gene expression of samples with or without the minor allele: [lowerCI upperCI]."
 
 Node: dcid:loincCode
@@ -802,7 +1103,7 @@ Node: dcid:makesProtein
 name: "makesProtein"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:RNATranscript,dcs:Protein
+domainIncludes: dcs:RnaTranscript,dcs:Protein
 description: "UniProt display ID, UniProt accession, or RefSeq protein ID representing the protein made by the corresponding gene or RNA transcript."
 
 Node: dcid:mapLocation
@@ -812,6 +1113,21 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:Gene
 description: "The location of the gene on the chromosome."
 
+Node: dcid:maturedFromProtein
+name: "maturedFromProtein"
+typeOf: schema:Property
+domainIncludes: dcs:MaturePeptide
+rangeIncludes: dcs:Protein
+description: "Indicates the initial, full-length protein from which a mature peptide has derived after post-translational modifications and processing".
+
+Node: dcid:medGenID
+name: "medGenID"
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: dcs:GeneticVariant
+description: "ID for organized information related to human medical genetics, such as attributes of conditions with a genetic contribution."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/medgen/"
+
 Node: dcid:medicalGeneticSummariesID
 name: "medicalGeneticSummariesID"
 typeOf: schema:Property
@@ -820,26 +1136,43 @@ domainIncludes: dcs:GeneticVariant
 description: "Medical Genetics Summaries is a growing collection of summaries which describe the impact that specific sequence variations have on health. The summaries review genetic variants that underlie inherited conditions, affect the risk of developing a disease in the future, or influence how an individual may respond to a specific drug."
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/books/NBK61999/"
 
+Node: dcid:medicalSubjectHeadingID
+name: "medicalSubjectHeadingID"
+typeOf: schema:Property
+rangeIncludes: schema:Text,dcs:MeSHRecordType
+domainIncludes: dcs:GeneticVariant,dcs:Disease
+description: "Medical Subject Heading"
+descriptionUrl: "https://meshb.nlm.nih.gov/search"
+abbreviation: "MeSH ID"
+
 Node: dcid:minimalPValueNominal
 name: "minimalPValueNominal"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The smallest nominal p-value for the gene."
 
 Node: dcid:minorAlleleCount
 name: "minorAlleleCount"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "Total number of minor alleles across individuals."
 
 Node: dcid:minorAlleleSampleNumber
 name: "minorAlleleSampleNumber"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The number of samples carrying the minor allele."
+
+Node: dcid:miRBaseId
+name: "miRBaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The identifier used by miRBase, which is a public online database that contains information about microRNAs (miRNAs) in plants and animals. It's the world's largest collection of miRNA data and is the primary resource for miRNA research."
+url: "https://www.mirbase.org/"
 
 Node: dcid:modificationDate
 name: "modificationDate"
@@ -855,23 +1188,6 @@ rangeIncludes: schema:Text
 domainIncludes: dcs:GeneticVariant
 description: "MONDO database identifier."
 
-Node: dcid:medGenID
-name: "medGenID"
-typeOf: schema:Property
-rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariant
-description: "ID for organized information related to human medical genetics, such as attributes of conditions with a genetic contribution."
-descriptionUrl: "https://www.ncbi.nlm.nih.gov/medgen/"
-
-Node: dcid:medicalSubjectHeadingID
-name: "medicalSubjectHeadingID"
-typeOf: schema:Property
-rangeIncludes: schema:Text,dcs:MeSHRecordType
-domainIncludes: dcs:GeneticVariant,dcs:Disease
-description: "Medical Subject Heading"
-descriptionUrl: "https://meshb.nlm.nih.gov/search"
-abbreviation: "MESH ID"
-
 Node: dcid:molecularType
 name: "molecularType"
 typeOf: schema:Property
@@ -879,26 +1195,24 @@ rangeIncludes: dcs:GeneticVariantMolTypeEnum
 domainIncludes: dcs:GeneticVariant
 description: "Sample type from exemplar submitted GeneticVariants (cDNA, genomic, mitochondrial, or unknown)."
 
-Node: dcid:mm10GenomicLocation
-name: "mm10GenomicLocation"
+Node: dcid:mouseGenomeInformaticsId
+name: "mouseGenomeInformaticsId"
 typeOf: schema:Property
-rangeIncludes: dcs:QuantityRange
-domainIncludes: dcs:GeneticVariant
-description: "The genomic location of a genetic variant using the mm10 assembly. [chr start stop]."
-
-Node: dcid:mm9GenomicLocation
-name: "mm9GenomicLocation"
-typeOf: schema:Property
-rangeIncludes: dcs:QuantityRange
-domainIncludes: dcs:GeneticVariant
-description: "The genomic location of a genetic variant using the mm9 assembly. [chr start stop]."
-
-Node: dcid:mRNA
-name: "mRNA"
-typeOf: schema:Property
-rangeIncludes: schema:Text
 domainIncludes: dcs:Gene
-description: "mRNA associated with a gene."
+rangeIncludes: schema:Text
+abbreviation: "MGI ID"
+specializationOf: dcs:allianceOfGenomeResourcesId
+description: "The gene identifier used by Mouse Genome Informatics (MGI) and the Mouse GenomeDatabase (MGD). MGI is the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data to facilitate the study of human health and disease. MGD is the database resource for the laboratory mouse, and provides integrated biological data to facilitate the study of human health and disease. MGD is a core database in the Mouse Genome Informatics (MGI) consortium and founding member of the Alliance of Genome Resources Project."
+descriptionUrl: "https://www.informatics.jax.org/mgihome/projects/aboutmgi.shtml"
+descriptionUrl: "https://www.alliancegenome.org/members/mgd"
+
+Node: dcid:nasioniaBaseId
+name: "nasioniaBaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by NasoniaBase, an informatics data repository for the Nasonia Species Complex Genome Projects. Currently, NasoniaBase provides a graphical interface to the assembly of the Nasonia vitripennis genome. Assembly Nvit_1.0 was released by the Baylor College of Medicine Human Genome Sequencing Center in March, 2007. It was generated from small whole genome shotgun (WGS) sequencing reads (3-5kb), fosmids reads (36kb) and BAC end reads (130kb - 150kb) and includes repetitive reads. NasoniaBase is an archive and will not be updated. The most up-to-date Nasonia genome data is now available through the navigation bar on the HGD Home page."
+descriptionUrl: "https://hymenoptera.elsiklab.missouri.edu/nasonia"
 
 Node: dcid:ncbiBioProject
 name: "ncbiBioProject"
@@ -916,20 +1230,6 @@ domainIncludes: dcs:GenomeAssembly
 description: "A BioSample contains descriptive information about the physical biological specimen from which your experimental data are derived. Typical examples of a BioSample include a cell line, a tissue biopsy or an environmental isolate. The information you supply about the biological materials are critical for providing context to your experimental data."
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/biosample/docs/submission/faq/"
 
-Node: dcid:ncbiDNASequenceName
-name: "ncbiDNASequenceName"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Chromosome
-description: "The name by which NIH NCBI refers to this defined segment of DNA sequence."
-
-Node: dcid:ncbiProteinAccessionNumber
-name: "ncbiProteinAccessionNumber"
-typeOf: schema:Property
-rangeIncludes: schema:Text
-domainIncludes: dcs:Gene,dcs:Protein
-description: "NCBI protein accession number."
-
 Node: dcid:ncbiGeneID
 name: "ncbiGeneID"
 typeOf: schema:Property
@@ -943,6 +1243,46 @@ typeOf: schema:Property
 rangeIncludes: schema:Text
 domainIncludes: dcs:Gene
 description: "Identifiers that are systematically applied to every gene in a genome."
+
+Node: dcid:ncbiMaturePeptideGiNumber
+name: "ncbiMaturePeptideGiNumber"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:MaturePeptide, dcs:Protein, dcs:RnaTranscript
+rangeIncludes: schema:Text
+synonym: "Mature Peptide GI", "Mature Peptide GenInfo Identifier"
+description: "GI number (sometimes written in lower case, 'gi') is simply a series of digits that are assigned consecutively to each mature peptide record processed by NCBI. The GI number bears no resemblance to the Accession number of the smature peptide record and are version specific. The mature peptide GI number represents the final, processed form of a protein after post-translational modifications like cleavage or removal of signal peptides. It identifies the functional protein sequence, distinct from the initial translation product. It is associated with protein records derived from mature peptides."
+
+Node: dcid:ncbiProteinAccessionNumber
+name: "ncbiProteinAccessionNumber"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Gene,dcs:Protein
+description: "NCBI protein accession number."
+
+Node: dcid:ncbiProteinGiNumber
+name: "ncbiProteinGiNumber"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:MaturePeptide, dcs:Protein, dcs:RnaTranscript
+rangeIncludes: schema:Text
+synonym: "Protein GI", "Protein GenInfo Identifier"
+description: "GI number (sometimes written in lower case, 'gi') is simply a series of digits that are assigned consecutively to each mature peptide record processed by NCBI. The GI number bears no resemblance to the Accession number of the smature peptide record and are version specific. The protein GI number represents the amino acid sequence of a protein, either directly submitted or translated from a coding sequence (CDS) within a nucleotide record. It identifies a specific version of a protein sequence."
+
+Node: dcid:ncbiRnaNucleotideGiNumber
+name: "ncbiRnaNucleotideGiNumber"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:MaturePeptide, dcs:Protein, dcs:RnaTranscript
+rangeIncludes: schema:Text
+synonym: "RNA GI", "RNA GenInfo Identifier"
+description: "GI number (sometimes written in lower case, 'gi') is simply a series of digits that are assigned consecutively to each mature peptide record processed by NCBI. The GI number bears no resemblance to the Accession number of the smature peptide record and are version specific. The RNA nucleotide GI number represents the final, processed form of a protein after post-translational modifications like cleavage or removal of signal peptides. It identifies the functional protein sequence, distinct from the initial translation product. It is associated with protein records derived from mature peptides."
+
+Node: dcid:ncbiSequenceGiNumber
+name: "ncbiSequenceGiNumber"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:GenomicRegion
+rangeIncludes: schema:Text
+synonym: "Sequence GI", "SequencdeGenInfo Identifier"
+description: "GI number (sometimes written in lower case, 'gi') is simply a series of digits that are assigned consecutively to each sequence record processed by NCBI. The GI number bears no resemblance to the Accession number of the sequence record and are version specific. They are formatted as follows: nucleotide sequence GI number is shown in the VERSION field of the database record and protein sequence GI number is shown in the CDS/db_xref field of a nucleotide database record, and the VERSION field of a protein database record This identification system runs in parallel to the VERSION."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/Sitemap/sequenceIDs.html"
 
 Node: dcid:ncbiTaxonID
 name: "ncbiTaxonID"
@@ -984,14 +1324,14 @@ Node: dcid:numberOfAlternativeAlleles
 name: "numberOfAlternativeAlleles"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The number of alternative alleles observed at the genetic variant site."
 
 Node: dcid:observedAllele
 name: "observedAllele"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:GeneticVariant,dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneticVariant,dcs:GeneGeneticVariantAssociation
 description: "The sequences of the observed alleles from rs-fasta files. This is formated as major allele/minor allele."
 
 Node: dcid:omimID
@@ -1022,6 +1362,14 @@ description: "Orphanet rare disease nomenclature"
 descriptionUrl: "https://www.orpha.net/consor/cgi-bin/index.php"
 synonym: "orphanet rare disease ontology number"
 
+Node: dcid:pfamAccession
+name: "pfamAccession"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The accession used by the Pfam database to refer to a protin family. The Pfam database is a large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs). The Pfam database is now hosted by InterPro."
+descriptionUrl: "http://pfam.xfam.org/"
+
 Node: dcid:pharmacogeneVariationConsortiumId
 name: "pharmacogeneVariationConsortiumId"
 typeOf: schema:Property
@@ -1038,6 +1386,14 @@ rangeIncludes: schema:Number,dcs:Text
 domainIncludes: dcs:GeneticVariant,dcs:ChemicalCompound,dcs:Gene
 description: "PharmGKB is a comprehensive resource that curates knowledge about the impact of genetic variation on drug response for clinicians and researchers."
 descriptionUrl: "https://www.pharmgkb.org/"
+
+Node: dcid:phytozomeGeneId
+name: "phytozomeGeneId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene id used by Phytozome, the Plant Comparative Genomics portal of the Department of Energy's Joint Genome Institute, which provides JGI users and the broader plant science community a hub for accessing, visualizing and analyzing JGI-sequenced plant genomes, as well as selected genomes and datasets that have been sequenced elsewhere. By integrating this large collection of plant genomes into a single resource and performing comprehensive and uniform annotation and analyses, Phytozome facilitates accurate and insightful comparative genomics studies."
+descriptionUrl: "https://phytozome-next.jgi.doe.gov/"
 
 Node: dcid:pomBaseId
 name: "pomBaseId"
@@ -1062,6 +1418,14 @@ rangeIncludes: schema:Text
 description: "An identifier for The Proteomics Standards Initiative modification ontology (PSI-MOD), which aims to define a concensus nomenclature and ontology reconciling, in a hierarchical representation, the complementary descriptions of residue modifications."
 descriptionUrl: "https://bioregistry.io/registry/mod"
 
+Node: dcid:pseudoCapLocusTag
+name: "pseudoCapLocusTag"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene locus tag used to identify genes by the Pseudomonas Genome Database, which collaborates with an international panel of expert Pseudomonas researchers to provide high quality updates to the PAO1 genome annotation and make cutting edge genome analysis data available."
+descriptionUrl: "https://www.pseudomonas.com/"
+
 Node: dcid:pubMedCentralId
 name: "pubMedCentralId"
 typeOf: schema:Property
@@ -1074,43 +1438,53 @@ Node: dcid:pValueBeta
 name: "pValueBeta"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The beta-approximated permutation p-value."
 
 Node: dcid:pValueNominal
 name: "pValueNominal"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The nominal p-value associated with the most significant variant for this gene."
 
 Node: dcid:pValueNominalThreshold
 name: "pValueNominalThreshold"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The nominal p-value threshold for calling a variant-gene pair significant for the gene."
 
 Node: dcid:pValuePermutation
 name: "pValuePermutation"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The permutation p-value."
 
 Node: dcid:pValueTrueDegreesOfFreedom
 name: "pValueTrueDegreesOfFreedom"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The p-value of the effective degrees of freedom the Beta distribution approximation."
 
 Node: dcid:qValue
 name: "qValue"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The Storey q-value derived from pval_beta."
+
+Node: dcid:ratGenomeDatabaseId
+name: "ratGenomeDatabaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+abbreviation: "RGD ID"
+specializationOf: dcs:allianceOfGenomeResourcesId
+description: "The gene identifier used by the Rat Genome Database (RGD), which is the primary site for genetic, genomic, phenotype, and disease-related data generated from rat research. The data is the result of both manual curation work by RGD curators and imported data from other databases through custom ELT (Extract, Load and Transform) pipelines. RGD has expanded to include structured and standardized data for additional species (human, mouse, chinchilla, bonobo, 13-lined ground squirrel, dog and pig). RGD is a founding member of the Alliance of Genome Resources Project."
+descriptionUrl: "https://www.alliancegenome.org/members/rgd"
 
 Node: dcid:referenceAlleleNCBI
 name: "referenceAlleleNCBI"
@@ -1130,7 +1504,7 @@ Node: dcid:referenceSNPClusterID
 name: "referenceSNPClusterID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:GeneticVariant,dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneticVariant,dcs:GeneGeneticVariantAssociation
 description: "The referenceSNPClusterID or rsID number is a unique label ("rs" followed by a number) used by researchers and databases to identify a specific SNP (Single Nucleotide Polymorphism). It stands for Reference SNP cluster ID and is the naming convention used for most SNPs."
 descriptionUrl: "https://customercare.23andme.com/hc/en-us/articles/212196908-What-Are-RS-Numbers-Rsid-"
 abbreviation: "rsID", "refSNP cluster ID"
@@ -1152,18 +1526,84 @@ domainIncludes: dcs:GenomeAssembly
 description: "Denotes that the assembly is a reference or representative genome in the NCBI Reference Sequence ( RefSeq ) project classification."
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
 
+Node: dcid:refSeqFunctionElementFeatureAnnotation
+name: "refSeqFunctionElementFeatureAnnotation"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:GenomicRegion, dcs:RnaTranscript
+rangeIncludes: dcs:GeneFeatureTypeEnum
+description: "RefSeq Functional Element sequences include manually curated features in accordance with International Nucleotide Sequence Database Collaboration (INSDC) standards. Features that are supported by direct experimental evidence include at least one '/experiment' qualifier with an evidence code (ECO ID) from the Evidence & Conclusion Ontology, and at least one citation from PubMed. It is important to note that annotated sequence ranges may be approximate depending on the experimental evidence type, and that features may include extraneous sequences that are not necessary for function."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/refseq/functionalelements/"
+
+Node: dcid:refSeqGenomicAccession
+name: "refSeqGenomicAccession"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:GenomicRegion, dcs:Protein, dcs:RnaTranscript
+rangeIncludes: schema:Text
+synonym: "VERSION", "Genomic accession.version"
+specializationOf: dcs:refSeqID
+description: "This is a sequence identifier that is made of the accession number of the RefSeq database record followed by a dot and a version number (and is therefore sometimes referred to as the "accession.version"). They are formatted as follows nucleotide sequence version contains two letters followed by six digits, a dot, and a version number (or for older nucleotide sequence records, the format is one letter followed by five digits, a dot, and a version number). The VERSION system of identifiers was adopted in February 1999 by the International Nucleotide Sequence Database Collaboration (GenBank, EMBL, and DDBJ). This identification system runs in parallel to the GI number."
+descriptionUrl: "https://www.ncbi.nlm.nih.gov/Sitemap/sequenceIDs.html"
+
 Node: dcid:refSeqID
 name: "refSeqID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:RNATranscript,dcs:Gene,dcs:Protein
+domainIncludes: dcs:Gene, dcs:GenomicRegion, dcs:MaturePeptide, dcs:Protein, dcs:RnaTranscript
 description: "A nucleotide sequence or protein annotated and curated by the National Center for Biotechnology Information."
+
+Node: dcid:refSeqMaturePeptideAccession
+name: "refSeqMaturePeptideAccession"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:MaturePeptide, dcs:Protein, dcs:RnaTranscript
+rangeIncludes: schema:Text
+synonym: "Mature Peptide accession.version"
+specializationOf: dcs:refSeqID
+description: "This is a mature peptide identifier that is made of the accession number of the RefSeq database record followed by a dot and a version number (and is therefore sometimes referred to as the "accession.version"). They represent the final, processed form of a protein after post-translational modifications like cleavage or removal of signal peptide."
+
+Node: dcid:refSeqProteinAccession
+name: "refSeqProteinAccession"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:MaturePeptide, dcs:Protein, dcs:RnaTranscript
+rangeIncludes: schema:Text
+synonym: "Protein accession.version"
+specializationOf: dcs:refSeqID
+description: "This is a protein identifier that is made of the accession number of the RefSeq database record followed by a dot and a version number (and is therefore sometimes referred to as the "accession.version"). They represent the amino acid sequence of a protein product translated from an mRNA. The prefixes indicate how these amino acid sequences were derived, such as: NP_, which are curated protein sequences derived from the translation of NM_ (mRNA) sequences, and XM_, which are model protein sequences predicted from XM_ (model mRNA) sequences."
+
+Node: dcid:refSeqRnaNucleotideAccession
+name: "refSeqRnaNucleotideAccession"
+typeOf: schema:Property
+domainIncludes: dcs:Gene, dcs:MaturePeptide, dcs:Protein, dcs:RnaTranscript
+rangeIncludes: schema:Text
+synonym: "RNA accession.version"
+specializationOf: dcs:refSeqID
+description: "This is a RNA nucleotide identifier that is made of the accession number of the RefSeq database record followed by a dot and a version number (and is therefore sometimes referred to as the "accession.version"). They represent RNA transcript sequences, reflecting the processed product of a gene after transcription and splicing (for mRNAs). Prefixes indicate the type of gene product: NM_ (mRNA sequences that are fully curated and supported by experimental evidence), NR_ (Non-coding RNA sequences (rRNAs, tRNAs, etc.) that are curated), XM_ (Model mRNA sequences predicted from the genome annotation pipeline, may have varying levels of support), and XR_ (Model non-coding RNA sequences predicted from the genome)."
+
+Node: dcid:refSeqStatus
+name: "refSeqStatus"
+typeOf: schema:Property
+domainIncludes: dcs:RnaTranscript
+rangeIncludes: dcs:RefSeqStatusEnum
+description: "A status is a designation assigned to each RefSeq record in the NCBI RefSeq database that indicates the level of review, curation, and confidence associated with the sequence data. It provides valuable information about the quality and reliability of the sequence."
 
 Node: dcid:regressionSlope
 name: "regressionSlope"
 typeOf: schema:Property
 rangeIncludes: schema:Number
 domainIncludes: dcs:StatisticalVariable
+
+Node: dcid:relatedFunctionalGene
+name: "relatedFunctionalGene"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "Genes that are related by sequence similarity and are presumed to have similar or related functions. These could be paralogs (genes that arose from a duplication event within a species) or orthologs (genes in different species that evolved from a common ancestral gene)."
+
+Node: dcid:relatedPseudogene
+name: "relatedPseudogene"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: dcs:Gene
+description: "A non-functional copy of a gene that has accumulated mutations over time. It is related to a functional gene by sequence similarity but is no longer capable of producing a functional protein."
 
 Node: dcid:rnaModId
 name: "rnaModId"
@@ -1176,11 +1616,21 @@ Node: dcid:rsID
 name: "rsID"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:GeneticVariant,dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneticVariant,dcs:GeneGeneticVariantAssociation
 description: "The referenceSNPClusterID or rsID number is a unique label ("rs" followed by a number) used by researchers and databases to identify a specific SNP (Single Nucleotide Polymorphism). It stands for Reference SNP cluster ID and is the naming convention used for most SNPs."
 descriptionUrl: "https://customercare.23andme.com/hc/en-us/articles/212196908-What-Are-RS-Numbers-Rsid-"
 synonym: "reference SNP ID number","reference SNP Cluster ID","refSNP cluster ID"
 sameAs: dcs:referenceSNPClusterID
+
+Node: dcid:saccharomycesGenomeDatabaseId
+name: "saccharomycesGenomeDatabaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+abbreviation: "SGD Id"
+specializationOf: dcs:allianceOfGenomeResourcesId
+description: "The gene identifier used by the Saccharomyces Genome Database (SGD), which provides comprehensive integrated biological information for the budding yeast Saccharomyces cerevisiae. SGD is a member of the Alliance of Genome Resources Project."
+descriptionUrl: "https://www.yeastgenome.org/"
 
 Node: dcid:sequenceOntologyID
 name: "sequenceOntologyID"
@@ -1251,15 +1701,29 @@ Node: dcid:tissue
 name: "tissue"
 typeOf: schema:Property
 rangeIncludes: schema:Text
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The tissue in which the association between the genetic variant and the gene was made."
+
+Node: dcid:transcribedFromGene
+name: "transcribedFromGene"
+typeOf: schema:Property
+domainIncludes: dcs:RnaTranscript, dcs:MaturePeptide, dcs:Protein
+rangeIncludes: dcs:Gene
+description: "The gene from which the RNA transcript is a direct product."
 
 Node: dcid:transcriptionCoordinates
 name: "transcriptionCoordinates"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:RNATranscript
+domainIncludes: dcs:RnaTranscript
 description: "Specifies the genomic coordinates associated with the transcription of a given RefSeq Accession number."
+
+Node: dcid:translatedFromRna
+name: "translatedFromRna"
+typeOf: schema:Property
+domainIncludes: dcs:MaturePeptide, dcs:Protein
+rangeIncludes: dcs:RnaTranscript
+description: "Indicates the specified mRNA transcript from which a protein is translated into a sequence of amino acids."
 
 Node: dcid:translocationToChromosome
 name: "translocationToChromosome"
@@ -1272,7 +1736,7 @@ Node: dcid:trueDegreesOfFreedom
 name: "trueDegreesOfFreedom"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The effective degrees of freedom the Beta distribution approximation."
 
 Node: dcid:typeOfGene
@@ -1286,7 +1750,7 @@ Node: dcid:variantNumber
 name: "variantNumber"
 typeOf: schema:Property
 rangeIncludes: schema:Number
-domainIncludes: dcs:GeneticVariantGeneAssociation
+domainIncludes: dcs:GeneGeneticVariantAssociation
 description: "The number of variants in cis-window (1 Mbp) with the associated gene."
 
 Node: dcid:variationEndCI
@@ -1312,6 +1776,53 @@ typeOf: schema:Property
 rangeIncludes: dcs:VariationTypeEnum
 domainIncludes: dcs:GeneticVariant
 description: "Variation type of alternate allele."
+
+Node: dcid:vertebrateGeneNomenclatureCommitteeId
+name: "vertebrateGeneNomenclatureCommitteeId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+abbreviation: "VGNC ID"
+description: "The gene identifier used by the Vertebrate Gene Nomenclature Committee (VGNC), which is an extension of the established HGNC (HUGO Gene Nomenclature Committee) project that names human genes. VGNC is responsible for assigning standardized names to genes in vertebrate species that currently lack a nomenclature committee."
+descriptionUrl: "https://vertebrate.devgenenames.cloud/about/"
+url: "https://vertebrate.devgenenames.cloud/"
+
+Node: dcid:vEuPathDBId
+name: "vEuPathDBId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+description: "The gene identifier used by VEuPathDB. The VEuPathDB Bioinformatics Resource Center makes genomic, phenotypic, and population-centric data accessible to the scientific community. There are multiple projects that under the VEuPathDB Project umbrella including AmoebaDB, CryptoDB, FungiDB, GiardiaDB, MicrosporidiaDB, PlasmoDB, PiroplasmaDB, ToxoDB, TrichDB, TriTrypDB, VectorBase, and VEuPathDB. This was formally known as ApiDB. The funding supporting this effort terminated on September 14, 2024."
+url: "https://veupathdb.org/veupathdb/app"
+
+Node: dcid:wormBaseId
+name: "wormBaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+specializationOf: dcs:allianceOfGenomeResourcesId
+description: "The gene identifier used by WormBase, an international consortium of biologists and computer scientists providing the research community with accurate, current, accessible information concerning the genetics, genomics and biology of C. elegans and related nematodes. Founded in 2000, the WormBase Consortium is led by Paul Sternberg (CalTech), Matt Berriman (The Wellcome Trust Sanger Institute), Sarah Dyer (EBI), and Lincoln Stein (The Ontario Institute for Cancer Research). WormBase is a founding member of the Alliance of Genome Resources Project."
+descriptionUrl: "https://wormbase.org/about#01--10"
+
+Node: dcid:xenbaseId
+name: "xenbaseId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+specializationOf: dcs:allianceOfGenomeResourcesId
+synonym: "Zebrafish Information Network ID"
+description: "The gene identifier used by Xenbase, which is a web-accessible resource that integrates all the diverse biological, genomic, genotype and phenotype data available from Xenopus research. Xenbase is a member of the Alliance of Genome Resources Project."
+descriptionUrl: "https://www.xenbase.org/xenbase/"
+
+Node: dcid:zfinId
+name: "zfinId"
+typeOf: schema:Property
+domainIncludes: dcs:Gene
+rangeIncludes: schema:Text
+specializationOf: dcs:allianceOfGenomeResourcesId
+synonym: "Zebrafish Information Network ID"
+description: "The gene identifier used by the Zebrafish Information Network (ZFIN), which is the database of genetic and genomic data for the zebrafish (Danio rerio) as a model organism. ZFIN provides a wide array of expertly curated, organized and cross-referenced zebrafish research data. ZFIN is a member of the Alliance of Genome Resources Project."
+descriptionUrl: "https://zfin.org/"
 
 Node: dcid:zScore
 name: "zScore"

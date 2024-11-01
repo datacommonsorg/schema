@@ -268,28 +268,133 @@ typeOf: dcs:DNASequenceRoleEnum
 description: "The object is a novel patch to the assembly-unit scaffold."
 
 
-# ExonFramesEnum
-Node: dcid:ExonFramesEnum
-name: "ExonFramesEnum"
+# GeneOmimRelationshipCommentEnum
+Node: dcid:GeneOmimRelationshipCommentEnum
+name: "GeneOmimRelationshipCommentEnum"
 typeOf: schema:Class
-subClassOf: schema:Enumeration
-description: "Denotes the exon frame {0,1,2}, or none if no frame for the exon."
+subClassOf: dcs:Enumeration
+description: "The qualifiers OMIM provides when reporting a gene/phenotype relationship."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
 
-Node: dcid:ExonFrame0
-name: "Frame 0"
-typeOf: dcs:ExonFramesEnum
+Node: dcid:GeneOmimRelationshipCommentModifier
+typeOf: dcs:GeneOmimRelationshipCommentEnum
+name: "Modifier"
+description: "The gene modifies the expression of another gene, impacting the severity or manifestation of a phenotype."
 
-Node: dcid:ExonFrame1
-name: "Frame 1"
-typeOf: dcs:ExonFramesEnum
+Node: dcid:GeneOmimRelationshipCommentNondisease
+typeOf: dcs:GeneOmimRelationshipCommentEnum
+name: "Nondisease"
+description: "The gene variant is associated with a trait not typically considered a disease."
 
-Node: dcid:ExonFrame2
-name: "Frame 2"
-typeOf: dcs:ExonFramesEnum
+Node: dcid:GeneOmimRelationshipCommentQtl1
+typeOf: dcs:GeneOmimRelationshipCommentEnum
+name: "Qtl1"
+synonym: "Quantitative Trait Loci 1"
+description: "The gene resides within a quantitative trait locus associated with a specific trait or disease."
 
-Node: dcid:ExonFrameNone
-name: "None"
-typeOf: dcs:ExonFramesEnum
+Node: dcid:GeneOmimRelationshipCommentQtl2
+typeOf: dcs:GeneOmimRelationshipCommentEnum
+name: "Qtl2"
+synonym: "Quantitative Trait Loci 2"
+description: "Similar to Qtl1, but the gene's connection to the trait is less certain or indirect."
+
+Node: dcid:GeneOmimRelationshipCommentQuestion
+typeOf: dcs:GeneOmimRelationshipCommentEnum
+name: "Question"
+description: "Uncertainty exists regarding the gene's role in the associated phenotype."
+
+Node: dcid:GeneOmimRelationshipCommentSomatic
+typeOf: dcs:GeneOmimRelationshipCommentEnum
+name: "Somatic"
+description: "The mutation is acquired in a non-germline cell, and thus, not heritable."
+
+Node: dcid:GeneOmimRelationshipCommentSusceptibility
+typeOf: dcs:GeneOmimRelationshipCommentEnum
+name: "Susceptibility"
+description: "The variant increases an individual's predisposition to a particular disease or condition."
+
+
+
+# GeneOmimRelationshipSourceEnum
+Node: dcid:GeneOmimRelationshipSourceEnum
+name: "GeneOmimRelationshipSourceEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "A report of a relationship between a MIM number that is a phenotype, and a Gene."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:GeneOmimRelationshipSourceGeneMap
+typeOf: dcs:GeneOmimRelationshipSourceEnum
+name: "GeneMap"
+description: "GeneMap is database within NCBI that links human map information to genes and phenotypes. GeneMap houses the official mapping information for human genes, including their chromosomal location. While it doesn't directly connect MIM numbers to NCBI GeneIDs, it indirectly supports the association by providing the chromosomal location of genes, which can be cross-referenced with other databases to establish the link."
+
+Node: dcid:GeneOmimRelationshipSourceGeneReviews
+typeOf: dcs:GeneOmimRelationshipSourceEnum
+name: "GeneReviews"
+description: "Expert-authored, peer-reviewed disease descriptions that focus on the clinical features, diagnosis, and management of specific genetic conditions. GeneReviews articles often provide the MIM number and NCBI GeneID for the gene(s) associated with the discussed condition."
+
+Node: dcid:GeneOmimRelationshipSourceGeneTests
+typeOf: dcs:GeneOmimRelationshipSourceEnum
+name: "GeneTests"
+description: "A publicly funded medical genetics information resource that provides information on genetic conditions, the tests available for their diagnosis, and laboratories that perform these tests. GeneTests entries may list both the MIM number and NCBI GeneID for genes linked to specific conditions."
+
+Node: dcid:GeneOmimRelationshipSourceNcbiCuration
+typeOf: dcs:GeneOmimRelationshipSourceEnum
+name: "NCBI Curation"
+description: "NCBI experts review and integrate data from various sources, including scientific literature and other databases, to ensure the accuracy and consistency of information in NCBI resources. During curation, NCBI experts may identify and establish the relationship between MIM numbers and NCBI GeneIDs based on information from various sources."
+
+Node: dcid:GeneOmimRelationshipSourceOmim
+typeOf: dcs:GeneOmimRelationshipSourceEnum
+name: "OMIM"
+description: "Online Mendelian Inheritance in Man (OMIM), a comprehensive database of human genes and genetic phenotypes. OMIM serves as the primary source for connecting MIM numbers to NCBI GeneIDs. Each OMIM entry provides detailed information on a specific gene or genetic condition, including its MIM number and associated NCBI GeneID(s)."
+
+
+
+# GeneOmimRelationshipTypeEnum
+Node: dcid:GeneOmimRelationshipTypeEnum
+name: "GeneOmimRelationshipTypeEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "The type of relationship between the MIM number and the Gene."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:GeneOmimRelationshipTypeGene
+typeOf: dcs:GeneOmimRelationshipTypeEnum
+name: "MIM Type, Gene"
+description: "The MIM number associated with a Gene, or a Gene that is assigned to a record where the molecular basis of the diseaseis not known."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+Node: dcid:GeneOmimRelationshipTypePhenotype
+typeOf: dcs:GeneOmimRelationshipTypeEnum
+name: "MIM Type, Phenotype"
+description: "The MIM number associated with a disease that is associated with a gene."
+descriptionUrl: "https://ftp.ncbi.nlm.nih.gov/gene/README"
+
+
+# GeneOntologyCategoryEnum
+Node: dcid:GeneOntologyCategoryEnum
+name: "GeneOntologyCategoryEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "Declares the three ontologies composing Gene Ontology Terms: Biological Process (BP), Cellular Component (CC), and Molecular Function (MF)."
+
+Node: dcid:GeneOntologyCategoryBiologicalProcess
+typeOf: dcs:GeneOntologyCategoryEnum
+name: "Biological Process"
+abbreviation: "BP"
+description: "Describes the biological pathways and processes in which a gene product is involved (e.g., cell cycle, signal transduction)."
+
+Node: dcid:GeneOntologyCategoryCellularComponent
+typeOf: dcs:GeneOntologyCategoryEnum
+name: "Cellular Component"
+abbreviation: "CC"
+description: "Describes the location or complex within the cell where a gene product is found (e.g., nucleus, ribosome)."
+
+Node: dcid:GeneOntologyCategoryMolecularFunction
+typeOf: dcs:GeneOntologyCategoryEnum
+name: "Molecular FUnction"
+abbreviation: "MF"
+description:  "Describes the elemental activities or tasks performed by a gene product (e.g., enzyme activity, DNA binding)."
 
 
 # GeneticVariantAlignmentQualityEnum
@@ -1074,6 +1179,287 @@ url: "https://genomics.ut.ee/en/about-us/estonian-genome-centre/"
 typeOf: dcs:GenVarSourceEnum
 
 
+# GOTermEvidenceCodeEnum
+Node: dcid:GOTermEvidenceCodeEnum
+name: "GOTermEvidenceCodeEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "The type of evidence supporting the association between the gene and the GO term (e.g., experimental, computational, or other evidence)."
+
+Node: dcid:GOTermEvidenceCodeExperimental
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Experimental"
+abbreviation: "EXP"
+description: "Evidence based on direct experimental results."
+
+Node: dcid:GOTermEvidenceCodeHighThroughputDirectAssay
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "High Throughput Direct Assay"
+abbreviation: "HDA"
+description: "Evidence from high-throughput assays directly measuring gene product activity or function."
+
+Node: dcid:GOTermEvidenceCodeHighThroughputExpressionAssay
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "High Throughput Expression Assay"
+abbreviation: "HEP"
+description: "Evidence from high-throughput assays measuring gene expression patterns."
+
+Node: dcid:GOTermEvidenceCodeHighThroughputGeneticInteraction
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "High Throughput Genetic Interaction"
+abbreviation: "HGI"
+description: "Evidence from high-throughput experiments studying genetic interactions between genes."
+
+Node: dcid:GOTermEvidenceCodeHighThroughputMutantPhenotype
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "High Throughput Mutant Phenotype"
+abbreviation: "HMP"
+description: "Evidence from high-throughput analysis of mutant phenotypes."
+
+Node: dcid:GOTermEvidenceCodeHighThroughputExperiment
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "High Throughput Experiment"
+abbreviation: "HTP"
+description: "Evidence from any other high-throughput experimental approach not covered by other codes."
+
+Node: dcid:GOTermEvidenceCodeBiologicalAspectOfAncestor
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Biological Aspect of Ancestor"
+abbreviation: "IBA"
+description: "Evidence inferred from the biological aspect of an ancestral gene or gene product."
+
+Node: dcid:GOTermEvidenceCodeInferredByCurator
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Inferred By Curator"
+abbreviation: "IC"
+description: "Evidence inferred by a curator based on review of the literature."
+
+Node: dcid:GOTermEvidenceCodeDirectAssay
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Direct Assay"
+abbreviation: "IDA"
+description: "Evidence from direct assays of gene product activity."
+
+Node: dcid:GOTermEvidenceCodeElectronicAnnotation
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Electronic Annotation"
+abbreviation: "IEA"
+description: "Evidence generated by electronic means, often requiring further verification."
+
+Node: dcid:GOTermEvidenceCodeExpressionPattern
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Expression Pattern"
+abbreviation: "IEP"
+description: "Evidence based on the gene's expression pattern."
+
+Node: dcid:GOTermEvidenceCodeGenomicContext
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Genomic Context"
+abbreviation: "IGC"
+description: "Evidence based on the gene's location or context within the genome."
+
+Node: dcid:GOTermEvidenceCodeGeneticInteraction
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Genetic Interaction"
+abbreviation: "IGI"
+description: "Evidence from genetic interactions between genes."
+
+Node: dcid:GOTermEvidenceCodeKeyResidues
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Key Residues"
+abbreviation: "IKR"
+description: "Evidence based on the presence of key residues or functional domains in the gene product."
+
+Node: dcid:GOTermEvidenceCodeMutantPhenotype
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Mutant Phenotype"
+abbreviation: "IMP"
+description: "Evidence from the phenotypic effects of mutations in the gene."
+
+Node: dcid:GOTermEvidenceCodePhysicalInteraction
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Physical Interaction"
+abbreviation: "IPI"
+description: "Evidence based on physical interactions between the gene product and other molecules."
+
+Node: dcid:GOTermEvidenceCodeSequenceAlignment
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Sequence Alignment"
+abbreviation: "ISA"
+description: "Evidence based on sequence alignment to other sequences with known functions."
+
+Node: dcid:GOTermEvidenceCodeSequenceModel
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Sequence Model"
+abbreviation: "ISM"
+description: "Evidence based on computational sequence models predicting gene product function."
+
+Node: dcid:GOTermEvidenceCodeSequenceOrthology
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Sequence Orthology"
+abbreviation: "ISO"
+description: "Evidence based on sequence orthology to genes with known functions in other species."
+
+Node: dcid:GOTermEvidenceCodeSequenceOrStructuralSimilarity
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Sequence or Structural Similarity"
+abbreviation: "ISS"
+description: "Evidence based on sequence or structural similarity to other gene products with known functions."
+
+Node: dcid:GOTermEvidenceCodeNonTraceableAuthorStatement
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Non-traceable Author Statement"
+abbreviation: "NAS"
+description: "Evidence based on an author's statement, but not directly supported by experimental data."
+
+Node: dcid:GOTermEvidenceCodeNoBiologicalDataAvailable
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "No Biological Data Available"
+abbreviation: "ND"
+description: "No biological data available to support the annotation."
+
+Node: dcid:GOTermEvidenceCodeReviewedComputationalAnalysis
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Reviewed Computational Analysis"
+abbreviation: "RCA"
+description: "Evidence based on computational analysis that has been reviewed by a curator."
+
+Node: dcid:GOTermEvidenceCodeTraceableAuthorStatement
+typeOf: dcs:GOTermEvidenceCodeEnum
+name: "Traceable Author Statement"
+abbreviation: "TAS"
+description: "Evidence based on an author's statement that can be traced back to supporting experimental data."
+
+
+
+# GOTermQualifierEnum
+Node: dcid:GOTermQualifierEnum
+name: "GOTermQualifierEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "Specifies the nature of the association between the gene product and a Gene Ontology (GO) term"
+
+Node: dcid:GOTermQualifierNotActsUpstreamOf
+typeOf: dcs:GOTermQualifierEnum
+name: "Not acts upstream of"
+description: "The gene product is not involved in regulating or initiating a process that precedes another process."
+
+Node: dcid:GOTermQualifierNotActsUpstreamOfOrWithin
+typeOf: dcs:GOTermQualifierEnum
+name: "Not acts upstream of or within"
+description: "The gene product is not involved in regulating or initiating a process that precedes another process, either directly or indirectly."
+
+Node: dcid:GOTermQualifierNotActsUpstreamOfOrWithinNegativeEffect
+typeOf: dcs:GOTermQualifierEnum
+name: "Not acts upstream of or within negative effect"
+description: "The gene product does not negatively regulate or inhibit a process that precedes another process, either directly or indirectly."
+
+Node: dcid:GOTermQualifierNotActsUpstreamOfOrWithinPositiveEffect
+typeOf: dcs:GOTermQualifierEnum
+name: "Not acts upstream of or within positive effect"
+description: "The gene product does not positively regulate or activate a process that precedes another process, either directly or indirectly."
+
+Node: dcid:GOTermQualifierNotColocalizesWith
+typeOf: dcs:GOTermQualifierEnum
+name: "Not colocalizes with"
+description: "The gene product is not found at the same location as another protein or structure."
+
+Node: dcid:GOTermQualifierNotContributesTo
+typeOf: dcs:GOTermQualifierEnum
+name: "Not contributes to"
+description: "The gene product is not one of several factors contributing to the process or function."
+
+Node: dcid:GOTermQualifierNotEnables
+typeOf: dcs:GOTermQualifierEnum
+name: "Not enables"
+description: "The gene product is not necessary for the process or function to occur."
+
+Node: dcid:GOTermQualifierNotInvolvedIn
+typeOf: dcs:GOTermQualifierEnum
+name: "Not involved in"
+description: "The gene product does not participate in the process or function."
+
+Node: dcid:GOTermQualifierNotIsActiveIn
+typeOf: dcs:GOTermQualifierEnum
+name: "Not is active in"
+description: "The gene product is not active or functional in the specified cellular component."
+
+Node: dcid:GOTermQualifierNotLocatedIn
+typeOf: dcs:GOTermQualifierEnum
+name: "Not located in"
+description: "The gene product is not found in the specified cellular component."
+
+Node: dcid:GOTermQualifierNotPartOf
+typeOf: dcs:GOTermQualifierEnum
+name: "Not part of"
+description: "The gene product is not a component of a larger complex or structure."
+
+Node: dcid:GOTermQualifierActsUpstreamOf
+typeOf: dcs:GOTermQualifierEnum
+name: "Acts upstream of"
+description: "The gene product is involved in regulating or initiating a process that precedes another process."
+
+Node: dcid:GOTermQualifierActsUpstreamOfNegativeEffect
+typeOf: dcs:GOTermQualifierEnum
+name: "Acts upstream of negative effect"
+description: "The gene product negatively regulates or inhibits a process that precedes another process."
+
+Node: dcid:GOTermQualifierActsUpstreamOfOrWithin
+typeOf: dcs:GOTermQualifierEnum
+name: "Acts upstream of or within"
+description: "The gene product is involved in regulating or initiating a process that precedes another process, either directly or indirectly."
+
+Node: dcid:GOTermQualifierActsUpstreamOfOrWithinNegativeEffect
+typeOf: dcs:GOTermQualifierEnum
+name: "Acts upstream of or within negative effect"
+description: "The gene product negatively regulates or inhibits a process that precedes another process, either directly or indirectly."
+
+Node: dcid:GOTermQualifierActsUpstreamOfOrWithinPositiveEffect
+typeOf: dcs:GOTermQualifierEnum
+name: "Acts upstream of or within positive effect"
+description: "The gene product positively regulates or activates a process that precedes another process, either directly or indirectly."
+
+Node: dcid:GOTermQualifierActsUpstreamOfPositiveEffect
+typeOf: dcs:GOTermQualifierEnum
+name: "Acts upstream of positive effect"
+description: "The gene product positively regulates or activates a process that precedes another process."
+
+Node: dcid:GOTermQualifierColocalizesWith
+typeOf: dcs:GOTermQualifierEnum
+name: "Colocalizes with"
+description: "The gene product is found at the same location as another protein or structure."
+
+Node: dcid:GOTermQualifierContributesTo
+typeOf: dcs:GOTermQualifierEnum
+name: "Contributes to"
+description: "The gene product is one of several factors contributing to the process or function."
+
+Node: dcid:GOTermQualifierEnables
+typeOf: dcs:GOTermQualifierEnum
+name: "Enables"
+description: "The gene product is necessary for the process or function to occur."
+
+Node: dcid:GOTermQualifierInvolvedIn
+typeOf: dcs:GOTermQualifierEnum
+name: "Involved in"
+description: "The gene product participates in the process or function."
+
+Node: dcid:GOTermQualifierIsActiveIn
+typeOf: dcs:GOTermQualifierEnum
+name: "Is active in"
+description: "The gene product is active or functional in the specified cellular component."
+
+Node: dcid:GOTermQualifierLocatedIn
+typeOf: dcs:GOTermQualifierEnum
+name: "Located in"
+description: "The gene product is found in the specified cellular component."
+
+Node: dcid:GOTermQualifierPartOf
+typeOf: dcs:GOTermQualifierEnum
+name: "Part of"
+description: "The gene product is a component of a larger complex or structure."
+
+
 # NonCodingRNATypeEnum
 Node: dcid:NonCodingRNATypeEnum
 name: "NonCodingRNATypeEnum"
@@ -1179,6 +1565,54 @@ name: "Representative Genome"
 typeOf: dcs:RefSeqCategoryEnum
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/assembly/help/"
 description: "A genome computationally or manually selected as a representative from among the best genomes available for a species or clade that does not have a designated reference genome."
+
+
+# RefSeqStatusEnum
+Node: dcid:RefSeqStatusEnum
+name: "RefSeqStatusEnum"
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+description: "A status is a designation assigned to each RefSeq record in the NCBI RefSeq database that indicates the level of review, curation, and confidence associated with the sequence data. It provides valuable information about the quality and reliability of the sequence."
+
+Node: dcid:RefSeqStatusInferred
+typeOf: dcs:RefSeqStatusEnum
+name: "Inferred"
+description: "The RefSeq record is computationally generated and has not been manually reviewed."
+
+Node: dcs:RefSeqStatusModel
+typeOf: dcs:RefSeqStatusEnum
+name: "Model"
+description: "The RefSeq record represents a predicted sequence based on computational models and may not have experimental validation."
+
+Node: dcs:RefSeqStatusPredicted
+typeOf: dcs:RefSeqStatusEnum
+name: "Predicted"
+description: "The RefSeq record is a predicted sequence, often based on automated computational analysis and may require further experimental confirmation."
+
+Node: dcs:RefSeqStatusProvisional
+typeOf: dcs:RefSeqStatusEnum
+name: "Provisional"
+description: "The RefSeq record is a preliminary sequence that may be subject to change pending further review and validation."
+
+Node: dcs:RefSeqStatusReviewed
+typeOf: dcs:RefSeqStatusEnum
+name: "Reviewed"
+description: "The RefSeq record has undergone manual review and curation by NCBI staff, ensuring high quality and accuracy."
+
+Node: dcs:RefSeqStatusSuppressed
+typeOf: dcs:RefSeqStatusEnum
+name: "Suppressed"
+description: "The RefSeq record has been removed from the database due to issues with quality or redundancy."
+
+Node: dcs:RefSeqStatusValidated
+typeOf: dcs:RefSeqStatusEnum
+name: "Validated"
+description: "The RefSeq record has been experimentally validated and is considered a high-confidence representation of the sequence."
+
+Node: dcs:RefSeqStatusPipeline
+typeOf: dcs:RefSeqStatusEnum
+name: "Pipeline"
+description: "The RefSeq record is generated through automated computational pipelines and has not undergone manual review."
 
 
 # SequenceOntologySubsetEnum

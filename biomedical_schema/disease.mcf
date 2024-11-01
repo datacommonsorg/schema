@@ -258,6 +258,15 @@ domainIncludes: dcs:MeSHConcept
 rangeIncludes: dcs:MeSHConcept
 description: "The preferred MeSH Concept to which the MeSH Concept that is narrower in scope is related."
 
+Node: dcid:scopeNote
+name: "scopeNote"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Thing
+specializationOf: dcs:description
+description: "A scope note is a concise explanatory text that defines the intended meaning and usage of a term or concept within a specific context. It clarifies the meaning of the term, specifies the boundaries of the concept, and provides guidance on its usage."
+descriptionUrl: "https://www.nlm.nih.gov/mesh/xml_data_elements.html#ScopeNote"
+
 Node: dcid:snomedCT
 typeOf: schema:Property
 name: "snomedCT"
@@ -269,12 +278,11 @@ descriptionUrl: "https://www.snomed.org/use-snomed-ct"
 Node: dcid:umlsConceptUniqueID
 typeOf: schema:Property
 name: "umlsConceptUniqueID"
-domainIncludes: dcs:Disease
-rangeIncludes: schema:Text,dcs:MeSHConcept
-description: "A Unified Medical Language System (UMLS) Concept Unique ID (CUI) is a unique identifier in the Metathesaurus for a concept. CUI contain the letter C followed by seven numbers. An example of a CUI is C0018681."
+domainIncludes: dcs:Disease, dcs:UmlsConceptUniqueIdentifier
+rangeIncludes: dcs:MeSHConcept, dcs:UmlsConceptUniqueIdentifier, schema:Text
+abbreviation: "CUI"
+description: "A concept is a meaning. A meaning can have many different names. A key goal of Metathesaurus construction is to understand the intended meaning of each name in each source vocabulary and to link all the names from all of the source vocabularies that mean the same thing (the synonyms). CUI contain the letter C followed by seven numbers. In the example on the right the CUI is C0018681."
 descriptionUrl: "https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_005.html"
-synonym: "unified medical language system concept ID"
-sameAs: dcs:unifiedMedicalLanguageSystemConceptUniqueIdentifier
 
 Node: dcid:unifiedMedicalLanguageSystemConceptUniqueIdentifier
 typeOf: schema:Property
