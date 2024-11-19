@@ -18,6 +18,12 @@ typeOf: schema:Class
 subClassOf: dcs:Protein
 description: "An antibody is a kind of protective protein which is produced by the immune system when substances from the outer source invade the living organisms. The process of producing the antibodies is called immune response."
 
+Node: dcid:Association
+name: "Association"
+typeOf: schema:Class
+subClassOf: schema:Thing
+description: "An observed association between two entities."
+
 Node: dcid:BiomedicalEntity
 name: "BiomedicalEntity"
 typeOf: schema:Class
@@ -34,7 +40,7 @@ descriptionUrl: "https://www.ebi.ac.uk/chembl/"
 Node: dcid:ChemicalCompoundAssociation
 name: "ChemicalCompoundAssociation"
 typeOf: schema:Class
-subClassOf: dcs:ChemicalCompound
+subClassOf: dcs:Association,dcs:ChemicalCompound
 description: "Observed association between a chemical compound and another entity type."
 
 Node: dcid:ChemicalCompoundChemicalCompoundAssociation

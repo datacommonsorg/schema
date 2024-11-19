@@ -8,7 +8,7 @@ descriptionUrl: "https://disease-ontology.org/"
 Node: dcid:DiseaseAssociation
 name: "DiseaseAssociation"
 typeOf: schema:Class
-subClassOf: dcs:Disease
+subClassOf: dcs:Association,dcs:Disease
 description: "The association between a disease and a second type of entity."
 
 Node: dcid:DiseaseDiseaseAssociation
@@ -20,13 +20,13 @@ description: "The association between two diseases."
 Node: dcid:DiseaseGeneAssociation
 name: "DiseaseGeneAssociation"
 typeOf: schema:Class
-subClassOf: dcs:DiseaseAssociation
+subClassOf: dcs:DiseaseAssociation,dcs:GeneticAssociation
 description: "The association of a disease with a gene."
 
 Node: dcid:DiseaseGeneticVariantAssociation
 name: "DiseaseGeneticVariantAssociation"
 typeOf: schema:Class
-subClassOf: dcs:DiseaseAssociation
+subClassOf: dcs:DiseaseAssociation,dcs:GeneticAssociation
 description: "The association between a disease and a genetic variant."
 
 Node: dcid:MeSHConcept
