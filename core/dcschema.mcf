@@ -457,7 +457,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, , schema:MedicalConditionIncident, schema:PregnantWoman
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -2766,7 +2766,7 @@ name: "incidentType"
 
 Node: dcid:medicalStatus
 rangeIncludes: dcs:MedicalStatusEnum, dcs:MedicalEventEnum
-domainIncludes: dcs:MedicalConditionIncident, dcs:BirthEvent
+domainIncludes: dcs:MedicalConditionIncident, dcs:BirthEvent, dcs:PregnantWoman, dcs:Person
 typeOf: schema:Property
 name: "medicalStatus"
 description: "Used to indicate the status of a medical condition incident."
@@ -2890,7 +2890,7 @@ typeOf: schema:Property
 name: "socialCategory"
 description: "Identifies a designated group of people. For example, Scheduled Tribes (ST) in India."
 rangeIncludes: dcs:SocialCategoryEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:PregnantWoman
 
 Node: dcid:internetSubscriptionType
 typeOf: schema:Property
@@ -4211,3 +4211,11 @@ Node: dcid:StatisticalRegion
 name: "StatisticalRegion"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
+
+Node: dcid:economicDependencyStatus
+typeOf: dcid:Property
+name: "economicDependencyStatus"
+domainIncludes: dcid:MedicalConditionIncident
+rangeIncludes: dcid:EconomicDependencyStatusEnum
+
+
