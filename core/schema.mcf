@@ -2311,8 +2311,8 @@ typeOf: schema:Class
 
 Node: discount
 dcid: "discount"
-domainIncludes: schema:Order
-rangeIncludes: schema:Number
+domainIncludes: schema:Order, schema:Household
+rangeIncludes: schema:Number, schema:DiscountTypeEnum
 name: "discount"
 typeOf: schema:Property
 
@@ -6030,7 +6030,7 @@ source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater,dcs:Household, dcs:Expenditure
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -8502,7 +8502,7 @@ name: "lodgingUnitType"
 Node: gender
 dcid: "gender"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:BirthEvent, schema:Household
+domainIncludes: schema:Person, schema:BirthEvent, schema:Household, schema:Child, schema:PregnantWoman
 name: "gender"
 rangeIncludes: schema:GenderType, dcs:SDG_SexEnum
 
@@ -11601,6 +11601,7 @@ Node: dcid:bankAccountType
 name: "bankAccountType"
 rangeIncludes: dcs:BankAccountTypeEnum
 typeOf: schema:Property
+domainIncludes: dcid:Household
 
 Node: dcid:BankAccountTypeEnum
 typeOf: schema:Class
@@ -11670,3 +11671,64 @@ nameWithLanguage: "Cestas de alimentos@pt"
 subClassOf: dcs:Thing
 description: "The basic food basket in Brazil takes into account the prices of 13 food products that are necessary to guarantee, for one month, the sustenance of an adult worker."
 descriptionUrl: "https://www.statista.com/statistics/1382282/average-price-basic-food-basket-brazil/#:~:text=The%20basic%20food%20basket%20in,of%20over%20739%20Brazilian%20reals."
+
+Node: dcid:headOfFamily
+typeOf: dcid:Property
+name: "headOfFamily"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:HeadOfFamilyEnum
+
+Node: dcid:monitoringProgram
+typeOf: dcid:Property
+name: "monitoringProgram"
+domainIncludes: dcid:Person,dcid:PregnantWoman,dcid:Children,dcid:Household,dcid:Child
+rangeIncludes: dcid:MonitoringProgramEnum
+
+Node: dcid:childAge
+typeOf: dcid:Property
+name: "childAge"
+domainIncludes: dcid:Person,dcid:Household
+rangeIncludes: dcid:ChildAgeEnum
+
+Node: dcid:womanAge
+typeOf: dcid:Property
+name: "womanAge"
+domainIncludes: dcid:Person,dcid:Household
+rangeIncludes: dcid:WomanAgeEnum
+
+Node: dcid:governmentAgency
+typeOf: dcid:Property
+name: "governmentAgency"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:GovernmentAgencyEnum
+
+Node: dcid:householdMemberCount
+typeOf: dcid:Property
+name: "householdMemberCount"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:QuantityRange
+
+Node: dcid:sanitaryDrainageMethod
+typeOf: dcid:Property
+name: "sanitaryDrainageMethod"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:SanitaryDrainageMethodEnum
+
+Node: dcid:registeredIn
+typeOf: dcid:Property
+name: "registeredIn"
+domainIncludes: dcid:Household,dcid:Person
+rangeIncludes: dcid:RegisteredInEnum
+
+Node: dcid:beneficiariesType
+typeOf: dcid:Property
+name: "beneficiariesType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:benefitLocation
+typeOf: dcid:Property
+name: "benefitLocation"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:BenefitLocationEnum
+

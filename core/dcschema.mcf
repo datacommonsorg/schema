@@ -457,7 +457,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:Children, schema:Child
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -2728,7 +2728,7 @@ description: "Further specification on the type of a claim, application, or requ
 Node: dcid:benefitProgram
 name: "benefitProgram"
 typeOf: schema:Property
-domainIncludes: dcs:UnemploymentInsuranceClaim
+domainIncludes: dcs:UnemploymentInsuranceClaim, dcs:EconomicActivity, dcs:Person, dcs:Household, dcs:PregnantWoman, dcs:Children, dcs:Expenditure, dcs:Resource, dcs:Child
 rangeIncludes: dcs:UnemploymentInsuranceProgramEnum, dcs:BenefitProgramEnum
 description: "A program that offers benefits. E.g. SNAP (foodstamps), UI (Unemployment Insurance), etc."
 
@@ -3112,7 +3112,7 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Vaccine"
 Node: dcid:vaccineStatus
 name: "vaccineStatus"
 typeOf: schema:Property
-domainIncludes: dcs:Vaccine, dcs:Person
+domainIncludes: dcs:Vaccine, dcs:Person, dcs:Children, dcs:Child
 rangeIncludes: dcs:VaccineStatusEnum
 
 Node: dcid:vaccineDoseReceived
@@ -4211,3 +4211,25 @@ Node: dcid:StatisticalRegion
 name: "StatisticalRegion"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
+
+Node: dcid:beneficiaryType
+typeOf: dcid:Property
+name: "beneficiaryType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:BeneficiaryTypeEnum,dcid:HealthWorkerEnum
+
+Node: dcid:beneficiariesProfile
+typeOf: dcid:Property
+name: "beneficiariesProfile"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:Resource
+name: "Resource"
+typeOf: schema:Class
+subClassOf: schema:Thing
+
+Node: dcid:Expenditure
+name: "Expenditure"
+typeOf: schema:Class
+subClassOf: schema:Thing
