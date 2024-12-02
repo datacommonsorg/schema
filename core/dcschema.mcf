@@ -1605,7 +1605,7 @@ typeOf: schema:Property
 name: "householdSize"
 description: "Size of the household in terms of numbers persons residing in the housing unit"
 rangeIncludes: schema:Quantity, dcs:QuantityRange
-domainIncludes: dcs:HousingUnit, dcs:Household
+domainIncludes: dcs:HousingUnit, dcs:Household, dcs:Person
 
 Node: dcid:familySize
 typeOf: schema:Property
@@ -2945,7 +2945,7 @@ typeOf: schema:Property
 name: "enrollmentLevel"
 description: "Identifies a person's enrollment level."
 rangeIncludes: dcs:EnrollmentLevelEnum, dcs:SchoolGradeLevelEnum
-domainIncludes: schema:Person, dcs:Student
+domainIncludes: schema:Person, dcs:Student, dcs:Person
 
 Node: dcid:workCategory
 typeOf: schema:Property
@@ -3038,7 +3038,7 @@ Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcs:WorkZoneTypeEnum, dcs:ConsumerGoodsCategoryEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -3613,12 +3613,14 @@ Node: dcid:incomeType
 typeOf: dcs:Property
 name: "incomeType"
 rangeIncludes: dcs:IncomeTypeEnum
+domainIncludes: dcs:Person
 description: "Type of income a person received."
 
 Node: dcid:incomeSource
 typeOf: dcs:Property
 name: "incomeSource"
 rangeIncludes: dcs:IncomeSourceEnum
+domainIncludes: dcs:Person
 description: "Priority level of the job a person is getting an income from. A Main Job or All Jobs"
 
 Node: dcid:consumerGoodsCategory
@@ -4211,3 +4213,59 @@ Node: dcid:StatisticalRegion
 name: "StatisticalRegion"
 typeOf: schema:Class
 subClassOf: schema:AdministrativeArea
+
+Node: dcid:jobSearchTime
+typeOf: dcid:Property
+name: "jobSearchTime"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:QuantityRange
+
+Node: dcid:worker
+typeOf: dcid:Property
+name: "worker"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WorkerEnum
+
+Node: dcid:actualHoursWorked
+typeOf: dcid:Property
+name: "actualHoursWorked"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ActualHoursWorkedEnum
+
+Node: dcid:employmentArea
+typeOf: dcid:Property
+name: "employmentArea"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:EmploymentAreaEnum
+
+Node: dcid:numberOfJob
+typeOf: dcid:Property
+name: "numberOfJob"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:QuantityRange
+
+Node: dcid:laborCondition
+typeOf: dcid:Property
+name: "laborCondition"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:LaborConditionEnum
+
+Node: dcid:comparisonPeriod
+typeOf: dcid:Property
+name: "comparisonPeriod"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ComparisonPeriodEnum
+
+Node: dcid:coefficientOfVariationValue
+typeOf: dcid:Property
+domainIncludes: dcs:Observation
+name: "coefficientOfVariationValue"
+description: "Coefficient of variation (CV) is a statistical measure that expresses the dispersion of a dataset as a percentage of its mean."
+rangeIncludes: dcs:Number
+
+Node: dcid:changeValue
+typeOf: dcid:Property
+domainIncludes: dcs:Observation
+name: "changeValue"
+description: "The relative change in the values of the quarter compared with the previous quarter"
+rangeIncludes: dcs:Number
