@@ -906,6 +906,14 @@ rangeIncludes: schema:Number
 sameAs: "https://www.nlm.nih.gov/research/umls/rxnorm/index.html"
 description: "The identifier for this drug in the NIH National Library of Science RxNorm database, which is apart of the Unified Medical Language System (UMLS). RxNorm provides normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software, including those of First Databank, Micromedex, Multum, and Gold Standard Drug Database. By providing links between these vocabularies, RxNorm can mediate messages between systems not using the same software and vocabulary."
 
+Node: dcid:schemblId
+name: "schemblId"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:ChemicalCompound
+synonym: "SureChEMBL identifier"
+description: "The unique identifier for a chemical compound found within the SureChEMBL database, which is a repository of compounds extracted from patent documents."
+
 Node: dcid:simplifiedMolecularInputLineEntrySystem
 name: "simplifiedMolecularInputLineEntrySystem"
 typeOf: schema:Property
