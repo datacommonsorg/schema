@@ -147,35 +147,35 @@ typeOf: dcs:CitizenshipEnum
 name: "CitizenOutsideEU27"
 description: "Citizen of a country outside EU27."
 
-# GlobalActivityLimitationindicator
-Node: dcid:GlobalActivityLimitationindicatorEnum
+# GlobalActivityLimitationIndicator
+Node: dcid:GlobalActivityLimitationIndicatorEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "GlobalActivityLimitationindicatorEnum"
+name: "GlobalActivityLimitationIndicatorEnum"
 description: "Activity limitation is a dimension of health/disability capturing long-standing limitation in performing usual activities (due to health problems)."
 descriptionUrl: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Activity_limitation"
 
 Node: dcid:ModerateActivityLimitation
-typeOf: dcs:GlobalActivityLimitationindicatorEnum
+typeOf: dcs:GlobalActivityLimitationIndicatorEnum
 name: "Moderate Activity Limitation"
 
 Node: dcid:SevereActivityLimitation
-typeOf: dcs:GlobalActivityLimitationindicatorEnum
+typeOf: dcs:GlobalActivityLimitationIndicatorEnum
 name: "Severe Activity Limitation"
 
 Node: dcid:LimitedActivityLimitation
-typeOf: dcs:GlobalActivityLimitationindicatorEnum
+typeOf: dcs:GlobalActivityLimitationIndicatorEnum
 name: "Limited Activity Limitation"
 
 Node: dcid:NoActivityLimitation
-typeOf: dcs:GlobalActivityLimitationindicatorEnum
+typeOf: dcs:GlobalActivityLimitationIndicatorEnum
 name: "No Activity Limitation"
 
 Node: dcid:globalActivityLimitationindicator
 name: "globalActivityLimitationindicator"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:GlobalActivityLimitationindicatorEnum
+rangeIncludes: dcs:GlobalActivityLimitationIndicatorEnum
 description: "The Global Activity Limitation Indicator (GALI) refers to a single-item measure of functional status where individuals are asked to rate their long-term limitations in usual activities due to a health problem"
 descriptionUrl: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4426645"
 
