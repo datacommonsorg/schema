@@ -2,7 +2,7 @@
 Node: dcid:VehicleCrashIncident
 typeOf: schema:Class
 subClassOf: dcs:Incident
-name: "Vehicle Crash Incident"
+name: "VehicleCrashIncident"
 description: "Occurrence of a vehicle crash event"
 
 
@@ -12,7 +12,7 @@ typeOf: dcid:Property
 name: "crashInvolvement"
 domainIncludes: dcid:Vehicle,dcid:Person
 rangeIncludes: dcid:CrashInvolvementEnum
-description: "Involvement in the crash occured"
+description: "Involvement in the crash occurred"
 
 Node: dcid:vehicleStatus
 typeOf: dcid:Property
@@ -55,7 +55,7 @@ typeOf: dcid:Property
 name: "crashType"
 domainIncludes: dcid:VehicleCrashIncident
 rangeIncludes: dcid:CrashTypeEnum
-description: "Type of crash occured"
+description: "Type of crash occurred"
 
 Node: dcid:lightCondition
 typeOf: dcid:Property
@@ -78,21 +78,21 @@ typeOf: dcid:Property
 name: "roadIntersectionType"
 domainIncludes: dcid:VehicleCrashIncident
 rangeIncludes: dcid:RoadIntersectionTypeEnum
-description: "Type of road intersection at which crash occured"
+description: "Type of road intersection at which crash occurred"
 
 Node: dcid:vehicleType
 typeOf: dcid:Property
 name: "vehicleType"
 domainIncludes: dcid:VehicleCrashIncident
 rangeIncludes: dcid:VehicleTypeEnum
-description: "Type of vehical involved in crash"
+description: "Type of vehicle involved in crash"
 
 Node: dcid:workZoneType
 typeOf: dcid:Property
 name: "workZoneType"
 domainIncludes: dcid:VehicleCrashIncident
 rangeIncludes: dcid:WorkZoneTypeEnum
-description: "Type of workzone at which the crash occured"
+description: "Type of work zone at which the crash occurred"
 
 
 # Enumeration
@@ -505,17 +505,17 @@ Node: dcid:Utility
 typeOf: dcid:WorkZoneTypeEnum
 name: "Utility"
 
-Node: dcid:NHTSA_UnknownWorkzone
+Node: dcid:NHTSA_UnknownWorkZone
 typeOf: dcid:WorkZoneTypeEnum
-name: "NHTSA Unknown Workzone"
+name: "NHTSA Unknown Work zone"
 
-Node: dcid:NHTSA_WorkzoneNotReported
+Node: dcid:NHTSA_WorkZoneNotReported
 typeOf: dcid:WorkZoneTypeEnum
-name: "NHTSA Workzone Not Reported"
+name: "NHTSA Work zone Not Reported"
 
 Node: dcid:NotAWorkZone
 typeOf: dcid:WorkZoneTypeEnum
-name: "Not A Work Zone"
+name: "Not A Work zone"
 
 Node: dcid:NotASchoolBus
 typeOf: dcid:VehicleTypeEnum
@@ -531,69 +531,69 @@ descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813
 Node: dcid:NHTSA_NotReportedIntersectionType
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "NHTSA Not Reported Intersection Type"
-description: "Not reported intersection type of road at which crash occured"
+description: "Not reported intersection type of road at which crash occurred"
 
 Node: dcid:NHTSA_OtherIntersectionType
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "NHTSA Other Intersection Type"
-description: "Other intersection type of road intersection at which crash occured"
+description: "Other intersection type of road intersection at which crash occurred"
 
 Node: dcid:NHTSA_UnknownIntersectionType
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "NHTSA Unknown Intersection Type"
-description: "Unknown intersection type of road intersection at which crash occured"
+description: "Unknown intersection type of road intersection at which crash occurred"
 
 Node: dcid:FivePointOrMore
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "Five Point Or More"
-description: "Five point or more type of road intersection at which crash occured"
+description: "Five point or more type of road intersection at which crash occurred"
 
 Node: dcid:FourWayIntersection
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "Four Way Intersection"
-description: "Four way intersection type of road intersection at which crash occured"
+description: "Four way intersection type of road intersection at which crash occurred"
 
 Node: dcid:LIntersection
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "L-Intersection"
-description: "L-Intersection type of road intersection at which crash occured"
+description: "L-Intersection type of road intersection at which crash occurred"
 
 Node: dcid:NotAnIntersection
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "Not An Intersection"
-description: "Not an intersection type of road at which crash occured"
+description: "Not an intersection type of road at which crash occurred"
 
 Node: dcid:ReportedAsUnknown
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "Reported As Unknown"
-description: "Reported as unknown type of road intersection at which crash occured"
+description: "Reported as unknown type of road intersection at which crash occurred"
 
 Node: dcid:Roundabout
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "Roundabout"
-description: "Roundabout type of road intersection at which crash occured"
+description: "Roundabout type of road intersection at which crash occurred"
 
 Node: dcid:TIntersection
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "T-Intersection"
-description: "T-Intersection type of road intersection at which crash occured"
+description: "T-Intersection type of road intersection at which crash occurred"
 
 Node: dcid:TrafficCircle
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "Traffic Circle"
-description: "Traffic pircle type of road intersection at which crash occured"
+description: "Traffic pircle type of road intersection at which crash occurred"
 
 Node: dcid:YIntersection
 typeOf: dcid:RoadIntersectionTypeEnum
 name: "Y-Intersection"
-description: "Y-Intersection type of road intersection at which crash occured"
+description: "Y-Intersection type of road intersection at which crash occurred"
 
 Node: dcid:InTransport
 typeOf: dcid:VehicleStatusEnum
 name: "In Transport"
-description: "Indicated vehical involved in crash is in transport"
+description: "Indicated vehicle involved in crash is in transport"
 
 Node: dcid:Parked
 typeOf: dcid:VehicleStatusEnum
 name: "Parked"
-description: "Indicated parked vehical involved in crash"
+description: "Indicated parked vehicle involved in crash"
