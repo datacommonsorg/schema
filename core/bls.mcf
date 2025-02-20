@@ -63,6 +63,11 @@ typeOf: dcs:EmploymentStatusEnum
 name: "InLaborForce"
 description: "People who are fulfilling the requirement for inclusion in the employed or unemployed."
 
+Node: dcid:FormalLabor
+typeOf: dcid:EmploymentStatusEnum
+name: "Formal Labor"
+description: "formal labour means a structured and regulated job with a contract, government registration, legal protections, and access to benefits."
+
 Node: EmploymentStatusEnum
 dcid: "EmploymentStatusEnum"
 subClassOf: schema:Enumeration
@@ -185,7 +190,7 @@ name: "establishmentOwnership"
 rangeIncludes: dcs:EstablishmentOwnershipEnum, dcs:SchoolManagementEnum
 source: "https://datacommons.org"
 typeOf: schema:Property
-domainIncludes: dcs:BLSWorker, dcs:BLSEstablishment
+domainIncludes: dcs:BLSWorker, dcs:BLSEstablishment, dcs:School, dcs:Student, dcs:Teacher, dcs:CollegeOrUniversity
 
 Node: EstablishmentOwnership0
 typeOf: dcs:EstablishmentOwnershipEnum
