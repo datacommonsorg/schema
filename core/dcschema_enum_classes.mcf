@@ -605,3 +605,141 @@ subClassOf: dcid:Enumeration
 name: "VulnerabilityStatusEnum"
 description: "Social Vulnerability Status refers to the demographic and socioeconomic factors (such as poverty, lack of access to transportation, and crowded housing) that adversely affect communities that encounter hazards and other community-level stressors"
 descriptionUrl: "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+
+Node: dcid:DonationSourceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "DonationSourceEnum"
+description:"Enumeration for Source of the donation"
+
+Node: dcid:CoverageRatesEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CoverageRatesEnum"
+description:"Enumeration for Coverage Rates By Level Of Education"
+
+Node: dcid:SchoolManagementRegimeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "SchoolManagementRegimeEnum"
+description:"Enumeration for School Management Regime"
+
+Node: dcid:TeachingExperienceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "TeachingExperienceEnum"
+description:"Enumeration for Teaching Experience"
+
+Node: dcid:MeasurementQualifierEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MeasurementQualifierEnum"
+description: "Enumeration for MeasurementQualifier,Provides additional qualification to an observation. For example, a GDP observation measures the Nominal value."
+descriptionUrl: "https://drcongo.opendataforafrica.org/data/#topic=Economy"
+
+Node: dcid:TypeOfClassroomEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "TypeOfClassroomEnum"
+description:"Enumeration for the Type of ClassRoom"
+
+Node: dcid:ClassroomConditionEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ClassroomConditionEnum"
+description:"Enumeration for the ClassRoom Condition"
+
+Node: dcid:ActivityTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ActivityTypeEnum"
+
+Node: dcid:SchoolEnrollmentEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "SchoolEnrollmentEnum"
+description:"Enumeration for school Enrollment"
+
+Node: dcid:donationType
+typeOf: dcid:Property
+name: "donationType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:DebtInstrumentEnum
+description:"Type of donation availed by the entity"
+
+Node: dcid:classroomCondition
+typeOf: dcid:Property
+name: "classroomCondition"
+domainIncludes: dcid:ClassRoom
+rangeIncludes: dcid:ClassroomConditionEnum
+description:"Condition of the ClassRoom in School"
+
+Node: dcid:coverageRates
+typeOf: dcid:Property
+name: "coverageRates"
+rangeIncludes: dcid:CoverageRatesEnum
+domainIncludes: dcid:School
+
+Node: dcid:lethality
+typeOf: dcid:Property
+name: "lethality"
+domainIncludes: dcid:MedicalConditionIncident
+
+Node: dcid:schoolManagementRegime
+typeOf: dcid:Property
+name: "schoolManagementRegime"
+domainIncludes: School,dcid:ClassRoom,dcid:Establishment,dcid:Person,dcid:Children,dcid:Teacher,dcid:Student
+rangeIncludes: dcid:SchoolManagementRegimeEnum
+
+Node: dcid:inflationRate
+typeOf: dcid:Property
+name: "inflationRate"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:amountService
+typeOf: dcid:Property
+name: "amountService"
+domainIncludes: dcid:Debt
+
+Node: dcid:donationSource
+typeOf: dcid:Property
+name: "donationSource"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:DonationSourceEnum,Country
+
+Node: dcid:arrears
+typeOf: dcid:Property
+name: "arrears"
+
+Node: dcid:teachingExperience
+typeOf: dcid:Property
+name: "teachingExperience"
+domainIncludes: Teacher,dcid:Person
+rangeIncludes: TeachingExperienceEnum,dcid:QuantityRange
+
+Node: dcid:activityType
+typeOf: dcid:Property
+name: "activityType"
+domainIncludes: dcid:ClassRoom
+rangeIncludes: dcid:ActivityTypeEnum
+
+Node: dcid:priceIndex
+typeOf: dcid:Property
+name: "priceIndex"
+domainIncludes: EconomicActivity, dcid:Household
+
+Node: dcid:trade
+typeOf: dcid:Property
+name: "trade"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:typeOfClassroom
+typeOf: dcid:Property
+name: "typeOfClassroom"
+domainIncludes: dcid:ClassRoom
+rangeIncludes: dcid:TypeOfClassroomEnum
+
+Node: dcid:amountDue
+typeOf: dcid:Property
+name: "amountDue"
+domainIncludes: dcid:Debt
