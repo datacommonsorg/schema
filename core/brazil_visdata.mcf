@@ -55,7 +55,6 @@ typeOf: dcid:BenefitProgramEnum
 name: "Brazil Rural Development Program"
 description: "The program helps poorest rural families can develop their production projects"
 nameWithLanguage: "Programa Fomento Rural@pt"
-descriptionUrl: "https://www.gov.br/mds/pt-br/acoes-e-programas/inclusao-produtiva-rural/programa-fomento-rural"
 
 Node: dcid:Brazil_NationalLandCreditProgram
 typeOf: dcid:BenefitsStatusEnum
@@ -89,7 +88,7 @@ Node: dcid:GypsyFamily
 typeOf: dcid:FamilyTypeEnum
 name: "Gypsy Family"
 nameWithLanguage: "Família Cigana@pt"
-description: "Brazilian Romani are mostly descendant from German/Italian Sinti (in the South/Southeast regions), and Roma and Calon people."
+description: "Brazilian Romani are mostly descendant from German/Italian Sinti (in the South/Southeast regions), and Roma people."
 
 Node: dcid:InEmergencyCare
 typeOf: dcid:FamilyTypeEnum
@@ -136,37 +135,37 @@ nameWithLanguage: "Estabelecidos em acampamentos@pt"
 Node: dcid:FarmingFamily
 typeOf: dcid:FamilyTypeEnum
 name: "Farming Family"
-nameWithLanguage: ""
+nameWithLanguage: "Família agrícola@pt"
 
 Node: dcid:AgrarianReformFamily
 typeOf: dcid:FamilyTypeEnum
 name: "Agrarian Reform Family"
-nameWithLanguage: ""
+nameWithLanguage: "Família de reforma agrária@pt"
 
 Node: dcid:RiversideFamily
 typeOf: dcid:FamilyTypeEnum
 name: "Riverside Family"
-nameWithLanguage: ""
+nameWithLanguage: "Família ribeirinha@pt"
 
 Node: dcid:CampFamily
 typeOf: dcid:FamilyTypeEnum
 name: "Camp Family"
-nameWithLanguage: ""
+nameWithLanguage: "Família de acampamento@pt"
 
 Node: dcid:PrisonersInPrisonSystem
 typeOf: dcid:FamilyTypeEnum
 name: "Prisoners In Prison System"
-nameWithLanguage: ""
+nameWithLanguage: "Presos no sistema penitenciário@pt"
 
 Node: dcid:TerreiroCommunity
 typeOf: dcid:FamilyTypeEnum
 name: "Terreiro Community"
-nameWithLanguage: ""
+nameWithLanguage: "Comunidade terreiro@pt"
 
 Node: dcid:FinancialBenefit
 typeOf: dcid:BenefitTypeEnum
 name: "Financial Benefit"
-nameWithLanguage: ""
+nameWithLanguage: "Benefício financeiro@pt"
 
 Node: dcid:NationalConfederationOfAgricultureSENAR
 typeOf: dcid:BrazilAidDistributionPartnerEnum
@@ -231,4 +230,463 @@ isProvisional: dcid:True
 Node: dcid:InfrastructureProject
 typeOf: dcid:AffectedByEnum
 name: "Infrastructure Project"
-nameWithLanguage: ""
+nameWithLanguage: "Projeto de infraestrutura@pt"
+
+Node: dcid:placeCategory
+typeOf: dcid:Property
+name: "placeCategory"
+domainIncludes: dcid:CivicStructure
+description: "The type of the assistance provided."
+rangeIncludes: dcid:PlaceCategoryEnum
+
+Node: dcid:censusStatus
+typeOf: dcid:Property
+name: "censusStatus"
+domainIncludes: dcid:CivicStructure,dcid:Shelters
+rangeIncludes: dcid:CensusStatusEnum
+description: "The status of the census."
+isProvisional: dcid:True
+
+Node: dcid:pensionType
+typeOf: dcid:Property
+name: "pensionType"
+domainIncludes: dcid:Children,dcid:EconomicActivity
+rangeIncludes: dcid:PensionTypeEnum
+isProvisional: dcid:True
+
+Node: dcid:brazilSystemType
+typeOf: dcid:Property
+name: "brazilSystemType"
+domainIncludes: dcid:CivicStructure,dcid:Shelters,dcid:FinancialTransaction
+rangeIncludes: dcid:BrazilSystemTypeEnum
+description: "The type of the system in brazil social assistance."
+isProvisional: dcid:True
+
+Node: dcid:brazilCenterLevel
+typeOf: dcid:Property
+name: "brazilCenterLevel"
+domainIncludes: dcid:CivicStructure,dcid:Shelters,dcid:FinancialTransaction
+rangeIncludes: dcid:BrazilCenterLevelEnum
+description: "The level at which the assistance was provided."
+isProvisional: dcid:True
+
+Node: dcid:financeType
+typeOf: dcid:Property
+name: "financeType"
+domainIncludes: dcid:CivicStructure
+rangeIncludes: dcid:FinanceTypeEnum
+isProvisional: dcid:True
+
+Node: dcid:financePartner
+typeOf: dcid:Property
+name: "financePartner"
+domainIncludes: dcid:CivicStructure
+rangeIncludes: dcid:FinancePartnerEnum
+isProvisional: dcid:True
+
+Node: dcid:serviceType
+typeOf: dcid:Property
+name: "serviceType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ServiceTypeEnum
+description: "The type of the service provided."
+isProvisional: dcid:True
+
+Node: dcid:councilType
+typeOf: dcid:Property
+name: "councilType"
+domainIncludes: dcid:CivicStructure
+rangeIncludes: dcid:CouncilTypeEnum
+description: "The type of the council in a particular place."
+isProvisional: dcid:True
+
+Node: dcid:ServiceTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ServiceTypeEnum"
+isProvisional: dcid:True
+
+Node: dcid:FinancePartnerEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FinancePartnerEnum"
+isProvisional: dcid:True
+
+Node: dcid:FinanceTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FinanceTypeEnum"
+isProvisional: dcid:True
+
+Node: dcid:CensusStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CensusStatusEnum"
+isProvisional: dcid:True
+
+Node: dcid:PlaceCategoryEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "PlaceCategoryEnum"
+isProvisional: dcid:True
+
+Node: dcid:BrazilSystemTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BrazilSystemTypeEnum"
+isProvisional: dcid:True
+
+Node: dcid:BrazilCenterLevelEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BrazilCenterLevelEnum"
+isProvisional: dcid:True
+
+Node: dcid:BRA_SocialAssistanceReferenceCenters
+typeOf: dcid:PlaceCategoryEnum
+name: "Brazil Social Assistance Reference Centers"
+nameWithLanguage: "Centros de Referência de Assistência Social@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_SpecializedReferenceCentersForSocialAssistance
+typeOf: dcid:PlaceCategoryEnum
+name: "Brazil Specialized Reference Centers For Social Assistance"
+nameWithLanguage: "Centros de Referência Especializados da Assistência Social@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_RegularModernizationSocialAssistanceProgram
+typeOf: dcid:Place
+name: "Brazil Regular Modernization Social Assistance Program"
+nameWithLanguage: "Programa Regular de Modernização da Assistência Social@pt"
+isProvisional: dcid:True
+
+Node: dcid:DayCenters
+typeOf: dcid:PlaceCategoryEnum
+name: "Day Centers"
+nameWithLanguage: "Centros de Dia@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_SpecializedReferenceCenterForHomeless
+typeOf: dcid:PlaceCategoryEnum
+name: "Brazil Specialized Reference Center For Homeless"
+nameWithLanguage: "Centro de Referência Especializado para Pessoas em Situação de Rua@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_RegularMunicipalSocialAssistanceFund
+typeOf: dcid:PlaceCategoryEnum
+name: "Brazil Regular Municipal Social Assistance Fund"
+nameWithLanguage: "Fundo Municipal Regular de Assistência Social@pt"
+isProvisional: dcid:True
+
+Node: dcid:DayCentersAndSimilarServices
+typeOf: dcid:PlaceCategoryEnum
+name: "Day Centers And Similar Services"
+nameWithLanguage: "Centros de Dia e Serviços Semelhantes@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_MunicipalCouncilOfSocialAssistance
+typeOf: dcid:PlaceCategoryEnum
+name: "Brazil Municipal Council Of Social Assistance"
+nameWithLanguage: "Conselhos Municipais de Assistência Social@pt"
+isProvisional: dcid:True
+
+Node: dcid:CompletedCensus
+typeOf: dcid:CensusStatusEnum
+name: "Completed Census"
+nameWithLanguage: "Censo Completed@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_UnifiedSocialAssistanceSystem
+typeOf: dcid:BrazilSystemTypeEnum
+name: "Brazil Unified Social Assistance System"
+nameWithLanguage: "Sistema Único de Assistência Social@pt"
+isProvisional: dcid:True
+
+Node: dcid:MunicipalLevel
+typeOf: dcid:BrazilCenterLevelEnum
+name: "Municipal Level"
+nameWithLanguage: "Nível Municipal@pt"
+isProvisional: dcid:True
+
+Node: dcid:RegionalLevel
+typeOf: dcid:BrazilCenterLevelEnum
+name: "Regional Level"
+nameWithLanguage: "Nível Regional@pt"
+isProvisional: dcid:True
+
+Node: dcid:MunicipalAndRegionalLevel
+typeOf: dcid:BrazilCenterLevelEnum
+name: "Municipal And Regional Level"
+nameWithLanguage: "Nível Municipal e Regional@pt"
+isProvisional: dcid:True
+
+Node: dcid:Cofinancing
+typeOf: dcid:FinanceTypeEnum
+name: "Cofinancing"
+nameWithLanguage: "Cofinanciamento@pt"
+isProvisional: dcid:True
+
+Node: dcid:MinistryOfCitizenship
+typeOf: dcid:FinancePartnerEnum
+name: "Ministry Of Citizenship"
+nameWithLanguage: "Ministério da Cidadania@pt"
+isProvisional: dcid:True
+
+Node: dcid:Shelters
+typeOf: dcid:Thing
+name: "Shelters"
+isProvisional: dcid:True
+
+Node: dcid:Vacant
+typeOf: dcid:OccupancyStatusEnum
+name: "Vacant"
+nameWithLanguage: "Vago@pt"
+isProvisional: dcid:True
+
+Node: dcid:ZikaVirusSyndrome
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Zika Virus Syndrome"
+nameWithLanguage: "Síndrome do Zika Virus@pt"
+isProvisional: dcid:True
+
+Node: dcid:PensionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "PensionTypeEnum"
+isProvisional: dcid:True
+
+Node: dcid:BRA_SpecialPension
+typeOf: dcid:PensionTypeEnum
+name: "Brazil Special Pension"
+nameWithLanguage: "Pensão Especial@pt"
+isProvisional: dcid:True
+
+Node: dcid:pensionApproved
+typeOf: dcid:Property
+name: "pensionApproved"
+domainIncludes: dcid:Children
+rangeIncludes: dcid:PensionApprovedEnum
+description: "The system that approved the pension."
+isProvisional: dcid:True
+
+Node: dcid:PensionApprovedEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "PensionApprovedEnum"
+isProvisional: dcid:True
+
+Node: dcid:AdministrativeGrant
+typeOf: dcid:PensionApprovedEnum
+name: "Administrative Grant"
+nameWithLanguage: "Concessão Administrativa@pt"
+isProvisional: dcid:True
+
+Node: dcid:CommunityCenters
+typeOf: dcid:Place
+name: "Community Centers"
+nameWithLanguage: "Centros Comunitários@pt"
+isProvisional: dcid:True
+
+Node: dcid:Brazil_AllReferenceCenters
+typeOf: dcid:ServiceTypeEnum
+name: "Brazil All Reference Centers"
+nameWithLanguage: "Todos os Centros de Referência@pt"
+isProvisional: dcid:True
+
+Node: dcid:CouncilTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CouncilTypeEnum"
+isProvisional: dcid:True
+
+Node: dcid:Paritary
+typeOf: dcid:CouncilTypeEnum
+name: "Paritary"
+nameWithLanguage: "Paritário@pt"
+isProvisional: dcid:True
+
+Node: dcid:NonParitary
+typeOf: dcid:CouncilTypeEnum
+name: "Non Paritary"
+nameWithLanguage: "Não Paritário@pt"
+isProvisional: dcid:True
+
+Node: dcid:registeredIn
+typeOf: dcid:Property
+name: "registeredIn"
+domainIncludes: dcid:CivicStructure
+rangeIncludes: dcid:RegisteredInEnum
+description: "The registry in which the person is registered."
+isProvisional: dcid:True
+
+Node: dcid:RegisteredInEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "RegisteredInEnum"
+isProvisional: dcid:True
+
+Node: dcid:IndividualTaxpayerRegistry
+typeOf: dcid:RegisteredInEnum
+name: "Individual Taxpayer Registry"
+nameWithLanguage: "Cadastro de Pessoas Físicas@pt"
+isProvisional: dcid:True
+
+Node: dcid:Completed
+typeOf: dcid:CensusStatusEnum
+name: "Completed"
+isProvisional: dcid:True
+
+Node: dcid:BRA_MobilityStructureUnifiedSocialAssistanceSystem
+typeOf: dcid:UnemploymentInsuranceProgramEnum
+name: "Brazil Mobility Structure Unified Social Assistance System"
+nameWithLanguage: "Estrutura de Mobilidade do Sistema Único de Assistência Social@pt"
+isProvisional: dcid:True
+
+Node: dcid:Minibus
+typeOf: dcid:VehicleTypeEnum
+name: "Minibus"
+nameWithLanguage: "Minibus@pt"
+isProvisional: dcid:True
+
+Node: dcid:Delivered
+typeOf: dcid:VehicleStatusEnum
+name: "Delivered"
+nameWithLanguage: "Entregue@pt"
+isProvisional: dcid:True
+
+Node: dcid:vehicleType
+typeOf: dcid:Property
+name: "vehicleType"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:JudicialGrant
+typeOf: dcid:PensionApprovedEnum
+name: "Judicial Grant"
+nameWithLanguage: "ConcessãoJudicial@pt"
+isProvisional: dcid:True
+
+Node: dcid:fundTransfer
+typeOf: dcid:Property
+name: "fundTransfer"
+domainIncludes: dcid:FinancialTransaction
+
+Node: dcid:StateLevel
+typeOf: dcid:BrazilCenterLevelEnum
+name: "State Level"
+nameWithLanguage: "Nível Estadual@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_BasicSocialProtection
+typeOf: dcid:BrazilSystemTypeEnum
+name: "Brazil Basic Social Protection"
+nameWithLanguage: "Proteção Social Básica@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_HighComplexitySpecializedSocialProtection
+typeOf: dcid:BrazilSystemTypeEnum
+name: "Brazil High Complexity Specialized Social Protection"
+nameWithLanguage: "Proteção Social de Alta Complexidade@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_MediumComplexitySpecializedSocialProtection
+typeOf: dcid:BrazilSystemTypeEnum
+name: "Brazil Medium Complexity Specialized Social Protection"
+nameWithLanguage: "Proteção Social de Média Complexidade@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_GroupOfPrograms
+typeOf: dcid:BrazilSystemTypeEnum
+name: "Brazil Group Of Programs"
+nameWithLanguage: "Grupo de Programas@pt"
+isProvisional: dcid:True
+
+Node: dcid:fundType
+typeOf: dcid:Property
+name: "fundType"
+domainIncludes: dcid:FinancialTransaction
+rangeIncludes: dcid:FundTypeEnum
+isProvisional: dcid:True
+
+Node: dcid:FundTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FundTypeEnum"
+isProvisional: dcid:True
+
+Node: dcid:MunicipalUnclassifiedFunds
+typeOf: dcid:FundTypeEnum
+name: "Municipal Unclassified Funds"
+nameWithLanguage: "Fundos Municipais Não Classificados@pt"
+isProvisional: dcid:True
+
+Node: dcid:StateUnclassifiedFunds
+typeOf: dcid:FundTypeEnum
+name: "State Unclassified Funds"
+nameWithLanguage: "Fundos Estaduais Não Classificados@pt"
+isProvisional: dcid:True
+
+Node: dcid:MunicipalVoluntaryFunds
+typeOf: dcid:FundTypeEnum
+name: "Municipal Voluntary Funds"
+nameWithLanguage: "Fundos Municipais Voluntários@pt"
+isProvisional: dcid:True
+
+Node: dcid:StateVoluntaryFunds
+typeOf: dcid:FundTypeEnum
+name: "State Voluntary Funds"
+nameWithLanguage: "Fundos Estaduais Voluntários@pt"
+isProvisional: dcid:True
+
+Node: dcid:MunicipalFunds
+typeOf: dcid:FundTypeEnum
+name: "Municipal Funds"
+nameWithLanguage: "Fundos Municipais@pt"
+isProvisional: dcid:True
+
+Node: dcid:StateFunds
+typeOf: dcid:FundTypeEnum
+name: "State Funds"
+nameWithLanguage: "Fundos Estaduais@pt"
+isProvisional: dcid:True
+
+Node: dcid:Brazil_BolsaFamiliaProgramAndSingleRegistrySocialPrograms
+typeOf: dcid:BenefitProgramEnum
+name: "Brazil Bolsa Familia Program And Single Registry Social Programs"
+nameWithLanguage: "Bolsa Familia e Cadastro Único de Programas Sociais@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_CriancaFelizProgram
+typeOf: dcid:BenefitProgramEnum
+name: "Brazil Crianca Feliz Program"
+nameWithLanguage: "Programa Criança Feliz@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_AuxilioBrazilProgram
+typeOf: dcid:BenefitProgramEnum
+name: "Brazil Auxilio Brazil Program"
+nameWithLanguage: "Auxílio Brasil@pt"
+isProvisional: dcid:True
+
+Node: dcid:BRA_MediumAndHighComplexitySpecializedSocialProtection
+typeOf: dcid:BrazilSystemTypeEnum
+name: "Brazil Medium And High Complexity Specialized Social Protection"
+nameWithLanguage: "Proteção Social de Média e Alta Complexidade@pt"
+isProvisional: dcid:True
+
+Node: dcid:PassengerVehicle
+typeOf: dcid:VehicleTypeEnum
+name: "Passenger Vehicle"
+nameWithLanguage: "Veículo de passageiros@es"
+isProvisional: dcid:True
+
+Node: dcid:NotDelivered
+typeOf: dcid:VehicleStatusEnum
+name: "Not Delivered"
+nameWithLanguage: "Não Entregue@pt"
+isProvisional: dcid:True
+
+Node: dcid:FederalLevel
+typeOf: dcid:BrazilCenterLevelEnum
+name: "Federal Level"
+nameWithLanguage: "Nível Federal@pt"
+isProvisional: dcid:True
