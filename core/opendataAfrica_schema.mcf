@@ -1,0 +1,68 @@
+Node: dcid:economicActivity
+typeOf: dcid:Property
+name: "economicActivity"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:EconomicActivityEnum
+
+Node: dcid:EconomicActivityEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EconomicActivityEnum"
+
+Node: dcid:SubsistenceAgriculture
+typeOf: dcid:EconomicActivityEnum
+name: "Participated in Subsistence Agriculture"
+
+Node: dcid:NonSubsistenceAgriculture
+typeOf: dcid:EconomicActivityEnum
+name: "Not Participated in Subsistence Agriculture"
+
+Node: dcid:OccupationCategoryEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "OccupationCategoryEnum"
+
+Node: dcid:Manager
+typeOf: dcid:OccupationCategoryEnum
+name: "Manager"
+isProvisional: dcs:True
+
+Node: dcid:Professional
+typeOf: dcid:OccupationCategoryEnum
+name: "Professional"
+isProvisional: dcs:True
+
+Node: dcid:Technician_AssociateProfessional
+typeOf: dcid:OccupationCategoryEnum
+name: "Technician_ Associate Professional"
+isProvisional: dcs:True
+
+Node: dcid:ClericalWorker
+typeOf: dcid:OccupationCategoryEnum
+name: "Clerical Worker"
+isProvisional: dcs:True
+
+Node: dcid:Services_Sales
+typeOf: dcid:OccupationCategoryEnum
+name: "Services_ Sales"
+isProvisional: dcs:True
+
+Node: dcid:AgricultureForestryFishing
+typeOf: dcid:OccupationCategoryEnum
+name: "Agriculture Forestry Fishing"
+isProvisional: dcs:True
+
+Node: dcid:Craft_Trade
+typeOf: dcid:OccupationCategoryEnum
+name: "Craft_ Trade"
+isProvisional: dcs:True
+
+Node: dcid:Plant_MachineOperator
+typeOf: dcid:OccupationCategoryEnum
+name: "Plant_ Machine Operator"
+isProvisional: dcs:True
+
+Node: dcid:ElementaryWorker
+typeOf: dcid:OccupationCategoryEnum
+name: "Elementary Worker"
+isProvisional: dcs:True
