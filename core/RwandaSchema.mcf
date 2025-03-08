@@ -1,0 +1,245 @@
+Node: dcid:OutsideLabourForce
+typeOf: dcid:EmploymentStatusEnum
+name: "Outside Labour Force"
+
+Node: dcid:UniversityEducation
+typeOf: dcid:SchoolLevelEnum
+name: "University Education"
+
+Node: dcid:MeasurementDenominatorEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "MeasurementDenominatorEnum"
+
+Node: dcid:Count_Person_UniversityEducation
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ University Education"
+
+Node: dcid:FieldOfEducation
+typeOf: dcid:SchoolLevelEnum
+name: "Field Of Education"
+
+Node: dcid:Count_Person_FieldOfEducation
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Field Of Education"
+
+Node: dcid:GeneralEducation
+typeOf: dcid:SchoolLevelEnum
+name: "General Education"
+
+Node: dcid:Count_Person_GeneralEducation
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ General Education"
+
+Node: dcid:Count_Person_Education
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Education"
+
+Node: dcid:HumanityAndArt
+typeOf: dcid:SchoolLevelEnum
+name: "Humanity And Art"
+
+Node: dcid:Count_Person_HumanityAndArt
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Humanity And Art"
+
+Node: dcid:SocialScienceAndBusiness
+typeOf: dcid:SchoolLevelEnum
+name: "Social Science And Business"
+
+Node: dcid:Count_Person_SocialScienceAndBusiness
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Social Science And Business"
+
+Node: dcid:Count_Person_Science
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Science"
+
+Node: dcid:EngineeringAndManufacturing
+typeOf: dcid:SchoolLevelEnum
+name: "Engineering And Manufacturing"
+
+Node: dcid:Count_Person_EngineeringAndManufacturing
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Engineering And Manufacturing"
+
+Node: dcid:Count_Person_Agriculture
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Agriculture"
+
+Node: dcid:HealthAndWelfare
+typeOf: dcid:SchoolLevelEnum
+name: "Health And Welfare"
+
+Node: dcid:Count_Person_HealthAndWelfare
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Health And Welfare"
+
+Node: dcid:Count_Person_Services
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Person_ Services"
+
+Node: dcid:economicActivitySource
+typeOf: dcs:Property
+name: "economicActivitySource"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:EconomicActivitySourceEnum
+
+Node: dcid:EconomicActivitySourceEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EconomicActivitySourceEnum"
+
+Node: dcid:ParticipatedSubsistenceAgriculture
+typeOf: dcid:EconomicActivitySourceEnum
+name: "Participated Subsistence Agriculture"
+
+Node: dcid:NotParticipatedSubsistenceAgriculture
+typeOf: dcid:EconomicActivitySourceEnum
+name: "Not Participated Subsistence Agriculture"
+
+Node: dcid:economicSector
+typeOf: dcs:Property
+name: "economicSector"
+rangeIncludes: dcid:EconomicSectorEnum,dcid:EnergyConsumptionSectorEnum,dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:placeOfResidenceClassification
+typeOf: dcs:Property
+name: "placeOfResidenceClassification"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HumanSettlementClassificationEnum
+
+Node: dcid:ElectricGasSteamAirConditionSupplies
+typeOf: dcid:EconomicSectorEnum
+name: "Electric Gas Steam Air Condition Supplies"
+
+Node: dcid:WaterSupplyAndSewerageAndWasteManagement
+typeOf: dcid:EconomicSectorEnum
+name: "Water Supply And Sewerage And Waste Management"
+
+Node: dcid:WholesaleRetailTradeRepairOfMotorVehiclesAndMotorcylces
+typeOf: dcid:EconomicSectorEnum
+name: "Wholesale Retail Trade Repair Of Motor Vehicles And Motorcylces"
+
+Node: dcid:InformationTelecommunication
+typeOf: dcid:EconomicSectorEnum
+name: "Information Telecommunication"
+
+Node: dcid:FinancialAndInsuranceActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Financial And Insurance Activities"
+
+Node: dcid:RealEstate
+typeOf: dcid:EconomicSectorEnum
+name: "Real Estate"
+
+Node: dcid:ProfessionalScientificAndTechnicalActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Professional Scientific And Technical Activities"
+
+Node: dcid:AdministrativeAndSupportServiceActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Administrative And Support Service Activities"
+
+Node: dcid:PublicAdministrationAndDefence
+typeOf: dcid:EconomicSectorEnum
+name: "Public Administration And Defence"
+
+Node: dcid:HumanHealthAndSocialWorkActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Human Health And Social Work Activities"
+
+Node: dcid:ArtsEntertainmentAndRecreation
+typeOf: dcid:EconomicSectorEnum
+name: "Arts Entertainment And Recreation"
+
+Node: dcid:OtherServiceActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Other Service Activities"
+
+Node: dcid:ActivitiesOfHouseholds
+typeOf: dcid:EconomicSectorEnum
+name: "Activities Of Households"
+
+Node: dcid:ActivitiesOfExtraterritorialOrganizationsAndBodies
+typeOf: dcid:EconomicSectorEnum
+name: "Activities Of Extraterritorial Organizations And Bodies"
+
+Node: dcid:FoodAndNonAlcoholicBeverages
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Food And Non Alcoholic Beverages"
+
+Node: dcid:productFrom
+typeOf: dcs:Property
+name: "productFrom"
+domainIncludes: dcid:ConsumerGoodsAndServices
+rangeIncludes: dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:AlcoholicBeveragesAndTobacco
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Alcoholic Beverages And Tobacco"
+
+Node: dcid:ClothingAndFootwear
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Clothing And Footwear"
+
+Node: dcid:HousingWaterElectricityGasAndOtherFuels
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Housing Water Electricity Gas And Other Fuels"
+
+Node: dcid:FurnishingHouseholdEquipmentAndRoutineHouseholdMaintenance
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Furnishing Household Equipment And Routine Household Maintenance"
+
+Node: dcid:consumerGoodsCategory
+typeOf: dcs:Property
+name: "consumerGoodsCategory"
+rangeIncludes: dcid:EducationalMajorEnum,dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:Transport
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Transport"
+
+Node: dcid:RestaurantsAndHotels
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Restaurants And Hotels"
+
+Node: dcid:MiscellaneousGoodsAndServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Miscellaneous Goods And Services"
+
+Node: dcid:Imported
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Imported"
+
+Node: dcid:RecreationAndCulture
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Recreation And Culture"
+
+Node: dcid:AllGoods
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "All Goods"
+
+Node: dcid:RuralConsumer
+typeOf: dcid:Consumer
+name: "Rural Consumer"
+
+Node: dcid:BreadAndCereals
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Bread And Cereals"
+
+Node: dcid:Meat
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Meat"
+
+Node: dcid:Fish
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Fish"
+
+Node: dcid:Vegetables
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Vegetables"
+
+Node: dcid:NonAlcoholicBeverages
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Non Alcoholic Beverages"
