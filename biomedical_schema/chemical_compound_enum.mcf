@@ -2578,10 +2578,22 @@ subClassOf: schema:Enumeration
 name: "ProteinExpressionScoreEnum"
 description: "The level of protein observed in a specified cell type."
 
-Node: dcid:ProteinExpressionNotDetected
+Node: dcid:ProteinExpressionAscending
 typeOf: dcs:ProteinExpressionScoreEnum
-name: "Not Detected"
-description: "The protein expression score is ‘Not detected' when the combination of intensity and fractions is negative or weak and <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)."
+name: "Ascending"
+description: "The protein expression score is ‘Ascending' when the combination of intensity and fractions is increasing or 'ascending' across a spatial gradient in the tissue. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)."
+descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+
+Node: dcid:ProteinExpressionDescending
+typeOf: dcs:ProteinExpressionScoreEnum
+name: "Descending"
+description: "The protein expression score is ‘Descending' when the combination of intensity and fractions is decreasing or 'descending' across a spatial gradient in the tissue. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)."
+descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+
+Node: dcid:ProteinExpressionHigh
+typeOf: dcs:ProteinExpressionScoreEnum
+name: "High"
+description: "The protein expression score is ‘High' when the combination of intensity and fractions is strong combined with either 25 - 75% or 75%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
 descriptionUrl: "https://www.proteinatlas.org/about/help#4"
 
 Node: dcid:ProteinExpressionLow
@@ -2596,10 +2608,16 @@ name: "Medium"
 description: "The protein expression score is ‘Medium' when the combination of intensity and fractions is moderate combined with either 25 - 75% or 75% - medium, or strong <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
 descriptionUrl: "https://www.proteinatlas.org/about/help#4"
 
-Node: dcid:ProteinExpressionHigh
+Node: dcid:ProteinExpressionNotDetected
 typeOf: dcs:ProteinExpressionScoreEnum
-name: "High"
-description: "The protein expression score is ‘Medium' when the combination of intensity and fractions is strong combined with either 25 - 75% or 75%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)"
+name: "Not Detected"
+description: "The protein expression score is ‘Not detected' when the combination of intensity and fractions is negative or weak and <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%)."
+descriptionUrl: "https://www.proteinatlas.org/about/help#4"
+
+Node: dcid:ProteinExpressionNotRepresentive
+typeOf: dcs:ProteinExpressionScoreEnum
+name: "Not Representative"
+description: "The protein expression score is ‘Not representative' when the combination of intensity and fractions is negative or weak and <25%. Protein expression score is based on immunohistochemical data manually scored with regard to staining intensity (negative, weak, moderate or strong) and fraction of stained cells (<25%, 25-75% or >75%). In cases where the observed staining pattern or signal in the tissue or cell type was not considered reliable or representative of true protein expression the staining level is labeled as "Not representative". It might be due to artifacts, non-specific binding, or other technical issues."
 descriptionUrl: "https://www.proteinatlas.org/about/help#4"
 
 
