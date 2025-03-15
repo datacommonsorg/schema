@@ -56,6 +56,11 @@ subClassOf: schema:Enumeration
 name: "SchoolGradeLevelEnum"
 description: "Enumerations of different grade levels in school"
 
+Node: dcid:EducationalAttainmentEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "Educational Attainment Enum"
+
 Node: dcid:PreKindergartenAndKindergarten
 typeOf: dcs:SchoolGradeLevelEnum
 name: "PreKindergarten and Kindergarten"
@@ -2255,7 +2260,7 @@ name: "NCES Private School"
 
 Node: dcid:schoolType
 typeOf: schema:Property
-domainIncludes: dcs:School, dcs:Student
+domainIncludes: dcs:School, dcs:Student, dcs:Teacher, dcs:Person
 rangeIncludes: dcs:SchoolTypeEnum
 name: "schoolType"
 

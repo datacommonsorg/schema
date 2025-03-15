@@ -1580,6 +1580,12 @@ typeOf: schema:Class
 subClassOf: schema:CivicStructure, dcs:HealthEstablishmentTypeEnum
 name: "Hospital"
 
+Node: Beds
+dcid: "Beds"
+typeOf: schema:Class
+subClassOf: schema:CivicStructure, dcs:HealthEstablishmentTypeEnum
+name: "Beds"
+
 Node: dcid:PublicHealthFacility
 typeOf: dcs:HealthEstablishmentTypeEnum
 name: "PublicHealthFacility"
@@ -11687,3 +11693,21 @@ name: "Financial Investments And Related Activities Including Financial Vehicles
 Node: dcid:ExcludingPostalService
 typeOf: dcid:BLSEstablishment
 name: "Excluding Postal Service"
+
+Node: dcid:CommercialSecondarySchool
+typeOf: dcid:SchoolLevelEnum
+name: "Commercial Secondary School"
+
+Node: dcid:IndustrialSecondarySchool
+typeOf: dcid:SchoolLevelEnum
+name: "Industrial Secondary School"
+
+Node: dcid:AgriculturalSecondarySchool
+typeOf: dcid:SchoolLevelEnum
+name: "Agricultural Secondary School"
+
+Node: dcid:schoolSpecialization
+typeOf: dcid:Property
+name: "schoolSpecialization"
+domainIncludes: dcid:Student,dcid:School,dcid:Teacher,dcid:Person
+rangeIncludes: dcid:SchoolSpecializationEnum,dcid:WorkZoneTypeEnum,dcid:VariableCategoryEnum,dcid:FireCauseSpecificEnum,dcid:Class,dcid:EducationalMajorEnum
