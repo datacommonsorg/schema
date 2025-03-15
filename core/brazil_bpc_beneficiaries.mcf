@@ -1,0 +1,59 @@
+Node: dcid:FamilyTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FamilyTypeEnum"
+
+Node: dcid:QuilombolasFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Quilombolas Family"
+
+Node: dcid:DisabilityStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "DisabilityStatusEnum"
+
+Node: dcid:PermanentDisablity
+typeOf: dcid:DisabilityStatusEnum
+name: "Permanent Disablity"
+
+Node: dcid:Brazil_ContinuousCashBenefitProgram
+typeOf: dcid:BenefitsStatusEnum
+name: "Brazil Continuous Cash Benefit Program"
+nameWithLanguage: "Benefício de Prestação Continuada (BPC)@pt"
+description: "Brazil's Benefício de Prestação Continuada (BPC), or Continuous Cash Benefit Programme, is a non-contributory pension scheme that provides cash aid to people who are extremely poor or have disabilities."
+descriptionUrl: "https://dds.cepal.org/bpsnc/programme?id=43"
+
+Node: dcid:Brazil_SingleRegistry
+typeOf: dcid:RegistrationStatusEnum
+name: "Brazil_ Single Registry"
+
+Node: dcid:IndigenasFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Indigenas Family"
+
+Node: dcid:HomelessFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Homeless Family"
+
+Node: dcid:benefitSource
+typeOf: dcid:Property
+name: "benefitSource"
+domainIncludes: dcid:Person,dcid:Person,dcid:EconomicActivity,dcid:Person,dcid:EconomicActivity,dcid:Person,dcid:EconomicActivity,dcid:Person,dcid:EconomicActivity,dcid:Person,dcid:EconomicActivity,dcid:Person,dcid:EconomicActivity
+rangeIncludes: dcid:BenefitSourceEnum
+
+Node: dcid:BenefitSourceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BenefitSourceEnum"
+
+Node: dcid:AdministrativeConcession
+typeOf: dcid:BenefitSourceEnum
+name: "Administrative Concession"
+
+Node: dcid:JudicialConcession
+typeOf: dcid:BenefitSourceEnum
+name: "Judicial Concession"
+
+Node: dcid:MunicipalityBenefit
+typeOf: dcid:BenefitSourceEnum
+name: "Municipality Benefit"
