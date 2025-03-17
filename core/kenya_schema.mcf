@@ -1,0 +1,209 @@
+Node: dcid:College
+typeOf: dcid:Class
+name: "College"
+subClassOf: dcid:EducationalOrganization
+
+Node: dcid:Institution
+typeOf: dcid:Class
+name: "Institution"
+subClassOf: dcid:EducationalOrganization
+
+Node: dcid:University
+typeOf: dcid:Class
+name: "University"
+subClassOf: dcid:EducationalOrganization
+
+Node: dcid:institutionCategory
+typeOf: dcid:Property
+name: "institutionCategory"
+domainIncludes: dcid:Institution
+rangeIncludes: dcid:InstitutionCategoryEnum
+
+Node: dcid:InstitutionCategoryEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "InstitutionCategoryEnum"
+
+Node: dcid:TechnicalVocationalEducationTraining
+typeOf: dcid:InstitutionCategoryEnum
+name: "Technical Vocational Education Training"
+
+Node: dcid:typeOfInstitution
+typeOf: dcid:Property
+name: "typeOfInstitution"
+domainIncludes: dcid:Institution
+rangeIncludes: dcid:TypeOfInstitutionEnum
+
+Node: dcid:TypeOfInstitutionEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "TypeOfInstitutionEnum"
+
+Node: dcid:PublicVocationalTrainingCentre
+typeOf: dcid:TypeOfInstitutionEnum
+name: "Public Vocational Training Centre"
+
+Node: dcid:PrivateVocationalTrainingCentres
+typeOf: dcid:TypeOfInstitutionEnum
+name: "Private Vocational Training Centres"
+
+Node: dcid:Public
+typeOf: dcid:TypeOfInstitutionEnum
+name: "Public"
+
+Node: dcid:Private
+typeOf: dcid:TypeOfInstitutionEnum
+name: "Private"
+
+Node: dcid:NationalPolytechnic
+typeOf: dcid:TypeOfInstitutionEnum
+name: "National Polytechnic"
+
+Node: dcid:subjectType
+typeOf: dcs:Property
+name: "subjectType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SubjectTypeEnum,dcid:SchoolSubjectEnum
+
+Node: dcid:SubjectTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "SubjectTypeEnum"
+
+Node: dcid:EnglishLanguage
+typeOf: dcid:SubjectTypeEnum
+name: "English Language"
+
+Node: dcid:EnglishComposition
+typeOf: dcid:SubjectTypeEnum
+name: "English Composition"
+
+Node: dcid:KiswahiliLugha
+typeOf: dcid:SubjectTypeEnum
+name: "Kiswahili Lugha"
+
+Node: dcid:KiswahiliInsha
+typeOf: dcid:SubjectTypeEnum
+name: "Kiswahili Insha"
+
+Node: dcid:SocialStudies
+typeOf: dcid:SubjectTypeEnum
+name: "Social Studies"
+
+Node: dcid:registrationStatus
+typeOf: dcid:Property
+name: "registrationStatus"
+domainIncludes: dcid:Person
+
+Node: dcid:candidatesStatus
+typeOf: dcid:Property
+name: "candidatesStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:CandidatesStatusEnum
+
+Node: dcid:CandidatesStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CandidatesStatusEnum"
+
+Node: dcid:Present
+typeOf: dcid:CandidatesStatusEnum
+name: "Present"
+
+Node: dcid:performanceLevel
+typeOf: dcs:Property
+name: "performanceLevel"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:PerformanceLevelEnum
+isProvisional: dcs:True
+
+Node: dcid:PerformanceLevelEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "PerformanceLevelEnum"
+isProvisional: dcs:True
+
+Node: dcid:Excellent
+typeOf: dcid:PerformanceLevelEnum
+name: "Excellent"
+isProvisional: dcs:True
+
+Node: dcid:Superior
+typeOf: dcid:PerformanceLevelEnum
+name: "Superior"
+isProvisional: dcs:True
+
+Node: dcid:Solid
+typeOf: dcid:PerformanceLevelEnum
+name: "Solid"
+isProvisional: dcs:True
+
+Node: dcid:Fair
+typeOf: dcid:PerformanceLevelEnum
+name: "Fair"
+isProvisional: dcs:True
+
+Node: dcid:Adequate
+typeOf: dcid:PerformanceLevelEnum
+name: "Adequate"
+isProvisional: dcs:True
+
+Node: dcid:Average
+typeOf: dcid:PerformanceLevelEnum
+name: "Average"
+isProvisional: dcs:True
+
+Node: dcid:Weak
+typeOf: dcid:PerformanceLevelEnum
+name: "Weak"
+isProvisional: dcs:True
+
+Node: dcid:Marginal
+typeOf: dcid:PerformanceLevelEnum
+name: "Marginal"
+isProvisional: dcs:True
+
+Node: dcid:Poor
+typeOf: dcid:PerformanceLevelEnum
+name: "Poor"
+isProvisional: dcs:True
+
+Node: dcid:Inadequate
+typeOf: dcid:PerformanceLevelEnum
+name: "Inadequate"
+isProvisional: dcs:True
+
+Node: dcid:Failed
+typeOf: dcid:PerformanceLevelEnum
+name: "Failed"
+isProvisional: dcs:True
+
+Node: dcid:Discrepancy
+typeOf: dcid:ExpenditureTypeEnum
+name: "Discrepancy"
+
+Node: dcid:GovernmentFinalConsumption
+typeOf: dcid:ExpenditureTypeEnum
+name: "Government Final Consumption"
+
+Node: dcid:GrossDomesticExpenditure
+typeOf: dcid:ExpenditureTypeEnum
+name: "Gross Domestic Expenditure"
+
+Node: dcid:GrossFixedCapitalFormation
+typeOf: dcid:ExpenditureTypeEnum
+name: "Gross Fixed Capital Formation"
+
+Node: dcid:ImportsGoodsAndServices
+typeOf: dcid:ExpenditureTypeEnum
+name: "Imports Goods and Services"
+
+Node: dcid:NonProfitInstitutionsServingHouseholds
+typeOf: dcid:ExpenditureTypeEnum
+name: "Non Profit Institutions Serving Households"
+
+Node: dcid:PrivateFinalConsumption
+typeOf: dcid:ExpenditureTypeEnum
+name: "Private Final Consumption"
+
+
