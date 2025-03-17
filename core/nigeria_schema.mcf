@@ -1,0 +1,989 @@
+Node: dcid:Population
+typeOf: dcid:MeasurementQualifierEnum
+name: "Population"
+
+Node: dcid:CrimeAgainstLawfullAuthority
+typeOf: dcid:ViolentCrimeTypeEnum
+name: "Crime Against Lawfull Authority"
+
+Node: dcid:CrimeAgainstLocalActs
+typeOf: dcid:ViolentCrimeTypeEnum
+name: "Crime Against Local Acts"
+
+Node: dcid:IndexPointBasePeriodJanuary2013Equals100
+typeOf: dcid:UnitOfMeasure
+name: "IndexPointBasePeriodJanuary2013Equals100"
+description: "A unit of measurement representing index points,normalized to 100 in January 2013."
+
+Node: dcid:IndexPointBasePeriodnovember2009Equals100
+typeOf: dcid:UnitOfMeasure
+name: "IndexPointBasePeriodnovember2009Equals100"
+description: "A unit of measurement representing index points,normalized to 100 in November 2009."
+
+Node: dcid:ConstantBasicPrices1960To2017
+typeOf: dcid:MeasurementMethodEnum
+name: "Constant Basic Prices 19 60 To 20 17"
+
+Node: dcid:CurrentBasicPrices1960To2017
+typeOf: dcid:MeasurementMethodEnum
+name: "Current Basic Prices 19 60 To 20 17"
+
+Node: dcid:grossDomesticProduct
+typeOf: dcid:Property
+name: "grossDomesticProduct"
+description: "Gross domestic product (GDP) is the monetary value of all the finished goods and services produced within a place in a specific time period"
+rangeIncludes: dcid:MonetaryAmount
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:economicSector
+typeOf: dcid:Property
+name: "economicSector"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EconomicSectorEnum
+
+Node: dcid:MeasurementDenominatorEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MeasurementDenominatorEnum"
+
+
+Node: dcid:GrowthRate_GrossDomesticProduct_EconomicActivity
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Growth Rate_ Gross Domestic Product_ Economic Activity"
+
+
+Node: dcid:Industries
+typeOf: dcid:EconomicSectorEnum
+name: "Industries"
+
+
+Node: dcid:consumerGoodsCategory
+typeOf: dcid:Property
+name: "consumerGoodsCategory"
+rangeIncludes: dcid:ConsumerGoodsCategoryEnum,dcid:Class,dcid:AlcoholicBeverageTypeEnum,dcid:ProductEnum,dcid:EducationalMajorEnum
+
+Node: dcid:AllItemsExceptFarmProducts
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "All Items Except Farm Products"
+
+
+Node: dcid:AllItemsExceptFarmProductAndEnergy
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "All Items Except Farm Product And Energy"
+
+
+Node: dcid:ImportedFood
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Imported Food"
+
+
+Node: dcid:Food__NonAlcoholicBeverages
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Food Non Alcoholic Beverages"
+
+Node: dcid:NonAlcoholicBeverages
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Non Alcoholic Beverages"
+
+Node: dcid:Bread__Cereals
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Bread__ Cereals"
+
+
+Node: dcid:Meat
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Meat"
+
+Node: dcid:Fish
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Fish"
+
+Node: dcid:Milk__Cheese__Eggs
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Milk__ Cheese__ Eggs"
+
+Node: dcid:Oil__Fats
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Oil__ Fats"
+
+Node: dcid:Fats
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Fats"
+
+Node: dcid:Fruit
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Fruit"
+
+Node: dcid:Vegetable
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Vegetable"
+
+Node: dcid:Potatoes__Yam
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Potatoes__ Yam"
+
+Node: dcid:FoodProducts
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Food Products"
+
+Node: dcid:Coffee__Tea__Cocoa
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Coffee Tea Cocoa"
+
+Node: dcid:Tea
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Coffee Tea Cocoa"
+
+Node: dcid:SoftDrinks
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Soft Drinks"
+
+Node: dcid:AlcoholicBeverages__Tobacco__Narcotics
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Alcoholic Beverages__ Tobacco__ Narcotics"
+
+Node: dcid:Narcotics
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Narcotics"
+
+Node: dcid:Clothing__Footwear
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Clothing__ Footwear"
+
+Node: dcid:Garments
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Garments"
+
+Node: dcid:ShoesAndOtherFootwear
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Shoes And Other Footwear"
+
+Node: dcid:RepairAndHireOfFootwear
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Repair And Hire Of Footwear"
+
+Node: dcid:Water__Electricity__Gas__OtherFuels
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Water Electricity Gas Other Fuels"
+
+Node: dcid:OtherFuels
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "OtherFuels"
+
+Node: dcid:OtherFuel
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "OtherFuel"
+
+Node: dcid:HousingRentals
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Housing Rentals"
+
+Node: dcid:WaterSupply
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Water Supply"
+
+Node: dcid:DwellingRelatedServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Dwelling Related Services"
+
+Node: dcid:Gas
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Gas"
+
+Node: dcid:LiquidFuel
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Liquid Fuel"
+
+Node: dcid:SolidFuel
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Solid Fuel"
+
+Node: dcid:HouseholdEquipment__Furnishings
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Household Equipment Furnishings"
+
+Node: dcid:Furniture__Furnishings
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Furniture Furnishings"
+
+Node: dcid:Furnishings
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Furnishings"
+
+Node: dcid:CarpetsAndFloorCoverings
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Carpets And Floor Coverings"
+
+Node: dcid:RepairOfFurniture
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Repair Of Furniture"
+
+Node: dcid:HouseholdTextiles
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Household Textiles"
+
+Node: dcid:RepairOfHouseholdAppliances
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Repair Of Household Appliances"
+
+Node: dcid:Glassware__Tableware__HouseholdUtensils
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Glassware Tableware Household Utensils"
+
+Node: dcid:Glassware
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Glassware"
+
+Node: dcid:HouseholdUtensils
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Household Utensils"
+
+Node: dcid:Tableware
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Tableware Utensils"
+
+Node: dcid:NonDurableHouseholdGoods
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Non Durable Household Goods"
+
+Node: dcid:DomesticServices__HouseholdServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Domestic Services Household Services"
+
+Node: dcid:HouseholdServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Household Services"
+
+Node: dcid:ParamedicalServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Paramedical Services"
+
+Node: dcid:Motorcars
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Motorcars"
+
+Node: dcid:Motorcycles
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Motorcycles"
+
+Node: dcid:Bicycles
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Bicycles"
+
+Node: dcid:Fuel__Lubricant
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Fuel__ Lubricant"
+
+Node: dcid:Lubricant
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Lubricant"
+
+Node: dcid:usedFor
+typeOf: dcid:Property
+name: "usedFor"
+domainIncludes: dcid:ConsumerGoodsAndServices
+
+Node: dcid:PersonalTransportEquipment
+typeOf: dcid:WaterUseCategoryEnum
+name: "Personal Transport Equipment"
+
+Node: dcid:MaintenanceAndRepair
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Maintenance And Repair"
+
+Node: dcid:NGA_OtherServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "NGA_ Other Services"
+
+Node: dcid:PassengerTransport
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Passenger Transport"
+
+Node: dcid:modeOfTransportation
+typeOf: dcid:Property
+name: "modeOfTransportation"
+domainIncludes: dcid:ConsumerGoodsAndServices
+rangeIncludes: dcid:ModeOfTransportationEnum
+
+Node: dcid:ModeOfTransportationEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ModeOfTransportationEnum"
+
+Node: dcid:ByRoad
+typeOf: dcid:ModeOfTransportationEnum
+name: "By Road"
+
+Node: dcid:ByAir
+typeOf: dcid:ModeOfTransportationEnum
+name: "By Air"
+
+Node: dcid:BySea__InlandWaterway
+typeOf: dcid:ModeOfTransportationEnum
+name: "By Sea Inland Waterway"
+
+Node: dcid:BySea
+typeOf: dcid:ModeOfTransportationEnum
+name: "By Sea"
+
+Node: dcid:InlandWaterway
+typeOf: dcid:ModeOfTransportationEnum
+name: "Inland Waterway"
+
+Node: dcid:TelephoneAndTelefaxEquipment
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Telephone And Telefax Equipment"
+
+Node: dcid:TelephoneAndTelefaxService
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Telephone And Telefax Service"
+
+Node: dcid:RecreationAndCulture
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Recreation And Culture"
+
+Node: dcid:VideoAndAudioProducts__PhotographicEquipment
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Video And Audio Products__ Photographic Equipment"
+
+Node: dcid:PhotographicDevelopment
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Photographic Development"
+
+Node: dcid:GamesOfChances
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Games Of Chances"
+
+Node: dcid:Book__Stationaries
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Book Stationaries"
+
+Node: dcid:Stationaries
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Stationaries"
+
+Node: dcid:Restaurant__Hotel
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Restaurant__ Hotel"
+
+Node: dcid:CateringServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Catering Services"
+
+Node: dcid:MiscellaneousGoodsAndServices
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Miscellaneous Goods And Services"
+
+Node: dcid:Appliances__Article__PersonalCareProducts
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Appliances__ Article__ Personal Care Products"
+
+Node: dcid:Insurance
+typeOf: dcid:ConsumerGoodsCategoryEnum,dcid:Text,dcid:CourseNameEnum
+name: "Insurance"
+
+Node: dcid:agricultureType
+typeOf: dcid:Property
+name: "agricultureType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:AgricultureTypeEnum,dcid:WaterUseCategoryEnum
+
+Node: dcid:AgricultureTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "AgricultureTypeEnum"
+
+Node: dcid:IndustryEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "IndustryEnum"
+
+Node: dcid:CropProductionSector
+typeOf: dcid:AgricultureTypeEnum
+name: "Crop Production Sector"
+
+Node: dcid:Forestry
+typeOf: dcid:AgricultureTypeEnum
+name: "Forestry"
+
+Node: dcid:Fishing
+typeOf: dcid:AgricultureTypeEnum
+name: "Fishing"
+
+Node: dcid:industry
+typeOf: dcid:Property
+name: "industry"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:EmissionSourceEnum,dcid:EconomicSectorEnum,dcid:ProductEnum,dcid:IndustryEnum
+
+Node: dcid:CrudePetroleumAndNaturalGas
+typeOf: dcid:IndustryEnum
+name: "Crude Petroleum And Natural Gas"
+
+Node: dcid:SolidMinerals
+typeOf: dcid:IndustryEnum
+name: "Solid Minerals"
+
+Node: dcid:MetalOres
+typeOf: dcid:IndustryEnum
+name: "Metal Ores"
+
+Node: dcid:QuarryingAndOtherMining
+typeOf: dcid:IndustryEnum
+name: "Quarrying And Other Mining"
+
+Node: dcid:OilRefining
+typeOf: dcid:IndustryEnum
+name: "Oil Refining"
+
+Node: dcid:Cement
+typeOf: dcid:IndustryEnum
+name: "Cement"
+
+Node: dcid:FoodBeverageAndTobacco
+typeOf: dcid:IndustryEnum
+name: "Food Beverage And Tobacco"
+
+Node: dcid:TextileApparelAndFootwear
+typeOf: dcid:IndustryEnum
+name: "Textile Apparel And Footwear"
+
+Node: dcid:PulpPaperAndPaperProducts
+typeOf: dcid:IndustryEnum
+name: "Pulp Paper And Paper Products"
+
+Node: dcid:ChemicalAndPharmaceauticalProducts
+typeOf: dcid:IndustryEnum
+name: "Chemical And Pharmaceautical Products"
+
+Node: dcid:NonMetallicProducts
+typeOf: dcid:IndustryEnum
+name: "Non Metallic Products"
+
+Node: dcid:PlasticAndRubberProducts
+typeOf: dcid:IndustryEnum
+name: "Plastic And Rubber Products"
+
+Node: dcid:ElectricalAndElectronics
+typeOf: dcid:IndustryEnum
+name: "Electrical And Electronics"
+
+Node: dcid:Electrical
+typeOf: dcid:IndustryEnum
+name: "Electrical"
+
+Node: dcid:BasicMetalIronAndSteel
+typeOf: dcid:IndustryEnum
+name: "Basic Metal Iron And Steel"
+
+Node: dcid:MotorVehiclesAndAssembly
+typeOf: dcid:IndustryEnum
+name: "Motor Vehicles And Assembly"
+
+Node: dcid:OtherManufacturing
+typeOf: dcid:IndustryEnum
+name: "Other Manufacturing"
+
+Node: dcid:Trade
+typeOf: dcid:EconomicSectorEnum
+name: "Trade"
+
+Node: dcid:serviceType
+typeOf: dcid:Property
+name: "serviceType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum
+
+Node: dcid:Transport
+typeOf: dcid:IndustryEnum
+name: "Transport"
+
+Node: dcid:RailTransportAndPipelines
+typeOf: dcid:IndustryEnum
+name: "Rail Transport And Pipelines"
+
+Node: dcid:WaterTransport
+typeOf: dcid:IndustryEnum
+name: "Water Transport"
+
+Node: dcid:AirTransport
+typeOf: dcid:IndustryEnum
+name: "Air Transport"
+
+Node: dcid:TransportServices
+typeOf: dcid:IndustryEnum
+name: "Transport Services"
+
+Node: dcid:PostAndCourierServices
+typeOf: dcid:IndustryEnum
+name: "Post And Courier Services"
+
+Node: dcid:InformationAndCommunication
+typeOf: dcid:IndustryEnum
+name: "Information And Communication"
+
+Node: dcid:TeleAndInformServices
+typeOf: dcid:IndustryEnum
+name: "Tele And Inform Services"
+
+Node: dcid:Publishing
+typeOf: dcid:IndustryEnum
+name: "Publishing"
+
+Node: dcid:MotionPicturesSoundRecordingAndMusic
+typeOf: dcid:IndustryEnum
+name: "Motion Pictures Sound Recording And Music"
+
+Node: dcid:Broadcasting
+typeOf: dcid:IndustryEnum
+name: "Broadcasting"
+
+Node: dcid:Utilities
+typeOf: dcid:IndustryEnum
+name: "Utilities"
+
+Node: dcid:ElectricityGasSteamAndAirConditioner
+typeOf: dcid:IndustryEnum
+name: "Electricity Gas Steam And Air Conditioner"
+
+Node: dcid:WaterSupplySewageAndWasteMang
+typeOf: dcid:IndustryEnum
+name: "Water Supply Sewage And Waste Mang"
+
+Node: dcid:FinanceAndInsurance
+typeOf: dcid:IndustryEnum
+name: "Finance And Insurance"
+
+Node: dcid:FinancialInstitutions
+typeOf: dcid:IndustryEnum
+name: "Financial Institutions"
+
+Node: dcid:RealEstate
+typeOf: dcid:EconomicSectorEnum
+name: "Real Estate"
+
+Node: dcid:ProfessionalScientificAndTechnicalServ
+typeOf: dcid:EconomicSectorEnum
+name: "Professional Scientific And Technical Serv"
+
+Node: dcid:AdministrativeAndSupportServicesBusinessServices
+typeOf: dcid:EconomicSectorEnum
+name: "Administrative And Support Services Business Services"
+
+Node: dcid:PublicAdministration
+typeOf: dcid:EconomicSectorEnum
+name: "Public Administration"
+
+Node: dcid:HumanHealthAndSocialServices
+typeOf: dcid:EconomicSectorEnum
+name: "Human Health And Social Services"
+
+Node: dcid:ArtsEntertainmentAndRecreation
+typeOf: dcid:EconomicSectorEnum
+name: "Arts Entertainment And Recreation"
+
+Node: dcid:AlcoholicBeverages__Tobacco__Kola
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Alcoholic Beverages__ Tobacco__ Kola"
+
+Node: dcid:Kola
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Kola"
+
+Node: dcid:Water__Electricity__Gas__OtherFuel
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Water__ Electricity__ Gas__ Other Fuel"
+
+Node: dcid:Nigerian
+typeOf: dcid:RaceCodeEnum
+name: "Nigerian"
+
+Node: dcid:NonNigerian
+typeOf: dcid:RaceCodeEnum
+name: "Non Nigerian"
+
+Node: dcid:occupation
+typeOf: dcid:Property
+name: "occupation"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:Class,dcid:HealthWorkerEnum
+
+Node: dcid:MedicalPractitioner
+typeOf: dcid:SOCv2018Enum
+name: "Medical Practitioner"
+
+Node: dcid:specialization
+typeOf: dcid:Property
+name: "specialization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:SpecializationEnum,dcid:MedicalSpecialty
+
+Node: dcid:SpecializationEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "SpecializationEnum"
+
+Node: dcid:GeneralNurse
+typeOf: dcid:SpecializationEnum
+name: "General Nurse"
+
+Node: dcid:Midwives
+typeOf: dcid:SpecializationEnum
+name: "Midwives"
+
+Node: dcid:Perioperative
+typeOf: dcid:SpecializationEnum
+name: "Perioperative"
+
+Node: dcid:CardioThoracicNurses
+typeOf: dcid:SpecializationEnum
+name: "Cardio Thoracic Nurses"
+
+Node: dcid:IntensiveCareNurse
+typeOf: dcid:SpecializationEnum
+name: "Intensive Care Nurse"
+
+Node: dcid:ENT
+typeOf: dcid:SpecializationEnum
+name: "ENT"
+
+Node: dcid:BurnsAndPlastic
+typeOf: dcid:SpecializationEnum
+name: "Burns And Plastic"
+
+Node: dcid:Orthopedic
+typeOf: dcid:SpecializationEnum
+name: "Orthopedic"
+
+Node: dcid:Anasthetic
+typeOf: dcid:SpecializationEnum
+name: "Anasthetic"
+
+Node: dcid:Administrator
+typeOf: dcid:SpecializationEnum
+name: "Administrator"
+
+Node: dcid:Pediatric
+typeOf: dcid:SpecializationEnum
+name: "Pediatric"
+
+Node: dcid:Educator
+typeOf: dcid:SpecializationEnum
+name: "Educator"
+
+Node: dcid:PublicHealthNurseEducators
+typeOf: dcid:SpecializationEnum
+name: "Public Health Nurse Educators"
+
+Node: dcid:Psychatric
+typeOf: dcid:SpecializationEnum
+name: "Psychatric"
+
+Node: dcid:Ophthalmic
+typeOf: dcid:SpecializationEnum
+name: "Ophthalmic"
+
+Node: dcid:AccidentAndEmergency
+typeOf: dcid:SpecializationEnum
+name: "Accident And Emergency"
+
+Node: dcid:OccupationalHealth
+typeOf: dcid:SpecializationEnum
+name: "Occupational Health"
+
+Node: dcid:MidwifeEducators
+typeOf: dcid:SpecializationEnum
+name: "Midwife Educators"
+
+Node: dcid:enrollmentLevel
+typeOf: dcid:Property
+name: "enrollmentLevel"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:EnrollmentLevelEnum
+
+Node: dcid:educationalProgram
+typeOf: dcid:Property
+name: "educationalProgram"
+domainIncludes: dcid:Person
+
+Node: dcid:Accountancy
+typeOf: dcid:USC_EducationalAttainmentEnum
+name: "Accountancy"
+
+Node: dcid:courseName
+typeOf: dcid:Property
+name: "courseName"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:CourseNameEnum,dcid:EducationalMajorEnum
+
+Node: dcid:CourseNameEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CourseNameEnum"
+
+Node: dcid:AgriculturalEngineering
+typeOf: dcid:CourseNameEnum
+name: "Agricultural Engineering"
+
+Node: dcid:courseSpecialization
+typeOf: dcid:Property
+name: "courseSpecialization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:CourseSpecializationEnum
+
+Node: dcid:CourseSpecializationEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CourseSpecializationEnum"
+
+Node: dcid:InFarmPowerMachine
+typeOf: dcid:CourseSpecializationEnum
+name: "In Farm Power Machine"
+
+Node: dcid:InPostHarvest
+typeOf: dcid:CourseSpecializationEnum
+name: "In Post Harvest"
+
+Node: dcid:InSoil
+typeOf: dcid:CourseSpecializationEnum
+name: "In Soil"
+
+Node: dcid:Oil
+typeOf: dcid:CourseSpecializationEnum
+name: "Oil"
+
+Node: dcid:ArtAndIndustrialDesign
+typeOf: dcid:CourseNameEnum
+name: "Art And Industrial Design"
+
+Node: dcid:InPainting
+typeOf: dcid:CourseSpecializationEnum
+name: "In Painting"
+
+Node: dcid:ArtAndIndustrialDesignGraphics
+typeOf: dcid:CourseNameEnum
+name: "Art And Industrial Design Graphics"
+
+Node: dcid:InGraphics
+typeOf: dcid:CourseSpecializationEnum
+name: "In Graphics"
+
+Node: dcid:BankingAndFinance
+typeOf: dcid:CourseNameEnum
+name: "Banking And Finance"
+
+Node: dcid:BankingOperations
+typeOf: dcid:CourseNameEnum
+name: "Banking Operations"
+
+Node: dcid:BuildingTechnology
+typeOf: dcid:CourseNameEnum
+name: "Building Technology"
+
+Node: dcid:BusinessAdministrationAndManagement
+typeOf: dcid:CourseNameEnum
+name: "Business Administration And Management"
+
+Node: dcid:CeramicTechnology
+typeOf: dcid:CourseNameEnum
+name: "Ceramic Technology"
+
+Node: dcid:ChemicalEngineering
+typeOf: dcid:CourseNameEnum
+name: "Chemical Engineering"
+
+Node: dcid:CivilEngineeringTechnology
+typeOf: dcid:CourseNameEnum
+name: "Civil Engineering Technology"
+
+Node: dcid:InTransportation
+typeOf: dcid:CourseSpecializationEnum
+name: "In Transportation"
+
+Node: dcid:InStructuresEngineering
+typeOf: dcid:CourseSpecializationEnum
+name: "In Structures Engineering"
+
+Node: dcid:ComputerEngineeringTechnology
+typeOf: dcid:CourseNameEnum
+name: "Computer Engineering Technology"
+
+Node: dcid:CooperativeEconomicsAndManagement
+typeOf: dcid:CourseNameEnum
+name: "Cooperative Economics And Management"
+
+Node: dcid:Electrical__ElectronicsEngineering
+typeOf: dcid:CourseNameEnum
+name: "Electrical Electronics Engineering"
+
+Node: dcid:ElectronicsEngineering
+typeOf: dcid:CourseNameEnum
+name: "Electronics Engineering"
+
+Node: dcid:InElectronicsAndTelecoms
+typeOf: dcid:CourseSpecializationEnum
+name: "In Electronics And Telecoms"
+
+Node: dcid:InElectronics
+typeOf: dcid:CourseSpecializationEnum
+name: "In Electronics"
+
+Node: dcid:InPowerOption
+typeOf: dcid:CourseSpecializationEnum
+name: "In Power Option"
+
+Node: dcid:EstateManagement
+typeOf: dcid:CourseNameEnum
+name: "Estate Management"
+
+Node: dcid:FashionDesignAndClothingTechnology
+typeOf: dcid:CourseNameEnum
+name: "Fashion Design And Clothing Technology"
+
+Node: dcid:FoodTechnology
+typeOf: dcid:CourseNameEnum
+name: "Food Technology"
+
+Node: dcid:FoundryTechnology
+typeOf: dcid:CourseNameEnum
+name: "Foundry Technology"
+
+Node: dcid:HomeAndRuralEconomics
+typeOf: dcid:CourseNameEnum
+name: "Home And Rural Economics"
+
+Node: dcid:HospitalityManagement
+typeOf: dcid:CourseNameEnum
+name: "Hospitality Management"
+
+Node: dcid:IndustrialMaintenanceEngineeringTechnology
+typeOf: dcid:CourseNameEnum
+name: "Industrial Maintenance Engineering Technology"
+
+Node: dcid:LeisureAndTourismManagement
+typeOf: dcid:CourseNameEnum
+name: "Leisure And Tourism Management"
+
+Node: dcid:Marketing
+typeOf: dcid:CourseNameEnum
+name: "Marketing"
+
+Node: dcid:MassCommunication
+typeOf: dcid:CourseNameEnum
+name: "Mass Communication"
+
+Node: dcid:MechanicalEngineering
+typeOf: dcid:CourseNameEnum
+name: "Mechanical Engineering"
+
+Node: dcid:InPlantEngineering
+typeOf: dcid:CourseSpecializationEnum
+name: "In Plant Engineering"
+
+Node: dcid:InProductionEngineering
+typeOf: dcid:CourseSpecializationEnum
+name: "In Production Engineering"
+
+Node: dcid:InAutomotive
+typeOf: dcid:CourseSpecializationEnum
+name: "In Automotive"
+
+Node: dcid:Metallurgy
+typeOf: dcid:CourseNameEnum
+name: "Metallurgy"
+
+Node: dcid:MineralResourcesEngineeringTechnology
+typeOf: dcid:CourseNameEnum
+name: "Mineral Resources Engineering Technology"
+
+Node: dcid:NutritionAndDietetics
+typeOf: dcid:CourseNameEnum
+name: "Nutrition And Dietetics"
+
+Node: dcid:OfficeTechnologyAndManagement
+typeOf: dcid:CourseNameEnum
+name: "Office Technology And Management"
+
+Node: dcid:PrintingTechnology
+typeOf: dcid:CourseNameEnum
+name: "Printing Technology"
+
+Node: dcid:InBookPublishing
+typeOf: dcid:CourseSpecializationEnum
+name: "In Book Publishing"
+
+Node: dcid:PublicAdmin
+typeOf: dcid:CourseNameEnum
+name: "Public Admin"
+
+Node: dcid:PurchasingAndSupply
+typeOf: dcid:CourseNameEnum
+name: "Purchasing And Supply"
+
+Node: dcid:QuantitySurvey
+typeOf: dcid:CourseNameEnum
+name: "Quantity Survey"
+
+Node: dcid:ScienceLabTechnology
+typeOf: dcid:CourseNameEnum
+name: "Science Lab Technology"
+
+Node: dcid:InPhysics__InElectronics
+typeOf: dcid:CourseSpecializationEnum
+name: "In Physics In Electronics"
+
+Node: dcid:InPhysics
+typeOf: dcid:CourseSpecializationEnum
+name: "In Physics"
+
+Node: dcid:InBiochemistry__InMicrobiology
+typeOf: dcid:CourseSpecializationEnum
+name: "In Biochemistry__ In Microbiology"
+
+Node: dcid:InBiochemistry
+typeOf: dcid:CourseSpecializationEnum
+name: "In Biochemistry"
+
+Node: dcid:InBiology
+typeOf: dcid:CourseSpecializationEnum
+name: "In Biology"
+
+Node: dcid:InBiology__InMicrobiology
+typeOf: dcid:CourseSpecializationEnum
+name: "In Biology__ In Microbiology"
+
+Node: dcid:InChemistry__InBiochemistry
+typeOf: dcid:CourseSpecializationEnum
+name: "In Chemistry__ In Biochemistry"
+
+Node: dcid:InChemistry
+typeOf: dcid:CourseSpecializationEnum
+name: "In Chemistry"
+
+Node: dcid:InMicrobiology
+typeOf: dcid:CourseSpecializationEnum
+name: "In Microbiology"
+
+Node: dcid:InEnvironmentalBiology
+typeOf: dcid:CourseSpecializationEnum
+name: "In Environmental Biology"
+
+Node: dcid:Statistics
+typeOf: dcid:CourseNameEnum
+name: "Statistics"
+
+Node: dcid:SurveyingAndGeoinformatics
+typeOf: dcid:CourseNameEnum
+name: "Surveying And Geoinformatics"
+
+Node: dcid:TelecommunicationTechnology
+typeOf: dcid:CourseNameEnum
+name: "Telecommunication Technology"
+
+Node: dcid:TextileTechnology
+typeOf: dcid:CourseNameEnum
+name: "Textile Technology"
+
+Node: dcid:UrbanAndRegionalPlanning
+typeOf: dcid:CourseNameEnum
+name: "Urban And Regional Planning"
