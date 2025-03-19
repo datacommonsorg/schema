@@ -1,0 +1,3364 @@
+# Auto generated using command: "process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1V9jFpZ-a42CMbZaSbJrKRUgDkDWMniu5IpvsnaHBQok/edit?gid=1066549262#gid=1066549262 --existing_statvar_mcf=stat_vars.mcf --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/demographics/Ethiopia" on 2025-03-10 13:59:38.914219,# Auto generated using command: "process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1PvR0eYl0YQujbaxa__wJNWwEUPsTykvJRdjaXMeV8VE/edit?resourcekey=0-DzqtL8T9J82qNbDhBShPaA&gid=1275061837#gid=1275061837 --existing_statvar_mcf=stat_vars.mcf --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/labor/Ethiopia" on 2025-03-14 10:26:35.186346,# Auto generated using command: "process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1i8Hqfajid8H3uQUnHbWSRt5Q-yd5q006sD2C_mG8Rc4/edit?gid=1543326368#gid=1543326368 --existing_statvar_mcf=stat_vars.mcf --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/yusibcg/Ethiopia" on 2025-03-14 10:17:15.890946,# Auto generated using command: "process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1peYv2bPGOAzX7RO-scytUEfvf8dCBJwLmDjmPOsRj3I/edit?gid=995773346#gid=995773346 --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/landUse/" on 2025-03-05 13:45:58.946537,"# Auto generated using command: process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1V9jFpZ-a42CMbZaSbJrKRUgDkDWMniu5IpvsnaHBQok/edit?gid=1066549262#gid=1066549262 --existing_statvar_mcf=stat_vars.mcf --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/demographics/Ethiopia" on 2025-03-10 13:59:38.914219","# Auto generated using command: process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1PvR0eYl0YQujbaxa__wJNWwEUPsTykvJRdjaXMeV8VE/edit?resourcekey=0-DzqtL8T9J82qNbDhBShPaA&gid=1929164456#gid=1929164456 --existing_statvar_mcf=stat_vars.mcf --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/labor/Ethiopia" on 2025-03-14 08:52:45.068705","# Auto generated using command: process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1i8Hqfajid8H3uQUnHbWSRt5Q-yd5q006sD2C_mG8Rc4/edit?gid=1543326368#gid=1543326368 --existing_statvar_mcf=stat_vars.mcf --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/yusibcg/Ethiopia" on 2025-03-14 05:50:44.793700","# Auto generated using command: process_spreadsheet.py --input_sheet=https://docs.google.com/spreadsheets/d/1peYv2bPGOAzX7RO-scytUEfvf8dCBJwLmDjmPOsRj3I/edit?gid=995773346#gid=995773346 --output_path=/usr/local/google/home/kuru/StatVar_2025/openDataAfrica/ethiopia/landUse/" on 2025-03-05 13:45:58.946537"
+
+Node: dcid:Count_Person_Female_AsAFractionOf_Count_Person
+name: "Percentage of Female beneficiaries"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+gender: dcid:Female
+
+Node: dcid:Count_Person_Male_AsAFractionOf_Count_Person
+name: "Percentage of Male individuals"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+gender: dcid:Male
+
+Node: dcid:Count_Person_Urban_AsAFractionOf_Count_Person
+name: "Percentage of urban population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_Person_Agriculture_Female_Worker
+name: "Number of female workers in Agriculture"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+economicSector: dcid:Agriculture
+gender: dcid:Female
+workerStatus: dcid:Worker
+
+Node: dcid:Count_Person_Agriculture_Male_Worker
+name: "Number of Male Workers in Agriculture"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+economicSector: dcid:Agriculture
+gender: dcid:Male
+workerStatus: dcid:Worker
+
+Node: dcid:Count_Person_Agriculture_Worker
+name: "Number of people working in Agriculture"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+economicSector: dcid:Agriculture
+workerStatus: dcid:Worker
+
+Node: dcid:Count_Person_0To20Years_PrivateHealthFacility_AsAFractionOf_Count_Person
+name: "Percentage of population between 0 and 20 years that use the private health system"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [0 20 Years]
+healthEstablishmentType: dcid:PrivateHealthFacility
+
+Node: dcid:Count_Person_0To20Years_PublicHealthFacility_AsAFractionOf_Count_Person
+name: "Percentage of population aged 0-20 years who visited public health facility"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [0 20 Years]
+healthEstablishmentType: dcid:PublicHealthFacility
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_10To14Years_Female
+name: "Percentage of females aged 10 to 14 years who have attained higher secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Female
+age: [10 14 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_10To14Years_Male
+name: "Percentage of Male Children/Youth Aged 10-14 Years Old with Educational Attainment of Higher Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Male
+age: [10 14 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_10To14Years_Female
+name: "Percentage of girls aged 10 to 14 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Female
+age: [10 14 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_10To14Years_Male
+name: "Percentage of male population aged 10 to 14 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Male
+age: [10 14 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_10To14Years_Female
+name: "Percentage of girls aged 10 to 14 years with lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Female
+age: [10 14 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_10To14Years_Male
+name: "Percentage of Male  population aged 10 to 14 years who have attained Lower Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Male
+age: [10 14 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentNoEducation_Female_AsAFractionOf_Count_Person_10To14Years_Female
+name: "Percentage of females aged 10 to 14 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Female
+age: [10 14 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_10To14Years_Male
+name: "Percentage of males aged 10 to 14 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Male
+age: [10 14 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentPrimaryEducation_Female_AsAFractionOf_Count_Person_10To14Years_Female
+name: "Percentage of females aged 10 to 14 years that have attained primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Female
+age: [10 14 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_10To14Years_Male
+name: "Percentage of male population aged 10 to 14 years that have attained primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Male
+age: [10 14 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentSecondaryEducation_Female_AsAFractionOf_Count_Person_10To14Years_Female
+name: "Percentage of girls aged 10 to 14 years old who have attained secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Female
+age: [10 14 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_10To14Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_10To14Years_Male
+name: "Percentage of Male Children/Youth aged 10 to 14 Years old attending Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_10To14Years_Male
+age: [10 14 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_12To14Years_EducationalAttainmentHigherSecondaryEducation_InLaborForce_AsAFractionOf_Count_Person_12To14Years
+name: "Percentage of people aged 12 to 14 years that have attained higher secondary education and are in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years
+age: [12 14 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_12To14Years_EducationalAttainmentNoEducation_InLaborForce_AsAFractionOf_Count_Person_12To14Years
+name: "Percentage of population aged 12 to 14 years old who are in the labor force and have no education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years
+age: [12 14 Years]
+educationalAttainment: dcid:NoEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_12To14Years_EducationalAttainmentPrimaryEducation_InLaborForce_AsAFractionOf_Count_Person_12To14Years
+name: "Percentage of children aged 12 to 14 years with primary education in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years
+age: [12 14 Years]
+educationalAttainment: dcid:PrimaryEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_12To14Years_EducationalAttainmentSecondaryEducation_InLaborForce_AsAFractionOf_Count_Person_12To14Years
+name: "Percentage of children aged 12 to 14 years, attending secondary education who are in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years
+age: [12 14 Years]
+educationalAttainment: dcid:SecondaryEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_AsAFractionOf_Count_Person_12To14Years
+name: "Labor force participation rate for children aged 12-14 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_Female_AsAFractionOf_Count_Person_12To14Years_Female
+name: "Percentage of girls aged 12 to 14 years old who are in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years_Female
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+gender: dcid:Female
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_Fourth_AsAFractionOf_Count_Person_12To14Years_Fourth
+name: "Labor force participation rate among people aged 12 to 14 years old (4th quarter)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years_Fourth
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Fourth
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_Highest_AsAFractionOf_Count_Person_12To14Years_Highest
+name: "Percentage of children aged 12 to 14 years old in labor force with highest education level."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years_Highest
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Highest
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_Lowest_AsAFractionOf_Count_Person_12To14Years_Lowest
+name: "Percentage of children aged 12 to 14 years old in the labor force from the lowest income quintile"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years_Lowest
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Lowest
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_Male_AsAFractionOf_Count_Person_12To14Years_Male
+name: "Percentage of males aged between 12 and 14 years old in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years_Male
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+gender: dcid:Male
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_Middle_AsAFractionOf_Count_Person_12To14Years_Middle
+name: "Percentage of children aged 12 to 14 years old from middle school in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years_Middle
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Middle
+
+Node: dcid:Count_Person_12To14Years_InLaborForce_Second_AsAFractionOf_Count_Person_12To14Years_Second
+name: "Percentage of individuals aged 12 to 14 years old who are in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_12To14Years_Second
+age: [12 14 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Second
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_15To19Years
+name: "Percentage of population aged 15-19 years attained higher secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years
+age: [15 19 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_15To19Years_Female
+name: "Percentage of Female Population aged 15-19 years who have attained Higher Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Female
+age: [15 19 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_15To19Years_Male
+name: "Percentage of male population aged 15 to 19 years that has attained higher secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Male
+age: [15 19 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_15To19Years
+name: "Percentage of population aged 15-19 years with educational attainment less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years
+age: [15 19 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_15To19Years_Female
+name: "Percentage of females aged 15-19 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Female
+age: [15 19 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_15To19Years_Male
+name: "Percentage of male population aged 15 to 19 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Male
+age: [15 19 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_15To19Years
+name: "Percentage of population aged 15-19 years that has attained lower secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years
+age: [15 19 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_15To19Years_Female
+name: "Percentage of Female Population Aged 15-19 Years that has attained Lower Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Female
+age: [15 19 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_15To19Years_Male
+name: "Percentage of Male Population Aged 15-19 Years with Lower Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Male
+age: [15 19 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_15To19Years_Male
+name: "Percentage of males aged 15 to 19 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Male
+age: [15 19 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_15To19Years_Male
+name: "Percentage of Male Population aged 15-19 years that has attained Primary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Male
+age: [15 19 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To19Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_15To19Years_Male
+name: "Percentage of male population aged 15-19 years that has attained secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To19Years_Male
+age: [15 19 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To19Years_Employed_Female_AsAFractionOf_Count_Person
+name: "Percentage of employed females aged 15-19 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To19Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged 15 to 19 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To19Years_Female_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Clerks aged 15-19 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Female
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_15To19Years_Female_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 15-19 years who are farmers"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Female
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_15To19Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 15 to 19 years old employed in sales and services occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Female
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_15To19Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 15-19 years in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Female
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_15To19Years_Female_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 15 to 19 in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Female
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_15To19Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male clerks aged 15 to 19 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_15To19Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Farmers aged 15-19 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_15To19Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 15-19 years old working in Sales and Service Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_15To19Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 15 to 19 years in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_15To19Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 15-19 in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_15To19Years_Unemployed_Female_AsAFractionOf_Count_Person
+name: "Percentage of unemployed females aged 15 to 19 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To19Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged 15-19 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 19 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_15To24Years
+name: "Percentage of population aged 15-24 years that has attained higher secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years
+age: [15 24 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_15To24Years_Female
+name: "Percentage of Female Population (15-24 Years) with Higher Secondary Level Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Female
+age: [15 24 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_15To24Years_Male
+name: "Percentage of male population aged 15-24 years that have attained Higher Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Male
+age: [15 24 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_15To24Years
+name: "Percentage of people aged 15 to 24 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years
+age: [15 24 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_15To24Years_Female
+name: "Percentage of females aged 15 to 24 years with educational attainment less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Female
+age: [15 24 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_15To24Years_Male
+name: "Percentage of Males aged 15-24 Years with Educational Attainment Less Than Primary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Male
+age: [15 24 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_15To24Years
+name: "Percentage of people aged 15-24 years with lower secondary education level"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years
+age: [15 24 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_15To24Years_Female
+name: "Percentage of Female Population aged 15-24 years with Lower Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Female
+age: [15 24 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_15To24Years_Male
+name: "Percentage of Male population aged 15-24 years with lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Male
+age: [15 24 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentNoEducation_AsAFractionOf_Count_Person_15To24Years
+name: "Percentage of people aged 15 to 24 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years
+age: [15 24 Years]
+educationalAttainment: dcid:NoEducation
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentNoEducation_Female_AsAFractionOf_Count_Person_15To24Years_Female
+name: "Percentage of females aged 15 to 24 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Female
+age: [15 24 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_15To24Years_Male
+name: "Percentage of Males aged 15-24 with No Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Male
+age: [15 24 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentPrimaryEducation_AsAFractionOf_Count_Person_15To24Years
+name: "Percentage of people aged 15 to 24 years with primary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years
+age: [15 24 Years]
+educationalAttainment: dcid:PrimaryEducation
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentPrimaryEducation_Female_AsAFractionOf_Count_Person_15To24Years_Female
+name: "Percentage of females aged 15-24 years with primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Female
+age: [15 24 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_15To24Years_Male
+name: "Percentage of males aged 15-24 years with primary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Male
+age: [15 24 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentSecondaryEducation_AsAFractionOf_Count_Person_15To24Years
+name: "Percentage of population aged 15 to 24 years that have attained secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years
+age: [15 24 Years]
+educationalAttainment: dcid:SecondaryEducation
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentSecondaryEducation_Female_AsAFractionOf_Count_Person_15To24Years_Female
+name: "Percentage of female population aged 15-24 years with secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Female
+age: [15 24 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_15To24Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_15To24Years_Male
+name: "Percentage of males aged 15 to 24 years that have attained secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To24Years_Male
+age: [15 24 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_15To49Years_Male
+name: "Percentage of Males aged 15-49 years who have attained Higher Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Years_Male
+age: [15 49 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_15To49Years_Male
+name: "Percentage of males aged 15-49 years with educational attainment less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Years_Male
+age: [15 49 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_15To49Years_Male
+name: "Percentage of males aged 15-49 years with lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Years_Male
+age: [15 49 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_15To49Years_Male
+name: "Percentage of men aged 15-49 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Years_Male
+age: [15 49 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_15To49Years_Male
+name: "Percentage of Males aged 15-49 years with Primary Education Level"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Years_Male
+age: [15 49 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_15To49Years_Male
+name: "Percentage of Male Population (15-49 years) with Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To49Years_Male
+age: [15 49 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged 15-49 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 49 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To49Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Clerks aged 15-49 years old out of the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 49 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_15To49Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Farmers aged 15 to 49 Years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 49 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_15To49Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 15-49 years in Sales and Service Occupation"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 49 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_15To49Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 15-49 in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 49 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_15To49Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of unskilled manual laborers among males aged 15 to 49"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 49 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_15To49Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged 15-49 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 49 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_15To59Years_Male
+name: "Percentage of male population aged 15-59 years with higher secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To59Years_Male
+age: [15 59 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_15To59Years_Male
+name: "Percentage of males aged 15 to 59 years with educational attainment of less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To59Years_Male
+age: [15 59 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_15To59Years_Male
+name: "Percentage of males aged 15-59 years with lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To59Years_Male
+age: [15 59 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_15To59Years_Male
+name: "Percentage of Male population aged 15-59 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To59Years_Male
+age: [15 59 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_15To59Years_Male
+name: "Percentage of Males aged 15 to 59 years old whose highest level of education is Primary"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To59Years_Male
+age: [15 59 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_15To59Years_Male
+name: "Percentage of Male population aged 15-59 years who have attained Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_15To59Years_Male
+age: [15 59 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males in the age group 15-59 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 59 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_15To59Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male clerks aged 15-59 in the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 59 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_15To59Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male farmers aged 15 to 59 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 59 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_15To59Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 15 - 59 years working in Sales and Service Occupation"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 59 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_15To59Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 15 to 59 years in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 59 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_15To59Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 15-59 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 59 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_15To59Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged 15-59"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [15 59 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_20To24Years
+name: "Percentage of individuals aged 20 to 24 years with educational attainment higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years
+age: [20 24 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_20To24Years_Female
+name: "Percentage of Female Population of age 20-24 years who have attained Higher Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Female
+age: [20 24 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_20To24Years_Male
+name: "Percentage of Males aged 20 to 24 with Higher Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Male
+age: [20 24 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_20To24Years
+name: "Percentage of people aged 20 to 24 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years
+age: [20 24 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_20To24Years_Female
+name: "Percentage of women aged 20 to 24 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Female
+age: [20 24 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_20To24Years_Male
+name: "Percentage of males aged 20 to 24 years that have attained less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Male
+age: [20 24 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_20To24Years
+name: "Percentage of people aged 20 to 24 years that have attained lower secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years
+age: [20 24 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_20To24Years_Female
+name: "Percentage of females aged 20-24 years with lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Female
+age: [20 24 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_20To24Years_Male
+name: "Percentage of males aged 20 to 24 years with lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Male
+age: [20 24 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_20To24Years_Male
+name: "Percentage of Male population aged 20 to 24 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Male
+age: [20 24 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_20To24Years_Male
+name: "Percentage of men aged 20 to 24 years who have attained primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Male
+age: [20 24 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_20To24Years_Male
+name: "Percentage of men aged 20 to 24 years who have attained secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_20To24Years_Male
+age: [20 24 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_Employed_Female_AsAFractionOf_Count_Person
+name: "Percentage of employed women aged between 20 and 24 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Female
+
+Node: dcid:Count_Person_20To24Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged 20 to 24 years out of total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To24Years_Female_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Clerks aged 20-24 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Female
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_20To24Years_Female_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Farmers aged 20-24 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Female
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_20To24Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 20 to 24 working in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Female
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_20To24Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of skilled manual labor force aged 20 to 24 years - Female"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Female
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_20To24Years_Female_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 20-24 in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Female
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_20To24Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Clerks aged 20 to 24 Years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_20To24Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male farmers aged 20 to 24 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_20To24Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 20 to 24 employed in Sales and Service Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_20To24Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 20 to 24 years in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_20To24Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of unskilled male manual laborers aged between 20 and 24 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_20To24Years_Unemployed_Female_AsAFractionOf_Count_Person
+name: "Percentage of unemployed women aged 20-24"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Female
+
+Node: dcid:Count_Person_20To24Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged 20 to 24 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 24 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_20To34Years_PrivateHealthFacility_AsAFractionOf_Count_Person
+name: "Percentage of individuals aged between 20-34 years that use private health facilities"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 34 Years]
+healthEstablishmentType: dcid:PrivateHealthFacility
+
+Node: dcid:Count_Person_20To34Years_PublicHealthFacility_AsAFractionOf_Count_Person
+name: "Percentage of people aged 20 to 34 years who visited public health facilities"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [20 34 Years]
+healthEstablishmentType: dcid:PublicHealthFacility
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_25To29Years
+name: "Percentage of population aged 25-29 years that attained higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years
+age: [25 29 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_25To29Years_Female
+name: "Percentage of women aged 25-29 years with higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Female
+age: [25 29 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_25To29Years_Male
+name: "Percentage of Males aged 25 to 29 Years with Higher Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Male
+age: [25 29 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_25To29Years
+name: "Percentage of people aged 25-29 years with educational attainment of less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years
+age: [25 29 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_25To29Years_Female
+name: "Percentage of females aged 25-29 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Female
+age: [25 29 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_25To29Years_Male
+name: "Percentage of Males aged 25 to 29 years with Educational Attainment Less Than Primary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Male
+age: [25 29 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_25To29Years
+name: "Percentage of population aged 25-29 years old who attained lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years
+age: [25 29 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_25To29Years_Female
+name: "Percentage of women between 25 and 29 years of age who have attained lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Female
+age: [25 29 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_25To29Years_Male
+name: "Percentage of Males aged 25 to 29 years that attained lower secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Male
+age: [25 29 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_25To29Years_Male
+name: "Percentage of Males aged 25 to 29 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Male
+age: [25 29 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_25To29Years_Male
+name: "Percentage of Males aged 25-29 years with Primary Education Level"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Male
+age: [25 29 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_25To29Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_25To29Years_Male
+name: "Percentage of males aged 25 to 29 years that have attained secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_25To29Years_Male
+age: [25 29 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_25To29Years_Employed_Female_AsAFractionOf_Count_Person
+name: "Percentage of employed women aged 25-29"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Female
+
+Node: dcid:Count_Person_25To29Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged between 25 to 29 years among the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_25To29Years_Female_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Clerks aged 25-29 Years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Female
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_25To29Years_Female_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 25 to 29 years old who are farmers"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Female
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_25To29Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 25 to 29 working in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Female
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_25To29Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 25-29 years in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Female
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_25To29Years_Female_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Females aged 25-29 years working in UnSkilled Manual Labor Occupation"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Female
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_25To29Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Clerks aged 25-29 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_25To29Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male farmers aged 25-29 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_25To29Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 25 to 29 in Sales and Service Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_25To29Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of the total population that is male, aged 25-29 years old and working in skilled manual labor occupations."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_25To29Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 25 to 29 in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_25To29Years_Unemployed_Female_AsAFractionOf_Count_Person
+name: "Percentage of unemployed women aged 25-29"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Female
+
+Node: dcid:Count_Person_25To29Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged between 25 and 29 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [25 29 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_30To34Years
+name: "Percentage of population aged 30 to 34 years having attained higher secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years
+age: [30 34 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_30To34Years_Female
+name: "Percentage of females aged 30 to 34 years with educational attainment higher than secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Female
+age: [30 34 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_30To34Years_Male
+name: "Percentage of Males aged 30 to 34 Years with Higher Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Male
+age: [30 34 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_30To34Years
+name: "Percentage of individuals aged 30 to 34 years with educational attainment less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years
+age: [30 34 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_30To34Years_Female
+name: "Percentage of females aged 30 to 34 years with educational attainment of less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Female
+age: [30 34 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_30To34Years_Male
+name: "Percentage of males aged 30 to 34 years with educational attainment of less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Male
+age: [30 34 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_30To34Years
+name: "Percentage of people aged 30 to 34 years that attained lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years
+age: [30 34 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_30To34Years_Female
+name: "Percentage of women aged 30 to 34 years with lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Female
+age: [30 34 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_30To34Years_Male
+name: "Percentage of Males aged 30 to 34 years that attained lower secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Male
+age: [30 34 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_30To34Years_Male
+name: "Percentage of Males aged 30 to 34 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Male
+age: [30 34 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_30To34Years_Male
+name: "Percentage of Males aged 30 to 34 Years that have attained Primary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Male
+age: [30 34 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_30To34Years_Male
+name: "Percentage of the male population aged 30 to 34 years that has attained secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_30To34Years_Male
+age: [30 34 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_Employed_Female_AsAFractionOf_Count_Person
+name: "Percentage of employed women aged 30 to 34 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Female
+
+Node: dcid:Count_Person_30To34Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged 30-34 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_30To34Years_Female_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Clerks aged 30 to 34 years among total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Female
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_30To34Years_Female_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of female farmers aged 30 to 34 years among the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Female
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_30To34Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Women aged 30 to 34 years in Sales and Service Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Female
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_30To34Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 30 to 34 years in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Female
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_30To34Years_Female_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 30 to 34 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Female
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_30To34Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Clerks aged 30 to 34 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_30To34Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male farmers aged 30 to 34 years among the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_30To34Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 30 to 34 years working in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_30To34Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 30 to 34 years in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_30To34Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 30-34 years in Unskilled Manual Labor Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_30To34Years_Unemployed_Female_AsAFractionOf_Count_Person
+name: "Percentage of unemployed females aged between 30 to 34 years in the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Female
+
+Node: dcid:Count_Person_30To34Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged 30-34 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [30 34 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_35To39Years
+name: "Percentage of individuals aged 35-39 years that attained higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years
+age: [35 39 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_35To39Years_Female
+name: "Percentage of women aged 35 to 39 years with higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Female
+age: [35 39 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_35To39Years_Male
+name: "Percentage of men aged 35 to 39 years with higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Male
+age: [35 39 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_35To39Years
+name: "Percentage of people aged 35 to 39 years who have attained less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years
+age: [35 39 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_35To39Years_Female
+name: "Percentage of females aged 35 to 39 years with educational attainment less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Female
+age: [35 39 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_35To39Years_Male
+name: "Percentage of Males aged 35 to 39 years that have attained less than primary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Male
+age: [35 39 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_35To39Years
+name: "Percentage of people aged 35 to 39 years that attained lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years
+age: [35 39 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_35To39Years_Female
+name: "Percentage of women aged 35 to 39 years that attained lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Female
+age: [35 39 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_35To39Years_Male
+name: "Percentage of Males aged 35 to 39 years who have attained Lower Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Male
+age: [35 39 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_35To39Years_Male
+name: "Percentage of Males aged 35 to 39 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Male
+age: [35 39 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_35To39Years_Male
+name: "Percentage of males aged 35-39 years with primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Male
+age: [35 39 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_35To39Years_Male
+name: "Percentage of Males aged 35 to 39 Years with Educational Attainment - Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_35To39Years_Male
+age: [35 39 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_Employed_Female_AsAFractionOf_Count_Person
+name: "Percentage of employed women aged 35 to 39 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Female
+
+Node: dcid:Count_Person_35To39Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged between 35 to 39 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To39Years_Female_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Clerks aged 35 to 39 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Female
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_35To39Years_Female_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Farmers aged 35 to 39 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Female
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_35To39Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 35 to 39 years working in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Female
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_35To39Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 35 to 39 years working in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Female
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_35To39Years_Female_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 35-39 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Female
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_35To39Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Clerks aged 35-39 Years among Total Population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_35To39Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Farmers aged between 35 to 39 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_35To39Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 35 to 39 in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_35To39Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 35 to 39 in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_35To39Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 35 to 39 years in Unskilled Manual Labor Occupation"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_35To39Years_Unemployed_Female_AsAFractionOf_Count_Person
+name: "Percentage of unemployed women aged 35-39 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Female
+
+Node: dcid:Count_Person_35To39Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged 35 to 39 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 39 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_35To49Years_PrivateHealthFacility_AsAFractionOf_Count_Person
+name: "Percentage of individuals aged 35-49 years attending private health facilities"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 49 Years]
+healthEstablishmentType: dcid:PrivateHealthFacility
+
+Node: dcid:Count_Person_35To49Years_PublicHealthFacility_AsAFractionOf_Count_Person
+name: "Percentage of people aged 35-49 years who visited public health facilities"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [35 49 Years]
+healthEstablishmentType: dcid:PublicHealthFacility
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_40To44Years
+name: "Percentage of people aged 40-44 years who have attained higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years
+age: [40 44 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_40To44Years_Female
+name: "Percentage of women aged 40 to 44 years who have attained higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Female
+age: [40 44 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_40To44Years_Male
+name: "Percentage of Males aged 40 to 44 years who have attained Higher Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Male
+age: [40 44 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_40To44Years
+name: "Percentage of people aged 40-44 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years
+age: [40 44 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_40To44Years_Female
+name: "Percentage of women aged 40 to 44 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Female
+age: [40 44 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_40To44Years_Male
+name: "Percentage of men aged 40 to 44 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Male
+age: [40 44 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_40To44Years
+name: "Percentage of people aged 40 to 44 years that attained lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years
+age: [40 44 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_40To44Years_Female
+name: "Percentage of the female population aged between 40 to 44 years who have attained lower secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Female
+age: [40 44 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_40To44Years_Male
+name: "Percentage of Males aged 40 to 44 years who have attained Lower Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Male
+age: [40 44 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_40To44Years_Male
+name: "Percentage of men aged 40 to 44 years who have received no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Male
+age: [40 44 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_40To44Years_Male
+name: "Percentage of Males aged 40-44 years that have attained Primary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Male
+age: [40 44 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_40To44Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_40To44Years_Male
+name: "Percentage of men aged 40 to 44 years that have attained secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_40To44Years_Male
+age: [40 44 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_40To44Years_Employed_Female_AsAFractionOf_Count_Person
+name: "Percentage of employed women aged 40 to 44 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Female
+
+Node: dcid:Count_Person_40To44Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged 40-44 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_40To44Years_Female_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of female clerks aged 40-44 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Female
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_40To44Years_Female_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Farmers aged 40-44 Years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Female
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_40To44Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 40 to 44 in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Female
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_40To44Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 40-44 years working in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Female
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_40To44Years_Female_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 40-44 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Female
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_40To44Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male clerks aged 40 to 44 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_40To44Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male farmers aged 40-44 years amongst the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_40To44Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 40-44 in Sales and Service Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_40To44Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged between 40-44 years employed in a skilled manual labor occupation"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_40To44Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 40-44 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_40To44Years_Unemployed_Female_AsAFractionOf_Count_Person
+name: "Percentage of unemployed women aged 40-44 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Female
+
+Node: dcid:Count_Person_40To44Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged 40-44 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [40 44 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentHigherSecondaryEducation_AsAFractionOf_Count_Person_45To49Years
+name: "Percentage of individuals aged 45-49 years old with Higher Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years
+age: [45 49 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_45To49Years_Female
+name: "Percentage of women aged 45 to 49 years who have attained higher secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Female
+age: [45 49 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_45To49Years_Male
+name: "Percentage of males aged 45-49 years with higher secondary education level"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Male
+age: [45 49 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentLessThanPrimaryEducation_AsAFractionOf_Count_Person_45To49Years
+name: "Percentage of population aged 45 to 49 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years
+age: [45 49 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_45To49Years_Female
+name: "Percentage of females aged 45-49 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Female
+age: [45 49 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_45To49Years_Male
+name: "Percentage of Males aged 45 to 49 years with Educational Attainment Less than Primary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Male
+age: [45 49 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentLowerSecondaryEducation_AsAFractionOf_Count_Person_45To49Years
+name: "Percentage of people aged 45 to 49 years that attained lower secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years
+age: [45 49 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_45To49Years_Female
+name: "Percentage of women aged 45 to 49 years that attained lower secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Female
+age: [45 49 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_45To49Years_Male
+name: "Percentage of Males aged 45 to 49 years that attained Lower Secondary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Male
+age: [45 49 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_45To49Years_Male
+name: "Percentage of Males aged 45 to 49 years that have no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Male
+age: [45 49 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_45To49Years_Male
+name: "Percentage of Male population aged 45 to 49 years that have attained Primary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Male
+age: [45 49 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_45To49Years_Male
+name: "Percentage of Male population aged 45 to 49 years who attained Secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_45To49Years_Male
+age: [45 49 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_Employed_Female_AsAFractionOf_Count_Person
+name: "Percentage of employed women aged between 45 to 49 years."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Female
+
+Node: dcid:Count_Person_45To49Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed males aged 45-49 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_45To49Years_Female_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Female Clerks aged 45 to 49 years among total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Female
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_45To49Years_Female_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 45-49 who are farmers"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Female
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_45To49Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of women aged 45 to 49 working in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Female
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_45To49Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 45-49 in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Female
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_45To49Years_Female_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of females aged 45-49 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Female
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_45To49Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Clerks aged between 45 to 49 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_45To49Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of male farmers aged 45 to 49 years among the total population"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_45To49Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 45 to 49 in sales and service occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_45To49Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 45 to 49 in skilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_45To49Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 45 to 49 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_45To49Years_Unemployed_Female_AsAFractionOf_Count_Person
+name: "Percentage of unemployed women aged between 45 to 49 years."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Female
+
+Node: dcid:Count_Person_45To49Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed men aged 45-49 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [45 49 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_EducationalAttainmentHigherSecondaryEducation_Male_AsAFractionOf_Count_Person_50To59Years_Male
+name: "Percentage of Men Aged 50 to 59 Years who have attained Higher Secondary Education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_50To59Years_Male
+age: [50 59 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_EducationalAttainmentLessThanPrimaryEducation_Male_AsAFractionOf_Count_Person_50To59Years_Male
+name: "Percentage of Male population aged between 50 to 59 years with less than primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_50To59Years_Male
+age: [50 59 Years]
+educationalAttainment: dcid:LessThanPrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_EducationalAttainmentLowerSecondaryEducation_Male_AsAFractionOf_Count_Person_50To59Years_Male
+name: "Percentage of Male population aged between 50 and 59 years with lower secondary education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_50To59Years_Male
+age: [50 59 Years]
+educationalAttainment: dcid:LowerSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_EducationalAttainmentNoEducation_Male_AsAFractionOf_Count_Person_50To59Years_Male
+name: "Percentage of Males aged 50 to 59 years with no education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_50To59Years_Male
+age: [50 59 Years]
+educationalAttainment: dcid:NoEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_EducationalAttainmentPrimaryEducation_Male_AsAFractionOf_Count_Person_50To59Years_Male
+name: "Percentage of Men aged 50 to 59 years who have attained Primary Education."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_50To59Years_Male
+age: [50 59 Years]
+educationalAttainment: dcid:PrimaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_EducationalAttainmentSecondaryEducation_Male_AsAFractionOf_Count_Person_50To59Years_Male
+name: "Percentage of men aged 50-59 years with secondary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_50To59Years_Male
+age: [50 59 Years]
+educationalAttainment: dcid:SecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_Employed_Male_AsAFractionOf_Count_Person
+name: "Percentage of employed male population in the age group 50-59 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [50 59 Years]
+employmentStatus: dcid:Employed
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_Male_ClerkOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Clerks aged 50-59 Years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [50 59 Years]
+gender: dcid:Male
+occupation: dcid:Clerk
+
+Node: dcid:Count_Person_50To59Years_Male_FarmerOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Male Farmers aged between 50 and 59 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [50 59 Years]
+gender: dcid:Male
+occupation: dcid:Farmer
+
+Node: dcid:Count_Person_50To59Years_Male_SalesAndServiceOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged 50 to 59 years in Sales and Service Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [50 59 Years]
+gender: dcid:Male
+occupation: dcid:SalesAndService
+
+Node: dcid:Count_Person_50To59Years_Male_SkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of Males aged between 50 and 59 years employed in Skilled Manual Labor Occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [50 59 Years]
+gender: dcid:Male
+occupation: dcid:SkilledManualLabor
+
+Node: dcid:Count_Person_50To59Years_Male_UnSkilledManualLaborOccupation_AsAFractionOf_Count_Person
+name: "Percentage of males aged 50 to 59 years in unskilled manual labor occupations"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [50 59 Years]
+gender: dcid:Male
+occupation: dcid:UnSkilledManualLabor
+
+Node: dcid:Count_Person_50To59Years_Unemployed_Male_AsAFractionOf_Count_Person
+name: "Percentage of unemployed males aged between 50 and 59 years."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+age: [50 59 Years]
+employmentStatus: dcid:Unemployed
+gender: dcid:Male
+
+Node: dcid:Count_Person_5To11Years_EducationalAttainmentHigherSecondaryEducation_InLaborForce_AsAFractionOf_Count_Person_5To11Years
+name: "Percentage of children aged 5-11 years old with higher secondary education and are in labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years
+age: [5 11 Years]
+educationalAttainment: dcid:HigherSecondaryEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_5To11Years_EducationalAttainmentNoEducation_InLaborForce_AsAFractionOf_Count_Person_5To11Years
+name: "Percentage of children aged 5 to 11 years old, with no education, who are in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years
+age: [5 11 Years]
+educationalAttainment: dcid:NoEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_5To11Years_EducationalAttainmentPrimaryEducation_InLaborForce_AsAFractionOf_Count_Person_5To11Years
+name: "Percentage of children 5 to 11 years old in the labor force with primary education"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years
+age: [5 11 Years]
+educationalAttainment: dcid:PrimaryEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_5To11Years_EducationalAttainmentSecondaryEducation_InLaborForce_AsAFractionOf_Count_Person_5To11Years
+name: "Percentage of children aged 5-11 years old who are enrolled in secondary education and are in labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years
+age: [5 11 Years]
+educationalAttainment: dcid:SecondaryEducation
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_AsAFractionOf_Count_Person_5To11Years
+name: "Percentage of children aged 5-11 years old in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_Female_AsAFractionOf_Count_Person_5To11Years_Female
+name: "Percentage of girls aged 5 to 11 years in the labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years_Female
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+gender: dcid:Female
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_Fourth_AsAFractionOf_Count_Person_5To11Years_Fourth
+name: "Percentage of children aged 5 to 11 years old in the labor force in the fourth grade."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years_Fourth
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Fourth
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_Highest_AsAFractionOf_Count_Person_5To11Years_Highest
+name: "Percentage of children aged 5 to 11 years who are working (with highest level of education attained)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years_Highest
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Highest
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_Lowest_AsAFractionOf_Count_Person_5To11Years_Lowest
+name: "Percentage of children aged 5 to 11 years old in the labor force in the lowest income quintile"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years_Lowest
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Lowest
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_Male_AsAFractionOf_Count_Person_5To11Years_Male
+name: "Labor force participation rate among males aged 5 to 11 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years_Male
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+gender: dcid:Male
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_Middle_AsAFractionOf_Count_Person_5To11Years_Middle
+name: "Percentage of children aged 5 to 11 years who are in the middle wealth quintile and are in labor force"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years_Middle
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Middle
+
+Node: dcid:Count_Person_5To11Years_InLaborForce_Second_AsAFractionOf_Count_Person_5To11Years_Second
+name: "Percentage of children aged 5 to 11 years old in labor force."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_5To11Years_Second
+age: [5 11 Years]
+employmentStatus: dcid:InLaborForce
+wealthIndex: dcid:Second
+
+Node: dcid:Area_LandCover_FallowLand
+name: "Area of Fallow Land"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:FallowLand
+
+Node: dcid:Area_LandCover_Forest
+name: "Forest Land Cover Area"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:Forest
+
+Node: dcid:Area_LandCover_GazingLand
+name: "Land area used for gazing"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:GazingLand
+
+Node: dcid:Area_LandCover_IrrigatedLand
+name: "Area of irrigated land"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:IrrigatedLand
+
+Node: dcid:Area_LandCover_OtherLand
+name: "Area of Other Land Cover"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:OtherLand
+
+Node: dcid:Area_LandCover_PermanentCrops
+name: "Area of land used for permanent crops"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:PermanentCrops
+
+Node: dcid:Area_LandCover_TemporaryCrop
+name: "Area covered by Temporary Crops"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:TemporaryCrop
+
+Node: dcid:Area_LandCover_TemporaryCropIrrigated
+name: "Area of land cover classified as irrigated temporary crops."
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmType: dcid:TemporaryCropIrrigated
+
+Node: dcid:Count_Person_12To14Years
+name: "Number of individuals aged 12 to 14 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+
+Node: dcid:Count_Person_12To14Years_Female
+name: "Number of females aged 12 to 14 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+gender: dcid:Female
+
+Node: dcid:Count_Person_12To14Years_Male
+name: "Number of males aged 12-14 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+gender: dcid:Male
+
+Node: dcid:Count_Person_12To14Years_Lowest
+name: "Number of people aged 12 to 14 years (Lowest estimate)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+wealthIndex: dcid:Lowest
+
+Node: dcid:Count_Person_12To14Years_Middle
+name: "Number of individuals aged 12-14 years in Middle School"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+wealthIndex: dcid:Middle
+
+Node: dcid:Count_Person_12To14Years_Highest
+name: "Number of individuals aged 12-14 years (Highest)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+wealthIndex: dcid:Highest
+
+Node: dcid:Count_Person_12To14Years_Fourth
+name: "Number of individuals between 12 to 14 years old in the fourth grade"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+wealthIndex: dcid:Fourth
+
+Node: dcid:Count_Person_12To14Years_Second
+name: "Number of Persons between 12 to 14 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [12 14 Years]
+wealthIndex: dcid:Second
+
+Node: dcid:Count_Person_50To59Years
+name: "Number of individuals between 50 and 59 years old"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+
+Node: dcid:Count_Person_50To59Years_Female
+name: "Number of women between 50 to 59 years of age"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+gender: dcid:Female
+
+Node: dcid:Count_Person_50To59Years_Male
+name: "Number of Males aged between 50 and 59 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+gender: dcid:Male
+
+Node: dcid:Count_Person_50To59Years_Lowest
+name: "Number of people in the age group 50 to 59 years (Lowest)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+wealthIndex: dcid:Lowest
+
+Node: dcid:Count_Person_50To59Years_Middle
+name: "Number of individuals between 50 and 59 years old in the Middle region"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+wealthIndex: dcid:Middle
+
+Node: dcid:Count_Person_50To59Years_Highest
+name: "Number of people aged 50 to 59 with highest education level achieved"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+wealthIndex: dcid:Highest
+
+Node: dcid:Count_Person_50To59Years_Fourth
+name: "Number of individuals between 50 and 59 years old (4th dose)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+wealthIndex: dcid:Fourth
+
+Node: dcid:Count_Person_50To59Years_Second
+name: "Number of people between 50 and 59 years old (Second Dose)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [50 59 Years]
+wealthIndex: dcid:Second
+
+Node: dcid:Count_Person_5To11Years_Lowest
+name: "Minimum number of people aged 5-11 years"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 11 Years]
+wealthIndex: dcid:Lowest
+
+Node: dcid:Count_Person_5To11Years_Middle
+name: "Number of individuals aged 5 to 11 years in the Middle School"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 11 Years]
+wealthIndex: dcid:Middle
+
+Node: dcid:Count_Person_5To11Years_Highest
+name: "Number of people aged 5 to 11 years (Highest)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 11 Years]
+wealthIndex: dcid:Highest
+
+Node: dcid:Count_Person_5To11Years_Fourth
+name: "Number of people between 5 and 11 years old who received the fourth dose of the COVID-19 vaccine"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 11 Years]
+wealthIndex: dcid:Fourth
+
+Node: dcid:Count_Person_5To11Years_Second
+name: "Number of people between 5 and 11 years old who received the second dose of the vaccine"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 11 Years]
+wealthIndex: dcid:Second

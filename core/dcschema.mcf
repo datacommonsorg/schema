@@ -3680,7 +3680,7 @@ Node: dcid:healthEstablishmentType
 name: "healthEstablishmentType"
 typeOf: schema:Property
 domainIncludes: dcs:HealthEstablishment
-rangeIncludes: dcs:HealthEstablishmentTypeEnum
+rangeIncludes: dcs:HealthEstablishmentTypeEnum, dcs:BirthEvent
 
 Node: dcid:healthCareAdvice
 name: "healthCareAdvice"
@@ -4242,3 +4242,31 @@ Node: dcid:FullTimeEmployee
 typeOf: dcid:EmploymentStatusEnum
 name: "Full Time Employee"
 
+##EthiopiaStatistics Addition
+
+Node: dcid:wealthIndex
+typeOf: dcid:Property
+name: "wealthIndex"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WealthIndexEnum
+
+Node: dcid:WealthIndexEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "WealthIndexEnum"
+
+Node: dcid:Lowest
+typeOf: dcid:WealthIndexEnum
+name: "Lowest"
+
+Node: dcid:Middle
+typeOf: dcid:WealthIndexEnum
+name: "Middle"
+
+Node: dcid:Fourth
+typeOf: dcid:WealthIndexEnum
+name: "Fourth"
+
+Node: dcid:Highest
+typeOf: dcid:WealthIndexEnum
+name: "Highest"
