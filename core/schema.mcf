@@ -7222,11 +7222,27 @@ name: "Female"
 
 Node: numberOfBeds
 dcid: "numberOfBeds"
-rangeIncludes: schema:Number
-domainIncludes: schema:BedDetails
+rangeIncludes: schema:Number, dcid:QuantityRange
+domainIncludes: schema:BedDetails, dcid:Establishment
 typeOf: schema:Property
 name: "numberOfBeds"
 source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
+
+Node: dcid:PublicHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Public Hospital"
+
+Node: dcid:CentralHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Central Hospital"
+
+Node: dcid:PublicAndCentralHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Public And Central Hospital"
+
+Node: dcid:SpecialtyHospital
+typeOf: dcid:EstablishmentTypeEnum
+name: "Specialty Hospital"
 
 Node: acceptsReservations
 dcid: "acceptsReservations"
@@ -11620,6 +11636,46 @@ Node: dcid:Jobs
 typeOf: schema:Class
 subClassOf: dcs:Thing
 name: "Jobs"
+
+Node: dcid:AgricultureHuntingForestryCuttingTrees
+typeOf: dcid:EmploymentEnum
+name: "Agriculture Hunting Forestry Cutting Trees"
+
+Node: dcid:Manufacturing
+typeOf: dcid:EmploymentEnum
+name: "Manufacturing"
+
+Node: dcid:ElectricGasSteamAirConditionSupplies
+typeOf: dcid:EmploymentEnum
+name: "Electric Gas Steam Air Condition Supplies"
+
+Node: dcid:WaterSupportDrainRecycling
+typeOf: dcid:EmploymentEnum
+name: "Water support Drainage recycling"
+
+Node: dcid:ConstructionAndBuilding
+typeOf: dcid:EmploymentEnum
+name: "Construction And Building"
+
+Node: dcid:VehicleTradeRepair
+typeOf: dcid:EmploymentEnum
+name: "Wholesale and Retail Sale of Vehicles and Motorcycles Repairing"
+
+Node: dcid:FoodResidenceServices
+typeOf: dcid:EmploymentEnum
+name: "Food Residence Services"
+
+Node: dcid:InformationTelecommunication
+typeOf: dcid:EmploymentEnum
+name: "Information Telecommunication"
+
+Node: dcid:InsuranceFinancialIntermediation
+typeOf: dcid:EmploymentEnum
+name: "Insurance Financial Intermediation"
+
+Node: dcid:RealEstateRenting
+typeOf: dcid:EmploymentEnum
+name: "Real Estate Renting"
 
 Node: dcid:FinancialTransaction
 typeOf: dcid:Class
