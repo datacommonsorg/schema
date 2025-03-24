@@ -61,6 +61,11 @@ typeOf: dcs:SchoolGradeLevelEnum
 name: "PreKindergarten and Kindergarten"
 description: "Group of Prekindergarten and Kindergarten Students level in school."
 
+Node: dcid:PrePrimaryAndPrimaryEducation
+typeOf: dcs:SchoolGradeLevelEnum
+name: "PrePrimary and Primary"
+description: "Group of PrePrimary and Primary Education Students level in school."
+
 Node: dcid:Kindergarten
 typeOf: dcs:SchoolGradeLevelEnum
 specializationOf: dcs:PreKindergartenAndKindergarten
@@ -553,6 +558,18 @@ Node: dcid:Writing
 name: "Writing"
 typeOf: dcs:SchoolSubjectEnum
 
+Node: dcid:Religious_Education
+typeOf: dcid:SchoolSubjectEnum
+name: "Religious Education"
+
+Node: dcid:SocialStudiesAndReligiousEducation
+typeOf: dcid:SchoolSubjectEnum
+name: "Social Studies And Religious Education"
+
+Node: dcid:Kiswahili
+typeOf: dcid:SchoolSubjectEnum
+name: "Kiswahili"
+
 # Achievement scale metrics
 Node: dcid:cohortScaleAchievement
 name: "cohortScaleAchievement"
@@ -739,6 +756,14 @@ typeOf: dcs:AcademicAssessmentTypeEnum
 name: "Michigan Student Test of Educational Progress"
 # PROPERTIES for School
 # School defined in /cns/jv-d/home/datcom/v3_mcf/schema/K12SchemaExtensions.mcf
+
+Node: dcid:KenyaCertificatePrimaryEducation
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "Kenya Certificate Primary Education"
+
+Node: dcid:KenyaCertificateSecondaryEducation
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "Kenya Certificate Secondary Education"
 
 Node: dcid:NewYorkStateAlternateAssessment
 typeOf: dcs:AcademicAssessmentTypeEnum
@@ -2153,6 +2178,10 @@ name: "Developing Solutions And Achieving Goals Practice Scale"
 Node: dcid:UnderstandingTechnologicalPrinciplesPracticeScale
 typeOf: dcs:SubjectAssessmentScaleEnum
 name: "Understanding Technological Principles Practice Scale"
+
+Node: dcid:NationalScore
+typeOf: dcs:SubjectAssessmentScaleEnum
+name: "National Score"
 
 Node: dcid:EducationCertificationEnum
 typeOf: schema:Class
