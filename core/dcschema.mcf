@@ -3684,7 +3684,7 @@ Node: dcid:healthEstablishmentType
 name: "healthEstablishmentType"
 typeOf: schema:Property
 domainIncludes: dcs:HealthEstablishment
-rangeIncludes: dcs:HealthEstablishmentTypeEnum
+rangeIncludes: dcs:HealthEstablishmentTypeEnum, dcs:BirthEvent
 
 Node: dcid:healthCareAdvice
 name: "healthCareAdvice"
@@ -4246,3 +4246,45 @@ Node: dcid:FullTimeEmployee
 typeOf: dcid:EmploymentStatusEnum
 name: "Full Time Employee"
 
+##EthiopiaStatistics Addition
+
+Node: dcid:wealthIndex
+typeOf: dcid:Property
+name: "wealthIndex"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WealthIndexEnum
+
+Node: dcid:WealthIndexEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "WealthIndexEnum"
+
+Node: dcid:LowestWealthIndex
+typeOf: dcid:WealthIndexEnum
+name: "Lowest Wealth Index"
+description: "This category represents the bottom 0% to 20% of the population in terms of wealth distribution and includes the poorest households"
+descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
+
+Node: dcid:SecondWealthIndex
+typeOf: dcid:WealthIndexEnum
+name: "Second Wealth Index"
+description: "This group falls within the 21% to 40% range of the total population based on wealth and consists of the poor segment."
+descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
+
+Node: dcid:MiddleWealthIndex
+typeOf: dcid:WealthIndexEnum
+name: "Middle Wealth Index"
+description: "Households in this category are ranked between 41% and 60% in wealth distribution, representing the middle-class population."
+descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
+
+Node: dcid:FourthWealthIndex
+typeOf: dcid:WealthIndexEnum
+name: "Fourth Wealth Index"
+description: "This group includes those who fall within the 61% to 80% range of the wealth spectrum, classified as the rich segment."
+descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
+
+Node: dcid:HighestWealthIndex
+typeOf: dcid:WealthIndexEnum
+name: "Highest Wealth Index"
+description: " Representing the top 81% to 100%, this category includes the richest segment of the population."
+descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
