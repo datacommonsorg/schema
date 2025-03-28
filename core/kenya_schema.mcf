@@ -1,0 +1,460 @@
+Node: dcid:age
+typeOf: dcid:Property
+name: "age"
+domainIncludes: dcid:MortalityEvent
+
+Node: dcid:gender
+typeOf: dcid:Property
+name: "gender"
+domainIncludes: dcid:MortalityEvent,dcid:Student
+
+
+Node: dcid:performanceLevel
+typeOf: dcid:Property
+name: "performance level"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:PerformanceLevelEnum
+
+
+Node: dcid:PerformanceLevelEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "PerformanceLevelEnum"
+
+
+Node: dcid:ExcellentPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Excellent performance"
+
+
+Node: dcid:assessmentType
+typeOf: dcid:Property
+name: "assessment type"
+domainIncludes: dcid:Student,dcid:Person,dcid:Person
+
+
+Node: dcid:KenyaCertificateSecondaryEducation
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "Kenya certificate secondary education"
+
+
+Node: dcid:SuperiorPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Superior performance"
+
+
+Node: dcid:SolidPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Solid performance"
+
+
+Node: dcid:FairPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Fair performance"
+
+
+Node: dcid:AdequatePerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Adequate performance"
+
+
+Node: dcid:AveragePerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Average performance"
+
+Node: dcid:ExcellentPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Excellent performance"
+
+
+Node: dcid:WeakPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Weak performance"
+
+
+Node: dcid:MarginalPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Marginal performance"
+
+
+Node: dcid:PoorPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Poor performance"
+
+
+Node: dcid:InadequatePerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Inadequate performance"
+
+
+Node: dcid:FailedPerformance
+typeOf: dcid:PerformanceLevelEnum
+name: "Failed performance"
+
+
+Node: dcid:registrationStatus
+typeOf: dcid:Property
+name: "registration status"
+domainIncludes: dcid:Person
+
+Node: dcid:activitySource
+typeOf: dcid:Property
+name: "activity source"
+domainIncludes: dcid:ExpenditureActivity
+
+Node: dcid:expenditureType
+typeOf: dcid:Property
+name: "expenditureType"
+domainIncludes: dcid:ExpenditureActivity
+
+Node: dcid:GovernmentFinalConsumption
+typeOf: dcid:ExpenditureTypeEnum
+name: "Government final consumption"
+
+
+Node: dcid:PrivateFinalConsumption
+typeOf: dcid:ExpenditureTypeEnum
+name: "Private final consumption"
+
+
+Node: dcid:NonProfitInstitutionsServingHouseholds
+typeOf: dcid:ExpenditureTypeEnum
+name: "Non profit institutions serving households"
+
+
+Node: dcid:GrossFixedCapitalFormation
+typeOf: dcid:ExpenditureTypeEnum
+name: "Gross fixed capital formation"
+
+
+Node: dcid:InventoryChanges
+typeOf: dcid:ExpenditureTypeEnum
+name: "Inventory changes"
+
+
+Node: dcid:GrossDomesticExpenditure
+typeOf: dcid:ExpenditureTypeEnum
+name: "Gross domestic expenditure"
+
+
+Node: dcid:ExportsGoodsAndServices
+typeOf: dcid:ExpenditureTypeEnum
+name: "Exports goods and services"
+
+
+Node: dcid:ImportsGoodsAndServices
+typeOf: dcid:ExpenditureTypeEnum
+name: "Imports goods and services"
+
+
+Node: dcid:DiscrepancyExpenditure
+typeOf: dcid:ExpenditureTypeEnum
+name: "Discrepancy expenditure"
+
+
+Node: dcid:MeasurementDenominatorEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MeasurementDenominatorEnum"
+
+
+Node: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Amount expenditure activity gross domestic production"
+
+
+Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Nominal amount expenditure activity gross domestic production"
+
+
+Node: dcid:schoolSubject
+typeOf: dcid:Property
+name: "school subject"
+rangeIncludes: dcid:LanguageLearnedEnum
+
+Node: dcid:subjectType
+typeOf: dcid:Property
+name: "subject type"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SubjectTypeEnum,dcid:SchoolSubjectEnum
+
+
+Node: dcid:SubjectTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "Subject typeEnum"
+
+
+Node: dcid:EnglishLanguage
+typeOf: dcid:SubjectTypeEnum
+name: "English language"
+
+
+Node: dcid:EnglishComposition
+typeOf: dcid:SubjectTypeEnum
+name: "English composition"
+
+
+Node: dcid:Kiswahili
+typeOf: dcid:SchoolSubjectEnum
+name: "Kiswahili"
+
+
+Node: dcid:KiswahiliLugha
+typeOf: dcid:SubjectTypeEnum
+name: "Kiswahili lugha"
+
+
+Node: dcid:KiswahiliInsha
+typeOf: dcid:SubjectTypeEnum
+name: "Kiswahili insha"
+
+
+Node: dcid:SocialStudiesAndReligiousEducation
+typeOf: dcid:SchoolSubjectEnum
+name: "Social studies and religious education"
+
+
+Node: dcid:SocialStudies
+typeOf: dcid:SubjectTypeEnum
+name: "Social studies"
+
+
+Node: dcid:ReligiousEducation
+typeOf: dcid:SchoolSubjectEnum
+name: "Religious education"
+
+
+Node: dcid:NationalScore
+typeOf: dcid:SubjectAssessmentScaleEnum
+name: "National score"
+
+
+Node: dcid:KenyaCertificatePrimaryEducation
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "Kenya certificate primary education"
+
+
+Node: dcid:candidatesStatus
+typeOf: dcid:Property
+name: "candidates status"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:CandidatesStatusEnum
+
+
+Node: dcid:CandidatesStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "Candidates status enum"
+
+
+Node: dcid:CandidatePresent
+typeOf: dcid:CandidatesStatusEnum
+name: "Candidate present"
+
+
+Node: dcid:economicSector
+typeOf: dcid:Property
+name: "economic sector"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:AgricultureForestryFishingSector
+typeOf: dcid:EconomicSectorEnum
+name: "Agriculture forestry fishing sector"
+
+
+Node: dcid:AnimalProduction
+typeOf: dcid:EconomicSectorEnum
+name: "Animal production"
+
+
+Node: dcid:AgriculturalSupportActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Agricultural support activities"
+
+
+Node: dcid:ForestryLogging
+typeOf: dcid:EconomicSectorEnum
+name: "Forestry logging"
+
+
+Node: dcid:FishingAquaculture
+typeOf: dcid:EconomicSectorEnum
+name: "Fishing aquaculture"
+
+
+Node: dcid:MiningQuarrying
+typeOf: dcid:EconomicSectorEnum
+name: "Mining quarrying"
+
+
+Node: dcid:FoodBeveragesTobaccoManufacture
+typeOf: dcid:EconomicSectorEnum
+name: "Food beverages tobacco manufacture"
+
+
+Node: dcid:OtherManufacturingAndRepair
+typeOf: dcid:EconomicSectorEnum
+name: "Other manufacturing and repair"
+
+
+Node: dcid:ElectricitySupply
+typeOf: dcid:EconomicSectorEnum
+name: "Electricity supply"
+
+
+Node: dcid:WaterSupplySewerageWasteManagement
+typeOf: dcid:EconomicSectorEnum
+name: "Water supply sewerage waste management"
+
+
+Node: dcid:WholesaleRetailTradeAndRepair
+typeOf: dcid:EconomicSectorEnum
+name: "Wholesale retail trade and repair"
+
+
+Node: dcid:LandTransport
+typeOf: dcid:EconomicSectorEnum
+name: "Land transport"
+
+
+Node: dcid:AirTransportAndSupportServices
+typeOf: dcid:EconomicSectorEnum
+name: "Air transport and support services"
+
+
+Node: dcid:OtherTransportPostalCourierActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Other transport postal courier activities"
+
+
+Node: dcid:AccommodationAndFoodSector
+typeOf: dcid:EconomicSectorEnum
+name: "Accommodation and food sector"
+
+
+Node: dcid:InformationAndCommunication
+typeOf: dcid:EconomicSectorEnum
+name: "Information and communication"
+
+
+Node: dcid:Telecommunications
+typeOf: dcid:EconomicSectorEnum
+name: "Telecommunications"
+
+
+Node: dcid:PublishingBroadcastingInformationActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Publishing Broadcasting Information Activities"
+
+
+Node: dcid:FinancialAndInsuranceActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Financial and insurance activities"
+
+
+Node: dcid:FinancialActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Financial activities"
+
+
+Node: dcid:InsuranceActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Insurance activities"
+
+
+Node: dcid:RealEstate
+typeOf: dcid:EconomicSectorEnum
+name: "Real estate"
+
+
+Node: dcid:ProfessionalScientificTechnicalActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Professional scientific technical activities"
+
+
+Node: dcid:AdministrativeAndSupportServices
+typeOf: dcid:EconomicSectorEnum
+name: "Administrative and support services"
+
+
+Node: dcid:PublicAdministrationAndDefence
+typeOf: dcid:EconomicSectorEnum
+name: "Public administration and defence"
+
+
+Node: dcid:schoolGradeLevel
+typeOf: dcid:Property
+name: "school grade level"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:PrePrimaryAndPrimaryEducation
+typeOf: dcid:ElementarySchool
+name: "Pre primary and primary education"
+
+
+Node: dcid:HumanHealthAndSocialWork
+typeOf: dcid:EconomicSectorEnum
+name: "Human health and social work"
+
+
+Node: dcid:ArtsEntertainmentRecreation
+typeOf: dcid:EconomicSectorEnum
+name: "Arts entertainment recreation"
+
+
+Node: dcid:OtherServiceSector
+typeOf: dcid:EconomicSectorEnum
+name: "Other service sector"
+
+
+Node: dcid:EmployerHouseholdActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Employer household activities"
+
+
+Node: dcid:FinancialIntermediationServicesIndirectlyMeasured
+typeOf: dcid:EconomicSectorEnum
+name: "Financial intermediation services indirectly measured"
+
+
+Node: dcid:AllEconomicActivities
+typeOf: dcid:EconomicSectorEnum
+name: "All economic activities"
+
+
+Node: dcid:ProductTaxes
+typeOf: dcid:EconomicSectorEnum
+name: "Product taxes"
+
+Node: dcid:Kenya_GroupQuarters
+name: "Kenya group quarter"
+typeOf: dcs:HouseholdTypeEnum
+
+
+Node: dcid:ConventionalHousehold
+name: "Conventional household"
+typeOf: dcs:HouseholdTypeEnum
+
+
+
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Amount economic activity gross domestic production"
+
+
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Amount economic activity gross domestic production pre primary and primary education"
+
+
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Amount economic activity gross domestic production secondary education"
+
+
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Amount economic activity gross domestic production higher secondary education"
