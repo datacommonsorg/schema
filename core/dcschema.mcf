@@ -4601,3 +4601,36 @@ name: "US Dollar 1000000 to 1499999"
 Node: dcid:AvailableVehicles4Onwards
 typeOf: dcs:Quantity
 name: "Available vehicles 4 onwards"
+
+Node: dcid:RetailAndFoodServices
+typeOf: dcid:NAICSEnum
+name: "Retail And Food Services"
+
+Node: dcid:RetailAndFoodServicesExcludingMotorVehicleParts
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailAndFoodServices
+name: "Retail And Food Services Excluding Motor Vehicle Parts"
+
+Node: dcid:RetailAndFoodServicesExcludingGasolineStations
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailAndFoodServices
+name: "Retail And Food Services Excluding Gasoline Stations"
+
+Node: dcid:RetailAndFoodServicesExcludingMotorVehiclePartsAndGasolineStations
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailAndFoodServices
+name: "Retail And Food Services Excluding Motor Vehicle Parts And Gasoline Stations"
+
+Node: dcid:RetailServices
+typeOf: dcid:NAICSEnum
+name: "Retail Services"
+
+Node: dcid:RetailServicesExcludingMotorVehiclePartsDealer
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailServices
+name: "Retail Services Excluding Motor Vehicle Parts Dealer"
+
+Node: dcid:activitySource
+typeOf: dcs:Property
+name: "activitySource"
+domainIncludes: dcid:EconomicActivity
