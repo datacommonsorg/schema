@@ -6030,7 +6030,7 @@ source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater, dcs:Sales
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -11674,7 +11674,7 @@ descriptionUrl: "https://www.statista.com/statistics/1382282/average-price-basic
 Node: dcid:ExcludingEducation
 typeOf: schema:Class
 subClassOf: schema:BLSEstablishment
-name: "Excluding Education"
+name: "ExcludingEducation"
 
 Node: dcid:IndianTribes
 typeOf: dcid:BLSEstablishment
@@ -11705,3 +11705,27 @@ name: "Production And Nonsupervisory"
 Node: dcid:WorkedOvertime
 typeOf: dcid:USC_WorkStatusEnum
 name: "Worked Overtime"
+
+Node: dcid:RetailAndFoodServices
+typeOf: dcid:BLSEstablishment
+name: "Retail And Food Services"
+
+Node: dcid:RetailAndFoodServicesExcludingMotorVehicleParts
+typeOf: dcid:BLSEstablishment
+name: "Retail And Food Services Excluding Motor Vehicle Parts"
+
+Node: dcid:RetailAndFoodServicesExcludingGasolineStations
+typeOf: dcid:BLSEstablishment
+name: "Retail And Food Services Excluding Gasoline Stations"
+
+Node: dcid:RetailAndFoodServicesExcludingMotorVehiclePartsAndGasolineStations
+typeOf: dcid:BLSEstablishment
+name: "Retail And Food Services Excluding Motor Vehicle Parts And Gasoline Stations"
+
+Node: dcid:RetailServices
+typeOf: dcid:BLSEstablishment
+name: "Retail Services"
+
+Node: dcid:RetailServicesExcludingMotorVehiclePartsDealer
+typeOf: dcid:BLSEstablishment
+name: "Retail Services Excluding Motor Vehicle Parts Dealer"
