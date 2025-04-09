@@ -4284,3 +4284,45 @@ typeOf: dcid:WealthIndexEnum
 name: "Highest Wealth Index"
 description: " Representing the top 81% to 100%, this category includes the richest segment of the population."
 descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
+
+Node: dcid:serviceCategory
+typeOf: dcs:Property
+name: "serviceCategory"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:ElectricityConsumptionSectorEnum,dcid:EmissionSourceEnum,dcid:ConsumerGoodsCategoryEnum,dcid:ServiceCategoryEnum
+
+Node: dcid:serviceType
+typeOf: dcs:Property
+name: "serviceType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:EnergyConsumptionSectorEnum,dcid:ServiceTypeEnum
+
+Node: dcid:courseSpecialization
+typeOf: dcs:Property
+name: "courseSpecialization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:CourseSpecializationEnum,dcid:ContaminatedThingEnum,dcid:Class,dcid:ElectricityConsumptionSectorEnum,dcid:EmissionSourceEnum
+
+Node: dcid:industryType
+typeOf: dcs:Property
+name: "industryType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:EmissionSourceEnum,dcid:ProductEnum
+
+Node: dcid:agricultureType
+typeOf: dcs:Property
+name: "agricultureType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:AgricultureTypeEnum,dcid:WaterUseCategoryEnum
+
+Node: dcid:industry
+typeOf: dcs:Property
+name: "industry"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:EconomicSectorEnum
+
+Node: dcid:medicalSpecialization
+typeOf: dcs:Property
+name: "medicalSpecialization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:MedicalSpecializationEnum,dcid:MedicalSpecialty
