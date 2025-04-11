@@ -475,7 +475,7 @@ Node: dcid:schoolGradeLevel
 typeOf: schema:Property
 name: "schoolGradeLevel"
 rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool,dcs:SchoolLevelEnum
-domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher
+domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher, dcs:EconomicActivity
 description: "Describes the grade level of the student in school. For example, SchoolGrade2 defines the student to be in second grade."
 
 # OBSERVATION, Measured Property, for Students, Faculty
@@ -490,7 +490,7 @@ description: "Describes the ratio of student to teachers in the school"
 Node: dcid:schoolSubject
 typeOf: schema:Property
 name: "schoolSubject"
-rangeIncludes: dcs:SchoolSubjectEnum
+rangeIncludes: dcs:SchoolSubjectEnum, dcs:LanguageLearnedEnum
 domainIncludes: dcs:Student, dcs:AcademicAssessmentEvent
 description: "Describes a school subject."
 
@@ -740,7 +740,7 @@ Node: dcid:assessmentType
 typeOf: schema:Property
 name: "assessmentType"
 description: "The type of an academic assessment."
-domainIncludes: dcs:AcademicAssessmentEvent
+domainIncludes: dcs:AcademicAssessmentEvent, dcs:Student, dcs:Person
 rangeIncludes: dcs:AcademicAssessmentTypeEnum
 
 ## AcademicAssessmentTypeEnum definition.

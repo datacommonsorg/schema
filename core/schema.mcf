@@ -5301,7 +5301,7 @@ dcid: "area"
 typeOf: schema:Property
 supersededBy: "serviceArea"
 rangeIncludes: schema:Place
-domainIncludes: schema:BroadcastService, dcs:Farm, schema:Place
+domainIncludes: schema:BroadcastService, dcs:Farm, schema:Place, dcs:WetBulbTemperatureEvent, dcs:DroughtEvent, dcs:HeatTemperatureEvent, dcs:ColdTemperatureEvent, dcs:WildlandFireEvent, dcs:Thing
 name: "area"
 
 Node: defaultValue
@@ -6030,7 +6030,7 @@ source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
-domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater, dcs:Consumption, dcs:Household, dcs:Production, dcs:Remittance, dcs:Stock
 name: "amount"
 rangeIncludes: schema:Number
 
@@ -8502,7 +8502,7 @@ name: "lodgingUnitType"
 Node: gender
 dcid: "gender"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:BirthEvent, schema:Household
+domainIncludes: schema:Person, schema:BirthEvent, schema:Household, schema:Student, schema:MortalityEvent
 name: "gender"
 rangeIncludes: schema:GenderType, dcs:SDG_SexEnum
 
@@ -11674,7 +11674,7 @@ descriptionUrl: "https://www.statista.com/statistics/1382282/average-price-basic
 Node: dcid:ExcludingEducation
 typeOf: schema:Class
 subClassOf: schema:BLSEstablishment
-name: "Excluding Education"
+name: "ExcludingEducation"
 
 Node: dcid:IndianTribes
 typeOf: dcid:BLSEstablishment
@@ -11699,3 +11699,16 @@ name: "Production And Nonsupervisory"
 Node: dcid:WorkedOvertime
 typeOf: dcid:USC_WorkStatusEnum
 name: "Worked Overtime"
+
+Node: dcid:parentDiseaseOntologyID
+typeOf: schema:Property
+name: "parentDiseaseOntologyID"
+domainIncludes: schema:MedicalConditionIncident
+description: "The ontology ID of the parent disease."
+
+Node: dcid:hasOccupation
+typeOf: schema:Property
+name: "hasOccupation"
+domainIncludes: schema:Person
+rangeIncludes: schema:Occupation
+description: "The occupation that the person has."

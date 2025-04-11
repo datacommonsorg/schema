@@ -483,7 +483,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -875,7 +875,7 @@ name: "count"
 
 Node: dcid:cumulativeCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household
+domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household, dcs:MedicalTest, dcs:MedicalConditionIncident
 typeOf: schema:Property
 name: "cumulativeCount"
 description: "A running count of all instances that have satisfied the constraints of the Statistical Population."
@@ -3064,7 +3064,7 @@ Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -3254,7 +3254,7 @@ description: "An identifier for a census region. The US has states grouped into 
 Node: dcid:cost
 typeOf: schema:Property
 name: "cost"
-domainIncludes: dcs:Fuel
+domainIncludes: dcs:Fuel, dcs:Coal, dcs:HousingUnit
 rangeIncludes: schema:Quantity
 description: "The value of money that has been used up to produce something or deliver a service."
 descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
@@ -4284,3 +4284,311 @@ typeOf: dcid:WealthIndexEnum
 name: "Highest Wealth Index"
 description: " Representing the top 81% to 100%, this category includes the richest segment of the population."
 descriptionUrl:"https://dhsprogram.com/pubs/pdf/fr255/fr255.pdf"
+
+Node: dcid:StudentTeacherRatioUpto30
+typeOf: dcid:QuantityRange
+name: "Student teacher ratio upto 30"
+
+Node: dcid:Year1
+typeOf: dcid:Quantity
+name: "1 year"
+
+Node: dcid:Year2
+typeOf: dcid:Quantity
+name: "2 year"
+
+Node: dcid:Year3
+typeOf: dcid:Quantity
+name: "3 year"
+
+Node: dcid:Year5
+typeOf: dcid:Quantity
+name: "5 year"
+
+Node: dcid:Year7
+typeOf: dcid:Quantity
+name: "7 year"
+
+Node: dcid:Year10
+typeOf: dcid:Quantity
+name: "10 year"
+
+Node: dcid:Year20
+typeOf: dcid:Quantity
+name: "20 year"
+
+Node: dcid:Year30
+typeOf: dcid:Quantity
+name: "30 year"
+
+Node: dcid:USDollarUpto10000
+typeOf: dcid:QuantityRange
+name: "US Dollar upto 10000"
+
+Node: dcid:USDollar200000To249999
+typeOf: dcid:QuantityRange
+name: "US Dollar 200000 to 249999"
+
+Node: dcid:USDollar70000To79999
+typeOf: dcid:QuantityRange
+name: "US Dollar 70000 to 79999"
+
+Node: dcid:USDollar150000To174999
+typeOf: dcid:QuantityRange
+name: "US Dollar 150000 to 174999"
+
+Node: dcid:USDollar20000To24999
+typeOf: dcid:QuantityRange
+name: "US Dollar 20000 to 24999"
+
+Node: dcid:USDollar35000To39999
+typeOf: dcid:QuantityRange
+name: "US Dollar 35000 to 39999"
+
+Node: dcid:USDollar60000To69999
+typeOf: dcid:QuantityRange
+name: "US Dollar 60000 to 69999"
+
+Node: dcid:USDollar175000To199999
+typeOf: dcid:QuantityRange
+name: "US Dollar 175000 to 199999"
+
+Node: dcid:USDollar500000To749999
+typeOf: dcid:QuantityRange
+name: "US Dollar 500000 to 749999"
+
+Node: dcid:USDollar1500000To1999999
+typeOf: dcid:QuantityRange
+name: "US Dollar 1500000 to 1999999"
+
+Node: dcid:USDollar100000To124999
+typeOf: dcid:QuantityRange
+name: "US Dollar 100000 to 124999"
+
+Node: dcid:USDollar125000To149999
+typeOf: dcid:QuantityRange
+name: "US Dollar 125000 to 149999"
+
+Node: dcid:USDollar2000000Onwards
+typeOf: dcid:QuantityRange
+name: "US Dollar 2000000 onwards"
+
+Node: dcid:USDollar250000To299999
+typeOf: dcid:QuantityRange
+name: "US Dollar 250000 to 299999"
+
+Node: dcid:USDollar1000000Onwards
+typeOf: dcid:QuantityRange
+name: "US Dollar 1000000 onwards"
+
+Node: dcid:USDollar50000To59999
+typeOf: dcid:QuantityRange
+name: "US Dollar 50000 to 59999"
+
+Node: dcid:USDollar750000To999999
+typeOf: dcid:QuantityRange
+name: "US Dollar 750000 to 999999"
+
+Node: dcid:USDollar80000To89999
+typeOf: dcid:QuantityRange
+name: "US Dollar 80000 to 89999"
+
+Node: dcid:USDollar25000To29999
+typeOf: dcid:QuantityRange
+name: "US Dollar 25000 to 29999"
+
+Node: dcid:USDollar30000To34999
+typeOf: dcid:QuantityRange
+name: "US Dollar 30000 to 34999"
+
+Node: dcid:USDollar300000To399999
+typeOf: dcid:QuantityRange
+name: "US Dollar 300000 to 399999"
+
+Node: dcid:USDollar15000To19999
+typeOf: dcid:QuantityRange
+name: "US Dollar 15000 to 19999"
+
+Node: dcid:USDollar90000To99999
+typeOf: dcid:QuantityRange
+name: "US Dollar 90000 to 99999"
+
+Node: dcid:USDollar40000To49999
+typeOf: dcid:QuantityRange
+name: "US Dollar 40000 to 49999"
+
+Node: dcid:USDollar400000To499999
+typeOf: dcid:QuantityRange
+name: "US Dollar 400000 to 499999"
+
+Node: dcid:Date1990To1999
+typeOf: dcid:QuantityRange
+name: "Date 1990 to 1999"
+
+Node: dcid:Date1940To1949
+typeOf: dcid:QuantityRange
+name: "Date 1940 to 1949"
+
+Node: dcid:Date2005Onwards
+typeOf: dcid:QuantityRange
+name: "Date 2005 onwards"
+
+Node: dcid:Date1960To1969
+typeOf: dcid:QuantityRange
+name: "Date 1960 to 1969"
+
+Node: dcid:Date2014Onwards
+typeOf: dcid:QuantityRange
+name: "Date 2014 onwards"
+
+Node: dcid:Date2000To2004
+typeOf: dcid:QuantityRange
+name: "Date 2000 to 2004"
+
+Node: dcid:Date1950To1959
+typeOf: dcid:QuantityRange
+name: "Date 1950 to 1959"
+
+Node: dcid:DateUpto1939
+typeOf: dcid:QuantityRange
+name: "Date upto 1939"
+
+Node: dcid:USDollar1000To1249
+typeOf: dcid:QuantityRange
+name: "US Dollar 1000 to 1249"
+
+Node: dcid:USDollar100To149
+typeOf: dcid:QuantityRange
+name: "US Dollar 100 to 149"
+
+Node: dcid:USDollar1250To1499
+typeOf: dcid:QuantityRange
+name: "US Dollar 1250 to 1499"
+
+Node: dcid:USDollar1500To1999
+typeOf: dcid:QuantityRange
+name: "US Dollar 1500 to 1999"
+
+Node: dcid:USDollar150To199
+typeOf: dcid:QuantityRange
+name: "US Dollar 150 to 199"
+
+Node: dcid:USDollar2000Onwards
+typeOf: dcid:QuantityRange
+name: "US Dollar 2000 onwards"
+
+Node: dcid:USDollar2000To2499
+typeOf: dcid:QuantityRange
+name: "US Dollar 2000 to 2499"
+
+Node: dcid:USDollar200To249
+typeOf: dcid:QuantityRange
+name: "US Dollar 200 to 249"
+
+Node: dcid:USDollar2500To2999
+typeOf: dcid:QuantityRange
+name: "US Dollar 2500 to 2999"
+
+Node: dcid:USDollar250To299
+typeOf: dcid:QuantityRange
+name: "US Dollar 250 to 299"
+
+Node: dcid:USDollar3000To3499
+typeOf: dcid:QuantityRange
+name: "US Dollar 3000 to 3499"
+
+Node: dcid:USDollar300To349
+typeOf: dcid:QuantityRange
+name: "US Dollar 300 to 349"
+
+Node: dcid:USDollar3500Onwards
+typeOf: dcid:QuantityRange
+name: "US Dollar 3500 onwards"
+
+Node: dcid:USDollar350To399
+typeOf: dcid:QuantityRange
+name: "US Dollar 350 to 399"
+
+Node: dcid:USDollar400To449
+typeOf: dcid:QuantityRange
+name: "US Dollar 400 to 449"
+
+Node: dcid:USDollar450To499
+typeOf: dcid:QuantityRange
+name: "US Dollar 450 to 499"
+
+Node: dcid:USDollar500To549
+typeOf: dcid:QuantityRange
+name: "US Dollar 500 to 549"
+
+Node: dcid:USDollar550To599
+typeOf: dcid:QuantityRange
+name: "US Dollar 550 to 599"
+
+Node: dcid:USDollar600To649
+typeOf: dcid:QuantityRange
+name: "US Dollar 600 to 649"
+
+Node: dcid:USDollar650To699
+typeOf: dcid:QuantityRange
+name: "US Dollar 650 to 699"
+
+Node: dcid:USDollar700To749
+typeOf: dcid:QuantityRange
+name: "US Dollar 700 to 749"
+
+Node: dcid:USDollar750To799
+typeOf: dcid:QuantityRange
+name: "US Dollar 750 to 799"
+
+Node: dcid:USDollar800To899
+typeOf: dcid:QuantityRange
+name: "US Dollar 800 to 899"
+
+Node: dcid:USDollar900To999
+typeOf: dcid:QuantityRange
+name: "US Dollar 900 to 999"
+
+Node: dcid:USDollarUpto100
+typeOf: dcid:QuantityRange
+name: "US Dollar upto 100"
+
+Node: dcid:Rooms1
+typeOf: dcid:Quantity
+name: "Rooms 1"
+
+Node: dcid:Rooms2
+typeOf: dcid:Quantity
+name: "Rooms 2"
+
+Node: dcid:Rooms3
+typeOf: dcid:Quantity
+name: "Rooms 3"
+
+Node: dcid:Rooms4
+typeOf: dcid:Quantity
+name: "Rooms 5"
+
+Node: dcid:Rooms6
+typeOf: dcid:Quantity
+name: "Rooms 6"
+
+Node: dcid:Rooms7
+typeOf: dcid:Quantity
+name: "Rooms 7"
+
+Node: dcid:Rooms8
+typeOf: dcid:Quantity
+name: "Rooms 8"
+
+Node: dcid:Rooms9Onwards
+typeOf: dcid:QuantityRange
+name: "Rooms 9 onwards"
+
+Node: dcid:USDollar1000000To1499999
+typeOf: dcs:QuantityRange
+name: "US Dollar 1000000 to 1499999"
+
+Node: dcid:AvailableVehicles4Onwards
+typeOf: dcs:Quantity
+name: "Available vehicles 4 onwards"

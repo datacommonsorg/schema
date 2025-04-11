@@ -1,17 +1,6 @@
-Node: dcid:age
-typeOf: dcid:Property
-name: "age"
-domainIncludes: dcid:MortalityEvent
-
-Node: dcid:gender
-typeOf: dcid:Property
-name: "gender"
-domainIncludes: dcid:MortalityEvent,dcid:Student
-
-
 Node: dcid:performanceLevel
 typeOf: dcid:Property
-name: "performance level"
+name: "performanceLevel"
 domainIncludes: dcid:Student
 rangeIncludes: dcid:PerformanceLevelEnum
 
@@ -25,12 +14,6 @@ name: "PerformanceLevelEnum"
 Node: dcid:ExcellentPerformance
 typeOf: dcid:PerformanceLevelEnum
 name: "Excellent performance"
-
-
-Node: dcid:assessmentType
-typeOf: dcid:Property
-name: "assessment type"
-domainIncludes: dcid:Student,dcid:Person,dcid:Person
 
 
 Node: dcid:KenyaCertificateSecondaryEducation
@@ -86,21 +69,9 @@ Node: dcid:InadequatePerformance
 typeOf: dcid:PerformanceLevelEnum
 name: "Inadequate performance"
 
-
 Node: dcid:FailedPerformance
 typeOf: dcid:PerformanceLevelEnum
 name: "Failed performance"
-
-
-Node: dcid:registrationStatus
-typeOf: dcid:Property
-name: "registration status"
-domainIncludes: dcid:Person
-
-Node: dcid:activitySource
-typeOf: dcid:Property
-name: "activity source"
-domainIncludes: dcid:ExpenditureActivity
 
 Node: dcid:expenditureType
 typeOf: dcid:Property
@@ -167,15 +138,9 @@ Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction
 typeOf: dcid:MeasurementDenominatorEnum
 name: "Nominal amount expenditure activity gross domestic production"
 
-
-Node: dcid:schoolSubject
-typeOf: dcid:Property
-name: "school subject"
-rangeIncludes: dcid:LanguageLearnedEnum
-
 Node: dcid:subjectType
 typeOf: dcid:Property
-name: "subject type"
+name: "subjectType"
 domainIncludes: dcid:Student
 rangeIncludes: dcid:SubjectTypeEnum,dcid:SchoolSubjectEnum
 
@@ -183,7 +148,7 @@ rangeIncludes: dcid:SubjectTypeEnum,dcid:SchoolSubjectEnum
 Node: dcid:SubjectTypeEnum
 typeOf: dcid:Class
 subClassOf: dcid:Enumeration
-name: "Subject typeEnum"
+name: "SubjectTypeEnum"
 
 
 Node: dcid:EnglishLanguage
@@ -238,7 +203,7 @@ name: "Kenya certificate primary education"
 
 Node: dcid:candidatesStatus
 typeOf: dcid:Property
-name: "candidates status"
+name: "candidatesStatus"
 domainIncludes: dcid:Person
 rangeIncludes: dcid:CandidatesStatusEnum
 
@@ -246,19 +211,12 @@ rangeIncludes: dcid:CandidatesStatusEnum
 Node: dcid:CandidatesStatusEnum
 typeOf: dcid:Class
 subClassOf: dcid:Enumeration
-name: "Candidates status enum"
+name: "CandidatesStatusEnum"
 
 
 Node: dcid:CandidatePresent
 typeOf: dcid:CandidatesStatusEnum
 name: "Candidate present"
-
-
-Node: dcid:economicSector
-typeOf: dcid:Property
-name: "economic sector"
-domainIncludes: dcid:EconomicActivity
-rangeIncludes: dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum
 
 Node: dcid:AgricultureForestryFishingSector
 typeOf: dcid:EconomicSectorEnum
@@ -383,12 +341,6 @@ name: "Administrative and support services"
 Node: dcid:PublicAdministrationAndDefence
 typeOf: dcid:EconomicSectorEnum
 name: "Public administration and defence"
-
-
-Node: dcid:schoolGradeLevel
-typeOf: dcid:Property
-name: "school grade level"
-domainIncludes: dcid:EconomicActivity
 
 Node: dcid:PrePrimaryAndPrimaryEducation
 typeOf: dcid:ElementarySchool

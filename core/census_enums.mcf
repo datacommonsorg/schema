@@ -900,6 +900,11 @@ Node: dcid:Hungarian
 typeOf: dcs:USC_LanguageSpokenAtHomeEnum
 name: "Hungarian"
 
+Node: AfricanLanguages
+typeOf: dcs:USC_LanguageSpokenAtHomeEnum
+dcid: "AfricanLanguages"
+name: "African language"
+
 Node: USC_LevelOfSchoolEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -1366,6 +1371,10 @@ Node: dcid:Indian
 typeOf: dcs:RaceCodeEnum
 name: "Indian"
 
+Node: dcid:CDC_AmericanIndianAndAlaskaNativeAlone
+typeOf: dcs:RaceCodeEnum
+name: "American Indian and Alaska native alone"
+
 Node: USC_SchoolEnrollmentEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
@@ -1653,6 +1662,22 @@ name: "SatelliteInternetService"
 Node: dcid:SatelliteInternetServiceWithNoOtherTypeOfInternetSubscription
 typeOf: dcs:USC_InternetSubscriptionTypeEnum
 name: "SatelliteInternetServiceWithNoOtherTypeOfInternetSubscription"
+
+Node: dcid:BroadbandInternetOfAnyType
+typeOf: dcs:USC_InternetSubscriptionTypeEnum
+name: "Broadband internet of any type"
+
+Node: dcid:CellularData
+typeOf: dcs:USC_InternetSubscriptionTypeEnum
+name: "Cellular data"
+
+Node: dcid:CellularDataOnly
+typeOf: dcs:USC_InternetSubscriptionTypeEnum
+name: "Cellular data only"
+
+Node: dcid:OtherInternetServiceOnly
+typeOf: dcs:USC_InternetSubscriptionTypeEnum
+name: "Other internet service only"
 
 Node: USC_InternetAccessStatusEnum
 typeOf: schema:Class
@@ -2443,3 +2468,15 @@ Node: dcid:WorkedFromHome
 typeOf: dcid:USC_CommuteModeEnum
 description: "The worked from home mode has started from covid period and it is for a short time."
 name: "WorkedFromHome"
+
+Node: dcid:CarTruckOrVanDroveAlone
+typeOf: dcid:USC_CommuteModeEnum
+name: "Car truck or van drove alone"
+
+Node: dcid:CarTruckOrVanCarpooled
+typeOf: dcs:USC_CommuteModeEnum
+name: "Car truck or van carpooled"
+
+Node: dcid:DoctorateDegree&ProfessionalSchoolDegree
+typeOf: dcs:USC_EducationalAttainmentEnum
+name: "Doctorate degree and professional schoolDegree"
