@@ -56,6 +56,11 @@ subClassOf: schema:Enumeration
 name: "SchoolGradeLevelEnum"
 description: "Enumerations of different grade levels in school"
 
+Node: dcid:EducationalAttainmentEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "EducationalAttainmentEnum"
+
 Node: dcid:PreKindergartenAndKindergarten
 typeOf: dcs:SchoolGradeLevelEnum
 name: "PreKindergarten and Kindergarten"
@@ -775,7 +780,7 @@ Node: dcid:StateOfTexasAssessmentsOfAcademicReadiness
 typeOf: dcs:AcademicAssessmentTypeEnum
 name: "State Of Texas Assessments Of Academic Readiness"
 description: "The State of Texas Assessments of Academic Readiness (STAAR) program, implemented in spring 2012, includes annual assessments for mathematics at grades 3–8, reading language arts (RLA) at grades 3-8, science at grades 5 and 8, social studies at grade 8 end-of-course (EOC) assessments for Algebra I, English I, English II, Biology, and U.S History."
-descriptionUrl: "https://tea.texas.gov/student-assessment/testing/staar/staar-resources"
+descriptionUrl: "https://tea.texas.gov/student-assessment/staar"
 
 Node: dcid:CaliforniaAssessmentOfStudentPerformanceAndProgress
 typeOf: dcs:AcademicAssessmentTypeEnum
@@ -2288,7 +2293,7 @@ name: "NCES Private School"
 
 Node: dcid:schoolType
 typeOf: schema:Property
-domainIncludes: dcs:School, dcs:Student
+domainIncludes: dcs:School, dcs:Student, dcs:Teacher, dcs:Person
 rangeIncludes: dcs:SchoolTypeEnum
 name: "schoolType"
 

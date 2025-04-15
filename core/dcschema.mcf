@@ -490,7 +490,7 @@ dcid: "employmentStatus"
 typeOf: schema:Property
 name: "employmentStatus"
 domainIncludes: schema:Person, schema:Household
-rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum
+rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum, dcs:HealthEstablishment
 
 Node: geoNamesId
 dcid: "geoNamesId"
@@ -913,7 +913,7 @@ Node: dcid:grossDomesticProduct
 typeOf: schema:Property
 name: "grossDomesticProduct"
 rangeIncludes: schema:MonetaryAmount
-domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum
+domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum, dcs:EconomicActivity
 description: "Gross domestic product (GDP) is the monetary value of all the finished goods and services produced within a place in a specific time period"
 
 Node: dcid:growthRate
@@ -2785,8 +2785,8 @@ subClassOf: dcs:Incident, schema:MedicalEntity
 description: "A medical condition incident, such as a case of pneumonia."
 
 Node: dcid:incidentType
-rangeIncludes: dcs:MedicalConditionIncidentTypeEnum
-domainIncludes: dcs:Incident
+rangeIncludes: dcs:MedicalConditionIncidentTypeEnum, dcs:CauseOfDeathEnum, dcs:CauseOfDeathAndDisabilityEnum, dcs:ICD10_113CausesOfDeath
+domainIncludes: dcs:Incident, dcs:MedicalConditionIncident
 typeOf: schema:Property
 name: "incidentType"
 
@@ -2992,7 +2992,7 @@ typeOf: schema:Property
 name: "enrollmentStatus"
 description: "Identifies a person's enrollment status."
 rangeIncludes: dcs:EnrollmentStatusEnum
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:Student, schema:Teacher
 
 Node: dcid:expensor
 typeOf: schema:Property
@@ -3064,7 +3064,7 @@ Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum, dcid:ConsumerGoodsCategoryEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -3091,7 +3091,7 @@ Node: dcid:workStatus
 name: "workStatus"
 typeOf: schema:Property
 domainIncludes: schema:Household, schema:Person
-rangeIncludes: dcs:USC_WorkStatusEnum
+rangeIncludes: dcs:USC_WorkStatusEnum, dcs:WorkerClassificationEnum
 
 Node: dcid:vaccineType
 name: "vaccineType"
@@ -3535,7 +3535,7 @@ description: "The geo granularity at which a variable has data for"
 Node: dcid:ageGroupClassification
 name: "ageGroupClassification"
 rangeIncludes: dcs:AgeGroupClassificationEnum
-domainIncludes: dcs:Person
+domainIncludes: dcs:Person, dcs:MortalityEvent
 typeOf: schema:Property
 description: "People classified based on their age group."
 descriptionUrl: "https://www.nih.gov/nih-style-guide/age"
