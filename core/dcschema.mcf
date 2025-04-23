@@ -4601,3 +4601,56 @@ name: "US Dollar 1000000 to 1499999"
 Node: dcid:AvailableVehicles4Onwards
 typeOf: dcs:Quantity
 name: "Available vehicles 4 onwards"
+
+Node: dcid:compositeConsumerPriceIndex
+typeOf: dcs:Property
+name: "compositeConsumerPriceIndex"
+rangeIncludes: dcid:CompositeConsumerPriceIndexEnum
+domainIncludes: dcid:ConsumerGoodsAndServices
+
+Node: dcid:modeOfTransportation
+typeOf: dcid:Property
+name: "modeOfTransportation"
+domainIncludes: dcid:ConsumerGoodsAndServices
+rangeIncludes: dcid:ModeOfTransportationEnum
+
+Node: dcid:consumerGoodsCategory
+typeOf: dcs:Property
+name: "consumerGoodsCategory"
+rangeIncludes: dcid:AlcoholicBeverageTypeEnum,dcid:EducationalMajorEnum
+
+Node: dcid:agricultureType
+typeOf: dcs:Property
+name: "agricultureType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:AgricultureTypeEnum,dcid:WaterUseCategoryEnum
+
+Node: dcid:industryType
+typeOf: dcs:Property
+name: "industryType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:IndustryTypeEnum
+
+Node: dcid:comparisonPeriod
+typeOf: dcs:Property
+name: "comparisonPeriod"
+domainIncludes: dcid:ConsumerGoodsAndServices
+rangeIncludes: dcid:ComparisonPeriodEnum
+
+Node: dcid:courseSpecialization
+typeOf: dcs:Property
+name: "courseSpecialization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:CourseSpecializationEnum,dcid:ContaminatedThingEnum,dcid:Class,dcid:ElectricityConsumptionSectorEnum,dcid:EmissionSourceEnum
+
+Node: dcid:medicalSpecialization
+typeOf: dcs:Property
+name: "medicalSpecialization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:MedicalSpecializationEnum,dcid:MedicalSpecialty
+
+Node: dcid:serviceCategory
+typeOf: dcs:Property
+name: "serviceCategory"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:ElectricityConsumptionSectorEnum,dcid:EmissionSourceEnum,dcid:ConsumerGoodsCategoryEnum,dcid:ServiceCategoryEnum
