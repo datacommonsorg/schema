@@ -4654,3 +4654,36 @@ typeOf: dcs:Property
 name: "serviceCategory"
 domainIncludes: dcid:EconomicActivity
 rangeIncludes: dcid:ElectricityConsumptionSectorEnum,dcid:EmissionSourceEnum,dcid:ConsumerGoodsCategoryEnum,dcid:ServiceCategoryEnum
+
+Node: dcid:RetailAndFoodServices
+typeOf: dcid:NAICSEnum
+name: "Retail and food services"
+
+Node: dcid:RetailAndFoodServicesExcludingMotorVehicleParts
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailAndFoodServices
+name: "Retail and food services excluding motor vehicle parts"
+
+Node: dcid:RetailAndFoodServicesExcludingGasolineStations
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailAndFoodServices
+name: "Retail and food services excluding gasoline stations"
+
+Node: dcid:RetailAndFoodServicesExcludingMotorVehiclePartsAndGasolineStations
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailAndFoodServices
+name: "Retail and food services excluding motor vehicle parts and gasoline stations"
+
+Node: dcid:RetailServices
+typeOf: dcid:NAICSEnum
+name: "Retail services"
+
+Node: dcid:RetailServicesExcludingMotorVehiclePartsDealer
+typeOf: dcid:NAICSEnum
+specializationOf: dcid:RetailServices
+name: "Retail services excluding motor vehicle parts dealer"
+
+Node: dcid:activitySource
+typeOf: dcs:Property
+name: "activitySource"
+domainIncludes: dcid:EconomicActivity
