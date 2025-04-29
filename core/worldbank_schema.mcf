@@ -1,0 +1,343 @@
+Node: dcid:commodityType
+typeOf: dcid:Property
+name: "commodityType"
+domainIncludes: dcid:Commodity
+rangeIncludes: dcid:CommodityTypeEnum,dcid:ProductEnum,dcid:FarmInventoryTypeEnum,dcid:ConsumerGoodsCategoryEnum,dcid:ChemicalElement,dcid:EPA_CriteriaAirPollutant,dcid:EPA_HazardousAirPollutant,dcid:InteractionSourceEnum
+
+Node: dcid:Commodity
+name: "Commodity"
+typeOf: schema:Class
+subClassOf: schema:Thing
+
+Node: dcid:geographicalIndicator
+typeOf: dcid:Property
+name: "geographicalIndicator"
+domainIncludes: dcid:Commodity
+rangeIncludes: dcid:GeographicalIndicatorEnum
+
+Node: dcid:GeographicalIndicatorEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "GeographicalIndicatorEnum"
+
+Node: dcid:NorthSea_Brent
+typeOf: dcid:GeographicalIndicatorEnum
+name: "North Sea Brent"
+
+Node: dcid:Dubai
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Dubai"
+
+Node: dcid:UnitedStates
+typeOf: dcid:GeographicalIndicatorEnum
+name: "United States"
+
+Node: dcid:Europe
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Europe"
+
+Node: dcid:CoffeeArabica
+typeOf: dcid:CommodityTypeEnum
+name: "Coffee Arabica"
+specializationOf: dcid:Coffee
+
+Node: dcid:CoffeeRobusta
+typeOf: dcid:CommodityTypeEnum
+name: "Coffee Robusta"
+specializationOf: dcid:Coffee
+
+Node: dcid:Tea
+typeOf: dcid:CommodityTypeEnum
+name: "Tea"
+
+Node: dcid:Colombo
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Colombo"
+
+Node: dcid:Kolkata
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Kolkata"
+
+Node: dcid:Mombasa
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Mombasa"
+
+Node: dcid:CoconutOil
+typeOf: dcid:CommodityTypeEnum
+name: "Coconut Oil"
+
+Node: dcid:GroundnutOil
+typeOf: dcid:CommodityTypeEnum
+name: "Groundnut Oil"
+
+Node: dcid:PalmOil
+typeOf: dcid:CommodityTypeEnum
+name: "Palm Oil"
+
+Node: dcid:Soybean
+typeOf: dcid:CommodityTypeEnum
+name: "Soybean"
+
+Node: dcid:SoybeanOil
+typeOf: dcid:CommodityTypeEnum
+name: "Soybean Oil"
+
+Node: dcid:SoybeanMeal
+typeOf: dcid:CommodityTypeEnum
+name: "Soybean Meal"
+
+Node: dcid:Barley
+typeOf: dcid:CommodityTypeEnum
+name: "Barley"
+
+Node: dcid:Sorghum
+typeOf: dcid:CommodityTypeEnum
+name: "Sorghum"
+
+Node: dcid:RiceFivePercentKernel
+typeOf: dcid:CommodityTypeEnum
+name: "Rice Five Percent Kernel"
+
+Node: dcid:Thailand
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Thailand"
+
+Node: dcid:WheatHardRedWinter
+typeOf: dcid:CommodityTypeEnum
+name: "Wheat Hard Red Winter"
+specializationOf: dcid:Wheat
+descriptionUrl: https://uswheat.org/working-with-buyers/wheat-classes/
+
+Node: dcid:Beef
+typeOf: dcid:CommodityTypeEnum
+name: "Beef"
+
+Node: dcid:Shrimp
+typeOf: dcid:CommodityTypeEnum
+name: "Shrimp"
+
+Node: dcid:Mexico
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Mexico"
+
+Node: dcid:Sugar
+typeOf: dcid:CommodityTypeEnum
+name: "Sugar"
+
+Node: dcid:WoodLog
+typeOf: dcid:CommodityTypeEnum
+name: "Wood Log"
+
+Node: dcid:Malaysia
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Malaysia"
+
+Node: dcid:Sawnwood
+typeOf: dcid:CommodityTypeEnum
+name: "Sawn wood"
+
+Node: dcid:CottonAIndex
+typeOf: dcid:CommodityTypeEnum
+name: "Cotton A Index"
+
+Node: dcid:RubberRibbedSmokedSheetGrade3
+typeOf: dcid:CommodityTypeEnum
+name: "Rubber Ribbed Smoked Sheet Grade 3"
+
+Node: dcid:PhosphateRock
+typeOf: dcid:CommodityTypeEnum
+name: "Phosphate Rock"
+
+Node: dcid:TripleSuperphosphate
+typeOf: dcid:CommodityTypeEnum
+name: "Triple Superphosphate"
+
+Node: dcid:Urea
+typeOf: dcid:CommodityTypeEnum
+name: "Urea"
+
+Node: dcid:PotassiumChloride
+typeOf: dcid:CommodityTypeEnum
+name: "Potassium Chloride"
+
+Node: dcid:IronOreWithCostAndFreight
+typeOf: dcid:CommodityTypeEnum
+name: "Iron Ore With Cost And Freight"
+specializationOf: Iron
+
+Node: dcid:Gold
+typeOf: dcid:CommodityTypeEnum
+name: "Gold"
+
+Node: dcid:manufacturedExportsUnitValueIndex
+typeOf: dcid:Property
+name: "manufacturedExportsUnitValueIndex"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:DiammoniumPhosphate
+typeOf: dcid:CommodityTypeEnum
+name: "Diammonium Phosphate"
+
+Node: dcid:Australia
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Australia"
+
+Node: dcid:Cameroon
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Cameroon"
+
+Node: dcid:LiquefiedNaturalGas
+typeOf: dcid:CommodityTypeEnum
+name: "Liquefied Natural Gas"
+specializationOf: dcid:NaturalGas
+
+Node: dcid:Japan
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Japan"
+
+Node: dcid:index
+typeOf: dcid:Property
+name: "index"
+domainIncludes: dcid:Commodity
+
+Node: dcid:WheatSoftRedWinter
+typeOf: dcid:CommodityTypeEnum
+name: "Wheat Soft Red Winter"
+specializationOf: dcid:Wheat
+descriptionUrl: https://uswheat.org/working-with-buyers/wheat-classes/
+
+Node: dcid:Plywood
+typeOf: dcid:CommodityTypeEnum
+name: "Plywood"
+
+Node: dcid:Groundnut
+typeOf: dcid:CommodityTypeEnum
+name: "Groundnut"
+
+Node: dcid:WestTexasIntermediate
+typeOf: dcid:GeographicalIndicatorEnum
+name: "West Texas Intermediate"
+
+Node: dcid:SouthAfrica
+typeOf: dcid:GeographicalIndicatorEnum
+name: "South Africa"
+
+Node: dcid:RiceTwentyFivePercentKernel
+typeOf: dcid:CommodityTypeEnum
+name: "Rice Twenty Five Percent Kernel"
+
+Node: dcid:A1GradeRice
+typeOf: dcid:CommodityTypeEnum
+name: "A1 Grade Rice"
+
+Node: dcid:PalmKernelOil
+typeOf: dcid:CommodityTypeEnum
+name: "Palm Kernel Oil"
+
+Node: dcid:TechnicallySpecifiedRubberGrade20
+typeOf: dcid:CommodityTypeEnum
+name: "Technically Specified Rubber Grade 20"
+
+Node: dcid:Vietnam
+typeOf: dcid:GeographicalIndicatorEnum
+name: "Vietnam"
+
+Node: dcid:commodityCategory
+typeOf: dcid:Property
+name: "commodityCategory"
+domainIncludes: dcid:Commodity
+rangeIncludes: dcid:Class,dcid:ConsumerGoodsCategoryEnum,dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:FarmInventoryTypeEnum
+
+Node: dcid:NonEnergy
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Non Energy"
+
+Node: dcid:Beverage
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Beverage"
+
+Node: dcid:OilAndMeal
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Oil And Meal"
+
+Node: dcid:RawMaterials
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Raw Materials"
+
+Node: dcid:Timber
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Timber"
+
+Node: dcid:WorldBank_OtherRawMaterial
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "World Bank Other Raw Material"
+
+Node: dcid:MetalAndMineral
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Metal And Mineral"
+
+Node: dcid:BaseMetalsExceptIronOre
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Base Metals Except Iron Ore"
+
+Node: dcid:PreciousMetal
+typeOf: dcid:CommodityGoodsCategoryEnum
+name: "Precious Metal"
+
+Node: dcid:commodityGoodsCategory
+typeOf: dcid:Property
+name: "commodityGoodsCategory"
+domainIncludes: dcid:Commodity
+rangeIncludes: dcid:Class,dcid:ConsumerGoodsCategoryEnum,dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:FarmInventoryTypeEnum, dcs:CommodityGoodsCategoryEnum
+
+Node: dcid:CommodityGoodsCategoryEnum
+name: "CommodityGoodsCategoryEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:CommodityTypeEnum
+name: "CommodityTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:deflatorManufacturedExportsUnitValueIndex
+typeOf: dcid:Property
+name: "deflatorManufacturedExportsUnitValueIndex"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:RapeseedOil
+typeOf: dcid:CommodityTypeEnum
+name: "Rapeseed Oil"
+
+Node: dcid:SunflowerOil
+typeOf: dcid:CommodityTypeEnum
+name: "Sunflower Oil"
+
+Node: dcid:BaseYear2010
+typeOf: dcs:MeasurementMethodEnum
+name: "BaseYear2010"
+
+Node: dcid:USDollarPerCubicMeter
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerCubicMeter"
+shortDisplayName: "USD/cubic meter"
+
+Node: dcid:CentPerSheet
+typeOf: dcs:VolumeUnitOfMeasure
+name: "CentPerSheet"
+shortDisplayName: "cents/sheet"
+
+Node: dcid:USDollarPerDryMetricTonUnit
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerDryMetricTonUnit"
+shortDisplayName: "USD/dmtu"
+
+Node: dcid:USDollarPerTroyOunce
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerTroyOunce"
+shortDisplayName: "USD/troy oz"
+
+Node: dcid:USDollarPerKilogram
+typeOf: dcs:VolumeUnitOfMeasure
+name: "USDollarPerKilogram"
+shortDisplayName: "USD/kg"
