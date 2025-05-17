@@ -236,27 +236,6 @@ statType: dcid:measuredValue
 activitySource: dcid:NetValueAdded
 economicSector: dcid:ManufacturingSector
 
-Node: dcid:Nominal_Amount_EconomicActivity_NetDomesticProduction_PerCapita
-typeOf: dcid:StatisticalVariable
-name: "Net Domestic Product per capita by Constant Prices."
-populationType: dcid:EconomicActivity
-measuredProperty: dcid:amount
-measurementQualifier: dcid:Nominal
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
-activitySource: dcid:NetDomesticProduction
-
-Node: dcid:RealValue_Amount_EconomicActivity_NetDomesticProduction_PerCapita
-typeOf: dcid:StatisticalVariable
-name: "Net Domestic Product per capita by Current Prices."
-populationType: dcid:EconomicActivity
-measuredProperty: dcid:amount
-measurementQualifier: dcid:RealValue
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
-activitySource: dcid:NetDomesticProduction
-
-
 Node: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded
 typeOf: dcid:StatisticalVariable
 name: "Gross Value Added by Constant Prices."
@@ -283,3 +262,63 @@ measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:NetValueAdded
+
+Node: dcid:Nominal_Amount_EconomicActivity_NetValueAdded_BankingAndInsuranceSector
+typeOf: dcid:StatisticalVariable
+name: "Net Value Added in Banking and Insurance Sector by Constant Prices."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:Nominal
+statType: dcid:measuredValue
+activitySource: dcid:NetValueAdded
+economicSector: dcid:BankingAndInsuranceSector
+
+Node: dcid:RealValue_Amount_EconomicActivity_NetValueAdded_BankingAndInsuranceSector
+typeOf: dcid:StatisticalVariable
+name: "Net Value Added in Banking and Insurance Sector by Current Prices."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:RealValue
+statType: dcid:measuredValue
+activitySource: dcid:NetValueAdded
+economicSector: dcid:BankingAndInsuranceSector
+
+Node: dcid:Nominal_Amount_EconomicActivity_NetDomesticProduction_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Net Domestic Product per capita by Constant Prices."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:Nominal
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+activitySource: dcid:NetDomesticProduction
+
+Node: dcid:Nominal_Amount_EconomicActivity_NetValueAdded_BankingAndInsuranceSector
+typeOf: dcid:StatisticalVariable
+name: "Net Value Added in Banking and Insurance Sector by Constant Prices."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:Nominal
+statType: dcid:measuredValue
+activitySource: dcid:NetValueAdded
+economicSector: dcid:BankingAndInsuranceSector
+
+Node: dcid:RealValue_Amount_EconomicActivity_NetDomesticProduction_AsAFractionOf_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Net Domestic Product per capita by Current Prices."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:RealValue
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person
+activitySource: dcid:NetDomesticProduction
+
+Node: dcid:RealValue_Amount_EconomicActivity_NetValueAdded_BankingAndInsuranceSector
+typeOf: dcid:StatisticalVariable
+name: "Net Value Added in Banking and Insurance Sector by Current Prices."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:RealValue
+statType: dcid:measuredValue
+activitySource: dcid:NetValueAdded
+economicSector: dcid:BankingAndInsuranceSector
