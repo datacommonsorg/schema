@@ -1,0 +1,348 @@
+Node: dcid:AmountOutstanding_Debt_AsAFractionOf_Exports_EconomicActivity
+typeOf: dcid:StatisticalVariable
+description: "Total debt outstanding at year-end (As % of Exports of Goods & services)"
+populationType: dcid:Debt
+measuredProperty: dcid:amountOutstanding
+statType: dcid:measuredValue
+measurementDenominator: dcid:Exports_EconomicActivity
+
+Node: dcid:AmountRepayment_Debt_AsAFractionOf_Exports_EconomicActivity
+typeOf: dcid:StatisticalVariable
+description: "Debt service as a proportion of exports of goods and services"
+populationType: dcid:Debt
+measuredProperty: dcid:amountRepayment
+statType: dcid:measuredValue
+measurementDenominator: dcid:Exports_EconomicActivity
+
+Node: dcid:Exports_EconomicActivity
+typeOf: dcid:StatisticalVariable
+description: "Exports of goods & services, Value (WEO, cur. US$)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+
+Node: dcid:Exports_EconomicActivity_Africa
+typeOf: dcid:StatisticalVariable
+description: "Value of Exports to Africa, Goods (Current USD; IMF DOTS)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+exportToCountry: dcid:africa
+
+Node: dcid:Exports_EconomicActivity_AgriculturalProducts
+typeOf: dcid:StatisticalVariable
+description: "Total agricultural exports (value)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+product: dcid:AgriculturalProducts
+
+Node: dcid:Exports_EconomicActivity_AgriculturalProducts_AsAFractionOf_Exports_EconomicActivity_Merchandise
+typeOf: dcid:StatisticalVariable
+description: "Agricultural exports (share of total merchandise exports)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+measurementDenominator: dcid:Exports_EconomicActivity_Merchandise
+product: dcid:AgriculturalProducts
+
+Node: dcid:Exports_EconomicActivity_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
+typeOf: dcid:StatisticalVariable
+description: "BOP-Exports of Goods and Services (As % of GDP)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
+
+Node: dcid:Exports_EconomicActivity_Cereals
+typeOf: dcid:StatisticalVariable
+description: "Total cereals exports (value)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+product: dcid:Cereals
+
+Node: dcid:Exports_EconomicActivity_ExportToAfrica_ExternalTrade
+typeOf: dcid:StatisticalVariable
+description: "Exports to AFRICA (External trade, Curr. USD)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+exportDestination: dcid:africa
+product: dcid:ExternalTrade
+
+Node: dcid:Exports_EconomicActivity_Merchandise
+typeOf: dcid:StatisticalVariable
+description: "Total exports merchandise"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+product: dcid:Merchandise
+
+Node: dcid:Exports_EconomicActivity_NonOilProducts
+typeOf: dcid:StatisticalVariable
+description: "Exports of non-oil products, Value (Cur. USD)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+product: dcid:NonOilProducts
+
+Node: dcid:Exports_EconomicActivity_Oil
+typeOf: dcid:StatisticalVariable
+description: "Oil exports, Value (Cur. USD)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:measuredValue
+product: dcid:Oil
+
+Node: dcid:GrowthRate_Amount_EconomicActivity_ExportsGoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Growth rate of Export value of goods and services (%)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:growthRate
+product: dcid:ExportsGoodsAndServices
+
+Node: dcid:GrowthRate_Exports_EconomicActivity_ExportsGoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Real growth rate of exports of goods and services (National Accounts, % change)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+statType: dcid:growthRate
+product: dcid:ExportsGoodsAndServices
+
+Node: dcid:Nominal_Exports_EconomicActivity_ExportsGoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Exports of goods and services, at current prices (National Accounts, Loc. Curr.)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+measurementQualifier: dcid:Nominal
+statType: dcid:measuredValue
+product: dcid:ExportsGoodsAndServices
+
+Node: dcid:RealValue_Exports_EconomicActivity_ExportsGoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Exports of goods and services, at constant price (National Accounts, Loc. curr.)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:exports
+measurementQualifier: dcid:RealValue
+statType: dcid:measuredValue
+product: dcid:ExportsGoodsAndServices
+
+Node: dcid:GrowthRate_Amount_EconomicActivity_GoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Imports of goods and services real growth rate (National Accounts % change)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:growthRate
+product: dcid:GoodsAndServices
+
+Node: dcid:GrowthRate_Imports_EconomicActivity_Goods
+typeOf: dcid:StatisticalVariable
+description: "Growth rate of Imports value of Goods (%)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:growthRate
+product: dcid:Goods
+
+Node: dcid:GrowthRate_Imports_EconomicActivity_GoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Growth rate of Imports value of Goods and Services (%)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:growthRate
+product: dcid:GoodsAndServices
+
+Node: dcid:ImportDependencyRatio_EconomicActivity
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:importDependencyRatio
+statType: dcid:measuredValue
+
+Node: dcid:Imports_EconomicActivity_AgriculturalProducts
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:AgriculturalProducts
+
+Node: dcid:Imports_EconomicActivity_AgriculturalProducts_AsAFractionOf_Exports_EconomicActivity_Merchandise
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+measurementDenominator: dcid:Exports_EconomicActivity_Merchandise
+product: dcid:AgriculturalProducts
+
+Node: dcid:Imports_EconomicActivity_Fertilizer
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:Fertilizer
+
+Node: dcid:Imports_EconomicActivity_Goods
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:Goods
+
+Node: dcid:Imports_EconomicActivity_GoodsAndServices
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:GoodsAndServices
+
+Node: dcid:Imports_EconomicActivity_GoodsAndServices_AsAFractionOf_Amount_EconomicActivity
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_EconomicActivity
+product: dcid:GoodsAndServices
+
+Node: dcid:Imports_EconomicActivity_GoodsAndServices_AsAFractionOf_Imports_EconomicActivity
+typeOf: dcid:StatisticalVariable
+description: "Imports of goods and services (annual % growth)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+measurementDenominator: dcid:Imports_EconomicActivity
+product: dcid:GoodsAndServices
+
+Node: dcid:Imports_EconomicActivity_GoodsAndServices_PerGrossDomesticProduction
+typeOf: dcid:StatisticalVariable
+description: "Imports of goods and services (% of GDP)  (WEO)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+measurementDenominator: dcid:grossDomesticProduction
+product: dcid:GoodsAndServices
+
+Node: dcid:Imports_EconomicActivity_Merchandise
+typeOf: dcid:StatisticalVariable
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:Merchandise
+
+Node: dcid:Imports_EconomicActivity_NonOilProducts
+typeOf: dcid:StatisticalVariable
+description: "Imports of non-oil products Value (Cur. USD)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:NonOilProducts
+
+Node: dcid:Imports_EconomicActivity_Oil
+typeOf: dcid:StatisticalVariable
+description: "Oil imports, Value (Cur. USD)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:Oil
+
+Node: dcid:Imports_EconomicActivity_Services
+typeOf: dcid:StatisticalVariable
+description: "Imports of services Value (WEO cur. US$)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:Services
+
+Node: dcid:Imports_Energy_AsAFractionOf_Consumption_Energy
+typeOf: dcid:StatisticalVariable
+description: "Energy imports net (% of energy use)"
+populationType: dcid:Energy
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+measurementDenominator: dcid:Consumption_Energy
+
+Node: dcid:Imports_ExpenditureActivity_Goods
+typeOf: dcid:StatisticalVariable
+populationType: dcid:ExpenditureActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue
+product: dcid:Goods
+
+Node: dcid:NominalValue_Amount_ExpenditureActivity_GoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Imports of goods and services current prices (National Accounts Loc. Curr.)"
+populationType: dcid:ExpenditureActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:NominalValue
+statType: dcid:measuredValue
+product: dcid:GoodsAndServices
+
+Node: dcid:NominalValue_Imports_EconomicActivity_ImportFromAfrica
+typeOf: dcid:StatisticalVariable
+description: "Imports from AFRICA (External trade Curr. USD)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+measurementQualifier: dcid:NominalValue
+statType: dcid:measuredValue
+importSource: dcid:africa
+
+Node: dcid:RealValue_Amount_ExpenditureActivity_GoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Imports of goods and services constant price (National Accounts Loc. curr.)"
+populationType: dcid:ExpenditureActivity
+measuredProperty: dcid:amount
+measurementQualifier: dcid:RealValue
+statType: dcid:measuredValue
+product: dcid:GoodsAndServices
+
+Node: dcid:RealValue_Imports_EconomicActivity_GoodsAndServices
+typeOf: dcid:StatisticalVariable
+description: "Imports of goods and services (constant 2005 US$)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+measurementQualifier: dcid:RealValue
+statType: dcid:measuredValue
+product: dcid:GoodsAndServices
+
+Node: dcid:TradeBalance_EconomicActivity
+typeOf: dcid:StatisticalVariable
+description: "Trade balance (Net, BoP, cur. US$)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:tradeBalance
+statType: dcid:measuredValue
+
+Node: dcid:TradeBalance_EconomicActivity_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
+typeOf: dcid:StatisticalVariable
+description: "Trade balance (As % of GDP)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:tradeBalance
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
+
+Node: dcid:TradeSector_EconomicActivity
+typeOf: dcid:StatisticalVariable
+description: "Trade taxes"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:tradeSector
+statType: dcid:measuredValue
+
+Node: dcid:Trade_EconomicActivity
+typeOf: dcid:StatisticalVariable
+description: "Trade of Goods with Africa (in Current USD)."
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:trade
+statType: dcid:measuredValue
+
+Node: dcid:Trade_EconomicActivity_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
+typeOf: dcid:StatisticalVariable
+description: "Total trade ( as % of GDP)"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:trade
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
+
+Node: dcid:Imports_EconomicActivity
+typeOf: dcid:StatisticalVariable
+name: "Import Economic Activity"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:imports
+statType: dcid:measuredValue

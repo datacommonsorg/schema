@@ -4693,3 +4693,51 @@ typeOf: dcs:Class
 name: "StatVarObsSeries"
 description: "A series of observations for a StatisticalVariable and entity."
 subClassOf: dcid:Intangible
+
+Node: dcid:amountRepayment
+typeOf: dcid:Property
+name: "amountRepayment"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:AmountRepaymentEnum
+
+Node: dcid:importDependencyRatio
+typeOf: dcid:Property
+name: "import Dependency Ratio"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:ImportDependencyRatioEnum
+
+Node: dcid:tradeBalance
+typeOf: dcid:Property
+name: "Trade Balance"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:TradeBalanceEnum
+
+Node: dcid:trade
+typeOf: dcid:Property
+name: "trade"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:TradeEnum
+
+Node: dcid:tradeSector
+typeOf: dcid:Property
+name: "Trade Sector"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:TradeSectorEnum
+
+Node: dcid:product
+typeOf: dcid:Property
+name: "product"
+rangeIncludes: dcid:ConsumerGoodsCategoryEnum,dcid:EconomicSectorEnum,dcid:ExpenditureTypeEnum
+domainIncludes: dcid:ExpenditureActivity
+
+Node: dcid:exportToCountry
+typeOf: dcid:Property
+name: "Export To Country"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:Continent
+
+Node: dcid:grossDomesticProduction
+typeOf: dcid:Property
+name: "Gross Domestic Production"
+rangeIncludes: dcid:GrossDomesticProductionEnum
+
