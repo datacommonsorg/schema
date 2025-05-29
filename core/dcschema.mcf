@@ -4687,3 +4687,51 @@ Node: dcid:activitySource
 typeOf: dcs:Property
 name: "activitySource"
 domainIncludes: dcid:EconomicActivity
+
+Node: dcid:amountRepayment
+typeOf: dcid:Property
+name: "amountRepayment"
+domainIncludes: dcid:Debt
+rangeIncludes: dcid:AmountRepaymentEnum
+
+Node: dcid:importDependencyRatio
+typeOf: dcid:Property
+name: "importDependencyRatio"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:ImportDependencyRatioEnum
+
+Node: dcid:tradeBalance
+typeOf: dcid:Property
+name: "tradeBalance"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:TradeBalanceEnum
+
+Node: dcid:trade
+typeOf: dcid:Property
+name: "trade"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:TradeEnum
+
+Node: dcid:tradeSector
+typeOf: dcid:Property
+name: "tradeSector"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:TradeSectorEnum
+
+Node: dcid:product
+typeOf: dcid:Property
+name: "product"
+rangeIncludes: dcid:ConsumerGoodsCategoryEnum,dcid:EconomicSectorEnum,dcid:ExpenditureTypeEnum
+domainIncludes: dcid:ExpenditureActivity
+
+Node: dcid:exportToCountry
+typeOf: dcid:Property
+name: "exportToCountry"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:Continent
+
+Node: dcid:grossDomesticProduction
+typeOf: dcid:Property
+name: "grossDomesticProduction"
+rangeIncludes: dcid:GrossDomesticProductionEnum
+
