@@ -1,5 +1,6 @@
 Node: dcid:Nominal_Index_Commodity
-name: "Commodity nominal price index"
+name: "Nominal commodity price index"
+description: "An index tracking the average change in nominal prices for a basket of commodities."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -34,7 +35,8 @@ statType: dcid:measuredValue
 commodityCategory: dcid:Beverage
 
 Node: dcid:Nominal_Index_Commodity_Energy
-name: "Energy commodity nominal price index"
+name: "Nominal energy commodity price index"
+description: "An index tracking the average change in nominal prices for a basket of energy commodities."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -52,7 +54,8 @@ statType: dcid:measuredValue
 commodityCategory: dcid:Fertilizer
 
 Node: dcid:Nominal_Index_Commodity_Food
-name: "Food nominal price index"
+name: "Nominal food commodity price index"
+description: "Tracks the changes in the prices of a specific basket of food commodities over time, reflecting the raw, unadjusted prices of those goods."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -79,7 +82,8 @@ statType: dcid:measuredValue
 commodityCategory: dcid:MetalAndMineral
 
 Node: dcid:Nominal_Index_Commodity_NonEnergy
-name: "Non-energy commodity nominal  price index"
+name: "Nominal non-energy commodity price index"
+description: "It is a financial index that tracks the average change in nominal prices of commodities, excluding energy-related items like oil and natural gas."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -106,7 +110,8 @@ statType: dcid:measuredValue
 commodityCategory: dcid:OtherFoods
 
 Node: dcid:Nominal_Index_Commodity_PreciousMetal
-name: "Nominal price index of precious metal"
+name: "Nominal precious metal commodity price index"
+description: "An index tracking the average change in nominal prices of precious metals, such as gold, silver, platinum, and palladium."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -150,7 +155,8 @@ measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 
 Node: dcid:RealValue_Index_Commodity
-name: "Real value index of commodity"
+name: "Real commodity price index"
+description: "An index tracking the average change in real (inflation-adjusted) prices for a basket of commodities."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -185,7 +191,8 @@ statType: dcid:measuredValue
 commodityGoodsCategory: dcid:Beverage
 
 Node: dcid:RealValue_Index_Commodity_Energy
-name: "Real value index of energy commodity"
+name: "Real energy commodity price index"
+description: "An index tracking the average change in real (inflation-adjusted) prices for a basket of energy commodities."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -194,7 +201,8 @@ statType: dcid:measuredValue
 commodityGoodsCategory: dcid:Energy
 
 Node: dcid:RealValue_Index_Commodity_Fertilizer
-name: "Real value index of fertilizer commodity prices"
+name: "Real fertilizer commodity price index"
+description: "The specific type of commodity price index that measures the real value of fertilizer prices, typically adjusted for inflation or other economic factors."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -203,7 +211,8 @@ statType: dcid:measuredValue
 commodityGoodsCategory: dcid:Fertilizer
 
 Node: dcid:RealValue_Index_Commodity_Food
-name: "Real value index of food commodities"
+name: "Real food commodity price index"
+description: "An index measuring the change in real (inflation-adjusted) prices for a basket of food commodities over time, serving as a benchmark for global food market trends."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:index
@@ -320,7 +329,8 @@ commodityType: dcid:A1GradeRice
 geographicalIndicator: dcid:Thailand
 
 Node: dcid:RealValue_Mean_Price_Commodity_Aluminum
-name: "Average price of aluminum (real value)"
+name: "Average real aluminum price"
+description: "Average inflation-adjusted price of aluminum."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -450,7 +460,8 @@ statType: dcid:meanValue
 commodityType: dcid:CottonAIndex
 
 Node: dcid:RealValue_Mean_Price_Commodity_CrudeOil
-name: "Average price of crude oil (real value)"
+name: "Average real crude oil price"
+description: "Average inflation-adjusted price of crude oil."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -459,7 +470,8 @@ statType: dcid:meanValue
 commodityType: dcid:CrudeOil
 
 Node: dcid:RealValue_Mean_Price_Commodity_CrudeOil_Dubai
-name: "Average daily price of Dubai crude oil (real value)"
+name: "The real value average price of the commodity crude oil"
+description: "The average price commodity of crude oil that has been adjusted for inflation."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -507,7 +519,8 @@ statType: dcid:meanValue
 commodityType: dcid:FishAndSeafood
 
 Node: dcid:RealValue_Mean_Price_Commodity_Gold
-name: "Average price of gold (real value)"
+name: "Average real gold price"
+description: "Average inflation-adjusted price of gold."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -591,7 +604,8 @@ commodityType: dcid:NaturalGas
 geographicalIndicator: dcid:UnitedStates
 
 Node: dcid:RealValue_Mean_Price_Commodity_Nickel
-name: "Average price of Nickel (real value)"
+name: "Average real nickel price"
+description: "Average inflation-adjusted price of nickel."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -786,7 +800,8 @@ statType: dcid:meanValue
 commodityType: dcid:SoybeanOil
 
 Node: dcid:RealValue_Mean_Price_Commodity_Sugar
-name: "Average price of sugar (real value)"
+name: "Average real sugar price"
+description: "Average inflation-adjusted price of sugar."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -891,7 +906,8 @@ statType: dcid:meanValue
 commodityType: dcid:TripleSuperphosphate
 
 Node: dcid:RealValue_Mean_Price_Commodity_Urea
-name: "Average price of urea (real value)"
+name: "Average real urea price"
+description: "Average inflation-adjusted price of urea."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -1098,7 +1114,8 @@ statType: dcid:meanValue
 commodityType: dcid:CottonAIndex
 
 Node: dcid:Nominal_Mean_Price_Commodity_CrudeOil
-name: "Average price of crude oil (nominal value)"
+name: "Average nominal crude oil price"
+description: "The average price of crude oil over a specific period, without accounting for changes in the purchasing power of money due to inflation."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -1155,7 +1172,8 @@ statType: dcid:meanValue
 commodityType: dcid:FishAndSeafood
 
 Node: dcid:Nominal_Mean_Price_Commodity_Gold
-name: "Average price of gold (nominal value)"
+name: "Average nominal gold price"
+description: "The average price of gold in its current monetary value, without any adjustment for inflation."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
@@ -1210,7 +1228,8 @@ commodityType: dcid:LiquefiedNaturalGas
 geographicalIndicator: dcid:Japan
 
 Node: dcid:Nominal_Mean_Price_Commodity_Maize
-name: "Average price of maize (nominal value)"
+name: "Average nominal maize price"
+description: "The average price of maize expressed in its current currency value, without being adjusted for inflation or other economic factors."
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Commodity
 measuredProperty: dcid:price
