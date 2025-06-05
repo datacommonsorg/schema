@@ -597,3 +597,89 @@ Node: dcid:Parked
 typeOf: dcid:VehicleStatusEnum
 name: "Parked"
 description: "Indicated parked vehicle involved in crash"
+
+
+# FARS_CrashNodes schema
+
+# Property
+Node: dcid:crashOnNationalHighwaySystem
+typeOf: dcid:Property
+name: "crashOnNationalHighwaySystem"
+rangeIncludes: dcid:CrashOnNationalHighwaySystemEnum
+
+Node: dcid:farsCaseNumber
+typeOf: dcid:Property
+name: "farsCaseNumber"
+rangeIncludes: schema:Number
+
+Node: dcid:fatalitiesInCrash
+typeOf: dcid:Property
+name: "fatalitiesInCrash"
+rangeIncludes: schema:Number
+
+Node: dcid:motorVehiclesInTransportInCrash
+typeOf: dcid:Property
+name: "motorVehiclesInTransportInCrash"
+rangeIncludes: schema:Number
+
+Node: dcid:motorVehicleOccupantCount
+typeOf: dcid:Property
+name: "motorVehicleOccupantCount"
+rangeIncludes: schema:Number
+
+Node: dcid:nonMotorVehicleOccupantCount
+typeOf: dcid:Property
+name: "nonMotorVehicleOccupantCount"
+rangeIncludes: schema:Number
+
+Node: dcid:dcidCaseNumber
+typeOf: dcid:Property
+name: "dcidCaseNumber"
+rangeIncludes: dcs:QuantityRange, schema:Number
+
+Node: dcid:trafficwayIdentifier
+typeOf: dcid:Property
+name: "trafficwayIdentifier"
+rangeIncludes: dcs:QuantityRange, schema:Number
+
+# Enumeration
+Node: dcid:CrashOnNationalHighwaySystemEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CrashOnNationalHighwaySystemEnum"
+
+Node: dcid:NotOnNationalHighway
+typeOf: dcid:CrashOnNationalHighwaySystemEnum
+name: "Not On National Highway"
+
+Node: dcid:NationalHighway
+typeOf: dcid:CrashOnNationalHighwaySystemEnum
+name: "National Highway"
+
+Node: dcid:NHTSA_UnknownWorkzone
+typeOf: dcid:WorkZoneTypeEnum
+name: "NHTSA Unknown Workzone"
+
+Node: dcid:NHTSA_NotReportedWorkzone
+typeOf: dcid:WorkZoneTypeEnum
+name: "NHTSA Not Reported Workzone"
+
+Node: dcid:FrontToFrontCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Front To Front Collision"
+
+Node: dcid:FrontToRearCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Front To Rear Collision"
+
+Node: dcid:FrontToSideRightAngleCollision
+typeOf: dcid:MannerOfCollisionEnum
+name: "Front To Side Right Angl Collision"
+
+Node: dcid:OutsideTrafficway
+typeOf: dcid:LocationTypeEnum
+name: "Outside Trafficway"
+
+Node: dcid:DarkButUnknownLight
+typeOf: dcid:LightConditionEnum
+name: "Dark But Unknown Light"
