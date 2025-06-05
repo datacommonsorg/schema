@@ -2575,14 +2575,14 @@ description: "Represents a rank used to order entities in a UI display.  Compara
 Node: dcid:observationAbout
 typeOf: schema:Property
 name: "observationAbout"
-domainIncludes: dcs:StatVarObservation
+domainIncludes: dcs:StatVarObservation, dcs:StatVarObsSeries
 rangeIncludes: dcs:Place
 description: "Identifies the entity (typically a place) associated with an observation."
 
 Node: dcid:variableMeasured
 typeOf: schema:Property
 name: "variableMeasured"
-domainIncludes: dcs:StatVarObservation
+domainIncludes: dcs:StatVarObservation, dcs:StatVarObsSeries
 rangeIncludes: dcs:StatisticalVariable, schema:Property
 description: "Identifies the variable associated with an observation."
 
@@ -4687,3 +4687,9 @@ Node: dcid:activitySource
 typeOf: dcs:Property
 name: "activitySource"
 domainIncludes: dcid:EconomicActivity
+
+Node: dcid:StatVarObsSeries
+typeOf: dcs:Class
+name: "StatVarObsSeries"
+description: "A series of observations for a StatisticalVariable and entity."
+subClassOf: dcid:Intangible
