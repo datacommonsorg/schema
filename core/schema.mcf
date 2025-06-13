@@ -6030,6 +6030,7 @@ source: "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources"
 Node: amount
 dcid: "amount"
 typeOf: schema:Property
+domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater, dcs:Person, dcs:Household, dcs:HouseHold, dcs:Student
 domainIncludes: schema:DatedMoneySpecification, dcs:Emissions, dcs:FarmInventory, dcs:EconomicActivity, dcs:Debt, dcs:Investment, dcs:FinancialTransaction, dcs:Food, dcs:WasteWater, dcs:Consumption, dcs:Household, dcs:Production, dcs:Remittance, dcs:Stock
 name: "amount"
 rangeIncludes: schema:Number
@@ -8502,7 +8503,7 @@ name: "lodgingUnitType"
 Node: gender
 dcid: "gender"
 typeOf: schema:Property
-domainIncludes: schema:Person, schema:BirthEvent, schema:Household, schema:Student, schema:MortalityEvent
+domainIncludes: schema:Person, schema:BirthEvent, schema:Household
 name: "gender"
 rangeIncludes: schema:GenderType, dcs:SDG_SexEnum
 

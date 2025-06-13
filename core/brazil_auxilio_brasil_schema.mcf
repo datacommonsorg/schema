@@ -1,0 +1,400 @@
+
+Node: dcid:beneficiariesProfile
+typeOf: dcid:Property
+name: "beneficiariesProfile"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:alternateName
+typeOf: dcid:Property
+name: "alternateName"
+domainIncludes: dcid:Person,dcid:Person,dcid:Child,dcid:PregnantWoman,dcid:HouseHold,dcid:Student,dcid:Household,dcid:Resource,dcid:Household
+
+Node: dcid:Brazil_AuxilioBrasilProgram
+typeOf: dcid:UnemploymentInsuranceProgramEnum
+name: "Brazil_ Auxilio Brasil Program"
+
+Node: dcid:AccompaniedByEducation
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Accompanied By Education"
+
+Node: dcid:MeasurementDenominatorEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MeasurementDenominatorEnum"
+
+Node: dcid:Count_Person_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_Person_ Brazil Auxilio Brasil Program"
+
+Node: dcid:MonitoredMoreFrequentlyThanRequired
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Monitored More Frequently Than Required"
+
+Node: dcid:MonitoredBelowFrequentlyThanRequired
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Monitored Below Frequently Than Required"
+
+Node: dcid:MonitoredWithoutSchoolAttendance
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Monitored Without School Attendance"
+
+Node: dcid:EducationMonitoringWithoutFrequency
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Education Monitoring Without Frequency"
+
+Node: dcid:WithoutEducationMonitoring
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Without Education Monitoring"
+
+Node: dcid:beneficiaryType
+typeOf: dcid:Property
+name: "beneficiaryType"
+domainIncludes: dcid:Person,dcid:HouseHold
+rangeIncludes: dcid:BeneficiaryTypeEnum,dcid:AgeGroupClassificationEnum,dcid:BeneficiaryTypeEnum,dcid:AgeGroupClassificationEnum
+
+Node: dcid:BeneficiaryTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BeneficiaryTypeEnum"
+
+Node: dcid:Young
+typeOf: dcid:BeneficiaryTypeEnum,dcid:BenefiecieryTypeEnum,dcid:AgeGroupClassificationEnum
+name: "Young"
+
+Node: dcid:Count_Person_AccompaniedByEducation_Young_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Total number of Young Persons Accompanied by Education within Brazil's Auxílio Brasil Program."
+
+Node: dcid:Count_Person_MonitoredMoreFrequentlyThanRequired_Young_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Total number of Young Persons Monitored More Frequently Than Required within Brazil's Auxílio Brasil Program."
+
+Node: dcid:MonitoredInformationWithoutSchoolAttendance
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Monitored Information Without School Attendance"
+
+Node: dcid:Count_Person_MonitoredInformationWithoutSchoolAttendance_Young_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Total young persons monitored without school attendance in Auxílio Brasil Program."
+
+Node: dcid:MonitoredLocatedInEducationWithoutSchoolAttendanceInfo
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Monitored Located In Education Without School Attendance Info"
+
+Node: dcid:MonitoredNotLocatedInEducation
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Monitored Not Located In Education"
+
+Node: dcid:Count_Person_MonitoredNotLocatedInEducation_Young_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Total young persons monitored  not located in education with Auxílio Brasil Program"
+
+Node: dcid:monitoringProgram
+typeOf: dcid:Property
+name: "monitoringProgram"
+domainIncludes: dcid:Person,dcid:Child
+rangeIncludes: dcid:MonitoringProgramEnum
+
+Node: dcid:MonitoringProgramEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MonitoringProgramEnum"
+
+Node: dcid:HealthMonitoring
+typeOf: dcid:MonitoringProgramEnum
+name: "Health Monitoring"
+
+Node: dcid:childAge
+typeOf: dcid:Property
+name: "childAge"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ChildAgeEnum
+
+Node: dcid:ChildAgeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ChildAgeEnum"
+
+Node: dcid:ChildUpto7Years
+typeOf: dcid:ChildAgeEnum
+name: "Child Upto 7Years"
+
+Node: dcid:womanAge
+typeOf: dcid:Property
+name: "womanAge"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WomanAgeEnum
+
+Node: dcid:WomanAgeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "WomanAgeEnum"
+
+Node: dcid:WomenWithAllAge
+typeOf: dcid:WomanAgeEnum
+name: "Women With All Age"
+
+Node: dcid:WithoutHealthMonitoring
+typeOf: dcid:MonitoringProgramEnum
+name: "Without Health Monitoring"
+
+Node: dcid:healthStatus
+typeOf: dcid:Property
+name: "healthStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthStatusEnum
+
+Node: dcid:HealthStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "HealthStatusEnum"
+
+Node: dcid:NoHealthInfo
+typeOf: dcid:HealthStatusEnum
+name: "No Health Info"
+
+Node: dcid:ChildAccompanied
+typeOf: dcid:MonitoringProgramEnum
+name: "Child Accompanied"
+
+Node: dcid:Count_Child_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Count_ Child_ Brazil Auxilio Brasil Program"
+
+
+Node: dcid:UpToDateVaccination
+typeOf: dcid:VaccineStatusEnum
+name: "Up To Date Vaccination"
+
+Node: dcid:NutritionalMonitoring
+typeOf: dcid:MonitoringProgramEnum
+name: "Nutritional Monitoring"
+
+Node: dcid:WomenAccompanied
+typeOf: dcid:MonitoringProgramEnum
+name: "Women Accompanied"
+
+Node: dcid:Count_Person_BrazilAuxilioBrasilProgram_Female
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Total female persons in Auxílio Brasil Program."
+
+Node: dcid:mothersHealthPrevention
+typeOf: dcid:Property
+name: "mothersHealthPrevention"
+domainIncludes: dcid:PregnantWoman
+
+Node: dcid:Brazil_RuralProductiveInclusionAidProgram
+typeOf: dcid:UnemploymentInsuranceProgramEnum
+name: "Brazil_ Rural Productive Inclusion Aid Program"
+
+Node: dcid:HouseHold
+typeOf: dcid:Thing
+name: "House Hold"
+
+Node: dcid:Brazil_AuxilioScientificInitiationAidProgram
+typeOf: dcid:UnemploymentInsuranceProgramEnum
+name: "Brazil_ Auxilio Scientific Initiation Aid Program"
+
+Node: dcid:installmentPeriod
+typeOf: dcid:Property
+name: "installmentPeriod"
+domainIncludes: dcid:Student,dcid:HouseHold
+rangeIncludes: dcid:StatAccumulationPeriodEnum,dcid:InstallmentPeriodEnum
+
+Node: dcid:PaymentTransffered
+typeOf: dcid:GovernmentPaymentStatusEnum
+name: "Payment Transferred"
+
+Node: dcid:Brazil_AuxilioSchoolSportsAidProgram
+typeOf: dcid:UnemploymentInsuranceProgramEnum
+name: "Brazil_ Auxilio School Sports Aid Program"
+
+Node: dcid:QualifiedStudent
+typeOf: dcid:HouseholdTypeEnum
+name: "Qualified Student"
+
+Node: dcid:Count_Person_Adolescents_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Total of adolescents in Auxílio Brasil Program."
+
+Node: dcid:QualifiedFamily
+typeOf: dcid:HouseholdTypeEnum
+name: "Qualified Family"
+
+Node: dcid:discount
+typeOf: dcid:Property
+name: "discount"
+domainIncludes: dcid:HouseHold
+
+Node: dcid:Concessions
+typeOf: dcid:Number,dcid:BenefitsStatusEnum
+name: "Concessions"
+
+Node: dcid:PostConcessions
+typeOf: dcid:Number
+name: "Post Concessions"
+
+Node: dcid:InstallmentPeriodEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "InstallmentPeriodEnum"
+
+Node: dcid:Single
+typeOf: dcid:InstallmentPeriodEnum
+name: "Single"
+
+Node: dcid:Benefited
+typeOf: dcid:BenefitsStatusEnum
+name: "Benefited"
+
+Node: dcid:povertyStatus
+typeOf: dcid:Property
+name: "povertyStatus"
+domainIncludes: dcid:HouseHold
+
+Node: dcid:Poverty
+typeOf: dcid:USC_PovertyStatusEnum
+name: "Poverty"
+
+Node: dcid:governmentAgency
+typeOf: dcid:Property
+name: "governmentAgency"
+domainIncludes: dcid:HouseHold
+rangeIncludes: dcid:GovernmentAgencyEnum
+
+Node: dcid:GovernmentAgencyEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "GovernmentAgencyEnum"
+
+Node: dcid:Brazil_IBGE_2010
+typeOf: dcid:GovernmentAgencyEnum
+name: "Brazil_ IBGE_ 20 10"
+
+Node: dcid:EarlyChildhoodBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Early Childhood Benefit"
+
+Node: dcid:FamilyCompositionBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Family Composition Benefit"
+
+Node: dcid:benefiecieryType
+typeOf: dcid:Property
+name: "benefiecieryType"
+domainIncludes: dcid:HouseHold
+rangeIncludes: dcid:BenefiecieryTypeEnum
+
+Node: dcid:BenefiecieryTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BenefiecieryTypeEnum"
+
+Node: dcid:PregnantWomen
+typeOf: dcid:BenefiecieryTypeEnum,dcid:BeneficiaryTypeEnum
+name: "Pregnant Women"
+
+Node: dcid:NursingMothers
+typeOf: dcid:BenefiecieryTypeEnum,dcid:BeneficiaryTypeEnum
+name: "Nursing Mothers"
+
+Node: dcid:OvercomingExtremePovertyBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Overcoming Extreme Poverty Benefit"
+
+Node: dcid:TransitionalCompensatoryBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Transitional Compensatory Benefit"
+
+Node: dcid:ExtraordinaryBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Extraordinary Benefit"
+
+Node: dcid:AdditionalComplementaryBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Additional Complementary Benefit"
+
+Node: dcid:Blocked
+typeOf: dcid:BenefitsStatusEnum
+name: "Blocked"
+
+Node: dcid:Canceled
+typeOf: dcid:BenefitsStatusEnum
+name: "Canceled"
+
+Node: dcid:Released
+typeOf: dcid:BenefitsStatusEnum
+name: "Released"
+
+Node: dcid:Suspended
+typeOf: dcid:BenefitsStatusEnum
+name: "Suspended"
+
+Node: dcid:Resource
+typeOf: dcid:Thing
+name: "Resource"
+
+Node: dcid:NotEvaluated
+typeOf: dcid:BenefitsStatusEnum
+name: "Not Evaluated"
+
+Node: dcid:registrationStatus
+typeOf: dcid:Property
+name: "registrationStatus"
+domainIncludes: dcid:Resource
+
+Node: dcid:Evaluated
+typeOf: dcid:BenefitsStatusEnum
+name: "Evaluated"
+
+Node: dcid:Granted
+typeOf: dcid:BenefitsStatusEnum
+name: "Granted"
+
+Node: dcid:Rejected
+typeOf: dcid:BenefitsStatusEnum
+name: "Rejected"
+
+Node: dcid:NonCompianceWithConditionlities
+typeOf: dcid:BenefitsStatusEnum
+name: "Non Compiance With Conditionlities"
+
+Node: dcid:BolsaFamily
+typeOf: dcid:HouseholdTypeEnum
+name: "Bolsa Family"
+
+Node: dcid:Warning
+typeOf: dcid:BenefitsStatusEnum
+name: "Warning"
+
+Node: dcid:headOfFamily
+typeOf: dcid:Property
+name: "headOfFamily"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:HeadOfFamilyEnum
+
+Node: dcid:HeadOfFamilyEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "HeadOfFamilyEnum"
+
+Node: dcid:Women
+typeOf: dcid:HeadOfFamilyEnum
+name: "Women"
+
+Node: dcid:Count_Household_BrazilAuxilioBrasilProgram
+typeOf: dcid:MeasurementDenominatorEnum
+name: "Total Households in Auxílio Brasil Program"
+
+Node: dcid:CompositionBenefit
+typeOf: dcid:BenefitTypeEnum
+name: "Composition Benefit"
+
+Node: dcid:Childs
+typeOf: dcid:BeneficiaryTypeEnum
+name: "Childs"
+
+Node: dcid:NotSuspended
+typeOf: dcid:BenefitsStatusEnum
+name: "Not Suspended"
