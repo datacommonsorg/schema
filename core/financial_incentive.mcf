@@ -1,0 +1,126 @@
+## Classes
+
+Node: dcid:FinancialIncentive
+typeOf: schema:Class
+description: "Represents financial incentives for goods/services offered by an organization (or individual)."
+subClassOf: schema:Intangible
+name: "FinancialIncentive"
+
+## Properties
+
+Node: dcid:url
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:Text
+name: "url"
+
+Node: dcid:incentiveName
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:Text
+name: "incentiveName"
+
+Node: dcid:incentiveCategory
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:IncentiveCategoryEnum
+name: "incentiveCategory"
+
+Node: dcid:areaServed
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:Place
+name: "areaServed"
+
+Node: dcid:provider
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:Text
+name: "provider"
+
+Node: dcid:purchaseType
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:PurchaseTypeEnum
+name: "purchaseType"
+
+Node: dcid:incentiveType
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:IncentiveTypeEnum
+name: "incentiveType"
+
+Node: dcid:incentiveAmount
+typeOf: schema:Property
+domainIncludes: dcs:FinancialIncentive
+rangeIncludes: dcs:Quantity
+name: "incentiveAmount"
+
+## Enums
+
+Node: dcid:PurchaseTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "PurchaseTypeEnum"
+
+Node: dcid:PurchaseTypeConsumption
+typeOf: dcid:PurchaseTypeEnum
+name: "Purchase Type Consumption"
+
+Node: dcid:PurchaseTypeInstallation
+typeOf: dcid:PurchaseTypeEnum
+name: "Purchase Type Installation"
+
+Node: dcid:PurchaseTypeUnspecified
+typeOf: dcid:PurchaseTypeEnum
+name: "Purchase Type Unspecified"
+
+Node: dcid:IncentiveCategoryEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "IncentiveCategoryEnum"
+
+Node: dcid:IncentiveCategorySolar
+typeOf: dcs:IncentiveCategoryEnum
+name: "Incentive Category Solar"
+
+Node: dcid:IncentiveCategoryElectricVehicle
+typeOf: dcs:IncentiveCategoryEnum
+name: "Incentive Category Electric Vehicle"
+
+Node: dcid:IncentiveTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "IncentiveTypeEnum"
+
+Node: dcid:RedemptionTypeAccessPrivilege
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Access Privilege"
+
+Node: dcid:RedemptionTypeLoan
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Loan"
+
+Node: dcid:RedemptionTypeParkingPrivilege
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Parking Privilege"
+
+Node: dcid:RedemptionTypeRebateOrSubsidy
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Rebate Or Subsidy"
+
+Node: dcid:RedemptionTypeTaxCredit
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Tax Credit"
+
+Node: dcid:RedemptionTypeTaxDeduction
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Tax Deduction"
+
+Node: dcid:RedemptionTypeTaxWaiver
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Tax Waiver"
+
+Node: dcid:RedemptionTypeUnspecified
+typeOf: dcid:IncentiveTypeEnum
+name: "Redemption Type Unspecified"
