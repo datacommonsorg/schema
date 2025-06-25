@@ -1440,13 +1440,13 @@ industry: dcid:NAICS/314
 
 Node: dcid:Count_Person_Employed_TotalNonfarm
 typeOf: dcid:StatisticalVariable
-name: "Total number of people employed in the non-farming sector"
+name: "Number of workers in non-farming sectors"
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/JOLTS_000000
-description: "Measures the number of workers employed in private sector establishments and government agencies, excluding farm employees, private household employees, proprietors, and unincorporated self-employed individuals."
+description: "The total number of workers employed in private sector establishments and government agencies, excluding farm employees, private household employees, proprietors, and unincorporated self-employed individuals."
 
 Node: dcid:Count_Person_Employed_TradeTransportationUtilities
 typeOf: dcid:StatisticalVariable
@@ -1944,15 +1944,6 @@ statType: dcid:measuredValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/3132
 
-Node: dcid:Count_Person_Employed_Federal
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in the federal government"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-industry: dcid:NAICS/JOLTS_910000
-
 Node: dcid:Count_Person_Employed_FiberYarnAndThreadMills
 typeOf: dcid:StatisticalVariable
 name: "Number of people employed in fiber, yarn, and thread mills"
@@ -2069,15 +2060,6 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/5323
-
-Node: dcid:Count_Person_Employed_GoodsProducing
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in the goods-producing sector"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-industry: dcid:NAICS/101
 
 Node: dcid:Count_Person_Employed_GrantMakingAndGivingServices
 typeOf: dcid:StatisticalVariable
@@ -2250,26 +2232,6 @@ statType: dcid:measuredValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/7222
 
-Node: dcid:Count_Person_Employed_LocalGovernmentOwnedEstablishment_EducationalServices
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in educational services at establishments owned by local government"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-establishmentOwnership: dcid:LocalGovernmentOwned
-industry: dcid:NAICS/61
-
-Node: dcid:Count_Person_Employed_LocalGovernmentOwnedEstablishment_ExcludingEducation
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in local government-owned establishments (excluding education)"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-establishmentOwnership: dcid:LocalGovernmentOwned
-industry: dcid:ExcludingEducation
-
 Node: dcid:Count_Person_Employed_LocalGovernmentOwnedEstablishment_Hospitals
 typeOf: dcid:StatisticalVariable
 name: "Number of people employed in hospitals run by the local government"
@@ -2397,15 +2359,6 @@ statType: dcid:measuredValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/3362
 
-Node: dcid:Count_Person_Employed_MotorVehiclesAndParts
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in the motor vehicles and parts sector"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-industry: dcid:NAICS/3361-3363
-
 Node: dcid:Count_Person_Employed_NaturalGasDistribution
 typeOf: dcid:StatisticalVariable
 name: "Number of people employed in natural gas distribution"
@@ -2423,33 +2376,6 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/5131
-
-Node: dcid:Count_Person_Employed_NonDepositoryCreditIntermediation
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in non-depository credit intermediation"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-industry: dcid:NAICS/5222
-
-Node: dcid:Count_Person_Employed_NondurableGoodsManufacturing
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in the non-durable goods manufacturing sector"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-industry: dcid:NAICS/JOLTS_340000
-
-Node: dcid:Count_Person_Employed_NursingCareFacilitiesSkilledNursing
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in nursing care facilities, skilled nursing"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-industry: dcid:NAICS/6231
 
 Node: dcid:Count_Person_Employed_OfficeSuppliesStationeryAndGiftRetailers
 typeOf: dcid:StatisticalVariable
@@ -2650,16 +2576,6 @@ employmentStatus: dcid:BLS_Employed
 establishmentOwnership: dcid:PrivatelyOwned
 industry: dcid:NAICS/6112
 
-Node: dcid:Count_Person_Employed_PrivatelyOwnedEstablishment_ServiceProviding
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in privately owned establishments providing services"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-establishmentOwnership: dcid:PrivatelyOwned
-industry: dcid:NAICS/102
-
 Node: dcid:Count_Person_Employed_PrivatelyOwned_OtherSchoolsAndInstruction
 typeOf: dcid:StatisticalVariable
 name: "Number of people employed at privately owned other schools and instruction"
@@ -2831,26 +2747,6 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/4591
-
-Node: dcid:Count_Person_Employed_StateGovernmentOwnedEstablishment_EducationalServices
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed by state government-owned establishments in educational services"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-establishmentOwnership: dcid:StateGovernmentOwned
-industry: dcid:NAICS/61
-
-Node: dcid:Count_Person_Employed_StateGovernmentOwnedEstablishment_ExcludingEducation
-typeOf: dcid:StatisticalVariable
-name: "Number of people employed in state government-owned establishments (excluding education)"
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-employmentStatus: dcid:BLS_Employed
-establishmentOwnership: dcid:StateGovernmentOwned
-industry: dcid:ExcludingEducation
 
 Node: dcid:Count_Person_Employed_StateGovernmentOwnedEstablishment_Hospitals
 typeOf: dcid:StatisticalVariable
@@ -6430,3 +6326,4 @@ statType: dcid:meanValue
 employmentStatus: dcid:BLS_Employed
 industry: dcid:NAICS/21
 workCategory: dcid:ProductionAndNonsupervisory
+
