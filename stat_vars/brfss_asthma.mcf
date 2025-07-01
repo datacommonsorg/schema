@@ -1,7 +1,9 @@
+
 Node: dcid:StandardError_Person_Children_WithAsthma
+name: "Standard error of asthma prevalence in children"
+description: "The standard error of the prevalence of asthma among children under 18 years of age"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
-name: "Standard error, Prevalance of Asthma in Children"
 measuredProperty: dcs:count
 statType: dcs:stdError
 age: [- 18 Years]
@@ -9,9 +11,10 @@ healthOutcome: dcs:Asthma
 measurementDenominator: dcs:Count_Person_Upto18Years
 
 Node: dcid:Percent_Person_Children_WithAsthma
+name: "Percent of children with asthma"
+description: "The percentage of children under 18 years of age who have asthma"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
-name: "Percent of Children That Have Asthma"
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: [- 18 Years]
@@ -19,12 +22,12 @@ healthOutcome: dcs:Asthma
 measurementDenominator: dcs:Count_Person_Upto18Years
 
 Node: dcid:StandardError_Person_Adults_WithAsthma
+name: "Standard error of asthma prevalence in adults"
+description: "The standard error of the prevalence of asthma among adults aged 18 years and over"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
-name: "Standard error, Prevalance of Asthma in Adults"
 measuredProperty: dcs:count
 statType: dcs:stdError
 age: [18 - Years]
 healthOutcome: dcs:Asthma
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-
