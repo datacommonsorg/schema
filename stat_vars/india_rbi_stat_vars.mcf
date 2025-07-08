@@ -2,6 +2,7 @@
 Node: dcid:Gross_Area_LandCover_IrrigatedLand
 typeOf: dcid:StatisticalVariable
 name: "Gross irrigated area"
+description: "The gross area of irrigated land"
 populationType: dcid:LandCover
 measuredProperty: dcid:area
 statType: dcid:measuredValue
@@ -10,7 +11,8 @@ landCoverType: dcid:IrrigatedLand
 
 Node: dcid:Amount_FarmInventory_CoarseCereal
 typeOf: dcid:StatisticalVariable
-name: "Production of Coarse Cereals"
+name: "Production of coarse cereals"
+description: "The amount of coarse cereals produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -19,6 +21,7 @@ farmInventoryType: dcid:CoarseCereal
 Node: dcid:Amount_FarmInventory_Pulses
 typeOf: dcid:StatisticalVariable
 name: "Production of pulses"
+description: "The amount of pulses produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -27,6 +30,7 @@ farmInventoryType: dcid:Pulses
 Node: dcid:Amount_FarmInventory_Wheat
 typeOf: dcid:StatisticalVariable
 name: "Production of Wheat"
+description: "The amount of wheat produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -35,6 +39,7 @@ farmInventoryType: dcid:Wheat
 Node: dcid:Amount_FarmInventory_Oilseeds
 typeOf: dcid:StatisticalVariable
 name: "Production of oilseeds"
+description: "The amount of oilseeds produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -43,6 +48,7 @@ farmInventoryType: dcid:Oilseeds
 Node: dcid:Amount_FarmInventory_Sugarcane
 typeOf: dcid:StatisticalVariable
 name: "Production of sugarcane"
+description: "The amount of sugarcane produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -51,6 +57,7 @@ farmInventoryType: dcid:Sugarcane
 Node: dcid:Amount_FarmInventory_Cotton
 typeOf: dcid:StatisticalVariable
 name: "Production of cotton"
+description: "The amount of cotton produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -59,6 +66,7 @@ farmInventoryType: dcid:Cotton
 Node: dcid:Amount_FarmInventory_JuteOrMesta
 typeOf: dcid:StatisticalVariable
 name: "Production of jute and mesta"
+description: "The amount of jute and mesta produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -67,6 +75,7 @@ farmInventoryType: dcid:Jute__Mesta
 Node: dcid:Amount_FarmInventory_FoodGrain
 typeOf: dcid:StatisticalVariable
 name: "Production of food grains"
+description: "The amount of food grains produced"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -74,7 +83,8 @@ farmInventoryType: dcid:FoodGrain
 
 Node: dcid:Area_LandCover_Forest
 typeOf: dcid:StatisticalVariable
-name: "Area of Land Cover: Forest"
+name: "Area of land cover,  forest"
+description: "The area of land covered by forest"
 populationType: dcid:LandCover
 measuredProperty: dcid:area
 statType: dcid:measuredValue
@@ -82,7 +92,8 @@ landCoverType: dcid:Forest
 
 Node: dcid:Area_LandCover_Tree
 typeOf: dcid:StatisticalVariable
-name: "Area of Land Cover: Tree"
+name: "Area of land cover tree"
+description: "The area of land covered by trees"
 populationType: dcid:LandCover
 measuredProperty: dcid:area
 statType: dcid:measuredValue
@@ -90,7 +101,8 @@ landCoverType: dcid:Tree
 
 Node: dcid:Annual_Rainfall_Place
 typeOf: dcid:StatisticalVariable
-name: "Annual Rainfall"
+name: "Annual rainfall"
+description: "The annual rainfall in a place"
 populationType: dcid:Place
 measuredProperty: dcid:rainfall
 measurementQualifier: dcid:Annual
@@ -99,16 +111,15 @@ statType: dcid:measuredValue
 Node: dcid:Amount_EconomicActivity_ExpenditureActivity_ReliefOnNaturalCalamity
 typeOf: dcid:StatisticalVariable
 name: "Expenditure on relief on natural calamity"
+description: "The amount spent on relief for natural calamities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
 activitySource: dcid:ExpenditureActivity
 expenditureType: dcid:ReliefOnNaturalCalamity
-
 # TODO(ajaits): reenable after fixing the statvar to match SDG
 # Node: dcid:Score_SustainableDevelopmentGoals
 # typeOf: dcid:StatisticalVariable
-# name: "Sustainable Development Goals Score"
 # populationType: dcid:SustainableDevelopmentGoals
 # measuredProperty: dcid:score
 # statType: dcid:measuredValue
@@ -116,6 +127,7 @@ expenditureType: dcid:ReliefOnNaturalCalamity
 Node: dcid:Annual_Amount_Electricity
 typeOf: dcid:StatisticalVariable
 name: "Availability of electricity"
+description: "The annual amount of electricity available"
 populationType: dcid:Electricity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Annual
@@ -124,6 +136,7 @@ statType: dcid:measuredValue
 Node: dcid:Capacity_Electricity
 typeOf: dcid:StatisticalVariable
 name: "Installed capacity of electricity"
+description: "The installed capacity of electricity generation"
 populationType: dcid:Electricity
 measuredProperty: dcid:capacity
 statType: dcid:measuredValue
@@ -131,6 +144,7 @@ statType: dcid:measuredValue
 Node: dcid:Loss_Electricity_TransmissionAndDistribution_AsAFractionOf_Annual_Generation_Electricity
 typeOf: dcid:StatisticalVariable
 name: "Electricity loss due to transmission and distribution"
+description: "The loss of electricity due to transmission and distribution as a fraction of annual electricity generation"
 populationType: dcid:Electricity
 measuredProperty: dcid:loss
 statType: dcid:measuredValue
@@ -140,6 +154,7 @@ lossReason: dcid:TransmissionAndDistribution
 Node: dcid:Length_Transportation_NationalHighway
 typeOf: dcid:StatisticalVariable
 name: "Length of national highway"
+description: "The length of national highways"
 populationType: dcid:Transportation
 measuredProperty: dcid:length
 statType: dcid:measuredValue
@@ -148,6 +163,7 @@ transportationFacility: dcid:NationalHighway
 Node: dcid:Length_Transportation_Road
 typeOf: dcid:StatisticalVariable
 name: "Length of road"
+description: "The length of roads"
 populationType: dcid:Transportation
 measuredProperty: dcid:length
 statType: dcid:measuredValue
@@ -156,23 +172,26 @@ transportationFacility: dcid:Road
 Node: dcid:Length_Transportation_StateHighway
 typeOf: dcid:StatisticalVariable
 name: "Length of state highway"
+description: "The length of state highways"
 populationType: dcid:Transportation
 measuredProperty: dcid:length
 statType: dcid:measuredValue
 transportationFacility: dcid:StateHighway
 
-Node: dcid:Annual_Amount_Electricity_AsAFractionOf_Count_Person
+Node: dcid:Annual_Amount_Electricity_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 name: "Per capita availability of electricity"
+description: "The annual amount of electricity available per person"
 populationType: dcid:Electricity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Annual
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 
 Node: dcid:Demand_Electricity
 typeOf: dcid:StatisticalVariable
 name: "Electricity requirement"
+description: "The demand for electricity"
 populationType: dcid:Electricity
 measuredProperty: dcid:demand
 statType: dcid:measuredValue
@@ -180,6 +199,7 @@ statType: dcid:measuredValue
 Node: dcid:Length_Transportation_Railroad
 typeOf: dcid:StatisticalVariable
 name: "Length of railway route"
+description: "The length of railway routes"
 populationType: dcid:Transportation
 measuredProperty: dcid:length
 statType: dcid:measuredValue
@@ -188,24 +208,27 @@ transportationFacility: dcid:Railroad
 Node: dcid:Length_Transportation_Road_PradhanMantriGramSadakYojana
 typeOf: dcid:StatisticalVariable
 name: "Length of road constructed under Pradhan Mantri Gram Sadak Yojana (PMGSY)"
+description: "The length of roads constructed under the Pradhan Mantri Gram Sadak Yojana (PMGSY) program"
 populationType: dcid:Transportation
 measuredProperty: dcid:length
 statType: dcid:measuredValue
 facilities: dcid:Road
 transportationFacility: dcid:PradhanMantriGramSadakYojana
 
-Node: dcid:Count_Person_Telephone_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_Telephone_AsAFractionOf_Number_Person
+name: "Number of persons with telephone as a fraction of total population"
+description: "The number of persons with telephone as a fraction of the total population"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 electronicGadgetUsed: dcid:Telephone
-
 
 Node: dcid:Mean_WagesDaily_Amount_Male_Rural_ConstructionWorker
 typeOf: dcid:StatisticalVariable
-name: "Average daily wage rates of men in rural India who are Construction Workers."
+name: "Average daily wage rates of men in rural India who are Construction Workers"
+description: "The mean daily wages of male construction workers in rural India"
 populationType: dcid:Amount
 measuredProperty: dcid:wagesDaily
 statType: dcid:meanValue
@@ -215,7 +238,8 @@ workerClassification: dcid:ConstructionWorker
 
 Node: dcid:Mean_WagesDaily_Amount_Male_Rural_GeneralAgriculturalLabourers
 typeOf: dcid:StatisticalVariable
-name: "Average daily wage rates of men in rural India who are Horticulture Workers."
+name: "Average daily wage rates of men in rural India who are General Agricultural Labourers"
+description: "The mean daily wages of male general agricultural labourers in rural India"
 populationType: dcid:Amount
 measuredProperty: dcid:wagesDaily
 statType: dcid:meanValue
@@ -225,7 +249,8 @@ workerClassification: dcid:GeneralAgriculturalLabourers
 
 Node: dcid:Mean_WagesDaily_Amount_Male_Rural_HorticultureWorkers
 typeOf: dcid:StatisticalVariable
-name: "Average daily wage rates of men in rural India who are General Agricultural Labourers."
+name: "Average daily wage rates of men in rural India who are Horticulture Workers"
+description: "The mean daily wages of male horticulture workers in rural India"
 populationType: dcid:Amount
 measuredProperty: dcid:wagesDaily
 statType: dcid:meanValue
@@ -235,7 +260,8 @@ workerClassification: dcid:HorticultureWorkers
 
 Node: dcid:Mean_WagesDaily_Amount_Male_Rural_NonAgriculturalLabourers
 typeOf: dcid:StatisticalVariable
-name: "Average daily wage rates of men in rural India who are Non Agricultural Labourers."
+name: "Average daily wage rates of men in rural India who are Non Agricultural Labourers"
+description: "The mean daily wages of male non-agricultural labourers in rural India"
 populationType: dcid:Amount
 measuredProperty: dcid:wagesDaily
 statType: dcid:meanValue
@@ -245,7 +271,8 @@ workerClassification: dcid:NonAgriculturalLabourers
 
 Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_UrbanHousingSector
 typeOf: dcid:StatisticalVariable
-name: "Average inflation in consumer price index by Urban Housing Sector."
+name: "Average inflation in consumer price index by urban housing sector"
+description: "The mean inflation in consumer price index for urban housing sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:inflation
 statType: dcid:meanValue
@@ -254,7 +281,8 @@ consumerGoodsCategory: dcid:UrbanHousingSector
 
 Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_FoodAndDrinksSector
 typeOf: dcid:StatisticalVariable
-name: "Average inflation in consumer price index by Food and Beverages Sector."
+name: "Average inflation in consumer price index by food and beverages sector"
+description: "The mean inflation in consumer price index for food and beverages sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:inflation
 statType: dcid:meanValue
@@ -263,7 +291,8 @@ consumerGoodsCategory: dcid:FoodAndDrinksSector
 
 Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_FuelAndLightSector
 typeOf: dcid:StatisticalVariable
-name: "Average inflation in consumer price index by Fuel and Light Sector."
+name: "Average inflation in consumer price index by Fuel and Light Sector"
+description: "The mean inflation in consumer price index for fuel and light sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:inflation
 statType: dcid:meanValue
@@ -272,10 +301,10 @@ consumerGoodsCategory: dcid:FuelAndLightSector
 
 Node: dcid:Mean_Inflation_EconomicActivity_ConsumerPriceIndex_GeneralSector
 typeOf: dcid:StatisticalVariable
-name: "Average inflation in consumer price index by General Sector."
+name: "Average inflation in consumer price index by general sector"
+description: "The mean inflation in consumer price index for general sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:inflation
 statType: dcid:meanValue
 activitySource: dcid:ConsumerPriceIndex
 consumerGoodsCategory: dcid:GeneralSector
-

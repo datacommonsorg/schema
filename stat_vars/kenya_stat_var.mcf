@@ -1,538 +1,596 @@
-Node: dcid:Count_Student_SecondaryEducation
+
+Node: dcid:Number_Student_SecondaryEducation
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students with secondary education"
+description: "The number of students enrolled at the secondary education level"
 statType: dcid:measuredValue
 enrollmentLevel: dcid:SecondaryEducation
 
-Node: dcid:Count_Person_Intersex
+Node: dcid:Number_Person_Intersex
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of intersex people"
+description: "The number of people identified as intersex"
 statType: dcid:measuredValue
 gender: dcid:Intersex
 
-Node: dcid:Count_MaternalMortalityEvent
+Node: dcid:Number_MaternalMortalityEvent
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MaternalMortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of maternal deaths"
+description: "The number of deaths among women during pregnancy, childbirth, or shortly after delivery"
 statType: dcid:measuredValue
 
-Node: dcid:Count_MortalityEvent_Newborn
+Node: dcid:Number_MortalityEvent_Newborn
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of newborn deaths"
+description: "The number of deaths among newborns, typically within the first 28 days of life"
 statType: dcid:measuredValue
 ageGroupClassification: dcid:Newborn
 
-Node: dcid:Count_MaternalMortalityEvent_AsAFractionOf_Count_BirthEvent_LiveBirth
+Node: dcid:Number_MaternalMortalityEvent_AsAFractionOf_Number_BirthEvent_LiveBirth
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MaternalMortalityEvent
-measuredProperty: dcid:count
-name: "Maternal deaths as a fraction of live births"
+measuredProperty: dcid:number
+name: "Maternal mortality events as a fraction of live births"
+description: "The number of maternal mortality events expressed as a fraction of live births"
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+measurementDenominator: dcid:Number_BirthEvent_LiveBirth
 
-Node: dcid:Count_MortalityEvent_5OrLessYears_AsAFractionOf_Count_BirthEvent_LiveBirth
+Node: dcid:Number_MortalityEvent_5OrLessYears_AsAFractionOf_Number_BirthEvent_LiveBirth
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-name: "Deaths of people aged 5 years or less as a fraction of live births"
+measuredProperty: dcid:number
+name: "Mortality events among children aged 5 years or less as a fraction of live births"
+description: "The number of mortality events for children aged 5 years or less expressed as a fraction of live births"
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+measurementDenominator: dcid:Number_BirthEvent_LiveBirth
 age: [- 5 Years]
 
-Node: dcid:Count_MortalityEvent_Infant_AsAFractionOf_Count_BirthEvent_LiveBirth
+Node: dcid:Number_MortalityEvent_Infant_AsAFractionOf_Number_BirthEvent_LiveBirth
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-name: "Infant deaths as a fraction of live births"
+measuredProperty: dcid:number
+name: "Infant mortality events as a fraction of live births"
+description: "The number of infant mortality events expressed as a fraction of live births"
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+measurementDenominator: dcid:Number_BirthEvent_LiveBirth
 ageGroupClassification: dcid:Infant
 
-Node: dcid:Count_Person_Intersex_Rural
+Node: dcid:Number_Person_Intersex_Rural
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
-name: "Number of intersex people in rural areas"
+measuredProperty: dcid:number
+name: "Number of intersex persons in rural areas"
+description: "The number of people identified as intersex residing in rural areas"
 statType: dcid:measuredValue
 gender: dcid:Intersex
 placeOfResidenceClassification: dcid:Rural
 
-Node: dcid:Count_Person_Intersex_Urban
+Node: dcid:Number_Person_Intersex_Urban
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
-name: "Number of intersex people in urban areas"
+measuredProperty: dcid:number
+name: "Number of intersex persons in urban areas"
+description: "The number of people identified as intersex residing in urban areas"
 statType: dcid:measuredValue
 gender: dcid:Intersex
 placeOfResidenceClassification: dcid:Urban
 
-Node: dcid:Count_Person_Male_AsAFractionOf_Count_Person_Female
+Node: dcid:Number_Person_Male_AsAFractionOf_Number_Person_Female
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
-name: "Male count as a fraction of female count"
+measuredProperty: dcid:number
+name: "Male persons as a fraction of female persons"
+description: "The number of male persons expressed as a fraction of female persons"
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_Female
+measurementDenominator: dcid:Number_Person_Female
 gender: dcid:Male
-
 #2025-03-14
 
-Node: dcid:Count_MortalityEvent_55To74Years
+Node: dcid:Number_MortalityEvent_55To74Years
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-name: "Deaths of people aged 55 to 74 years"
+measuredProperty: dcid:number
+name: "Mortality events among persons aged 55 to 74 years"
+description: "The number of mortality events among people aged between 55 and 74 years"
 statType: dcid:measuredValue
 age: [55 74 Years]
 
-Node: dcid:Count_MortalityEvent_55To74Years_Female
+Node: dcid:Number_MortalityEvent_55To74Years_Female
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-name: "Deaths of females aged 55 to 74 years"
+measuredProperty: dcid:number
+name: "Mortality events among females aged 55 to 74 years"
+description: "The number of mortality events among female people aged between 55 and 74 years"
 statType: dcid:measuredValue
 age: [55 74 Years]
 gender: dcid:Female
 
-Node: dcid:Count_MortalityEvent_55To74Years_Male
+Node: dcid:Number_MortalityEvent_55To74Years_Male
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Deaths of males aged 55 to 74 years"
+description: "The number of mortality events among male people aged between 55 and 74 years"
 statType: dcid:measuredValue
 age: [55 74 Years]
 gender: dcid:Male
 
-Node: dcid:Count_MortalityEvent_75OrMoreYears
+Node: dcid:Number_MortalityEvent_75OrMoreYears
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Deaths of people aged 75 years or more"
+description: "The number of mortality events among people aged 75 years and above"
 statType: dcid:measuredValue
 age: [75 - Years]
 
-Node: dcid:Count_MortalityEvent_75OrMoreYears_Female
+Node: dcid:Number_MortalityEvent_75OrMoreYears_Female
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Deaths of females aged 75 years or more"
+description: "The number of mortality events among female people aged 75 years and above"
 statType: dcid:measuredValue
 age: [75 - Years]
 gender: dcid:Female
 
-Node: dcid:Count_MortalityEvent_75OrMoreYears_Male
+Node: dcid:Number_MortalityEvent_75OrMoreYears_Male
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Deaths of males aged 75 years or more"
+description: "The number of mortality events among male people aged 75 years and above"
 statType: dcid:measuredValue
 age: [75 - Years]
 gender: dcid:Male
 
-
-Node: dcid:Count_MortalityEvent_Years0To1_Female
+Node: dcid:Number_MortalityEvent_Years0To1_Female
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Deaths of females aged 0 to 1 years"
+description: "The number of mortality events among female people aged 0 to 1 years"
 statType: dcid:measuredValue
 age: dcid:Years0To1
 gender: dcid:Female
 
-Node: dcid:Count_MortalityEvent_Years0To1_Male
+Node: dcid:Number_MortalityEvent_Years0To1_Male
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Deaths of males aged 0 to 1 years"
+description: "The number of mortality events among male people aged 0 to 1 years"
 statType: dcid:measuredValue
 age: dcid:Years0To1
 gender: dcid:Male
 
-Node: dcid:Count_Person_KenyaCertificateSecondaryEducation_Female_Registered
+Node: dcid:Number_Person_KenyaCertificateSecondaryEducation_Female_Registered
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of female students registered for the kenya certificate of secondary education"
+description: "The number of female students who have registered for the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 registrationStatus: dcid:Registered
 
-Node: dcid:Count_Person_KenyaCertificateSecondaryEducation_Male_Registered
+Node: dcid:Number_Person_KenyaCertificateSecondaryEducation_Male_Registered
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
-name: "Number of male students registered for the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of male students registered for the kenya certificate of secondary education"
+description: "The number of male students who have registered for the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 registrationStatus: dcid:Registered
 
-Node: dcid:Count_Person_KenyaCertificateSecondaryEducation_Registered
+Node: dcid:Number_Person_KenyaCertificateSecondaryEducation_Registered
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
-name: "Number of students registered for the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of students registered for the kenya certificate of secondary education"
+description: "The total number of students who have registered for the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 registrationStatus: dcid:Registered
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_AdequatePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_AdequatePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of students with adequate performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of students with adequate performance in the kenya certificate of secondary education"
+description: "The number of students who achieved adequate performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:AdequatePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_AveragePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_AveragePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of students with average performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of students with average performance in the kenya certificate of secondary education"
+description: "The number of students who achieved average performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:AveragePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_ExcellentPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_ExcellentPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of students with excellent performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of students with excellent performance in the kenya certificate of secondary education"
+description: "The number of students who achieved excellent performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:ExcellentPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_FailedPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_FailedPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of students with failed performance for the Kenya Certificate of Secondary Education"
+measuredProperty: dcid:number
+name: "Number of students with failed performance for the kenya certificate of secondary education"
+description: "The number of students who failed in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:FailedPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_FairPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_FairPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of students with fair performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of students with fair performance in the kenya certificate of secondary education"
+description: "The number of students who achieved fair performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:FairPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_AdequatePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_AdequatePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with adequate performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with adequate performance in the kenya certificate of secondary education"
+description: "The number of female students who achieved adequate performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:AdequatePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_AveragePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_AveragePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with average performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with average performance in the kenya certificate of secondary education"
+description: "The number of female students who achieved average performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:AveragePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_ExcellentPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_ExcellentPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with excellent performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with excellent performance in the kenya certificate of secondary education"
+description: "The number of female students who achieved excellent performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:ExcellentPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_FailedPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_FailedPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with failed performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with failed performance in the kenya certificate of secondary education"
+description: "The number of female students who failed in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:FailedPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_FairPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_FairPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with fair performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with fair performance in the kenya certificate of secondary education"
+description: "The number of female students who achieved fair performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:FairPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_InadequatePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_InadequatePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with inadequate performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with inadequate performance in the kenya certificate of secondary education"
+description: "The number of female students who had inadequate performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:InadequatePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_MarginalPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_MarginalPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with marginal performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with marginal performance in the kenya certificate of secondary education"
+description: "The number of female students who achieved marginal performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:MarginalPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_PoorPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_PoorPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with poor performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with poor performance in the kenya certificate of secondary education"
+description: "The number of female students who had poor performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:PoorPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_SolidPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_SolidPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with solid performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with solid performance in the kenya certificate of secondary education"
+description: "The number of female students who achieved solid performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:SolidPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_SuperiorPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_SuperiorPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with superior performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with superior performance in the kenya certificate of secondary education"
+description: "The number of female students who achieved superior performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:SuperiorPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_WeakPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Female_WeakPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of female students with weak performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of female students with weak performance in the kenya certificate of secondary education"
+description: "The number of female students who had weak performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Female
 performanceLevel: dcid:WeakPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_InadequatePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_InadequatePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of students with inadequate performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of students with inadequate performance in the kenya certificate of secondary education"
+description: "The number of students who had inadequate performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:InadequatePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_AdequatePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_AdequatePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
-name: "Number of male students with adequate performance in the Kenya certificate of secondary education"
+measuredProperty: dcid:number
+name: "Number of male students with adequate performance in KCSE"
+description: "The number of male students who achieved adequate performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:AdequatePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_AveragePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_AveragePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with average performance in KCSE"
+description: "The number of male students who achieved average performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:AveragePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_ExcellentPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_ExcellentPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with excellent performance in KCSE"
+description: "The number of male students who achieved excellent performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:ExcellentPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_FailedPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_FailedPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with failed performance in KCSE"
+description: "The number of male students who failed in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:FailedPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_FairPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_FairPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with fair performance in KCSE"
+description: "The number of male students who achieved fair performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:FairPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_InadequatePerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_InadequatePerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with inadequate performance in KCSE"
+description: "The number of male students who had inadequate performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:InadequatePerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_MarginalPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_MarginalPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with marginal performance in KCSE"
+description: "The number of male students who achieved marginal performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:MarginalPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_PoorPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_PoorPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with poor performance in KCSE"
+description: "The number of male students who had poor performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:PoorPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_SolidPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_SolidPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with solid performance in KCSE"
+description: "The number of male students who achieved solid performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:SolidPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_SuperiorPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_SuperiorPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with superior performance in KCSE"
+description: "The number of male students who achieved superior performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:SuperiorPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_WeakPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_Male_WeakPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students with weak performance in KCSE"
+description: "The number of male students who had weak performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 gender: dcid:Male
 performanceLevel: dcid:WeakPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_MarginalPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_MarginalPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students with marginal performance in KCSE"
+description: "The number of students who achieved marginal performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:MarginalPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_PoorPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_PoorPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students with poor performance in KCSE"
+description: "The number of students who had poor performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:PoorPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_SolidPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_SolidPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students with solid performance in KCSE"
+description: "The number of students who achieved solid performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:SolidPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_SuperiorPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_SuperiorPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students with superior performance in KCSE"
+description: "The number of students who achieved superior performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:SuperiorPerformance
 
-Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_WeakPerformance
+Node: dcid:Number_Student_KenyaCertificateSecondaryEducation_WeakPerformance
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students with weak performance in KCSE"
+description: "The number of students who had weak performance in the kenya certificate of secondary education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificateSecondaryEducation
 performanceLevel: dcid:WeakPerformance
 
-Node: dcid:Count_Student_SecondarySchool
+Node: dcid:Number_Student_SecondarySchool
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students in secondary school"
+description: "The number of students enrolled in secondary school"
 statType: dcid:measuredValue
 schoolGradeLevel: dcid:SecondarySchool
 
-Node: dcid:Count_BirthEvent_Female_AsAFractionOf_Count_Person
+Node: dcid:Number_BirthEvent_Female_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Percentage of female births in the total population"
+description: "The number of female births as a percentage of the total population"
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 gender: dcid:Female
 
-Node: dcid:Count_BirthEvent_Male_AsAFractionOf_Count_Person
+Node: dcid:Number_BirthEvent_Male_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Percentage of male births in the total population"
+description: "The number of male births as a percentage of the total population"
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 gender: dcid:Male
 
-Node: dcid:Count_BirthEvent_LiveBirth
+Node: dcid:Number_BirthEvent_LiveBirth
+name: "Number of live birth events"
+description: "Count of birth events classified as live births"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 medicalStatus: dcid:LiveBirth
 
@@ -540,7 +598,8 @@ Node: dcid:Amount_ExpenditureActivity_GrossDomesticProduction_DiscrepancyExpendi
 typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
-name : "GDP expenditure discrepancy percentage"
+name: "GDP expenditure discrepancy percentage"
+description: "The amount of expenditure discrepancy in gross domestic product as a percentage of total GDP expenditure"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -551,6 +610,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Exports of goods and services as a percentage of GDP"
+description: "The value of exports of goods and services as a share of gross domestic product expenditure"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -561,6 +621,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Government final consumption expenditure as a percentage of GDP"
+description: "The amount of government final consumption expenditure as a percentage of gross domestic product"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -571,6 +632,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Gross domestic expenditure as a percentage of GDP"
+description: "The total gross domestic expenditure as a share of the gross domestic product"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -581,6 +643,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Gross fixed capital formation as a percentage of GDP"
+description: "The amount spent on gross fixed capital formation as a percentage of gross domestic product"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -591,6 +654,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Imports of goods and services as a percentage of GDP"
+description: "The value of imports of goods and services as a percentage of gross domestic product"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -601,6 +665,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Changes in inventories as a percentage of GDP"
+description: "The value of inventory changes as a percentage of gross domestic product"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -611,6 +676,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Final consumption expenditure by NPISH as a percentage of GDP"
+description: "The amount of final consumption expenditure by non-profit institutions serving households as a percentage of GDP"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -621,6 +687,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Private final consumption expenditure as a percentage of GDP"
+description: "The amount of private final consumption expenditure as a share of gross domestic product"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -631,6 +698,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Percentage of expenditure on gross domestic product"
+description: "The nominal expenditure on gross domestic product expressed as a percentage of nominal GDP"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction
 measurementQualifier: dcid:Nominal
@@ -643,6 +711,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Nominal amount of discrepancy between expenditure and production in gross domestic product"
+description: "The nominal discrepancy between expenditure and production in the calculation of gross domestic product"
 measurementQualifier: dcid:Nominal
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -653,6 +722,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Nominal amount of exports of goods and services from gross domestic production"
+description: "The nominal value of exports of goods and services from gross domestic production"
 measurementQualifier: dcid:Nominal
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -661,6 +731,7 @@ expenditureType: dcid:ExportsGoodsAndServices
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction_GovernmentFinalConsumption
 typeOf: dcid:StatisticalVariable
 name: "Nominal amount of government final consumption expenditure"
+description: "The nominal value of government final consumption expenditure in gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -671,6 +742,7 @@ expenditureType: dcid:GovernmentFinalConsumption
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction_GrossDomesticExpenditure
 typeOf: dcid:StatisticalVariable
 name: "Nominal amount of gross domestic expenditure"
+description: "The nominal value of total gross domestic expenditure"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -681,6 +753,7 @@ expenditureType: dcid:GrossDomesticExpenditure
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction_GrossFixedCapitalFormation
 typeOf: dcid:StatisticalVariable
 name: "Nominal amount of gross fixed capital formation"
+description: "The nominal value of gross fixed capital formation in gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -691,6 +764,7 @@ expenditureType: dcid:GrossFixedCapitalFormation
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction_ImportsGoodsAndServices
 typeOf: dcid:StatisticalVariable
 name: "Nominal amount of imports of goods and services"
+description: "The nominal value of imports of goods and services in gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -701,6 +775,7 @@ expenditureType: dcid:ImportsGoodsAndServices
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction_InventoryChanges
 typeOf: dcid:StatisticalVariable
 name: "Nominal amount of changes in inventories"
+description: "The nominal value of inventory changes in gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -710,7 +785,8 @@ expenditureType: dcid:InventoryChanges
 
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction_NonProfitInstitutionsServingHouseholds
 typeOf: dcid:StatisticalVariable
-name: "Nominal amount of final consumption expenditure by NPISH1"
+name: "Nominal amount of final consumption expenditure by NPISH"
+description: "The nominal value of final consumption expenditure by non-profit institutions serving households"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -721,6 +797,7 @@ expenditureType: dcid:NonProfitInstitutionsServingHouseholds
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction_PrivateFinalConsumption
 typeOf: dcid:StatisticalVariable
 name: "Nominal amount of private final consumption expenditure"
+description: "The nominal value of private final consumption expenditure in gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -731,6 +808,7 @@ expenditureType: dcid:PrivateFinalConsumption
 Node: dcid:RealValue_Amount_ExpenditureActivity_GrossDomesticProduction_DiscrepancyExpenditure
 typeOf: dcid:StatisticalVariable
 name: "Real value of discrepancy between expenditure and production in gross domestic product"
+description: "The real value of discrepancy between expenditure and production in the calculation of gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -741,6 +819,7 @@ expenditureType: dcid:DiscrepancyExpenditure
 Node: dcid:RealValue_Amount_ExpenditureActivity_GrossDomesticProduction_ExportsGoodsAndServices
 typeOf: dcid:StatisticalVariable
 name: "Real value of exports of goods and services from gross domestic production"
+description: "The real value of exports of goods and services from gross domestic production"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -753,6 +832,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Expenditure on gross domestic product for government final consumption"
+description: "The real value of government final consumption expenditure in gross domestic product"
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -761,6 +841,7 @@ expenditureType: dcid:GovernmentFinalConsumption
 Node: dcid:RealValue_Amount_ExpenditureActivity_GrossDomesticProduction_GrossDomesticExpenditure
 typeOf: dcid:StatisticalVariable
 name: "Expenditure on gross domestic product for gross domestic expenditure"
+description: "The real value of total gross domestic expenditure in gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -771,6 +852,7 @@ expenditureType: dcid:GrossDomesticExpenditure
 Node: dcid:RealValue_Amount_ExpenditureActivity_GrossDomesticProduction_GrossFixedCapitalFormation
 typeOf: dcid:StatisticalVariable
 name: "Expenditure on gross domestic product for gross fixed capital formation"
+description: "The real value of gross fixed capital formation in gross domestic product"
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -783,6 +865,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Expenditure on gross domestic product for imports of goods and services"
+description: "The real value of imports of goods and services in gross domestic product"
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -793,6 +876,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Expenditure on gross domestic product for changes in inventories"
+description: "The real value of inventory changes in gross domestic product"
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -803,6 +887,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Expenditure on gross domestic product for final consumption expenditure by NPISH"
+description: "The real value of final consumption expenditure by non-profit institutions serving households in gross domestic product"
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -813,6 +898,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
 name: "Expenditure on gross domestic product for private final consumption expenditure"
+description: "The real value of private final consumption expenditure in gross domestic product"
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -823,15 +909,16 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students in english composition"
+description: "The mean assessment score of students in English composition subject"
 statType: dcid:meanValue
 schoolSubject: dcid:English
 subjectType: dcid:EnglishComposition
 
-Node: dcid:Mean_AssessmentScore_Student_English_EnglishLanguage
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students in english language"
+description: "The mean assessment score of students in English language subject"
 statType: dcid:meanValue
 schoolSubject: dcid:English
 subjectType: dcid:EnglishLanguage
@@ -840,7 +927,8 @@ Node: dcid:Mean_AssessmentScore_Student_Kiswahili_KiswahiliInsha
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
-name: "Mean assessment score of students in kiswahili insha"
+name: "Mean assessment score of student in Kiswahili insha"
+description: "The mean assessment score of students in the Kiswahili insha subject"
 statType: dcid:meanValue
 schoolSubject: dcid:Kiswahili
 subjectType: dcid:KiswahiliInsha
@@ -850,6 +938,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students in kiswahili lugha"
+description: "The mean assessment score of students in Kiswahili lugha subject"
 statType: dcid:meanValue
 schoolSubject: dcid:Kiswahili
 subjectType: dcid:KiswahiliLugha
@@ -859,6 +948,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students in mathematics"
+description: "The mean assessment score of students in mathematics subject"
 statType: dcid:meanValue
 schoolSubject: dcid:Mathematics
 subjectType: dcid:Mathematics
@@ -868,6 +958,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students on a national scale"
+description: "The mean assessment score of students on the national assessment scale"
 statType: dcid:meanValue
 subjectAssessmentScale: dcid:NationalScore
 
@@ -876,6 +967,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students in religious education"
+description: "The mean assessment score of students in religious education subject"
 statType: dcid:meanValue
 schoolSubject: dcid:ReligiousEducation
 
@@ -884,6 +976,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students in science"
+description: "The mean assessment score of students in science subject"
 statType: dcid:meanValue
 schoolSubject: dcid:Science
 subjectType: dcid:Science
@@ -893,94 +986,103 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:assessmentScore
 name: "Mean assessment score of students enrolled in social studies and religious education"
+description: "The mean assessment score of students in social studies and religious education subject"
 statType: dcid:meanValue
 schoolSubject: dcid:SocialStudiesAndReligiousEducation
 subjectType: dcid:SocialStudies
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_CandidatePresent
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_CandidatePresent
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students enrolled in the kenya certificate primary education examination"
+description: "The number of students who were present for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 candidatesStatus: dcid:CandidatePresent
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Female
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Female
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of female students in kenya certificate primary education"
+description: "The number of female students who were present for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 candidatesStatus: dcid:CandidatePresent
 gender: dcid:Female
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Male
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Male
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students in kenya certificate primary education"
+description: "The number of male students who were present for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 candidatesStatus: dcid:CandidatePresent
 gender: dcid:Male
 
-
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_Female_Registered
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_Female_Registered
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of registered female students in kenya certificate primary education"
+description: "The number of registered female candidates for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 gender: dcid:Female
 registrationStatus: dcid:Registered
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_Male_Registered
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_Male_Registered
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of registered male students in kenya certificate primary education"
+description: "The number of registered male candidates for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 gender: dcid:Male
 registrationStatus: dcid:Registered
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_CandidatePresent
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_CandidatePresent
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of students in kenya certificate primary education"
+description: "The number of students who were present for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 candidatesStatus: dcid:CandidatePresent
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Female
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Female
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of female students in kenya certificate primary education"
+description: "The number of female students who were present for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 candidatesStatus: dcid:CandidatePresent
 gender: dcid:Female
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Male
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_CandidatePresent_Male
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of male students in kenya certificate primary education"
+description: "The number of male students who were present for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 candidatesStatus: dcid:CandidatePresent
 gender: dcid:Male
 
-Node: dcid:Count_Person_KenyaCertificatePrimaryEducation_Registered
+Node: dcid:Number_Person_KenyaCertificatePrimaryEducation_Registered
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of registered students in kenya certificate primary education"
+description: "The number of registered candidates for the Kenya Certificate of Primary Education examination"
 statType: dcid:measuredValue
 assessmentType: dcid:KenyaCertificatePrimaryEducation
 registrationStatus: dcid:Registered
@@ -988,6 +1090,7 @@ registrationStatus: dcid:Registered
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_AccommodationAndFoodSector_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by accommodation and food service activities"
+description: "The percentage share of gross domestic product attributed to accommodation and food service activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -998,6 +1101,7 @@ economicSector: dcid:AccommodationAndFoodSector
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_AdministrativeAndSupportServices_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by administrative and support service activities"
+description: "The percentage share of gross domestic product attributed to administrative and support service activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1008,6 +1112,7 @@ economicSector: dcid:AdministrativeAndSupportServices
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_AgriculturalSupportActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by agricultural support activities"
+description: "The percentage share of gross domestic product attributed to agricultural support activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1018,6 +1123,7 @@ economicSector: dcid:AgriculturalSupportActivities
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_AgricultureForestryFishingSector_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by forestry and fishing"
+description: "The percentage share of gross domestic product attributed to agriculture, forestry, and fishing sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1027,7 +1133,8 @@ economicSector: dcid:AgricultureForestryFishingSector
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_Agriculture_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of GDP by crop growing"
+name: "Percentage distribution of GDP by agriculture"
+description: "The percentage share of gross domestic product attributed to agriculture sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1038,6 +1145,7 @@ economicSector: dcid:Agriculture
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_AirTransportAndSupportServices_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by air transport and support services"
+description: "The percentage share of gross domestic product attributed to air transport and support services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1048,6 +1156,7 @@ economicSector: dcid:AirTransportAndSupportServices
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_AllEconomicActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by all economic activities"
+description: "The percentage share of gross domestic product attributed to all economic activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1058,6 +1167,7 @@ economicSector: dcid:AllEconomicActivities
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_AnimalProduction_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by animal production"
+description: "The percentage share of gross domestic product attributed to animal production"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1067,7 +1177,8 @@ economicSector: dcid:AnimalProduction
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_ArtsEntertainmentRecreation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of GDP by arts","entertainment and recreation"
+name: "Percentage distribution of GDP by arts, entertainment and recreation"
+description: "The percentage share of gross domestic product attributed to arts, entertainment and recreation"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1078,6 +1189,7 @@ economicSector: dcid:ArtsEntertainmentRecreation
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_ConstructionSector_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by construction"
+description: "The percentage share of gross domestic product attributed to the construction sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1088,6 +1200,7 @@ economicSector: dcid:ConstructionSector
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_Education_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by education"
+description: "The percentage share of gross domestic product attributed to the education sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1098,6 +1211,7 @@ economicSector: dcid:Education
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_ElectricitySupply_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by electricity supply"
+description: "The percentage share of gross domestic product attributed to the electricity supply sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1108,6 +1222,7 @@ economicSector: dcid:ElectricitySupply
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_EmployerHouseholdActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by employer household activities"
+description: "The percentage share of gross domestic product attributed to employer household activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1118,6 +1233,7 @@ economicSector: dcid:EmployerHouseholdActivities
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_FinancialActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by financial activities"
+description: "The percentage share of gross domestic product attributed to financial activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1128,6 +1244,7 @@ economicSector: dcid:FinancialActivities
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_FinancialAndInsuranceActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by financial and insurance activities"
+description: "The percentage share of gross domestic product attributed to financial and insurance activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1138,6 +1255,7 @@ economicSector: dcid:FinancialAndInsuranceActivities
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_FinancialIntermediationServicesIndirectlyMeasured_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by financial intermediation services indirectly measured (FISIM)"
+description: "The percentage share of gross domestic product attributed to financial intermediation services indirectly measured (FISIM)"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1148,6 +1266,7 @@ economicSector: dcid:FinancialIntermediationServicesIndirectlyMeasured
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_FishingAquaculture_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of GDP by fishing and aquaculture"
+description: "The percentage share of gross domestic product attributed to fishing and aquaculture"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1155,19 +1274,21 @@ measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:FishingAquaculture
 
-Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragesTobaccoManufacture_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragestobaccoManufacture_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of GDP by food","beverages and tobacco manufacture"
+name: "Percentage distribution of GDP by food, beverages and tobacco manufacture"
+description: "The percentage share of gross domestic product attributed to food, beverages and tobacco manufacturing"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
-economicSector: dcid:FoodBeveragesTobaccoManufacture
+economicSector: dcid:FoodBeveragestobaccoManufacture
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_ForestryLogging_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by forestry and logging to GDP"
+name: "Percentage distribution of GDP by forestry and logging"
+description: "The percentage share of gross domestic product attributed to forestry and logging"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1177,7 +1298,8 @@ economicSector: dcid:ForestryLogging
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by higher secondary education to GDP"
+name: "Percentage distribution of GDP by higher secondary education"
+description: "The percentage share of gross domestic product attributed to higher secondary education"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1187,7 +1309,8 @@ schoolGradeLevel: dcid:HigherSecondaryEducation
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_HumanHealthAndSocialWork_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by human health and social work to GDP"
+name: "Percentage distribution of GDP by human health and social work"
+description: "The percentage share of gross domestic product attributed to human health and social work activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1197,7 +1320,8 @@ economicSector: dcid:HumanHealthAndSocialWork
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_InformationAndCommunication_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by information and communication to GDP"
+name: "Percentage distribution of GDP by information and communication"
+description: "The percentage share of gross domestic product attributed to information and communication sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1207,7 +1331,8 @@ economicSector: dcid:InformationAndCommunication
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_InsuranceActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by insurance activities to GDP"
+name: "Percentage distribution of GDP by insurance activities"
+description: "The percentage share of gross domestic product attributed to insurance activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1217,7 +1342,8 @@ economicSector: dcid:InsuranceActivities
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_LandTransport_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution on gross domestic product by land transport to GDP"
+name: "Percentage distribution of GDP by land transport"
+description: "The percentage share of gross domestic product attributed to land transport"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1227,7 +1353,8 @@ economicSector: dcid:LandTransport
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_ManufacturingSector_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by manufacturing to GDP"
+name: "Percentage distribution of GDP by manufacturing"
+description: "The percentage share of gross domestic product attributed to the manufacturing sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1237,7 +1364,8 @@ economicSector: dcid:ManufacturingSector
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_MiningQuarrying_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by mining and quarrying to GDP"
+name: "Percentage distribution of GDP by mining and quarrying"
+description: "The percentage share of gross domestic product attributed to mining and quarrying"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1247,7 +1375,8 @@ economicSector: dcid:MiningQuarrying
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_OtherManufacturingAndRepair_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by other manufacturing",repair,"and installation to GDP"
+name: "Percentage distribution of GDP by other manufacturing, repair and installation"
+description: "The percentage share of gross domestic product attributed to other manufacturing, repair and installation activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1257,7 +1386,8 @@ economicSector: dcid:OtherManufacturingAndRepair
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_OtherServiceSector_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by other service activities to GDP"
+name: "Percentage distribution of GDP by other service activities"
+description: "The percentage share of gross domestic product attributed to other service activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1267,7 +1397,8 @@ economicSector: dcid:OtherServiceSector
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_OtherTransportPostalCourierActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by other transport",postal,"and courier activities to GDP"
+name: "Percentage distribution of GDP by other transport, postal and courier activities"
+description: "The percentage share of gross domestic product attributed to other transport, postal and courier services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1277,7 +1408,8 @@ economicSector: dcid:OtherTransportPostalCourierActivities
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by pre-primary and primary education to GDP"
+name: "Percentage distribution of GDP by pre-primary and primary education"
+description: "The percentage share of gross domestic product attributed to pre-primary and primary education"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1289,7 +1421,8 @@ Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_ProductTaxes_AsAFract
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
-name: "Percentage distribution of gross domestic product by product taxes to the GDP"
+name: "Percentage distribution of GDP by product taxes"
+description: "The percentage share of gross domestic product attributed to product taxes"
 statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
@@ -1297,7 +1430,8 @@ economicSector: dcid:ProductTaxes
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_ProfessionalScientificTechnicalActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by scientific and technical activities compared to the total gross domestic product."
+name: "Percentage distribution of GDP by professional, scientific and technical activities"
+description: "The percentage share of gross domestic product attributed to professional, scientific and technical activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1307,7 +1441,8 @@ economicSector: dcid:ProfessionalScientificTechnicalActivities
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_PublicAdministrationAndDefence_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by public administration and defense to GDP"
+name: "Percentage distribution of GDP by public administration and defense"
+description: "The percentage share of gross domestic product attributed to public administration and defense"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1317,7 +1452,8 @@ economicSector: dcid:PublicAdministrationAndDefence
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_PublishingBroadcastingInformationActivities_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by publishing",broadcasting,"and information activities to GDP"
+name: "Percentage distribution of GDP by publishing, broadcasting and information activities"
+description: "The percentage share of gross domestic product attributed to publishing, broadcasting and information services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1327,7 +1463,8 @@ economicSector: dcid:PublishingBroadcastingInformationActivities
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealEstate_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by real estate to GDP"
+name: "Percentage distribution of GDP by real estate"
+description: "The percentage share of gross domestic product attributed to real estate activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1337,7 +1474,8 @@ economicSector: dcid:RealEstate
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution on gross domestic product by general secondary education to GDP"
+name: "Percentage distribution of GDP by secondary education"
+description: "The percentage share of gross domestic product attributed to general secondary education"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1347,7 +1485,8 @@ schoolGradeLevel: dcid:SecondaryEducation
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_Telecommunications_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by telecommunications to GDP"
+name: "Percentage distribution of GDP by telecommunications"
+description: "The percentage share of gross domestic product attributed to the telecommunications sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1357,7 +1496,8 @@ economicSector: dcid:Telecommunications
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_TransportStorageSector_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by transportation and storage to GDP"
+name: "Percentage distribution of GDP by transportation and storage"
+description: "The percentage share of gross domestic product attributed to transportation and storage services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1367,7 +1507,8 @@ economicSector: dcid:TransportStorageSector
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_WaterSupplySewerageWasteManagement_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by waste management"
+name: "Percentage distribution of GDP by water supply, sewerage and waste management"
+description: "The percentage share of gross domestic product attributed to water supply, sewerage and waste management services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1377,7 +1518,8 @@ economicSector: dcid:WaterSupplySewerageWasteManagement
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_WholesaleRetailTradeAndRepair_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
-name: "Percentage distribution of gross domestic product by wholesale","retail trade and repairs"
+name: "Percentage distribution of GDP by wholesale, retail trade and repairs"
+description: "The percentage share of gross domestic product attributed to wholesale and retail trade, and repair services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -1387,7 +1529,8 @@ economicSector: dcid:WholesaleRetailTradeAndRepair
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_AccommodationAndFoodSector
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for accommodation and food service activities"
+name: "Growth rate of GDP for accommodation and food service activities"
+description: "The year-over-year growth rate of gross domestic product attributed to accommodation and food services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1396,7 +1539,8 @@ economicSector: dcid:AccommodationAndFoodSector
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_AdministrativeAndSupportServices
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for administrative and support service activities"
+name: "Growth rate of GDP for administrative and support service activities"
+description: "The year-over-year growth rate of gross domestic product attributed to administrative and support services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1405,7 +1549,8 @@ economicSector: dcid:AdministrativeAndSupportServices
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_AgriculturalSupportActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for support activities to agriculture"
+name: "Growth rate of GDP for agricultural support activities"
+description: "The year-over-year growth rate of gross domestic product attributed to support activities in agriculture"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1414,7 +1559,8 @@ economicSector: dcid:AgriculturalSupportActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_Agriculture
 typeOf: dcid:StatisticalVariable
-name: "Growth rate on gross domestic product by growing of crops"
+name: "Growth rate of GDP by crop growing"
+description: "The year-over-year growth rate of gross domestic product attributed to the growing of crops"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1423,7 +1569,8 @@ economicSector: dcid:Agriculture
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_AgricultureForestryFishingSector
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for forestry and fishing"
+name: "Growth rate of GDP for agriculture, forestry and fishing"
+description: "The year-over-year growth rate of gross domestic product attributed to agriculture, forestry and fishing"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1432,7 +1579,8 @@ economicSector: dcid:AgricultureForestryFishingSector
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_AirTransportAndSupportServices
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for air transport and support servicess"
+name: "Growth rate of GDP for air transport and support services"
+description: "The year-over-year growth rate of gross domestic product attributed to air transport and related support services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1441,7 +1589,8 @@ economicSector: dcid:AirTransportAndSupportServices
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_AllEconomicActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for all economic activities"
+name: "Growth rate of GDP for all economic activities"
+description: "The year-over-year growth rate of gross domestic product attributed to all economic activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1450,7 +1599,8 @@ economicSector: dcid:AllEconomicActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_AnimalProduction
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for animal production"
+name: "Growth rate of GDP for animal production"
+description: "The year-over-year growth rate of gross domestic product attributed to animal production"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1459,7 +1609,8 @@ economicSector: dcid:AnimalProduction
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_ArtsEntertainmentRecreation
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for entertainment and recreation"
+name: "Growth rate of GDP for arts, entertainment and recreation"
+description: "The year-over-year growth rate of gross domestic product attributed to arts, entertainment and recreation activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1468,7 +1619,8 @@ economicSector: dcid:ArtsEntertainmentRecreation
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_ConstructionSector
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for construction"
+name: "Growth rate of GDP for construction"
+description: "The year-over-year growth rate of gross domestic product attributed to the construction sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1477,7 +1629,8 @@ economicSector: dcid:ConstructionSector
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_Education
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for education"
+name: "Growth rate of GDP for education"
+description: "The year-over-year growth rate of gross domestic product attributed to education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1486,7 +1639,8 @@ economicSector: dcid:Education
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_ElectricitySupply
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for electricity supply"
+name: "Growth rate of GDP for electricity supply"
+description: "The year-over-year growth rate of gross domestic product attributed to electricity supply"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1495,7 +1649,8 @@ economicSector: dcid:ElectricitySupply
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_EmployerHouseholdActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for activities of households as employers;"
+name: "Growth rate of GDP for household employer activities"
+description: "The year-over-year growth rate of gross domestic product attributed to activities of households as employers"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1504,7 +1659,8 @@ economicSector: dcid:EmployerHouseholdActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_FinancialActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for financial activities"
+name: "Growth rate of GDP for financial activities"
+description: "The year-over-year growth rate of gross domestic product attributed to financial activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1513,7 +1669,8 @@ economicSector: dcid:FinancialActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_FinancialAndInsuranceActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for financial and insurance activities"
+name: "Growth rate of GDP for financial and insurance activities"
+description: "The year-over-year growth rate of gross domestic product attributed to financial and insurance services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1522,7 +1679,8 @@ economicSector: dcid:FinancialAndInsuranceActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_FinancialIntermediationServicesIndirectlyMeasured
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for financial intermediation services indirectly measured (FISIM)"
+name: "Growth rate of GDP for financial intermediation services indirectly measured"
+description: "The year-over-year growth rate of gross domestic product attributed to financial intermediation services indirectly measured (FISIM)"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1531,25 +1689,28 @@ economicSector: dcid:FinancialIntermediationServicesIndirectlyMeasured
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_FishingAquaculture
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for fishing and aquaculture"
+name: "Growth rate of GDP for fishing and aquaculture"
+description: "The year-over-year growth rate of gross domestic product attributed to fishing and aquaculture activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:FishingAquaculture
 
-Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragesTobaccoManufacture
+Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragestobaccoManufacture
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for beverages and tobacco"
+name: "Growth rate of GDP for food, beverages and tobacco manufacture"
+description: "The year-over-year growth rate of gross domestic product attributed to the manufacture of food, beverages and tobacco"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
 activitySource: dcid:GrossDomesticProduction
-economicSector: dcid:FoodBeveragesTobaccoManufacture
+economicSector: dcid:FoodBeveragestobaccoManufacture
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_ForestryLogging
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in forestry and logging"
+name: "Growth rate of GDP for forestry and logging"
+description: "The year-over-year growth rate of gross domestic product attributed to forestry and logging"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1558,7 +1719,8 @@ economicSector: dcid:ForestryLogging
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in higher secondary education"
+name: "Growth rate of GDP for higher secondary education"
+description: "The year-over-year growth rate of gross domestic product attributed to higher secondary education"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1567,7 +1729,8 @@ schoolGradeLevel: dcid:HigherSecondaryEducation
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_HumanHealthAndSocialWork
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in human health and social work activities"
+name: "Growth rate of GDP for human health and social work"
+description: "The year-over-year growth rate of gross domestic product attributed to human health and social work activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1576,7 +1739,8 @@ economicSector: dcid:HumanHealthAndSocialWork
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_InformationAndCommunication
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in information and communication"
+name: "Growth rate of GDP for information and communication"
+description: "The year-over-year growth rate of gross domestic product attributed to information and communication services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1585,7 +1749,8 @@ economicSector: dcid:InformationAndCommunication
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_InsuranceActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in insurance activities"
+name: "Growth rate of GDP for insurance activities"
+description: "The year-over-year growth rate of gross domestic product attributed to insurance activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1594,7 +1759,8 @@ economicSector: dcid:InsuranceActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_LandTransport
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in land transport"
+name: "Growth rate of GDP for land transport"
+description: "The year-over-year growth rate of gross domestic product attributed to land transport services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1603,7 +1769,8 @@ economicSector: dcid:LandTransport
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_ManufacturingSector
 typeOf: dcid:StatisticalVariable
-name: "Growth rate on gross domestic product in manufacturing"
+name: "Growth rate of GDP for manufacturing"
+description: "The year-over-year growth rate of gross domestic product attributed to the manufacturing sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1612,7 +1779,8 @@ economicSector: dcid:ManufacturingSector
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_MiningQuarrying
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in mining and quarrying"
+name: "Growth rate of GDP for mining and quarrying"
+description: "The year-over-year growth rate of gross domestic product attributed to mining and quarrying"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1621,7 +1789,8 @@ economicSector: dcid:MiningQuarrying
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_OtherManufacturingAndRepair
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in other manufacturing","and installation","repair"
+name: "Growth rate of GDP for other manufacturing, repair and installation"
+description: "The year-over-year growth rate of gross domestic product attributed to other manufacturing, repair and installation services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1630,7 +1799,8 @@ economicSector: dcid:OtherManufacturingAndRepair
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_OtherServiceSector
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in other service activities"
+name: "Growth rate of GDP for other service activities"
+description: "The year-over-year growth rate of gross domestic product attributed to other service activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1639,7 +1809,8 @@ economicSector: dcid:OtherServiceSector
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_OtherTransportPostalCourierActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in all other transport","including postal and courier activities"
+name: "Growth rate of GDP for other transport, postal and courier activities"
+description: "The year-over-year growth rate of gross domestic product attributed to other transport, postal and courier services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1648,7 +1819,8 @@ economicSector: dcid:OtherTransportPostalCourierActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in pre-primary and primary education"
+name: "Growth rate of GDP for pre-primary and primary education"
+description: "The year-over-year growth rate of gross domestic product attributed to pre-primary and primary education"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1659,14 +1831,16 @@ Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_ProductTax
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
-name: "Growth rate of gross domestic product in product taxes"
+name: "Growth rate of GDP for product taxes"
+description: "The year-over-year growth rate of gross domestic product attributed to product taxes"
 statType: dcid:growthRate
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:ProductTaxes
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_ProfessionalScientificTechnicalActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in scientific and technical activities"
+name: "Growth rate of gross domestic product for professional, scientific and technical activities"
+description: "The year-over-year growth rate of gross domestic product attributed to professional, scientific and technical services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1675,7 +1849,8 @@ economicSector: dcid:ProfessionalScientificTechnicalActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_PublicAdministrationAndDefence
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in public administration and defense"
+name: "Growth rate of gross domestic product for public administration and defence"
+description: "The year-over-year growth rate of gross domestic product attributed to public administration and defence activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1684,7 +1859,8 @@ economicSector: dcid:PublicAdministrationAndDefence
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_PublishingBroadcastingInformationActivities
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in publishing","and information activities","broadcasting"
+name: "Growth rate of gross domestic product for publishing, broadcasting and information services"
+description: "The year-over-year growth rate of gross domestic product attributed to publishing, broadcasting, and information activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1693,7 +1869,8 @@ economicSector: dcid:PublishingBroadcastingInformationActivities
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_RealEstate
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in real estate"
+name: "Growth rate of gross domestic product for real estate"
+description: "The year-over-year growth rate of gross domestic product attributed to real estate activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1702,7 +1879,8 @@ economicSector: dcid:RealEstate
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in general secondary education"
+name: "Growth rate of gross domestic product for general secondary education"
+description: "The year-over-year growth rate of gross domestic product attributed to general secondary education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1711,7 +1889,8 @@ schoolGradeLevel: dcid:SecondaryEducation
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_Telecommunications
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in telecommunications"
+name: "Growth rate of gross domestic product for telecommunications"
+description: "The year-over-year growth rate of gross domestic product attributed to telecommunications services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1720,7 +1899,8 @@ economicSector: dcid:Telecommunications
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_TransportStorageSector
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product in transportation and storage"
+name: "Growth rate of gross domestic product for transportation and storage"
+description: "The year-over-year growth rate of gross domestic product attributed to transportation and storage services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1729,7 +1909,8 @@ economicSector: dcid:TransportStorageSector
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_WaterSupplySewerageWasteManagement
 typeOf: dcid:StatisticalVariable
-name: "Growth rate on gross domestic product by waste management"
+name: "Growth rate of gross domestic product for water supply, sewerage and waste management"
+description: "The year-over-year growth rate of gross domestic product attributed to water supply, sewerage and waste management services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1738,7 +1919,8 @@ economicSector: dcid:WaterSupplySewerageWasteManagement
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction_WholesaleRetailTradeAndRepair
 typeOf: dcid:StatisticalVariable
-name: "Growth rate of gross domestic product for wholesale, retail trade, and repairs"
+name: "Growth rate of gross domestic product for wholesale, retail trade and repair"
+description: "The year-over-year growth rate of gross domestic product attributed to wholesale and retail trade, and repair services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:growthRate
@@ -1747,7 +1929,8 @@ economicSector: dcid:WholesaleRetailTradeAndRepair
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_AccommodationAndFoodSector
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for accommodation and food service activities"
+name: "Nominal gross domestic product for accommodation and food services"
+description: "The nominal gross domestic product attributed to accommodation and food service activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1757,7 +1940,8 @@ economicSector: dcid:AccommodationAndFoodSector
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_AdministrativeAndSupportServices
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for administrative and support service activities"
+name: "Nominal gross domestic product for administrative and support services"
+description: "The nominal gross domestic product attributed to administrative and support service activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1767,7 +1951,8 @@ economicSector: dcid:AdministrativeAndSupportServices
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_AgriculturalSupportActivities
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for support activities to agriculture"
+name: "Nominal gross domestic product for agricultural support activities"
+description: "The nominal gross domestic product attributed to support activities for agriculture"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1777,7 +1962,8 @@ economicSector: dcid:AgriculturalSupportActivities
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_Agriculture
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for growing crops"
+name: "Nominal gross domestic product for crop production"
+description: "The nominal gross domestic product attributed to the growing of crops"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1787,7 +1973,8 @@ economicSector: dcid:Agriculture
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_AgricultureForestryFishingSector
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for forestry and fishing"
+name: "Nominal gross domestic product for agriculture, forestry and fishing"
+description: "The nominal gross domestic product attributed to agriculture, forestry and fishing combined"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1798,6 +1985,7 @@ economicSector: dcid:AgricultureForestryFishingSector
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_AirTransportAndSupportServices
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for air transport and support services"
+description: "The nominal gross domestic product attributed to air transport and associated support services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1807,7 +1995,8 @@ economicSector: dcid:AirTransportAndSupportServices
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_AllEconomicActivities
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for all economic activitiess"
+name: "Nominal gross domestic product for all economic activities"
+description: "The total nominal gross domestic product covering all economic activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1818,6 +2007,7 @@ economicSector: dcid:AllEconomicActivities
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_AnimalProduction
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for animal production"
+description: "The nominal gross domestic product attributed to animal production"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1827,7 +2017,8 @@ economicSector: dcid:AnimalProduction
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_ArtsEntertainmentRecreation
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for entertainment and recreation"
+name: "Nominal gross domestic product for arts, entertainment and recreation"
+description: "The nominal gross domestic product attributed to arts, entertainment and recreation activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1838,6 +2029,7 @@ economicSector: dcid:ArtsEntertainmentRecreation
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_ConstructionSector
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for construction"
+description: "The nominal gross domestic product attributed to construction activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1848,6 +2040,7 @@ economicSector: dcid:ConstructionSector
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_Education
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for education"
+description: "The nominal gross domestic product attributed to education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1858,6 +2051,7 @@ economicSector: dcid:Education
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_ElectricitySupply
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for electricity supply"
+description: "The nominal gross domestic product attributed to electricity supply services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1867,7 +2061,8 @@ economicSector: dcid:ElectricitySupply
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_EmployerHouseholdActivities
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for employer household activities"
+name: "Nominal gross domestic product for household activities as employers"
+description: "The nominal gross domestic product attributed to activities of households as employers of domestic personnel"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1878,6 +2073,7 @@ economicSector: dcid:EmployerHouseholdActivities
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_FinancialActivities
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for financial activities"
+description: "The nominal gross domestic product attributed to financial services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1888,6 +2084,7 @@ economicSector: dcid:FinancialActivities
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_FinancialAndInsuranceActivities
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for financial and insurance activities"
+description: "The nominal gross domestic product attributed to financial and insurance services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1897,7 +2094,8 @@ economicSector: dcid:FinancialAndInsuranceActivities
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_FinancialIntermediationServicesIndirectlyMeasured
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by financial intermediation services indirectly measured (FISIM) at constant prices"
+name: "Nominal gross domestic product for financial intermediation services indirectly measured (FISIM)"
+description: "The nominal gross domestic product attributed to financial intermediation services indirectly measured (FISIM)"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1908,6 +2106,7 @@ economicSector: dcid:FinancialIntermediationServicesIndirectlyMeasured
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_FishingAquaculture
 typeOf: dcid:StatisticalVariable
 name: "Nominal gross domestic product for fishing and aquaculture"
+description: "The nominal gross domestic product attributed to fishing and aquaculture"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1915,19 +2114,21 @@ statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:FishingAquaculture
 
-Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragesTobaccoManufacture
+Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragestobaccoManufacture
 typeOf: dcid:StatisticalVariable
-name: "Nominal gross domestic product for food, beverages, and tobacco manufacture"
+name: "Nominal gross domestic product for food, beverages, and tobacco manufacturing"
+description: "The nominal gross domestic product attributed to manufacturing of food, beverages, and tobacco products"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
-economicSector: dcid:FoodBeveragesTobaccoManufacture
+economicSector: dcid:FoodBeveragestobaccoManufacture
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_ForestryLogging
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by forestry and logging on constant prices"
+name: "Nominal gross domestic product for forestry and logging"
+description: "The nominal gross domestic product attributed to forestry and logging activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1937,7 +2138,8 @@ economicSector: dcid:ForestryLogging
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by higher and other education on constant prices"
+name: "Nominal gross domestic product for higher secondary education"
+description: "The nominal gross domestic product attributed to higher secondary and other education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1947,7 +2149,8 @@ schoolGradeLevel: dcid:HigherSecondaryEducation
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_HumanHealthAndSocialWork
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by human health and social work activities on constant prices"
+name: "Nominal gross domestic product for human health and social work"
+description: "The nominal gross domestic product attributed to human health and social work activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1957,7 +2160,8 @@ economicSector: dcid:HumanHealthAndSocialWork
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_InformationAndCommunication
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by information and communication on constant prices"
+name: "Nominal gross domestic product for information and communication"
+description: "The nominal gross domestic product attributed to information and communication services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1967,7 +2171,8 @@ economicSector: dcid:InformationAndCommunication
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_InsuranceActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by insurance activities on constant prices"
+name: "Nominal gross domestic product for insurance activities"
+description: "The nominal gross domestic product attributed to insurance services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1977,7 +2182,8 @@ economicSector: dcid:InsuranceActivities
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_LandTransport
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by land transport on constant prices"
+name: "Nominal gross domestic product for land transport"
+description: "The nominal gross domestic product attributed to land transport services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1987,7 +2193,8 @@ economicSector: dcid:LandTransport
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_ManufacturingSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by manufacturing on constant prices"
+name: "Nominal gross domestic product for manufacturing"
+description: "The nominal gross domestic product attributed to manufacturing activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -1997,7 +2204,8 @@ economicSector: dcid:ManufacturingSector
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_MiningQuarrying
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by mining and quarrying on constant prices"
+name: "Nominal gross domestic product for mining and quarrying"
+description: "The nominal gross domestic product attributed to mining and quarrying operations"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2007,7 +2215,8 @@ economicSector: dcid:MiningQuarrying
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_OtherManufacturingAndRepair
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by other manufacturing, repair and installation on constant prices"
+name: "Nominal gross domestic product for other manufacturing, repair and installation"
+description: "The nominal gross domestic product attributed to other manufacturing, repair, and installation activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2017,7 +2226,8 @@ economicSector: dcid:OtherManufacturingAndRepair
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_OtherServiceSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by other service activities on constant prices"
+name: "Nominal gross domestic product for other service activities"
+description: "The nominal gross domestic product attributed to other service sector activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2027,7 +2237,8 @@ economicSector: dcid:OtherServiceSector
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_OtherTransportPostalCourierActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by other transport, postal and courier activities on constant prices"
+name: "Nominal gross domestic product for other transport, postal and courier activities"
+description: "The nominal gross domestic product attributed to other transport, postal, and courier services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2037,7 +2248,8 @@ economicSector: dcid:OtherTransportPostalCourierActivities
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by pre-primary and primary education on constant prices"
+name: "Nominal gross domestic product for pre-primary and primary education"
+description: "The nominal gross domestic product attributed to pre-primary and primary education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2049,7 +2261,8 @@ Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_ProductTaxes
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
-name: "Gross domestic product by product taxes on constant prices"
+name: "Nominal gross domestic product from product taxes"
+description: "The nominal gross domestic product attributed to product taxes"
 measurementQualifier: dcid:Nominal
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -2057,7 +2270,8 @@ economicSector: dcid:ProductTaxes
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_ProfessionalScientificTechnicalActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by scientific and technical activities on constant prices"
+name: "Nominal gross domestic product for professional, scientific and technical activities"
+description: "The nominal gross domestic product attributed to professional, scientific, and technical services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2067,7 +2281,8 @@ economicSector: dcid:ProfessionalScientificTechnicalActivities
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_PublicAdministrationAndDefence
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by public administration and defence on constant prices"
+name: "Nominal gross domestic product for public administration and defence"
+description: "The nominal gross domestic product attributed to public administration and defense services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2077,7 +2292,8 @@ economicSector: dcid:PublicAdministrationAndDefence
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_PublishingBroadcastingInformationActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by publishing, broadcasting and information activities on constant prices"
+name: "Nominal gross domestic product for publishing, broadcasting and information activities"
+description: "The nominal gross domestic product attributed to publishing, broadcasting, and information services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2087,7 +2303,8 @@ economicSector: dcid:PublishingBroadcastingInformationActivities
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_RealEstate
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by real estate on constant prices"
+name: "Nominal gross domestic product for real estate"
+description: "The nominal gross domestic product attributed to real estate activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2097,7 +2314,8 @@ economicSector: dcid:RealEstate
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by general secondary education on constant prices"
+name: "Nominal gross domestic product for secondary education"
+description: "The nominal gross domestic product attributed to general secondary education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2107,7 +2325,8 @@ schoolGradeLevel: dcid:SecondaryEducation
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_Telecommunications
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by telecommunications on constant prices"
+name: "Nominal gross domestic product for telecommunications"
+description: "The nominal gross domestic product attributed to telecommunications services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2117,7 +2336,8 @@ economicSector: dcid:Telecommunications
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_TransportStorageSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by transportation and storage on constant prices"
+name: "Nominal gross domestic product for transportation and storage"
+description: "The nominal gross domestic product attributed to transportation and storage services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2127,7 +2347,8 @@ economicSector: dcid:TransportStorageSector
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_WaterSupplySewerageWasteManagement
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by waste management at constant prices"
+name: "Nominal gross domestic product for water supply, sewerage and waste management"
+description: "The nominal gross domestic product attributed to water supply, sewerage, and waste management services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2137,7 +2358,8 @@ economicSector: dcid:WaterSupplySewerageWasteManagement
 
 Node: dcid:Nominal_Amount_EconomicActivity_GrossDomesticProduction_WholesaleRetailTradeAndRepair
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by wholesale, retail trade, and repairs at constant prices"
+name: "Nominal gross domestic product for wholesale, retail trade, and repairs"
+description: "The nominal gross domestic product attributed to wholesale and retail trade, and repair services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:Nominal
@@ -2147,7 +2369,8 @@ economicSector: dcid:WholesaleRetailTradeAndRepair
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_AccommodationAndFoodSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by accommodation and food service activities at current prices"
+name: "Real gross domestic product for accommodation and food service activities"
+description: "The real gross domestic product at current prices for accommodation and food service activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2157,7 +2380,8 @@ economicSector: dcid:AccommodationAndFoodSector
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_AdministrativeAndSupportServices
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by administrative and support service activities at current prices"
+name: "Real gross domestic product for administrative and support service activities"
+description: "The real gross domestic product at current prices for administrative and support services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2167,7 +2391,8 @@ economicSector: dcid:AdministrativeAndSupportServices
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_AgriculturalSupportActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by support activities to agriculture at current prices"
+name: "Real gross domestic product for support activities to agriculture"
+description: "The real gross domestic product at current prices for support activities to agriculture"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2177,7 +2402,8 @@ economicSector: dcid:AgriculturalSupportActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_Agriculture
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by growing of crops at current prices"
+name: "Real value of gross domestic product from agriculture"
+description: "The real value of gross domestic product generated by the agriculture sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2187,7 +2413,8 @@ economicSector: dcid:Agriculture
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_AgricultureForestryFishingSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by forestry and fishing at current prices"
+name: "Real value of gross domestic product from agriculture, forestry and fishing"
+description: "The real value of gross domestic product generated by the agriculture, forestry, and fishing sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2197,7 +2424,8 @@ economicSector: dcid:AgricultureForestryFishingSector
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_AirTransportAndSupportServices
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by air transport including support services at current prices"
+name: "Real value of gross domestic product from air transport and support services"
+description: "The real value of gross domestic product generated by air transport and related support services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2207,7 +2435,8 @@ economicSector: dcid:AirTransportAndSupportServices
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_AllEconomicActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by all economic activities at current prices"
+name: "Real value of gross domestic product from all economic activities"
+description: "The real value of gross domestic product generated by all economic activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2217,7 +2446,8 @@ economicSector: dcid:AllEconomicActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_AnimalProduction
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by animal production at current prices"
+name: "Real value of gross domestic product from animal production"
+description: "The real value of gross domestic product generated by the animal production sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2227,7 +2457,8 @@ economicSector: dcid:AnimalProduction
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_ArtsEntertainmentRecreation
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by entertainment and recreation at current prices"
+name: "Real value of gross domestic product from arts, entertainment and recreation"
+description: "The real value of gross domestic product generated by the arts, entertainment, and recreation sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2237,7 +2468,8 @@ economicSector: dcid:ArtsEntertainmentRecreation
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_ConstructionSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by construction at current prices"
+name: "Real value of gross domestic product from construction"
+description: "The real value of gross domestic product generated by the construction sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2247,7 +2479,8 @@ economicSector: dcid:ConstructionSector
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_Education
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by education at current prices"
+name: "Real value of gross domestic product from education"
+description: "The real value of gross domestic product generated by the education sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2257,7 +2490,8 @@ economicSector: dcid:Education
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_ElectricitySupply
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by electricity supply at current prices"
+name: "Real value of gross domestic product from electricity supply"
+description: "The real value of gross domestic product generated by the electricity supply sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2267,7 +2501,8 @@ economicSector: dcid:ElectricitySupply
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_EmployerHouseholdActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by activities of households as employers at current prices"
+name: "Real value of gross domestic product from household employer activities"
+description: "The real value of gross domestic product generated by activities of households as employers"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2277,7 +2512,8 @@ economicSector: dcid:EmployerHouseholdActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_FinancialActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by financial activities at current prices"
+name: "Real value of gross domestic product from financial activities"
+description: "The real value of gross domestic product generated by financial activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2287,7 +2523,8 @@ economicSector: dcid:FinancialActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_FinancialAndInsuranceActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by financial and insurance activities at current prices"
+name: "Real value of gross domestic product from financial and insurance activities"
+description: "The real value of gross domestic product generated by financial and insurance activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2297,7 +2534,8 @@ economicSector: dcid:FinancialAndInsuranceActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_FinancialIntermediationServicesIndirectlyMeasured
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by financial intermediation services indirectly measured (FISIM) at current prices"
+name: "Real value of gross domestic product from financial intermediation services indirectly measured"
+description: "The real value of gross domestic product generated by financial intermediation services indirectly measured (FISIM)"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2307,7 +2545,8 @@ economicSector: dcid:FinancialIntermediationServicesIndirectlyMeasured
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_FishingAquaculture
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by fishing and aquaculture at current prices"
+name: "Real value of gross domestic product from fishing and aquaculture"
+description: "The real value of gross domestic product generated by the fishing and aquaculture sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2315,19 +2554,21 @@ statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:FishingAquaculture
 
-Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragesTobaccoManufacture
+Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_FoodBeveragestobaccoManufacture
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by beverages and tobacco at current prices"
+name: "Real value of gross domestic product from food, beverages and tobacco manufacturing"
+description: "The real value of gross domestic product generated by the manufacture of food, beverages, and tobacco"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
-economicSector: dcid:FoodBeveragesTobaccoManufacture
+economicSector: dcid:FoodBeveragestobaccoManufacture
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_ForestryLogging
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by forestry and logging"
+name: "Real value of gross domestic product from forestry and logging"
+description: "The real value of gross domestic product generated by the forestry and logging sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2337,7 +2578,8 @@ economicSector: dcid:ForestryLogging
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by higher and other education"
+name: "Real value of gross domestic product from higher and other education"
+description: "The real value of gross domestic product generated by higher and other education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2347,7 +2589,8 @@ schoolGradeLevel: dcid:HigherSecondaryEducation
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_HumanHealthAndSocialWork
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by human health and social work activities"
+name: "Real value of gross domestic product from human health and social work"
+description: "The real value of gross domestic product generated by human health and social work activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2357,7 +2600,8 @@ economicSector: dcid:HumanHealthAndSocialWork
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_InformationAndCommunication
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by information and communication"
+name: "Real value of gross domestic product from information and communication"
+description: "The real value of gross domestic product generated by the information and communication sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2367,7 +2611,8 @@ economicSector: dcid:InformationAndCommunication
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_InsuranceActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by insurance activities"
+name: "Real value of gross domestic product from insurance activities"
+description: "The real value of gross domestic product generated by insurance-related activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2377,7 +2622,8 @@ economicSector: dcid:InsuranceActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_LandTransport
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by land transport"
+name: "Real value of gross domestic product from land transport"
+description: "The real value of gross domestic product generated by the land transport sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2387,7 +2633,8 @@ economicSector: dcid:LandTransport
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_ManufacturingSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by manufacturing"
+name: "Real value of gross domestic product from manufacturing"
+description: "The real value of gross domestic product generated by the manufacturing sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2397,7 +2644,8 @@ economicSector: dcid:ManufacturingSector
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_MiningQuarrying
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by mining and quarrying"
+name: "Real value of gross domestic product from mining and quarrying"
+description: "The real value of gross domestic product generated by mining and quarrying activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2407,7 +2655,8 @@ economicSector: dcid:MiningQuarrying
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_OtherManufacturingAndRepair
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by other manufacturing, repair and installation"
+name: "Real value of gross domestic product from other manufacturing, repair and installation"
+description: "The real value of gross domestic product generated by other manufacturing, repair, and installation services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2417,7 +2666,8 @@ economicSector: dcid:OtherManufacturingAndRepair
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_OtherServiceSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by other service activities"
+name: "Real value of gross domestic product from other service activities"
+description: "The real value of gross domestic product generated by other service-related activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2427,7 +2677,8 @@ economicSector: dcid:OtherServiceSector
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_OtherTransportPostalCourierActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by other transport, postal and courier activities"
+name: "Real value of gross domestic product from other transport, postal and courier activities"
+description: "The real value of gross domestic product generated by other transport, postal, and courier services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2437,7 +2688,8 @@ economicSector: dcid:OtherTransportPostalCourierActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by pre-primary and primary education"
+name: "Real value of gross domestic product from pre-primary and primary education"
+description: "The real value of gross domestic product generated by pre-primary and primary education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2449,7 +2701,8 @@ Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_ProductTaxe
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
-name: "Gross domestic product by product taxes"
+name: "Real value of gross domestic product from product taxes"
+description: "The real value of gross domestic product attributed to product taxes"
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
@@ -2457,7 +2710,8 @@ economicSector: dcid:ProductTaxes
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_ProfessionalScientificTechnicalActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by scientific and technical activities"
+name: "Real value of gross domestic product from scientific and technical activities"
+description: "The real value of gross domestic product generated by professional, scientific, and technical activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2467,7 +2721,8 @@ economicSector: dcid:ProfessionalScientificTechnicalActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_PublicAdministrationAndDefence
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by public administration and defence"
+name: "Real value of gross domestic product from public administration and defence"
+description: "The real value of gross domestic product generated by public administration and defence services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2477,7 +2732,8 @@ economicSector: dcid:PublicAdministrationAndDefence
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_PublishingBroadcastingInformationActivities
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by publishing, broadcasting and information activities"
+name: "Real value of gross domestic product from publishing, broadcasting and information activities"
+description: "The real value of gross domestic product generated by publishing, broadcasting, and information services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2487,7 +2743,8 @@ economicSector: dcid:PublishingBroadcastingInformationActivities
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_RealEstate
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by real estate"
+name: "Real value of gross domestic product from real estate"
+description: "The real value of gross domestic product generated by the real estate sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2497,7 +2754,8 @@ economicSector: dcid:RealEstate
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by general secondary education"
+name: "Real value of gross domestic product from general secondary education"
+description: "The real value of gross domestic product generated by general secondary education services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2507,7 +2765,8 @@ schoolGradeLevel: dcid:SecondaryEducation
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_Telecommunications
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by telecommunications"
+name: "Real value of gross domestic product from telecommunications"
+description: "The real value of gross domestic product generated by the telecommunications sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2517,7 +2776,8 @@ economicSector: dcid:Telecommunications
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_TransportStorageSector
 typeOf: dcid:StatisticalVariable
-name: "Gross domestic product by transportation and storage"
+name: "Real value of gross domestic product from transportation and storage"
+description: "The real value of gross domestic product generated by the transportation and storage sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2527,7 +2787,8 @@ economicSector: dcid:TransportStorageSector
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_WaterSupplySewerageWasteManagement
 typeOf: dcid:StatisticalVariable
-name: "Real value amount of gross domestic product for water supply","sewerage and waste management"
+name: "Real value of gross domestic product from water supply, sewerage and waste management"
+description: "The real value of gross domestic product generated by the water supply, sewerage, and waste management sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
@@ -2537,126 +2798,128 @@ economicSector: dcid:WaterSupplySewerageWasteManagement
 
 Node: dcid:RealValue_Amount_EconomicActivity_GrossDomesticProduction_WholesaleRetailTradeAndRepair
 typeOf: dcid:StatisticalVariable
-name: "Real value amount of gross domestic product for wholesale","retail trade and repair"
+name: "Real value of gross domestic product from wholesale, retail trade and repair"
+description: "The real value of gross domestic product generated by wholesale and retail trade, and repair services"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 measurementQualifier: dcid:RealValue
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:WholesaleRetailTradeAndRepair
-
 #measurementDenominator
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 activitySource: dcid:GrossDomesticProduction
 measuredProperty: dcid:amount
-name: "Amount of gross domestic product for economic activity"
+name: "Amount of gross domestic product from economic activity"
+description: "The amount of gross domestic product generated by all economic activities"
 statType: dcid:measuredValue
 populationType: dcid:EconomicActivity
-
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation
 typeOf: dcid:StatisticalVariable
 activitySource: dcid:GrossDomesticProduction
 measuredProperty: dcid:amount
-name: "Amount economic activity gross domestic production pre primary and primary education"
+name: "Amount of gross domestic product from pre-primary and primary education"
+description: "The amount of gross domestic product generated by pre-primary and primary education services"
 statType: dcid:measuredValue
 populationType: dcid:EconomicActivity
 schoolGradeLevel: dcid:PrePrimaryAndPrimaryEducation
-name: "Amount Economic Activity gross domestic production Pre Primary And Primary Education"
-
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation
 typeOf: dcid:StatisticalVariable
 activitySource: dcid:GrossDomesticProduction
 measuredProperty: dcid:amount
-name: "Amount economic activity gross domestic production secondary education"
+name: "Amount of gross domestic product from secondary education"
+description: "The amount of gross domestic product generated by secondary education services"
 statType: dcid:measuredValue
 populationType: dcid:EconomicActivity
 schoolGradeLevel: dcid:SecondaryEducation
-name: "Amount Economic Activity gross domestic production Secondary Education"
-
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation
 typeOf: dcid:StatisticalVariable
 activitySource: dcid:GrossDomesticProduction
 measuredProperty: dcid:amount
-name: "Amount economic activity gross domestic production higher secondary education"
+name: "Amount of gross domestic product from higher secondary education"
+description: "The amount of gross domestic product generated by higher secondary education services"
 statType: dcid:measuredValue
 populationType: dcid:EconomicActivity
 schoolGradeLevel: dcid:HigherSecondaryEducation
-
-
 
 Node: dcid:Amount_ExpenditureActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 activitySource: dcid:GrossDomesticProduction
 measuredProperty: dcid:amount
-name: "Gross domestic product (expenditure approach)"
+name: "Amount of gross domestic product from expenditure activity"
+description: "The amount of gross domestic product calculated using the expenditure method"
 statType: dcid:measuredValue
 populationType: dcid:ExpenditureActivity
-description: "Gross Domestic Product (GDP) calculated using the expenditure method, which sums consumption, investment, government spending, and net exports."
-
 
 Node: dcid:Nominal_Amount_ExpenditureActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
 populationType: dcid:ExpenditureActivity
 measuredProperty: dcid:amount
-name: "Nominal amount of gross domestic product for expenditure activity"
+name: "Nominal amount of gross domestic product from expenditure activity"
+description: "The nominal amount of gross domestic product calculated using the expenditure method"
 statType: dcid:measuredValue
 activitySource: dcid:GrossDomesticProduction
 measurementQualifier: dcid:Nominal
 
-Node: dcid:Count_Household_ConventionalHousehold
+Node: dcid:Number_Household_ConventionalHousehold
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of conventional households"
+description: "The number of households classified as conventional households"
 statType: dcid:measuredValue
 householdType: dcid:ConventionalHousehold
 
-Node: dcid:Count_Household_ConventionalHousehold_Urban
+Node: dcid:Number_Household_ConventionalHousehold_Urban
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
-name: "Number of conventional households in urban areas."
+measuredProperty: dcid:number
+name: "Number of conventional households in urban areas"
+description: "The number of conventional households located in urban areas"
 statType: dcid:measuredValue
 householdType: dcid:ConventionalHousehold
 placeOfResidenceClassification: dcid:Urban
 
-Node: dcid:Count_Household_ConventionalHousehold_Rural
+Node: dcid:Number_Household_ConventionalHousehold_Rural
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of conventional households in rural areas"
+description: "The number of conventional households located in rural areas"
 statType: dcid:measuredValue
 householdType: dcid:ConventionalHousehold
 placeOfResidenceClassification: dcid:Rural
 
-Node: dcid:Count_Household_KenyaGroupQuarters
+Node: dcid:Number_Household_KenyaGroupQuarters
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of group quarter households"
+description: "The number of households classified as group quarters"
 statType: dcid:measuredValue
 householdType: dcid:Kenya_GroupQuarters
 
-Node: dcid:Count_Household_KenyaGroupQuarters_Urban
+Node: dcid:Number_Household_KenyaGroupQuarters_Urban
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 name: "Number of group quarter households in urban areas"
+description: "The number of group quarter households located in urban areas"
 statType: dcid:measuredValue
 householdType: dcid:Kenya_GroupQuarters
 placeOfResidenceClassification: dcid:Urban
 
-Node: dcid:Count_Household_KenyaGroupQuarters_Rural
+Node: dcid:Number_Household_KenyaGroupQuarters_Rural
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
-name: "Number of group quarter household in rural areas"
+measuredProperty: dcid:number
+name: "Number of group quarter households in rural areas"
+description: "The number of group quarter households located in rural areas"
 statType: dcid:measuredValue
 householdType: dcid:Kenya_GroupQuarters
 placeOfResidenceClassification: dcid:Rural
-
