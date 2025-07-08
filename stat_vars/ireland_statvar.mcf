@@ -1,236 +1,297 @@
-Node: dcid:Count_MortalityEvent_Accidents(UnintentionalInjuries)
+
+Node: dcid:Number_MortalityEvent_Accidents(UnintentionalInjuries)
+name: "Deaths from accidents (unintentional injuries)"
+description: "The number of deaths caused by accidents (unintentional injuries)"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:Accidents(UnintentionalInjuries)
 
-Node: dcid:Count_MortalityEvent_Assault(Homicide)
+Node: dcid:Number_MortalityEvent_Assault(Homicide)
+name: "Deaths from assault (homicide)"
+description: "The number of deaths caused by assault (homicide)"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:Assault(Homicide)
 
-Node: dcid:Count_MortalityEvent_EventsOfUndeterminedIntent
+Node: dcid:Number_MortalityEvent_EventsOfUndeterminedIntent
+name: "Deaths from events of undetermined intent"
+description: "The number of deaths caused by events of undetermined intent"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:EventsOfUndeterminedIntent
 
-Node: dcid:Count_MortalityEvent_ExternalCausesOfDeath
+Node: dcid:Number_MortalityEvent_ExternalCausesOfDeath
+name: "Deaths from external causes"
+description: "The number of deaths caused by external causes"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:ExternalCausesOfDeath
 
-Node: dcid:Count_MortalityEvent_IntentionalSelf-Harm(Suicide)
+Node: dcid:Number_MortalityEvent_IntentionalSelf-Harm(Suicide)
+name: "Deaths from intentional self-harm (suicide)"
+description: "The number of deaths caused by intentional self-harm (suicide)"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:IntentionalSelf-Harm(Suicide)
 
-Node: dcid:Count_MortalityEvent_OtherExternalCausesOfDeath
+Node: dcid:Number_MortalityEvent_OtherExternalCausesOfDeath
+name: "Deaths from other external causes"
+description: "The number of deaths caused by other external causes"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:OtherExternalCausesOfDeath
 
-Node: dcid:Count_Person_Years15Onwards_Employed
+Node: dcid:Number_Person_Years15Onwards_Employed
+name: "Employed persons age 15 or more"
+description: "The number of employed persons age 15 or more"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentStatus: dcid:Employed
 
-Node: dcid:Count_Person_Years15Onwards_Employed_Female
+Node: dcid:Number_Person_Years15Onwards_Employed_Female
+name: "Employed females age 15 or more"
+description: "The number of employed females age 15 or more"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentStatus: dcid:Employed
 gender: dcid:Female
 
-Node: dcid:Count_Person_Years15Onwards_Employed_Male
+Node: dcid:Number_Person_Years15Onwards_Employed_Male
+name: "Employed males age 15 or more"
+description: "The number of employed males age 15 or more"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentStatus: dcid:Employed
 gender: dcid:Male
 
-Node: dcid:Count_Person_Years15Onwards_WithExperience_Unemployed
+Node: dcid:Number_Person_Years15Onwards_WithExperience_Unemployed
+name: "Unemployed persons age 15 or more with experience"
+description: "The number of unemployed persons age 15 or more with prior job experience"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentExperienceStatus: dcid:WithExperience
 employmentStatus: dcid:Unemployed
 
-Node: dcid:Count_Person_Years15Onwards_WithExperience_Unemployed_Female
+Node: dcid:Number_Person_Years15Onwards_WithExperience_Unemployed_Female
+name: "Unemployed females age 15 or more with experience"
+description: "The number of unemployed females age 15 or more with prior job experience"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentExperienceStatus: dcid:WithExperience
 employmentStatus: dcid:Unemployed
 gender: dcid:Female
 
-Node: dcid:Count_Person_Years15Onwards_WithExperience_Unemployed_Male
+Node: dcid:Number_Person_Years15Onwards_WithExperience_Unemployed_Male
+name: "Unemployed males age 15 or more with experience"
+description: "The number of unemployed males age 15 or more with prior job experience"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentExperienceStatus: dcid:WithExperience
 employmentStatus: dcid:Unemployed
 gender: dcid:Male
 
-Node: dcid:Count_Person_Years15Onwards_WithoutRegularJobExperience_Unemployed
+Node: dcid:Number_Person_Years15Onwards_WithoutRegularJobExperience_Unemployed
+name: "Unemployed persons age 15 or more without regular job experience"
+description: "The number of unemployed persons age 15 or more without regular job experience"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentExperienceStatus: dcid:WithoutRegularJobExperience
 employmentStatus: dcid:Unemployed
 
-Node: dcid:Count_Person_Years15Onwards_WithoutRegularJobExperience_Unemployed_Female
+Node: dcid:Number_Person_Years15Onwards_WithoutRegularJobExperience_Unemployed_Female
+name: "Unemployed females age 15 or more without regular job experience"
+description: "The number of unemployed females age 15 or more without regular job experience"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentExperienceStatus: dcid:WithoutRegularJobExperience
 employmentStatus: dcid:Unemployed
 gender: dcid:Female
 
-Node: dcid:Count_Person_Years15Onwards_WithoutRegularJobExperience_Unemployed_Male
+Node: dcid:Number_Person_Years15Onwards_WithoutRegularJobExperience_Unemployed_Male
+name: "Unemployed males age 15 or more without regular job experience"
+description: "The number of unemployed males age 15 or more without regular job experience"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:Years15Onwards
 employmentExperienceStatus: dcid:WithoutRegularJobExperience
 employmentStatus: dcid:Unemployed
 gender: dcid:Male
 
-Node: dcid:Count_MortalityEvent_Suicide
+Node: dcid:Number_MortalityEvent_Suicide
+name: "Number of deaths due to suicide"
+description: "Count of mortality events where the cause of death is classified as suicide"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:Suicide
 
-Node: dcid:Count_MortalityEvent_Suicide_Female
+Node: dcid:Number_MortalityEvent_Suicide_Female
+name: "Deaths from suicide among females"
+description: "The number of suicide deaths among females"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:Suicide
 gender: dcid:Female
 
-Node: dcid:Count_MortalityEvent_Suicide_Male
+Node: dcid:Number_MortalityEvent_Suicide_Male
+name: "Deaths from suicide among males"
+description: "The number of suicide deaths among males"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 causeOfDeath: dcid:Suicide
 gender: dcid:Male
 
-Node: dcid:Count_Person_ChurchOfIrelandIncludingProtestant
+Node: dcid:Number_Person_ChurchOfIrelandIncludingProtestant
+name: "Persons affiliated with Church of Ireland including Protestant"
+description: "The number of persons affiliated with the Church of Ireland including Protestant denominations"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 religion: dcid:ChurchOfIrelandIncludingProtestant
 
-Node: dcid:Count_Person_IrelandOtherStatedReligion
+Node: dcid:Number_Person_IrelandOtherStatedReligion
+name: "Persons affiliated with other stated religions in Ireland"
+description: "The number of persons affiliated with other stated religions in Ireland"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 religion: dcid:Ireland_OtherStatedReligion
 
-Node: dcid:Count_Person_Judaism
+Node: dcid:Number_Person_Judaism
+name: "Persons affiliated with Judaism"
+description: "The number of persons affiliated with Judaism"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 religion: dcid:Judaism
 
-Node: dcid:Count_Person_Presbyterian
+Node: dcid:Number_Person_Presbyterian
+name: "Persons affiliated with Presbyterian"
+description: "The number of persons affiliated with the Presbyterian religion"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 religion: dcid:Presbyterian
 
-Node: dcid:Count_Person_RomanCatholicism
+Node: dcid:Number_Person_RomanCatholicism
+name: "Persons affiliated with Roman Catholicism"
+description: "The number of persons affiliated with Roman Catholicism"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 religion: dcid:RomanCatholicism
 
-Node: dcid:Count_Person_WesleyanMethodist
+Node: dcid:Number_Person_WesleyanMethodist
+name: "Persons affiliated with Wesleyan Methodist"
+description: "The number of persons affiliated with the Wesleyan Methodist religion"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 religion: dcid:WesleyanMethodist
 
-Node: dcid:Count_Person_15To24Years_Female
+Node: dcid:Number_Person_15To24Years_Female
+name: "Females age 15 to 24 years"
+description: "The number of females age 15 to 24 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [15 24 Years]
 gender: dcid:Female
 
-Node: dcid:Count_Person_15To24Years_Male
+Node: dcid:Number_Person_15To24Years_Male
+name: "Males age 15 to 24 years"
+description: "The number of males age 15 to 24 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [15 24 Years]
 gender: dcid:Male
 
-Node: dcid:Count_Person_25To44Years
+Node: dcid:Number_Person_25To44Years
+name: "Persons age 25 to 44 years"
+description: "The number of persons age 25 to 44 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [25 44 Years]
 
-Node: dcid:Count_Person_25To44Years_Female
+Node: dcid:Number_Person_25To44Years_Female
+name: "Females age 25 to 44 years"
+description: "The number of females age 25 to 44 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [25 44 Years]
 gender: dcid:Female
 
-Node: dcid:Count_Person_25To44Years_Male
+Node: dcid:Number_Person_25To44Years_Male
+name: "Males age 25 to 44 years"
+description: "The number of males age 25 to 44 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [25 44 Years]
 gender: dcid:Male
 
-Node: dcid:Count_Person_45To64Years
+Node: dcid:Number_Person_45To64Years
+name: "Persons age 45 to 64 years"
+description: "The number of persons age 45 to 64 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [45 64 Years]
