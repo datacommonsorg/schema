@@ -4693,3 +4693,20 @@ typeOf: dcs:Class
 name: "StatVarObsSeries"
 description: "A series of observations for a StatisticalVariable and entity."
 subClassOf: dcid:Intangible
+
+#oecd
+Node: dcid:wasteTreatmentType
+typeOf: dcs:Property
+name: "wasteTreatmentType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WasteTreatmentTypeEnum
+
+Node: dcid:WasteTreatmentTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "WasteTreatmentTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:WasteWaterTreatment
+typeOf: dcid:WasteTreatmentTypeEnum
+name: "WasteWater Treatment"
