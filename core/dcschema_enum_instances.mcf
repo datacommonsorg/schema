@@ -1814,7 +1814,7 @@ Node: dcid:InitialClaimExcludingIntrastateTransitional
 typeOf: dcs:UnemploymentInsuranceClaimTypeEnum
 name: "InitialClaimExcludingIntrastateTransitional"
 description: "Used by State UI programs. Includes intrastate initial claims and interstate initial claims filed from the agent state, but not intrastate transitional claims."
-descriptionUrl: "https://wdr.doleta.gov/directives/attach/ETAH/ETHand401_4th_s01.pdf"
+descriptionUrl: "https://www.dol.gov/sites/dolgov/files/ETA/handbooks/2007/ETHand401_4th_s01.pdf"
 
 Node: dcid:InitialClaim
 typeOf: dcs:UnemploymentInsuranceClaimTypeEnum
@@ -1867,7 +1867,7 @@ Node: dcid:ScaledForPartTimeUnemploymentBenefits
 typeOf: dcs:UnemploymentInsuranceMeasurementEnum
 name: ScaledForPartTimeUnemploymentBenefits
 description: "For Short-Time Compensation program observations. Indicates that the measurement of number of STC claims has been scaled down to the equivalent of the full time layoff initial claims that would have taken place if not for the STC program. That is, if the agreement is for a 20 percent reduction in each STC claimant's hours, then each of these claimants initial claim would represent 20 percent of an equivalent full time layoff initial claim."
-descriptionUrl: "https://wdr.doleta.gov/directives/attach/ETAH/ETHand401_4th_s01.pdf"
+descriptionUrl: "https://www.dol.gov/sites/dolgov/files/ETA/handbooks/2007/ETHand401_4th_s01.pdf"
 
 Node: dcid:COVID_19
 icd10CMCode: dcid:ICD10/U07.1
@@ -2059,7 +2059,7 @@ Node: dcid:Dementia
 typeOf: dcs:MedicalConditionIncidentTypeEnum
 name: "Dementia"
 description: "Dementia describe a group of symptoms affecting memory, thinking and social abilities severely enough to interfere with your daily life."
-medicalSubjectHeadingUnqiueId: dcs:bio/D003704
+medicalSubjectHeadingUniqueId: dcs:bio/D003704
 
 Node: dcid:KidneyDisease
 typeOf: dcs:MedicalConditionIncidentTypeEnum
@@ -3127,6 +3127,16 @@ Node: dcid:GoogleKubernetesEngine
 typeOf: dcs:AutomaticRefreshTypeEnum
 name: "Google Kubernetes Engine"
 description: "Automatic data refresh via Google Kubernetes Engine."
+
+Node: dcid:GCPCloudRunAutomaticRefresh
+typeOf: dcs:AutomaticRefreshTypeEnum
+name: "GCP Cloud Run automatic refresh"
+description: "Automatic data refresh using GCP Cloud Run infrastructure."
+
+Node: dcid:GCPCloudRunSemiAutomaticRefresh
+typeOf: dcs:AutomaticRefreshTypeEnum
+name: "GCP Cloud Run semi-automatic refresh"
+description: "Semi-automatic data refresh using GCP Cloud Run infrastructure."
 
 Node: dcid:InternalPipeline
 typeOf: dcs:AutomaticRefreshTypeEnum, dcs:ProcessingMethodEnum
