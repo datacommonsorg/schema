@@ -1,6 +1,8 @@
+
 Node: dcid:Amount_EconomicActivity_UtilisedScheduledCasteSubPlanFund
 typeOf: dcid:StatisticalVariable
-name: "Scheduled Caste Sub Plan fund utilised (%)"
+name: "Scheduled caste sub plan fund utilised (%)"
+description: "The amount of scheduled caste sub plan fund utilised"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -9,6 +11,7 @@ benefitsStatus: dcid:UtilisedScheduledCasteSubPlanFund
 Node: dcid:Amount_EconomicActivity_UtilisedTribalSubPlanFund
 typeOf: dcid:StatisticalVariable
 name: "Tribal Sub Plan fund utilised (%)"
+description: "The amount of Tribal Sub Plan fund utilised"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -16,24 +19,28 @@ benefitsStatus: dcid:UtilisedTribalSubPlanFund
 
 Node: dcid:Amount_FarmInventory_RiceOrWheat_AsAFractionOf_Area_Farm_RiceOrWheat
 typeOf: dcid:StatisticalVariable
-name: "Rice, wheat and coarse cereals produced annually per unit area (Kg/Ha)","Rice and wheat produced annually per unit area  (Kg/Ha)"
+name: "Rice, wheat and coarse cereals produced annually per unit area (Kg/Ha)"
+description: "The amount of rice, wheat and coarse cereals produced annually per unit area"
 populationType: dcid:FarmInventory
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
 measurementDenominator: dcid:Area_Farm_RiceOrWheat
 farmInventoryType: dcid:Rice__Wheat
 
-Node: dcid:Annual_Count_MedicalConditionIncident_ConditionTuberculosis_AsAFractionOf_Count_Person
+Node: dcid:Annual_Number_MedicalConditionIncident_ConditionTuberculosis_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 name: "Annual notification of Tuberculosis cases per 1 lakh population"
+description: "The annual number of tuberculosis cases notified per 1 lakh population"
 populationType: dcid:MedicalConditionIncident
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 measurementQualifier: dcid:Annual
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 medicalCondition: dcid:Tuberculosis
 
 Node: dcid:Annual_Reserve_Water
+name: "Annual reserve of water"
+description: "The annual reserve of water"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Water
 measuredProperty: dcid:reserve
@@ -43,6 +50,7 @@ statType: dcid:measuredValue
 Node: dcid:Annual_WithdrawalRate_Water_AsAFractionOf_Annual_Reserve_Water
 typeOf: dcid:StatisticalVariable
 name: "Annual ground water withdrawal against net annual availability (%)"
+description: "The annual ground water withdrawal as a fraction of net annual availability"
 populationType: dcid:Water
 measuredProperty: dcid:withdrawalRate
 measurementQualifier: dcid:Annual
@@ -51,13 +59,16 @@ measurementDenominator: dcid:Annual_Reserve_Water
 
 Node: dcid:Area_Farm_RiceOrWheat
 typeOf: dcid:StatisticalVariable
-name: "Rice, wheat and coarse cereals produced annually per unit area (Kg/Ha)","Rice and wheat produced annually per unit area  (Kg/Ha)"
+name: "Rice, wheat and coarse cereals produced annually per unit area (Kg/Ha)"
+description: "The area of farm land used for rice or wheat production"
 populationType: dcid:Farm
 measuredProperty: dcid:area
 statType: dcid:measuredValue
 farmInventoryType: dcid:Rice__Wheat
 
 Node: dcid:Capacity_Electricity
+name: "Installed capacity of electricity"
+description: "The installed capacity of electricity generation"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Electricity
 measuredProperty: dcid:capacity
@@ -66,6 +77,7 @@ statType: dcid:measuredValue
 Node: dcid:Capacity_Electricity_Renewables_AsAFractionOf_Capacity_Electricity
 typeOf: dcid:StatisticalVariable
 name: "Renewable share of installed generating capacity (%)"
+description: "The capacity of renewable energy as a fraction of total installed capacity"
 populationType: dcid:Electricity
 measuredProperty: dcid:capacity
 statType: dcid:measuredValue
@@ -75,6 +87,7 @@ energySource: dcid:Renewables
 Node: dcid:Capacity_Place_SewageTreatement_Urban_AsAFractionOf_GeneratedSewage_Place_Urban
 typeOf: dcid:StatisticalVariable
 name: "Installed sewage treatment capacity as a proportion of sewage created in urban areas (%)"
+description: "The capacity of sewage treatment in urban areas as a fraction of sewage created"
 populationType: dcid:Place
 measuredProperty: dcid:capacity
 statType: dcid:measuredValue
@@ -85,463 +98,531 @@ placeOfResidenceClassification: dcid:Urban
 Node: dcid:Constructed_House_PradhanMantriAwasYojana_AsAFractionOf_Demand_House
 typeOf: dcid:StatisticalVariable
 name: "Houses completed under PMAY as a percentage of net demand assessment for houses"
+description: "The number of houses completed under PMAY as a fraction of net demand assessment"
 populationType: dcid:House
 measuredProperty: dcid:constructed
 statType: dcid:measuredValue
 measurementDenominator: dcid:Demand_House
 benefitsStatus: dcid:PradhanMantriAwasYojana
 
-Node: dcid:Count_BirthEvent_Female_LiveBirth_AsAFractionOf_Count_BirthEvent_LiveBirth_Male
+Node: dcid:Number_BirthEvent_Female_LiveBirth_AsAFractionOf_Number_BirthEvent_LiveBirth_Male
 typeOf: dcid:StatisticalVariable
-name: "Sex  Ratio at Birth (female per 1000 male)"
+name: "Sex ratio at birth (female per 1000 male)"
+description: "The ratio of female to male births"
 populationType: dcid:BirthEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth_Male
+measurementDenominator: dcid:Number_BirthEvent_LiveBirth_Male
 gender: dcid:Female
 medicalStatus: dcid:LiveBirth
 
-Node: dcid:Count_BirthEvent_Registered_AsAFractionOf_Count_BirthEvent
+Node: dcid:Number_BirthEvent_Registered_AsAFractionOf_Number_BirthEvent
 typeOf: dcid:StatisticalVariable
 name: "Births registered (%)"
+description: "The number of births registered as a fraction of total births"
 populationType: dcid:BirthEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent
+measurementDenominator: dcid:Number_BirthEvent
 registrationStatus: dcid:Registered
 
-Node: dcid:Count_BirthEvent_YearsUpto5_LiveBirth
+Node: dcid:Number_BirthEvent_YearsUpto5_LiveBirth
+name: "Number of children aged 12-23 months fully immunized (BCG, Measles and three doses of Pentavalent vaccine) (%)"
+description: "The number of children aged 12-23 months fully immunized with BCG, Measles and three doses of Pentavalent vaccine"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: dcid:YearsUpto5
 medicalStatus: dcid:LiveBirth
 
-Node: dcid:Count_Courthouse_AsAFractionOf_Count_Person
+Node: dcid:Number_Courthouse_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 name: "Estimated number of courts per 10 Lakh persons"
+description: "The estimated number of courts per 10 lakh persons"
 populationType: dcid:Courthouse
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 
-Node: dcid:Count_CriminalIncidents_CorruptionCrime_AsAFractionOf_Count_Person
+Node: dcid:Number_CriminalIncidents_CorruptionCrime_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 name: "Estimated reported corruption crimes per 1 crore population"
+description: "The estimated number of reported corruption crimes per 1 crore population"
 populationType: dcid:CriminalIncidents
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 crimeType: dcid:CorruptionCrime
 
-Node: dcid:Count_CriminalIncidents_CrimeAgainstChildren_AsAFractionOf_Count_Person
+Node: dcid:Number_CriminalIncidents_CrimeAgainstChildren_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 name: "Reported cognizable crimes against children per 1 lakh population"
+description: "The number of reported cognizable crimes against children per 1 lakh population"
 populationType: dcid:CriminalIncidents
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 crimeType: dcid:CrimeAgainstChildren
 
-Node: dcid:Count_Household_BankAccount_AsAFractionOf_Count_Household
+Node: dcid:Number_Household_BankAcnumber_AsAFractionOf_Number_Household
 typeOf: dcid:StatisticalVariable
 name: "Households with a bank account (%)"
+description: "The number of households with a bank account as a fraction of total households"
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household
-facilities: dcid:BankAccount
+measurementDenominator: dcid:Number_Household
+facilities: dcid:BankAcnumber
 
-Node: dcid:Count_Household_Homeless
+Node: dcid:Number_Household_Homeless
 typeOf: dcid:StatisticalVariable
 name: "Number of homeless households per 10,000 households"
+description: "The number of homeless households per 10,000 households"
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 socialVulnerabilityStatus: dcid:Homeless
 
-Node: dcid:Count_Household_IncomeOfIndianRupeeUpto5000_Rural
+Node: dcid:Number_Household_IncomeOfIndianRupeeUpto5000_Rural
+name: "Number of rural households with monthly income up to ₹5,000"
+description: "The number of households in rural areas with a monthly income of up to 5,000 Indian Rupees"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 income: dcid:IndianRupeeUpto5000
 placeOfResidenceClassification: dcid:Rural
 
-Node: dcid:Count_Household_PradhanMantriGramSadakYojana_Road_AsAFractionOf_Count_Household
+Node: dcid:Number_Household_PradhanMantriGramSadakYojana_Road_AsAFractionOf_Number_Household
 typeOf: dcid:StatisticalVariable
-name: "Targeted habitations  connected by all-weather roads under Pradhan Mantri Gram Sadak Yojana (%)"
+name: "Proportion of households with road access under Pradhan Mantri Gram Sadak Yojana"
+description: "The proportion of households with access to roads provided under the Pradhan Mantri Gram Sadak Yojana (PMGSY), calculated as a fraction of the total number of households"
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household
+measurementDenominator: dcid:Number_Household
 benefitsStatus: dcid:PradhanMantriGramSadakYojana
 facilities: dcid:Road
 
-Node: dcid:Count_Household_PublicDistributionSystem_IncomeOfIndianRupeeUpto5000_Rural_AsAFractionOf_Count_Household_IncomeOfIndianRupeeUpto5000_Rural
+Node: dcid:Number_Household_PublicDistributionSystem_IncomeOfIndianRupeeUpto5000_Rural_AsAFractionOf_Number_Household_IncomeOfIndianRupeeUpto5000_Rural
 typeOf: dcid:StatisticalVariable
 name: "Ratio of rural households covered under public distribution system to rural households where monthly income of highest earning member is less than Rs.5,000"
+description: "The ratio of rural households covered under public distribution system to rural households where monthly income of highest earning member is less than Rs.5,000"
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_IncomeOfIndianRupeeUpto5000_Rural
+measurementDenominator: dcid:Number_Household_IncomeOfIndianRupeeUpto5000_Rural
 benefitsStatus: dcid:PublicDistributionSystem
 income: dcid:IndianRupeeUpto5000
 placeOfResidenceClassification: dcid:Rural
 
-Node: dcid:Count_Household_Toilet_Rural_AsAFractionOf_Count_Household_Rural
+Node: dcid:Number_Household_Toilet_Rural_AsAFractionOf_Number_Household_Rural
 typeOf: dcid:StatisticalVariable
 name: "Rural households with individual household toilets (%)"
+description: "The number of rural households with individual household toilets as a fraction of total rural households"
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_Rural
+measurementDenominator: dcid:Number_Household_Rural
 facilities: dcid:Toilet
 placeOfResidenceClassification: dcid:Rural
 
-Node: dcid:Count_Household_WithHealthSchemeOrWithHealthInsurance_AsAFractionOf_Count_Household
+Node: dcid:Number_Household_WithHealthSchemeOrWithHealthInsurance_AsAFractionOf_Number_Household
 typeOf: dcid:StatisticalVariable
 name: "Households with any usual member covered by any health scheme or health insurance (%)"
+description: "The number of households with any usual member covered by any health scheme or health insurance as a fraction of total households"
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household
+measurementDenominator: dcid:Number_Household
 healthInsurance: dcid:WithHealthScheme__WithHealthInsurance
 
-Node: dcid:Count_MortalityEvent_YearsUpto5_AsAFractionOf_Count_BirthEvent_YearsUpto5_LiveBirth
+Node: dcid:Number_MortalityEvent_YearsUpto5_AsAFractionOf_Number_BirthEvent_YearsUpto5_LiveBirth
 typeOf: dcid:StatisticalVariable
 name: "Under-five mortality rate per 1,000 live births"
+description: "The number of under-five mortality events as a fraction of live births"
 populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_YearsUpto5_LiveBirth
+measurementDenominator: dcid:Number_BirthEvent_YearsUpto5_LiveBirth
 age: dcid:YearsUpto5
 
-Node: dcid:Count_MunicipalWard
+Node: dcid:Number_MunicipalWard
+name: "Number of Municipal Wards"
+description: "The number of municipal wards"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MunicipalWard
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 
-Node: dcid:Count_MunicipalWard_100Percent_DoorToDoorWasteCollection_AsAFractionOf_Count_MunicipalWard
+Node: dcid:Number_MunicipalWard_100Percent_DoorToDoorWasteCollection_AsAFractionOf_Number_MunicipalWard
 typeOf: dcid:StatisticalVariable
 name: "Wards with 100% door to door waste collection (%)"
+description: "The number of wards with 100% door to door waste collection as a fraction of total wards"
 populationType: dcid:MunicipalWard
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_MunicipalWard
+measurementDenominator: dcid:Number_MunicipalWard
 coverage: [100 Percent]
 facilities: dcid:DoorToDoorWasteCollection
 
-Node: dcid:Count_Person_15To49Year_Female_Married
+Node: dcid:Number_Person_15To49Year_Female_Married
 typeOf: dcid:StatisticalVariable
+name: "Number of married women aged 15-49"
+description: "The number of married women aged 15-49"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [15 49 Years]
 gender: dcid:Female
 maritalStatus: dcid:Married
 
-Node: dcid:Count_Person_15To49Year_SpousalViolence_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married
+Node: dcid:Number_Person_15To49Year_SpousalViolence_Female_Married_AsAFractionOf_Number_Person_15To49Year_Female_Married
 typeOf: dcid:StatisticalVariable
 name: "Married women aged 15-49 who have ever experienced spousal violence (%)"
+description: "The number of married women aged 15-49 who have ever experienced spousal violence as a fraction of total married women aged 15-49"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
+measurementDenominator: dcid:Number_Person_15To49Year_Female_Married
 age: [15 49 Years]
 crimeType: dcid:SpousalViolence
 gender: dcid:Female
 maritalStatus: dcid:Married
 
-Node: dcid:Count_Person_1To2Year
+Node: dcid:Number_Person_1To2Year
 typeOf: dcid:StatisticalVariable
+name: "Births registered (%)"
+description: "The number of births registered as a fraction of total births"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [1 2 Years]
 
-Node: dcid:Count_Person_1To2Year_VaccineAdministered_BCGOrMeaslesOrPentavalent_AsAFractionOf_Count_Person_1To2Year
+Node: dcid:Number_Person_1To2Year_VaccineAdministered_BCGOrMeaslesOrPentavalent_AsAFractionOf_Number_Person_1To2Year
 typeOf: dcid:StatisticalVariable
-name: "Children aged 12-23 months fully immunized (BCG, Measles and three doses of Pentavalent vaccine) (%)"
+name: "Number of children aged 12-23 months fully immunized (BCG, Measles and three doses of Pentavalent vaccine) (%)"
+description: "The number of children aged 12-23 months fully immunized with BCG, Measles and three doses of Pentavalent vaccine"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_1To2Year
+measurementDenominator: dcid:Number_Person_1To2Year
 age: [1 2 Years]
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG__Measles__Pentavalent
 
-Node: dcid:Count_Person_6To13Year
+Node: dcid:Number_Person_6To13Year
+name: "Number of people aged 6–13 years"
+description: "The total number of individuals in the 6 to 13 years age group"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [6 13 Years]
 
-Node: dcid:Count_Person_6To13Year_NotEnrolledInSchool_AsAFractionOf_Count_Person_6To13Year
+Node: dcid:Number_Person_6To13Year_NotEnrolledInSchool_AsAFractionOf_Number_Person_6To13Year
 typeOf: dcid:StatisticalVariable
-name: "Children in the age group of 6-13 who are out of school (%)"
+name: "Proportion of children aged 6–13 years not enrolled in school"
+description: "The proportion of individuals aged 6 to 13 years who are not enrolled in school, calculated as a fraction of the total population in that age group"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_6To13Year
+measurementDenominator: dcid:Number_Person_6To13Year
 age: [6 13 Years]
 schoolEnrollment: dcid:NotEnrolledInSchool
 
-Node: dcid:Count_Person_ATM_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_ATM_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
 name: "Number of ATMs per 1,00,000 population"
+description: "The number of ATMs per 1,00,000 population"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 facilities: dcid:ATM
 
-Node: dcid:Count_Person_Aadhaar_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_Aadhaar_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
-name: "Population covered under Aadhaar (%)"
+name: "Proportion of people with Aadhaar"
+description: "The proportion of the population that possesses an Aadhaar identification, calculated as a fraction of the total population"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 governmentId: dcid:Aadhaar
 
-Node: dcid:Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
+Node: dcid:Number_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
+name: "Number of people eligible for maternity benefit under social protection"
+description: "The number of individuals who are eligible to receive maternity benefits as part of social protection programs"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 benefitsStatus: dcid:EligibleSocialProtectionBenefitUnderMaternityBenefit
 
-Node: dcid:Count_Person_Employed_AsAFractionOf_Count_Person_MGNREGAUnemployed
+Node: dcid:Number_Person_Employed_AsAFractionOf_Number_Person_MGNREGAUnemployed
 typeOf: dcid:StatisticalVariable
 name: "Persons provided employment as a percentage of persons who demanded employment under MGNREGA (%)"
+description: "The number of persons provided employment under MGNREGA as a fraction of persons who demanded employment"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_MGNREGAUnemployed
+measurementDenominator: dcid:Number_Person_MGNREGAUnemployed
 employmentStatus: dcid:Employed
 
-Node: dcid:Count_Person_EnrolledInSchool_SchoolGrade1To10_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_EnrolledInSchool_SchoolGrade1To10_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
-name: "Adjusted Net Enrolment Ratio at Elementary  (Class 1-8) and Secondary (Class 9-10) school (%)"
+name: "Adjusted net enrolment ratio at elementary (class 1-8) and secondary (class 9-10) school (%)"
+description: "The number of persons enrolled in school grades 1-10 as a fraction of total population"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 schoolEnrollment: dcid:EnrolledInSchool
 schoolGradeLevel: dcid:SchoolGrade1To10
 
-Node: dcid:Count_Person_Female_LegislatorOccupation_AsAFractionOf_Count_Person_LegislatorOccupation
+Node: dcid:Number_Person_Female_LegislatorOccupation_AsAFractionOf_Number_Person_LegislatorOccupation
 typeOf: dcid:StatisticalVariable
 name: "Seats won by women in the general elections to state legislative assembly (%)"
+description: "The number of seats won by women in the general elections to state legislative assembly"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_LegislatorOccupation
+measurementDenominator: dcid:Number_Person_LegislatorOccupation
 gender: dcid:Female
 occupation: dcid:Legislator
 
-Node: dcid:Count_Person_Government_PhysicianOrNurseAndMidwivesOccupation_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_Government_PhysicianOrNurseAndMidwivesOccupation_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
-name: "Number of governmental physicians, nurses and midwives per 1,00,000 population"
+name: "Number of governmental Physicians, Nurses and Midwives per 1,00,000 population"
+description: "The number of Governmental Physicians, Nurses and Midwives per 1,00,000 population"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 employer: dcid:Government
 occupation: dcid:Physician__NurseAndMidwives
 
-Node: dcid:Count_Person_InLaborForce_Female_AsAFractionOf_Count_Person_InLaborForce_Male
+Node: dcid:Number_Person_InLaborForce_Female_AsAFractionOf_Number_Person_InLaborForce_Male
 typeOf: dcid:StatisticalVariable
-name: "Ratio of Female Labour force participation rate to Male Labour force participation rate"
+name: "Ratio of female labour force participation rate to Male Labour force participation rate"
+description: "The ratio of female to male labour force participation rate"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_InLaborForce_Male
+measurementDenominator: dcid:Number_Person_InLaborForce_Male
 employmentStatus: dcid:InLaborForce
 gender: dcid:Female
 
-Node: dcid:Count_Person_InLaborForce_Transgender_AsAFractionOf_Count_Person_Male
+Node: dcid:Number_Person_InLaborForce_Transgender_AsAFractionOf_Number_Person_Male
 typeOf: dcid:StatisticalVariable
-name: "Ratio of Transgender Labour force participation rate to Male Labour force participation rate"
+name: "Ratio of transgender labour force participation rate to male labour force participation rate"
+description: "The ratio of transgender to male labour force participation rate"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_Male
+measurementDenominator: dcid:Number_Person_Male
 employmentStatus: dcid:InLaborForce
 gender: dcid:Transgender
 
-Node: dcid:Count_Person_LegislatorOccupation
+Node: dcid:Number_Person_LegislatorOccupation
+name: "Number of persons with legislator occupation"
+description: "The number of persons with legislator occupation"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 occupation: dcid:Legislator
 
-Node: dcid:Count_Person_MGNREGAUnemployed
+Node: dcid:Number_Person_MGNREGAUnemployed
+name: "Number of MGNREGA unemployed persons"
+description: "The number of persons who are unemployed under the MGNREGA scheme"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 employmentStatus: dcid:MGNREGA_Unemployed
 
-Node: dcid:Count_Person_MobileConnection_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_MobileConnection_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
-name: "Number of mobile connections per 100 persons in rural and urban area (Mobile Tele density)"
+name: "Number of mobile connections per 100 persons"
+description: "The number of mobile connections per 100 persons in rural and urban areas"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 facilities: dcid:MobileConnection
 
-Node: dcid:Count_Person_ReceivingSocialProtectionBenefitUnderMaternityBenefit_AsAFractionOf_Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
+Node: dcid:Number_Person_ReceivingSocialProtectionBenefitUnderMaternityBenefit_AsAFractionOf_Number_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
 typeOf: dcid:StatisticalVariable
-name: "Proportion of the population (out of total eligible population) receiving social protection benefits under Maternity Benefit"
+name: "Proportion of the population receiving social protection benefits under Maternity Benefit"
+description: "The number of persons receiving social protection benefits under Maternity Benefit as a fraction of the total eligible population"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
+measurementDenominator: dcid:Number_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit
 benefitsStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
 
-Node: dcid:Count_Person_WithInternetSubscription_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_WithInternetSubscription_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
-name: "Number of Internet Subscribers per 100 population"
+name: "Number of internet subscribers per 100 population"
+description: "The number of internet subscribers per 100 population"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 internetAccessStatus: dcid:WithInternetSubscription
 
-Node: dcid:Count_Person_YearsUpto5_ConditionStunted_AsAFractionOf_Count_Person_Upto5Years
+Node: dcid:Number_Person_YearsUpto5_ConditionStunted_AsAFractionOf_Number_Person_Upto5Years
 typeOf: dcid:StatisticalVariable
 name: "Children under age 5 years who are stunted (%)"
+description: "The number of children under age 5 years who are stunted as a fraction of total children under 5 years"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_Upto5Years
+measurementDenominator: dcid:Number_Person_Upto5Years
 age: dcid:YearsUpto5
 medicalCondition: dcid:Stunted
 
-Node: dcid:Count_Place_District_OpenDefecationFree
+Node: dcid:Number_Place_District_OpenDefecationFree
 typeOf: dcid:StatisticalVariable
-name: "Districts verified to be Open Defecation Free (%)"
+name: "Districts verified to be open defecation free (%)"
+description: "The number of districts verified to be open defecation free as a fraction of total districts"
 populationType: dcid:Place
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 placeType: dcid:District
 socialCondition: dcid:OpenDefecationFree
 
-Node: dcid:Count_School_ElementarySchool
+Node: dcid:Number_School_ElementarySchool
+name: "Number of elementary schools"
+description: "The number of elementary schools"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:School
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 schoolGradeLevel: dcid:ElementarySchool
 
-Node: dcid:Count_School_ElementarySchool_StudentTeacherRatioUpto30_AsAFractionOf_Count_School_ElementarySchool
+Node: dcid:Number_School_ElementarySchool_StudentTeacherRatioUpto30_AsAFractionOf_Number_School_ElementarySchool
 typeOf: dcid:StatisticalVariable
-name: "Elementary and secondary schools with Pupil Teacher Ratio less than/equal to 30 (%)"
+name: "Elementary and secondary schools with Pupil Teacher ratio less than/equal to 30 (%)"
+description: "The number of elementary schools with a pupil teacher ratio less than or equal to 30 as a fraction of total elementary schools"
 populationType: dcid:School
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_School_ElementarySchool
+measurementDenominator: dcid:Number_School_ElementarySchool
 schoolGradeLevel: dcid:ElementarySchool
 studentTeacherRatio: dcid:StudentTeacherRatioUpto30
 
-Node: dcid:Count_Student_Pass_SchoolGrade5_LanguageOrMathematicsOrEVS
+Node: dcid:Number_Student_Pass_SchoolGrade5_LanguageOrMathematicsOrEVS
 typeOf: dcid:StatisticalVariable
-name: "Correct responses on Learning Outcomes in Language, Mathematics and EVS for Class 5 students (%)"
+name: "Correct responses on learning outcomes in Language, Mathematics and EVS for Class 5 students (%)"
+description: "The number of students in Class 5 who passed in Language, Mathematics, and EVS"
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 assessmentLevel: dcid:Pass
 schoolGradeLevel: dcid:SchoolGrade5
 schoolSubject: dcid:Language__Mathematics__EVS
 
-Node: dcid:Count_Student_Pass_SchoolGrade8_LanguageOrMathematicsOrScienceOrSocialScience
+Node: dcid:Number_Student_Pass_SchoolGrade8_LanguageOrMathematicsOrScienceOrSocialScience
 typeOf: dcid:StatisticalVariable
-name: "Correct responses on Learning Outcomes in Language, Mathematics, Science and Social Science for Class 8 students (%)"
+name: "Correct responses on Learning outcomes in Language, Mathematics, Science and Social Science for class 8 students (%)"
+description: "The number of students in class 8 who passed in Language, Mathematics, Science, and Social Science"
 populationType: dcid:Student
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 assessmentLevel: dcid:Pass
 schoolGradeLevel: dcid:SchoolGrade8
 schoolSubject: dcid:Language__Mathematics__Science__SocialScience
 
-Node: dcid:Count_Teacher_ProfessionallyQualified_AsAFractionOf_Count_Teacher
+Node: dcid:Number_Teacher_ProfessionallyQualified_AsAFractionOf_Number_Teacher
 typeOf: dcid:StatisticalVariable
 name: "School teachers professionally qualified (%)"
+description: "The number of teachers who are professionally qualified as a fraction of total teachers"
 populationType: dcid:Teacher
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Teacher
+measurementDenominator: dcid:Number_Teacher
 qualificationStatus: dcid:ProfessionallyQualified
 
-Node: dcid:Count_Village
+Node: dcid:Number_Village
+name: "Number of villages"
+description: "The number of villages"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Village
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 
-Node: dcid:Count_Village_BharatNetBroadbandService_AsAFractionOf_Count_Village
+Node: dcid:Number_Village_BharatNetBroadbandService_AsAFractionOf_Number_Village
 typeOf: dcid:StatisticalVariable
 name: "Gram Panchayats covered under Bharat Net (%)"
+description: "The number of villages covered under Bharat Net broadband service as a fraction of total villages"
 populationType: dcid:Village
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Village
+measurementDenominator: dcid:Number_Village
 facilities: dcid:BharatNetBroadbandService
 
-Node: dcid:Count_WHO/PregnantWomen_15To49Year
+Node: dcid:Number_WHO/PregnantWomen_15To49Year
+name: "Number of pregnant women aged 15-49"
+description: "The number of pregnant women aged 15-49"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:WHO/PregnantWomen
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [15 49 Years]
 
-Node: dcid:Count_WHO/PregnantWomen_15To49Year_ConditionAnaemia_AsAFractionOf_Count_WHO/PregnantWomen_15To49Year
+Node: dcid:Number_WHO/PregnantWomen_15To49Year_ConditionAnaemia_AsAFractionOf_Number_WHO/PregnantWomen_15To49Year
 typeOf: dcid:StatisticalVariable
 name: "Pregnant women aged 15-49 yrs who are anaemic (11.0g/dl) (%)"
+description: "The number of pregnant women aged 15-49 who are anaemic as a fraction of total pregnant women aged 15-49"
 populationType: dcid:WHO/PregnantWomen
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_WHO/PregnantWomen_15To49Year
+measurementDenominator: dcid:Number_WHO/PregnantWomen_15To49Year
 age: [15 49 Years]
 medicalCondition: dcid:Anaemia
 
-Node: dcid:Count_WasteGenerated
+Node: dcid:Number_WasteGenerated
+name: "Amount of waste generated"
+description: "The amount of waste generated"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:WasteGenerated
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 
-Node: dcid:Count_WasteGenerated_Processed_AsAFractionOf_Count_WasteGenerated
+Node: dcid:Number_WasteGenerated_Processed_AsAFractionOf_Number_WasteGenerated
 typeOf: dcid:StatisticalVariable
 name: "Waste processed (%)"
+description: "The number of waste generated that is processed as a fraction of total waste generated"
 populationType: dcid:WasteGenerated
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_WasteGenerated
+measurementDenominator: dcid:Number_WasteGenerated
 processingStatus: dcid:Processed
 
 Node: dcid:Demand_House
+name: "Demand for houses"
+description: "The demand for houses"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:House
 measuredProperty: dcid:demand
 statType: dcid:measuredValue
 
-Node: dcid:ElectrifiedHouseholds_Household_AsAFractionOf_Count_Household
+Node: dcid:ElectrifiedHouseholds_Household_AsAFractionOf_Number_Household
 typeOf: dcid:StatisticalVariable
 name: "Households electrified (%)"
+description: "The number of households electrified as a fraction of total households"
 populationType: dcid:Household
 measuredProperty: dcid:electrifiedHouseholds
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household
+measurementDenominator: dcid:Number_Household
 
 Node: dcid:GeneratedSewage_Place_Urban
+name: "Sewage generated in urban areas"
+description: "The amount of sewage generated in urban areas"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Place
 measuredProperty: dcid:generatedSewage
@@ -550,7 +631,8 @@ placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:PalmaRatio_Expenditure_Household_Rural
 typeOf: dcid:StatisticalVariable
-name: "Palma Ratio of Household Expenditure in Rural India"
+name: "Palma ratio of household expenditure in rural India"
+description: "The Palma ratio of household expenditure in rural India"
 populationType: dcid:Household
 measuredProperty: dcid:expenditure
 statType: dcid:palmaRatio
@@ -558,7 +640,8 @@ placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:PalmaRatio_Expenditure_Household_Urban
 typeOf: dcid:StatisticalVariable
-name: "Palma Ratio of Household Expenditure in Urban India"
+name: "Palma ratio of household expenditure in urban India"
+description: "The Palma ratio of household expenditure in urban India"
 populationType: dcid:Household
 measuredProperty: dcid:expenditure
 statType: dcid:palmaRatio
@@ -566,7 +649,8 @@ placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:WagesDaily_Person_15To59Year_Female_AsAFractionOf_WagesDaily_Person_15To59Year_Male
 typeOf: dcid:StatisticalVariable
-name: "Average female to male ratio of average wages/salaries received per day by regular wage/salaried employees of age 15-59 for rural and urban"
+name: "Average female to male ratio of average wages received per day"
+description: "The average female to male ratio of average wages received per day by regular wage/salaried employees aged 15-59"
 populationType: dcid:Person
 measuredProperty: dcid:wagesDaily
 statType: dcid:measuredValue
@@ -575,6 +659,8 @@ age: [15 59 Years]
 gender: dcid:Female
 
 Node: dcid:WagesDaily_Person_15To59Year_Male
+name: "Average daily wages of males aged 15-59"
+description: "The average daily wages of males aged 15-59"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:wagesDaily
@@ -583,6 +669,8 @@ age: [15 59 Years]
 gender: dcid:Male
 
 Node: dcid:Capacity_Place_SewageTreatement_Urban
+name: "Capacity of sewage treatment in urban areas"
+description: "The capacity of sewage treatment in urban areas"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Place
 measuredProperty: dcid:capacity
@@ -590,95 +678,114 @@ statType: dcid:measuredValue
 facilities: dcid:SewageTreatement
 placeOfResidenceClassification: dcid:Urban
 
-Node: dcid:Count_Person_0To4Year_Underweight
+Node: dcid:Number_Person_0To4Year_Underweight
+name: "Number of underweight children aged 0-4"
+description: "The number of children aged 0-4 who are underweight"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [0 4 Years]
 healthBehavior: dcid:Underweight
 
-Node: dcid:Count_Person_15To49Year_Adolescents
+Node: dcid:Number_Person_15To49Year_Adolescents
+name: "Number of adolescents aged 15-49"
+description: "The number of adolescents aged 15-49"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [15 49 Years]
 ageGroupClassification: dcid:Adolescents
 
-Node: dcid:Count_Person_15To49Year_Adolescents_ConditionAnaemia_AsAFractionOf_Count_Person_15To49Year_Adolescents
+Node: dcid:Number_Person_15To49Year_Adolescents_ConditionAnaemia_AsAFractionOf_Number_Person_15To49Year_Adolescents
+name: "Adolescents aged 15-49 who are Anaemic (%)"
+description: "The number of adolescents aged 15-49 who are Anaemic as a fraction of total adolescents aged 15-49"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_15To49Year_Adolescents
+measurementDenominator: dcid:Number_Person_15To49Year_Adolescents
 age: [15 49 Years]
 ageGroupClassification: dcid:Adolescents
 medicalCondition: dcid:Anaemia
 
-Node: dcid:Count_Person_EnrolledInSchool_SchoolGrade1To8_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_EnrolledInSchool_SchoolGrade1To8_AsAFractionOf_Number_Person
 typeOf: dcid:StatisticalVariable
-name: "Adjusted Net Enrolment Ratio (ANER) in elementary education (class 1-8)"
+name: "Adjusted net enrolment ratio (ANER) in elementary education (class 1-8)"
+description: "The number of persons enrolled in school grades 1-8 as a fraction of total population"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 schoolEnrollment: dcid:EnrolledInSchool
 schoolGradeLevel: dcid:SchoolGrade1To8
 
-Node: dcid:Count_Person_15To19Year_InLaborForce_Female_AsAFractionOf_Count_Person_15To19Year_InLaborForce_Male
+Node: dcid:Number_Person_15To19Year_InLaborForce_Female_AsAFractionOf_Number_Person_15To19Year_InLaborForce_Male
 typeOf: dcid:StatisticalVariable
-name: "Ratio of female to male Labour Force Participation Rate (LFPR) (15-59 years)"
+name: "Ratio of female to male labour force participation rate (LFPR) (15-59 years)"
+description: "The ratio of female to male labour force participation rate for persons aged 15-19"
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_15To19Year_InLaborForce_Male
+measurementDenominator: dcid:Number_Person_15To19Year_InLaborForce_Male
 age: [15 19 Years]
 employmentStatus: dcid:InLaborForce
 gender: dcid:Female
 
-Node: dcid:Count_Person_15To19Year_InLaborForce_Male
+Node: dcid:Number_Person_15To19Year_InLaborForce_Male
+name: "Number of males aged 15-19 in labor force"
+description: "The number of males aged 15-19 who are in the labor force"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [15 19 Years]
 employmentStatus: dcid:InLaborForce
 gender: dcid:Male
 
-Node: dcid:Count_Person_PradhanMantriJanDhanYojana_BankAccount_AsAFractionOf_Count_Person
+Node: dcid:Number_Person_PradhanMantriJanDhanYojana_BankAcnumber_AsAFractionOf_Number_Person
+name: "Number of persons with Pradhan Mantri Jan Dhan Yojana bank account (%)"
+description: "The number of persons with Pradhan Mantri Jan Dhan Yojana bank account as a fraction of total population"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
+measurementDenominator: dcid:Number_Person
 benefitsStatus: dcid:PradhanMantriJanDhanYojana
-facilities: dcid:BankAccount
+facilities: dcid:BankAcnumber
 
 Node: dcid:UnemploymentRate_Person_15To59Year
 typeOf: dcid:StatisticalVariable
 name: "Unemployment rate (%) (15-59 years)"
+description: "The unemployment rate for persons aged 15-59"
 populationType: dcid:Person
 measuredProperty: dcid:unemploymentRate
 statType: dcid:measuredValue
 age: [15 59 Years]
 
-Node: dcid:Count_Households
+Node: dcid:Number_Households
+name: "Number of households"
+description: "The number of households"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Households
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 
-Node: dcid:Count_Households_PradhanMantriGramSadakYojana_Road_AsAFractionOf_Count_Households
+Node: dcid:Number_Households_PradhanMantriGramSadakYojana_Road_AsAFractionOf_Number_Households
+name: "Targeted habitations connected by all-weather roads under Pradhan Mantri Gram Sadak Yojana (%)"
+description: "The number of households connected by all-weather roads under Pradhan Mantri Gram Sadak Yojana as a fraction of total households"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Households
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Households
+measurementDenominator: dcid:Number_Households
 benefitsStatus: dcid:PradhanMantriGramSadakYojana
 facilities: dcid:Road
 
 Node: dcid:IndexScore_Household_WithHealthSchemeOrWithHealthInsurance
+name: "Index score for households with health scheme or health insurance"
+description: "The index score for households with health scheme or health insurance"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
@@ -686,6 +793,8 @@ statType: dcid:measuredValue
 healthInsurance: dcid:WithHealthScheme__WithHealthInsurance
 
 Node: dcid:IndexScore_Person_BelowPovertyLevelInThePast12Months
+name: "Index score for persons below poverty level"
+description: "The index score for persons below poverty level"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -693,6 +802,8 @@ statType: dcid:measuredValue
 povertyStatus: dcid:BelowPovertyLevelInThePast12Months
 
 Node: dcid:IndexScore_Person_ReceivingSocialProtectionBenefitUnderMaternityBenefit
+name: "Index score for persons receiving social protection benefit under maternity benefit"
+description: "The index score for persons receiving social protection benefit under maternity benefit"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -700,6 +811,8 @@ statType: dcid:measuredValue
 benefitsStatus: dcid:ReceivingSocialProtectionBenefitUnderMaternityBenefit
 
 Node: dcid:IndexScore_EconomicActivity_UtilisedScheduledCasteSubPlanFund
+name: "Index score for utilised Scheduled Caste Sub Plan fund"
+description: "The index score for utilised Scheduled Caste Sub Plan fund"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:indexScore
@@ -707,6 +820,8 @@ statType: dcid:measuredValue
 benefitsStatus: dcid:UtilisedScheduledCasteSubPlanFund
 
 Node: dcid:IndexScore_EconomicActivity_UtilisedTribalSubPlanFund
+name: "Index score of economic activity utilizing tribal sub-plan fund"
+description: "The index score of economic activity that has utilized the  tribal sub-plan fund"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:indexScore
@@ -714,6 +829,8 @@ statType: dcid:measuredValue
 benefitsStatus: dcid:UtilisedTribalSubPlanFund
 
 Node: dcid:IndexScore_House_PradhanMantriAwasYojana
+name: "Index score of houses covered under Pradhan Mantri Awas Yojana"
+description: "The index score of houses benefiting from the Pradhan Mantri Awas Yojana scheme"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:House
 measuredProperty: dcid:indexScore
@@ -721,6 +838,8 @@ statType: dcid:measuredValue
 benefitsStatus: dcid:PradhanMantriAwasYojana
 
 Node: dcid:IndexScore_MunicipalWard_100Percent_DoorToDoorWasteCollection
+name: "Index score of municipal wards with 100 percent door-to-door waste collection"
+description: "The index score of municipal wards where door-to-door waste collection coverage is 100 percent"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MunicipalWard
 measuredProperty: dcid:indexScore
@@ -729,6 +848,8 @@ coverage: [100 Percent]
 facilities: dcid:DoorToDoorWasteCollection
 
 Node: dcid:IndexScore_Place_SewageTreatement_Urban
+name: "Index score of urban places with sewage treatment facilities"
+description: "The index score of urban areas with access to sewage treatment facilities"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Place
 measuredProperty: dcid:indexScore
@@ -737,6 +858,8 @@ facilities: dcid:SewageTreatement
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:IndexScore_WasteGenerated_Processed
+name: "Index score of processed waste generated"
+description: "The index score of the portion of waste generated that has been processed"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:WasteGenerated
 measuredProperty: dcid:indexScore
@@ -744,6 +867,8 @@ statType: dcid:measuredValue
 processingStatus: dcid:Processed
 
 Node: dcid:Annual_IndexScore_Water
+name: "Annual index score of water"
+description: "The annual index score related to water resources or services"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Water
 measuredProperty: dcid:indexScore
@@ -751,6 +876,8 @@ measurementQualifier: dcid:Annual
 statType: dcid:measuredValue
 
 Node: dcid:IndexScore_Electricity_Renewables
+name: "Index score of electricity from renewable sources"
+description: "The index score of electricity generated using renewable energy sources"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Electricity
 measuredProperty: dcid:indexScore
@@ -758,6 +885,8 @@ statType: dcid:measuredValue
 energySource: dcid:Renewables
 
 Node: dcid:IndexScore_BirthEvent_Registered
+name: "Index score of registered birth events"
+description: "The index score of birth events that have been officially registered"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
 measuredProperty: dcid:indexScore
@@ -765,12 +894,16 @@ statType: dcid:measuredValue
 registrationStatus: dcid:Registered
 
 Node: dcid:IndexScore_Courthouse
+name: "Index score of courthouses"
+description: "The index score reflecting the quality or performance of courthouses"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Courthouse
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
 
 Node: dcid:IndexScore_CriminalActivities_MurderAndNonNegligentManslaughter
+name: "Index score of murder and non-negligent manslaughter cases"
+description: "The index score of reported murder and non-negligent manslaughter cases"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:CriminalActivities
 measuredProperty: dcid:indexScore
@@ -778,6 +911,8 @@ statType: dcid:measuredValue
 crimeType: dcid:MurderAndNonNegligentManslaughter
 
 Node: dcid:IndexScore_CriminalIncidents_CorruptionCrime
+name: "Index score of corruption-related criminal incidents"
+description: "The index score of criminal incidents involving corruption"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:CriminalIncidents
 measuredProperty: dcid:indexScore
@@ -787,35 +922,44 @@ crimeType: dcid:CorruptionCrime
 Node: dcid:IndexScore_CriminalIncidents_CrimeAgainstChildren
 typeOf: dcid:StatisticalVariable
 name: "Reported cognizable crimes against children per 1 lakh population"
+description: "The index score representing the rate of cognizable crimes reported against children per 1 lakh population"
 populationType: dcid:CriminalIncidents
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
 crimeType: dcid:CrimeAgainstChildren
 
 Node: dcid:IndexScore_Person_Aadhaar
+name: "Index score of Aadhaar identification coverage"
+description: "The index score reflecting the coverage of individuals with Aadhaar identification"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
 governmentId: dcid:Aadhaar
 
-Node: dcid:Count_Person_6To59Year
+Node: dcid:Number_Person_6To59Year
+name: "Number of persons age 6 to 59 years"
+description: "The total number of persons in the age group 6 to 59 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
 age: [6 59 Years]
 
-Node: dcid:Count_Person_6To59Year_ConditionAnaemia_AsAFractionOf_Count_Person_6To59Year
+Node: dcid:Number_Person_6To59Year_ConditionAnaemia_AsAFractionOf_Number_Person_6To59Year
+name: "Persons age 6 to 59 years with Anaemia (%)"
+description: "Percentage of persons age 6 to 59 years diagnosed with Anaemia"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_6To59Year
+measurementDenominator: dcid:Number_Person_6To59Year
 age: [6 59 Years]
 medicalCondition: dcid:Anaemia
 
 Node: dcid:IndexScore_Household_PublicDistributionSystem_IncomeOfIndianRupeeUpto5000_Rural
+name: "Index score of rural households with income up to ₹5000 using Public Distribution System"
+description: "The index score of rural households earning up to ₹5000 that benefit from the Public Distribution System"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
@@ -825,6 +969,8 @@ income: dcid:IndianRupeeUpto5000
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:IndexScore_Person_0To4Year_Underweight
+name: "Index score of underweight children age 0 to 4 years"
+description: "The index score of children age 0 to 4 years who are underweight"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -833,6 +979,8 @@ age: [0 4 Years]
 healthBehavior: dcid:Underweight
 
 Node: dcid:IndexScore_Person_6To59Year_ConditionAnaemia
+name: "Index score of anaemia among persons age 6 to 59 years"
+description: "The index score indicating the prevalence of anaemia among persons age 6 to 59 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -841,6 +989,8 @@ age: [6 59 Years]
 medicalCondition: dcid:Anaemia
 
 Node: dcid:IndexScore_Person_YearsUpto5_ConditionStunted
+name: "Index score of stunted children under 5 years"
+description: "The index score of children under age 5 who are stunted"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -849,6 +999,8 @@ age: dcid:YearsUpto5
 medicalCondition: dcid:Stunted
 
 Node: dcid:Annual_IndexScore_MedicalConditionIncident_ConditionTuberculosis
+name: "Annual index score of tuberculosis incidents"
+description: "The annual index score of reported tuberculosis medical condition incidents"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:indexScore
@@ -857,12 +1009,16 @@ statType: dcid:measuredValue
 medicalCondition: dcid:Tuberculosis
 
 Node: dcid:IndexScore_MaternalMortalityEvent
+name: "Index score of maternal mortality events"
+description: "The index score of events related to maternal mortality"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MaternalMortalityEvent
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
 
 Node: dcid:IndexScore_MortalityEvent_YearsUpto5
+name: "Index score of mortality events for children under 5 years"
+description: "The index score of mortality events among children aged up to 5 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
 measuredProperty: dcid:indexScore
@@ -870,6 +1026,8 @@ statType: dcid:measuredValue
 age: dcid:YearsUpto5
 
 Node: dcid:IndexScore_Person_Government_PhysicianOrNurseAndMidwivesOccupation
+name: "Index score of government-employed physicians, nurses, and midwives"
+description: "The index score of persons working as physicians, nurses, and midwives in government employment"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -878,6 +1036,8 @@ employer: dcid:Government
 occupation: dcid:Physician__NurseAndMidwives
 
 Node: dcid:IndexScore_Person_6To13Year_NotEnrolledInSchool
+name: "Index score of children age 6 to 13 years not enrolled in school"
+description: "The index score of children age 6 to 13 years who are not enrolled in school"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -886,6 +1046,8 @@ age: [6 13 Years]
 schoolEnrollment: dcid:NotEnrolledInSchool
 
 Node: dcid:IndexScore_Person_EnrolledInSchool_SchoolGrade1To10
+name: "Index score of students enrolled in grades 1 to 10"
+description: "The index score of persons enrolled in school grades 1 to 10"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -894,6 +1056,8 @@ schoolEnrollment: dcid:EnrolledInSchool
 schoolGradeLevel: dcid:SchoolGrade1To10
 
 Node: dcid:IndexScore_School_ElementarySchool_StudentTeacherRatioUpto30
+name: "Index score of elementary schools with student-teacher ratio up to 30"
+description: "The index score of elementary schools having a student-teacher ratio of 30 or less"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:School
 measuredProperty: dcid:indexScore
@@ -902,6 +1066,8 @@ schoolGradeLevel: dcid:ElementarySchool
 studentTeacherRatio: dcid:StudentTeacherRatioUpto30
 
 Node: dcid:IndexScore_Student_SecondarySchool
+name: "Index score of secondary school students"
+description: "The index score of students at the secondary school level"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:indexScore
@@ -909,6 +1075,8 @@ statType: dcid:measuredValue
 levelOfSchool: dcid:SecondarySchool
 
 Node: dcid:IndexScore_Person_15To49Year_SpousalViolence_Female_Married
+name: "Index score of spousal violence against married women age 15 to 49"
+description: "The index score of reported spousal violence against married women in the age group 15 to 49 years"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -919,6 +1087,8 @@ gender: dcid:Female
 maritalStatus: dcid:Married
 
 Node: dcid:IndexScore_Person_Female_LegislatorOccupation
+name: "Index score of women in legislator occupations"
+description: "The index score of females working in legislator positions"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
@@ -926,16 +1096,20 @@ statType: dcid:measuredValue
 gender: dcid:Female
 occupation: dcid:Legislator
 
-Node: dcid:Count_Household_Toilet_Urban_AsAFractionOf_Count_Household_Urban
+Node: dcid:Number_Household_Toilet_Urban_AsAFractionOf_Number_Household_Urban
+name: "Index score of urban households with toilets"
+description: "The index score of urban households having access to toilet facilities"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
-measuredProperty: dcid:count
+measuredProperty: dcid:number
 statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Household_Urban
+measurementDenominator: dcid:Number_Household_Urban
 facilities: dcid:Toilet
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:IndexScore_Household_Toilet_Rural
+name: "Index score of rural households with toilets"
+description: "The index score of rural households having access to toilet facilities"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
@@ -944,6 +1118,8 @@ facilities: dcid:Toilet
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:IndexScore_Household_Toilet_Urban
+name: "Index score of urban households with toilets"
+description: "The index score of urban households having access to toilet facilities"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
@@ -952,6 +1128,8 @@ facilities: dcid:Toilet
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:IndexScore_Place_District_OpenDefecationFree
+name: "Index score of open defecation free districts"
+description: "The index score of districts declared as open defecation free"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Place
 measuredProperty: dcid:indexScore
@@ -961,28 +1139,34 @@ socialCondition: dcid:OpenDefecationFree
 
 Node: dcid:IndexScore_Household_ElectrifiedHouseholds
 typeOf: dcid:StatisticalVariable
-name: "Index Score electrifiedHouseholds"
+name: "Index score of electrified households"
+description: "The index score of households with access to electricity"
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
 indexProperty: dcid:electrifiedHouseholds
 
-Node: dcid:IndexScore_Household_BankAccount
+Node: dcid:IndexScore_Household_BankAcnumber
+name: "Index score of households with bank accounts"
+description: "The index score of households having access to bank accounts"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Household
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
-facilities: dcid:BankAccount
+facilities: dcid:BankAcnumber
 
 Node: dcid:IndexScore_Person_UnemploymentRate
 typeOf: dcid:StatisticalVariable
-name: "Index Score unemploymentRate"
+name: "Index score of unemployment rate"
+description: "The index score related to the unemployment rate among persons"
 populationType: dcid:Person
 measuredProperty: dcid:indexScore
 statType: dcid:measuredValue
 indexProperty: dcid:unemploymentRate
 
 Node: dcid:IndexScore_Households_PradhanMantriGramSadakYojana_Road
+name: "Index score of households covered under Pradhan Mantri Gram Sadak Yojana with road access"
+description: "The index score of households benefiting from road access under the Pradhan Mantri Gram Sadak Yojana scheme"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Households
 measuredProperty: dcid:indexScore
