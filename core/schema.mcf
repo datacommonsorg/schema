@@ -9,6 +9,7 @@ dcid: "StatisticalPopulation"
 subClassOf: schema:Intangible
 name: "StatisticalPopulation"
 typeOf: schema:Class
+supersededBy: dcs:StatisticalVariable
 
 Node: populationType
 dcid: "populationType"
@@ -16,25 +17,28 @@ rangeIncludes: schema:Class
 domainIncludes: schema:StatisticalPopulation, dcs:StatisticalVariable
 name: "populationType"
 typeOf: schema:Property
+description: "The type of population being measured by a StatisticalVariable. For example, Person, Student, Household etc."
 
 Node: dcid:constraintProperty
 typeOf: schema:Property
 name: "constraintProperty"
 domainIncludes: schema:StatisticalPopulation, dcs:StatisticalVariable
 rangeIncludes: schema:Property
+supersededBy: dcs:constraintProperties
 
 Node: Observation
 dcid: "Observation"
 typeOf: schema:Class
 name: "Observation"
 subClassOf: schema:Intangible
+supersededBy: dcs:StatVarObservation
 
 Node: dcid:observationDate
 name: "observationDate"
 typeOf: schema:Property
 domainIncludes: schema:Observation, dcs:StatVarObservation
 rangeIncludes: schema:Date
-description: "Date the Observation was made OR the last date of an Observation spanning a period of time."
+description: "The date a StatVarObservation was recorded."
 
 Node: measuredProperty
 dcid: "measuredProperty"
@@ -42,13 +46,16 @@ rangeIncludes: schema:Property
 name: "measuredProperty"
 domainIncludes: schema:Observation, dcs:StatisticalVariable
 typeOf: schema:Property
+description: "The metric being measured by a StatisticalVariable.
+  For example, count, total wages, age, etc."
 
 Node: dcid:measuredValue
 name: "measuredValue"
 domainIncludes: schema:Observation
 rangeIncludes: schema:Number, schema:Text, schema:Enumeration
 typeOf: schema:Property
-description: "The value of the Observation."
+description: "A possible value of the statType property of a StatisticalVariable.
+  Indicates that the variable reports the raw recorded values of observations."
 
 Node: observedNode
 dcid: "observedNode"
@@ -56,12 +63,6 @@ typeOf: schema:Property
 rangeIncludes: schema:Place, schema:StatisticalPopulation
 domainIncludes: schema:Observation
 name: "observedNode"
-
-Node: dcid:marginOfError
-name: "marginOfError"
-typeOf: schema:Property
-domainIncludes: schema:Observation
-rangeIncludes: schema:Number, dcs:Percent
 
 Node: toLocation
 dcid: "toLocation"
@@ -4568,6 +4569,7 @@ typeOf: schema:Property
 domainIncludes: schema:Property
 name: "domainIncludes"
 rangeIncludes: schema:Class
+description: "Specifies the entity type or types that can include this property in their schema definition. The value of domainIncludes is a Class. For example, the property 'unit' has a domainIncludes of 'StatVarObservation'. This means that 'unit' can be used as a property in observations."
 
 Node: priceType
 dcid: "priceType"
@@ -10503,6 +10505,7 @@ name: "rangeIncludes"
 rangeIncludes: schema:Class
 isPartOf: "https://meta.schema.org"
 typeOf: schema:Property
+description: "Specifies the valid type or types for a property. The value of rangeIncludes is a Class. It may be a primitive type such as 'Text' or 'Number' or 'Integer', or it may be a more complex type, such as a (previously defined) Class or Enum. For example, the property 'name' has a rangeIncludes of 'Text'."
 
 Node: discountCode
 dcid: "discountCode"
