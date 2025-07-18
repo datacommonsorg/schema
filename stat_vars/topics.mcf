@@ -1,12 +1,8 @@
-# LINT.IfChange
-#
-# IMPORTANT NOTE: The order of values in `relevantVariable` matters a lot!
-#                 Please do not change the order arbitrarily.
-#
 
 Node: dcid:dc/topic/Agriculture
 typeOf: dcs:Topic
 name: "Agriculture"
+description: "Agricultural statistics including farm area, farm count, income, and inventory by type"
 relevantVariable: dcid:Area_Farm
 relevantVariable: dcid:Count_Farm
 relevantVariable: dcid:Income_Farm
@@ -16,7 +12,8 @@ relevantVariable: dcid:dc/svpg/CountOfFarmInventoryByType
 
 Node: dcid:dc/topic/AgriculturalProduction
 typeOf: dcs:Topic
-name: "Agricultural Output"
+name: "Agricultural Production"
+description: "Statistics on agricultural production, including farm inventory for various crops and livestock"
 relevantVariable: dcid:Income_Farm
 relevantVariable: dcid:Amount_FarmInventory_Cotton
 relevantVariable: dcid:Amount_FarmInventory_Rice
@@ -30,7 +27,8 @@ relevantVariable: dcid:Count_FarmInventory_SheepAndLambs
 
 Node: dcid:dc/svpg/AmountOfFarmInventoryByType
 typeOf: dcs:StatVarPeerGroup
-name: "Farm products"
+name: "Farm inventory by type"
+description: "The amount of farm inventory by type including crops like wheat, cotton, rice, and livestock like cattle and sheep"
 member: dcid:AmountFarmInventory_WinterWheatForGrain
 member: dcid:Amount_FarmInventory_BarleyForGrain
 member: dcid:Amount_FarmInventory_CornForSilageOrGreenchop
@@ -53,7 +51,8 @@ member: dcid:Amount_FarmInventory_CornForGrain
 
 Node: dcid:dc/svpg/CountOfFarmInventoryByType
 typeOf: dcs:StatVarPeerGroup
-name: "Poultry and Livestock"
+name: "Number of farm inventory by type"
+description: "The count of farm inventory by type, including livestock like cattle, sheep, pigs, and broilers, as well as dairy and egg-producing animals"
 member: dcid:Count_FarmInventory_BeefCows
 member: dcid:Count_FarmInventory_Broilers
 member: dcid:Count_FarmInventory_CattleAndCalves
@@ -65,7 +64,7 @@ member: dcid:Count_FarmInventory_SheepAndLambs
 Node: dcid:dc/topic/Literacy
 typeOf: dcs:Topic
 name: "Literacy"
+description: "Statistics on literacy rates, including the count of literate and illiterate individuals"
 relevantVariable: dcid:Count_Person_Literate
 relevantVariable: dcid:Count_Person_Illiterate
-
-# LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
+# LINtThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

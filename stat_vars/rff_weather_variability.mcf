@@ -1,5 +1,8 @@
+
 Node: dcid:StandardDeviation_DailyPrecipitation
 typeOf: dcs:StatisticalVariable
+name: "Standard deviation of daily precipitation"
+description: "Standard deviation of daily precipitation"
 populationType: dcs:Place
 measuredProperty: dcs:precipitation
 statType: dcs:stdDeviationValue
@@ -7,6 +10,8 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:StandardDeviation_DailyMinTemperature
 typeOf: dcs:StatisticalVariable
+name: "Standard deviation of daily minimum temperature"
+description: "Standard deviation of daily minimum temperature"
 populationType: dcs:Place
 measuredProperty: dcs:minTemperature
 statType: dcs:stdDeviationValue
@@ -14,6 +19,8 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:StandardDeviation_DailyMaxTemperature
 typeOf: dcs:StatisticalVariable
+name: "Standard deviation of daily maximum temperature"
+description: "Standard deviation of daily maximum temperature"
 populationType: dcs:Place
 measuredProperty: dcs:maxTemperature
 statType: dcs:stdDeviationValue
@@ -21,6 +28,8 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:Skewness_DailyPrecipitation
 typeOf: dcs:StatisticalVariable
+name: "Skewness of daily precipitation"
+description: "Skewness of daily precipitation"
 populationType: dcs:Place
 measuredProperty: dcs:precipitation
 statType: dcs:skewnessValue
@@ -28,13 +37,12 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:Skewness_DailyMinTemperature
 typeOf: dcs:StatisticalVariable
+name: "Skewness of daily minimum temperature"
+description: "Skewness of daily minimum temperature"
 populationType: dcs:Place
 measuredProperty: dcs:minTemperature
 statType: dcs:skewnessValue
 measurementQualifier: dcs:Daily
-
-Node: dcid:Skewness_DailyMaxTemperature
-typeOf: dcs:StatisticalVariable
 populationType: dcs:Place
 measuredProperty: dcs:maxTemperature
 statType: dcs:skewnessValue
@@ -42,6 +50,8 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:Kurtosis_DailyPrecipitation
 typeOf: dcs:StatisticalVariable
+name: "Kurtosis of daily precipitation"
+description: "Kurtosis of daily precipitation"
 populationType: dcs:Place
 measuredProperty: dcs:precipitation
 statType: dcs:kurtosisValue
@@ -49,6 +59,8 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:Kurtosis_DailyMinTemperature
 typeOf: dcs:StatisticalVariable
+name: "Kurtosis of daily minimum temperature"
+description: "Kurtosis of daily minimum temperature"
 populationType: dcs:Place
 measuredProperty: dcs:minTemperature
 statType: dcs:kurtosisValue
@@ -56,6 +68,8 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:Kurtosis_DailyMaxTemperature
 typeOf: dcs:StatisticalVariable
+name: "Kurtosis of daily maximum temperature"
+description: "Kurtosis of daily maximum temperature"
 populationType: dcs:Place
 measuredProperty: dcs:maxTemperature
 statType: dcs:kurtosisValue
@@ -63,78 +77,94 @@ measurementQualifier: dcs:Daily
 
 Node: dcid:HeavyPrecipitationIndex
 typeOf: dcs:StatisticalVariable
+name: "Heavy precipitation index"
+description: "Heavy precipitation index"
 populationType: dcs:Place
 measuredProperty: dcs:heavyPrecipitationIndex
 statType: dcs:measuredValue
 
 Node: dcid:ConsecutiveDryDays
 typeOf: dcs:StatisticalVariable
+name: "Consecutive dry days"
+description: "The number of consecutive dry days"
 populationType: dcs:Place
 measuredProperty: dcs:consecutiveDryDays
 statType: dcs:measuredValue
-name: "Consecutive Dry Days"
 
 Node: dcid:Intensity_HeatWaveEvent
 typeOf: dcs:StatisticalVariable
+name: "Intensity of heat wave event"
+description: "Intensity of heat wave event"
 populationType: dcs:HeatWaveEvent
 measuredProperty: dcs:heatWaveIntensity
 statType: dcs:measuredValue
 
 Node: dcid:NumberOfDays_HeatWaveEvent
 typeOf: dcs:StatisticalVariable
+name: "Number of days of heat wave event"
+description: "The number of days a heat wave event occurred"
 populationType: dcs:HeatWaveEvent
 measuredProperty: dcs:numberOfDays
 statType: dcs:measuredValue
 
 Node: dcid:Count_HeatWaveEvent
 typeOf: dcs:StatisticalVariable
+name: "Number of heat wave event"
+description: "The number of heat wave events"
 populationType: dcs:HeatWaveEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:InterannualRange_Monthly_Precipitation
 typeOf: dcs:StatisticalVariable
+name: "Interannual range of monthly precipitation"
+description: "Interannual range of monthly precipitation"
 populationType: schema:Place
 measuredProperty: dcs:precipitation
-measurementQualifier: dcs:InterannualRangeOfMonthlyAggregate
+measurementQualifier: dcs:InterannualRangeOfMonthlyAggregates
 statType: dcs:measuredValue
 
 Node: dcid:InterannualRange_Monthly_MaxTemperature
 typeOf: dcs:StatisticalVariable
+name: "Interannual range of monthly maximum temperature"
+description: "Interannual range of monthly maximum temperature"
 populationType: schema:Place
 measuredProperty: dcs:maxTemperature
-measurementQualifier: dcs:InterannualRangeOfMonthlyAggregate
+measurementQualifier: dcs:InterannualRangeOfMonthlyAggregates
 statType: dcs:measuredValue
 
 Node: dcid:InterannualRange_Monthly_MinTemperature
 typeOf: dcs:StatisticalVariable
+name: "Interannual range of monthly minimum temperature"
+description: "Interannual range of monthly minimum temperature"
 populationType: schema:Place
 measuredProperty: dcs:minTemperature
-measurementQualifier: dcs:InterannualRangeOfMonthlyAggregate
+measurementQualifier: dcs:InterannualRangeOfMonthlyAggregates
 statType: dcs:measuredValue
-
-
-######## Fire and Smoke Dataset ########
 
 Node: dcid:BurnedArea_FireEvent_Forest
 typeOf: dcs:StatisticalVariable
+name: "Area of forest that burned (acres)"
+description: "Total area of forest that burned in acres during a fire event"
 populationType: dcs:FireEvent
 areaType: dcs:Forest
 measuredProperty: dcs:burnedArea
 statType: dcs:measuredValue
-name: "Area of forest that burned (Acres)"
 
 Node: dcid:Percent_BurnedArea_FireEvent_Forest
 typeOf: dcs:StatisticalVariable
+name: "Percent of forest area that burned"
+description: "Percent of forest area that burned during a fire event"
 populationType: dcs:FireEvent
 areaType: dcs:Forest
 measuredProperty: dcs:burnedArea
 measurementDenominator: dcs:Area_Forest
 statType: dcs:measuredValue
-name: "Percent of forest area that burned"
 
 Node: dcid:Area_Forest
 typeOf: dcs:StatisticalVariable
+name: "Area of forest"
+description: "Total area of forest"
 populationType: dcs:Place
 areaType: dcs:Forest
 measuredProperty: dcs:area
@@ -142,186 +172,199 @@ statType: dcs:measuredValue
 
 Node: dcid:Percent_BurnedArea_FireEvent_Forest_HighSeverity
 typeOf: dcs:StatisticalVariable
+name: "Percent of forest area that experienced high-severity fire"
+description: "Percent of forest area that experienced high-severity fire during a fire event"
 populationType: dcs:FireEvent
 areaType: dcs:Forest
 classification: dcs:HighSeverity
 measuredProperty: dcs:burnedArea
 measurementDenominator: dcs:BurnedArea_FireEvent_Forest
 statType: dcs:measuredValue
-name: "Percent of forest area that experienced high-severity fire"
 
 Node: dcid:BurnedArea_FireEvent
 typeOf: dcs:StatisticalVariable
+name: "Total area that burned (acres)"
+description: "Total area that burned in acres during a fire event"
 populationType: dcs:FireEvent
 measuredProperty: dcs:burnedArea
 statType: dcs:measuredValue
-name: "Total area that burned (Acres)"
 
 Node: dcid:Percent_BurnedArea_FireEvent
 typeOf: dcs:StatisticalVariable
+name: "Percent of area that burned"
+description: "Percent of total area that burned during a fire event"
 populationType: dcs:FireEvent
 measuredProperty: dcs:burnedArea
 measurementDenominator: dcs:SurfaceArea
 statType: dcs:measuredValue
-name: "Percent of area that burned"
 
 Node: dcid:Mean_PalmerDroughtSeverityIndex_Forest
 typeOf: dcs:StatisticalVariable
+name: "Mean Palmer Drought Severity Index (PDSI) in forested areas"
+description: "Mean Palmer Drought Severity Index (PDSI) in forested areas"
 populationType: schema:Place
 areaType: dcs:Forest
 measuredProperty: dcs:palmerDroughtSeverityIndex
 statType: dcs:meanValue
-name: "Mean Palmer Drought Severity Index (PDSI) in forested areas"
-
-Node: dcid:Mean_MaxTemperature_Forest
-typeOf: dcs:StatisticalVariable
-populationType: schema:Place
-areaType: dcs:Forest
-measuredProperty: maxTemperature
-statType: dcs:meanValue
-name: "Mean maximum temperature in forested areas"
 
 Node: dcid:Mean_VaporPressureDeficit_Forest
 typeOf: dcs:StatisticalVariable
+name: "Mean vapor pressure deficit (VPD) for forested areas"
+description: "Mean vapor pressure deficit (VPD) for forested areas"
 populationType: schema:Place
 areaType: dcs:Forest
 measuredProperty: dcs:vaporPressureDeficit
 statType: dcs:meanValue
-name: "Mean Vapor Pressure Deficit (VPD) for forested areas"
 
 Node: dcid:Mean_VaporPressureDeficit
 typeOf: dcs:StatisticalVariable
+name: "Mean vapor pressure deficit (VPD)"
+description: "Mean vapor pressure deficit (VPD)"
 populationType: schema:Place
 measuredProperty: dcs:vaporPressureDeficit
 statType: dcs:meanValue
-name: "Mean Vapor Pressure Deficit (VPD)"
 
 Node: dcid:Mean_PalmerDroughtSeverityIndex
 typeOf: dcs:StatisticalVariable
+name: "Mean Palmer Drought Severity Index (PDSI)"
+description: "Mean Palmer Drought Severity Index (PDSI)"
 populationType: schema:Place
 measuredProperty: dcs:palmerDroughtSeverityIndex
 statType: dcs:meanValue
-name: "Mean Palmer Drought Severity Index (PDSI)"
 
 Node: dcid:Mean_MaxTemperature
 typeOf: dcs:StatisticalVariable
+name: "Mean maximum temperature"
+description: "Mean maximum temperature"
 populationType: schema:Place
 measuredProperty: dcs:maxTemperature
 statType: dcs:meanValue
-name: "Mean maximum temperature"
 
 Node: dcid:PopulationWeighted_Intensity_HeatWaveEvent
 typeOf: dcs:StatisticalVariable
+name: "Population-weighted intensity of heat waves"
+description: "Population-weighted intensity of heat waves"
 populationType: dcs:HeatWaveEvent
 measuredProperty: dcs:heatWaveIntensity
 measurementQualifier: dcs:PopulationWeighted
 statType: dcs:measuredValue
-name: "Population-weighted Intensity of Heat Waves"
 
 Node: dcid:PopulationWeighted_NumerOfDays_HeatWaveEvent
 typeOf: dcs:StatisticalVariable
+name: "Population-weighted length of heat waves"
+description: "Population-weighted length of heat waves"
 populationType: dcs:HeatWaveEvent
 measuredProperty: dcs:numberOfDays
 measurementQualifier: dcs:PopulationWeighted
 statType: dcs:measuredValue
-name: "Population-weighted Length of Heat Waves"
 
 Node: dcid:PopulationWeighted_Count_HeatWaveEvent
 typeOf: dcs:StatisticalVariable
+name: "Population-weighted number of heat waves"
+description: "Population-weighted number of heat waves"
 populationType: dcs:HeatWaveEvent
-measuredProperty: count
+measuredProperty: dcs:count
 measurementQualifier: dcs:PopulationWeighted
 statType: dcs:measuredValue
-name: "Population-weighted Number of Heat Waves"
 
 Node: dcid:Mean_PopulationWeighted_Concentration_AirPollutant_SmokePM25
 typeOf: dcs:StatisticalVariable
+name: "Population-weighted mean concentration of smoke PM2.5"
+description: "Population-weighted mean concentration of smoke PM2.5"
 populationType: dcs:Atmosphere
 pollutant: dcs:SmokePM2.5
 measuredProperty: dcs:concentration
 measurementQualifier: dcs:PopulationWeighted
 statType: dcs:meanValue
-name: "Population-weighted Mean Concentration of Smoke PM2.5"
 
 Node: dcid:Max_PopulationWeighted_Concentration_AirPollutant_SmokePM25
 typeOf: dcs:StatisticalVariable
+name: "Population-weighted max concentration of smoke PM2.5"
+description: "Population-weighted max concentration of smoke PM2.5"
 populationType: dcs:Atmosphere
 pollutant: dcs:SmokePM2.5
 measuredProperty: dcs:concentration
 measurementQualifier: dcs:PopulationWeighted
 statType: dcs:maxValue
-name: "Population-weighted Max Concentration of Smoke PM2.5"
 
 Node: dcid:Mean_Concentration_AirPollutant_SmokePM25
 typeOf: dcs:StatisticalVariable
+name: "Mean concentration of smoke PM2.5"
+description: "Mean concentration of smoke PM2.5"
 populationType: dcs:Atmosphere
 pollutant: dcs:SmokePM2.5
 measuredProperty: dcs:concentration
 statType: dcs:meanValue
-name: "Mean Concentration of Smoke PM2.5"
 
 Node: dcid:Max_Concentration_AirPollutant_SmokePM25
 typeOf: dcs:StatisticalVariable
+name: "Max concentration of smoke PM2.5"
+description: "Max concentration of smoke PM2.5"
 populationType: dcs:Atmosphere
 pollutant: dcs:SmokePM2.5
 measuredProperty: dcs:concentration
 statType: dcs:maxValue
-name: "Max Concentration of Smoke PM2.5"
 
 Node: dcid:NumberOfDays_Concentration_SmokePM25_Above12PPM
 typeOf: dcs:StatisticalVariable
+name: "Number of days where the smoke PM2.5 concentration exceeded 12 ppm"
+description: "The number of days where the smoke PM2.5 concentration exceeded 12 ppm"
 populationType: dcs:Atmosphere
 measuredProperty: dcs:numberOfDays
 pollutant: dcs:SmokePM2.5
 concentration: [12 - PartsPerMillion]
 extremesOverTime: dcs:FrequencyOfOutliers
 statType: dcs:measuredValue
-name: "Number of days where the Smoke PM2.5 concentration exceeded 12 ppm"
 
 Node: dcid:NumberOfDays_Concentration_SmokePM25_Above35PPM
 typeOf: dcs:StatisticalVariable
+name: "Number of days where the smoke PM2.5 concentration exceeded 35 ppm"
+description: "The number of days where the smoke PM2.5 concentration exceeded 35 ppm"
 populationType: dcs:Atmosphere
 measuredProperty: dcs:numberOfDays
 pollutant: dcs:SmokePM2.5
 concentration: [35 - PartsPerMillion]
 extremesOverTime: dcs:FrequencyOfOutliers
 statType: dcs:measuredValue
-name: "Number of days where the Smoke PM2.5 concentration exceeded 35 ppm"
 
 Node: dcid:NumberOfDays_Concentration_SmokePM25_Above55PPM
 typeOf: dcs:StatisticalVariable
+name: "Number of days where the smoke PM2.5 concentration exceeded 55 ppm"
+description: "The number of days where the smoke PM2.5 concentration exceeded 55 ppm"
 populationType: dcs:Atmosphere
 measuredProperty: dcs:numberOfDays
 pollutant: dcs:SmokePM2.5
 concentration: [55 - PartsPerMillion]
 extremesOverTime: dcs:FrequencyOfOutliers
 statType: dcs:measuredValue
-name: "Number of days where the Smoke PM2.5 concentration exceeded 55 ppm"
 
 Node: dcid:NumberOfDays_Concentration_SmokePM25_Above150PPM
 typeOf: dcs:StatisticalVariable
+name: "Number of days where the smoke PM2.5 concentration exceeded 150 ppm"
+description: "The number of days where the smoke PM2.5 concentration exceeded 150 parts per million"
 populationType: dcs:Atmosphere
 measuredProperty: dcs:numberOfDays
 pollutant: dcs:SmokePM2.5
 concentration: [150 - PartsPerMillion]
 extremesOverTime: dcs:FrequencyOfOutliers
 statType: dcs:measuredValue
-name: "Number of days where the Smoke PM2.5 concentration exceeded 150 ppm"
 
 Node: dcid:NumberOfDays_Concentration_SmokePM25_Above250PPM
 typeOf: dcs:StatisticalVariable
+name: "Number of days where the smoke PM2.5 concentration exceeded 250 ppm"
+description: "The number of days where the smoke PM2.5 concentration exceeded 250 parts per million"
 populationType: dcs:Atmosphere
 measuredProperty: dcs:numberOfDays
 pollutant: dcs:SmokePM2.5
 concentration: [250 - PartsPerMillion]
 extremesOverTime: dcs:FrequencyOfOutliers
 statType: dcs:measuredValue
-name: "Number of days where the Smoke PM2.5 concentration exceeded 250 ppm"
 
 Node: dcid:Concentration_AirPollutant_SmokePM25
 typeOf: dcs:StatisticalVariable
+name: "Concentration of smoke PM2.5"
+description: "Concentration of smoke PM2.5"
 populationType: dcs:Atmosphere
 pollutant: dcs:SmokePM2.5
 measuredProperty: dcs:concentration
 statType: dcs:measuredValue
-name: "Concentration of Smoke PM2.5"

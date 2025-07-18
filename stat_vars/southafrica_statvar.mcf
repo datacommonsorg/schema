@@ -1,1831 +1,2207 @@
+
 Node: dcid:Count_BirthEvent_StillBirth_AsAFractionOf_Count_BirthEvent
-typeOf: dcid:StatisticalVariable
-populationType: dcid:BirthEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent
-medicalStatus: dcid:StillBirth
+typeOf: d.c.s:StatisticalVariable
+name: "Number of Still Birth Events as a Fraction of Total Birth Events"
+description: "The number of stillbirth events as a fraction of the total number of birth events in South Africa"
+populationType: d.c.s:BirthEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_BirthEvent
+medicalStatus: d.c.id:StillBirth
 
 Node: dcid:Count_MaternalMortalityEvent_AsAFractionOf_Count_BirthEvent_LiveBirth
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MaternalMortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+typeOf: d.c.s:StatisticalVariable
+name: "Number of Maternal Mortality Events as a Fraction of Live Birth Events"
+description: "The number of maternal mortality events as a fraction of the total number of live birth events in South Africa"
+populationType: d.c.s:MaternalMortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_BirthEvent_LiveBirth
 
 Node: dcid:Count_MortalityEvent_1To4Years_AsAFractionOf_Count_BirthEvent_LiveBirth
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+typeOf: d.c.s:StatisticalVariable
+name: "Number of mortality events (1 to 4 years) as a fraction of live birth events"
+description: "The number of mortality events among children aged 1 to 4 years as a fraction of the total number of live birth events in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_BirthEvent_LiveBirth
 age: [1 4 Years]
 
 Node: dcid:Count_MortalityEvent_5OrLessYears
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of mortality events (5 years or less)"
+description: "The number of mortality events among children aged 5 years or less in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [- 5 Years]
 
 Node: dcid:Count_MortalityEvent_5OrLessYears_AsAFractionOf_Count_BirthEvent_LiveBirth
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
+typeOf: d.c.s:StatisticalVariable
+name: "Number of mortality events (5 years or less) as a fraction of live birth events"
+description: "The number of mortality events among children aged 5 years or less as a fraction of the total number of live birth events in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_BirthEvent_LiveBirth
 age: [- 5 Years]
 
 Node: dcid:Count_MortalityEvent_AIDS
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-causeOfDeath: dcid:AIDS
+typeOf: d.c.s:StatisticalVariable
+name: "Number of mortality events due to AIDS"
+description: "The number of mortality events caused by AIDS in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+causeOfDeath: d.c.id:AIDS
 
 Node: dcid:Count_MortalityEvent_Infant_AsAFractionOf_Count_BirthEvent_LiveBirth
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
-ageGroupClassification: dcid:Infant
+typeOf: d.c.s:StatisticalVariable
+name: "Number of infant mortality events as a fraction of live birth events"
+description: "The number of infant mortality events as a fraction of the total number of live birth events in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_BirthEvent_LiveBirth
+ageGroupClassification: d.c.id:Infant
 
 Node: dcid:Count_MortalityEvent_Malaria_AsAFractionOf_Count_Death
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Death
-causeOfDeath: dcid:Malaria
+typeOf: d.c.s:StatisticalVariable
+name: "Number of mortality events due to malaria as a fraction of total deaths"
+description: "The number of mortality events caused by malaria as a fraction of the total number of deaths in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Death
+causeOfDeath: d.c.id:Malaria
 
 Node: dcid:Count_Death_1To11Month_AsAFractionOf_Count_BirthEvent_LiveBirth
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
-age: dcid:Month1To11
+typeOf: d.c.s:StatisticalVariable
+name: "Number of deaths (1 to 11 months) as a fraction of live birth events"
+description: "The number of deaths among infants aged 1 to 11 months as a fraction of the total number of live birth events in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_BirthEvent_LiveBirth
+age: d.c.id:Month1To11
 
 Node: dcid:Count_MortalityEvent_Newborn_AsAFractionOf_Count_BirthEvent_LiveBirth
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_BirthEvent_LiveBirth
-ageGroupClassification: dcid:Newborn
+typeOf: d.c.s:StatisticalVariable
+name: "Number of newborn mortality events as a fraction of live birth events"
+description: "The number of newborn mortality events as a fraction of the total number of live birth events in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_BirthEvent_LiveBirth
+ageGroupClassification: d.c.id:Newborn
 
 Node: dcid:Count_MortalityEvent_Tuberculosis_AsAFractionOf_Count_Death
-typeOf: dcid:StatisticalVariable
-populationType: dcid:MortalityEvent
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Death
-causeOfDeath: dcid:Tuberculosis
+typeOf: d.c.s:StatisticalVariable
+name: "Number of mortality events due to tuberculosis as a fraction of total deaths"
+description: "The number of mortality events caused by tuberculosis as a fraction of the total number of deaths in South Africa"
+populationType: d.c.s:MortalityEvent
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Death
+causeOfDeath: d.c.id:Tuberculosis
 
 Node: dcid:Count_Person_1Years_VaccineAdministered_BCG_AsAFractionOf_Count_Person_1Years
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_1Years
+typeOf: d.c.s:StatisticalVariable
+name: "Number of persons 1 year old administered BCG vaccine as a fraction of total persons 1 year old"
+description: "The number of persons aged 1 year who have been administered the BCG vaccine as a fraction of the total number of persons aged 1 year in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person_1Years
 age: [1 Years]
-vaccineStatus: dcid:VaccineAdministered
-vaccineType: dcid:BCG
+vaccineStatus: d.c.id:VaccineAdministered
+vaccineType: d.c.id:BCG
 
 Node: dcid:Count_Person_1Years_VaccineAdministered_DPT3_AsAFractionOf_Count_Person_1Years
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_1Years
+typeOf: d.c.s:StatisticalVariable
+name: "Number of persons 1 year old administered DPT3 vaccine as a fraction of total persons 1 year old"
+description: "The number of persons aged 1 year who have been administered the DPT3 vaccine as a fraction of the total number of persons aged 1 year in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person_1Years
 age: [1 Years]
-vaccineStatus: dcid:VaccineAdministered
-vaccineType: dcid:DPT3
+vaccineStatus: d.c.id:VaccineAdministered
+vaccineType: d.c.id:DPT3
 
 Node: dcid:Count_Person_1Years_VaccineAdministered_HaemophilusInfluenzaeTypeB_AsAFractionOf_Count_Person_1Years
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_1Years
+typeOf: d.c.s:StatisticalVariable
+name: "Number of persons 1 year old administered Haemophilus Influenzae Type B vaccine as a fraction of total persons 1 year old"
+description: "The number of persons aged 1 year who have been administered the Haemophilus Influenzae Type B vaccine as a fraction of the total number of persons aged 1 year in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person_1Years
 age: [1 Years]
-vaccineStatus: dcid:VaccineAdministered
-vaccineType: dcid:HaemophilusInfluenzaeTypeB
+vaccineStatus: d.c.id:VaccineAdministered
+vaccineType: d.c.id:HaemophilusInfluenzaeTypeB
 
 Node: dcid:Count_Person_1Years_VaccineAdministered_Measles_AsAFractionOf_Count_Person_1Years
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_1Years
+typeOf: d.c.s:StatisticalVariable
+name: "Number of persons 1 year old administered measles vaccine as a fraction of total persons 1 year old"
+description: "The number of persons aged 1 year who have been administered the measles vaccine as a fraction of the total number of persons aged 1 year in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person_1Years
 age: [1 Years]
-vaccineStatus: dcid:VaccineAdministered
-vaccineType: dcid:Measles
+vaccineStatus: d.c.id:VaccineAdministered
+vaccineType: d.c.id:Measles
 
 Node: dcid:Count_Person_1Years_VaccineAdministered_Polio_AsAFractionOf_Count_Person_1Years
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person_1Years
+typeOf: d.c.s:StatisticalVariable
+name: "Number of persons 1 year old administered polio vaccine as a fraction of total persons 1 year old"
+description: "The number of persons aged 1 year who have been administered the polio vaccine as a fraction of the total number of persons aged 1 year in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person_1Years
 age: [1 Years]
-vaccineStatus: dcid:VaccineAdministered
-vaccineType: dcid:Polio
+vaccineStatus: d.c.id:VaccineAdministered
+vaccineType: d.c.id:Polio
 
 Node: dcid:Count_Person_Employed_AsAFractionOf_Count_Person
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
+name: "Number of employed persons as a fraction of total persons"
+description: "The number of employed persons as a fraction of the total population in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_Employed_Female_AsAFractionOf_Count_Person
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
+name: "Number of employed female persons as a fraction of total persons"
+description: "The number of employed female persons as a fraction of the total population in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_Employed_Male_AsAFractionOf_Count_Person
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-measurementDenominator: dcid:Count_Person
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
+name: "Number of employed male persons as a fraction of total persons"
+description: "The number of employed male persons as a fraction of the total population in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+measurementDenominator: d.c.id:Count_Person
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Student_SecondaryEducation
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SecondaryEducation
+typeOf: d.c.s:StatisticalVariable
+name: "Number of students in secondary education"
+description: "The total number of students enrolled in secondary education in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SecondaryEducation
 
 Node: dcid:Count_Student_SecondaryEducation_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SecondaryEducation
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female students in secondary education"
+description: "The number of female students enrolled in secondary education in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SecondaryEducation
+gender: d.c.id:Female
 
 Node: dcid:Count_Student_SecondaryEducation_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SecondaryEducation
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male students in secondary education"
+description: "The number of male students enrolled in secondary education in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SecondaryEducation
+gender: d.c.id:Male
 
 Node: dcid:Count_Student_SouthAfricaGradeR
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SouthAfrica_GradeR
+typeOf: d.c.s:StatisticalVariable
+name: "Number of students in South Africa grade R"
+description: "The total number of students enrolled in Grade R (Reception year) in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SouthAfrica_GradeR
 
 Node: dcid:Count_Student_SouthAfricaGradeR_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SouthAfrica_GradeR
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female students in South Africa grade R"
+description: "The number of female students enrolled in Grade R (Reception year) in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SouthAfrica_GradeR
+gender: d.c.id:Female
 
 Node: dcid:Count_Student_SouthAfricaGradeR_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SouthAfrica_GradeR
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male students in South Africa grade R"
+description: "The number of male students enrolled in Grade R (Reception year) in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SouthAfrica_GradeR
+gender: d.c.id:Male
 
 Node: dcid:Count_Student_SouthAfricaPreGradeR
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SouthAfrica_PreGradeR
+typeOf: d.c.s:StatisticalVariable
+name: "Number of students in South Africa pre-grade R"
+description: "The total number of students enrolled in Pre-Grade R education in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SouthAfrica_PreGradeR
 
 Node: dcid:Count_Student_SouthAfricaPreGradeR_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Student
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-enrollmentLevel: dcid:SouthAfrica_PreGradeR
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male students in South Africa pre-grade R"
+description: "The number of male students enrolled in Pre-Grade R education in South Africa"
+populationType: d.c.s:Student
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+enrollmentLevel: d.c.id:SouthAfrica_PreGradeR
+gender: d.c.id:Male
 
 Node: dcid:GrowthRate_Count_Person_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:growthRate
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
+name: "Growth rate of female population"
+description: "The annual growth rate of the female population in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:growthRate
+gender: d.c.id:Female
 
 Node: dcid:GrowthRate_Count_Person_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:growthRate
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
+name: "Growth rate of male population"
+description: "The annual growth rate of the male population in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:growthRate
+gender: d.c.id:Male
 
 Node: dcid:UnemploymentRate_Person_15To24Years
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:unemploymentRate
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Unemployment rate of persons aged 15 to 24 years"
+description: "The unemployment rate for individuals aged 15 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:unemploymentRate
+statType: d.c.s:measuredValue
 age: [15 24 Years]
 
 Node: dcid:UnemploymentRate_Person_15To65Years
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:unemploymentRate
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Unemployment rate of persons aged 15 to 65 years"
+description: "The unemployment rate for individuals aged 15 to 65 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:unemploymentRate
+statType: d.c.s:measuredValue
 age: [15 65 Years]
 
 Node: dcid:UnemploymentRate_Person_15To65Years_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:unemploymentRate
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Unemployment rate of female persons aged 15 to 65 years"
+description: "The unemployment rate for female individuals aged 15 to 65 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:unemploymentRate
+statType: d.c.s:measuredValue
 age: [15 65 Years]
-gender: dcid:Female
+gender: d.c.id:Female
 
 Node: dcid:UnemploymentRate_Person_15To65Years_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:unemploymentRate
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Unemployment rate of male persons aged 15 to 65 years"
+description: "The unemployment rate for male individuals aged 15 to 65 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:unemploymentRate
+statType: d.c.s:measuredValue
 age: [15 65 Years]
-gender: dcid:Male
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_0To4Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 0 to 4 years"
+description: "The number of female Black African persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_0To4Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 0 to 4 years"
+description: "The number of female Indian or Asian persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_0To4Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 0 to 4 years"
+description: "The number of female South Africa coloured persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_0To4Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 0 to 4 years"
+description: "The number of female White persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_0To4Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 0 to 4 years"
+description: "The number of male Black African persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_0To4Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 0 to 4 years"
+description: "The number of male Indian or Asian persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_0To4Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 0 to 4 years"
+description: "The number of male South Africa coloured persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_0To4Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 0 to 4 years"
+description: "The number of male White persons aged 0 to 4 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [0 4 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_10To14Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 10 to 14 years"
+description: "The number of female Black African persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_10To14Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 10 to 14 years"
+description: "The number of female Indian or Asian persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_10To14Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 10 to 14 years"
+description: "The number of female South Africa coloured persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_10To14Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 10 to 14 years"
+description: "The number of female White persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_10To14Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 10 to 14 years"
+description: "The number of male Black African persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_10To14Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 10 to 14 years"
+description: "The number of male Indian or Asian persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_10To14Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 10 to 14 years"
+description: "The number of male South Africa coloured persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_10To14Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 10 to 14 years"
+description: "The number of male White persons aged 10 to 14 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [10 14 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_15To19Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 15 to 19 years"
+description: "The number of female Black African persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_15To19Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 15 to 19 years"
+description: "The number of female Indian or Asian persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_15To19Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 15 to 19 years"
+description: "The number of female South Africa coloured persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_15To19Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 15 to 19 years"
+description: "The number of female White persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_15To19Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 15 to 19 years"
+description: "The number of male Black African persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_15To19Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 15 to 19 years"
+description: "The number of male Indian or Asian persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_15To19Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 15 to 19 years"
+description: "The number of male South Africa coloured persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_15To19Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 15 to 19 years"
+description: "The number of male White persons aged 15 to 19 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [15 19 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_20To24Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 20 to 24 years"
+description: "The number of female Black African persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_20To24Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 20 to 24 years"
+description: "The number of female Indian or Asian persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_20To24Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 20 to 24 years"
+description: "The number of female South Africa coloured persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_20To24Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 20 to 24 years"
+description: "The number of female White persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_20To24Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 20 to 24 years"
+description: "The number of male Black African persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_20To24Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 20 to 24 years"
+description: "The number of male Indian or Asian persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_20To24Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 20 to 24 years"
+description: "The number of male South Africa coloured persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_20To24Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 20 to 24 years"
+description: "The number of male White persons aged 20 to 24 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [20 24 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_25To29Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 25 to 29 years"
+description: "The number of female Black African persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_25To29Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 25 to 29 years"
+description: "The number of female Indian or Asian persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_25To29Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 25 to 29 years"
+description: "The number of female South Africa coloured persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_25To29Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 25 to 29 years"
+description: "The number of female White persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_25To29Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 25 to 29 years"
+description: "The number of male Black African persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_25To29Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 25 to 29 years"
+description: "The number of male Indian or Asian persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_25To29Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 25 to 29 years"
+description: "The number of male South Africa coloured persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_25To29Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 25 to 29 years"
+description: "The number of male White persons aged 25 to 29 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [25 29 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_30To34Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 30 to 34 years"
+description: "The number of female Black African persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_30To34Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 30 to 34 years"
+description: "The number of female Indian or Asian persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_30To34Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 30 to 34 years"
+description: "The number of female South Africa coloured persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_30To34Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 30 to 34 years"
+description: "The number of female White persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_30To34Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 30 to 34 years"
+description: "The number of male Black African persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_30To34Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 30 to 34 years"
+description: "The number of male Indian or Asian persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_30To34Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 30 to 34 years"
+description: "The number of male South Africa coloured persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_30To34Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 30 to 34 years"
+description: "The number of male White persons aged 30 to 34 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [30 34 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_35To39Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 35 to 39 years"
+description: "The number of female Black African persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_35To39Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 35 to 39 years"
+description: "The number of female Indian or Asian persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_35To39Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 35 to 39 years"
+description: "The number of female South Africa coloured persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_35To39Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 35 to 39 years"
+description: "The number of female White persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_35To39Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 35 to 39 years"
+description: "The number of male Black African persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_35To39Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 35 to 39 years"
+description: "The number of male Indian or Asian persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_35To39Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 35 to 39 years"
+description: "The number of male South Africa coloured persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_35To39Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 35 to 39 years"
+description: "The number of male White persons aged 35 to 39 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [35 39 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_40To44Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 40 to 44 years"
+description: "The number of female Black African persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_40To44Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 40 to 44 years"
+description: "The number of female Indian or Asian persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_40To44Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 40 to 44 years"
+description: "The number of female South Africa coloured persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_40To44Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 40 to 44 years"
+description: "The number of female White persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_40To44Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 40 to 44 years"
+description: "The number of male Black African persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_40To44Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 40 to 44 years"
+description: "The number of male Indian or Asian persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_40To44Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 40 to 44 years"
+description: "The number of male South Africa coloured persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_40To44Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 40 to 44 years"
+description: "The number of male White persons aged 40 to 44 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [40 44 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_45To49Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 45 to 49 years"
+description: "The number of female Black African persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_45To49Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 45 to 49 years"
+description: "The number of female Indian or Asian persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_45To49Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 45 to 49 years"
+description: "The number of female South Africa coloured persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_45To49Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 45 to 49 years"
+description: "The number of female White persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_45To49Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 45 to 49 years"
+description: "The number of male Black African persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_45To49Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 45 to 49 years"
+description: "The number of male Indian or Asian persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_45To49Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 45 to 49 years"
+description: "The number of male South Africa coloured persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_45To49Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 45 to 49 years"
+description: "The number of male White persons aged 45 to 49 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [45 49 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_50To54Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 50 to 54 years"
+description: "The number of female Black African persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_50To54Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 50 to 54 years"
+description: "The number of female Indian or Asian persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_50To54Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 50 to 54 years"
+description: "The number of female South Africa coloured persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_50To54Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 50 to 54 years"
+description: "The number of female White persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_50To54Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 50 to 54 years"
+description: "The number of male Black African persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_50To54Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 50 to 54 years"
+description: "The number of male Indian or Asian persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_50To54Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 50 to 54 years"
+description: "The number of male South Africa coloured persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_50To54Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 50 to 54 years"
+description: "The number of male White persons aged 50 to 54 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [50 54 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_55To59Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 55 to 59 years"
+description: "The number of female Black African persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_55To59Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 55 to 59 years"
+description: "The number of female Indian or Asian persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_55To59Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 55 to 59 years"
+description: "The number of female South Africa coloured persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_55To59Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 55 to 59 years"
+description: "The number of female White persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_55To59Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 55 to 59 years"
+description: "The number of male Black African persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_55To59Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 55 to 59 years"
+description: "The number of male Indian or Asian persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_55To59Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 55 to 59 years"
+description: "The number of male South Africa coloured persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_55To59Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 55 to 59 years"
+description: "The number of male White persons aged 55 to 59 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [55 59 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_5To9Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 5 to 9 years"
+description: "The number of female Black African persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_5To9Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 5 to 9 years"
+description: "The number of female Indian or Asian persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_5To9Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 5 to 9 years"
+description: "The number of female South Africa coloured persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_5To9Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 5 to 9 years"
+description: "The number of female White persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_5To9Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 5 to 9 years"
+description: "The number of male Black African persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_5To9Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 5 to 9 years"
+description: "The number of male Indian or Asian persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_5To9Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 5 to 9 years"
+description: "The number of male South Africa coloured persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_5To9Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 5 to 9 years"
+description: "The number of male White persons aged 5 to 9 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [5 9 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_60To64Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 60 to 64 years"
+description: "The number of female Black African persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_60To64Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 60 to 64 years"
+description: "The number of female Indian or Asian persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_60To64Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 60 to 64 years"
+description: "The number of female South Africa coloured persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_60To64Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 60 to 64 years"
+description: "The number of female White persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_60To64Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 60 to 64 years"
+description: "The number of male Black African persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_60To64Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 60 to 64 years"
+description: "The number of male Indian or Asian persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_60To64Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 60 to 64 years"
+description: "The number of male South Africa coloured persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_60To64Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 60 to 64 years"
+description: "The number of male White persons aged 60 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [60 64 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_65To69Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 65 to 69 years"
+description: "The number of female Black African persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_65To69Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 65 to 69 years"
+description: "The number of female Indian or Asian persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_65To69Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 65 to 69 years"
+description: "The number of female South Africa coloured persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_65To69Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 65 to 69 years"
+description: "The number of female White persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_65To69Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 65 to 69 years"
+description: "The number of male Black African persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_65To69Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 65 to 69 years"
+description: "The number of male Indian or Asian persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_65To69Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 65 to 69 years"
+description: "The number of male South Africa coloured persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_65To69Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 65 to 69 years"
+description: "The number of male White persons aged 65 to 69 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [65 69 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_70To74Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 70 to 74 years"
+description: "The number of female Black African persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_70To74Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 70 to 74 years"
+description: "The number of female Indian or Asian persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_70To74Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 70 to 74 years"
+description: "The number of female South Africa coloured persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_70To74Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 70 to 74 years"
+description: "The number of female White persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_70To74Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 70 to 74 years"
+description: "The number of male Black African persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_70To74Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 70 to 74 years"
+description: "The number of male Indian or Asian persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_70To74Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 70 to 74 years"
+description: "The number of male South Africa coloured persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_70To74Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 70 to 74 years"
+description: "The number of male White persons aged 70 to 74 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [70 74 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_75To79Years_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 75 to 79 years"
+description: "The number of female Black African persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_75To79Years_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 75 to 79 years"
+description: "The number of female Indian or Asian persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_75To79Years_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 75 to 79 years"
+description: "The number of female South Africa coloured persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_75To79Years_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 75 to 79 years"
+description: "The number of female White persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_75To79Years_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 75 to 79 years"
+description: "The number of male Black African persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_75To79Years_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 75 to 79 years"
+description: "The number of male Indian or Asian persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_75To79Years_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 75 to 79 years"
+description: "The number of male South Africa coloured persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_75To79Years_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 75 to 79 years"
+description: "The number of male White persons aged 75 to 79 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [75 79 Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_80OrMoreYears_Female_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Black African persons aged 80 or more years"
+description: "The number of female Black African persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Female
-race: dcid:BlackAfrican
+gender: d.c.id:Female
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_80OrMoreYears_Female_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female Indian or Asian persons aged 80 or more years"
+description: "The number of female Indian or Asian persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Female
-race: dcid:Indian__Asian
+gender: d.c.id:Female
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_80OrMoreYears_Female_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female South Africa coloured persons aged 80 or more years"
+description: "The number of female South Africa coloured persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Female
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Female
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_80OrMoreYears_Female_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of female White persons aged 80 or more years"
+description: "The number of female White persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Female
-race: dcid:White
+gender: d.c.id:Female
+race: d.c.id:White
 
 Node: dcid:Count_Person_80OrMoreYears_Male_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Black African persons aged 80 or more years"
+description: "The number of male Black African persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Male
-race: dcid:BlackAfrican
+gender: d.c.id:Male
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_80OrMoreYears_Male_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male Indian or Asian persons aged 80 or more years"
+description: "The number of male Indian or Asian persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Male
-race: dcid:Indian__Asian
+gender: d.c.id:Male
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_80OrMoreYears_Male_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male South Africa coloured persons aged 80 or more years"
+description: "The number of male South Africa coloured persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Male
-race: dcid:SouthAfrica_Coloured
+gender: d.c.id:Male
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_80OrMoreYears_Male_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of male White persons aged 80 or more years"
+description: "The number of male White persons aged 80 or more years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [80 - Years]
-gender: dcid:Male
-race: dcid:White
+gender: d.c.id:Male
+race: d.c.id:White
 
 Node: dcid:Count_Person_1Years_VaccineAdministered
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+typeOf: d.c.s:StatisticalVariable
+name: "Number of persons aged 1 year with vaccine administered"
+description: "The number of persons aged 1 year in South Africa who have received a vaccine"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
 age: [1 Years]
-vaccineStatus: dcid:VaccineAdministered
+vaccineStatus: d.c.id:VaccineAdministered
 
 Node: dcid:Count_Person_15To64Years_BlackAfrican
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-age: [15 64 Years]
-race: dcid:BlackAfrican
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people 15 to 64 years Black African"
+description: "The number of Black African persons aged 15 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+age: [15 64 Years]
+race: d.c.id:BlackAfrican
 
 Node: dcid:Count_Person_15To64Years_IndianOrAsian
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-age: [15 64 Years]
-race: dcid:Asian__Indian
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people 15 to 64 years Indian or Asian"
+description: "The number of Indian or Asian persons aged 15 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+age: [15 64 Years]
+race: d.c.id:Indian__Asian
 
 Node: dcid:Count_Person_15To64Years_SouthAfricaColoured
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-age: [15 64 Years]
-race: dcid:SouthAfrica_Coloured
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people 15 to 64 years South Africa coloured"
+description: "The number of South Africa coloured persons aged 15 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+age: [15 64 Years]
+race: d.c.id:SouthAfrica_Coloured
 
 Node: dcid:Count_Person_15To64Years_White
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-age: [15 64 Years]
-race: dcid:White
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people 15 to 64 years White"
+description: "The number of White persons aged 15 to 64 years in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+age: [15 64 Years]
+race: d.c.id:White
 
 Node: dcid:Count_Person_Agriculture_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:Agriculture
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the agriculture sector"
+description: "The total number of people employed in the agriculture sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:Agriculture
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_Agriculture_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:Agriculture
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the agriculture sector"
+description: "The number of females employed in the agriculture sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:Agriculture
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_Agriculture_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:Agriculture
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the agriculture sector"
+description: "The number of males employed in the agriculture sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:Agriculture
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_CommunityAndSocialService_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:CommunityAndSocialService
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the community and social service sector"
+description: "The total number of people employed in the community and social service sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:CommunityAndSocialService
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_CommunityAndSocialService_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:CommunityAndSocialService
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the community and social service sector"
+description: "The number of females employed in the community and social service sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:CommunityAndSocialService
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_CommunityAndSocialService_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:CommunityAndSocialService
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the community and social service sector"
+description: "The number of males employed in the community and social service sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:CommunityAndSocialService
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_ConstructionSector_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:ConstructionSector
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the construction sector"
+description: "The total number of people employed in the construction sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:ConstructionSector
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_ConstructionSector_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:ConstructionSector
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the construction sector"
+description: "The number of females employed in the construction sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:ConstructionSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_ConstructionSector_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:ConstructionSector
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the construction sector"
+description: "The number of males employed in the construction sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:ConstructionSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_FinancialActivities_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:FinancialActivities
-employmentStatus: dcid:Employed
-name: "Number of people employed in the financial activities sector"
+typeOf: d.c.s:StatisticalVariable
+name: "Number of people employed in the Financial activities sector"
+description: "The total number of people employed in the financial activities sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:FinancialActivities
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_FinancialActivities_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:FinancialActivities
-employmentStatus: dcid:Employed
-gender: dcid:Female
-name: "Number of females employed in the financial activities sector"
+typeOf: d.c.s:StatisticalVariable
+name: "Number of females employed in the Financial activities sector"
+description: "The number of females employed in the financial activities sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:FinancialActivities
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_FinancialActivities_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:FinancialActivities
-employmentStatus: dcid:Employed
-gender: dcid:Male
-name: "Number of males employed in the financial activities sector"
+typeOf: d.c.s:StatisticalVariable
+name: "Number of males employed in the Financial activities sector"
+description: "The number of males employed in the financial activities sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:FinancialActivities
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_ManufacturingSector_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:ManufacturingSector
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the manufacturing sector"
+description: "The total number of people employed in the manufacturing sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:ManufacturingSector
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_ManufacturingSector_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:ManufacturingSector
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the manufacturing sector"
+description: "The number of females employed in the manufacturing sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:ManufacturingSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_ManufacturingSector_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:ManufacturingSector
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the manufacturing sector"
+description: "The number of males employed in the manufacturing sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:ManufacturingSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_MiningQuarrying_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:MiningQuarrying
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the mining and quarrying sector"
+description: "The total number of people employed in the mining and quarrying sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:MiningQuarrying
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_MiningQuarrying_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:MiningQuarrying
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the mining and quarrying sector"
+description: "The number of females employed in the mining and quarrying sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:MiningQuarrying
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_MiningQuarrying_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:MiningQuarrying
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the mining and quarrying sector"
+description: "The number of males employed in the mining and quarrying sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:MiningQuarrying
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_SouthAfricaOtherSector_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:SouthAfrica_OtherSector
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the South Africa other sector"
+description: "The total number of people employed in other sectors in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:SouthAfrica_OtherSector
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_SouthAfricaOtherSector_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:SouthAfrica_OtherSector
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the South Africa other sector"
+description: "The number of females employed in other sectors in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:SouthAfrica_OtherSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_SouthAfricaOtherSector_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:SouthAfrica_OtherSector
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the South Africa other sector"
+description: "The number of males employed in other sectors in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:SouthAfrica_OtherSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_TradeSector_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:TradeSector
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the trade sector"
+description: "The total number of people employed in the trade sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:TradeSector
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_TradeSector_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:TradeSector
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the trade sector"
+description: "The number of females employed in the trade sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:TradeSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_TradeSector_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:TradeSector
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the trade sector"
+description: "The number of males employed in the trade sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:TradeSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_TransportStorageSector_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:TransportStorageSector
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the transport and storage sector"
+description: "The total number of people employed in the transport and storage sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:TransportStorageSector
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_TransportStorageSector_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:TransportStorageSector
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the transport and storage sector"
+description: "The number of females employed in the transport and storage sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:TransportStorageSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_TransportStorageSector_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:TransportStorageSector
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the transport and storage sector"
+description: "The number of males employed in the transport and storage sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:TransportStorageSector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_UtilitySector_Employed
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:UtilitySector
-employmentStatus: dcid:Employed
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people employed in the utility sector"
+description: "The total number of people employed in the utility sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:UtilitySector
+employmentStatus: d.c.id:Employed
 
 Node: dcid:Count_Person_UtilitySector_Employed_Female
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:UtilitySector
-employmentStatus: dcid:Employed
-gender: dcid:Female
+typeOf: d.c.s:StatisticalVariable
 name: "Number of females employed in the utility sector"
+description: "The number of females employed in the utility sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:UtilitySector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Female
 
 Node: dcid:Count_Person_UtilitySector_Employed_Male
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-economicSector: dcid:UtilitySector
-employmentStatus: dcid:Employed
-gender: dcid:Male
+typeOf: d.c.s:StatisticalVariable
 name: "Number of males employed in the utility sector"
+description: "The number of males employed in the utility sector in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+economicSector: d.c.id:UtilitySector
+employmentStatus: d.c.id:Employed
+gender: d.c.id:Male
 
 Node: dcid:Count_Person_SlumArea
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-placeOfResidenceClassification: dcid:SlumArea
+typeOf: d.c.s:StatisticalVariable
 name: "Number of people living in slum area"
+description: "The number of people living in slum areas in South Africa"
+populationType: d.c.s:Person
+measuredProperty: d.c.s:count
+statType: d.c.s:measuredValue
+placeOfResidenceClassification: d.c.id:SlumArea
