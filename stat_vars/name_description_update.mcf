@@ -1,42 +1,45 @@
+
 Node: dcid:dc/x6l3mg60hpe7c
+name: "Price index of goods and services urban consumer"
+description: "Tracks averaged price changes over time for goods and services bought by urban consumers, not seasonally adjusted"
 typeOf: dcs:StatisticalVariable
 populationType: dcid:ConsumerGoodsAndServices
 consumer: dcs:UrbanConsumer
 statType: dcs:measuredValue
 measuredProperty: dcs:consumerPriceIndex
 measurementQualifier: dcs:BLSSeasonallyUnadjusted
-name: "Consumer price index"
-description: "The average percentage change in prices of a basket of goods and services purchased by urban households over a specific period (seasonally unadjusted)."
 
 Node: dcid:dc/e4cm4rj4d5fyc
+name: "Price index of goods and services urban waged earner"
+description: "Tracks averaged price changes over time for goods and services bought by urban waged earners and clerical workers, not seasonally adjusted"
 typeOf: dcs:StatisticalVariable
 populationType: dcid:ConsumerGoodsAndServices
 consumer: dcs:UrbanWageEarnerAndClericalWorker
 statType: dcs:measuredValue
 measuredProperty: dcs:consumerPriceIndex
 measurementQualifier: dcs:BLSSeasonallyUnadjusted
-name: "Consumer price index of consumer goods and services (seasonally unadjusted) for urban wage earners and clerical workers"
-description: "Measure of the average change in prices over time of a basket of goods and services purchased by urban wage earners and clerical workers."
 
 Node: dcid:UnemploymentRate_Person
+name: "Unemployment rate"
+description: "Shows the percentaged of people in the labor force who are jobless but actively looking for work"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:unemploymentRate
 statType: dcid:measuredValue
-name: "Unemployment rate"
-description: "Percentage of the labor force actively seeking work but unable to find employment."
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
+name: "Nominal gross domestic product"
+description: "Total value of goods and services produced within a country using current prices during a specific period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:EconomicActivity
 statType: dcs:measuredValue
 measuredProperty: dcs:amount
 activitySource: dcs:GrossDomesticProduction
 measurementQualifier: dcs:Nominal
-name: "Nominal gross domestic product"
-description: "Measure of the total value of all goods and services produced within a country's borders in a given period, using current market prices"
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita
+name: "Nominal gross domestic product per person"
+description: "Total economic output divided by the population, using current prices"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:EconomicActivity
 statType: dcs:measuredValue
@@ -44,24 +47,21 @@ measuredProperty: dcs:amount
 activitySource: dcs:GrossDomesticProduction
 measurementQualifier: dcs:Nominal
 measurementDenominator: dcs:PerCapita
-name: "Nominal gross domestic product per capita"
-description: "Measure of a country's economic output relative to its population, calculated by dividing the nominal GDP by the total population."
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
+name: "Growth rate of gross domestic product"
+description: "Percentaged change in the total economic output of a country over a set period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:EconomicActivity
 statType: dcs:growthRate
 measuredProperty: dcs:amount
 activitySource: dcs:GrossDomesticProduction
-name: "Gross domestic product growth rate"
-description: "The percentage change in a country's gross domestic product (GDP) over a specific period."
 
 Node: dcid:Monthly_Index_Commodity
+name: "Monthly commodity price index"
+description: "Averaged price level of raw materials compiled into a single monthly index"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Commodity
 statType: dcs:measuredValue
 measuredProperty: dcs:index
 measurementQualifier: dcs:Monthly
-name: "Monthly commodity price index"
-description: "Index that tracks the monthly prices of commodity raw materials."
-
