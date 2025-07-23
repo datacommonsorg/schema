@@ -791,7 +791,7 @@ Node: area
 dcid: "area"
 name: "area"
 typeOf: schema:Property
-domainIncludes: schema:AdministrativeArea, schema:LandCover
+domainIncludes: schema:AdministrativeArea, schema:LandCover, dcs:FarmInventory
 rangeIncludes: schema:Number
 
 Node: countValue
@@ -4687,6 +4687,12 @@ Node: dcid:activitySource
 typeOf: dcs:Property
 name: "activitySource"
 domainIncludes: dcid:EconomicActivity
+
+Node: dcid:netValue
+typeOf: dcs:Property
+name: "netValue"
+isProvisional: dcs:True
+
 
 Node: dcid:StatVarObsSeries
 typeOf: dcs:Class

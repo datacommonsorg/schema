@@ -101,7 +101,7 @@ name: "expenses"
 Node: dcid:farmInventoryType
 typeOf: schema:Property
 domainIncludes: dcs:Farm, dcs:FarmInventory
-rangeIncludes: dcs:FarmInventoryTypeEnum
+rangeIncludes: dcs:FarmInventoryTypeEnum, dcid:ProductEnum,dcid:ConsumerGoodsCategoryEnum
 name: "farmInventoryType"
 
 Node: dcid:quantitySold
@@ -475,3 +475,23 @@ name: "PrimaryProducer"
 Node:dcid:Wheat
 typeOf:FarmInventoryTypeEnum
 name:"Wheat"
+
+Node: dcid:Mesta
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Mesta"
+isProvisional: dcs:True
+
+Node: dcid:Jute
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Jute"
+isProvisional: dcs:True
+
+Node: dcid:Fruits
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fruits"
+isProvisional: dcs:True
+
+Node: dcid:Wool
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Wool"
+isProvisional: dcs:True
