@@ -1,25 +1,34 @@
+
 Node: dcid:Count_Student_PreKindergartenAndKindergarten
+name: "Count of students in pre-kindergarten and kindergarten"
+description: "The total count of students in pre-kindergarten and kindergarten"
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:PreKindergartenAndKindergarten
+schoolgradeLevel: dcs:PreKindergartenAndKindergarten
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_SchoolGrade1To8
+Node: dcid:Count_Student_Schoolgrade1To8
+name: "Count of students in school grades 1 to 8"
+description: "The total count of students in school grades 1 to 8"
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:SchoolGrade1To8
+schoolgradeLevel: dcs:Schoolgrade1To8
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_SchoolGrade9To12
+Node: dcid:Count_Student_Schoolgrade9To12
+name: "Count of students in school grades 9 to 12"
+description: "The total count of students in school grades 9 to 12"
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:SchoolGrade9To12
+schoolgradeLevel: dcs:Schoolgrade9To12
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Percent_Student_AmericanIndianOrAlaskaNative_AsAFractionOf_Count_Student
+name: "Percent of students who are American Indian or Alska Native as a fraction of total student count"
+description: "The Percentage of students who are American Indian or Alska Native as a fraction of the total student count"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Student
 populationType: dcs:Student
@@ -28,14 +37,17 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Percent_Student_AsAFractionOf_Count_Teacher
+name: "Student to teacher ratio"
+description: "The ratio of students to teachers"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Teacher
 populationType: dcs:Student
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
-name: "Student to Teacher Ratio"
 
 Node: dcid:Percent_Student_Asian_AsAFractionOf_Count_Student
+name: "Percent of students who are Asian as a fraction of total student count"
+description: "The Percentage of students who are Asian as a fraction of the total student count"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Student
 populationType: dcs:Student
@@ -44,6 +56,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Percent_Student_Black_AsAFractionOf_Count_Student
+name: "Percent of students who are Black as a fraction of total student count"
+description: "The Percentage of students who are Black as a fraction of the total student count"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Student
 populationType: dcs:Student
@@ -52,6 +66,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Percent_Student_HawaiianNativeOrPacificIslander_AsAFractionOf_Count_Student
+name: "Percent of students who are Hawaiian Native or Pacific Islander as a fraction of total student count"
+description: "The Percentage of students who are Hawaiian Native or Pacific Islander as a fraction of the total student count"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Student
 populationType: dcs:Student
@@ -60,6 +76,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Percent_Student_HispanicOrLatino_AsAFractionOf_Count_Student
+name: "Percent of students who are Hispanic or Latino as a fraction of total student count"
+description: "The Percentage of students who are Hispanic or Latino as a fraction of the total student count"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Student
 populationType: dcs:Student
@@ -68,6 +86,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Percent_Student_TwoOrMoreRaces_AsAFractionOf_Count_Student
+name: "Percent of students with two or more races as a fraction of total student count"
+description: "The Percentage of students with two or more races as a fraction of the total student count"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Student
 populationType: dcs:Student
@@ -75,432 +95,534 @@ race: dcs:TwoOrMoreRaces
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Percent_Student_White_AsAFractionOf_Count_Student
+Node: dcid:Percent_Student_white_AsAFractionOf_Count_Student
+name: "Percent of students who are white as a fraction of total student count"
+description: "The Percentage of students who are white as a fraction of the total student count"
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Student
 populationType: dcs:Student
-race: dcs:White
+race: dcs:white
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_AdultEducation
+name: "Count of students in adult education"
+description: "The total count of students in adult education"
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_AmericanIndianOrAlaskaNative_AdultEducation
+name: "Count of American Indian or Alska Native students in adult education"
+description: "The total count of American Indian or Alska Native students in adult education"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:AmericanIndianOrAlaskaNative
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_AmericanIndianOrAlaskaNative_SchoolGrade13
+Node: dcid:Count_Student_AmericanIndianOrAlaskaNative_Schoolgrade13
+name: "Count of American Indian or Alska Native students in school grade 13"
+description: "The total count of American Indian or Alska Native students in school grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:AmericanIndianOrAlaskaNative
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Asian_AdultEducation
+name: "Count of Asian students in adult education"
+description: "The total count of Asian students in adult education"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Asian
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Asian_SchoolGrade13
+Node: dcid:Count_Student_Asian_Schoolgrade13
+name: "Count of Asian students in school grade 13"
+description: "The total count of Asian students in school grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Asian
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Black_AdultEducation
+name: "Count of Black students in adult education"
+description: "The total count of Black students in adult education"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Black
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Black_SchoolGrade13
+Node: dcid:Count_Student_Black_Schoolgrade13
+name: "Count of Black students in grade 13"
+description: "The count of Black students in grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Black
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Female_AdultEducation
+name: "Count of female students in adult education"
+description: "The count of students who are female in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Female_AmericanIndianOrAlaskaNative_AdultEducation
+name: "Count of female American Indian or Alaska Native students in adult education"
+description: "The count of female students who are American Indian or Alaska Native in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:AmericanIndianOrAlaskaNative
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_AmericanIndianOrAlaskaNative_SchoolGrade13
+Node: dcid:Count_Student_Female_AmericanIndianOrAlaskaNative_Schoolgrade13
+name: "Count of female American Indian or Alaska Native students in grade 13"
+description: "The count of students who are female and American Indian or Alaska Native in grade 13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:AmericanIndianOrAlaskaNative
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Female_Asian_AdultEducation
+name: "Count of female Asian students in adult education"
+description: "The count of students who are female and Asian in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Asian
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_Asian_SchoolGrade13
+Node: dcid:Count_Student_Female_Asian_Schoolgrade13
+name: "Count of female Asian students in grade13"
+description: "The count of students who are female and Asian in grade13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Asian
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Female_Black_AdultEducation
+name: "Count of female Black students in adult education"
+description: "The count of students who are female and Black in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Black
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_Black_SchoolGrade13
+Node: dcid:Count_Student_Female_Black_Schoolgrade13
+name: "Count of female Black students in grade 13"
+description: "The count of students who are female and Black in grade 13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Black
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Female_HawaiianNativeOrPacificIslander_AdultEducation
+name: "Count of female Hawaiian Native or Pacific Islander students in adult education"
+description: "The count of students who are female and Hawaiian Native or Pacific Islander in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HawaiianNativeOrPacificIslander
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_HawaiianNativeOrPacificIslander_SchoolGrade13
+Node: dcid:Count_Student_Female_HawaiianNativeOrPacificIslander_Schoolgrade13
+name: "Count of female Hawaiian Native or Pacific Islander students in grade 13"
+description: "The count of students who are female and Hawaiian Native or Pacific Islander in grade 13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HawaiianNativeOrPacificIslander
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Female_HispanicOrLatino_AdultEducation
+name: "Count of female Hispanic or Latino students in adult education"
+description: "The number of female Hispanic or Latino students enrolled in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HispanicOrLatino
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_HispanicOrLatino_SchoolGrade13
+Node: dcid:Count_Student_Female_HispanicOrLatino_Schoolgrade13
+name: "Count of female Hispanic or Latino students in school grade 13"
+description: "The number of female Hispanic or Latino students enrolled in school grade 13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HispanicOrLatino
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_SchoolGrade13
+Node: dcid:Count_Student_Female_Schoolgrade13
+name: "Count of female students in school grade 13"
+description: "The number of female students enrolled in school grade 13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Female_TwoOrMoreRaces_AdultEducation
+name: "Count of female students of two or more races in adult education"
+description: "The number of female students of two or more races enrolled in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:TwoOrMoreRaces
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_TwoOrMoreRaces_SchoolGrade13
+Node: dcid:Count_Student_Female_TwoOrMoreRaces_Schoolgrade13
+name: "Count of female students of two or more races in school grade 13"
+description: "The number of female students of two or more races enrolled in school grade 13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:TwoOrMoreRaces
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_White_AdultEducation
+Node: dcid:Count_Student_Female_white_AdultEducation
+name: "Count of female white students in adult education"
+description: "The number of female white students enrolled in adult education"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
-race: dcs:White
-schoolGradeLevel: dcs:AdultEducation
+race: dcs:white
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Female_White_SchoolGrade13
+Node: dcid:Count_Student_Female_white_Schoolgrade13
+name: "Count of female white students in school grade 13"
+description: "The number of female white students enrolled in school grade 13"
 gender: dcs:Female
 measuredProperty: dcs:count
 populationType: dcs:Student
-race: dcs:White
-schoolGradeLevel: dcs:SchoolGrade13
+race: dcs:white
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_HawaiianNativeOrPacificIslander_AdultEducation
+name: "Count of students who are Hawaiian Native or Pacific Islander in adult education"
+description: "The number of students who are Hawaiian Native or Pacific Islander enrolled in adult education"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HawaiianNativeOrPacificIslander
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_HawaiianNativeOrPacificIslander_SchoolGrade13
+Node: dcid:Count_Student_HawaiianNativeOrPacificIslander_Schoolgrade13
+name: "Count of students who are Hawaiian Native or Pacific Islander in school grade 13"
+description: "The number of students who are Hawaiian Native or Pacific Islander enrolled in school grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HawaiianNativeOrPacificIslander
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_HispanicOrLatino_AdultEducation
+name: "Count of Hispanic or Latino students in adult education"
+description: "The number of Hispanic or Latino students enrolled in adult education"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HispanicOrLatino
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_HispanicOrLatino_SchoolGrade13
+Node: dcid:Count_Student_HispanicOrLatino_Schoolgrade13
+name: "Count of Hispanic or Latino students in school grade 13"
+description: "The number of Hispanic or Latino students enrolled in school grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HispanicOrLatino
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Male_AdultEducation
+name: "Count of male students in adult education"
+description: "The number of male students enrolled in adult education"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Male_AmericanIndianOrAlaskaNative_AdultEducation
+name: "Count of male students who are American Indian or Alska Native in adult education"
+description: "The number of male students who are American Indian or Alska Native enrolled in adult education"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:AmericanIndianOrAlaskaNative
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_AmericanIndianOrAlaskaNative_SchoolGrade13
+Node: dcid:Count_Student_Male_AmericanIndianOrAlaskaNative_Schoolgrade13
+name: "Count of male students who are American Indian or Alaska Native in school grade 13"
+description: "The number of male students who are American Indian or Alaska Native enrolled in school grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:AmericanIndianOrAlaskaNative
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Male_Asian_AdultEducation
+name: "Count of male students who are Asian in adult education"
+description: "The number of male students who are Asian enrolled in adult education"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Asian
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_Asian_SchoolGrade13
+Node: dcid:Count_Student_Male_Asian_Schoolgrade13
+name: "Count of male students who are Asian in school grade 13"
+description: "The number of male students who are Asian enrolled in school grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Asian
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Male_Black_AdultEducation
+name: "Count of male students who are Black in adult education"
+description: "The number of male students who are Black enrolled in adult education"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Black
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_Black_SchoolGrade13
+Node: dcid:Count_Student_Male_Black_Schoolgrade13
+name: "Count of Black male students in grade 13"
+description: "The number of Black male students enrolled in grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:Black
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Male_HawaiianNativeOrPacificIslander_AdultEducation
+name: "Count of Hawaiian or Pacific Islander male students in adult education"
+description: "The number of Hawaiian or Pacific Islander male students enrolled in adult education programs"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HawaiianNativeOrPacificIslander
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_HawaiianNativeOrPacificIslander_SchoolGrade13
+Node: dcid:Count_Student_Male_HawaiianNativeOrPacificIslander_Schoolgrade13
+name: "Count of Hawaiian or Pacific Islander male students in grade 13"
+description: "The number of Hawaiian or Pacific Islander male students enrolled in grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HawaiianNativeOrPacificIslander
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Male_HispanicOrLatino_AdultEducation
+name: "Count of Hispanic or Latino male students in adult education"
+description: "The number of Hispanic or Latino male students enrolled in adult education programs"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HispanicOrLatino
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_HispanicOrLatino_SchoolGrade13
+Node: dcid:Count_Student_Male_HispanicOrLatino_Schoolgrade13
+name: "Count of Hispanic or Latino male students in grade 13"
+description: "The number of Hispanic or Latino male students enrolled in grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:HispanicOrLatino
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_SchoolGrade13
+Node: dcid:Count_Student_Male_Schoolgrade13
+name: "Count of male students in grade 13"
+description: "The number of male students enrolled in grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_Male_TwoOrMoreRaces_AdultEducation
+name: "Count of male students of two or more races in adult education"
+description: "The number of male students of two or more races enrolled in adult education programs"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:TwoOrMoreRaces
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_TwoOrMoreRaces_SchoolGrade13
+Node: dcid:Count_Student_Male_TwoOrMoreRaces_Schoolgrade13
+name: "Count of male students of two or more races in grade 13"
+description: "The number of male students of two or more races enrolled in grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:TwoOrMoreRaces
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_White_AdultEducation
+Node: dcid:Count_Student_Male_white_AdultEducation
+name: "Count of white male students in adult education"
+description: "The number of white male students enrolled in adult education programs"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
-race: dcs:White
-schoolGradeLevel: dcs:AdultEducation
+race: dcs:white
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_Male_White_SchoolGrade13
+Node: dcid:Count_Student_Male_white_Schoolgrade13
+name: "Count of white male students in grade 13"
+description: "The number of white male students enrolled in grade 13"
 gender: dcs:Male
 measuredProperty: dcs:count
 populationType: dcs:Student
-race: dcs:White
-schoolGradeLevel: dcs:SchoolGrade13
+race: dcs:white
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_ReducedLunch
+name: "Count of students eligible for reduced lunch"
+description: "The number of students eligible for reduced-price lunch"
 lunchEligibility: dcs:ReducedLunch
 measuredProperty: dcs:count
 populationType: dcs:Student
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_SchoolGrade13
+Node: dcid:Count_Student_Schoolgrade13
+name: "Count of students in grade 13"
+description: "The number of students enrolled in grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_TwoOrMoreRaces_AdultEducation
+name: "Count of students of two or more races in adult education"
+description: "The number of students of two or more races enrolled in adult education programs"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:TwoOrMoreRaces
-schoolGradeLevel: dcs:AdultEducation
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_TwoOrMoreRaces_SchoolGrade13
+Node: dcid:Count_Student_TwoOrMoreRaces_Schoolgrade13
+name: "Count of students of two or more races in grade 13"
+description: "The number of students of two or more races enrolled in grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
 race: dcs:TwoOrMoreRaces
-schoolGradeLevel: dcs:SchoolGrade13
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_White_AdultEducation
+Node: dcid:Count_Student_white_AdultEducation
+name: "Count of White students in adult education"
+description: "The number of White students enrolled in adult education programs"
 measuredProperty: dcs:count
 populationType: dcs:Student
-race: dcs:White
-schoolGradeLevel: dcs:AdultEducation
+race: dcs:white
+schoolgradeLevel: dcs:AdultEducation
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Student_White_SchoolGrade13
+Node: dcid:Count_Student_white_Schoolgrade13
+name: "Count of White students in grade 13"
+description: "The number of White students enrolled in grade 13"
 measuredProperty: dcs:count
 populationType: dcs:Student
-race: dcs:White
-schoolGradeLevel: dcs:SchoolGrade13
+race: dcs:white
+schoolgradeLevel: dcs:Schoolgrade13
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_ElementarySchoolCounselor
+name: "Count of elementary school counselors"
+description: "The number of faculty members serving as elementary school counselors"
 facultyType: dcs:ElementarySchoolCounselor
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -508,6 +630,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_LEAAdministrativeSupportStaff
+name: "Count of lea administrative support staff"
+description: "The number of faculty members categorized as lea administrative support staff"
 facultyType: dcs:LEAAdministrativeSupportStaff
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -515,6 +639,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_LEAAdministrator
+name: "Count of lea administrators"
+description: "The number of faculty members serving as lea administrators"
 facultyType: dcs:LEAAdministrator
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -522,6 +648,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_ParaProfessionalsAidesOrInstructionalAide
+name: "Count of paraprofessionals aides or instructional aides"
+description: "The number of faculty members serving as paraprofessionals aides or instructional aides"
 facultyType: dcs:ParaProfessionalsAidesOrInstructionalAide
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -529,6 +657,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_SchoolAdministrativeSupportStaff
+name: "Count of school administrative support staff"
+description: "The number of faculty members serving as school administrative support staff"
 facultyType: dcs:SchoolAdministrativeSupportStaff
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -536,6 +666,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_SchoolAdministrator
+name: "Count of school administrators"
+description: "The number of faculty members serving as school administrators"
 facultyType: dcs:SchoolAdministrator
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -543,6 +675,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_SchoolOtherGuidanceCounselor
+name: "Count of other school guidance counselors"
+description: "The number of faculty members serving as other types of school guidance counselors"
 facultyType: dcs:SchoolOtherGuidanceCounselor
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -550,6 +684,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_SchoolPsychologist
+name: "Count of school psychologists"
+description: "The number of faculty members serving as school psychologists"
 facultyType: dcs:SchoolPsychologist
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -557,6 +693,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_SecondarySchoolCounselor
+name: "Count of secondary school counselors"
+description: "The number of faculty members serving as secondary school counselors"
 facultyType: dcs:SecondarySchoolCounselor
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -564,6 +702,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Faculty_TotalGuidanceCounselor
+name: "Count of total school guidance counselors"
+description: "The total number of faculty members serving in any school guidance counselor role"
 facultyType: dcs:TotalGuidanceCounselor
 measuredProperty: dcs:count
 populationType: dcs:Faculty
@@ -571,6 +711,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Student_StudentSupportServicesStaff
+name: "Count of student support services staff"
+description: "The number of faculty members serving in student support services roles"
 facultyType: dcs:StudentSupportServicesStaff
 measuredProperty: dcs:count
 populationType: dcs:Student
@@ -578,6 +720,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Teacher_ElementaryTeacher
+name: "Count of elementary teachers"
+description: "The number of faculty members serving as elementary teachers"
 facultyType: dcs:ElementaryTeacher
 measuredProperty: dcs:count
 populationType: dcs:Teacher
@@ -585,20 +729,26 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Teacher_Kindergarten
+name: "Count of kindergarten teachers"
+description: "The number of teachers assigned to kindergarten classrooms"
 measuredProperty: dcs:count
 populationType: dcs:Teacher
-schoolGradeLevel: dcs:Kindergarten
+schoolgradeLevel: dcs:Kindergarten
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Teacher_PreKindergarten
+name: "Count of pre-kindergarten teachers"
+description: "The number of teachers assigned to pre-kindergarten classrooms"
 measuredProperty: dcs:count
 populationType: dcs:Teacher
-schoolGradeLevel: dcs:PreKindergarten
+schoolgradeLevel: dcs:PreKindergarten
 statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Teacher_SecondaryTeacher
+name: "Count of secondary teachers"
+description: "The number of faculty members serving as secondary teachers"
 facultyType: dcs:SecondaryTeacher
 measuredProperty: dcs:count
 populationType: dcs:Teacher
@@ -606,6 +756,8 @@ statType: dcs:measuredValue
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Teacher_UngradedTeacher
+name: "Count of ungraded teachers"
+description: "The number of faculty members categorized as ungraded teachers"
 facultyType: dcs:UngradedTeacher
 measuredProperty: dcs:count
 populationType: dcs:Teacher
