@@ -1,40 +1,43 @@
-# LINT.IfChange
-# These are auto-generated
 
 Node: dcid:dc/topic/Veterans
-typeOf: dcs:Topic
-name: "Veterans"
+typeof: dcs:topic
+name: "Veteran statistics"
+description: "The statistical data related to veterans, including income, demographics, and living arrangements"
 relevantVariable: dcid:Count_Person_Veteran
 relevantVariable: dcid:dc/topic/VeteransIncome
 relevantVariable: dcid:dc/topic/VeteransByWar
-relevantVariable: dcid:dc/topic/VeteransByGender
+relevantVariable: dcid:dc/topic/VeteransBygender
 relevantVariable: dcid:dc/topic/VeteransByGroupQuartersResidence
 
-Node: dcid:dc/topic/VeteransByGender
-typeOf: dcs:Topic
-name: "Veterans By Gender"
-relevantVariable: dcid:dc/svpg/dc/topic/VeteransByGender_VeteransByGender
-relevantVariable: dcid:dc/svpg/dc/topic/VeteransByGender_MaleAge
-relevantVariable: dcid:dc/svpg/dc/topic/VeteransByGender_FemaleAge
+Node: dcid:dc/topic/VeteransBygender
+typeof: dcs:topic
+name: "Veterans by gender statistics"
+description: "The statistical data related to veterans, categorized by gender, age, and 0ther demographic factors"
+relevantVariable: dcid:dc/svpg/dc/topic/VeteransBygender_VeteransBygender
+relevantVariable: dcid:dc/svpg/dc/topic/VeteransBygender_Maleage
+relevantVariable: dcid:dc/svpg/dc/topic/VeteransBygender_Femaleage
 
-Node: dcid:dc/svpg/dc/topic/VeteransByGender_VeteransByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Veterans By Gender"
+Node: dcid:dc/svpg/dc/topic/VeteransBygender_VeteransBygender
+typeof: dcs:StatVarPeerGroup
+name: "Veterans by gender peer group statistics"
+description: "The statistical data related to veterans, categorized by gender, within specific peer groups"
 member: dcid:dc/2qn8p1m6xx3d
 member: dcid:dc/l6vp0xtccglcb
 
-Node: dcid:dc/svpg/dc/topic/VeteransByGender_MaleAge
-typeOf: dcs:StatVarPeerGroup
-name: "Male Veterans by Age"
+Node: dcid:dc/svpg/dc/topic/VeteransBygender_Maleage
+typeof: dcs:StatVarPeerGroup
+name: "Male veterans by age group statistics"
+description: "The statistical data related to male veterans, categorized by different age groups"
 member: dcid:dc/lcptt9lhzrnrg
 member: dcid:dc/g55znmzhk56mf
 member: dcid:dc/fzbvjmd5gjgs4
 member: dcid:dc/z2v1n65cz84x9
 member: dcid:dc/x90mvznfdcqwd
 
-Node: dcid:dc/svpg/dc/topic/VeteransByGender_FemaleAge
-typeOf: dcs:StatVarPeerGroup
-name: "Female Veterans by Age"
+Node: dcid:dc/svpg/dc/topic/VeteransBygender_Femaleage
+typeof: dcs:StatVarPeerGroup
+name: "Female veterans by age group statistics"
+description: "The statistical data related to female veterans, categorized by different age groups"
 member: dcid:dc/xjyn3f0sd1vw3
 member: dcid:dc/xq512kjx1rffc
 member: dcid:dc/t7wbgxy8gr3g9
@@ -43,12 +46,14 @@ member: dcid:dc/0dxr5t9xv7cyf
 
 Node: dcid:dc/topic/VeteransByGroupQuartersResidence
 typeOf: dcs:Topic
-name: "Veterans By Group Quarters Residence"
 relevantVariable: dcid:dc/svpg/dc/topic/VeteransByGroupQuartersResidence_VeteransByGroupQuartersResidence
+name: "Veterans by group quarters residence statistics"
+description: "The statistical data related to veterans based on their type of group quarters residence, including nursing facilities, military quarters, student housing, and correctional facilities"
 
 Node: dcid:dc/svpg/dc/topic/VeteransByGroupQuartersResidence_VeteransByGroupQuartersResidence
 typeOf: dcs:StatVarPeerGroup
-name: "Veterans By Group Quarters Residence"
+name: "Veterans by group quarters residence"
+description: "Statistics about the population of veterans living in various types of group quarters, including institutionalized and noninstitutionalized settings"
 member: dcid:Count_Person_ResidesInNoninstitutionalizedGroupQuarters_Veteran
 member: dcid:Count_Person_ResidesInNursingFacilities_Veteran
 member: dcid:Count_Person_ResidesInMilitaryQuartersOrMilitaryShips_Veteran
@@ -59,13 +64,15 @@ member: dcid:Count_Person_ResidesInGroupQuarters_Veteran
 member: dcid:Count_Person_ResidesInAdultCorrectionalFacilities_Veteran
 
 Node: dcid:dc/topic/VeteransByWar
-typeOf: dcs:Topic
-name: "Veterans By War"
+typeof: dcs:topic
+name: "Veterans by war statistics"
+description: "The statistical data related to veterans, categorized by the wars they served in"
 relevantVariable: dcid:dc/svpg/dc/topic/VeteransByWar_VeteransByWar
 
 Node: dcid:dc/svpg/dc/topic/VeteransByWar_VeteransByWar
-typeOf: dcs:StatVarPeerGroup
-name: "Veterans By War"
+typeof: dcs:StatVarPeerGroup
+name: "Veterans by war peer group statistics"
+description: "The statistical data related to veterans, categorized by the wars they served in, within specific peer groups"
 member: dcid:dc/ll54s8y2d720d
 member: dcid:dc/wpkqjslkwknbc
 member: dcid:dc/2d5rby4n8sf38
@@ -83,15 +90,16 @@ member: dcid:dc/b2l0jcm65s4x2
 member: dcid:dc/4n1l2j3e2wy7f
 
 Node: dcid:dc/topic/VeteransIncome
-typeOf: dcs:Topic
-name: "Veterans Income"
+typeof: dcs:topic
+name: "Veterans income statistics"
+description: "The statistical data related to the income levels of veterans, categorized by various factors including gender"
 relevantVariable: dcid:dc/ec13z1eh1d5d8
-relevantVariable: dcid:dc/svpg/dc/topic/VeteransIncome_VeteransIncomeByGender
+relevantVariable: dcid:dc/svpg/dc/topic/VeteransIncome_VeteransIncomeBygender
 
-Node: dcid:dc/svpg/dc/topic/VeteransIncome_VeteransIncomeByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Veterans Income By Gender"
+Node: dcid:dc/svpg/dc/topic/VeteransIncome_VeteransIncomeBygender
+typeof: dcs:StatVarPeerGroup
+name: "Veterans income by gender peer group statistics"
+description: "The statistical data related to veterans' income, categorized by gender within specific peer groups"
 member: dcid:dc/21j845ny0gpl6
 member: dcid:dc/xg4bepzr1wb93
-
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
