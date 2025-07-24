@@ -791,7 +791,7 @@ Node: area
 dcid: "area"
 name: "area"
 typeOf: schema:Property
-domainIncludes: schema:AdministrativeArea, schema:LandCover
+domainIncludes: schema:AdministrativeArea, schema:LandCover, schema:FarmInventory
 rangeIncludes: schema:Number
 
 Node: countValue
@@ -4693,3 +4693,16 @@ typeOf: dcs:Class
 name: "StatVarObsSeries"
 description: "A series of observations for a StatisticalVariable and entity."
 subClassOf: dcid:Intangible
+
+Node: dcid:Fruits
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Fruits"
+
+Node: dcid:NetValue
+typeOf: dcid:MeasurementQualifierEnum
+name: "Net Value"
+
+Node: dcid:Wool
+typeOf: dcid:FarmInventoryTypeEnum
+name: "Wool"
+
