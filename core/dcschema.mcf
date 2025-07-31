@@ -4711,3 +4711,25 @@ Node: dcid:Wool
 typeOf: dcid:FarmInventoryTypeEnum
 name: "Wool"
 
+Node: dcid:eiaSeriesId
+typeOf:Property
+name:"eiaSeriesId"
+description: "Series ID it's only for the EIA import."
+
+Node: dcid:retailPrice
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product,schema:Electricity
+name: "retailPrice"
+
+Node: dcid:retailSales
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product,schema:Electricity
+name: "retailSales"
+
+Node: dcid:salesRevenue
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: schema:Product,schema:Electricity
+name: "salesRevenue"
