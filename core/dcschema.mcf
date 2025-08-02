@@ -485,6 +485,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
+domainIncludes: schema:Person, schema:Organization, schema:Household, dcid:Child
 domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent
 
 Node: employmentStatus
@@ -2763,7 +2764,7 @@ description: "Further specification on the type of a claim, application, or requ
 Node: dcid:benefitProgram
 name: "benefitProgram"
 typeOf: schema:Property
-domainIncludes: dcs:UnemploymentInsuranceClaim
+domainIncludes: dcs:UnemploymentInsuranceClaim, dcid:Person,dcid:Person,dcid:Child,dcid:PregnantWoman,dcid:HouseHold,dcid:Student,dcid:Household,dcid:Resource,dcid:Household
 rangeIncludes: dcs:UnemploymentInsuranceProgramEnum, dcs:BenefitProgramEnum
 description: "A program that offers benefits. E.g. SNAP (foodstamps), UI (Unemployment Insurance), etc."
 
@@ -3151,7 +3152,7 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Vaccine"
 Node: dcid:vaccineStatus
 name: "vaccineStatus"
 typeOf: schema:Property
-domainIncludes: dcs:Vaccine, dcs:Person
+domainIncludes: dcs:Vaccine, dcs:Person, dcid:Child
 rangeIncludes: dcs:VaccineStatusEnum
 
 Node: dcid:vaccineDoseReceived
