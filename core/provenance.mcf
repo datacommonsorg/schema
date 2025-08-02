@@ -3,7 +3,7 @@ typeOf: schema:Class
 subClassOf: schema:Intangible
 dcid: dcs:Provenance
 name: "Provenance"
-description: "Represents the provenance details for a triple in the graph."
+description: "A unique identifier for a data import, containing a set of structured records obtained from a data source. A Provenance may represent a subset of records contained in a (large) Dataset, or may represent a single Dataset. For example, 'dc/base/CensusACS5YearSurvey_SubjectTables_S1502' is one Provenance of the Dataset 'dc/d/UnitedStatesCensusBureau_AmericanCommunitySurveyAcs' provided by the US Census Bureau, and represents one table of a database."
 
 Node: SchemaCuratorType
 typeOf: schema:Class
@@ -31,14 +31,14 @@ typeOf: schema:Class
 dcid: dcs:Source
 subClassOf: schema:Organization
 name: "Source"
-description: "Represents a data source, which would be an organization."
+description: "A unique identifier for the provider/owner of one or more imported datasets, normally an organization. For example, the Central Statistics Office of Ireland is represented by the Source 'dc/s/CentralStatisticsOfficeCsoIreland'."
 
 Node: SchemaDatasetType
 typeOf: schema:Class
 dcid: dcs:Dataset
 subClassOf: dcid:Source
 name: "Dataset"
-description: "Represents a dataset, coming from a Source."
+description: "A unique identifier for a collection of structured data records, obtained from a single Source. A Dataset may contain more than one Provenance, which is a subset of the records in the Dataset. For example, 'dc/base/Ireland_Census' is one Dataset from the Source 'dc/s/CentralStatisticsOfficeCsoIreland'."
 
 Node: SchemaSourceProperty
 typeOf: schema:Property
@@ -47,13 +47,13 @@ name: "source"
 rangeIncludes: dcs:Source
 domainIncludes: dcs:Provenance
 
-#url
 Node: SchemaDomainProperty
 typeOf: schema:Property
 dcid: dcs:domain
 name: "domain"
 rangeIncludes: dcs:Text
 domainIncludes: dcs:Source
+description: "The domain name of the Source that provided the data. For example, the domain of the Source 'dc/s/CentralStatisticsOfficeCsoIreland' (representing the Central Statistics Office of Ireland) is 'cso.ie'. Compare with the URL for the Source, which is the full URL, e.g. 'https://www.cso.ie/en/index.html'."
 
 #description
 Node: SchemaDescriptionProperty
@@ -69,6 +69,7 @@ dcid: dcs:importTime
 name: "importTime"
 rangeIncludes: dcs:DateTime
 domainIncludes: dcs:Provenance
+description: "The time at at which the Data Commons data processing pipeline was run."
 
 Node: SchemaImportDurationProperty
 typeOf: schema:Property
@@ -81,7 +82,7 @@ typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: schema:Text, dcs:FrequencyEnum
 name: "automaticRefreshSchedule"
-description: "Schedule for automatically updating a data import."
+description: "The schedule for automatically updating a data import."
 
 Node: dcid:automaticRefreshType
 typeOf: schema:Property
@@ -109,7 +110,7 @@ typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:ProvenanceCategoryEnum
 name: "provenanceCategory"
-description: "Category of data in the provenance."
+description: "Category of data represented in a data import. Examples are observations for statistical variables and places/locales."
 
 Node: dcid:dataBuildGroup
 typeOf: schema:Property
@@ -123,7 +124,7 @@ typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "earliestDataImportDate"
-description: "Date of the initial import into Data Commons for this provenance."
+description: "Date of the initial import into Data Commons."
 
 Node: dcid:processingMethod
 typeOf: schema:Property
@@ -144,21 +145,21 @@ typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:EntityResolutionTypeEnum
 name: "entityResolutionType"
-description: "Type of entity resolution used for a data import."
+description: "The type of entity resolution used for a data import."
 
 Node: dcid:lastDataRefreshDate
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "lastDataRefreshDate"
-description: "Most recent date of data refresh for the provenance."
+description: "The most recent date that the data was imported."
 
 Node: dcid:nextDataRefreshDate
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "nextDataRefreshDate"
-description: "Date of next data refresh for importing from this provenance."
+description: "The date of the next scheduled data refresh."
 
 Node: dcid:resolvedTextMcfUrl
 typeOf: schema:Property
@@ -193,39 +194,39 @@ typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "nextSourceReleaseDate"
-description: "Date of next data release by the source."
+description: "The date of the next expected data release (publication) by the Source."
 
 Node: dcid:importedSourceReleaseDate
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "importedSourceReleaseDate"
-description: "Date of current data release imported into Data Commons."
+description: "Date that the data was released (published) by the Source. This is different from the lastDataRefreshDate, which is the date the data is imported into Data Commons."
 
 Node: dcid:sourceReleaseFrequency
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:FrequencyEnum, dcs:Text
 name: "sourceReleaseFrequency"
-description: "Frequency of data release by the source."
+description: "The data relese (publication) frequency by the Source, expressed in ISO 8601 duration format `P[0-9]*[Y|M|D|h|m|s]`."
 
 Node: dcid:sourceDataUrl
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "sourceDataUrl"
-description: "Location of source data to download."
+description: "The download URL of the imported source data. For example, the Provenance 'dc/base/CensusACS5YearSurvey_SubjectTables_S1502' is downloaded from 'https://data.census.gov/cedsci/table?q=S1502&tid=ACSST5Y2023.S1502'. Compare with the Dataset URL, 'https://www.census.gov/programs-surveys/acs', which is the web page hosting links to the downloads for the entire dataset."
 
 Node: dcid:earliestObservationDate
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "earliestObservationDate"
-description: "Date of the earliest observation of a provenance."
+description: "Date of the earliest observation in the current data import."
 
 Node: dcid:latestObservationDate
 typeOf: schema:Property
 domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "latestObservationDate"
-description: "Date of the most recent observation of a provenance."
+description: "Date of the most recent observation in the current data import."
