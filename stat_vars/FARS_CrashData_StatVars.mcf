@@ -569,7 +569,7 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 weatherCondition: dcid:SevereCrosswind
 
-Node: dcid:Count_VehicleCrashIncident_WorkZone_NHTSAUnknownWorkzone
+Node: dcid:Count_VehicleCrashIncident_WorkZone_NHTSAUnknownWorkZone
 typeOf: dcid:StatisticalVariable
 name: "Count of crash incidents work zone type unknown"
 description: "Count of crash incidents in which the first harmful event occurs within the boundaries of work zone type unknown or on an approach to or exit from a work zone, resulting from an activity, behavior, or control related to the movement of the traffic units through the work zone"
@@ -859,7 +859,7 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 roadIntersectionType: dcid:TrafficCircle
 
-Node: dcid:Count_VehicleCrashIncident_WorkZone_NHTSAWorkzoneNotReported
+Node: dcid:Count_VehicleCrashIncident_WorkZone_NHTSAWorkZoneNotReported
 typeOf: dcid:StatisticalVariable
 name: "Count of crash incidents not reported work zone"
 description: "Count of crash incidents in in which the first harmful event occurs within the boundaries of not reported work zone or on an approach to or exit from a work zone, resulting from an activity, behavior, or control related to the movement of the traffic units through the work zone"
@@ -950,3 +950,20 @@ populationType: dcid:VehicleCrashIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 roadIntersectionType: dcid:NHTSA_OtherIntersectionType
+
+Node: dcid:Count_MortalityEvent_VehicleCrashIncident
+typeOf: dcid:StatisticalVariable
+name: "Count of mortality event in vehicle crash incident"
+description: "Count of fatally injured people in the crash and is derived by counting all people with Injury Severity of 4 in the crash"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+causeOfDeath: dcid:VehicleCrashIncident
+descriptionUrl: "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813417#page=86"
+
+Node: dcid:Count_VehicleCrashIncident
+typeOf: dcid:StatisticalVariable
+name: "Count of vehicle crash incidents"
+populationType: dcid:VehicleCrashIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
