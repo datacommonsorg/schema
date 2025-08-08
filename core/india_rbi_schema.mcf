@@ -41,8 +41,10 @@ rangeIncludes: dcid:Quantity
 domainIncludes: dcid:SustainableDevelopmentGoals
 
 Node: dcid:SustainableDevelopmentGoals
-typeOf: dcid:Thing
+typeOf: dcs:Class
+subClassOf: dcs:Intangible
 name: "Sustainable Development Goals"
+
 Node: dcid:lossReason
 typeOf: dcid:Property
 name: "lossReason"
@@ -103,6 +105,7 @@ typeOf: dcs:Property
 name: "demand"
 domainIncludes:House, dcs:Electricity
 isProvisional: dcs:True
+
 Node: dcid:workerClassification
 typeOf: schema:Property
 name: "workerClassification"
@@ -111,7 +114,8 @@ rangeIncludes: dcs:WorkerClassificationEnum
 domainIncludes: schema:Person, schema:Amount
 
 Node: dcid:Amount
-typeOf: dcid:Thing
+typeOf: dcs:Class
+subClassOf: dcs:Quantity
 name: "Amount"
 description: "Amount is a property that can exist as a multitude or magnitude, which illustrate discontinuity and continuity."
 descriptionUrl: "https://en.m.wikipedia.org/wiki/Quantity"
