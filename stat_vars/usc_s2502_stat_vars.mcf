@@ -1,30 +1,38 @@
+
 Node: dcid:Count_HousingUnit_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied housing units"
+description: "The count  of housing units that are currently occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:MarginOfError_Count_HousingUnit_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: occupied housing units"
+description: "The estimated margin of error for associated with The count  of occupied housing units"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAlone
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with white alone householder"
+description: "The count of occupied housing units with a householder who identifies as white alone"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:WhiteAlone
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as White Alone"
 
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAlone
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: white alone householder"
+description: "The estimated margin of error for the count  of occupied homes with a white alone householder"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:WhiteAlone
 typeOf: dcs:StatisticalVariable
@@ -32,16 +40,19 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with Black or African American householder"
+description: "The count of occupied housing units with a householder who identifies as Black or African American alone"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:BlackOrAfricanAmericanAlone
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as Black or African American Alone"
 
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: black or African American householder"
+description: "The estimated margin of error for the count  of occupied homes with a black or African American householder"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:BlackOrAfricanAmericanAlone
 typeOf: dcs:StatisticalVariable
@@ -49,50 +60,59 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with American Indian or Alaska Native householder"
+description: "The count of occupied housing units with a householder who identifies as American Indian or Alaska Native alone"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:AmericanIndianOrAlaskaNativeAlone
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as American Indian or Alaska Native Alone"
 
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: american indian or Alaska native householder"
+description: "The estimated margin of error for the count  of occupied homes with an american indian or Alaska native householder"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:AmericanIndianOrAlaskaNativeAlone
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceAsianAlone
+Node: dcid:Count_HousingUnit_HouseholderRaceasianAlone
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with Asian householder"
+description: "The count of occupied housing units with a householder who identifies as Asian alone"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
-householderRace: dcs:AsianAlone
+householderRace: dcs:asianAlone
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as Asian Alone"
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceAsianAlone
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceasianAlone
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: asian householder"
+description: "The estimated margin of error for the count  of occupied homes with an asian householder"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
-householderRace: dcs:AsianAlone
+householderRace: dcs:asianAlone
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with Native Hawaiian or other Pacific Islander householder"
+description: "The count of occupied housing units with a householder who identifies as Native Hawaiian or other Pacific Islander alone"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as Native Hawaiian or Other Pacific Islander Alone"
 
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: native hawalian or pacifi islander householder"
+description: "The estimated margin of error for the count  of occupied homes with a native hawalian or other pacifi islander householder"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 typeOf: dcs:StatisticalVariable
@@ -100,16 +120,19 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with some other race householder"
+description: "The count of occupied housing units with a householder who identifies as some other race alone"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:SomeOtherRaceAlone
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as Some Other Race Alone"
 
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: Some other race householder"
+description: "The estimated margin of error for the count  of occupied homes with a householder who identifies as some other race"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:SomeOtherRaceAlone
 typeOf: dcs:StatisticalVariable
@@ -117,57 +140,69 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceTwoOrMoreRaces
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with two or more races householder"
+description: "The count of occupied housing units with a householder who identifies as two or more races"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:TwoOrMoreRaces
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as Two or More Races"
 
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceTwoOrMoreRaces
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: Two or more races householder"
+description: "The estimated margin of error for the count  of occupied homes with a householder of two or more races"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderRace: dcs:TwoOrMoreRaces
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceHispanicOrLatino
+Node: dcid:Count_HousingUnit_HouseholderRacehispanicOrLatino
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with Hispanic or Latino householder"
+description: "The count of occupied housing units with a householder who identifies as Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
-householderRace: dcs:HispanicOrLatino
+householderRace: dcs:hispanicOrLatino
 typeOf: dcs:StatisticalVariable
-name: "Homes Whose Householder Identifies as Hispanic or Latino"
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceHispanicOrLatino
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRacehispanicOrLatino
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error: Hispanic or Latino householder"
+description: "The estimated margin of error for the count  of occupied homes with a Hispanic or Latino householder"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
-householderRace: dcs:HispanicOrLatino
+householderRace: dcs:hispanicOrLatino
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAloneNotHispanicOrLatino
+Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAloneNothispanicOrLatino
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with white alone not Hispanic or Latino householder"
+description: "The count of occupied housing units with a householder who identifies as white alone and not Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
-householderRace: dcs:WhiteAloneNotHispanicOrLatino
+householderRace: dcs:WhiteAloneNothispanicOrLatino
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAloneNotHispanicOrLatino
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAloneNothispanicOrLatino
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error white alone not Hispanic or Latino householder"
+description: "The estimated margin of error for the count  of occupied homes with a white alone, not Hispanic or Latino householder"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
-householderRace: dcs:WhiteAloneNotHispanicOrLatino
+householderRace: dcs:WhiteAloneNothispanicOrLatino
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_HousingUnit_HouseholderAge35OrLessYears_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied homes householder aged 35 or younger"
+description: "The count  of occupied housing units with a householder aged 35 years or younger"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [- 35 Years]
 typeOf: dcs:StatisticalVariable
@@ -175,7 +210,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge35OrLessYears_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error householder aged 35 or younger"
+description: "The estimated margin of error for the count  of occupied homes with a householder aged 35 years or younger"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [- 35 Years]
 typeOf: dcs:StatisticalVariable
@@ -183,7 +220,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge35To44Years_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied homes householder aged 35 to 44"
+description: "The count  of occupied housing units with a householder aged 35 to 44 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [35 44 Years]
 typeOf: dcs:StatisticalVariable
@@ -191,7 +230,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge35To44Years_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error householder aged 35 to 44"
+description: "The estimated margin of error for the count  of occupied homes with a householder aged 35 to 44 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [35 44 Years]
 typeOf: dcs:StatisticalVariable
@@ -199,7 +240,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge45To54Years_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with householder aged 45 to 54"
+description: "The count of occupied housing units with a householder aged 45 to 54 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [45 54 Years]
 typeOf: dcs:StatisticalVariable
@@ -207,7 +250,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge45To54Years_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error householder aged 45 to 54"
+description: "The estimated margin of error for the count  of occupied homes with a householder aged 45 to 54 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [45 54 Years]
 typeOf: dcs:StatisticalVariable
@@ -215,7 +260,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge55To64Years_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied homes householder aged 55 to 64"
+description: "The count  of occupied housing units with a householder aged 55 to 64 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [55 64 Years]
 typeOf: dcs:StatisticalVariable
@@ -223,7 +270,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge55To64Years_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error householder aged 55 to 64"
+description: "The estimated margin of error for the count  of occupied homes with a householder aged 55 to 64 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [55 64 Years]
 typeOf: dcs:StatisticalVariable
@@ -231,7 +280,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge65To74Years_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied homes householder aged 65 to 74"
+description: "The count  of occupied housing units with a householder aged 65 to 74 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [65 74 Years]
 typeOf: dcs:StatisticalVariable
@@ -239,7 +290,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge65To74Years_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error householder aged 65 to 74"
+description: "The estimated margin of error for the count  of occupied homes with a householder aged 65 to 74 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [65 74 Years]
 typeOf: dcs:StatisticalVariable
@@ -247,7 +300,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge75To84Years_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with householder aged 75 to 84"
+description: "The count of occupied housing units with a householder aged 75 to 84 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [75 84 Years]
 typeOf: dcs:StatisticalVariable
@@ -255,7 +310,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge75To84Years_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error householder aged 75 to 84"
+description: "The estimated margin of error for the count  of occupied homes with a householder aged 75 to 84 years"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [75 84 Years]
 typeOf: dcs:StatisticalVariable
@@ -263,7 +320,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge85OrMoreYears_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with householder aged 85+"
+description: "The count of occupied housing units with a householder aged 85 years or older"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [85 - Years]
 typeOf: dcs:StatisticalVariable
@@ -271,7 +330,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge85OrMoreYears_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error householder aged 85 or older"
+description: "The estimated margin of error for the count  of occupied homes with a householder aged 85 years or older"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderAge: [85 - Years]
 typeOf: dcs:StatisticalVariable
@@ -279,7 +340,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentLessThanHighSchoolGraduate_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied homes householder with less than high school education"
+description: "The count  of occupied housing units with a householder whose highest educational attainment is less than high school"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:LessThanHighSchoolGraduate
 typeOf: dcs:StatisticalVariable
@@ -287,7 +350,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentLessThanHighSchoolGraduate_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error less than high school education"
+description: "The estimated margin of error for the count  of occupied homes with a householder whose education is less than high school"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:LessThanHighSchoolGraduate
 typeOf: dcs:StatisticalVariable
@@ -295,7 +360,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentHighSchoolGraduateIncludesEquivalency_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied homes householder with high school diploma or equivalent"
+description: "The count  of occupied housing units with a householder who graduated high school or holds an equivalent certification"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:HighSchoolGraduateIncludesEquivalency
 typeOf: dcs:StatisticalVariable
@@ -303,7 +370,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentHighSchoolGraduateIncludesEquivalency_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error high school diploma or equivalent"
+description: "The estimated margin of error for the count  of occupied homes with a householder who has a high school diploma or equivalent"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:HighSchoolGraduateIncludesEquivalency
 typeOf: dcs:StatisticalVariable
@@ -311,7 +380,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentSomeCollegeOrAssociatesDegree_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units with householder with some college or associate degree"
+description: "The count of occupied housing units with a householder who attended some college or earned an associate degree"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:SomeCollegeOrAssociatesDegree
 typeOf: dcs:StatisticalVariable
@@ -319,7 +390,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentSomeCollegeOrAssociatesDegree_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error some college or associate degree"
+description: "The estimated margin of error for the count  of occupied homes with a householder who has some college or an associate degree"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:SomeCollegeOrAssociatesDegree
 typeOf: dcs:StatisticalVariable
@@ -327,7 +400,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentBachelorsDegreeOrHigher_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied homes householder with bachelor's degree or higher"
+description: "The count  of occupied housing units with a householder whose educational attainment is a bachelor’s degree or higher"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:BachelorsDegreeOrHigher
 typeOf: dcs:StatisticalVariable
@@ -335,7 +410,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentBachelorsDegreeOrHigher_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for count of households with a householder with a bachelor's degree or higher"
+description: "The estimated margin of error for the count  of occupied housing units where the householder has a bachelor's degree or higher"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 householderEducationalAttainment: dcs:BachelorsDegreeOrHigher
 typeOf: dcs:StatisticalVariable
@@ -343,7 +420,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2000OrLater_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of householdsof households moved in 2000 or later"
+description: "The count  of occupied housing units where the householder moved in during 2000 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2000 - Date]
 typeOf: dcs:StatisticalVariable
@@ -351,7 +430,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2000OrLater_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for count of households moved in 2000 or later"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in during 2000 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2000 - Date]
 typeOf: dcs:StatisticalVariable
@@ -359,7 +440,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1990To1999_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of householdsof households moved in 1990 to 1999"
+description: "The count  of occupied housing units where the householder moved in between 1990 and 1999"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [1990 1999 Date]
 typeOf: dcs:StatisticalVariable
@@ -367,7 +450,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1990To1999_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for count of households moved in 1990 to 1999"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in between 1990 and 1999"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [1990 1999 Date]
 typeOf: dcs:StatisticalVariable
@@ -375,7 +460,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1980To1989_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of householdsof households moved in 1980 to 1989"
+description: "The count  of occupied housing units where the householder moved in between 1980 and 1989"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [1980 1989 Date]
 typeOf: dcs:StatisticalVariable
@@ -383,7 +470,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1980To1989_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for count of households moved in 1980 to 1989"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in between 1980 and 1989"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [1980 1989 Date]
 typeOf: dcs:StatisticalVariable
@@ -391,7 +480,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1970To1979_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of householdsof households moved in 1970 to 1979"
+description: "The count  of occupied housing units where the householder moved in between 1970 and 1979"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [1970 1979 Date]
 typeOf: dcs:StatisticalVariable
@@ -399,7 +490,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1970To1979_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for count of households moved in 1970 to 1979"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in between 1970 and 1979"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [1970 1979 Date]
 typeOf: dcs:StatisticalVariable
@@ -407,7 +500,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1969OrEarlier_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of householdsof households moved in 1969 or earlier"
+description: "The count  of occupied housing units where the householder moved in during or before 1969"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1969 Date]
 typeOf: dcs:StatisticalVariable
@@ -415,7 +510,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1969OrEarlier_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for count of households moved in 1969 or earlier"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in during or before 1969"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1969 Date]
 typeOf: dcs:StatisticalVariable
@@ -423,16 +520,19 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied housing units"
+description: "The count of occupied housing units that are owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
-name: "Owner-Occupied Homes"
 
 Node: dcid:MarginOfError_Count_HousingUnit_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes"
+description: "The estimated margin of error for the count  of occupied housing units that are owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
@@ -440,7 +540,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAlone_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied homes with white alone householder"
+description: "The count  of occupied owner-occupied housing units where the householder is white alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:WhiteAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -449,7 +551,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAlone_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes with white alone householder"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is white alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:WhiteAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -458,7 +562,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of Black owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is black or African American alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:BlackOrAfricanAmericanAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -467,7 +573,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for Black owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is black or African American alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:BlackOrAfricanAmericanAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -476,7 +584,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of American Indian owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is american indian or Alaska native alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:AmericanIndianOrAlaskaNativeAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -485,34 +595,42 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for American Indian owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is american indian or Alaska native alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:AmericanIndianOrAlaskaNativeAlone
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceAsianAlone_OwnerOccupied
+Node: dcid:Count_HousingUnit_HouseholderRaceasianAlone_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of asian owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is asian alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
-householderRace: dcs:AsianAlone
+householderRace: dcs:asianAlone
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceAsianAlone_OwnerOccupied
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceasianAlone_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for asian owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is asian alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
-householderRace: dcs:AsianAlone
+householderRace: dcs:asianAlone
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of pacifi islander owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is native hawalian or other pacifi islander alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -521,7 +639,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for pacifi islander owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is native hawalian or other pacifi islander alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -530,7 +650,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of other race owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is some other race alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:SomeOtherRaceAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -539,7 +661,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for other race owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is some other race alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:SomeOtherRaceAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -548,7 +672,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceTwoOrMoreRaces_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of multiracial owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is of two or more races"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:TwoOrMoreRaces
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -557,52 +683,64 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceTwoOrMoreRaces_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for multiracial owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is of two or more races"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderRace: dcs:TwoOrMoreRaces
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceHispanicOrLatino_OwnerOccupied
+Node: dcid:Count_HousingUnit_HouseholderRacehispanicOrLatino_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of hispanic owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
-householderRace: dcs:HispanicOrLatino
+householderRace: dcs:hispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceHispanicOrLatino_OwnerOccupied
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRacehispanicOrLatino_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for hispanic owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
-householderRace: dcs:HispanicOrLatino
+householderRace: dcs:hispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAloneNotHispanicOrLatino_OwnerOccupied
+Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAloneNothispanicOrLatino_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of white non-hispanic owner-occupied housing units"
+description: "The count  of occupied owner-occupied housing units where the householder is white alone and not Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
-householderRace: dcs:WhiteAloneNotHispanicOrLatino
+householderRace: dcs:WhiteAloneNothispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAloneNotHispanicOrLatino_OwnerOccupied
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAloneNothispanicOrLatino_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for white non-hispanic owner-occupied housing units"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is white alone and not Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
-householderRace: dcs:WhiteAloneNotHispanicOrLatino
+householderRace: dcs:WhiteAloneNothispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_HousingUnit_HouseholderAge35OrLessYears_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder age 35 or less"
+description: "The count  of occupied owner-occupied housing units where the householder is 35 years old or younger"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [- 35 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -611,7 +749,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge35OrLessYears_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder age 35 or less"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is 35 years old or younger"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [- 35 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -620,7 +760,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge35To44Years_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder age 35–44"
+description: "The count  of occupied owner-occupied housing units where the householder is between 35 and 44 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [35 44 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -629,7 +771,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge35To44Years_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder age 35–44"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is between 35 and 44 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [35 44 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -638,7 +782,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge45To54Years_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder age 45–54"
+description: "The count  of occupied owner-occupied housing units where the householder is between 45 and 54 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [45 54 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -647,7 +793,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge45To54Years_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder age 45–54"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is between 45 and 54 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [45 54 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -656,7 +804,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge55To64Years_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder age 55–64"
+description: "The count  of occupied owner-occupied housing units where the householder is between 55 and 64 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [55 64 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -665,7 +815,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge55To64Years_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder age 55–64"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is between 55 and 64 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [55 64 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -674,7 +826,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge65To74Years_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder age 65–74"
+description: "The count  of occupied owner-occupied housing units where the householder is between 65 and 74 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [65 74 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -683,7 +837,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge65To74Years_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder age 65–74"
+description: "The estimated margin of error for the count  of occupied owner-occupied housing units where the householder is between 65 and 74 years old"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [65 74 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -692,7 +848,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge75To84Years_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder aged 75–84"
+description: "The count  of occupied housing units with a householder aged 75 to 84 years owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [75 84 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -701,7 +859,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge75To84Years_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder aged 75–84"
+description: "The estimated margin of error for the count  of occupied housing units with a householder aged 75 to 84 years owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [75 84 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -710,7 +870,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge85OrMoreYears_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder aged 85+"
+description: "The count  of occupied housing units with a householder aged 85 years and over owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [85 - Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -719,7 +881,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge85OrMoreYears_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder aged 85+"
+description: "The estimated margin of error for the count  of occupied housing units with a householder aged 85 years and over owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderAge: [85 - Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -728,7 +892,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentLessThanHighSchoolGraduate_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with householder less than high school"
+description: "The count  of occupied housing units with a householder with less than a high school education owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:LessThanHighSchoolGraduate
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -737,7 +903,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentLessThanHighSchoolGraduate_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with householder less than high school"
+description: "The estimated margin of error for the count  of occupied housing units with a householder with less than a high school education owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:LessThanHighSchoolGraduate
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -746,7 +914,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentHighSchoolGraduateIncludesEquivalency_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with high school graduate householder"
+description: "The count  of occupied housing units with a householder who is a high school graduate or equivalent owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:HighSchoolGraduateIncludesEquivalency
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -755,7 +925,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentHighSchoolGraduateIncludesEquivalency_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with high school graduate householder"
+description: "The estimated margin of error for the count  of occupied housing units with a householder who is a high school graduate or equivalent owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:HighSchoolGraduateIncludesEquivalency
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -764,7 +936,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentSomeCollegeOrAssociatesDegree_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied units with some college or associate's degree householder"
+description: "The count  of occupied housing units with a householder with some college or an associate's degree owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:SomeCollegeOrAssociatesDegree
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -773,7 +947,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentSomeCollegeOrAssociatesDegree_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied units with some college or associate's degree householder"
+description: "The estimated margin of error for the count  of occupied housing units with a householder with some college or an associate's degree owner-occupied"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:SomeCollegeOrAssociatesDegree
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -782,7 +958,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentBachelorsDegreeOrHigher_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied homes with bachelor's or higher"
+description: "The count  of owner-occupied homes with a householder with a bachelor's degree or higher"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:BachelorsDegreeOrHigher
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -791,7 +969,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentBachelorsDegreeOrHigher_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes with bachelor's or higher"
+description: "The estimated margin of error for the count  of owner-occupied homes with a householder with a bachelor's degree or higher"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 householderEducationalAttainment: dcs:BachelorsDegreeOrHigher
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -800,7 +980,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2000OrLater_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied homes moved in 2000 or later"
+description: "The count  of owner-occupied homes moved into in 2000 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2000 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -809,7 +991,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2000OrLater_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes moved in 2000 or later"
+description: "The estimated margin of error for the count  of owner-occupied homes moved into in 2000 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2000 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -818,7 +1002,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1990To1999_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied homes moved in 1990–1999"
+description: "The count  of owner-occupied homes moved into between 1990 and 1999"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [1990 1999 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -827,7 +1013,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1990To1999_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes moved in 1990–1999"
+description: "The estimated margin of error for the count  of owner-occupied homes moved into between 1990 and 1999"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [1990 1999 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -836,7 +1024,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1980To1989_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied homes moved in 1980–1989"
+description: "The count  of owner-occupied homes moved into between 1980 and 1989"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [1980 1989 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -845,7 +1035,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1980To1989_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes moved in 1980–1989"
+description: "The estimated margin of error for the count  of owner-occupied homes moved into between 1980 and 1989"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [1980 1989 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -854,7 +1046,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1970To1979_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied homes moved in 1970–1979"
+description: "The count  of owner-occupied homes moved into between 1970 and 1979"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [1970 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -863,7 +1057,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1970To1979_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes moved in 1970–1979"
+description: "The estimated margin of error for the count  of owner-occupied homes moved into between 1970 and 1979"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [1970 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -872,7 +1068,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1969OrEarlier_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied homes moved in 1969 or earlier"
+description: "The count  of owner-occupied homes moved into in 1969 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [- 1969 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -881,7 +1079,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1969OrEarlier_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for owner-occupied homes moved in 1969 or earlier"
+description: "The estimated margin of error for the count  of owner-occupied homes moved into in 1969 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [- 1969 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -890,16 +1090,19 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units"
+description: "The count of renter-occupied housing units"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
-name: "Renter-Occupied Homes"
 
 Node: dcid:MarginOfError_Count_HousingUnit_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for renter-occupied homes"
+description: "The estimated margin of error for the count  of renter-occupied housing units"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
@@ -907,7 +1110,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAlone_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with white alone householder"
+description: "The count of renter-occupied housing units with a householder who identifies as white alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:WhiteAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -916,7 +1121,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAlone_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for white householder in renter-occupied homes"
+description: "The estimated margin of error for the count  of renter-occupied housing units with a white householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:WhiteAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -925,7 +1132,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with Black or African American householder"
+description: "The count of renter-occupied housing units with a householder who identifies as Black or African American alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:BlackOrAfricanAmericanAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -934,7 +1143,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for Black householder in renter-occupied homes"
+description: "The estimated margin of error for the count  of renter-occupied housing units with a black or African American householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:BlackOrAfricanAmericanAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -943,7 +1154,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "American Indian householder in renter-occupied homes"
+description: "The count  of renter-occupied housing units with an american indian or Alaska native householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:AmericanIndianOrAlaskaNativeAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -952,34 +1165,42 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for American Indian householder in renter-occupied homes"
+description: "The estimated margin of error for the count  of renter-occupied housing units with an american indian or Alaska native householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:AmericanIndianOrAlaskaNativeAlone
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceAsianAlone_RenterOccupied
+Node: dcid:Count_HousingUnit_HouseholderRaceasianAlone_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "asian householder in renter-occupied homes"
+description: "The count  of renter-occupied housing units with an asian householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
-householderRace: dcs:AsianAlone
+householderRace: dcs:asianAlone
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceAsianAlone_RenterOccupied
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceasianAlone_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for asian householder in renter-occupied homes"
+description: "The estimated margin of error for the count  of renter-occupied housing units with an asian householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
-householderRace: dcs:AsianAlone
+householderRace: dcs:asianAlone
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "pacifi islander householder in renter-occupied homes"
+description: "The count  of renter-occupied housing units with a native hawalian or pacifi islander householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -988,7 +1209,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for pacifi islander householder in renter-occupied homes"
+description: "The estimated margin of error for the count  of renter-occupied housing units with a native hawalian or pacifi islander householder"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:NativeHawaiianOrOtherPacificIslanderAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -997,7 +1220,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with some other race householder"
+description: "The count of renter-occupied housing units with a householder who identifies as some other race alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:SomeOtherRaceAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1006,7 +1231,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for renter-occupied housing units with some other race householder"
+description: "The estimated margin of error for the count of renter-occupied housing units with a householder who identifies as some other race alone"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:SomeOtherRaceAlone
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1015,7 +1242,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderRaceTwoOrMoreRaces_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with householder of two or more races"
+description: "The count of renter-occupied housing units with a householder who identifies as two or more races"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:TwoOrMoreRaces
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1024,52 +1253,64 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceTwoOrMoreRaces_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for renter-occupied housing units with householder of two or more races"
+description: "The estimated margin of error for the count of renter-occupied housing units with a householder who identifies as two or more races"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderRace: dcs:TwoOrMoreRaces
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceHispanicOrLatino_RenterOccupied
+Node: dcid:Count_HousingUnit_HouseholderRacehispanicOrLatino_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with Hispanic or Latino householder"
+description: "The count of renter-occupied housing units with a householder who is Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
-householderRace: dcs:HispanicOrLatino
+householderRace: dcs:hispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceHispanicOrLatino_RenterOccupied
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRacehispanicOrLatino_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for renter-occupied housing units with Hispanic or Latino householder"
+description: "The estimated margin of error for the count of renter-occupied housing units with a householder who is Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
-householderRace: dcs:HispanicOrLatino
+householderRace: dcs:hispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAloneNotHispanicOrLatino_RenterOccupied
+Node: dcid:Count_HousingUnit_HouseholderRaceWhiteAloneNothispanicOrLatino_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with white non-Hispanic householder"
+description: "The count of renter-occupied housing units with a householder who is white and not Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
-householderRace: dcs:WhiteAloneNotHispanicOrLatino
+householderRace: dcs:WhiteAloneNothispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAloneNotHispanicOrLatino_RenterOccupied
+Node: dcid:MarginOfError_Count_HousingUnit_HouseholderRaceWhiteAloneNothispanicOrLatino_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for renter-occupied housing units with white non-Hispanic householder"
+description: "The estimated margin of error for the count of renter-occupied housing units with a householder who is white and not Hispanic or Latino"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
-householderRace: dcs:WhiteAloneNotHispanicOrLatino
+householderRace: dcs:WhiteAloneNothispanicOrLatino
 occupancyStatus: dcs:OccupiedHousingUnit
 typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_HousingUnit_HouseholderAge35OrLessYears_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with householder aged 35 or younger"
+description: "The count of renter-occupied housing units with a householder who is aged 35 years or younger"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [- 35 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1078,7 +1319,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge35OrLessYears_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for renter-occupied housing units with householder aged 35 or younger"
+description: "The estimated margin of error for the count of renter-occupied housing units with a householder who is aged 35 years or younger"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [- 35 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1087,7 +1330,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge35To44Years_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units with householder aged 35 to 44 years"
+description: "The count of renter-occupied housing units with a householder who is aged 35 to 44 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [35 44 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1096,7 +1341,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge35To44Years_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with householder age 35–44"
+description: "The estimated margin of error for for renter-occupied housing units with a householder aged 35 to 44 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [35 44 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1105,7 +1352,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge45To54Years_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with householder age 45–54"
+description: "The count  of renter-occupied housing units with a householder aged 45 to 54 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [45 54 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1114,7 +1363,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge45To54Years_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with householder age 45–54"
+description: "The estimated margin of error for for renter-occupied housing units with a householder aged 45 to 54 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [45 54 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1123,7 +1374,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge55To64Years_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with householder age 55–64"
+description: "The count  of renter-occupied housing units with a householder aged 55 to 64 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [55 64 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1132,7 +1385,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge55To64Years_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with householder age 55–64"
+description: "The estimated margin of error for for renter-occupied housing units with a householder aged 55 to 64 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [55 64 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1141,7 +1396,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge65To74Years_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with householder age 65–74"
+description: "The count  of renter-occupied housing units with a householder aged 65 to 74 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [65 74 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1150,7 +1407,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge65To74Years_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with householder age 65–74"
+description: "The estimated margin of error for for renter-occupied housing units with a householder aged 65 to 74 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [65 74 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1159,7 +1418,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge75To84Years_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with householder age 75–84"
+description: "The count  of renter-occupied housing units with a householder aged 75 to 84 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [75 84 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1168,7 +1429,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge75To84Years_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with householder age 75–84"
+description: "The estimated margin of error for for renter-occupied housing units with a householder aged 75 to 84 years"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [75 84 Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1177,7 +1440,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderAge85OrMoreYears_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with householder age 85+"
+description: "The count  of renter-occupied housing units with a householder aged 85 or older"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [85 - Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1186,7 +1451,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderAge85OrMoreYears_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with householder age 85+"
+description: "The estimated margin of error for for renter-occupied housing units with a householder aged 85 or older"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderAge: [85 - Years]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1195,7 +1462,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentLessThanHighSchoolGraduate_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with less than high school householder"
+description: "The count  of renter-occupied housing units with a householder whose education is less than a high school diploma"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:LessThanHighSchoolGraduate
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1204,7 +1473,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentLessThanHighSchoolGraduate_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with less than high school householder"
+description: "The estimated margin of error for for renter-occupied housing units with a householder whose education is less than a high school diploma"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:LessThanHighSchoolGraduate
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1213,7 +1484,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentHighSchoolGraduateIncludesEquivalency_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with high school graduate householder"
+description: "The count  of renter-occupied housing units with a householder who is a high school graduate or equivalent"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:HighSchoolGraduateIncludesEquivalency
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1222,7 +1495,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentHighSchoolGraduateIncludesEquivalency_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with high school graduate householder"
+description: "The estimated margin of error for for renter-occupied housing units with a householder who is a high school graduate or equivalent"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:HighSchoolGraduateIncludesEquivalency
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1231,7 +1506,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentSomeCollegeOrAssociatesDegree_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with some college or associate degree householder"
+description: "The count  of renter-occupied housing units with a householder with some college education or an associate degree"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:SomeCollegeOrAssociatesDegree
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1240,7 +1517,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentSomeCollegeOrAssociatesDegree_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with some college or associate degree householder"
+description: "The estimated margin of error for for renter-occupied housing units with a householder with some college education or an associate degree"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:SomeCollegeOrAssociatesDegree
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1249,7 +1528,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_HouseholderEducationalAttainmentBachelorsDegreeOrHigher_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units with bachelor’s degree or higher householder"
+description: "The count  of renter-occupied housing units with a householder with a bachelor's degree or higher"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:BachelorsDegreeOrHigher
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1258,7 +1539,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_HouseholderEducationalAttainmentBachelorsDegreeOrHigher_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units with bachelor’s degree or higher householder"
+description: "The estimated margin of error for for renter-occupied housing units with a householder with a bachelor's degree or higher"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 householderEducationalAttainment: dcs:BachelorsDegreeOrHigher
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1267,7 +1550,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2000OrLater_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units moved in 2000 or later"
+description: "The count  of renter-occupied housing units where the householder moved in during 2000 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2000 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1276,7 +1561,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2000OrLater_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units moved in 2000 or later"
+description: "The estimated margin of error for for renter-occupied housing units where the householder moved in during 2000 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2000 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1285,7 +1572,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1990To1999_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units moved in 1990–1999"
+description: "The count  of renter-occupied housing units where the householder moved in between 1990 and 1999"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [1990 1999 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1294,7 +1583,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1990To1999_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units moved in 1990–1999"
+description: "The estimated margin of error for for renter-occupied housing units where the householder moved in between 1990 and 1999"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [1990 1999 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1303,7 +1594,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1980To1989_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units moved in 1980–1989"
+description: "The count  of renter-occupied housing units where the householder moved in between 1980 and 1989"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [1980 1989 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1312,7 +1605,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1980To1989_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units moved in 1980–1989"
+description: "The estimated margin of error for for renter-occupied housing units where the householder moved in between 1980 and 1989"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [1980 1989 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1321,7 +1616,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1970To1979_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units moved in 1970–1979"
+description: "The count  of renter-occupied housing units where the householder moved in between 1970 and 1979"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [1970 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1330,7 +1627,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1970To1979_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units moved in 1970–1979"
+description: "The estimated margin of error for for renter-occupied housing units where the householder moved in between 1970 and 1979"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [1970 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1339,7 +1638,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1969OrEarlier_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units moved in 1969 or earlier"
+description: "The count  of renter-occupied housing units where the householder moved in during 1969 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [- 1969 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1348,7 +1649,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1969OrEarlier_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units moved in 1969 or earlier"
+description: "The estimated margin of error for for renter-occupied housing units where the householder moved in during 1969 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [- 1969 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1357,7 +1660,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2010OrLater_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied units moved in 2010 or later"
+description: "The count  of occupied housing units where the householder moved in during 2010 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1365,7 +1670,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2010OrLater_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of occupied units moved in 2010 or later"
+description: "The estimated margin of error for for occupied housing units where the householder moved in during 2010 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1373,7 +1680,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2000To2009_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied units moved in 2000–2009"
+description: "The count  of occupied housing units where the householder moved in between 2000 and 2009"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2000 2009 Date]
 typeOf: dcs:StatisticalVariable
@@ -1381,7 +1690,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2000To2009_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of occupied units moved in 2000–2009"
+description: "The estimated margin of error for for occupied housing units where the householder moved in between 2000 and 2009"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2000 2009 Date]
 typeOf: dcs:StatisticalVariable
@@ -1389,7 +1700,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2010OrLater_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied units moved in 2010 or later"
+description: "The count  of owner-occupied housing units where the householder moved in during 2010 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2010 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1398,7 +1711,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2010OrLater_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of owner-occupied units moved in 2010 or later"
+description: "The estimated margin of error for for owner-occupied housing units where the householder moved in during 2010 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2010 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1407,7 +1722,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2000To2009_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied units moved in 2000–2009"
+description: "The count  of owner-occupied housing units where the householder moved in between 2000 and 2009"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2000 2009 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1416,7 +1733,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2000To2009_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of owner-occupied units moved in 2000–2009"
+description: "The estimated margin of error for for owner-occupied housing units where the householder moved in between 2000 and 2009"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2000 2009 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1425,7 +1744,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2010OrLater_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units moved in 2010 or later"
+description: "The count  of renter-occupied housing units where the householder moved in during 2010 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2010 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1434,7 +1755,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2010OrLater_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units moved in 2010 or later"
+description: "The estimated margin of error for for renter-occupied housing units where the householder moved in during 2010 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2010 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1443,7 +1766,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2000To2009_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Renter-occupied units moved in 2000–2009"
+description: "The count  of renter-occupied housing units where the householder moved in between 2000 and 2009"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2000 2009 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1452,7 +1777,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2000To2009_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of renter-occupied units moved in 2000–2009"
+description: "The estimated margin of error for for renter-occupied housing units where the householder moved in between 2000 and 2009"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2000 2009 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1461,7 +1788,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2015OrLater_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied units moved in 2015 or later"
+description: "The count  of occupied housing units where the householder moved in during 2015 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1469,7 +1798,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2015OrLater_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of occupied units moved in 2015 or later"
+description: "The estimated margin of error for for occupied housing units where the householder moved in during 2015 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1477,7 +1808,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2010To2014_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied units moved in 2010–2014"
+description: "The count  of occupied housing units where the householder moved in between 2010 and 2014"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2014 Date]
 typeOf: dcs:StatisticalVariable
@@ -1485,7 +1818,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2010To2014_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of occupied units moved in 2010–2014"
+description: "The estimated margin of error for for occupied housing units where the householder moved in between 2010 and 2014"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2014 Date]
 typeOf: dcs:StatisticalVariable
@@ -1493,7 +1828,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1979OrEarlier_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Occupied units moved in 1979 or earlier"
+description: "The count  of occupied housing units where the householder moved in during 1979 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1979 Date]
 typeOf: dcs:StatisticalVariable
@@ -1501,7 +1838,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1979OrEarlier_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of occupied units moved in 1979 or earlier"
+description: "The estimated margin of error for for occupied housing units where the householder moved in during 1979 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1979 Date]
 typeOf: dcs:StatisticalVariable
@@ -1509,7 +1848,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2015OrLater_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied units moved in 2015 or later"
+description: "The count  of owner-occupied housing units where the householder moved in during 2015 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2015 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1518,7 +1859,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2015OrLater_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of owner-occupied units moved in 2015 or later"
+description: "The estimated margin of error for for owner-occupied housing units where the householder moved in during 2015 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2015 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1527,7 +1870,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2010To2014_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied units moved in 2010–2014"
+description: "The count  of owner-occupied housing units where the householder moved in between 2010 and 2014"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2010 2014 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1536,7 +1881,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2010To2014_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE of owner-occupied units moved in 2010–2014"
+description: "The estimated margin of error for for owner-occupied housing units where the householder moved in between 2010 and 2014"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [2010 2014 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1545,7 +1892,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1979OrEarlier_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Owner-occupied units moved in 1979 or earlier"
+description: "The count  of owner-occupied housing units where the householder moved in during 1979 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [- 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1554,7 +1903,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1979OrEarlier_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 1979 or earlier owner-occupied units"
+description: "The estimated margin of error for the count  of owner-occupied housing units where the householder moved in 1979 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 dateMovedIn: [- 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1563,7 +1914,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2015OrLater_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "2015 or later renter-occupied units"
+description: "The count  of renter-occupied housing units where the householder moved in 2015 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2015 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1572,7 +1925,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2015OrLater_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 2015 or later renter-occupied units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 2015 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2015 - Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1581,7 +1936,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2010To2014_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 2010 to 2014"
+description: "The count of renter-occupied housing units where the householder moved in between 2010 and 2014"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2010 2014 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1590,7 +1947,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2010To2014_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 2010–2014 renter-occupied units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 2010 to 2014"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [2010 2014 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1599,7 +1958,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1979OrEarlier_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 1979 or earlier"
+description: "The count of renter-occupied housing units where the householder moved in 1979 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [- 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1608,7 +1969,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1979OrEarlier_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 1979 or earlier renter-occupied units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 1979 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 dateMovedIn: [- 1979 Date]
 occupancyStatus: dcs:OccupiedHousingUnit
@@ -1617,7 +1980,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2017OrLater_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units where householder moved in 2017 or later"
+description: "The count of occupied housing units where the householder moved in 2017 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2017 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1625,7 +1990,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2017OrLater_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 2017 or later occupied units"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in 2017 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2017 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1633,7 +2000,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2015To2016_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units where householder moved in 2015 to 2016"
+description: "The count of occupied housing units where the householder moved in 2015 to 2016"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 2016 Date]
 typeOf: dcs:StatisticalVariable
@@ -1641,7 +2010,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2015To2016_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 2015–2016 occupied units"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in 2015 to 2016"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 2016 Date]
 typeOf: dcs:StatisticalVariable
@@ -1649,7 +2020,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1989OrEarlier_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units where householder moved in 1989 or earlier"
+description: "The count of occupied housing units where the householder moved in 1989 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1989 Date]
 typeOf: dcs:StatisticalVariable
@@ -1657,7 +2030,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1989OrEarlier_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 1989 or earlier occupied units"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in 1989 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1989 Date]
 typeOf: dcs:StatisticalVariable
@@ -1665,7 +2040,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2017OrLater_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied housing units where householder moved in 2017 or later"
+description: "The count of owner-occupied housing units where the householder moved in 2017 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2017 - Date]
@@ -1674,7 +2051,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2017OrLater_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+Count of peopleType: dcs:HousingUnit
+name: "Margin of error for 2017 or later owner-occupied units"
+description: "The estimated margin of error for the count  of owner-occupied housing units where the householder moved in 2017 or later"
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2017 - Date]
@@ -1683,7 +2062,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2015To2016_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied housing units where householder moved in 2015 to 2016"
+description: "The count of owner-occupied housing units where the householder moved in 2015 to 2016"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 2016 Date]
@@ -1692,7 +2073,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2015To2016_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 2015–2016 owner-occupied units"
+description: "The estimated margin of error for the count  of owner-occupied housing units where the householder moved in 2015 to 2016"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 2016 Date]
@@ -1701,7 +2084,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1989OrEarlier_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied housing units where householder moved in 1989 or earlier"
+description: "The count of owner-occupied housing units where the householder moved in 1989 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1989 Date]
@@ -1710,7 +2095,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1989OrEarlier_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 1989 or earlier owner-occupied units"
+description: "The estimated margin of error for the count  of owner-occupied housing units where the householder moved in 1989 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1989 Date]
@@ -1719,7 +2106,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2017OrLater_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 2017 or later"
+description: "The count of renter-occupied housing units where the householder moved in 2017 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2017 - Date]
@@ -1728,7 +2117,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2017OrLater_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 2017 or later renter-occupied units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 2017 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2017 - Date]
@@ -1737,7 +2128,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate2015To2016_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 2015 to 2016"
+description: "The count of renter-occupied housing units where the householder moved in 2015 to 2016"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 2016 Date]
@@ -1746,7 +2139,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate2015To2016_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 2015–2016 renter-occupied units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 2015 to 2016"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2015 2016 Date]
@@ -1755,7 +2150,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_MovedInDate1989OrEarlier_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 1989 or earlier"
+description: "The count of renter-occupied housing units where the householder moved in 1989 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1989 Date]
@@ -1764,7 +2161,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_MovedInDate1989OrEarlier_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Margin of error for 1989 or earlier renter-occupied units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 1989 or earlier"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [- 1989 Date]
@@ -1773,7 +2172,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2021OrLaterDate_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for recent renter units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 2021 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2021 - Date]
@@ -1782,7 +2183,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2021OrLaterDate_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for recent owner units"
+description: "The estimated margin of error for the count  of owner-occupied housing units where the householder moved in 2021 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2021 - Date]
@@ -1791,7 +2194,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2021OrLaterDate_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for recent occupied units"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in 2021 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2021 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1799,7 +2204,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2018To2020Date_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for 2018–20 renter units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 2018 to 2020"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2018 2020 Date]
@@ -1808,7 +2215,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2018To2020Date_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for 2018–20 owner units"
+description: "The estimated margin of error for the count  of owner-occupied housing units where the householder moved in 2018 to 2020"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2018 2020 Date]
@@ -1817,7 +2226,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2018To2020Date_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for 2018–20 occupied units"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in 2018 to 2020"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2018 2020 Date]
 typeOf: dcs:StatisticalVariable
@@ -1825,7 +2236,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2010To2017Date_RenterOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for 2010–17 renter units"
+description: "The estimated margin of error for the count  of renter-occupied housing units where the householder moved in 2010 to 2017"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2017 Date]
@@ -1834,7 +2247,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2010To2017Date_OwnerOccupied
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for 2010–17 owner units"
+description: "The estimated margin of error for the count  of owner-occupied housing units where the householder moved in 2010 to 2017"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2017 Date]
@@ -1843,7 +2258,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_HousingUnit_2010To2017Date_OccupiedHousingUnit
 statType: dcs:marginOfError
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "MOE for 2010–17 occupied units"
+description: "The estimated margin of error for the count  of occupied housing units where the householder moved in 2010 to 2017"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2017 Date]
 typeOf: dcs:StatisticalVariable
@@ -1851,7 +2268,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2021OrLaterDate_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 2021 or later"
+description: "The count of renter-occupied housing units where the householder moved in 2021 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2021 - Date]
@@ -1860,7 +2279,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2021OrLaterDate_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied housing units where householder moved in 2021 or later"
+description: "The count of owner-occupied housing units where the householder moved in 2021 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2021 - Date]
@@ -1869,7 +2290,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2021OrLaterDate_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units where householder moved in 2021 or later"
+description: "The count of occupied housing units where the householder moved in 2021 or later"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2021 - Date]
 typeOf: dcs:StatisticalVariable
@@ -1877,7 +2300,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2018To2020Date_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 2018 to 2020"
+description: "The count of renter-occupied housing units where the householder moved in 2018 to 2020"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2018 2020 Date]
@@ -1886,7 +2311,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2018To2020Date_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied housing units where householder moved in 2018 to 2020"
+description: "The count of owner-occupied housing units where the householder moved in 2018 to 2020"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2018 2020 Date]
@@ -1895,7 +2322,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2018To2020Date_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units where householder moved in 2018 to 2020"
+description: "The count of occupied housing units where the householder moved in 2018 to 2020"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2018 2020 Date]
 typeOf: dcs:StatisticalVariable
@@ -1903,7 +2332,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2010To2017Date_RenterOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of renter-occupied housing units where householder moved in 2010 to 2017"
+description: "The count of renter-occupied housing units where the householder moved in 2010 to 2017"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:RenterOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2017 Date]
@@ -1912,7 +2343,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2010To2017Date_OwnerOccupied
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of owner-occupied housing units where householder moved in 2010 to 2017"
+description: "The count of owner-occupied housing units where the householder moved in 2010 to 2017"
+Count of peopleType: dcs:HousingUnit
 occupancyTenure: dcs:OwnerOccupied
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2017 Date]
@@ -1921,7 +2354,9 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:Count_HousingUnit_2010To2017Date_OccupiedHousingUnit
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-populationType: dcs:HousingUnit
+name: "Count of occupied housing units where householder moved in 2010 to 2017"
+description: "The count of occupied housing units where the householder moved in 2010 to 2017"
+Count of peopleType: dcs:HousingUnit
 occupancyStatus: dcs:OccupiedHousingUnit
 dateMovedIn: [2010 2017 Date]
 typeOf: dcs:StatisticalVariable
