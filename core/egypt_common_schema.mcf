@@ -272,11 +272,13 @@ domainIncludes: dcid:HealthEstablishment,dcid:Bed
 rangeIncludes: dcid:EstablishmentTypeEnum
 
 Node: dcid:Bed
-typeOf: dcid:Thing
+typeOf: dcs:Class
+subClassOf: dcs:Commodity
 name: "Bed"
 
 Node: dcid:Establishment
-typeOf: dcid:Thing
+typeOf: dcid:Class
+subClassOf: dcs:Thing
 name: "Establishment"
 
 Node: dcid:accidentType
