@@ -1,44 +1,49 @@
-# LINT.IfChange
 
 Node: dcid:dc/topic/Equity
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Equity"
+description: "The broad concept of equity, encompassing fairness and justice across economic, educational, health, and justice systems"
 relevantVariable: dcid:dc/topic/EconomicEquity
 relevantVariable: dcid:dc/topic/EducationEquity
-relevantVariable: dcid:dc/topic/HealthEquity
+relevantVariable: dcid:dc/topic/healthEquity
 relevantVariable: dcid:dc/topic/JusticeSystemEquity
 
 Node: dcid:dc/topic/EconomicEquity
-typeOf: dcs:Topic
-name: "Economic Equity"
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_GiniIndex
-relevantVariable: dcid:dc/topic/PovertyByGender
-relevantVariable: dcid:dc/topic/PovertyByRace
+typeof: dcs:topic
+name: "Economic equity"
+description: "Economic equity, focusing on disparities and opportunities related to income, employment, benefits, and poverty across different gender and racial groups"
+relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_giniindex
+relevantVariable: dcid:dc/topic/PovertyBygender
+relevantVariable: dcid:dc/topic/PovertyByrace
 relevantVariable: dcid:dc/topic/Benefits
 relevantVariable: dcid:dc/topic/IncomeEquity
 relevantVariable: dcid:dc/topic/EmploymentEquity
 
 Node: dcid:dc/topic/EmploymentEquity
-typeOf: dcs:Topic
-name: "Employment Equity"
-relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_LabourForceStatus
-relevantVariable: dcid:dc/topic/UnemploymentRate
+typeof: dcs:topic
+name: "Employment equity"
+description: "Employment equity, addressing disparities in employment opportunities, labor force participation, and unemployment rates across different demographic groups"
+relevantVariable: dcid:dc/svpg/dc/topic/EconomicEquity_LabourForcestatus
+relevantVariable: dcid:dc/topic/Unemploymentrate
 
 Node: dcid:dc/topic/EducationEquity
-typeOf: dcs:Topic
-name: "Education Equity"
-relevantVariable: dcid:dc/topic/EducationalAttainmentByGenderAndLevel
-relevantVariable: dcid:dc/topic/EducationalAttainmentByRaceAndLevel
+typeof: dcs:topic
+name: "Education equity"
+description: "Education equity, focusing on disparities in educational attainment across different genders and racial groups, and addressing access to various educational levels"
+relevantVariable: dcid:dc/topic/EducationalAttainmentBygenderAndLevel
+relevantVariable: dcid:dc/topic/EducationalAttainmentByraceAndLevel
 
-Node: dcid:dc/topic/EducationalAttainmentByRaceAndLevel
-typeOf: dcs:Topic
-name: "Educational Attainment by Race"
-relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyRace
-relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyRace
+Node: dcid:dc/topic/EducationalAttainmentByraceAndLevel
+typeof: dcs:topic
+name: "Educational attainment by race and level"
+description: "Disparities in educational attainment across racial groups, with a focus on the percentage of individuals achieving a bachelor's degree or higher"
+relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyrace
+relevantVariable: dcid:dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyrace
 
-Node: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyRace
-typeOf: dcs:StatVarPeerGroup
-name: "Bachelors Degree or Higher by Race"
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_BachelorsdegreeorHigherbyrace
+typeof: dcs:StatVarPeerGroup
+name: "Educational attainment: Bachelor's degree or higher by race"
+description: "Disparities in the attainment of a bachelor's degree or higher across different racial groups"
 member: dcid:dc/06f0jf8xvzw4f
 member: dcid:dc/4qtse8536dg63
 member: dcid:dc/5hc4etrfyj9qg
@@ -49,9 +54,10 @@ member: dcid:dc/t7403chwvspm
 member: dcid:dc/v7yl3k9w3h7e8
 member: dcid:dc/wd5g31pcj0zr3
 
-Node: dcid:dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyRace
-typeOf: dcs:StatVarPeerGroup
-name: "College Degree by Race"
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_CollegeDegreebyrace
+typeof: dcs:StatVarPeerGroup
+name: "Educational attainment: College degree by race"
+description: "Disparities in the attainment of a college degree across different racial groups"
 member: dcid:dc/3w039ndqy7qv1
 member: dcid:dc/56md3ndhrmvm7
 member: dcid:dc/9sneyc8lpk8dc
@@ -61,109 +67,124 @@ member: dcid:dc/mqxdr821c7kw3
 member: dcid:dc/q98jxycvs422f
 member: dcid:dc/whn99h1l0xgth
 
-Node: dcid:dc/svpg/dc/topic/Educationalattainment_DoctoratedegreebyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Doctorate Degree by Gender"
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_Doctoratedegreebygender
+typeof: dcs:StatVarPeerGroup
+name: "Educational attainment: Doctorate degree by gender"
+description: "Disparities in the attainment of a doctorate degree between different genders"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Male
 
-Node: dcid:dc/svpg/dc/topic/Educationalattainment_MastersdegreebyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Masters Degree by Gender"
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_Mastersdegreebygender
+typeof: dcs:StatVarPeerGroup
+name: "Educational attainment: Master's degree by gender"
+description: "Disparities in the attainment of a master's degree between different genders"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
 
-Node: dcid:dc/svpg/dc/topic/Educationalattainment_collegeorprofessionaldegreebyGender
-typeOf: dcs:StatVarPeerGroup
-name: "College or Professional Degree by Gender"
+Node: dcid:dc/svpg/dc/topic/Educationalattainment_collegeorprofessionaldegreebygender
+typeof: dcs:StatVarPeerGroup
+name: "Educational attainment: College or professional degree by gender"
+description: "Disparities in the attainment of a college or professional degree between different genders"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentProfessionalSchoolDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentProfessionalSchoolDegree_Male
 
 Node: dcid:dc/topic/Benefits
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Benefits"
-relevantVariable: dcid:dc/svpg/dc/topic/Foodstamps_FoodstampsbyRace
+description: "The distribution and access to various benefits, including food stamps, across different demographic groups"
+relevantVariable: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyrace
 relevantVariable: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyhouseholdtype
 
 Node: dcid:dc/topic/IncomeEquity
-typeOf: dcs:Topic
-name: "Income Equity"
+typeof: dcs:topic
+name: "Income equity"
+description: "Disparities in income distribution, focusing on median household income by race and gender"
 relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
-relevantVariable: dcid:dc/topic/MedianHouseholdIncomeByRace
-relevantVariable: dcid:dc/topic/MedianHouseholdIncomeByGender
+relevantVariable: dcid:dc/topic/MedianHouseholdIncomeByrace
+relevantVariable: dcid:dc/topic/MedianHouseholdIncomeBygender
 
-Node: dcid:dc/topic/MedianHouseholdIncomeByRace
-typeOf: dcs:Topic
-name: "Median Household Income by Race"
-relevantVariable: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByRace
+Node: dcid:dc/topic/MedianHouseholdIncomeByrace
+typeof: dcs:topic
+name: "Median household income by race"
+description: "Disparities in median household income across different racial groups"
+relevantVariable: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByrace
 
-Node: dcid:dc/topic/MedianHouseholdIncomeByGender
-typeOf: dcs:Topic
-name: "Median Household Income by Gender"
-relevantVariable: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByGender
+Node: dcid:dc/topic/MedianHouseholdIncomeBygender
+typeof: dcs:topic
+name: "Median household income by gender"
+description: "Disparities in median household income across different genders"
+relevantVariable: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeBygender
 
-Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Median Household Income by Race"
-member: dcid:Median_Income_Household_HouseholderRaceWhiteAlone
-member: dcid:Median_Income_Household_HouseholderRaceAmericanIndianOrAlaskaNativeAlone
-member: dcid:Median_Income_Household_HouseholderRaceAsianAlone
-member: dcid:Median_Income_Household_HouseholderRaceBlackOrAfricanAmericanAlone
-member: dcid:Median_Income_Household_HouseholderRaceHispanicOrLatino
-member: dcid:Median_Income_Household_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone
-member: dcid:Median_Income_Household_HouseholderRaceSomeOtherRaceAlone
-member: dcid:Median_Income_Household_HouseholderRaceTwoOrMoreRaces
-member: dcid:Median_Income_Household_HouseholderRaceWhiteAlone
-member: dcid:Median_Income_Household_HouseholderRaceWhiteAloneNotHispanicOrLatino
+Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByrace
+typeof: dcs:StatVarPeerGroup
+name: "Median household income by race"
+description: "Disparities in median household income across different racial groups, including White, Black or African American, Hispanic or Latino, and 0thers"
+member: dcid:Median_Income_Household_HouseholderraceWhiteAlone
+member: dcid:Median_Income_Household_HouseholderraceAmericanIndianOrAlaskanativeAlone
+member: dcid:Median_Income_Household_HouseholderraceAsianAlone
+member: dcid:Median_Income_Household_HouseholderraceBlackOrAfricanAmericanAlone
+member: dcid:Median_Income_Household_HouseholderraceHispanicOrLatino
+member: dcid:Median_Income_Household_HouseholderracenativeHawaiianOr0therPacificIslanderAlone
+member: dcid:Median_Income_Household_HouseholderraceSome0therraceAlone
+member: dcid:Median_Income_Household_HouseholderraceTwoOrMoreraces
+member: dcid:Median_Income_Household_HouseholderraceWhiteAlone
+member: dcid:Median_Income_Household_HouseholderraceWhiteAloneNotHispanicOrLatino
 
-Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Median Household Income by Gender"
+Node: dcid:dc/svpg/dc/topic/MedianHouseholdIncomeBygender
+typeof: dcs:StatVarPeerGroup
+name: "Median household income by gender"
+description: "Disparities in median household income between females and males"
 member: dcid:Median_Earnings_Person_Female
 member: dcid:Median_Earnings_Person_Male
 
-Node: dcid:dc/svpg/dc/topic/Foodstamps_FoodstampsbyRace
-typeOf: dcs:StatVarPeerGroup
-name: "Food Stamps by Race"
-member: dcid:Count_Household_WithFoodStampsInThePast12Months_AmericanIndianOrAlaskaNativeAlone
+Node: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyrace
+typeof: dcs:StatVarPeerGroup
+name: "Food stamps by race"
+description: "The distribution of households receiving food stamps in the past 12 months across different racial groups"
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_AmericanIndianOrAlaskanativeAlone
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_AsianAlone
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_BlackOrAfricanAmericanAlone
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_HispanicOrLatino
-member: dcid:Count_Household_WithFoodStampsInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
-member: dcid:Count_Household_WithFoodStampsInThePast12Months_SomeOtherRaceAlone
-member: dcid:Count_Household_WithFoodStampsInThePast12Months_TwoOrMoreRaces
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_nativeHawaiianOr0therPacificIslanderAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_Some0therraceAlone
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_TwoOrMoreraces
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_WhiteAlone
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_WhiteAloneNotHispanicOrLatino
 
 Node: dcid:dc/svpg/dc/topic/Foodstamps_Foodstampsbyhouseholdtype
-typeOf: dcs:StatVarPeerGroup
-name: "Food Stamps by Household Type"
+typeof: dcs:StatVarPeerGroup
+name: "Food stamps by household type"
+description: "The distribution of households receiving food stamps in the past 12 months, categorized by household type"
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_FamilyHousehold
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_MarriedCoupleFamilyHousehold
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_NonfamilyHousehold
-member: dcid:Count_Household_WithFoodStampsInThePast12Months_OtherFamilyHousehold
+member: dcid:Count_Household_WithFoodStampsInThePast12Months_0therFamilyHousehold
 member: dcid:Count_Household_WithFoodStampsInThePast12Months_SingleFatherFamilyHousehold
 
-Node: dcid:dc/svpg/dc/topic/EconomicEquity_LabourForceStatus
-typeOf: dcs:StatVarPeerGroup
-name: "Labour Force Status"
-member: dcid:Count_Person_InLaborForce
-member: dcid:Count_Person_NotInLaborForce
+Node: dcid:dc/svpg/dc/topic/EconomicEquity_LabourForcestatus
+typeof: dcs:StatVarPeerGroup
+name: "Economic equity labor force status"
+description: "Disparities in labor force participation, distinguishing individuals who are in the labor force from those who are not"
+member: dcid:Count_Person_InlaborForce
+member: dcid:Count_Person_NotInlaborForce
 
-Node: dcid:dc/svpg/dc/topic/EconomicEquity_GiniIndex
-typeOf: dcs:StatVarPeerGroup
-name: "Gini Index"
-member: dcid:GiniIndex_EconomicActivity
+Node: dcid:dc/svpg/dc/topic/EconomicEquity_giniindex
+typeof: dcs:StatVarPeerGroup
+name: "Economic equity gini index"
+description: "The gini index measuring income inequality within the economic activity sector"
+member: dcid:giniindex_EconomicActivity
 
 Node: dcid:dc/topic/JusticeSystemEquity
-typeOf: dcs:Topic
-name: "Justice System Equity"
-relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByRace
-relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedbyGender
+typeof: dcs:topic
+name: "Justice system equity"
+description: "Disparities in the justice system, focusing on incarceration rates by race and gender"
+relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByrace
+relevantVariable: dcid:dc/svpg/dc/topic/JusticeSystemEquity_Incarceratedbygender
 
-Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Incarcerated by Race"
+Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedByrace
+typeof: dcs:StatVarPeerGroup
+name: "Justice system equity Incarcerated by race"
+description: "Disparities in incarceration rates across different racial groups within the justice system"
 member: dcid:dc/0tn58fc77r0z6
 member: dcid:dc/510pv6eq2vtw7
 member: dcid:dc/fs27m9j4vpvc7
@@ -172,9 +193,10 @@ member: dcid:dc/wp843855b1r4c
 member: dcid:dc/yksgwhwsbtv9c
 member: dcid:dc/zdb0f7sj2419d
 
-Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_IncarceratedbyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Incarcerated by Gender"
+Node: dcid:dc/svpg/dc/topic/JusticeSystemEquity_Incarceratedbygender
+typeof: dcs:StatVarPeerGroup
+name: "Justice system equity Incarcerated by gender"
+description: "Disparities in incarceration rates between genders within the justice system"
 member: dcid:dc/03l0q0wyqrk39
 member: dcid:dc/lnp5g90fwpct8
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
