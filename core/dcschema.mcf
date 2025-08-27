@@ -485,7 +485,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent, dcid:MedicalConditionIncident
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -4733,3 +4733,11 @@ typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Product,schema:Electricity
 name: "salesRevenue"
+
+Node: dcid:RowHouse
+typeOf: dcs:USC_ResidenceTypeEnum
+name: "RowHouse"
+
+Node: dcid:InstitutionalHousehold
+typeOf: dcs:USC_ResidenceTypeEnum
+name: "InstitutionalHousehold"
