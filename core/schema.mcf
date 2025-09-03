@@ -5563,7 +5563,7 @@ Node: occupationalCategory
 dcid: "occupationalCategory"
 typeOf: schema:Property
 name: "occupationalCategory"
-domainIncludes: schema:JobPosting
+domainIncludes: schema:JobPosting, schema:Faculty
 rangeIncludes: schema:Text, schema:OccupationCategoryEnum
 
 Node: acceptedPaymentMethod
@@ -11259,6 +11259,7 @@ Node: dcid:collegeOrUniversityLevel
 typeOf: schema:Property
 rangeIncludes: dcs:CollegeOrUniversityLevelEnum
 name: "collegeOrUniversityLevel"
+domainIncludes: dcid:Faculty,dcid:School,dcid:Student
 description: "Level of a college or university, e.g. 2-year, 4-year."
 
 Node: dcid:educationalProgram
@@ -11713,3 +11714,11 @@ name: "hasOccupation"
 domainIncludes: schema:Person
 rangeIncludes: schema:Occupation
 description: "The occupation that the person has."
+
+Node: dcid:JuniorCollege
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Junior college"
+
+Node: dcid:ReEnrolledInSchool
+typeOf: dcid:USC_SchoolEnrollmentEnum
+name: "Re enrolled in school"
