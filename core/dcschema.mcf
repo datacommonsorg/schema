@@ -3077,7 +3077,7 @@ Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum, dcid:ConsumerGoodsCategoryEnum
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum, dcid:ConsumerGoodsCategoryEnum, dcid:ServiceCategoryEnum,dcid:ServiceTypeEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -4795,7 +4795,6 @@ typeOf: dcs:Property
 name: "medicalStatus"
 domainIncludes: dcid:Mother
 
-
 #oecd
 Node: dcid:wasteTreatmentType
 typeOf: dcs:Property
@@ -4811,3 +4810,31 @@ name: "WasteTreatmentTypeEnum"
 Node: dcid:WasteWaterTreatment
 typeOf: dcid:WasteTreatmentTypeEnum
 name: "WasteWater Treatment"
+
+
+Node: dcid:ProcessingIndustry
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Processing Industry"
+
+Node: dcid:HouseholdActivities
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Household Activities"
+
+Node: dcid:ProfessionalScientificTechnicalActivities
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Professional Scientific Technical Activities"
+
+Node: dcid:ExtraterritorialOrganizationsAndBodies
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Extraterritorial Organizations And Bodies"
+
+Node: dcid:schoolGradeLevel
+typeOf: dcid:Property
+name: "schoolGradeLevel"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:SchoolGradeLevelEnum,dcid:SchoolLevelEnum
+
+Node: dcid:SpecializedSecondary
+typeOf: dcid:ElementarySchool
+name: "Specialized Secondary"
+
