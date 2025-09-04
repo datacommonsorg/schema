@@ -4741,3 +4741,57 @@ name: "RowHouse"
 Node: dcid:InstitutionalHousehold
 typeOf: dcs:USC_ResidenceTypeEnum
 name: "InstitutionalHousehold"
+
+Node: dcid:Abortion
+typeOf: dcid:Class
+name: "Abortion"
+subClassOf: dcs:Thing
+
+Node: dcid:healthDepartmentType
+typeOf: dcs:Property
+name: "healthDepartmentType"
+domainIncludes: dcid:HospitalBed
+rangeIncludes: dcid:HealthDepartmentTypeEnum,dcid:MedicalSpecializationEnum
+
+Node: dcid:HealthDepartmentTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "HealthDepartmentTypeEnum"
+
+Node: dcid:InternalMedicine
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Internal Medicine"
+
+Node: dcid:SurgeryAndTraumatology
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Surgery And Traumatology"
+
+Node: dcid:Ophthalmology
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Ophthalmology"
+
+Node: dcid:Otolaryngology
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Otolaryngology"
+
+Node: dcid:Obstetrics
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Obstetrics"
+
+Node: dcid:Gynecology
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Gynecology"
+
+Node: dcid:Neurology
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Neurology"
+
+Node: dcid:PsychiatryAndNarcology
+typeOf: dcid:HealthDepartmentTypeEnum
+name: "Psychiatry And Narcology"
+
+Node: dcid:medicalStatus
+typeOf: dcs:Property
+name: "medicalStatus"
+domainIncludes: dcid:Mother
+
