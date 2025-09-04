@@ -10,7 +10,7 @@ typeOf: schema:Class
 subClassOf: dcs:Water
 name: "WasteWater"
 description:"Wastewater is used water. It includes substances such as human waste, food scraps, oils, soaps and chemicals"
-descriptionUrl:"https://www.usgs.gov/special-topics/water-science-school/science/wastewater-treatment-water-use#:~:text=Wastewater%20is%20used%20water.,water%20that%20must%20be%20cleaned."
+descriptionUrl:"https://www.usgs.gov/special-topics/water-science-school/science/wastewater-treatment-water-use"
 
 ## Properties
 
@@ -187,6 +187,12 @@ name: "WasteWaterTreated"
 description:"Treated wastewater can be reused as reclaimed water. The main purpose of wastewater treatment is for the treated wastewater to be able to be disposed or reused"
 descriptionUrl:"https://en.wikipedia.org/wiki/Wastewater_treatment"
 
+Node: dcid:WasteWaterNotTreated
+typeOf: dcid:WaterTreatmentStatusEnum
+name: "WasteWaterTreated"
+description:"Untreated wastewater is also known as raw sewage. It's unsafe for disposal or reuse because it contains organic matter, chemicals, and pathogens. Disposing of it without treatment can seriously harm the environment and public health."
+descriptionUrl:"https://en.wikipedia.org/wiki/Wastewater_treatment"
+
 Node: dcid:WasteWaterIndependentlyTreated
 typeOf: dcid:WaterTreatmentSystemEnum
 name: "WasteWaterIndependentlyTreated"
@@ -196,6 +202,12 @@ descriptionUrl:"https://www.ag.ndsu.edu:8000/agriculture/extension/publications/
 Node: dcid:WasteWaterCollectingSystem
 typeOf: dcid:WaterTreatmentSystemEnum
 name: "WasteWaterCollectingSystem"
+description:"Collection systems are the system of underground pipes and maintenance structures used to convey wastewater to a Water Resource Recovery Facility (WRRF)"
+descriptionUrl:"https://www.wbdg.org/resources/wastewater-treatment-and-water-resource-recovery-facilities-wrrfs/collection-systems"
+
+Node: dcid:PublicSewerage
+typeOf: dcid:WaterTreatmentSystemEnum
+name: "PublicSewerage"
 description:"Collection Systems are the system of underground pipes and maintenance structures used to convey wastewater to a Water Resource Recovery Facility (WRRF)"
 descriptionUrl:"https://www.wbdg.org/resources/wastewater-treatment-and-water-resource-recovery-facilities-wrrfs/collection-systems"
 

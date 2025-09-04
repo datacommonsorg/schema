@@ -4795,3 +4795,19 @@ typeOf: dcs:Property
 name: "medicalStatus"
 domainIncludes: dcid:Mother
 
+
+#oecd
+Node: dcid:wasteTreatmentType
+typeOf: dcs:Property
+name: "wasteTreatmentType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:WasteTreatmentTypeEnum
+
+Node: dcid:WasteTreatmentTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "WasteTreatmentTypeEnum"
+
+Node: dcid:WasteWaterTreatment
+typeOf: dcid:WasteTreatmentTypeEnum
+name: "WasteWater Treatment"
