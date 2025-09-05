@@ -1,10 +1,10 @@
-
 Node: dcid:Median_Age_Person
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:medianValue
 measuredProperty: dcs:age
-name: "Median Age of Population"
+name: "Median age of population"
+description: "The median age of people in a population."
 
 Node: dcid:Count_Death
 typeOf: dcs:StatisticalVariable
@@ -44,7 +44,8 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
-name: "Total Population"
+name: "Total population"
+description: "The total number of people in a population."
 
 Node: dcid:GrowthRate_Count_Person
 typeOf: dcs:StatisticalVariable
@@ -52,6 +53,7 @@ populationType: dcs:Person
 statType: dcs:growthRate
 measuredProperty: dcs:count
 name: "Rate of Population Growth"
+description: "The percentage change in the total number of people in a population over a specific period."
 
 Node: dcid:Count_Student
 typeOf: dcs:StatisticalVariable
@@ -92,7 +94,7 @@ typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:unemploymentRate
-name: "Unemployment Rate of a Population"
+name: "Unemployment rate"
 
 Node: dcid:WagesAnnual_Establishment
 typeOf: dcs:StatisticalVariable
@@ -243,7 +245,8 @@ measuredProperty: dcs:amount
 activitySource: dcs:GrossDomesticProduction
 measurementQualifier: dcs:Nominal
 measurementDenominator: dcs:PerCapita
-name: "Nominal GDP Per Capita"
+name: "Nominal gross domestic product per capita"
+description: "Measure of a country's economic output relative to its population, calculated by dividing the nominal GDP by the total population."
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealValue
 typeOf: dcs:StatisticalVariable
@@ -259,7 +262,8 @@ populationType: dcs:EconomicActivity
 statType: dcs:growthRate
 measuredProperty: dcs:amount
 activitySource: dcs:GrossDomesticProduction
-name: "Growth Rate of GDP"
+name: "Gross domestic product growth rate"
+description: "The percentage change in a country's gross domestic product (GDP) over a specific period."
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
 typeOf: dcs:StatisticalVariable
@@ -268,7 +272,7 @@ statType: dcs:measuredValue
 measuredProperty: dcs:amount
 activitySource: dcs:GrossDomesticProduction
 measurementQualifier: dcs:Nominal
-name: "Nominal GDP"
+name: "Nominal gross domestic product"
 
 Node: dcid:Amount_EconomicActivity_GrossNationalIncome_PurchasingPowerParity
 typeOf: dcs:StatisticalVariable
@@ -2747,7 +2751,8 @@ populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Female
-name: "Female Population"
+name: "Female population"
+description: "The total number of females in a population."
 
 Node: dcid:Count_Person_Male
 typeOf: dcs:StatisticalVariable
@@ -2755,7 +2760,8 @@ populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 gender: dcs:Male
-name: "Male Population"
+name: "Male population"
+description: "The total number of males in a population."
 
 Node: dcid:Count_Person_IsInternetUser_PerCapita
 typeOf: dcs:StatisticalVariable

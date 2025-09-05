@@ -5,8 +5,8 @@ consumer: dcs:UrbanConsumer
 statType: dcs:measuredValue
 measuredProperty: dcs:consumerPriceIndex
 measurementQualifier: dcs:BLSSeasonallyUnadjusted
-name: "Consumer price index of consumer goods and services (seasonally unadjusted) for urban consumers"
-description: "Measure of the average change in prices over time of a basket of goods and services purchased by urban households"
+name: "Consumer price index"
+description: "The average percentage change in prices of a basket of goods and services purchased by urban households over a specific period (seasonally unadjusted)."
 
 Node: dcid:dc/e4cm4rj4d5fyc
 typeOf: dcs:StatisticalVariable
@@ -23,7 +23,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:unemploymentRate
 statType: dcid:measuredValue
-name: "Unemployment rate of a population"
+name: "Unemployment rate"
 description: "Percentage of the labor force actively seeking work but unable to find employment."
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
@@ -45,7 +45,7 @@ activitySource: dcs:GrossDomesticProduction
 measurementQualifier: dcs:Nominal
 measurementDenominator: dcs:PerCapita
 name: "Nominal gross domestic product per capita"
-description: "Measure a country's economic output relative to its population, calculated by dividing the nominal GDP by the total population."
+description: "Measure of a country's economic output relative to its population, calculated by dividing the nominal GDP by the total population."
 
 Node: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcs:StatisticalVariable
@@ -53,8 +53,8 @@ populationType: dcs:EconomicActivity
 statType: dcs:growthRate
 measuredProperty: dcs:amount
 activitySource: dcs:GrossDomesticProduction
-name: "Growth rate of gross domestic product(GDP)"
-description: "Measures the percentage change in a country's gross domestic product (GDP) over a specific period."
+name: "Gross domestic product growth rate"
+description: "The percentage change in a country's gross domestic product (GDP) over a specific period."
 
 Node: dcid:Monthly_Index_Commodity
 typeOf: dcs:StatisticalVariable
@@ -64,3 +64,4 @@ measuredProperty: dcs:index
 measurementQualifier: dcs:Monthly
 name: "Monthly commodity price index"
 description: "Index that tracks the monthly prices of commodity raw materials."
+

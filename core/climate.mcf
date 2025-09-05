@@ -1279,3 +1279,12 @@ name: "percentDeviationValue"
 description: "Percentage change between actual and normal measurements."
 rangeIncludes: dcs:Number
 domainIncludes: dcs:Place
+
+
+Node: dcid:hazardTypeRiskIndexValue
+typeOf: dcid:Property
+description: "The FEMA National Risk Index (NRI) uses Hazard Type Risk Index values to represent the relative risk of a community for a specific natural hazard, compared to other communities. These values are calculated by combining Expected Annual Loss (EAL), Social Vulnerability, and Community Resilience data for each hazard type."
+descriptionUrl: "https://hazards.fema.gov/nri/learn-more"
+name: "hazardTypeRiskIndexValue"
+domainIncludes: dcid:NaturalHazardImpact
+

@@ -1511,6 +1511,10 @@ typeOf: dcs:CrimeTypeEnum
 specializationOf: dcs:CrimeAgainstPerson
 name: "HumanTrafficking_CommercialSexActs"
 
+Node: dcid:HumanTrafficking_InvoluntaryServitude
+typeOf: dcs:CrimeTypeEnum
+name: "Human trafficking involuntary servitude"
+
 Node: HackingOrComputerInvasion
 dcid: "HackingOrComputerInvasion"
 typeOf: dcs:CrimeTypeEnum
@@ -1536,6 +1540,23 @@ name: "PhysicalViolence"
 Node: dcid:SexualViolence
 typeOf: dcs:CrimeTypeEnum
 name: "SexualViolence"
+
+Node: dcid:KnownOffender
+typeOf:OffenderTypeEnum
+specializationOf:OffenderAttributesKnown
+name:"Known Offender"
+
+Node: dcid:KnownOffenderAge
+typeOf:OffenderTypeEnum
+name:"Known Offender Age"
+
+Node: dcid:KnownOffenderEthnicity
+typeOf:OffenderTypeEnum
+name:"Known Offender Ethnicity"
+
+Node: dcid:KnownOffenderRace
+typeOf:OffenderTypeEnum
+name:"Known Offender Race"
 
 Node: dcid:SingleBias
 typeOf: dcs:BiasMotivationEnum
@@ -1793,7 +1814,7 @@ Node: dcid:InitialClaimExcludingIntrastateTransitional
 typeOf: dcs:UnemploymentInsuranceClaimTypeEnum
 name: "InitialClaimExcludingIntrastateTransitional"
 description: "Used by State UI programs. Includes intrastate initial claims and interstate initial claims filed from the agent state, but not intrastate transitional claims."
-descriptionUrl: "https://wdr.doleta.gov/directives/attach/ETAH/ETHand401_4th_s01.pdf"
+descriptionUrl: "https://www.dol.gov/sites/dolgov/files/ETA/handbooks/2007/ETHand401_4th_s01.pdf"
 
 Node: dcid:InitialClaim
 typeOf: dcs:UnemploymentInsuranceClaimTypeEnum
@@ -1846,7 +1867,7 @@ Node: dcid:ScaledForPartTimeUnemploymentBenefits
 typeOf: dcs:UnemploymentInsuranceMeasurementEnum
 name: ScaledForPartTimeUnemploymentBenefits
 description: "For Short-Time Compensation program observations. Indicates that the measurement of number of STC claims has been scaled down to the equivalent of the full time layoff initial claims that would have taken place if not for the STC program. That is, if the agreement is for a 20 percent reduction in each STC claimant's hours, then each of these claimants initial claim would represent 20 percent of an equivalent full time layoff initial claim."
-descriptionUrl: "https://wdr.doleta.gov/directives/attach/ETAH/ETHand401_4th_s01.pdf"
+descriptionUrl: "https://www.dol.gov/sites/dolgov/files/ETA/handbooks/2007/ETHand401_4th_s01.pdf"
 
 Node: dcid:COVID_19
 icd10CMCode: dcid:ICD10/U07.1
@@ -2038,7 +2059,7 @@ Node: dcid:Dementia
 typeOf: dcs:MedicalConditionIncidentTypeEnum
 name: "Dementia"
 description: "Dementia describe a group of symptoms affecting memory, thinking and social abilities severely enough to interfere with your daily life."
-medicalSubjectHeadingUnqiueId: dcs:bio/D003704
+medicalSubjectHeadingUniqueId: dcs:bio/D003704
 
 Node: dcid:KidneyDisease
 typeOf: dcs:MedicalConditionIncidentTypeEnum
@@ -2075,6 +2096,143 @@ medicalSubjectHeadingUniqueId: dcs:bio/D006130
 Node: dcid:SymptomsOfAcuteRespiratoryInfection
 typeOf: dcs:MedicalConditionIncidentTypeEnum
 name: "Symptoms Of Acute Respiratory Infection"
+
+Node: dcid:ParatyphoidFever
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Paratyphoid Fever"
+
+
+Node: dcid:EnterohemorrhagicEscherichiaColiInfection
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Enterohemorrhagic Escherichia Coli Infection"
+
+Node: dcid:Poliomyelitis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Poliomyelitis"
+
+Node: dcid:HepatitisBAcute
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Hepatitis B Acute"
+
+Node: dcid:HepatitisBHBsAg
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Hepatitis BHBs Ag"
+
+Node: dcid:HepatitisBPerinatal
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Hepatitis B Perinatal"
+
+Node: dcid:JapaneseEncephalitis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Japanese Encephalitis"
+
+Node: dcid:Varicella
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Varicella"
+
+Node: dcid:StreptococcusPneumoniae
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Streptococcus Pneumoniae"
+
+Node: dcid:ScarletFever
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Scarlet Fever"
+
+Node: dcid:Legionellosis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Legionellosis"
+
+Node: dcid:VibrioVulnificusSepsis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Vibrio Vulnificus Sepsis"
+
+Node: dcid:EpidemicTyphus
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Epidemic Typhus"
+
+Node: dcid:MurineTyphus
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Murine Typhus"
+
+Node: dcid:ScrubTyphus
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Scrub Typhus"
+
+Node: dcid:Anthrax
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Anthrax"
+
+Node: dcid:HemorrhagicFeverWithRenalSyndrome
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Hemorrhagic Fever With Renal Syndrome"
+
+Node: dcid:PrimarySyphilis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Primary Syphilis"
+
+Node: dcid:SecondarySyphilis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Secondary Syphilis"
+
+Node: dcid:CreutzfeldtJakobDisease
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Creutzfeldt Jakob Disease"
+
+Node: dcid:DengueFever
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Dengue Fever"
+
+Node: dcid:ViralHemorrhagicFever
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Viral Hemorrhagic Fever"
+
+Node: dcid:SevereAcuteRespiratorySyndrome
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Severe Acute Respiratory Syndrome"
+
+Node: dcid:AnimalInfluenza
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Animal Influenza"
+
+Node: dcid:NovelInfluenza
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Novel Influenza"
+
+Node: dcid:WestNileFever
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "West Nile Fever"
+
+Node: dcid:NovelInfectiousSyndrome
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Novel Infectious Syndrome"
+
+Node: dcid:TickBorneEncephalitis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Tick Borne Encephalitis"
+
+Node: dcid:Melioidosis
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Melioidosis"
+
+Node: dcid:Thrombocytopenia
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Thrombocytopenia"
+
+Node: dcid:MiddleEastRespiratorySyndrome
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Middle East Respiratory Syndrome"
+
+Node: dcid:Qfever
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Q fever"
+
+Node: dcid:NovelInfluenzaA
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Novel Influenza A"
+
+Node: dcid:MeningococcalDisease
+typeOf: dcid:MedicalConditionIncidentTypeEnum
+name: "Meningococcal Disease"
 
 Node: dcid:ImportedCase
 typeOf: dcs:MedicalStatusEnum
@@ -2291,6 +2449,30 @@ Node: dcid:PrivateWageSalaryWorkers
 typeOf: dcs:WorkerClassificationEnum
 name: "Private Wages Salary Workers"
 specializationOf: dcs:PaidWorker
+
+Node: dcid:IndependentBusinessman
+typeOf: dcid:WorkerClassificationEnum
+name: "Independent Businessman"
+
+Node: dcid:OwnAccountWorker
+typeOf: dcid:WorkerClassificationEnum
+name: "Own Account Worker"
+
+Node: dcid:RegularWorker
+typeOf: dcid:WorkerClassificationEnum
+name: "Regular Worker"
+
+Node: dcid:TemporaryWorker
+typeOf: dcid:WorkerClassificationEnum
+name: "Temporary Worker"
+
+Node: dcid:DailyWorker
+typeOf: dcid:WorkerClassificationEnum
+name: "Daily Worker"
+
+Node: dcid:WageAndSalaryWorker
+typeOf: dcid:WorkerClassificationEnum
+name: "Wage And Salary Worker"
 
 Node: dcid:EnrolledInEducationOrTraining
 typeOf: dcs:EnrollmentStatusEnum
@@ -3107,6 +3289,16 @@ typeOf: dcs:AutomaticRefreshTypeEnum
 name: "Google Kubernetes Engine"
 description: "Automatic data refresh via Google Kubernetes Engine."
 
+Node: dcid:GCPCloudRunAutomaticRefresh
+typeOf: dcs:AutomaticRefreshTypeEnum
+name: "GCP Cloud Run automatic refresh"
+description: "Automatic data refresh using GCP Cloud Run infrastructure."
+
+Node: dcid:GCPCloudRunSemiAutomaticRefresh
+typeOf: dcs:AutomaticRefreshTypeEnum
+name: "GCP Cloud Run semi-automatic refresh"
+description: "Semi-automatic data refresh using GCP Cloud Run infrastructure."
+
 Node: dcid:InternalPipeline
 typeOf: dcs:AutomaticRefreshTypeEnum, dcs:ProcessingMethodEnum
 name: "Internal pipeline"
@@ -3238,6 +3430,12 @@ typeOf: dcs:LicenseTypeEnum
 name: "Creative Commons Attribution Non-Commercial License"
 description: "Data available under the Creative Commons Attribution Non-Commercial License."
 url: "https://creativecommons.org/licenses/by-nc/4.0/"
+
+Node: dcid:CreativeCommonsAttributionShareAlikeLicenseSingapore
+typeOf: dcs:LicenseTypeEnum
+name: "Creative Commons Attribution ShareAlike License Singapore"
+description: "Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses."
+url: "https://creativecommons.org/licenses/by-sa/3.0/sg/legalcode.en-gb"
 
 Node: dcid:CreativeCommonsAttributionNonCommercialShareAlikeLicense
 typeOf: dcs:LicenseTypeEnum
@@ -3835,6 +4033,10 @@ Node: dcid:MonthOnChange
 typeOf: dcid:ComparisonPeriodEnum
 name: "Month On Change"
 
+Node: dcid:QuarterOnChange
+typeOf: dcid:ComparisonPeriodEnum
+name: "Quarter On Change"
+
 Node: dcid:YearOnChange
 typeOf: dcid:ComparisonPeriodEnum
 name: "Year On Change"
@@ -4292,3 +4494,7 @@ name: "Production Engineering"
 Node: dcid:PostHarvest
 typeOf: dcid:EducationalMajorEnum
 name: "PostHarvest"
+
+Node: dcid:UtilityScaleSolarPhotovoltaic
+typeOf: dcs:EnergySourceEnum
+name: "UtilityScaleSolarPhotovoltaic"

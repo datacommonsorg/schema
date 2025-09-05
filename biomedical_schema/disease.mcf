@@ -8,7 +8,7 @@ descriptionUrl: "https://disease-ontology.org/"
 Node: dcid:DiseaseAssociation
 name: "DiseaseAssociation"
 typeOf: schema:Class
-subClassOf: dcs:Association,dcs:Disease
+subClassOf: dcs:Association
 description: "The association between a disease and a second type of entity."
 
 Node: dcid:DiseaseDiseaseAssociation
@@ -213,8 +213,8 @@ rangeIncludes: schema:Boolean
 Node: dcid:mechanismOfAction
 name: "mechanismOfAction"
 typeOf: schema:Property
-domainIncludes: schema:Drug
-rangeIncludes: dcs:MeSHDescriptor
+domainIncludes: schema:Drug, dcs:MeSHRecordType
+rangeIncludes: dcs:MeSHDescriptor, schema:Text
 description: "In pharmacology, the term mechanism of action (MOA) refers to the specific biochemical interaction through which a drug substance produces its pharmacological effect."
 descriptionUrl: "https://en.wikipedia.org/wiki/Mechanism_of_action"
 

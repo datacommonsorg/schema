@@ -61,6 +61,10 @@ typeOf: schema:Class
 subClassOf: schema:Enumeration
 name: "EducationalAttainmentEnum"
 
+Node: dcid:UniversityGraduate
+typeOf: dcid:EducationalAttainmentEnum
+name: "University Graduate"
+
 Node: dcid:PreKindergartenAndKindergarten
 typeOf: dcs:SchoolGradeLevelEnum
 name: "PreKindergarten and Kindergarten"
@@ -479,8 +483,8 @@ description: "Describes the lowest grade level offered by School, grade as defin
 Node: dcid:schoolGradeLevel
 typeOf: schema:Property
 name: "schoolGradeLevel"
-rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool,dcs:SchoolLevelEnum
-domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher, dcs:EconomicActivity
+rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool,dcs:SchoolLevelEnum, dcs:USC_EducationalAttainmentEnum
+domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher, dcs:EconomicActivity, dcs:Faculty
 description: "Describes the grade level of the student in school. For example, SchoolGrade2 defines the student to be in second grade."
 
 # OBSERVATION, Measured Property, for Students, Faculty
@@ -2364,3 +2368,7 @@ typeOf: schema:Property
 domainIncludes: schema:Person
 rangeIncludes: dcs:EducationalMajorEnum
 name: "doctorateDegreeMajor"
+
+Node: dcid:NationalSchool
+typeOf: dcid:SchoolTypeEnum
+name: "National school"
