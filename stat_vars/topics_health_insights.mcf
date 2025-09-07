@@ -1,172 +1,188 @@
-# LINT.IfChange
-# These topics are intended for the new NL based Topic Pages (currently called Insights)
 
 Node: dcid:dc/topic/Arthritis
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Arthritis"
+description: "Prevalence of arthritis and its distribution across various demographic groups"
 relevantVariable: dcid:Percent_Person_WithArthritis
-relevantVariable: dcid:dc/svpg/dc/topic/Arthritis_ArthritisByGender
+relevantVariable: dcid:dc/svpg/dc/topic/Arthritis_ArthritisBygender
 
-Node: dcid:dc/svpg/dc/topic/Arthritis_ArthritisByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Arthritis by Gender"
+Node: dcid:dc/svpg/dc/topic/Arthritis_ArthritisBygender
+typeof: dcs:StatVarPeerGroup
+name: "Arthritis by gender"
+description: "Prevalence of arthritis across genders"
 member: dcid:Count_Person_Female_ConditionArthritis
 member: dcid:Count_Person_Male_ConditionArthritis
 
 Node: dcid:dc/topic/Asthma
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Asthma"
+description: "Prevalence of asthma, including rates among children"
 relevantVariable: dcid:Percent_Person_WithAsthma
 relevantVariable: dcid:Percent_Person_Children_WithAsthma
 
 Node: dcid:dc/topic/BloodPressure
-typeOf: dcs:Topic
-name: "Blood Pressure"
+typeof: dcs:topic
+name: "Blood pressure"
+description: "Prevalence of high blood pressure and medication use among individuals aged 18 or more"
 relevantVariable: dcid:Percent_Person_WithHighBloodPressure
 relevantVariable: dcid:Percent_Person_18OrMoreYears_WithHighBloodPressure_ReceivedTakingBloodPressureMedication
 
 Node: dcid:dc/topic/Cancer
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Cancer"
+description: "Prevalence of cancer (excluding skin cancer), cancer-related deaths, and preventive health measures"
 relevantVariable: dcid:Percent_Person_WithCancerExcludingSkinCancer
-relevantVariable: dcid:Count_Death_Neoplasms
-relevantVariable: dcid:dc/svpg/dc/topic/Cancer_DeathsbyAge
-relevantVariable: dcid:dc/svpg/dc/topic/Cancer_PreventativeHealth
+relevantVariable: dcid:Count_death_Neoplasms
+relevantVariable: dcid:dc/svpg/dc/topic/Cancer_deathsbyage
+relevantVariable: dcid:dc/svpg/dc/topic/Cancer_Preventativehealth
 
-Node: dcid:dc/svpg/dc/topic/Cancer_DeathsbyAge
-typeOf: dcs:StatVarPeerGroup
-name: "Cancer Deaths by Age"
-member: dcid:Count_Death_Upto1Years_Neoplasms
-member: dcid:Count_Death_1To4Years_Neoplasms
-member: dcid:Count_Death_5To14Years_Neoplasms
-member: dcid:Count_Death_15To24Years_Neoplasms
-member: dcid:Count_Death_25To34Years_Neoplasms
-member: dcid:Count_Death_35To44Years_Neoplasms
-member: dcid:Count_Death_45To54Years_Neoplasms
-member: dcid:Count_Death_55To64Years_Neoplasms
-member: dcid:Count_Death_65To74Years_Neoplasms
-member: dcid:Count_Death_75To84Years_Neoplasms
-member: dcid:Count_Death_85Years_Neoplasms
+Node: dcid:dc/svpg/dc/topic/Cancer_deathsbyage
+typeof: dcs:StatVarPeerGroup
+name: "Cancer deaths by age"
+description: "Cancer-related deaths across different age groups"
+member: dcid:Count_death_Upto1Years_Neoplasms
+member: dcid:Count_death_1to4Years_Neoplasms
+member: dcid:Count_death_5to14Years_Neoplasms
+member: dcid:Count_death_15to24Years_Neoplasms
+member: dcid:Count_death_25to34Years_Neoplasms
+member: dcid:Count_death_35to44Years_Neoplasms
+member: dcid:Count_death_45to54Years_Neoplasms
+member: dcid:Count_death_55to64Years_Neoplasms
+member: dcid:Count_death_65to74Years_Neoplasms
+member: dcid:Count_death_75to84Years_Neoplasms
+member: dcid:Count_death_85Years_Neoplasms
 
-Node: dcid:dc/svpg/dc/topic/Cancer_PreventativeHealth
-typeOf: dcs:StatVarPeerGroup
-name: "Cancer Preventive Health"
-member: dcid:Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-member: dcid:Percent_Person_50To74Years_Female_ReceivedMammography
-member: dcid:Percent_Person_50To75Years_ReceivedColorectalCancerScreening
+Node: dcid:dc/svpg/dc/topic/Cancer_Preventativehealth
+typeof: dcs:StatVarPeerGroup
+name: "Cancer preventative health"
+description: "Cancer screening rates, including cervical, mammography, and colorectal cancer screenings"
+member: dcid:Percent_Person_21to65Years_Female_ReceivedCervicalCancerScreening
+member: dcid:Percent_Person_50to74Years_Female_ReceivedMammography
+member: dcid:Percent_Person_50to75Years_ReceivedColorectalCancerScreening
 
-Node: dcid:dc/topic/CausesOfDeath
-typeOf: dcs:Topic
-name: "Causes of Death"
-relevantVariable: dcid:dc/svpg/CausesOfDeathBreakdown
+Node: dcid:dc/topic/causesofdeath
+typeof: dcs:topic
+name: "Causes of death"
+description: "breakdown of various causes of death"
+relevantVariable: dcid:dc/svpg/causesofdeathbreakdown
 
-Node: dcid:dc/svpg/CausesOfDeathBreakdown
-typeOf: dcs:StatVarPeerGroup
-name: "Causes of Death"
-member: dcid:Count_Death_DiseasesOfTheNervousSystem
-member: dcid:Count_Death_DiseasesOfTheRespiratorySystem
-member: dcid:Count_Death_DiseasesOfTheCirculatorySystem
-member: dcid:Count_Death_MentalBehaviouralDisorders
-member: dcid:Count_Death_ExternalCauses
-member: dcid:Count_Death_DiseasesOfTheGenitourinarySystem
-member: dcid:Count_Death_DiseasesOfTheMusculoskeletalSystemConnectiveTissue
-member: dcid:Count_Death_DiseasesOfTheSkinSubcutaneousTissue
-member: dcid:Count_Death_EndocrineNutritionalMetabolicDiseases
-member: dcid:Count_Death_IntentionalSelfHarm_AsFractionOf_Count_Person
-member: dcid:Count_Death_SpecialCases
-member: dcid:Count_Death_PregnancyChildbirthThePuerperium
-member: dcid:Count_Death_CertainConditionsOriginatingInThePerinatalPeriod
-member: dcid:Count_Death_CertainInfectiousParasiticDiseases
-member: dcid:Count_Death_DiseasesOfTheDigestiveSystem
-member: dcid:Count_Death_Neoplasms
-member: dcid:Count_Death_AbnormalNotClassfied
-member: dcid:Count_Death_CongenitalMalformationsDeformationsChromosomalAbnormalities
-member: dcid:Count_Death_DiseasesOfBloodAndBloodFormingOrgansAndImmuneDisorders
-member: dcid:Count_MortalityEvent_Assault(Homicide)
-member: dcid:Count_MortalityEvent_Diabetes
-member: dcid:Count_MortalityEvent_HeartDiseaseExcludingHypertension
-member: dcid:Count_MortalityEvent_IntentionalSelf-Harm(Suicide)
-member: dcid:Count_MortalityEvent_Suicide
+Node: dcid:dc/svpg/causesofdeathbreakdown
+typeof: dcs:StatVarPeerGroup
+name: "Causes of death breakdown"
+description: "breakdown of causes of death by various diseases and conditions"
+member: dcid:Count_death_DiseasesofTheNervousSystem
+member: dcid:Count_death_DiseasesofTheRespiratorySystem
+member: dcid:Count_death_DiseasesofTheCirculatorySystem
+member: dcid:Count_death_MentalBehaviouralDisorders
+member: dcid:Count_death_Externalcauses
+member: dcid:Count_death_DiseasesofTheGenitourinarySystem
+member: dcid:Count_death_DiseasesofTheMusculoskeletalSystemConnectiveTissue
+member: dcid:Count_death_DiseasesofTheSkinSubcutaneousTissue
+member: dcid:Count_death_EndocrineNutritionalMetabolicDiseases
+member: dcid:Count_death_IntentionalSelfHarm_AsFractionof_Count_Person
+member: dcid:Count_death_SpecialCases
+member: dcid:Count_death_PregnancyChildbirthThePuerperium
+member: dcid:Count_death_CertainConditionsOriginatingInThePerinatalPeriod
+member: dcid:Count_death_CertainInfectiousParasiticDiseases
+member: dcid:Count_death_DiseasesofTheDigestiveSystem
+member: dcid:Count_death_Neoplasms
+member: dcid:Count_death_AbnormalNotClassfied
+member: dcid:Count_death_CongenitalMalformationsDeformationsChromosomalAbnormalities
+member: dcid:Count_death_DiseasesofBloodAndBloodFormingOrgansAndImmuneDisorders
+member: dcid:Count_mortalityEvent_Assault(Homicide)
+member: dcid:Count_mortalityEvent_Diabetes
+member: dcid:Count_mortalityEvent_HeartDiseaseExcludingHypertension
+member: dcid:Count_mortalityEvent_IntentionalSelf-Harm(Suicide)
+member: dcid:Count_mortalityEvent_Suicide
 
 Node: dcid:dc/topic/Cholesterol
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Cholesterol"
+description: "Cholesterol levels and screenings among the population"
 relevantVariable: dcid:Percent_Person_WithHighCholesterol
 relevantVariable: dcid:Percent_Person_ReceivedCholesterolScreening
 
 Node: dcid:dc/topic/Diabetes
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Diabetes"
+description: "Prevalence of diabetes among the population"
 relevantVariable: dcid:Percent_Person_WithDiabetes
 
-Node: dcid:dc/topic/FemaleMortality
-typeOf: dcs:Topic
-name: "Female Mortality"
-relevantVariable: dcid:Count_Death_Female
-relevantVariable: dcid:dc/svpg/dc/topic/FemaleMortality_CausesOfDeath
+Node: dcid:dc/topic/Femalemortality
+typeof: dcs:topic
+name: "Female mortality"
+description: "Mortality rate among females and causes of death"
+relevantVariable: dcid:Count_death_Female
+relevantVariable: dcid:dc/svpg/dc/topic/Femalemortality_causesofdeath
 
-Node: dcid:dc/svpg/dc/topic/FemaleMortality_CausesOfDeath
-typeOf: dcs:StatVarPeerGroup
-name: "Causes of Female Mortality"
-member: dcid:Count_Death_AbnormalNotClassfied_Female
-member: dcid:Count_Death_CertainConditionsOriginatingInThePerinatalPeriod_Female
-member: dcid:Count_Death_CertainInfectiousParasiticDiseases_Female
-member: dcid:Count_Death_CongenitalMalformationsDeformationsChromosomalAbnormalities_Female
-member: dcid:Count_Death_DiseasesOfBloodAndBloodFormingOrgansAndImmuneDisorders_Female
-member: dcid:Count_Death_DiseasesOfTheCirculatorySystem_Female
-member: dcid:Count_Death_DiseasesOfTheDigestiveSystem_Female
-member: dcid:Count_Death_DiseasesOfTheGenitourinarySystem_Female
-member: dcid:Count_Death_DiseasesOfTheMusculoskeletalSystemConnectiveTissue_Female
-member: dcid:Count_Death_DiseasesOfTheNervousSystem_Female
-member: dcid:Count_Death_DiseasesOfTheRespiratorySystem_Female
-member: dcid:Count_Death_DiseasesOfTheSkinSubcutaneousTissue_Female
-member: dcid:Count_Death_EndocrineNutritionalMetabolicDiseases_Female
-member: dcid:Count_Death_ExternalCauses_Female
-member: dcid:Count_Death_MentalBehaviouralDisorders_Female
-member: dcid:Count_Death_Neoplasms_Female
-member: dcid:Count_Death_PregnancyChildbirthThePuerperium_Female
-member: dcid:Count_Death_SpecialCases_Female
-member: dcid:Count_MortalityEvent_Assault(Homicide)_Female
-member: dcid:Count_MortalityEvent_Diabetes_Female
-member: dcid:Count_MortalityEvent_IntentionalSelf-Harm(Suicide)_Female
+Node: dcid:dc/svpg/dc/topic/Femalemortality_causesofdeath
+typeof: dcs:StatVarPeerGroup
+name: "Female mortality causes of death"
+description: "breakdown of causes of death among females"
+member: dcid:Count_death_AbnormalNotClassfied_Female
+member: dcid:Count_death_CertainConditionsOriginatingInThePerinatalPeriod_Female
+member: dcid:Count_death_CertainInfectiousParasiticDiseases_Female
+member: dcid:Count_death_CongenitalMalformationsDeformationsChromosomalAbnormalities_Female
+member: dcid:Count_death_DiseasesofBloodAndBloodFormingOrgansAndImmuneDisorders_Female
+member: dcid:Count_death_DiseasesofTheCirculatorySystem_Female
+member: dcid:Count_death_DiseasesofTheDigestiveSystem_Female
+member: dcid:Count_death_DiseasesofTheGenitourinarySystem_Female
+member: dcid:Count_death_DiseasesofTheMusculoskeletalSystemConnectiveTissue_Female
+member: dcid:Count_death_DiseasesofTheNervousSystem_Female
+member: dcid:Count_death_DiseasesofTheRespiratorySystem_Female
+member: dcid:Count_death_DiseasesofTheSkinSubcutaneousTissue_Female
+member: dcid:Count_death_EndocrineNutritionalMetabolicDiseases_Female
+member: dcid:Count_death_Externalcauses_Female
+member: dcid:Count_death_MentalBehaviouralDisorders_Female
+member: dcid:Count_death_Neoplasms_Female
+member: dcid:Count_death_PregnancyChildbirthThePuerperium_Female
+member: dcid:Count_death_SpecialCases_Female
+member: dcid:Count_mortalityEvent_Assault(Homicide)_Female
+member: dcid:Count_mortalityEvent_Diabetes_Female
+member: dcid:Count_mortalityEvent_IntentionalSelf-Harm(Suicide)_Female
 
-Node: dcid:dc/topic/GlobalHealth
-typeOf: dcs:Topic
-name: "Global Health"
-relevantVariable: dcid:dc/topic/WHOHealthBehavior
+Node: dcid:dc/topic/Globalhealth
+typeof: dcs:topic
+name: "Global health"
+description: "Global health issues, including behavior, immunization, mortality, neglected tropical diseases, and non-communicable diseases"
+relevantVariable: dcid:dc/topic/WHOhealthBehavior
 relevantVariable: dcid:dc/topic/WHOImmunization
-relevantVariable: dcid:dc/topic/WHOMortality
+relevantVariable: dcid:dc/topic/WHOmortality
 relevantVariable: dcid:dc/topic/WHONeglectedTropicalDiseases
 relevantVariable: dcid:dc/topic/WHONonCommunicableDiseases
 
-Node: dcid:dc/topic/Health
-typeOf: dcs:Topic
+Node: dcid:dc/topic/health
+typeof: dcs:topic
 name: "Health"
-relevantVariable: dcid:dc/topic/HealthConditions
-relevantVariable: dcid:dc/topic/HealthEquity
-relevantVariable: dcid:dc/topic/HealthInsurance
-relevantVariable: dcid:dc/topic/Mortality
-relevantVariable: dcid:dc/topic/PreventativeHealthAndBehavior
-relevantVariable: dcid:dc/topic/GlobalHealth
+description: "Overview of health conditions, health equity, insurance, mortality, preventative health, and global health issues"
+relevantVariable: dcid:dc/topic/healthConditions
+relevantVariable: dcid:dc/topic/healthEquity
+relevantVariable: dcid:dc/topic/healthInsurance
+relevantVariable: dcid:dc/topic/mortality
+relevantVariable: dcid:dc/topic/PreventativehealthAndBehavior
+relevantVariable: dcid:dc/topic/Globalhealth
 
-Node: dcid:dc/topic/HealthBehavior
-typeOf: dcs:Topic
-name: "Health Behavior"
-relevantVariable: dcid:dc/svpg/dc/topic/HealthBehavior_HealthBehavior
+Node: dcid:dc/topic/healthBehavior
+typeof: dcs:topic
+name: "Health behavior"
+description: "Focuses on various health behaviors that influence physical and mental well-being"
+relevantVariable: dcid:dc/svpg/dc/topic/healthBehavior_healthBehavior
 
-Node: dcid:dc/svpg/dc/topic/HealthBehavior_HealthBehavior
-typeOf: dcs:StatVarPeerGroup
-name: "Health Behavior"
+Node: dcid:dc/svpg/dc/topic/healthBehavior_healthBehavior
+typeof: dcs:StatVarPeerGroup
+name: "Health behavior"
+description: "Describes various health behaviors such as binge drinking, obesity, physical inactivity, sleep habits, and smoking"
 member: dcid:Percent_Person_BingeDrinking
 member: dcid:Percent_Person_Obesity
 member: dcid:Percent_Person_PhysicalInactivity
 member: dcid:Percent_Person_SleepLessThan7Hours
 member: dcid:Percent_Person_Smoking
 
-Node: dcid:dc/topic/HealthConditions
-typeOf: dcs:Topic
-name: "Health Conditions"
-relevantVariable: dcid:dc/svpg/ComparisonOfHealthPrevalence
+Node: dcid:dc/topic/healthConditions
+typeof: dcs:topic
+name: "Health conditions"
+description: "Covers various health conditions such as arthritis, asthma, blood pressure, cancer, cholesterol, diabetes, heart disease, mental health, kidney disease, stroke, and heat-related illnesses"
+relevantVariable: dcid:dc/svpg/ComparisonofhealthPrevalence
 relevantVariable: dcid:dc/topic/Arthritis
 relevantVariable: dcid:dc/topic/Asthma
 relevantVariable: dcid:dc/topic/BloodPressure
@@ -174,14 +190,15 @@ relevantVariable: dcid:dc/topic/Cancer
 relevantVariable: dcid:dc/topic/Cholesterol
 relevantVariable: dcid:dc/topic/Diabetes
 relevantVariable: dcid:dc/topic/HeartDisease
-relevantVariable: dcid:dc/topic/MentalHealth
+relevantVariable: dcid:dc/topic/Mentalhealth
 relevantVariable: dcid:dc/topic/KidneyDisease
 relevantVariable: dcid:dc/topic/Stroke
 relevantVariable: dcid:dc/topic/HeatIllnesses
 
-Node: dcid:dc/svpg/ComparisonOfHealthPrevalence
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalence of Health Conditions"
+Node: dcid:dc/svpg/ComparisonofhealthPrevalence
+typeof: dcs:StatVarPeerGroup
+name: "Comparison of health prevalence"
+description: "Compares the prevalence of various health conditions such as arthritis, asthma, cancer, kidney disease, heart disease, diabetes, high blood pressure, high cholesterol, mental health, physical health, and stroke"
 member: dcid:Percent_Person_WithArthritis
 member: dcid:Percent_Person_WithAsthma
 member: dcid:Percent_Person_WithCancerExcludingSkinCancer
@@ -191,166 +208,186 @@ member: dcid:Percent_Person_WithCoronaryHeartDisease
 member: dcid:Percent_Person_WithDiabetes
 member: dcid:Percent_Person_WithHighBloodPressure
 member: dcid:Percent_Person_WithHighCholesterol
-member: dcid:Percent_Person_WithMentalHealthNotGood
-member: dcid:Percent_Person_WithPhysicalHealthNotGood
+member: dcid:Percent_Person_WithMentalhealthNotGood
+member: dcid:Percent_Person_WithPhysicalhealthNotGood
 member: dcid:Percent_Person_WithStroke
 
 Node: dcid:dc/topic/HeatIllnesses
-typeOf: dcs:Topic
-name: "Heat Illnesses"
+typeof: dcs:topic
+name: "Heat illnesses"
+description: "Focuses on medical conditions related to heat stress during the summer season, including incidents where patients were hospitalized, visited emergency departments, or unfortunately passed away due to heat stress"
 relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_PatientDeceased
 relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_PatientHospitalized
 relevantVariable: dcid:Count_MedicalConditionIncident_SummerSeason_ConditionHeatStress_VisitedEmergencyDepartment
 
-
 Node: dcid:dc/topic/KidneyDisease
-typeOf: dcs:Topic
-name: "Kidney Disease"
+typeof: dcs:topic
+name: "Kidney disease"
+description: "Focuses on the prevalence of chronic kidney disease among individuals"
 relevantVariable: dcid:Percent_Person_WithChronicKidneyDisease
 
 Node: dcid:dc/topic/Stroke
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Stroke"
+description: "Focuses on the prevalence of stroke among individuals"
 relevantVariable: dcid:Percent_Person_WithStroke
 
-Node: dcid:dc/topic/HealthEquity
-typeOf: dcs:Topic
-name: "Health Equity"
-relevantVariable: dcid:dc/topic/DisabilitiesByGender
-relevantVariable: dcid:dc/topic/DisabilitiesByRace
-relevantVariable: dcid:dc/topic/HealthInsuranceByGender
-relevantVariable: dcid:dc/topic/HealthInsuranceByRace
-relevantVariable: dcid:dc/topic/MortalityByGender
-relevantVariable: dcid:dc/topic/MortalityByRace
+Node: dcid:dc/topic/healthEquity
+typeof: dcs:topic
+name: "Health equity"
+description: "Focuses on disparities in health outcomes based on factors like gender, race, and access to health insurance"
+relevantVariable: dcid:dc/topic/DisabilitiesBygender
+relevantVariable: dcid:dc/topic/DisabilitiesByrace
+relevantVariable: dcid:dc/topic/healthInsuranceBygender
+relevantVariable: dcid:dc/topic/healthInsuranceByrace
+relevantVariable: dcid:dc/topic/mortalityBygender
+relevantVariable: dcid:dc/topic/mortalityByrace
 
-Node: dcid:dc/topic/HealthInsurance
-typeOf: dcs:Topic
-name: "Health Insurance"
-relevantVariable: dcid:Count_Person_WithHealthInsurance
-relevantVariable: dcid:Count_Person_NoHealthInsurance
-relevantVariable: dcid:dc/topic/HealthInsuranceType
-relevantVariable: dcid:dc/topic/NoHealthInsurance
+Node: dcid:dc/topic/healthInsurance
+typeof: dcs:topic
+name: "Health insurance"
+description: "Focuses on the coverage and availability of health insurance, including The number of people with and without insurance"
+relevantVariable: dcid:Count_Person_WithhealthInsurance
+relevantVariable: dcid:Count_Person_NohealthInsurance
+relevantVariable: dcid:dc/topic/healthInsuranceType
+relevantVariable: dcid:dc/topic/NohealthInsurance
 
-Node: dcid:dc/topic/HealthInsuranceByGender
-typeOf: dcs:Topic
-name: "Health Insurance by Gender"
-relevantVariable: dcid:dc/topic/NoHealthInsuranceByGender
-relevantVariable: dcid:dc/topic/WithHealthInsuranceByGender
+Node: dcid:dc/topic/healthInsuranceBygender
+typeof: dcs:topic
+name: "Health insurance by gender"
+description: "Focuses on the distribution of health insurance coverage across different genders, highlighting those with and without insurance"
+relevantVariable: dcid:dc/topic/NohealthInsuranceBygender
+relevantVariable: dcid:dc/topic/WithhealthInsuranceBygender
 
-Node: dcid:dc/topic/HealthInsuranceByRace
-typeOf: dcs:Topic
-name: "Health Insurance by Race"
-relevantVariable: dcid:dc/topic/NoHealthInsuranceByRace
-relevantVariable: dcid:dc/topic/WithHealthInsuranceByRace
+Node: dcid:dc/topic/healthInsuranceByrace
+typeof: dcs:topic
+name: "Health insurance by race"
+description: "Examines the distribution of health insurance coverage across different racial groups, focusing on those with and without insurance"
+relevantVariable: dcid:dc/topic/NohealthInsuranceByrace
+relevantVariable: dcid:dc/topic/WithhealthInsuranceByrace
 
-Node: dcid:dc/topic/HealthInsuranceType
-typeOf: dcs:Topic
-name: "Health Insurance Type"
-relevantVariable: dcid:dc/svpg/dc/topic/HealthInsuranceType_TypeofHealthInsuranceCoverage
+Node: dcid:dc/topic/healthInsuranceType
+typeof: dcs:topic
+name: "Health insurance type"
+description: "Focuses on the different types of health insurance coverage, including employer-sponsored, public programs, and individual plans"
+relevantVariable: dcid:dc/svpg/dc/topic/healthInsuranceType_TypeofhealthInsuranceCoverage
 
-Node: dcid:dc/svpg/dc/topic/HealthInsuranceType_TypeofHealthInsuranceCoverage
-typeOf: dcs:StatVarPeerGroup
-name: "Type of Health Insurance Coverage"
-member: dcid:Count_Person_WithPrivateHealthInsurance
-member: dcid:Count_Person_WithPrivateHealthInsuranceOnly
-member: dcid:Count_Person_WithPublicHealthInsurance
-member: dcid:Count_Person_WithPublicHealthInsuranceOnly
+Node: dcid:dc/svpg/dc/topic/healthInsuranceType_TypeofhealthInsuranceCoverage
+typeof: dcs:StatVarPeerGroup
+name: "Health insurance type and type of health insurance coverage"
+description: "Focuses on the distribution of individuals with various types of health insurance coverage, such as private and public insurance, or a combination of both"
+member: dcid:Count_Person_WithPrivatehealthInsurance
+member: dcid:Count_Person_WithPrivatehealthInsuranceOnly
+member: dcid:Count_Person_WithPublichealthInsurance
+member: dcid:Count_Person_WithPublichealthInsuranceOnly
 
 Node: dcid:dc/topic/HeartDisease
-typeOf: dcs:Topic
-name: "Heart Disease"
+typeof: dcs:topic
+name: "Heart disease"
+description: "Focuses on the prevalence and impact of heart disease, including conditions like coronary heart disease and chronic obstructive pulmonary disease , with specific breakdowns by gender"
 relevantVariable: dcid:Percent_Person_WithCoronaryHeartDisease
 relevantVariable: dcid:Percent_Person_WithChronicObstructivePulmonaryDisease
-relevantVariable: dcid:dc/svpg/dc/topic/HeartDisease_HeartDiseaseByGender
+relevantVariable: dcid:dc/svpg/dc/topic/HeartDisease_HeartDiseaseBygender
 
-Node: dcid:dc/svpg/dc/topic/HeartDisease_HeartDiseaseByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Heart Disease by Gender"
-member: dcid:Count_Person_Female_ConditionDiseasesOfHeart
-member: dcid:Count_Person_Male_ConditionDiseasesOfHeart
+Node: dcid:dc/svpg/dc/topic/HeartDisease_HeartDiseaseBygender
+typeof: dcs:StatVarPeerGroup
+name: "Heart disease by gender"
+description: "Examines the prevalence of heart disease, specifically diseases of the heart, broken down by gender, highlighting the differences in incidence between males and females"
+member: dcid:Count_Person_Female_ConditionDiseasesofHeart
+member: dcid:Count_Person_Male_ConditionDiseasesofHeart
 
-Node: dcid:dc/topic/InfantMortality
-typeOf: dcs:Topic
-name: "Infant Mortality"
+Node: dcid:dc/topic/Infantmortality
+typeof: dcs:topic
+name: "Infant mortality"
+description: "Focuses on the death rates of infants, typically under one year of age, and explores the causes of infant mortality, as well as its distribution across gender"
 relevantVariable: dcid:sdg/SH_DYN_NMRT.AGE--M0
-relevantVariable: dcid:Count_Death_Upto1Years
-relevantVariable: dcid:dc/svpg/dc/topic/InfantMortality_CausesOfDeath
-relevantVariable: dcid:dc/svpg/MortalityRate_InfantMortalityRateByGender
+relevantVariable: dcid:Count_death_Upto1Years
+relevantVariable: dcid:dc/svpg/dc/topic/Infantmortality_causesofdeath
+relevantVariable: dcid:dc/svpg/mortalityrate_InfantmortalityrateBygender
 
-Node: dcid:dc/svpg/MortalityRate_InfantMortalityRateByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Infant Mortality Rate by Gender"
+Node: dcid:dc/svpg/mortalityrate_InfantmortalityrateBygender
+typeof: dcs:StatVarPeerGroup
+name: "Infant mortality rate by gender"
+description: "Examines the infant mortality rate by gender, comparing death rates of male and female infants under one year of age"
 member: dcid:sdg/SH_DYN_IMRT.AGE--Y0__SEX--F
 member: dcid:sdg/SH_DYN_IMRT.AGE--Y0__SEX--M
 
-Node: dcid:dc/svpg/dc/topic/InfantMortality_CausesOfDeath
-typeOf: dcs:StatVarPeerGroup
-name: "Causes of Infant Mortality"
-member: dcid:Count_Death_Upto1Years_AbnormalNotClassfied
-member: dcid:Count_Death_Upto1Years_CertainConditionsOriginatingInThePerinatalPeriod
-member: dcid:Count_Death_Upto1Years_CertainInfectiousParasiticDiseases
-member: dcid:Count_Death_Upto1Years_CongenitalMalformationsDeformationsChromosomalAbnormalities
-member: dcid:Count_Death_Upto1Years_DiseasesOfTheCirculatorySystem
-member: dcid:Count_Death_Upto1Years_DiseasesOfTheDigestiveSystem
-member: dcid:Count_Death_Upto1Years_DiseasesOfTheGenitourinarySystem
-member: dcid:Count_Death_Upto1Years_DiseasesOfTheNervousSystem
-member: dcid:Count_Death_Upto1Years_DiseasesOfTheRespiratorySystem
-member: dcid:Count_Death_Upto1Years_EndocrineNutritionalMetabolicDiseases
-member: dcid:Count_Death_Upto1Years_ExternalCauses
-member: dcid:Count_Death_Upto1Years_Neoplasms
+Node: dcid:dc/svpg/dc/topic/Infantmortality_causesofdeath
+typeof: dcs:StatVarPeerGroup
+name: "Infant mortality causes of death"
+description: "Breaks down the causes of death for infants under one year of age, including conditions like congenital malformations, infectious diseases, and respiratory issues"
+member: dcid:Count_death_Upto1Years_AbnormalNotClassfied
+member: dcid:Count_death_Upto1Years_CertainConditionsOriginatingInThePerinatalPeriod
+member: dcid:Count_death_Upto1Years_CertainInfectiousParasiticDiseases
+member: dcid:Count_death_Upto1Years_CongenitalMalformationsDeformationsChromosomalAbnormalities
+member: dcid:Count_death_Upto1Years_DiseasesofTheCirculatorySystem
+member: dcid:Count_death_Upto1Years_DiseasesofTheDigestiveSystem
+member: dcid:Count_death_Upto1Years_DiseasesofTheGenitourinarySystem
+member: dcid:Count_death_Upto1Years_DiseasesofTheNervousSystem
+member: dcid:Count_death_Upto1Years_DiseasesofTheRespiratorySystem
+member: dcid:Count_death_Upto1Years_EndocrineNutritionalMetabolicDiseases
+member: dcid:Count_death_Upto1Years_Externalcauses
+member: dcid:Count_death_Upto1Years_Neoplasms
 
-Node: dcid:dc/topic/MentalHealth
-typeOf: dcs:Topic
-name: "Mental Health"
-relevantVariable: dcid:Percent_Person_WithMentalHealthNotGood
+Node: dcid:dc/topic/Mentalhealth
+typeof: dcs:topic
+name: "Mental health"
+description: "Covers various mental health conditions, including the prevalence of depression and mental health issues in different populations, along with mental health-related deaths"
+relevantVariable: dcid:Percent_Person_WithMentalhealthNotGood
 relevantVariable: dcid:Percent_Person_18OrMoreYears_WithDepression
-relevantVariable: dcid:Count_Death_MentalBehaviouralDisorders
-relevantVariable: dcid:dc/svpg/dc/topic/MentalHealth_DeathsbyAge
+relevantVariable: dcid:Count_death_MentalBehaviouralDisorders
+relevantVariable: dcid:dc/svpg/dc/topic/Mentalhealth_deathsbyage
 
-Node: dcid:dc/svpg/dc/topic/MentalHealth_DeathsbyAge
-typeOf: dcs:StatVarPeerGroup
-name: "Mental Health Deaths by Age"
-member: dcid:Count_Death_15To24Years_MentalBehaviouralDisorders
-member: dcid:Count_Death_25To34Years_MentalBehaviouralDisorders
-member: dcid:Count_Death_35To44Years_MentalBehaviouralDisorders
-member: dcid:Count_Death_45To54Years_MentalBehaviouralDisorders
-member: dcid:Count_Death_55To64Years_MentalBehaviouralDisorders
-member: dcid:Count_Death_65To74Years_MentalBehaviouralDisorders
-member: dcid:Count_Death_75To84Years_MentalBehaviouralDisorders
-member: dcid:Count_Death_85Years_MentalBehaviouralDisorders
+Node: dcid:dc/svpg/dc/topic/Mentalhealth_deathsbyage
+typeof: dcs:StatVarPeerGroup
+name: "Mental health deaths by age"
+description: "Represents the number of deaths due to mental and behavioral disorders, broken down by age groups"
+member: dcid:Count_death_15to24Years_MentalBehaviouralDisorders
+member: dcid:Count_death_25to34Years_MentalBehaviouralDisorders
+member: dcid:Count_death_35to44Years_MentalBehaviouralDisorders
+member: dcid:Count_death_45to54Years_MentalBehaviouralDisorders
+member: dcid:Count_death_55to64Years_MentalBehaviouralDisorders
+member: dcid:Count_death_65to74Years_MentalBehaviouralDisorders
+member: dcid:Count_death_75to84Years_MentalBehaviouralDisorders
+member: dcid:Count_death_85Years_MentalBehaviouralDisorders
 
-Node: dcid:dc/topic/Mortality
-typeOf: dcs:Topic
+Node: dcid:dc/topic/mortality
+typeof: dcs:topic
 name: "Mortality"
-relevantVariable: dcid:Count_Death
-relevantVariable: dcid:Count_Death_AsAFractionOfCount_Person
-relevantVariable: dcid:dc/topic/LifeExpectancy
-relevantVariable: dcid:dc/topic/CausesOfDeath
-relevantVariable: dcid:dc/topic/FemaleMortality
-relevantVariable: dcid:dc/topic/InfantMortality
-relevantVariable: dcid:dc/topic/MortalityAmongIncarcerated
+description: "Represents the number of deaths within a population, along with relevant data about mortality causes, life expectancy, and demographic breakdowns"
+relevantVariable: dcid:Count_death
+relevantVariable: dcid:Count_death_AsAFractionofCount_Person
+relevantVariable: dcid:dc/topic/Lifeexpectancy
+relevantVariable: dcid:dc/topic/causesofdeath
+relevantVariable: dcid:dc/topic/Femalemortality
+relevantVariable: dcid:dc/topic/Infantmortality
+relevantVariable: dcid:dc/topic/mortalityAmongIncarcerated
 
-Node: dcid:dc/topic/LifeExpectancy
-typeOf: dcs:Topic
-name: "Life Expectancy"
-relevantVariable: dcid:LifeExpectancy_Person
-relevantVariable: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
+Node: dcid:dc/topic/Lifeexpectancy
+typeof: dcs:topic
+name: "Life expectancy prediction"
+description: "A project focused on predicting an individual's life expectancy based on various influencing factors such as health, environment, and socio-economic status"
+relevantVariable: dcid:Lifeexpectancy_Person
+relevantVariable: dcid:dc/svpg/Lifeexpectancy_Lifeexpectancybygender
 
-Node: dcid:dc/svpg/LifeExpectancy_LifeExpectancybyGender
-typeOf: dcs:StatVarPeerGroup
-name: "Life Expectancy by Gender"
-member: dcid:LifeExpectancy_Person_Female
-member: dcid:LifeExpectancy_Person_Male
+Node: dcid:dc/svpg/Lifeexpectancy_Lifeexpectancybygender
+typeof: dcs:StatVarPeerGroup
+name: "Life expectancy by gender"
+description: "A statistical variable peer group that compares life expectancy between different genders"
+member: dcid:Lifeexpectancy_Person_Female
+member: dcid:Lifeexpectancy_Person_Male
 
-Node: dcid:dc/topic/MortalityAmongIncarcerated
-typeOf: dcs:Topic
-name: "Mortality Among The Incarcerated"
+Node: dcid:dc/topic/mortalityAmongIncarcerated
+typeof: dcs:topic
+name: "Mortality among incarcerated"
+description: "The statistics related to mortality among incarcerated individuals including causes of death"
 relevantVariable: dcid:dc/67ttwfn9dswch
-relevantVariable: dcid:dc/svpg/dc/topic/MortalityAmongIncarcerated_CausesofDeath
+relevantVariable: dcid:dc/svpg/dc/topic/mortalityAmongIncarcerated_causesofdeath
 
-Node: dcid:dc/svpg/dc/topic/MortalityAmongIncarcerated_CausesofDeath
-typeOf: dcs:StatVarPeerGroup
-name: "Causes of Death Among Incarcerated"
+Node: dcid:dc/svpg/dc/topic/mortalityAmongIncarcerated_causesofdeath
+typeof: dcs:StatVarPeerGroup
+name: "Mortality among incarcerated by cause of death"
+description: "The statistics related to mortality among incarcerated individuals categorized by cause of death"
 member: dcid:dc/3kk4xws30zxlb
 member: dcid:dc/3s7lndm5j3wp4
 member: dcid:dc/80wsxnfj3secc
@@ -360,147 +397,167 @@ member: dcid:dc/nz8kmke5yqvn
 member: dcid:dc/tn5kxlgy0shl4
 member: dcid:dc/xewq6n5r3nzch
 
-Node: dcid:dc/topic/MortalityByGender
-typeOf: dcs:Topic
-name: "Mortality by Gender"
-relevantVariable: dcid:Count_Death_Female
-relevantVariable: dcid:Count_Death_Male
+Node: dcid:dc/topic/mortalityBygender
+typeof: dcs:topic
+name: "Mortality by gender"
+description: "Statistics related to the number of deaths categorized by gender"
+relevantVariable: dcid:Count_death_Female
+relevantVariable: dcid:Count_death_Male
 
-Node: dcid:dc/topic/MortalityByRace
-typeOf: dcs:Topic
-name: "Mortality by Race"
-relevantVariable: dcid:Count_Death_AmericanIndianAndAlaskaNativeAlone
-relevantVariable: dcid:Count_Death_AsianOrPacificIslander
-relevantVariable: dcid:Count_Death_BlackOrAfricanAmerican
-relevantVariable: dcid:Count_Death_White
+Node: dcid:dc/topic/mortalityByrace
+typeof: dcs:topic
+name: "Mortality by race"
+description: "Statistics related to the number of deaths categorized by race"
+relevantVariable: dcid:Count_death_AmericanIndianAndAlaskanativeAlone
+relevantVariable: dcid:Count_death_AsianOrPacificIslander
+relevantVariable: dcid:Count_death_BlackOrAfricanAmerican
+relevantVariable: dcid:Count_death_White
 
-Node: dcid:dc/topic/NoHealthInsurance
-typeOf: dcs:Topic
-name: "No Health Insurance"
-relevantVariable: dcid:Count_Person_NoHealthInsurance
-relevantVariable: dcid:dc/topic/NoHealthInsuranceByGender
-relevantVariable: dcid:dc/topic/NoHealthInsuranceByIncome
-relevantVariable: dcid:dc/topic/NoHealthInsuranceByRace
+Node: dcid:dc/topic/NohealthInsurance
+typeof: dcs:topic
+name: "No health insurance"
+description: "Statistics related to the number of people without health insurance including breakdowns by gender income and race"
+relevantVariable: dcid:Count_Person_NohealthInsurance
+relevantVariable: dcid:dc/topic/NohealthInsuranceBygender
+relevantVariable: dcid:dc/topic/NohealthInsuranceByIncome
+relevantVariable: dcid:dc/topic/NohealthInsuranceByrace
 
-Node: dcid:dc/topic/NoHealthInsuranceByGender
-typeOf: dcs:Topic
-name: "No Health Insurance by Gender"
-relevantVariable: dcid:dc/svpg/dc/topic/NoHealthInsuranceByGender_UninsuredByGender
+Node: dcid:dc/topic/NohealthInsuranceBygender
+typeof: dcs:topic
+name: "No health insurance by gender"
+description: "Statistics related to the number of people without health insurance categorized by gender"
+relevantVariable: dcid:dc/svpg/dc/topic/NohealthInsuranceBygender_UninsuredBygender
 
-Node: dcid:dc/svpg/dc/topic/NoHealthInsuranceByGender_UninsuredByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Uninsured by Gender"
-member: dcid:Count_Person_Female_NoHealthInsurance
-member: dcid:Count_Person_Male_NoHealthInsurance
+Node: dcid:dc/svpg/dc/topic/NohealthInsuranceBygender_UninsuredBygender
+typeof: dcs:StatVarPeerGroup
+name: "Uninsured by gender"
+description: "Statistics related to the number of people without health insurance categorized by gender"
+member: dcid:Count_Person_Female_NohealthInsurance
+member: dcid:Count_Person_Male_NohealthInsurance
 
-Node: dcid:dc/topic/NoHealthInsuranceByIncome
-typeOf: dcs:Topic
-name: "No Health Insurance by Income"
-relevantVariable: dcid:dc/svpg/dc/topic/NoHealthInsuranceByIncome_UninsuredByIncome
+Node: dcid:dc/topic/NohealthInsuranceByIncome
+typeof: dcs:topic
+name: "No health insurance by income"
+description: "Statistics related to the number of people without health insurance categorized by income"
+relevantVariable: dcid:dc/svpg/dc/topic/NohealthInsuranceByIncome_UninsuredByIncome
 
-Node: dcid:dc/svpg/dc/topic/NoHealthInsuranceByIncome_UninsuredByIncome
-typeOf: dcs:StatVarPeerGroup
-name: "Uninsured by Income"
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf4999OrLessUSDollar_WithEarnings
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf5000To14999USDollar_WithEarnings
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf15000To24999USDollar_WithEarnings
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf25000To34999USDollar_WithEarnings
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf35000To49999USDollar_WithEarnings
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf50000To74999USDollar_WithEarnings
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_IncomeOf75000OrMoreUSDollar_WithEarnings
+Node: dcid:dc/svpg/dc/topic/NohealthInsuranceByIncome_UninsuredByIncome
+typeof: dcs:StatVarPeerGroup
+name: "Uninsured by income"
+description: "Statistics related to the number of people aged 16 or older without health insurance categorized by income level"
+member: dcid:Count_Person_16OrMoreYears_NohealthInsurance_Incomeof4999OrLessUSDollar_WithEarnings
+member: dcid:Count_Person_16OrMoreYears_NohealthInsurance_Incomeof5000to14999USDollar_WithEarnings
+member: dcid:Count_Person_16OrMoreYears_NohealthInsurance_Incomeof15000to24999USDollar_WithEarnings
+member: dcid:Count_Person_16OrMoreYears_NohealthInsurance_Incomeof25000to34999USDollar_WithEarnings
+member: dcid:Count_Person_16OrMoreYears_NohealthInsurance_Incomeof35000to49999USDollar_WithEarnings
+member: dcid:Count_Person_16OrMoreYears_NohealthInsurance_Incomeof50000to74999USDollar_WithEarnings
+member: dcid:Count_Person_16OrMoreYears_NohealthInsurance_Incomeof75000OrMoreUSDollar_WithEarnings
 
-Node: dcid:dc/topic/NoHealthInsuranceByRace
-typeOf: dcs:Topic
-name: "No Health Insurance by Race"
-relevantVariable: dcid:dc/svpg/dc/topic/NoHealthInsuranceByRace_UninsuredByRace
+Node: dcid:dc/topic/NohealthInsuranceByrace
+typeof: dcs:topic
+name: "No health insurance by race"
+description: "Statistics related to the number of people without health insurance categorized by race"
+relevantVariable: dcid:dc/svpg/dc/topic/NohealthInsuranceByrace_UninsuredByrace
 
-Node: dcid:dc/svpg/dc/topic/NoHealthInsuranceByRace_UninsuredByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Uninsured by Race"
-member: dcid:Count_Person_NoHealthInsurance_WhiteAlone
-member: dcid:Count_Person_NoHealthInsurance_BlackOrAfricanAmericanAlone
-member: dcid:Count_Person_NoHealthInsurance_HispanicOrLatino
-member: dcid:Count_Person_NoHealthInsurance_AsianAlone
-member: dcid:Count_Person_NoHealthInsurance_AmericanIndianOrAlaskaNativeAlone
-member: dcid:Count_Person_NoHealthInsurance_NativeHawaiianOrOtherPacificIslanderAlone
+Node: dcid:dc/svpg/dc/topic/NohealthInsuranceByrace_UninsuredByrace
+typeof: dcs:StatVarPeerGroup
+name: "Uninsured by race"
+description: "Statistics related to the number of people without health insurance categorized by race"
+member: dcid:Count_Person_NohealthInsurance_WhiteAlone
+member: dcid:Count_Person_NohealthInsurance_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_NohealthInsurance_HispanicOrLatino
+member: dcid:Count_Person_NohealthInsurance_AsianAlone
+member: dcid:Count_Person_NohealthInsurance_AmericanIndianOrAlaskanativeAlone
+member: dcid:Count_Person_NohealthInsurance_nativeHawaiianOr0therPacificIslanderAlone
 
-Node: dcid:dc/topic/PreventativeHealthAndBehavior
-typeOf: dcs:Topic
-name: "Preventive Health and Behavior"
-relevantVariable: dcid:dc/topic/HealthBehavior
-relevantVariable: dcid:dc/topic/PreventativeHealth
+Node: dcid:dc/topic/PreventativehealthAndBehavior
+typeof: dcs:topic
+name: "Preventative health and behavior"
+description: "The statistics related to health behaviors and preventative health measures"
+relevantVariable: dcid:dc/topic/healthBehavior
+relevantVariable: dcid:dc/topic/Preventativehealth
 
-Node: dcid:dc/topic/PreventativeHealth
-typeOf: dcs:Topic
-name: "Preventive Health"
-relevantVariable: dcid:Percent_Person_ReceivedAnnualCheckup
-relevantVariable: dcid:dc/svpg/PreventativeHealth_PrevalenceofHealthScreeningsbyType
+Node: dcid:dc/topic/Preventativehealth
+typeof: dcs:topic
+name: "Preventative health"
+description: "The statistics related to annual checkups and the prevalence of health screenings by type"
+relevantVariable: dcid:Percent_Person_ReceivedannualCheckup
+relevantVariable: dcid:dc/svpg/Preventativehealth_PrevalenceofhealthScreeningsbyType
 
-Node: dcid:dc/svpg/PreventativeHealth_PrevalenceofHealthScreeningsbyType
-typeOf: dcs:StatVarPeerGroup
-name: "Prevalence of Health Screenings by Type"
-member: dcid:Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-member: dcid:Percent_Person_50To75Years_ReceivedColorectalCancerScreening
+Node: dcid:dc/svpg/Preventativehealth_PrevalenceofhealthScreeningsbyType
+typeof: dcs:StatVarPeerGroup
+name: "Prevalence of health screenings by type"
+description: "Statistics related to the percentage of people who receive various types of health screenings"
+member: dcid:Percent_Person_21to65Years_Female_ReceivedCervicalCancerScreening
+member: dcid:Percent_Person_50to75Years_ReceivedColorectalCancerScreening
 member: dcid:Percent_Person_ReceivedCholesterolScreening
 member: dcid:Percent_Person_ReceivedDentalVisit
 
-Node: dcid:dc/topic/PrivateHealthInsuranceType
-typeOf: dcs:Topic
-name: "Private Health Insurance Type"
-relevantVariable: dcid:dc/svpg/dc/topic/PrivateHealthInsuranceType_TypeofPrivateHealthInsuranceCoverage
+Node: dcid:dc/topic/PrivatehealthInsuranceType
+typeof: dcs:topic
+name: "Private health insurance type"
+description: "Statistics related to the type of private health insurance coverage"
+relevantVariable: dcid:dc/svpg/dc/topic/PrivatehealthInsuranceType_TypeofPrivatehealthInsuranceCoverage
 
-Node: dcid:dc/svpg/dc/topic/PrivateHealthInsuranceType_TypeofPrivateHealthInsuranceCoverage
-typeOf: dcs:StatVarPeerGroup
-name: "Type of Private Health Insurance Coverage"
-member: dcid:Count_Person_WithDirectPurchaseHealthInsurance
-member: dcid:Count_Person_WithDirectPurchaseHealthInsuranceOnly
-member: dcid:Count_Person_WithEmployerBasedHealthInsurance
-member: dcid:Count_Person_WithEmployerBasedHealthInsuranceOnly
-member: dcid:Count_Person_WithTricareMilitaryHealthCoverage
-member: dcid:Count_Person_WithTricareMilitaryHealthCoverageOnly
+Node: dcid:dc/svpg/dc/topic/PrivatehealthInsuranceType_TypeofPrivatehealthInsuranceCoverage
+typeof: dcs:StatVarPeerGroup
+name: "Type of private health insurance coverage"
+description: "Statistics related to the type of private health insurance coverage held by individuals"
+member: dcid:Count_Person_WithDirectPurchasehealthInsurance
+member: dcid:Count_Person_WithDirectPurchasehealthInsuranceOnly
+member: dcid:Count_Person_WithEmployerBasedhealthInsurance
+member: dcid:Count_Person_WithEmployerBasedhealthInsuranceOnly
+member: dcid:Count_Person_WithTricareMilitaryhealthCoverage
+member: dcid:Count_Person_WithTricareMilitaryhealthCoverageOnly
 
-Node: dcid:dc/topic/PublicHealthInsuranceType
-typeOf: dcs:Topic
-name: "Public Health Insurance Type"
-relevantVariable: dcid:dc/svpg/dc/topic/PublicHealthInsuranceType_TypeofPublicHealthInsuranceCoverage
+Node: dcid:dc/topic/PublichealthInsuranceType
+typeof: dcs:topic
+name: "Public health insurance type"
+description: "Statistics related to the type of public health insurance coverage"
+relevantVariable: dcid:dc/svpg/dc/topic/PublichealthInsuranceType_TypeofPublichealthInsuranceCoverage
 
-Node: dcid:dc/svpg/dc/topic/PublicHealthInsuranceType_TypeofPublicHealthInsuranceCoverage
-typeOf: dcs:StatVarPeerGroup
-name: "Type of Public Health Insurance Coverage"
-member: dcid:Count_Person_WithMedicaidOrMeansTestedPublicCoverage
-member: dcid:Count_Person_WithMedicaidOrMeansTestedPublicCoverageOnly
+Node: dcid:dc/svpg/dc/topic/PublichealthInsuranceType_TypeofPublichealthInsuranceCoverage
+typeof: dcs:StatVarPeerGroup
+name: "Type of public health insurance coverage"
+description: "Statistics related to the type of public health insurance coverage held by individuals"
+member: dcid:Count_Person_WithMedicaidOrmeansTestedPublicCoverage
+member: dcid:Count_Person_WithMedicaidOrmeansTestedPublicCoverageOnly
 member: dcid:Count_Person_WithMedicareCoverage
 member: dcid:Count_Person_WithMedicareCoverageOnly
-member: dcid:Count_Person_WithVAHealthCare
-member: dcid:Count_Person_WithVAHealthCareOnly
+member: dcid:Count_Person_WithVAhealthCare
+member: dcid:Count_Person_WithVAhealthCareOnly
 
 Node: dcid:dc/topic/WHOChildImmunization
-typeOf: dcs:Topic
-name: "Child Immunization"
+typeof: dcs:topic
+name: "WHO child immunization"
+description: "The statistics related to child immunization rates reported by the World health Organization"
 relevantVariable: dcid:WHO/WHS4_117
 relevantVariable: dcid:WHO/WHS4_128
 relevantVariable: dcid:WHO/WHS4_129
 relevantVariable: dcid:WHO/WHS4_543
 relevantVariable: dcid:WHO/WHS8_110
 
-Node: dcid:dc/topic/WHOChildImmunizationsByGender
-typeOf: dcs:Topic
-name: "Child Immunizations by Gender"
-relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforFemales
-relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforMales
+Node: dcid:dc/topic/WHOChildImmunizationsBygender
+typeof: dcs:topic
+name: "WHO child immunizations by gender"
+description: "The statistics related to child immunization rates by gender reported by the World health Organization"
+relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsBygender_ChildImmunizationsforFemales
+relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsBygender_ChildImmunizationsforMales
 
-Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforFemales
-typeOf: dcs:StatVarPeerGroup
-name: "Child Immunizations for Females"
+Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsBygender_ChildImmunizationsforFemales
+typeof: dcs:StatVarPeerGroup
+name: "WHO child immunizations for females"
+description: "The statistics related to child immunization rates for females as reported by the World health Organization"
 member: dcid:WHO/bcgv_Female
 member: dcid:WHO/dptv_Female
 member: dcid:WHO/fullv_Female
 member: dcid:WHO/mslv_Female
 member: dcid:WHO/poliov_Female
 
-Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByGender_ChildImmunizationsforMales
-typeOf: dcs:StatVarPeerGroup
-name: "Child Immunizations for Males"
+Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsBygender_ChildImmunizationsforMales
+typeof: dcs:StatVarPeerGroup
+name: "WHO child immunizations for males"
+description: "The statistics related to child immunization rates for males as reported by the World health Organization"
 member: dcid:WHO/bcgv_Male
 member: dcid:WHO/dptv_Male
 member: dcid:WHO/fullv_Male
@@ -508,14 +565,16 @@ member: dcid:WHO/mslv_Male
 member: dcid:WHO/poliov_Male
 
 Node: dcid:dc/topic/WHOChildImmunizationsByUrbanRural
-typeOf: dcs:Topic
-name: "Child Immunizations by Residency"
+typeof: dcs:topic
+name: "WHO child immunizations by urban or rural area"
+description: "The statistics related to child immunization rates in urban and rural areas as reported by the World health Organization"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByUrbanRural_ChildImmunizationsinRuralarea
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByUrbanRural_ChildImmunizationsinUrbalarea
 
 Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByUrbanRural_ChildImmunizationsinRuralarea
-typeOf: dcs:StatVarPeerGroup
-name: "Child Immunizations in Rural Area"
+typeof: dcs:StatVarPeerGroup
+name: "WHO child immunizations in rural area"
+description: "The statistics related to child immunization rates in rural areas as reported by the World health Organization"
 member: dcid:WHO/bcgv_Rural
 member: dcid:WHO/dptv_Rural
 member: dcid:WHO/fullv_Rural
@@ -523,50 +582,57 @@ member: dcid:WHO/mslv_Rural
 member: dcid:WHO/poliov_Rural
 
 Node: dcid:dc/svpg/dc/topic/WHOChildImmunizationsByUrbanRural_ChildImmunizationsinUrbalarea
-typeOf: dcs:StatVarPeerGroup
-name: "Child Immunizations in Urban Area"
+typeof: dcs:StatVarPeerGroup
+name: "WHO child immunizations in urban area"
+description: "The statistics related to child immunization rates in urban areas as reported by the World health Organization"
 member: dcid:WHO/bcgv_Urban
 member: dcid:WHO/dptv_Urban
 member: dcid:WHO/fullv_Urban
 member: dcid:WHO/mslv_Urban
 member: dcid:WHO/poliov_Urban
 
-Node: dcid:dc/topic/WHOChildMortality
-typeOf: dcs:Topic
-name: "Child Mortality"
-relevantVariable: dcid:dc/svpg/dc/topic/WHOChildMortality_ChildMortality
+Node: dcid:dc/topic/WHOChildmortality
+typeof: dcs:topic
+name: "WHO child mortality"
+description: "The statistics related to child mortality as reported by the World health Organization"
+relevantVariable: dcid:dc/svpg/dc/topic/WHOChildmortality_Childmortality
 
-Node: dcid:dc/svpg/dc/topic/WHOChildMortality_ChildMortality
-typeOf: dcs:StatVarPeerGroup
-name: "Child Mortality"
+Node: dcid:dc/svpg/dc/topic/WHOChildmortality_Childmortality
+typeof: dcs:StatVarPeerGroup
+name: "WHO child mortality"
+description: "The statistics related to child mortality as reported by the World health Organization"
 member: dcid:WHO/CM_01
 member: dcid:WHO/CM_02
 member: dcid:WHO/CM_03
 
 Node: dcid:dc/topic/WHOChildrenNonCommunicableDiseases
-typeOf: dcs:Topic
-name: "Non-Communicable Diseases Among Children"
+typeof: dcs:topic
+name: "WHO children noncommunicable diseases"
+description: "The statistics related to noncommunicable diseases among children as reported by the World health Organization"
 relevantVariable: dcid:dc/svpg/dc/topic/WHOChildrenNonCommunicableDiseases_Noncommunicablediseasesamongchildren
 
 Node: dcid:dc/svpg/dc/topic/WHOChildrenNonCommunicableDiseases_Noncommunicablediseasesamongchildren
-typeOf: dcs:StatVarPeerGroup
-name: "Non-communicable Diseases Among Children"
+typeof: dcs:StatVarPeerGroup
+name: "WHO children noncommunicable diseases"
+description: "The statistics related to noncommunicable diseases among children as reported by the World health Organization"
 member: dcid:WHO/LBW_PREVALENCE
-member: dcid:WHO/NUTOVERWEIGHTPREV
+member: dcid:WHO/NUtoVERWEIGHTPREV
 member: dcid:WHO/NUTRITION_ANAEMIA_CHILDREN_PREV
 member: dcid:WHO/NUTRITION_WA_2
 member: dcid:WHO/NUTRITION_WH_2
 member: dcid:WHO/NUTRITION_WH_3
 member: dcid:WHO/NUTSTUNTINGPREV
 
-Node: dcid:dc/topic/WHODALYByCauses
-typeOf: dcs:Topic
-name: "DALY Causes"
-relevantVariable: dcid:dc/svpg/dc/topic/WHODALYByCauses_DisabilityAdjustedLifeYears
+Node: dcid:dc/topic/WHODALYBycauses
+typeof: dcs:topic
+name: "WHO DALY by causes"
+description: "The statistics related to disability adjusted life years categorized by causes as reported by the World health Organization"
+relevantVariable: dcid:dc/svpg/dc/topic/WHODALYBycauses_DisabilityAdjustedLifeYears
 
-Node: dcid:dc/svpg/dc/topic/WHODALYByCauses_DisabilityAdjustedLifeYears
-typeOf: dcs:StatVarPeerGroup
-name: "Disability-Adjusted Life-Years"
+Node: dcid:dc/svpg/dc/topic/WHODALYBycauses_DisabilityAdjustedLifeYears
+typeof: dcs:StatVarPeerGroup
+name: "WHO DALY by causes"
+description: "The statistics related to disability adjusted life years by cause as reported by the World health Organization"
 member: dcid:WHO/SA_0000001418
 member: dcid:WHO/SA_0000001419
 member: dcid:WHO/SA_0000001420
@@ -587,14 +653,16 @@ member: dcid:WHO/SA_0000001435
 member: dcid:WHO/SA_0000001436
 member: dcid:WHO/SA_0000001689
 
-Node: dcid:dc/topic/WHOHealthBehavior
-typeOf: dcs:Topic
-name: "Health Behavior"
-relevantVariable: dcid:dc/svpg/dc/topic/WHOHealthBehavior_HealthBehavior
+Node: dcid:dc/topic/WHOhealthBehavior
+typeof: dcs:topic
+name: "WHO health behavior"
+description: "The statistics related to health behaviors as reported by the World health Organization"
+relevantVariable: dcid:dc/svpg/dc/topic/WHOhealthBehavior_healthBehavior
 
-Node: dcid:dc/svpg/dc/topic/WHOHealthBehavior_HealthBehavior
-typeOf: dcs:StatVarPeerGroup
-name: "Health Behaviors"
+Node: dcid:dc/svpg/dc/topic/WHOhealthBehavior_healthBehavior
+typeof: dcs:StatVarPeerGroup
+name: "WHO health behavior statistics"
+description: "The statistics related to global health behaviors such as tobacco use, physical activity, and body mass index as reported by the World health Organization"
 member: dcid:WHO/Adult_daily_tob_use
 member: dcid:WHO/M_Est_smk_daily
 member: dcid:WHO/NCD_BMI_18A
@@ -602,34 +670,39 @@ member: dcid:WHO/NCD_BMI_30A
 member: dcid:WHO/NCD_PAC
 
 Node: dcid:dc/topic/WHOImmunization
-typeOf: dcs:Topic
-name: "Immunization"
+typeof: dcs:topic
+name: "WHO immunization"
+description: "The statistics related to immunization coverage as reported by the World health Organization"
 relevantVariable: dcid:dc/topic/WHOChildImmunization
-relevantVariable: dcid:dc/topic/WHOChildImmunizationsByGender
+relevantVariable: dcid:dc/topic/WHOChildImmunizationsBygender
 relevantVariable: dcid:dc/topic/WHOChildImmunizationsByUrbanRural
 
-Node: dcid:dc/topic/WHOMaternalMortality
-typeOf: dcs:Topic
-name: "Maternal Mortality"
+Node: dcid:dc/topic/WHOMaternalmortality
+typeof: dcs:topic
+name: "WHO maternal mortality"
+description: "The statistics related to maternal mortality as reported by the World health Organization"
 relevantVariable: dcid:sdg/SH_STA_MORT.SEX--F
 relevantVariable: dcid:WHO/MORT_MATERNALNUM
 
-Node: dcid:dc/topic/WHOMortality
-typeOf: dcs:Topic
-name: "Mortality"
-relevantVariable: dcid:dc/topic/WHOChildMortality
-relevantVariable: dcid:dc/topic/WHODALYByCauses
-relevantVariable: dcid:dc/topic/WHOMaternalMortality
-relevantVariable: dcid:dc/topic/WHOMortalityCauses
+Node: dcid:dc/topic/WHOmortality
+typeof: dcs:topic
+name: "WHO mortality"
+description: "The statistics related to mortality including child and maternal mortality and causes of death as reported by the World health Organization"
+relevantVariable: dcid:dc/topic/WHOChildmortality
+relevantVariable: dcid:dc/topic/WHODALYBycauses
+relevantVariable: dcid:dc/topic/WHOMaternalmortality
+relevantVariable: dcid:dc/topic/WHOmortalitycauses
 
-Node: dcid:dc/topic/WHOMortalityCauses
-typeOf: dcs:Topic
-name: "Mortality Causes"
-relevantVariable: dcid:dc/svpg/dc/topic/WHOMortalityCauses_Mortalityratesbycauses
+Node: dcid:dc/topic/WHOmortalitycauses
+typeof: dcs:topic
+name: "WHO mortality causes"
+description: "The statistics related to mortality rates by specific causes as reported by the World health Organization"
+relevantVariable: dcid:dc/svpg/dc/topic/WHOmortalitycauses_mortalityratesbycauses
 
-Node: dcid:dc/svpg/dc/topic/WHOMortalityCauses_Mortalityratesbycauses
-typeOf: dcs:StatVarPeerGroup
-name: "Mortality Rates by Causes"
+Node: dcid:dc/svpg/dc/topic/WHOmortalitycauses_mortalityratesbycauses
+typeof: dcs:StatVarPeerGroup
+name: "WHO mortality rates by causes"
+description: "The statistics showing mortality rates categorized by specific causes of death based on World health Organization data"
 member: dcid:WHO/SA_0000001437
 member: dcid:WHO/SA_0000001438
 member: dcid:WHO/SA_0000001439
@@ -654,13 +727,15 @@ member: dcid:WHO/SA_0000001460
 member: dcid:WHO/SA_0000001690
 
 Node: dcid:dc/topic/WHONeglectedTropicalDiseases
-typeOf: dcs:Topic
-name: "Neglected Tropical Diseases"
+typeof: dcs:topic
+name: "WHO neglected tropical diseases"
+description: "The statistics on cases of neglected tropical diseases based on World health Organization data"
 relevantVariable: dcid:dc/svpg/dc/topic/WHONeglectedTropicalDiseases_CasesofNeglectedTroplicalDiseases
 
 Node: dcid:dc/svpg/dc/topic/WHONeglectedTropicalDiseases_CasesofNeglectedTroplicalDiseases
-typeOf: dcs:StatVarPeerGroup
-name: "Cases of Neglected Troplical Diseases"
+typeof: dcs:StatVarPeerGroup
+name: "WHO cases of neglected tropical diseases"
+description: "The statistics on reported cases of neglected tropical diseases based on World health Organization data"
 member: dcid:WHO/NTD_1
 member: dcid:WHO/NTD_4
 member: dcid:WHO/NTD_5
@@ -669,14 +744,16 @@ member: dcid:WHO/NTD_LEISHVNUM
 member: dcid:WHO/NTD_LEPR5
 member: dcid:WHO/NTD_YAWSNUM
 
-Node: dcid:dc/topic/WHONonCommunicableDiseaseDeaths
-typeOf: dcs:Topic
-name: "Non-Communicable Disease Deaths"
-relevantVariable: dcid:dc/svpg/dc/topic/WHONonCommunicableDiseaseDeaths_DeathsduetoNoncommunicabledeaths
+Node: dcid:dc/topic/WHONonCommunicableDiseasedeaths
+typeof: dcs:topic
+name: "WHO noncommunicable disease deaths"
+description: "The statistics on deaths due to noncommunicable diseases based on World health Organization data"
+relevantVariable: dcid:dc/svpg/dc/topic/WHONonCommunicableDiseasedeaths_deathsduetoNoncommunicabledeaths
 
-Node: dcid:dc/svpg/dc/topic/WHONonCommunicableDiseaseDeaths_DeathsduetoNoncommunicabledeaths
-typeOf: dcs:StatVarPeerGroup
-name: "Deaths Due to Non-communicable Diseases"
+Node: dcid:dc/svpg/dc/topic/WHONonCommunicableDiseasedeaths_deathsduetoNoncommunicabledeaths
+typeof: dcs:StatVarPeerGroup
+name: "WHO noncommunicable disease deaths by cause"
+description: "The statistics on deaths due to major noncommunicable diseases such as cardiovascular diseases diabetes mellitus and cancer based on World health Organization data"
 member: dcid:WHO/GDO_q35
 member: dcid:WHO/SDG_SH_DTH_RNCOM_ChronicRespiratoryDiseases
 member: dcid:WHO/SDG_SH_DTH_RNCOM_DiabetesMellitus
@@ -684,45 +761,51 @@ member: dcid:WHO/SDG_SH_DTH_RNCOM_MajorCardiovascularDiseases
 member: dcid:WHO/SDG_SH_DTH_RNCOM_MalignantNeoplasms
 
 Node: dcid:dc/topic/WHONonCommunicableDiseases
-typeOf: dcs:Topic
-name: "Non-Communicable Diseases"
+typeof: dcs:topic
+name: "WHO noncommunicable diseases"
+description: "Insights on noncommunicable diseases including prevalence and impact based on World health Organization data"
 relevantVariable: dcid:dc/topic/WHOChildrenNonCommunicableDiseases
-relevantVariable: dcid:dc/topic/WHONonCommunicableDiseaseDeaths
+relevantVariable: dcid:dc/topic/WHONonCommunicableDiseasedeaths
 
-Node: dcid:dc/topic/WithHealthInsuranceByGender
-typeOf: dcs:Topic
-name: "Those With Health Insurance by Gender"
-relevantVariable: dcid:dc/svpg/dc/topic/WithHealthInsuranceByGender_WithHealthInsuranceByGender
+Node: dcid:dc/topic/WithhealthInsuranceBygender
+typeof: dcs:topic
+name: "With health insurance by gender"
+description: "Data on the population with health insurance coverage disaggregated by gender"
+relevantVariable: dcid:dc/svpg/dc/topic/WithhealthInsuranceBygender_WithhealthInsuranceBygender
 
-Node: dcid:dc/svpg/dc/topic/WithHealthInsuranceByGender_WithHealthInsuranceByGender
-typeOf: dcs:StatVarPeerGroup
-name: "With Health Insurance by Gender"
-member: dcid:Count_Person_Female_WithHealthInsurance
-member: dcid:Count_Person_Male_WithHealthInsurance
+Node: dcid:dc/svpg/dc/topic/WithhealthInsuranceBygender_WithhealthInsuranceBygender
+typeof: dcs:StatVarPeerGroup
+name: "With health insurance by gender"
+description: "Data on the population with health insurance coverage disaggregated by gender"
+member: dcid:Count_Person_Female_WithhealthInsurance
+member: dcid:Count_Person_Male_WithhealthInsurance
 
-Node: dcid:dc/topic/WithHealthInsuranceByRace
-typeOf: dcs:Topic
-name: "Those With Health Insurance by Race"
-relevantVariable: dcid:dc/svpg/dc/topic/WithHealthInsuranceByRace_WithHealthInsuranceByRace
+Node: dcid:dc/topic/WithhealthInsuranceByrace
+typeof: dcs:topic
+name: "With health insurance by race"
+description: "Data on the population with health insurance coverage disaggregated by race"
+relevantVariable: dcid:dc/svpg/dc/topic/WithhealthInsuranceByrace_WithhealthInsuranceByrace
 
-Node: dcid:dc/svpg/dc/topic/WithHealthInsuranceByRace_WithHealthInsuranceByRace
-typeOf: dcs:StatVarPeerGroup
-name: "With Health Insurance by Race"
-member: dcid:Count_Person_WithHealthInsurance_AmericanIndianOrAlaskaNativeAlone
-member: dcid:Count_Person_WithHealthInsurance_AsianAlone
-member: dcid:Count_Person_WithHealthInsurance_BlackOrAfricanAmericanAlone
-member: dcid:Count_Person_WithHealthInsurance_HispanicOrLatino
-member: dcid:Count_Person_WithHealthInsurance_NativeHawaiianOrOtherPacificIslanderAlone
-member: dcid:Count_Person_WithHealthInsurance_WhiteAlone
+Node: dcid:dc/svpg/dc/topic/WithhealthInsuranceByrace_WithhealthInsuranceByrace
+typeof: dcs:StatVarPeerGroup
+name: "With health insurance by race"
+description: "The number of individuals with health insurance, categorized by race, including American Indian or Alaska native, Asian, Black or African American, Hispanic or Latino, native Hawaiian or 0ther Pacific Islander, and White"
+member: dcid:Count_Person_WithhealthInsurance_AmericanIndianOrAlaskanativeAlone
+member: dcid:Count_Person_WithhealthInsurance_AsianAlone
+member: dcid:Count_Person_WithhealthInsurance_BlackOrAfricanAmericanAlone
+member: dcid:Count_Person_WithhealthInsurance_HispanicOrLatino
+member: dcid:Count_Person_WithhealthInsurance_nativeHawaiianOr0therPacificIslanderAlone
+member: dcid:Count_Person_WithhealthInsurance_WhiteAlone
 
-Node: dcid:dc/topic/DisabilitiesByGender
-typeOf: dcs:Topic
-name: "Disabilities by Gender"
-relevantVariable: dcid:dc/svpg/Disabilities_DisabledPopulationbyGender
+Node: dcid:dc/topic/DisabilitiesBygender
+typeof: dcs:topic
+name: "Disabilities by gender"
+description: "The number of the disabled population, categorized by gender"
+relevantVariable: dcid:dc/svpg/Disabilities_Disabledpopulationbygender
 
-Node: dcid:dc/topic/DisabilitiesByRace
-typeOf: dcs:Topic
-name: "Disabilities by Race"
-relevantVariable: dcid:dc/svpg/Disabilities_DisabledPopulationbyRace
-
+Node: dcid:dc/topic/DisabilitiesByrace
+typeof: dcs:topic
+name: "Disabilities by race"
+description: "The number of the disabled population, categorized by race"
+relevantVariable: dcid:dc/svpg/Disabilities_Disabledpopulationbyrace
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
