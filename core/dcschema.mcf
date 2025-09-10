@@ -3077,7 +3077,7 @@ Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum, dcid:ConsumerGoodsCategoryEnum
+rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum, dcid:ConsumerGoodsCategoryEnum, dcid:ServiceCategoryEnum,dcid:ServiceTypeEnum
 
 Node: dcid:workPeriod
 name: "workPeriod"
@@ -4795,7 +4795,6 @@ typeOf: dcs:Property
 name: "medicalStatus"
 domainIncludes: dcid:Mother
 
-
 #oecd
 Node: dcid:wasteTreatmentType
 typeOf: dcs:Property
@@ -4915,3 +4914,21 @@ name: "Veterinary"
 Node: dcid:NaturalSciences
 typeOf: dcid:EducationalMajorEnum
 name: "Natural Sciences"
+
+
+Node: dcid:ProcessingIndustry
+typeOf: dcid:EconomicSectorEnum
+name: "Processing Industry"
+
+Node: dcid:HouseholdActivities
+typeOf: dcid:EconomicSectorEnum
+name: "Household Activities"
+
+Node: dcid:ExtraterritorialOrganizationsAndBodies
+typeOf: dcid:EconomicSectorEnum
+name: "Extraterritorial Organizations And Bodies"
+
+Node: dcid:SpecializedSecondarySchool
+typeOf: dcid:ElementarySchool
+name: "Specialized Secondary School"
+
