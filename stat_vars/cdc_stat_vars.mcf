@@ -1,5 +1,7 @@
+
 Node: dcid:Mean_Concentration_AirPollutant_Ozone
-name: "Mean Concentration of Ozone Air Pollutant"
+name: "Mean concentration of Ozone air pollutant"
+description: "The average measured concentration of Ozone (O₃) in atmospheric air over a specified period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -7,7 +9,8 @@ pollutant: dcs:Ozone
 statType: dcs:meanValue
 
 Node: dcid:Max_Concentration_AirPollutant_Ozone
-name: "Max Ozone Concentration"
+name: "The maximum concentration of Ozone in the atmosphere"
+description: "The highest recorded concentration of Ozone (O₃) in atmospheric air over a specified period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -15,7 +18,8 @@ pollutant: dcs:Ozone
 statType: dcs:maxValue
 
 Node: dcid:Median_Concentration_AirPollutant_Ozone
-name: "Median Ozone Concentration"
+name: "The median concentration of Ozone in the atmosphere"
+description: "The middle value in the distribution of Ozone (O₃) concentration measurements in the air"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -23,7 +27,8 @@ statType: dcs:medianValue
 pollutant: dcs:Ozone
 
 Node: dcid:PopulationWeighted_Concentration_AirPollutant_Ozone
-name: "Population-weighted Ozone Concentration"
+name: "The population-weighted concentration of Ozone in the atmosphere"
+description: "The average Ozone (O₃) concentration weighted by the population distribution across geographic regions"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -32,7 +37,8 @@ pollutant: dcs:Ozone
 measurementQualifier: dcs:CDCPopulationWeighted
 
 Node: dcid:Mean_Concentration_AirPollutant_Ozone_StandardError
-name: "Standard Error for Mean Ozone Concentration"
+name: "The standard error for the mean concentration of Ozone"
+description: "The standard error associated with the estimated mean concentration of Ozone (O₃) in the atmosphere"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -40,7 +46,8 @@ pollutant: dcs:Ozone
 statType: dcs:stdError
 
 Node: dcid:Mean_Concentration_AirPollutant_PM2.5
-name: "Mean Concentration of PM2.5 Air Pollutant"
+name: "The mean concentration of PM2.5 in the atmosphere"
+description: "The average measured concentration of fine particulate matter (PM2.5) in atmospheric air over a specified period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -48,7 +55,8 @@ statType: dcs:meanValue
 pollutant: dcs:PM2.5
 
 Node: dcid:Mean_Concentration_AirPollutant_PM2.5_StandardError
-name: "Standard Error of Mean PM2.5 Concentration"
+name: "The standard error for the mean concentration of PM2.5"
+description: "The standard error associated with the estimated mean concentration of fine particulate matter (PM2.5) in the atmosphere"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -56,7 +64,8 @@ pollutant: dcs:PM2.5
 statType: dcs:stdError
 
 Node: dcid:Median_Concentration_AirPollutant_PM2.5
-name: "Median PM2.5 Concentration"
+name: "The median concentration of PM2.5 in the atmosphere"
+description: "The middle value in the distribution of PM2.5 concentration measurements in the air"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -64,7 +73,8 @@ statType: dcs:medianValue
 pollutant: dcs:PM2.5
 
 Node: dcid:Max_Concentration_AirPollutant_PM2.5
-name: "Max PM2.5 Concentration"
+name: "The maximum concentration of PM2.5 in the atmosphere"
+description: "The highest recorded concentration of fine particulate matter (PM2.5) in the air over a specified period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -72,7 +82,8 @@ pollutant: dcs:PM2.5
 statType: dcs:maxValue
 
 Node: dcid:PopulationWeighted_Concentration_AirPollutant_PM2.5
-name: "Population-weighted PM2.5 Concentration"
+name: "The population-weighted concentration of PM2.5 in the atmosphere"
+description: "The average PM2.5 concentration weighted by the population distribution across geographic regions"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:concentration
@@ -81,26 +92,32 @@ pollutant: dcs:PM2.5
 measurementQualifier: dcs:CDCPopulationWeighted
 
 Node: dcid:PalmerDroughtSeverityIndex_Atmosphere
+name: "The palmer drought Severity Index"
+description: "A measurement of long-term drought conditions based on precipitation and temperature data"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:palmerDroughtSeverityIndex
 statType: dcs:measuredValue
-name: "Palmer Drought Severity Index"
 
 Node: dcid:StandardizedPrecipitationIndex_Atmosphere
+name: "The standardized precipitation index"
+description: "A statistical index that quantifies precipitation deficits across different time scales to monitor drought"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:standardizedPrecipitationIndex
 statType: dcs:measuredValue
 
 Node: dcid:StandardizedPrecipitationEvapotranspirationIndex_Atmosphere
+name: "The standardized precipitation evapotranspiration index"
+description: "An index that incorporates both precipitation and evapotranspiration to provide a more complete assessment of drought conditions"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Atmosphere
 measuredProperty: dcs:standardizedPrecipitationEvapotranspirationIndex
 statType: dcs:measuredValue
 
 Node: dcid:Percent_Person_65OrMoreYears_WithAllTeethLoss
-name: "Percentage of Population Over 65 Years Old Who Have Complete Tooth Loss"
+name: "Percentage of population over 65 years old who have complete tooth loss"
+description: "The percentage of individuals aged 65 and above who have lost all natural teeth, indicating total edentulism"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -109,7 +126,8 @@ age: dcs:Years65Onwards
 healthOutcome: dcs:AllTeethLoss
 
 Node: dcid:Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-name: "Prevalence of 21 - 65 Years, Female, Received Cervical Cancer Screening"
+name: "Prevalence of 21 - 65 Years, female, Received Cervical Cancer Screening"
+description: "The proportion of women between the ages of 21 and 65 who reported having received a Cervical Cancer screening as part of preventive healthcare"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 statType: dcs:measuredValue
@@ -119,7 +137,8 @@ gender: dcs:Female
 healthPrevention: dcs:CervicalCancerScreening
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_65OrMoreYears_WithAllTeethLoss
-name: "Lower Confidence Interval Limit, Prevalence of 65 Or More Years, All Teeth Loss"
+name: "The lower confidence interval limit for the percentage of persons aged 65 years and older with complete tooth loss"
+description: "The lower bound of the estimated percentage of individuals aged 65 years and older who have lost all of their natural teeth"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -128,7 +147,8 @@ healthOutcome: dcs:AllTeethLoss
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_65OrMoreYears_WithAllTeethLoss
-name: "Upper Confidence Interval Limit, Prevalence of 65 Or More Years, All Teeth Loss"
+name: "The upper confidence interval limit for the percentage of persons aged 65 years and older with complete tooth loss"
+description: "The upper bound of the estimated percentage of individuals aged 65 years and older who have lost all of their natural teeth"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -137,7 +157,8 @@ healthOutcome: dcs:AllTeethLoss
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_65OrMoreYears_WithAllTeethLoss
-name: "Sample Size, Prevalence of 65 Or More Years, All Teeth Loss"
+name: "The sample size used to estimate the percentage of persons aged 65 years and older with complete tooth loss"
+description: "The number of survey respondents aged 65 years and older used in estimating the prevalence of complete tooth loss"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -146,7 +167,8 @@ healthOutcome: dcs:AllTeethLoss
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_50To74Years_Female_ReceivedMammography
-name: "Lower Confidence Interval Limit, Prevalence of 50 - 74 Years, Female, Mammography"
+name: "The lower confidence interval limit for the percentage of females aged 50 to 74 years who received a mammogram"
+description: "The lower bound of the estimated percentage of females aged 50 to 74 years who received a mammography screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -155,7 +177,8 @@ healthPrevention: dcs:Mammography
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_50To74Years_Female_ReceivedMammography
-name: "Upper Confidence Interval Limit, Prevalence of 50 - 74 Years, Female, Mammography"
+name: "The upper confidence interval limit for the percentage of females aged 50 to 74 years who received a mammogram"
+description: "The upper bound of the estimated percentage of females aged 50 to 74 years who received a mammography screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -164,7 +187,8 @@ healthPrevention: dcs:Mammography
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_50To74Years_Female_ReceivedMammography
-name: "Sample Size, Prevalence of 50 - 74 Years, Female, Mammography"
+name: "The sample size used to estimate the percentage of females aged 50 to 74 years who received a mammogram"
+description: "The number of female survey respondents aged 50 to 74 years used in estimating the prevalence of mammography screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -173,8 +197,9 @@ healthPrevention: dcs:Mammography
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithArthritis
-name: "Lower Confidence Interval Limit, Prevalence of Arthritis"
 typeOf: dcs:StatisticalVariable
+name: "The lower confidence interval limit for the percentage of adults aged 18 years and older with Arthritis"
+description: "The lower bound of the estimated percentage of persons aged 18 years and older who reported having Arthritis"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -182,8 +207,9 @@ healthOutcome: dcs:Arthritis
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithArthritis
-name: "Upper Confidence Interval Limit, Prevalence of Arthritis"
 typeOf: dcs:StatisticalVariable
+name: "The upper confidence interval limit for the percentage of adults aged 18 years and older with Arthritis"
+description: "The upper bound of the estimated percentage of persons aged 18 years and older who reported having Arthritis"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -191,8 +217,9 @@ healthOutcome: dcs:Arthritis
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithArthritis
-name: "Sample Size, Prevalence of Arthritis"
 typeOf: dcs:StatisticalVariable
+name: "The sample size used to estimate the percentage of adults aged 18 years and older with Arthritis"
+description: "The number of adult respondents aged 18 years and older used in estimating the prevalence of Arthritis"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -200,7 +227,8 @@ healthOutcome: dcs:Arthritis
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithStroke
-name: "Lower Confidence Interval Limit, Prevalence of Stroke"
+name: "The lower confidence interval limit for the percentage of adults aged 18 years and older who have had a Stroke"
+description: "The lower bound of the estimated percentage of individuals aged 18 years and older who reported having experienced a Stroke"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -209,7 +237,8 @@ healthOutcome: dcs:Stroke
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithStroke
-name: "Upper Confidence Interval Limit, Prevalence of Stroke"
+name: "The upper confidence interval limit for the percentage of adults aged 18 years and older who have had a Stroke"
+description: "The upper bound of the estimated percentage of individuals aged 18 years and older who reported having experienced a Stroke"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -218,7 +247,8 @@ healthOutcome: dcs:Stroke
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithStroke
-name: "Sample Size, Prevalence of Stroke"
+name: "The sample size used to estimate the percentage of adults aged 18 years and older who have had a Stroke"
+description: "The number of survey respondents aged 18 years and older used in estimating the prevalence of Stroke"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -227,7 +257,8 @@ healthOutcome: dcs:Stroke
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_Obesity
-name: "Lower Confidence Interval Limit, Prevalence of Obesity"
+name: "The lower confidence interval limit for the percentage of adults aged 18 years and older with Obesity"
+description: "The lower bound of the estimated percentage of individuals aged 18 years and older classified as having Obesity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -236,7 +267,8 @@ healthBehavior: dcs:Obesity
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_Obesity
-name: "Upper Confidence Interval Limit, Prevalence of Obesity"
+name: "The upper confidence interval limit for the percentage of adults aged 18 years and older with obesity"
+description: "The upper bound of the estimated percentage of individuals aged 18 years and older classified as having Obesity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -245,7 +277,8 @@ healthBehavior: dcs:Obesity
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_Obesity
-name: "Sample Size, Prevalence of Obesity"
+name: "The sample size used to estimate the percentage of adults aged 18 years and older with Obesity"
+description: "The number of adult respondents aged 18 years and older used in estimating the prevalence of Obesity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -254,7 +287,8 @@ healthBehavior: dcs:Obesity
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithAsthma
-name: "Lower Confidence Interval Limit, Prevalence of Asthma"
+name: "The lower confidence interval limit for the percentage of adults aged 18 years and older with Asthma"
+description: "The lower bound of the estimated percentage of individuals aged 18 years and older who reported having Asthma"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -263,8 +297,9 @@ healthOutcome: dcs:Asthma
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithAsthma
-name: "Upper Confidence Interval Limit, Prevalence of Asthma"
 typeOf: dcs:StatisticalVariable
+name: "The upper confidence interval limit for the percentage of adults aged 18 years and older with Asthma"
+description: "The upper bound of the estimated percentage of individuals aged 18 years and older who reported having Asthma"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -272,7 +307,8 @@ healthOutcome: dcs:Asthma
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithAsthma
-name: "Sample Size, Prevalence of Asthma"
+name: "The sample size used to estimate the percentage of adults aged 18 years and older with Asthma"
+description: "The number of adult respondents aged 18 years and older used in estimating the prevalence of Asthma"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -281,8 +317,9 @@ healthOutcome: dcs:Asthma
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_BingeDrinking
-name: "Lower Confidence Interval Limit, Prevalence of Binge Drinking"
 typeOf: dcs:StatisticalVariable
+name: "The lower confidence interval limit for the percentage of adults aged 18 years and older who engage in binge drinking"
+description: "The lower bound of the estimated percentage of individuals aged 18 years and older who reported engaging in binge drinking"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -290,7 +327,8 @@ healthBehavior: dcs:BingeDrinking
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_BingeDrinking
-name: "Upper Confidence Interval Limit, Prevalence of Binge Drinking"
+name: "The upper confidence interval limit for the percentage of adults aged 18 years and older who engage in binge drinking"
+description: "The upper bound of the estimated percentage of individuals aged 18 years and older who reported engaging in binge drinking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -299,7 +337,8 @@ healthBehavior: dcs:BingeDrinking
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_BingeDrinking
-name: "Sample Size, Prevalence of Binge Drinking"
+name: "The sample size used to estimate the percentage of adults aged 18 years and older who engage in binge drinking"
+description: "The number of adult survey respondents aged 18 years and older used in estimating the prevalence of binge drinking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -307,8 +346,9 @@ age: dcs:Years18Onwards
 healthBehavior: dcs:BingeDrinking
 statType: dcs:sampleSize
 
+name: "Lower confidence limit for percentage of adults who smoke"
+description: "The lower bound of the confidence interval for the estimated percentage of the adult population who smoke"
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_Smoking
-name: "Lower Confidence Interval Limit, Prevalence of Smoking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -317,7 +357,8 @@ healthBehavior: dcs:Smoking
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_Smoking
-name: "Upper Confidence Interval Limit, Prevalence of Smoking"
+name: "The upper confidence interval limit for the percentage of adults aged 18 years and older who smoke"
+description: "The upper bound of the estimated percentage of individuals aged 18 years and older who reported current smoking behavior"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -326,7 +367,8 @@ healthBehavior: dcs:Smoking
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_Smoking
-name: "Sample Size, Prevalence of Smoking"
+name: "The sample size used to estimate the percentage of adults aged 18 years and older who smoke"
+description: "The number of adult survey respondents aged 18 years and older used in estimating the prevalence of smoking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -335,7 +377,8 @@ healthBehavior: dcs:Smoking
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_SleepLessThan7Hours
-name: "Lower Confidence Interval Limit, Prevalence of Sleep Less Than 7 Hours"
+name: "The lower confidence interval limit for the percentage of adults aged 18 years and older who sleep less than 7 hours"
+description: "The lower bound of the estimated percentage of individuals aged 18 years and older who reported usually sleeping fewer than 7 hours per night"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -344,7 +387,8 @@ healthBehavior: dcs:SleepLessThan7Hours
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_SleepLessThan7Hours
-name: "Upper Confidence Interval Limit, Prevalence of Sleep Less Than 7 Hours"
+name: "The upper confidence interval limit for the percentage of adults aged 18 years and older who sleep less than 7 hours"
+description: "The upper bound of the estimated percentage of individuals aged 18 years and older who reported usually sleeping fewer than 7 hours per night"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -353,7 +397,8 @@ healthBehavior: dcs:SleepLessThan7Hours
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_SleepLessThan7Hours
-name: "Sample Size, Prevalence of Sleep Less Than 7 Hours"
+name: "Sample size, prevalence of adults who sleep less than 7 hours"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older who report sleeping less than 7 hours per night"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -362,7 +407,8 @@ healthBehavior: dcs:SleepLessThan7Hours
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_50To75Years_ReceivedColorectalCancerScreening
-name: "Lower Confidence Interval Limit, Prevalence of 50 - 75 Years, Colorectal Cancer Screening"
+name: "Lower confidence interval limit, prevalence of colorectal cancer screening among adults aged 50–75"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 50 to 75 years who received colorectal cancer screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -371,7 +417,8 @@ healthPrevention: dcs:ColorectalCancerScreening
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_50To75Years_ReceivedColorectalCancerScreening
-name: "Upper Confidence Interval Limit, Prevalence of 50 - 75 Years, Colorectal Cancer Screening"
+name: "Upper confidence interval limit, prevalence of colorectal cancer screening among adults aged 50–75"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 50 to 75 years who received colorectal cancer screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -380,7 +427,8 @@ healthPrevention: dcs:ColorectalCancerScreening
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_50To75Years_ReceivedColorectalCancerScreening
-name: "Sample Size, Prevalence of 50 - 75 Years, Colorectal Cancer Screening"
+name: "Sample size, prevalence of colorectal cancer screening among adults aged 50–75"
+description: "The sample size used to estimate the prevalence of adults aged 50 to 75 years who received colorectal cancer screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -389,7 +437,8 @@ healthPrevention: dcs:ColorectalCancerScreening
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithCancerExcludingSkinCancer
-name: "Lower Confidence Interval Limit, Prevalence of Cancer Excluding Skin Cancer"
+name: "Lower confidence interval limit, prevalence of cancer excluding Skin Cancer"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older diagnosed with cancer excluding Skin Cancer"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -398,7 +447,8 @@ healthOutcome: dcs:CancerExcludingSkinCancer
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithCancerExcludingSkinCancer
-name: "Upper Confidence Interval Limit, Prevalence of Cancer Excluding Skin Cancer"
+name: "Upper confidence interval limit, prevalence of Cancer excluding Skin Cancer"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older diagnosed with Cancer excluding Skin Cancer"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -407,7 +457,8 @@ healthOutcome: dcs:CancerExcludingSkinCancer
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithCancerExcludingSkinCancer
-name: "Sample Size, Prevalence of Cancer Excluding Skin Cancer"
+name: "Sample size, prevalence of cancer excluding Skin Cancer"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older diagnosed with Cancer excluding Skin Cancer"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -416,7 +467,8 @@ healthOutcome: dcs:CancerExcludingSkinCancer
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithPhysicalHealthNotGood
-name: "Lower Confidence Interval Limit, Prevalence of Physical Health Not Good"
+name: "Lower confidence interval limit, prevalence of poor physical health"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older reporting poor physical health"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -425,7 +477,8 @@ healthOutcome: dcs:PhysicalHealthNotGood
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithPhysicalHealthNotGood
-name: "Upper Confidence Interval Limit, Prevalence of Physical Health Not Good"
+name: "Upper confidence interval limit, prevalence of poor physical health"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older reporting poor physical health"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -434,7 +487,8 @@ healthOutcome: dcs:PhysicalHealthNotGood
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithPhysicalHealthNotGood
-name: "Sample Size, Prevalence of Physical Health Not Good"
+name: "Sample size, prevalence of poor physical health"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older reporting poor physical health"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -443,7 +497,8 @@ healthOutcome: dcs:PhysicalHealthNotGood
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_65OrMoreYears_Male_ReceivedCorePreventiveServices
-name: "Lower Confidence Interval Limit, Prevalence of 65 Years or More, Male, Core Preventive Services"
+name: "Lower confidence interval limit, prevalence of core preventive services among males aged 65 or older"
+description: "The lower bound of the confidence interval for the estimated percentage of males aged 65 and older who received core preventive services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -453,7 +508,8 @@ healthPrevention: dcs:CorePreventiveServices
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_65OrMoreYears_Male_ReceivedCorePreventiveServices
-name: "Upper Confidence Interval Limit, Prevalence of 65 Years or More, Male, Core Preventive Services"
+name: "Upper confidence interval limit, prevalence of core preventive services among males aged 65 or older"
+description: "The upper bound of the confidence interval for the estimated percentage of males aged 65 and older who received core preventive services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -463,7 +519,8 @@ healthPrevention: dcs:CorePreventiveServices
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_65OrMoreYears_Male_ReceivedCorePreventiveServices
-name: "Sample Size, Prevalence of 65 Years or More, Male, Core Preventive Services"
+name: "Sample size, prevalence of core preventive services among males aged 65 or older"
+description: "The sample size used to estimate the prevalence of males aged 65 and older who received core preventive services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -473,7 +530,8 @@ healthPrevention: dcs:CorePreventiveServices
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_65OrMoreYears_Female_ReceivedCorePreventiveServices
-name: "Lower Confidence Interval Limit, Prevalence of 65 Years or More, Female, Core Preventive Services"
+name: "Lower confidence interval limit, prevalence of core preventive services among females aged 65 or older"
+description: "The lower bound of the confidence interval for the estimated percentage of females aged 65 and older who received core preventive services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -483,7 +541,8 @@ healthPrevention: dcs:CorePreventiveServices
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_65OrMoreYears_Female_ReceivedCorePreventiveServices
-name: "Upper Confidence Interval Limit, Prevalence of 65 Years or More, Female, Core Preventive Services"
+name: "Upper confidence interval limit, prevalence of core preventive services among females aged 65 or older"
+description: "The upper bound of the confidence interval for the estimated percentage of females aged 65 and older who received core preventive services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -493,7 +552,8 @@ healthPrevention: dcs:CorePreventiveServices
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_65OrMoreYears_Female_ReceivedCorePreventiveServices
-name: "Sample Size, Prevalence of 65 Years or More, Female, Core Preventive Services"
+name: "Sample size, prevalence of core preventive services among females aged 65 or older"
+description: "The sample size used to estimate the prevalence of females aged 65 and older who received core preventive services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -503,7 +563,8 @@ healthPrevention: dcs:CorePreventiveServices
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_ReceivedAnnualCheckup
-name: "Lower Confidence Interval Limit, Prevalence of Annual Checkup"
+name: "Lower confidence interval limit, prevalence of annual checkup"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older who received an annual checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -512,7 +573,8 @@ healthPrevention: dcs:AnnualCheckup
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_ReceivedAnnualCheckup
-name: "Upper Confidence Interval Limit, Prevalence of Annual Checkup"
+name: "Upper confidence interval limit, prevalence of annual checkup"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older who received an annual checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -521,7 +583,8 @@ healthPrevention: dcs:AnnualCheckup
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_ReceivedAnnualCheckup
-name: "Sample Size, Prevalence of Annual Checkup"
+name: "Sample size, prevalence of annual checkup"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older who received an annual checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -530,7 +593,8 @@ healthPrevention: dcs:AnnualCheckup
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithHighBloodPressure
-name: "Lower Confidence Interval Limit, Prevalence of High Blood Pressure"
+name: "Lower confidence interval limit, prevalence of High Blood Pressure"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older with High Blood Pressure"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -539,7 +603,8 @@ healthOutcome: dcs:HighBloodPressure
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithHighBloodPressure
-name: "Upper Confidence Interval Limit, Prevalence of High Blood Pressure"
+name: "Upper confidence interval limit, prevalence of High blood Pressure"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older with High Blood Pressure"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -548,7 +613,8 @@ healthOutcome: dcs:HighBloodPressure
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithHighBloodPressure
-name: "Sample Size, Prevalence of High Blood Pressure"
+name: "Sample size, prevalence of high Blood Pressure"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older with High Blood Pressure"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -557,7 +623,8 @@ healthOutcome: dcs:HighBloodPressure
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_ReceivedDentalVisit
-name: "Lower Confidence Interval Limit, Prevalence of Dental Visit"
+name: "Lower confidence interval limit, prevalence of dental visit"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older who received a dental visit"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -566,7 +633,8 @@ healthPrevention: dcs:DentalVisit
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_ReceivedDentalVisit
-name: "Upper Confidence Interval Limit, Prevalence of Dental Visit"
+name: "Upper confidence interval limit, prevalence of dental visit"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older who received a dental visit"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -575,7 +643,8 @@ healthPrevention: dcs:DentalVisit
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_ReceivedDentalVisit
-name: "Sample Size, Prevalence of Dental Visit"
+name: "Sample size, prevalence of dental visit"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older who received a dental visit"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -584,7 +653,8 @@ healthPrevention: dcs:DentalVisit
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithMentalHealthNotGood
-name: "Lower Confidence Interval Limit, Prevalence of Mental Health Not Good"
+name: "Lower confidence interval limit, prevalence of Mental health not good"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older with poor Mental Health"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -593,7 +663,8 @@ healthOutcome: dcs:MentalHealthNotGood
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithMentalHealthNotGood
-name: "Upper Confidence Interval Limit, Prevalence of Mental Health Not Good"
+name: "Upper confidence interval limit, prevalence of Mental Health not good"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older with poor Mental health"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -602,7 +673,8 @@ healthOutcome: dcs:MentalHealthNotGood
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithMentalHealthNotGood
-name: "Sample Size, Prevalence of Mental Health Not Good"
+name: "Sample size, prevalence of mental health not good"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older with poor mental health"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -611,7 +683,8 @@ healthOutcome: dcs:MentalHealthNotGood
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_PhysicalInactivity
-name: "Lower Confidence Interval Limit, Prevalence of Physical Inactivity"
+name: "Lower confidence interval limit, prevalence of physical inactivity"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older who were physically inactive"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -620,7 +693,8 @@ healthBehavior: dcs:PhysicalInactivity
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_PhysicalInactivity
-name: "Upper Confidence Interval Limit, Prevalence of Physical Inactivity"
+name: "Upper confidence interval limit, prevalence of physical inactivity"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older who were physically inactive"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -629,7 +703,8 @@ healthBehavior: dcs:PhysicalInactivity
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_PhysicalInactivity
-name: "Sample Size, Prevalence of Physical Inactivity"
+name: "Sample size, prevalence of physical inactivity"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older who were physically inactive"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -638,7 +713,8 @@ healthBehavior: dcs:PhysicalInactivity
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18To64Years_ReceivedNoHealthInsurance
-name: "Lower Confidence Interval Limit, Prevalence of 18 - 64 Years, No Health Insurance"
+name: "Lower confidence interval limit, prevalence of 18–64 years, no health insurance"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 to 64 without health insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -647,7 +723,8 @@ healthPrevention: dcs:NoHealthInsurance
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18To64Years_ReceivedNoHealthInsurance
-name: "Upper Confidence Interval Limit, Prevalence of 18 - 64 Years, No Health Insurance"
+name: "Upper confidence interval limit, prevalence of 18–64 years, no health insurance"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 to 64 without health insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -656,7 +733,8 @@ healthPrevention: dcs:NoHealthInsurance
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18To64Years_ReceivedNoHealthInsurance
-name: "Sample Size, Prevalence of 18 - 64 Years, No Health Insurance"
+name: "Sample size, prevalence of 18–64 years, no health insurance"
+description: "The sample size used to estimate the prevalence of adults aged 18 to 64 without health insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -665,7 +743,8 @@ healthPrevention: dcs:NoHealthInsurance
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithChronicObstructivePulmonaryDisease
-name: "Lower Confidence Interval Limit, Prevalence of Chronic Obstructive Pulmonary Disease"
+name: "Lower confidence interval limit, prevalence of Chronic Obstructive Pulmonary disease"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older with Chronic Obstructive Pulmonary disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -674,7 +753,8 @@ healthOutcome: dcs:ChronicObstructivePulmonaryDisease
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithChronicObstructivePulmonaryDisease
-name: "Upper Confidence Interval Limit, Prevalence of Chronic Obstructive Pulmonary Disease"
+name: "Upper confidence interval limit, prevalence of Chronic Obstructive Pulmonary disease"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older with Chronic Obstructive Pulmonary disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -683,7 +763,8 @@ healthOutcome: dcs:ChronicObstructivePulmonaryDisease
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithChronicObstructivePulmonaryDisease
-name: "Sample Size, Prevalence of Chronic Obstructive Pulmonary Disease"
+name: "Sample size, prevalence of Chronic Obstructive Pulmonary disease"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older with Chronic Obstructive Pulmonary disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -691,8 +772,9 @@ age: dcs:Years18Onwards
 healthOutcome: dcs:ChronicObstructivePulmonaryDisease
 statType: dcs:sampleSize
 
+name: "Lower confidence limit for percentage of adults who received cholesterol screening"
+description: "The lower bound of the confidence interval for the estimated percentage of the adult population who received cholesterol screening"
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_ReceivedCholesterolScreening
-name: "Lower Confidence Interval Limit, Prevalence of Cholesterol Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -701,7 +783,8 @@ healthPrevention: dcs:CholesterolScreening
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_ReceivedCholesterolScreening
-name: "Upper Confidence Interval Limit, Prevalence of Cholesterol Screening"
+name: "Upper confidence interval limit, prevalence of Cholesterol Screening"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older who received Cholesterol Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -710,7 +793,8 @@ healthPrevention: dcs:CholesterolScreening
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_ReceivedCholesterolScreening
-name: "Sample Size, Prevalence of Cholesterol Screening"
+name: "Sample size, prevalence of Cholesterol screening"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older who received Cholesterol screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -719,7 +803,8 @@ healthPrevention: dcs:CholesterolScreening
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithChronicKidneyDisease
-name: "Lower Confidence Interval Limit, Prevalence of Chronic Kidney Disease"
+name: "Lower confidence interval limit, prevalence of Chronic kidney disease"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older with Chronic Kidney disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -728,7 +813,8 @@ healthOutcome: dcs:ChronicKidneyDisease
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithChronicKidneyDisease
-name: "Upper Confidence Interval Limit, Prevalence of Chronic Kidney Disease"
+name: "Upper confidence interval limit, prevalence of Chronic Kidney disease"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older with Chronic Kidney disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -737,7 +823,8 @@ healthOutcome: dcs:ChronicKidneyDisease
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithChronicKidneyDisease
-name: "Sample Size, Prevalence of Chronic Kidney Disease"
+name: "Sample size, prevalence of Chronic Kidney disease"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older with Chronic Kidney disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -746,7 +833,8 @@ healthOutcome: dcs:ChronicKidneyDisease
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithHighCholesterol
-name: "Lower Confidence Interval Limit, Prevalence of High Cholesterol"
+name: "Lower confidence interval limit, prevalence of High Cholesterol"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older with High Cholesterol"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -755,7 +843,8 @@ healthOutcome: dcs:HighCholesterol
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithHighCholesterol
-name: "Upper Confidence Interval Limit, Prevalence of High Cholesterol"
+name: "Upper confidence interval limit, prevalence of High Cholesterol"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older with High Cholesterol"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -765,6 +854,7 @@ statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithHighCholesterol
 name: "Sample Size, Prevalence of High Cholesterol"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older with High Cholesterol"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -773,7 +863,8 @@ healthOutcome: dcs:HighCholesterol
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithHighBloodPressure_ReceivedTakingBloodPressureMedication
-name: "Lower Confidence Interval Limit, Prevalence of 18 Years or More, High Blood Pressure, Taking Blood Pressure Medication"
+name: "Lower confidence interval limit, prevalence of 18 years or more, High Blood Pressure, taking blood pressure medication"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older with High Blood Pressure who are taking blood pressure medication"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -783,7 +874,8 @@ healthPrevention: dcs:TakingBloodPressureMedication
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithHighBloodPressure_ReceivedTakingBloodPressureMedication
-name: "Upper Confidence Interval Limit, Prevalence of 18 Years or More, High Blood Pressure, Taking Blood Pressure Medication"
+name: "Upper confidence interval limit, prevalence of 18 years or more, High Blood Pressure, taking Blood Pressure medication"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older with High Blood Pressure who are taking Blood Pressure medication"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -793,7 +885,8 @@ healthPrevention: dcs:TakingBloodPressureMedication
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithHighBloodPressure_ReceivedTakingBloodPressureMedication
-name: "Sample Size, Prevalence of 18 Years or More, High Blood Pressure, Taking Blood Pressure Medication"
+name: "Sample size, prevalence of 18 years or more, High Blood Pressure, taking Blood Pressure medication"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older with High Blood Pressure who are taking Blood Pressure medication"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -803,7 +896,8 @@ healthPrevention: dcs:TakingBloodPressureMedication
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithCoronaryHeartDisease
-name: "Lower Confidence Interval Limit, Prevalence of Coronary Heart Disease"
+name: "Lower confidence interval limit, prevalence of Coronary Heart disease"
+description: "The lower bound of the confidence interval for the estimated percentage of adults aged 18 and older with Coronary Heart disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -812,7 +906,8 @@ healthOutcome: dcs:CoronaryHeartDisease
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithCoronaryHeartDisease
-name: "Upper Confidence Interval Limit, Prevalence of Coronary Heart Disease"
+name: "Upper confidence interval limit, prevalence of Coronary Heart disease"
+description: "The upper bound of the confidence interval for the estimated percentage of adults aged 18 and older with Coronary Heart disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -821,7 +916,8 @@ healthOutcome: dcs:CoronaryHeartDisease
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_WithCoronaryHeartDisease
-name: "Sample Size, Prevalence of Coronary Heart Disease"
+name: "Sample size, prevalence of Coronary Heart disease"
+description: "The sample size used to estimate the prevalence of adults aged 18 and older with Coronary Heart disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -830,7 +926,8 @@ healthOutcome: dcs:CoronaryHeartDisease
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-name: "Lower Confidence Interval Limit, Prevalence of 21 - 65 Years, Female, Received Cervical Cancer Screening"
+name: "Lower confidence interval limit, prevalence of 21 - 65 years, female, received Cervical Cancer Screening"
+description: "The lower bound of the confidence interval for the estimated percentage of females aged 21 to 65 who received Cervical Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -840,7 +937,8 @@ healthPrevention: dcs:CervicalCancerScreening
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-name: "Upper Confidence Interval Limit, Prevalence of 21 - 65 Years, Female, Received Cervical Cancer Screening"
+name: "Upper confidence interval limit, prevalence of 21 - 65 years, female, received Cervical Cancer Screening"
+description: "The upper bound of the confidence interval for the estimated percentage of females aged 21 to 65 who received Cervical Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
@@ -850,7 +948,8 @@ healthPrevention: dcs:CervicalCancerScreening
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
-name: "Sample Size, Prevalence of 21 - 65 Years, Female, Received Cervical Cancer Screening"
+name: "Sample size, prevalence of 21 - 65 years, female, received Cervical Cancer Screening"
+description: "The sample size used to estimate the prevalence of females aged 21 to 65 who received Cervical Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -860,6 +959,8 @@ healthPrevention: dcs:CervicalCancerScreening
 statType: dcs:sampleSize
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_AnyBreastfeedingAt8Weeks_8WeeksAfterPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, any breastfeeding at 8 weeks postpartum"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where any breastfeeding occurred 8 weeks after pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -869,6 +970,8 @@ breastFeedingPractice: dcs:AnyBreastfeedingAt8Weeks
 timePeriodRelativeToPregnancy: dcs:8WeeksAfterPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_AnyPostpartumFamilyPlanning_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, any postpartum family planning"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where postpartum family planning was reported"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -877,6 +980,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:AnyPostpartumFamilyPlanning
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_BabyMostOftenLaidOnBackToSleep_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, baby most often laid on back to sleep"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the baby was most often laid on their back to sleep"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -885,6 +990,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 infantSleepPractice: dcs:BabyMostOftenLaidOnBackToSleep
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_3MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, self-reported depression 3 months before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother reported depression during the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -894,6 +1001,8 @@ mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, self-reported depression during pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother reported depression during pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -903,6 +1012,8 @@ mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, self-reported postpartum depression"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother reported postpartum depression"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -912,6 +1023,8 @@ mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, cigarette smoking 3 months before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother smoked cigarettes in the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -922,6 +1035,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, cigarette smoking in the last 3 months of pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother smoked cigarettes in the last 3 months of pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -932,6 +1047,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_Postpartum_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, cigarette smoking postpartum"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother smoked cigarettes after giving birth"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -942,6 +1059,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, e-cigarette use 3 months before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother used e-cigarettes in the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -952,6 +1071,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, e-cigarette use in the last 3 months of pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother used e-cigarettes during the last 3 months of pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -962,6 +1083,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_EverBreastfed_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, ever breastfed"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the infant was ever breastfed"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -970,6 +1093,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 breastFeedingPractice: dcs:EverBreastfed
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_FluShot_12MonthsBeforeBirth_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, received flu shot 12 months before birth"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother received a flu shot in the 12 months before delivery"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -979,6 +1104,8 @@ mothersHealthPrevention: dcs:FluShot
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforeBirth
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_HealthCareVisit_12MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, healthcare visit 12 months before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had a healthcare visit in the 12 months before becoming pregnant"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -988,6 +1115,8 @@ mothersHealthPrevention: dcs:HealthCareVisit
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_HeavyDrinking_3MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, heavy drinking 3 months before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother engaged in heavy drinking during the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -997,6 +1126,8 @@ mothersHealthBehavior: dcs:HeavyDrinking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_HookahUsage_Last2YearsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, hookah use in the last 2 years before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother reported hookah use within the 2 years prior to pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1006,6 +1137,8 @@ mothersHealthBehavior: dcs:HookahUsage
 timePeriodRelativeToPregnancy: dcs:Last2YearsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_IntendedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, intended pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the pregnancy was reported as intended"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1014,6 +1147,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:IntendedPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_12MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, intimate partner violence 12 months before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother experienced intimate partner violence from a current or former partner or husband in the 12 months prior to pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1023,6 +1158,8 @@ intimatePartnerViolence: dcs:IntimatePartnerViolenceByCurrentOrExPartnerOrCurren
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, intimate partner violence during pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother experienced intimate partner violence from a current or former partner or husband during pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1032,6 +1169,8 @@ intimatePartnerViolence: dcs:IntimatePartnerViolenceByCurrentOrExPartnerOrCurren
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_LeastEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, use of least effective contraceptive methods"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where postpartum contraception involved least effective methods"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1040,6 +1179,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:LeastEffectiveContraceptiveMethods
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_LongActingReversibleContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, use of long-acting reversible contraceptive methods"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where postpartum contraception involved long-acting reversible methods"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1048,6 +1189,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:LongActingReversibleContraceptiveMethods
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_MaleOrFemaleSterilization_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, male or female Sterilization"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where male or female Sterilization was used for postpartum contraception"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1056,6 +1199,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:MaleOrFemaleSterilization
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_MaternalCheckup_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, postpartum maternal checkup"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother received a postpartum checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1065,6 +1210,8 @@ mothersHealthPrevention: dcs:MaternalCheckup
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_MistimedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, mistimed pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the pregnancy was reported as mistimed"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1073,6 +1220,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:MistimedPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_ModeratelyEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, use of moderately effective contraceptive methods"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where postpartum contraception involved moderately effective methods"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1081,6 +1230,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:ModeratelyEffectiveContraceptiveMethods
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_MoreThan4TimesAWeek_MultivitaminUse_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, multivitamin use more than 4 times a week"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother used multivitamins more than 4 times per week"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1090,6 +1241,8 @@ mothersHealthPrevention: dcs:MultivitaminUse
 healthPreventionActionFrequency: dcs:MoreThan4TimesAWeek
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Obesity_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, maternal Obesity"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother was classified as Obesity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1098,6 +1251,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthBehavior: dcs:Obesity
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Overweight_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, maternal overweight"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother was classified as overweight"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1106,6 +1261,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthBehavior: dcs:Overweight
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_PrenatalCare_FirstTrimester_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, prenatal care in first trimester"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother received prenatal care during the first trimester of pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1115,6 +1272,8 @@ mothersHealthPrevention: dcs:PrenatalCare
 timePeriodRelativeToPregnancy: dcs:FirstTrimester
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_TeethCleanedByDentistOrHygienist_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, teeth cleaned by dentist or hygienist during pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had her teeth cleaned by a dentist or hygienist during pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1124,6 +1283,8 @@ mothersHealthPrevention: dcs:TeethCleanedByDentistOrHygienist
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_Underweight_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, maternal underweight"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother was classified as underweight"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1132,6 +1293,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthBehavior: dcs:Underweight
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_UnsureIfWantedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, unsure if pregnancy was wanted"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother was unsure whether she wanted the pregnancy at the time of conception"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1140,6 +1303,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:UnsureIfWantedPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_UnwantedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, unwanted pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the pregnancy was reported as unwanted"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1148,6 +1313,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:UnwantedPregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_WithMedicaid_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, prenatal Medicaid coverage"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother received prenatal care covered by Medicaid"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1156,6 +1323,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusForPrenatalCare: dcs:WithMedicaid
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_NoHealthInsurance_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, no health insurance for prenatal care"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had no health insurance coverage for prenatal care"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1164,6 +1333,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusForPrenatalCare: dcs:NoHealthInsurance
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, private health insurance for prenatal care"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had private health insurance coverage for prenatal care"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1172,6 +1343,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusForPrenatalCare: dcs:WithPrivateHealthInsurance
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_WithMedicaid_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, medicaid coverage 1 month before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had medicaid coverage one month before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1181,6 +1354,8 @@ healthInsuranceStatusOneMonthBeforePregnancy: dcs:WithMedicaid
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_NoHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, no health insurance 1 month before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had no health insurance coverage one month before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1190,6 +1365,8 @@ healthInsuranceStatusOneMonthBeforePregnancy: dcs:NoHealthInsurance
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, private health insurance 1 month before pregnancy"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had private health insurance coverage one month before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1199,6 +1376,8 @@ healthInsuranceStatusOneMonthBeforePregnancy: dcs:WithPrivateHealthInsurance
 timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_WithMedicaid_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, Medicaid coverage postpartum"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had medicaid coverage during the postpartum period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1208,6 +1387,8 @@ healthInsuranceStatusPostpartum: dcs:WithMedicaid
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_NoHealthInsurance_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, postpartum with no health insurance"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had no health insurance during the postpartum period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1217,6 +1398,8 @@ healthInsuranceStatusPostpartum: dcs:NoHealthInsurance
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Lower confidence interval limit, postpartum with private health insurance"
+description: "The lower bound of the confidence interval for the estimated percentage of live births where the mother had private health insurance during the postpartum period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1226,6 +1409,8 @@ healthInsuranceStatusPostpartum: dcs:WithPrivateHealthInsurance
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_AnyBreastfeedingAt8Weeks_8WeeksAfterPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, any breastfeeding at 8 weeks"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the infant received any breastfeeding 8 weeks after pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1235,6 +1420,8 @@ breastFeedingPractice: dcs:AnyBreastfeedingAt8Weeks
 timePeriodRelativeToPregnancy: dcs:8WeeksAfterPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_AnyPostpartumFamilyPlanning_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, any postpartum family planning"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother reported use of any postpartum family planning method"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1243,6 +1430,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:AnyPostpartumFamilyPlanning
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_BabyMostOftenLaidOnBackToSleep_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, baby most often laid on back to sleep"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the baby was most often laid on their back to sleep"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1251,6 +1440,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 infantSleepPractice: dcs:BabyMostOftenLaidOnBackToSleep
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_3MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, self-reported depression 3 months before pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother reported experiencing depression during the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1260,6 +1451,8 @@ mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, self-reported depression during pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother reported experiencing depression during pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1269,6 +1462,8 @@ mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_SelfReportedDepression_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, self-reported postpartum depression"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother reported experiencing depression during the postpartum period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1278,6 +1473,8 @@ mothersHealthCondition: dcs:CDC_SelfReportedDepression
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, cigarette smoking 3 months before pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother smoked cigarettes during the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1288,6 +1485,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, cigarette smoking in the last 3 months of pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother smoked cigarettes during the last 3 months of pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1298,6 +1497,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Smoking_Postpartum_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, cigarette smoking postpartum"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother smoked cigarettes during the postpartum period"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1308,6 +1509,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, E-Cigarette use 3 months before pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother used E-Cigarettes during the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1318,6 +1521,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, E-Cigarette use in the last 3 months of pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother used E-Cigarettes during the last 3 months of pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1328,6 +1533,8 @@ mothersHealthBehavior: dcs:Smoking
 timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_EverBreastfed_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, ever breastfed"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the infant was ever breastfed"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1336,6 +1543,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 breastFeedingPractice: dcs:EverBreastfed
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_FluShot_12MonthsBeforeBirth_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, Flu shot 12 months before birth"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother received a Flu shot during the 12 months before birth"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1345,6 +1554,8 @@ mothersHealthPrevention: dcs:FluShot
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforeBirth
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_HealthCareVisit_12MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, health care visit 12 months before pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother had a health care visit during the 12 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1354,6 +1565,8 @@ mothersHealthPrevention: dcs:HealthCareVisit
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_HeavyDrinking_3MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, heavy drinking 3 months before pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother engaged in heavy drinking during the 3 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1363,6 +1576,8 @@ mothersHealthBehavior: dcs:HeavyDrinking
 timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_HookahUsage_Last2YearsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, hookah use in last 2 years before pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother used hookah in the two years preceding pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1372,6 +1587,8 @@ mothersHealthBehavior: dcs:HookahUsage
 timePeriodRelativeToPregnancy: dcs:Last2YearsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_IntendedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, intended pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births that were the result of intended pregnancies"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1380,6 +1597,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:IntendedPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_12MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, IPV by partner or husband 12 months before pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother experienced intimate partner violence from a current or former partner or husband during the 12 months before pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1389,6 +1608,8 @@ intimatePartnerViolence: dcs:IntimatePartnerViolenceByCurrentOrExPartnerOrCurren
 timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, IPV by partner or husband during pregnancy"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother experienced intimate partner violence from a current or former partner or husband during pregnancy"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1398,6 +1619,8 @@ intimatePartnerViolence: dcs:IntimatePartnerViolenceByCurrentOrExPartnerOrCurren
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_LeastEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, least effective contraceptive methods"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother used least effective contraceptive methods postpartum"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1406,6 +1629,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:LeastEffectiveContraceptiveMethods
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_LongActingReversibleContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, long-acting reversible contraceptive methods"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother used long-acting reversible contraceptive methods postpartum"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1414,6 +1639,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:LongActingReversibleContraceptiveMethods
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_MaleOrFemaleSterilization_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, male or female sterilization"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother or partner used sterilization as a postpartum contraceptive method"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1422,6 +1649,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:MaleOrFemaleSterilization
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_MaternalCheckup_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper confidence interval limit, maternal checkup postpartum"
+description: "The upper bound of the confidence interval for the estimated percentage of live births where the mother received a postpartum maternal health checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1431,6 +1660,8 @@ mothersHealthPrevention: dcs:MaternalCheckup
 timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_MistimedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with mistimed pregnancy"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where the pregnancy was mistimed, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1439,6 +1670,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:MistimedPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_ModeratelyEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with moderately effective contraceptive methods use"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where moderately effective contraceptive methods were used for postpartum family planning, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1447,6 +1680,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 postpartumFamilyPlanning: dcs:ModeratelyEffectiveContraceptiveMethods
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_MoreThan4TimesAWeek_MultivitaminUse_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with multivitamin use more than 4 times a week"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers used multivitamins more than 4 times a week for health prevention, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1456,6 +1691,8 @@ mothersHealthPrevention: dcs:MultivitaminUse
 healthPreventionActionFrequency: dcs:MoreThan4TimesAWeek
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Obesity_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with maternal obesity"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers had obesity, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1464,6 +1701,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthBehavior: dcs:Obesity
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Overweight_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with maternal overweight"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers were overweight, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1472,6 +1711,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthBehavior: dcs:Overweight
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_PrenatalCare_FirstTrimester_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with first trimester prenatal care"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where prenatal care was received during the first trimester, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1481,6 +1722,8 @@ mothersHealthPrevention: dcs:PrenatalCare
 timePeriodRelativeToPregnancy: dcs:FirstTrimester
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_TeethCleanedByDentistOrHygienist_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with teeth cleaned by a dentist or hygienist during pregnancy"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where teeth were cleaned by a dentist or hygienist during pregnancy, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1490,6 +1733,8 @@ mothersHealthPrevention: dcs:TeethCleanedByDentistOrHygienist
 timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_Underweight_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with maternal underweight"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers were underweight, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1498,6 +1743,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 mothersHealthBehavior: dcs:Underweight
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_UnsureIfWantedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events where pregnancy intention was unsure"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where the pregnancy intention was unsure, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1506,6 +1753,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:UnsureIfWantedPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_UnwantedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with unwanted pregnancy"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where the pregnancy was unwanted, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1514,6 +1763,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 pregnancyIntention: dcs:UnwantedPregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_WithMedicaid_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with medicaid for prenatal care"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers had Medicaid for prenatal care, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1522,6 +1773,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusForPrenatalCare: dcs:WithMedicaid
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_NoHealthInsurance_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with no health insurance for prenatal care"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers had no health insurance for prenatal care, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1530,6 +1783,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusForPrenatalCare: dcs:NoHealthInsurance
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with private health insurance"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers had private health insurance, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1538,6 +1793,8 @@ measurementDenominator: dcs:Count_BirthEvent_LiveBirth
 healthInsuranceStatusForPrenatalCare: dcs:WithPrivateHealthInsurance
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_WithMedicaid_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "Upper limit of the 95% confidence interval for the percentage of live birth pregnancy events with Medicaid 1 month before pregnancy"
+description: "The upper bound of the 95% confidence interval for the percentage of live birth pregnancy events where mothers had Medicaid 1 month before pregnancy, as a fraction of the total count of live birth events"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
@@ -1548,6 +1805,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_NoHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with no health insurance 1 month before pregnancy - upper confidence limit as a percentage of all live births"
+description: "Number representing the upper limit of the confidence interval for live birth pregnancy events with no health insurance 1 month before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:confidenceIntervalUpperLimit
@@ -1557,6 +1816,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with private health insurance 1 month before pregnancy upper confidence limit as a percentage of all live births"
+description: "Number representing the upper limit of the confidence interval for the fraction of live births with private health insurance 1 month before pregnancy out of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:confidenceIntervalUpperLimit
@@ -1566,6 +1827,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_WithMedicaid_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with medicaid postpartum upper confidence limit as a percentage of all live births"
+description: "Number representing the upper limit of the confidence interval for the fraction of live births with medicaid postpartum out of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:confidenceIntervalUpperLimit
@@ -1575,6 +1838,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_NoHealthInsurance_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with no health insurance postpartum upper confidence limit as a percentage of all live births"
+description: "Number representing the upper limit of the confidence interval for the fraction of live births with no health insurance postpartum out of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:confidenceIntervalUpperLimit
@@ -1584,6 +1849,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with private health insurance postpartum upper confidence limit as a percentage of all live births"
+description: "Number representing the upper limit of the confidence interval for the fraction of live births with private health insurance postpartum out of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:confidenceIntervalUpperLimit
@@ -1593,6 +1860,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_AnyBreastfeedingAt8Weeks_8WeeksAfterPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with any breastfeeding at 8 weeks postpartum as a percentage of all live births"
+description: "Number representing the percentage of live births where any breastfeeding occurred at 8 weeks after pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1602,6 +1871,8 @@ timePeriodRelativeToPregnancy: dcs:8WeeksAfterPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_AnyPostpartumFamilyPlanning_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with any postpartum family planning as a percentage of all live births"
+description: "Number representing the percentage of live births where any postpartum family planning occurred, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1610,6 +1881,8 @@ postpartumFamilyPlanning: dcs:AnyPostpartumFamilyPlanning
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_BabyMostOftenLaidOnBackToSleep_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births where baby is most often laid on back to sleep as a percentage of all live births"
+description: "Number representing the percentage of live births where the baby is most often laid on back to sleep, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1618,6 +1891,8 @@ infantSleepPractice: dcs:BabyMostOftenLaidOnBackToSleep
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_SelfReportedDepression_3MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with self-reported depression 3 months before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother self-reported depression 3 months before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1627,6 +1902,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_SelfReportedDepression_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with self-reported depression during pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother self-reported depression during pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1636,6 +1913,8 @@ timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_SelfReportedDepression_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with self-reported depression postpartum as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother self-reported depression postpartum, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1645,6 +1924,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with smoking cigarettes 3 months before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother smoked cigarettes 3 months before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1655,6 +1936,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with smoking cigarettes in last 3 months of pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother smoked cigarettes in the last 3 months of pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1665,6 +1948,8 @@ timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Smoking_Postpartum_Cigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with smoking cigarettes postpartum as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother smoked cigarettes postpartum, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1675,6 +1960,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with e-cigarette use 3 months before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother used e-cigarettes 3 months before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1685,6 +1972,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_ECigarettes_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with e-cigarette use in last 3 months of pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother used e-cigarettes in the last 3 months of pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1695,6 +1984,8 @@ timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_EverBreastfed_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births ever breastfed as a percentage of all live births"
+description: "Number representing the percentage of live births where the baby was ever breastfed, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1703,6 +1994,8 @@ breastFeedingPractice: dcs:EverBreastfed
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_FluShot_12MonthsBeforeBirth_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with flu shot 12 months before birth as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother received a flu shot 12 months before birth, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1712,6 +2005,8 @@ timePeriodRelativeToPregnancy: dcs:12MonthsBeforeBirth
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_HealthCareVisit_12MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with healthcare visit 12 months before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had a healthcare visit 12 months before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1721,6 +2016,8 @@ timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_HeavyDrinking_3MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with heavy drinking 3 months before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother engaged in heavy drinking 3 months before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1730,6 +2027,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_HookahUsage_Last2YearsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with hookah usage in the 2 years before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother used hookah in the 2 years before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1739,6 +2038,8 @@ timePeriodRelativeToPregnancy: dcs:Last2YearsBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_IntendedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births from intended pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the pregnancy was intended, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1747,6 +2048,8 @@ pregnancyIntention: dcs:IntendedPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_12MonthsBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with intimate partner violence 12 months before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother experienced intimate partner violence by a current or ex-partner or husband 12 months before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1756,6 +2059,8 @@ timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with intimate partner violence during pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother experienced intimate partner violence by a current or ex-partner or husband during pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1765,6 +2070,8 @@ timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_LeastEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with least effective contraceptive methods as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother used least effective contraceptive methods, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1773,6 +2080,8 @@ postpartumFamilyPlanning: dcs:LeastEffectiveContraceptiveMethods
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_LongActingReversibleContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with long-acting reversible contraceptive methods as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother used long-acting reversible contraceptive methods, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1781,6 +2090,8 @@ postpartumFamilyPlanning: dcs:LongActingReversibleContraceptiveMethods
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_MaleOrFemaleSterilization_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with male or female sterilization as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother or partner used male or female sterilization, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1789,6 +2100,8 @@ postpartumFamilyPlanning: dcs:MaleOrFemaleSterilization
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_MaternalCheckup_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with postpartum maternal checkup as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had a postpartum maternal checkup, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1798,6 +2111,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_MistimedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births from mistimed pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the pregnancy was mistimed, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1806,6 +2121,8 @@ pregnancyIntention: dcs:MistimedPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_ModeratelyEffectiveContraceptiveMethods_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with moderately effective contraceptive methods as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother used moderately effective contraceptive methods, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1814,6 +2131,8 @@ postpartumFamilyPlanning: dcs:ModeratelyEffectiveContraceptiveMethods
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_MoreThan4TimesAWeek_MultivitaminUse_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with multivitamin use more than 4 times a week as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother took multivitamins more than 4 times a week, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1823,6 +2142,8 @@ healthPreventionActionFrequency: dcs:MoreThan4TimesAWeek
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Obesity_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with maternal obesity as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had obesity, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1831,6 +2152,8 @@ mothersHealthBehavior: dcs:Obesity
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Overweight_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with maternal overweight as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother was overweight, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1839,6 +2162,8 @@ mothersHealthBehavior: dcs:Overweight
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_PrenatalCare_FirstTrimester_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with prenatal care in the first trimester as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother received prenatal care in the first trimester, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1848,6 +2173,8 @@ timePeriodRelativeToPregnancy: dcs:FirstTrimester
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_TeethCleanedByDentistOrHygienist_DuringPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with teeth cleaned by dentist or hygienist during pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had her teeth cleaned by a dentist or hygienist during pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1857,6 +2184,8 @@ timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_Underweight_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with maternal underweight as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother was underweight, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1865,6 +2194,8 @@ mothersHealthBehavior: dcs:Underweight
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_UnsureIfWantedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births from unsure if wanted pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother was unsure if she wanted the pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1873,6 +2204,8 @@ pregnancyIntention: dcs:UnsureIfWantedPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_UnwantedPregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births from unwanted pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the pregnancy was unwanted, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1881,6 +2214,8 @@ pregnancyIntention: dcs:UnwantedPregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithMedicaid_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with Medicaid as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had Medicaid, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1889,6 +2224,8 @@ healthInsuranceStatusForPrenatalCare: dcs:WithMedicaid
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_NoHealthInsurance_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with no health insurance as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had no health insurance, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1897,6 +2234,8 @@ healthInsuranceStatusForPrenatalCare: dcs:NoHealthInsurance
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with private health insurance as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had private health insurance, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1905,6 +2244,8 @@ healthInsuranceStatusForPrenatalCare: dcs:WithPrivateHealthInsurance
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithMedicaid_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with Medicaid 1 month before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had Medicaid 1 month before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1914,6 +2255,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_NoHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with no health insurance 1 month before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had no health insurance 1 month before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1923,6 +2266,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_1MonthBeforePregnancy_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with private health insurance 1 month before pregnancy as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had private health insurance 1 month before pregnancy, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1932,6 +2277,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithMedicaid_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with Medicaid postpartum as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had Medicaid postpartum, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1941,6 +2288,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_NoHealthInsurance_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with no health insurance postpartum as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had no health insurance postpartum, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1950,6 +2299,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:Percent_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_Postpartum_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births with private health insurance postpartum as a percentage of all live births"
+description: "Number representing the percentage of live births where the mother had private health insurance postpartum, as a fraction of all live births"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -1959,6 +2310,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_AnyBreastfeedingAt8Weeks_8WeeksAfterPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with any breastfeeding at 8 weeks after pregnancy"
+description: "Number representing the sample size of live births where the mother reported any breastfeeding at 8 weeks after pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -1967,6 +2320,8 @@ timePeriodRelativeToPregnancy: dcs:8WeeksAfterPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_AnyPostpartumFamilyPlanning
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with any postpartum family planning"
+description: "Number representing the sample size of live births where the mother reported any postpartum family planning"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -1974,6 +2329,8 @@ postpartumFamilyPlanning: dcs:AnyPostpartumFamilyPlanning
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_BabyMostOftenLaidOnBackToSleep
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample where baby most often laid on back to sleep"
+description: "Number representing the sample size of live births where the baby was most often laid on their back to sleep"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -1981,6 +2338,8 @@ infantSleepPractice: dcs:BabyMostOftenLaidOnBackToSleep
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_SelfReportedDepression_3MonthsBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with self-reported depression 3 months before pregnancy"
+description: "Number representing the sample size of live births where the mother self-reported depression 3 months before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -1989,6 +2348,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_SelfReportedDepression_DuringPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with self-reported depression during pregnancy"
+description: "Number representing the sample size of live births where the mother self-reported depression during pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -1997,6 +2358,8 @@ timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_SelfReportedDepression_Postpartum
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with self-reported depression postpartum"
+description: "Number representing the sample size of live births where the mother self-reported depression postpartum"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2005,6 +2368,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_Cigarettes
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother smoking cigarettes 3 months before pregnancy"
+description: "Number representing the sample size of live births where the mother smoked cigarettes 3 months before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2014,6 +2379,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_Cigarettes
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother smoking cigarettes in last 3 months of pregnancy"
+description: "Number representing the sample size of live births where the mother smoked cigarettes during the last 3 months of pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2023,6 +2390,8 @@ timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Smoking_Postpartum_Cigarettes
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother smoking cigarettes postpartum"
+description: "Number representing the sample size of live births where the mother smoked cigarettes postpartum"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2032,6 +2401,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Smoking_3MonthsBeforePregnancy_ECigarettes
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother using e-cigarettes 3 months before pregnancy"
+description: "Number representing the sample size of live births where the mother used e-cigarettes 3 months before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2041,6 +2412,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Smoking_Last3MonthsOfPregnancy_ECigarettes
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother using e-cigarettes in last 3 months of pregnancy"
+description: "Number representing the sample size of live births where the mother used e-cigarettes during the last 3 months of pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2050,6 +2423,8 @@ timePeriodRelativeToPregnancy: dcs:Last3MonthsOfPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_EverBreastfed
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample where baby was ever breastfed"
+description: "Number representing the sample size of live births where the baby was ever breastfed"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2057,6 +2432,8 @@ breastFeedingPractice: dcs:EverBreastfed
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_FluShot_12MonthsBeforeBirth
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother receiving flu shot 12 months before birth"
+description: "Number representing the sample size of live births where the mother received a flu shot in the 12 months before birth"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2065,6 +2442,8 @@ timePeriodRelativeToPregnancy: dcs:12MonthsBeforeBirth
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_HealthCareVisit_12MonthsBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having healthcare visit 12 months before pregnancy"
+description: "Number representing the sample size of live births where the mother had a healthcare visit in the 12 months before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2073,6 +2452,8 @@ timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_HeavyDrinking_3MonthsBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother engaging in heavy drinking 3 months before pregnancy"
+description: "Number representing the sample size of live births where the mother engaged in heavy drinking 3 months before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2081,6 +2462,8 @@ timePeriodRelativeToPregnancy: dcs:3MonthsBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_HookahUsage_Last2YearsBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother using hookah in the 2 years before pregnancy"
+description: "Number representing the sample size of live births where the mother used hookah in the 2 years before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2089,6 +2472,8 @@ timePeriodRelativeToPregnancy: dcs:Last2YearsBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_IntendedPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with intended pregnancy"
+description: "Number representing the sample size of live births where the pregnancy was intended"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2096,6 +2481,8 @@ pregnancyIntention: dcs:IntendedPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_12MonthsBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother experiencing intimate partner violence 12 months before pregnancy"
+description: "Number representing the sample size of live births where the mother experienced intimate partner violence by a current or ex-partner or husband in the 12 months before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2104,6 +2491,8 @@ timePeriodRelativeToPregnancy: dcs:12MonthsBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_IntimatePartnerViolenceByCurrentOrExPartnerOrCurrentOrExHusband_DuringPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother experiencing intimate partner violence during pregnancy"
+description: "Number representing the sample size of live births where the mother experienced intimate partner violence by a current or ex-partner or husband during pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2112,6 +2501,8 @@ timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_LeastEffectiveContraceptiveMethods
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother using least effective contraceptive methods"
+description: "Number representing the sample size of live births where the mother used least effective contraceptive methods"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2119,6 +2510,8 @@ postpartumFamilyPlanning: dcs:LeastEffectiveContraceptiveMethods
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_LongActingReversibleContraceptiveMethods
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother using long-acting reversible contraceptive methods"
+description: "Number representing the sample size of live births where the mother used long-acting reversible contraceptive methods"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2126,6 +2519,8 @@ postpartumFamilyPlanning: dcs:LongActingReversibleContraceptiveMethods
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_MaleOrFemaleSterilization
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother or partner using male or female sterilization"
+description: "Number representing the sample size of live births where the mother or partner used male or female sterilization"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2133,6 +2528,8 @@ postpartumFamilyPlanning: dcs:MaleOrFemaleSterilization
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_MaternalCheckup_Postpartum
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having postpartum checkup"
+description: "Number representing the sample size of live births where the mother had a maternal checkup postpartum"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2141,6 +2538,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_MistimedPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mistimed pregnancy"
+description: "Number representing the sample size of live births where the pregnancy was mistimed"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2148,6 +2547,8 @@ pregnancyIntention: dcs:MistimedPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_ModeratelyEffectiveContraceptiveMethods
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother using moderately effective contraceptive methods"
+description: "Number representing the sample size of live births where the mother used moderately effective contraceptive methods"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2155,6 +2556,8 @@ postpartumFamilyPlanning: dcs:ModeratelyEffectiveContraceptiveMethods
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_MoreThan4TimesAWeek_MultivitaminUse
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother taking multivitamins more than 4 times a week"
+description: "Number representing the sample size of live births where the mother took multivitamins more than 4 times a week"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2163,6 +2566,8 @@ healthPreventionActionFrequency: dcs:MoreThan4TimesAWeek
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Obesity
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having Obesity"
+description: "Number representing the sample size of live births where the mother had Obesity"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2170,6 +2575,8 @@ mothersHealthBehavior: dcs:Obesity
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Overweight
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother being overweight"
+description: "Number representing the sample size of live births where the mother was overweight"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2177,6 +2584,8 @@ mothersHealthBehavior: dcs:Overweight
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_PrenatalCare_FirstTrimester
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother receiving prenatal care in the first trimester"
+description: "Number representing the sample size of live births where the mother received prenatal care during the first trimester"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2185,6 +2594,8 @@ timePeriodRelativeToPregnancy: dcs:FirstTrimester
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_TeethCleanedByDentistOrHygienist_DuringPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having teeth cleaned by dentist or hygienist during pregnancy"
+description: "Number representing the sample size of live births where the mother had her teeth cleaned by a dentist or hygienist during pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2193,6 +2604,8 @@ timePeriodRelativeToPregnancy: dcs:DuringPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_Underweight
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother being underweight"
+description: "Number representing the sample size of live births where the mother was underweight"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2200,6 +2613,8 @@ mothersHealthBehavior: dcs:Underweight
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_UnsureIfWantedPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother unsure if she wanted the pregnancy"
+description: "Number representing the sample size of live births where the mother was unsure if she wanted the pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2207,6 +2622,8 @@ pregnancyIntention: dcs:UnsureIfWantedPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_UnwantedPregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with unwanted pregnancy"
+description: "Number representing the sample size of live births where the pregnancy was unwanted"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2214,6 +2631,8 @@ pregnancyIntention: dcs:UnwantedPregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithMedicaid
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having Medicaid"
+description: "Number representing the sample size of live births where the mother had Medicaid"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2221,6 +2640,8 @@ healthInsuranceStatusForPrenatalCare: dcs:WithMedicaid
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_NoHealthInsurance
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having no health insurance"
+description: "Number representing the sample size of live births where the mother had no health insurance"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2228,6 +2649,8 @@ healthInsuranceStatusForPrenatalCare: dcs:NoHealthInsurance
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithPrivateHealthInsurance
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having private health insurance"
+description: "Number representing the sample size of live births where the mother had private health insurance"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2235,6 +2658,8 @@ healthInsuranceStatusForPrenatalCare: dcs:WithPrivateHealthInsurance
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithMedicaid_1MonthBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having Medicaid 1 month before pregnancy"
+description: "Number representing the sample size of live births where the mother had Medicaid 1 month before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2243,6 +2668,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_NoHealthInsurance_1MonthBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having no health insurance 1 month before pregnancy"
+description: "Number representing the sample size of live births where the mother had no health insurance 1 month before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2251,6 +2678,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_1MonthBeforePregnancy
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having private health insurance 1 month before pregnancy"
+description: "Number representing the sample size of live births where the mother had private health insurance 1 month before pregnancy"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2259,6 +2688,8 @@ timePeriodRelativeToPregnancy: dcs:1MonthBeforePregnancy
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithMedicaid_Postpartum
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having Medicaid postpartum"
+description: "Number representing the sample size of live births where the mother had Medicaid during the postpartum period"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2267,6 +2698,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_NoHealthInsurance_Postpartum
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having no health insurance postpartum"
+description: "Number representing the sample size of live births where the mother had no health insurance during the postpartum period"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2275,6 +2708,8 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:SampleSize_Count_LiveBirthPregnancyEvent_WithPrivateHealthInsurance_Postpartum
 typeOf: dcs:StatisticalVariable
+name: "Number of live births in sample with mother having private health insurance postpartum"
+description: "Number representing the sample size of live births where the mother had private health insurance during the postpartum period"
 populationType: dcs:LiveBirthPregnancyEvent
 measuredProperty: dcs:count
 statType: dcs:sampleSize
@@ -2283,16 +2718,18 @@ timePeriodRelativeToPregnancy: dcs:Postpartum
 
 Node: dcid:Percent_Person_18OrMoreYears_WithPoorGeneralHealth
 typeOf: dcs:StatisticalVariable
+name: "Percentage of Adults Aged 18 years or more with poor general gealth"
+description: "Percentage of persons aged 18 years or more with poor general health"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 healthOutcome: dcs:PoorGeneralHealth
-name: "Percentage of Population With Poor General Health"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithPoorGeneralHealth
-name: "Lower Confidence Interval Limit, Prevalence of Physical Health Not Good"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with poor general health"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with poor general health"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2300,8 +2737,9 @@ healthOutcome: dcs:PoorGeneralHealth
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithPoorGeneralHealth
-name: "Upper Confidence Interval Limit, Prevalence of Physical Health Not Good"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with poor general health"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with poor general health"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2309,8 +2747,9 @@ healthOutcome: dcs:PoorGeneralHealth
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithPoorGeneralHealth
-name: "Sample Size, Prevalence of Physical Health Not Good"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for poor general health"
+description: "Number of persons aged 18 years or more in the sample for assessing poor general health"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2319,16 +2758,18 @@ statType: dcs:sampleSize
 
 Node: dcid:Percent_Person_18OrMoreYears_WithDepression
 typeOf: dcs:StatisticalVariable
+name: "Percentage of adults aged 18+ with depression"
+description: "Percentage of persons aged 18 years or more with depression"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 healthOutcome: dcs:Depression
-name: "Percentage of Population With Depression"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithDepression
-name: "Lower Confidence Interval Limit, Prevalence of Depression"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with depression"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with depression"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2336,8 +2777,9 @@ healthOutcome: dcs:Depression
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithDepression
-name: "Upper Confidence Interval Limit, Prevalence of Depression"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with depression"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with depression"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2345,8 +2787,9 @@ healthOutcome: dcs:Depression
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithDepression
-name: "Sample Size, Prevalence of Depression"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for depression"
+description: "Number of persons aged 18 years or more in the sample for assessing depression"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2356,15 +2799,17 @@ statType: dcs:sampleSize
 Node: dcid:Percent_Person_18OrMoreYears_WithVisionDisability
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
+name: "Percentage of adults aged 18+ with vision disability"
+description: "Percentage of persons aged 18 years or more with vision disability"
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 disabilityStatus: dcs:VisionDisability
-name: "Percentage of Population With Vision Disability"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithVisionDisability
-name: "Lower Confidence Interval Limit, Prevalence of Vision Disability"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with vision disability"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with vision disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2372,8 +2817,9 @@ disabilityStatus: dcs:VisionDisability
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithVisionDisability
-name: "Upper Confidence Interval Limit, Prevalence of Vision Disability"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with vision disability"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with vision disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2381,8 +2827,9 @@ disabilityStatus: dcs:VisionDisability
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithVisionDisability
-name: "Sample Size, Prevalence of Vision Disability"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for vision disability"
+description: "Number of persons aged 18 years or more in the sample for assessing vision disability"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2391,16 +2838,18 @@ statType: dcs:sampleSize
 
 Node: dcid:Percent_Person_18OrMoreYears_WithMobilityDisability
 typeOf: dcs:StatisticalVariable
+name: "Percentage of adults aged 18+ with mobility disability"
+description: "Percentage of persons aged 18 years or more with mobility disability"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 disabilityStatus: dcs:MobilityDisability
-name: "Percentage of Population With Mobility Disability"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithMobilityDisability
-name: "Lower Confidence Interval Limit, Prevalence of Mobility Disability"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with mobility disability"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with mobility disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2408,8 +2857,9 @@ disabilityStatus: dcs:MobilityDisability
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithMobilityDisability
-name: "Upper Confidence Interval Limit, Prevalence of Mobility Disability"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with mobility disability"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with mobility disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2417,8 +2867,9 @@ disabilityStatus: dcs:MobilityDisability
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithMobilityDisability
-name: "Sample Size, Prevalence of Mobility Disability"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for mobility disability"
+description: "Number of persons aged 18 years or more in the sample for assessing mobility disability"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2427,16 +2878,18 @@ statType: dcs:sampleSize
 
 Node: dcid:Percent_Person_18OrMoreYears_WithSelfCareDisability
 typeOf: dcs:StatisticalVariable
+name: "Percentage of adults aged 18+ with self-care disability"
+description: "Percentage of persons aged 18 years or more with self-care disability"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 disabilityStatus: dcs:SelfCareDisability
-name: "Percentage of Population With Self Care Disability"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithSelfCareDisability
-name: "Lower Confidence Interval Limit, Prevalence of Self Care Disability"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with self-care disability"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with self-care disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2444,8 +2897,9 @@ disabilityStatus: dcs:SelfCareDisability
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithSelfCareDisability
-name: "Upper Confidence Interval Limit, Prevalence of Self Care Disability"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with self-care disability"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with self-care disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2453,8 +2907,9 @@ disabilityStatus: dcs:SelfCareDisability
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithSelfCareDisability
-name: "Sample Size, Prevalence of Self Care Disability"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for self-care disability"
+description: "Number of persons aged 18 years or more in the sample for assessing self-care disability"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2463,16 +2918,18 @@ statType: dcs:sampleSize
 
 Node: dcid:Percent_Person_18OrMoreYears_WithAnyDisability
 typeOf: dcs:StatisticalVariable
+name: "Percentage of adults aged 18+ with any disability"
+description: "Percentage of persons aged 18 years or more with any disability"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 disabilityStatus: dcs:AnyDisability
-name: "Percentage of Population With Any Disability"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithAnyDisability
-name: "Lower Confidence Interval Limit, Prevalence of Any Disability"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with any disability"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with any disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2480,8 +2937,9 @@ disabilityStatus: dcs:AnyDisability
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithAnyDisability
-name: "Upper Confidence Interval Limit, Prevalence of Any Disability"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with any disability"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with any disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2489,8 +2947,9 @@ disabilityStatus: dcs:AnyDisability
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithAnyDisability
-name: "Sample Size, Prevalence of Any Disability"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for any disability"
+description: "Number of persons aged 18 years or more in the sample for assessing any disability"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2499,16 +2958,18 @@ statType: dcs:sampleSize
 
 Node: dcid:Percent_Person_18OrMoreYears_WithIndependentLivingDisability
 typeOf: dcs:StatisticalVariable
+name: "Percentage of adults aged 18+ with independent living disability"
+description: "Percentage of persons aged 18 years or more with independent living disability"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 disabilityStatus: dcs:IndependentLivingDisability
-name: "Percentage of Population With Independent Living Disability"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithIndependentLivingDisability
-name: "Lower Confidence Interval Limit, Prevalence of Independent Living Disability"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with independent living disability"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with independent living disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2516,8 +2977,9 @@ disabilityStatus: dcs:IndependentLivingDisability
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithIndependentLivingDisability
-name: "Upper Confidence Interval Limit, Prevalence of Independent Living Disability"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with independent living disability"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with independent living disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2525,7 +2987,8 @@ disabilityStatus: dcs:IndependentLivingDisability
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithIndependentLivingDisability
-name: "Sample Size, Prevalence of Independent Living Disability"
+name: "Number of adults aged 18+ in sample for independent living disability"
+description: "Number of persons aged 18 years or more in the sample for assessing independent living disability"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2535,16 +2998,18 @@ statType: dcs:sampleSize
 
 Node: dcid:Percent_Person_18OrMoreYears_WithCognitiveDisability
 typeOf: dcs:StatisticalVariable
+name: "Percentage of adults aged 18+ with cognitive disability"
+description: "Percentage of persons aged 18 years or more with cognitive disability"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 disabilityStatus: dcs:CognitiveDisability
-name: "Percentage of Population With Cognitive Disability"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithCognitiveDisability
-name: "Lower Confidence Interval Limit, Prevalence of Cognitive Disability"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with cognitive disability"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with cognitive disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2552,8 +3017,9 @@ disabilityStatus: dcs:CognitiveDisability
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithCognitiveDisability
-name: "Upper Confidence Interval Limit, Prevalence of Cognitive Disability"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with cognitive disability"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with cognitive disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2561,8 +3027,9 @@ disabilityStatus: dcs:CognitiveDisability
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithCognitiveDisability
-name: "Sample Size, Prevalence of Cognitive Disability"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for cognitive disability"
+description: "Number of persons aged 18 years or more in the sample for assessing cognitive disability"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2571,16 +3038,18 @@ statType: dcs:sampleSize
 
 Node: dcid:Percent_Person_18OrMoreYears_WithHearingDisability
 typeOf: dcs:StatisticalVariable
+name: "Percentage of adults aged 18+ with hearing disability"
+description: "Percentage of persons aged 18 years or more with hearing disability"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
 disabilityStatus: dcs:HearingDisability
-name: "Percentage of Population With Hearing Disability"
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithHearingDisability
-name: "Lower Confidence Interval Limit, Prevalence of Hearing Disability"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with hearing disability"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with hearing disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2588,8 +3057,9 @@ disabilityStatus: dcs:HearingDisability
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithHearingDisability
-name: "Upper Confidence Interval Limit, Prevalence of Hearing Disability"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with hearing disability"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with hearing disability"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2597,8 +3067,9 @@ disabilityStatus: dcs:HearingDisability
 statType: dcs:confidenceIntervalUpperLimit
 
 Node: dcid:SampleSize_Percent_Person_18OrMoreYears_WithHearingDisability
-name: "Sample Size, Prevalence of Hearing Disability"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for hearing disability"
+description: "Number of persons aged 18 years or more in the sample for assessing hearing disability"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2606,8 +3077,9 @@ disabilityStatus: dcs:HearingDisability
 statType: dcs:sampleSize
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithDiabetes
-name: "Lower Confidence Interval Limit, Prevalence of Diabetes"
 typeOf: dcs:StatisticalVariable
+name: "Lower confidence interval limit for percentage of adults aged 18+ with diabetes"
+description: "Lower limit of the confidence interval for the percentage of persons aged 18 years or more with diabetes"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2615,8 +3087,9 @@ healthOutcome: dcs:Diabetes
 statType: dcs:confidenceIntervalLowerLimit
 
 Node: dcid:SampleSize_Percent_Person_WithDiabetes
-name: "Sample Size, Prevalence of Diabetes"
 typeOf: dcs:StatisticalVariable
+name: "Number of adults aged 18+ in sample for diabetes"
+description: "Number of persons aged 18 years or more in the sample for assessing diabetes"
 populationType: dcs:Person
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
@@ -2624,8 +3097,9 @@ healthOutcome: dcs:Diabetes
 statType: dcs:sampleSize
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Person_WithDiabetes
-name: "Upper Confidence Interval Limit, Prevalence of Diabetes"
 typeOf: dcs:StatisticalVariable
+name: "Upper confidence interval limit for percentage of adults aged 18+ with diabetes"
+description: "Upper limit of the confidence interval for the percentage of persons aged 18 years or more with diabetes"
 populationType: dcs:Person
 measuredProperty: dcs:percent
 age: dcs:Years18Onwards
@@ -2639,12 +3113,13 @@ statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:LackReliableTransport
-name: "Count of Population With Lack of Reliable Transport"
+name: "Number of adults aged 18+ lacking reliable transportation"
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-description: "Lack of reliable transportation in the past 12 months among adults"
+description: "Number of adults aged 18 years or more who lack reliable transportation"
 
 Node: dcid:LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_LackReliableTransport_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Lower Confidence Interval Limit, Population With Lack of Reliable Transport"
+name: "Number representing lower confidence limit of adults aged 18+ with lack of reliable transportation proportion"
+description: "Number representing the lower limit of the confidence interval for the proportion of adults aged 18 years or more with lack of reliable transportation"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2654,7 +3129,8 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_LackReliableTransport_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Upper Confidence Interval Limit, Population With Lack of Reliable Transport"
+name: "Number representing upper confidence limit of adults aged 18+ with lack of reliable transportation proportion"
+description: "Number representing the upper limit of the confidence interval for the proportion of adults aged 18 years or more with lack of reliable transportation"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2664,7 +3140,8 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:SampleSize_Count_Person_18OrMoreYears_LackReliableTransport_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Sample Size, Population With Lack of Reliable Transport"
+name: "Number of adults aged 18+ in sample for assessing lack of reliable transportation"
+description: "Number of adults aged 18 years or more in the sample for assessing lack of reliable transportation"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2680,12 +3157,13 @@ statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:HousingInsecurity
-name: "Count of Population With Housing Insecurity"
+name: "Number of adults aged 18+ with housing insecurity"
+description: "Number of adults aged 18 years or more who experience housing insecurity as a fraction of the population"
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-description: "Housing insecurity in the past 12 months among adults"
 
 Node: dcid:LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_HousingInsecurity_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Lower Confidence Interval Limit, Population With Housing Insecurity"
+name: "Number for lower confidence limit of adults aged 18+ with housing insecurity"
+description: "Number representing the lower limit of the confidence interval for the percentage of adults aged 18 years or more who experience housing insecurity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2695,7 +3173,8 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_HousingInsecurity_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Upper Confidence Interval Limit, Population With Housing Insecurity"
+name: "Number for upper confidence limit of adults aged 18+ with housing insecurity"
+description: "Number representing the upper limit of the confidence interval for the percentage of adults aged 18 years or more who experience housing insecurity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2705,7 +3184,8 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:SampleSize_Count_Person_18OrMoreYears_HousingInsecurity_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Sample Size, Population With Housing Insecurity"
+name: "Number of adults aged 18+ in sample for assessing housing insecurity as a fraction of all adults aged 18+"
+description: "Number of adults aged 18 years or more in the sample for assessing housing insecurity as a proportion of the total number of adults aged 18+"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2721,12 +3201,13 @@ statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:LackSocialAndEmotionalSupport
-name: "Count of Population With Lack of Social and Emotional Support"
+name: "Number of adults aged 18+ with lack of social and emotional support as a percentage of all adults aged 18+"
+description: "Number representing the proportion of adults aged 18 years or more who experience lack of social and emotional support"
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-description: "Lack of social and emotional support among adults"
 
 Node: dcid:LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_LackSocialAndEmotionalSupport_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Lower Confidence Interval Limit, Population With Lack of Social and Emotional Support"
+name: "Number for lower confidence interval limit, population aged 18 or more with lack of social and emotional support"
+description: "Number representing the lower bound of the confidence interval for the population aged 18 or more who lack social and emotional support, expressed as a fraction of the total population aged 18 or more"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2736,7 +3217,8 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_LackSocialAndEmotionalSupport_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Upper Confidence Interval Limit, Population With Lack of Social and Emotional Support"
+name: "Number for upper confidence limit of adults 18+ lacking social and emotional support"
+description: "Number representing the upper confidence interval limit for adults aged 18 or older who lack social and emotional support, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2746,7 +3228,8 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:SampleSize_Count_Person_18OrMoreYears_LackSocialAndEmotionalSupport_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Sample Size, Population With Lack of Social and Emotional Support"
+name: "Number for sample size of adults 18+ lacking social and emotional support"
+description: "Number representing the sample size for adults aged 18 or older who lack social and emotional support, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2762,12 +3245,13 @@ statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:ReceivedFoodStamp
-name: "Count of Population Received Food Stamp"
+name: "Number of adults 18+ who received food stamps"
+description: "Number of adults aged 18 or older who received food stamps expressed as a fraction of the total adult population"
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-description: "Received food stamps in the past 12 months among adults"
 
 Node: dcid:LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_ReceivedFoodStamp_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Lower Confidence Interval Limit, Population Received Food Stamp"
+name: "Number for lower confidence limit of adults 18+ who received food stamps"
+description: "Number representing the lower confidence interval limit for adults aged 18 or older who received food stamps expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2777,7 +3261,8 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_ReceivedFoodStamp_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Upper Confidence Interval Limit, Population Received Food Stamp"
+name: "Numberfor  upper confidence limit of adults 18+ who received food stamps"
+description: "Number representing the upper confidence interval limit for adults aged 18 or older who received food stamps expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2787,7 +3272,8 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:SampleSize_Count_Person_18OrMoreYears_ReceivedFoodStamp_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Sample Size, Population Received Food Stamp"
+name: "Number for sample size of adults 18+ who received food stamps"
+description: "Number representing the sample size for adults aged 18 or older who received food stamps expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2803,12 +3289,13 @@ statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:FoodInsecurity
-name: "Count of Population With Food Insecurity"
+name: "Number of adults 18+ with food insecurity"
+description: "Number of adults aged 18 or older who experienced food insecurity in the past 12 months expressed as a fraction of the total adult population"
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-description: "Food insecurity in the past 12 months among adults"
 
 Node: dcid:LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_FoodInsecurity_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Lower Confidence Interval Limit, Population With Food Insecurity"
+name: "Number for lower confidence limit of adults 18+ with food insecurity"
+description: "Number representing the lower confidence interval limit for adults aged 18 or older who experienced food insecurity, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2818,7 +3305,8 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_FoodInsecurity_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Upper Confidence Interval Limit, Population With Food Insecurity"
+name: "Number for upper confidence limit of adults 18+ with food insecurity"
+description: "Number representing the upper confidence interval limit for adults aged 18 or older who experienced food insecurity, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2828,7 +3316,8 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:SampleSize_Count_Person_18OrMoreYears_FoodInsecurity_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Sample Size, Population With Food Insecurity"
+name: "Number for sample size of adults 18+ with food insecurity"
+description: "Number representing the sample size for adults aged 18 or older who experienced food insecurity, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2844,11 +3333,13 @@ statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:UtilityServiceShutoffThreat
-name: "Count of Population With Utility Service Shutoff Threat"
+name: "Number of adults 18+ with utility service shutoff threat"
+description: "Number of adults aged 18 or older who experienced a utility service shutoff threat, expressed as a fraction of the total adult population"
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_UtilityServiceShutoffThreat_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Lower Confidence Interval Limit, Population With Utility Service Shutoff Threat"
+name: "Number for lower confidence limit of adults 18+ with utility service shutoff threat"
+description: "Number representing the lower confidence interval limit for adults aged 18 or older who experienced a utility service shutoff threat in the past 12 months, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2856,10 +3347,10 @@ age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:UtilityServiceShutoffThreat
 statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-description: "Utility services shut-off threat in the past 12 months among adults"
 
 Node: dcid:UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_UtilityServiceShutoffThreat_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Upper Confidence Interval Limit, Population With Utility Service Shutoff Threat"
+name: "Number for upper confidence limit of adults 18+ with utility service shutoff threat"
+description: "Number representing the upper confidence interval limit for adults aged 18 or older who experienced a utility service shutoff threat, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2869,7 +3360,8 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:SampleSize_Count_Person_18OrMoreYears_UtilityServiceShutoffThreat_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Sample Size, Population With Utility Service Shutoff Threat"
+name: "Number for sample size of adults 18+ with utility service shutoff threat"
+description: "Number representing the sample size for adults aged 18 or older who experienced a utility service shutoff threat, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2885,12 +3377,13 @@ statType: dcs:measuredValue
 measuredProperty: dcs:count
 age: dcs:Years18Onwards
 healthRelatedSocialNeed: dcs:SociallyIsolated
-name: "Count of Population Socially Isolated"
+name: "Number of adults 18+ who are socially isolated"
+description: "Number of adults aged 18 or older who reported feeling socially isolated, expressed as a fraction of the total adult population"
 measurementDenominator: dcs:Count_Person_18OrMoreYears
-description: "Feeling socially isolated among adults"
 
 Node: dcid:LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_SociallyIsolated_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Lower Confidence Interval Limit, Population Socially Isolated"
+name: "Number for lower confidence limit of adults 18+ who are socially isolated"
+description: "Number representing the lower confidence interval limit for adults aged 18 or older who reported being socially isolated, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2900,7 +3393,8 @@ statType: dcs:confidenceIntervalLowerLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_SociallyIsolated_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Upper Confidence Interval Limit, Population Socially Isolated"
+name: "Number for upper confidence limit of adults 18+ who are socially isolated"
+description: "Number representing the upper confidence interval limit for adults aged 18 or older who reported being socially isolated, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
@@ -2910,7 +3404,8 @@ statType: dcs:confidenceIntervalUpperLimit
 measurementDenominator: dcs:Count_Person_18OrMoreYears
 
 Node: dcid:SampleSize_Count_Person_18OrMoreYears_SociallyIsolated_AsAFractionOf_Count_Person_18OrMoreYears
-name: "Sample Size, Population Socially Isolated"
+name: "Number for sample size of adults 18+ who are socially isolated"
+description: "Number representing the sample size for adults aged 18 or older who reported being socially isolated, expressed as a fraction of the total adult population"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
