@@ -1,20 +1,22 @@
-# LINT.IfChange
 
 Node: dcid:dc/topic/WorkCommute
-typeOf: dcs:Topic
-name: "Commute"
+typeof: dcs:topic
+name: "Work commute"
+description: "Topic related to how people commute to work, including commute mode and commute time"
 relevantVariable: dcid:dc/topic/CommuteMode
 relevantVariable: dcid:dc/topic/CommuteTime
 
 Node: dcid:dc/topic/CommuteMode
-typeOf: dcs:Topic
-name: "Commute Mode"
+typeof: dcs:topic
+name: "Commute mode"
+description: "The mode of commute"
 relevantVariable: dcid:dc/svpg/dc/topic/CommuteMode_ModesofCommute
 relevantVariable: dcid:dc/topic/CommuteModeByOccupation
 
 Node: dcid:dc/svpg/dc/topic/CommuteMode_ModesofCommute
-typeOf: dcs:StatVarPeerGroup
-name: "Modes of Commute"
+typeof: dcs:StatVarPeerGroup
+name: "Modes of commute"
+description: "The different modes of commute"
 member: dcid:dc/0gettc3bc60cb
 member: dcid:dc/6rltk4kf75612
 member: dcid:dc/hbkh95kc7pkb6
@@ -23,18 +25,20 @@ member: dcid:dc/vt2q292eme79f
 member: dcid:dc/wc8q05drd74bd
 
 Node: dcid:dc/topic/CommuteModeByOccupation
-typeOf: dcs:Topic
-name: "Commute Mode by Occupation"
+typeof: dcs:topic
+name: "Commute mode by occupation"
+description: "The distribution of commute mode by occupation"
 relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ManagementBusinessScienceandArtsOccupations
-relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_SalesandOfficeOccupations
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_SalesandofficeOccupations
 relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ServiceOccupations
 relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ProductionTransportationandMaterialMovingOccupations
 relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_NaturalResourcesConstructionandMaintenanceOccupations
 relevantVariable: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_MilitarySpecificOccupation
 
 Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ManagementBusinessScienceandArtsOccupations
-typeOf: dcs:StatVarPeerGroup
-name: "Management, Business, Science and Arts Occupations"
+typeof: dcs:StatVarPeerGroup
+name: "Commute mode for management business science and arts occupations"
+description: "A grouping of statistical variables representing different modes of commuting for people employed in management business science and arts occupations"
 member: dcid:dc/nfdf9rt7kbggb
 member: dcid:dc/v33p7mwnpe9vb
 member: dcid:dc/4xklqxfc27w1f
@@ -43,8 +47,9 @@ member: dcid:dc/jszfr5wd4f7pb
 member: dcid:dc/y9yb58snpfzw5
 
 Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_MilitarySpecificOccupation
-typeOf: dcs:StatVarPeerGroup
-name: "Military Specific Occupation"
+typeof: dcs:StatVarPeerGroup
+name: "Commute mode by occupation: Sales and office occupations"
+description: "The commute mode for sales and office occupations"
 member: dcid:dc/zf0wjwwyddbj4
 member: dcid:dc/2r1c78wzvbq58
 member: dcid:dc/9vlv8l9dbgsk7
@@ -53,8 +58,9 @@ member: dcid:dc/wqbf0ppbmly7
 member: dcid:dc/bhc16vntggjyd
 
 Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_NaturalResourcesConstructionandMaintenanceOccupations
-typeOf: dcs:StatVarPeerGroup
-name: "Natural Resources, Construction and Maintenance Occupations"
+typeof: dcs:StatVarPeerGroup
+name: "Commute mode by occupation: Service occupations"
+description: "The commute mode for service occupations"
 member: dcid:dc/vh36nvvkwxz5g
 member: dcid:dc/n99t0lnl3fch6
 member: dcid:dc/2hhr4qp4b4r0b
@@ -63,8 +69,9 @@ member: dcid:dc/b9plt3q5k6gyb
 member: dcid:dc/06m8j6xz3h0wf
 
 Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ProductionTransportationandMaterialMovingOccupations
-typeOf: dcs:StatVarPeerGroup
-name: "Production Transportation and Material Moving Occupations"
+typeof: dcs:StatVarPeerGroup
+name: "Commute mode by occupation: Production, transportation, and material moving occupations"
+description: "The commute mode for production, transportation, and material moving occupations"
 member: dcid:dc/cs8fvwkmpmlpg
 member: dcid:dc/fgt7thnws9vx9
 member: dcid:dc/j7lkt2ww5qsn5
@@ -72,9 +79,10 @@ member: dcid:dc/dj7khl7q78412
 member: dcid:dc/r0delcsw86kc6
 member: dcid:dc/e27c5t4tbplg
 
-Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_SalesandOfficeOccupations
-typeOf: dcs:StatVarPeerGroup
-name: "Sales and Office Occupations"
+Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_SalesandofficeOccupations
+typeof: dcs:StatVarPeerGroup
+name: "Commute mode by occupation: Natural resources, construction, and maintenance occupations"
+description: "The commute mode for natural resources, construction, and maintenance occupations"
 member: dcid:dc/7wt44yv38rew
 member: dcid:dc/zcth2y8fqte1f
 member: dcid:dc/nvrxn11yxlen2
@@ -83,8 +91,9 @@ member: dcid:dc/kt900ezddrf79
 member: dcid:dc/slp5hywj7b9c1
 
 Node: dcid:dc/svpg/dc/topic/CommuteModeByOccupation_ServiceOccupations
-typeOf: dcs:StatVarPeerGroup
-name: "Service Occupations"
+typeof: dcs:StatVarPeerGroup
+name: "Commute mode by occupation: Military specific occupation"
+description: "The commute mode for military specific occupation"
 member: dcid:dc/dn2h9yfcgbkg2
 member: dcid:dc/bre4whrdn7pt7
 member: dcid:dc/n2vhkpw0slkv5
@@ -93,14 +102,16 @@ member: dcid:dc/k33ngtzpqxql6
 member: dcid:dc/6zrlr86zt61yg
 
 Node: dcid:dc/topic/CommuteTime
-typeOf: dcs:Topic
-name: "Commute Time"
-relevantVariable: dcid:Mean_CommuteTime_Person_Years16Onwards_WorkCommute_Employed_WorkedOutsideOfHome
-relevantVariable: dcid:dc/svpg/dc/topic/CommuteTime_BreakdownbyCommuteTime
+typeof: dcs:topic
+name: "Commute time"
+description: "The time taken for commute"
+relevantVariable: dcid:mean_CommuteTime_Person_Years16Onwards_WorkCommute_Employed_WorkedOutsideofhome
+relevantVariable: dcid:dc/svpg/dc/topic/CommuteTime_breakdownbyCommuteTime
 
-Node: dcid:dc/svpg/dc/topic/CommuteTime_BreakdownbyCommuteTime
-typeOf: dcs:StatVarPeerGroup
-name: "Commuters by Commute Time"
+Node: dcid:dc/svpg/dc/topic/CommuteTime_breakdownbyCommuteTime
+typeof: dcs:StatVarPeerGroup
+name: "Commute time breakdown by commute time"
+description: "The breakdown of commute time by different time categories"
 member: dcid:dc/fyc3yvjy0xw6g
 member: dcid:dc/dbe0drezxrpv6
 member: dcid:dc/1fw0t5m6459gb

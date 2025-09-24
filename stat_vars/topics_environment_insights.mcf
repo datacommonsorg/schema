@@ -1,14 +1,10 @@
-# LINT.IfChange
-# This file contains Natural disasters and Climate stuff.
-# Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
 
-### Natural Disasters ####
-
-Node: dcid:dc/topic/NaturalDisasters
-typeOf: dcs:Topic
-name: "Natural Disasters"
+Node: dcid:dc/topic/Naturaldisasters
+typeof: dcs:topic
+name: "Natural disasters"
+description: "Various types of natural disasters, including droughts, floods, fires, heat waves, wet bulb events, storms, earthquakes, avalanches, landslides, and tsunamis"
 relevantVariable: dcid:dc/topic/Drought
-relevantVariable: dcid:dc/topic/Flood
+relevantVariable: dcid:dc/topic/flood
 relevantVariable: dcid:dc/topic/Fire
 relevantVariable: dcid:dc/topic/HeatWave
 relevantVariable: dcid:dc/topic/WetBulbEvent
@@ -19,119 +15,133 @@ relevantVariable: dcid:dc/topic/Landslide
 relevantVariable: dcid:dc/topic/Tsunami
 
 Node: dcid:dc/topic/Drought
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Drought"
-relevantVariable: dcid:Area_DroughtEvent
+description: "A prolonged period of abnormally low rainfall, leading to a water shortage, affecting agriculture, water supply, and the environment"
+relevantVariable: dcid:area_DroughtEvent
 relevantVariable: dcid:ConsecutiveDryDays
 relevantVariable: dcid:Count_DroughtEvent
-relevantVariable: dcid:Mean_PalmerDroughtSeverityIndex
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_DroughtEvent
+relevantVariable: dcid:mean_PalmerDroughtSeverityindex
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_DroughtEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_DroughtEvent
 
-Node: dcid:dc/topic/Flood
-typeOf: dcs:Topic
+Node: dcid:dc/topic/flood
+typeof: dcs:topic
 name: "Flood"
-relevantVariable: dcid:Area_FloodEvent
-relevantVariable: dcid:Count_FloodEvent
-relevantVariable: dcid:Count_FlashFloodEvent
-relevantVariable: dcid:dc/topic/CoastalFlood
-relevantVariable: dcid:dc/topic/RiverineFlood
+description: "An overflow of water onto normally dry land, often caused by heavy rainfall, melting snow, or dam failure, resulting in significant damage to property and infrastructure"
+relevantVariable: dcid:area_floodEvent
+relevantVariable: dcid:Count_floodEvent
+relevantVariable: dcid:Count_FlashfloodEvent
+relevantVariable: dcid:dc/topic/Coastalflood
+relevantVariable: dcid:dc/topic/Riverineflood
 
-Node: dcid:dc/topic/RiverineFlood
-typeOf: dcs:Topic
-name: "Riverine Flood"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_RiverineFloodingEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent
+Node: dcid:dc/topic/Riverineflood
+typeof: dcs:topic
+name: "Riverine flood"
+description: "A type of flood caused by the overflow of rivers, typically due to prolonged rainfall or melting snow, affecting nearby areas with significant water accumulation"
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_RiverinefloodingEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_RiverinefloodingEvent
 
-Node: dcid:dc/topic/CoastalFlood
-typeOf: dcs:Topic
-name: "Coastal Flood"
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_CoastalFloodEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_CoastalFloodEvent
+Node: dcid:dc/topic/Coastalflood
+typeof: dcs:topic
+name: "Coastal flood"
+description: "A type of flood occurring in coastal areas due to storm surges, rising sea levels, or heavy rainfall, leading to water inundation of coastal regions"
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_CoastalfloodEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_CoastalfloodEvent
 
 Node: dcid:dc/topic/Fire
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Fire"
+description: "An uncontrolled blaze that spreads rapidly, often causing destruction to forests, homes, and wildlife, and can result from natural causes or human activities"
 relevantVariable: dcid:Count_FireEvent
 relevantVariable: dcid:Count_WildlandFireEvent
-relevantVariable: dcid:BurnedArea_FireEvent
-relevantVariable: dcid:Percent_BurnedArea_FireEvent
-relevantVariable: dcid:Percent_BurnedArea_FireEvent_Forest_HighSeverity
-relevantVariable: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
+relevantVariable: dcid:Burnedarea_FireEvent
+relevantVariable: dcid:Percent_Burnedarea_FireEvent
+relevantVariable: dcid:Percent_Burnedarea_FireEvent_Forest_highseverity
+relevantVariable: dcid:dc/svpg/Wildfire_annualamountofwildfireemissionsbysource
 
-Node: dcid:dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource
-typeOf: dcs:StatVarPeerGroup
-name: "Wildfire Emissions by Pollutant"
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_Ammonia
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_CarbonMonoxide
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_OxidesOfNitrogen
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM10
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_PM2.5
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_SulfurDioxide
-member: dcid:Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_VolatileOrganicCompound
+Node: dcid:dc/svpg/Wildfire_annualamountofwildfireemissionsbysource
+typeof: dcs:StatVarPeerGroup
+name: "Wildfire annual amount of wildfire emissions by source"
+description: "The total annual emissions produced by wildfires, categorized by the type of non-biogenic source such as ammonia, carbon monoxide, oxides of nitrogen, particulate matter (PM10, PM2.5), sulfur dioxide, and volatile organic compounds"
+member: dcid:annual_amount_emissions_Wildfire_NonBiogenicEmissionsource_Ammonia
+member: dcid:annual_amount_emissions_Wildfire_NonBiogenicEmissionsource_CarbonMonoxide
+member: dcid:annual_amount_emissions_Wildfire_NonBiogenicEmissionsource_OxidesofNitrogen
+member: dcid:annual_amount_emissions_Wildfire_NonBiogenicEmissionsource_PM10
+member: dcid:annual_amount_emissions_Wildfire_NonBiogenicEmissionsource_PM2.5
+member: dcid:annual_amount_emissions_Wildfire_NonBiogenicEmissionsource_SulfurDioxide
+member: dcid:annual_amount_emissions_Wildfire_NonBiogenicEmissionsource_VolatileOrganicCompound
 
 Node: dcid:dc/topic/Storm
-typeOf: dcs:Topic
-name: "Storms"
+typeof: dcs:topic
+name: "Storm"
+description: "A category representing various types of storm events, including cyclones, hurricanes, and tornadoes, which are characterized by severe weather conditions with significant atmospheric disturbance"
 relevantVariable: dcid:dc/svpg/Storm_StormEventbytype
 relevantVariable: dcid:dc/topic/Cyclone
 relevantVariable: dcid:dc/topic/Hurricane
-relevantVariable: dcid:dc/topic/Tornado
+relevantVariable: dcid:dc/topic/tornado
 
 Node: dcid:dc/svpg/Storm_StormEventbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Storms by Type"
+typeof: dcs:StatVarPeerGroup
+name: "Storm event by type"
+description: "A category representing various types of storm events, including dust storms, thunderstorm winds, tropical storms, winter storms, ice storms, and marine storms, categorized by their specific event types"
 member: dcid:Count_DustStormEvent
 member: dcid:Count_ThunderstormWindEvent
 member: dcid:Count_TropicalStormEvent
 member: dcid:Count_WinterStormEvent
 member: dcid:Count_IceStormEvent
-member: dcid:Count_MarineThunderstormWindEvent
-member: dcid:Count_MarineTropicalStormEvent
+member: dcid:Count_marineThunderstormWindEvent
+member: dcid:Count_marineTropicalStormEvent
 
 Node: dcid:dc/topic/Cyclone
-typeOf: dcs:Topic
-name: "Cyclones"
+typeof: dcs:topic
+name: "Cyclone"
+description: "A topic representing cyclone events, including their count and classification by type of cyclone event"
 relevantVariable: dcid:Count_CycloneEvent
 relevantVariable: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
 
 Node: dcid:dc/svpg/Cyclone_Cycloneeventsbytype
-typeOf: dcs:StatVarPeerGroup
-name: "Cyclones by Type"
+typeof: dcs:StatVarPeerGroup
+name: "Cyclone events by type"
+description: "A statistical variable representing cyclone events categorized by type, including extratropical cyclones, tropical disturbances, and tropical storms"
 member: dcid:Count_CycloneEvent_ExtratropicalCyclone
 member: dcid:Count_CycloneEvent_ExtratropicalCyclone
 member: dcid:Count_CycloneEvent_TropicalDisturbance
 member: dcid:Count_CycloneEvent_TropicalStorm
 
 Node: dcid:dc/topic/Hurricane
-typeOf: dcs:Topic
-name: "Hurricanes"
+typeof: dcs:topic
+name: "Hurricane events"
+description: "A statistical variable representing hurricane events, including data on hurricane and typhoon occurrences, expected annual losses, and FEMA risk index for hurricane impacts"
 relevantVariable: dcid:Count_HurricaneEvent
 relevantVariable: dcid:Count_HurricaneTyphoonEvent
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_HurricaneEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_HurricaneEvent
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_HurricaneEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_HurricaneEvent
 
-Node: dcid:dc/topic/Tornado
-typeOf: dcs:Topic
-name: "Tornado"
-relevantVariable: dcid:Count_TornadoEvent
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_TornadoEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_TornadoEvent
+Node: dcid:dc/topic/tornado
+typeof: dcs:topic
+name: "Tornado events"
+description: "A statistical variable representing tornado events, including data on tornado occurrences, expected annual losses, and FEMA risk index for tornado impacts"
+relevantVariable: dcid:Count_tornadoEvent
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_tornadoEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_tornadoEvent
 
 Node: dcid:dc/topic/HeatWave
-typeOf: dcs:Topic
-name: "Heat Wave"
+typeof: dcs:topic
+name: "Heat wave events"
+description: "A statistical variable representing heat wave events, including data on occurrences, intensity, duration, and the impact on populations"
 relevantVariable: dcid:Count_HeatWaveEvent
 relevantVariable: dcid:Intensity_HeatWaveEvent
-relevantVariable: dcid:NumberOfDays_HeatWaveEvent
-relevantVariable: dcid:PopulationWeighted_Count_HeatWaveEvent
-relevantVariable: dcid:PopulationWeighted_Intensity_HeatWaveEvent
-relevantVariable: dcid:PopulationWeighted_NumerOfDays_HeatWaveEvent
+relevantVariable: dcid:NumberofDays_HeatWaveEvent
+relevantVariable: dcid:populationWeighted_Count_HeatWaveEvent
+relevantVariable: dcid:populationWeighted_Intensity_HeatWaveEvent
+relevantVariable: dcid:populationWeighted_NumerofDays_HeatWaveEvent
 relevantVariable: dcid:Count_ExcessiveHeatEvent
 
 Node: dcid:dc/topic/ColdEvent
-typeOf: dcs:Topic
-name: "Cold Events"
+typeof: dcs:topic
+name: "Cold events"
+description: "A statistical variable representing cold events, including occurrences of extreme cold wind chill, freezing fog, frost, freeze, and winter weather events"
 relevantVariable: dcid:Count_ColdWindChillEvent
 relevantVariable: dcid:Count_ExtremeColdWindChillEvent
 relevantVariable: dcid:Count_FreezingFogEvent
@@ -139,241 +149,275 @@ relevantVariable: dcid:Count_FrostFreezeEvent
 relevantVariable: dcid:Count_WinterWeatherEvent
 
 Node: dcid:dc/topic/WetBulbEvent
-typeOf: dcs:Topic
-name: "Wet Bulb Event"
-relevantVariable: dcid:Area_WetBulbTemperatureEvent
-relevantVariable: dcid:Count_WetBulbTemperatureEvent
+typeof: dcs:topic
+name: "Wet bulb events"
+description: "A statistical variable representing wet bulb temperature events, including the occurrence and area affected by these temperature events"
+relevantVariable: dcid:area_WetBulbtemperatureEvent
+relevantVariable: dcid:Count_WetBulbtemperatureEvent
 
 Node: dcid:dc/topic/Avalanche
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Avalanche"
+description: "A statistical variable representing avalanche events, including their occurrence, expected annual loss, and associated natural hazard risk"
 relevantVariable: dcid:Count_AvalancheEvent
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_AvalancheEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_AvalancheEvent
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_AvalancheEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_AvalancheEvent
 
 Node: dcid:dc/topic/Landslide
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Landslide"
+description: "A statistical variable representing landslide events, including their occurrence, expected annual loss, and associated natural hazard risk"
 relevantVariable: dcid:Count_LandslideEvent
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_LandslideEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_LandslideEvent
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_LandslideEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_LandslideEvent
 
 Node: dcid:dc/topic/Tsunami
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Tsunami"
+description: "A statistical variable representing tsunami events, including their occurrence, expected annual loss, and associated natural hazard risk"
 relevantVariable: dcid:Count_TsunamiEvent
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_TsunamiEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_TsunamiEvent
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_TsunamiEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_TsunamiEvent
 
 Node: dcid:dc/topic/Volcano
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Volcano"
+description: "A statistical variable representing volcanic activity, including volcanic ash events, ashfall occurrences, and associated natural hazard risks and expected annual loss"
 relevantVariable: dcid:Count_VolcanicAshEvent
 relevantVariable: dcid:Count_VolcanicAshfallEvent
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_VolcanicActivityEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_VolcanicActivityEvent
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_VolcanicActivityEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_VolcanicActivityEvent
 
 Node: dcid:dc/topic/Earthquake
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Earthquake"
+description: "A statistical variable representing earthquake events, their associated natural hazard risks, expected annual loss, and related data from natural disaster risk indexes"
 relevantVariable: dcid:Count_EarthquakeEvent
-relevantVariable: dcid:Annual_ExpectedLoss_NaturalHazardImpact_EarthquakeEvent
-relevantVariable: dcid:FemaNaturalHazardRiskIndex_NaturalHazardImpact_EarthquakeEvent
-relevantVariable: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
+relevantVariable: dcid:annual_ExpectedLoss_NaturalHazardImpact_EarthquakeEvent
+relevantVariable: dcid:FemaNaturalHazardRiskindex_NaturalHazardImpact_EarthquakeEvent
+relevantVariable: dcid:dc/svpg/dc/topic/Naturaldisasters_Earthquake
 
-Node: dcid:dc/svpg/dc/topic/NaturalDisasters_Earthquake
-typeOf: dcs:StatVarPeerGroup
-name: "Earthquakes by Intensity"
-member: dcid:Count_EarthquakeEvent_M5To6
-member: dcid:Count_EarthquakeEvent_M6To7
-member: dcid:Count_EarthquakeEvent_M7To8
-member: dcid:Count_EarthquakeEvent_M8To9
+Node: dcid:dc/svpg/dc/topic/Naturaldisasters_Earthquake
+typeof: dcs:StatVarPeerGroup
+name: "Natural disasters earthquake"
+description: "A statistical variable representing earthquake events, categorized by magnitude, and associated with natural disaster data such as frequency and risk level"
+member: dcid:Count_EarthquakeEvent_M5to6
+member: dcid:Count_EarthquakeEvent_M6to7
+member: dcid:Count_EarthquakeEvent_M7to8
+member: dcid:Count_EarthquakeEvent_M8to9
 member: dcid:Count_EarthquakeEvent_M9Onwards
-
 ### Precipitation ####
 
 Node: dcid:dc/topic/Precipitation
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Precipitation"
-relevantVariable: dcid:HeavyPrecipitationIndex
+description: "A statistical variable representing precipitation events, including rainfall, snowfall, and heavy precipitation, as well as associated indexes and rates"
+relevantVariable: dcid:HeavyPrecipitationindex
 relevantVariable: dcid:InterannualRange_Monthly_Precipitation
-relevantVariable: dcid:PrecipitationRate
+relevantVariable: dcid:Precipitationrate
 relevantVariable: dcid:dc/topic/Rainfall
 relevantVariable: dcid:dc/topic/Snowfall
 
 Node: dcid:dc/topic/Rainfall
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Rainfall"
-relevantVariable: dcid:dc/svpg/dc/topic/Rainfall_Amount
+description: "A statistical variable representing rainfall events, including total rainfall amounts and heavy rainfall events"
+relevantVariable: dcid:dc/svpg/dc/topic/Rainfall_amount
 relevantVariable: dcid:Count_HeavyRainEvent
 
-Node: dcid:dc/svpg/dc/topic/Rainfall_Amount
-typeOf: dcs:StatVarPeerGroup
-name: "Rainfall Amount"
+Node: dcid:dc/svpg/dc/topic/Rainfall_amount
+typeof: dcs:StatVarPeerGroup
+name: "Rainfall amount"
+description: "A statistical variable representing the total amount of rainfall, including maximum, mean, and minimum values"
 member: dcid:Max_Rainfall
-member: dcid:Mean_Rainfall
+member: dcid:mean_Rainfall
 member: dcid:Min_Rainfall
 
 Node: dcid:dc/topic/Snowfall
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Snowfall"
-relevantVariable: dcid:dc/svpg/Snowfall_SnowfallAmount
+description: "A statistical variable representing the total amount of snowfall, including related events such as blizzards, heavy snow, and lake effect snow"
+relevantVariable: dcid:dc/svpg/Snowfall_Snowfallamount
 relevantVariable: dcid:Count_BlizzardEvent
 relevantVariable: dcid:Count_HeavySnowEvent
 relevantVariable: dcid:Count_LakeEffectSnowEvent
 relevantVariable: dcid:Count_WinterStormEvent
 
-Node: dcid:dc/svpg/Snowfall_SnowfallAmount
-typeOf: dcs:StatVarPeerGroup
-name: "Snowfall Amount"
+Node: dcid:dc/svpg/Snowfall_Snowfallamount
+typeof: dcs:StatVarPeerGroup
+name: "Snowfall amount"
+description: "A statistical variable representing the amount of snowfall recorded, including maximum, mean, and minimum snowfall amounts"
 member: dcid:Max_Snowfall
-member: dcid:Mean_Snowfall
+member: dcid:mean_Snowfall
 member: dcid:Min_Snowfall
+#### temperature ####
 
-#### Temperature ####
-
-Node: dcid:dc/topic/Temperatures
-typeOf: dcs:Topic
-name: "Temperature"
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
-relevantVariable: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
+Node: dcid:dc/topic/temperatures
+typeof: dcs:topic
+name: "Temperatures"
+description: "A topic that encompasses various temperature-related statistics, including historical maximum, mean, and minimum temperatures, as well as predictions and wet bulb temperature events"
+relevantVariable: dcid:dc/svpg/dc/topic/temperatures_historicalmaximumtemperature
+relevantVariable: dcid:dc/svpg/dc/topic/temperatures_historicalmeantemperature
+relevantVariable: dcid:dc/svpg/dc/topic/temperatures_historicalminimumtemperature
 relevantVariable: dcid:dc/topic/WetBulbEvent
-relevantVariable: dcid:dc/topic/TemperaturePredictions
+relevantVariable: dcid:dc/topic/temperaturepredictions
 
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMaximumTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Maximum Temperature"
-member: dcid:Max_Temperature
+Node: dcid:dc/svpg/dc/topic/temperatures_historicalmaximumtemperature
+typeof: dcs:StatVarPeerGroup
+name: "Temperatures historical maximum temperature"
+description: "A statistical variable representing the highest temperature recorded over a historical period"
+member: dcid:Max_temperature
 
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMeanTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Mean Temperature"
-member: dcid:Mean_Temperature
+Node: dcid:dc/svpg/dc/topic/temperatures_historicalmeantemperature
+typeof: dcs:StatVarPeerGroup
+name: "Temperatures historical mean temperature"
+description: "A statistical variable representing the average temperature recorded over a historical period"
+member: dcid:mean_temperature
 
-Node: dcid:dc/svpg/dc/topic/Temperatures_HistoricalMinimumTemperature
-typeOf: dcs:StatVarPeerGroup
-name: "Historical Minimum Temperature"
-member: dcid:Min_Temperature
+Node: dcid:dc/svpg/dc/topic/temperatures_historicalminimumtemperature
+typeof: dcs:StatVarPeerGroup
+name: "Temperatures historical minimum temperature"
+description: "A statistical variable representing the lowest temperature recorded over a historical period"
+member: dcid:Min_temperature
 
-Node: dcid:dc/topic/TemperaturePredictions
-typeOf: dcs:Topic
-name: "Temperature Predictions"
-relevantVariable: dcid:dc/topic/DecadeProjectedTemperatureHighs
-relevantVariable: dcid:dc/topic/DecadeProjectedTemperatureLows
-relevantVariable: dcid:dc/topic/YearlyProjectedTemperatureHighs
-relevantVariable: dcid:dc/topic/YearlyProjectedTemperatureLows
+Node: dcid:dc/topic/temperaturepredictions
+typeof: dcs:topic
+name: "Temperatures predictions"
+description: "A statistical variable representing predicted temperature changes and trends for future periods"
+relevantVariable: dcid:dc/topic/Decadeprojectedtemperaturehighs
+relevantVariable: dcid:dc/topic/Decadeprojectedtemperaturelows
+relevantVariable: dcid:dc/topic/Yearlyprojectedtemperaturehighs
+relevantVariable: dcid:dc/topic/Yearlyprojectedtemperaturelows
 
-Node: dcid:dc/topic/DecadeProjectedTemperatureHighs
-typeOf: dcs:Topic
-name: "Decade Projected Temperature Highs"
-relevantVariable: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline
-relevantVariable: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecade
+Node: dcid:dc/topic/Decadeprojectedtemperaturehighs
+typeof: dcs:topic
+name: "Decade projected temperature highs"
+description: "A statistical variable representing the predicted high temperatures for a decade period"
+relevantVariable: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline
+relevantVariable: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecade
 
-Node: dcid:dc/topic/DecadeProjectedTemperatureLows
-typeOf: dcs:Topic
-name: "Decade Projected Temperature Lows"
-relevantVariable: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline
-relevantVariable: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecade
+Node: dcid:dc/topic/Decadeprojectedtemperaturelows
+typeof: dcs:topic
+name: "Decade projected temperature lows"
+description: "A statistical variable representing the predicted low temperatures for a decade period"
+relevantVariable: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline
+relevantVariable: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecade
 
-Node: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecade
-typeOf: dcs:Topic
-name: "Max Temperature 95 Percent Likely At Least Once Per Decade"
-relevantVariable: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecade_MaxTemperatureLikely5PctAtLeastOncePerDecadeByScenario
+Node: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecade
+typeof: dcs:topic
+name: "Max temperature 95 percent likely at least once per decade"
+description: "A statistical variable representing the maximum temperature likely to be exceeded at least once per decade, with a 95% probability"
+relevantVariable: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecade_MaxtemperatureLikely5PctAtLeastoncePerDecadeByScenario
 
-Node: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline
-typeOf: dcs:Topic
-name: "Relative to Average in 1980-2010, Max Temperature 95 Percent Likely At Least Once Per Decade"
-relevantVariable: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline_MaxTemperatureLikely5PctAtLeastOncePerDecadeByScenario
+Node: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline
+typeof: dcs:topic
+name: "Max temperature 95 percent likely at least once per decade difference to baseline"
+description: "A statistical variable representing the difference in the maximum temperature likely to be exceeded at least once per decade, with a 95% probability, compared to the baseline temperature"
+relevantVariable: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline_MaxtemperatureLikely5PctAtLeastoncePerDecadeByScenario
 
-Node: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecade_MaxTemperatureLikely5PctAtLeastOncePerDecadeByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Max Temperature Likely (95%) At Least Once Per Decade by Scenario"
+Node: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecade_MaxtemperatureLikely5PctAtLeastoncePerDecadeByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Max temperature 95 percent likely at least once per decade max temperature likely 5 pct at least once per decade by scenario"
+description: "A statistical variable representing the scenario-based likelihood of exceeding the maximum temperature at least once per decade, with a 95% probability, considering different climate models (CMIP6) and SSP scenarios"
 member: dcid:MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
 member: dcid:MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline_MaxTemperatureLikely5PctAtLeastOncePerDecadeByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Relative to Average in 1980-2010, Max Temperature Likely (95%) At Least Once Per Decade by Scenario"
-member: dcid:DiffRelativeToAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-member: dcid:DiffRelativeToAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
+Node: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline_MaxtemperatureLikely5PctAtLeastoncePerDecadeByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Max temperature 95 percent likely at least once per decade difference to baseline max temperature likely 5 pct at least once per decade by scenario"
+description: "A statistical variable representing the difference in maximum temperature likely to be exceeded at least once per decade, with a 95% probability, compared to the baseline temperature, considering various climate models (CMIP6) and SSP scenarios"
+member: dcid:DiffRelativetoAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP245
+member: dcid:DiffRelativetoAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYear
-typeOf: dcs:Topic
-name: "Max Temperature 95 Percent Likely At Least Once Per Year"
-relevantVariable: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYear_MaxTemperatureLikely95PctAtLeastOncePerYearByScenario
+Node: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYear
+typeof: dcs:topic
+name: "Max temperature 95 percent likely at least once per year"
+description: "A statistical variable representing the maximum temperature that is likely to be exceeded at least once per year, with a 95% probability"
+relevantVariable: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYear_MaxtemperatureLikely95PctAtLeastoncePerYearByScenario
 
-Node: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline
-typeOf: dcs:Topic
-name: "Max Temperature 95 Percent Likely At Least Once Per Year"
-relevantVariable: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline_MaxTemperatureLikely95PctAtLeastOncePerYearByScenario
+Node: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline
+typeof: dcs:topic
+name: "Max temperature 95 percent likely at least once per year difference to baseline"
+description: "A statistical variable representing the difference in the maximum temperature likely to be exceeded at least once per year, with a 95% probability, compared to the baseline temperature"
+relevantVariable: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline_MaxtemperatureLikely95PctAtLeastoncePerYearByScenario
 
-Node: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYear_MaxTemperatureLikely95PctAtLeastOncePerYearByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Max Temperature Likely (95%) At Least Once Per Year by Scenario"
+Node: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYear_MaxtemperatureLikely95PctAtLeastoncePerYearByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Max temperature 95 percent likely at least once per year"
+description: "A statistical variable representing the maximum temperature likely to be exceeded at least once per year, with a 95% probability, across different scenarios"
 member: dcid:MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
 member: dcid:MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/svpg/dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline_MaxTemperatureLikely95PctAtLeastOncePerYearByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Max Temperature Likely (95%) At Least Once Per Year by Scenario"
-member: dcid:DiffRelativeToAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-member: dcid:DiffRelativeToAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
+Node: dcid:dc/svpg/dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline_MaxtemperatureLikely95PctAtLeastoncePerYearByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Max temperature 95 percent likely at least once per year difference to baseline"
+description: "A statistical variable representing the difference in the maximum temperature likely to be exceeded at least once per year, with a 95% probability, compared to the baseline temperature, across different scenarios"
+member: dcid:DiffRelativetoAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP245
+member: dcid:DiffRelativetoAvg_1980_2010_MaxTemp_Daily_Hist_95PctProb_Greater_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecade
-typeOf: dcs:Topic
-name: "Min Temperature 95 Percent Likely At Least Once Per Decade"
-relevantVariable: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecade_MinTemperatureLikely95PctAtLeastOncePerDecadeByScenario
+Node: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecade
+typeof: dcs:topic
+name: "Min temperature 95 percent likely at least once per decade"
+description: "A statistical variable representing the minimum temperature likely to be exceeded at least once per decade, with a 95% probability, across different scenarios"
+relevantVariable: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecade_MintemperatureLikely95PctAtLeastoncePerDecadeByScenario
 
-Node: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline
-typeOf: dcs:Topic
-name: "Relative to Average in 1980-2010, Min Temperature 95 Percent Likely At Least Once Per Decade"
-relevantVariable: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline_MinTemperatureLikely95PctAtLeastOncePerDecadeByScenario
+Node: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline
+typeof: dcs:topic
+name: "Min temperature 95 percent likely at least once per decade difference to baseline"
+description: "A statistical variable representing the difference in the minimum temperature likely to be exceeded at least once per decade, with a 95% probability, compared to the baseline temperature, across different scenarios"
+relevantVariable: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline_MintemperatureLikely95PctAtLeastoncePerDecadeByScenario
 
-Node: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecade_MinTemperatureLikely95PctAtLeastOncePerDecadeByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Min Temperature Likely (95%) At Least Once Per Decade by Scenario"
+Node: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecade_MintemperatureLikely95PctAtLeastoncePerDecadeByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Minimum temperature likely to be at least once per decade with 95% probability by scenario"
+description: "The minimum temperature that has a 95% probability of occurring at least once per decade, based on different future climate scenarios"
 member: dcid:MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
 member: dcid:MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerDecadeDifferenceToBaseline_MinTemperatureLikely95PctAtLeastOncePerDecadeByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Relative to Average in 1980-2010, Min Temperature Likely (95%) At Least Once Per Decade by Scenario"
-member: dcid:DiffRelativeToAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
-member: dcid:DiffRelativeToAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
+Node: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerDecadeDifferencetoBaseline_MintemperatureLikely95PctAtLeastoncePerDecadeByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Difference in min tem likely to occur at least once per decade with 95% probability compared to baseline by scenario"
+description: "The difference in minimum temperature, with a 95% probability of occurring at least once per decade, compared to a baseline reference period, based on different future climate scenarios"
+member: dcid:DiffRelativetoAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP245
+member: dcid:DiffRelativetoAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayADecade_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYear
-typeOf: dcs:Topic
-name: "Min Temperature 95 Percent Likely At Least Once Per Year"
-relevantVariable: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYear_MinTemperatureLikely95PctAtLeastOncePerYearByScenario
+Node: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYear
+typeof: dcs:topic
+name: "Minimum temperature likely to occur at least once per year with 95% probability"
+description: "The minimum temperature that has a 95% probability of occurring at least once per year, based on different climate scenarios"
+relevantVariable: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYear_MintemperatureLikely95PctAtLeastoncePerYearByScenario
 
-Node: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline
-typeOf: dcs:Topic
-name: "Relative to Average in 1980-2010, Min Temperature 95 Percent Likely At Least Once Per Year"
-relevantVariable: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline_MinTemperatureLikely95PctAtLeastOncePerYearByScenario
+Node: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline
+typeof: dcs:topic
+name: "Difference in minimum temperature likely to occur at least once per year with 95% probability compared to baseline"
+description: "The difference in minimum temperature, with a 95% probability of occurring at least once per year, compared to a baseline reference period, based on different climate scenarios"
+relevantVariable: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline_MintemperatureLikely95PctAtLeastoncePerYearByScenario
 
-Node: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYear_MinTemperatureLikely95PctAtLeastOncePerYearByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Min Temperature Likely (95%) At Least Once Per Year by Scenario"
+Node: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYear_MintemperatureLikely95PctAtLeastoncePerYearByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Minimum temperature likely to occur at least once per year with 95% probability by scenario"
+description: "The minimum temperature that has a 95% probability of occurring at least once per year, based on different future climate scenarios"
 member: dcid:MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
 member: dcid:MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/svpg/dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline_MinTemperatureLikely95PctAtLeastOncePerYearByScenario
-typeOf: dcs:StatVarPeerGroup
-name: "Relative to Average in 1980-2010, Min Temperature Likely (95%) At Least Once Per Year by Scenario"
-member: dcid:DiffRelativeToAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
-member: dcid:DiffRelativeToAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
+Node: dcid:dc/svpg/dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline_MintemperatureLikely95PctAtLeastoncePerYearByScenario
+typeof: dcs:StatVarPeerGroup
+name: "Difference in minimum temperature likely to occur at least once per year with 95% probability compared to baseline by scenario"
+description: "The difference in minimum temperature, with a 95% probability of occurring at least once per year, compared to a baseline reference period, based on different future climate scenarios"
+member: dcid:DiffRelativetoAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP245
+member: dcid:DiffRelativetoAvg_1980_2010_MinTemp_Daily_Hist_95PctProb_LessThan_Atleast1DayAYear_CMIP6_Ensemble_SSP585
 
-Node: dcid:dc/topic/YearlyProjectedTemperatureHighs
-typeOf: dcs:Topic
-name: "Yearly Projected Temperature Highs"
-relevantVariable: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline
-relevantVariable: dcid:dc/topic/MaxTemperature95PercentLikelyAtLeastOncePerYear
+Node: dcid:dc/topic/Yearlyprojectedtemperaturehighs
+typeof: dcs:topic
+name: "Yearly projected temperature highs"
+description: "The projected maximum temperatures expected to occur at least once per year, based on future climate scenarios"
+relevantVariable: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline
+relevantVariable: dcid:dc/topic/Maxtemperature95PercentLikelyAtLeastoncePerYear
 
-Node: dcid:dc/topic/YearlyProjectedTemperatureLows
-typeOf: dcs:Topic
-name: "Yearly Projected Temperature Lows"
-relevantVariable: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline
-relevantVariable: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYear
-
+Node: dcid:dc/topic/Yearlyprojectedtemperaturelows
+typeof: dcs:topic
+name: "Yearly projected temperature lows"
+description: "The projected minimum temperatures expected to occur at least once per year, based on future climate scenarios"
+relevantVariable: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYearDifferencetoBaseline
+relevantVariable: dcid:dc/topic/Mintemperature95PercentLikelyAtLeastoncePerYear
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
