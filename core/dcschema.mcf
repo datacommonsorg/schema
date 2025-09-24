@@ -4932,3 +4932,44 @@ Node: dcid:SpecializedSecondarySchool
 typeOf: dcid:ElementarySchool
 name: "Specialized Secondary School"
 
+Node: dcid:HighSchoolDiplomaIncludesEquivalency
+typeOf: dcid:EducationalAttainmentEnum
+name: "High School Diploma Includes Equivalency"
+
+
+Node: dcid:PostSecondaryDegree
+typeOf: dcid:EducationalAttainmentEnum
+name: "Post Secondary Degree"
+
+
+Node: dcid:schoolDayType
+typeOf: dcs:Property
+name: "schoolDayType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SchoolDayTypeEnum
+
+
+Node: dcid:SchoolDayTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "SchoolDayTypeEnum"
+
+
+Node: dcid:HalfDay
+typeOf: dcid:SchoolDayTypeEnum
+name: "Half Day"
+
+Node: dcid:FullDay
+typeOf: dcid:SchoolDayTypeEnum
+name: "Full Day"
+
+Node: dcid:PennsylvaniaStateSystemOfHigherEducation
+typeOf: dcid:InstitutionTypeEnum
+name: "Pennsylvania State System Of Higher Education"
+
+Node: dcid:PhysicalSciences
+typeOf: dcid:EducationalMajorEnum
+name: "Physical Sciences"
+
+
+
