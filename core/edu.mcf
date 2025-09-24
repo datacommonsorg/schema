@@ -65,6 +65,7 @@ Node: dcid:UniversityGraduate
 typeOf: dcid:EducationalAttainmentEnum
 name: "University Graduate"
 
+
 Node: dcid:PreKindergartenAndKindergarten
 typeOf: dcs:SchoolGradeLevelEnum
 name: "PreKindergarten and Kindergarten"
@@ -487,6 +488,7 @@ rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool,dcs:SchoolLevelEnu
 domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher, dcs:EconomicActivity, dcs:Faculty, dcid:Person
 description: "Describes the grade level of the student in school. For example, SchoolGrade2 defines the student to be in second grade."
 
+
 # OBSERVATION, Measured Property, for Students, Faculty
 
 Node: dcid:studentTeacherRatio
@@ -871,7 +873,7 @@ domainIncludes: dcs:Student
 
 Node: dcid:race
 typeOf: schema:Property
-rangeIncludes: dcs:RaceCodeEnum
+rangeIncludes: dcs:RaceCodeEnum,EthnicityEnum
 domainIncludes: schema:Person, schema:Household
 
 ## Charter School Enum
@@ -2366,7 +2368,7 @@ typeOf: dcs:OccupationEnum
 Node: dcid:doctorateDegreeMajor
 typeOf: schema:Property
 domainIncludes: schema:Person
-rangeIncludes: dcs:EducationalMajorEnum
+rangeIncludes: dcs:EducationalMajorEnum,dcid:InvestmentProgramEnum,dcid:OccupationCategoryEnum,dcid:USC_SpouseAbsentReasonEnum
 name: "doctorateDegreeMajor"
 
 Node: dcid:NationalSchool
