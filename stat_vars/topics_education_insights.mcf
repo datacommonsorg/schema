@@ -1,16 +1,14 @@
-# LINT.IfChange
-# These are auto-generated
-# Topics for Education NL Insights.
-# Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
 
 Node: dcid:dc/topic/CollegeEducationAttainment
-typeOf: dcs:Topic
-name: "College Education"
+typeof: dcs:topic
+name: "College education attainment"
+description: "Statistics related to the attainment of college-level education among the population"
 relevantVariable: dcid:dc/svpg/dc/topic/CollegeEducation_Attainment
 
 Node: dcid:dc/svpg/dc/topic/CollegeEducation_Attainment
-typeOf: dcs:StatVarPeerGroup
-name: "College Education Attainment"
+typeof: dcs:StatVarPeerGroup
+name: "College education attainment"
+description: "Statistics related to the attainment of college-level education among the population"
 member: dcid:Count_Person_EducationalAttainmentAssociatesDegree
 member: dcid:Count_Person_EducationalAttainmentBachelorsDegree
 member: dcid:Count_Person_EducationalAttainmentMastersDegree
@@ -18,87 +16,100 @@ member: dcid:Count_Person_EducationalAttainmentProfessionalSchoolDegree
 member: dcid:Count_Person_EducationalAttainmentDoctorateDegree
 
 Node: dcid:dc/topic/BachelorsMajor
-typeOf: dcs:Topic
-name: "Bachelors Major"
+typeof: dcs:topic
+name: "Bachelor's major"
+description: "Statistics related to the field of study for individuals who have attained a bachelor's degree"
 relevantVariable: dcid:dc/svpg/dc/topic/BachelorsMajor_BachelorsDegreebyMajor
 
 Node: dcid:dc/svpg/dc/topic/BachelorsMajor_BachelorsDegreebyMajor
-typeOf: dcs:StatVarPeerGroup
-name: "Bachelors Degree by Major"
-member: dcid:Count_Person_BachelorOfArtsHumanitiesAndOtherMajor
-member: dcid:Count_Person_BachelorOfBusinessMajor
-member: dcid:Count_Person_BachelorOfEducationMajor
-member: dcid:Count_Person_BachelorOfScienceAndEngineeringMajor
-member: dcid:Count_Person_BachelorOfScienceAndEngineeringRelatedMajor
+typeof: dcs:StatVarPeerGroup
+name: "Bachelor’s degree by major"
+description: "Statistics related to the number of people who have attained a bachelor’s degree categorized by major such as humanities business education science and engineering"
+member: dcid:Count_Person_BachelorofArtsHumanitiesAnd0therMajor
+member: dcid:Count_Person_BachelorofBusinessMajor
+member: dcid:Count_Person_BachelorofEducationMajor
+member: dcid:Count_Person_BachelorofScienceAndEngineeringMajor
+member: dcid:Count_Person_BachelorofScienceAndEngineeringRelatedMajor
 
 Node: dcid:dc/topic/Education
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Education"
+description: "The statistics related to education including attainment levels school types schools and parents"
 relevantVariable: dcid:dc/topic/EducationalAttainment
 relevantVariable: dcid:dc/topic/SchoolType
 relevantVariable: dcid:dc/topic/Schools
 relevantVariable: dcid:dc/topic/Parents
 
 Node: dcid:dc/topic/EducationFaculty
-typeOf: dcs:Topic
-name: "Education Faculty"
+typeof: dcs:topic
+name: "Education faculty"
+description: "Statistics related to the number of teachers categorized by faculty type"
 relevantVariable: dcid:dc/svpg/dc/topic/EducationFaculty_NumberofTeachersByFacultyType
 
 Node: dcid:dc/svpg/dc/topic/EducationFaculty_NumberofTeachersByFacultyType
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Teachers by Faculty Type"
+typeof: dcs:StatVarPeerGroup
+name: "Number of teachers by faculty type"
+description: "Statistics related to the number of teachers across different faculty types including elementary secondary ungraded and university or college levels"
 member: dcid:Count_Teacher_ElementaryTeacher
 member: dcid:Count_Teacher_SecondaryTeacher
 member: dcid:Count_Teacher_UngradedTeacher
 member: dcid:Count_Teacher_UniversityAndCollegeTeacher
 
 Node: dcid:dc/topic/EducationalAttainment
-typeOf: dcs:Topic
-name: "Educational Attainment"
+typeof: dcs:topic
+name: "Educational attainment"
+description: "Statistics related to the levels of education completed by individuals including differences by gender and field of study"
 relevantVariable: dcid:dc/topic/BachelorsMajor
-relevantVariable: dcid:dc/topic/EducationalAttainmentByGenderAndLevel
-relevantVariable: dcid:dc/topic/LevelOfEducationalAttainment
+relevantVariable: dcid:dc/topic/EducationalAttainmentBygenderAndLevel
+relevantVariable: dcid:dc/topic/LevelofEducationalAttainment
 
-Node: dcid:dc/topic/EducationalAttainmentByGenderAndLevel
-typeOf: dcs:Topic
-name: "Educational Attainment by Gender and Level"
-relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender
-relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender
-relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender
-relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithDoctorateDegreeByGender
+Node: dcid:dc/topic/EducationalAttainmentBygenderAndLevel
+typeof: dcs:topic
+name: "Educational attainment by gender and level"
+description: "Statistics related to the levels of education attained by individuals categorized by gender and degree type including associate's bachelor's master's and doctorate degrees"
+relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithAssociatesDegreeBygender
+relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithBachelorsDegreeBygender
+relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithMastersDegreeBygender
+relevantVariable: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithDoctorateDegreeBygender
 
-Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithAssociatesDegreeByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Population With Associates Degree by Gender"
+Node: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithAssociatesDegreeBygender
+typeof: dcs:StatVarPeerGroup
+name: "Population with associate's degree by gender"
+description: "Statistics related to the number of people aged 25 or older who have attained an associate's degree categorized by gender"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Male
 
-Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithBachelorsDegreeByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Population With Bachelors Degree by Gender"
+Node: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithBachelorsDegreeBygender
+typeof: dcs:StatVarPeerGroup
+name: "Population with bachelor's degree by gender"
+description: "Statistics related to the number of people aged 25 or older who have attained a bachelor's degree categorized by gender"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
 
-Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithMastersDegreeByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Population With Masters Degree by Gender"
+Node: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithMastersDegreeBygender
+typeof: dcs:StatVarPeerGroup
+name: "Population with master's degree by gender"
+description: "Statistics related to the number of people aged 25 or older who have attained a master's degree categorized by gender"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Male
 
-Node: dcid:dc/svpg/dc/topic/EducationalAttainmentByGenderAndLevel_PopulationwithDoctorateDegreeByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Population With Doctorate Degree by Gender"
+Node: dcid:dc/svpg/dc/topic/EducationalAttainmentBygenderAndLevel_populationwithDoctorateDegreeBygender
+typeof: dcs:StatVarPeerGroup
+name: "Population with doctorate degree by gender"
+description: "Statistics related to the number of people aged 25 or older who have attained a doctorate degree categorized by gender"
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Female
 member: dcid:Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Male
 
-Node: dcid:dc/topic/LevelOfEducationalAttainment
-typeOf: dcs:Topic
-name: "Level of Educational Attainment"
-relevantVariable: dcid:dc/svpg/dc/topic/LevelOfEducationalAttainment_PopulationByLevelofEducationalAttainment
+Node: dcid:dc/topic/LevelofEducationalAttainment
+typeof: dcs:topic
+name: "Level of educational attainment"
+description: "Statistics related to the population categorized by the highest level of education completed"
+relevantVariable: dcid:dc/svpg/dc/topic/LevelofEducationalAttainment_populationByLevelofEducationalAttainment
 
-Node: dcid:dc/svpg/dc/topic/LevelOfEducationalAttainment_PopulationByLevelofEducationalAttainment
-typeOf: dcs:StatVarPeerGroup
-name: "Population by Level of Educational Attainment"
+Node: dcid:dc/svpg/dc/topic/LevelofEducationalAttainment_populationByLevelofEducationalAttainment
+typeof: dcs:StatVarPeerGroup
+name: "Population by level of educational attainment"
+description: "Statistics related to the number of people categorized by the highest level of education completed ranging from nursery school to doctorate degree"
 member: dcid:Count_Person_EducationalAttainmentKindergarten
 member: dcid:Count_Person_EducationalAttainmentNurserySchool
 member: dcid:Count_Person_EducationalAttainmentPrimarySchool
@@ -114,9 +125,9 @@ member: dcid:Count_Person_EducationalAttainment9ThGrade
 member: dcid:Count_Person_EducationalAttainment10ThGrade
 member: dcid:Count_Person_EducationalAttainment11ThGrade
 member: dcid:Count_Person_EducationalAttainment12ThGradeNoDiploma
-member: dcid:Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma
-member: dcid:Count_Person_EducationalAttainmentRegularHighSchoolDiploma
-member: dcid:Count_Person_EducationalAttainmentHighSchoolGraduateIncludesEquivalency
+member: dcid:Count_Person_EducationalAttainment_9Thto12ThGradeNoDiploma
+member: dcid:Count_Person_EducationalAttainmentRegularhighschoolDiploma
+member: dcid:Count_Person_EducationalAttainmenthighschoolGraduateIncludesEquivalency
 member: dcid:Count_Person_EducationalAttainmentAssociatesDegree
 member: dcid:Count_Person_EducationalAttainmentBachelorsDegree
 member: dcid:Count_Person_EducationalAttainmentGraduateOrProfessionalDegree
@@ -124,119 +135,136 @@ member: dcid:Count_Person_EducationalAttainmentMastersDegree
 member: dcid:Count_Person_EducationalAttainmentDoctorateDegree
 
 Node: dcid:dc/topic/Parents
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Parents"
+description: "The statistics related to parents including aspects such as educational attainment"
 relevantVariable: dcid:dc/topic/ParentsEducationalAttainment
 
 Node: dcid:dc/topic/ParentsEducationalAttainment
-typeOf: dcs:Topic
-name: "Parents Educational Attainment"
+typeof: dcs:topic
+name: "Parents' educational attainment"
+description: "Statistics related to the educational attainment of parents aged 25 or older whose children are enrolled in public schools"
 relevantVariable: dcid:Percent_Parent_25OrMoreYears_ChildEnrolledInPublicSchool_EducationalAttainmentBachelorsDegreeOrHigher
-relevantVariable: dcid:Percent_Parent_25OrMoreYears_ChildEnrolledInPublicSchool_EducationalAttainmentHighSchoolGraduateOrHigher
+relevantVariable: dcid:Percent_Parent_25OrMoreYears_ChildEnrolledInPublicSchool_EducationalAttainmenthighschoolGraduateOrHigher
 
-Node: dcid:dc/topic/PopulationEnrolledInSchoolTypeByRace
-typeOf: dcs:Topic
-name: "Population Enrolled in School Type by Race"
-relevantVariable: dcid:dc/svpg/dc/topic/PopulationEnrolledInSchoolTypeByRace_PopulationEnrolledInPrivateSchoolByRace
-relevantVariable: dcid:dc/svpg/dc/topic/PopulationEnrolledInSchoolTypeByRace_PopulationEnrolledInPublicSchoolByRace
+Node: dcid:dc/topic/populationEnrolledInSchoolTypeByrace
+typeof: dcs:topic
+name: "Population enrolled in school type by race"
+description: "The statistics related to school enrollment by race categorized by school type such as public and private schools"
+relevantVariable: dcid:dc/svpg/dc/topic/populationEnrolledInSchoolTypeByrace_populationEnrolledInPrivateSchoolByrace
+relevantVariable: dcid:dc/svpg/dc/topic/populationEnrolledInSchoolTypeByrace_populationEnrolledInPublicSchoolByrace
 
-Node: dcid:dc/svpg/dc/topic/PopulationEnrolledInSchoolTypeByRace_PopulationEnrolledInPrivateSchoolByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Population Enrolled in Private School by Race"
-member: dcid:Count_Person_15To19Years_BlackOrAfricanAmericanAlone_EnrolledInPrivateSchool
-member: dcid:Count_Person_15To19Years_HispanicOrLatino_EnrolledInPrivateSchool
-member: dcid:Count_Person_15To19Years_WhiteAloneNotHispanicOrLatino_EnrolledInPrivateSchool
+Node: dcid:dc/svpg/dc/topic/populationEnrolledInSchoolTypeByrace_populationEnrolledInPrivateSchoolByrace
+typeof: dcs:StatVarPeerGroup
+name: "Population aged 15 to 19 enrolled in private school by race"
+description: "Statistics related to the number of people aged 15 to 19 enrolled in private schools categorized by race including Black or African American Hispanic or Latino and White alone not Hispanic or Latino"
+member: dcid:Count_Person_15to19Years_BlackOrAfricanAmericanAlone_EnrolledInPrivateSchool
+member: dcid:Count_Person_15to19Years_HispanicOrLatino_EnrolledInPrivateSchool
+member: dcid:Count_Person_15to19Years_WhiteAloneNotHispanicOrLatino_EnrolledInPrivateSchool
 
-Node: dcid:dc/svpg/dc/topic/PopulationEnrolledInSchoolTypeByRace_PopulationEnrolledInPublicSchoolByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Population Enrolled in Public School by Race"
-member: dcid:Count_Person_15To19Years_BlackOrAfricanAmericanAlone_EnrolledInPublicSchool
-member: dcid:Count_Person_15To19Years_HispanicOrLatino_EnrolledInPublicSchool
-member: dcid:Count_Person_15To19Years_WhiteAloneNotHispanicOrLatino_EnrolledInPublicSchool
+Node: dcid:dc/svpg/dc/topic/populationEnrolledInSchoolTypeByrace_populationEnrolledInPublicSchoolByrace
+typeof: dcs:StatVarPeerGroup
+name: "Population aged 15 to 19 enrolled in public school by race"
+description: "Statistics related to the number of people aged 15 to 19 enrolled in public schools categorized by race including Black or African American Hispanic or Latino and White alone not Hispanic or Latino"
+member: dcid:Count_Person_15to19Years_BlackOrAfricanAmericanAlone_EnrolledInPublicSchool
+member: dcid:Count_Person_15to19Years_HispanicOrLatino_EnrolledInPublicSchool
+member: dcid:Count_Person_15to19Years_WhiteAloneNotHispanicOrLatino_EnrolledInPublicSchool
 
 Node: dcid:dc/topic/SchoolType
-typeOf: dcs:Topic
-name: "School Type"
-relevantVariable: dcid:dc/topic/PopulationEnrolledInSchoolTypeByRace
+typeof: dcs:topic
+name: "School type"
+description: "The statistics related to different types of schools such as public and private categorized by race of enrolled students"
+relevantVariable: dcid:dc/topic/populationEnrolledInSchoolTypeByrace
 
 Node: dcid:dc/topic/Schools
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Schools"
-relevantVariable: dcid:dc/topic/StudentPopulation
+description: "The statistics related to schools including student population lunch eligibility and number of teachers"
+relevantVariable: dcid:dc/topic/Studentpopulation
 relevantVariable: dcid:dc/topic/StudentLunchEligibility
 relevantVariable: dcid:dc/topic/Teacher
 
 Node: dcid:dc/topic/StudentEnrollmentLevels
-typeOf: dcs:Topic
-name: "Student Enrollment Levels"
-relevantVariable: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulationByEnrollmentLevel
+typeof: dcs:topic
+name: "Student enrollment levels"
+description: "The statistics related to student population categorized by levels of enrollment such as elementary middle and high school"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentpopulationByEnrollmentLevel
 
-Node: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentPopulationByEnrollmentLevel
-typeOf: dcs:StatVarPeerGroup
-name: "Student Population by Enrollment Level"
+Node: dcid:dc/svpg/dc/topic/StudentEnrollmentLevels_StudentpopulationByEnrollmentLevel
+typeof: dcs:StatVarPeerGroup
+name: "Student population by enrollment level"
+description: "Statistics related to the number of students enrolled at different education levels including kindergarten primary school middle school high school undergraduate and graduate programs"
 member: dcid:Count_Person_DetailedEnrolledInKindergarten
 member: dcid:Count_Person_DetailedPrimarySchool
 member: dcid:Count_Person_DetailedMiddleSchool
-member: dcid:Count_Person_DetailedHighSchool
+member: dcid:Count_Person_Detailedhighschool
 member: dcid:Count_Person_DetailedEnrolledInCollegeUndergraduateYears
 member: dcid:Count_Person_EnrolledInCollegeOrGraduateSchool
 
 Node: dcid:dc/topic/StudentLunchEligibility
-typeOf: dcs:Topic
-name: "Student Lunch Eligibility"
+typeof: dcs:topic
+name: "Student lunch eligibility"
+description: "Statistics related to the number of students eligible for lunch programs including free lunch and direct certification lunch"
 relevantVariable: dcid:Count_Student_DirectCertificationLunch
 relevantVariable: dcid:Count_Student_FreeLunch
 
-Node: dcid:dc/topic/StudentPopulation
-typeOf: dcs:Topic
-name: "Student Population"
+Node: dcid:dc/topic/Studentpopulation
+typeof: dcs:topic
+name: "Student population"
+description: "Statistics related to the student population across various education levels including kindergarten primary school middle school high school college and graduate or professional school as well as demographic characteristics"
 relevantVariable: dcid:dc/topic/StudentEnrollmentLevels
 relevantVariable: dcid:dc/topic/StudentsInKindergarten
 relevantVariable: dcid:dc/topic/StudentsInPrimarySchool
 relevantVariable: dcid:dc/topic/StudentsInMiddleSchool
-relevantVariable: dcid:dc/topic/StudentsInHighSchool
+relevantVariable: dcid:dc/topic/StudentsInhighschool
 relevantVariable: dcid:dc/topic/StudentsInCollege
 relevantVariable: dcid:dc/topic/StudentsInGraduateOrProfessionalSchool
-relevantVariable: dcid:dc/topic/StudentPopulationDemographics
+relevantVariable: dcid:dc/topic/Studentpopulationdemographics
 
-Node: dcid:dc/topic/StudentPopulationDemographics
-typeOf: dcs:Topic
-name: "Student Population Demographics"
+Node: dcid:dc/topic/Studentpopulationdemographics
+typeof: dcs:topic
+name: "Student population demographics"
+description: "Statistics related to the student population categorized by demographic characteristics such as gender and race"
 relevantVariable: dcid:Count_Student
-relevantVariable: dcid:dc/svpg/dc/topic/StudentPopulationDemographics_StudentPopulationByGender
-relevantVariable: dcid:dc/svpg/dc/topic/StudentPopulationDemographics_StudentPopulationByRace
+relevantVariable: dcid:dc/svpg/dc/topic/Studentpopulationdemographics_StudentpopulationBygender
+relevantVariable: dcid:dc/svpg/dc/topic/Studentpopulationdemographics_StudentpopulationByrace
 
-Node: dcid:dc/svpg/dc/topic/StudentPopulationDemographics_StudentPopulationByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Student Population by Gender"
+Node: dcid:dc/svpg/dc/topic/Studentpopulationdemographics_StudentpopulationBygender
+typeof: dcs:StatVarPeerGroup
+name: "Student population by gender"
+description: "Statistics related to the number of students categorized by gender including female and male"
 member: dcid:Count_Student_Female
 member: dcid:Count_Student_Male
 
-Node: dcid:dc/svpg/dc/topic/StudentPopulationDemographics_StudentPopulationByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Student Population by Race"
+Node: dcid:dc/svpg/dc/topic/Studentpopulationdemographics_StudentpopulationByrace
+typeof: dcs:StatVarPeerGroup
+name: "Student population by race"
+description: "Statistics related to the number of students categorized by race including Asian Black Hawaiian native or Pacific Islander Hispanic or Latino two or more races and White"
 member: dcid:Count_Student_Asian
 member: dcid:Count_Student_Black
-member: dcid:Count_Student_HawaiianNativeOrPacificIslander
+member: dcid:Count_Student_HawaiiannativeOrPacificIslander
 member: dcid:Count_Student_HispanicOrLatino
-member: dcid:Count_Student_TwoOrMoreRaces
+member: dcid:Count_Student_TwoOrMoreraces
 member: dcid:Count_Student_White
 
 Node: dcid:dc/topic/StudentsInCollege
-typeOf: dcs:Topic
-name: "Students in College"
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByGender
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByRace
+typeof: dcs:topic
+name: "Students in college"
+description: "Statistics related to the population of students enrolled in college categorized by gender and race"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeBygender
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByrace
 
-Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Students in College by Gender"
+Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeBygender
+typeof: dcs:StatVarPeerGroup
+name: "Students in college by gender"
+description: "Statistics related to the number of students enrolled in college categorized by gender including female and male"
 member: dcid:dc/0yv0ry7tjmwzc
 member: dcid:dc/pltrqb2ng8dp8
 
-Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Students in College by Race"
+Node: dcid:dc/svpg/dc/topic/StudentsInCollege_StudentsInCollegeByrace
+typeof: dcs:StatVarPeerGroup
+name: "Students in college by race"
+description: "Statistics related to the number of students enrolled in college categorized by race"
 member: dcid:dc/0jtctjm33mgh1
 member: dcid:dc/1t989xd1tn701
 member: dcid:dc/4wkzsq23w6reb
@@ -248,13 +276,15 @@ member: dcid:dc/wjtdrd9wq4m2g
 member: dcid:dc/zv5g19y8dl9r1
 
 Node: dcid:dc/topic/StudentsInGraduateOrProfessionalSchool
-typeOf: dcs:Topic
-name: "Students in Graduate or Professional School"
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByRace
+typeof: dcs:topic
+name: "Students in graduate or professional school"
+description: "The statistics related to students enrolled in graduate or professional school categorized by race"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByrace
 
-Node: dcid:dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Students in Graduate or Professional School by Race"
+Node: dcid:dc/svpg/dc/topic/StudentsInGraduateOrProfessionalSchool_StudentsInGraduateOrProfessionalSchoolByrace
+typeof: dcs:StatVarPeerGroup
+name: "Students in graduate or professional school by race"
+description: "Statistics related to the number of students enrolled in graduate or professional school categorized by race"
 member: dcid:dc/3z6z9w930dl7b
 member: dcid:dc/7fdfhnnjr5sh8
 member: dcid:dc/9cqv67nn7pn1b
@@ -265,14 +295,16 @@ member: dcid:dc/p3vqwthpjtdw
 member: dcid:dc/wyxmw2dy6t2xh
 member: dcid:dc/zmp6qzgzp7ly2
 
-Node: dcid:dc/topic/StudentsInHighSchool
-typeOf: dcs:Topic
-name: "Students in High School"
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInHighSchool_StudentsInHighSchoolByRace
+Node: dcid:dc/topic/StudentsInhighschool
+typeof: dcs:topic
+name: "Students in high school"
+description: "The statistics related to students enrolled in high school categorized by race"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInhighschool_StudentsInhighschoolByrace
 
-Node: dcid:dc/svpg/dc/topic/StudentsInHighSchool_StudentsInHighSchoolByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Students in High School by Race"
+Node: dcid:dc/svpg/dc/topic/StudentsInhighschool_StudentsInhighschoolByrace
+typeof: dcs:StatVarPeerGroup
+name: "Students in high school by race"
+description: "Statistics related to the number of students enrolled in high school categorized by race"
 member: dcid:dc/1kt512ynvpmc2
 member: dcid:dc/3bg4r46ly61q9
 member: dcid:dc/4hzyqndyzntm
@@ -284,20 +316,23 @@ member: dcid:dc/fh4td3znm3l4g
 member: dcid:dc/g8537zqf45wl3
 
 Node: dcid:dc/topic/StudentsInKindergarten
-typeOf: dcs:Topic
-name: "Students in Kindergarten"
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByGender
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByRace
+typeof: dcs:topic
+name: "Students in kindergarten"
+description: "The statistics related to students enrolled in kindergarten categorized by gender and race"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenBygender
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByrace
 
-Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Students in Kindergarten by Gender"
+Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenBygender
+typeof: dcs:StatVarPeerGroup
+name: "Students in kindergarten by gender"
+description: "Statistics related to the number of students enrolled in kindergarten categorized by gender"
 member: dcid:dc/g8kg52zcxzw9f
 member: dcid:dc/p34mhcpgtth76
 
-Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Students in Kindergarten by Race"
+Node: dcid:dc/svpg/dc/topic/StudentsInKindergarten_StudentsInKindergartenByrace
+typeof: dcs:StatVarPeerGroup
+name: "Students in kindergarten by race"
+description: "Statistics related to the number of students enrolled in kindergarten categorized by race"
 member: dcid:dc/1c4zcyw02n71g
 member: dcid:dc/3n8g9we5yv7th
 member: dcid:dc/556pqlh586bmc
@@ -309,13 +344,15 @@ member: dcid:dc/nt9cq96phw6nf
 member: dcid:dc/qnphlls92tvs9
 
 Node: dcid:dc/topic/StudentsInMiddleSchool
-typeOf: dcs:Topic
-name: "Students in Middle School"
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByRace
+typeof: dcs:topic
+name: "Students in middle school"
+description: "The statistics related to students enrolled in middle school categorized by race"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByrace
 
-Node: dcid:dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Students in Middle School by Race"
+Node: dcid:dc/svpg/dc/topic/StudentsInMiddleSchool_StudentsInMiddleSchoolByrace
+typeof: dcs:StatVarPeerGroup
+name: "Students in middle school by race"
+description: "Statistics related to the number of students enrolled in middle school categorized by race"
 member: dcid:dc/6zbb7s5nx6rxb
 member: dcid:dc/b3nmcj3w1lhed
 member: dcid:dc/c57vzg7l74577
@@ -327,13 +364,15 @@ member: dcid:dc/qvf1yrhwzp8rd
 member: dcid:dc/zvr6djt1p9gj3
 
 Node: dcid:dc/topic/StudentsInPrimarySchool
-typeOf: dcs:Topic
-name: "Students in Primary School"
-relevantVariable: dcid:dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByRace
+typeof: dcs:topic
+name: "Students in primary school"
+description: "The statistics related to students enrolled in primary school categorized by race"
+relevantVariable: dcid:dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByrace
 
-Node: dcid:dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Students in Primary School by Race"
+Node: dcid:dc/svpg/dc/topic/StudentsInPrimarySchool_StudentsInPrimarySchoolByrace
+typeof: dcs:StatVarPeerGroup
+name: "Students in primary school by race"
+description: "Statistics related to the number of students enrolled in primary school categorized by race"
 member: dcid:dc/68cg2z97cpl7d
 member: dcid:dc/b6h698m2vmdcc
 member: dcid:dc/bf85zc6wypd2h
@@ -345,32 +384,36 @@ member: dcid:dc/wk2vjrzfgyq5d
 member: dcid:dc/x9e7150515yt7
 
 Node: dcid:dc/topic/StudentTeacherRatio
-typeOf: dcs:Topic
-name: "Student Teacher Ratio"
-relevantVariable: dcid:Percent_Student_AsAFractionOf_Count_Teacher
+typeof: dcs:topic
+name: "Student teacher ratio"
+description: "Statistics related to the ratio of students to teachers"
+relevantVariable: dcid:Percent_Student_AsAFractionof_Count_Teacher
 
 Node: dcid:dc/topic/SupportServicesStaffInSchools
-typeOf: dcs:Topic
-name: "Support Services Staff in Schools"
+typeof: dcs:topic
+name: "Support services staff in schools"
+description: "Statistics related to the number of faculty support staff in schools categorized by role"
 relevantVariable: dcid:dc/svpg/dc/topic/SupportServicesStaffInSchools_NumberofFacultySupportStaffByRole
 
 Node: dcid:dc/svpg/dc/topic/SupportServicesStaffInSchools_NumberofFacultySupportStaffByRole
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Faculty Support Staff by Role"
+typeof: dcs:StatVarPeerGroup
+name: "Number of faculty support staff by role"
+description: "Statistics related to the number of faculty support staff in schools categorized by specific roles"
 member: dcid:Count_Faculty_ElementarySchoolCounselor
 member: dcid:Count_Faculty_LEAAdministrativeSupportStaff
 member: dcid:Count_Faculty_LEAAdministrator
 member: dcid:Count_Faculty_ParaProfessionalsAidesOrInstructionalAide
 member: dcid:Count_Faculty_SchoolAdministrativeSupportStaff
 member: dcid:Count_Faculty_SchoolAdministrator
-member: dcid:Count_Faculty_SchoolOtherGuidanceCounselor
+member: dcid:Count_Faculty_School0therGuidanceCounselor
 member: dcid:Count_Faculty_SchoolPsychologist
 member: dcid:Count_Faculty_SecondarySchoolCounselor
-member: dcid:Count_Faculty_TotalGuidanceCounselor
+member: dcid:Count_Faculty_totalGuidanceCounselor
 
 Node: dcid:dc/topic/Teacher
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Teacher"
+description: "The statistics related to teachers, including education faculty, student-teacher ratio, and support services staff in schools"
 relevantVariable: dcid:dc/topic/EducationFaculty
 relevantVariable: dcid:dc/topic/StudentTeacherRatio
 relevantVariable: dcid:dc/topic/SupportServicesStaffInSchools
