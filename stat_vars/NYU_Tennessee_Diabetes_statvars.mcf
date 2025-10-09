@@ -1,0 +1,35 @@
+Node: dcid:AgeAdjusted_Count_MortalityEvent_DiabetesMellitus_AsAFractionOf_AgeAdjusted_Count_Person_DiabetesMellitus
+typeOf: dcid:StatisticalVariable
+name: "Age-Adjusted Mortality Rate Among Persons with Diabetes Mellitus"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+measurementQualifier: dcid:AgeAdjusted
+statType: dcid:measuredValue
+measurementDenominator: dcid:AgeAdjusted_Count_Person_DiabetesMellitus
+causeOfDeath: dcid:DiabetesMellitus
+
+Node: dcid:Count_MortalityEvent_DiabetesMellitus_AsAFractionOf_Count_Person_DiabetesMellitus
+typeOf: dcid:StatisticalVariable
+name: "Mortality Rate Among Persons with Diabetes Mellitus"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_DiabetesMellitus
+causeOfDeath: dcid:DiabetesMellitus
+
+Node: dcid:Count_Person_DiabetesMellitus
+typeOf: dcid:StatisticalVariable
+name: "Count of people with diabetes mellitus"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+causeOfDeath: dcid:DiabetesMellitus
+
+Node: dcid:AgeAdjusted_Count_Person_DiabetesMellitus
+typeOf: dcid:StatisticalVariable
+name: "Age adjusted count of people with diabetes mellitus"
+measurementQualifier: dcid:AgeAdjusted
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+causeOfDeath: dcid:DiabetesMellitus
