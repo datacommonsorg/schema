@@ -1614,3 +1614,10 @@ Node: dcid:CommunityRiskFactorEvent
 typeOf: schema:Class
 name: "CommunityRiskFactorEvent"
 subClassOf: dcs:MeteorologicalEvent
+
+Node: dcid:cycloneType
+name: "cycloneType"
+typeOf: schema:Property
+domainIncludes: dcs:CycloneEvent
+rangeIncludes: dcs:CycloneTypeEnum
+description: "Classification of a cyclone."
