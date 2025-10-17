@@ -484,7 +484,7 @@ Node: dcid:schoolGradeLevel
 typeOf: schema:Property
 name: "schoolGradeLevel"
 rangeIncludes: dcs:SchoolGradeLevelEnum, dcs:ElementarySchool,dcs:SchoolLevelEnum, dcs:USC_EducationalAttainmentEnum
-domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher, dcs:EconomicActivity, dcs:Faculty, dcid:Person
+domainIncludes: dcs:Student, dcs:School, dcs:ClassRoom, dcs:Teacher, dcs:EconomicActivity, dcs:Faculty, dcid:Person, dcs:AcademicAssessmentEvent
 description: "Describes the grade level of the student in school. For example, SchoolGrade2 defines the student to be in second grade."
 
 # OBSERVATION, Measured Property, for Students, Faculty
@@ -871,8 +871,8 @@ domainIncludes: dcs:Student
 
 Node: dcid:race
 typeOf: schema:Property
-rangeIncludes: dcs:RaceCodeEnum
-domainIncludes: schema:Person, schema:Household
+rangeIncludes: dcs:RaceCodeEnum, dcs:EthnicityEnum, dcs:RaceCodeEnum
+domainIncludes: schema:Person, schema:Household, schema:AcademicAssessmentEvent, schema:Student
 
 ## Charter School Enum
 # Enum Already Defined in /cns/jv-d/home/datcom/v3_mcf/schema/K12SchemaExtensions.mcf
@@ -1724,7 +1724,7 @@ description: "The status of language learned by students like current learner, e
 Node: dcid:languageFluencyLevel
 name: "languageFluencyLevel"
 typeOf: schema:Property
-domainIncludes: dcs:School, dcs:Student
+domainIncludes: dcs:School, dcs:Student, dcs:AcademicAssessmentEvent
 rangeIncludes: dcs:LanguageFluencyLevelEnum
 description: "The fluency achieved in language like fluent, proficient etc."
 
@@ -1745,7 +1745,7 @@ description: "The age group of student(s) learning the language."
 Node: dcid:languageLearned
 name: "languageLearned"
 typeOf: schema:Property
-domainIncludes: dcs:School, dcs:Student
+domainIncludes: dcs:School, dcs:Student, dcs:AcademicAssessmentEvent
 rangeIncludes: dcs:LanguageLearnedEnum
 description: "The language which is learned."
 
