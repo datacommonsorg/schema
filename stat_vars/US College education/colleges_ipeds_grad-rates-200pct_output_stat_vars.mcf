@@ -1,0 +1,184 @@
+# Auto generated using command: "../../../tools/statvar_importer/stat_var_processor.py --input_data=input_files/colleges_ipeds_grad-rates-200pct.csv --pv_map=pv_maps/colleges_ipeds_grad-rates-200pct-pv_map.csv --config_file=pv_maps/colleges_ipeds_grad-rates-200pct_metadata.csv --output_path=output_files/colleges_ipeds_grad-rates-200pct_output --existing_statvar_mcf=gs://unresolved_mcf/scripts/statvar/stat_vars.mcf" on 2025-10-09 16:26:03.961615
+
+Node: dcid:Count_Student_Applicant_FourOrMoreYears
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:Applicant
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+
+Node: dcid:Count_Student_Applicant_LessThanFourYears
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:Applicant
+collegeOrUniversityLevel: dcid:LessThanFourYears
+
+Node: dcid:Count_Student_CompletedDegree_FourOrMoreYears_Within100PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within100PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_FourOrMoreYears_Within100PercentOfNormalTime_AsAFractionOf_Count_Student_Applicant_FourOrMoreYears
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Student_Applicant_FourOrMoreYears
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within100PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_FourOrMoreYears_Within150PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within150PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_FourOrMoreYears_Within150PercentOfNormalTime_AsAFractionOf_Count_Student_Enrolled_FourOrMoreYears_Within150PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Student_Enrolled_FourOrMoreYears_Within150PercentOfNormalTime
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within150PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_FourOrMoreYears_Within200PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within200PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_FourOrMoreYears_Within200PercentOfNormalTime_AsAFractionOf_Count_Student_Enrolled_FourOrMoreYears_Within200PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Student_Enrolled_FourOrMoreYears_Within200PercentOfNormalTime
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within200PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_LessThanFourYears_Within100PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within100PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_LessThanFourYears_Within100PercentOfNormalTime_AsAFractionOf_Count_Student_Applicant_LessThanFourYears
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Student_Applicant_LessThanFourYears
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within100PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_LessThanFourYears_Within150PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within150PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_LessThanFourYears_Within150PercentOfNormalTime_AsAFractionOf_Count_Student_Enrolled_LessThanFourYears_Within150PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Student_Enrolled_LessThanFourYears_Within150PercentOfNormalTime
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within150PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_LessThanFourYears_Within200PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within200PercentOfNormalTime
+
+Node: dcid:Count_Student_CompletedDegree_LessThanFourYears_Within200PercentOfNormalTime_AsAFractionOf_Count_Student_Enrolled_LessThanFourYears_Within200PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Student_Enrolled_LessThanFourYears_Within200PercentOfNormalTime
+cohortStatus: dcid:CompletedDegree
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within200PercentOfNormalTime
+
+Node: dcid:Count_Student_Enrolled_FourOrMoreYears_Within150PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:Enrolled
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within150PercentOfNormalTime
+
+Node: dcid:Count_Student_Enrolled_FourOrMoreYears_Within200PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:Enrolled
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+completionRate: dcid:Within200PercentOfNormalTime
+
+Node: dcid:Count_Student_Enrolled_LessThanFourYears_Within150PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:Enrolled
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within150PercentOfNormalTime
+
+Node: dcid:Count_Student_Enrolled_LessThanFourYears_Within200PercentOfNormalTime
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:Enrolled
+collegeOrUniversityLevel: dcid:LessThanFourYears
+completionRate: dcid:Within200PercentOfNormalTime
+
+Node: dcid:Count_Student_IsExcludedFromCohort_FourOrMoreYears
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:IsExcludedFromCohort
+collegeOrUniversityLevel: dcid:FourOrMoreYears
+
+Node: dcid:Count_Student_IsExcludedFromCohort_LessThanFourYears
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+cohortStatus: dcid:IsExcludedFromCohort
+collegeOrUniversityLevel: dcid:LessThanFourYears
+
