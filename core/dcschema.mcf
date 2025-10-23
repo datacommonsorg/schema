@@ -4940,7 +4940,6 @@ Node: dcid:NaturalSciences
 typeOf: dcid:EducationalMajorEnum
 name: "Natural Sciences"
 
-
 Node: dcid:ProcessingIndustry
 typeOf: dcid:EconomicSectorEnum
 name: "Processing Industry"
@@ -4963,3 +4962,8 @@ subClassOf: dcs:Thing
 name: "ProvisionalNode"
 description: "Temporary placeholder node type to ensure graph consistency."
 
+Node: dcid:assessmentScoreLevel
+typeOf: dcid:Property
+name: "assessmentScoreLevel"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:AssessmentScoreLevelEnum
