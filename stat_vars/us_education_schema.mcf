@@ -1,0 +1,577 @@
+Node: dcid:FirstTimeEnrolled
+typeOf: dcid:EnrollmentStatusEnum
+name: "First Time Enrolled"
+
+
+Node: dcid:EnrolledFullTime
+typeOf: dcid:EnrollmentLevelEnum
+name: "Enrolled Full Time"
+
+
+Node: dcid:EnrolledPartTime
+typeOf: dcid:EnrollmentLevelEnum
+name: "Enrolled Part Time"
+
+
+Node: dcid:Applied
+typeOf: dcid:EnrollmentLevelEnum
+name: "Applied"
+
+
+Node: dcid:Admitted
+typeOf: dcid:EnrollmentLevelEnum
+name: "Admitted"
+
+
+Node: dcid:admissionRequirement
+typeOf: dcs:Property
+name: "admissionRequirement"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:AdmissionRequirementEnum,dcid:Class,dcid:USC_SpouseAbsentReasonEnum
+
+
+Node: dcid:AdmissionRequirementEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "AdmissionRequirementEnum"
+
+
+Node: dcid:SecondarySchoolDiploma
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School Diploma"
+
+
+Node: dcid:SecondarySchoolRank
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School Rank"
+
+
+Node: dcid:AdmissionTestScores
+typeOf: dcid:AdmissionRequirementEnum
+name: "Admission Test Scores"
+
+
+Node: dcid:SATScores
+typeOf: dcid:AdmissionRequirementEnum
+name: "SATScores"
+
+
+Node: dcid:OtherTest
+typeOf: dcid:AdmissionRequirementEnum
+name: "Other Test"
+
+
+Node: dcid:AbilityToBenefit
+typeOf: dcid:AdmissionRequirementEnum
+name: "Ability To Benefit"
+
+
+Node: dcid:Age
+typeOf: dcid:AdmissionRequirementEnum
+name: "Age"
+
+
+Node: dcid:TOEFL
+typeOf: dcid:AdmissionRequirementEnum
+name: "TOEFL"
+
+
+Node: dcid:YearsCollegeRequired
+typeOf: dcid:AdmissionRequirementEnum
+name: "Years College Required"
+
+
+Node: dcid:NoEnteringFreshmen
+typeOf: dcid:AdmissionRequirementEnum
+name: "No Entering Freshmen"
+
+
+Node: dcid:OpenAdmissionsPolicy
+typeOf: dcid:AdmissionRequirementEnum
+name: "Open Admissions Policy"
+
+
+Node: dcid:SecondarySchoolGPA
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School GPA"
+
+
+Node: dcid:SecondarySchoolRecord
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School Record"
+
+
+Node: dcid:CollegePreparatoryProgram
+typeOf: dcid:AdmissionRequirementEnum
+name: "College Preparatory Program"
+
+
+Node: dcid:Recommendations
+typeOf: dcid:AdmissionRequirementEnum
+name: "Recommendations"
+
+
+Node: dcid:FormalDemonstrationOfCompetencies
+typeOf: dcid:AdmissionRequirementEnum
+name: "Formal Demonstration Of Competencies"
+
+
+Node: dcid:standardizedTest
+typeOf: dcs:Property
+name: "standardizedTest"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StandardizedTestEnum
+
+
+Node: dcid:StandardizedTestEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "StandardizedTestEnum"
+
+
+Node: dcid:ACTComposite
+typeOf: dcid:StandardizedTestEnum
+name: "ACTComposite"
+
+
+Node: dcid:ACTEnglish
+typeOf: dcid:StandardizedTestEnum
+name: "ACTEnglish"
+
+
+Node: dcid:ACTMath
+typeOf: dcid:StandardizedTestEnum
+name: "ACTMath"
+
+
+Node: dcid:SATCriticalReading
+typeOf: dcid:StandardizedTestEnum
+name: "SATCritical Reading"
+
+
+Node: dcid:SATMath
+typeOf: dcid:StandardizedTestEnum
+name: "SATMath"
+
+
+Node: dcid:SATWriting
+typeOf: dcid:StandardizedTestEnum
+name: "SATWriting"
+
+
+Node: dcid:WorkExperience
+typeOf: dcid:AdmissionRequirementEnum
+name: "Work Experience"
+
+
+Node: dcid:PersonalStatement
+typeOf: dcid:AdmissionRequirementEnum
+name: "Personal Statement"
+
+
+Node: dcid:LegacyStatus
+typeOf: dcid:AdmissionRequirementEnum
+name: "Legacy Status"
+
+
+Node: dcid:percentile50
+typeOf: dcs:Property
+name: "percentile50"
+domainIncludes: dcid:Student
+rangeIncludes: dcs:Number
+
+
+Node: dcid:ACTWriting
+typeOf: dcid:StandardizedTestEnum
+name: "ACTWriting"
+
+
+Node: dcid:age
+typeOf: dcs:Property
+name: "age"
+domainIncludes: dcid:Student
+
+Node: dcid:AgeUnknown
+typeOf: dcid:AgeStatusEnum
+name: "Age Unknown"
+
+Node: dcid:studentDegreeStatus
+typeOf: dcs:Property
+name: "studentDegreeStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentDegreeStatusEnum
+
+
+Node: dcid:StudentDegreeStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "StudentDegreeStatusEnum"
+
+
+Node: dcid:DegreeSeeking
+typeOf: dcid:StudentDegreeStatusEnum
+name: "Degree Seeking"
+
+
+Node: dcid:NonDegreeSeeking
+typeOf: dcid:StudentDegreeStatusEnum
+name: "Non Degree Seeking"
+
+
+Node: dcid:FirstProfessional
+typeOf: dcid:EducationalAttainmentEnum
+name: "First Professional"
+
+
+
+
+Node: dcid:OtherTotal
+typeOf: dcid:EnrollmentStatusEnum
+name: "Other Total"
+
+
+Node: dcid:NonresidentAlien
+typeOf: dcid:RaceCodeEnum
+name: "Nonresident Alien"
+
+
+Node: dcid:FirstTime
+typeOf: dcid:EnrollmentStatusEnum
+name: "First Time"
+
+
+Node: dcid:PostBaccalaureate
+typeOf: dcid:EducationalAttainmentEnum
+name: "Post Baccalaureate"
+
+
+Node: dcid:TransferOrNonFirstTime
+typeOf: dcid:EnrollmentStatusEnum
+name: "Transfer Or Non First Time"
+
+
+Node: dcid:Continuing
+typeOf: dcid:EnrollmentStatusEnum
+name: "Continuing"
+
+
+Node: dcid:schoolGradeLevel
+typeOf: dcs:Property
+name: "schoolGradeLevel"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SchoolGradeLevelEnum
+
+
+Node: dcid:Returning
+typeOf: dcid:EnrollmentStatusEnum
+name: "Returning"
+
+
+Node: dcid:PreviousYear
+typeOf: dcid:EnrollmentStatusEnum
+name: "Previous Year"
+
+
+Node: dcid:Excluded
+typeOf: dcid:EnrollmentStatusEnum
+name: "Excluded"
+
+
+Node: dcid:cohortStatus
+typeOf: dcs:Property
+name: "cohortStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CohortStatusEnum,dcid:IdentityActivityEnum
+
+
+Node: dcid:CohortStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "CohortStatusEnum"
+
+
+Node: dcid:Applicant
+typeOf: dcid:CohortStatusEnum
+name: "Applicant"
+
+
+Node: dcid:FourOrMoreYears
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Four Or More Years"
+
+
+Node: dcid:CompletedDegree
+typeOf: dcid:CohortStatusEnum
+name: "Completed Degree"
+
+
+Node: dcid:completionRate
+typeOf: dcs:Property
+name: "completionRate"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CompletionRateEnum
+
+
+Node: dcid:CompletionRateEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "CompletionRateEnum"
+
+
+Node: dcid:Within100PercentOfNormalTime
+typeOf: dcid:CompletionRateEnum
+name: "Within 10 0Percent Of Normal Time"
+
+
+Node: dcid:IsExcludedFromCohort
+typeOf: dcid:CohortStatusEnum
+name: "Is Excluded From Cohort"
+
+
+Node: dcid:Within150PercentOfNormalTime
+typeOf: dcid:CompletionRateEnum
+name: "Within 15 0Percent Of Normal Time"
+
+
+Node: dcid:Within200PercentOfNormalTime
+typeOf: dcid:CompletionRateEnum
+name: "Within 20 0Percent Of Normal Time"
+
+
+Node: dcid:LessThanFourYears
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Less Than Four Years"
+
+
+Node: dcid:4PlusYears
+typeOf: dcid:EducationalAttainmentEnum
+name: "4 Plus Years"
+
+
+Node: dcid:studentFinancialAid
+typeOf: dcs:Property
+name: "studentFinancialAid"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentFinancialAidEnum
+
+
+Node: dcid:StudentFinancialAidEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "StudentFinancialAidEnum"
+
+
+Node: dcid:SubsidizedLoan
+typeOf: dcid:StudentFinancialAidEnum
+name: "Subsidized Loan"
+
+
+Node: dcid:Within150Pct
+typeOf: dcid:CompletionRateEnum
+name: "Within 15 0Pct"
+
+
+Node: dcid:PellGrant
+typeOf: dcid:StudentFinancialAidEnum
+name: "Pell Grant"
+
+
+Node: dcid:LessThan4Years
+typeOf: dcid:EducationalAttainmentEnum
+name: "Less Than 4Years"
+
+
+Node: dcid:studentSubcohort
+typeOf: dcs:Property
+name: "studentSubcohort"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentSubcohortEnum
+
+
+Node: dcid:StudentSubcohortEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "StudentSubcohortEnum"
+
+
+Node: dcid:NonBachelors
+typeOf: dcid:StudentSubcohortEnum
+name: "Non Bachelors"
+
+
+Node: dcid:Bachelors
+typeOf: dcid:StudentSubcohortEnum
+name: "Bachelors"
+
+
+Node: dcid:NoPellSubLoan
+typeOf: dcid:StudentFinancialAidEnum
+name: "No Pell Sub Loan"
+
+
+Node: dcid:LessThan2Years
+typeOf: dcid:EducationalAttainmentEnum
+name: "Less Than 2Years"
+
+
+Node: dcid:Certificate
+typeOf: dcid:EducationalAttainmentEnum
+name: "Certificate"
+
+
+Node: dcid:ReEnrollment
+typeOf: dcid:EnrollmentStatusEnum
+name: "Re Enrollment"
+
+
+Node: dcid:AssociateDegree
+typeOf: dcid:EducationalAttainmentEnum
+name: "Associate Degree"
+
+Node: dcid:SixYear
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Six Year"
+
+Node: dcid:EightYear
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Eight Year"
+
+Node: dcid:Transferred
+typeOf: dcid:IdentityActivityEnum
+name: "Transferred"
+
+Node: dcid:FirstTimeInCollege
+typeOf: dcid:EnrollmentStatusEnum
+name: "First Time In College"
+
+Node: dcid:financialAidType
+typeOf: dcs:Property
+name: "financialAidType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:FinancialAidTypeEnum
+
+Node: dcid:FinancialAidTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "FinancialAidTypeEnum"
+
+Node: dcid:FederalStaffordLoan
+typeOf: dcid:FinancialAidTypeEnum
+name: "Federal Stafford Loan"
+
+Node: Percentile75
+dcid: "Percentile75"
+name: "Percentile75"
+typeOf: dcs:PercentileEnum
+description: "75th percentile value"
+
+Node: dcid:studentOutcome
+typeOf: dcs:Property
+name: "studentOutcome"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentOutcomeEnum
+
+Node: dcid:StudentOutcomeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "StudentOutcomeEnum"
+
+Node: dcid:Transfer
+typeOf: dcid:StudentOutcomeEnum
+name: "Transfer"
+
+Node: dcid:Unknown
+typeOf: dcid:StudentOutcomeEnum
+name: "Unknown"
+
+Node: dcid:NoAward
+typeOf: dcid:StudentOutcomeEnum
+name: "No Award"
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan2Years
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 2 Years"
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan2Years_SubsidizedLoan
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 2 Years Who Received a Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_SubsidizedLoan_Bachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years Who Received a Subsidized Loan"
+
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_NoPellSubLoan_NonBachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Non-Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years Who Did Not Receive a Pell Grant or Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan2Years_PellGrant
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 2 Years Who Received a Pell Grant"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_PellGrant_Bachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years Who Received a Pell Grant"
+isProvisional: dcs:True
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan4Years
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 4 Years"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_SubsidizedLoan_NonBachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Non-Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years Who Received a Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan2Years_NoPellSubLoan
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 2 Years Who Did Not Receive a Pell Grant or Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_SubsidizedLoan
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment of 4 Plus Years Who Received a Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_PellGrant
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment of 4 Plus Years Who Received a Pell Grant"
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan4Years_PellGrant
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 4 Years Who Received a Pell Grant"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_PellGrant_NonBachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Non-Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years Who Received a Pell Grant"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_NonBachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Non-Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_Bachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years"
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan4Years_SubsidizedLoan
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 4 Years Who Received a Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment of 4 Plus Years"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_NoPellSubLoan_Bachelors
+typeOf: dcid:StatisticalVariable
+name: "Count of Bachelor's Degree Seeking Student with Educational Attainment of 4 Plus Years Who Did Not Receive a Pell Grant or Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainment4PlusYears_NoPellSubLoan
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment of 4 Plus Years Who Did Not Receive a Pell Grant or Subsidized Loan"
+
+Node: dcid:Count_Student_EducationalAttainmentLessThan4Years_NoPellSubLoan
+typeOf: dcid:StatisticalVariable
+name: "Count of Student with Educational Attainment Less Than 4 Years Who Did Not Receive a Pell Grant or Subsidized Loan"
+
+Node: dcid:percentile25
+typeOf: dcs:Property
+name: "percentile25"
+domainIncludes: dcid:Student
+rangeIncludes: dcs:Number
