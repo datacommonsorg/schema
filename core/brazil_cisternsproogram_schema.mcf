@@ -1,0 +1,74 @@
+Node: dcid:containerType
+typeOf: dcid:Property
+name: "containerType"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:ContainerTypeEnum
+
+Node: dcid:ContainerTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ContainerTypeEnum"
+
+Node: dcid:Cisterns
+typeOf: dcid:ContainerTypeEnum,dcid:FacilityTypeEnum
+name: "Cisterns"
+
+Node: dcid:distributionPartner
+typeOf: dcid:Property
+name: "distributionPartner"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:DistributionPartnerEnum
+
+Node: dcid:DistributionPartnerEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "DistributionPartnerEnum"
+
+Node: dcid:Brazil_MinistrySocialDevelopmentAndFightAgainstHunger
+typeOf: dcid:DistributionPartnerEnum
+name: "Brazil_ Ministry Social Development And Fight Against Hunger"
+
+Node: dcid:consumptionType
+typeOf: dcid:Property
+name: "consumptionType"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:ConsumptionTypeEnum
+
+Node: dcid:ConsumptionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "ConsumptionTypeEnum"
+
+Node: dcid:FirstWater
+typeOf: dcid:ConsumptionTypeEnum
+name: "First Water"
+
+Node: dcid:SecondWater
+typeOf: dcid:ConsumptionTypeEnum
+name: "Second Water"
+
+Node: dcid:facilityType
+typeOf: dcid:Property
+name: "facilityType"
+domainIncludes: dcid:School
+rangeIncludes: dcid:FacilityTypeEnum
+
+Node: dcid:FacilityTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FacilityTypeEnum"
+
+Node: dcid:brazilCisternDeliveryPartner
+typeOf: dcid:Property
+name: "brazilCisternDeliveryPartner"
+domainIncludes: dcid:School
+rangeIncludes: dcid:BrazilCisternDeliveryPartnerEnum
+
+Node: dcid:BrazilCisternDeliveryPartnerEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BrazilCisternDeliveryPartnerEnum"
+
+Node: dcid:MinistrySocialDevelopmentAndFightAgainstHunger
+typeOf: dcid:BrazilCisternDeliveryPartnerEnum
+name: "Ministry Social Development And Fight Against Hunger"
