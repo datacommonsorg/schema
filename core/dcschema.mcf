@@ -485,7 +485,7 @@ dcid: "age"
 name: "age"
 typeOf: schema:Property
 rangeIncludes: dcs:QuantityRange, schema:Number, dcs:AgeStatusEnum, dcs:SDG_AgeEnum
-domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent, dcid:MedicalConditionIncident
+domainIncludes: schema:Person, schema:Organization, schema:Household, schema:MortalityEvent, dcid:MedicalConditionIncident, dcid:Student
 
 Node: employmentStatus
 dcid: "employmentStatus"
@@ -4971,4 +4971,26 @@ Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
 
+Node: dcid:LimitedEnglishProficient
+typeOf: dcid:LanguageFluencyLevelEnum
+name: "Limited English Proficient"
+
+Node: dcid:educationPlan
+typeOf: dcs:Property
+name: "educationPlan"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationPlanEnum
+
+Node: dcid:EducationPlanEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EducationPlanEnum"
+
+Node: dcid:Section504AccommodationPlan
+typeOf: dcid:EducationPlanEnum
+name: "Section 504 Accommodation Plan"
+
+Node: dcid:IndividualizedEducationProgram
+typeOf: dcid:EducationPlanEnum
+name: "Individualized Education Program"
 
