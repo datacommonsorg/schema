@@ -30,6 +30,14 @@ description: "A school that is maintained at public expense for the education of
 subClassOf: schema:School, schema:Place
 name: "PublicSchool"
 
+Node: dcid:UrbanOrgSchool
+dcid: "UrbanOrgSchool"
+name: "UrbanOrgSchool"
+description: "A public educational institution located within an urban area, tracked, serving the local community or school district. This node specifically references schools that are listed, or sourced from the Urban Org website/data platform."
+typeOf: dcid:Class
+subClassOf: dcid:School, dcid:Place
+
+
 # ENUMERATIONS Type for K12 Institutions. Enumeration values would be added to the schema by a script
 
 Node: dcid:USLocalitiesEnum
