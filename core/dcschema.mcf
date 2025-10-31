@@ -4963,3 +4963,30 @@ subClassOf: dcs:Thing
 name: "ProvisionalNode"
 description: "Temporary placeholder node type to ensure graph consistency."
 
+Node: dcid:LimitedEnglishProficient
+typeOf: dcid:LanguageFluencyLevelEnum
+name: "Limited English Proficient"
+
+Node: dcid:educationPlan
+typeOf: dcs:Property
+name: "Education Plan"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationPlanEnum
+
+Node: dcid:EducationPlanEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EducationPlanEnum"
+
+Node: dcid:Section504AccommodationPlan
+typeOf: dcid:EducationPlanEnum
+name: "Section 504 Accommodation Plan"
+
+Node: dcid:IndividualizedEducationProgram
+typeOf: dcid:EducationPlanEnum
+name: "Individualized Education Program"
+
+Node: dcid:age
+typeOf: dcs:Property
+name: "age"
+domainIncludes: dcid:Student
