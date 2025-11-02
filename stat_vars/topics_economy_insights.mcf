@@ -1,29 +1,29 @@
-# LINT.IfChange
-# These are auto-generated
-# These topics are intended for the new NL based Topic Pages (currently called Insights).
-# Source: https://docs.google.com/document/d/1NIIVA9hg3yWs7BMYzbLK_pEcJTbY-r8OK6xwrqPCRQ4
 
 Node: dcid:dc/topic/Businesses
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Businesses"
-relevantVariable: dcid:dc/topic/NumberOfBusinessesByIndustry
-relevantVariable: dcid:dc/topic/NumberOfBusinessesByOwnership
+description: "The total number of businesses across different industries and ownership types"
+relevantVariable: dcid:dc/topic/NumberofBusinessesByIndustry
+relevantVariable: dcid:dc/topic/NumberofBusinessesByOwnership
 
 Node: dcid:dc/topic/Debt
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Debt"
-relevantVariable: dcid:Amount_Debt_Government
+description: "The total amount of debt owed by the government, categorized by type"
+relevantVariable: dcid:amount_Debt_Government
 relevantVariable: dcid:sdg/DT_DOD_DECT_GN_ZS
 
 Node: dcid:dc/topic/EconomicActivity
-typeOf: dcs:Topic
-name: "Economic Activity"
+typeof: dcs:topic
+name: "Economic activity"
+description: "The economic activity categorized by Gross Domestic Product and revenue of different industries"
 relevantVariable: dcid:dc/topic/IndustriesByGDP
 relevantVariable: dcid:dc/topic/IndustriesByRevenue
 
 Node: dcid:dc/topic/Economy
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Economy"
+description: "A broad category that includes various economic indicators such as businesses, economic activity, employment, and global economic activity"
 relevantVariable: dcid:dc/topic/Businesses
 relevantVariable: dcid:dc/topic/EconomicActivity
 relevantVariable: dcid:dc/topic/Employment
@@ -33,90 +33,50 @@ relevantVariable: dcid:dc/topic/Poverty
 relevantVariable: dcid:dc/topic/Agriculture
 
 Node: dcid:dc/topic/EducationExpenditure
-typeOf: dcs:Topic
-name: "Education Expenditure"
-relevantVariable: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureComparedToTotalSpending
+typeof: dcs:topic
+name: "Education expenditure"
+description: "The amount spent on education compared to total government spending"
+relevantVariable: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureComparedtototalSpending
 
-Node: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureComparedToTotalSpending
-typeOf: dcs:StatVarPeerGroup
-name: "Education Expenditure Compared to Total Spending"
-member: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_ExpenditureActivity_Government
-member: dcid:Amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
+Node: dcid:dc/svpg/dc/topic/EducationExpenditure_EducationExpenditureComparedtototalSpending
+typeof: dcs:StatVarPeerGroup
+name: "Education expenditure compared to total spending"
+description: "The fraction of government expenditure allocated to education compared to total government spending"
+member: dcid:amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionof_amount_EconomicActivity_ExpenditureActivity_Government
+member: dcid:amount_EconomicActivity_ExpenditureActivity_EducationExpenditure_Government_AsFractionof_amount_EconomicActivity_GrossDomesticProduction_Nominal
 
 Node: dcid:dc/topic/Employment
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Employment"
+description: "The total number of employed persons and relevant employment variables such as job types and unemployment rates"
 relevantVariable: dcid:Count_Person_Employed
-relevantVariable: dcid:dc/svpg/EmploymentByGender
-relevantVariable: dcid:dc/nm9hcklgg5zb3
 relevantVariable: dcid:dc/topic/Jobs
-relevantVariable: dcid:dc/topic/UnemploymentRate
+relevantVariable: dcid:dc/topic/Unemploymentrate
 relevantVariable: dcid:dc/topic/UnpaidFamilyWorkers
-relevantVariable: dcid:Count_Person_InLaborForce
-relevantVariable: dcid:dc/svpg/LaborForceByGender
-relevantVariable: dcid:Count_Person_Employed_TotalNonfarm
-relevantVariable: dcid:dc/svpg/EmploymentByIndustry
-
-
-Node: dcid:dc/svpg/EmploymentByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Employment by Gender"
-member: dcid:Count_Person_Employed_Female
-member: dcid:Count_Person_Employed_Male
-
-Node: dcid:dc/svpg/LaborForceByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Labor Force by Gender"
-member: dcid:Count_Person_InLaborForce_Female
-member: dcid:Count_Person_InLaborForce_Male
-
-Node: dcid:dc/svpg/EmploymentByIndustry
-typeOf: dcs:StatVarPeerGroup
-name: "Employment by Industry"
-member: dcid:Count_Person_Employed_TotalNonfarm
-member: dcid:Count_Person_Employed_GoodsProducing
-member: dcid:Count_Person_Employed_HealthCare
-member: dcid:Count_Person_Employed_RetailTrade
-member: dcid:Count_Person_Employed_PostalService
-member: dcid:Count_Person_Employed_PrivatelyOwned
-member: dcid:Count_Person_Employed_ProfessionalScientificTechnicalServices
-member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_NAICSPublicAdministration_Worker
-member: dcid:Count_Person_Employed_InvestmentBankingAndSecuritiesIntermediation
-member: dcid:Count_Person_Employed_FederalGovernmentOwnedEstablishment_ExcludingPostalService
-member: dcid:Count_Person_Employed_Utilities
-member: dcid:Count_Worker_NAICSAccommodationFoodServices
-member: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
-member: dcid:Count_Worker_NAICSTotalAllIndustries
-member: dcid:Count_Worker_NAICSWholesaleTrade
-member: dcid:dc/01yc3k23tsyk
-member: dcid:dc/e2mpgewwsl60c
-member: dcid:dc/p69tpsldf99h7
-member: dcid:dc/34t2kjrwbjd31
-member: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
-member: dcid:dc/j4v6keqwsl60h
-member: dcid:dc/w5ve4140t8xsb
 
 Node: dcid:dc/topic/Jobs
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Jobs"
+description: "The total number of jobs available, classified by industries and peer groups"
 relevantVariable: dcid:dc/svpg/JobsPeerGroup
 
 Node: dcid:dc/svpg/JobsPeerGroup
-typeOf: dcs:StatVarPeerGroup
-name: "Categories of Jobs"
+typeof: dcs:StatVarPeerGroup
+name: "Jobs peer group"
+description: "A group of statistical variables related to the total number of workers across various industries, including accommodation, construction, education, healthcare, and more"
 member: dcid:Count_Worker_NAICSAccommodationFoodServices
 member: dcid:Count_Worker_NAICSAdministrativeSupportWasteManagementRemediationServices
 member: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
 member: dcid:Count_Worker_NAICSConstruction
 member: dcid:Count_Worker_NAICSEducationalServices
-member: dcid:Count_Worker_NAICSHealthCareSocialAssistance
+member: dcid:Count_Worker_NAICShealthCareSocialAssistance
 # Manufacturing
 member: dcid:dc/ndg1xk1e9frc2
 member: dcid:Count_Worker_NAICSFinanceInsurance
 member: dcid:Count_Worker_NAICSInformation
 member: dcid:Count_Worker_NAICSArtsEntertainmentRecreation
 member: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
-member: dcid:Count_Worker_NAICSOtherServices
+member: dcid:Count_Worker_NAICS0therServices
 # Transportation and Warehousing
 member: dcid:dc/8p97n7l96lgg8
 member: dcid:Count_Worker_NAICSUtilities
@@ -126,96 +86,102 @@ member: dcid:Count_Worker_NAICSRealEstateRentalLeasing
 member: dcid:Count_Worker_NAICSPublicAdministration
 member: dcid:Count_Worker_NAICSWholesaleTrade
 member: dcid:Count_Worker_NAICSProfessionalScientificTechnicalServices
-member: dcid:Count_Worker_NAICSManagementOfCompaniesEnterprises
+member: dcid:Count_Worker_NAICSManagementofCompaniesEnterprises
 member: dcid:Count_Worker_NAICSNonclassifiable
 
 Node: dcid:dc/topic/GDP
-typeOf: dcs:Topic
-name: "GDP"
-relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
-relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita
-relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealValue
-relevantVariable: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
-relevantVariable: dcid:RealValue_GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
-relevantVariable: dcid:InflationAdjustedGDP
+typeof: dcs:topic
+name: "Gross Domestic Product"
+description: "The total value of all goods and services produced in a country, including nominal and inflation-adjusted values"
+relevantVariable: dcid:amount_EconomicActivity_GrossDomesticProduction_Nominal
+relevantVariable: dcid:amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita
+relevantVariable: dcid:amount_EconomicActivity_GrossDomesticProduction_RealValue
 relevantVariable: dcid:dc/topic/GDPByIndustry
 relevantVariable: dcid:dc/topic/InflationAdjustedGDP
 
 Node: dcid:dc/topic/GlobalEconomicActivity
-typeOf: dcs:Topic
-name: "Global Economic Activity"
+typeof: dcs:topic
+name: "Global economic activity"
+description: "Economic activity indicators on a global scale, including GDP, debt, education expenditure, healthcare expenditure, and remittance"
 relevantVariable: dcid:dc/topic/GDP
 relevantVariable: dcid:dc/topic/Debt
 relevantVariable: dcid:dc/topic/EducationExpenditure
-relevantVariable: dcid:dc/topic/HealthcareExpenditure
+relevantVariable: dcid:dc/topic/healthcareExpenditure
 relevantVariable: dcid:dc/topic/Remittance
 
 Node: dcid:dc/topic/GDPByIndustry
-typeOf: dcs:Topic
-name: "GDP by Industry"
+typeof: dcs:topic
+name: "GDP by industry"
+description: "The total value of economic output by various industries, including agriculture, construction, healthcare, finance, and more"
 relevantVariable: dcid:dc/svpg/RealGDPByIndustry
-
 # Generated with https://paste.googleplex.com/4559733896773632
+
 Node: dcid:dc/svpg/RealGDPByIndustry
-typeOf: dcs:StatVarPeerGroup
-name: "Breakdown of GDP by Industry"
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAccommodationFoodServices_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAdministrativeSupportWasteManagementRemediationServices_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAgricultureForestryFishingHunting_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSArtsEntertainmentRecreation_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSConstruction_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSEducationalServices_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSFinanceInsurance_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSHealthCareSocialAssistance_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSInformation_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSManagementOfCompaniesEnterprises_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSMiningQuarryingOilGasExtraction_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSOtherServices_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSProfessionalScientificTechnicalServices_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSRealEstateRentalLeasing_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSUtilities_RealValue
-member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSWholesaleTrade_RealValue
+typeof: dcs:StatVarPeerGroup
+name: "Real GDP by industry"
+description: "The real value of gross domestic production by various industries, including accommodation, food services, healthcare, and more"
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSAccommodationFoodServices_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSAdministrativeSupportWasteManagementRemediationServices_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSAgricultureForestryFishingHunting_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSArtsEntertainmentRecreation_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSConstruction_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSEducationalServices_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSFinanceInsurance_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICShealthCareSocialAssistance_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSInformation_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSManagementofCompaniesEnterprises_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSMiningQuarryingOilGasExtraction_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICS0therServices_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSProfessionalScientificTechnicalServices_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSRealEstateRentalLeasing_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSUtilities_RealValue
+member: dcid:amount_EconomicActivity_GrossDomesticProduction_NAICSWholesaleTrade_RealValue
 member: dcid:dc/62n3z7mvfpjx1
 member: dcid:dc/qt7ewllmt3826
 member: dcid:dc/zz6gwv838v9w
 
-
-Node: dcid:dc/topic/HealthcareExpenditure
-typeOf: dcs:Topic
-name: "Healthcare Expenditure"
-relevantVariable: dcid:Amount_EconomicActivity_ExpenditureActivity_HealthcareExpenditure_AsFractionOf_Count_Person
+Node: dcid:dc/topic/healthcareExpenditure
+typeof: dcs:topic
+name: "Healthcare expenditure"
+description: "The expenditure on healthcare services as a fraction of the total economic activity per person"
+relevantVariable: dcid:amount_EconomicActivity_ExpenditureActivity_healthcareExpenditure_AsFractionof_Count_Person
 
 Node: dcid:dc/topic/HouseholdIncomeDistribution
-typeOf: dcs:Topic
-name: "Household Income Distribution"
+typeof: dcs:topic
+name: "Household income distribution"
+description: "The distribution of household incomes by various household types, including family households, married couple family households, and nonfamily households"
 relevantVariable: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncomeByHouseholdType
 
 Node: dcid:dc/svpg/dc/topic/HouseholdIncomeDistribution_MedianIncomeByHouseholdType
-typeOf: dcs:StatVarPeerGroup
-name: "Median Income by Household Type"
+typeof: dcs:StatVarPeerGroup
+name: "Median income by household type"
+description: "The median income of households, broken down by household type, including family households, married couple family households, and nonfamily households"
 member: dcid:Median_Income_Household_FamilyHousehold
 member: dcid:Median_Income_Household_MarriedCoupleFamilyHousehold
 member: dcid:Median_Income_Household_NonfamilyHousehold
 
 Node: dcid:dc/topic/Income
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Income"
+description: "The distribution of income across individuals and households, including median income for households and individuals, and wages for workers"
 relevantVariable: dcid:Median_Income_Household
 relevantVariable: dcid:Median_Income_Person
-relevantVariable: dcid:Mean_WagesMonthly_Worker
-relevantVariable: dcid:Monthly_Mean_Income_Person_Years14Onwards_Employed_AllJobs_IncomeActuallyReceived
+relevantVariable: dcid:mean_WagesMonthly_Worker
+relevantVariable: dcid:Monthly_mean_Income_Person_Years14Onwards_Employed_AllJobs_IncomeActuallyReceived
 relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
 relevantVariable: dcid:dc/topic/IndividualIncomeByIndustry
 relevantVariable: dcid:dc/topic/HouseholdIncomeDistribution
 
 Node: dcid:dc/topic/IndividualIncomeByIndustry
-typeOf: dcs:Topic
-name: "Individual Income by Industry"
+typeof: dcs:topic
+name: "Individual income by industry"
+description: "The income distribution across different industries, showcasing how individual earnings vary by industry type"
 relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndividualIncomeByIndustryType
 
 Node: dcid:dc/svpg/dc/topic/IndividualIncomeByIndustry_IndividualIncomeByIndustryType
-typeOf: dcs:StatVarPeerGroup
-name: "Individual Income by Industry Type"
+typeof: dcs:StatVarPeerGroup
+name: "Individual income by industry type"
+description: "The income distribution based on various industry types, showing how individual earnings vary within each sector"
 member: dcid:dc/015d58s9xh8kd
 member: dcid:dc/2wgh04kx6es88
 member: dcid:dc/3ex11eg2q9hp6
@@ -233,46 +199,51 @@ member: dcid:dc/yw52qqrrb2w11
 member: dcid:dc/zbpsz8dg01nh2
 
 Node: dcid:dc/topic/IndividualIncomeDistribution
-typeOf: dcs:Topic
-name: "Individual Income Distribution"
-relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_PopulationByIncomeLevel
+typeof: dcs:topic
+name: "Individual income distribution"
+description: "The distribution of income levels across individuals, categorizing them based on various income brackets"
+relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_populationByIncomeLevel
 
-Node: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_PopulationByIncomeLevel
-typeOf: dcs:StatVarPeerGroup
-name: "Population by Income Level"
-member: dcid:Count_Person_IncomeOfUpto9999USDollar
-member: dcid:Count_Person_IncomeOf10000To14999USDollar
-member: dcid:Count_Person_IncomeOf25000To34999USDollar
-member: dcid:Count_Person_IncomeOf35000To49999USDollar
-member: dcid:Count_Person_IncomeOf50000To64999USDollar
-member: dcid:Count_Person_IncomeOf65000To74999USDollar
-member: dcid:Count_Person_IncomeOf75000OrMoreUSDollar
+Node: dcid:dc/svpg/dc/topic/IndividualIncomeDistribution_populationByIncomeLevel
+typeof: dcs:StatVarPeerGroup
+name: "Individual income distribution by income level"
+description: "The distribution of individuals based on various income levels, categorizing them into specific income ranges"
+member: dcid:Count_Person_IncomeofUpto9999USDollar
+member: dcid:Count_Person_Incomeof10000to14999USDollar
+member: dcid:Count_Person_Incomeof25000to34999USDollar
+member: dcid:Count_Person_Incomeof35000to49999USDollar
+member: dcid:Count_Person_Incomeof50000to64999USDollar
+member: dcid:Count_Person_Incomeof65000to74999USDollar
+member: dcid:Count_Person_Incomeof75000OrMoreUSDollar
 
 Node: dcid:dc/topic/IndustriesByGDP
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Industries by GDP"
+description: "The categorization of industries based on their Gross Domestic Product contribution"
 relevantVariable: dcid:dc/svpg/RealGDPByIndustry
 
 Node: dcid:dc/topic/IndustriesByRevenue
-typeOf: dcs:Topic
-name: "Industries by Revenue"
+typeof: dcs:topic
+name: "Industries by revenue"
+description: "The classification of industries according to their generated revenue"
 relevantVariable: dcid:dc/svpg/dc/topic/IndustriesByRevenue_IndustryType
 
 Node: dcid:dc/svpg/dc/topic/IndustriesByRevenue_IndustryType
-typeOf: dcs:StatVarPeerGroup
-name: "Revenue by Industry Type"
+typeof: dcs:StatVarPeerGroup
+name: "Industries by revenue industry type"
+description: "The categorization of industries based on their revenue generation type, including various NAICS sectors with payroll data"
 member: dcid:Sales_Establishment_NAICSAccommodationFoodServices_WithPayroll
 member: dcid:Receipts_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSArtsEntertainmentRecreation_WithPayroll
 member: dcid:ReceiptsBillingsOrSales_Establishment_NAICSConstruction_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSEducationalServices_WithPayroll
 member: dcid:Revenue_Establishment_NAICSFinanceInsurance_WithPayroll
-member: dcid:ReceiptsOrRevenue_Establishment_NAICSHealthCareSocialAssistance_WithPayroll
+member: dcid:ReceiptsOrRevenue_Establishment_NAICShealthCareSocialAssistance_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSInformation_WithPayroll
 member: dcid:Sales_Establishment_NAICSWholesaleTrade_WithPayroll
-member: dcid:Revenue_Establishment_NAICSManagementOfCompaniesEnterprises_WithPayroll
+member: dcid:Revenue_Establishment_NAICSManagementofCompaniesEnterprises_WithPayroll
 member: dcid:ShipmentsOrReceipts_Establishment_NAICSMiningQuarryingOilGasExtraction_WithPayroll
-member: dcid:ReceiptsOrRevenue_Establishment_NAICSOtherServices_WithPayroll
+member: dcid:ReceiptsOrRevenue_Establishment_NAICS0therServices_WithPayroll
 member: dcid:ReceiptsOrRevenue_Establishment_NAICSProfessionalScientificTechnicalServices_WithPayroll
 member: dcid:Revenue_Establishment_NAICSRealEstateRentalLeasing_WithPayroll
 member: dcid:Revenue_Establishment_NAICSUtilities_WithPayroll
@@ -301,23 +272,26 @@ member: dcid:dc/sz9ckd47e35b4
 member: dcid:dc/zkmdz1rhlt7q8
 
 Node: dcid:dc/topic/InflationAdjustedGDP
-typeOf: dcs:Topic
-name: "Inflation Adjusted GDP"
+typeof: dcs:topic
+name: "Inflation adjusted GDP"
+description: "The gross domestic product adjusted for inflation, providing a more accurate reflection of an economy's true growth over time"
 relevantVariable: dcid:InflationAdjustedGDP
 
-Node: dcid:dc/topic/NumberOfBusinessesByIndustry
-typeOf: dcs:Topic
-name: "Number of Businesses by Industry"
-relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEstablishementsByIndustry
+Node: dcid:dc/topic/NumberofBusinessesByIndustry
+typeof: dcs:topic
+name: "Number of businesses by industry"
+description: "The number of businesses categorized by their respective industry type, including data on the number of establishments"
+relevantVariable: dcid:dc/svpg/dc/topic/NumberofBusinessesByIndustry_NumberofEstablishementsByIndustry
 
-Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByIndustry_NumberofEstablishementsByIndustry
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Establishments by Industry"
+Node: dcid:dc/svpg/dc/topic/NumberofBusinessesByIndustry_NumberofEstablishementsByIndustry
+typeof: dcs:StatVarPeerGroup
+name: "Number of establishments by industry"
+description: "The number of business establishments across various industries, categorized by their respective North American Industry Classification System codes"
 member: dcid:Count_Establishment_NAICSAdministrativeSupportWasteManagementRemediationServices
 member: dcid:Count_Establishment_NAICSConstruction
 member: dcid:Count_Establishment_NAICSFinanceInsurance
 member: dcid:Count_Establishment_NAICSInformation
-member: dcid:Count_Establishment_NAICSOtherServices
+member: dcid:Count_Establishment_NAICS0therServices
 member: dcid:Count_Establishment_NAICSUtilities
 member: dcid:dc/1j7jmy39fwhw5
 member: dcid:dc/1wf1h5esex2d
@@ -335,166 +309,112 @@ member: dcid:Count_Establishment_NAICSRealEstateRentalLeasing
 member: dcid:Count_Establishment_NAICSPublicAdministration
 member: dcid:Count_Establishment_NAICSNonclassifiable
 
-Node: dcid:dc/topic/NumberOfBusinessesByOwnership
-typeOf: dcs:Topic
-name: "Number of Businesses by Ownership"
-relevantVariable: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_NumberofEstablishmentsByOwnershipType
+Node: dcid:dc/topic/NumberofBusinessesByOwnership
+typeof: dcs:topic
+name: "Number of establishments by ownership type"
+description: "The number of business establishments categorized by ownership type, including federal government, local government, privately owned, and state government ownership, across various industries"
+relevantVariable: dcid:dc/svpg/dc/topic/NumberofBusinessesByOwnership_NumberofEstablishmentsByOwnershipType
 
-Node: dcid:dc/svpg/dc/topic/NumberOfBusinessesByOwnership_NumberofEstablishmentsByOwnershipType
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Establishments by Ownership Type"
-member: dcid:Count_Establishment_FederalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
-member: dcid:Count_Establishment_LocalGovernmentOwnedEstablishment_NAICSTotalAllIndustries
-member: dcid:Count_Establishment_PrivatelyOwnedEstablishment_NAICSTotalAllIndustries
-member: dcid:Count_Establishment_StateGovernmentOwnedEstablishment_NAICSTotalAllIndustries
+Node: dcid:dc/svpg/dc/topic/NumberofBusinessesByOwnership_NumberofEstablishmentsByOwnershipType
+typeof: dcs:StatVarPeerGroup
+name: "Number of establishments by ownership type"
+description: "The number of business establishments categorized by ownership type, including federal government, local government, privately owned, and state government ownership, across all industries"
+member: dcid:Count_Establishment_FederalGovernmentownedEstablishment_NAICStotalAllIndustries
+member: dcid:Count_Establishment_LocalGovernmentownedEstablishment_NAICStotalAllIndustries
+member: dcid:Count_Establishment_PrivatelyOwnedEstablishment_NAICStotalAllIndustries
+member: dcid:Count_Establishment_StateGovernmentownedEstablishment_NAICStotalAllIndustries
 
 Node: dcid:dc/topic/Poverty
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Poverty"
+description: "The topic concerning individuals below the poverty level in the past 12 months, with relevant breakdowns by gender, race, residency, and language spoken at home, aligned with SDG 1 (No Poverty)"
 relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months
-relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsFractionOf_Count_Person
-relevantVariable: dcid:dc/topic/PovertyByGender
-relevantVariable: dcid:dc/topic/PovertyByRace
-relevantVariable: dcid:dc/topic/PovertyByResidency
-relevantVariable: dcid:dc/topic/PovertyByLanguageSpokenAtHome
-relevantVariable: dcid:dc/topic/sdg_1
+relevantVariable: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsFractionof_Count_Person
+relevantVariable: dcid:dc/topic/PovertyBygender
+relevantVariable: dcid:dc/topic/PovertyByrace
+relevantVariable: dcid:dc/topic/PovertyByresidency
+relevantVariable: dcid:dc/topic/PovertyBylanguagespokenAthome
+relevantVariable: dcid:dc/topic/SDG_1
 
-Node: dcid:dc/topic/PovertyByGender
-typeOf: dcs:Topic
-name: "Poverty by Gender"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByGender_ImpoverishedPopulationByGender
+Node: dcid:dc/topic/PovertyBygender
+typeof: dcs:topic
+name: "Poverty by gender"
+description: "The topic concerning the impoverished population, with a breakdown by gender"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyBygender_ImpoverishedpopulationBygender
 
-Node: dcid:dc/svpg/dc/topic/PovertyByGender_ImpoverishedPopulationByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Impoverished Population by Gender"
+Node: dcid:dc/svpg/dc/topic/PovertyBygender_ImpoverishedpopulationBygender
+typeof: dcs:StatVarPeerGroup
+name: "Impoverished population by gender"
+description: "The topic concerning the impoverished population, broken down by gender, indicating those below the poverty level in the past 12 months"
 member: dcid:Count_Person_Female_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_Male_BelowPovertyLevelInThePast12Months
 
-Node: dcid:dc/topic/PovertyByLanguageSpokenAtHome
-typeOf: dcs:Topic
-name: "Poverty by Language Spoken At Home"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_ImpoverishedPopulationByByLanguageSpokenAtHome
+Node: dcid:dc/topic/PovertyBylanguagespokenAthome
+typeof: dcs:topic
+name: "Impoverished population by language spoken at home"
+description: "The topic concerning the impoverished population, broken down by language spoken at home, indicating those below the poverty level in the past 12 months"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyBylanguagespokenAthome_ImpoverishedpopulationByBylanguagespokenAthome
 
-Node: dcid:dc/svpg/dc/topic/PovertyByLanguageSpokenAtHome_ImpoverishedPopulationByByLanguageSpokenAtHome
-typeOf: dcs:StatVarPeerGroup
-name: "Impoverished Population by By Language Spoken At Home"
-member: dcid:Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
-member: dcid:Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome_BelowPovertyLevelInThePast12Months
-member: dcid:Count_Person_5OrMoreYears_SpanishOrSpanishCreoleSpokenAtHome_BelowPovertyLevelInThePast12Months
-member: dcid:Count_Person_5OrMoreYears_SpanishSpokenAtHome_BelowPovertyLevelInThePast12Months
+Node: dcid:dc/svpg/dc/topic/PovertyBylanguagespokenAthome_ImpoverishedpopulationByBylanguagespokenAthome
+typeof: dcs:StatVarPeerGroup
+name: "Impoverished population by language spoken at home"
+description: "The impoverished population categorized by the language spoken at home, representing those aged 5 years and older who are below the poverty level in the past 12 months"
+member: dcid:Count_Person_5OrMoreYears_language0therThanEnglishspokenAthome_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_5OrMoreYears_OnlyEnglishspokenAthome_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_5OrMoreYears_SpanishOrSpanishCreolespokenAthome_BelowPovertyLevelInThePast12Months
+member: dcid:Count_Person_5OrMoreYears_SpanishspokenAthome_BelowPovertyLevelInThePast12Months
 
-Node: dcid:dc/topic/PovertyByRace
-typeOf: dcs:Topic
-name: "Poverty by Race"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByRace_ImpoverishedPopulationByRace
+Node: dcid:dc/topic/PovertyByrace
+typeof: dcs:topic
+name: "Impoverished population by race"
+description: "The impoverished population categorized by race, representing those who are below the poverty level in the past 12 months"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByrace_ImpoverishedpopulationByrace
 
-Node: dcid:dc/svpg/dc/topic/PovertyByRace_ImpoverishedPopulationByRace
-typeOf: dcs:StatVarPeerGroup
-name: "Impoverished Population by Race"
+Node: dcid:dc/svpg/dc/topic/PovertyByrace_ImpoverishedpopulationByrace
+typeof: dcs:StatVarPeerGroup
+name: "Impoverished population by race"
+description: "The impoverished population categorized by race, representing individuals who are below the poverty level in the past 12 months, classified by race"
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_SomeOtherRaceAlone
-member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_TwoOrMoreRaces
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_nativeHawaiianOr0therPacificIslanderAlone
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_Some0therraceAlone
+member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_TwoOrMoreraces
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone
 member: dcid:Count_Person_BelowPovertyLevelInThePast12Months_WhiteAloneNotHispanicOrLatino
 
-Node: dcid:dc/topic/PovertyByResidency
-typeOf: dcs:Topic
-name: "Poverty by Residency"
-relevantVariable: dcid:dc/svpg/dc/topic/PovertyByResidency_ImpoverishedPopulationByResidency
+Node: dcid:dc/topic/PovertyByresidency
+typeof: dcs:topic
+name: "Impoverished population by residency"
+description: "The impoverished population categorized by residency, representing individuals who are below the poverty level in the past 12 months, classified by residency"
+relevantVariable: dcid:dc/svpg/dc/topic/PovertyByresidency_ImpoverishedpopulationByresidency
 
-Node: dcid:dc/svpg/dc/topic/PovertyByResidency_ImpoverishedPopulationByResidency
-typeOf: dcs:StatVarPeerGroup
-name: "Impoverished Population by Residency"
+Node: dcid:dc/svpg/dc/topic/PovertyByresidency_ImpoverishedpopulationByresidency
+typeof: dcs:StatVarPeerGroup
+name: "Impoverished population by residency"
+description: "The impoverished population categorized by residency, representing individuals who are below the poverty level in the past 12 months, classified by rural and urban residency"
 member: dcid:Count_Person_Rural_BelowPovertyLevelInThePast12Months
 member: dcid:Count_Person_Urban_BelowPovertyLevelInThePast12Months
 
-
 Node: dcid:dc/topic/Remittance
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Remittance"
-relevantVariable: dcid:Amount_Remittance_InwardRemittance
-relevantVariable: dcid:Amount_Remittance_InwardRemittance_AsFractionOf_Amount_EconomicActivity_GrossDomesticProduction_Nominal
-relevantVariable: dcid:Amount_Remittance_OutwardRemittance
+description: "The total value of inward and outward remittances, including inward remittance as a fraction of nominal gross domestic production"
+relevantVariable: dcid:amount_Remittance_InwardRemittance
+relevantVariable: dcid:amount_Remittance_InwardRemittance_AsFractionof_amount_EconomicActivity_GrossDomesticProduction_Nominal
+relevantVariable: dcid:amount_Remittance_OutwardRemittance
 
-Node: dcid:dc/topic/UnemploymentRate
-typeOf: dcs:Topic
-name: "Unemployment Rate"
-relevantVariable: dcid:UnemploymentRate_Person
-relevantVariable: dcid:dc/svpg/UnemploymentRateByGender
-relevantVariable: dcid:UnemploymentRate_Person_Male
-relevantVariable: dcid:Count_Person_Unemployed
-relevantVariable: dcid:dc/svpg/UnemploymentByGender
-
-Node: dcid:dc/svpg/UnemploymentRateByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Unemployment Rate by Gender"
-member: dcid:UnemploymentRate_Person_Female
-member: dcid:UnemploymentRate_Person_Male
-
-Node: dcid:dc/svpg/UnemploymentByGender
-typeOf: dcs:StatVarPeerGroup
-name: "Unemployment by Gender"
-member: dcid:Count_Person_Unemployed_Female
-member: dcid:Count_Person_Unemployed_Male
+Node: dcid:dc/topic/Unemploymentrate
+typeof: dcs:topic
+name: "Unemployment rate"
+description: "Statistics related to the unemployment rate among people including overall female and male populations"
+relevantVariable: dcid:Unemploymentrate_Person
+relevantVariable: dcid:Unemploymentrate_Person_Female
+relevantVariable: dcid:Unemploymentrate_Person_Male
 
 Node: dcid:dc/topic/UnpaidFamilyWorkers
-typeOf: dcs:Topic
-name: "Unpaid Family Workers"
-relevantVariable: dcid:Count_Person_16OrMoreYears_PrivatelyOwnedEstablishment_NoHealthInsurance_UnpaidFamilyWorker_Worker
-
-Node: dcid:dc/topic/ConsumerPriceIndex
-typeOf: dcs:Topic
-name: "Consumer Price Index"
-relevantVariable: dcid:worldBank/FP_CPI_TOTL
-relevantVariable: dcid:worldBank/FP_CPI_TOTL_ZG
-relevantVariable: dcid:dc/x6l3mg60hpe7c
-relevantVariable: dcid:worldBank/FP_WPI_TOTL
-relevantVariable: dcid:dc/topic/ConsumerPriceIndexCategory
-
-Node: dcid:dc/topic/ConsumerPriceIndexCategory
-typeOf: dcs:Topic
-name: "Consumer Price Index by Category"
-relevantVariable: dcid:dc/svpg/ConsumerPriceIndexByCategory
-relevantVariable: dcid:dc/svpg/ConsumerPriceIndexByCommodity
-
-Node: dcid:dc/svpg/ConsumerPriceIndexByCategory
-typeOf: dcs:StatVarPeerGroup
-name: "Consumer Price Index by Category"
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptEnergy
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFood
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFoodAndShelter
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFoodShelterAndEnergy
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptMedicalCare
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ServicesExceptMedicalCareServices
-
-Node: dcid:dc/svpg/ConsumerPriceIndexByCommodity
-typeOf: dcs:StatVarPeerGroup
-name: "Consumer Price Index by Commodity"
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_CommoditiesExceptFood
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_CommoditiesExceptFoodAndBeverages
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ComputersPeripheralsAndSmartHomeAssistantDevices
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PersonalComputersAndPeripheralEquipment
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_FreshBiscuitsRollsMuffins
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_LambAndOrganMeats
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_LandlineTelephoneServices
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_NondurablesExceptFood
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AdmissionToMoviesTheatersAndConcerts
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AlcoholicBeveragesAtHome
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AlcoholicBeveragesAwayFromHome
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Appliances
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_BakeryProducts
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_GasolineUnleadedRegular
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_GasolineUnleadedPremium
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MedicalCare
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Milk
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_NewCars
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PersonalCare
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PetsPetProductsAndServices
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Toys
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Smartphones
-member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_SportingGoods
-
+typeof: dcs:topic
+name: "Unpaid family workers"
+description: "The statistics related to people aged 16 or older working as unpaid family workers in privately owned establishments without health insurance"
+relevantVariable: dcid:Count_Person_16OrMoreYears_PrivatelyOwnedEstablishment_NohealthInsurance_UnpaidFamilyWorker_Worker
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

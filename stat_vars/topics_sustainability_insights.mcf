@@ -1,174 +1,188 @@
-# LINT.IfChange
-# This file contains Sustainability excluding disasters and climate.
 
 Node: dcid:dc/topic/Sustainability
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Sustainability"
-relevantVariable: dcid:dc/topic/Emissions
-relevantVariable: dcid:dc/topic/Pollutants
-relevantVariable: dcid:dc/topic/Temperatures
+description: "A topic that includes relevant variables related to emissions, pollutants, temperatures, precipitation, natural disasters, agriculture, energy, green jobs, land use, ocean health, and production, consumption, and waste"
+relevantVariable: dcid:dc/topic/emissions
+relevantVariable: dcid:dc/topic/pollutants
+relevantVariable: dcid:dc/topic/temperatures
 relevantVariable: dcid:dc/topic/Precipitation
-relevantVariable: dcid:dc/topic/NaturalDisasters
+relevantVariable: dcid:dc/topic/Naturaldisasters
 relevantVariable: dcid:dc/topic/Agriculture
 relevantVariable: dcid:dc/topic/Energy
 relevantVariable: dcid:dc/topic/GreenJobs
 relevantVariable: dcid:dc/topic/LandUseAndCoverage
-relevantVariable: dcid:dc/topic/OceanHealth
+relevantVariable: dcid:dc/topic/Oceanhealth
 relevantVariable: dcid:dc/topic/ProductionConsumptionandWaste
 
-Node: dcid:dc/topic/Emissions
-typeOf: dcs:Topic
+Node: dcid:dc/topic/emissions
+typeof: dcs:topic
 name: "Emissions"
-relevantVariable: dcid:Annual_Emissions_GreenhouseGas
-relevantVariable: dcid:Annual_Emissions_GreenhouseGas_NonBiogenic
-relevantVariable: dcid:dc/topic/GreenhouseGasEmissions
-relevantVariable: dcid:dc/topic/CO2Emissions
-relevantVariable: dcid:dc/topic/Emissions_FlourinatedGases
-relevantVariable: dcid:dc/topic/Emissions_Methane_EmissionsbySource
-relevantVariable: dcid:dc/topic/Emissions_NitrousOxide_EmissionsbySource
-relevantVariable: dcid:dc/topic/Emissions_PM2.5_EmissionsbySource
-relevantVariable: dcid:dc/topic/Emissions_SulfurDioxide_EmissionsbySource
-# TODO: Add Emissions by Sector
+description: "A topic that includes relevant variables related to greenhouse gas emissions, CO2 emissions, methane, nitrous oxide, sulfur dioxide, and 0ther emissions by source and sector"
+relevantVariable: dcid:annual_emissions_GreenhouseGas
+relevantVariable: dcid:annual_emissions_GreenhouseGas_NonBiogenic
+relevantVariable: dcid:dc/topic/GreenhouseGasemissions
+relevantVariable: dcid:dc/topic/CO2emissions
+relevantVariable: dcid:dc/topic/emissions_Flourinatedgases
+relevantVariable: dcid:dc/topic/emissions_Methane_emissionsbysource
+relevantVariable: dcid:dc/topic/emissions_NitrousOxide_emissionsbysource
+relevantVariable: dcid:dc/topic/emissions_PM2.5_emissionsbysource
+relevantVariable: dcid:dc/topic/emissions_SulfurDioxide_emissionsbysource
+# toDO: Add emissions by Sector
 
-Node: dcid:dc/topic/GreenhouseGasEmissions
-typeOf: dcs:Topic
-name: "Greenhouse Gasses"
-relevantVariable: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
+Node: dcid:dc/topic/GreenhouseGasemissions
+typeof: dcs:topic
+name: "Greenhouse gas emissions"
+description: "A topic that includes relevant variables related to greenhouse gas emissions by source"
+relevantVariable: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasemissionsBysource
 
-Node: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasEmissionsBySource
-typeOf: dcs:StatVarPeerGroup
-name: "Greenhouse Gas Emissions by Source"
-member: dcid:Annual_Emissions_GreenhouseGas_Agriculture
-member: dcid:Annual_Emissions_GreenhouseGas_ElectricityGeneration
-member: dcid:Annual_Emissions_GreenhouseGas_FuelCombustionInBuildings
-member: dcid:Annual_Emissions_GreenhouseGas_ForestryAndLandUse
-member: dcid:Annual_Emissions_GreenhouseGas_Manufacturing
-member: dcid:Annual_Emissions_GreenhouseGas_MineralExtraction
-member: dcid:Annual_Emissions_GreenhouseGas_OilAndGas
-member: dcid:Annual_Emissions_GreenhouseGas_Transportation
-member: dcid:Annual_Emissions_GreenhouseGas_WasteManagement
-member: dcid:Annual_Emissions_GreenhouseGas_CementProduction
-member: dcid:Annual_Emissions_GreenhouseGas_SteelManufacturing
-member: dcid:Annual_Emissions_GreenhouseGas_ForestFire
+Node: dcid:dc/svpg/dc/topic/GreenhouseGasses_GreenhouseGasemissionsBysource
+typeof: dcs:StatVarPeerGroup
+name: "Greenhouse gas emissions by source"
+description: "A topic that includes relevant variables related to greenhouse gas emissions from various sources like agriculture, electricity generation, transportation, waste management, and more"
+member: dcid:annual_emissions_GreenhouseGas_Agriculture
+member: dcid:annual_emissions_GreenhouseGas_ElectricityGeneration
+member: dcid:annual_emissions_GreenhouseGas_FuelCombustionInBuildings
+member: dcid:annual_emissions_GreenhouseGas_ForestryAndLandUse
+member: dcid:annual_emissions_GreenhouseGas_Manufacturing
+member: dcid:annual_emissions_GreenhouseGas_MineralExtraction
+member: dcid:annual_emissions_GreenhouseGas_OilAndGas
+member: dcid:annual_emissions_GreenhouseGas_Transportation
+member: dcid:annual_emissions_GreenhouseGas_WasteManagement
+member: dcid:annual_emissions_GreenhouseGas_CementProduction
+member: dcid:annual_emissions_GreenhouseGas_SteelManufacturing
+member: dcid:annual_emissions_GreenhouseGas_ForestFire
 
-Node: dcid:dc/topic/CO2Emissions
-typeOf: dcs:Topic
-name: "Carbondioxide ( CO2)"
-# CO2 Emissions
+Node: dcid:dc/topic/CO2emissions
+typeof: dcs:topic
+name: "CO2 emissions"
+description: "A topic related to carbon dioxide emissions, including per capita emissions and emissions from various sectors such as non-biogenic sources"
+# CO2 emissions
 relevantVariable: dcid:eia/INTL.4008-8-MMTCD.A
-relevantVariable: dcid:Amount_Emissions_CarbonDioxide_PerCapita
-relevantVariable: dcid:Annual_Emissions_CarbonDioxide_NonBiogenic
-relevantVariable: dcid:dc/svpg/Emissions_CO2_EmissionsbySource
+relevantVariable: dcid:amount_emissions_CarbonDioxide_PerCapita
+relevantVariable: dcid:annual_emissions_CarbonDioxide_NonBiogenic
+relevantVariable: dcid:dc/svpg/emissions_CO2_emissionsbysource
 
-Node: dcid:dc/svpg/Emissions_CO2_EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "CO2 Emissions by Source"
-member: dcid:Annual_Emissions_CarbonDioxide_Agriculture
-member: dcid:Annual_Emissions_CarbonDioxide_FuelCombustionInBuildings
-member: dcid:Annual_Emissions_CarbonDioxide_FossilFuelOperations
-member: dcid:Annual_Emissions_CarbonDioxide_ForestryAndLandUse
-member: dcid:Annual_Emissions_CarbonDioxide_Manufacturing
-member: dcid:Annual_Emissions_CarbonDioxide_MineralExtraction
-member: dcid:Annual_Emissions_CarbonDioxide_Power
-member: dcid:Annual_Emissions_CarbonDioxide_Transportation
-member: dcid:Annual_Emissions_CarbonDioxide_WasteManagement
+Node: dcid:dc/svpg/emissions_CO2_emissionsbysource
+typeof: dcs:StatVarPeerGroup
+name: "CO2 emissions by source"
+description: "A stat var peer group representing the breakdown of carbon dioxide emissions by source, including agriculture, fuel combustion in buildings, fossil fuel operations, forestry and land use, manufacturing, mineral extraction, power generation, transportation, and waste management"
+member: dcid:annual_emissions_CarbonDioxide_Agriculture
+member: dcid:annual_emissions_CarbonDioxide_FuelCombustionInBuildings
+member: dcid:annual_emissions_CarbonDioxide_FossilFuelOperations
+member: dcid:annual_emissions_CarbonDioxide_ForestryAndLandUse
+member: dcid:annual_emissions_CarbonDioxide_Manufacturing
+member: dcid:annual_emissions_CarbonDioxide_MineralExtraction
+member: dcid:annual_emissions_CarbonDioxide_Power
+member: dcid:annual_emissions_CarbonDioxide_Transportation
+member: dcid:annual_emissions_CarbonDioxide_WasteManagement
 
-Node: dcid:dc/topic/Emissions_FlourinatedGases
-typeOf: dcs:Topic
-name: "Flourinated Gas"
-relevantVariable: dcid:dc/svpg/dc/topic/Emissions_FlourinatedGases
+Node: dcid:dc/topic/emissions_Flourinatedgases
+typeof: dcs:topic
+name: "Fluorinated gases emissions"
+description: "A topic related to emissions of fluorinated gases, including various greenhouse gases such as hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), and sulfur hexafluoride (SF6)"
+relevantVariable: dcid:dc/svpg/dc/topic/emissions_Flourinatedgases
 
-Node: dcid:dc/svpg/dc/topic/Emissions_FlourinatedGases
-typeOf: dcs:StatVarPeerGroup
-name: "Flourinated Gas Emissions by Type"
-member: dcid:Annual_Emissions_Hydrofluorocarbon_NonBiogenic
-member: dcid:Annual_Emissions_Hydrofluoroether_NonBiogenic
-member: dcid:Annual_Emissions_NitrogenTrifluoride_NonBiogenic
-member: dcid:Annual_Emissions_Perfluorocarbon_NonBiogenic
-member: dcid:Annual_Emissions_SulfurHexafluoride_NonBiogenic
-member: dcid:Annual_Emissions_EPA_OtherFullyFluorinatedCompound_NonBiogenic
+Node: dcid:dc/svpg/dc/topic/emissions_Flourinatedgases
+typeof: dcs:StatVarPeerGroup
+name: "Fluorinated gases emissions by source"
+description: "A topic related to the emissions of various fluorinated gases, including hydrofluorocarbons (HFCs), hydrofluoroethers (HFEs), nitrogen trifluoride (NF3), perfluorocarbons (PFCs), sulfur hexafluoride (SF6), and 0ther fully fluorinated compounds"
+member: dcid:annual_emissions_Hydrofluorocarbon_NonBiogenic
+member: dcid:annual_emissions_Hydrofluoroether_NonBiogenic
+member: dcid:annual_emissions_NitrogenTrifluoride_NonBiogenic
+member: dcid:annual_emissions_Perfluorocarbon_NonBiogenic
+member: dcid:annual_emissions_SulfurHexafluoride_NonBiogenic
+member: dcid:annual_emissions_EPA_0therFullyFluorinatedCompound_NonBiogenic
 
-Node: dcid:dc/topic/Emissions_Methane_EmissionsbySource
-typeOf: dcs:Topic
-name: "Methane"
-relevantVariable: dcid:dc/svpg/dc/topic/Emissions_Methane_EmissionsbySource
+Node: dcid:dc/topic/emissions_Methane_emissionsbysource
+typeof: dcs:topic
+name: "Methane emissions by source"
+description: "A topic related to methane emissions from various sources, including agriculture, waste management, energy production, and 0ther industrial activities"
+relevantVariable: dcid:dc/svpg/dc/topic/emissions_Methane_emissionsbysource
 
-Node: dcid:dc/svpg/dc/topic/Emissions_Methane_EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "Methane Emissions by Source"
-member: dcid:Annual_Emissions_Methane_Agriculture
-member: dcid:Annual_Emissions_Methane_FossilFuelOperations
-member: dcid:Annual_Emissions_Methane_NonBiogenic
-member: dcid:Annual_Emissions_Methane_OpenBurningWaste
-member: dcid:Annual_Emissions_Methane_WasteManagement
+Node: dcid:dc/svpg/dc/topic/emissions_Methane_emissionsbysource
+typeof: dcs:StatVarPeerGroup
+name: "Methane emissions by source"
+description: "A topic focused on methane emissions from various sectors, including agriculture, fossil fuel operations, waste management, and more"
+member: dcid:annual_emissions_Methane_Agriculture
+member: dcid:annual_emissions_Methane_FossilFuelOperations
+member: dcid:annual_emissions_Methane_NonBiogenic
+member: dcid:annual_emissions_Methane_OpenBurningWaste
+member: dcid:annual_emissions_Methane_WasteManagement
 
-Node: dcid:dc/topic/Emissions_NitrousOxide_EmissionsbySource
-typeOf: dcs:Topic
-name: "Nitrous Oxide"
-relevantVariable: dcid:dc/svpg/dc/topic/Emissions_NitrousOxide_EmissionsbySource
+Node: dcid:dc/topic/emissions_NitrousOxide_emissionsbysource
+typeof: dcs:topic
+name: "Nitrous Oxide emissions by source"
+description: "A topic covering nitrous oxide emissions from various sources, including agriculture, fossil fuel operations, and other sectors"
+relevantVariable: dcid:dc/svpg/dc/topic/emissions_NitrousOxide_emissionsbysource
 
-Node: dcid:dc/svpg/dc/topic/Emissions_NitrousOxide_EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "Nitrous Oxide Emissions by Source"
-member: dcid:Annual_Emissions_NitrousOxide_Agriculture
-member: dcid:Annual_Emissions_NitrousOxide_FuelCombustionForResidentialCommercialOnsiteHeating
-member: dcid:Annual_Emissions_NitrousOxide_Manufacturing
-member: dcid:Annual_Emissions_NitrousOxide_NonBiogenic
-member: dcid:Annual_Emissions_NitrousOxide_Transportation
-member: dcid:Annual_Emissions_NitrousOxide_WasteManagement
-member: dcid:Annual_Emissions_NitrousOxide_WastewaterTreatmentAndDischarge
+Node: dcid:dc/svpg/dc/topic/emissions_NitrousOxide_emissionsbysource
+typeof: dcs:StatVarPeerGroup
+name: "Nitrous Oxide emissions by source"
+description: "A statistical group covering nitrous oxide emissions from various sectors, including agriculture, fuel combustion for heating, manufacturing, and waste management"
+member: dcid:annual_emissions_NitrousOxide_Agriculture
+member: dcid:annual_emissions_NitrousOxide_FuelCombustionForResidentialCommercialOnsiteHeating
+member: dcid:annual_emissions_NitrousOxide_Manufacturing
+member: dcid:annual_emissions_NitrousOxide_NonBiogenic
+member: dcid:annual_emissions_NitrousOxide_Transportation
+member: dcid:annual_emissions_NitrousOxide_WasteManagement
+member: dcid:annual_emissions_NitrousOxide_WastewaterTreatmentAndDischarge
 
-Node: dcid:dc/topic/Emissions_PM2.5_EmissionsbySource
-typeOf: dcs:Topic
-name: "PM 2.5"
-relevantVariable: dcid:dc/svpg/dc/topic/Emissions_PM2.5_EmissionsbySource
+Node: dcid:dc/topic/emissions_PM2.5_emissionsbysource
+typeof: dcs:topic
+name: "PM2.5 emissions by source"
+description: "A statistical group covering PM2.5 emissions from various sources, including agriculture, transportation, and other sectors"
+relevantVariable: dcid:dc/svpg/dc/topic/emissions_PM2.5_emissionsbysource
 
-Node: dcid:dc/svpg/dc/topic/Emissions_PM2.5_EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "PM 2.5 Emissions by Source"
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_1_ExternalCombustion
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_2_InternalCombustionEngines
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_3_IndustrialProcesses
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_4_PetroleumAndSolventEvaporation
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_5_WasteDisposal
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_6_MACTSourceCategories
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_21_StationarySourceFuelCombustion
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_22_MobileSources
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_23_IndustrialProcesses
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_24_SolventUtilization
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_25_StorageAndTransport
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_26_WasteDisposalTreatmentAndRecovery
-member: dcid:Annual_Amount_Emissions_PM2.5_SCC_28_MiscellaneousAreaSources
+Node: dcid:dc/svpg/dc/topic/emissions_PM2.5_emissionsbysource
+typeof: dcs:StatVarPeerGroup
+name: "PM2.5 emissions by source"
+description: "A statistical group representing annual emissions of PM2.5 from various source categories, including combustion, industrial processes, waste disposal, and more"
+member: dcid:annual_amount_emissions_PM2.5_SCC_1_ExternalCombustion
+member: dcid:annual_amount_emissions_PM2.5_SCC_2_InternalCombustionEngines
+member: dcid:annual_amount_emissions_PM2.5_SCC_3_IndustrialProcesses
+member: dcid:annual_amount_emissions_PM2.5_SCC_4_PetroleumAndSolventEvaporation
+member: dcid:annual_amount_emissions_PM2.5_SCC_5_WasteDisposal
+member: dcid:annual_amount_emissions_PM2.5_SCC_6_MACTsourceCategories
+member: dcid:annual_amount_emissions_PM2.5_SCC_21_StationarysourceFuelCombustion
+member: dcid:annual_amount_emissions_PM2.5_SCC_22_Mobilesources
+member: dcid:annual_amount_emissions_PM2.5_SCC_23_IndustrialProcesses
+member: dcid:annual_amount_emissions_PM2.5_SCC_24_SolventUtilization
+member: dcid:annual_amount_emissions_PM2.5_SCC_25_StorageAndTransport
+member: dcid:annual_amount_emissions_PM2.5_SCC_26_WasteDisposalTreatmentAndRecovery
+member: dcid:annual_amount_emissions_PM2.5_SCC_28_Miscellaneousareasources
 
-Node: dcid:dc/topic/Emissions_SulfurDioxide_EmissionsbySource
-typeOf: dcs:Topic
-name: "Sulfur Dioxide"
-relevantVariable: dcid:dc/svpg/dc/topic/Emissions_SulfurDioxide_EmissionsbySource
+Node: dcid:dc/topic/emissions_SulfurDioxide_emissionsbysource
+typeof: dcs:topic
+name: "Sulfur dioxide emissions by source"
+description: "A statistical group representing annual emissions of sulfur dioxide from various source categories, such as combustion, industrial processes, and waste management"
+relevantVariable: dcid:dc/svpg/dc/topic/emissions_SulfurDioxide_emissionsbysource
 
-Node: dcid:dc/svpg/dc/topic/Emissions_SulfurDioxide_EmissionsbySource
-typeOf: dcs:StatVarPeerGroup
-name: "Sulfur Dioxide Emissions by Source"
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_1_ExternalCombustion
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_2_InternalCombustionEngines
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_3_IndustrialProcesses
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_4_PetroleumAndSolventEvaporation
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_5_WasteDisposal
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_6_MACTSourceCategories
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_21_StationarySourceFuelCombustion
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_22_MobileSources
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_23_IndustrialProcesses
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_24_SolventUtilization
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_25_StorageAndTransport
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_26_WasteDisposalTreatmentAndRecovery
-member: dcid:Annual_Amount_Emissions_SulfurDioxide_SCC_28_MiscellaneousAreaSources
-member: dcid:Annual_Emissions_SulfurHexafluoride_NonBiogenic
-
+Node: dcid:dc/svpg/dc/topic/emissions_SulfurDioxide_emissionsbysource
+typeof: dcs:StatVarPeerGroup
+name: "Sulfur dioxide emissions by source"
+description: "A statistical group representing annual sulfur dioxide emissions from various source categories, including combustion, industrial processes, petroleum evaporation, waste disposal, and more"
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_1_ExternalCombustion
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_2_InternalCombustionEngines
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_3_IndustrialProcesses
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_4_PetroleumAndSolventEvaporation
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_5_WasteDisposal
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_6_MACTsourceCategories
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_21_StationarysourceFuelCombustion
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_22_Mobilesources
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_23_IndustrialProcesses
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_24_SolventUtilization
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_25_StorageAndTransport
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_26_WasteDisposalTreatmentAndRecovery
+member: dcid:annual_amount_emissions_SulfurDioxide_SCC_28_Miscellaneousareasources
+member: dcid:annual_emissions_SulfurHexafluoride_NonBiogenic
 #### Energy ####
-# TODO(shanth): Cleanup Energy to include total SVs.
+# toDO(shanth): Cleanup Energy to include total SVs.
 
 Node: dcid:dc/topic/Energy
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Energy"
+description: "A topic focused on various aspects of energy, including generation, consumption, sources, and access, with a particular emphasis on fossil fuels, renewable energy, and global electricity access"
 relevantVariable: dcid:dc/topic/Energy_Generation
 relevantVariable: dcid:dc/topic/Energy_Consumption_FossilFuels
 relevantVariable: dcid:dc/topic/Energy_Renewables
@@ -177,137 +191,156 @@ relevantVariable: dcid:dc/topic/Energy_Fraction
 relevantVariable: dcid:dc/topic/GlobalElectricityAccess
 
 Node: dcid:dc/topic/Energy_Consumption_FossilFuels
-typeOf: dcs:Topic
-name: "Energy Consumption by Fossil Fuels"
+typeof: dcs:topic
+name: "Energy consumption from fossil fuels"
+description: "A topic focusing on the consumption of energy derived from fossil fuels, including coal, oil, and natural gas, and their impact on energy systems and the environment"
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_Consumption_FossilFuels
 
 Node: dcid:dc/svpg/dc/topic/Energy_Consumption_FossilFuels
-typeOf: dcs:StatVarPeerGroup
-name: "Energy Consumption_by Fossil Fuels"
-member: dcid:Annual_Consumption_Fuel_HardCoal
-member: dcid:Annual_Consumption_Fuel_NaturalGas
-member: dcid:Annual_Consumption_Fuel_PetroleumCoke
+typeof: dcs:StatVarPeerGroup
+name: "Energy consumption from fossil fuels"
+description: "A group of statistical variables focused on the annual consumption of energy derived from various fossil fuels, such as hard coal, natural gas, and petroleum coke"
+member: dcid:annual_Consumption_Fuel_HardCoal
+member: dcid:annual_Consumption_Fuel_NaturalGas
+member: dcid:annual_Consumption_Fuel_PetroleumCoke
 
 Node: dcid:dc/topic/Energy_Generation
-typeOf: dcs:Topic
-name: "Energy Generation"
+typeof: dcs:topic
+name: "Energy generation"
+description: "A topic focused on the production of energy, including both fossil fuel-based and non-fossil fuel-based energy generation methods"
 relevantVariable: dcid:dc/topic/Energy_Generation_FossilFuels
 relevantVariable: dcid:dc/topic/Energy_Generation_NonFossilFuel
 
 Node: dcid:dc/topic/Energy_Generation_FossilFuels
-typeOf: dcs:Topic
-name: "Energy Generation by Fossil Fuels"
+typeof: dcs:topic
+name: "Energy generation from fossil fuels"
+description: "This topic focuses on the production of energy from fossil fuels, including the environmental, economic, and social impacts of fossil fuel-based energy generation"
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_Generation_FossilFuels
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_FossilFuels_SDG_GDP
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_FossilFuels_SDG_GDP_PC
 
 Node: dcid:dc/svpg/dc/topic/Energy_Generation_FossilFuels
-typeOf: dcs:StatVarPeerGroup
-name: "Energy Generation by Fossil Fuels"
-member: dcid:Annual_Generation_Energy_NaturalGas
-member: dcid:Annual_Generation_Energy_Coal
-member: dcid:Annual_Generation_Fuel_HardCoal
-member: dcid:Annual_Generation_Energy_NaturalGas
-member: dcid:Annual_Generation_Energy_OilProducts
-member: dcid:Annual_Generation_Fuel_PetroleumCoke
+typeof: dcs:StatVarPeerGroup
+name: "Energy generation from fossil fuels "
+description: "This group aggregates data on the annual generation of energy derived from fossil fuels, including coal, natural gas, and oil products"
+member: dcid:annual_Generation_Energy_NaturalGas
+member: dcid:annual_Generation_Energy_Coal
+member: dcid:annual_Generation_Fuel_HardCoal
+member: dcid:annual_Generation_Energy_NaturalGas
+member: dcid:annual_Generation_Energy_OilProducts
+member: dcid:annual_Generation_Fuel_PetroleumCoke
 
 Node: dcid:dc/svpg/dc/topic/Energy_FossilFuels_SDG_GDP
-typeOf: dcs:StatVarPeerGroup
-name: "Fossil Fuel as Fraction of GDP"
+typeof: dcs:StatVarPeerGroup
+name: "Energy fossil fuels SDG GDP "
+description: "This group represents the relationship between fossil fuel consumption and Gross Domestic Product as part of the Sustainable Development Goals, focusing on the role of energy from fossil fuels in economic development"
 member: dcid:sdg/ER_FFS_CMPT_GDP
 
 Node: dcid:dc/svpg/dc/topic/Energy_FossilFuels_SDG_GDP_PC
-typeOf: dcs:StatVarPeerGroup
-name: "Fossil Fuel Per Capita"
+typeof: dcs:StatVarPeerGroup
+name: "Energy fossil fuels SDG GDP per capita "
+description: "This group represents the relationship between per capita fossil fuel consumption and Gross Domestic Product as part of the Sustainable Development Goals, focusing on the economic impact of energy consumption from fossil fuels on a per capita basis"
 member: dcid:sdg/ER_FFS_CMPT_PC_CD
 
 Node: dcid:dc/topic/Energy_Generation_NonFossilFuel
-typeOf: dcs:Topic
-name: "Energy Generation by Non-Fossil Fuels"
+typeof: dcs:topic
+name: "Energy generation non-fossil fuel"
+description: "This topic focuses on the generation of energy from non-fossil fuel sources, including renewable energy sources like wind, solar, hydroelectric, and nuclear energy. It highlights the shift away from fossil fuels towards sustainable energy generation methods"
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_Generation_NonFossilFuel
 
 Node: dcid:dc/svpg/dc/topic/Energy_Generation_NonFossilFuel
-typeOf: dcs:StatVarPeerGroup
-name: "Energy Generation by Non-Fossil Fuels"
-member: dcid:Annual_Generation_Electricity_Households
-member: dcid:Annual_Generation_Energy_Geothermal
-member: dcid:Annual_Generation_Energy_Solar
-member: dcid:Annual_Generation_Energy_Water
-member: dcid:Annual_Generation_Fuel_Nuclear
+typeof: dcs:StatVarPeerGroup
+name: "Energy generation non-fossil fuel"
+description: "This StatVarPeerGroup focuses on the generation of energy from non-fossil fuel sources, such as solar, wind, ge0thermal, nuclear, and hydroelectric power. It tracks annual energy generation from renewable and non-carbon-emitting energy sources"
+member: dcid:annual_Generation_Electricity_Households
+member: dcid:annual_Generation_Energy_Ge0thermal
+member: dcid:annual_Generation_Energy_Solar
+member: dcid:annual_Generation_Energy_Water
+member: dcid:annual_Generation_Fuel_Nuclear
 
 Node: dcid:dc/topic/Energy_Fraction
-typeOf: dcs:Topic
-name: "Energy Percentages"
+typeof: dcs:topic
+name: "Energy fraction"
+description: "This topic focuses on the proportion of energy consumption or generation derived from different sources, such as renewable, non-renewable, or fossil fuels. It provides insights into how much of the energy mix is made up of various energy types and the transition toward cleaner energy sources"
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_Fraction
 
 Node: dcid:dc/svpg/dc/topic/Energy_Fraction
-typeOf: dcs:StatVarPeerGroup
-name: "Energy Percentages"
-member: dcid:Amount_Production_ElectricityFromNuclearSources_AsFractionOf_Amount_Production_Energy
-member: dcid:Amount_Production_ElectricityFromOilGasOrCoalSources_AsFractionOf_Amount_Production_Energy
-member: dcid:Amount_Consumption_RenewableEnergy_AsFractionOf_Amount_Consumption_Energy
+typeof: dcs:StatVarPeerGroup
+name: "Energy fraction"
+description: "The fraction of energy"
+member: dcid:amount_Production_ElectricityFromNuclearsources_AsFractionof_amount_Production_Energy
+member: dcid:amount_Production_ElectricityFromOilGasOrCoalsources_AsFractionof_amount_Production_Energy
+member: dcid:amount_Consumption_RenewableEnergy_AsFractionof_amount_Consumption_Energy
 
 Node: dcid:dc/topic/Energy_Renewables
-typeOf: dcs:Topic
-name: "Renewables"
+typeof: dcs:topic
+name: "Energy renewables"
+description: "Energy generated from renewable sources such as solar, wind, and 0ther sustainable methods"
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_Renewables
 relevantVariable: dcid:dc/svpg/dc/topic/Count_SolarInstallation
 relevantVariable: dcid:dc/svpg/dc/topic/Energy_Renewables_Fraction
 
 Node: dcid:dc/svpg/dc/topic/Energy_Renewables
-typeOf: dcs:StatVarPeerGroup
-name: "Energy From Renewables"
-member: dcid:Annual_Consumption_Energy_Geothermal
-member: dcid:Annual_Generation_Energy_Geothermal
-member: dcid:Annual_Generation_Energy_Solar
-member: dcid:Annual_Generation_Energy_Water
-member: dcid:Annual_Generation_Fuel_Nuclear
+typeof: dcs:StatVarPeerGroup
+name: "Energy renewables"
+description: "A collection of renewable energy metrics including ge0thermal, solar, and hydro energy generation and consumption"
+member: dcid:annual_Consumption_Energy_Ge0thermal
+member: dcid:annual_Generation_Energy_Ge0thermal
+member: dcid:annual_Generation_Energy_Solar
+member: dcid:annual_Generation_Energy_Water
+member: dcid:annual_Generation_Fuel_Nuclear
 
 Node: dcid:dc/svpg/dc/topic/Count_SolarInstallation
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Solar Installations"
+typeof: dcs:StatVarPeerGroup
+name: "Number of solar installations"
+description: "The number of solar installations"
 member: dcid:Count_SolarInstallation
 
 Node: dcid:dc/svpg/dc/topic/Energy_Renewables_Fraction
-typeOf: dcs:StatVarPeerGroup
-name: "Renewables Share"
+typeof: dcs:StatVarPeerGroup
+name: "Renewable energy fraction"
+description: "The fraction of energy generated from renewable sources"
 member: dcid:sdg/EG_FEC_RNEW
 
 Node: dcid:dc/topic/Electricity_Consumption
-typeOf: dcs:Topic
-name: "Electricity Consumption"
-relevantVariable: dcid:Amount_Consumption_Electricity_PerCapita
+typeof: dcs:topic
+name: "Electricity consumption"
+description: "Metrics related to the consumption of electricity, including per capita and sectoral breakdowns"
+relevantVariable: dcid:amount_Consumption_Electricity_PerCapita
 relevantVariable: dcid:dc/svpg/dc/topic/Electricity_Consumption_BySector
 
 Node: dcid:dc/svpg/dc/topic/Electricity_Consumption_BySector
-typeOf: dcs:StatVarPeerGroup
-name: "Electricity Consumption by Sector"
-member: dcid:Annual_Consumption_Electricity
-member: dcid:Annual_Consumption_Electricity_Agriculture
-member: dcid:Annual_Consumption_Electricity_CommerceAndPublicServices
-member: dcid:Annual_Consumption_Electricity_ConstructionIndustry
-member: dcid:Annual_Consumption_Electricity_Households
-member: dcid:Annual_Consumption_Electricity_Manufacturing
-member: dcid:Annual_Consumption_Electricity_TransportIndustry
-
+typeof: dcs:StatVarPeerGroup
+name: "Electricity consumption by sector"
+description: "A collection of electricity consumption metrics across various sectors, including households, manufacturing, and transportation"
+member: dcid:annual_Consumption_Electricity
+member: dcid:annual_Consumption_Electricity_Agriculture
+member: dcid:annual_Consumption_Electricity_CommerceAndPublicServices
+member: dcid:annual_Consumption_Electricity_ConstructionIndustry
+member: dcid:annual_Consumption_Electricity_Households
+member: dcid:annual_Consumption_Electricity_Manufacturing
+member: dcid:annual_Consumption_Electricity_TransportIndustry
 # Global Electrity Access
+
 Node: dcid:dc/topic/GlobalElectricityAccess
-typeOf: dcs:Topic
-name: "Access to Electricity"
+typeof: dcs:topic
+name: "Global electricity access"
+description: "Metrics related to access to electricity worldwide, including overall access rates and breakdowns by residence type"
 relevantVariable: dcid:worldBank/EG_ELC_ACCS_ZS
 relevantVariable: dcid:dc/svpg/dc/topic/GlobalElectricityAccess/ElectricyAccessByResidenceType
 
 Node: dcid:dc/svpg/dc/topic/GlobalElectricityAccess/ElectricyAccessByResidenceType
-typeOf: dcs:StatVarPeerGroup
-name: "Accesss to Electricty by Percentage of Urban/Rural Population"
+typeof: dcs:StatVarPeerGroup
+name: "Electricity access by residence type"
+description: "A collection of metrics on electricity access rates in urban and rural areas"
 member: dcid:worldBank/EG_ELC_ACCS_UR_ZS
 member: dcid:worldBank/EG_ELC_ACCS_RU_ZS
-
 #### Green Jobs ####
 
 Node: dcid:dc/topic/GreenJobs
-typeOf: dcs:Topic
-name: "Green Jobs"
+typeof: dcs:topic
+name: "Green jobs"
+description: "Metrics related to employment opportunities in green industries, including renewable energy and green building/construction"
 relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergybusinesses
 relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergyrevenue
 relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergysystems
@@ -315,22 +348,25 @@ relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionbusi
 relevantVariable: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionWages
 
 Node: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionWages
-typeOf: dcs:StatVarPeerGroup
-name: "Green Building/Construction Wages"
+typeof: dcs:StatVarPeerGroup
+name: "Green building and construction wages"
+description: "A collection of metrics on wages in the green building and construction sector"
 member: dcid:dc/ck1ksqd8rgps6
 member: dcid:dc/j5fv028n7nhe4
 member: dcid:dc/msz3yy4p50yyf
 
 Node: dcid:dc/svpg/dc/topic/GreenJobs_Greenbuilding/constructionbusinesses
-typeOf: dcs:StatVarPeerGroup
-name: "Green Building/Construction Businesses"
+typeof: dcs:StatVarPeerGroup
+name: "Green building and construction businesses"
+description: "A collection of metrics on businesses in the green building and construction sector"
 member: dcid:dc/51h3g4mcgj3w4
 member: dcid:dc/61t0et409x8ch
 member: dcid:dc/ltwqwtxcq9l23
 
 Node: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergybusinesses
-typeOf: dcs:StatVarPeerGroup
-name: "Renewable Energy Businesses"
+typeof: dcs:StatVarPeerGroup
+name: "Renewable energy businesses"
+description: "A collection of metrics on businesses in the renewable energy sector"
 member: dcid:dc/00dyzp11kk35g
 member: dcid:dc/eptfljlz7bgbg
 member: dcid:dc/evcytmdmc9xgd
@@ -339,8 +375,9 @@ member: dcid:dc/mbn7jcx896cd8
 member: dcid:dc/wfktw3b5c50h1
 
 Node: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergyrevenue
-typeOf: dcs:StatVarPeerGroup
-name: "Renewable Energy Revenue"
+typeof: dcs:StatVarPeerGroup
+name: "Renewable energy revenue"
+description: "A collection of metrics on revenue generated from renewable energy sources"
 member: dcid:dc/96b2ddmlpvq7f
 member: dcid:dc/b6z2v4t8cvcd5
 member: dcid:dc/ktmr6ngnsqxmf
@@ -349,28 +386,31 @@ member: dcid:dc/te4lvw7tlnfv9
 member: dcid:dc/xx3v7dmqp95h3
 
 Node: dcid:dc/svpg/dc/topic/GreenJobs_Renewableenergysystems
-typeOf: dcs:StatVarPeerGroup
-name: "Renewable Energy Systems"
+typeof: dcs:StatVarPeerGroup
+name: "Renewable energy systems"
+description: "A collection of metrics on renewable energy systems"
 member: dcid:dc/mwcnlh5bmdk63
 member: dcid:dc/s9cn1zj5fv5cc
-
 #### Land Use/Cover ####
 
 Node: dcid:dc/topic/LandUseAndCoverage
-typeOf: dcs:Topic
-name: "Land Use and Coverage"
+typeof: dcs:topic
+name: "Land use and coverage"
+description: "Metrics related to land use and coverage, including land cover, biodiversity, and reforestation efforts"
 relevantVariable: dcid:dc/topic/LandCover
 relevantVariable: dcid:dc/topic/SDGBiodiversity
 relevantVariable: dcid:dc/topic/SDGReforestations
 
 Node: dcid:dc/topic/LandCover
-typeOf: dcs:Topic
-name: "Land Cover"
-relevantVariable: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
+typeof: dcs:topic
+name: "Land cover"
+description: "Metrics related to the types and proportions of land cover, such as forest, grassland, or urban areas"
+relevantVariable: dcid:dc/svpg/dc/topic/LandCover_PercentofLandCoverByType
 
-Node: dcid:dc/svpg/dc/topic/LandCover_PercentOfLandCoverByType
-typeOf: dcs:StatVarPeerGroup
-name: "Percent of Land Cover by Type of Area"
+Node: dcid:dc/svpg/dc/topic/LandCover_PercentofLandCoverByType
+typeof: dcs:StatVarPeerGroup
+name: "Percent of land cover by type"
+description: "A collection of metrics on the proportion of different land cover types, such as forest, cropland, or built-up areas"
 member: dcid:LandCoverFraction_BareSparseVegetation
 member: dcid:LandCoverFraction_BuiltUp
 member: dcid:LandCoverFraction_Cropland
@@ -382,13 +422,15 @@ member: dcid:LandCoverFraction_Shrubland
 member: dcid:LandCoverFraction_SnowIce
 
 Node: dcid:dc/topic/SDGBiodiversity
-typeOf: dcs:Topic
-name: "Biodiversity"
+typeof: dcs:topic
+name: "SDG Biodiversity"
+description: "Metrics related to Sustainable Development Goal indicators on biodiversity conservation"
 relevantVariable: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGBiodiversity
 
 Node: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGBiodiversity
-typeOf: dcs:StatVarPeerGroup
-name: "Biodiversity"
+typeof: dcs:StatVarPeerGroup
+name: "SDG Biodiversity metrics"
+description: "A collection of metrics related to Sustainable Development Goal indicators on biodiversity, including protected areas and terrestrial ecosystems"
 member: dcid:sdg/DC_ODA_BDVDL
 member: dcid:sdg/ER_PTD_FRHWTR
 member: dcid:sdg/ER_PTD_MTN
@@ -396,54 +438,59 @@ member: dcid:sdg/ER_PTD_TERR
 member: dcid:sdg/ER_RSK_LST
 
 Node: dcid:dc/topic/SDGReforestations
-typeOf: dcs:Topic
-name: "Reforestations"
+typeof: dcs:topic
+name: "SDG Reforestation"
+description: "Metrics related to Sustainable Development Goal indicators on reforestation efforts"
 relevantVariable: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGReforestations
 
 Node: dcid:dc/svpg/dc/topic/LandUseAndCoverage_SDGReforestations
-typeOf: dcs:StatVarPeerGroup
-name: "Reforestations"
+typeof: dcs:StatVarPeerGroup
+name: "SDG Reforestation metrics"
+description: "A collection of metrics related to Sustainable Development Goal indicators on reforestation, including forest area, biodiversity, and certification"
 member: dcid:sdg/AG_LND_FRST
 member: dcid:sdg/AG_LND_FRSTBIOPHA
 member: dcid:sdg/AG_LND_FRSTCERT
 member: dcid:sdg/AG_LND_FRSTCHG
 member: dcid:sdg/AG_LND_FRSTN
 member: dcid:sdg/AG_LND_FRSTPRCT
+#### Ocean health ####
 
-#### Ocean Health ####
+Node: dcid:dc/topic/Oceanhealth
+typeof: dcs:topic
+name: "Ocean health"
+description: "Metrics related to the health of the world's oceans, including fishing, pollution, and marine protected areas"
+relevantVariable: dcid:dc/svpg/dc/topic/Oceanhealth_Fishing
+relevantVariable: dcid:dc/svpg/dc/topic/Oceanhealth_litterandpollution
+relevantVariable: dcid:dc/svpg/dc/topic/Oceanhealth_protectedmarinearea
 
-Node: dcid:dc/topic/OceanHealth
-typeOf: dcs:Topic
-name: "Ocean Health"
-relevantVariable: dcid:dc/svpg/dc/topic/OceanHealth_Fishing
-relevantVariable: dcid:dc/svpg/dc/topic/OceanHealth_LitterandPollution
-relevantVariable: dcid:dc/svpg/dc/topic/OceanHealth_ProtectedMarineArea
-
-Node: dcid:dc/svpg/dc/topic/OceanHealth_Fishing
-typeOf: dcs:StatVarPeerGroup
-name: "Fishing"
+Node: dcid:dc/svpg/dc/topic/Oceanhealth_Fishing
+typeof: dcs:StatVarPeerGroup
+name: "Ocean health - Fishing metrics"
+description: "A collection of metrics related to sustainable fishing practices and their impact on ocean health"
 member: dcid:sdg/EN_SCP_FSHGDP
 member: dcid:sdg/ER_H2O_FWTL
 
-Node: dcid:dc/svpg/dc/topic/OceanHealth_LitterandPollution
-typeOf: dcs:StatVarPeerGroup
-name: "Litter and Pollution"
+Node: dcid:dc/svpg/dc/topic/Oceanhealth_litterandpollution
+typeof: dcs:StatVarPeerGroup
+name: "Ocean health litter and pollution metrics"
+description: "A collection of metrics related to marine litter and pollution, including plastic debris and beach litter"
 member: dcid:sdg/EN_MAR_BEALITSQ
 member: dcid:sdg/EN_MAR_BEALIT_BP
 member: dcid:sdg/EN_MAR_BEALIT_OP
 member: dcid:sdg/EN_MAR_PLASDD
 
-Node: dcid:dc/svpg/dc/topic/OceanHealth_ProtectedMarineArea
-typeOf: dcs:StatVarPeerGroup
-name: "Protected Marine Area"
+Node: dcid:dc/svpg/dc/topic/Oceanhealth_protectedmarinearea
+typeof: dcs:StatVarPeerGroup
+name: "Ocean health protected marine area metrics"
+description: "A collection of metrics related to protected marine areas, including coverage and conservation status"
 member: dcid:sdg/ER_MRN_MPA
+#### pollutants ####
 
-#### Pollutants ####
-
-Node: dcid:dc/topic/Pollutants
-typeOf: dcs:Topic
-name: "Air Pollutants"
-relevantVariable: dcid:dc/topic/AirQualityIndex
+Node: dcid:dc/topic/pollutants
+typeof: dcs:topic
+name: "pollutants"
+description: "Metrics related to various pollutants, including air quality indexes and specific pollutants like particulate matter, nitrogen dioxide, and ozone"
+relevantVariable: dcid:dc/topic/Airqualityindex
 relevantVariable: dcid:dc/topic/CarbonMonoxide
 relevantVariable: dcid:dc/topic/NitrogenDioxide
 relevantVariable: dcid:dc/topic/Ozone
@@ -452,128 +499,146 @@ relevantVariable: dcid:dc/topic/PM2.5
 relevantVariable: dcid:dc/topic/SmokePM2.5
 relevantVariable: dcid:dc/topic/DieselPM
 
-Node: dcid:dc/topic/AirQualityIndex
-typeOf: dcs:Topic
-name: "Air Quality Index"
-relevantVariable: dcid:AirQualityIndex_AirPollutant
-relevantVariable: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
+Node: dcid:dc/topic/Airqualityindex
+typeof: dcs:topic
+name: "Air quality index"
+description: "Metrics related to air quality indexes, including pollutant-specific measurements and indexes"
+relevantVariable: dcid:Airqualityindex_Airpollutant
+relevantVariable: dcid:dc/svpg/dc/topic/Airqualityindex_AQIBypollutant
 
-Node: dcid:dc/svpg/dc/topic/AirQualityIndex_AQIByPollutant
-typeOf: dcs:StatVarPeerGroup
-name: "AQI by Pollutant"
-member: dcid:AirQualityIndex_AirPollutant_CO
-member: dcid:AirQualityIndex_AirPollutant_NO2
-member: dcid:AirQualityIndex_AirPollutant_Ozone
-member: dcid:AirQualityIndex_AirPollutant_PM10
-member: dcid:AirQualityIndex_AirPollutant_PM2.5
-member: dcid:AirQualityIndex_AirPollutant_SO2
+Node: dcid:dc/svpg/dc/topic/Airqualityindex_AQIBypollutant
+typeof: dcs:StatVarPeerGroup
+name: "Air quality index by pollutant metrics"
+description: "A collection of metrics related to air quality indexes for specific pollutants, including CO, NO2, Ozone, PM10, PM2.5, and SO2"
+member: dcid:Airqualityindex_Airpollutant_CO
+member: dcid:Airqualityindex_Airpollutant_NO2
+member: dcid:Airqualityindex_Airpollutant_Ozone
+member: dcid:Airqualityindex_Airpollutant_PM10
+member: dcid:Airqualityindex_Airpollutant_PM2.5
+member: dcid:Airqualityindex_Airpollutant_SO2
 
 Node: dcid:dc/topic/DieselPM
-typeOf: dcs:Topic
-name: "Diesel PM"
-relevantVariable: dcid:Mean_Concentration_AirPollutant_DieselPM
+typeof: dcs:topic
+name: "Diesel particulate matter"
+description: "Metrics related to diesel particulate matter concentrations in the air"
+relevantVariable: dcid:mean_concentration_Airpollutant_DieselPM
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_NitrogenDioxide
-typeOf: dcs:StatVarPeerGroup
-name: "Nitrogen Dioxide"
-member: dcid:Max_Concentration_AirPollutant_NO2
-member: dcid:Mean_Concentration_AirPollutant_NO2
-member: dcid:AirQualityIndex_AirPollutant_NO2
+Node: dcid:dc/svpg/dc/topic/pollutants_NitrogenDioxide
+typeof: dcs:StatVarPeerGroup
+name: "Nitrogen dioxide metrics"
+description: "A collection of metrics related to nitrogen dioxide concentrations and air quality indexes"
+member: dcid:Max_concentration_Airpollutant_NO2
+member: dcid:mean_concentration_Airpollutant_NO2
+member: dcid:Airqualityindex_Airpollutant_NO2
 
 Node: dcid:dc/topic/NitrogenDioxide
-typeOf: dcs:Topic
-name: "Nitrogen Dioxide"
-relevantVariable: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
+typeof: dcs:topic
+name: "Nitrogen dioxide"
+description: "Metrics related to nitrogen dioxide concentrations and impacts"
+relevantVariable: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideconcentrationStats
 
-Node: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "Nitrogen Dioxide Concentration"
-member: dcid:Max_Concentration_AirPollutant_NO2
-member: dcid:Mean_Concentration_AirPollutant_NO2
+Node: dcid:dc/svpg/dc/topic/NitrogenDioxide_NitrogenDioxideconcentrationStats
+typeof: dcs:StatVarPeerGroup
+name: "Nitrogen dioxide concentration statistics"
+description: "A collection of metrics related to nitrogen dioxide concentration statistics, including maximum and mean concentrations"
+member: dcid:Max_concentration_Airpollutant_NO2
+member: dcid:mean_concentration_Airpollutant_NO2
 
 Node: dcid:dc/topic/Ozone
-typeOf: dcs:Topic
+typeof: dcs:topic
 name: "Ozone"
-relevantVariable: dcid:dc/svpg/dc/topic/Pollutants_Ozone
+description: "Metrics related to ozone concentrations and impacts"
+relevantVariable: dcid:dc/svpg/dc/topic/pollutants_Ozone
 
-Node: dcid:dc/svpg/dc/topic/Pollutants_Ozone
-typeOf: dcs:StatVarPeerGroup
-name: "Ozone Concentration"
-member: dcid:Max_Concentration_AirPollutant_Ozone
-member: dcid:Mean_Concentration_AirPollutant_Ozone
-member: dcid:Median_Concentration_AirPollutant_Ozone
-member: dcid:AirQualityIndex_AirPollutant_Ozone
+Node: dcid:dc/svpg/dc/topic/pollutants_Ozone
+typeof: dcs:StatVarPeerGroup
+name: "Ozone metrics"
+description: "A collection of metrics related to ozone concentrations and air quality indexes, including maximum, mean, and median concentrations"
+member: dcid:Max_concentration_Airpollutant_Ozone
+member: dcid:mean_concentration_Airpollutant_Ozone
+member: dcid:Median_concentration_Airpollutant_Ozone
+member: dcid:Airqualityindex_Airpollutant_Ozone
 
 Node: dcid:dc/topic/PM10
-typeOf: dcs:Topic
-name: "PM10"
-relevantVariable: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
+typeof: dcs:topic
+name: "Particulate matter 10 "
+description: "Metrics related to particulate matter with a diameter of 10 micrometers or less concentrations and impacts"
+relevantVariable: dcid:dc/svpg/dc/topic/PM10_PM10concentrationStats
 
-Node: dcid:dc/svpg/dc/topic/PM10_PM10ConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "PM10 Concentration"
-member: dcid:Max_Concentration_AirPollutant_PM10
-member: dcid:Mean_Concentration_AirPollutant_PM10
+Node: dcid:dc/svpg/dc/topic/PM10_PM10concentrationStats
+typeof: dcs:StatVarPeerGroup
+name: "PM10 concentration statistics"
+description: "A collection of metrics related to particulate matter with a diameter of 10 micrometers or less concentration statistics, including maximum and mean concentrations"
+member: dcid:Max_concentration_Airpollutant_PM10
+member: dcid:mean_concentration_Airpollutant_PM10
 
 Node: dcid:dc/topic/PM2.5
-typeOf: dcs:Topic
-name: "PM 2.5"
-relevantVariable: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
+typeof: dcs:topic
+name: "Particulate matter 2.5 "
+description: "Metrics related to particulate matter with a diameter of 2.5 micrometers or less concentrations and impacts"
+relevantVariable: dcid:dc/svpg/dc/topic/PM2.5_PM2.5concentrationStats
 
-Node: dcid:dc/svpg/dc/topic/PM2.5_PM2.5ConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "PM 2.5 Concentration"
-member: dcid:Max_Concentration_AirPollutant_PM2.5
-member: dcid:Mean_Concentration_AirPollutant_PM2.5
-member: dcid:Median_Concentration_AirPollutant_PM2.5
+Node: dcid:dc/svpg/dc/topic/PM2.5_PM2.5concentrationStats
+typeof: dcs:StatVarPeerGroup
+name: "PM2.5 concentration statistics"
+description: "A collection of metrics related to particulate matter with a diameter of 2.5 micrometers or less concentration statistics, including maximum, mean, and median concentrations"
+member: dcid:Max_concentration_Airpollutant_PM2.5
+member: dcid:mean_concentration_Airpollutant_PM2.5
+member: dcid:Median_concentration_Airpollutant_PM2.5
 
 Node: dcid:dc/topic/CarbonMonoxide
-typeOf: dcs:Topic
-name: "Carbon Monoxide"
-relevantVariable: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
+typeof: dcs:topic
+name: "Carbon monoxide"
+description: "Metrics related to carbon monoxide concentrations and impacts"
+relevantVariable: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideconcentrationStats
 
-Node: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideConcentrationStats
-typeOf: dcs:StatVarPeerGroup
-name: "Carbon Monoxide Concentration"
-member: dcid:Max_Concentration_AirPollutant_CO
-member: dcid:Mean_Concentration_AirPollutant_CO
-member: dcid:Median_Concentration_AirPollutant_CO
-member: dcid:Min_Concentration_AirPollutant_CO
+Node: dcid:dc/svpg/dc/topic/CarbonMonoxide_CarbonMonoxideconcentrationStats
+typeof: dcs:StatVarPeerGroup
+name: "Carbon monoxide concentration statistics"
+description: "A collection of metrics related to carbon monoxide concentration statistics, including maximum, mean, median, and minimum concentrations"
+member: dcid:Max_concentration_Airpollutant_CO
+member: dcid:mean_concentration_Airpollutant_CO
+member: dcid:Median_concentration_Airpollutant_CO
+member: dcid:Min_concentration_Airpollutant_CO
 
 Node: dcid:dc/topic/SmokePM2.5
-typeOf: dcs:Topic
-name: "Smoke PM 2.5"
-relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
-relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
+typeof: dcs:topic
+name: "Smoke PM2.5"
+description: "Metrics related to smoke particulate matter with a diameter of 2.5 micrometers or less concentrations and impacts, including smoke concentration and number of days with smoke pollution by level"
+relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_Smokeconcentration2.5
+relevantVariable: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5pollutionbypollutionLevel
 
-Node: dcid:dc/svpg/dc/topic/SmokePM2.5_SmokeConcentration2.5
-typeOf: dcs:StatVarPeerGroup
-name: "Smoke PM 2.5 Concentration"
-member: dcid:Concentration_AirPollutant_SmokePM25
-member: dcid:Max_Concentration_AirPollutant_SmokePM25
-member: dcid:Mean_Concentration_AirPollutant_SmokePM25
+Node: dcid:dc/svpg/dc/topic/SmokePM2.5_Smokeconcentration2.5
+typeof: dcs:StatVarPeerGroup
+name: "Smoke PM2.5 concentration statistics"
+description: "A collection of metrics related to smoke particulate matter with a diameter of 2.5 micrometers or lessconcentration statistics, including concentration, maximum concentration, and mean concentration"
+member: dcid:concentration_Airpollutant_SmokePM25
+member: dcid:Max_concentration_Airpollutant_SmokePM25
+member: dcid:mean_concentration_Airpollutant_SmokePM25
 
-Node: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5PollutionbyPollutionLevel
-typeOf: dcs:StatVarPeerGroup
-name: "Number of Days With Smoke PM 2.5 Pollution by Level"
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above12PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above150PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above250PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above35PPM
-member: dcid:NumberOfDays_Concentration_SmokePM25_Above55PPM
-
+Node: dcid:dc/svpg/dc/topic/SmokePM2.5_NumberofDayswithSmokePM2.5pollutionbypollutionLevel
+typeof: dcs:StatVarPeerGroup
+name: "Number of Days with Smoke PM2.5 pollution by Level"
+description: "A collection of metrics tracking the number of days with smoke particulate matter with a diameter of 2.5 micrometers or less concentrations above specific levels (12, 35, 55, 150, and 250 PPM)"
+member: dcid:NumberofDays_concentration_SmokePM25_Above12PPM
+member: dcid:NumberofDays_concentration_SmokePM25_Above150PPM
+member: dcid:NumberofDays_concentration_SmokePM25_Above250PPM
+member: dcid:NumberofDays_concentration_SmokePM25_Above35PPM
+member: dcid:NumberofDays_concentration_SmokePM25_Above55PPM
 #### Consumption and Waste ####
 
 Node: dcid:dc/topic/ProductionConsumptionandWaste
-typeOf: dcs:Topic
-name: "Production Consumption and Waste"
+typeof: dcs:topic
+name: "Production, consumption, and waste"
+description: "Metrics related to production, consumption, and waste management"
 relevantVariable: dcid:dc/svpg/dc/topic/ProductionConsumptionandWaste_Consumption
 relevantVariable: dcid:dc/svpg/dc/topic/ProductionConsumptionandWaste_Production
 relevantVariable: dcid:dc/svpg/dc/topic/ProductionConsumptionandWaste_Waste
 
 Node: dcid:dc/svpg/dc/topic/ProductionConsumptionandWaste_Consumption
-typeOf: dcs:StatVarPeerGroup
-name: "Consumption"
+typeof: dcs:StatVarPeerGroup
+name: "Production, consumption, and waste consumption statistics"
+description: "The statistical data related to production, consumption, and waste consumption in various sectors"
 member: dcid:sdg/EN_MAT_DOMCMPG
 member: dcid:sdg/EN_MAT_DOMCMPT
 member: dcid:sdg/EN_MAT_DOMCMPT.PRODUCT--MF1
@@ -584,16 +649,17 @@ member: dcid:sdg/EN_MAT_DOMCMPT.PRODUCT--MF2
 member: dcid:sdg/EN_MAT_DOMCMPT.PRODUCT--MF3
 
 Node: dcid:dc/svpg/dc/topic/ProductionConsumptionandWaste_Production
-typeOf: dcs:StatVarPeerGroup
-name: "Production"
+typeof: dcs:StatVarPeerGroup
+name: "Production statistics"
+description: "The statistical data related to production in various sectors and industries"
 member: dcid:sdg/EN_SCP_FRMN
 
 Node: dcid:dc/svpg/dc/topic/ProductionConsumptionandWaste_Waste
-typeOf: dcs:StatVarPeerGroup
-name: "Waste"
+typeof: dcs:StatVarPeerGroup
+name: "Waste statistics"
+description: "The statistical data related to waste generation, including food waste and general waste per capita"
 member: dcid:sdg/AG_FOOD_WST
 member: dcid:sdg/AG_FOOD_WST_PC
 member: dcid:sdg/EN_EWT_GENPCAP
 member: dcid:sdg/EN_EWT_GENV
-
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)
