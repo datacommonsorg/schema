@@ -17,6 +17,8 @@ relevantVariable: dcid:dc/topic/Earthquake
 relevantVariable: dcid:dc/topic/Avalanche
 relevantVariable: dcid:dc/topic/Landslide
 relevantVariable: dcid:dc/topic/Tsunami
+relevantVariable: dcid:dc/topic/WindEvent
+relevantVariable: dcid:dc/topic/Fog
 
 Node: dcid:dc/topic/Drought
 typeOf: dcs:Topic
@@ -32,6 +34,7 @@ Node: dcid:dc/topic/Flood
 typeOf: dcs:Topic
 name: "Flood"
 relevantVariable: dcid:Area_FloodEvent
+relevantVariable: dcid:Count_CoastalFloodEvent
 relevantVariable: dcid:Count_FloodEvent
 relevantVariable: dcid:Count_FlashFloodEvent
 relevantVariable: dcid:dc/topic/CoastalFlood
@@ -53,6 +56,7 @@ Node: dcid:dc/topic/Fire
 typeOf: dcs:Topic
 name: "Fire"
 relevantVariable: dcid:Count_FireEvent
+relevantVariable: dcid:Count_WildfireEvent
 relevantVariable: dcid:Count_WildlandFireEvent
 relevantVariable: dcid:BurnedArea_FireEvent
 relevantVariable: dcid:Percent_BurnedArea_FireEvent
@@ -190,6 +194,24 @@ member: dcid:Count_EarthquakeEvent_M7To8
 member: dcid:Count_EarthquakeEvent_M8To9
 member: dcid:Count_EarthquakeEvent_M9Onwards
 
+Node: dcid:dc/topic/WindEvent
+typeOf: dcs:Topic
+name: "Wind Events"
+relevantVariable: dcid:dc/svpg/WindEvent_EventsByType
+
+Node: dcid:dc/svpg/WindEvent_EventsByType
+typeOf: dcs:StatVarPeerGroup
+name: "Wind Events by Type"
+member: dcid:Count_HighWindEvent
+member: dcid:Count_StrongWindEvent
+member: dcid:Count_MarineHighWindEvent
+member: dcid:Count_MarineStrongWindEvent
+
+Node: dcid:dc/topic/Fog
+typeOf: dcs:Topic
+name: "Fog"
+relevantVariable: dcid:Count_DenseFogEvent
+
 ### Precipitation ####
 
 Node: dcid:dc/topic/Precipitation
@@ -198,6 +220,7 @@ name: "Precipitation"
 relevantVariable: dcid:HeavyPrecipitationIndex
 relevantVariable: dcid:InterannualRange_Monthly_Precipitation
 relevantVariable: dcid:PrecipitationRate
+relevantVariable: dcid:Count_SleetEvent
 relevantVariable: dcid:dc/topic/Rainfall
 relevantVariable: dcid:dc/topic/Snowfall
 
@@ -375,5 +398,12 @@ typeOf: dcs:Topic
 name: "Yearly Projected Temperature Lows"
 relevantVariable: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYearDifferenceToBaseline
 relevantVariable: dcid:dc/topic/MinTemperature95PercentLikelyAtLeastOncePerYear
+
+### Smoke ####
+
+Node: dcid:dc/topic/Smoke
+typeOf: dcs:Topic
+name: "Smoke"
+relevantVariable: dcid:Count_DenseSmokeEvent
 
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

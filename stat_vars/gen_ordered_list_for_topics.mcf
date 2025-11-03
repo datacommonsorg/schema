@@ -1528,6 +1528,12 @@ memberList: "Annual_Amount_Emissions_Wildfire_NonBiogenicEmissionSource_Ammonia,
 name: "Wildfire Emissions by Pollutant"
 typeOf: dcid:StatVarPeerGroup
 
+Node: dcid:dc/svpg/WindEvent_EventsByType
+dcid: "dc/svpg/WindEvent_EventsByType"
+memberList: "Count_HighWindEvent,Count_StrongWindEvent,Count_MarineHighWindEvent,Count_MarineStrongWindEvent"
+name: "Wind Events by Type"
+typeOf: dcid:StatVarPeerGroup
+
 Node: dcid:dc/svpg/dc/topic/AgeMedians_MedianAgeByGender
 dcid: "dc/svpg/dc/topic/AgeMedians_MedianAgeByGender"
 memberList: "Median_Age_Person_Female,Median_Age_Person_Male"
@@ -3187,13 +3193,19 @@ typeOf: dcid:Topic
 Node: dcid:dc/topic/Fire
 dcid: "dc/topic/Fire"
 name: "Fire"
-relevantVariableList: "Count_FireEvent,Count_WildlandFireEvent,BurnedArea_FireEvent,Percent_BurnedArea_FireEvent,Percent_BurnedArea_FireEvent_Forest_HighSeverity,dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource"
+relevantVariableList: "Count_FireEvent,Count_WildfireEvent,Count_WildlandFireEvent,BurnedArea_FireEvent,Percent_BurnedArea_FireEvent,Percent_BurnedArea_FireEvent_Forest_HighSeverity,dc/svpg/Wildfire_Annualamountofwildfireemissionsbysource"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/Flood
 dcid: "dc/topic/Flood"
 name: "Flood"
-relevantVariableList: "Area_FloodEvent,Count_FloodEvent,Count_FlashFloodEvent,dc/topic/CoastalFlood,dc/topic/RiverineFlood"
+relevantVariableList: "Area_FloodEvent,Count_CoastalFloodEvent,Count_FloodEvent,Count_FlashFloodEvent,dc/topic/CoastalFlood,dc/topic/RiverineFlood"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/Fog
+dcid: "dc/topic/Fog"
+name: "Fog"
+relevantVariableList: "Count_DenseFogEvent"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/FoodInsecurity
@@ -4027,7 +4039,7 @@ typeOf: dcid:Topic
 Node: dcid:dc/topic/NaturalDisasters
 dcid: "dc/topic/NaturalDisasters"
 name: "Natural Disasters"
-relevantVariableList: "dc/topic/Drought,dc/topic/Flood,dc/topic/Fire,dc/topic/HeatWave,dc/topic/WetBulbEvent,dc/topic/Storm,dc/topic/Earthquake,dc/topic/Avalanche,dc/topic/Landslide,dc/topic/Tsunami"
+relevantVariableList: "dc/topic/Drought,dc/topic/Flood,dc/topic/Fire,dc/topic/HeatWave,dc/topic/WetBulbEvent,dc/topic/Storm,dc/topic/Earthquake,dc/topic/Avalanche,dc/topic/Landslide,dc/topic/Tsunami,dc/topic/WindEvent,dc/topic/Fog"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/NeglectedTropicalDiseases
@@ -4537,7 +4549,7 @@ typeOf: dcid:Topic
 Node: dcid:dc/topic/Precipitation
 dcid: "dc/topic/Precipitation"
 name: "Precipitation"
-relevantVariableList: "HeavyPrecipitationIndex,InterannualRange_Monthly_Precipitation,PrecipitationRate,dc/topic/Rainfall,dc/topic/Snowfall"
+relevantVariableList: "HeavyPrecipitationIndex,InterannualRange_Monthly_Precipitation,PrecipitationRate,Count_SleetEvent,dc/topic/Rainfall,dc/topic/Snowfall"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/PreventativeHealth
@@ -4682,6 +4694,12 @@ Node: dcid:dc/topic/SeparatedPopulationByAge
 dcid: "dc/topic/SeparatedPopulationByAge"
 name: "Separated Population by Age"
 relevantVariableList: "dc/svpg/SeparatedPopulationByAge_SeparatedPopulationByAge"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/Smoke
+dcid: "dc/topic/Smoke"
+name: "Smoke"
+relevantVariableList: "Count_DenseSmokeEvent"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/SmokePM2.5
@@ -5132,6 +5150,12 @@ Node: dcid:dc/topic/WidowedPopulationByDemographic
 dcid: "dc/topic/WidowedPopulationByDemographic"
 name: "Widowed Population"
 relevantVariableList: "Count_Person_Widowed,dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByGender,dc/svpg/dc/topic/WidowedPopulationByDemographic_WidowedPopulationByRace"
+typeOf: dcid:Topic
+
+Node: dcid:dc/topic/WindEvent
+dcid: "dc/topic/WindEvent"
+name: "Wind Events"
+relevantVariableList: "dc/svpg/WindEvent_EventsByType"
 typeOf: dcid:Topic
 
 Node: dcid:dc/topic/WithHealthInsuranceByGender
