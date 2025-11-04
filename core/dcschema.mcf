@@ -4971,4 +4971,190 @@ Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
 
+Node: dcid:englishProficiency
+typeOf: dcid:Property
+name: "englishProficiency"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EnglishProficiencyEnum
+
+Node: dcid:EnglishProficiencyEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EnglishProficiencyEnum"
+
+Node: dcid:Limited
+typeOf: dcid:EnglishProficiencyEnum
+name: "Limited"
+
+Node: dcid:homeless
+typeOf: dcid:Property
+name: "homeless"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:Boolean
+
+Node: dcid:educationProgram
+typeOf: dcid:Property
+name: "educationProgram"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationProgramEnum
+
+Node: dcid:EducationProgramEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EducationProgramEnum"
+
+Node: dcid:Section504Plan
+typeOf: dcid:EducationProgramEnum
+name: "Section 50 4Plan"
+
+Node: dcid:MeasurementQualifierEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MeasurementQualifierEnum"
+
+Node: dcid:DataSuppressed
+typeOf: dcid:MeasurementQualifierEnum
+name: "Data Suppressed"
+
+Node: dcid:criminalOffenseType
+typeOf: dcid:Property
+name: "criminalOffenseType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CriminalOffenseTypeEnum
+
+Node: dcid:CriminalOffenseTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CriminalOffenseTypeEnum"
+
+Node: dcid:RobberyWithWeapon
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Robbery With Weapon"
+
+Node: dcid:juvenileJusticeFacilityStatus
+typeOf: dcid:Property
+name: "juvenileJusticeFacilityStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:JuvenileJusticeFacilityStatusEnum
+
+Node: dcid:JuvenileJusticeFacilityStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "JuvenileJusticeFacilityStatusEnum"
+
+Node: dcid:JuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Juvenile Justice Facility"
+
+Node: dcid:firearmPossessionStatus
+typeOf: dcid:Property
+name: "firearmPossessionStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:FirearmPossessionStatusEnum
+
+Node: dcid:FirearmPossessionStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FirearmPossessionStatusEnum"
+
+Node: dcid:FirearmNotPresent
+typeOf: dcid:FirearmPossessionStatusEnum
+name: "Firearm Not Present"
+
+Node: dcid:homicideOccurrence
+typeOf: dcid:Property
+name: "homicideOccurrence"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:HomicideOccurrenceEnum
+
+Node: dcid:HomicideOccurrenceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "HomicideOccurrenceEnum"
+
+Node: dcid:HomicideNotOccurred
+typeOf: dcid:HomicideOccurrenceEnum
+name: "Homicide Not Occurred"
+
+Node: dcid:RobberyWithFirearmOrExplosive
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Robbery With Firearm Or Explosive"
+
+Node: dcid:RobberyWithoutWeapon
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Robbery Without Weapon"
+
+Node: dcid:AttemptedRobberyWithWeapon
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Attempted Robbery With Weapon"
+
+Node: dcid:AttemptedRobberyWithFirearmOrExplosive
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Attempted Robbery With Firearm Or Explosive"
+
+Node: dcid:AttemptedRobberyWithoutWeapon
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Attempted Robbery Without Weapon"
+
+Node: dcid:ThreatOfAttackWithWeapon
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Threat Of Attack With Weapon"
+
+Node: dcid:ThreatOfAttackWithFirearmOrExplosive
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Threat Of Attack With Firearm Or Explosive"
+
+Node: dcid:ThreatOfAttackWithoutWeapon
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Threat Of Attack Without Weapon"
+
+Node: dcid:PossessionOfFirearmOrExplosive
+typeOf: dcid:CriminalOffenseTypeEnum
+name: "Possession Of Firearm Or Explosive"
+
+Node: dcid:NotJuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Not Juvenile Justice Facility"
+
+Node: dcid:FirearmPresent
+typeOf: dcid:FirearmPossessionStatusEnum
+name: "Firearm Present"
+
+Node: dcid:HomicideOccurred
+typeOf: dcid:HomicideOccurrenceEnum
+name: "Homicide Occurred"
+
+Node: dcid:restraintOrSeclusionType
+typeOf: dcid:Property
+name: "restraintOrSeclusionType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:RestraintOrSeclusionTypeEnum
+
+Node: dcid:RestraintOrSeclusionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "RestraintOrSeclusionTypeEnum"
+
+Node: dcid:MechanicalRestraint
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Mechanical Restraint"
+
+Node: dcid:NonIDEA
+typeOf: dcid:EducationProgramEnum
+name: "Non IDEA"
+
+Node: dcid:PhysicalRestraint
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Physical Restraint"
+
+Node: dcid:Seclusion
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Seclusion"
+
+Node: dcid:IDEA
+typeOf: dcid:EducationProgramEnum
+name: "IDEA"
+
+
+
 
