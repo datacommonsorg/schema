@@ -216,3 +216,79 @@ Node: dcid:MilitaryConnected
 typeOf: dcid:MilitaryConnectedStatusEnum
 name: "Military Connected"
 description: "Indicates a student who is connected to the military, such as being the child or spouse of an active-duty service member."
+
+Node: dcid:disciplinaryAction
+typeOf: dcs:Property
+name: "disciplinaryAction"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:DisciplinaryActionEnum
+
+Node: dcid:DisciplinaryActionEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "DisciplinaryActionEnum"
+
+Node: dcid:SuspendedOrExpelled
+typeOf: dcid:DisciplinaryActionEnum
+name: "Suspended Or Expelled"
+
+Node: dcid:biasMotivation
+typeOf: dcid:Property
+name: "biasMotivation"
+domainIncludes: dcid:Student
+
+Node: dcid:Disability
+typeOf: dcid:BiasMotivationEnum
+name: "Disability"
+
+Node: dcid:race
+typeOf: dcid:Property
+name: "race"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EthnicityEnum,dcid:RaceCodeEnum
+
+Node: dcid:disabilityStatus
+typeOf: dcid:Property
+name: "disabilityStatus"
+domainIncludes: dcid:Student
+
+Node: dcid:DisabilityServedUnderDisabilitiesEducationAct
+typeOf: dcid:SDG_DisabilityStatusEnum
+name: "Disability Served Under Disabilities Education Act"
+
+Node: dcid:DisabilityServedUnderSection504
+typeOf: dcid:SDG_DisabilityStatusEnum
+name: "Disability Served Under Section 504"
+
+Node: dcid:GenderOrRaceOrNationalOrigin
+typeOf: dcid:BiasMotivationEnum
+name: "Gender Or Race Or National Origin"
+Node: dcid:Gender
+typeOf: dcid:BiasMotivationEnum
+name: "Gender"
+
+Node: dcid:VictimTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "VictimTypeEnum"
+description: "Enumeration class of victim types like Person, Government, Society, etc."
+
+Node: dcid:HarassedOrBullied
+typeOf: dcid:VictimTypeEnum
+name: "Harassed Or Bullied"
+
+Node: dcid:allegation
+typeOf: dcs:Property
+name: "allegation"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:AllegationEnum
+
+Node: dcid:AllegationEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "AllegationEnum"
+
+Node: dcid:Alleged
+typeOf: dcid:AllegationEnum
+name: "Alleged"
+
