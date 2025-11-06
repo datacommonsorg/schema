@@ -4971,4 +4971,126 @@ Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
 
+Node: dcid:instructionMode
+typeOf: dcs:Property
+name: "instructionMode"
+domainIncludes: dcid:PublicSchool
+rangeIncludes: dcid:InstructionModeEnum
+
+
+Node: dcid:InstructionModeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "InstructionModeEnum"
+
+
+Node: dcid:InstructionInPerson
+typeOf: dcid:InstructionModeEnum
+name: "Instruction In Person"
+
+
+Node: dcid:InstructionInHybrid
+typeOf: dcid:InstructionModeEnum
+name: "Instruction In Hybrid"
+
+Node: dcid:InstructionInRemote
+typeOf: dcid:InstructionModeEnum
+name: "Instruction In Remote"
+
+Node: dcid:NoEffect
+typeOf: dcid:InstructionModeEnum
+name: "No Effect"
+
+Node: dcid:studentAvailabilityMode
+typeOf: dcs:Property
+name: "studentAvailabilityMode"
+domainIncludes: dcid:PublicSchool
+rangeIncludes: dcid:StudentAvailabilityModeEnum
+
+Node: dcid:medicalCondition
+typeOf: dcs:Property
+name: "medicalCondition"
+domainIncludes: dcid:PublicSchool
+
+Node: dcid:remoteInstructionTime
+typeOf: dcs:Property
+name: "remoteInstructionTime"
+domainIncludes: dcid:PublicSchool
+rangeIncludes: dcid:RemoteInstructionTimeEnum
+
+Node: dcid:RemoteInstructionTimeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "RemoteInstructionTimeEnum"
+
+Node: dcid:1To2Hours
+typeOf: dcid:RemoteInstructionTimeEnum
+name: "1 To 2Hours"
+
+Node: dcid:LessThan1Hour
+typeOf: dcid:RemoteInstructionTimeEnum
+name: "Less Than 1Hour"
+
+Node: dcid:remoteInstructionPercent
+typeOf: dcs:Property
+name: "remoteInstructionPercent"
+domainIncludes: dcid:PublicSchool
+rangeIncludes: dcid:RemoteInstructionPercentEnum,dcid:QuantityRange
+
+Node: dcid:RemoteInstructionPercentEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "RemoteInstructionPercentEnum"
+
+Node: dcid:Above75PercentStudents
+typeOf: dcid:RemoteInstructionPercentEnum
+name: "Above 75 Percent Students"
+
+
+Node: dcid:StudentAvailabilityModeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "StudentAvailabilityModeEnum"
+
+Node: dcid:StudentInPersonAndRemote
+typeOf: dcid:StudentAvailabilityModeEnum
+name: "Student In Person And Remote"
+
+Node: dcid:teacherInstructionMode
+typeOf: dcs:Property
+name: "teacherInstructionMode"
+domainIncludes: dcid:PublicSchool
+rangeIncludes: dcid:TeacherInstructionModeEnum
+
+Node: dcid:TeacherInstructionModeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "TeacherInstructionModeEnum"
+
+Node: dcid:TeachersInRemote
+typeOf: dcid:TeacherInstructionModeEnum
+name: "Teachers In Remote"
+
+Node: dcid:5OrMoreHours
+typeOf: dcid:RemoteInstructionTimeEnum
+name: "5 Or More Hours"
+
+Node: dcid:StudentInRemote
+typeOf: dcid:StudentAvailabilityModeEnum
+name: "Student In Remote"
+
+Node: dcid:3To4Hours
+typeOf: dcid:RemoteInstructionTimeEnum
+name: "3 To 4Hours"
+
+Node: dcid:StudentInPerson
+typeOf: dcid:StudentAvailabilityModeEnum
+name: "Student In Person"
+
+Node: dcid:PercentStudents
+typeOf: dcid:RemoteInstructionPercentEnum
+name: "Percent Students"
+
+
+
 
