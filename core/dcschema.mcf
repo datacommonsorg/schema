@@ -4971,4 +4971,42 @@ Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
 
+Node: dcid:LimitedEnglishProficient
+typeOf: dcid:LanguageFluencyLevelEnum
+name: "Limited English Proficient"
+
+Node: dcid:ScholasticAssessmentTest
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "Scholastic Assessment Test"
+
+Node: dcid:AmericanCollegeTesting
+typeOf: dcid:AcademicAssessmentTypeEnum
+name: "American College Testing"
+
+Node: dcid:juvenileJusticeFacilityStatus
+typeOf: dcs:Property
+name: "juvenileJusticeFacilityStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:JuvenileJusticeFacilityStatusEnum
+
+Node: dcid:JuvenileJusticeFacilityStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "JuvenileJusticeFacilityStatusEnum"
+
+Node: dcid:WithJuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "With Juvenile Justice Facility"
+
+Node: dcid:NoJuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "No Juvenile Justice Facility"
+
+Node: dcid:JuvenileJusticeLongTermSecureFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Juvenile Justice Long Term Secure Facility"
+
+Node: dcid:OtherJuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Other Juvenile Justice Facility"
 
