@@ -1,0 +1,243 @@
+Node: dcid:Count_MedicalConditionIncident_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Count of medical condition incidents (COVID-19 cases)"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+
+Node: dcid:Count_MortalityEvent_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Count of mortality events due to COVID19"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+
+Node: dcid:CumulativeCount_MedicalConditionIncident_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Cumulative count of medical condition incidents (COVID-19 cases)"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:cumulativeCount
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+
+Node: dcid:CumulativeCount_MortalityEvent_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Cumulative count of mortality events (COVID-19 deaths)"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:cumulativeCount
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+
+Node: dcid:Count_Person_COVID19_HealthCareWorkerOccupation
+typeOf: dcid:StatisticalVariable
+name: "Number of persons in the healthcare worker occupation"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+occupation: dcid:HealthCareWorker
+
+Node: dcid:Count_Person_OlderAdults_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Number of Person with OlderAdults and COVID19"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ageGroupClassification: dcid:OlderAdults
+incidentType: dcid:COVID_19
+
+Node: dcid:Count_MedicalConditionIncident_COVID19_AtLeastOneDose_AsAFractionOf_Count_MedicalConditionIncident_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Percentage of medical condition incidents (COVID-19 cases) who have received at least one vaccine dose"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_MedicalConditionIncident_COVID19
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_MedicalConditionIncident_COVID19_BoosterDose_AsAFractionOf_Count_MedicalConditionIncident_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Percentage of medical condition incidents (COVID-19 cases) who have received a booster vaccine dose"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_MedicalConditionIncident_COVID19
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:BoosterDose
+
+Node: dcid:Count_MedicalConditionIncident_COVID19_CompletedPrimaryDose_AsAFractionOf_Count_MedicalConditionIncident_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Percentage of medical condition incidents (COVID-19 cases) who have received primary vaccine dose"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_MedicalConditionIncident_COVID19
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:CompletedPrimaryDose
+
+Node: dcid:Count_Person_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Number of person infected with COVID19"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+
+Node: dcid:Count_Person_COVID19_AtLeastOneDose_VaccineAdministered
+typeOf: dcid:StatisticalVariable
+name: "Number of person infected with COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+vaccineStatus: dcid:VaccineAdministered
+
+Node: dcid:Count_Person_COVID19_BoosterDose_VaccineAdministered
+typeOf: dcid:StatisticalVariable
+name: "Number of person with COVID19 who have received a booster vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:BoosterDose
+vaccineStatus: dcid:VaccineAdministered
+
+Node: dcid:Count_Person_COVID19_CompletedPrimaryDose_VaccineAdministered
+typeOf: dcid:StatisticalVariable
+name: "Number of person with COVID19 who have received primary vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:CompletedPrimaryDose
+vaccineStatus: dcid:VaccineAdministered
+
+Node: dcid:Count_Person_COVID19_VaccineAdministered
+typeOf: dcid:StatisticalVariable
+name: "Number of person with COVID19 who have received a vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+vaccineStatus: dcid:VaccineAdministered
+
+Node: dcid:Count_Person_COVID19_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Number of person with COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_COVID19_ConditionPregnant_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Number of pregent women infected by COVID19  who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+medicalCondition: dcid:Pregnant
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_COVID19_HealthCareWorkerOccupation_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Number of persons in the healthcare occupation who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incidentType: dcid:COVID_19
+occupation: dcid:HealthCareWorker
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_COVID19_HealthCareWorkerOccupation_AtLeastOneDose_AsAFractionOf_Count_Person_COVID19_HealthCareWorkerOccupation
+typeOf: dcid:StatisticalVariable
+name: "Percentage of persons in the healthcare occupation who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_COVID19_HealthCareWorkerOccupation
+incidentType: dcid:COVID_19
+occupation: dcid:HealthCareWorker
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_ChronicDisease_COVID19_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Count of person with chronic disease and COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+healthCondition: dcid:ChronicDisease
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_Female_COVID19_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Number of female with COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_HealthCareWorkerOccupation
+typeOf: dcid:StatisticalVariable
+name: "Number of person in the healthcare worker occupation"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupation: dcid:HealthCareWorker
+
+Node: dcid:Count_Person_Male_COVID19_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Number of male infected by COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_OlderAdults
+typeOf: dcid:StatisticalVariable
+name: "Number of older adults infected by COVID19"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ageGroupClassification: dcid:OlderAdults
+
+Node: dcid:Count_Person_OlderAdults_COVID19_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Number of older adults infected by COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+ageGroupClassification: dcid:OlderAdults
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_OlderAdults_COVID19_AtLeastOneDose_AsAFractionOf_Count_Person_OlderAdults_COVID19
+typeOf: dcid:StatisticalVariable
+name: "Percentage of older adults infected by COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_OlderAdults_COVID19
+ageGroupClassification: dcid:OlderAdults
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
+
+Node: dcid:Count_Person_Other_COVID19_AtLeastOneDose
+typeOf: dcid:StatisticalVariable
+name: "Number of other persons infected by COVID19 who have received at least one vaccine dose"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Other
+incidentType: dcid:COVID_19
+vaccineDoseReceived: dcid:AtLeastOneDose
