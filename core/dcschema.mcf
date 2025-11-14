@@ -4971,4 +4971,62 @@ Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
 
+Node: dcid:AdvancedMathematics
+typeOf: dcid:LanguageLearnedEnum
+name: "Advanced Mathematics"
+
+Node: dcid:race
+typeOf: dcs:Property
+name: "race"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EthnicityEnum,dcid:RaceCodeEnum
+
+Node: dcid:Algebra2
+typeOf: dcid:LanguageLearnedEnum
+name: "Algebra 2"
+
+Node: dcid:schoolSubject
+typeOf: dcs:Property
+name: "schoolSubject"
+rangeIncludes: dcid:CourseSpecializationEnum
+
+Node: dcid:Calculus
+typeOf: dcid:LanguageLearnedEnum
+name: "Calculus"
+
+Node: dcid:Geometry
+typeOf: dcid:LanguageLearnedEnum
+name: "Geometry"
+
+Node: dcid:juvenileJusticeFacilityStatus
+typeOf: dcs:Property
+name: "juvenileJusticeFacilityStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:JuvenileJusticeFacilityStatusEnum
+
+Node: dcid:JuvenileJusticeFacilityStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "JuvenileJusticeFacilityStatusEnum"
+
+Node: dcid:NotJuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Not Juvenile Justice Facility"
+
+Node: dcid:LimitedEnglishProficient
+typeOf: dcid:LanguageFluencyLevelEnum
+name: "Limited English Proficient"
+
+Node: dcid:educationalMethod
+typeOf: dcs:Property
+name: "educationalMethod"
+domainIncludes: dcid:Student
+
+Node: dcid:IndividualizedEducationProgram
+typeOf: dcid:EducationalMethodEnum
+name: "Individualized Education Program"
+
+Node: dcid:JuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Juvenile Justice Facility"
 
