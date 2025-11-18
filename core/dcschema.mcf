@@ -2958,7 +2958,7 @@ typeOf: schema:Property
 name: "internetSubscriptionType"
 description: "Identifies the type of Internet subscription."
 rangeIncludes: dcs:USC_InternetSubscriptionTypeEnum
-domainIncludes: schema:Person, dcs:Household
+domainIncludes: schema:Person, dcs:Household, dcs:School
 
 Node: dcid:legislationPassedBy
 typeOf: schema:Property
@@ -5220,6 +5220,8 @@ typeOf: dcid:EducationProgramEnum
 name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
 
-
-
-
+Node: dcid:juvenileJusticeFacilityStatus
+typeOf: dcs:Property
+name: "juvenileJusticeFacilityStatus"
+domainIncludes: dcid:School
+rangeIncludes: dcid:JuvenileJusticeFacilityStatusEnum
