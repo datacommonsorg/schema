@@ -2958,7 +2958,7 @@ typeOf: schema:Property
 name: "internetSubscriptionType"
 description: "Identifies the type of Internet subscription."
 rangeIncludes: dcs:USC_InternetSubscriptionTypeEnum
-domainIncludes: schema:Person, dcs:Household
+domainIncludes: schema:Person, dcs:Household, dcs:School
 
 Node: dcid:legislationPassedBy
 typeOf: schema:Property
@@ -5049,5 +5049,8 @@ Node: dcid:SocialWorker
 typeOf: dcid:FacultyTypeEnum
 name: "Social Worker"
 
-
-
+Node: dcid:juvenileJusticeFacilityStatus
+typeOf: dcs:Property
+name: "juvenileJusticeFacilityStatus"
+domainIncludes: dcid:School
+rangeIncludes: dcid:JuvenileJusticeFacilityStatusEnum
