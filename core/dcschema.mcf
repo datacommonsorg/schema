@@ -4971,4 +4971,35 @@ Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
 
+Node: dcid:juvenileJusticeFacilityStatus
+typeOf: dcs:Property
+name: "juvenileJusticeFacilityStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:JuvenileJusticeFacilityStatusEnum
+
+Node: dcid:JuvenileJusticeFacilityStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "JuvenileJusticeFacilityStatusEnum"
+
+Node: dcid:NotJuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Not Juvenile Justice Facility"
+
+Node: dcid:JuvenileJusticeFacility
+typeOf: dcid:JuvenileJusticeFacilityStatusEnum
+name: "Juvenile Justice Facility"
+
+Node: dcid:LimitedEnglishProficient
+typeOf: dcid:LanguageFluencyLevelEnum
+name: "Limited English Proficient"
+
+Node: dcid:educationalMethod
+typeOf: dcs:Property
+name: "educationalMethod"
+domainIncludes: dcid:Student
+
+Node: dcid:IndividualizedEducationProgram
+typeOf: dcid:EducationalMethodEnum
+name: "Individualized Education Program"
 
