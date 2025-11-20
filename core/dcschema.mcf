@@ -491,7 +491,7 @@ Node: employmentStatus
 dcid: "employmentStatus"
 typeOf: schema:Property
 name: "employmentStatus"
-domainIncludes: schema:Person, schema:Household
+domainIncludes: schema:Person, schema:Household, dcid:Teacher,dcid:Faculty
 rangeIncludes: dcs:EmploymentStatusEnum, dcs:EmploymentEnum, dcs:HealthEstablishment
 
 Node: geoNamesId
@@ -4970,5 +4970,84 @@ description: "Temporary placeholder node type to ensure graph consistency."
 Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
+
+Node: dcid:certificationStatus
+typeOf: dcs:Property
+name: "certificationStatus"
+domainIncludes: dcid:Teacher
+rangeIncludes: dcid:CertificationStatusEnum
+
+Node: dcid:CertificationStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "CertificationStatusEnum"
+
+Node: dcid:Certified
+typeOf: dcid:CertificationStatusEnum
+name: "Certified"
+
+Node: dcid:NotCertified
+typeOf: dcid:CertificationStatusEnum
+name: "Not Certified"
+
+Node: dcid:teachingExperienceLevel
+typeOf: dcs:Property
+name: "teachingExperienceLevel"
+domainIncludes: dcid:Teacher
+rangeIncludes: dcid:TeachingExperienceLevelEnum
+
+Node: dcid:TeachingExperienceLevelEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "TeachingExperienceLevelEnum"
+
+Node: dcid:FirstYear
+typeOf: dcid:TeachingExperienceLevelEnum
+name: "FirstYear"
+
+Node: dcid:SecondYear
+typeOf: dcid:TeachingExperienceLevelEnum
+name: "SecondYear"
+
+Node: dcid:SchoolCounselor
+typeOf: dcid:FacultyTypeEnum
+name: "School Counselor"
+
+Node: dcid:timePeriod
+typeOf: dcs:Property
+name: "timePeriod"
+domainIncludes: dcid:Teacher
+
+Node: dcid:CurrentSchoolYear
+typeOf: dcid:TimePeriodEnum
+name: "Current School Year"
+
+Node: dcid:PreviousSchoolYear
+typeOf: dcid:TimePeriodEnum
+name: "Previous School Year"
+
+Node: dcid:absenteeismStatus
+typeOf: dcs:Property
+name: "absenteeismStatus"
+domainIncludes: dcid:Teacher
+rangeIncludes: dcid:AbsenteeismStatusEnum
+
+Node: dcid:AbsenteeismStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "AbsenteeismStatusEnum"
+
+Node: dcid:AbsentMoreThan10Days
+typeOf: dcid:AbsenteeismStatusEnum
+name: "Absent More Than 10 Days"
+
+Node: dcid:SecurityGuard
+typeOf: dcid:FacultyTypeEnum
+name: "Security Guard"
+
+Node: dcid:SocialWorker
+typeOf: dcid:FacultyTypeEnum
+name: "Social Worker"
+
 
 
