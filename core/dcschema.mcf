@@ -884,7 +884,7 @@ description: "A value of the measuredProperty property of a StatisticalVariable.
 
 Node: dcid:cumulativeCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household, dcs:MedicalTest, dcs:MedicalConditionIncident
+domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household, dcs:MedicalTest, dcs:MedicalConditionIncident, dcs:MortalityEvent
 typeOf: schema:Property
 name: "cumulativeCount"
 description: "A value of the measuredProperty property of a StatisticalVariable. Indicates that the variable reports the running count of all instances of the measured population."
@@ -2817,7 +2817,7 @@ description: "A medical condition incident, such as a case of pneumonia."
 
 Node: dcid:incidentType
 rangeIncludes: dcs:MedicalConditionIncidentTypeEnum, dcs:CauseOfDeathEnum, dcs:CauseOfDeathAndDisabilityEnum, dcs:ICD10_113CausesOfDeath
-domainIncludes: dcs:Incident, dcs:MedicalConditionIncident
+domainIncludes: dcs:Incident, dcs:MedicalConditionIncident, dcs:MortalityEvent
 typeOf: schema:Property
 name: "incidentType"
 
@@ -3177,9 +3177,10 @@ domainIncludes: dcs:Vaccine, dcs:Person
 rangeIncludes: dcs:VaccineStatusEnum
 
 Node: dcid:vaccineDoseReceived
-name: "vaccineDoseReceived"
-rangeIncludes: dcs:QuantityRange
 typeOf: schema:Property
+name: "vaccineDoseReceived"
+domainIncludes: dcs:Person, dcs:MedicalConditionIncident
+rangeIncludes: dcs:QuantityRange, dcs:VaccineDoseReceivedEnum
 
 Node: dcs:VaccineDose
 typeOf: dcs:UnitOfMeasure
@@ -4970,5 +4971,3 @@ description: "Temporary placeholder node type to ensure graph consistency."
 Node: dcid:NotHighSchoolGraduateOrAlternative
 typeOf: dcid:EducationalAttainmentEnum
 name: "Not High School Graduate Or Alternative"
-
-
