@@ -871,8 +871,9 @@ domainIncludes: dcs:Student
 
 Node: dcid:race
 typeOf: schema:Property
-rangeIncludes: dcs:RaceCodeEnum
-domainIncludes: schema:Person, schema:Household
+rangeIncludes: dcs:RaceCodeEnum, dcid:EthnicityEnum
+domainIncludes: schema:Person, schema:Household, dcid:Student
+
 
 ## Charter School Enum
 # Enum Already Defined in /cns/jv-d/home/datcom/v3_mcf/schema/K12SchemaExtensions.mcf
