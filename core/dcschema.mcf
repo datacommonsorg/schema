@@ -5221,5 +5221,25 @@ name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
 
 
+Node: dcid:CreditRecoveryProgram
+typeOf: dcid:USC_EducationalAttainmentEnum
+name: "Credit Recovery Program"
 
+Node: dcid:educationalInstitutionType
+typeOf: dcs:Property
+name: "educationalInstitutionType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationalInstitutionTypeEnum
 
+Node: dcid:EducationalInstitutionTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EducationalInstitutionTypeEnum"
+
+Node: dcid:NotJuvenileJusticeFacility
+typeOf: dcid:EducationalInstitutionTypeEnum
+name: "Not Juvenile Justice Facility"
+
+Node: dcid:JuvenileJusticeFacility
+typeOf: dcid:EducationalInstitutionTypeEnum
+name: "Juvenile Justice Facility"
