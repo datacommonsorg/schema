@@ -5220,6 +5220,21 @@ typeOf: dcid:EducationProgramEnum
 name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
 
+Node: dcid:juvenileJusticeFacilityStatus
+typeOf: dcs:Property
+name: "juvenileJusticeFacilityStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:JuvenileJusticeFacilityStatusEnum
 
+Node: dcid:educationProgram
+typeOf: dcs:Property
+name: "educationProgram"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationProgramEnum
 
+Node: dcid:studentStatus
+typeOf: dcs:Property
+name: "studentStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentStatusEnum
 
