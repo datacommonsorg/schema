@@ -5049,5 +5049,177 @@ Node: dcid:SocialWorker
 typeOf: dcid:FacultyTypeEnum
 name: "Social Worker"
 
+Node: dcid:englishProficiency
+typeOf: dcid:Property
+name: "englishProficiency"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EnglishProficiencyEnum
+
+Node: dcid:EnglishProficiencyEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EnglishProficiencyEnum"
+
+Node: dcid:LimitedEnglishProficiency
+typeOf: dcid:EnglishProficiencyEnum
+name: "Limited English Proficiency"
+
+Node: dcid:housingStatus
+typeOf: dcid:Property
+name: "housingStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SocialVulnerabilityStatusEnum
+
+Node: dcid:educationProgram
+typeOf: dcid:Property
+name: "educationProgram"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationProgramEnum
+
+Node: dcid:EducationProgramEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EducationProgramEnum"
+
+Node: dcid:Section504Plan
+typeOf: dcid:EducationProgramEnum
+name: "Section 504Plan"
+description: "Section 504 is part of the Rehabilitation Act of 1973, a civil rights law."
+
+Node: dcid:DataSuppressed
+typeOf: dcid:MeasurementQualifierEnum
+name: "Data Suppressed"
+
+Node: dcid:RobberyWithWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Robbery With Weapon"
+
+Node: dcid:educationalInstitutionType
+typeOf: dcid:Property
+name: "educationalInstitutionType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationalInstitutionTypeEnum
+
+Node: dcid:EducationalInstitutionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EducationalInstitutionTypeEnum"
+
+Node: dcid:JuvenileJusticeFacility
+typeOf: dcid:EducationalInstitutionTypeEnum
+name: "Juvenile Justice Facility"
+
+Node: dcid:firearmPossessionStatus
+typeOf: dcid:Property
+name: "firearmPossessionStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:FirearmPossessionStatusEnum
+
+Node: dcid:FirearmPossessionStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FirearmPossessionStatusEnum"
+
+Node: dcid:FirearmNotPresent
+typeOf: dcid:FirearmPossessionStatusEnum
+name: "Firearm Not Present"
+
+Node: dcid:homicideOccurrence
+typeOf: dcid:Property
+name: "homicideOccurrence"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:HomicideOccurrenceEnum
+
+Node: dcid:HomicideOccurrenceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "HomicideOccurrenceEnum"
+
+Node: dcid:HomicideNotOccurred
+typeOf: dcid:HomicideOccurrenceEnum
+name: "Homicide Not Occurred"
+
+Node: dcid:RobberyWithFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Robbery With Firearm Or Explosive"
+
+Node: dcid:RobberyWithoutWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Robbery Without Weapon"
+
+Node: dcid:AttemptedRobberyWithWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Attempted Robbery With Weapon"
+
+Node: dcid:AttemptedRobberyWithFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Attempted Robbery With Firearm Or Explosive"
+
+Node: dcid:AttemptedRobberyWithoutWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Attempted Robbery Without Weapon"
+
+Node: dcid:ThreatOfAttackWithWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Threat Of Attack With Weapon"
+
+Node: dcid:ThreatOfAttackWithFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Threat Of Attack With Firearm Or Explosive"
+
+Node: dcid:ThreatOfAttackWithoutWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Threat Of Attack Without Weapon"
+
+Node: dcid:PossessionOfFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Possession Of Firearm Or Explosive"
+
+Node: dcid:NotJuvenileJusticeFacility
+typeOf: dcid:EducationalInstitutionTypeEnum
+name: "Not Juvenile Justice Facility"
+
+Node: dcid:FirearmPresent
+typeOf: dcid:FirearmPossessionStatusEnum
+name: "Firearm Present"
+
+Node: dcid:HomicideOccurred
+typeOf: dcid:HomicideOccurrenceEnum
+name: "Homicide Occurred"
+
+Node: dcid:restraintOrSeclusionType
+typeOf: dcid:Property
+name: "restraintOrSeclusionType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:RestraintOrSeclusionTypeEnum
+
+Node: dcid:RestraintOrSeclusionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "RestraintOrSeclusionTypeEnum"
+
+Node: dcid:MechanicalRestraint
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Mechanical Restraint"
+
+Node: dcid:NonIDEA
+typeOf: dcid:EducationProgramEnum
+name: "Not Individuals with Disabilities Education Act (NON IDEA)"
+description: "Students not served under the Individuals with Disabilities Education Act"
+
+Node: dcid:PhysicalRestraint
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Physical Restraint"
+
+Node: dcid:Seclusion
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Seclusion"
+
+Node: dcid:IDEA
+typeOf: dcid:EducationProgramEnum
+name: "Individuals with Disabilities Education Act (IDEA)"
+description: "Students served under the Individuals with Disabilities Education Act"
+
+
 
 
