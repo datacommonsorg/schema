@@ -3297,14 +3297,14 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
 
 Node: dcid:confidenceIntervalLowerLimit
 typeOf: schema:Property
-domainIncludes: dcs:Observation
+domainIncludes: dcs:Observation , dcs:MortaltyEvent
 name: "confidenceIntervalLowerLimit"
 description: "The lower limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
 
 Node: dcid:confidenceIntervalUpperLimit
 typeOf: schema:Property
-domainIncludes: schema:Observation
+domainIncludes: schema:Observation, dcs:MortaltyEvent
 name: "confidenceIntervalUpperLimit"
 description: "The upper limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
