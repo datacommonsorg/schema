@@ -688,7 +688,7 @@ rangeIncludes: dcs:OffenderTypeEnum
 Node: dcid:ethnicity
 name: "ethnicity"
 typeOf: schema:Property
-domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents, dcs:Household
+domainIncludes: schema:Person, dcs:CriminalActivities, dcs:CriminalIncidents, dcs:Household, dcs:MortalityEvent
 rangeIncludes: dcs:EthnicityEnum, dcs:RaceCodeEnum
 
 Node: dcid:offenderRace
@@ -3297,14 +3297,14 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Cost"
 
 Node: dcid:confidenceIntervalLowerLimit
 typeOf: schema:Property
-domainIncludes: dcs:Observation
+domainIncludes: dcs:Observation , dcs:MortalityEvent
 name: "confidenceIntervalLowerLimit"
 description: "The lower limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
 
 Node: dcid:confidenceIntervalUpperLimit
 typeOf: schema:Property
-domainIncludes: schema:Observation
+domainIncludes: schema:Observation, dcs:MortalityEvent
 name: "confidenceIntervalUpperLimit"
 description: "The upper limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Number
@@ -3429,8 +3429,6 @@ name: "Work"
 Node: dcid:PublicPlace
 typeOf: dcid:InternetUsageLocationEnum
 name: "Public Place"
-
-
 
 Node: dcid:solute
 typeOf: schema:Property
