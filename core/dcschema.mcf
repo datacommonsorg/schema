@@ -5559,3 +5559,81 @@ typeOf: dcs:Property
 name: "studentStatus"
 domainIncludes: dcid:Student
 rangeIncludes: dcid:StudentStatusEnum
+Node: dcid:originBackgroundType
+name: "originBackgroundType"
+rangeIncludes: dcs:OriginBackgroundTypeEnum
+typeOf: schema:Property
+
+Node: dcid:LanguageSpokenAtHomeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "LanguageSpokenAtHomeEnum"
+
+Node: dcid:OriginBackgroundTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "OriginBackgroundTypeEnum"
+
+Node: dcid:ForeignBackground
+name: "Foreign Background"
+typeOf: dcs:OriginBackgroundTypeEnum
+
+Node: dcid:FIN_OtherLanguages
+name: "FIN Other Languages"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:Finnish
+name: "Finnish"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:Sami
+name: "Sami"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:Swedish
+name: "Swedish"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:NotBornInStateOfResidence
+name: "NotBornInStateOfResidence"
+typeOf: dcs:PlaceOfBirthEnum
+
+Node: dcid:FIN_OtherReligiousGroup
+name: "FIN_OtherReligiousGroup"
+typeOf: dcs:ReligionEnum
+
+Node: dcid:NoReligiousAffiliation
+name: "NoReligiousAffiliation"
+typeOf: dcs:ReligionEnum
+
+Node: dcid:AreaOfBirth
+name: "AreaOfBirth"
+typeOf: dcs:LocationClassificationEnum
+
+Node: dcid:InnerUrban
+name: "InnerUrban"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:LocalCentreRural
+name: "LocalCentreRural"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:OuterUrban
+name: "OuterUrban"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:PeriUrban
+name: "PeriUrban"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:RuralCloseToUrban
+name: "RuralCloseToUrban"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:RuralHeartland
+name: "RuralHeartland"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:SparseRural
+name: "SparseRural"
+typeOf: dcs:HumanSettlementClassificationEnum
