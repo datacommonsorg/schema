@@ -185,7 +185,7 @@ name: "establishmentOwnership"
 rangeIncludes: dcs:EstablishmentOwnershipEnum, dcs:SchoolManagementEnum
 source: "https://datacommons.org"
 typeOf: schema:Property
-domainIncludes: dcs:BLSWorker, dcs:BLSEstablishment, dcs:Person, dcs:HealthEstablishment
+domainIncludes: dcs:BLSWorker, dcs:BLSEstablishment, dcs:Person, dcs:HealthEstablishment, dcs:HousingUnit
 
 Node: EstablishmentOwnership0
 typeOf: dcs:EstablishmentOwnershipEnum
@@ -248,14 +248,14 @@ Node: BLSSeasonallyAdjustedEnum
 dcid: dcs:BLSSeasonallyAdjusted
 typeOf: dcs:SeasonalAdjustmentEnum
 name: "BLSSeasonallyAdjusted"
-description: "Indicates the adjustment of time series data to eliminate the effect of intrayear variations which tend to occur during the same period on an annual basis"
+description: "Indicates the adjustment of time series data to eliminate the effect of intra year variations which tend to occur during the same period on an annual basis"
 descriptionUrl: "https://www.bls.gov/help/def/ce.htm"
 
 Node: BLSSeasonallyUnadjustedEnum
 dcid: dcs:BLSSeasonallyUnadjusted
 typeOf: dcs:SeasonalAdjustmentEnum
 name: "BLSSeasonallyUnadjusted"
-description: "Indicates raw time series data without adjustments to eliminate the effect of intrayear variations."
+description: "Indicates raw time series data without adjustments to eliminate the effect of intra year variations."
 
 Node: dcid:jobChangeEvent
 name: "jobChangeEvent"
