@@ -96,7 +96,7 @@ supersededBy: dcs:measurementDenominator
 Node: dcid:percent
 name: "percent"
 typeOf: schema:Property
-domainIncludes: schema:StatisticalPopulation, dcs:Person
+domainIncludes: schema:StatisticalPopulation, dcs:Person, dcs:EconomicActivity
 rangeIncludes: schema:Number, dcs:Percent
 supersededBy: dcs:Percent
 
@@ -3098,7 +3098,7 @@ rangeIncludes: dcs:MedicalTestResultEnum
 Node: dcid:economicSector
 name: "economicSector"
 typeOf: schema:Property
-domainIncludes: schema:Person
+domainIncludes: schema:Person, dcs:EconomicActivity
 rangeIncludes: dcs:NACEEnum, dcs:EconomicSectorEnum, dcid:EmissionSourceEnum,dcid:EnergyConsumptionSectorEnum,dcid:FireCauseSpecificEnum,dcid:ConsumerGoodsCategoryEnum,dcid:EnergyConsumptionSectorEnum,dcid:EconomicSectorEnum, dcid:ConsumerGoodsCategoryEnum, dcid:ServiceCategoryEnum,dcid:ServiceTypeEnum
 
 Node: dcid:workPeriod
@@ -5219,6 +5219,114 @@ Node: dcid:IDEA
 typeOf: dcid:EducationProgramEnum
 name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
+
+Node: dcid:grossDomesticProductType
+typeOf: dcid:Property
+name: "grossDomesticProductType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:GrossDomesticProductTypeEnum
+
+Node: dcid:GrossDomesticProductTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "GrossDomesticProductTypeEnum"
+
+Node: dcid:RealGDP
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Real GDP"
+
+Node: dcid:AllIndustry
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "All Industry"
+
+Node: dcid:PrivateSector
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Private Sector"
+
+Node: dcid:GovernmentSector
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Government Sector"
+
+Node: dcid:FederalCivilian
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Federal Civilian"
+
+Node: dcid:Military
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Military"
+
+Node: dcid:StateAndLocal
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "State And Local"
+
+Node: dcid:ManufacturingAndInformation
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Manufacturing And Information"
+
+Node: dcid:PrivateGoodsProducingIndustries2
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Private Goods Producing Industries 2"
+
+Node: dcid:PrivateGoodsProducingIndustries3
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Private Goods Producing Industries 3"
+
+Node: dcid:GrossDomesticProduct
+typeOf: dcid:EconomicActivitySourceEnum
+name: "Gross Domestic Product"
+
+Node: dcid:chainedQuantityIndex
+typeOf: dcid:Property
+rangeIncludes: dcid:Enumeration
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:CurrentDollars
+typeOf: dcid:MeasurementQualifierEnum
+name: "Current Dollars"
+
+Node: dcid:Compensation
+typeOf: dcid:ExpenditureTypeEnum
+name: "Compensation"
+
+Node: dcid:GrossOperatingSurplus
+typeOf: dcid:EconomicActivitySourceEnum,dcid:GrossDomesticProductTypeEnum
+name: "Gross Operating Surplus"
+
+Node: dcid:AllIndustryTotalOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "All Industry Total Overseas Activity"
+
+Node: dcid:GovernmentAndGovernmentEnterprisesOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Government And Government Enterprises Overseas Activity"
+
+Node: dcid:FederalCivilianOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Federal Civilian Overseas Activity"
+
+Node: dcid:MilitaryOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Military Overseas Activity"
+
+Node: dcid:TaxesOnProductionAndImportsLessSubsidies
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Taxes On Production And Imports Less Subsidies"
+
+Node: dcid:CompensationOfEmployees
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Compensation Of Employees"
+
+Node: dcid:Subsidies
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Subsidies"
+
+Node: dcid:TaxesOnProductionAndImports
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Taxes On Production And Imports"
+
+Node: dcid:RealGDPChainTypeQuantityIndex
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Real GDPChain Type Quantity Index"
 
 
 
