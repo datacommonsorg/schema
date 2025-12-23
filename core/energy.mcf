@@ -36,7 +36,7 @@ name: "sulfurContent"
 Node: dcid:heatContent
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
-domainIncludes: schema:Fuel
+domainIncludes: schema:Fuel, schema:Coal
 name: "heatContent"
 description: "The amount of heat energy available to be released by the transformation or use of a specified physical unit of an energy form (e.g., a ton of coal, a barrel of oil, a kilowatt hour of electricity, a cubic foot of natural gas, or a pound of steam)."
 descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=H"
@@ -1097,18 +1097,21 @@ descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Megawatt"
 Node: dcid:Gigawatt
 typeOf: dcs:EnergyUnitOfMeasure
 name: "Gigawatt"
+shortDisplayName: "GW"
 description: "Unit of energy that equals one billion watts."
 descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Gigawatt"
 
 Node: dcid:Terawatt
 typeOf: dcs:EnergyUnitOfMeasure
 name: "Terawatt"
+shortDisplayName: "TW"
 description: "Unit of energy that equals one trillion watts."
 descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Terawatt"
 
 Node: dcid:Petawatt
 typeOf: dcs:EnergyUnitOfMeasure
 name: "Petawatt"
+shortDisplayName: "PW"
 description: "Unit of energy that equals one quadrillion watts."
 descriptionUrl: "https://en.wikipedia.org/wiki/Watt#Petawatt"
 
@@ -1214,6 +1217,11 @@ description: "A mass measurement unit equal to 1,000 Short Tons."
 name: "ThousandShortTons"
 shortDisplayName: "kST"
 
+Node: dcid:USDollarPerMMBtu
+typeOf: dcs:EnergyUnitOfMeasure
+name: "US Dollar Per MMBtu"
+description: "A standard unit used to express the cost or price of a specific quantity of energy. It quantifies the value in US Dollars for every one million British Thermal Units (1,000,000 BTUs), often applied in the pricing of natural gas and other fuels in energy markets."
+
 Node: dcid:MillionShortTons
 typeOf: dcs:EnergyUnitOfMeasure
 description: "A mass measurement unit equal to 1,000,000 Short Tons."
@@ -1235,13 +1243,15 @@ description: "It is the volume of a cube with edges one billion meters in length
 Node: dcid:StandardCubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
 name: "MillionMetricStandardCubicMeters"
-description: "Standard cubic meter (SCM) is a unit of measure for amount of gas in one cubic meter at 15° celsius and an absolute pressure of 1.01325 bar."
+shortDisplayName: "SCM"
+description: "A unit of measure representing the amount of gas in one cubic meter at 15° celsius and an absolute pressure of 1.01325 bar."
 descriptionUrl: "https://www.lawinsider.com/dictionary/standard-cubic-meter"
 
 Node: dcid:MillionMetricStandardCubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
 name: "MillionMetricStandardCubicMeter"
-description: "Million metric standard cubic meter (MMSCM) is a unit of measure for amount of gas in 1000000 cubic meters at 15° celsius and an absolute pressure of 1.01325 bar."
+shortDisplayName: "MMSCM"
+description: "A unit of measure representing the amount of gas in 1000000 cubic meters at 15° celsius and an absolute pressure of 1.01325 bar."
 
 Node: dcid:USCentPerKilowattHour
 typeOf: dcs:EnergyUnitOfMeasure
@@ -1297,12 +1307,14 @@ shortDisplayName: "kWh/ft²"
 Node: dcid:CubicFootPerSquareFoot
 typeOf: dcs:EnergyUnitOfMeasure
 name: "CubicFootPerSquareFoot"
-description: "Unit of fuel intensity of one Cubic feet for a unit area of one SquareFoot."
+shortDisplayName: "ft³/ft²"
+description: "A unit measuring the number of cubic feet per square foot."
 
 Node: dcid:USGallonPerSquareFoot
 typeOf: dcs:EnergyUnitOfMeasure
 name: "USGallonPerSquareFoot"
-description: "Unit of fuel intensity of one US gallon for a unit area of one SquareFoot."
+shortDisplayName: "gal/ft²"
+description: "A unit measuring the number of US gallons per square foot."
 
 #
 # EIA: Coal

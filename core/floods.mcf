@@ -35,7 +35,7 @@ typeOf: dcs:Property
 domainIncludes: dcs:NaturalHazardInsurance
 rangeIncludes: dcs:FEMAFloodZoneEnum
 description: "Flood zone describing the risk level or likelihood of floods. The US Federal Emergency management Agency (FEMA) publishes a Flood Insurance Rate Map (FIRM) with flood risk for specific regions that is used to rate the insured property."
-descriptionUrl: "https://www.fema.gov/glossary/flood-zones"
+descriptionUrl: "https://www.fema.gov/about/glossary/flood-zones"
 
 
 # Enums for flood insurance
@@ -69,20 +69,20 @@ Node: dcid:FEMAHighRiskFloodZone
 typeOf: dcid:FEMAFloodZoneEnum
 name: "High Risk Zone (100 year flood)"
 description: "Special Flood Hazard Areas (SFHA) that have a 1-percent chance of annual floods also referred to as 100-year flood. They are shown on the flood maps as zones labeled as Zone A, Zone AO, Zone AH, Zones A1-A30, Zone AE, Zone A99, Zone AR, Zone AR/AE, Zone AR/AO, Zone AR/A1-A30, Zone AR/A, Zone V, Zone VE, and Zones V1-V30."
-descriptionUrl: "https://www.fema.gov/glossary/flood-zones"
+descriptionUrl: "https://www.fema.gov/about/glossary/flood-zones"
 
 
 Node: dcid:FEMAModerateRiskFloodZone
 typeOf: dcid:FEMAFloodZoneEnum
 name: "Moderate Risk Zone (500 year flood)"
 description: "In moderate risk areas have a 0.2 percent chance of annual floods also referred to as 500-year flood. These flood zones are labelled as Zone B or Zone X(shaded)."
-descriptionUrl: "https://www.fema.gov/glossary/flood-zones"
+descriptionUrl: "https://www.fema.gov/about/glossary/flood-zones"
 
 Node: dcid:FEMALowRiskFloodZone
 typeOf: dcid:FEMAFloodZoneEnum
 name: "Low Risk Zone (500 year flood)"
 description: "In low risk areas have a lower than 0.2 percent chance of annual floods. These flood zones are labelled as Zone C or Zone X(unshaded)."
-descriptionUrl: "https://www.fema.gov/glossary/flood-zones"
+descriptionUrl: "https://www.fema.gov/about/glossary/flood-zones"
 
 Node: dcid:FEMAUndeterminedFloodZone
 typeOf: dcid:FEMAFloodZoneEnum
@@ -469,3 +469,6 @@ name: "Zone X"
 specializationOf: dcid:FEMAModerateRiskFloodZone
 description: "An area that is outside the Special Flood hazard Area with moderate or minimal flood hazard."
 
+Node: dcid:FEMAFloodZone
+typeOf: dcid:FEMAFloodZoneEnum
+name: "FEMA Flood Zone"

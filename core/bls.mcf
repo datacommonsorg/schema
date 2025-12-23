@@ -12,7 +12,7 @@ dcid: "wagesTotal"
 name: "wagesTotal"
 description: "Wages include bonuses, stock options, severance pay, profit distributions, cash value of meals and lodging, tips and other gratuities"
 rangeIncludes: schema:Number
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:BLSWorker
 
 Node: dcid:wagesDaily
 typeOf: schema:Property
@@ -25,7 +25,7 @@ typeOf: schema:Property
 name: "wagesWeekly"
 description: "Wages include bonuses, stock options, severance pay, profit distributions, cash value of meals and lodging, tips and other gratuities"
 rangeIncludes: schema:Number
-domainIncludes: schema:Person
+domainIncludes: schema:Person, schema:BLSWorker
 
 Node: dcid:wagesMonthly
 typeOf: schema:Property
@@ -39,7 +39,7 @@ typeOf: schema:Property
 name: "wagesAnnual"
 description: "Wages include bonuses, stock options, severance pay, profit distributions, cash value of meals and lodging, tips and other gratuities"
 rangeIncludes: schema:Number
-domainIncludes: schema:Person
+domainIncludes: schema:Person,dcs:USCEstablishment, schema:BLSWorker
 
 Node: BLS_InLaborForceEnum
 typeOf: dcs:EmploymentStatusEnum

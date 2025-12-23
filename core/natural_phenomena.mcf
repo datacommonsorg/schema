@@ -610,37 +610,37 @@ Node: dcid:TornadoIntensityEF0
 name: "TornadoIntensityEF0"
 typeOf: dcs:TornadoIntensityEnum
 description: "Enhanced Fujita Scale classification EF0 – Light Damage (40 – 72 mph)"
-descriptionUrl: "http://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.docx"
+descriptionUrl: "https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.pdf"
 
 Node: dcid:TornadoIntensityEF1
 name: "TornadoIntensityEF1"
 typeOf: dcs:TornadoIntensityEnum
 description: "Enhanced Fujita Scale classification EF1 – Moderate Damage (73 – 112 mph)"
-descriptionUrl: "http://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.docx"
+descriptionUrl: "https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.pdf"
 
 Node: dcid:TornadoIntensityEF2
 name: "TornadoIntensityEF2"
 typeOf: dcs:TornadoIntensityEnum
 description: "Enhanced Fujita Scale classification EF2 – Significant Damage (113 – 157 mph)"
-descriptionUrl: "http://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.docx"
+descriptionUrl: "https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.pdf"
 
 Node: dcid:TornadoIntensityEF3
 name: "TornadoIntensityEF3"
 typeOf: dcs:TornadoIntensityEnum
 description: "Enhanced Fujita Scale classification EF3 – Severe Damage (158 – 206 mph)"
-descriptionUrl: "http://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.docx"
+descriptionUrl: "https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.pdf"
 
 Node: dcid:TornadoIntensityEF4
 name: "TornadoIntensityEF4"
 typeOf: dcs:TornadoIntensityEnum
 description: "Enhanced Fujita Scale classification EF4 – Devastating Damage (207 – 260 mph)"
-descriptionUrl: "http://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.docx"
+descriptionUrl: "hhttps://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.pdf"
 
 Node: dcid:TornadoIntensityEF5
 name: "TornadoIntensityEF5"
 typeOf: dcs:TornadoIntensityEnum
 description: "Enhanced Fujita Scale classification EF5 – Incredible Damage (261 – 318 mph)"
-descriptionUrl: "http://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.docx"
+descriptionUrl: "https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.pdf"
 
 Node: dcid:TornadoIntensityEFU
 name: "TornadoIntensityEFU"
@@ -1609,3 +1609,15 @@ typeOf: schema:Property
 domainIncludes: dcs:WildlandFireEvent, dcs:PrescribedFireEvent, dcs:FireIncidentComplexEvent
 rangeIncludes: schema:Text
 description: "Geographic coordinates indicating the spread of fire."
+
+Node: dcid:CommunityRiskFactorEvent
+typeOf: schema:Class
+name: "CommunityRiskFactorEvent"
+subClassOf: dcs:MeteorologicalEvent
+
+Node: dcid:cycloneType
+name: "cycloneType"
+typeOf: schema:Property
+domainIncludes: dcs:CycloneEvent
+rangeIncludes: dcs:CycloneTypeEnum
+description: "Classification of a cyclone."

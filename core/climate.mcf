@@ -293,7 +293,7 @@ Node: dcid:electricalConductivity
 typeOf: schema:Property
 name: "electricalConductivity"
 description: Electrical Conductivity of water is its ability to conduct an electric current. The purer the water the lower the conductivity.
-descriptionUrl: "https://www.aquaread.com/parameters/ec"
+descriptionUrl: "https://www.aquaread.com/sensors/ec"
 domainIncludes: dcs:Water, dcs:BodyOfWater
 rangeIncludes: dcs:WaterSourceTypeEnum, dcs:WaterTypeEnum
 
@@ -988,7 +988,8 @@ description: "Number of units of mass of something (like pollutant) per billion 
 Node: dcid:GramsPerKilogram
 typeOf: dcs:ConcentrationUnitOfMeasure
 name: "GramsPerKilogram"
-description: "A unit of a mass fraction expressed as a number of grams per kilogram of mixture."
+shortDisplayName: "g/kg"
+description: "A unit expressing the number of grams per kilogram."
 
 Node: dcid:MetersPerSecond
 typeOf: dcs:SpeedUnitOfMeasure
@@ -1016,6 +1017,7 @@ shortDisplayName: "mg/L"
 Node: dcid:PerMillionPerson
 typeOf: dcs:UnitOfMeasure
 name: "PerMillionPerson"
+shortDisplayName: "/1M persons"
 description: "A rate or a proportion relative to a population of one million"
 
 Node: dcid:MicrogramsPerLitre
@@ -1279,3 +1281,12 @@ name: "percentDeviationValue"
 description: "Percentage change between actual and normal measurements."
 rangeIncludes: dcs:Number
 domainIncludes: dcs:Place
+
+
+Node: dcid:hazardTypeRiskIndexValue
+typeOf: dcid:Property
+description: "The FEMA National Risk Index (NRI) uses Hazard Type Risk Index values to represent the relative risk of a community for a specific natural hazard, compared to other communities. These values are calculated by combining Expected Annual Loss (EAL), Social Vulnerability, and Community Resilience data for each hazard type."
+descriptionUrl: "https://hazards.fema.gov/nri/learn-more"
+name: "hazardTypeRiskIndexValue"
+domainIncludes: dcid:NaturalHazardImpact
+

@@ -47,9 +47,54 @@ Node: dcid:dc/topic/Employment
 typeOf: dcs:Topic
 name: "Employment"
 relevantVariable: dcid:Count_Person_Employed
+relevantVariable: dcid:dc/svpg/EmploymentByGender
+relevantVariable: dcid:dc/nm9hcklgg5zb3
 relevantVariable: dcid:dc/topic/Jobs
 relevantVariable: dcid:dc/topic/UnemploymentRate
 relevantVariable: dcid:dc/topic/UnpaidFamilyWorkers
+relevantVariable: dcid:Count_Person_InLaborForce
+relevantVariable: dcid:dc/svpg/LaborForceByGender
+relevantVariable: dcid:Count_Person_Employed_TotalNonfarm
+relevantVariable: dcid:dc/svpg/EmploymentByIndustry
+
+
+Node: dcid:dc/svpg/EmploymentByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Employment by Gender"
+member: dcid:Count_Person_Employed_Female
+member: dcid:Count_Person_Employed_Male
+
+Node: dcid:dc/svpg/LaborForceByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Labor Force by Gender"
+member: dcid:Count_Person_InLaborForce_Female
+member: dcid:Count_Person_InLaborForce_Male
+
+Node: dcid:dc/svpg/EmploymentByIndustry
+typeOf: dcs:StatVarPeerGroup
+name: "Employment by Industry"
+member: dcid:Count_Person_Employed_TotalNonfarm
+member: dcid:Count_Person_Employed_GoodsProducing
+member: dcid:Count_Person_Employed_HealthCare
+member: dcid:Count_Person_Employed_RetailTrade
+member: dcid:Count_Person_Employed_PostalService
+member: dcid:Count_Person_Employed_PrivatelyOwned
+member: dcid:Count_Person_Employed_ProfessionalScientificTechnicalServices
+member: dcid:Count_Person_16OrMoreYears_NoHealthInsurance_NAICSPublicAdministration_Worker
+member: dcid:Count_Person_Employed_InvestmentBankingAndSecuritiesIntermediation
+member: dcid:Count_Person_Employed_FederalGovernmentOwnedEstablishment_ExcludingPostalService
+member: dcid:Count_Person_Employed_Utilities
+member: dcid:Count_Worker_NAICSAccommodationFoodServices
+member: dcid:Count_Worker_NAICSAgricultureForestryFishingHunting
+member: dcid:Count_Worker_NAICSTotalAllIndustries
+member: dcid:Count_Worker_NAICSWholesaleTrade
+member: dcid:dc/01yc3k23tsyk
+member: dcid:dc/e2mpgewwsl60c
+member: dcid:dc/p69tpsldf99h7
+member: dcid:dc/34t2kjrwbjd31
+member: dcid:Count_Worker_NAICSMiningQuarryingOilGasExtraction
+member: dcid:dc/j4v6keqwsl60h
+member: dcid:dc/w5ve4140t8xsb
 
 Node: dcid:dc/topic/Jobs
 typeOf: dcs:Topic
@@ -90,6 +135,9 @@ name: "GDP"
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_Nominal_PerCapita
 relevantVariable: dcid:Amount_EconomicActivity_GrossDomesticProduction_RealValue
+relevantVariable: dcid:GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
+relevantVariable: dcid:RealValue_GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
+relevantVariable: dcid:InflationAdjustedGDP
 relevantVariable: dcid:dc/topic/GDPByIndustry
 relevantVariable: dcid:dc/topic/InflationAdjustedGDP
 
@@ -309,7 +357,7 @@ relevantVariable: dcid:dc/topic/PovertyByGender
 relevantVariable: dcid:dc/topic/PovertyByRace
 relevantVariable: dcid:dc/topic/PovertyByResidency
 relevantVariable: dcid:dc/topic/PovertyByLanguageSpokenAtHome
-relevantVariable: dcid:dc/topic/SDG_1
+relevantVariable: dcid:dc/topic/sdg_1
 
 Node: dcid:dc/topic/PovertyByGender
 typeOf: dcs:Topic
@@ -375,11 +423,78 @@ Node: dcid:dc/topic/UnemploymentRate
 typeOf: dcs:Topic
 name: "Unemployment Rate"
 relevantVariable: dcid:UnemploymentRate_Person
-relevantVariable: dcid:UnemploymentRate_Person_Female
+relevantVariable: dcid:dc/svpg/UnemploymentRateByGender
 relevantVariable: dcid:UnemploymentRate_Person_Male
+relevantVariable: dcid:Count_Person_Unemployed
+relevantVariable: dcid:dc/svpg/UnemploymentByGender
+
+Node: dcid:dc/svpg/UnemploymentRateByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Unemployment Rate by Gender"
+member: dcid:UnemploymentRate_Person_Female
+member: dcid:UnemploymentRate_Person_Male
+
+Node: dcid:dc/svpg/UnemploymentByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Unemployment by Gender"
+member: dcid:Count_Person_Unemployed_Female
+member: dcid:Count_Person_Unemployed_Male
 
 Node: dcid:dc/topic/UnpaidFamilyWorkers
 typeOf: dcs:Topic
 name: "Unpaid Family Workers"
 relevantVariable: dcid:Count_Person_16OrMoreYears_PrivatelyOwnedEstablishment_NoHealthInsurance_UnpaidFamilyWorker_Worker
+
+Node: dcid:dc/topic/ConsumerPriceIndex
+typeOf: dcs:Topic
+name: "Consumer Price Index"
+relevantVariable: dcid:worldBank/FP_CPI_TOTL
+relevantVariable: dcid:worldBank/FP_CPI_TOTL_ZG
+relevantVariable: dcid:dc/x6l3mg60hpe7c
+relevantVariable: dcid:worldBank/FP_WPI_TOTL
+relevantVariable: dcid:dc/topic/ConsumerPriceIndexCategory
+
+Node: dcid:dc/topic/ConsumerPriceIndexCategory
+typeOf: dcs:Topic
+name: "Consumer Price Index by Category"
+relevantVariable: dcid:dc/svpg/ConsumerPriceIndexByCategory
+relevantVariable: dcid:dc/svpg/ConsumerPriceIndexByCommodity
+
+Node: dcid:dc/svpg/ConsumerPriceIndexByCategory
+typeOf: dcs:StatVarPeerGroup
+name: "Consumer Price Index by Category"
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptEnergy
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFood
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFoodAndShelter
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptFoodShelterAndEnergy
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AllItemsExceptMedicalCare
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ServicesExceptMedicalCareServices
+
+Node: dcid:dc/svpg/ConsumerPriceIndexByCommodity
+typeOf: dcs:StatVarPeerGroup
+name: "Consumer Price Index by Commodity"
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_CommoditiesExceptFood
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_CommoditiesExceptFoodAndBeverages
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_ComputersPeripheralsAndSmartHomeAssistantDevices
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PersonalComputersAndPeripheralEquipment
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_FreshBiscuitsRollsMuffins
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_LambAndOrganMeats
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_LandlineTelephoneServices
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_NondurablesExceptFood
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AdmissionToMoviesTheatersAndConcerts
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AlcoholicBeveragesAtHome
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_AlcoholicBeveragesAwayFromHome
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Appliances
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_BakeryProducts
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_GasolineUnleadedRegular
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_GasolineUnleadedPremium
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_MedicalCare
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Milk
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_NewCars
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PersonalCare
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_PetsPetProductsAndServices
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Toys
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_Smartphones
+member: dcid:SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_SportingGoods
+
 # LINT.ThenChange(//depot/google3/third_party/datacommons/schema/stat_vars/gen_ordered_list_for_topics.mcf)

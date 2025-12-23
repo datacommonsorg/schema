@@ -60,6 +60,12 @@ typeOf: dcs:PriceIndexChainingEnum
 description: "Indicates chained price index series that uses more current weights of goods and services and that more accurately reflects how consumers respond to changes in relative prices."
 descriptionUrl: "https://www.bls.gov/cpi/additional-resources/chained-cpi.htm"
 
+Node: dcid:ChainLinkedVolume
+name: "ChainLinkedVolume"
+typeOf: dcid:PriceIndexChainingEnum
+description: "An inflation-adjusted measure of an economic aggregate, like GDP, that links together year-on-year volume changes using the prices of the previous year."
+descriptionUrl: "https://www.wikidoc.org/index.php/Chain_volume_measure"
+
 Node: dcid:GoogleMapsCommunityMobility
 name: "GoogleMapsCommunityMobility"
 typeOf: dcs:StatisticSourceEnum
@@ -256,6 +262,11 @@ name: "NationalHouseholdTransportationSurveyEstimates_IncompleteACSSurvey_Margin
 typeOf: dcs:NationalHouseholdTransportationSurveyEnum
 description: "Measurement method for US Census National Household Transportation Survey Estimates with combination of Margin of Error greater than ACS Survey estimates and ACS Survey estimates are not available."
 
+Node: dcid:USCensusPovertyThreshold
+name: "USCensusPovertyThreshold"
+typeOf: dcs:MeasurementMethodEnum
+description: "The USCensusPovertyThreshold is a set of annual income cutoffs used by the U.S. Census Bureau to determine who is considered to be living in poverty."
+
 Node: dcid:ClimateTraceEstimate
 name: "ClimateTraceEstimate"
 typeOf: dcs:MeasurementMethodEnum
@@ -359,3 +370,8 @@ Node: dcid:WorldBankProjection
 typeOf: dcs:MeasurementMethodEnum
 name: "World Bank Projection"
 description: "The forecasts made by the World Bank about various economic indicators around the world."
+
+Node: dcid:CensusCBPSurvey
+name: "CensusCBPSurvey"
+typeOf: dcs:MeasurementMethodEnum
+description: "Measurement method for US census county business patterns survey as this import has been migrated from G3 to Git."
