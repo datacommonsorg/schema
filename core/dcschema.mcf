@@ -5220,6 +5220,43 @@ typeOf: dcid:EducationProgramEnum
 name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
 
+Node: dcid:DualEnrollment
+typeOf: dcid:EducationProgramEnum
+name: "Dual Enrollment"
+
+Node: dcid:DualEnrollment
+typeOf: dcid:USC_EducationalAttainmentEnum
+name: "Dual Enrollment"
+isProvisional: dcs:True
+
+Node: dcid:NativeHawaiianOrPacificIslander
+typeOf: dcid:RaceCodeEnum
+name: "Native Hawaiian Or Pacific Islander"
+isProvisional: dcs:True
+
+Node: dcid:AfricanAmerican
+typeOf: dcid:RaceCodeEnum
+name: "African American"
+isProvisional: dcs:True
+
+Node: dcid:englishProficiency
+typeOf: dcs:Property
+name: "englishProficiency"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EnglishProficiencyEnum
+isProvisional: dcs:True
+
+Node: dcid:EnglishProficiencyEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EnglishProficiencyEnum"
+isProvisional: dcs:True
+
+Node: dcid:LimitedEnglishProficient
+typeOf: dcid:EnglishProficiencyEnum
+name: "Limited English Proficient"
+isProvisional: dcs:True
+
 
 
 
