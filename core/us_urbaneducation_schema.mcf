@@ -1,0 +1,218 @@
+Node: dcid:enrollmentProgram
+typeOf: dcid:Property
+name: "enrollmentProgram"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EnrollmentProgramEnum
+description: "A property that specifies a structured program in which a student is officially registered or participating."
+
+Node: dcid:EnrollmentProgramEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EnrollmentProgramEnum"
+description: "An enumeration of different types of structured programs or courses in which a student can be enrolled."
+
+Node: dcid:GiftedAndTalented
+typeOf: dcid:EnrollmentProgramEnum
+name: "Gifted And Talented"
+description: "Represents enrollment in programs designed for students identified as having outstanding abilities who need services not ordinarily provided by the regular school program."
+
+Node: dcid:NotEnrolledInAdvancedPlacementExam
+typeOf: dcid:EnrollmentStatusEnum
+name: "Not Enrolled In Advanced Placement Exam"
+description: "Indicates a student is not registered to take any Advanced Placement (AP) Exam."
+
+Node: dcid:US_UrbanDisabilityStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "US_UrbanDisabilityStatusEnum"
+description: "An enumeration of disability statuses specific to the United States urban context, related to educational and service provision acts."
+
+Node: dcid:DisabilityServedUnderEducationAct
+typeOf: dcid:US_UrbanDisabilityStatusEnum
+name: "Disability Served Under Education Act"
+description: "Indicates a student with a disability who is receiving special education and related services under a specific education act, such as the Individuals with Disabilities Education Act (IDEA)."
+
+Node: dcid:DisabilityServedUnderSection504
+typeOf: dcid:US_UrbanDisabilityStatusEnum
+name: "Disability Served Under Section 50 4"
+description: "Indicates a student with a disability who is receiving accommodations or services under Section 504 of the Rehabilitation Act of 1973."
+
+Node: dcid:EnrolledInOneOrMoreAdvancedPlacementExam
+typeOf: dcid:EnrollmentStatusEnum
+name: "Enrolled In One Or More Advanced Placement Exam"
+description: "Indicates a student is registered to take one or more, but not necessarily all, Advanced Placement (AP) Exams."
+
+Node: dcid:EnrolledInAllAdvancedPlacementExam
+typeOf: dcid:EnrollmentStatusEnum
+name: "Enrolled In All Advanced Placement Exam"
+description: "Indicates a student is registered to take every Advanced Placement (AP) Exam offered or relevant to their curriculum."
+
+Node: dcid:AdvancedPlacementExam
+typeOf: dcid:EnrollmentProgramEnum
+name: "Advanced Placement Exam"
+description: "Represents participation in the College Board's Advanced Placement (AP) program exams, which offer college-level curricula and examinations to high school students."
+
+Node: dcid:FailedInAdvancedPlacementExam
+typeOf: dcid:AssessmentStatusEnum
+name: "Failed In Advanced Placement Exam"
+description: "Indicates a student received a non-passing score (e.g., typically a 1 or 2) on an Advanced Placement (AP) Exam."
+
+Node: dcid:PassedInOneOrMoreAdvancedPlacementExam
+typeOf: dcid:AssessmentStatusEnum
+name: "Passed In One Or More Advanced Placement Exam"
+description: "Indicates a student received a passing score (e.g., typically a 3, 4, or 5) on one or more, but not necessarily all, Advanced Placement (AP) Exams."
+
+Node: dcid:PassedInAllAdvancedPlacementExam
+typeOf: dcid:AssessmentStatusEnum
+name: "Passed In All Advanced Placement Exam"
+description: "Indicates a student received a passing score (e.g., typically a 3, 4, or 5) on every Advanced Placement (AP) Exam they took."
+
+Node: dcid:ParticipatedInScholasticAssessmentTestAndAmericanCollegeTesting
+typeOf: dcid:AssessmentStatusEnum
+name: "Participated In Scholastic Assessment Test And American College Testing"
+description: "Indicates a student took both the Scholastic Assessment Test (SAT) and the American College Testing (ACT) assessment exams."
+
+Node: dcid:studentType
+typeOf: dcid:Property
+name: "studentType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentTypeEnum
+description: "A property that specifies the classification or category of the student."
+
+Node: dcid:StudentTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "StudentTypeEnum"
+description: "An enumeration of different classifications or categories for a student."
+
+Node: dcid:CohortStudent
+typeOf: dcid:StudentTypeEnum
+name: "Cohort Student"
+description: "A student who is tracked as part of a specific group (cohort) for the purpose of longitudinal analysis, such as graduation rates."
+
+Node: dcid:minimumRate
+typeOf: dcid:Property
+name: "minimumRate"
+rangeIncludes: schema:Number
+domainIncludes: schema:Observation, dcs:StatVarObservation, dcs:StatisticalVariable, dcs:Student
+description: "A property that represents the lowest rate or percentage observed or associated with a statistical variable or student metric."
+
+Node: dcid:maximumRate
+typeOf: dcid:Property
+name: "maximumRate"
+rangeIncludes: schema:Number
+domainIncludes: schema:Observation, dcs:StatVarObservation, dcs:StatisticalVariable, dcs:Student
+description: "A property that represents the highest rate or percentage observed or associated with a statistical variable or student metric."
+
+Node: dcid:meanRate
+typeOf: dcid:Property
+rangeIncludes: schema:Number
+domainIncludes: schema:Observation, dcs:StatVarObservation, dcs:StatisticalVariable, dcs:Student
+name: "meanRate"
+description: "A property that represents the average rate or percentage observed or associated with a statistical variable or student metric."
+
+Node: dcid:OtherAdvancedPlacementCourse
+typeOf: dcid:SchoolSubjectEnum
+name: "Other Advanced Placement Course"
+description: "A category representing any Advanced Placement (AP) course or subject not explicitly listed elsewhere."
+
+Node: dcid:InternationalBaccalaureateDiploma
+typeOf: dcid:EnrollmentProgramEnum
+name: "International Baccalaureate Diploma"
+description: "Represents participation in the International Baccalaureate (IB) Diploma Programme, a two-year educational program for students aged 16–19."
+
+Node: dcid:ComputerScience
+typeOf: dcid:SchoolSubjectEnum
+name: "Computer Science"
+description: "A school subject focused on the theoretical foundations of information and computation and their practical implementation and application."
+
+Node: dcid:AdvancedPlacementLanguage
+typeOf: dcid:SchoolSubjectEnum
+name: "Advanced Placement Language"
+description: "A school subject related to the study of language through an Advanced Placement (AP) curriculum, such as AP English Language and Composition or a World Language AP course."
+
+Node: dcid:Algebra2
+typeOf: dcid:SchoolSubjectEnum
+name: "Algebra 2"
+description: "A high-school level mathematics course that continues the study of algebraic concepts, including complex numbers, polynomials, and logarithms."
+
+Node: dcid:Algebra
+typeOf: dcid:LanguageLearnedEnum
+name: "Algebra"
+description: "An elementary school subject focusing on the branch of mathematics concerning the properties and relations of operations and the construction and analysis of sets and their elements."
+
+Node: dcid:Algebra1
+typeOf: dcid:LanguageLearnedEnum
+name: "Algebra 1"
+description: "An introductory high-school level mathematics course focused on the foundational concepts of algebra, such as linear equations and inequalities."
+
+Node: dcid:AdvancedMathematics
+typeOf: dcid:SchoolSubjectEnum
+name: "Advanced Mathematics"
+description: "A general category for school subjects that cover mathematical concepts beyond the standard curriculum, often including topics like calculus, statistics, or discrete mathematics."
+
+Node: dcid:Calculus
+typeOf: dcid:SchoolSubjectEnum
+name: "Calculus"
+description: "A school subject focused on the mathematical study of continuous change, including the concepts of derivatives and integrals."
+
+Node: dcid:Geometry
+typeOf: dcid:SchoolSubjectEnum
+name: "Geometry"
+description: "A school subject focused on the properties and relations of points, lines, surfaces, solids, and higher-dimensional analogs."
+
+Node: dcid:educationalStatus
+typeOf: dcid:Property
+name: "educationalStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationalStatusEnum
+description: "A property that specifies a student's current standing or condition within the educational system."
+
+Node: dcid:Retained
+typeOf: dcid:EducationalStatusEnum
+name: "Retained"
+description: "Indicates a student was held back and is repeating a grade level."
+
+Node: dcid:EducationalStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EducationalStatusEnum"
+description: "An enumeration of different possible statuses or conditions a student can hold within the educational system."
+
+Node: dcid:Grades9To10
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Grades 9 To 10"
+description: "A range representing students in the ninth and tenth grades of school (typically the first two years of high school)."
+
+Node: dcid:Grades11To12
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Grades 11 To 12"
+description: "A range representing students in the eleventh and twelfth grades of school (typically the last two years of high school)."
+
+Node: dcid:Grades7To8
+typeOf: dcid:SchoolGradeLevelEnum
+name: "Grades 7 To 8"
+description: "A range representing students in the seventh and eighth grades of school (typically middle school or junior high)."
+
+Node: dcid:UnitedStates_Proficient
+typeOf: dcid:EducationalAchievementLevelEnum
+name: "United States_Proficient"
+description: "Indicates a student has demonstrated competency in challenging subject matter knowledge and skills, typically as defined by a United States standardized assessment."
+
+Node: dcid:militaryConnectedStatus
+typeOf: dcid:Property
+name: "militaryConnectedStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:MilitaryConnectedStatusEnum
+description: "A property that specifies the connection of a student to the military (e.g., student is a dependent of an active duty member)."
+
+Node: dcid:MilitaryConnectedStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MilitaryConnectedStatusEnum"
+description: "An enumeration of different statuses that define a student's connection to the military."
+
+Node: dcid:MilitaryConnected
+typeOf: dcid:MilitaryConnectedStatusEnum
+name: "Military Connected"
+description: "Indicates a student who is connected to the military, such as being the child or spouse of an active-duty service member."
