@@ -39,6 +39,7 @@ rangeIncludes: schema:Quantity
 domainIncludes: schema:Fuel, schema:Coal
 name: "heatContent"
 description: "The amount of heat energy available to be released by the transformation or use of a specified physical unit of an energy form (e.g., a ton of coal, a barrel of oil, a kilowatt hour of electricity, a cubic foot of natural gas, or a pound of steam)."
+description: "The amount of heat energy available to be released by the transformation or use of a specified physical unit of an energy form (e.g., a ton of coal, a barrel of oil, a kilowatt hour of electricity, a cubic foot of natural gas, or a pound of steam)."
 descriptionUrl: "https://www.eia.gov/tools/glossary/index.php?id=H"
 
 Node: dcid:generation
@@ -143,13 +144,28 @@ Node: dcid:imports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel,schema:EconomicActivity
+domainIncludes: schema:Coal, schema:Electricity, schema:Energy, schema:Fuel, dcid:EconomicActivity
 name: "imports"
 
 Node: dcid:exports
 typeOf: schema:Property
 rangeIncludes: schema:Quantity
 domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, schema:EconomicActivity
+domainIncludes: schema:Electricity, schema:Energy, schema:Fuel, dcid:EconomicActivity
 name: "exports"
+
+Node: dcid:tradeBalance
+typeOf: dcs:Property
+name: "tradeBalance"
+domainIncludes: dcid:EconomicActivity
+description: "The difference between the value of exports and imports."
+
+Node: dcid:twoWayTrade
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcid:EconomicActivity
+name: "twoWayTrade"
+description: "The sum of the value of exports and imports."
 
 Node: dcid:reserves
 typeOf: schema:Property
@@ -1021,6 +1037,7 @@ name: "Monthly"
 Node: dcid:Triennial
 typeOf:StatAccumulationPeriodEnum
 name: "Triennial"
+description: "A period of three years."
 
 Node: dcid:Quarterly
 typeOf: dcs:StatAccumulationPeriodEnum
@@ -1158,18 +1175,19 @@ Node: dcid:BillionBarrels
 typeOf: dcs:VolumeUnitOfMeasure
 name: "BillionBarrels"
 shortDisplayName: "Bbbl"
-description: "A barrel is one of several units of volume applied in various contexts. bbbl is a billion barrels worth of volume."
+description: "A barrel is one of several units of volume applied in various contexts. Bbbl is a billion barrels worth of volume."
 
 Node: dcid:MillionsBarrels
 typeOf: dcs:VolumeUnitOfMeasure
 name: "MillionsBarrels"
 shortDisplayName: "Mbbl"
-description: "A barrel is one of several units of volume applied in various contexts. mbbl is a million barrels worth of volume."
+description: "A barrel is one of several units of volume applied in various contexts. Mbbl is a million barrels worth of volume."
 
 Node: dcid:CubicMeter
 typeOf: dcs:VolumeUnitOfMeasure
 name: "Cubic meter"
 shortDisplayName: "m³"
+description: "It is the volume of a cube with edges one meter in length, also equal to 1000 liters."
 description: "It is the volume of a cube with edges one meter in length, also equal to 1000 liters."
 
 Node: dcid:CubicFoot
