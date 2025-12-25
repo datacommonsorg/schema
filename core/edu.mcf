@@ -670,7 +670,11 @@ typeOf: schema:Property
 name: "facultyType"
 description: "The specific kind of faculty member. For example, Instructional Aide"
 rangeIncludes: dcs:FacultyTypeEnum, dcid:HealthWorkerEnum, dcid:VictimTypeEnum
-domainIncludes: dcs:Faculty
+domainIncludes: dcs:Faculty, dcs:EconomicActivity
+
+Node: dcid:InstructionalStaff
+typeOf: dcid:FacultyTypeEnum
+name: "Instructional Staff"
 
 Node: dcid:ElementarySchoolCounselor
 typeOf: dcs:FacultyTypeEnum
