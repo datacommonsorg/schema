@@ -5220,7 +5220,560 @@ typeOf: dcid:EducationProgramEnum
 name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
 
+Node: dcid:FirstTimeEnrolled
+typeOf: dcid:EnrollmentStatusEnum
+name: "First Time Enrolled"
+isProvisional: dcid:True
 
+Node: dcid:EnrolledFullTime
+typeOf: dcid:EnrollmentLevelEnum
+name: "Enrolled Full Time"
+isProvisional: dcid:True
+
+Node: dcid:EnrolledPartTime
+typeOf: dcid:EnrollmentLevelEnum
+name: "Enrolled Part Time"
+isProvisional: dcid:True
+
+Node: dcid:Applied
+typeOf: dcid:EnrollmentLevelEnum
+name: "Applied"
+isProvisional: dcid:True
+
+Node: dcid:Admitted
+typeOf: dcid:EnrollmentLevelEnum
+name: "Admitted"
+isProvisional: dcid:True
+
+Node: dcid:admissionRequirement
+typeOf: dcid:Property
+name: "admissionRequirement"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:AdmissionRequirementEnum,dcid:Class,dcid:USC_SpouseAbsentReasonEnum
+isProvisional: dcid:True
+
+Node: dcid:AdmissionRequirementEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "AdmissionRequirementEnum"
+isProvisional: dcid:True
+
+Node: dcid:SecondarySchoolDiploma
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School Diploma"
+isProvisional: dcid:True
+
+Node: dcid:SecondarySchoolRank
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School Rank"
+isProvisional: dcid:True
+
+Node: dcid:AdmissionTestScores
+typeOf: dcid:AdmissionRequirementEnum
+name: "Admission Test Scores"
+isProvisional: dcid:True
+
+Node: dcid:SATScores
+typeOf: dcid:AdmissionRequirementEnum
+name: "SATScores"
+isProvisional: dcid:True
+
+Node: dcid:OtherTest
+typeOf: dcid:AdmissionRequirementEnum
+name: "Other Test"
+isProvisional: dcid:True
+
+Node: dcid:AbilityToBenefit
+typeOf: dcid:AdmissionRequirementEnum
+name: "Ability To Benefit"
+isProvisional: dcid:True
+
+Node: dcid:Age
+typeOf: dcid:AdmissionRequirementEnum
+name: "Age"
+isProvisional: dcid:True
+
+Node: dcid:TOEFL
+typeOf: dcid:AdmissionRequirementEnum
+name: "TOEFL"
+isProvisional: dcid:True
+
+Node: dcid:YearsCollegeRequired
+typeOf: dcid:AdmissionRequirementEnum
+name: "Years College Required"
+isProvisional: dcid:True
+
+Node: dcid:NoEnteringFreshmen
+typeOf: dcid:AdmissionRequirementEnum
+name: "No Entering Freshmen"
+isProvisional: dcid:True
+
+Node: dcid:OpenAdmissionsPolicy
+typeOf: dcid:AdmissionRequirementEnum
+name: "Open Admissions Policy"
+isProvisional: dcid:True
+
+Node: dcid:SecondarySchoolGPA
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School GPA"
+isProvisional: dcid:True
+
+Node: dcid:SecondarySchoolRecord
+typeOf: dcid:AdmissionRequirementEnum
+name: "Secondary School Record"
+isProvisional: dcid:True
+
+Node: dcid:CollegePreparatoryProgram
+typeOf: dcid:AdmissionRequirementEnum
+name: "College Preparatory Program"
+isProvisional: dcid:True
+
+Node: dcid:Recommendations
+typeOf: dcid:AdmissionRequirementEnum
+name: "Recommendations"
+isProvisional: dcid:True
+
+Node: dcid:FormalDemonstrationOfCompetencies
+typeOf: dcid:AdmissionRequirementEnum
+name: "Formal Demonstration Of Competencies"
+isProvisional: dcid:True
+
+Node: dcid:standardizedTest
+typeOf: dcid:Property
+name: "standardizedTest"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StandardizedTestEnum
+isProvisional: dcid:True
+
+Node: dcid:StandardizedTestEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "StandardizedTestEnum"
+isProvisional: dcid:True
+
+Node: dcid:ACTComposite
+typeOf: dcid:StandardizedTestEnum
+name: "ACTComposite"
+isProvisional: dcid:True
+
+Node: dcid:ACTEnglish
+typeOf: dcid:StandardizedTestEnum
+name: "ACTEnglish"
+isProvisional: dcid:True
+
+Node: dcid:ACTMath
+typeOf: dcid:StandardizedTestEnum
+name: "ACTMath"
+isProvisional: dcid:True
+
+Node: dcid:SATCriticalReading
+typeOf: dcid:StandardizedTestEnum
+name: "SATCritical Reading"
+isProvisional: dcid:True
+
+Node: dcid:SATMath
+typeOf: dcid:StandardizedTestEnum
+name: "SATMath"
+isProvisional: dcid:True
+
+Node: dcid:SATWriting
+typeOf: dcid:StandardizedTestEnum
+name: "SATWriting"
+isProvisional: dcid:True
+
+Node: dcid:WorkExperience
+typeOf: dcid:AdmissionRequirementEnum
+name: "Work Experience"
+isProvisional: dcid:True
+
+Node: dcid:PersonalStatement
+typeOf: dcid:AdmissionRequirementEnum
+name: "Personal Statement"
+isProvisional: dcid:True
+
+Node: dcid:LegacyStatus
+typeOf: dcid:AdmissionRequirementEnum
+name: "Legacy Status"
+isProvisional: dcid:True
+
+Node: dcid:percentile50
+typeOf: dcid:Property
+name: "percentile50"
+rangeIncludes: dcid:Percentile50Enum
+isProvisional: dcid:True
+
+Node: dcid:Percentile50Enum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "Percentile50Enum"
+isProvisional: dcid:True
+
+Node: dcid:ACTWriting
+typeOf: dcid:StandardizedTestEnum
+name: "ACTWriting"
+isProvisional: dcid:True
+
+Node: dcid:AgeUnknown
+typeOf: dcid:AgeStatusEnum
+name: "Age Unknown"
+isProvisional: dcid:True
+
+Node: dcid:studentDegreeStatus
+typeOf: dcid:Property
+name: "studentDegreeStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentDegreeStatusEnum
+isProvisional: dcid:True
+
+Node: dcid:StudentDegreeStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "StudentDegreeStatusEnum"
+isProvisional: dcid:True
+
+Node: dcid:DegreeSeeking
+typeOf: dcid:StudentDegreeStatusEnum
+name: "Degree Seeking"
+isProvisional: dcid:True
+
+Node: dcid:NonDegreeSeeking
+typeOf: dcid:StudentDegreeStatusEnum
+name: "Non Degree Seeking"
+isProvisional: dcid:True
+
+Node: dcid:FirstProfessional
+typeOf: dcid:EducationalAttainmentEnum
+name: "First Professional"
+isProvisional: dcid:True
+
+Node: dcid:OtherTotal
+typeOf: dcid:EnrollmentStatusEnum
+name: "Other Total"
+isProvisional: dcid:True
+
+Node: dcid:NonresidentAlien
+typeOf: dcid:RaceCodeEnum
+name: "Nonresident Alien"
+isProvisional: dcid:True
+
+Node: dcid:FirstTime
+typeOf: dcid:EnrollmentStatusEnum
+name: "First Time"
+isProvisional: dcid:True
+
+Node: dcid:PostBaccalaureate
+typeOf: dcid:EducationalAttainmentEnum
+name: "Post Baccalaureate"
+isProvisional: dcid:True
+
+Node: dcid:TransferOrNonFirstTime
+typeOf: dcid:EnrollmentStatusEnum
+name: "Transfer Or Non First Time"
+isProvisional: dcid:True
+
+Node: dcid:Continuing
+typeOf: dcid:EnrollmentStatusEnum
+name: "Continuing"
+isProvisional: dcid:True
+
+Node: dcid:placeOfOrigin
+typeOf: dcid:Property
+name: "placeOfOrigin"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:PlaceOfOriginEnum
+isProvisional: dcid:True
+
+Node: dcid:PlaceOfOriginEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "PlaceOfOriginEnum"
+isProvisional: dcid:True
+
+Node: dcid:measuredValue
+typeOf: dcid:Property
+name: "measuredValue"
+rangeIncludes: dcid:MeasuredValueEnum
+isProvisional: dcid:True
+
+Node: dcid:MeasuredValueEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "MeasuredValueEnum"
+isProvisional: dcid:True
+
+Node: dcid:enrollmentLevel
+typeOf: dcid:Property
+name: "enrollmentLevel"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EnrollmentLevelEnum
+isProvisional: dcid:True
+
+Node: dcid:EnrollmentLevelEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EnrollmentLevelEnum"
+isProvisional: dcid:True
+
+Node: dcid:Graduate
+typeOf: dcid:EnrollmentLevelEnum
+name: "Graduate"
+isProvisional: dcid:True
+
+Node: dcid:schoolGradeLevel
+typeOf: dcid:Property
+name: "schoolGradeLevel"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SchoolGradeLevelEnum
+isProvisional: dcid:True
+
+Node: dcid:SchoolGradeLevelEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "SchoolGradeLevelEnum"
+isProvisional: dcid:True
+
+Node: dcid:HighSchool
+typeOf: dcid:SchoolGradeLevelEnum
+name: "High School"
+isProvisional: dcid:True
+
+Node: dcid:Returning
+typeOf: dcid:EnrollmentStatusEnum
+name: "Returning"
+isProvisional: dcid:True
+
+Node: dcid:PreviousYear
+typeOf: dcid:EnrollmentStatusEnum
+name: "Previous Year"
+isProvisional: dcid:True
+
+Node: dcid:Excluded
+typeOf: dcid:EnrollmentStatusEnum
+name: "Excluded"
+isProvisional: dcid:True
+
+Node: dcid:enrollmentStatus
+typeOf: dcid:Property
+name: "enrollmentStatus"
+rangeIncludes: dcid:SeasonalAdjustmentEnum
+
+Node: dcid:cohortStatus
+typeOf: dcid:Property
+name: "cohortStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CohortStatusEnum,dcid:IdentityActivityEnum,dcid:StudentOutcomeEnum
+isProvisional: dcid:True
+
+Node: dcid:CohortStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CohortStatusEnum"
+isProvisional: dcid:True
+
+Node: dcid:Applicant
+typeOf: dcid:CohortStatusEnum
+name: "Applicant"
+isProvisional: dcid:True
+
+Node: dcid:FourOrMoreYears
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Four Or More Years"
+isProvisional: dcid:True
+
+Node: dcid:CompletedDegree
+typeOf: dcid:CohortStatusEnum
+name: "Completed Degree"
+isProvisional: dcid:True
+
+Node: dcid:completionRate
+typeOf: dcid:Property
+name: "completionRate"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:CompletionRateEnum
+isProvisional: dcid:True
+
+Node: dcid:CompletionRateEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "CompletionRateEnum"
+isProvisional: dcid:True
+
+Node: dcid:Within100PercentOfNormalTime
+typeOf: dcid:CompletionRateEnum
+name: "Within 10 0Percent Of Normal Time"
+isProvisional: dcid:True
+
+Node: dcid:IsExcludedFromCohort
+typeOf: dcid:CohortStatusEnum
+name: "Is Excluded From Cohort"
+isProvisional: dcid:True
+
+Node: dcid:Within150PercentOfNormalTime
+typeOf: dcid:CompletionRateEnum
+name: "Within 15 0Percent Of Normal Time"
+isProvisional: dcid:True
+
+Node: dcid:Within200PercentOfNormalTime
+typeOf: dcid:CompletionRateEnum
+name: "Within 20 0Percent Of Normal Time"
+isProvisional: dcid:True
+
+Node: dcid:LessThanFourYears
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Less Than Four Years"
+isProvisional: dcid:True
+
+Node: dcid:4PlusYears
+typeOf: dcid:EducationalAttainmentEnum
+name: "4 Plus Years"
+isProvisional: dcid:True
+
+Node: dcid:studentFinancialAid
+typeOf: dcid:Property
+name: "studentFinancialAid"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentFinancialAidEnum
+isProvisional: dcid:True
+
+Node: dcid:StudentFinancialAidEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "StudentFinancialAidEnum"
+isProvisional: dcid:True
+
+Node: dcid:SubsidizedLoan
+typeOf: dcid:StudentFinancialAidEnum
+name: "Subsidized Loan"
+isProvisional: dcid:True
+
+Node: dcid:Within150Pct
+typeOf: dcid:CompletionRateEnum
+name: "Within 15 0Pct"
+isProvisional: dcid:True
+
+Node: dcid:PellGrant
+typeOf: dcid:StudentFinancialAidEnum,dcid:FinancialAidTypeEnum
+name: "Pell Grant"
+isProvisional: dcid:True
+
+Node: dcid:LessThan4Years
+typeOf: dcid:EducationalAttainmentEnum
+name: "Less Than 4Years"
+isProvisional: dcid:True
+
+Node: dcid:studentSubcohort
+typeOf: dcid:Property
+name: "studentSubcohort"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentSubcohortEnum
+isProvisional: dcid:True
+
+Node: dcid:StudentSubcohortEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "StudentSubcohortEnum"
+isProvisional: dcid:True
+
+Node: dcid:NonBachelors
+typeOf: dcid:StudentSubcohortEnum
+name: "Non Bachelors"
+isProvisional: dcid:True
+
+Node: dcid:Bachelors
+typeOf: dcid:StudentSubcohortEnum
+name: "Bachelors"
+isProvisional: dcid:True
+
+Node: dcid:NoPellSubLoan
+typeOf: dcid:StudentFinancialAidEnum
+name: "No Pell Sub Loan"
+isProvisional: dcid:True
+
+Node: dcid:LessThan2Years
+typeOf: dcid:EducationalAttainmentEnum
+name: "Less Than 2Years"
+isProvisional: dcid:True
+
+Node: dcid:Certificate
+typeOf: dcid:EducationalAttainmentEnum
+name: "Certificate"
+isProvisional: dcid:True
+
+Node: dcid:ReEnrollment
+typeOf: dcid:EnrollmentStatusEnum
+name: "Re Enrollment"
+isProvisional: dcid:True
+
+Node: dcid:AssociateDegree
+typeOf: dcid:EducationalAttainmentEnum
+name: "Associate Degree"
+isProvisional: dcid:True
+
+Node: dcid:SixYear
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Six Year"
+isProvisional: dcid:True
+
+Node: dcid:EightYear
+typeOf: dcid:CollegeOrUniversityLevelEnum
+name: "Eight Year"
+isProvisional: dcid:True
+
+Node: dcid:studentOutcome
+typeOf: dcid:Property
+name: "studentOutcome"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:StudentOutcomeEnum
+isProvisional: dcid:True
+
+Node: dcid:StudentOutcomeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "StudentOutcomeEnum"
+isProvisional: dcid:True
+
+Node: dcid:Transfer
+typeOf: dcid:StudentOutcomeEnum
+name: "Transfer"
+isProvisional: dcid:True
+
+Node: dcid:Unknown
+typeOf: dcid:StudentOutcomeEnum
+name: "Unknown"
+isProvisional: dcid:True
+
+Node: dcid:NoAward
+typeOf: dcid:StudentOutcomeEnum
+name: "No Award"
+isProvisional: dcid:True
+
+Node: dcid:Transferred
+typeOf: dcid:IdentityActivityEnum
+name: "Transferred"
+isProvisional: dcid:True
+
+Node: dcid:FirstTimeInCollege
+typeOf: dcid:EnrollmentStatusEnum
+name: "First Time In College"
+isProvisional: dcid:True
+
+Node: dcid:financialAidType
+typeOf: dcid:Property
+name: "financialAidType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:FinancialAidTypeEnum
+isProvisional: dcid:True
+
+Node: dcid:FinancialAidTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FinancialAidTypeEnum"
+isProvisional: dcid:True
+
+Node: dcid:FederalStaffordLoan
+typeOf: dcid:FinancialAidTypeEnum
+name: "Federal Stafford Loan"
+isProvisional: dcid:True
 
 Node: dcid:ScholasticAssessmentTest
 typeOf: dcid:AcademicAssessmentTypeEnum
