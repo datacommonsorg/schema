@@ -1,37 +1,44 @@
-#
-# File for StatVar nodes introduced by the stat_var_aggregation flow.
-#
+
 Node: dcid:Count_Person_NoPrivateHealthInsurance
 typeOf: dcs:StatisticalVariable
+name: "Number of person with no private health insurance"
+description: "The number of people with no private health insurance"
 populationType: schema:Person
-healthInsurance: dcs:NoPrivateHealthInsurance
+HealthInsurance: dcs:NoPrivateHealthInsurance
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_NoPublicHealthInsurance
 typeOf: dcs:StatisticalVariable
+name: "Number of person with no public health insurance"
+description: "The number of people with no public health insurance"
 populationType: schema:Person
-healthInsurance: dcs:NoPublicHealthInsurance
+HealthInsurance: dcs:NoPublicHealthInsurance
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_WithOneTypeOfHealthInsurance
 typeOf: dcs:StatisticalVariable
+name: "Number of person with one type of health insurance"
+description: "The number of people with one type of health insurance"
 populationType: schema:Person
-healthInsurance: dcs:WithOneTypeOfHealthInsurance
+HealthInsurance: dcs:WithOneTypeOfHealthInsurance
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_WithPublicCoverage
 typeOf: dcs:StatisticalVariable
+name: "Number of person with public health coverage"
+description: "The number of people with public health insurance coverage"
 populationType: schema:Person
-healthInsurance: dcs:WithPublicCoverage
+HealthInsurance: dcs:WithPublicCoverage
 measuredProperty: dcs:count
 statType: dcs:measuredValue
-name: "Population: With Public Health Insurance Coverage"
 
 Node: dcid:Count_Person_Years25Onwards_EducationalAttainment_5ThAnd6ThGrade
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person aged 25+ with educational attainment of 5th and 6th grade"
+description: "The number of people aged 25+ with educational attainment of 5th and 6th grade"
 populationType: schema:Person
 age: dcs:Years25Onwards
 educationalAttainment: dcs:5ThAnd6ThGrade
@@ -39,7 +46,9 @@ measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_Years25Onwards_EducationalAttainment_7ThAnd8ThGrade
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person aged 25+ with educational attainment of 7th and 8th grade"
+description: "The number of people aged 25+ with educational attainment of 7th and 8th grade"
 populationType: schema:Person
 age: dcs:Years25Onwards
 educationalAttainment: dcs:7ThAnd8ThGrade
@@ -47,31 +56,36 @@ measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person with educational attainment of 9th to 12th grade without a diploma"
+description: "The number of people with educational attainment of 9th to 12th grade without a diploma"
 populationType: schema:Person
 educationalAttainment: dcs:9ThTo12ThGradeNoDiploma
 measuredProperty: dcs:count
 statType: dcs:measuredValue
-name: "Population Completed Between 9th to 12th Grade With No Diploma"
 
 Node: dcid:Count_Person_EducationalAttainment_LessThan9ThGrade
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person with educational attainment less than 9th grade"
+description: "The number of people with educational attainment less than 9th grade"
 populationType: schema:Person
 educationalAttainment: dcs:LessThan9ThGrade
 measuredProperty: dcs:count
 statType: dcs:measuredValue
-name: "Population Completed Less Than 9th Grade"
 
 Node: dcid:Count_Person_EducationalAttainment_LessThanHighSchoolDiploma
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person with educational attainment less than high school diploma"
+description: "The number of people with educational attainment less than a high school diploma"
 populationType: schema:Person
 educationalAttainment: dcs:LessThanHighSchoolDiploma
 measuredProperty: dcs:count
 statType: dcs:measuredValue
-name: "Population Without a High School Diploma"
 
 Node: dcid:Count_Person_Years25Onwards_EducationalAttainment_NurseryTo4ThGrade
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person aged 25+ with educational attainment from nursery to 4th grade"
+description: "The number of people aged 25+ with educational attainment from nursery to 4th grade"
 populationType: schema:Person
 age: dcs:Years25Onwards
 educationalAttainment: dcs:NurseryTo4ThGrade
@@ -79,15 +93,18 @@ measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_EducationalAttainment_SomeCollegeNoDegree
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person with educational attainment of some college but no degree"
+description: "The number of people who attended college but did not receive a degree"
 populationType: schema:Person
 educationalAttainment: dcs:SomeCollegeNoDegree
 measuredProperty: dcs:count
 statType: dcs:measuredValue
-name: "Population Who Went to College but Did Not Receive Degree"
 
 Node: dcid:Count_Person_CorrectionalFacilityLocation_OutOfState
 typeOf: dcs:StatisticalVariable
+name: "Number of person in correctional facility located out of state"
+description: "The number of people in a correctional facility located out of state"
 populationType: schema:Person
 correctionalFacilityLocation: dcs:OutOfState
 institutionalization: dcs:Incarcerated
@@ -96,14 +113,18 @@ measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_WithOwnChildrenUnder18
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of person with own children <18"
+description: "The number of people with their own children <18"
 populationType: schema:Person
 childrenStatus: dcs:WithOwnChildrenUnder18
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_WithOwnChildrenUnder18_Male
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of male person with own children <18"
+description: "The number of male people with their own children <18"
 populationType: schema:Person
 childrenStatus: dcs:WithOwnChildrenUnder18
 gender: dcs:Male
@@ -111,7 +132,9 @@ measuredProperty: dcs:count
 statType: dcs:measuredValue
 
 Node: dcid:Count_Person_WithOwnChildrenUnder18_Female
-typeOf:  dcs:StatisticalVariable
+typeOf: dcs:StatisticalVariable
+name: "Number of female person with own children <18"
+description: "The number of female people with their own children <18"
 populationType: schema:Person
 childrenStatus: dcs:WithOwnChildrenUnder18
 gender:dcs:Female
@@ -120,6 +143,8 @@ statType: dcs:measuredValue
 
 Node: dcid:Count_Person_USCitizenByNaturalization_DateOfEntry2000OrLater_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Number of naturalized US citizens entered in 2000 or later, foreign born"
+description: "The number of people who became US citizens by naturalization with a date of entry 2000 or later, and are foreign born"
 populationType: schema:Person
 dateOfEntry: dcid:Date2000Onwards
 citizenship: dcs:USCitizenByNaturalization
@@ -128,6 +153,8 @@ statType: dcs:measuredValue
 
 Node: dcid:Count_Person_USCitizenByNaturalization_DateOfEntry2010OrLater_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Number of foreign‑born naturalized US citizens (entry 2010+)"
+description: "The number of people who became US citizens by naturalization with a date of entry 2010 or later, and are foreign born"
 populationType: schema:Person
 dateOfEntry: dcid:Date2010Onwards
 citizenship: dcs:USCitizenByNaturalization
@@ -136,6 +163,8 @@ statType: dcs:measuredValue
 
 Node: dcid:Count_Person_USCitizenByNaturalization_DateOfEntry1990To1999_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "umber of foreign‑born naturalized US citizens (entry 1990–1999)"
+description: "The number of people who became US citizens by naturalization with a date of entry between 1990 and 1999, and are foreign born"
 populationType: schema:Person
 dateOfEntry: dcid:Date1990To1999
 citizenship: dcs:USCitizenByNaturalization
@@ -144,6 +173,8 @@ statType: dcs:measuredValue
 
 Node: dcid:Count_Person_USCitizenByNaturalization_DateOfEntry2000To2009_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Number of person who became US citizen by naturalization with date of entry 2000 to 2009, foreign born"
+description: "The number of people who became US citizens by naturalization with a date of entry between 2000 and 2009, and are foreign born"
 populationType: schema:Person
 dateOfEntry: dcid:Date2000To2009
 citizenship: dcs:USCitizenByNaturalization
@@ -152,6 +183,8 @@ statType: dcs:measuredValue
 
 Node: dcid:Count_Person_USCitizenByNaturalization_DateOfEntry2000OrEarlier_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Number of person who became US citizen by naturalization with date of entry 2000 or earlier, foreign born"
+description: "The number of people who became US citizens by naturalization with a date of entry 2000 or earlier, and are foreign born"
 populationType: schema:Person
 dateOfEntry: dcid:DateUpto2000
 citizenship: dcs:USCitizenByNaturalization
@@ -160,6 +193,8 @@ statType: dcs:measuredValue
 
 Node: dcid:Count_Person_USCitizenByNaturalization_DateOfEntry1990OrEarlier_ForeignBorn
 typeOf: dcs:StatisticalVariable
+name: "Number of person who became US citizen by naturalization with date of entry 1990 or earlier, foreign born"
+description: "The number of people who became US citizens by naturalization with a date of entry 1990 or earlier, and are foreign born"
 populationType: schema:Person
 dateOfEntry: dcid:DateUpto1990
 citizenship: dcs:USCitizenByNaturalization
@@ -168,6 +203,8 @@ statType: dcs:measuredValue
 
 Node: dcid:Count_HousingUnit_HomeValueUpto49999USDollar
 typeOf: dcs:StatisticalVariable
+name: "Number of housing units with home value up to 49,999 USD, owner-occupied"
+description: "The number of owner-occupied housing units with a home value up to 49,999 USD"
 populationType: dcs:HousingUnit
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -177,6 +214,8 @@ occupancyTenure: dcs:OwnerOccupied
 
 Node: dcid:Count_HousingUnit_HomeValue50000To99999USDollar
 typeOf: dcs:StatisticalVariable
+name: "Number of housing units with home value between 50,000 and 99,999 USD, owner-occupied"
+description: "The number of owner-occupied housing units with a home value between 50,000 and 99,999 USD"
 populationType: dcs:HousingUnit
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -186,6 +225,8 @@ occupancyTenure: dcs:OwnerOccupied
 
 Node: dcid:Count_HousingUnit_HomeValue100000To199999USDollar
 typeOf: dcs:StatisticalVariable
+name: "Number of housing units with home value between 100,000 and 199,999 USD, owner-occupied"
+description: "The number of owner-occupied housing units with a home value between 100,000 and 199,999 USD"
 populationType: dcs:HousingUnit
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -195,6 +236,8 @@ occupancyTenure: dcs:OwnerOccupied
 
 Node: dcid:Count_HousingUnit_HomeValue200000To299999USDollar
 typeOf: dcs:StatisticalVariable
+name: "Number of housing units with home value between 200,000 and 299,999 USD, owner-occupied"
+description: "The number of owner-occupied housing units with a home value between 200,000 and 299,999 USD"
 populationType: dcs:HousingUnit
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -204,6 +247,8 @@ occupancyTenure: dcs:OwnerOccupied
 
 Node: dcid:Count_HousingUnit_HomeValue300000To499999USDollar
 typeOf: dcs:StatisticalVariable
+name: "Number of housing units with home value between 300,000 and 499,999 USD, owner-occupied"
+description: "The number of owner-occupied housing units with a home value between 300,000 and 499,999 USD"
 populationType: dcs:HousingUnit
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -213,6 +258,8 @@ occupancyTenure: dcs:OwnerOccupied
 
 Node: dcid:Count_HousingUnit_HomeValue500000To999999USDollar
 typeOf: dcs:StatisticalVariable
+name: "Number of housing units with home value between 500,000 and 999,999 USD, owner-occupied"
+description: "The number of owner-occupied housing units with a home value between 500,000 and 999,999 USD"
 populationType: dcs:HousingUnit
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -222,6 +269,8 @@ occupancyTenure: dcs:OwnerOccupied
 
 Node: dcid:Count_Person_Upto9Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 9 years or younger"
+description: "The number of people aged 9 years or younger"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -229,6 +278,8 @@ age: [- 9 Years]
 
 Node: dcid:Count_Person_10To19Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 10 to 19 years"
+description: "The number of people aged between 10 and 19 years"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -236,6 +287,8 @@ age: [10 19 Years]
 
 Node: dcid:Count_Person_20To29Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 20 to 29 years"
+description: "The number of people aged between 20 and 29 years"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -243,14 +296,17 @@ age: [20 29 Years]
 
 Node: dcid:Count_Person_30To39Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 30 to 39 years"
+description: "The number of people aged between 30 and 39 years"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
 age: [30 39 Years]
 
-
 Node: dcid:Count_Person_40To49Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 40 to 49 years"
+description: "The number of people aged between 40 and 49 years"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -258,6 +314,8 @@ age: [40 49 Years]
 
 Node: dcid:Count_Person_50To59Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 50 to 59 years"
+description: "The number of people aged between 50 and 59 years"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -265,6 +323,8 @@ age: [50 59 Years]
 
 Node: dcid:Count_Person_60To69Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 60 to 69 years"
+description: "The number of people aged between 60 and 69 years"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -272,6 +332,8 @@ age: [60 69 Years]
 
 Node: dcid:Count_Person_70OrMoreYears
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 70 or more years"
+description: "The number of people aged 70 years or more"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -279,6 +341,8 @@ age: [70 - Years]
 
 Node: dcid:Count_Person_5To19Years
 typeOf: dcs:StatisticalVariable
+name: "Number of person aged 5 to 19 years"
+description: "The number of people aged between 5 and 19 years"
 populationType: schema:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -286,6 +350,8 @@ age: [5 19 Years]
 
 Node: dcid:Count_Person_EducationalAttainment_1StTo12ThGrade
 typeOf: dcs:StatisticalVariable
+name: "Number of person with educational attainment between 1st and 12th grade"
+description: "The number of people with educational attainment between 1st and 12th grade"
 populationType: dcs:Person
 statType: dcs:measuredValue
 measuredProperty: dcs:count
@@ -294,46 +360,53 @@ educationalAttainment: dcs:1StTo12ThGrade
 
 Node: dcid:Count_Parent_Occupation_Management_Business_Science_Arts
 typeOf: dcs:StatisticalVariable
+name: "Number of parent: management, business, science, and arts occupations"
+description: "The number of parents in management, business, science, and arts occupations"
 populationType: dcs:ACSEDParent
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 hasOccupation: dcs:SOCv2018/highLevelAggregation-1
-name: "Count of Parent: Management, Business, Science, And Arts Occupations"
 
 Node: dcid:Count_Parent_Occupation_Natural_Resources_Construction_Maintenance
 typeOf: dcs:StatisticalVariable
+name: "Number of parent: natural resources, construction, and maintenance occupations"
+description: "The number of parents in natural resources, construction, and maintenance occupations"
 populationType: dcs:ACSEDParent
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 hasOccupation: dcs:SOCv2018/highLevelAggregation-4
-name: "Count of Parent: Natural Resources, Construction, And Maintenance Occupations"
 
 Node: dcid:Count_Parent_Occupation_Production_Transportation_Material_Moving
 typeOf: dcs:StatisticalVariable
+name: "Number of parent: production, transportation, and material moving occupations"
+description: "The number of parents in production, transportation, and material moving occupations"
 populationType: dcs:ACSEDParent
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 hasOccupation: dcs:SOCv2018/highLevelAggregation-5
-name: "Count of Parent: Production, Transportation, And Material Moving Occupations"
 
 Node: dcid:Count_Parent_Occupation_Sales_Office
 typeOf: dcs:StatisticalVariable
+name: "Number of parent: sales and office occupations"
+description: "The number of parents in sales and office occupations"
 populationType: dcs:ACSEDParent
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 hasOccupation: dcs:SOCv2018/highLevelAggregation-3
-name: "Count of Parent: Sales And Office Occupations"
 
 Node: dcid:Count_Parent_Occupation_Service
 typeOf: dcs:StatisticalVariable
+name: "Number of parent: service occupations"
+description: "The number of parents in service occupations"
 populationType: dcs:ACSEDParent
 statType: dcs:measuredValue
 measuredProperty: dcs:count
 hasOccupation: dcs:SOCv2018/intermediateAggregation-5
-name: "Count of Parent: Service Occupations"
 
 Node: dcid:Count_Person_InLaborForce_Divorced
 statType: dcid:measuredValue
+name: "Number of person in labor force divorced"
+description: "The number of divorced people in the labor force aged 16 years and above"
 measuredProperty: dcid:count
 age: [16 - Years]
 populationType: dcid:Person
@@ -343,6 +416,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_InLaborForce_NeverMarried
 statType: dcid:measuredValue
+name: "Number of person in labor force never married"
+description: "The number of never married people in the labor force aged 16 years and above"
 measuredProperty: dcid:count
 age: [16 - Years]
 populationType: dcid:Person
@@ -352,6 +427,8 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_InLaborForce_MarriedAndNotSeparated
 statType: dcid:measuredValue
+name: "Number of person in labor force married and not separated"
+description: "The number of married and not separated people in the labor force aged 16 years and above"
 measuredProperty: dcid:count
 age: [16 - Years]
 populationType: dcid:Person
@@ -361,17 +438,20 @@ typeOf: dcs:StatisticalVariable
 
 Node: dcid:Count_Person_InLaborForce_Widowed
 statType: dcid:measuredValue
+name: "Number of person in labor force widowed"
+description: "The number of widowed people in the labor force aged 16 years and above"
 measuredProperty: dcid:count
 age: [16 - Years]
 populationType: dcid:Person
 maritalStatus: dcid:Widowed
 employmentStatus: dcid:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
-
-# The following 9 SVs are: High income (100,000 USD or More), by race.
+# The following 9 SVs are: High income (100,000 USD or More), by Race
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_AmericanIndianOrAlaskaNativeAlone
 populationType: dcid:Person
+name: "Number of person with income 100000 USD or more: american indian or alaska native alone"
+description: "The number of people with income of 100,000 USD or more who identify as American Indian or Alaska Native alone, aged 16 years and above"
 race: dcid:AmericanIndianOrAlaskaNativeAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -382,6 +462,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_AsianAlone
 populationType: dcid:Person
+name: "Number of person with income 100000 USD or more: asian alone"
+description: "The number of people with income of 100,000 USD or more who identify as Asian alone, aged 16 years and above"
 race: dcid:AsianAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -392,6 +474,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_BlackOrAfricanAmericanAlone
 populationType: dcid:Person
+name: "Number of person with income 100000 USD or more: black or african american alone"
+description: "The number of people with income of 100,000 USD or more who identify as Black or African American alone, aged 16 years and above"
 race: dcid:BlackOrAfricanAmericanAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -402,6 +486,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_HispanicOrLatino
 populationType: dcid:Person
+name: "Number of person with income 100000 USD or more: hispanic or latino"
+description: "The number of people with income of 100,000 USD or more who identify as Hispanic or Latino, aged 16 years and above"
 race: dcid:HispanicOrLatino
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -412,6 +498,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_NativeHawaiianOrOtherPacificIslanderAlone
 populationType: dcid:Person
+name: "Number of person with income 100000 USD or more: native hawaiian or other Pacific Islander alone"
+description: "The number of people with income of 100,000 USD or more who identify as Native Hawaiian or Other Pacific Islander alone, aged 16 years and above"
 race: dcid:NativeHawaiianOrOtherPacificIslanderAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -421,6 +509,8 @@ statType: dcid:measuredValue
 age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_SomeOtherRaceAlone
+name: "Number of person with income 100000 USD or more: some other race alone"
+description: "The number of people with income of 100,000 USD or more who identify as Some Other Race alone, aged 16 years and above"
 populationType: dcid:Person
 race: dcid:SomeOtherRaceAlone
 measuredProperty: dcid:count
@@ -432,6 +522,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_TwoOrMoreRaces
 populationType: dcid:Person
+name: "Number of person with income 100000 USD or more: two or more races"
+description: "The number of people with income of 100,000 USD or more who identify as two or more races, aged 16 years and above"
 race: dcid:TwoOrMoreRaces
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -441,6 +533,8 @@ statType: dcid:measuredValue
 age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_WhiteAlone
+name: "Number of person with income 100000 USD or more: white alone"
+description: "The number of people with income of 100,000 USD or more who identify as White alone, aged 16 years and above"
 populationType: dcid:Person
 race: dcid:WhiteAlone
 measuredProperty: dcid:count
@@ -451,6 +545,8 @@ statType: dcid:measuredValue
 age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar100000Onwards_WithIncome_WhiteAloneNotHispanicOrLatino
+name: "Number of person with income 100000 USD or more: White alone not hispanic or latino"
+description: "The number of people with income of 100,000 USD or more who identify as White alone and not Hispanic or Latino, aged 16 years and above"
 populationType: dcid:Person
 race: dcid:WhiteAloneNotHispanicOrLatino
 measuredProperty: dcid:count
@@ -459,11 +555,12 @@ typeOf: dcid:StatisticalVariable
 income: dcid:USDollar100000Onwards
 statType: dcid:measuredValue
 age: dcid:Years16Onwards
-
-# The following 9 SVs are: Low income (10,000 - 12,499 USD), by race.
+# The following 9 SVs are: Low income (10,000 - 12,499 USD), by Race
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_AmericanIndianOrAlaskaNativeAlone
 populationType: dcid:Person
+name: "Number of person with income 10000 to 12499 USD: american indian or alaska native alone"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as American Indian or Alaska Native alone, aged 16 years and above"
 race: dcid:AmericanIndianOrAlaskaNativeAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -473,6 +570,8 @@ statType: dcid:measuredValue
 age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_AsianAlone
+name: "Number of person with income 10000 to 12499 USD: asian alone"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as Asian alone, aged 16 years and above"
 populationType: dcid:Person
 race: dcid:AsianAlone
 measuredProperty: dcid:count
@@ -484,6 +583,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_BlackOrAfricanAmericanAlone
 populationType: dcid:Person
+name: "Number of person with income 10000 to 12499 USD: black or african american alone"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as Black or African American alone, aged 16 years and above"
 race: dcid:BlackOrAfricanAmericanAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -494,6 +595,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_HispanicOrLatino
 populationType: dcid:Person
+name: "Number of person with income 10000 to 12499 USD: hispanic or latino"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as Hispanic or Latino, aged 16 years and above"
 race: dcid:HispanicOrLatino
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -504,6 +607,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_NativeHawaiianOrOtherPacificIslanderAlone
 populationType: dcid:Person
+name: "Number of person with income 10000 to 12499 USD: some other race alone"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as Some Other Race alone, aged 16 years and above"
 race: dcid:NativeHawaiianOrOtherPacificIslanderAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -514,6 +619,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_SomeOtherRaceAlone
 populationType: dcid:Person
+name: "Number of person with income 10000 to 12499 USD: some other race alone"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as Some Other Race alone, aged 16 years and above"
 race: dcid:SomeOtherRaceAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -524,6 +631,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_TwoOrMoreRaces
 populationType: dcid:Person
+name: "Number of person with income 10000 to 12499 USD: two or more races"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as two or more races, aged 16 years and above"
 race: dcid:TwoOrMoreRaces
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -534,6 +643,8 @@ age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_WhiteAlone
 populationType: dcid:Person
+name: "Number of person with income 10000 to 12499 USD: white alone"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as White alone, aged 16 years and above"
 race: dcid:WhiteAlone
 measuredProperty: dcid:count
 incomeStatus: dcid:WithIncome
@@ -543,6 +654,8 @@ statType: dcid:measuredValue
 age: dcid:Years16Onwards
 
 Node: dcid:Count_Person_16OrMoreYears_USDollar10000To12499_WithIncome_WhiteAloneNotHispanicOrLatino
+name: "Number of person with income 10000 to 12499 USD: White alone not hispanic or latino"
+description: "The number of people with income of 10,000 to 12,499 USD who identify as White alone and not Hispanic or Latino, aged 16 years and above"
 populationType: dcid:Person
 race: dcid:WhiteAloneNotHispanicOrLatino
 measuredProperty: dcid:count
@@ -551,10 +664,11 @@ typeOf: dcid:StatisticalVariable
 income: dcid:USDollar10000To12499
 statType: dcid:measuredValue
 age: dcid:Years16Onwards
-
-# The following 9 SVs are: SomeCollegeOrAssociatesDegree, by race.
+# The following 9 SVs are: SomeCollegeOrAssociatesDegree, by Race
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_AmericanIndianOrAlaskaNativeAlone
+name: "Number of person with some college or associates degree: American Indian or Alaska Native alone"
+description: "The number of people with some college or associate degree who identify as American Indian or Alaska Native alone, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -564,6 +678,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_AsianAlone
+name: "Number of person with some college or associates degree: asian alone"
+description: "The number of people with some college or associate degree who identify as Asian alone, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -573,6 +689,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_BlackOrAfricanAmericanAlone
+name: "Number of person with some college or associates degree: Black or African American alone"
+description: "The number of people with some college or associate degree who identify as Black or African American alone, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -582,6 +700,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_HispanicOrLatino
+name: "Number of person with some college or associates degree: hispanic or latino"
+description: "The number of people with some college or associate degree who identify as Hispanic or Latino, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -591,6 +711,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_NativeHawaiianOrOtherPacificIslanderAlone
+name: "Number of person with some college or associates degree: native hawaiian or other Pacific Islander alone"
+description: "The number of people with some college or associate degree who identify as Native Hawaiian or Other Pacific Islander alone, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -600,6 +722,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_SomeOtherRaceAlone
+name: "Number of person with some college or associates degree: some other race alone"
+description: "The number of people with some college or associate degree who identify as Some Other Race alone, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -609,6 +733,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_TwoOrMoreRaces
+name: "Number of person with some college or associates degree: two or more races"
+description: "The number of people with some college or associate degree who identify as two or more races, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -618,6 +744,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_WhiteAlone
+name: "Number of person with some college or associates degree: white alone"
+description: "The number of people with some college or associate degree who identify as White alone, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -627,6 +755,8 @@ statType: dcid:measuredValue
 age: dcid:Years25Onwards
 
 Node: dcid:Count_Person_25OrMoreYears_SomeCollegeOrAssociatesDegree_WhiteAloneNotHispanicOrLatino
+name: "Number of person with some college or associates degree: White alone not hispanic or latino"
+description: "The number of people with some college or associate degree who identify as White alone, excluding Hispanic or Latino, aged 25 years and above"
 educationalAttainment: dcid:SomeCollegeOrAssociatesDegree
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -634,11 +764,12 @@ typeOf: dcid:StatisticalVariable
 race: dcid:WhiteAloneNotHispanicOrLatino
 statType: dcid:measuredValue
 age: dcid:Years25Onwards
-
-# The following 20 SVs are: employment, by industry.
+# The following 20 SVs are: employment, by industry
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSAgricultureForestryFishingHunting
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in agriculture, forestry, fishing, hunting"
+description: "The number of civilians, aged 16 years and above, employed in the agricultural, forestry, fishing, and hunting industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -650,6 +781,8 @@ naics: dcid:NAICS/11
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSMiningQuarryingOilGasExtraction
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in mining, quarrying, oil, gas extraction"
+description: "The number of civilians, aged 16 years and above, employed in the mining, quarrying, oil, and gas extraction industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -661,6 +794,8 @@ naics: dcid:NAICS/21
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSUtilities
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in utilities"
+description: "The number of civilians, aged 16 years and above, employed in the utilities industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -672,6 +807,8 @@ naics: dcid:NAICS/22
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSConstruction
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in construction"
+description: "The number of civilians, aged 16 years and above, employed in the construction industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -682,6 +819,8 @@ employmentStatus: dcid:BLS_InLaborForce
 naics: dcid:NAICS/23
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSManufacturing
+name: "Number of person employed in manufacturing"
+description: "The number of civilians, aged 16 years and above, employed in the manufacturing industry"
 typeOf: dcid:StatisticalVariable
 measuredProperty: dcid:count
 populationType: dcid:Person
@@ -694,6 +833,8 @@ naics: dcid:NAICS/31-33
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSWholesaleTrade
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in wholesale trade"
+description: "The number of civilians, aged 16 years and above, employed in the wholesale trade industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -705,6 +846,8 @@ naics: dcid:NAICS/42
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSRetailTrade
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in retail trade"
+description: "The number of civilians, aged 16 years and above, employed in the retail trade industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -716,6 +859,8 @@ naics: dcid:NAICS/44-45
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSTransportationWarehousing
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in transportation, warehousing"
+description: "The number of civilians, aged 16 years and above, employed in the transportation and warehousing industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -727,6 +872,8 @@ naics: dcid:NAICS/48-49
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSInformation
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in information"
+description: "The number of civilians, aged 16 years and above, employed in the information industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -738,6 +885,8 @@ naics: dcid:NAICS/51
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSFinanceInsurance
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in finance, insurance"
+description: "The number of civilians, aged 16 years and above, employed in the finance and insurance industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -749,6 +898,8 @@ naics: dcid:NAICS/52
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_Count_Establishment_NAICSRealEstateRentalLeasing
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in real estate, rental, leasing"
+description: "The number of civilians, aged 16 years and above, employed in the real estate, rental, and leasing industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -760,6 +911,8 @@ naics: dcid:NAICS/53
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSProfessionalScientificTechnicalServices
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in professional, scientific, technical services"
+description: "The number of civilians, aged 16 years and above, employed in professional, scientific, and technical services"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -771,6 +924,8 @@ naics: dcid:NAICS/54
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSManagementOfCompaniesEnterprises
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in management of companies, enterprises"
+description: "The number of civilians, aged 16 years and above, employed in the management of companies and enterprises industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -782,6 +937,8 @@ naics: dcid:NAICS/55
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSAdministrativeSupportWasteManagementRemediationServices
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in administrative support, waste management, remediation services"
+description: "The number of civilians, aged 16 years and above, employed in administrative support, waste management, and remediation services industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -793,6 +950,8 @@ naics: dcid:NAICS/56
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSEducationalServices
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in educational services"
+description: "The number of civilians, aged 16 years and above, employed in the educational services industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -804,6 +963,8 @@ naics: dcid:NAICS/61
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSHealthCareSocialAssistance
 typeOf: dcid:StatisticalVariable
+name: "Number of person employed in health care, social assistance"
+description: "The number of civilians, aged 16 years and above, employed in health care and social assistance industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -815,6 +976,8 @@ naics: dcid:NAICS/62
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSArtsEntertainmentRecreation
 typeOf: dcid:StatisticalVariable
+name: "Number of civilians aged 16+ employed in arts, entertainment, and recreation"
+description: "The number of civilians, aged 16 years and above, employed in arts, entertainment, and recreation industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -826,6 +989,8 @@ naics: dcid:NAICS/71
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSAccommodationFoodServices
 typeOf: dcid:StatisticalVariable
+name: "Number of civilians aged 16+ employed in accommodation and food services"
+description: "The number of civilians, aged 16 years and above, employed in accommodation and food services industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -837,6 +1002,8 @@ naics: dcid:NAICS/72
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSOtherServices
 typeOf: dcid:StatisticalVariable
+name: "Number of civilians aged 16+ employed in other services"
+description: "The number of civilians, aged 16 years and above, employed in other services industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -848,6 +1015,8 @@ naics: dcid:NAICS/81
 
 Node: dcid:Count_Person_16OrMoreYears_Civilian_Employed_InLaborForce_NAICSPublicAdministration
 typeOf: dcid:StatisticalVariable
+name: "Number of civilians aged 16+ employed in public administration"
+description: "The number of civilians, aged 16 years and above, employed in the public administration industry"
 measuredProperty: dcid:count
 populationType: dcid:Person
 statType: dcid:measuredValue
@@ -856,11 +1025,12 @@ armedForcesStatus: dcid:Civilian
 employment: dcid:BLS_Employed
 employmentStatus: dcid:BLS_InLaborForce
 naics: dcid:NAICS/92
-
-# The follow 16 SVs are fractions of population, by disease
+# The follow 16 SVs are FRActions of population, by disease
 
 Node: dcid:Count_MedicalConditionIncident_ConditionBloodDisease_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of medical condition incidents due to blood disease"
+description: "The number of persons with blood disease as a fraction of the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -869,6 +1039,8 @@ medicalCondition: dcid:BloodDisease
 
 Node: dcid:Count_MedicalConditionIncident_ConditionCancer_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of medical condition incidents due to cancer"
+description: "The number of persons with cancer as a fraction of the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -877,6 +1049,8 @@ medicalCondition: dcid:Cancer
 
 Node: dcid:Count_MedicalConditionIncident_ConditionCardiovascularDisease_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of medical condition incidents due to cardiovascular disease"
+description: "The number of persons with cardiovascular disease as a fraction of the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -885,6 +1059,8 @@ medicalCondition: dcid:CardiovascularDisease
 
 Node: dcid:Count_MedicalConditionIncident_ConditionEarCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of medical condition incidents due to ear condition"
+description: "The number of persons with ear condition as a fraction of the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -892,6 +1068,8 @@ measurementDenominator: dcid:Count_Person
 medicalCondition: dcid:EarCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionEndocrineMetabolicCondition_AsAFractionOf_Count_Person
+name: "Fraction of medical condition incidents due to endocrine metabolic condition"
+description: "The number of persons with endocrine metabolic condition as a fraction of the total population"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
@@ -901,6 +1079,8 @@ medicalCondition: dcid:EndocrineMetabolicCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionEyeCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of medical condition incidents due to eye condition"
+description: "The number of persons with eye condition as a fraction of the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -909,6 +1089,8 @@ medicalCondition: dcid:EyeCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionGastroIntestinalCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of person with gastrointestinal condition"
+description: "The fraction of the population with gastrointestinal condition among the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -917,6 +1099,8 @@ medicalCondition: dcid:GastroIntestinalCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionGenitoUrinaryCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of person with genito-urinary condition"
+description: "The fraction of the population with genito-urinary condition among the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -925,6 +1109,8 @@ medicalCondition: dcid:GenitoUrinaryCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionInfection_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Fraction of persons with infection condition"
+description: "The number of people with infection condition as a fraction of the total population"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -933,6 +1119,8 @@ medicalCondition: dcid:Infection
 
 Node: dcid:Count_MedicalConditionIncident_ConditionInjury_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Number of medical condition incidents with injury as a fraction of number of persons"
+description: "The number of medical condition incidents involving injury as a fraction of the total number of persons"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -941,6 +1129,8 @@ medicalCondition: dcid:Injury
 
 Node: dcid:Count_MedicalConditionIncident_ConditionMusculoSkeletalCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Number of musculo-skeletal condition incidents per person"
+description: "The number of medical condition incidents involving musculo-skeletal condition as a fraction of the total number of persons"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -949,6 +1139,8 @@ medicalCondition: dcid:MusculoSkeletalCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionNSSHealthOtherCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Number of NSS health other condition incidents per person"
+description: "The number of medical condition incidents involving National Sample Survey (NSS) health other condition as a fraction of the total number of persons"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -957,6 +1149,8 @@ medicalCondition: dcid:NSSHealthOtherCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionObstetricCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Number of obstetric condition incidents per person"
+description: "The number of medical condition incidents involving obstetric condition as a fraction of the total number of persons"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -965,22 +1159,28 @@ medicalCondition: dcid:ObstetricCondition
 
 Node: dcid:Count_MedicalConditionIncident_ConditionPsychiatricNeurologicalCondition_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Number of psychiatric and neurological condition incidents per person"
+description: "The number of medical condition incidents involving psychiatric and neurological conditions as a fraction of the total number of persons"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person
 medicalCondition: dcid:PsychiatricNeurologicalCondition
 
-Node: dcid:Count_MedicalConditionIncident_ConditionRespiratoryDisease_AsAFractionOf_Count_Person
+Node: dcid:Count_MedicalConditionIncident_ConditionRESPiratoryDisease_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Number of respiratory disease incidents per person"
+description: "The number of medical condition incidents involving respiratory disease as a fraction of the total number of persons"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person
-medicalCondition: dcid:RespiratoryDisease
+medicalCondition: dcid:RESPiratoryDisease
 
 Node: dcid:Count_MedicalConditionIncident_ConditionSkinDisease_AsAFractionOf_Count_Person
 typeOf: dcid:StatisticalVariable
+name: "Number of skin disease incidents per person"
+description: "The number of medical condition incidents involving skin disease as a fraction of the total number of persons"
 populationType: dcid:MedicalConditionIncident
 measuredProperty: dcid:count
 statType: dcid:measuredValue
