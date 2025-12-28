@@ -1,3 +1,4 @@
+
 Node: dcid:AmountOutstanding_Debt
 typeOf: dcid:StatisticalVariable
 name: "Amount outstanding debt"
@@ -8,6 +9,8 @@ statType: dcid:measuredValue
 
 Node: dcid:Amount_EconomicActivity_ExpenditureActivity_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
+name: "The share of expenditure activity as a fraction of gross domestic production"
+description: "The ratio of the amount of expenditure activity to the total gross domestic production in the economic activity sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
 statType: dcid:measuredValue
@@ -15,15 +18,17 @@ measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
 activitySource: dcid:ExpenditureActivity
 
 Node: dcid:Exports_EconomicActivity
+name: "The amount of exports in the economic activity sector"
+description: "The total value of exports within the economic activity sector"
 typeOf: dcid:StatisticalVariable
-name: "Amount of exports"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:exports
 statType: dcid:measuredValue
 
 Node: dcid:Imports_EconomicActivity
+name: "The amount of imports in the economic activity sector"
+description: "The total value of imports within the economic activity sector"
 typeOf: dcid:StatisticalVariable
-name: "Amount of imports"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:imports
 statType: dcid:measuredValue
@@ -274,24 +279,27 @@ statType: dcid:measuredValue
 industrialProductionType: dcid:HydrocarbonExtraction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_LeatherProduction
+name: "The industrial production index for leather products, travel items, and shoes"
+description: "The index measuring industrial production in leather goods manufacturing, including travel items and footwear"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of leather work manufacturing items of travel and shoes"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:LeatherProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_MachineryAndEquipmentRepairAndInstallation
+name: "The industrial production index for machinery and equipment repair and installation"
+description: "The index measuring industrial production related to the repair and installation of machinery and equipment"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of machinery and equipment repair and installation"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:MachineryAndEquipmentRepairAndInstallation
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_MetalOreExtraction
+name: "The industrial production index for metal ore extraction"
+description: "The index measuring industrial production in the metal ore extraction sector"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of metal ore extraction"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
@@ -299,7 +307,8 @@ industrialProductionType: dcid:MetalOreExtraction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_MetalWorkProduction
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of metal work production"
+name: "The industrial production index for metalwork production"
+description: "The index measuring industrial production in the metalworking sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
@@ -307,31 +316,35 @@ industrialProductionType: dcid:MetalWorkProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_Metallurgy
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of metallurgy"
+name: "The industrial production index for metallurgy"
+description: "The index measuring industrial production in the metallurgical sector"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:Metallurgy
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_MineralProduction
+name: "The industrial production index for mineral material manufacturing"
+description: "The index measuring industrial production in the manufacturing of mineral materials"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of manufacturing mineral materials"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:MineralProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_OilRefiningAndCoking
+name: "The industrial production index for oil refining and coking"
+description: "The index measuring industrial production in oil refining and coking processes"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of oil refining and coking"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:OilRefiningAndCoking
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_OtherEquipmentTransportation
+name: "The industrial production index for other transportation equipment manufacturing"
+description: "The index measuring industrial production in the manufacturing of other transportation equipment"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of manufacturing other equipment transportation"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
@@ -339,23 +352,26 @@ industrialProductionType: dcid:OtherEquipmentTransportation
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_OtherExtractionActivities
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of other extractive activities"
+name: "The industrial production index for other extractive activities"
+description: "The index measuring industrial production in extractive activities not classified elsewhere"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:OtherExtractionActivities
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_OtherProduction
+name: "The industrial production index for other manufacturing industries"
+description: "The index measuring industrial production in manufacturing sectors not classified elsewhere"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of other manufacturing industries"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:OtherProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_PaperAndCardBoardProduction
+name: "The industrial production index for paper and cardboard manufacturing"
+description: "The index measuring industrial production in the manufacturing of paper and cardboard products"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of paper and cardboard manufacturing"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
@@ -363,15 +379,17 @@ industrialProductionType: dcid:PaperAndCardBoardProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_PharmaceuticalProduction
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of manufacturing pharmaceutical products"
+name: "The industrial production index for Pharmaceutical product manufacturing"
+description: "The index measuring industrial production in the manufacturing of Pharmaceutical products"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:PharmaceuticalProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_PrintAndReproductionRecordings
+name: "The industrial production index for printing and reproduction of recordings"
+description: "The index measuring industrial production in the printing industry and reproduction of recordings"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of printing and reproduction recordings"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
@@ -379,15 +397,17 @@ industrialProductionType: dcid:PrintAndReproductionRecordings
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_RubberAndPlasticProduction
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of rubber and plastic working"
+name: "The industrial production index for rubber and plastic manufacturing"
+description: "The index measuring industrial production in the manufacturing of rubber and plastic products"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:RubberAndPlasticProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_TextileProduction
+name: "The industrial production index for textile manufacturing"
+description: "The index measuring industrial production in the textile manufacturing sector"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of textile manufacturing activities"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
@@ -395,39 +415,44 @@ industrialProductionType: dcid:TextileProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_TobaccoProduction
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of manufacture of tobacco products"
+name: "The industrial production index for Tobacco product manufacturing"
+description: "The index measuring industrial production in the manufacturing of Tobacco products"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:TobaccoProduction
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_WasteManagement
+name: "The industrial production index for waste collection, treatment, and disposal"
+description: "The index measuring industrial production in the collection, treatment, and disposal of waste including recovery activities"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of collection treatment and disposal of waste recovery"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:WasteManagement
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_WastewaterTreatment
+name: "The industrial production index for wastewater collection and treatment"
+description: "The index measuring industrial production in the collection and treatment of wastewater"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of collection and treatment of wastewater"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:WastewaterTreatment
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_WaterDistribution
+name: "The industrial production index for water capture, treatment, and distribution"
+description: "The index measuring industrial production in the catchment, treatment, and distribution of water"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of water catchment treatment and distribution"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
 industrialProductionType: dcid:WaterDistribution
 
 Node: dcid:IndustrialProductionIndex_EconomicActivity_WoodProduction
+name: "The industrial production index for wood products manufacturing (excluding furniture)"
+description: "The index measuring industrial production in woodworking and the manufacturing of wooden articles excluding furniture"
 typeOf: dcid:StatisticalVariable
-name: "Industrial production index of wood working and manufacturing of wooden articles excluding furniture"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:industrialProductionIndex
 statType: dcid:measuredValue
@@ -493,8 +518,8 @@ gender: dcid:Male
 
 Node: dcid:Count_Teacher_UniversityAndCollegeTeacher_Female
 typeOf: dcid:StatisticalVariable
-name: "Number of female university and college teachers"
-description: "Number of female teachers working in universities and colleges"
+name: "Number of female University and College teachers"
+description: "Number of female teachers working in Universities and Colleges"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -503,8 +528,8 @@ gender: dcid:Female
 
 Node: dcid:Count_Teacher_UniversityAndCollegeTeacher_Male
 typeOf: dcid:StatisticalVariable
-name: "Number of male university and college teachers"
-description: "Number of male teachers working in universities and colleges"
+name: "Number of male University and College teachers"
+description: "Number of male teachers working in universities and Colleges"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -629,8 +654,8 @@ economicSector: dcid:WholeSaleTradeNonSpecializedStores
 
 Node: dcid:TurnoverIndex_EconomicActivity_WholesaleTradeAgriculturalFoodBeveragesTobacco
 typeOf: dcid:StatisticalVariable
-name: "Turnover index for wholesale trade of agricultural food beverages and tobacco economic activity"
-description: "Turnover index for economic activity in the wholesale trade of raw agricultural products live animals food products beverages and tobacco"
+name: "Turnover index for wholesale trade of agricultural food beverages and Tobacco economic activity"
+description: "Turnover index for economic activity in the wholesale trade of raw agricultural products live animals food products beverages and Tobacco"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:turnoverIndex
 statType: dcid:measuredValue
@@ -638,8 +663,8 @@ economicSector: dcid:WholesaleTradeAgriculturalFoodBeveragesTobacco
 
 Node: dcid:TurnoverIndex_EconomicActivity_WholesaleTradeNonAgriculturalIntermediateProduct
 typeOf: dcid:StatisticalVariable
-name: "Turnover index for wholesale trade of non-agricultural intermediate products economic activity"
-description: "Turnover index for economic activity in the wholesale trade of non-agricultural intermediate products"
+name: "Turnover index for wholesale trade of Non-Agricultural intermediate products economic activity"
+description: "Turnover index for economic activity in the wholesale trade of Non-Agricultural intermediate products"
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:turnoverIndex
 statType: dcid:measuredValue
@@ -647,8 +672,8 @@ economicSector: dcid:WholesaleTradeNonAgriculturalIntermediateProduct
 
 Node: dcid:Count_Teacher_CivilServantVacancyProfessor
 typeOf: dcid:StatisticalVariable
-name: "Count of teachers who are civil servant vacancy professors"
-description: "Count of teachers who are civil servant vacancy professors"
+name: "Count of teachers who are Civil Servant vacancy Professors"
+description: "Count of teachers who are Civil Servant vacancy Professors"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -656,8 +681,8 @@ facultyType: dcid:CivilServantVacancyProfessor
 
 Node: dcid:Count_Teacher_CivilServantVacancyProfessor_Female
 typeOf: dcid:StatisticalVariable
-name: "Count of female teachers who are civil servant vacancy professors"
-description: "Count of female teachers who are civil servant vacancy professors"
+name: "Count of female teachers who are Civil Servant vacancy professors"
+description: "Count of female teachers who are Civil Servant vacancy professors"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -666,8 +691,8 @@ gender: dcid:Female
 
 Node: dcid:Count_Teacher_CivilServantVacancyProfessor_Male
 typeOf: dcid:StatisticalVariable
-name: "Count of male teachers who are civil servant vacancy professors"
-description: "Count of male teachers who are civil servant vacancy professors"
+name: "Count of male teachers who are Civil Servant vacancy Professors"
+description: "Count of male teachers who are Civil Servant vacancy professors"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -676,8 +701,8 @@ gender: dcid:Male
 
 Node: dcid:Count_Teacher_NonCivilServantVacancyProfessor
 typeOf: dcid:StatisticalVariable
-name: "Count of teachers who are non civil servant vacancy professor"
-description: "Count of teachers who are non civil servant vacancy professor"
+name: "Count of teachers who are non Civil Servant vacancy professor"
+description: "Count of teachers who are non Civil servant vacancy professor"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -685,8 +710,8 @@ facultyType: dcid:NonCivilServantVacancyProfessor
 
 Node: dcid:Count_Teacher_NonCivilServantVacancyProfessor_Female
 typeOf: dcid:StatisticalVariable
-name: "Count of female teachers who are non civil servant vacancy professor"
-description: "Count of female teachers who are non civil servant vacancy professor"
+name: "Count of female teachers who are non Civil Servant vacancy Professor"
+description: "Count of female teachers who are non Civil Servant vacancy Professor"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -695,8 +720,8 @@ gender: dcid:Female
 
 Node: dcid:Count_Teacher_NonCivilServantVacancyProfessor_Male
 typeOf: dcid:StatisticalVariable
-name: "Count of male teachers who are non civil servant vacancy professor"
-description: "Count of male teachers who are non civil servant vacancy professor"
+name: "Count of male teachers who are non Civil Servant vacancy Professor"
+description: "Count of male teachers who are non Civil Servant vacancy Professor"
 populationType: dcid:Teacher
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -855,6 +880,8 @@ statType: dcid:measuredValue
 typeOfSchool: dcid:PublicSchool
 
 Node: dcid:Count_Person_AsAFractionOf_Count_Household
+name: "The average number of people per household"
+description: "The number of people expressed as a fraction of the number of households"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
@@ -862,6 +889,8 @@ statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Household
 
 Node: dcid:Count_ClassRoom_LowerSecondary
+name: "The number of classrooms in lower secondary schools"
+description: "The total number of classrooms available in lower secondary education institutions"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:ClassRoom
 measuredProperty: dcid:count
@@ -869,6 +898,8 @@ statType: dcid:measuredValue
 schoolGradeLevel: dcid:LowerSecondary
 
 Node: dcid:Count_Student_LowerSecondary
+name: "The number of students in lower secondary schools"
+description: "The total number of students enrolled in lower secondary education"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Student
 measuredProperty: dcid:count
@@ -876,6 +907,8 @@ statType: dcid:measuredValue
 schoolGradeLevel: dcid:LowerSecondary
 
 Node: dcid:Count_Teacher_LowerSecondary
+name: "The number of teachers in lower secondary schools"
+description: "The total number of teachers employed in lower secondary education institutions"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Teacher
 measuredProperty: dcid:count
@@ -883,6 +916,8 @@ statType: dcid:measuredValue
 schoolGradeLevel: dcid:LowerSecondary
 
 Node: dcid:Count_MortalityEvent_5OrMoreYears_AsAFractionOf_Count_BirthEvent_LiveBirth
+name: "The mortality rate for individuals aged 5 or more years per live birth"
+description: "The number of mortality events involving individuals aged 5 or more years expressed as a fraction of the number of live births"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
@@ -891,6 +926,8 @@ measurementDenominator: dcid:Count_BirthEvent_LiveBirth
 age: [5 - Years]
 
 Node: dcid:RealValue_GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
+name: "The real growth rate of Gross Domestic Product (GDP)"
+description: "The annual real growth rate of the amount of economic activity attributed to Gross Domestic Product (GDP)"
 typeOf: dcid:StatisticalVariable
 populationType: dcid:EconomicActivity
 measuredProperty: dcid:amount
