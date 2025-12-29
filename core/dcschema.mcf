@@ -884,7 +884,7 @@ description: "A value of the measuredProperty property of a StatisticalVariable.
 
 Node: dcid:cumulativeCount
 rangeIncludes: schema:Integer
-domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household, dcs:MedicalTest, dcs:MedicalConditionIncident
+domainIncludes: schema:StatisticalPopulation, schema:FoodBasket, schema:Household, dcs:MedicalTest, dcs:MedicalConditionIncident, dcs:MortalityEvent
 typeOf: schema:Property
 name: "cumulativeCount"
 description: "A value of the measuredProperty property of a StatisticalVariable. Indicates that the variable reports the running count of all instances of the measured population."
@@ -3178,8 +3178,10 @@ rangeIncludes: dcs:VaccineStatusEnum
 
 Node: dcid:vaccineDoseReceived
 name: "vaccineDoseReceived"
-rangeIncludes: dcs:QuantityRange
 typeOf: schema:Property
+domainIncludes: dcid:Person,dcid:MedicalConditionIncident
+rangeIncludes: dcs:QuantityRange, dcs:AtLeastOneVaccineDose, dcs:BoosterVaccineDose, dcs:CompletedPrimaryVaccineDose
+
 
 Node: dcs:VaccineDose
 typeOf: dcs:UnitOfMeasure
