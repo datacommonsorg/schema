@@ -4944,7 +4944,6 @@ Node: dcid:NaturalSciences
 typeOf: dcid:EducationalMajorEnum
 name: "Natural Sciences"
 
-
 Node: dcid:ProcessingIndustry
 typeOf: dcid:EconomicSectorEnum
 name: "Processing Industry"
@@ -5271,3 +5270,262 @@ typeOf: dcid:Property
 name: "remoteInstructionPercent"
 domainIncludes: dcid:PublicSchool
 rangeIncludes: dcid:RemoteInstructionPercentEnum,dcid:QuantityRange
+
+Node: dcid:NotHighSchoolGraduateOrAlternative
+typeOf: dcid:EducationalAttainmentEnum
+name: "Not High School Graduate Or Alternative"
+
+Node: dcid:certificationStatus
+typeOf: dcs:Property
+name: "certificationStatus"
+domainIncludes: dcid:Teacher
+rangeIncludes: dcid:CertificationStatusEnum
+
+Node: dcid:CertificationStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "CertificationStatusEnum"
+
+Node: dcid:Certified
+typeOf: dcid:CertificationStatusEnum
+name: "Certified"
+
+Node: dcid:NotCertified
+typeOf: dcid:CertificationStatusEnum
+name: "Not Certified"
+
+Node: dcid:teachingExperienceLevel
+typeOf: dcs:Property
+name: "teachingExperienceLevel"
+domainIncludes: dcid:Teacher
+rangeIncludes: dcid:TeachingExperienceLevelEnum
+
+Node: dcid:TeachingExperienceLevelEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "TeachingExperienceLevelEnum"
+
+Node: dcid:FirstYear
+typeOf: dcid:TeachingExperienceLevelEnum
+name: "FirstYear"
+
+Node: dcid:SecondYear
+typeOf: dcid:TeachingExperienceLevelEnum
+name: "SecondYear"
+
+Node: dcid:SchoolCounselor
+typeOf: dcid:FacultyTypeEnum
+name: "School Counselor"
+
+Node: dcid:timePeriod
+typeOf: dcs:Property
+name: "timePeriod"
+domainIncludes: dcid:Teacher
+
+Node: dcid:CurrentSchoolYear
+typeOf: dcid:TimePeriodEnum
+name: "Current School Year"
+
+Node: dcid:PreviousSchoolYear
+typeOf: dcid:TimePeriodEnum
+name: "Previous School Year"
+
+Node: dcid:absenteeismStatus
+typeOf: dcs:Property
+name: "absenteeismStatus"
+domainIncludes: dcid:Teacher
+rangeIncludes: dcid:AbsenteeismStatusEnum
+
+Node: dcid:AbsenteeismStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "AbsenteeismStatusEnum"
+
+Node: dcid:AbsentMoreThan10Days
+typeOf: dcid:AbsenteeismStatusEnum
+name: "Absent More Than 10 Days"
+
+Node: dcid:SecurityGuard
+typeOf: dcid:FacultyTypeEnum
+name: "Security Guard"
+
+Node: dcid:SocialWorker
+typeOf: dcid:FacultyTypeEnum
+name: "Social Worker"
+
+Node: dcid:englishProficiency
+typeOf: dcid:Property
+name: "englishProficiency"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EnglishProficiencyEnum
+
+Node: dcid:EnglishProficiencyEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EnglishProficiencyEnum"
+
+Node: dcid:LimitedEnglishProficiency
+typeOf: dcid:EnglishProficiencyEnum
+name: "Limited English Proficiency"
+
+Node: dcid:housingStatus
+typeOf: dcid:Property
+name: "housingStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:SocialVulnerabilityStatusEnum
+
+Node: dcid:educationProgram
+typeOf: dcid:Property
+name: "educationProgram"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationProgramEnum
+
+Node: dcid:EducationProgramEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EducationProgramEnum"
+
+Node: dcid:Section504Plan
+typeOf: dcid:EducationProgramEnum
+name: "Section 504Plan"
+description: "Section 504 is part of the Rehabilitation Act of 1973, a civil rights law."
+
+Node: dcid:DataSuppressed
+typeOf: dcid:MeasurementQualifierEnum
+name: "Data Suppressed"
+
+Node: dcid:RobberyWithWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Robbery With Weapon"
+
+Node: dcid:educationalInstitutionType
+typeOf: dcid:Property
+name: "educationalInstitutionType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:EducationalInstitutionTypeEnum
+
+Node: dcid:EducationalInstitutionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "EducationalInstitutionTypeEnum"
+
+Node: dcid:JuvenileJusticeFacility
+typeOf: dcid:EducationalInstitutionTypeEnum
+name: "Juvenile Justice Facility"
+
+Node: dcid:firearmPossessionStatus
+typeOf: dcid:Property
+name: "firearmPossessionStatus"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:FirearmPossessionStatusEnum
+
+Node: dcid:FirearmPossessionStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FirearmPossessionStatusEnum"
+
+Node: dcid:FirearmNotPresent
+typeOf: dcid:FirearmPossessionStatusEnum
+name: "Firearm Not Present"
+
+Node: dcid:homicideOccurrence
+typeOf: dcid:Property
+name: "homicideOccurrence"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:HomicideOccurrenceEnum
+
+Node: dcid:HomicideOccurrenceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "HomicideOccurrenceEnum"
+
+Node: dcid:HomicideNotOccurred
+typeOf: dcid:HomicideOccurrenceEnum
+name: "Homicide Not Occurred"
+
+Node: dcid:RobberyWithFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Robbery With Firearm Or Explosive"
+
+Node: dcid:RobberyWithoutWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Robbery Without Weapon"
+
+Node: dcid:AttemptedRobberyWithWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Attempted Robbery With Weapon"
+
+Node: dcid:AttemptedRobberyWithFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Attempted Robbery With Firearm Or Explosive"
+
+Node: dcid:AttemptedRobberyWithoutWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Attempted Robbery Without Weapon"
+
+Node: dcid:ThreatOfAttackWithWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Threat Of Attack With Weapon"
+
+Node: dcid:ThreatOfAttackWithFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Threat Of Attack With Firearm Or Explosive"
+
+Node: dcid:ThreatOfAttackWithoutWeapon
+typeOf: dcid:CrimeTypeEnum
+name: "Threat Of Attack Without Weapon"
+
+Node: dcid:PossessionOfFirearmOrExplosive
+typeOf: dcid:CrimeTypeEnum
+name: "Possession Of Firearm Or Explosive"
+
+Node: dcid:NotJuvenileJusticeFacility
+typeOf: dcid:EducationalInstitutionTypeEnum
+name: "Not Juvenile Justice Facility"
+
+Node: dcid:FirearmPresent
+typeOf: dcid:FirearmPossessionStatusEnum
+name: "Firearm Present"
+
+Node: dcid:HomicideOccurred
+typeOf: dcid:HomicideOccurrenceEnum
+name: "Homicide Occurred"
+
+Node: dcid:restraintOrSeclusionType
+typeOf: dcid:Property
+name: "restraintOrSeclusionType"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:RestraintOrSeclusionTypeEnum
+
+Node: dcid:RestraintOrSeclusionTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "RestraintOrSeclusionTypeEnum"
+
+Node: dcid:MechanicalRestraint
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Mechanical Restraint"
+
+Node: dcid:NonIDEA
+typeOf: dcid:EducationProgramEnum
+name: "Not Individuals with Disabilities Education Act (NON IDEA)"
+description: "Students not served under the Individuals with Disabilities Education Act"
+
+Node: dcid:PhysicalRestraint
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Physical Restraint"
+
+Node: dcid:Seclusion
+typeOf: dcid:RestraintOrSeclusionTypeEnum
+name: "Seclusion"
+
+Node: dcid:IDEA
+typeOf: dcid:EducationProgramEnum
+name: "Individuals with Disabilities Education Act (IDEA)"
+description: "Students served under the Individuals with Disabilities Education Act"
+
+Node: dcid:assessmentScoreLevel
+typeOf: dcid:Property
+name: "assessmentScoreLevel"
+domainIncludes: dcid:Student
+rangeIncludes: dcid:AssessmentScoreLevelEnum
