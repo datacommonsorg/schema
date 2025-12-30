@@ -6244,3 +6244,34 @@ measuredProperty: dcid:count
 measurementQualifier: dcid:Triennial
 statType: dcid:measuredValue
 placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_MortalityEvent_Infant_AsAFractionOf_Count_Death
+typeOf: dcid:StatisticalVariable
+name: "Infant mortality rate ( IMR ) (%)"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Death
+ageGroupClassification: dcid:Infant
+
+Node: dcid:Count_MortalityEvent_Infant_Rural_AsAFractionOf_Count_MortalityEvent_Rural
+typeOf: dcid:StatisticalVariable
+name: "Infant mortality rate ( IMR ) (%), rural"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_MortalityEvent_Rural
+ageGroupClassification: dcid:Infant
+placeOfResidenceClassification: dcid:Rural
+
+
+Node: dcid:Count_MortalityEvent_Infant_Urban_AsAFractionOf_Count_MortalityEvent_Urban
+typeOf: dcid:StatisticalVariable
+name: "Infant mortality rate ( IMR ) (%), urban"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_MortalityEvent_Urban
+ageGroupClassification: dcid:Infant
+placeOfResidenceClassification: dcid:Urban
+
