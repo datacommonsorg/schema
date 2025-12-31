@@ -5225,6 +5225,24 @@ typeOf: dcid:EducationProgramEnum
 name: "Individuals with Disabilities Education Act (IDEA)"
 description: "Students served under the Individuals with Disabilities Education Act"
 
+Node: dcid:familyPovertyStatus
+typeOf: dcs:Property
+name: "familyPovertyStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:FamilyPovertyStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:FamilyPovertyStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "FamilyPovertyStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:Poor
+typeOf: dcid:FamilyPovertyStatusEnum
+name: "Poor"
+isProvisional: dcs:True
+
 
 
 Node: dcid:ScholasticAssessmentTest
