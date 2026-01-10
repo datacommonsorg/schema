@@ -5559,3 +5559,119 @@ typeOf: dcs:Property
 name: "studentStatus"
 domainIncludes: dcid:Student
 rangeIncludes: dcid:StudentStatusEnum
+
+Node: dcid:grossDomesticProduction
+typeOf: dcid:Property
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:GrossDomesticProductionEnum
+
+Node: dcid:AllIndustry
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "All Industry"
+
+Node: dcid:PrivateSector
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Private Sector"
+
+Node: dcid:GovernmentSector
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Government Sector"
+
+Node: dcid:FederalCivilian
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Federal Civilian"
+
+Node: dcid:Military
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Military"
+
+Node: dcid:StateAndLocal
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "State And Local"
+
+Node: dcid:ManufacturingAndInformation
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Manufacturing And Information"
+
+Node: dcid:PrivateGoodsProducingIndustries2
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Private Goods Producing Industries 2"
+
+Node: dcid:PrivateGoodsProducingIndustries3
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Private Goods Producing Industries 3"
+
+Node: dcid:GrossDomesticProduct
+typeOf: dcid:EconomicActivitySourceEnum
+name: "Gross Domestic Product"
+
+Node: dcid:chainedQuantityIndex
+typeOf: dcid:Property
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:ChainedQuantityIndexEnum
+
+Node: dcid:Compensation
+typeOf: dcid:ExpenditureTypeEnum
+name: "Compensation"
+
+Node: dcid:GrossOperatingSurplus
+typeOf: dcid:EconomicActivitySourceEnum,dcid:GrossDomesticProductTypeEnum
+name: "Gross Operating Surplus"
+
+Node: dcid:AllIndustryTotalOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "All Industry Total Overseas Activity"
+
+Node: dcid:GovernmentAndGovernmentEnterprisesOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Government And Government Enterprises Overseas Activity"
+
+Node: dcid:FederalCivilianOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Federal Civilian Overseas Activity"
+
+Node: dcid:MilitaryOverseasActivity
+typeOf: dcid:ConsumerGoodsCategoryEnum
+name: "Military Overseas Activity"
+
+Node: dcid:grossDomesticProductType
+typeOf: dcid:Property
+name: "grossDomesticProductType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:GrossDomesticProductTypeEnum
+
+Node: dcid:GrossDomesticProductTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "GrossDomesticProductTypeEnum"
+
+Node: dcid:TaxesOnProductionAndImportsLessSubsidies
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Taxes On Production And Imports Less Subsidies"
+
+Node: dcid:CompensationOfEmployees
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Compensation Of Employees"
+
+Node: dcid:Subsidies
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Subsidies"
+
+Node: dcid:TaxesOnProductionAndImports
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Taxes On Production And Imports"
+
+Node: dcid:RealGDPChainTypeQuantityIndex
+typeOf: dcid:GrossDomesticProductTypeEnum
+name: "Real GDPChain Type Quantity Index"
+
+Node: dcid:ChainedQuantityIndexEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "ChainedQuantityIndexEnum"
+
+Node: dcid:GrossDomesticProductionEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "GrossDomesticProductionEnum"
+
