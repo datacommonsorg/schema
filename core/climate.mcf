@@ -43,6 +43,48 @@ description: "Layer of gases surrounding a planet."
 subClassOf: schema:Thing
 name: "Atmosphere"
 
+Node: dcid:SeaIce
+typeOf: schema:Class
+description: "The ice that floats on the surface of the water."
+descriptionUrl: "https://en.wikipedia.org/wiki/Sea_ice"
+subClassOf: dcs:SeaBodyOfWater
+name: "Sea ice"
+
+Node: dcid:IceCover
+typeOf: schema:Class
+description: "The physical material that is at the surface of the earth."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ice_cover"
+subClassOf: schema:Atmosphere
+name: "Ice cover"
+
+Node: dcid:Graupel
+typeOf: schema:Class
+description: "A small, dry, sandy particle that is formed by the evaporation of water from a hot surface."
+descriptionUrl: "https://en.wikipedia.org/wiki/Graupel"
+subClassOf: schema:IceCover
+name: "Graupel"
+
+Node: dcid:Cloud
+typeOf: schema:Class
+description: "A visible aerosol consisting of tiny water droplets, ice crystals, or other particles suspended in the atmosphere of a planetary body."
+descriptionUrl: "https://en.wikipedia.org/wiki/Cloud"
+subClassOf: schema:Atmosphere
+name: "Cloud"
+
+Node: dcid:Ice
+typeOf: schema:Class
+description: "Water frozen into a solid state. It can appear transparent or a more or less opaque white color, depending on the presence of impurities such as air bubbles or soil."
+descriptionUrl: "https://en.wikipedia.org/wiki/Ice"
+subClassOf: schema:Atmosphere
+name: "Ice"
+
+Node: dcid:Rainwater
+typeOf: schema:Class
+description: "Water that has fallen as rain and has not yet collected any soluble matter from the soil."
+descriptionUrl: "https://en.wikipedia.org/wiki/Rain"
+subClassOf: schema:Atmosphere
+name: "Rainwater"
+
 Node: dcid:LandCover
 typeOf: schema:Class
 description: "The physical material that is at the surface of the earth."
