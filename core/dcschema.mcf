@@ -5605,3 +5605,105 @@ typeOf: dcs:Property
 name: "studentStatus"
 domainIncludes: dcid:Student
 rangeIncludes: dcid:StudentStatusEnum
+
+Node: dcid:originBackgroundType
+typeOf: dcs:Property
+name: "originBackgroundType"
+domainIncludes: dcs:Person
+rangeIncludes: dcs:OriginBackgroundTypeEnum
+
+Node: dcid:LanguageSpokenAtHomeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "Language Spoken At Home Enum"
+
+Node: dcid:OriginBackgroundTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "OriginBackgroundTypeEnum"
+
+Node: dcid:ForeignOrigin
+name: "Foreign Origin"
+typeOf: dcs:OriginBackgroundTypeEnum
+
+Node: dcid:ForeignBackground
+name: "Foreign Background"
+typeOf: dcs:OriginBackgroundTypeEnum
+
+Node: dcid:FIN_OtherLanguages
+name: "Other Languages in Finland"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:Finnish
+name: "Finnish"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:Sami
+name: "Sami"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:Swedish
+name: "Swedish"
+typeOf: dcs:LanguageSpokenAtHomeEnum
+
+Node: dcid:BornOutsideAreaOfResidence
+name: "Born Outside Area Of Residence"
+typeOf: dcs:PlaceOfBirthEnum
+
+Node: dcid:BornInAreaOfResidence
+name: "Born In Area Of Residence"
+typeOf: dcs:PlaceOfBirthEnum
+
+Node: dcid:FIN_OtherReligiousGroup
+name: "Other Religious Group in Finland"
+typeOf: dcs:ReligionEnum
+
+Node: dcid:NoReligiousAffiliation
+name: "No Religious Affiliation"
+typeOf: dcs:ReligionEnum
+
+Node: dcid:AreaOfBirth
+name: "Area Of Birth"
+typeOf: dcs:LocationClassificationEnum
+
+Node: dcid:InnerUrban
+name: "Inner urban area"
+description: "A compact and densely built area with continuous development."
+descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:LocalCentreRural
+name: "Local centres in rural areas"
+description: "Population centres located outside urban areas."
+descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:OuterUrban
+name: "Outer urban area"
+description: "A dense urban area extending from the boundary of the inner urban area to the outer edge of the continuous built area."
+descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:PeriUrban
+name: "Peri-urban area"
+description: "A part of the intermediate zone between urban and rural, which is directly linked to an urban area."
+descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:RuralCloseToUrban
+name: "Rural areas close to urban areas"
+description: "Areas with a rural character that are functionally connected and close to urban areas."
+descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:RuralHeartland
+name: "Rural heartland areas"
+description: "Rural areas with intensive land use, with a relatively dense population and a diverse economic structure at the local level."
+descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
+typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:SparseRural
+name: "Sparsely populated rural areas"
+description: "Sparsely populated areas with dispersed small settlements that are located at a distance from each other."
+descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
+typeOf: dcs:HumanSettlementClassificationEnum
