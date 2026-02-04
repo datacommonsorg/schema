@@ -140,6 +140,8 @@ relevantVariable: dcid:RealValue_GrowthRate_Amount_EconomicActivity_GrossDomesti
 relevantVariable: dcid:InflationAdjustedGDP
 relevantVariable: dcid:dc/topic/GDPByIndustry
 relevantVariable: dcid:dc/topic/InflationAdjustedGDP
+relevantVariable: dcid:RealValue_GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
+relevantVariable: dcid:Nominal_GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
 
 Node: dcid:dc/topic/GlobalEconomicActivity
 typeOf: dcs:Topic
@@ -154,11 +156,12 @@ Node: dcid:dc/topic/GDPByIndustry
 typeOf: dcs:Topic
 name: "GDP by Industry"
 relevantVariable: dcid:dc/svpg/RealGDPByIndustry
+relevantVariable: dcid:dc/svpg/NominalGDPByIndustry
 
 # Generated with https://paste.googleplex.com/4559733896773632
 Node: dcid:dc/svpg/RealGDPByIndustry
 typeOf: dcs:StatVarPeerGroup
-name: "Breakdown of GDP by Industry"
+name: "Breakdown of real GDP by industry"
 member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAccommodationFoodServices_RealValue
 member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAdministrativeSupportWasteManagementRemediationServices_RealValue
 member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSAgricultureForestryFishingHunting_RealValue
@@ -178,7 +181,32 @@ member: dcid:Amount_EconomicActivity_GrossDomesticProduction_NAICSWholesaleTrade
 member: dcid:dc/62n3z7mvfpjx1
 member: dcid:dc/qt7ewllmt3826
 member: dcid:dc/zz6gwv838v9w
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_AgricultureForestryFishingSector
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_ConstructionSector
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_ElectricityGasSteamAirConditionSupply
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_FinanceService
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_MOSPIOtherService
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_ManufacturingSector
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_MiningQuarrying
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_PublicAdministrationAndDefenceOrMOSPIOtherService
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_TradeSector
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_TradeSectorOrTransportStorageSectorOrPublishingBroadcastingInformationActivities
+member: dcid:RealValue_Amount_EconomicActivity_GrossValueAdded_TransportStorageSectorOrPublishingBroadcastingInformationActivities
 
+Node: dcid:dc/svpg/NominalGDPByIndustry
+typeOf: dcs:StatVarPeerGroup
+name: "Breakdown of nominal GDP by industry"
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_AgricultureForestryFishingSector
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_ConstructionSector
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_ElectricityGasSteamAirConditionSupply
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_FinanceService
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_MOSPIOtherService
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_ManufacturingSector
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_MiningQuarrying
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_PublicAdministrationAndDefenceOrMOSPIOtherService
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_TradeSector
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_TradeSectorOrTransportStorageSectorOrPublishingBroadcastingInformationActivities
+member: dcid:Nominal_Amount_EconomicActivity_GrossValueAdded_TransportStorageSectorOrPublishingBroadcastingInformationActivities
 
 Node: dcid:dc/topic/HealthcareExpenditure
 typeOf: dcs:Topic
@@ -207,6 +235,8 @@ relevantVariable: dcid:Monthly_Mean_Income_Person_Years14Onwards_Employed_AllJob
 relevantVariable: dcid:dc/topic/IndividualIncomeDistribution
 relevantVariable: dcid:dc/topic/IndividualIncomeByIndustry
 relevantVariable: dcid:dc/topic/HouseholdIncomeDistribution
+relevantVariable: dcid:dc/topic/IndividualIncomeByPlaceOfResidence
+relevantVariable: dcid:dc/topic/IndividualIncomeByGender
 
 Node: dcid:dc/topic/IndividualIncomeByIndustry
 typeOf: dcs:Topic
@@ -247,6 +277,28 @@ member: dcid:Count_Person_IncomeOf35000To49999USDollar
 member: dcid:Count_Person_IncomeOf50000To64999USDollar
 member: dcid:Count_Person_IncomeOf65000To74999USDollar
 member: dcid:Count_Person_IncomeOf75000OrMoreUSDollar
+
+Node: dcid:dc/topic/IndividualIncomeByPlaceOfResidence
+typeOf: dcs:Topic
+name: "Individual income by place of residence"
+relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeByPlaceOfResidence
+
+Node: dcid:dc/svpg/dc/topic/IndividualIncomeByPlaceOfResidence
+typeOf: dcs:StatVarPeerGroup
+name: "Individual worker income by place of residence"
+member: dcid:Mean_WagesMonthly_Worker_Urban
+member: dcid:Mean_WagesMonthly_Worker_Rural
+
+Node: dcid:dc/topic/IndividualIncomeByGender
+typeOf: dcs:Topic
+name: "Individual income by gender"
+relevantVariable: dcid:dc/svpg/dc/topic/IndividualIncomeByGender
+
+Node: dcid:dc/svpg/dc/topic/IndividualIncomeByGender
+typeOf: dcs:StatVarPeerGroup
+name: "Individual worker income by gender"
+member: dcid:Mean_WagesMonthly_Worker_Female
+member: dcid:Mean_WagesMonthly_Worker_Male
 
 Node: dcid:dc/topic/IndustriesByGDP
 typeOf: dcs:Topic
