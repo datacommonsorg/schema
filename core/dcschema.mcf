@@ -643,6 +643,34 @@ description: "Simplified geographical boundary of a place in GeoJSON format. Cre
 domainIncludes: schema:Place
 rangeIncludes: schema:Text
 
+Node: dcid:geoJsonCoordinatesIndia
+typeOf: schema:Property
+name: "geoJsonCoordinatesIndia"
+description: "Geographical boundary of a place in GeoJSON format with official Indian boundary."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:geoJsonCoordinatesIndiaDP1
+typeOf: schema:Property
+name: "geoJsonCoordinatesIndiaDP1"
+description: "Simplified geographical boundary of a place in GeoJSON format. Created by running the Ramer-Douglas-Peucker algorithm on geoJsonCoordinatesIndia with epsilon of 0.01."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:geoJsonCoordinatesIndiaDP2
+typeOf: schema:Property
+name: "geoJsonCoordinatesIndiaDP2"
+description: "Simplified geographical boundary of a place in GeoJSON format. Created by running the Ramer-Douglas-Peucker algorithm on geoJsonCoordinatesIndia with epsilon of 0.03."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
+Node: dcid:geoJsonCoordinatesIndiaDP3
+typeOf: schema:Property
+name: "geoJsonCoordinatesIndiaDP3"
+description: "Simplified geographical boundary of a place in GeoJSON format. Created by running the Ramer-Douglas-Peucker algorithm on geoJsonCoordinatesIndia with epsilon of 0.05."
+domainIncludes: schema:Place
+rangeIncludes: schema:Text
+
 Node: CriminalActivities
 dcid: "CriminalActivities"
 typeOf: schema:Class
@@ -5619,7 +5647,7 @@ rangeIncludes: dcs:OriginBackgroundTypeEnum
 Node: dcid:LanguageSpokenAtHomeEnum
 typeOf: schema:Class
 subClassOf: schema:Enumeration
-name: "Language Spoken At Home Enum"
+name: "LanguageSpokenAtHomeEnum"
 
 Node: dcid:OriginBackgroundTypeEnum
 typeOf: schema:Class
