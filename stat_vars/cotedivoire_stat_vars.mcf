@@ -462,15 +462,6 @@ statType: dcid:measuredValue
 facultyType: dcid:ContractTeacher
 gender: dcid:Male
 
-Node: dcid:Count_Teacher_HighSchool
-typeOf: dcid:StatisticalVariable
-name: "Number of high school teachers"
-description: "Number of teachers working in high schools"
-populationType: dcid:Teacher
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-facultyType: dcid:HighSchool
-
 Node: dcid:Count_Teacher_HighSchool_Female
 typeOf: dcid:StatisticalVariable
 name: "Number of female high school teachers"
@@ -888,7 +879,7 @@ populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_BirthEvent_LiveBirth
-age: [5 - Years]
+age: dcid:Years5Onwards
 
 Node: dcid:RealValue_GrowthRate_Amount_EconomicActivity_GrossDomesticProduction
 typeOf: dcid:StatisticalVariable
