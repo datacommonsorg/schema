@@ -1,55 +1,78 @@
+
+name: "Number of females"
+description: "The number of females calculated as the sum of non-citizen and citizen females"
 Node: dcid:dc/c/Count_Person_Female
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_NotACitizen_Female + Count_Person_Citizen_Female"
 outputProperty: dcs:Count_Person_Female
 
 Node: dcid:dc/c/Count_Person_Male
+name: "Number of males"
+description: "The number of males calculated as the sum of non-citizen and citizen males"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_NotACitizen_Male + Count_Person_Citizen_Male"
 outputProperty: dcs:Count_Person_Male
 
 Node: dcid:dc/c/Count_Person_NotACitizen
+name: "Number of non-citizens"
+description: "The number of non-citizens calculated as the sum of non-citizen females and non-citizen males"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_NotACitizen_Female + Count_Person_NotACitizen_Male"
 outputProperty: dcs:Count_Person_NotACitizen
 
 Node: dcid:dc/c/Count_Person_Citizen
+name: "Number of citizens"
+description: "The number of citizens calculated as the sum of females and males citizen"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_Citizen_Female + Count_Person_Citizen_Male"
 outputProperty: dcs:Count_Person_Citizen
 
 Node: dcid:dc/c/Count_Person
+name: "Number of persons"
+description: "The number of persons calculated as the sum of females and males, or as the sum of citizens and non-citizens"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_Female + Count_Person_Male"
 inputPropertyExpression: "Count_Person_NotACitizen + Count_Person_Citizen"
 outputProperty: dcs:Count_Person
 
 Node: dcid:dc/c/Count_Person_16To19Years
+name: "Number of persons aged 16 to 19"
+description: "The number of persons aged 16 to 19 years calculated as the sum of females and males in the same age group"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_16To19Years_Female + Count_Person_16To19Years_Male"
 outputProperty: dcs:Count_Person_16To19Years
 
 Node: dcid:dc/c/Count_Person_18To19Years
+name: "Number of persons aged 18 to 19"
+description: "The number of persons aged 18 to 19 years calculated as the sum of females and males in the same age group"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_18To19Years_Female + Count_Person_18To19Years_Male"
 outputProperty: dcs:Count_Person_18To19Years
 
 Node: dcid:dc/c/Count_Person_20To21Years
+name: "Number of persons aged 18 to 19"
+description: "The number of persons aged 18 to 19 years calculated as the sum of females and males in the same age group"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_20To21Years_Female + Count_Person_20To21Years_Male"
 outputProperty: dcs:Count_Person_20To21Years
 
 Node: dcid:dc/c/Count_Person_22To24Years
+name: "Number of persons aged 22 to 24"
+description: "The number of persons aged 22 to 24 years calculated as the sum of females and males in the same age group"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_22To24Years_Female + Count_Person_22To24Years_Male"
 outputProperty: dcs:Count_Person_22To24Years
 
 Node: dcid:dc/c/Count_Person_65To66Years
+name: "Number of persons aged 65 to 66"
+description: "The number of persons aged 65 to 66 years calculated as the sum of females and males in the same age group"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_65To66Years_Female + Count_Person_65To66Years_Male"
 outputProperty: dcs:Count_Person_65To66Years
 
 Node: dcid:dc/c/Count_Person_67To69Years
+name: "Number of persons aged 67 to 69"
+description: "The number of persons aged 67 to 69 years calculated as the sum of females and males in the same age group"
 typeOf: dcs:StatisticalCalculation
 inputPropertyExpression: "Count_Person_67To69Years_Female + Count_Person_67To69Years_Male"
 outputProperty: dcs:Count_Person_67To69Years
