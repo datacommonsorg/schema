@@ -19,14 +19,14 @@ populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_BirthEvent_LiveBirth
-age: [1 4 Years]
+age: dcid:Years1To4
 
 Node: dcid:Count_MortalityEvent_5OrLessYears
 typeOf: dcid:StatisticalVariable
 populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 5 Years]
+age: dcid:YearsUpto5
 
 Node: dcid:Count_MortalityEvent_5OrLessYears_AsAFractionOf_Count_BirthEvent_LiveBirth
 typeOf: dcid:StatisticalVariable
@@ -34,7 +34,7 @@ populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_BirthEvent_LiveBirth
-age: [- 5 Years]
+age: dcid:YearsUpto5
 
 Node: dcid:Count_MortalityEvent_AIDS
 typeOf: dcid:StatisticalVariable
@@ -89,7 +89,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_1Years
-age: [1 Years]
+age: dcid:Years1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG
 
@@ -99,7 +99,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_1Years
-age: [1 Years]
+age: dcid:Years1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:DPT3
 
@@ -109,7 +109,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_1Years
-age: [1 Years]
+age: dcid:Years1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:HaemophilusInfluenzaeTypeB
 
@@ -119,7 +119,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_1Years
-age: [1 Years]
+age: dcid:Years1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Measles
 
@@ -129,7 +129,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_1Years
-age: [1 Years]
+age: dcid:Years1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Polio
 
@@ -239,21 +239,21 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:unemploymentRate
 statType: dcid:measuredValue
-age: [15 24 Years]
+age: dcid:Years15To24
 
 Node: dcid:UnemploymentRate_Person_15To65Years
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:unemploymentRate
 statType: dcid:measuredValue
-age: [15 65 Years]
+age: dcid:Years15To65
 
 Node: dcid:UnemploymentRate_Person_15To65Years_Female
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:unemploymentRate
 statType: dcid:measuredValue
-age: [15 65 Years]
+age: dcid:Years15To65
 gender: dcid:Female
 
 Node: dcid:UnemploymentRate_Person_15To65Years_Male
@@ -261,7 +261,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:unemploymentRate
 statType: dcid:measuredValue
-age: [15 65 Years]
+age: dcid:Years15To65
 gender: dcid:Male
 
 Node: dcid:Count_Person_0To4Years_Female_BlackAfrican
@@ -269,7 +269,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -278,7 +278,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -287,7 +287,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -296,7 +296,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Female
 race: dcid:White
 
@@ -305,7 +305,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -314,7 +314,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -323,7 +323,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -332,7 +332,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [0 4 Years]
+age: dcid:Years0To4
 gender: dcid:Male
 race: dcid:White
 
@@ -341,7 +341,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -350,7 +350,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -359,7 +359,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -368,7 +368,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Female
 race: dcid:White
 
@@ -377,7 +377,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -386,7 +386,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -395,7 +395,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -404,7 +404,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [10 14 Years]
+age: dcid:Years10To14
 gender: dcid:Male
 race: dcid:White
 
@@ -413,7 +413,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -422,7 +422,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -431,7 +431,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -440,7 +440,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 race: dcid:White
 
@@ -449,7 +449,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -458,7 +458,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -467,7 +467,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -476,7 +476,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Male
 race: dcid:White
 
@@ -485,7 +485,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -494,7 +494,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -503,7 +503,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -512,7 +512,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Female
 race: dcid:White
 
@@ -521,7 +521,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -530,7 +530,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -539,7 +539,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -548,7 +548,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Male
 race: dcid:White
 
@@ -557,7 +557,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -566,7 +566,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -575,7 +575,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -584,7 +584,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Female
 race: dcid:White
 
@@ -593,7 +593,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -602,7 +602,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -611,7 +611,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -620,7 +620,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Male
 race: dcid:White
 
@@ -629,7 +629,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -638,7 +638,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -647,7 +647,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -656,7 +656,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Female
 race: dcid:White
 
@@ -665,7 +665,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -674,7 +674,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -683,7 +683,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -692,7 +692,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [30 34 Years]
+age: dcid:Years30To34
 gender: dcid:Male
 race: dcid:White
 
@@ -701,7 +701,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -710,7 +710,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -719,7 +719,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -728,7 +728,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Female
 race: dcid:White
 
@@ -737,7 +737,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -746,7 +746,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -755,7 +755,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -764,7 +764,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [35 39 Years]
+age: dcid:Years35To39
 gender: dcid:Male
 race: dcid:White
 
@@ -773,7 +773,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -782,7 +782,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -791,7 +791,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -800,7 +800,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Female
 race: dcid:White
 
@@ -809,7 +809,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -818,7 +818,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -827,7 +827,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -836,7 +836,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [40 44 Years]
+age: dcid:Years40To44
 gender: dcid:Male
 race: dcid:White
 
@@ -845,7 +845,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -854,7 +854,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -863,7 +863,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -872,7 +872,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Female
 race: dcid:White
 
@@ -881,7 +881,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -890,7 +890,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -899,7 +899,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -908,7 +908,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [45 49 Years]
+age: dcid:Years45To49
 gender: dcid:Male
 race: dcid:White
 
@@ -917,7 +917,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -926,7 +926,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -935,7 +935,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -944,7 +944,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Female
 race: dcid:White
 
@@ -953,7 +953,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -962,7 +962,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -971,7 +971,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -980,7 +980,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [50 54 Years]
+age: dcid:Years50To54
 gender: dcid:Male
 race: dcid:White
 
@@ -989,7 +989,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -998,7 +998,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -1007,7 +1007,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -1016,7 +1016,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Female
 race: dcid:White
 
@@ -1025,7 +1025,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -1034,7 +1034,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -1043,7 +1043,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -1052,7 +1052,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [55 59 Years]
+age: dcid:Years55To59
 gender: dcid:Male
 race: dcid:White
 
@@ -1061,7 +1061,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -1070,7 +1070,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -1079,7 +1079,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -1088,7 +1088,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Female
 race: dcid:White
 
@@ -1097,7 +1097,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -1106,7 +1106,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -1115,7 +1115,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -1124,7 +1124,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [5 9 Years]
+age: dcid:Years5To9
 gender: dcid:Male
 race: dcid:White
 
@@ -1133,7 +1133,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -1142,7 +1142,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -1151,7 +1151,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -1160,7 +1160,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Female
 race: dcid:White
 
@@ -1169,7 +1169,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -1178,7 +1178,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -1187,7 +1187,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -1196,7 +1196,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [60 64 Years]
+age: dcid:Years60To64
 gender: dcid:Male
 race: dcid:White
 
@@ -1205,7 +1205,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -1214,7 +1214,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -1223,7 +1223,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -1232,7 +1232,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Female
 race: dcid:White
 
@@ -1241,7 +1241,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -1250,7 +1250,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -1259,7 +1259,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -1268,7 +1268,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [65 69 Years]
+age: dcid:Years65To69
 gender: dcid:Male
 race: dcid:White
 
@@ -1277,7 +1277,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -1286,7 +1286,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -1295,7 +1295,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -1304,7 +1304,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Female
 race: dcid:White
 
@@ -1313,7 +1313,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -1322,7 +1322,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -1331,7 +1331,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -1340,7 +1340,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [70 74 Years]
+age: dcid:Years70To74
 gender: dcid:Male
 race: dcid:White
 
@@ -1349,7 +1349,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -1358,7 +1358,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -1367,7 +1367,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -1376,7 +1376,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Female
 race: dcid:White
 
@@ -1385,7 +1385,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -1394,7 +1394,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -1403,7 +1403,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -1412,7 +1412,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [75 79 Years]
+age: dcid:Years75To79
 gender: dcid:Male
 race: dcid:White
 
@@ -1421,7 +1421,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Female
 race: dcid:BlackAfrican
 
@@ -1430,7 +1430,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Female
 race: dcid:Indian__Asian
 
@@ -1439,7 +1439,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Female
 race: dcid:SouthAfrica_Coloured
 
@@ -1448,7 +1448,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Female
 race: dcid:White
 
@@ -1457,7 +1457,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Male
 race: dcid:BlackAfrican
 
@@ -1466,7 +1466,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Male
 race: dcid:Indian__Asian
 
@@ -1475,7 +1475,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Male
 race: dcid:SouthAfrica_Coloured
 
@@ -1484,7 +1484,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [80 - Years]
+age: dcid:Years80Onwards
 gender: dcid:Male
 race: dcid:White
 
@@ -1493,7 +1493,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [1 Years]
+age: dcid:Years1
 vaccineStatus: dcid:VaccineAdministered
 
 Node: dcid:Count_Person_15To64Years_BlackAfrican
@@ -1501,7 +1501,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 64 Years]
+age: dcid:Years15To64
 race: dcid:BlackAfrican
 name: "Number of people 15 to 64 years Black African"
 
@@ -1510,7 +1510,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 64 Years]
+age: dcid:Years15To64
 race: dcid:Asian__Indian
 name: "Number of people 15 to 64 years Indian or Asian"
 
@@ -1519,7 +1519,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 64 Years]
+age: dcid:Years15To64
 race: dcid:SouthAfrica_Coloured
 name: "Number of people 15 to 64 years South Africa coloured"
 
@@ -1528,7 +1528,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 64 Years]
+age: dcid:Years15To64
 race: dcid:White
 name: "Number of people 15 to 64 years White"
 

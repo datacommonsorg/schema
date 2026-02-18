@@ -3,7 +3,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 5 Years]
+age: dcid:YearsUpto5
 
 Node: dcid:Count_BirthEvent_5OrLessYears_RegisteredWithCivilAuthority_AsAFractionOf_Count_BirthEvent_5OrLessYears
 typeOf: dcid:StatisticalVariable
@@ -12,7 +12,7 @@ populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_BirthEvent_5OrLessYears
-age: [- 5 Years]
+age: dcid:YearsUpto5
 birthRegistrationStatus: dcid:RegisteredWithCivilAuthority
 
 Node: dcid:Count_BirthEvent_5OrLessYears_RegisteredWithCivilAuthority_Rural_AsAFractionOf_Count_BirthEvent_5OrLessYears_Rural
@@ -22,7 +22,7 @@ populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_BirthEvent_5OrLessYears_Rural
-age: [- 5 Years]
+age: dcid:YearsUpto5
 birthRegistrationStatus: dcid:RegisteredWithCivilAuthority
 placeOfResidenceClassification: dcid:Rural
 
@@ -33,7 +33,7 @@ populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_BirthEvent_5OrLessYears_Urban
-age: [- 5 Years]
+age: dcid:YearsUpto5
 birthRegistrationStatus: dcid:RegisteredWithCivilAuthority
 placeOfResidenceClassification: dcid:Urban
 
@@ -42,7 +42,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 5 Years]
+age: dcid:YearsUpto5
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_BirthEvent_5OrLessYears_Urban
@@ -50,7 +50,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 5 Years]
+age: dcid:YearsUpto5
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_BirthEvent_Cesarean_AsAFractionOf_Count_BirthEvent
@@ -980,7 +980,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:NonPregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 
 Node: dcid:Count_NonPregnantWoman_15To49Years_ConditionAnaemia_AsAFractionOf_Count_NonPregnantWoman_15To49Years
 typeOf: dcid:StatisticalVariable
@@ -989,7 +989,7 @@ populationType: dcid:NonPregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_NonPregnantWoman_15To49Years
-age: [15 49 Years]
+age: dcid:Years15To49
 medicalCondition: dcid:Anaemia
 
 Node: dcid:Count_NonPregnantWoman_15To49Years_ConditionAnaemia_Rural_AsAFractionOf_Count_NonPregnantWoman_15To49Years_Rural
@@ -999,7 +999,7 @@ populationType: dcid:NonPregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_NonPregnantWoman_15To49Years_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Rural
 
@@ -1010,7 +1010,7 @@ populationType: dcid:NonPregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_NonPregnantWoman_15To49Years_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Urban
 
@@ -1019,7 +1019,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:NonPregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_NonPregnantWoman_15To49Years_Urban
@@ -1027,7 +1027,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:NonPregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_100OrMoreDay_Female
@@ -1035,7 +1035,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 gender: dcid:Female
 
 Node: dcid:Count_Person_100OrMoreDay_Female_ReceivedConsumedIronFolicAcid_ConditionPregnant_AsAFractionOf_Count_Person_100OrMoreDay_Female
@@ -1045,7 +1045,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_100OrMoreDay_Female
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 gender: dcid:Female
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
@@ -1057,7 +1057,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_100OrMoreDay_Female_Rural
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 gender: dcid:Female
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
@@ -1070,7 +1070,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_100OrMoreDay_Female_Urban
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 gender: dcid:Female
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
@@ -1081,7 +1081,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
 
@@ -1090,7 +1090,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
 
@@ -1099,15 +1099,15 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 
 Node: dcid:Count_Person_12To23Month_3VaccineDose
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 
 Node: dcid:Count_Person_12To23Month_3VaccineDose_VaccineAdministered_BCGOrMeaslesVaccineOrPolioOrDPT3_AsAFractionOf_Count_Person_12To23Month_3VaccineDose
 typeOf: dcid:StatisticalVariable
@@ -1116,8 +1116,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_3VaccineDose
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG__MeaslesVaccine__Polio__DPT3
 
@@ -1128,8 +1128,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:DPT3
 
@@ -1140,8 +1140,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:HepatitisB
 
@@ -1152,8 +1152,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_3VaccineDose
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -1164,8 +1164,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Polio
 
@@ -1176,7 +1176,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_VaccineAdministered
-age: [12 23 Month]
+age: dcid:Month12To23
 vaccinationCentre: dcid:PrivateHealthFacility
 vaccineStatus: dcid:VaccineAdministered
 
@@ -1187,7 +1187,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_VaccineAdministered
-age: [12 23 Month]
+age: dcid:Month12To23
 vaccinationCentre: dcid:PublicHealthFacility
 vaccineStatus: dcid:VaccineAdministered
 
@@ -1196,7 +1196,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_12To23Month_Rural_3VaccineDose
@@ -1204,9 +1204,9 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 
 Node: dcid:Count_Person_12To23Month_Rural_3VaccineDose_VaccineAdministered_BCGOrMeaslesVaccineOrPolioOrDPT3_AsAFractionOf_Count_Person_12To23Month_Rural_3VaccineDose
 typeOf: dcid:StatisticalVariable
@@ -1215,9 +1215,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural_3VaccineDose
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG__MeaslesVaccine__Polio__DPT3
 
@@ -1228,9 +1228,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:DPT3
 
@@ -1241,9 +1241,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:HepatitisB
 
@@ -1254,9 +1254,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural_3VaccineDose
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -1267,9 +1267,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Polio
 
@@ -1280,7 +1280,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural_VaccineAdministered
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
 vaccinationCentre: dcid:PrivateHealthFacility
 vaccineStatus: dcid:VaccineAdministered
@@ -1292,7 +1292,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural_VaccineAdministered
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
 vaccinationCentre: dcid:PublicHealthFacility
 vaccineStatus: dcid:VaccineAdministered
@@ -1302,7 +1302,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
 vaccineStatus: dcid:VaccineAdministered
 
@@ -1313,7 +1313,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG
@@ -1323,7 +1323,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_12To23Month_Urban_3VaccineDose
@@ -1331,9 +1331,9 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 
 Node: dcid:Count_Person_12To23Month_Urban_3VaccineDose_VaccineAdministered_BCGOrMeaslesVaccineOrPolioOrDPT3_AsAFractionOf_Count_Person_12To23Month_Urban_3VaccineDose
 typeOf: dcid:StatisticalVariable
@@ -1342,9 +1342,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban_3VaccineDose
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG__MeaslesVaccine__Polio__DPT3
 
@@ -1355,9 +1355,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:DPT3
 
@@ -1368,9 +1368,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:HepatitisB
 
@@ -1381,9 +1381,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban_3VaccineDose
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -1394,9 +1394,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Polio
 
@@ -1407,7 +1407,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban_VaccineAdministered
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
 vaccinationCentre: dcid:PrivateHealthFacility
 vaccineStatus: dcid:VaccineAdministered
@@ -1419,7 +1419,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban_VaccineAdministered
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
 vaccinationCentre: dcid:PublicHealthFacility
 vaccineStatus: dcid:VaccineAdministered
@@ -1429,7 +1429,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
 vaccineStatus: dcid:VaccineAdministered
 
@@ -1440,7 +1440,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG
@@ -1450,7 +1450,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 vaccineStatus: dcid:VaccineAdministered
 
 Node: dcid:Count_Person_12To23Month_VaccineAdministered_BCG_AsAFractionOf_Count_Person_12To23Month
@@ -1460,7 +1460,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
+age: dcid:Month12To23
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:BCG
 
@@ -1471,7 +1471,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person
-age: [- 15 Years]
+age: dcid:YearsUpto15
 
 Node: dcid:Count_Person_15OrLessYears_Rural_AsAFractionOf_Count_Person_Rural
 typeOf: dcid:StatisticalVariable
@@ -1480,7 +1480,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Rural
-age: [- 15 Years]
+age: dcid:YearsUpto15
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_15OrLessYears_Urban_AsAFractionOf_Count_Person_Urban
@@ -1490,7 +1490,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Urban
-age: [- 15 Years]
+age: dcid:YearsUpto15
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_15To19Years_Female_ConditionPregnant
@@ -1498,7 +1498,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Pregnant
 
@@ -1509,7 +1509,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Female_ConditionPregnant
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Pregnant
 
@@ -1518,7 +1518,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Rural
@@ -1530,7 +1530,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Female_ConditionPregnant_Rural
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Rural
@@ -1540,7 +1540,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Urban
@@ -1552,7 +1552,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Female_ConditionPregnant_Urban
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Urban
@@ -1564,7 +1564,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:AnyFamilyPlanning
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1576,7 +1576,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:AnyFamilyPlanning
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1589,7 +1589,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:AnyFamilyPlanning
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1602,7 +1602,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:BirthControlPill
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1614,7 +1614,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:BirthControlPill
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1627,7 +1627,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:BirthControlPill
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1640,7 +1640,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:Condom
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1652,7 +1652,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:Condom
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1665,7 +1665,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:Condom
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1676,7 +1676,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 
 Node: dcid:Count_Person_15To49Years_Female_ConditionAnaemia_AsAFractionOf_Count_Person_15To49Years_Female
@@ -1686,7 +1686,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 
@@ -1697,7 +1697,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Rural
@@ -1709,7 +1709,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Urban
@@ -1721,7 +1721,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 literacyStatus: dcid:Literate
 
@@ -1732,7 +1732,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 literacyStatus: dcid:Literate
 placeOfResidenceClassification: dcid:Rural
@@ -1744,7 +1744,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 literacyStatus: dcid:Literate
 placeOfResidenceClassification: dcid:Urban
@@ -1754,7 +1754,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 maritalStatus: dcid:Married
 placeOfResidenceClassification: dcid:Rural
@@ -1764,7 +1764,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 maritalStatus: dcid:Married
 placeOfResidenceClassification: dcid:Urban
@@ -1774,7 +1774,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
 
@@ -1783,7 +1783,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
 
@@ -1794,7 +1794,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:IntrauterineDevice__PostpartumIntrauterineContraceptiveDevice
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1806,7 +1806,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:IntrauterineDevice__PostpartumIntrauterineContraceptiveDevice
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1819,7 +1819,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:IntrauterineDevice__PostpartumIntrauterineContraceptiveDevice
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1830,7 +1830,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 
 Node: dcid:Count_Person_15To49Years_MaleSterlization_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married
@@ -1840,7 +1840,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:MaleSterlization
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1852,7 +1852,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:MaleSterlization
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1865,7 +1865,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:MaleSterlization
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1878,7 +1878,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Male
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 medicalCondition: dcid:Anaemia
 
@@ -1889,7 +1889,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Male_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Rural
@@ -1901,7 +1901,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Male_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Urban
@@ -1913,7 +1913,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Male
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 literacyStatus: dcid:Literate
 
@@ -1924,7 +1924,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Male_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 literacyStatus: dcid:Literate
 placeOfResidenceClassification: dcid:Rural
@@ -1936,7 +1936,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Male_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 literacyStatus: dcid:Literate
 placeOfResidenceClassification: dcid:Urban
@@ -1946,7 +1946,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 placeOfResidenceClassification: dcid:Rural
 
@@ -1955,7 +1955,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Male
 placeOfResidenceClassification: dcid:Urban
 
@@ -1966,7 +1966,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:ModernFamilyPlanning
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1978,7 +1978,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:ModernFamilyPlanning
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -1991,7 +1991,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:ModernFamilyPlanning
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -2004,7 +2004,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:Sterilization
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -2016,7 +2016,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:Sterilization
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -2029,7 +2029,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:Sterilization
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -2042,7 +2042,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:WithUnmetNeed
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -2054,7 +2054,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:WithUnmetNeed
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -2067,7 +2067,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:WithUnmetNeed
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -2080,7 +2080,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_20To24Years_Female
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Female
 maritalStatus: dcid:MarriedBefore18Years
 
@@ -2091,7 +2091,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_20To24Years_Rural_Female
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Female
 maritalStatus: dcid:MarriedBefore18Years
 placeOfResidenceClassification: dcid:Rural
@@ -2103,7 +2103,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_20To24Years_Urban_Female
-age: [20 24 Years]
+age: dcid:Years20To24
 gender: dcid:Female
 maritalStatus: dcid:MarriedBefore18Years
 placeOfResidenceClassification: dcid:Urban
@@ -2115,7 +2115,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_25To29Years_Male
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Male
 maritalStatus: dcid:MarriedBefore21Years
 
@@ -2126,7 +2126,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_25To29Years_Rural_Male
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Male
 maritalStatus: dcid:MarriedBefore21Years
 placeOfResidenceClassification: dcid:Rural
@@ -2138,7 +2138,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_25To29Years_Urban_Male
-age: [25 29 Years]
+age: dcid:Years25To29
 gender: dcid:Male
 maritalStatus: dcid:MarriedBefore21Years
 placeOfResidenceClassification: dcid:Urban
@@ -2150,7 +2150,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_3Years
-age: [3 Years]
+age: dcid:Years3
 breastFeedingPractice: dcid:BreastFeedingWithinOneHourOfBirth
 
 Node: dcid:Count_Person_3Years_BreastFeedingWithinOneHourOfBirth_Rural_AsAFractionOf_Count_Person_3Years_Rural
@@ -2160,7 +2160,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_3Years_Rural
-age: [3 Years]
+age: dcid:Years3
 breastFeedingPractice: dcid:BreastFeedingWithinOneHourOfBirth
 placeOfResidenceClassification: dcid:Rural
 
@@ -2171,7 +2171,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_3Years_Urban
-age: [3 Years]
+age: dcid:Years3
 breastFeedingPractice: dcid:BreastFeedingWithinOneHourOfBirth
 placeOfResidenceClassification: dcid:Urban
 
@@ -2182,7 +2182,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Upto5Years
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:SevereWasting
 
 Node: dcid:Count_Person_5OrLessYears_ConditionSevereWasting_Rural_AsAFractionOf_Count_Person_5OrLessYears_Rural
@@ -2192,7 +2192,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Rural
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:SevereWasting
 placeOfResidenceClassification: dcid:Rural
 
@@ -2203,7 +2203,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Urban
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:SevereWasting
 placeOfResidenceClassification: dcid:Urban
 
@@ -2214,7 +2214,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Rural
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:Stunted
 placeOfResidenceClassification: dcid:Rural
 
@@ -2225,7 +2225,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Urban
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:Stunted
 placeOfResidenceClassification: dcid:Urban
 
@@ -2236,7 +2236,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Upto5Years
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:Wasting
 
 Node: dcid:Count_Person_5OrLessYears_ConditionWasting_Rural_AsAFractionOf_Count_Person_5OrLessYears_Rural
@@ -2246,7 +2246,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Rural
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:Wasting
 placeOfResidenceClassification: dcid:Rural
 
@@ -2257,7 +2257,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Urban
-age: [- 5 Years]
+age: dcid:YearsUpto5
 medicalCondition: dcid:Wasting
 placeOfResidenceClassification: dcid:Urban
 
@@ -2266,7 +2266,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 5 Years]
+age: dcid:YearsUpto5
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_5OrLessYears_Underweight_AsAFractionOf_Count_Person_Upto5Years
@@ -2276,7 +2276,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Upto5Years
-age: [- 5 Years]
+age: dcid:YearsUpto5
 healthBehavior: dcid:Underweight
 
 Node: dcid:Count_Person_5OrLessYears_Underweight_Rural_AsAFractionOf_Count_Person_5OrLessYears_Rural
@@ -2286,7 +2286,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Rural
-age: [- 5 Years]
+age: dcid:YearsUpto5
 healthBehavior: dcid:Underweight
 placeOfResidenceClassification: dcid:Rural
 
@@ -2297,7 +2297,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Urban
-age: [- 5 Years]
+age: dcid:YearsUpto5
 healthBehavior: dcid:Underweight
 placeOfResidenceClassification: dcid:Urban
 
@@ -2306,7 +2306,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 5 Years]
+age: dcid:YearsUpto5
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_6OrLessMonth
@@ -2314,7 +2314,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 6 Month]
+age: dcid:MonthUpto6
 
 Node: dcid:Count_Person_6OrLessMonth_BreastMilk_AsAFractionOf_Count_Person_6OrLessMonth
 typeOf: dcid:StatisticalVariable
@@ -2323,7 +2323,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6OrLessMonth
-age: [- 6 Month]
+age: dcid:MonthUpto6
 foodIntakeType: dcid:BreastMilk
 
 Node: dcid:Count_Person_6OrLessMonth_BreastMilk_Rural_AsAFractionOf_Count_Person_6OrLessMonth_Rural
@@ -2333,7 +2333,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6OrLessMonth_Rural
-age: [- 6 Month]
+age: dcid:MonthUpto6
 foodIntakeType: dcid:BreastMilk
 placeOfResidenceClassification: dcid:Rural
 
@@ -2344,7 +2344,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6OrLessMonth_Urban
-age: [- 6 Month]
+age: dcid:MonthUpto6
 foodIntakeType: dcid:BreastMilk
 placeOfResidenceClassification: dcid:Urban
 
@@ -2353,7 +2353,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 6 Month]
+age: dcid:MonthUpto6
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_6OrLessMonth_Urban
@@ -2361,7 +2361,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [- 6 Month]
+age: dcid:MonthUpto6
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_6OrMoreYears_Female
@@ -2369,7 +2369,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 - Years]
+age: dcid:Years6Onwards
 gender: dcid:Female
 
 Node: dcid:Count_Person_6OrMoreYears_Female_EverAttendedSchool_AsAFractionOf_Count_Person_6OrMoreYears_Female
@@ -2379,7 +2379,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6OrMoreYears_Female
-age: [6 - Years]
+age: dcid:Years6Onwards
 gender: dcid:Female
 levelOfSchool: dcid:EverAttendedSchool
 
@@ -2390,7 +2390,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6OrMoreYears_Female_Rural
-age: [6 - Years]
+age: dcid:Years6Onwards
 gender: dcid:Female
 levelOfSchool: dcid:EverAttendedSchool
 placeOfResidenceClassification: dcid:Rural
@@ -2402,7 +2402,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6OrMoreYears_Female_Urban
-age: [6 - Years]
+age: dcid:Years6Onwards
 gender: dcid:Female
 levelOfSchool: dcid:EverAttendedSchool
 placeOfResidenceClassification: dcid:Urban
@@ -2412,7 +2412,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 - Years]
+age: dcid:Years6Onwards
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
 
@@ -2421,7 +2421,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 - Years]
+age: dcid:Years6Onwards
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
 
@@ -2431,7 +2431,7 @@ name: "Children age group 6 to 23 months receiving an adequate diet (%)"
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 
 Node: dcid:Count_Person_6To23Month_AdequateDiet_AsAFractionOf_Count_Person_6To23Month
 typeOf: dcid:StatisticalVariable
@@ -2440,7 +2440,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 
 Node: dcid:Count_Person_6To23Month_AdequateDiet_BreastMilk_AsAFractionOf_Count_Person_6To23Month_BreastMilk
@@ -2450,7 +2450,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_BreastMilk
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 foodIntakeType: dcid:BreastMilk
 
@@ -2461,7 +2461,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_BreastMilk_Rural
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 foodIntakeType: dcid:BreastMilk
 placeOfResidenceClassification: dcid:Rural
@@ -2473,7 +2473,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_BreastMilk_Urban
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 foodIntakeType: dcid:BreastMilk
 placeOfResidenceClassification: dcid:Urban
@@ -2485,7 +2485,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_OtherThanBreastFeeding
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 foodIntakeType: dcid:OtherThanBreastFeeding
 
@@ -2496,7 +2496,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_OtherThanBreastFeeding_Rural
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 foodIntakeType: dcid:OtherThanBreastFeeding
 placeOfResidenceClassification: dcid:Rural
@@ -2508,7 +2508,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_OtherThanBreastFeeding_Urban
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 foodIntakeType: dcid:OtherThanBreastFeeding
 placeOfResidenceClassification: dcid:Urban
@@ -2520,7 +2520,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_Rural
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 placeOfResidenceClassification: dcid:Rural
 
@@ -2531,7 +2531,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To23Month_Urban
-age: [6 23 Month]
+age: dcid:Month6To23
 dietType: dcid:AdequateDiet
 placeOfResidenceClassification: dcid:Urban
 
@@ -2540,7 +2540,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 foodIntakeType: dcid:BreastMilk
 
 Node: dcid:Count_Person_6To23Month_BreastMilk_Rural
@@ -2548,7 +2548,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 foodIntakeType: dcid:BreastMilk
 placeOfResidenceClassification: dcid:Rural
 
@@ -2557,7 +2557,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 foodIntakeType: dcid:BreastMilk
 placeOfResidenceClassification: dcid:Urban
 
@@ -2566,7 +2566,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 foodIntakeType: dcid:OtherThanBreastFeeding
 
 Node: dcid:Count_Person_6To23Month_OtherThanBreastFeeding_Rural
@@ -2574,7 +2574,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 foodIntakeType: dcid:OtherThanBreastFeeding
 placeOfResidenceClassification: dcid:Rural
 
@@ -2583,7 +2583,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 foodIntakeType: dcid:OtherThanBreastFeeding
 placeOfResidenceClassification: dcid:Urban
 
@@ -2592,7 +2592,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_6To23Month_Urban
@@ -2600,7 +2600,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 23 Month]
+age: dcid:Month6To23
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_6To59Month
@@ -2608,7 +2608,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 59 Month]
+age: dcid:Month6To59
 
 Node: dcid:Count_Person_6To59Month_ConditionAnaemia_AsAFractionOf_Count_Person_6To59Month
 typeOf: dcid:StatisticalVariable
@@ -2617,7 +2617,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To59Month
-age: [6 59 Month]
+age: dcid:Month6To59
 medicalCondition: dcid:Anaemia
 
 Node: dcid:Count_Person_6To59Month_ConditionAnaemia_Rural_AsAFractionOf_Count_Person_6To59Month_Rural
@@ -2627,7 +2627,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To59Month_Rural
-age: [6 59 Month]
+age: dcid:Month6To59
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Rural
 
@@ -2638,7 +2638,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To59Month_Urban
-age: [6 59 Month]
+age: dcid:Month6To59
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Urban
 
@@ -2647,7 +2647,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 59 Month]
+age: dcid:Month6To59
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_6To59Month_Urban
@@ -2655,7 +2655,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 59 Month]
+age: dcid:Month6To59
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_6To8Month
@@ -2663,14 +2663,14 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 8 Month]
+age: dcid:Month6To8
 
 Node: dcid:Count_Person_6To8Month_Rural
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 8 Month]
+age: dcid:Month6To8
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_6To8Month_SolidFoodOrSemisolidFoodOrBreastMilk_AsAFractionOf_Count_Person_6To8Month
@@ -2680,7 +2680,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To8Month
-age: [6 8 Month]
+age: dcid:Month6To8
 foodIntakeType: dcid:SolidFood__SemisolidFood__BreastMilk
 
 Node: dcid:Count_Person_6To8Month_SolidFoodOrSemisolidFoodOrBreastMilk_Rural_AsAFractionOf_Count_Person_6To8Month_Rural
@@ -2690,7 +2690,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To8Month_Rural
-age: [6 8 Month]
+age: dcid:Month6To8
 foodIntakeType: dcid:SolidFood__SemisolidFood__BreastMilk
 placeOfResidenceClassification: dcid:Rural
 
@@ -2701,7 +2701,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_6To8Month_Urban
-age: [6 8 Month]
+age: dcid:Month6To8
 foodIntakeType: dcid:SolidFood__SemisolidFood__BreastMilk
 placeOfResidenceClassification: dcid:Urban
 
@@ -2710,7 +2710,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [6 8 Month]
+age: dcid:Month6To8
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_9To35Month
@@ -2718,14 +2718,14 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [9 35 Month]
+age: dcid:Month9To35
 
 Node: dcid:Count_Person_9To35Month_Rural
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [9 35 Month]
+age: dcid:Month9To35
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Person_9To35Month_Rural_VitaminA_AsAFractionOf_Count_Person_9To35Month_Rural
@@ -2735,7 +2735,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_9To35Month_Rural
-age: [9 35 Month]
+age: dcid:Month9To35
 placeOfResidenceClassification: dcid:Rural
 vitaminType: dcid:VitaminA
 
@@ -2744,7 +2744,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [9 35 Month]
+age: dcid:Month9To35
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Person_9To35Month_Urban_VitaminA_AsAFractionOf_Count_Person_9To35Month_Urban
@@ -2754,7 +2754,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_9To35Month_Urban
-age: [9 35 Month]
+age: dcid:Month9To35
 placeOfResidenceClassification: dcid:Urban
 vitaminType: dcid:VitaminA
 
@@ -2765,7 +2765,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_9To35Month
-age: [9 35 Month]
+age: dcid:Month9To35
 vitaminType: dcid:VitaminA
 
 Node: dcid:Count_Person_ConditionDiarrhea_AsAFractionOf_Count_Person
@@ -2834,7 +2834,7 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Female
 gender: dcid:Female
-schoolingDuration: [10 - Years]
+schoolingDuration: dcid:Years10Onwards
 
 Node: dcid:Count_Person_Female_AsAFractionOf_Count_Person_Male
 typeOf: dcid:StatisticalVariable
@@ -3046,7 +3046,7 @@ statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Rural_Female
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
-schoolingDuration: [10 - Years]
+schoolingDuration: dcid:Years10Onwards
 
 Node: dcid:Count_Person_Female_Rural_AsAFractionOf_Count_Person_Rural_Male
 typeOf: dcid:StatisticalVariable
@@ -3067,7 +3067,7 @@ statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Urban_Female
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
-schoolingDuration: [10 - Years]
+schoolingDuration: dcid:Years10Onwards
 
 Node: dcid:Count_Person_Female_Urban_AsAFractionOf_Count_Person_Urban_Male
 typeOf: dcid:StatisticalVariable
@@ -3506,7 +3506,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:PregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 
 Node: dcid:Count_PregnantWoman_15To49Years_Female_ConditionAnaemia_AsAFractionOf_Count_PregnantWoman_15To49Years_Female
@@ -3516,7 +3516,7 @@ populationType: dcid:PregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_PregnantWoman_15To49Years_Female
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 
@@ -3527,7 +3527,7 @@ populationType: dcid:PregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_PregnantWoman_15To49Years_Female_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Rural
@@ -3539,7 +3539,7 @@ populationType: dcid:PregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_PregnantWoman_15To49Years_Female_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Urban
@@ -3549,7 +3549,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:PregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
 
@@ -3558,7 +3558,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:PregnantWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
 
@@ -3731,7 +3731,7 @@ populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_BirthEvent
-childBirthOrder: [3 - Children]
+childBirthOrder: dcid:Children3Onwards
 
 Node: dcid:Count_BirthEvent_HealthPersonnel_AsAFractionOf_Count_BirthEvent
 typeOf: dcid:StatisticalVariable
@@ -3775,7 +3775,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:MenstrualWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 
 Node: dcid:Count_MenstrualWoman_15To19Years_HygienicMethodsOfProtection_AsAFractionOf_Count_MenstrualWoman_15To19Years
 typeOf: dcid:StatisticalVariable
@@ -3784,7 +3784,7 @@ populationType: dcid:MenstrualWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_MenstrualWoman_15To19Years
-age: [15 19 Years]
+age: dcid:Years15To19
 menstrualHygieneStatus: dcid:HygienicMethodsOfProtection
 
 Node: dcid:Count_Mother_AntenatalCareWithinFirstTrimester_AsAFractionOf_Count_Mother
@@ -3820,8 +3820,8 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
-vaccineDoseReceived: [1 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose1
 
 Node: dcid:Count_Person_12To23Month_1VaccineDose_VaccineAdministered_MeaslesVaccine_AsAFractionOf_Count_Person_12To23Month_1VaccineDose
 typeOf: dcid:StatisticalVariable
@@ -3830,8 +3830,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_1VaccineDose
-age: [12 23 Month]
-vaccineDoseReceived: [1 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -3842,8 +3842,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Penta__DPT3
 
@@ -3854,8 +3854,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Penta__HepatitisB
 
@@ -3866,8 +3866,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
-vaccineDoseReceived: [3 VaccineDose]
+age: dcid:Month12To23
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Rotavirus
 
@@ -3878,7 +3878,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
+age: dcid:Month12To23
 vaccineInformation: dcid:VaccinationCard__MotherRecall
 vaccineStatus: dcid:VaccineAdministered
 
@@ -3889,7 +3889,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month
-age: [12 23 Month]
+age: dcid:Month12To23
 vaccineInformation: dcid:VaccinationCard
 vaccineStatus: dcid:VaccineAdministered
 
@@ -3900,7 +3900,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears
-age: [15 - Years]
+age: dcid:Years15Onwards
 healthBehavior: dcid:AlcoholConsumption
 
 Node: dcid:Count_Person_15OrMoreYears_Male_AlcoholConsumption_AsAFractionOf_Count_Person_15OrMoreYears_Male
@@ -3910,7 +3910,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Male
-age: [15 - Years]
+age: dcid:Years15Onwards
 gender: dcid:Male
 healthBehavior: dcid:AlcoholConsumption
 
@@ -3921,7 +3921,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Male
-age: [15 - Years]
+age: dcid:Years15Onwards
 gender: dcid:Male
 healthBehavior: dcid:TobaccoUse
 
@@ -3932,7 +3932,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears
-age: [15 - Years]
+age: dcid:Years15Onwards
 healthBehavior: dcid:TobaccoUse
 
 Node: dcid:Count_Person_15To19Years_Female_ConditionAnaemia_AsAFractionOf_Count_Person_15To19Years_Female
@@ -3942,7 +3942,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Female
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 
@@ -3953,7 +3953,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Female
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Pregnant
 
@@ -3964,7 +3964,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 birthControlMethod: dcid:Injectables
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -3974,7 +3974,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 gender: dcid:Female
 
 Node: dcid:Count_Person_180OrMoreDay_Female_ReceivedConsumedIronFolicAcid_ConditionPregnant_AsAFractionOf_Count_Person_180OrMoreDay_Female
@@ -3984,7 +3984,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_180OrMoreDay_Female
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 gender: dcid:Female
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
@@ -3996,8 +3996,8 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_24To35Month_VaccineAdministered
-age: [24 35 Month]
-vaccineDoseReceived: [2 VaccineDose]
+age: dcid:Month24To35
+vaccineDoseReceived: dcid:VaccineDose2
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -4006,7 +4006,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [24 35 Month]
+age: dcid:Month24To35
 vaccineStatus: dcid:VaccineAdministered
 
 Node: dcid:Count_Person_3Years_BreastFeedingWithinOneHourOfBirth_BreastMilk_AsAFractionOf_Count_Person_3Years_BreastMilk
@@ -4016,7 +4016,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_3Years_BreastMilk
-age: [3 Years]
+age: dcid:Years3
 breastFeedingPractice: dcid:BreastFeedingWithinOneHourOfBirth
 foodIntakeType: dcid:BreastMilk
 
@@ -4025,7 +4025,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [3 Years]
+age: dcid:Years3
 foodIntakeType: dcid:BreastMilk
 
 Node: dcid:Count_Person_5OrLessYears_Overweight_AsAFractionOf_Count_Person_Upto5Years
@@ -4035,7 +4035,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Upto5Years
-age: [- 5 Years]
+age: dcid:YearsUpto5
 healthBehavior: dcid:Overweight
 
 Node: dcid:Count_Person_5Years_PrePrimarySchool_AsAFractionOf_Count_Person_5Years
@@ -4045,7 +4045,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5Years
-age: [5 Years]
+age: dcid:Years5
 schoolGradeLevel: dcid:PrePrimarySchool
 
 Node: dcid:Count_Person_Female_HighRiskOfWaistToHipRatio_AsAFractionOf_Count_Person_Female
@@ -4407,7 +4407,7 @@ populationType: dcid:MenstrualWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_MenstrualWoman_15To19Years_Rural
-age: [15 19 Years]
+age: dcid:Years15To19
 menstrualHygieneStatus: dcid:HygienicMethodsOfProtection
 placeOfResidenceClassification: dcid:Rural
 
@@ -4418,7 +4418,7 @@ populationType: dcid:MenstrualWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_MenstrualWoman_15To19Years_Urban
-age: [15 19 Years]
+age: dcid:Years15To19
 menstrualHygieneStatus: dcid:HygienicMethodsOfProtection
 placeOfResidenceClassification: dcid:Urban
 
@@ -4427,7 +4427,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:MenstrualWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_MenstrualWoman_15To19Years_Urban
@@ -4435,7 +4435,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:MenstrualWoman
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_MortalityEvent_5OrLessYears_AsAFractionOf_Count_Death
@@ -4445,7 +4445,7 @@ populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Death
-age: [- 5 Years]
+age: dcid:YearsUpto5
 
 Node: dcid:Count_MortalityEvent_5OrLessYears_Rural_AsAFractionOf_Count_MortalityEvent_Rural
 typeOf: dcid:StatisticalVariable
@@ -4454,7 +4454,7 @@ populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_MortalityEvent_Rural
-age: [- 5 Years]
+age: dcid:YearsUpto5
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_MortalityEvent_5OrLessYears_Urban_AsAFractionOf_Count_MortalityEvent_Urban
@@ -4464,7 +4464,7 @@ populationType: dcid:MortalityEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_MortalityEvent_Urban
-age: [- 5 Years]
+age: dcid:YearsUpto5
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_MortalityEvent_Infant_AsAFractionOf_Count_MortalityEvent_Infant
@@ -4560,7 +4560,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 
 Node: dcid:Count_Mother_100OrMoreDay_ReceivedConsumedIronFolicAcid_ConditionPregnant_AsAFractionOf_Count_Mother_100OrMoreDay
 typeOf: dcid:StatisticalVariable
@@ -4569,7 +4569,7 @@ populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Mother_100OrMoreDay
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
 
@@ -4580,7 +4580,7 @@ populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Mother_100OrMoreDay_Rural
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Rural
@@ -4592,7 +4592,7 @@ populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Mother_100OrMoreDay_Urban
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Urban
@@ -4602,7 +4602,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Mother_100OrMoreDay_Urban
@@ -4610,7 +4610,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [100 - Day]
+consumptionPeriod: dcid:Day100Onwards
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Mother_180OrMoreDay
@@ -4618,7 +4618,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 
 Node: dcid:Count_Mother_180OrMoreDay_ReceivedConsumedIronFolicAcid_ConditionPregnant_AsAFractionOf_Count_Mother_180OrMoreDay
 typeOf: dcid:StatisticalVariable
@@ -4627,7 +4627,7 @@ populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Mother_180OrMoreDay
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
 
@@ -4638,7 +4638,7 @@ populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Mother_180OrMoreDay_Rural
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Rural
@@ -4650,7 +4650,7 @@ populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Mother_180OrMoreDay_Urban
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 healthPrevention: dcid:ConsumedIronFolicAcid
 medicalCondition: dcid:Pregnant
 placeOfResidenceClassification: dcid:Urban
@@ -4660,7 +4660,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 placeOfResidenceClassification: dcid:Rural
 
 Node: dcid:Count_Mother_180OrMoreDay_Urban
@@ -4668,7 +4668,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Mother
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-consumptionPeriod: [180 - Day]
+consumptionPeriod: dcid:Day180Onwards
 placeOfResidenceClassification: dcid:Urban
 
 Node: dcid:Count_Mother_AntenatalCareWithinFirstTrimester_Rural_AsAFractionOf_Count_Mother_Rural
@@ -4771,9 +4771,9 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [1 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose1
 
 Node: dcid:Count_Person_12To23Month_Rural_1VaccineDose_VaccineAdministered_MeaslesVaccine_AsAFractionOf_Count_Person_12To23Month_Rural_1VaccineDose
 typeOf: dcid:StatisticalVariable
@@ -4782,9 +4782,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural_1VaccineDose
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [1 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -4795,9 +4795,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Penta__DPT3
 
@@ -4808,9 +4808,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Penta__HepatitisB
 
@@ -4821,9 +4821,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Rotavirus
 
@@ -4834,7 +4834,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
 vaccineInformation: dcid:VaccinationCard__MotherRecall
 vaccineStatus: dcid:VaccineAdministered
@@ -4846,7 +4846,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Rural
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Rural
 vaccineInformation: dcid:VaccinationCard
 vaccineStatus: dcid:VaccineAdministered
@@ -4856,9 +4856,9 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [1 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose1
 
 Node: dcid:Count_Person_12To23Month_Urban_1VaccineDose_VaccineAdministered_MeaslesVaccine_AsAFractionOf_Count_Person_12To23Month_Urban_1VaccineDose
 typeOf: dcid:StatisticalVariable
@@ -4867,9 +4867,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban_1VaccineDose
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [1 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose1
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -4880,9 +4880,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Penta__DPT3
 
@@ -4893,9 +4893,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Penta__HepatitisB
 
@@ -4906,9 +4906,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [3 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose3
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:Rotavirus
 
@@ -4919,7 +4919,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
 vaccineInformation: dcid:VaccinationCard__MotherRecall
 vaccineStatus: dcid:VaccineAdministered
@@ -4931,7 +4931,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_12To23Month_Urban
-age: [12 23 Month]
+age: dcid:Month12To23
 placeOfResidenceClassification: dcid:Urban
 vaccineInformation: dcid:VaccinationCard
 vaccineStatus: dcid:VaccineAdministered
@@ -4943,7 +4943,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Rural
-age: [15 - Years]
+age: dcid:Years15Onwards
 healthBehavior: dcid:AlcoholConsumption
 placeOfResidenceClassification: dcid:Rural
 
@@ -4954,7 +4954,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Urban
-age: [15 - Years]
+age: dcid:Years15Onwards
 healthBehavior: dcid:AlcoholConsumption
 placeOfResidenceClassification: dcid:Urban
 
@@ -4965,7 +4965,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Male_Rural
-age: [15 - Years]
+age: dcid:Years15Onwards
 gender: dcid:Male
 healthBehavior: dcid:AlcoholConsumption
 placeOfResidenceClassification: dcid:Rural
@@ -4977,7 +4977,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Male_Urban
-age: [15 - Years]
+age: dcid:Years15Onwards
 gender: dcid:Male
 healthBehavior: dcid:AlcoholConsumption
 placeOfResidenceClassification: dcid:Urban
@@ -4989,7 +4989,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Male_Rural
-age: [15 - Years]
+age: dcid:Years15Onwards
 gender: dcid:Male
 healthBehavior: dcid:TobaccoUse
 placeOfResidenceClassification: dcid:Rural
@@ -5001,7 +5001,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Male_Urban
-age: [15 - Years]
+age: dcid:Years15Onwards
 gender: dcid:Male
 healthBehavior: dcid:TobaccoUse
 placeOfResidenceClassification: dcid:Urban
@@ -5013,7 +5013,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Rural
-age: [15 - Years]
+age: dcid:Years15Onwards
 healthBehavior: dcid:TobaccoUse
 placeOfResidenceClassification: dcid:Rural
 
@@ -5024,7 +5024,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15OrMoreYears_Urban
-age: [15 - Years]
+age: dcid:Years15Onwards
 healthBehavior: dcid:TobaccoUse
 placeOfResidenceClassification: dcid:Urban
 
@@ -5033,7 +5033,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 ageGroupClassification: dcid:Adolescents
 gender: dcid:Female
 
@@ -5042,7 +5042,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 ageGroupClassification: dcid:Adolescents
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
@@ -5052,7 +5052,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 19 Years]
+age: dcid:Years15To19
 ageGroupClassification: dcid:Adolescents
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
@@ -5064,7 +5064,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Rural_Female
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Rural
@@ -5076,7 +5076,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Urban_Female
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Female
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Urban
@@ -5088,7 +5088,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Male
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Male
 medicalCondition: dcid:Anaemia
 
@@ -5099,7 +5099,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Rural_Male
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Male
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Rural
@@ -5111,7 +5111,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Urban_Male
-age: [15 19 Years]
+age: dcid:Years15To19
 gender: dcid:Male
 medicalCondition: dcid:Anaemia
 placeOfResidenceClassification: dcid:Urban
@@ -5123,7 +5123,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Year_Female_Married
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 householdDecisionMaking: dcid:ParticipatedInThreeDecisions
 maritalStatus: dcid:Married
@@ -5135,7 +5135,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Rural
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 householdDecisionMaking: dcid:ParticipatedInThreeDecisions
 maritalStatus: dcid:Married
@@ -5148,7 +5148,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To49Years_Female_Married_Urban
-age: [15 49 Years]
+age: dcid:Years15To49
 gender: dcid:Female
 householdDecisionMaking: dcid:ParticipatedInThreeDecisions
 maritalStatus: dcid:Married
@@ -5160,7 +5160,7 @@ name: "Married women of age 15 to 49 years using injectables as one of the famil
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:Injectables
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -5171,7 +5171,7 @@ name: "Married women of age 15 to 49 years using injectables as one of the famil
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:Injectables
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -5183,7 +5183,7 @@ name: "Married women of age 15 to 49 years using injectables as one of the famil
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [15 49 Years]
+age: dcid:Years15To49
 familyPlanningType: dcid:Injectables
 gender: dcid:Female
 maritalStatus: dcid:Married
@@ -5195,9 +5195,9 @@ name: "Young women age group 18 to 29 years who experienced sexual violence by a
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 29 Years]
+age: dcid:Years18To29
 gender: dcid:Female
-victimAge: [- 18 Years]
+victimAge: dcid:YearsUpto18
 
 Node: dcid:Count_Person_18To29Years_Female_Rural_18OrLessYears
 typeOf: dcid:StatisticalVariable
@@ -5205,10 +5205,10 @@ name: "Young women age group 18 to 29 years who experienced sexual violence by a
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 29 Years]
+age: dcid:Years18To29
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
-victimAge: [- 18 Years]
+victimAge: dcid:YearsUpto18
 
 Node: dcid:Count_Person_18To29Years_Female_Urban_18OrLessYears
 typeOf: dcid:StatisticalVariable
@@ -5216,10 +5216,10 @@ name: "Young women age group 18 to 29 years who experienced sexual violence by a
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 29 Years]
+age: dcid:Years18To29
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
-victimAge: [- 18 Years]
+victimAge: dcid:YearsUpto18
 
 Node: dcid:Count_Person_18To29Years_SexualViolence_Female_18OrLessYears_AsAFractionOf_Count_Person_18To29Years_Female_18OrLessYears
 typeOf: dcid:StatisticalVariable
@@ -5228,10 +5228,10 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To29Years_Female_18OrLessYears
-age: [18 29 Years]
+age: dcid:Years18To29
 crimeType: dcid:SexualViolence
 gender: dcid:Female
-victimAge: [- 18 Years]
+victimAge: dcid:YearsUpto18
 
 Node: dcid:Count_Person_18To29Years_SexualViolence_Female_Rural_18OrLessYears_AsAFractionOf_Count_Person_18To29Years_Female_Rural_18OrLessYears
 typeOf: dcid:StatisticalVariable
@@ -5240,11 +5240,11 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To29Years_Female_Rural_18OrLessYears
-age: [18 29 Years]
+age: dcid:Years18To29
 crimeType: dcid:SexualViolence
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
-victimAge: [- 18 Years]
+victimAge: dcid:YearsUpto18
 
 Node: dcid:Count_Person_18To29Years_SexualViolence_Female_Urban_18OrLessYears_AsAFractionOf_Count_Person_18To29Years_Female_Urban_18OrLessYears
 typeOf: dcid:StatisticalVariable
@@ -5253,18 +5253,18 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To29Years_Female_Urban_18OrLessYears
-age: [18 29 Years]
+age: dcid:Years18To29
 crimeType: dcid:SexualViolence
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
-victimAge: [- 18 Years]
+victimAge: dcid:YearsUpto18
 
 Node: dcid:Count_Person_18To49Years_Female_EverMarried
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 49 Years]
+age: dcid:Years18To49
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
 
@@ -5273,7 +5273,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 49 Years]
+age: dcid:Years18To49
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
 medicalCondition: dcid:Pregnant
@@ -5283,7 +5283,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 49 Years]
+age: dcid:Years18To49
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
 medicalCondition: dcid:Pregnant
@@ -5294,7 +5294,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 49 Years]
+age: dcid:Years18To49
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
 medicalCondition: dcid:Pregnant
@@ -5305,7 +5305,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 49 Years]
+age: dcid:Years18To49
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
 placeOfResidenceClassification: dcid:Rural
@@ -5315,7 +5315,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [18 49 Years]
+age: dcid:Years18To49
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
 placeOfResidenceClassification: dcid:Urban
@@ -5327,7 +5327,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To49Years_Female_EverMarried_ConditionPregnant
-age: [18 49 Years]
+age: dcid:Years18To49
 crimeType: dcid:PhysicalViolence
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
@@ -5340,7 +5340,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To49Years_Female_EverMarried_ConditionPregnant_Rural
-age: [18 49 Years]
+age: dcid:Years18To49
 crimeType: dcid:PhysicalViolence
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
@@ -5354,7 +5354,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To49Years_Female_EverMarried_ConditionPregnant_Urban
-age: [18 49 Years]
+age: dcid:Years18To49
 crimeType: dcid:PhysicalViolence
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
@@ -5368,7 +5368,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To49Years_Female_EverMarried
-age: [18 49 Years]
+age: dcid:Years18To49
 crimeType: dcid:SpousalViolence
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
@@ -5380,7 +5380,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To49Years_Female_EverMarried_Rural
-age: [18 49 Years]
+age: dcid:Years18To49
 crimeType: dcid:SpousalViolence
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
@@ -5393,7 +5393,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_18To49Years_Female_EverMarried_Urban
-age: [18 49 Years]
+age: dcid:Years18To49
 crimeType: dcid:SpousalViolence
 gender: dcid:Female
 maritalStatus: dcid:EverMarried
@@ -5406,9 +5406,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_24To35Month_Rural_VaccineAdministered_MeaslesVaccine
-age: [24 35 Month]
+age: dcid:Month24To35
 placeOfResidenceClassification: dcid:Rural
-vaccineDoseReceived: [2 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose2
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -5417,7 +5417,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [24 35 Month]
+age: dcid:Month24To35
 placeOfResidenceClassification: dcid:Rural
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
@@ -5429,9 +5429,9 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_24To35Month_Urban_VaccineAdministered_MeaslesVaccine
-age: [24 35 Month]
+age: dcid:Month24To35
 placeOfResidenceClassification: dcid:Urban
-vaccineDoseReceived: [2 VaccineDose]
+vaccineDoseReceived: dcid:VaccineDose2
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
 
@@ -5440,7 +5440,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
-age: [24 35 Month]
+age: dcid:Month24To35
 placeOfResidenceClassification: dcid:Urban
 vaccineStatus: dcid:VaccineAdministered
 vaccineType: dcid:MeaslesVaccine
@@ -5452,7 +5452,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Rural
-age: [- 5 Years]
+age: dcid:YearsUpto5
 healthBehavior: dcid:Overweight
 placeOfResidenceClassification: dcid:Rural
 
@@ -5463,7 +5463,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5OrLessYears_Urban
-age: [- 5 Years]
+age: dcid:YearsUpto5
 healthBehavior: dcid:Overweight
 placeOfResidenceClassification: dcid:Urban
 
@@ -5474,7 +5474,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5Years_Rural
-age: [5 Years]
+age: dcid:Years5
 placeOfResidenceClassification: dcid:Rural
 schoolGradeLevel: dcid:PrePrimarySchool
 
@@ -5485,7 +5485,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_5Years_Urban
-age: [5 Years]
+age: dcid:Years5
 placeOfResidenceClassification: dcid:Urban
 schoolGradeLevel: dcid:PrePrimarySchool
 
@@ -5814,7 +5814,7 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Male
 gender: dcid:Male
-schoolingDuration: [10 - Years]
+schoolingDuration: dcid:Years10Onwards
 
 Node: dcid:Count_Person_Male_BenefitsOfUsingCondom_ConditionHivOrAids_AsAFractionOf_Count_Person_Male_ConditionHivOrAids
 typeOf: dcid:StatisticalVariable
@@ -5986,7 +5986,7 @@ statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Rural_Male
 gender: dcid:Male
 placeOfResidenceClassification: dcid:Rural
-schoolingDuration: [10 - Years]
+schoolingDuration: dcid:Years10Onwards
 
 Node: dcid:Count_Person_Male_Urban_10OrMoreYears_AsAFractionOf_Count_Person_Urban_Male
 typeOf: dcid:StatisticalVariable
@@ -5997,7 +5997,7 @@ statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_Urban_Male
 gender: dcid:Male
 placeOfResidenceClassification: dcid:Urban
-schoolingDuration: [10 - Years]
+schoolingDuration: dcid:Years10Onwards
 
 Node: dcid:Count_Person_Male_WithHighBloodSugarLevelOrVeryHighBloodSugarLevel_Rural_AsAFractionOf_Count_Person_Rural_Male
 typeOf: dcid:StatisticalVariable
@@ -6150,7 +6150,7 @@ populationType: dcid:Person
 measuredProperty: dcid:fertilityRate
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Adolescents_Female
-age: [15 19 Years]
+age: dcid:Years15To19
 ageGroupClassification: dcid:Adolescents
 gender: dcid:Female
 
@@ -6161,7 +6161,7 @@ populationType: dcid:Person
 measuredProperty: dcid:fertilityRate
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Adolescents_Female_Rural
-age: [15 19 Years]
+age: dcid:Years15To19
 ageGroupClassification: dcid:Adolescents
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Rural
@@ -6173,7 +6173,7 @@ populationType: dcid:Person
 measuredProperty: dcid:fertilityRate
 statType: dcid:measuredValue
 measurementDenominator: dcid:Count_Person_15To19Years_Adolescents_Female_Urban
-age: [15 19 Years]
+age: dcid:Years15To19
 ageGroupClassification: dcid:Adolescents
 gender: dcid:Female
 placeOfResidenceClassification: dcid:Urban
