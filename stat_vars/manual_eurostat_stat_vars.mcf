@@ -163,6 +163,35 @@ statType: dcid:measuredValue
 populationType: dcid:Person
 age: dcid:Years25To64
 
+Node: dcid:Count_Person_18To64Years_EnrolledInEducationOrTraining_AsAFractionOfCount_Person_18To64Years
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+age: dcid:Years18To64
+enrollmentStatus: dcid:EnrolledInEducationOrTraining
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_18To64Years
+
+Node: dcid:Count_Person_18To64Years_EnrolledInEducationOrTraining_Male_AsAFractionOfCount_Person_18To64Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+age: dcid:Years18To64
+enrollmentStatus: dcid:EnrolledInEducationOrTraining
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_18To64Years_Male
+gender: dcid:Male
+
+Node: dcid:Count_Person_18To64Years_EnrolledInEducationOrTraining_Female_AsAFractionOfCount_Person_18To64Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+age: dcid:Years18To64
+enrollmentStatus: dcs:EnrolledInEducationOrTraining
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_18To64Years_Female
+gender: dcid:Female
+
 # Population aged 25-64 by educational attainment level (0-2)
 Node: dcid:Count_Person_25To64Years_LessThanPrimaryEducationOrPrimaryEducationOrLowerSecondaryEducation_AsAFractionOfCount_Person_25To64Years
 typeOf: dcs:StatisticalVariable
