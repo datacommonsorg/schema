@@ -2620,6 +2620,12 @@ rangeIncludes: schema:Number
 domainIncludes: dcs:Student
 description: "The high school graduation rate is a percentage of the ninth-grade cohort that graduates in four years."
 
+Node: dcid:graduationRate
+typeOf: schema:Property
+domainIncludes: dcs:Person
+name: "graduationRate"
+description: "The rate at which students complete a program of study. This is often measured over different timeframes, for example, the percentage of students who complete the program within 100%, 150%, or 200% of the normal time."
+
 Node: dcid:Percentile
 typeOf: schema:UnitOfMeasure
 name: "Percentile"
@@ -5743,3 +5749,25 @@ name: "Sparsely populated rural areas"
 description: "Sparsely populated areas with dispersed small settlements that are located at a distance from each other."
 descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
 typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:courseCompletionTime
+typeOf: schema:Property
+name: "courseCompletionTime"
+description: "The time within which a course or program is completed, often expressed relative to the normal or expected duration."
+domainIncludes: dcid:Person
+rangeIncludes: dcs:CourseCompletionTimeEnum
+
+Node: dcid:Within100PercentOfNormalTime
+typeOf: dcid:CourseCompletionTimeEnum
+name: "Within 100 percent of normal time"
+description: "Indicates course completion within the standard full-time duration expected for the program "
+
+Node: dcid:Within150PercentOfNormalTime
+typeOf: dcid:CourseCompletionTimeEnum
+name: "Within 150 percent of normal time"
+description: "Indicates course completion within 150% of the standard full-time duration expected for the program."
+
+Node: dcid:Within200PercentOfNormalTime
+typeOf: dcid:CourseCompletionTimeEnum
+name: "Within 200 percent of normal time"
+description: "Indicates course completion within 200% of the standard full-time duration expected for the program."
