@@ -5743,3 +5743,10 @@ name: "Sparsely populated rural areas"
 description: "Sparsely populated areas with dispersed small settlements that are located at a distance from each other."
 descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
 typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:incidenceRate
+typeOf: dcs:Property
+name: "Incidence Rate"
+description: "The rate at which new cases of a disease occur in a population over a period of time."
+domainIncludes: schema:StatisticalPopulation, schema:Person
+rangeIncludes: schema:Float
