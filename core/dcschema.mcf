@@ -170,7 +170,7 @@ domainIncludes: schema:Observation
 
 Node: dcid:measurementMethod
 name: "measurementMethod"
-domainIncludes: schema:Observation, dcs:StatisticalVariable
+domainIncludes: schema:Observation, dcs:StatVarObservation, dcs:StatisticalVariable
 rangeIncludes: schema:Text, schema:Enumeration
 typeOf: schema:Property
 description: "Provides additional information about how the measuredProperty of a StatisticalVariable was measured."
@@ -2685,6 +2685,20 @@ domainIncludes: dcs:StatVarObservation, dcs:StatVarObsSeries
 rangeIncludes: dcs:StatisticalVariable, schema:Property
 description: "Identifies the StatisticalVariable associated with an StatVarObservation."
 
+Node: dcid:importName
+typeOf: schema:Property
+name: "importName"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Text
+description: "The name of the import provenance that created this StatVarObservation."
+
+Node: dcid:provenanceUrl
+typeOf: schema:Property
+name: "provenanceUrl"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:URL
+description: "The URL of the provenance of the StatVarObservation."
+
 Node: dcid:StatisticalVariableSlice
 typeOf: schema:Class
 subClassOf: schema:Intangible
@@ -2700,7 +2714,7 @@ supersededBy: dcs:StatisticalVariable
 Node: dcid:measurementDenominator
 typeOf: schema:Property
 name: "measurementDenominator"
-domainIncludes: schema:Observation, dcs:StatisticalVariable
+domainIncludes: schema:Observation, dcs:StatVarObservation, dcs:StatisticalVariable
 rangeIncludes: dcs:StatisticalVariable
 description: "Identifies the StatisticalVariable used as the denominator when a StatisticalVariable or StatVarObservation represents a ratio or percentage."
 
