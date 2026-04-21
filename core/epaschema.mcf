@@ -90,6 +90,18 @@ rangeIncludes: schema:Text
 description: "Unique codes allocated to different pollutants."
 descriptionUrl: "https://aqs.epa.gov/aqsweb/documents/codetables/methods_all.html"
 
+Node: dcid:PrescribedFire_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:NaturalResource
+name: "Prescribed Fire Non-Biogenic Emission Source"
+description: "Prescribed fire non-biogenic emission source."
+
+Node: dcid:EPAMiscellaneousEmissionSource_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:EPA_MiscellaneousEmissionSource
+name: "EPA Miscellaneous Emission Source Non-Biogenic Emission Source"
+description: "EPA miscellaneous emission source non-biogenic emission source."
+
 Node: dcid:EpaSccCodeEnum
 typeOf: dcs:Class
 subClassOf: schema:Enumeration
