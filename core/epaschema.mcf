@@ -2,6 +2,14 @@ Node: dcid:StationaryFuelCombustion
 typeOf: dcs:EmissionSourceEnum
 name: "Stationary Fuel Combustion"
 
+Node: dcid:BlackCarbon
+typeOf: dcs:EmissionSourceEnum
+name: "Black Carbon"
+
+Node: dcid:EPA_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+name: "EPA Non-Biogenic Emission Source"
+
 Node: dcid:IndustrialAndOtherProcesses
 typeOf: dcs:EmissionSourceEnum
 name: "Industrial And Other Processes"
@@ -108,3 +116,105 @@ subClassOf: schema:Enumeration
 name: "EpaSccCodeEnum"
 description: "The U.S. EPA uses Source Classification Codes (SCCs) to classify different types of activities that generate emissions. Each SCC represents a unique source category-specific process or function that emits air pollutants."
 descriptionUrl: "https://sor-scc-api.epa.gov/sccwebservices/sccsearch/"
+
+Node: dcid:EPAMiscellaneousEmissionSource_NonBiogenicEmissionSource_BlackCarbon
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:EPA_NonBiogenicEmissionSource
+name: "EPA Miscellaneous Emission Source Non-Biogenic Emission Source Black Carbon"
+description: "EPA miscellaneous emission source non-biogenic emission source black carbon."
+
+Node: dcid:IndustrialAndOtherProcesses_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:IndustrialAndOtherProcesses
+name: "Industrial And Other Processes Non-Biogenic Emission Source"
+description: "Industrial and other processes non-biogenic emission source."
+
+Node: dcid:Transportation_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Transportation
+name: "Transportation Non-Biogenic Emission Source"
+description: "Transportation non-biogenic emission source."
+
+Node: dcid:PetroleumAndRelatedIndustries_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:PetroleumAndRelatedIndustries
+name: "Petroleum And Related Industries Non-Biogenic Emission Source"
+description: "Petroleum and related industries non-biogenic emission source."
+
+Node: dcid:EPAFuelCombustionOther_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:EPA_FuelCombustionOther
+name: "EPA Fuel Combustion Other Non-Biogenic Emission Source"
+description: "EPA fuel combustion other non-biogenic emission source."
+
+Node: dcid:StorageAndTransport_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StorageAndTransport
+name: "Storage And Transport Non-Biogenic Emission Source"
+description: "Storage and transport non-biogenic emission source."
+
+Node: dcid:EPAOtherIndustrialProcesses_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:EPA_OtherIndustrialProcesses
+name: "EPA Other Industrial Processes Non-Biogenic Emission Source"
+description: "EPA other industrial processes non-biogenic emission source."
+
+Node: dcid:StationaryFuelCombustion_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:StationaryFuelCombustion
+name: "Stationary Fuel Combustion Non-Biogenic Emission Source"
+description: "Stationary fuel combustion non-biogenic emission source."
+
+Node: dcid:SolventUtilization_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:SolventUtilization
+name: "Solvent Utilization Non-Biogenic Emission Source"
+description: "Solvent utilization non-biogenic emission source."
+
+Node: dcid:Wildfire_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:NaturalResource
+name: "Wildfire Non-Biogenic Emission Source"
+description: "Wildfire non-biogenic emission source."
+
+Node: dcid:FuelCombustionIndustrial_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:FuelCombustionIndustrial
+name: "Fuel Combustion Industrial Non-Biogenic Emission Source"
+description: "Fuel combustion industrial non-biogenic emission source."
+
+Node: dcid:WasteDisposalAndRecycling_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:WasteDisposalAndRecycling
+name: "Waste Disposal And Recycling Non-Biogenic Emission Source"
+description: "Waste disposal and recycling non-biogenic emission source."
+
+Node: dcid:FuelCombustionElectricUtility_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:FuelCombustionElectricUtility
+name: "Fuel Combustion Electric Utility Non-Biogenic Emission Source"
+description: "Fuel combustion electric utility non-biogenic emission source."
+
+Node: dcid:ChemicalAndAlliedProductManufacturing_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:ChemicalAndAlliedProductManufacturing
+name: "Chemical And Allied Product Manufacturing Non-Biogenic Emission Source"
+description: "Chemical and allied product manufacturing non-biogenic emission source."
+
+Node: dcid:OnRoadVehicles_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:OnRoadVehicles
+name: "On Road Vehicles Non-BiAogenic Emission Source"
+description: "On road vehicles non-biogenic emission source."
+
+Node: dcid:NonRoadEnginesAndVehicles_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:NonRoadEnginesAndVehicles
+name: "Non Road Engines And Vehicles Non-Biogenic Emission Source"
+description: "Non road engines and vehicles non-biogenic emission source."
+
+Node: dcid:MetalsProcessing_NonBiogenicEmissionSource
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MetalsProcessing
+name: "Metals Processing Non-Biogenic Emission Source"
+description: "Metals processing non-biogenic emission source."
