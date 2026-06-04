@@ -5776,3 +5776,49 @@ typeOf: schema:Property
 domainIncludes: dcs:StatVarGroupSpec
 rangeIncludes: schema:Text
 description: "Observation properties that are used to generate StatVarGroup nodes."
+
+Node: dcid:DivorceEvent
+typeOf: schema:Class
+subClassOf: schema:Event
+name: "DivorceEvent"
+
+Node: dcid:MarriageEvent
+typeOf: schema:Class
+subClassOf: schema:Event
+name: "MarriageEvent"
+
+Node: dcid:mortalityStatus
+typeOf: dcs:Property
+name: "mortalityStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:MortalityStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:MortalityStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "MortalityStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:Deceased
+typeOf: dcid:MortalityStatusEnum
+name: "Deceased"
+isProvisional: dcs:True
+
+Node: dcid:observationStatus
+typeOf: dcs:Property
+name: "observationStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:ObservationStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:ObservationStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "ObservationStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:Provisional
+typeOf: dcid:ObservationStatusEnum
+name: "Provisional"
+isProvisional: dcs:True
