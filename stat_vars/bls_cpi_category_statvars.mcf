@@ -19952,3 +19952,42 @@ name: "Consumer price index for technical and vocational school tuition and fixe
 statType: dcid:measuredValue
 consumer: dcid:UrbanConsumer
 consumerGoodsCategory: dcid:TechnicalAndVocationalSchoolTuitionAndFixedFees
+
+Node: dcid:SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanWageEarnerAndClericalWorker
+name: "Consumer price index for consumer goods and services for urban wage earners and clerical workers (seasonally adjusted)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+measurementQualifier: dcid:BLSSeasonallyAdjusted
+statType: dcid:measuredValue
+consumer: dcid:UrbanWageEarnerAndClericalWorker
+
+Node: dcid:SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanWageEarnerAndClericalWorker
+name: "Growth rate of consumer price index for consumer goods and services for urban wage earners and clerical workers (seasonally adjusted, month on change)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+measurementQualifier: dcid:BLSSeasonallyAdjusted
+statType: dcid:growthRate
+comparisonPeriod: dcid:MonthOnChange
+consumer: dcid:UrbanWageEarnerAndClericalWorker
+
+Node: dcid:SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanWageEarnerAndClericalWorker
+name: "Growth rate of consumer price index for consumer goods and services for urban wage earners and clerical workers (seasonally unadjusted, month on change)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+measurementQualifier: dcid:BLSSeasonallyUnadjusted
+statType: dcid:growthRate
+comparisonPeriod: dcid:MonthOnChange
+consumer: dcid:UrbanWageEarnerAndClericalWorker
+
+Node: dcid:SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanWageEarnerAndClericalWorker
+name: "Growth rate of consumer price index for consumer goods and services for urban wage earners and clerical workers (seasonally unadjusted, year on change)"
+typeOf: dcid:StatisticalVariable
+populationType: dcid:ConsumerGoodsAndServices
+measuredProperty: dcid:consumerPriceIndex
+measurementQualifier: dcid:BLSSeasonallyUnadjusted
+statType: dcid:growthRate
+comparisonPeriod: dcid:YearOnChange
+consumer: dcid:UrbanWageEarnerAndClericalWorker
