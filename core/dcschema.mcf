@@ -5743,3 +5743,45 @@ name: "Sparsely populated rural areas"
 description: "Sparsely populated areas with dispersed small settlements that are located at a distance from each other."
 descriptionUrl: "https://stat.fi/meta/kas/kaupunki_maaseu_en.html"
 typeOf: dcs:HumanSettlementClassificationEnum
+
+Node: dcid:EurostatNUTS
+typeOf: schema:Class
+subClassOf: dcs:AdministrativeArea
+name: "Eurostat NUTS"
+description: "Nomenclature of Territorial Units for Statistics"
+
+Node: dcs:MarriageEvent
+typeOf: schema:Class
+subClassOf: schema:Event
+name: "MarriageEvent"
+description: "A vital event representing a marriage."
+isProvisional: dcs:True
+
+Node: dcs:FirstMarriageRateEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "FirstMarriageRateEnum"
+description: "Enumeration class for classifications of first marriage rates."
+
+Node: dcs:gender
+typeOf: schema:Property
+name: gender
+domainIncludes: dcs:MarriageEvent
+
+Node: dcs:maritalStatus
+typeOf: schema:Property
+name: maritalStatus
+domainIncludes: dcs:MarriageEvent
+
+Node: dcs:age
+typeOf: schema:Property
+name: age
+domainIncludes: dcs:MarriageEvent
+
+Node: dcs:firstMarriageRate
+typeOf: schema:Property
+name: "firstMarriageRate"
+description: "The rate of first marriages within a given cohort."
+domainIncludes: dcs:MarriageEvent
+rangeIncludes: dcs:FirstMarriageRateEnum, schema:Number
+isProvisional: dcs:True

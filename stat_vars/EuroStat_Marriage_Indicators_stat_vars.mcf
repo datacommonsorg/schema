@@ -1,0 +1,94 @@
+Node: dcs:Count_MarriageEvent_Female
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+gender: dcs:Female
+name: "Count of Marriage Events: Female"
+description: "The total number of registered marriage events involving a female partner."
+
+Node: dcs:Count_MarriageEvent_Male
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+gender: dcs:Male
+name: "Count of Marriage Events: Male"
+description: "The total number of registered marriage events involving a male partner."
+
+Node: dcs:Count_MarriageEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+name: "Count of Marriage Events"
+description: "The total number of registered marriage events in a given place and period."
+
+Node: dcs:Count_MarriageEvent_AsAFractionOf_Count_Person
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+measurementDenominator: dcs:Count_Person
+name: "Crude Marriage Rate"
+description: "The ratio of the total number of registered marriage events to the total population, representing the crude marriage rate (expressed per person, scaled to per 1,000 residents in tables)."
+
+Node: dcs:Count_MarriageEvent_Female_NeverMarried_AsAFractionOf_Count_MarriageEvent_Female
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+measurementDenominator: dcs:Count_MarriageEvent_Female
+gender: dcs:Female
+maritalStatus: dcs:NeverMarried
+name: "Proportion of First Marriages: Female"
+description: "The proportion of total female marriage events where the bride's prior marital status was never married, indicating the fraction of first marriages among all registered female marriages."
+
+Node: dcs:Count_MarriageEvent_Male_NeverMarried_AsAFractionOf_Count_MarriageEvent_Male
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+measurementDenominator: dcs:Count_MarriageEvent_Male
+gender: dcs:Male
+maritalStatus: dcs:NeverMarried
+name: "Proportion of First Marriages: Male"
+description: "The proportion of total male marriage events where the groom's prior marital status was never married, indicating the fraction of first marriages among all registered male marriages."
+
+Node: dcs:FirstMarriageRate_MarriageEvent_Female
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:firstMarriageRate
+statType: dcs:measuredValue
+gender: dcs:Female
+name: "First Marriage Rate: Female"
+description: "The first marriage rate for the female population, calculated as the sum of age-specific first marriage rates."
+
+Node: dcs:FirstMarriageRate_MarriageEvent_Male
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:firstMarriageRate
+statType: dcs:measuredValue
+gender: dcs:Male
+name: "First Marriage Rate: Male"
+description: "The first marriage rate for the male population, calculated as the sum of age-specific first marriage rates."
+
+Node: dcs:Mean_Age_MarriageEvent_Female_NeverMarried
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:age
+statType: dcs:meanValue
+gender: dcs:Female
+maritalStatus: dcs:NeverMarried
+name: "Mean Age at First Marriage: Female"
+description: "The mean age of female partners at the time of their first marriage."
+
+Node: dcs:Mean_Age_MarriageEvent_Male_NeverMarried
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:age
+statType: dcs:meanValue
+gender: dcs:Male
+maritalStatus: dcs:NeverMarried
+name: "Mean Age at First Marriage: Male"
+description: "The mean age of male partners at the time of their first marriage."
