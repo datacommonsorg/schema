@@ -1,0 +1,33 @@
+Node: dcid:Count_MarriageEvent
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MarriageEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+name: "Count Marriage Event"
+isProvisional: dcs:True
+
+Node: dcid:Count_DivorceEvent
+typeOf: dcs:StatisticalVariable
+name: "Count Divorce Event"
+populationType: dcs:DivorceEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+isProvisional: dcs:True
+
+Node: dcid:Count_DivorceEvent_AsAFractionOf_Count_MarriageEvent
+typeOf: dcs:StatisticalVariable
+name: "Count Divorce Event: Measurement Denominator Count Marriage Event"
+populationType: dcs:DivorceEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+measurementDenominator: dcs:Count_MarriageEvent
+isProvisional: dcs:True
+
+Node: dcid:Count_DivorceEvent_AsAFractionOf_Count_Person
+typeOf: dcs:StatisticalVariable
+name: "Count Divorce Event: Measurement Denominator Count Person"
+populationType: dcs:DivorceEvent
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+measurementDenominator: dcs:Count_Person
+isProvisional: dcs:True
