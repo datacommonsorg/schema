@@ -18345,3 +18345,21 @@ populationType: dcid:SDG_SE_GCEDESD_SAS
 typeOf: dcid:StatVarGroupSpec
 vertical: dcid:dc/g/SDG_13.3.1
 
+Node: dcid:dc/g/Root
+typeOf: dcid:StatVarGroup
+name: "Root"
+
+Node: dcid:dc/g/Demographics
+typeOf: dcid:StatVarGroup
+name: "Demographics"
+specializationOf: dcid:dc/g/Root
+
+Node: dcid:dc/g/Demographics_Marriage
+typeOf: dcid:StatVarGroup
+name: "Marriage"
+specializationOf: dcid:dc/g/Demographics
+
+Node: dcid:dc/g/Demographics_Divorce
+typeOf: dcid:StatVarGroup
+name: "Divorce"
+specializationOf: dcid:dc/g/Demographics
