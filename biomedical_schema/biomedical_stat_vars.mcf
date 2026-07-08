@@ -1,27 +1,48 @@
+Node: dcid:AlleleTypeEnum
+name: "AlleleTypeEnum"
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+
+Node: dcid:AlleleTypeA
+typeOf: dcs:AlleleTypeEnum
+name: "A"
+
+Node: dcid:AlleleTypeC
+typeOf: dcs:AlleleTypeEnum
+name: "C"
+
+Node: dcid:AlleleTypeG
+typeOf: dcs:AlleleTypeEnum
+name: "G"
+
+Node: dcid:AlleleTypeT
+typeOf: dcs:AlleleTypeEnum
+name: "T"
+
 Node: dcid:Allele_A_Frequency
 typeOf: dcs:StatisticalVariable
-alleleType: "A"
+alleleType: dcs:AlleleTypeA
 measuredProperty: dcs:frequency
 populationType: dcs:Allele
 statType: dcs:measuredValue
 
 Node: dcid:Allele_C_Frequency
 typeOf: dcs:StatisticalVariable
-alleleType: "C"
+alleleType: dcs:AlleleTypeC
 measuredProperty: dcs:frequency
 populationType: dcs:Allele
 statType: dcs:measuredValue
 
 Node: dcid:Allele_G_Frequency
 typeOf: dcs:StatisticalVariable
-alleleType: "G"
+alleleType: dcs:AlleleTypeG
 measuredProperty: dcs:frequency
 populationType: dcs:Allele
 statType: dcs:measuredValue
 
 Node: dcid:Allele_T_Frequency
 typeOf: dcs:StatisticalVariable
-alleleType: "T"
+alleleType: dcs:AlleleTypeT
 measuredProperty: dcs:frequency
 populationType: dcs:Allele
 statType: dcs:measuredValue
