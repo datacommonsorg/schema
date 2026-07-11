@@ -5783,3 +5783,25 @@ typeOf: schema:Property
 domainIncludes: dcs:StatVarGroupSpec
 rangeIncludes: schema:Text
 description: "Observation properties that are used to generate StatVarGroup nodes."
+
+Node: dcid:courseCompletionTime
+typeOf: schema:Property
+name: "courseCompletionTime"
+description: "The time within which a course or program is completed, often expressed relative to the normal or expected duration."
+domainIncludes: dcid:Person
+rangeIncludes: dcs:CourseCompletionTimeEnum
+
+Node: dcid:CourseCompletedWithin100PercentOfNormalTime
+typeOf: dcid:CourseCompletionTimeEnum
+name: "Within 100 percent of normal time"
+description: "Indicates course completion within the standard full-time duration expected for the program "
+
+Node: dcid:CourseCompletedWithin150PercentOfNormalTime
+typeOf: dcid:CourseCompletionTimeEnum
+name: "Within 150 percent of normal time"
+description: "Indicates course completion within 150% of the standard full-time duration expected for the program."
+
+Node: dcid:CourseCompletedWithin200PercentOfNormalTime
+typeOf: dcid:CourseCompletionTimeEnum
+name: "Within 200 percent of normal time"
+description: "Indicates course completion within 200% of the standard full-time duration expected for the program."
