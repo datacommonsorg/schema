@@ -5783,3 +5783,30 @@ typeOf: schema:Property
 domainIncludes: dcs:StatVarGroupSpec
 rangeIncludes: schema:Text
 description: "Observation properties that are used to generate StatVarGroup nodes."
+
+Node: dcid:Years15To74
+typeOf: dcid:AgeStatusEnum
+name: "Years15To74"
+isProvisional: dcs:True
+
+Node: dcid:Years25To54
+typeOf: dcid:AgeStatusEnum
+name: "Years25To54"
+isProvisional: dcs:True
+
+Node: dcid:seasonalAdjustment
+typeOf: dcs:Property
+name: "seasonalAdjustment"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:SeasonalAdjustmentEnum
+isProvisional: dcs:True
+
+Node: dcid:SeasonallyAdjusted
+typeOf: dcid:SeasonalAdjustmentEnum
+name: "SeasonallyAdjusted"
+isProvisional: dcs:True
+
+Node: dcid:TrendCycle
+typeOf: dcid:SeasonalAdjustmentEnum
+name: "TrendCycle"
+isProvisional: dcs:True
