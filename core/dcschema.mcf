@@ -2747,9 +2747,9 @@ domainIncludes: dcs:StatisticalVariable
 rangeIncludes: schema:Property
 description: "Indicates the type of measurement a StatisticalVariable represents. Some examples are measuredValue, maxValue, minValue, stdError, etc."
 
-Node: dcid:observationProperties
+Node: dcid:statVarProperties
 typeOf: schema:Property
-name: "observationProperties"
+name: "statVarProperties"
 domainIncludes: dcs:StatisticalVariable
 rangeIncludes: schema:Property
 description: "Defines required entity fields for an observation. It specifies a list of mandatory properties (up to 3, e.g., sourcePlace, targetIndustry) that a StatVarObservation must include to completely describe the measurement. For the data to be valid, the observation must supply exactly one non-repeated value for every property listed."
@@ -5778,8 +5778,8 @@ domainIncludes: dcs:StatVarGroupSpec
 rangeIncludes: dcs:StatVarGroup
 description: "Indicates the StatVarGroup (vertical) that this entity belongs to or specifies."
 
-Node: dcid:observationProperties
+Node: dcid:statVarProperties
 typeOf: schema:Property
 domainIncludes: dcs:StatVarGroupSpec
 rangeIncludes: schema:Text
-description: "Observation properties that are used to generate StatVarGroup nodes."
+description: "StatisticalVariable properties that are used to generate StatVarGroup nodes."
