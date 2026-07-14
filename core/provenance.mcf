@@ -231,3 +231,13 @@ domainIncludes: dcs:Provenance
 rangeIncludes: dcs:Text
 name: "latestObservationDate"
 description: "Date of the most recent observation in the current data import."
+
+# Base DataCommons composite imports
+Node: dcid:dc/base/Place
+typeOf: dcid:Provenance
+
+Node: dcid:dc/base/Provenance
+typeOf: dcid:Provenance
+
+Node: dcid:dc/base/Schema
+typeOf: dcid:Provenance
