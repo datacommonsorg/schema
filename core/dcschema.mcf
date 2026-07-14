@@ -5783,3 +5783,41 @@ typeOf: schema:Property
 domainIncludes: dcs:StatVarGroupSpec
 rangeIncludes: schema:Text
 description: "Observation properties that are used to generate StatVarGroup nodes."
+
+Node: dcid:previousMaritalStatus
+typeOf: dcs:Property
+name: "previousMaritalStatus"
+description: "The marital status of an individual immediately prior to their most recent marriage."
+domainIncludes: dcs:Person
+rangeIncludes: dcs:PreviousMaritalStatusEnum
+
+Node: dcid:PreviousMaritalStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "PreviousMaritalStatusEnum"
+description: "The enumeration class representing an individual's prior marital status before a marriage transition."
+
+Node: dcid:PreviouslyDivorced
+typeOf: dcs:PreviousMaritalStatusEnum
+name: "Previously Divorced"
+description: "The individual's marital status immediately prior to their current marriage was legally divorced."
+
+Node: dcid:PreviouslyWidowed
+typeOf: dcs:PreviousMaritalStatusEnum
+name: "Previously Widowed"
+description: "The individual's marital status immediately prior to their current marriage was widowed."
+
+Node: dcid:PreviouslyInRegisteredPartnership
+typeOf: dcs:PreviousMaritalStatusEnum
+name: "Previously in Registered Partnership"
+description: "The individual's marital status immediately prior to their current marriage was a legally registered civil partnership or union."
+
+Node: dcid:PreviouslyNeverMarried
+typeOf: dcs:PreviousMaritalStatusEnum
+name: "Previously Never Married"
+description: "The individual's marital status immediately prior to their current marriage was single or never legally married."
+
+Node: dcid:PreviouslyUnknownMaritalStatus
+typeOf: dcs:PreviousMaritalStatusEnum
+name: "Previously Unknown Marital Status"
+description: "The individual's marital status immediately prior to their current marriage was unknown or unstated in the source records."
