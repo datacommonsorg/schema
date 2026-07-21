@@ -465,16 +465,24 @@ gender: dcid:Female
 employmentStatus: dcid:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_MarriedAndNotSeparated
+Node: dcid:Count_Person_15OrMoreYears_MarriedAndNotSeparated
 statType: dcid:measuredValue
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:MarriedAndNotSeparated
 typeOf: dcs:StatisticalVariable
+name: "Married Population Who Are Not Separated who are 15 or more years old"
+
+Node: dcid:Count_Person_MarriedAndNotSeparated
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+populationType: dcid:Person
+maritalStatus: dcid:MarriedAndNotSeparated
+typeOf: dcs:StatisticalVariable
 name: "Married Population Who Are Not Separated"
 
-Node: dcid:MarginOfError_Count_Person_MarriedAndNotSeparated
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_MarriedAndNotSeparated
 statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
@@ -482,8 +490,25 @@ populationType: dcid:Person
 maritalStatus: dcid:MarriedAndNotSeparated
 typeOf: dcs:StatisticalVariable
 
+Node: dcid:Count_Person_15OrMoreYears_Male_MarriedAndNotSeparated
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:MarriedAndNotSeparated
+gender: dcid:Male
+typeOf: dcs:StatisticalVariable
+
 Node: dcid:Count_Person_Male_MarriedAndNotSeparated
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+populationType: dcid:Person
+maritalStatus: dcid:MarriedAndNotSeparated
+gender: dcid:Male
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Male_MarriedAndNotSeparated
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -494,7 +519,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Male_MarriedAndNotSeparated
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:MarriedAndNotSeparated
 gender: dcid:Male
@@ -608,8 +632,25 @@ maritalStatus: dcid:MarriedAndNotSeparated
 gender: dcid:Male
 typeOf: dcs:StatisticalVariable
 
+Node: dcid:Count_Person_15OrMoreYears_Female_MarriedAndNotSeparated
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:MarriedAndNotSeparated
+gender: dcid:Female
+typeOf: dcs:StatisticalVariable
+
 Node: dcid:Count_Person_Female_MarriedAndNotSeparated
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+populationType: dcid:Person
+maritalStatus: dcid:MarriedAndNotSeparated
+gender: dcid:Female
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Female_MarriedAndNotSeparated
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -620,7 +661,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Female_MarriedAndNotSeparated
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:MarriedAndNotSeparated
 gender: dcid:Female
@@ -990,16 +1030,24 @@ gender: dcid:Female
 employmentStatus: dcid:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Widowed
+Node: dcid:Count_Person_15OrMoreYears_Widowed
 statType: dcid:measuredValue
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Widowed
 typeOf: dcs:StatisticalVariable
+name: "Widowed Population (15+ years)"
+
+Node: dcid:Count_Person_Widowed
+statType: dcid:measuredValue
+measuredProperty: dcid:count
+populationType: dcid:Person
+maritalStatus: dcid:Widowed
+typeOf: dcs:StatisticalVariable
 name: "Widowed Population"
 
-Node: dcid:MarginOfError_Count_Person_Widowed
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Widowed
 statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
@@ -1007,8 +1055,17 @@ populationType: dcid:Person
 maritalStatus: dcid:Widowed
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Male_Widowed
+Node: dcid:Count_Person_15OrMoreYears_Male_Widowed
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:Widowed
+gender: dcid:Male
+typeOf: dcid:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Male_Widowed
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -1019,7 +1076,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Male_Widowed
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Widowed
 gender: dcid:Male
@@ -1133,8 +1189,17 @@ maritalStatus: dcid:Widowed
 gender: dcid:Male
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Female_Widowed
+Node: dcid:Count_Person_15OrMoreYears_Female_Widowed
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:Widowed
+gender: dcid:Female
+typeOf: dcid:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Female_Widowed
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -1145,7 +1210,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Female_Widowed
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Widowed
 gender: dcid:Female
@@ -1515,16 +1579,16 @@ gender: dcid:Female
 employmentStatus: dcid:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Divorced
+Node: dcid:Count_Person_15OrMoreYears_Divorced
 statType: dcid:measuredValue
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Divorced
 typeOf: dcs:StatisticalVariable
-name: "Divorced Population"
+name: "Divorced Population (15+ years)"
 
-Node: dcid:MarginOfError_Count_Person_Divorced
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Divorced
 statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
@@ -1532,8 +1596,24 @@ populationType: dcid:Person
 maritalStatus: dcid:Divorced
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Male_Divorced
+Node: dcid:MarginOfError_Count_Person_Divorced
+statType: dcid:marginOfError
+measuredProperty: dcid:count
+populationType: dcid:Person
+maritalStatus: dcid:Divorced
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:Count_Person_15OrMoreYears_Male_Divorced
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:Divorced
+gender: dcid:Male
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Male_Divorced
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -1544,7 +1624,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Male_Divorced
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Divorced
 gender: dcid:Male
@@ -1658,8 +1737,17 @@ maritalStatus: dcid:Divorced
 gender: dcid:Male
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Female_Divorced
+Node: dcid:Count_Person_15OrMoreYears_Female_Divorced
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:Divorced
+gender: dcid:Female
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Female_Divorced
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -1670,7 +1758,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Female_Divorced
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Divorced
 gender: dcid:Female
@@ -2040,16 +2127,16 @@ gender: dcid:Female
 employmentStatus: dcid:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Separated
+Node: dcid:Count_Person_15OrMoreYears_Separated
 statType: dcid:measuredValue
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Separated
 typeOf: dcs:StatisticalVariable
-name: "Population Who Are Married but Separated"
+name: "Population Who Are Married but Separated (15+ years)"
 
-Node: dcid:MarginOfError_Count_Person_Separated
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Separated
 statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
@@ -2057,8 +2144,24 @@ populationType: dcid:Person
 maritalStatus: dcid:Separated
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Male_Separated
+Node: dcid:MarginOfError_Count_Person_Separated
+statType: dcid:marginOfError
+measuredProperty: dcid:count
+populationType: dcid:Person
+maritalStatus: dcid:Separated
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:Count_Person_15OrMoreYears_Male_Separated
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:Separated
+gender: dcid:Male
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Male_Separated
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -2069,7 +2172,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Male_Separated
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Separated
 gender: dcid:Male
@@ -2183,8 +2285,17 @@ maritalStatus: dcid:Separated
 gender: dcid:Male
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Female_Separated
+Node: dcid:Count_Person_15OrMoreYears_Female_Separated
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:Separated
+gender: dcid:Female
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Female_Separated
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -2195,7 +2306,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Female_Separated
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:Separated
 gender: dcid:Female
@@ -2565,16 +2675,16 @@ gender: dcid:Female
 employmentStatus: dcid:BLS_InLaborForce
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_NeverMarried
+Node: dcid:Count_Person_15OrMoreYears_NeverMarried
 statType: dcid:measuredValue
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:NeverMarried
 typeOf: dcs:StatisticalVariable
-name: "Population Who Have Never Been Married"
+name: "Population Who Have Never Been Married (15+ years)"
 
-Node: dcid:MarginOfError_Count_Person_NeverMarried
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_NeverMarried
 statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
@@ -2582,8 +2692,24 @@ populationType: dcid:Person
 maritalStatus: dcid:NeverMarried
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Male_NeverMarried
+Node: dcid:MarginOfError_Count_Person_NeverMarried
+statType: dcid:marginOfError
+measuredProperty: dcid:count
+populationType: dcid:Person
+maritalStatus: dcid:NeverMarried
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:Count_Person_15OrMoreYears_Male_NeverMarried
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:NeverMarried
+gender: dcid:Male
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Male_NeverMarried
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -2594,7 +2720,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Male_NeverMarried
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:NeverMarried
 gender: dcid:Male
@@ -2708,8 +2833,17 @@ maritalStatus: dcid:NeverMarried
 gender: dcid:Male
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Female_NeverMarried
+Node: dcid:Count_Person_15OrMoreYears_Female_NeverMarried
 statType: dcid:measuredValue
+measuredProperty: dcid:count
+age: dcid:Years15Onwards
+populationType: dcid:Person
+maritalStatus: dcid:NeverMarried
+gender: dcid:Female
+typeOf: dcs:StatisticalVariable
+
+Node: dcid:MarginOfError_Count_Person_15OrMoreYears_Female_NeverMarried
+statType: dcid:marginOfError
 measuredProperty: dcid:count
 age: dcid:Years15Onwards
 populationType: dcid:Person
@@ -2720,7 +2854,6 @@ typeOf: dcs:StatisticalVariable
 Node: dcid:MarginOfError_Count_Person_Female_NeverMarried
 statType: dcid:marginOfError
 measuredProperty: dcid:count
-age: dcid:Years15Onwards
 populationType: dcid:Person
 maritalStatus: dcid:NeverMarried
 gender: dcid:Female

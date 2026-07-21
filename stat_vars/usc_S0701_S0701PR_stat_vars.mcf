@@ -414,37 +414,10 @@ nativity: dcid:USC_ForeignBorn
 citizenship: dcid:NotAUSCitizen
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_NeverMarried
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-populationType: dcid:Person
-age: dcid:Years15Onwards
-maritalStatus: dcid:NeverMarried
-typeOf: dcs:StatisticalVariable
-name: "Population Who Have Never Been Married"
-
-Node: dcid:MarginOfError_Count_Person_NeverMarried
-measuredProperty: dcid:count
-statType: dcid:marginOfError
-populationType: dcid:Person
-age: dcid:Years15Onwards
-maritalStatus: dcid:NeverMarried
-typeOf: dcs:StatisticalVariable
-
-Node: dcid:Count_Person_MarriedAndNotSeparated
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-populationType: dcid:Person
-age: dcid:Years15Onwards
-maritalStatus: dcid:MarriedAndNotSeparated
-typeOf: dcs:StatisticalVariable
-name: "Married Population Who Are Not Separated"
-
 Node: dcid:MarginOfError_Count_Person_MarriedAndNotSeparated
 measuredProperty: dcid:count
 statType: dcid:marginOfError
 populationType: dcid:Person
-age: dcid:Years15Onwards
 maritalStatus: dcid:MarriedAndNotSeparated
 typeOf: dcs:StatisticalVariable
 
@@ -456,6 +429,22 @@ age: dcid:Years15Onwards
 maritalStatus: dcid:DivorcedOrSeparated
 typeOf: dcs:StatisticalVariable
 
+Node: dcid:Count_Person_NeverMarried
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+maritalStatus: dcid:NeverMarried
+name: "Population Who Have Never Been Married"
+
+Node: dcid:Count_Person_Divorced
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+maritalStatus: dcid:Divorced
+name: "Divorced Population"
+
 Node: dcid:MarginOfError_Count_Person_DivorcedOrSeparated
 measuredProperty: dcid:count
 statType: dcid:marginOfError
@@ -464,20 +453,10 @@ age: dcid:Years15Onwards
 maritalStatus: dcid:DivorcedOrSeparated
 typeOf: dcs:StatisticalVariable
 
-Node: dcid:Count_Person_Widowed
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-populationType: dcid:Person
-age: dcid:Years15Onwards
-maritalStatus: dcid:Widowed
-typeOf: dcs:StatisticalVariable
-name: "Widowed Population"
-
 Node: dcid:MarginOfError_Count_Person_Widowed
 measuredProperty: dcid:count
 statType: dcid:marginOfError
 populationType: dcid:Person
-age: dcid:Years15Onwards
 maritalStatus: dcid:Widowed
 typeOf: dcs:StatisticalVariable
 
