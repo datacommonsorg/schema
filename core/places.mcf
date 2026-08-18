@@ -107,3 +107,106 @@ domainIncludes: dcs:Place
 rangeIncludes: dcs:Text
 description: "Australian Statistical Geography Standard (ASGS) Code 2021"
 descriptionUrl: "https://www.abs.gov.au/statistics/statistical-geography/australian-statistical-geography-standard-asgs"
+
+Node: dcid:ABSStatisticalAreaLevel1
+name: "ABSStatisticalAreaLevel1"
+typeOf: dcid:Class
+subClassOf: dcid:Place
+description: "Australian Bureau of Statistics Statistical Area Level 1"
+
+Node: dcid:ABSStatisticalAreaLevel2
+name: "ABSStatisticalAreaLevel2"
+typeOf: dcid:Class
+subClassOf: dcid:Place
+description: "Australian Bureau of Statistics Statistical Area Level 2"
+
+Node: dcid:ABSStatisticalAreaLevel3
+name: "ABSStatisticalAreaLevel3"
+typeOf: dcid:Class
+subClassOf: dcid:Place
+description: "Australian Bureau of Statistics Statistical Area Level 3"
+
+Node: dcid:ABSStatisticalAreaLevel4
+name: "ABSStatisticalAreaLevel4"
+typeOf: dcid:Class
+subClassOf: dcid:Place
+description: "Australian Bureau of Statistics Statistical Area Level 4"
+
+Node: dcid:ABSGreaterCapitalCityStatisticalArea
+name: "ABSGreaterCapitalCityStatisticalArea"
+typeOf: dcid:Class
+subClassOf: dcid:Place
+description: "Australian Bureau of Statistics Greater Capital City Statistical Area"
+
+Node: dcid:ABSState
+name: "ABSState"
+typeOf: dcid:Class
+subClassOf: dcid:Place
+description: "Australian State or Territory defined by the Australian Bureau of Statistics"
+
+Node: dcid:absGeographicCode
+name: "absGeographicCode"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:Text, dcid:Number
+description: "Geographic code representing an area or region defined by the Australian Bureau of Statistics"
+
+Node: dcid:gccsaCode
+name: "gccsaCode"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:Text, dcid:Number
+description: "Greater Capital City Statistical Area code"
+
+Node: dcid:SourceEditionEnum
+name: "SourceEditionEnum"
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+description: "Enumeration of data source editions or years"
+
+Node: dcid:ASGS_2021
+name: "ASGS_2021"
+typeOf: dcid:SourceEditionEnum
+description: "Australian Statistical Geography Standard 2021"
+
+Node: dcid:sourceEdition
+name: "sourceEdition"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:SourceEditionEnum
+description: "The edition or year of the data source (e.g. ASGS_2021)"
+
+Node: dcid:lociUri
+name: "lociUri"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:Text
+description: "Persistent identifier URI on the Australian Linked Data (Loci) registry"
+
+Node: dcid:minimumLatitude
+name: "minimumLatitude"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:Number
+description: "The minimum latitude (southern boundary) of a place's bounding box"
+
+Node: dcid:minimumLongitude
+name: "minimumLongitude"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:Number
+description: "The minimum longitude (western boundary) of a place's bounding box"
+
+Node: dcid:maximumLatitude
+name: "maximumLatitude"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:Number
+description: "The maximum latitude (northern boundary) of a place's bounding box"
+
+Node: dcid:maximumLongitude
+name: "maximumLongitude"
+typeOf: dcid:Property
+domainIncludes: dcid:Place
+rangeIncludes: dcid:Number
+description: "The maximum longitude (eastern boundary) of a place's bounding box"
