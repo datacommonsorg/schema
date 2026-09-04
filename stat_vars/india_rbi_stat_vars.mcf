@@ -106,12 +106,12 @@ activitySource: dcid:ExpenditureActivity
 expenditureType: dcid:ReliefOnNaturalCalamity
 
 # TODO(ajaits): reenable after fixing the statvar to match SDG
-# Node: dcid:Score_SustainableDevelopmentGoals
-# typeOf: dcid:StatisticalVariable
-# name: "Sustainable Development Goals Score"
-# populationType: dcid:SustainableDevelopmentGoals
-# measuredProperty: dcid:score
-# statType: dcid:measuredValue
+Node: dcid:Score_SustainableDevelopmentGoals
+typeOf: dcid:StatisticalVariable
+name: "Sustainable Development Goals Score"
+populationType: dcid:SustainableDevelopmentGoals
+measuredProperty: dcid:score
+statType: dcid:measuredValue
 
 Node: dcid:Annual_Amount_Electricity
 typeOf: dcid:StatisticalVariable
@@ -467,6 +467,14 @@ populationType: dcid:FarmInventory
 measuredProperty: dcid:area
 statType: dcid:measuredValue
 farmInventoryType: dcid:Vegetables
+
+Node: dcid:Area_FarmInventory_Fruits
+typeOf: dcid:StatisticalVariable
+name: "Area used for fruits"
+populationType: dcid:FarmInventory
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+farmInventoryType: dcid:Fruits
 
 Node: dcid:Area_FarmInventory_Wheat
 typeOf: dcid:StatisticalVariable
