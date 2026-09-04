@@ -1,0 +1,60 @@
+Node: dcid:FamilyTypeEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FamilyTypeEnum"
+
+Node: dcid:DisabilityStatusEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "DisabilityStatusEnum"
+
+Node: dcid:QuilombolasFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Quilombolas Family"
+
+Node: dcid:PermanentDisablity
+typeOf: dcid:DisabilityStatusEnum
+name: "Permanent Disability"
+
+Node: dcid:Brazil_ContinuousCashBenefitProgram
+typeOf: dcid:BenefitProgramEnum
+name: "Brazil_ Continuous Cash Benefit Program"
+
+Node: dcid:Brazil_SingleRegistry
+typeOf: dcid:RegistrationStatusEnum
+name: "Brazil_ Single Registry"
+
+Node: dcid:IndigenasFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Indigenas Family"
+
+Node: dcid:HomelessFamily
+typeOf: dcid:FamilyTypeEnum
+name: "Homeless Family"
+
+Node: dcid:Brazil_Preto
+typeOf: dcid:RaceCodeEnum
+name: "Brazil Preto"
+
+Node: dcid:benefitSource
+typeOf: dcid:Property
+name: "benefitSource"
+domainIncludes: dcid:Person,dcid:Person,dcid:EconomicActivity
+rangeIncludes: dcid:BenefitSourceEnum
+
+Node: dcid:BenefitSourceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "BenefitSourceEnum"
+
+Node: dcid:AdministrativeConcession
+typeOf: dcid:BenefitSourceEnum
+name: "Administrative Concession"
+
+Node: dcid:JudicialConcession
+typeOf: dcid:BenefitSourceEnum
+name: "Judicial Concession"
+
+Node: dcid:MunicipalityBenefit
+typeOf: dcid:BenefitSourceEnum
+name: "Municipality Benefit"
