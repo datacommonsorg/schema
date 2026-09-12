@@ -1,0 +1,78 @@
+Node: dcid:ChemicalCompoundProteinInteraction
+name: "ChemicalCompoundProteinInteraction"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompound
+description: "Interaction between a compound and a protein."
+descriptionUrl: "https://www.ebi.ac.uk/chembl/"
+
+Node: dcid:ExperimentalDirectScore
+name: "ExperimentalDirectScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction derived from experimental data."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:ExperimentalTransferredScore
+name: "ExperimentalTransferredScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction computed from experimental data that is not originally observed in the organism of interest, but instead in some other organism and then transferred via homology/orthology."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:PredictionDirectScore
+name: "PredictionDirectScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The predicted confidence score of a protein-chemical interaction."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:PredictionTransferredScore
+name: "PredictionTransferredScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The predicted confidence score of a protein-chemical interaction computed from data that is not originally observed in the organism of interest, but instead in some other organism and then transferred via homology/orthology."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:DatabaseDirectScore
+name: "DatabaseDirectScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction derived from curated data of various databases."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:DatabaseTransferredScore
+name: "DatabaseTransferredScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction derived from curated data of various databases that is not originally observed in the organism of interest, but instead in some other organism and then transferred via homology/orthology."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:TextminingDirectScore
+name: "TextminingDirectScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction derived from the co-occurrence of gene/protein names in abstracts."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:TextminingTransferredScore
+name: "TextminingTransferredScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction derived from the co-occurrence of gene/protein names in abstracts that is not originally observed in the organism of interest, but instead in some other organism and then transferred via homology/orthology."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:CombinedScore
+name: "CombinedScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The combined score is computed by combining the probabilities from the different evidence channels and corrected for the probability of randomly observing an interaction."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=OiOAh8xarFrE"
