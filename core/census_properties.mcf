@@ -429,7 +429,14 @@ Node: dcid:propertyTax
 typeOf: schema:Property
 name: "propertyTax"
 description: "The amount of property tax paid."
-domainIncludes: dcs:HousingUnit
+domainIncludes: dcs:HousingUnit, dcs:EconomicActivity
+rangeIncludes: schema:Quantity, dcs:QuantityRange
+
+Node: dcid:totalTax
+typeOf: schema:Property
+name: "totalTax"
+description: "The amount of total tax paid."
+domainIncludes: dcs:EconomicActivity
 rangeIncludes: schema:Quantity, dcs:QuantityRange
 
 Node: dcid:commuteMode
