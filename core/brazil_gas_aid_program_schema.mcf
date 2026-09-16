@@ -1,0 +1,55 @@
+Node: dcid:benefitProgram
+typeOf: dcid:Property
+name: "benefitProgram"
+domainIncludes: dcid:Household,dcid:Person,dcid:Place
+
+Node: dcid:GasAidProgram
+typeOf: dcid:BenefitProgramEnum
+name: "Gas Aid Program"
+
+Node: dcid:gender
+typeOf: dcid:Property
+name: "gender"
+rangeIncludes: dcid:GenderType
+
+Node: dcid:headOfFamily
+typeOf: dcid:Property
+name: "headOfFamily"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:HeadOfFamilyEnum
+
+Node: dcid:HeadOfFamilyEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "HeadOfFamilyEnum"
+
+Node: dcid:Women
+typeOf: dcid:HeadOfFamilyEnum
+name: "Women"
+
+Node: dcid:governmentPaymentStatus
+typeOf: dcid:Property
+name: "governmentPaymentStatus"
+domainIncludes: dcid:Household
+
+Node: dcid:ReceivedPaymentPreviousMonth
+typeOf: dcid:GovernmentPaymentStatusEnum
+name: "Received Payment Previous Month"
+
+Node: dcid:householdType
+typeOf: dcid:Property
+name: "householdType"
+domainIncludes: dcid:Household,dcid:Place
+
+Node: dcid:SinglePerson
+typeOf: dcid:HouseholdTypeEnum
+name: "Single Person"
+
+Node: dcid:benefitsStatus
+typeOf: dcid:Property
+name: "benefitsStatus"
+domainIncludes: dcid:Place
+
+Node: dcid:16OrMorePercentHouseholds
+typeOf: dcid:BenefitsStatusEnum
+name: "16 Or More Percent Households"
