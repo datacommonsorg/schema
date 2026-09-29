@@ -1,0 +1,28 @@
+Node: dcid:OpportunityInsightsCohort
+typeOf: schema:Class
+subClassOf: dcs:Cohort
+name: "OpportunityInsightsCohort"
+
+Node: dcid:parentIncome
+typeOf: schema:Property
+name: "parentIncome"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: dcs:Percentile, dcs:PercentileEnum
+
+Node: dcid:fractionChildhoodYearsSpentInGeography
+typeOf: schema:Property
+name: "fractionChildhoodYearsSpentInGeography"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: schema:Number
+
+Node: dcid:fractionOfChildrenWithPositiveW2EarningsAge27
+typeOf: schema:Property
+name: "fractionOfChildrenWithPositiveW2EarningsAge27"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: schema:Number
+
+Node: dcid:individualIncome
+typeOf: schema:Property
+name: "individualIncome"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: dcs:Quantity, dcs:USDollar, schema:Number
