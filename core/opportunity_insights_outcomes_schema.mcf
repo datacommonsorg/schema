@@ -1,0 +1,33 @@
+Node: dcid:OpportunityInsightsCohort
+typeOf: schema:Class
+subClassOf: dcs:Cohort
+name: "OpportunityInsightsCohort"
+description: "A birth cohort of children tracked into adulthood in the Opportunity Insights (Opportunity Atlas) longitudinal studies, grouped by childhood geography, race, gender, and parental household income percentile."
+
+Node: dcid:parentIncome
+typeOf: schema:Property
+name: "parentIncome"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: dcs:Percentile, dcs:PercentileEnum
+description: "Parental household income percentile in the national income distribution during childhood for an Opportunity Insights cohort."
+
+Node: dcid:fractionChildhoodYearsSpentInGeography
+typeOf: schema:Property
+name: "fractionChildhoodYearsSpentInGeography"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: schema:Number
+description: "Average fraction of childhood years spent residing in a given geographic area (census tract, county, or commuting zone) among children in the cohort."
+
+Node: dcid:fractionOfChildrenWithPositiveW2EarningsAge27
+typeOf: schema:Property
+name: "fractionOfChildrenWithPositiveW2EarningsAge27"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: schema:Number
+description: "Fraction of children in an Opportunity Insights birth cohort with strictly positive W-2 wage earnings at age 27."
+
+Node: dcid:individualIncome
+typeOf: schema:Property
+name: "individualIncome"
+domainIncludes: dcs:OpportunityInsightsCohort
+rangeIncludes: dcs:Quantity, dcs:USDollar, schema:Number
+description: "Mean adult individual income (in inflation-adjusted US dollars) for members of an Opportunity Insights cohort."
