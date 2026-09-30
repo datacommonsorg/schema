@@ -1,0 +1,280 @@
+
+Node: dcid:healthCareUtilization
+typeOf: dcs:Property
+name: "healthCareUtilization"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthCareUtilizationEnum
+isProvisional: dcs:True
+
+Node: dcid:HealthCareUtilizationEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "HealthCareUtilizationEnum"
+isProvisional: dcs:True
+
+Node: dcid:RoutineCheckupWithinPastYear
+typeOf: dcid:HealthCareUtilizationEnum
+name: "Routine Checkup Within Past Year"
+isProvisional: dcs:True
+
+Node: dcid:healthCareProviderStatus
+typeOf: dcs:Property
+name: "healthCareProviderStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthCareProviderStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:HealthCareProviderStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "HealthCareProviderStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:HasPersonalHealthCareProvider
+typeOf: dcid:HealthCareProviderStatusEnum
+name: "Has Personal Health Care Provider"
+isProvisional: dcs:True
+
+Node: dcid:healthStatus
+typeOf: dcs:Property
+name: "healthStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:HealthStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "HealthStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:WithLimitation
+typeOf: dcid:HealthStatusEnum
+name: "With Limitation"
+isProvisional: dcs:True
+
+Node: dcid:FastFoodConsumption3OrMoreTimesPerWeek
+typeOf: dcid:HealthBehaviorEnum
+name: "Fast Food Consumption 3 Or More Times Per Week"
+isProvisional: dcs:True
+
+Node: dcid:InfluenzaVaccinePastYear
+typeOf: dcid:HealthCareUtilizationEnum
+name: "Influenza Vaccine Past Year"
+isProvisional: dcs:True
+
+Node: dcid:ChronicDiseaseSelfManagement
+typeOf: dcid:HealthBehaviorEnum
+name: "Chronic Disease Self Management"
+isProvisional: dcs:True
+
+Node: dcid:FallPastYear
+typeOf: dcid:HealthOutcomeEnum
+name: "Fall Past Year"
+isProvisional: dcs:True
+
+Node: dcid:PoorMentalHealth
+typeOf: dcid:HealthStatusEnum
+name: "Poor Mental Health"
+isProvisional: dcs:True
+
+Node: dcid:DiabetesOrPrediabetesTesting
+typeOf: dcid:HealthCareUtilizationEnum
+name: "Diabetes Or Prediabetes Testing"
+isProvisional: dcs:True
+
+Node: dcid:DailySugarSweetenedBeverages
+typeOf: dcid:HealthBehaviorEnum
+name: "Daily Sugar Sweetened Beverages"
+isProvisional: dcs:True
+
+Node: dcid:HousingInsecurityPast12Months
+typeOf: dcid:HealthRelatedSocialNeedEnum
+name: "Housing Insecurity Past 12 Months"
+isProvisional: dcs:True
+
+Node: dcid:CervicalCancerScreeningPre2012Guidelines
+typeOf: dcid:HealthPreventionEnum
+name: "Cervical Cancer Screening Pre-2012 Guidelines"
+isProvisional: dcs:True
+
+Node: dcid:Prediabetes
+typeOf: dcid:HealthOutcomeEnum
+name: "Prediabetes"
+isProvisional: dcs:True
+
+Node: dcid:healthCareAccessStatus
+typeOf: dcs:Property
+name: "healthCareAccessStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:HealthCareAccessStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:HealthCareAccessStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "HealthCareAccessStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:DidNotReceiveCareDueToCost
+typeOf: dcid:HealthCareAccessStatusEnum
+name: "Did Not Receive Care Due To Cost"
+isProvisional: dcs:True
+
+Node: dcid:LeisureTimePhysicalActivity
+typeOf: dcid:HealthBehaviorEnum
+name: "Leisure Time Physical Activity"
+isProvisional: dcs:True
+
+Node: dcid:FoodInsecurityPast12Months
+typeOf: dcid:HealthRelatedSocialNeedEnum
+name: "Food Insecurity Past 12 Months"
+isProvisional: dcs:True
+
+Node: dcid:Years47To68
+typeOf: dcid:QuantityRange
+name: "Years 47 To 68"
+startValue: 47
+endValue: 68
+unit: dcid:Years
+isProvisional: dcs:True
+
+Node: dcid:HepatitisCTestingEver
+typeOf: dcid:HealthCareUtilizationEnum
+name: "Hepatitis C Testing Ever"
+isProvisional: dcs:True
+
+Node: dcid:OverweightOrObese
+typeOf: dcid:HealthOutcomeEnum
+name: "Overweight Or Obese"
+isProvisional: dcs:True
+
+Node: dcid:FallWithInjuryPastYear
+typeOf: dcid:HealthOutcomeEnum
+name: "Fall With Injury Past Year"
+isProvisional: dcs:True
+
+Node: dcid:environmentStatus
+typeOf: dcs:Property
+name: "environmentStatus"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:EnvironmentStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:EnvironmentStatusEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EnvironmentStatusEnum"
+isProvisional: dcs:True
+
+Node: dcid:WalkableNeighborhood
+typeOf: dcid:EnvironmentStatusEnum
+name: "Walkable Neighborhood"
+isProvisional: dcs:True
+
+Node: dcid:Years18To44
+typeOf: dcid:QuantityRange
+name: "Years 18 To 44"
+startValue: 18
+endValue: 44
+unit: dcid:Years
+isProvisional: dcs:True
+
+Node: dcid:ProviderDiscussedHealthyPregnancy
+typeOf: dcid:HealthCareUtilizationEnum
+name: "Provider Discussed Healthy Pregnancy"
+isProvisional: dcs:True
+
+Node: dcid:PneumococcalVaccineEver
+typeOf: dcid:HealthCareUtilizationEnum
+name: "Pneumococcal Vaccine Ever"
+isProvisional: dcs:True
+
+Node: dcid:ConsumesNoFruitsOrVegetables
+typeOf: dcid:HealthBehaviorEnum
+name: "Consumes No Fruits Or Vegetables"
+isProvisional: dcs:True
+
+Node: dcid:ActiveTransportation
+typeOf: dcid:HealthBehaviorEnum
+name: "Active Transportation"
+isProvisional: dcs:True
+
+Node: dcid:AsthmaEver
+typeOf: dcid:HealthOutcomeEnum
+name: "Asthma Ever"
+isProvisional: dcs:True
+
+Node: dcid:ElectronicCigaretteUse
+typeOf: dcid:HealthBehaviorEnum
+name: "Electronic Cigarette Use"
+isProvisional: dcs:True
+
+Node: dcid:CannabisUse
+typeOf: dcid:HealthBehaviorEnum
+name: "Cannabis Use"
+isProvisional: dcs:True
+
+Node: dcid:TwoOrMoreAdverseChildhoodExperiences
+typeOf: dcid:HealthStatusEnum
+name: "Two Or More Adverse Childhood Experiences"
+isProvisional: dcs:True
+
+Node: dcid:FoodSecurityPast12Months
+typeOf: dcid:HealthRelatedSocialNeedEnum
+name: "Food Security Past 12 Months"
+isProvisional: dcs:True
+
+Node: dcid:MedicalCannabisUse
+typeOf: dcid:HealthBehaviorEnum
+name: "Medical Cannabis Use"
+isProvisional: dcs:True
+
+Node: dcid:Years55To69
+typeOf: dcid:QuantityRange
+name: "Years 55 To 69"
+startValue: 55
+endValue: 69
+unit: dcid:Years
+isProvisional: dcs:True
+
+Node: dcid:ProstateSpecificAntigenScreeningSharedDecision
+typeOf: dcid:HealthCareUtilizationEnum
+name: "Prostate Specific Antigen Screening Shared Decision"
+isProvisional: dcs:True
+
+Node: dcid:CervicalCancerScreening2012Guidelines
+typeOf: dcid:HealthPreventionEnum
+name: "Cervical Cancer Screening 2012 Guidelines"
+isProvisional: dcs:True
+
+Node: dcid:Years21To29
+typeOf: dcid:QuantityRange
+name: "Years 21 To 29"
+startValue: 21
+endValue: 29
+unit: dcid:Years
+isProvisional: dcs:True
+
+Node: dcid:DrivingWhileIntoxicated
+typeOf: dcid:HealthBehaviorEnum
+name: "Driving While Intoxicated"
+isProvisional: dcs:True
+
+Node: dcid:BingeOrHeavyDrinking
+typeOf: dcid:HealthBehaviorEnum
+name: "Binge Or Heavy Drinking"
+isProvisional: dcs:True
+
+Node: dcid:HousingOrUtilityInsecurityPast12Months
+typeOf: dcid:HealthRelatedSocialNeedEnum
+name: "Housing Or Utility Insecurity Past 12 Months"
+isProvisional: dcs:True
+
+Node: dcid:USDollar0To24999
+typeOf: dcid:QuantityRange
+name: "USDollar 0 To 24999"
+startValue: 0
+endValue: 24999
+unit: dcid:USDollar
+isProvisional: dcs:True
