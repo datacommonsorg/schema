@@ -1,0 +1,64 @@
+Node: dcid:Drug
+name: "Drug"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompound
+description: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them."
+
+Node: dcid:StitchFlatCompoundID
+name: "StitchFlatCompoundID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Drug
+description: "STITCH ID for the stereo-specific compound."
+descriptionUrl: "http://stitch.embl.de/download/README"
+
+Node: dcid:StitchStereoCompoundID
+name: "StitchStereoCompoundID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Drug
+description: "STITCH ID for the "flat" compound, i.e. with merged stereo-isomers." 
+descriptionUrl: "http://stitch.embl.de/download/README"
+
+Node: dcid:StitchCompoundID
+name: "StitchCompoundID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Drug
+description: "PubChem ID for the compound with 'CID' prefix" 
+
+Node: dcid:AnatomicalTherapeuticChemicalID
+name: "AnatomicalTherapeuticChemicalID"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Drug
+description: "Drug ID from the WHO Anatomical Therapeutic Chemical (ATC) Classification System."
+
+Node: dcid:MolecularWeight
+name: "MolecularWeight"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:Drug
+description: "Mass of a molecule of a substance, based on 12 as the atomic weight of carbon-12."
+descriptionUrl: "https://www.britannica.com/science/molecular-weight"
+
+Node: dcid:SimilarPubChemSubstanceID
+name: "SimilarPubChemSubstanceID"
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: dcs:Drug
+description: "PubChem Substance IDs of similar substances."
+
+Node: dcid:SimilarPubChemCompoundID
+name: "SimilarPubChemCompoundID"
+typeOf: schema:Property
+rangeIncludes: schema:Number
+domainIncludes: dcs:Drug
+description: "PubChem Compound IDs of similar compounds."
+
+Node: dcid:SameAs
+name: "SameAs"
+typeOf: schema:Property
+rangeIncludes: schema:Text
+domainIncludes: dcs:Drug
+description: "Indicates the ChEMBL ID found in Data Commons according to the matching InChIKey from STITCH. The value in that column is left blank if the InChIkey in that corresponding row does not match any InChIKey found in Data Commons."
