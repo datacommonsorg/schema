@@ -38,12 +38,19 @@ Node: dcid:score
 typeOf: dcid:Property
 name: "score"
 rangeIncludes: dcid:Quantity
-domainIncludes: dcid:SustainableDevelopmentGoals, dcid:Student
+domainIncludes: dcid:Student
+
+Node: dcid:SustainableDevelopmentGoal
+typeOf: dcs:Class
+subClassOf: dcs:Intangible
+name: "SustainableDevelopmentGoal"
+isProvisional: dcs:True
 
 Node: dcid:SustainableDevelopmentGoals
 typeOf: dcs:Class
 subClassOf: dcs:Intangible
 name: "SustainableDevelopmentGoals"
+description: "Sustainable Development Goals (legacy plural class preserved for backwards compatibility)"
 
 Node: dcid:lossReason
 typeOf: dcid:Property
