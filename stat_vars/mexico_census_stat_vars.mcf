@@ -2276,3 +2276,130 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentExperienceStatus: dcid:WithExperience
 employmentStatus: dcid:Unemployed
+
+Node: dcid:Count_Person_6To14Years_Female
+typeOf: dcid:StatisticalVariable
+name: "Female population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years6To14
+gender: dcid:Female
+
+Node: dcid:Count_Person_6To14Years_Male
+typeOf: dcid:StatisticalVariable
+name: "Male population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years6To14
+gender: dcid:Male
+
+Node: dcid:Count_Person_6To14Years_Illiterate_AsAFractionOf_Count_Person_6To14Years
+typeOf: dcid:StatisticalVariable
+name: "Illiterate population aged 6 to 14 years as a fraction of population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To14Years
+age: dcid:Years6To14
+literacyStatus: dcid:Illiterate
+
+Node: dcid:Count_Person_6To14Years_Literate_AsAFractionOf_Count_Person_6To14Years
+typeOf: dcid:StatisticalVariable
+name: "Literate population aged 6 to 14 years as a fraction of population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To14Years
+age: dcid:Years6To14
+literacyStatus: dcid:Literate
+
+Node: dcid:Count_Person_6To14Years_Female_Illiterate_AsAFractionOf_Count_Person_6To14Years_Female
+typeOf: dcid:StatisticalVariable
+name: "Illiterate female population aged 6 to 14 years as a fraction of female population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To14Years_Female
+age: dcid:Years6To14
+gender: dcid:Female
+literacyStatus: dcid:Illiterate
+
+Node: dcid:Count_Person_6To14Years_Female_Literate_AsAFractionOf_Count_Person_6To14Years_Female
+typeOf: dcid:StatisticalVariable
+name: "Literate female population aged 6 to 14 years as a fraction of female population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To14Years_Female
+age: dcid:Years6To14
+gender: dcid:Female
+literacyStatus: dcid:Literate
+
+Node: dcid:Count_Person_6To14Years_Male_Illiterate_AsAFractionOf_Count_Person_6To14Years_Male
+typeOf: dcid:StatisticalVariable
+name: "Illiterate male population aged 6 to 14 years as a fraction of male population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To14Years_Male
+age: dcid:Years6To14
+gender: dcid:Male
+literacyStatus: dcid:Illiterate
+
+Node: dcid:Count_Person_6To14Years_Male_Literate_AsAFractionOf_Count_Person_6To14Years_Male
+typeOf: dcid:StatisticalVariable
+name: "Literate male population aged 6 to 14 years as a fraction of male population aged 6 to 14 years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Person_6To14Years_Male
+age: dcid:Years6To14
+gender: dcid:Male
+literacyStatus: dcid:Literate
+
+Node: dcid:Count_Death_Male_AsAFractionOf_Count_Death_Female
+typeOf: dcid:StatisticalVariable
+name: "Male deaths as a fraction of female deaths"
+populationType: dcid:MortalityEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Death_Female
+gender: dcid:Male
+
+Node: dcid:Count_Student_LowerSecondaryEducation_AsAFractionOf_Count_School
+typeOf: dcid:StatisticalVariable
+name: "Lower secondary education students per school"
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_School
+enrollmentLevel: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Student_LowerSecondaryEducation_AsAFractionOf_Count_Teacher
+typeOf: dcid:StatisticalVariable
+name: "Lower secondary education students per teacher"
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Teacher
+enrollmentLevel: dcid:LowerSecondaryEducation
+
+Node: dcid:Count_Student_TertiaryEducation_AsAFractionOf_Count_School
+typeOf: dcid:StatisticalVariable
+name: "Tertiary education students per school"
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_School
+enrollmentLevel: dcid:TertiaryEducation
+
+Node: dcid:Count_Student_TertiaryEducation_AsAFractionOf_Count_Teacher
+typeOf: dcid:StatisticalVariable
+name: "Tertiary education students per teacher"
+populationType: dcid:Student
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+measurementDenominator: dcid:Count_Teacher
+enrollmentLevel: dcid:TertiaryEducation
