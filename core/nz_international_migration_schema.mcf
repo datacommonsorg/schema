@@ -1,0 +1,111 @@
+Node: dcid:passengerType
+typeOf: dcs:Property
+name: "passengerType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:PassengerTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:PassengerTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "PassengerTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:LongTermMigrant
+typeOf: dcid:PassengerTypeEnum
+name: "Long Term Migrant"
+isProvisional: dcs:True
+
+Node: dcid:migrationDirection
+typeOf: dcs:Property
+name: "migrationDirection"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:MigrationDirectionEnum
+isProvisional: dcs:True
+
+Node: dcid:MigrationDirectionEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "MigrationDirectionEnum"
+isProvisional: dcs:True
+
+Node: dcid:Arrivals
+typeOf: dcid:MigrationDirectionEnum
+name: "Arrivals"
+isProvisional: dcs:True
+
+Node: dcid:NZCitizen
+typeOf: dcid:CitizenshipEnum
+name: "NZCitizen"
+isProvisional: dcs:True
+
+Node: dcid:visaType
+typeOf: dcs:Property
+name: "visaType"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:VisaTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:VisaTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "VisaTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:NZAndAustralianCitizenVisa
+typeOf: dcid:VisaTypeEnum
+name: "NZAnd Australian Citizen Visa"
+isProvisional: dcs:True
+
+Node: dcid:countryOfResidence
+typeOf: dcs:Property
+name: "countryOfResidence"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:AdministrativeArea,dcid:AdministrativeArea1,dcid:AdministrativeArea2,dcid:City,dcid:Continent,dcid:Country,dcid:Place,dcid:ProvisionalNode,dcid:SpecialAdministrativeRegion
+isProvisional: dcs:True
+
+Node: dcid:AfricaAndTheMiddleEast
+typeOf: dcid:Country
+name: "Africa And The Middle East"
+isProvisional: dcs:True
+
+Node: dcid:OceaniaAndAntarctica
+typeOf: dcid:AdministrativeArea
+name: "Oceania And Antarctica"
+isProvisional: dcs:True
+
+Node: dcid:TheAmericas
+typeOf: dcid:AdministrativeArea
+name: "The Americas"
+isProvisional: dcs:True
+
+Node: dcid:OtherVisa
+typeOf: dcid:VisaTypeEnum
+name: "Other Visa"
+isProvisional: dcs:True
+
+Node: dcid:ResidentVisa
+typeOf: dcid:VisaTypeEnum
+name: "Resident Visa"
+isProvisional: dcs:True
+
+Node: dcid:StudentVisa
+typeOf: dcid:VisaTypeEnum
+name: "Student Visa"
+isProvisional: dcs:True
+
+Node: dcid:VisitorVisa
+typeOf: dcid:VisaTypeEnum
+name: "Visitor Visa"
+isProvisional: dcs:True
+
+Node: dcid:WorkVisa
+typeOf: dcid:VisaTypeEnum
+name: "Work Visa"
+isProvisional: dcs:True
+
+Node: dcid:NonNZCitizen
+typeOf: dcid:CitizenshipEnum
+name: "Non NZCitizen"
+isProvisional: dcs:True
+
