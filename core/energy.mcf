@@ -1653,9 +1653,10 @@ name: "Combined heat and power plants (CHP)"
 description: "Combined Heat and Power (CHP) plants, also called co-gen plants, produce both heat and electricity from at least one generating unit in the plant."
 
 Node: dcid:HeatPlants
-typeOf: dcs:PowerPlantSectorEnum
+typeOf: dcs:PowerPlantSectorEnum, dcs:EmissionSourceEnum
 name: "Heat plants"
 description: "Plants (including heat pumps and electric boilers) designed to produce heat for deliveries to third parties."
+specializationOf: dcs:Power
 
 Node: dcid:ElectricityPowerPlants
 typeOf: dcs:PowerPlantSectorEnum
@@ -3037,3 +3038,108 @@ name: "India Energy Dashboard Unspecified Sector"
 Node: dcid:IndiaEDM_OtherOilProducts
 typeOf: dcs:EnergySourceEnum
 name: "India Energy Dashboard Other Oil Products"
+
+Node: dcid:CropResidues
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Agriculture
+name: "Crop residues"
+
+Node: dcid:EntericFermentationOperation
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Agriculture
+name: "Enteric fermentation operation"
+
+Node: dcid:EntericFermentationPasture
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Agriculture
+name: "Enteric fermentation pasture"
+
+Node: dcid:ManureAppliedToSoils
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Agriculture
+name: "Manure applied to soils"
+
+Node: dcid:ManureLeftOnPasture
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Agriculture
+name: "Manure left on pasture"
+
+Node: dcid:ManureManagementOperation
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Agriculture
+name: "Manure management operation"
+
+Node: dcid:FuelCombustionForNonResidentialCommercialOnsiteHeating
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:FuelCombustionInBuildings
+name: "Fuel combustion for non residential commercial onsite heating"
+
+Node: dcid:WaterReservoirs
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:ForestryAndLandUse
+name: "Water reservoirs"
+
+Node: dcid:OilAndGasTransport
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:FossilFuelOperations
+name: "Oil and gas transport"
+
+Node: dcid:ClimateTrace_Chemicals
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Manufacturing
+name: "Climate trace chemicals"
+
+Node: dcid:ClimateTrace_OtherChemicals
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Manufacturing
+name: "Climate trace other chemicals"
+
+Node: dcid:ClimateTrace_OtherMetals
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Manufacturing
+name: "Climate trace other metals"
+
+Node: dcid:TextileLeatherApparel
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Manufacturing
+name: "Textile leather apparel"
+
+Node: dcid:WoodProducts
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:Manufacturing
+name: "Wood products"
+
+Node: dcid:ClimateTrace_OtherMiningQuarrying
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:MineralExtraction
+name: "Climate trace other mining quarrying"
+
+Node: dcid:DomesticShipping
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:MaritimeTransport
+name: "Domestic shipping"
+
+Node: dcid:InternationalShipping
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:MaritimeTransport
+name: "International shipping"
+
+Node: dcid:NonBroadcastingVessels
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:MaritimeTransport
+name: "Non broadcasting vessels"
+
+Node: dcid:DomesticWastewaterTreatmentAndDischarge
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:WastewaterTreatmentAndDischarge
+name: "Domestic wastewater treatment and discharge"
+
+Node: dcid:IndustrialWastewaterTreatmentAndDischarge
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:WastewaterTreatmentAndDischarge
+name: "Industrial wastewater treatment and discharge"
+
+Node: dcid:EmissionRemovals
+typeOf: dcid:EmissionSourceEnum
+specializationOf: dcid:ForestryAndLandUse
+name: "Emission removals"
