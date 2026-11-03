@@ -3,6 +3,7 @@ typeOf: dcid:StatisticalVariable
 populationType: dcid:Company
 measuredProperty: dcid:count
 statType: dcid:measuredValue
+description: "Total number of companies."
 
 Node: dcid:Count_Person_FullTimeEmployee
 typeOf: dcid:StatisticalVariable
@@ -10,6 +11,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentStatus: dcid:FullTimeEmployee
+description: "Total number of full-time employees."
 
 Node: dcid:Count_Person_FullTimeEmployee_Female
 typeOf: dcid:StatisticalVariable
@@ -18,6 +20,7 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentStatus: dcid:FullTimeEmployee
 gender: dcid:Female
+description: "Total number of female full-time employees."
 
 Node: dcid:Count_Person_FullTimeEmployee_Male
 typeOf: dcid:StatisticalVariable
@@ -26,6 +29,7 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 employmentStatus: dcid:FullTimeEmployee
 gender: dcid:Male
+description: "Total number of male full-time employees."
 
 Node: dcid:Count_BirthEvent_ForeignBorn
 typeOf: dcid:StatisticalVariable
@@ -33,6 +37,7 @@ populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 nativity: dcid:ForeignBorn
+description: "Total number of live births of foreign-born origin."
 
 Node: dcid:Count_BirthEvent_Native
 typeOf: dcid:StatisticalVariable
@@ -40,6 +45,7 @@ populationType: dcid:BirthEvent
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 nativity: dcid:Native
+description: "Total number of live births of native origin."
 
 Node: dcid:Count_Person_0To9Years
 typeOf: dcid:StatisticalVariable
@@ -47,6 +53,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 age: dcid:Years0To9
+description: "Total number of persons aged 0 to 9 years."
 
 Node: dcid:Count_Person_70To79Years
 typeOf: dcid:StatisticalVariable
@@ -54,6 +61,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 age: dcid:Years70To79
+description: "Total number of persons aged 70 to 79 years."
 
 Node: dcid:Count_Person_80To89Years
 typeOf: dcid:StatisticalVariable
@@ -61,6 +69,7 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 age: dcid:Years80To89
+description: "Total number of persons aged 80 to 89 years."
 
 Node: dcid:Count_Person_90To99Years
 typeOf: dcid:StatisticalVariable
@@ -68,4 +77,888 @@ populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
 age: dcid:Years90To99
+description: "Total number of persons aged 90 to 99 years."
 
+Node: dcid:Count_BirthEvent_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:BirthEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of live births: female, foreign-born"
+description: "Total number of female live births of foreign-born origin."
+
+Node: dcid:Count_BirthEvent_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:BirthEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of live births: male, native"
+description: "Total number of male live births of native origin."
+
+Node: dcid:Count_Person_0To9Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+gender: dcid:Female
+name: "Count of females aged 0 to 9 years"
+description: "Total number of females aged 0 to 9 years."
+
+Node: dcid:Count_Person_0To9Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 0 to 9 years"
+description: "Total number of females aged 0 to 9 years of foreign-born origin."
+
+Node: dcid:Count_Person_0To9Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 0 to 9 years"
+description: "Total number of persons aged 0 to 9 years of foreign-born origin."
+
+Node: dcid:Count_Person_0To9Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+gender: dcid:Male
+name: "Count of males aged 0 to 9 years"
+description: "Total number of males aged 0 to 9 years."
+
+Node: dcid:Count_Person_0To9Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 0 to 9 years"
+description: "Total number of males aged 0 to 9 years of native origin."
+
+Node: dcid:Count_Person_0To9Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+nativity: dcid:Native
+name: "Count of native persons aged 0 to 9 years"
+description: "Total number of persons aged 0 to 9 years of native origin."
+
+Node: dcid:Count_Person_20To29Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+gender: dcid:Female
+name: "Count of females aged 20 to 29 years"
+description: "Total number of females aged 20 to 29 years."
+
+Node: dcid:Count_Person_20To29Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 20 to 29 years"
+description: "Total number of females aged 20 to 29 years of foreign-born origin."
+
+Node: dcid:Count_Person_20To29Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 20 to 29 years"
+description: "Total number of persons aged 20 to 29 years of foreign-born origin."
+
+Node: dcid:Count_Person_20To29Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+gender: dcid:Male
+name: "Count of males aged 20 to 29 years"
+description: "Total number of males aged 20 to 29 years."
+
+Node: dcid:Count_Person_20To29Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 20 to 29 years"
+description: "Total number of males aged 20 to 29 years of native origin."
+
+Node: dcid:Count_Person_20To29Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+nativity: dcid:Native
+name: "Count of native persons aged 20 to 29 years"
+description: "Total number of persons aged 20 to 29 years of native origin."
+
+Node: dcid:Count_BirthEvent_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:BirthEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of live births: female, native"
+description: "Total number of female live births of native origin."
+
+Node: dcid:Count_BirthEvent_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:BirthEvent
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of live births: male, foreign-born"
+description: "Total number of male live births of foreign-born origin."
+
+Node: dcid:Count_Person_0To9Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 0 to 9 years"
+description: "Total number of females aged 0 to 9 years of native origin."
+
+Node: dcid:Count_Person_0To9Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years0To9
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 0 to 9 years"
+description: "Total number of males aged 0 to 9 years of foreign-born origin."
+
+Node: dcid:Count_Person_100OrMoreYears_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years100Onwards
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 100 years and older"
+description: "Total number of females aged 100 years and older of foreign-born origin."
+
+Node: dcid:Count_Person_100OrMoreYears_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years100Onwards
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 100 years and older"
+description: "Total number of females aged 100 years and older of native origin."
+
+Node: dcid:Count_Person_100OrMoreYears_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years100Onwards
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 100 years and older"
+description: "Total number of persons aged 100 years and older of foreign-born origin."
+
+Node: dcid:Count_Person_100OrMoreYears_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years100Onwards
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 100 years and older"
+description: "Total number of males aged 100 years and older of foreign-born origin."
+
+Node: dcid:Count_Person_100OrMoreYears_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years100Onwards
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 100 years and older"
+description: "Total number of males aged 100 years and older of native origin."
+
+Node: dcid:Count_Person_100OrMoreYears_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years100Onwards
+nativity: dcid:Native
+name: "Count of native persons aged 100 years and older"
+description: "Total number of persons aged 100 years and older of native origin."
+
+Node: dcid:Count_Person_10To19Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+gender: dcid:Female
+name: "Count of females aged 10 to 19 years"
+description: "Total number of females aged 10 to 19 years."
+
+Node: dcid:Count_Person_10To19Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 10 to 19 years"
+description: "Total number of females aged 10 to 19 years of foreign-born origin."
+
+Node: dcid:Count_Person_10To19Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 10 to 19 years"
+description: "Total number of females aged 10 to 19 years of native origin."
+
+Node: dcid:Count_Person_10To19Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 10 to 19 years"
+description: "Total number of persons aged 10 to 19 years of foreign-born origin."
+
+Node: dcid:Count_Person_10To19Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+gender: dcid:Male
+name: "Count of males aged 10 to 19 years"
+description: "Total number of males aged 10 to 19 years."
+
+Node: dcid:Count_Person_10To19Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 10 to 19 years"
+description: "Total number of males aged 10 to 19 years of foreign-born origin."
+
+Node: dcid:Count_Person_10To19Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 10 to 19 years"
+description: "Total number of males aged 10 to 19 years of native origin."
+
+Node: dcid:Count_Person_10To19Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10To19
+nativity: dcid:Native
+name: "Count of native persons aged 10 to 19 years"
+description: "Total number of persons aged 10 to 19 years of native origin."
+
+Node: dcid:Count_Person_20To29Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 20 to 29 years"
+description: "Total number of females aged 20 to 29 years of native origin."
+
+Node: dcid:Count_Person_20To29Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years20To29
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 20 to 29 years"
+description: "Total number of males aged 20 to 29 years of foreign-born origin."
+
+Node: dcid:Count_Person_30To39Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years30To39
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 30 to 39 years"
+description: "Total number of females aged 30 to 39 years of foreign-born origin."
+
+Node: dcid:Count_Person_30To39Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years30To39
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 30 to 39 years"
+description: "Total number of females aged 30 to 39 years of native origin."
+
+Node: dcid:Count_Person_30To39Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years30To39
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 30 to 39 years"
+description: "Total number of persons aged 30 to 39 years of foreign-born origin."
+
+Node: dcid:Count_Person_30To39Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years30To39
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 30 to 39 years"
+description: "Total number of males aged 30 to 39 years of foreign-born origin."
+
+Node: dcid:Count_Person_30To39Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years30To39
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 30 to 39 years"
+description: "Total number of males aged 30 to 39 years of native origin."
+
+Node: dcid:Count_Person_30To39Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years30To39
+nativity: dcid:Native
+name: "Count of native persons aged 30 to 39 years"
+description: "Total number of persons aged 30 to 39 years of native origin."
+
+Node: dcid:Count_Person_40To49Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years40To49
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 40 to 49 years"
+description: "Total number of females aged 40 to 49 years of foreign-born origin."
+
+Node: dcid:Count_Person_40To49Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years40To49
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 40 to 49 years"
+description: "Total number of females aged 40 to 49 years of native origin."
+
+Node: dcid:Count_Person_40To49Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years40To49
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 40 to 49 years"
+description: "Total number of persons aged 40 to 49 years of foreign-born origin."
+
+Node: dcid:Count_Person_40To49Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years40To49
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 40 to 49 years"
+description: "Total number of males aged 40 to 49 years of foreign-born origin."
+
+Node: dcid:Count_Person_40To49Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years40To49
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 40 to 49 years"
+description: "Total number of males aged 40 to 49 years of native origin."
+
+Node: dcid:Count_Person_40To49Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years40To49
+nativity: dcid:Native
+name: "Count of native persons aged 40 to 49 years"
+description: "Total number of persons aged 40 to 49 years of native origin."
+
+Node: dcid:Count_Person_50To59Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years50To59
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 50 to 59 years"
+description: "Total number of females aged 50 to 59 years of foreign-born origin."
+
+Node: dcid:Count_Person_50To59Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years50To59
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 50 to 59 years"
+description: "Total number of females aged 50 to 59 years of native origin."
+
+Node: dcid:Count_Person_50To59Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years50To59
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 50 to 59 years"
+description: "Total number of persons aged 50 to 59 years of foreign-born origin."
+
+Node: dcid:Count_Person_50To59Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years50To59
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 50 to 59 years"
+description: "Total number of males aged 50 to 59 years of foreign-born origin."
+
+Node: dcid:Count_Person_50To59Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years50To59
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 50 to 59 years"
+description: "Total number of males aged 50 to 59 years of native origin."
+
+Node: dcid:Count_Person_50To59Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years50To59
+nativity: dcid:Native
+name: "Count of native persons aged 50 to 59 years"
+description: "Total number of persons aged 50 to 59 years of native origin."
+
+Node: dcid:Count_Person_60To69Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+gender: dcid:Female
+name: "Count of females aged 60 to 69 years"
+description: "Total number of females aged 60 to 69 years."
+
+Node: dcid:Count_Person_60To69Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 60 to 69 years"
+description: "Total number of females aged 60 to 69 years of foreign-born origin."
+
+Node: dcid:Count_Person_60To69Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 60 to 69 years"
+description: "Total number of females aged 60 to 69 years of native origin."
+
+Node: dcid:Count_Person_60To69Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 60 to 69 years"
+description: "Total number of persons aged 60 to 69 years of foreign-born origin."
+
+Node: dcid:Count_Person_60To69Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+gender: dcid:Male
+name: "Count of males aged 60 to 69 years"
+description: "Total number of males aged 60 to 69 years."
+
+Node: dcid:Count_Person_60To69Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 60 to 69 years"
+description: "Total number of males aged 60 to 69 years of foreign-born origin."
+
+Node: dcid:Count_Person_60To69Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 60 to 69 years"
+description: "Total number of males aged 60 to 69 years of native origin."
+
+Node: dcid:Count_Person_60To69Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years60To69
+nativity: dcid:Native
+name: "Count of native persons aged 60 to 69 years"
+description: "Total number of persons aged 60 to 69 years of native origin."
+
+Node: dcid:Count_Person_70To79Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+gender: dcid:Female
+name: "Count of females aged 70 to 79 years"
+description: "Total number of females aged 70 to 79 years."
+
+Node: dcid:Count_Person_70To79Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 70 to 79 years"
+description: "Total number of females aged 70 to 79 years of foreign-born origin."
+
+Node: dcid:Count_Person_70To79Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 70 to 79 years"
+description: "Total number of females aged 70 to 79 years of native origin."
+
+Node: dcid:Count_Person_70To79Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 70 to 79 years"
+description: "Total number of persons aged 70 to 79 years of foreign-born origin."
+
+Node: dcid:Count_Person_70To79Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+gender: dcid:Male
+name: "Count of males aged 70 to 79 years"
+description: "Total number of males aged 70 to 79 years."
+
+Node: dcid:Count_Person_70To79Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 70 to 79 years"
+description: "Total number of males aged 70 to 79 years of foreign-born origin."
+
+Node: dcid:Count_Person_70To79Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 70 to 79 years"
+description: "Total number of males aged 70 to 79 years of native origin."
+
+Node: dcid:Count_Person_70To79Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years70To79
+nativity: dcid:Native
+name: "Count of native persons aged 70 to 79 years"
+description: "Total number of persons aged 70 to 79 years of native origin."
+
+Node: dcid:Count_Person_80To89Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+gender: dcid:Female
+name: "Count of females aged 80 to 89 years"
+description: "Total number of females aged 80 to 89 years."
+
+Node: dcid:Count_Person_80To89Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 80 to 89 years"
+description: "Total number of females aged 80 to 89 years of foreign-born origin."
+
+Node: dcid:Count_Person_80To89Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 80 to 89 years"
+description: "Total number of females aged 80 to 89 years of native origin."
+
+Node: dcid:Count_Person_80To89Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 80 to 89 years"
+description: "Total number of persons aged 80 to 89 years of foreign-born origin."
+
+Node: dcid:Count_Person_80To89Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+gender: dcid:Male
+name: "Count of males aged 80 to 89 years"
+description: "Total number of males aged 80 to 89 years."
+
+Node: dcid:Count_Person_80To89Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 80 to 89 years"
+description: "Total number of males aged 80 to 89 years of foreign-born origin."
+
+Node: dcid:Count_Person_80To89Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 80 to 89 years"
+description: "Total number of males aged 80 to 89 years of native origin."
+
+Node: dcid:Count_Person_80To89Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years80To89
+nativity: dcid:Native
+name: "Count of native persons aged 80 to 89 years"
+description: "Total number of persons aged 80 to 89 years of native origin."
+
+Node: dcid:Count_Person_90To99Years_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+gender: dcid:Female
+name: "Count of females aged 90 to 99 years"
+description: "Total number of females aged 90 to 99 years."
+
+Node: dcid:Count_Person_90To99Years_Female_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+gender: dcid:Female
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born females aged 90 to 99 years"
+description: "Total number of females aged 90 to 99 years of foreign-born origin."
+
+Node: dcid:Count_Person_90To99Years_Female_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+gender: dcid:Female
+nativity: dcid:Native
+name: "Count of native females aged 90 to 99 years"
+description: "Total number of females aged 90 to 99 years of native origin."
+
+Node: dcid:Count_Person_90To99Years_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born persons aged 90 to 99 years"
+description: "Total number of persons aged 90 to 99 years of foreign-born origin."
+
+Node: dcid:Count_Person_90To99Years_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+gender: dcid:Male
+name: "Count of males aged 90 to 99 years"
+description: "Total number of males aged 90 to 99 years."
+
+Node: dcid:Count_Person_90To99Years_Male_ForeignBorn
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+gender: dcid:Male
+nativity: dcid:ForeignBorn
+name: "Count of foreign-born males aged 90 to 99 years"
+description: "Total number of males aged 90 to 99 years of foreign-born origin."
+
+Node: dcid:Count_Person_90To99Years_Male_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+gender: dcid:Male
+nativity: dcid:Native
+name: "Count of native males aged 90 to 99 years"
+description: "Total number of males aged 90 to 99 years of native origin."
+
+Node: dcid:Count_Person_90To99Years_Native
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years90To99
+nativity: dcid:Native
+name: "Count of native persons aged 90 to 99 years"
+description: "Total number of persons aged 90 to 99 years of native origin."
