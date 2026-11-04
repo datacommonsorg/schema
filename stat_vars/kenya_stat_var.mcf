@@ -1168,6 +1168,16 @@ measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:ForestryLogging
 
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
+typeOf: dcid:StatisticalVariable
+name: "Percentage distribution of gross domestic product by higher secondary education to GDP"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
+activitySource: dcid:GrossDomesticProduction
+schoolGradeLevel: dcid:HigherSecondaryEducation
+
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_HigherSecondaryEducation
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of gross domestic product by higher secondary education to GDP"
@@ -1268,6 +1278,16 @@ measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:OtherTransportPostalCourierActivities
 
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
+typeOf: dcid:StatisticalVariable
+name: "Percentage distribution of gross domestic product by pre-primary and primary education to GDP"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
+activitySource: dcid:GrossDomesticProduction
+schoolGradeLevel: dcid:PrePrimaryAndPrimaryEducation
+
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_PrePrimaryAndPrimaryEducation
 typeOf: dcid:StatisticalVariable
 name: "Percentage distribution of gross domestic product by pre-primary and primary education to GDP"
@@ -1327,6 +1347,16 @@ statType: dcid:measuredValue
 measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
 activitySource: dcid:GrossDomesticProduction
 economicSector: dcid:RealEstate
+
+Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction
+typeOf: dcid:StatisticalVariable
+name: "Percentage distribution on gross domestic product by general secondary education to GDP"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:amount
+statType: dcid:measuredValue
+measurementDenominator: dcid:Amount_EconomicActivity_GrossDomesticProduction
+activitySource: dcid:GrossDomesticProduction
+schoolGradeLevel: dcid:SecondaryEducation
 
 Node: dcid:Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation_AsAFractionOf_Amount_EconomicActivity_GrossDomesticProduction_SecondaryEducation
 typeOf: dcid:StatisticalVariable
@@ -2653,3 +2683,92 @@ statType: dcid:measuredValue
 householdType: dcid:Kenya_GroupQuarters
 placeOfResidenceClassification: dcid:Rural
 
+Node: dcid:Count_Student_KenyaCertificateSecondaryEducation
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+name: "Number of students in Kenya Certificate Secondary Education"
+description: "The total number of students enrolled or sitting for the Kenya Certificate of Secondary Education (KCSE) examination."
+statType: dcid:measuredValue
+assessmentType: dcid:KenyaCertificateSecondaryEducation
+
+Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+name: "Number of female students in Kenya Certificate Secondary Education"
+description: "The number of female students enrolled or sitting for the Kenya Certificate of Secondary Education (KCSE) examination."
+statType: dcid:measuredValue
+assessmentType: dcid:KenyaCertificateSecondaryEducation
+gender: dcid:Female
+
+Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Female_OutstandingPerformance
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+name: "Number of female students with outstanding performance in Kenya Certificate Secondary Education"
+description: "The number of female students achieving Grade A (outstanding performance) in the Kenya Certificate of Secondary Education (KCSE) examination."
+statType: dcid:measuredValue
+assessmentType: dcid:KenyaCertificateSecondaryEducation
+gender: dcid:Female
+performanceLevel: dcid:OutstandingPerformance
+
+Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+name: "Number of male students in Kenya Certificate Secondary Education"
+description: "The number of male students enrolled or sitting for the Kenya Certificate of Secondary Education (KCSE) examination."
+statType: dcid:measuredValue
+assessmentType: dcid:KenyaCertificateSecondaryEducation
+gender: dcid:Male
+
+Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_Male_OutstandingPerformance
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+name: "Number of male students with outstanding performance in Kenya Certificate Secondary Education"
+description: "The number of male students achieving Grade A (outstanding performance) in the Kenya Certificate of Secondary Education (KCSE) examination."
+statType: dcid:measuredValue
+assessmentType: dcid:KenyaCertificateSecondaryEducation
+gender: dcid:Male
+performanceLevel: dcid:OutstandingPerformance
+
+Node: dcid:Count_Student_KenyaCertificateSecondaryEducation_OutstandingPerformance
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Student
+measuredProperty: dcid:count
+name: "Number of students with outstanding performance in Kenya Certificate Secondary Education"
+description: "The total number of students achieving Grade A (outstanding performance) in the Kenya Certificate of Secondary Education (KCSE) examination."
+statType: dcid:measuredValue
+assessmentType: dcid:KenyaCertificateSecondaryEducation
+performanceLevel: dcid:OutstandingPerformance
+
+Node: dcid:Area_LandCover_Urban
+typeOf: dcid:StatisticalVariable
+populationType: dcid:LandCover
+measuredProperty: dcid:area
+name: "Area of urban land cover"
+description: "Total land area classified as urban land cover in square kilometers."
+statType: dcid:measuredValue
+placeOfResidenceClassification: dcid:Urban
+
+Node: dcid:Count_Person_Rural_PerArea
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+name: "Number of rural persons per area"
+description: "The population density of persons in rural areas per square kilometer."
+statType: dcid:measuredValue
+measurementDenominator: dcid:area
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_Person_Urban_PerArea
+typeOf: dcid:StatisticalVariable
+populationType: dcid:Person
+measuredProperty: dcid:count
+name: "Number of urban persons per area"
+description: "The population density of persons in urban areas per square kilometer."
+statType: dcid:measuredValue
+measurementDenominator: dcid:area
+placeOfResidenceClassification: dcid:Urban
