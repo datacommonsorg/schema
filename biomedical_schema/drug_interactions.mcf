@@ -1,0 +1,45 @@
+Node: dcid:ChemicalCompoundChemicalCompoundInteraction
+name: "ChemicalCompoundChemicalCompoundInteraction"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompound
+description: "Interaction between two compounds."
+
+Node: dcid:ChemicalExperimentalScore
+name: "ChemicalExperimentalScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundChemicalCompoundInteraction
+description: "The confidence score of a protein-chemical interaction derived from experimental data."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:Similarity
+name: "Similarity"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundChemicalCompoundInteraction
+description: "Similarity metric measured between two compounds"
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:DatabaseScore
+name: "DatabaseScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundChemicalCompoundInteraction
+description: "The confidence score of a protein-chemical interaction derived from curated data of various databases."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:TextminingScore
+name: "TextminingScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction derived from the co-occurrence of gene/protein names in abstracts."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=E195GvZOl7F8"
+
+Node: dcid:CombinedScore
+name: "CombinedScore"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundChemicalCompoundInteraction
+description: "The combined score is computed by combining the probabilities from the different evidence channels and corrected for the probability of randomly observing an interaction."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=OiOAh8xarFrE"
