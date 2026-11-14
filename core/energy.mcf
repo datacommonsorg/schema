@@ -1653,9 +1653,10 @@ name: "Combined heat and power plants (CHP)"
 description: "Combined Heat and Power (CHP) plants, also called co-gen plants, produce both heat and electricity from at least one generating unit in the plant."
 
 Node: dcid:HeatPlants
-typeOf: dcs:PowerPlantSectorEnum
+typeOf: dcs:PowerPlantSectorEnum, dcs:EmissionSourceEnum
 name: "Heat plants"
 description: "Plants (including heat pumps and electric boilers) designed to produce heat for deliveries to third parties."
+specializationOf: dcs:Power
 
 Node: dcid:ElectricityPowerPlants
 typeOf: dcs:PowerPlantSectorEnum
@@ -2989,6 +2990,111 @@ typeOf: EmissionSourceEnum
 name: "Wastewater Treatment And Discharge"
 description: "The treatment and disposal of wastewater from domestic, commercial and industrial sources."
 specializationOf: dcid:WasteManagement
+
+Node: dcid:CropResidues
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Crop residues"
+
+Node: dcid:EntericFermentationOperation
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Enteric fermentation operation"
+
+Node: dcid:EntericFermentationPasture
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Enteric fermentation pasture"
+
+Node: dcid:ManureAppliedToSoils
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Manure applied to soils"
+
+Node: dcid:ManureLeftOnPasture
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Manure left on pasture"
+
+Node: dcid:ManureManagementOperation
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Manure management operation"
+
+Node: dcid:FuelCombustionForNonResidentialCommercialOnsiteHeating
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:FuelCombustionInBuildings
+name: "Fuel combustion for non residential commercial onsite heating"
+
+Node: dcid:WaterReservoirs
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:ForestryAndLandUse
+name: "Water reservoirs"
+
+Node: dcid:OilAndGasTransport
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:FossilFuelOperations
+name: "Oil and gas transport"
+
+Node: dcid:ClimateTrace_Chemicals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Chemicals"
+
+Node: dcid:ClimateTrace_OtherChemicals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Other chemicals"
+
+Node: dcid:ClimateTrace_OtherMetals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Other metals"
+
+Node: dcid:TextileLeatherApparel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Textile, leather, and apparel"
+
+Node: dcid:WoodProducts
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Wood products"
+
+Node: dcid:ClimateTrace_OtherMiningQuarrying
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MineralExtraction
+name: "Other mining and quarrying"
+
+Node: dcid:DomesticShipping
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MaritimeTransport
+name: "Domestic shipping"
+
+Node: dcid:InternationalShipping
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MaritimeTransport
+name: "International shipping"
+
+Node: dcid:NonBroadcastingVessels
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MaritimeTransport
+name: "Non broadcasting vessels"
+
+Node: dcid:DomesticWastewaterTreatmentAndDischarge
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:WastewaterTreatmentAndDischarge
+name: "Domestic wastewater treatment and discharge"
+
+Node: dcid:IndustrialWastewaterTreatmentAndDischarge
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:WastewaterTreatmentAndDischarge
+name: "Industrial wastewater treatment and discharge"
+
+Node: dcid:EmissionRemovals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:ForestryAndLandUse
+name: "Emission removals"
 
 ## Stuff from NREL
 
