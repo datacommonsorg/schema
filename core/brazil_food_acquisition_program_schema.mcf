@@ -1,0 +1,91 @@
+Node: dcid:purchaseModality
+typeOf: dcid:Property
+name: "purchase Modality"
+domainIncludes: dcid:Household,dcid:Household,dcid:EconomicActivity,dcid:Food
+rangeIncludes: dcid:PurchaseModalityEnum,dcid:ConsumerGoodsCategoryEnum
+
+Node: dcid:PurchaseModalityEnum
+typeOf: schema:Enumeration
+name: "Purchase modality enum"
+
+Node: dcid:PurchaseWithDonation
+typeOf: dcid:PurchaseModalityEnum
+name: "Purchase With Donation"
+
+Node: dcid:householdType
+typeOf: dcid:Property
+name: "household Type"
+domainIncludes: dcid:Household,dcid:Household,dcid:EconomicActivity
+rangeIncludes: dcid:FamilyTypeEnum
+
+Node: dcid:benefitProgram
+typeOf: dcid:Property
+name: "benefit Program"
+domainIncludes: dcid:Household,dcid:Household,dcid:EconomicActivity,dcid:Food
+
+Node: dcid:Brazil_FoodAcquisitionProgram
+typeOf: dcid:UnemploymentInsuranceProgramEnum
+name: "Brazil Food Acquisition Program"
+
+Node: dcid:IncentiveForMilkProductionAndConsumption
+typeOf: dcid:PurchaseModalityEnum
+name: "Incentive for milk production and consumption"
+
+Node: dcid:DirectPurchase
+typeOf: dcid:PurchaseModalityEnum
+name: "Direct Purchase"
+
+Node: dcid:SupportForStockBuilding
+typeOf: dcid:PurchaseModalityEnum
+name: "Support For Stock Building"
+
+Node: dcid:AcquisitionOfSeeds
+typeOf: dcid:PurchaseModalityEnum
+name: "Acquisition Of Seeds"
+
+Node: dcid:PurchaseWithSimultaneousDonation
+typeOf: dcid:PurchaseModalityEnum
+name: "Purchase With Simultaneous Donation"
+
+Node: dcid:foodSource
+typeOf: dcid:Property
+name: "food Source"
+domainIncludes: dcid:Household,dcid:EconomicActivity,dcid:Food
+rangeIncludes: dcid:FoodSourceEnum
+
+Node: dcid:FoodSourceEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "FoodSourceEnum"
+
+Node: dcid:Supply
+typeOf: dcid:FoodSourceEnum
+name: "Supply"
+
+Node: dcid:governmentPaymentStatus
+typeOf: dcid:Property
+name: "government payment status"
+domainIncludes: dcid:EconomicActivity
+
+Node: dcid:Purchase
+typeOf: dcid:FoodSourceEnum
+name: "Purchase"
+
+Node: dcid:AdhesionTerm
+typeOf: dcid:PurchaseModalityEnum
+name: "Adhesion term"
+
+Node: dcid:distributionPartner
+typeOf: dcid:Property
+name: "distribution Partner"
+domainIncludes: dcid:Household,dcid:EconomicActivity,dcid:Food
+rangeIncludes: dcid:DistributionPartnerEnum,dcid:Class
+
+Node: dcid:DistributionPartnerEnum
+typeOf: dcid:Class
+subClassOf: dcid:Enumeration
+name: "Distribution Partner Enum"
+
+Node: dcid:Brazil_CONAB
+typeOf: dcid:DistributionPartnerEnum
+name: "Brazil CONAB"
