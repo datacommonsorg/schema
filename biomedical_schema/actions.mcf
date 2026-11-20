@@ -1,0 +1,35 @@
+Node: dcid:ChemicalCompoundProteinInteraction
+name: "ChemicalCompoundProteinInteraction"
+typeOf: schema:Class
+subClassOf: dcs:ChemicalCompound
+description: "Interaction between a compound and a protein."
+descriptionUrl: "https://www.ebi.ac.uk/chembl/"
+
+Node: dcid:chemicalInteractionModeExpression
+name: "chemicalInteractionModeExpression"
+typeOf: schema:Property
+rangeIncludes: dcs:ChemicalInteractionModeExpressionEnum
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "Type of interaction between protein and chemical."
+
+Node: dcid:enzymaticReactionEffect
+name: "enzymaticReactionEffect"
+typeOf: schema:Property
+rangeIncludes: dcs:EnzymaticReactionEffectEnum
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The effect of the protein-chemical interaction."
+descriptionUrl: "http://stitch.embl.de/cgi/help.pl?UserId=f68rPwGhmUhl&sessionId=JjrrnW7ZUyZN"
+
+Node: dcid:ChemicalIsActing
+name: "ChemicalIsActing"
+typeOf: schema:Property
+rangeIncludes: schema:Boolean
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "Indicates whether or not the chemical is the active component in the interaction"
+
+Node: dcid:Score
+name: "Score"
+typeOf: schema:Property
+rangeIncludes: schema:Quantity
+domainIncludes: dcs:ChemicalCompoundProteinInteraction
+description: "The confidence score of a protein-chemical interaction."
