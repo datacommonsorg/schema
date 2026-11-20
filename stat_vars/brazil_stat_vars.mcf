@@ -226,21 +226,6 @@ measuredProperty: dcid:count
 statType: dcid:measuredValue
 enrollmentLevel: dcid:PrimaryEducation
 
-Node: dcid:Count_Person_10OrMoreYears
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-age: dcid:Years10Onwards
-
-Node: dcid:Count_Person_10OrMoreYears_Literate
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
-age: dcid:Years10Onwards
-literacyStatus: dcid:Literate
-
 Node: dcid:Count_Person_10OrMoreYears_Literate_AsAFractionOf_Count_Person_10OrMoreYears
 typeOf: dcid:StatisticalVariable
 populationType: dcid:Person
@@ -334,6 +319,8 @@ typeOfSchool: dcid:PrivateSchool
 
 Node: dcid:Count_Student_LiteracyCourse_PrivateSchool
 typeOf: dcid:StatisticalVariable
+name: "Number of students enrolled in literacy courses in private schools"
+description: "Number of students enrolled in literacy courses (classe de alfabetização) in private schools."
 populationType: dcid:Student
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -405,6 +392,8 @@ typeOfSchool: dcid:PublicSchool
 
 Node: dcid:Count_Student_LiteracyCourse_PublicSchool
 typeOf: dcid:StatisticalVariable
+name: "Number of students enrolled in literacy courses in public schools"
+description: "Number of students enrolled in literacy courses (classe de alfabetização) in public schools."
 populationType: dcid:Student
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -487,6 +476,8 @@ race: dcid:Brazil_Branca
 
 Node: dcid:Count_Person_15OrMoreYears_Illiterate_BrazilIndigneous
 typeOf: dcid:StatisticalVariable
+name: "Number of illiterate Indigenous persons aged 15 years or older"
+description: "Number of illiterate persons aged 15 years and older of Indigenous race/color."
 populationType: dcid:Person
 measuredProperty: dcid:count
 statType: dcid:measuredValue
@@ -1544,3 +1535,98 @@ age: dcid:Years14Onwards
 economicSector: dcid:VehicleCommerceRepair
 employmentStatus: dcid:Employed
 incomeSource: dcid:MainJob
+
+Node: dcid:Count_Person_15OrMoreYears_Female_Illiterate
+typeOf: dcid:StatisticalVariable
+name: "Number of illiterate females aged 15 years or older"
+description: "The number of female persons aged 15 years and older who are illiterate."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years15Onwards
+gender: dcid:Female
+literacyStatus: dcid:Illiterate
+
+Node: dcid:Count_Person_15OrMoreYears_Female_Literate
+typeOf: dcid:StatisticalVariable
+name: "Number of literate females aged 15 years or older"
+description: "The number of female persons aged 15 years and older who are literate."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years15Onwards
+gender: dcid:Female
+literacyStatus: dcid:Literate
+
+Node: dcid:Count_Person_15OrMoreYears_Male_Illiterate
+typeOf: dcid:StatisticalVariable
+name: "Number of illiterate males aged 15 years or older"
+description: "The number of male persons aged 15 years and older who are illiterate."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years15Onwards
+gender: dcid:Male
+literacyStatus: dcid:Illiterate
+
+Node: dcid:Count_Person_15OrMoreYears_Male_Literate
+typeOf: dcid:StatisticalVariable
+name: "Number of literate males aged 15 years or older"
+description: "The number of male persons aged 15 years and older who are literate."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years15Onwards
+gender: dcid:Male
+literacyStatus: dcid:Literate
+
+Node: dcid:Count_Person_10OrMoreYears_BrazilOtherReligion
+typeOf: dcid:StatisticalVariable
+name: "Number of persons aged 10 years or older of other religions in Brazil"
+description: "Number of persons aged 10 years and older adhering to other religions in Brazil."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10Onwards
+religion: dcid:Brazil_OtherReligion
+
+Node: dcid:Count_Person_10OrMoreYears_Evangelical
+typeOf: dcid:StatisticalVariable
+name: "Number of Evangelical persons aged 10 years or older"
+description: "Number of persons aged 10 years and older adhering to Evangelical Christianity."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10Onwards
+religion: dcid:Evangelical
+
+Node: dcid:Count_Person_10OrMoreYears_Irreligion
+typeOf: dcid:StatisticalVariable
+name: "Number of persons aged 10 years or older with no religion"
+description: "Number of persons aged 10 years and older with no religion (irreligion)."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10Onwards
+religion: dcid:Irreligion
+
+Node: dcid:Count_Person_10OrMoreYears_ReligionNotStated
+typeOf: dcid:StatisticalVariable
+name: "Number of persons aged 10 years or older with religion not stated"
+description: "Number of persons aged 10 years and older whose religion was not stated or undeclared."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10Onwards
+religion: dcid:ReligionNotStated
+
+Node: dcid:Count_Person_10OrMoreYears_RomanCatholicismApostolic
+typeOf: dcid:StatisticalVariable
+name: "Number of Roman Catholic Apostolic persons aged 10 years or older"
+description: "Number of persons aged 10 years and older adhering to the Roman Catholic Apostolic religion."
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years10Onwards
+religion: dcid:RomanCatholicismApostolic
+
