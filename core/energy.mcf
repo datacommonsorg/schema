@@ -1653,9 +1653,10 @@ name: "Combined heat and power plants (CHP)"
 description: "Combined Heat and Power (CHP) plants, also called co-gen plants, produce both heat and electricity from at least one generating unit in the plant."
 
 Node: dcid:HeatPlants
-typeOf: dcs:PowerPlantSectorEnum
+typeOf: dcs:PowerPlantSectorEnum, dcs:EmissionSourceEnum
 name: "Heat plants"
 description: "Plants (including heat pumps and electric boilers) designed to produce heat for deliveries to third parties."
+specializationOf: dcs:Power
 
 Node: dcid:ElectricityPowerPlants
 typeOf: dcs:PowerPlantSectorEnum
@@ -2989,6 +2990,132 @@ typeOf: EmissionSourceEnum
 name: "Wastewater Treatment And Discharge"
 description: "The treatment and disposal of wastewater from domestic, commercial and industrial sources."
 specializationOf: dcid:WasteManagement
+
+Node: dcid:CropResidues
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Crop residues"
+description: "Greenhouse gas emissions from decomposition and burning of plant material left on agricultural land after harvest."
+
+Node: dcid:EntericFermentationOperation
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Enteric fermentation operation"
+description: "Greenhouse gas emissions (primarily methane) from cattle digestion in feedlots and confined livestock operations."
+
+Node: dcid:EntericFermentationPasture
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Enteric fermentation pasture"
+description: "Greenhouse gas emissions (primarily methane) from cattle digestion on pasture and rangeland."
+
+Node: dcid:ManureAppliedToSoils
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Manure applied to soils"
+description: "Greenhouse gas emissions from livestock manure spread on agricultural fields as fertilizer."
+
+Node: dcid:ManureLeftOnPasture
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Manure left on pasture"
+description: "Greenhouse gas emissions from manure deposited directly on pasture and rangeland by grazing cattle."
+
+Node: dcid:ManureManagementOperation
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Agriculture
+name: "Manure management operation"
+description: "Greenhouse gas emissions from stored and treated manure at confined cattle feeding operations."
+
+Node: dcid:FuelCombustionForNonResidentialCommercialOnsiteHeating
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:FuelCombustionInBuildings
+name: "Fuel combustion for non-residential commercial onsite heating"
+description: "Greenhouse gas emissions from fuel burned on site in commercial, institutional, and public buildings."
+
+Node: dcid:WaterReservoirs
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:ForestryAndLandUse
+name: "Water reservoirs"
+description: "Methane and carbon dioxide emissions from artificial and man-made water reservoirs."
+
+Node: dcid:OilAndGasTransport
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:FossilFuelOperations
+name: "Oil and gas transport"
+description: "Greenhouse gas emissions and fugitive leaks from oil and gas pipelines, tankers, and storage facilities."
+
+Node: dcid:ClimateTrace_Chemicals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Primary industrial chemicals"
+description: "Greenhouse gas emissions from industrial chemical production covered by Climate TRACE's dedicated Chemicals subsector, specifically ammonia, methanol, and soda ash (excluding petrochemical steam cracking)."
+
+Node: dcid:ClimateTrace_OtherChemicals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Other chemicals"
+description: "Greenhouse gas emissions from chemical manufacturing not covered by Climate TRACE's dedicated chemical subsectors (ammonia, methanol, soda ash, and petrochemical steam cracking)."
+
+Node: dcid:ClimateTrace_OtherMetals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Other metals"
+description: "Greenhouse gas emissions from production of metals other than iron, steel, and aluminum."
+
+Node: dcid:TextileLeatherApparel
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Textile, leather, and apparel"
+description: "Greenhouse gas emissions from textile, leather, and garment manufacturing."
+
+Node: dcid:WoodProducts
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:Manufacturing
+name: "Wood products"
+description: "Greenhouse gas emissions from sawmilling and wood product manufacturing."
+
+Node: dcid:ClimateTrace_OtherMiningQuarrying
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MineralExtraction
+name: "Other mining and quarrying"
+description: "Greenhouse gas emissions from mining and quarrying not covered by Climate TRACE's dedicated mineral extraction subsectors (bauxite, copper, iron ore, rock, and sand)."
+
+Node: dcid:DomesticShipping
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MaritimeTransport
+name: "Domestic shipping"
+description: "Greenhouse gas emissions from maritime vessel movements within a single country's waters."
+
+Node: dcid:InternationalShipping
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MaritimeTransport
+name: "International shipping"
+description: "Greenhouse gas emissions from maritime vessel movements between countries."
+
+Node: dcid:NonBroadcastingVessels
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:MaritimeTransport
+name: "Non-broadcasting vessels"
+description: "Greenhouse gas emissions from maritime vessels not transmitting Automatic Identification System (AIS) location signals."
+
+Node: dcid:DomesticWastewaterTreatmentAndDischarge
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:WastewaterTreatmentAndDischarge
+name: "Domestic wastewater treatment and discharge"
+description: "Greenhouse gas emissions from the treatment and discharge of domestic and household sewage."
+
+Node: dcid:IndustrialWastewaterTreatmentAndDischarge
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:WastewaterTreatmentAndDischarge
+name: "Industrial wastewater treatment and discharge"
+description: "Greenhouse gas emissions from the treatment and discharge of industrial wastewater effluent."
+
+Node: dcid:EmissionRemovals
+typeOf: dcs:EmissionSourceEnum
+specializationOf: dcs:ForestryAndLandUse
+name: "Forestry and land use carbon removals"
+description: "Carbon drawn out of the atmosphere and stored in vegetation and soil through forestry and land-use biomass growth."
 
 ## Stuff from NREL
 
