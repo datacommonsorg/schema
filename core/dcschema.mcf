@@ -993,6 +993,20 @@ rangeIncludes: schema:MonetaryAmount
 domainIncludes: schema:AdministrativeArea, dcs:NAICSEnum, dcs:EconomicActivity
 description: "Gross domestic product (GDP) is the monetary value of all the finished goods and services produced within a place in a specific time period"
 
+Node: dcid:nominalGrossDomesticProduct
+typeOf: schema:Property
+name: "nominalGrossDomesticProduct"
+rangeIncludes: schema:MonetaryAmount, schema:Number
+domainIncludes: schema:AdministrativeArea, schema:Place
+description: "Nominal gross domestic product (GDP) is the current-dollar monetary value of all finished goods and services produced within a place in a specific time period without inflation adjustment."
+
+Node: dcid:regionalPriceParity
+typeOf: schema:Property
+name: "regionalPriceParity"
+rangeIncludes: schema:Number
+domainIncludes: schema:Product
+description: "Regional Price Parities (RPPs) measure the differences in price levels across states and metropolitan areas for a given year and are expressed as a percentage of the overall national price level."
+
 Node: dcid:USCEstablishment
 typeOf: schema:Class
 subClassOf: schema:Organization
