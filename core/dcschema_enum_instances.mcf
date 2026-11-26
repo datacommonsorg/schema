@@ -182,6 +182,18 @@ description: "Indicates the list of Goods to determine Consumer Price Index (CPI
 typeOf: dcs:EconomicProductEnum
 dcid: "BEAGoods"
 
+Node: dcid:BEAServicesHousing
+name: "Housing Services"
+description: "Indicates housing services prices used to determine Regional Price Parities (RPPs) by US Bureau of Economic Analysis."
+typeOf: dcs:EconomicProductEnum
+dcid: "BEAServicesHousing"
+
+Node: dcid:BEAServicesUtilities
+name: "Utilities Services"
+description: "Indicates utilities services prices used to determine Regional Price Parities (RPPs) by US Bureau of Economic Analysis."
+typeOf: dcs:EconomicProductEnum
+dcid: "BEAServicesUtilities"
+
 Node: dcid:InflationAdjustmentEnum
 typeOf: schema:Enumeration
 name: "InflationAdjustmentEnum"
@@ -201,6 +213,11 @@ Node: dcid:BEASurvey
 typeOf: dcs:CensusSurveyEnum
 name: "BEASurvey"
 description: "Methodology used by the Bureau of Economic Analysis (BEA) to produce its annual Gross domestic product (GDP)"
+
+Node: dcid:BEAGDPMeasure
+typeOf: dcs:CensusSurveyEnum
+name: "BEAGDPMeasure"
+description: "Methodology used by the Bureau of Economic Analysis (BEA) to produce its annual nominal Gross domestic product (GDP)."
 
 ###---- begin FEC enum instances ----###
 Node: dcid:CandidateStatusIncumbent
